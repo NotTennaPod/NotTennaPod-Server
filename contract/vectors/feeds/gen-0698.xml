@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><language>TR</language>
+<itunes:summary></itunes:summary>
+<podcast:funding url="https://example.com/donate">  spaced  </podcast:funding>
+<itunes:author><![CDATA[Jan]]>e Doe</itunes:author>
+<atom:link href="https://example.com/alt.xml" title="Café" length="9223372036854775808" type="application/atom+xml" rel='first'/>
+<podcast:funding url="">&#60;b&gt;x&#60;/b></podcast:funding>
+<itunes:image href='https://example.com/it.jpg'/>
+<atom:link type="application/atom+xml" length="abc" rel="related" href="https://example.com/pay" title="MP3 feed"/>
+<title>&#60;div>&#38;#xA9;&lt;/div></title>
+<link xmlns="http://www.w3.org/2005/Atom" type="application/rss+xml" href="https://example.com/feed?page=2" rel="Next" title="Café"/>
+<atom:link rel="alternate" href="https://example.com/" title="MP3 feed" type="application/xhtml+xml"/>
+<lastBuildDate>2470-05-25T14:61:36</lastBuildDate>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<item><guid isPermaLink="false">a&amp;b</guid>
+  <link></link>
+  <pubDate>Sun dec 27 04:51:29 1987</pubDate>
+  <description>  &lt;3 &lt;3</description>
+  <itunes:image href=' https://e.com/i.png '/>
+  <enclosure url='ftp://files.example.com/a/b/c269.aif' length="٢٠٠٠٠" type="audio/x-wav"/>
+  <media:content fileSize='16385' isDefault="false" duration="9223372036854775807" url="https://user:pass@media.example.net/a/b/c398.caf?a=1&amp;b=2" type="unknown" medium="Audio"/>
+  <media:content duration=' 60' fileSize='２０００００' medium="Audio" isDefault="1" type="x-audio/mpeg"/></item>
+<item><itunes:explicit>yes</itunes:explicit>
+<podcast:socialInteract uri="" protocol='activitypub'/>
+<podcast:chapters type="application/json+chapters"/>
+<itunes:duration>1:30 </itunes:duration>
+<enclosure url="https://example.com:8443/e p93.opus" length="1,000,000" type="video/webm"/>
+<media:content url="HTTPS://EXAMPLE.COM/182.txt" duration='0' type='audio/mp3' fileSize="9223372036854775807" medium="video"/>
+<guid isPermaLink="false">a&#x26;b</guid>
+<itunes:image href=""/>
+<link></link>
+<media:content fileSize="-0" url="https://example.com:8443/a/b/c105.aif" isDefault="false" type="audio/wav" medium="image"/>
+<itunes:subtitle><![CDATA[&euro;
+  padded  ]]></itunes:subtitle>
+<pubDate>Tue Dec 16 09:44:05 1980 WET</pubDate>
+<description><![CDATA[ééé]]></description></item>
+<item><title>Episode 854 &amp;quot;q&#x26;quot; &#x26;#x;</title> <guid>urn:uuid:72aa434f</guid> <pubDate>0999-11-05 </pubDate> <description> x&lt;y&#x3C;p&gt;&#x3C;/p>&lt;div&gt;&amp;#0;&#x3C;/div&gt;</description> <content:encoded><![CDATA[😀😀😀😀<p>&#x;</p>cr
+lf<br> &euro;😀😀😀😀]]></content:encoded> <itunes:duration> </itunes:duration> <enclosure length='16383' type="audio/opus"/> <media:content type="video/x-matroska" medium="audio" isDefault="false" duration="0" fileSize="2147483648"/> <media:content duration='abc' type="application/octet-stream" medium="audio" fileSize="9007199254740991" isDefault="false"/> <media:content medium="video" url="https://example.com/a.b/café/317.mp3.zip" duration="01:00" fileSize='4294967296'/> <podcast:chapters url="" type="application/json+chapters"/></item></channel>
+  </rss>

@@ -1,0 +1,12 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:media="http://search.yahoo.com/mrss/"
+xmlns:podcast="https://podcastindex.org/namespace/1.0"
+xmlns:psc="http://podlove.org/simple-chapters"
+xmlns:atom="http://www.w3.org/2005/Atom"
+xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><podcast:funding url="donate">  support  </podcast:funding><itunes:new-feed-url> https://new.example </itunes:new-feed-url>
+<atom:link rel="next" href="next"/><atom:link rel="alternate" type="application/rss+xml" href="alternate" title="Old"/>
+<atom:link rel="archives" type="application/rss+xml" href="alternate" title="New"/>
+<item><podcast:chapters url="chapters.json"/><podcast:socialInteract uri="social"/>
+<psc:chapters><psc:chapter start="00:01:02.5" title="Start" href="link" image="image"/>
+<psc:chapter start="bad:time"/><psc:chapter start="12" title="Single value"/></psc:chapters></item></channel></rss>

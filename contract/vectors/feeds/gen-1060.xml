@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><link>https://example.com</link>
+<atom:link type="application/rss+xml" title='MP3 feed' href="" rel="enclosure"/>
+<description>aaa😀😀</description>
+<atom:link rel="related" length="20000" type="application/xhtml+xml" href="https://example.com/pay" title='Alternate'/>
+<title>&#60;cite>&amp;Lt;&#60;/cite></title>
+<atom:link type='' title="" href="https://example.com/feed?page=2" rel="Next"/>
+<image><url></url><link>https://example.com/img-link</link><title>Image title</title></image>
+<itunes:author>  Spaced  </itunes:author>
+<media:thumbnail url="https://example.com/mt.jpg"/>
+<item><podcast:chapters url="" type="application/json+chapters"></podcast:chapters><enclosure url="" length="16384" type="audio/aac"/><itunes:duration>1:02:03</itunes:duration><itunes:subtitle>&#x26;#65;&amp;#66;To<![CDATA[m & Jerry <3<b>café</b>]]></itunes:subtitle><title><![CDATA[  spaced  ]]></title></item>
+<item><dc:date>2010-05-08T14:16:45GMT</dc:date><media:group><media:content medium="document" isDefault="1" type="audio/x-m4a" fileSize="٢٠٠٠٠" duration=" 60"/></media:group><title>&amp;lt</title><itunes:summary>😀&lt;br></itunes:summary><link></link><itunes:duration>5:11:10</itunes:duration><itunes:image href=""/><description>&#60;li&gt;&#xA0;&#60;/li>	&amp;AMP;&#60;b>Bold&lt;/b> title&#60;br&gt;&lt;p/>
+
+x&lt;y</description><pubDate>2023-09-21T06:14:00+0100 AM</pubDate><x:title xmlns:x="urn:x">Other namespace title</x:title><guid></guid><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[	é<li>&amp</li><li>plain words</li>]]></content:encoded></item>
+<item><title>&#13;
+مرحبا&quot;quoted"  spaced  	</title>
+<podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/>
+<pubDate>Saturday, 31 Feb 0099 04:54:23</pubDate>
+<description>&#38;ampaaaaaaa&#13;
+&amp;AMP;&#60;br/>&lt;div>&amp;copy;&lt;/div&gt;</description>
+<itunes:image href=" https://e.com/i.png "/>
+<guid isPermaLink='false'>
+</guid>
+<enclosure url="" length='16385' type='audio/x-wav'/></item>
+<item><title>&lt;label&gt;trailing &lt;/label></title> <guid isPermaLink="false">https://example.com/item/66945</guid> <enclosure length="-0" type="Audio/MPEG"/> <itunes:duration>0x1.8p2</itunes:duration> <description></description> <media:content fileSize="2e5" isDefault="true" type="video/quicktime" duration='' url="//example.com/ep80.txt#t=10"/> <media:content type="text/html" isDefault="false" medium="Audio" duration=" 60"/> <itunes:summary><![CDATA[<img>😀😀😀]]></itunes:summary> <pubDate>Fri, 28 Nov 2414 21:12 PDT</pubDate> <itunes:subtitle>&lt;code&gt;trailing<![CDATA[ </code> back\slash]]></itunes:subtitle> <media:content duration="abc" isDefault="TRUE" fileSize='00020000' type="audio/*"/></item>
+<item><pubDate>Foo, Thu, 11 Oct 2001 01:26:35 +0200</pubDate>
+<description>&lt;img&gt;</description>
+<guid isPermaLink="false"></guid>
+<psc:chapters xmlns:psc="http://podlove.org/simple-chapters"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start="106:46"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start="-1:00" title="😀" href="https://example.com/ch"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" href="https://example.com/ch" title="Intro" start="Infinity:00" image="https://example.com/ch.png"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" image="https://example.com/ch.png" title="Café &amp;amp; more" start="03:13:02.948" href=""/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title="😀" start='02:44:19.281'/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title="Intro" href='https://example.com/ch' start="117:56"></psc:chapter></psc:chapters>
+<dc:date> 29 Feb 2263 06:23:46 +0530 </dc:date>
+<itunes:duration>6124.671</itunes:duration>
+<link></link>
+<enclosure url="https://xn--caf-dma.example/371.m4v" length="1" type="video/mp4"/></item>
+<item><title>&amp;;</title>
+<guid isPermaLink="true">Café-guid</guid>
+<link></link>
+<pubDate>2006-03-03</pubDate>
+<dc:date>Friday, 33 Sep 1973 13:44:53</dc:date>
+<itunes:subtitle>&lt;p&gt;&lt;p>#hash&lt;/p>&#x3C;/p&gt;</itunes:subtitle>
+<enclosure url="http://example.org/70.mkv" length="abc" type='video/x-matroska'/>
+<media:thumbnail/>
+<psc:chapters xmlns:psc="http://podlove.org/simple-chapters" version="1.2"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start="02:04:00" href="" image="https://example.com/ch.png" title=""/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" href="" start='46:27' title="Intro"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start="115:37" title="😀"></psc:chapter><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title='Café &amp;amp; more' start="99:51" href=""/></psc:chapters></item>
+<item><title>'single'  1 &lt;2</title><link> https://e.com/x </link><pubDate>1996-03-05utc</pubDate><itunes:summary><![CDATA[<li>'single'</li>]]></itunes:summary><itunes:subtitle>&amp;nbsp;
+&amp;lt;b&#x26;gt;</itunes:subtitle><itunes:duration>4444</itunes:duration><enclosure url='https://user:pass@media.example.net/a/b/c236.aif' length="2e5" type="audio/opus"/></item>
+<item><guid isPermaLink="false">https://example.com/item/27634</guid><link></link><pubDate>1988-04-05T09:16:58+1400 UTC</pubDate><title>a
+  b  spaced  &#60;unknown>1 &lt;2&#x3C;/unknown></title><enclosure length="123456789012345678" type=" audio/mpeg"/><psc:chapters xmlns:psc="http://podlove.org/simple-chapters" version="1.2"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start="02:23:22" title='' image="https://example.com/ch.png"/></psc:chapters><description><![CDATA[ &nbsp;<div>😀</div]]>></description><itunes:duration>2147483.647</itunes:duration><itunes:summary>&#60;p&gt;&amp;hellip;&#60;/p&gt;&lt;p&gt;café&lt;/p&gt;&#60;li&gt;AT&amp;T&lt;/li&gt;</itunes:summary><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&lt;hr&gt;</content:encoded></item></channel>
+</rss>

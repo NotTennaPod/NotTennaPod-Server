@@ -1,0 +1,86 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+  <id>https://example.com/feed</id>
+<link type="application/xml+xhtml" title="" href="https://example.com/feed?page=2" length="9223372036854775808"/>
+<link href="https://example.com/pay" title='MP3 feed' type="application/atom+xml" rel="hub"/>
+<title type="html">&#x26;lt &#x26;copy;</title>
+<podcast:funding url="https://example.com/give">Give</podcast:funding>
+<author><name>Émile</name><email>a@example.com</email></author>
+<subtitle type="HTML">
+&amp;lt;b&amp;gt;aaaaS01E7a
+a &gt; baaaaaaaaa &#38; &amp;amp;</subtitle>
+<updated>Tue, 02 November 2021 20:54 +1400</updated>
+<itunes:author>第一</itunes:author>
+<entry><link title='' length='12' href='https://example.com/' rel=""/>
+<updated>Fri Jul 29 05:30:43 1752 -0500</updated>
+<link href='' length='abc' rel="related" type="application/rss+xml"/>
+<link href="https://example.com/feed?page=2" rel="related"/>
+<published>2599-13-24</published>
+<id>
+id
+</id>
+<title type="html">Episode 330</title>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">😀😀&#x1F600;&#x26;#0;&lt;br&gt;	a > b</div></content></entry>
+<entry><link length="9223372036854775808" rel='archives' title='Alternate' href='https://example.com/alt.xml' type="application/xml+xhtml"/>
+  <id> raw </id>
+  <published>Foo, 2024-07-03T22:31:31Z</published>
+  <updated>FRIDAY 7 Feb 1975 21:33:05 GMT+0000 (PST)</updated>
+  <summary>😀ééé</summary>
+  <title type="html">a &gt; b  &#38;#169;  &#x3C;article>cr&#13;lf&lt;/article&gt;</title></entry>
+<entry><published>2391-04-04T17:38:36.197est</published><content><![CDATA[<p>http://example.com/?a=1&b=2</p><li>&nbsp;</li>ééé]]></content><link href="https://example.com/" title="MP3 feed" type="application/rss+xml" rel='Next'/><link href='' title="Café" length='12' rel=""></link><updated>Tuesday, 12 Jul 2011 12:08:50 -0800</updated><id></id><title type="text"><![CDATA[x<y]]></title><link length="12" type="text/html" rel='' title="Café"/></entry>
+<entry><!-- comment --><?pi data?> <updated>Thursday, 02 Jul 2015 06:10:24 India Standard Time</updated> <published>2018-02-08T02:09:99</published> <id>
+id
+</id> <media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize='abc' duration="0" url="HTTPS://EXAMPLE.COM/ep104.m4v?a=1&amp;b=2" isDefault='false' type="video/quicktime"/></entry>
+<entry><itunes:duration>12:34:56.789</itunes:duration>
+  <itunes:image href=''/>
+  <media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="1" url='https://example.com:8443/24.webm' type="Audio/MPEG" duration="" isDefault="false"/>
+  <published>Mon, 01 Nov 2252 17:35:61 -0000</published>
+  <updated>, 01 Jan 2024 10:00:00 +0000</updated>
+  <link title="" rel="payment" href="https://example.com/"/>
+  <author><name>Entry author</name></author>
+  <title>&#13;
+&amp;amp; &#x26;#x1F600; café&#13;
+</title>
+  <link title="Café" href="" type="text/html" rel="hub" length="20000"/>
+  <id>tag:x,2020:1</id></entry>
+<entry><link type="" href="" rel="last" length="20000" title=""/>
+<id> raw </id>
+<summary type="HTML">&lt;li&gt;a&#13;
+b&#60;/li&gt;&lt;div&gt;Episode 12&#60;/div>&lt;hr/&gt;</summary>
+<published>Thu, 07 June 0001 23:34:07</published>
+<title><![CDATA["quoted"
+&mdash;
+<p>Para</p>]]></title>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" duration='1' url="ftp://files.example.com/ep361.jpg" type="audio/x-wav" fileSize='-0' isDefault="TRUE" medium="image"/>
+<content type="xhtml"> مرحبا</content>
+<category>Technology</category>
+<updated>17 sept 1983 19:29:10 +0100</updated></entry>
+<entry><itunes:image href='https://example.com/e.jpg'></itunes:image><id>
+id
+</id><d:date>2020-12-13T21:09:25+0000</d:date><title type="HTML">&lt;b>Bold&#x3C;/b> titleAT&#38;T&#x26;copy;</title></entry>
+<entry><id>
+id
+</id><updated>2024-10-22T05:35:33.494Central European Standard Time</updated><link rel="alternate" href="https://example.com/pay" title=""/><title type="html">
+R&amp;Da
+  b </title><link type='audio/mpeg' length="abc" title=''/><media:content xmlns:media="http://search.yahoo.com/mrss/" isDefault="TRUE" type="audio/opus" medium="Audio" duration="2147483648" url="https://user:pass@media.example.net/ep198.jpg" fileSize="16384"/></entry>
+<entry><itunes:image href=""/><content type="text"></content><summary><![CDATA[<br/> 😀
+&#0;<3]]> &#x3C;3&#60;br&gt;&#x3C;BR></summary><id>tag:x,2020:1</id><link title="MP3 feed" href="HTTPS://EXAMPLE.COM/ep265.torrent" type="application/xhtml+xml" rel="alternate" length="9223372036854775808"/><itunes:duration>1h30m</itunes:duration><title><![CDATA[&lt;b&gt;]]></title></entry>
+<entry><title type="html">&apos;single'"quoted"</title> <link length="12" rel="archives" title="MP3 feed" type="application/xhtml+xml"/> <author><name>Entry author</name></author> <updated>Saturday, 23 Feb 2019 12:55</updated> <content type='html'><![CDATA[<hr>&apos;a&apos;<br><div>&lt</div><p/>😀😀😀]]></content> <id>urn:uuid:1</id> <updated>2387-09-06MSK</updated> <psc:chapters><psc:chapter image="https://example.com/ch.png" href='' start="6059" title="Intro"/></psc:chapters> <link type="audio/mpeg" href="https://example.com/feed?page=2" rel="self" title=""/> <published> Fri, 06 Dec 1974 06:26:15  </published></entry>
+<entry><podcast:transcript language="en"/><podcast:transcript url="https://example.com/t.json" type="application/srt" language="en"/>
+<link href="https://example.com/pay" rel="self" length="9223372036854775808" title="MP3 feed"></link>
+<summary>&#60;p>שלום&lt;/p&gt;&lt;p&gt;&apos;single&apos;&lt;/p&gt;
+&#x26;copy;&#xA0;é&#13;
+&#38;#x1F600;
+#hash&#13;
+&#38;#;&#38;mdash;</summary>
+<title type="text"><![CDATA[100%  trailing   第671集]]></title>
+<content type="xhtml">
+&amp;#0;</content>
+<updated>&#13;
+2156-11-19T14:61:20  </updated>
+<itunes:image href=""/>
+<id> raw </id></entry>
+<entry><itunes:image href="https://example.com/e.jpg"/>
+  <link href="//example.com/dir.with.dots/ep207.amr" title="Café" type="text/html" rel=""/>
+  <id> raw </id>
+  <summary type="text"><![CDATA[ {json: 1}]]></summary>
+  <title type="HTML">R&#38;D &amp;#x1F600;</title></entry></feed>

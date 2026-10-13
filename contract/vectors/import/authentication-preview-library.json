@@ -1,0 +1,1670 @@
+{
+ "cases": [
+  {
+   "fixture": "internal/importer/androiddb/testdata/android-3.12.1/authentication-preview-library.db",
+   "format": "nottennapod-import-android-v1",
+   "ignored": {
+    "dropped_favorite_rows": [],
+    "dropped_queue_rows": [],
+    "extra_media": [],
+    "orphan_items": [],
+    "orphan_media": []
+   },
+   "podcasts": [
+    {
+     "creating_feed_id": 1,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": null,
+       "duration_ms": 30000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "header-media"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        1
+       ],
+       "state_item_id": 1,
+       "title": "Episode controls and retained shownotes",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": null,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "header-text"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        2
+       ],
+       "state_item_id": 2,
+       "title": "Text-only episode",
+       "units": []
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "global",
+     "normalized_url": "http://127.0.0.1:18765/episode-header.xml",
+     "populated": true,
+     "properties_feed_id": 1,
+     "source_feed_ids": [
+      1
+     ],
+     "state": "subscribed",
+     "title": "Episode Header Lab",
+     "url": "http://127.0.0.1:18765/episode-header.xml"
+    },
+    {
+     "creating_feed_id": 2,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "paged-12"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        3
+       ],
+       "state_item_id": 3,
+       "title": "Pagination episode 12",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "paged-11"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        4
+       ],
+       "state_item_id": 4,
+       "title": "Pagination episode 11",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "paged-10"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        5
+       ],
+       "state_item_id": 5,
+       "title": "Pagination episode 10",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "paged-9"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        6
+       ],
+       "state_item_id": 6,
+       "title": "Pagination episode 09",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "paged-8"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        7
+       ],
+       "state_item_id": 7,
+       "title": "Pagination episode 08",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "paged-7"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        8
+       ],
+       "state_item_id": 8,
+       "title": "Pagination episode 07",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "paged-6"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        9
+       ],
+       "state_item_id": 9,
+       "title": "Pagination episode 06",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "paged-5"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        10
+       ],
+       "state_item_id": 10,
+       "title": "Pagination episode 05",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "paged-4"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        11
+       ],
+       "state_item_id": 11,
+       "title": "Pagination episode 04",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "paged-3"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        12
+       ],
+       "state_item_id": 12,
+       "title": "Pagination episode 03",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "paged-2"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        13
+       ],
+       "state_item_id": 13,
+       "title": "Pagination episode 02",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "paged-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        14
+       ],
+       "state_item_id": 14,
+       "title": "Pagination episode 01",
+       "units": []
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "global",
+     "normalized_url": "http://10.0.2.2:18766/paged.xml",
+     "populated": true,
+     "properties_feed_id": 2,
+     "source_feed_ids": [
+      2
+     ],
+     "state": "subscribed",
+     "title": "Pagination Lab",
+     "url": "http://10.0.2.2:18766/paged.xml"
+    },
+    {
+     "creating_feed_id": 3,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": null,
+       "duration_ms": null,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "pull-4"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        15
+       ],
+       "state_item_id": 15,
+       "title": "Pull episode 4",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": null,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "pull-3"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        16
+       ],
+       "state_item_id": 16,
+       "title": "Pull episode 3",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": null,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "pull-2"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        17
+       ],
+       "state_item_id": 17,
+       "title": "Pull episode 2",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": null,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "pull-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        18
+       ],
+       "state_item_id": 18,
+       "title": "Pull episode 1",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": null,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "new"
+       },
+       "inbox": true,
+       "play_state": "new",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        19
+       ],
+       "state_item_id": 19,
+       "title": "Pull delivered episode",
+       "units": []
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "global",
+     "normalized_url": "http://10.0.2.2:18767/feed.xml",
+     "populated": true,
+     "properties_feed_id": 3,
+     "source_feed_ids": [
+      3
+     ],
+     "state": "subscribed",
+     "title": "Pull delivered podcast",
+     "url": "http://10.0.2.2:18767/feed.xml"
+    },
+    {
+     "creating_feed_id": 4,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "selection-8"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": true,
+       "source_item_ids": [
+        20
+       ],
+       "state_item_id": 20,
+       "title": "Selection episode 08",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "selection-7"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": true,
+       "source_item_ids": [
+        21
+       ],
+       "state_item_id": 21,
+       "title": "Selection episode 07",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "selection-6"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": true,
+       "source_item_ids": [
+        22
+       ],
+       "state_item_id": 22,
+       "title": "Selection episode 06",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "selection-5"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": true,
+       "source_item_ids": [
+        23
+       ],
+       "state_item_id": 23,
+       "title": "Selection episode 05",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "selection-4"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": true,
+       "source_item_ids": [
+        24
+       ],
+       "state_item_id": 24,
+       "title": "Selection episode 04",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "selection-3"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": true,
+       "source_item_ids": [
+        25
+       ],
+       "state_item_id": 25,
+       "title": "Selection episode 03",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "selection-2"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": true,
+       "source_item_ids": [
+        26
+       ],
+       "state_item_id": 26,
+       "title": "Selection episode 02",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "selection-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": true,
+       "source_item_ids": [
+        27
+       ],
+       "state_item_id": 27,
+       "title": "Selection episode 01",
+       "units": []
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "global",
+     "normalized_url": "http://10.0.2.2:18768/selection.xml",
+     "populated": true,
+     "properties_feed_id": 4,
+     "source_feed_ids": [
+      4
+     ],
+     "state": "subscribed",
+     "title": "Feed Selection Lab",
+     "url": "http://10.0.2.2:18768/selection.xml"
+    },
+    {
+     "creating_feed_id": 5,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-12"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        28
+       ],
+       "state_item_id": 28,
+       "title": "Preview episode 12",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-11"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        29
+       ],
+       "state_item_id": 29,
+       "title": "Preview episode 11",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-10"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        30
+       ],
+       "state_item_id": 30,
+       "title": "Preview episode 10",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-9"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        31
+       ],
+       "state_item_id": 31,
+       "title": "Preview episode 09",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-8"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        32
+       ],
+       "state_item_id": 32,
+       "title": "Preview episode 08",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-7"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        33
+       ],
+       "state_item_id": 33,
+       "title": "Preview episode 07",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-6"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        34
+       ],
+       "state_item_id": 34,
+       "title": "Preview episode 06",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-5"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        35
+       ],
+       "state_item_id": 35,
+       "title": "Preview episode 05",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-4"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        36
+       ],
+       "state_item_id": 36,
+       "title": "Preview episode 04",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-3"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        37
+       ],
+       "state_item_id": 37,
+       "title": "Preview episode 03",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-2"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        38
+       ],
+       "state_item_id": 38,
+       "title": "Preview episode 02",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        39
+       ],
+       "state_item_id": 39,
+       "title": "Preview episode 01",
+       "units": []
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "global",
+     "normalized_url": "http://10.0.2.2:18769/preview.xml?run=android",
+     "populated": true,
+     "properties_feed_id": 5,
+     "source_feed_ids": [
+      5
+     ],
+     "state": "subscribed",
+     "title": "Preview Navigation Lab",
+     "url": "http://10.0.2.2:18769/preview.xml?run=android"
+    },
+    {
+     "creating_feed_id": 8,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": {
+        "history": 1789901602189,
+        "last_played": 1789901602172,
+        "played_ms": 56851,
+        "source_item_id": 60,
+        "source_media_id": 54
+       },
+       "duration_ms": 30040,
+       "favorite": false,
+       "history": 1789901602189,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-12"
+       },
+       "inbox": false,
+       "play_state": "played",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        60
+       ],
+       "state_item_id": 60,
+       "title": "Preview episode 12",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-11"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        61
+       ],
+       "state_item_id": 61,
+       "title": "Preview episode 11",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-10"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        62
+       ],
+       "state_item_id": 62,
+       "title": "Preview episode 10",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-9"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        63
+       ],
+       "state_item_id": 63,
+       "title": "Preview episode 09",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-8"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        64
+       ],
+       "state_item_id": 64,
+       "title": "Preview episode 08",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-7"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        65
+       ],
+       "state_item_id": 65,
+       "title": "Preview episode 07",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-6"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        66
+       ],
+       "state_item_id": 66,
+       "title": "Preview episode 06",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-5"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        67
+       ],
+       "state_item_id": 67,
+       "title": "Preview episode 05",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-4"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        68
+       ],
+       "state_item_id": 68,
+       "title": "Preview episode 04",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-3"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        69
+       ],
+       "state_item_id": 69,
+       "title": "Preview episode 03",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-2"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        70
+       ],
+       "state_item_id": 70,
+       "title": "Preview episode 02",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "preview-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        71
+       ],
+       "state_item_id": 71,
+       "title": "Preview episode 01",
+       "units": []
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": false,
+     "new_episodes_action": "global",
+     "normalized_url": "http://10.0.2.2:18769/preview.xml?run=lifecycle-android",
+     "populated": true,
+     "properties_feed_id": 8,
+     "source_feed_ids": [
+      8
+     ],
+     "state": "not_subscribed",
+     "title": "Preview Navigation Lab",
+     "url": "http://10.0.2.2:18769/preview.xml?run=lifecycle-android"
+    },
+    {
+     "creating_feed_id": 10,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": {
+        "history": 1789914872428,
+        "last_played": 1789914872428,
+        "played_ms": 53421,
+        "source_item_id": 84,
+        "source_media_id": 78
+       },
+       "duration_ms": 30040,
+       "favorite": false,
+       "history": 1789914872428,
+       "identity": {
+        "k": "rss-guid",
+        "v": "parity-episode-2"
+       },
+       "inbox": false,
+       "play_state": "played",
+       "position_ms": 4353,
+       "queued": true,
+       "source_item_ids": [
+        84
+       ],
+       "state_item_id": 84,
+       "title": "Second episode: queue and resume",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 30000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "parity-episode-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        85
+       ],
+       "state_item_id": 85,
+       "title": "First episode: a short introduction",
+       "units": []
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "global",
+     "normalized_url": "http://127.0.0.1:18765/feed.xml",
+     "populated": true,
+     "properties_feed_id": 10,
+     "source_feed_ids": [
+      10
+     ],
+     "state": "subscribed",
+     "title": "Parity Listening Lab",
+     "url": "http://127.0.0.1:18765/feed.xml"
+    }
+   ],
+   "queue": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    84
+   ],
+   "result": {
+    "ambiguous": [],
+    "imported": {
+     "episodes": 53,
+     "favorites": 0,
+     "history": 2,
+     "inbox": 1,
+     "podcasts": 7,
+     "queue": 9
+    },
+    "merged": [],
+    "skipped": [
+     {
+      "reason": "unused_preview",
+      "source_feed_id": 6,
+      "title": "Preview Navigation Lab"
+     },
+     {
+      "reason": "unused_preview",
+      "source_feed_id": 9,
+      "title": "Authentication Lab"
+     }
+    ]
+   },
+   "sha256": "d938f32300bfb26e93c7f12539493a5980aede3ddaa21fb9c581a6cebece4538",
+   "statistics": {
+    "android": {
+     "monthly": [
+      {
+       "month": 9,
+       "played_ms": 110272,
+       "year": 2026
+      }
+     ],
+     "per_feed": [
+      {
+       "episodes": 2,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "feed_id": 1,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 30000
+      },
+      {
+       "episodes": 12,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "feed_id": 2,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "episodes": 5,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "feed_id": 3,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "episodes": 8,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "feed_id": 4,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "episodes": 12,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "feed_id": 5,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "episodes": 2,
+       "episodes_started": 1,
+       "episodes_started_marked": 1,
+       "feed_id": 10,
+       "played_marked_ms": 53421,
+       "played_ms": 53421,
+       "total_ms": 60040
+      }
+     ],
+     "per_podcast": [
+      {
+       "creating_feed_id": 1,
+       "episodes": 2,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 30000
+      },
+      {
+       "creating_feed_id": 2,
+       "episodes": 12,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "creating_feed_id": 3,
+       "episodes": 5,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "creating_feed_id": 4,
+       "episodes": 8,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "creating_feed_id": 5,
+       "episodes": 12,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "creating_feed_id": 10,
+       "episodes": 2,
+       "episodes_started": 1,
+       "episodes_started_marked": 1,
+       "played_marked_ms": 53421,
+       "played_ms": 53421,
+       "total_ms": 60040
+      }
+     ],
+     "windows": [
+      {
+       "from": 0,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 3,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 4,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 5,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 10,
+         "played_ms": 53421
+        }
+       ],
+       "to": null
+      },
+      {
+       "from": 1788220800000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 3,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 4,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 5,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 10,
+         "played_ms": 53421
+        }
+       ],
+       "to": null
+      },
+      {
+       "from": 1788220800000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 3,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 4,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 5,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 10,
+         "played_ms": 53421
+        }
+       ],
+       "to": 1790812800000
+      }
+     ]
+    },
+    "causes": [
+     {
+      "cause": "skipped_unused_preview",
+      "detail": "a skipped feed's rows count in Android's statistics (per feed when its state is not 1, per month always) and nowhere after the import",
+      "source_feed_ids": [
+       6,
+       9
+      ],
+      "source_item_ids": [
+       40,
+       41,
+       42,
+       43,
+       44,
+       45,
+       46,
+       47,
+       48,
+       49,
+       50,
+       51,
+       72,
+       73,
+       74,
+       75,
+       76,
+       77,
+       78,
+       79,
+       80,
+       81,
+       82,
+       83
+      ]
+     }
+    ],
+    "expected_differences": [],
+    "mismatches": [],
+    "projection": {
+     "monthly": [
+      {
+       "month": 9,
+       "played_ms": 110272,
+       "year": 2026
+      }
+     ],
+     "per_podcast": [
+      {
+       "creating_feed_id": 1,
+       "episodes": 2,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 30000
+      },
+      {
+       "creating_feed_id": 2,
+       "episodes": 12,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "creating_feed_id": 3,
+       "episodes": 5,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "creating_feed_id": 4,
+       "episodes": 8,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "creating_feed_id": 5,
+       "episodes": 12,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "creating_feed_id": 10,
+       "episodes": 2,
+       "episodes_started": 1,
+       "episodes_started_marked": 1,
+       "played_marked_ms": 53421,
+       "played_ms": 53421,
+       "total_ms": 60040
+      }
+     ],
+     "windows": [
+      {
+       "from": 0,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 3,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 4,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 5,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 10,
+         "played_ms": 53421
+        }
+       ],
+       "to": null
+      },
+      {
+       "from": 1788220800000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 3,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 4,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 5,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 10,
+         "played_ms": 53421
+        }
+       ],
+       "to": null
+      },
+      {
+       "from": 1788220800000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 3,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 4,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 5,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 10,
+         "played_ms": 53421
+        }
+       ],
+       "to": 1790812800000
+      }
+     ]
+    }
+   },
+   "user_version": 3110000
+  }
+ ],
+ "suite": "import_android"
+}

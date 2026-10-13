@@ -1,0 +1,22 @@
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:at="http://www.w3.org/2005/Atom"> <channel xmlns:media="http://search.yahoo.com/mrss/"><atom:link title='MP3 feed' rel="" href="https://example.com/alt.xml" type="application/rss+xml" length='abc'/><atom:link rel="alternate" title='Alternate' href="https://example.com/feed?page=2" type="text/html"/><itunes:summary>😀😀😀&amp;#xA9;&#60;div&gt;&amp;#x1F600;&#60;/div>R&amp;D&lt;li&gt;&#x26;amp;amp;&#60;/li>&#13;
+trailing &lt;p>&#38;lt;b&#x26;gt;&lt;/p>aaaaaaa</itunes:summary><title><![CDATA[sep]]></title><itunes:author>Jane &amp;amp; John</itunes:author><itunes:image href=""/><description>&lt;p/>&#x3C;br/&gt; &#x26;apos;a&amp;apos;&lt;p>&#38;lt&#60;/p>&lt;div>100%&lt;/div>
+
+http://example.com/?a=1&#38;b=2&#60;hr/&gt;&#60;div&gt;&#x26;lt&#x3C;/div></description><itunes:category text="Arts"><itunes:category text="Design"/></itunes:category><pi:funding url="https://example.com/donate">&#60;b&gt;x&#x3C;/b&gt;</pi:funding><at:link title="Café" rel="archives" href=' //example.com/10.html '/><item><itunes:summary>&#60;br&gt;&#x3C;div&gt; leading&lt;/div&gt;  &#x26;Lt;&lt;li&gt;ש&#1500;ום&#x3C;/li&gt;&lt;img src=&quot;x" alt="y"/&gt;&lt;div&gt;&amp;apos;a&#38;apos;&#x3C;/div&gt;&#x3C;img&gt;&lt;p&gt;&amp;quot;q&#x26;quot;&lt;/p&gt;</itunes:summary>
+  <enclosure url="https://xn--caf-dma.example/382.html" length="２０００００" type='audio/flac'/>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <pubDate>Thu, 25 Jan 1601 06:14 -0500</pubDate>
+  <title>plain wordsTom &amp;amp; Jerry &amp;lt;3</title>
+  <itunes:duration>0:47:54</itunes:duration>
+  <description><![CDATA[<li>AT&T</li><img src="x" alt="y"/>
+茶	&quot;q&quot;ééé]]></description></item><item><itunes:image href=" https://e.com/i.png "/>
+<link> https://e.com/x </link>
+<itunes:duration>1:53:16</itunes:duration>
+<title><![CDATA[​ <div><p><3 <3</p></div>]]></title>
+<enclosure url='https://cdn.example.com/ep298.webm' length="-0" type="video/quicktime"/>
+<itunes:subtitle>&#38;amp;amp;</itunes:subtitle>
+<description><![CDATA[ &#169;	&apos;a&apos;<img>a cafécr
+lf😀😀ééé]]></description>
+<pubDate>2016-06-03T00:44:44+0000</pubDate>
+<guid isPermaLink="true"></guid></item><item><title><![CDATA[a=b&c=d
+back\slash]]></title> <guid isPermaLink="false">urn:uuid:67e39083</guid> <link> https://e.com/x </link> <pubDate>Wednesday, 20 Feb 2013 12:48:99</pubDate> <description>&#60;img src="x.png">&lt;li&gt;שלום&lt;/li&gt;	&amp;#0;&lt;li&gt;&amp;euro;&#60;/li>&amp;lt;b&#x26;gt;</description> <itunes:subtitle>&#x3C;div>&#x3C;p&gt;é&lt;/p>&lt;/div&gt;</itunes:subtitle> <itunes:author>Item author</itunes:author> <enclosure url="" length='0' type="unknown"/></item></channel>
+</rss>

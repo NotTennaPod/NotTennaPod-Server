@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters">
+  <link rel="" href="https://example.com/pay" title="MP3 feed" type="application/xml+xhtml"/>
+<id>https://example.com/feed</id>
+<updated>SUN, 26 Mar 2169 07:50 +0945</updated>
+<link length="12" rel="hub" type="application/rss+xml" href="https://example.com/pay"/>
+<itunes:author><![CDATA[<b>Studio</b>]]></itunes:author>
+<title type="html"><![CDATA[1 <2]]></title>
+<x:foo xmlns:x="urn:x"><title><![CDATA[Nested title]]></title></x:foo>
+<link rel="alternate" href="https://example.com/alt.xml" type="application/rss+xml"/>
+<entry><id>tag:x,2020:1</id>
+<title type="html">a&#13;
+b&#x26;#xD800;</title>
+<summary type="html">
+&amp;#0;</summary>
+<itunes:duration>8837.364</itunes:duration></entry>
+<entry><media:content fileSize='12' url="https://xn--caf-dma.example/dir.with.dots/ep139.oga" type="text/plain" isDefault="1" medium="document" duration="2147483"></media:content>
+<summary type="html">&lt;p&gt;&#60;/p&gt;</summary>
+<link length="20000" type="" rel="archives" href="//example.com/ep60.aac"/>
+<published>Sat, 20 March 2286 03:03 -1200</published>
+<id>urn:uuid:1</id>
+<title type="html"><![CDATA['single'
+<B>  padded  </b>
+&copy;]]></title>
+<psc:chapters version="1.2"><psc:chapter start="29:09" image="https://example.com/ch.png"/><psc:chapter start="01:53:15" title="&lt;b>x&lt;/b>" href="https://example.com/ch"/></psc:chapters>
+<itunes:duration>2:21:40</itunes:duration></entry>
+<entry><itunes:explicit>clean</itunes:explicit>
+  <updated>Thu 30 Oct 1982 20:58:57 GMT+0945 (EET)</updated>
+  <content>&#160;{json: 1}&#60;br/>&lt;p&gt;&#x26;hellip;&lt;/p></content>
+  <link type="application/rss+xml" href="https://example.com/feed?page=2" rel="hub" title="MP3 feed" length="abc"/>
+  <link length="abc" href="https://example.com/feed?page=2" rel="Next" type="application/rss+xml"/>
+  <author><name>Entry author</name></author>
+  <title type="html">http://example.com/?a=1&amp;b=2
+&amp;Lt;</title>
+  <id> raw </id>
+  <published>1985-10-13T05:57:20.628 +1400</published>
+  <link type='audio/mpeg' href="https://example.com/pay" title="MP3 feed" rel="" length="20000"/></entry>
+<entry><id></id>
+<title>&#13;
+Folge 859: &#220;ber alles Tom &amp; Jerry &lt;3 'single'&#13;
+</title>
+<updated>Friday, 01 Nov 1974 21:31:47</updated>
+<link type='text/html' href="https://example.com/pay" title="Caf&#233;"/>
+<link rel="alternate" href="https://example.com/" title="Alternate" length='20000' type="application/rss+xml"/>
+<itunes:duration>41:36</itunes:duration>
+<updated>Tue, 02 Apr 2024 19:34 UTC+01:00</updated></entry>
+<entry><title>&#x26;amp;amp;&#60;span>Episode 12&#60;/span&gt;&amp;;</title> <id> raw </id> <itunes:image href=""/> <itunes:duration>71:23</itunes:duration> <published>2508-07-19T12:07:57GMT-05:00</published></entry>
+<entry><link title='' type="application/xhtml+xml" rel="Next" href="https://example.com/" length="abc"/>
+<psc:chapters><psc:chapter href="" title="&#128512;" start='36:02' image="https://example.com/ch.png"/><psc:chapter image="https://example.com/ch.png" href="https://example.com/ch" start="115:35" title="&#128512;"></psc:chapter></psc:chapters>
+<itunes:duration>00:45</itunes:duration>
+<title type="html"> leading
+Folge 464: &#220;ber alles
+cr&#13;lf</title>
+<summary type="html"><![CDATA[<div>plain words</div>
+tab	here]]></summary>
+<content type="html">&lt;br>&#x3C;li&gt;cr&#13;lf&lt;/li></content></entry>
+<entry><content type="plain"><![CDATA[{json: 1}
+
+{json: 1}<hr/>]]></content> <published>Monday Nov 23 06:13:21 1993</published> <updated>12 Nov 52 09:35 +0945</updated> <link length="abc" type="application/xhtml+xml" rel='' title='Caf&#233;'/> <link rel="payment" length="12" title="Caf&#233;" href='https://example.com/pay' type=""/> <title type="text"><![CDATA[http://example.com/?a=1&b=2  a > b]]></title> <summary type="html"><![CDATA[<p>&#33590;</p>a=b&c=d<br><hr>	{json: 1}Folge 7: &#220;ber alles]]></summary> <link type="application/atom+xml" href="//example.com/e p152.wma" rel="last" title="Alternate" length="abc"/> <id>
+id
+</id></entry>
+<entry><published>Sat Jul 31 19:41:03 1900</published><id> raw </id><link type="application/xhtml+xml" length="20000" rel='self' title="" href=""></link><author><name>Entry author</name></author><link rel="enclosure" type="application/rss+xml" title="MP3 feed"/><content type="html"></content></entry>
+<entry><title type="xhtml">&#38; &#38;#65;&#x26;#66; &#33590;</title>
+<link title="" rel="self" href="https://example.com/feed?page=2"/>
+<updated>0999-05-10T03:58:50-1200</updated>
+<id></id>
+<content type="html">&#60;li&gt;cr
+lf&lt;/li></content>
+<itunes:image href="https://example.com/e.jpg"/>
+<published>Sun, 22 Sep 1985 16:55:00 +0000</published></entry>
+<entry><link rel="hub" href="https://example.com/alt.xml"/>
+<summary type="HTML"><![CDATA[<div>100%</div>
+Episode 12&#233;&#233;&#233;]]></summary>
+<id>tag:x,2020:1</id>
+<title type="HTML"><![CDATA[&copy]]>;  &#x26;lt</title>
+<link title="MP3 feed" type="application/rss+xml" href="https://example.com/feed?page=2"/>
+<content type="html"></content></entry>
+<entry><content type="text">&#13;
+&#x26;&#128512;&#128512;&#128512;&#128512;&lt;img src=&quot;x" alt="y"/&gt;</content> <author><name>Entry author</name></author> <title type="text"><![CDATA[&amp;
+[x]]]></title> <updated>2010-07-17T01:48:21.234+0200</updated> <id></id> <published>Sat, 08 Sept. 2024 04:17:22 -1200</published></entry>
+<entry><updated>Fri, 18 Apr 2302 02:55:34 -05</updated>
+<summary>
+
+&#1513;&#x5DC;&#1493;&#1501;</summary>
+<id> raw </id>
+<link href="https://example.com/pay" rel="Next" length="20000"/>
+<updated>Fri, 06 Apr 1973 04:59:34</updated>
+<published>2010-03-06T22:10:52+0530&#160;</published>
+<link length="12" href='https://user:pass@media.example.net/dir.with.dots/ep264.ogx' rel="archives" title="MP3 feed" type=""/>
+<link rel="enclosure" length="12" title="" type='' href="https://example.com/"/>
+<title type='text'>&#x26;nbsp;
+&#128512;</title></entry>
+</feed>

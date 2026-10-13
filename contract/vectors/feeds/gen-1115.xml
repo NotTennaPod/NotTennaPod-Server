@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><i:image href="https://example.com/it.jpg"/>
+  <description> &#38;#xFFFF;  &#38;&lt;img src="x.png"&gt;&lt;div&gt;cr
+lf&#x3C;/div&gt;Tom &amp; Jerry &#x3C;3&#60;div&gt;#7 &#8211; Interview&#60;/div>&#60;p>&#x26;unknown;&lt;/p>&#x3C;BR&gt;</description>
+  <link></link>
+  <item><title><![CDATA[&;  <dfn>"quoted"</dfn>]]></title>
+  <guid isPermaLink="false">dup</guid>
+  <link></link>
+  <description></description>
+  <i:image href="https://example.com/ep.jpg"></i:image>
+  <enclosure url="https://user:pass@media.example.net/dir.with.dots/ep43.oga" length="123456789012345678" type="application/octet-stream"></enclosure></item>
+  <i:owner><i:name>Owner</i:name><i:email>o@example.com</i:email></i:owner>
+  <image><link>https://example.com/img-link</link><title>Image title</title><url>  https://example.com/ws.png
+</url></image>
+  <title>
+&#1513;&#1500;&#1493;&#1501; &amp;l<![CDATA[t  ]]></title></channel>
+</rss>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<subtitle>aaaaa&#60;hr/&gt;&#60;div&gt;#hash&#60;/div&gt;&#x1F600;&#128512;&#128512;&#128512;&lt;li&gt;&#33590;&lt;/li&gt;  &#xA0;&lt;p>"quoted&quot;&#x3C;/p>
+&#128512;</subtitle>
+<id>urn:x</id>
+<link title="" href="https://example.com/alt.xml" type="application/xhtml+xml" rel="Next" length="abc"/>
+<link rel="hub" title='Alternate' type="" href="https://example.com/alt.xml"/>
+<title><![CDATA[{json: 1} &#x1F600;]]></title>
+<link type="application/xml+xhtml" href="" rel=""/>
+<logo>https://example.com/logo.png</logo>
+<link title="" rel="payment" href=""/>
+  </feed>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><itunesu:image href="https://example.com/it.jpg"></itunesu:image>
+<image><url></url><title>Image title</title></image>
+<title>tab	here1 &#60;2</title>
+<link>https://example.com</link>
+<itunesu:author><![CDATA[A, B]]></itunesu:author>
+<podcast:funding></podcast:funding>
+<itunesu:owner><itunesu:name>Owner</itunesu:name><itunesu:email>o@example.com</itunesu:email></itunesu:owner>
+<link xmlns="http://www.w3.org/2005/Atom" rel="payment" title='Alternate' href="https://example.com/feed?page=2"/>
+<item><title><![CDATA[&#x;  #hash  <3 <3]]></title>
+<guid isPermaLink="false"></guid>
+<link></link>
+<pubDate>1972-12-06</pubDate>
+<itunesu:subtitle>&amp;Lt; &lt;code&gt;&#38;lt&lt;/code&gt;</itunesu:subtitle>
+<itunesu:image/>
+<itunesu:duration>153:54</itunesu:duration>
+<enclosure url="" length="1" type="application/x-bittorrent"/>
+<enclosure url="" length="4294967296" type="audio/mp4"/>
+<enclosure type="audio/"/>
+<media:content fileSize="-0" type="unknown" url='https://user:pass@media.example.net/a/b/c9.m4a' duration="-5" medium="audio"></media:content></item>
+<item><link>https://example.com/ep</link><media:content type="audio" medium="document" fileSize="9007199254740991" duration="01:00"></media:content><title><![CDATA[	AT&T ]]></title><itunesu:image href=""/><itunesu:duration>:30</itunesu:duration><guid>  spaced guid  </guid><podcast:socialInteract uri="" protocol="activitypub"></podcast:socialInteract></item>
+<item><guid isPermaLink="false">a&#38;b</guid> <itunesu:image href=" https://e.com/i.png "/> <title><![CDATA[é]]></title> <link></link> <enclosure length="123456789012345678" type="Audio/MPEG"/> <enclosure url="https://example.com:8443/136.caf?a=1&amp;b=2" length='00020000' type="audio/mp3"/> <pubDate>Thu, 01 Jan 2024 10:00:00 +0000</pubDate> <description><![CDATA[ a=b]]>&#38;c=daaaaaaaa&#x3C;br/></description></item></channel> </rss>

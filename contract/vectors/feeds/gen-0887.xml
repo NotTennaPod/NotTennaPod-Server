@@ -1,0 +1,15 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="en"> <author><name>C&amp;D</name></author>
+<link title='MP3 feed' type="audio/mpeg" rel="related" href="https://example.com/pay" length="20000"/>
+<author><name>Émile</name></author>
+<author><name>Émile</name></author>
+<media:thumbnail url="https://example.com/amt.jpg"></media:thumbnail>
+<link rel="Next" href='https://example.com/alt.xml' length="9223372036854775808" title="" type=""/>
+<id></id>
+<entry><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;unknown;  #188 &#x2013; Interview  &amp;#;</div></title> <summary type="text"><![CDATA[<p><b>Bold</b> title</p>	a
+
+b  leading]]></summary> <itunes:duration>1:18:25</itunes:duration> <updated>Saturday, 19 Jul 1997 05:16 -1200</updated> <link type="" href='https://example.com/feed?page=2' rel='alternate' title="MP3 feed"/> <itunes:image href='https://example.com/e.jpg'/></entry>
+<entry><link href="https://example.com/alt.xml" rel='payment' length="abc" type="application/xhtml+xml"/><published>Fri, 19 May 2017 14:22</published><itunes:duration>135:30</itunes:duration><title>{json: 1}  &#38;lt;b&amp;gt;</title><id>
+id
+</id><summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+&#38;lt;b&#x26;gt;Episode 12&lt;br&gt;&#x3C;img src=&quot;x.png"&gt;[x]&lt;br>&lt;br /></div></summary><updated>Day1, Thu, 06 Jan 2011 17:13:10 +0530</updated><media:content url="http://example.org/e p0.OGG?file=x.mp3" fileSize="1" duration="0" isDefault='false' type="application/json"/><link href="https://example.com/" length="9223372036854775808" title="MP3 feed" rel="self"/></entry>
+  </feed>

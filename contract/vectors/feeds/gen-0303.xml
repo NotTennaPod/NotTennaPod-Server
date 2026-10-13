@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="US-ASCII"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en"> <link rel="Next" type="text/html" href="https://example.com/" length="abc"/> <id>https://example.com/feed</id> <author><name>Ann</name></author> <itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url> <title type="text">sep&#8203;</title> <itunes:image href=""/> <entry><link type='application/atom+xml' rel="" length="9223372036854775808" href="https://example.com/feed?page=2"/>
+<id>
+id
+</id>
+<itunes:image href=''></itunes:image>
+<link length="20000" href="https://example.com/pay" type="application/rss+xml" rel="Next"/>
+<updated>&#233;t&#233;, 	16 Jan 1752 00:53:40 +0100</updated>
+<published>Wed, 16 Jun 2145 22:53:27 CET</published>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;;
+&#160;</div></title></entry> <entry><link href="https://example.com/a.b/e p85.aac?a=1&amp;b=2" rel="alternate" title="MP3 feed"/>
+<title type="html"><![CDATA[<img src="x.png"> cover <s>&apos;a&apos;</s> a > ]]>b</title>
+<published>Mon Dec 24 20:56:51 2496</published>
+<updated>2013-09-26T09:26:20.185</updated>
+<link rel="first" title='Caf&#233;' type="application/xhtml+xml" length="abc"></link>
+<link length="20000" rel="related" title='Alternate'/></entry> <entry><link title="" href="https://example.com/"/>
+<title type="html"><![CDATA[&copy;<font color="red">a=b&c=d</font>]]></title>
+<link title="Alternate" rel="alternate" href="//example.com/ep276.txt?file=x.mp3"/>
+<updated>2024-01-02+0945</updated>
+<id>urn:uuid:1</id>
+<link rel="Next" length="9223372036854775808" type="audio/mpeg" title="Caf&#233;"/>
+<summary type="html">&amp;&#160;&amp;lt&#x3C;img&gt;&#60;br/&gt;	&amp;;</summary>
+<updated>Fri, 26 august 2304 22:47:42 +1400</updated></entry></feed>

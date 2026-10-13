@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns="http://backend.userland.com/rss2" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:sc="http://podlove.org/simple-chapters"><podcast:funding>Support us</podcast:funding>
+  <itunes:new-feed-url>https://new.example.com/feed</itunes:new-feed-url>
+  <image><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link></image>
+  <atom:link type="" href="https://example.com/feed?page=2" length="9223372036854775808" title="Café" rel="enclosure"></atom:link>
+  <description><![CDATA[<p/><p>Folge 7: Über alles</p><p><b>Bold</b> title</p><li>sep</li><li>&#128512;</li>]]></description>
+  <title><![CDATA[#80 – Interview  Tom & Jerry <3]]></title>
+  <link></link>
+  <podcast:funding>  spaced  </podcast:funding>
+  <itunes:author></itunes:author>
+  <itunes:summary>של&#x5D5;ם&#60;br&gt;
+
+&#x26;amp&#x26;nbsp;😀😀&#x3C;div> leading&lt;/div></itunes:summary></channel> </rss>

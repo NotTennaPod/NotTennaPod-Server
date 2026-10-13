@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0"><channel xmlns:atom="http://www.w3.org/2005/Atom"><language>TR</language><description><![CDATA[<div>&lt</d]]>iv&gt;</description><podcast:funding>&lt;b&gt;x&lt;/b></podcast:funding><image><url>  https://example.com/ws.png
+</url></image><link>https://example.com</link><title><![CDATA[Folge 2: Über alles]]></title><podcast:funding url="https://example.com/donate">  spaced  </podcast:funding><item><title>Episode 6<![CDATA[80  <div>&#xD800;</div>  é]]></title><sc:chapters xmlns:sc="http://podlove.org/simple-chapters"><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" title="😀" href="https://example.com/ch" start="35791:23:47.647"/><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" image="https://example.com/ch.png" start="-2147483648:00:00" title="Intro"/><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" start='00:19:14' title="" href=""/></sc:chapters><enclosure url=" //example.com/a/b/c131.mp3.zip " length="+20000" type="audio/mp4"/><pubDate>20 Oct 91 06:52 +1400</pubDate><media:group><media:content url="HTTPS://EXAMPLE.COM/ep265.torrent" duration="9223372036854775807" type="image/jpeg" fileSize="２０００００" medium="video"/></media:group><podcast:chapters type='application/json+chapters'/><description>&#x3C;p&gt;&#x3C;/p&gt;&quot;qu<![CDATA[oted"]]></description><guid>a&#x26;b</guid><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[ Episode 12<p></p><li>café</li>]]></content:encoded><link>https://example.com/ep</link></item><item><title>ש&#x5DC;ום</title>
+  <guid isPermaLink="true">dup</guid>
+  <pubDate>2016-06-03T00:44:44+0000</pubDate>
+  <itunes:duration>0:02:53</itunes:duration>
+  <media:group><media:content duration="59" fileSize="52428800" type="audio/opus" medium='image' url="http://example.org/dir.with.dots/ep54.aif"/><media:content type="audio/*" isDefault="TRUE" duration="1" fileSize="" medium="image"/></media:group></item><item><podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/>
+<link xmlns="http://www.w3.org/2005/Atom" rel="self" length="abc" href="https://example.com/" type='application/xml+xhtml' title="Café"/>
+<title>&#38;;</title>
+<link>https://example.com/ep</link>
+<itunes:author>Item author</itunes:author>
+<description></description>
+<guid>  spaced guid  </guid>
+<enclosure length="18446744073709551616" type="audio/mp4"/>
+<pubDate>Saturday, 08 Jun 74 05:16 +1400</pubDate>
+<itunes:duration>0:44:32</itunes:duration></item></channel>
+</rss>

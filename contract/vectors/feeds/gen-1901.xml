@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom"> <channel><at:link length="9223372036854775808" href="" title="MP3 feed" type="application/atom+xml" rel="first"/><pi:funding>Support us</pi:funding><!-- comment --><?pi data?><pi:funding></pi:funding><at:link title="Café" length='abc' href="https://example.com/pay" type="text/html" rel="first"/><title><![CDATA[茶
+  spaced  
+&#xFFFF;]]></title><language>de-DE</language><link> https://example.com/ </link><item><enclosure url="https://cdn.example.com/a/b/c99.jpg" length="16384" type="audio/ogg"/>
+<guid>
+</guid>
+<content:encoded></content:encoded>
+<media:content duration="01:00" type="text/plain" fileSize="123456" medium="Audio"/>
+<pubDate>10 APR 88 16:28 +0530</pubDate>
+<title>&amp;#128512;&lt;sub>&#x3C;3 &lt;3&#60;/sub&gt;100%</title>
+<link></link>
+<pi:transcript type="application/x-subrip" language="en"/></item><item><media:thumbnail/>
+<description>&#60;hr/>&#60;div>&amp;#;&#x3C;/div&gt;aaaa</description>
+<link></link>
+<guid isPermaLink='true'>
+</guid>
+<content:encoded>a&#13;
+b&lt;br&gt;</content:encoded>
+<enclosure length="" type="video/quicktime"/></item><item><pubDate>Mon, 16 Oct 1995 10:53:09</pubDate><description>&lt;img&gt;&lt;hr/> &amp;#0;aaaAT&amp;T&lt;br&gt;</description><guid isPermaLink="true"></guid><enclosure url="https://cdn.example.com/a/b/c397.jpg" length="9007199254740993" type="image/png"/><enclosure url="ftp://files.example.com/café/120.ogx" length="２０００００" type="audio/mpeg"/><enclosure url="https://example.com:8443/dir.with.dots/ep115.mp4" length="0" type="audio/aac"/><title><![CDATA[ <blo]]>ckquote>100%&#60;/blockquote>&lt;strike&gt;&lt;3 &lt;3&lt;/strike&gt;</title><psc:chapters version='1.2'><psc:chapter href='https://example.com/ch' title="&lt;b>x&lt;/b>" start="87:29"/><psc:chapter title="" start="8078"></psc:chapter><psc:chapter href="https://example.com/ch" start=""/><psc:chapter href="" image="https://example.com/ch.png" title="&lt;b>x&lt;/b>" start="4297"/><psc:chapter start="03:57:51.982" image="https://example.com/ch.png" title="Café &amp;amp; more" href="https://example.com/ch"/></psc:chapters></item></channel>
+</rss>

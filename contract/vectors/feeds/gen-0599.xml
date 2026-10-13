@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><title> leading</title>
+<itunes:image/>
+<link></link>
+<atom:link type="application/xhtml+xml" length="abc" rel="Next"/>
+<description>aa&lt;br/&gt;&lt;p>café&lt;/p&gt;&lt;div>http://example.com/?a=1&amp;b=2&lt;/div&gt;&lt;p&gt;&lt;/p&gt;</description>
+<itunes:summary>&#60;br /&gt;</itunes:summary>
+<item><itunes:duration>135:28</itunes:duration><guid isPermaLink="true">urn:uuid:a1b10663</guid><enclosure length="9223372036854775808" type="audio/*"/><title>&#128512;1 &lt;2</title><description><![CDATA[<p>&#;</p>]]></description><itunes:subtitle><![CDATA[&quot;q&quot;]]></itunes:subtitle><pubDate>Tue, 24 Apr 2491 13:56 +05:30</pubDate><media:thumbnail url=""/><itunes:image href=" "/><itunes:summary>&#60;img></itunes:summary></item>
+<item><content:encoded>&#x3C;br/&gt;&amp;#0;&#x3C;<![CDATA[br><p>[x]</p><div>&unknown;</div><div>&#8203;</div>]]></content:encoded>
+  <guid isPermaLink="true"> </guid>
+  <link>https://example.com/ep</link>
+  <itunes:summary><![CDATA[&#65;&#66;<br>"quoted"<br>]]></itunes:summary>
+  <title>&#x7B2C;520&#38598;</title>
+  <itunes:duration>4655.930</itunes:duration>
+  <pubDate>Wed, 23 Jun 1993 21.13:42 -0500</pubDate>
+  <enclosure length="9007199254740991" type="audio/mp4"/>
+  <media:content medium="audio" url='https://example.com/a.b/e p85.aac?a=1&amp;b=2' isDefault='1' fileSize="1,000,000" type="audio/flac"/>
+  <media:description>&lt;br/&gt;&#x3C;br/&gt; &#38;Lt;</media:description>
+  <itunes:subtitle><![CDATA[a < b]]></itunes:subtitle>
+  <media:content medium="image" fileSize="-1" type="audio/*" duration="9223372036854775807" url="https://cdn.example.com/98.mp4"/></item></channel> </rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link rel="first" length="abc" type="application/atom+xml" title="Café" href="https://example.com/alt.xml"/>
+<link></link>
+<title>&lt;s&gt;&amp;#xD800;&#x3C;/s></title>
+<atom:link type="application/xml+xhtml" href="https://example.com/" length="9223372036854775808" title="Alternate" rel="Next"/>
+<atom:link rel="first" length='12' type="application/rss+xml"/>
+<description>😀😀😀&lt;p>&#38;euro;&#x3C;/p>&#x3C;p>&lt;/p>&amp;amp;amp;&lt;br&gt;
+a=b&#38;c=d<![CDATA[]]></description>
+<itunes:author><![CDATA[Jane Doe]]></itunes:author>
+<itunes:subtitle>&apos;single&apos;</itunes:subtitle>
+<itunes:image/>
+<dc:creator>DC Creator</dc:creator>
+<item><media:thumbnail/>
+  <atom:link title='Café' href="https://xn--caf-dma.example/371.m4v" rel='' type="text/html"/>
+  <link></link>
+  <itunes:duration>12663</itunes:duration>
+  <pubDate>Sat, 22 Jul 1950 11:61:42 +0945</pubDate>
+  <description>&amp;quot;q&#38;quot;&#x3C;br></description>
+  <enclosure url="" length="0x4E20" type="application/ogg"/>
+  <enclosure url="" length="16383" type="application/json"/>
+  <guid>urn:uuid:c42ea48b</guid>
+  <itunes:summary><![CDATA[<p>Tom &amp; Jerry &lt;3</p>]]></itunes:summary>
+  <title>&lt;table>&#x3C;tr>&lt;td&gt;"quoted"&lt;/td&gt;&lt;td&gt;b&lt;/td&gt;&#x3C;/tr&gt;&#60;/table&gt;  &amp;AMP;</title>
+  <enclosure length="9223372036854775807"/></item>
+<item><enclosure url="" length="2147483648" type="image/jpeg"/> <itunes:summary>&amp;lt
+&#x26;amp</itunes:summary> <psc:chapters xmlns:psc="http://podlove.org/simple-chapters"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" href="https://example.com/ch" start="42:27" title='&lt;b>x&lt;/b>'/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" href="" title="&lt;b>x&lt;/b>" start='1:0x1p3'/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title="Café &amp;amp; more" start="1::"/></psc:chapters> <description>&#x3C;p&gt;Tom &#38;amp; Jerry &#38;lt;3&lt;/p></description> <guid isPermaLink="false">a&#x26;b</guid> <link></link> <pubDate>01 Sep 1977 20:52 +1400</pubDate> <atom:link title="MP3 feed" href="https://example.com/feed?page=2" rel="alternate" type="application/xhtml+xml"></atom:link> <title>😀</title> <media:content duration="0060" fileSize='2e5' url="https://user:pass@media.example.net/e p41.pdf" type="image/*" isDefault="false"/> <itunes:image/></item>
+<item><itunes:duration>12528</itunes:duration> <itunes:image href=" "></itunes:image> <title>Folge 424: Über alles&amp;quot;q&amp;quot;</title> <link> https://e.com/x </link> <guid isPermaLink='false'>  spaced guid  </guid> <enclosure url="ftp://files.example.com/48.webm" length="20000.0" type="audio/mp4"/> <media:content isDefault='TRUE' type="audio/mp3" fileSize="-16384" url="ftp://files.example.com/e p350.wma?a=1&amp;b=2" duration='2147484' medium='document'/> <dc:date>Wed 27 Feb 1974 02:51:54</dc:date></item>
+<item><guid isPermaLink="true"> </guid><itunes:subtitle>&amp;euro;  Tom &#38;amp; Jerry <![CDATA[&lt;3  [x]]]></itunes:subtitle><enclosure url="" length="2147483647" type="image/jpeg"/><pubDate>20 May 00 15:38 -0000</pubDate><description>&#60;li>a &#x3C; b&#60;/li&gt;&#x3C;li>&lt;p&gt;Para&lt;/p&gt;&lt;/li&gt;&lt;3 &lt;3</description><media:group><media:content medium="image" duration="9223372036854775807" fileSize="2147483647" url='//example.com/e p240.jpg?file=x.mp3' isDefault="TRUE" type="audio"/></media:group><x:title xmlns:x="urn:x">Other namespace title</x:title><title> leading</title></item></channel>
+</rss>

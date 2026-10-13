@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><description><![CDATA[<img src="x" alt="y]]>&quot;/&gt;&lt;p&gt;{json: 1}&lt;/p&gt;
+&#38;#;&#60;p> &#x3C;/p&gt;aaaaaa</description>
+<lastBuildDate>Fri, 11 Dec 81 16:28:25 +0945</lastBuildDate>
+<title><![CDATA[trailing S01E753]]></title>
+<podcast:funding url="https://example.com/donate"></podcast:funding>
+<link>https://example.com</link>
+<atom:link rel="Next" length="12" type="audio/mpeg" title="MP3 feed" href="https://example.com/"/>
+<atom:link href="https://example.com/" rel="alternate" length="abc" title=""></atom:link>
+<atom:link type="" href="" rel="hub" length='20000' title="Café"/>
+<atom:link type="" title="MP3 feed" rel='enclosure' href="ftp://files.example.com/134.mp3.zip"/>
+<podcast:funding url="">Support us</podcast:funding>
+<itunes:summary>aaaaa&lt;p>tab	here&lt;/p></itunes:summary>
+<podcast:funding url="">Support us</podcast:funding>
+<item><description></description>
+  <enclosure length="" type="audio/x-m4a"/>
+  <itunes:duration>14883</itunes:duration>
+  <content:encoded>"quoted"&lt;br>&#x3C;img src=&quot;x.png"&gt; cover&lt;br></content:encoded>
+  <guid> </guid>
+  <pubDate>Mon, 07 November 1988 01:38:20 +0200</pubDate>
+  <link>https://example.com/ep</link>
+  <title>[x]</title>
+  <podcast:chapters url="" type="application/json+chapters"/></item></channel>
+  </rss>

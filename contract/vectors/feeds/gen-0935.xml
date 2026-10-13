@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><description>ééé&#x3C;li>&#38;#xD800;&#x3C;/li>&lt;hr/&gt;aaa😀&#x1F600;😀😀</description>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<title>plain words</title>
+<media:thumbnail url=""/>
+<language>pt-BR</language>
+<link> https://example.com/ </link>
+<image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+<item><psc:chapters version="1.2"><psc:chapter title="&lt;b>x&lt;/b>" image="https://example.com/ch.png" start="02:31:25.038" href=""/><psc:chapter start="1:00:NaN" title=""></psc:chapter><psc:chapter title="Café &amp;amp; more" start="01:30:58"/><psc:chapter start='93:23' title="" href="https://example.com/ch"/></psc:chapters>
+<guid isPermaLink="true">https://example.com/item/58804</guid>
+<media:thumbnail/>
+<link> https://e.com/x </link>
+<itunes:duration>99999999999</itunes:duration>
+<itunes:subtitle><![CDATA[&]]></itunes:subtitle>
+<atom:link href="https://example.com/pay" length="9223372036854775808" type='' rel='first'/>
+<enclosure url="" length="52428800" type=""/>
+<title><![CDATA[
+ leading
+&#128512;
+Episode 71 ]]></title></item></channel>
+</rss>

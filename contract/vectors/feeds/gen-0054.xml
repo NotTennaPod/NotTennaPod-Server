@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE rss [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><podcast:funding url="https://example.com/donate">Support us</podcast:funding> <link></link> <podcast:funding></podcast:funding> <itunes:image href="https://example.com/it.jpg"></itunes:image> <itunes:author><![CDATA[<b>Studio</b>]]></itunes:author> <language> EN-US </language> <podcast:funding url="https://example.com/donate"></podcast:funding> <image><title>Image title</title><url></url></image> <title><![CDATA[&AMP;
+&lt;b&gt;]]></title> <link xmlns="http://www.w3.org/2005/Atom" href="https://cdn.example.com/dir.with.dots/ep116" type="audio/mpeg" length="9223372036854775808" title="" rel="related"/> <atom:link length='9223372036854775808' href="https://example.com/feed?page=2" title="" rel="Next"/> <atom:link type="" title="" rel="" href="https://example.com/alt.xml"/> <description><![CDATA[<hr><BR><p>'single'</p>]]></description> <item><title>&#13;
+&show; 12
+&lt;s>&amp;lt;b&#x26;gt;&#60;/s>
+R&amp;D </title>
+<guid>urn:uuid:d4914ef6</guid>
+<link></link>
+<pubDate>Thu, 20 Mai 2010 21:42:06 +0530</pubDate>
+<description>&lt;img<![CDATA[>]]></description>
+<itunes:subtitle>&lt;blockquote&gt;x&#x3C;y&lt;/blockquote></itunes:subtitle>
+<enclosure url="HTTPS://EXAMPLE.COM/ep176.wav" length='20000 ' type="application/octet-stream"></enclosure></item> <item><title><![CDATA[Episode 12]]></title>
+<link></link>
+<pubDate>Thu, 22 May 1980 22.34:13 +0200</pubDate>
+<description><![CDATA[ &#x;]]></description>
+<itunes:subtitle>a=b&#38;c=d
+&amp;AMP;
+&lt;small&gt;茶&lt;/small&gt;</itunes:subtitle>
+<enclosure length="12" type="x-audio/mpeg"></enclosure>
+<enclosure url="https://user:pass@media.example.net/e p390.m4v" type="audio/flac"/>
+<enclosure url="" length='123456789012345678' type="application/ogg"/>
+<podcast:socialInteract protocol="activitypub"/></item> <item><itunes:summary><![CDATA[ééé]]></itunes:summary> <itunes:duration>178:44</itunes:duration> <description>😀😀😀😀<![CDATA[&lt;b&gt;escaped&lt;/b&gt;<br><img>]]></description> <podcast:locked>yes</podcast:locked> <enclosure url='HTTPS://EXAMPLE.COM/ep7.aac' length='-1' type='audio/x-m4a'/> <enclosure url='' length='9007199254740992' type="text/plain"/> <guid>  spaced guid  </guid> <title>&#38;#65;&#38;#66;</title></item></channel>
+</rss>

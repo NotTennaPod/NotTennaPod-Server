@@ -1,0 +1,26 @@
+﻿<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><podcast:funding url=""></podcast:funding> <link> https://example.com/ </link> <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"/> <podcast:funding url="https://example.com/donate"></podcast:funding> <atom:link title="" rel='first' href='https://example.com/'/> <x:title xmlns:x="urn:x">Other namespace title</x:title> <podcast:funding url="">Support us</podcast:funding> <description>&#60;p&gt;&amp;euro;&lt;/p&gt; 茶&lt;p&gt;a=b&#38;c=d&#60;/p&gt;&#60;p>Episode 7&#60;/p&gt;&#xE9;é&#xE9;&#60;hr>	a &#x3C; baaaa</description> <image><url>https://example.com/img.png</url></image> <language>fr
+</language> <dc:creator>DC Creator</dc:creator> <title>&#38;unknown;</title> <item><title><![CDATA[trailing 
+tab	here]]></title>
+<guid isPermaLink="true">a&#38;b</guid>
+<link>https://example.com/ep</link>
+<content:encoded><![CDATA[<p/><p></p>第7集<br>]]></content:encoded>
+<enclosure url="HTTPS://EXAMPLE.COM/ep158.mp3.zip" length="123456" type=""/>
+<media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" isDefault="false" type="audio/opus" duration="1"/><media:content xmlns:media="http://search.yahoo.com/mrss/" type="audio" fileSize="٢٠٠٠٠" isDefault="TRUE" duration="59" medium="video" url="https://example.com:8443/a/b/c105.aif"/><media:content xmlns:media="http://search.yahoo.com/mrss/" isDefault="true" type="audio" duration="59" url="https://example.com/a.b/dir.with.dots/ep84.mov" medium="video"></media:content></media:group>
+<psc:chapters version='1.2'><psc:chapter title="😀" start="::" href=""/><psc:chapter image="https://example.com/ch.png" start="12:34:56" title="Intro"/><psc:chapter start="6865" title="&lt;b>x&lt;/b>"/><psc:chapter href="https://example.com/ch" title="Café &amp;amp; more" start="1:2d"/><psc:chapter href="" start='3024' title="&lt;b>x&lt;/b>"></psc:chapter></psc:chapters></item> <item><title>AT&#x26;T</title>
+<guid isPermaLink="true">dup</guid>
+<pubDate>Wed, 30 JULY 2010 18:44:29 +0530</pubDate>
+<description><![CDATA[<img src="x" alt="y"/>é &]]>quot;q&#38;quot;</description>
+<content:encoded>&#60;div&gt;Folge 7: Über alles&#60;/div&gt; &amp;lt&lt;br&gt;&lt;/br&gt;&lt;div> &lt;/div&gt;&#13;
+&#160;&#60;img src=&quot;x.png&quot;>
+a=b&amp;c=d&#60;br /&gt;</content:encoded>
+<enclosure url="" length="16384" type="application/x-bittorrent"/></item> <item><title><![CDATA[ <strong>&#128512;</strong>Line<br>break ]]></title>
+  <guid>https://example.com/item/46659</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>Sat 18 Aug 1979 02:39:</pubDate>
+  <description> </description>
+  <content:encoded>&lt;br /&gt;&#x26;#x;&lt;p>ש&#1500;ום&lt;/p></content:encoded>
+  <enclosure length="2147483647" type='x-audio/mpeg'></enclosure>
+  <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="document" type="audio/wav" duration="1.5" fileSize="9223372036854775808"/>
+  <media:content xmlns:media="http://search.yahoo.com/mrss/" duration='3600' medium="Audio" fileSize="16383" url="https://example.com:8443/a/b/c178.aspx" isDefault="TRUE" type="audio/ogg"/>
+  <media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize='1' type='image/jpeg' medium="video" isDefault="1"/></item></channel>
+</rss>

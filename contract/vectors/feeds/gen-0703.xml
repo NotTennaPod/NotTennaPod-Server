@@ -1,0 +1,15 @@
+<rss version="2.0" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+<language> EN-US </language>
+<item><title>[x]</title><guid isPermaLink="true">dup</guid><link>https://example.com/ep</link><pubDate>2316-06-20T18:29:12Z</pubDate><description>Line&lt;br&gt;break&lt;br&gt;
+&amp;copy;&#xE9;&#xE9;é   spaced  &#38;#65;&amp;#66;é&#233;émulti
+line&lt;br&gt;&lt;div&gt;100%&#60;/div&gt;</description><cont:encoded><![CDATA[<li>&amp</li> &#169;]]></cont:encoded><enclosure length=" 20000" type="audio/x-wav"></enclosure><enclosure length="２０００００" type="application/octet-stream"/><enclosure url="//example.com/dir.with.dots/ep266.avi" length='12' type="audio/mp4"/></item>
+<item><podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" type='application/json+chapters'></podcast:chapters> <podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.json"/> <enclosure url="ftp://files.example.com/e p387.mp3.zip" length="1,000,000" type="image/jpeg"/> <description>é&#xE9;é&lt;div&gt;Episode 7&lt;/div&gt;&#60;p&gt;Tom &#38; Jerry &lt;3&lt;/p&gt;&#x3C;br&gt;&lt;/br&gt;&#60;div>AT&#x26;T&lt;/div&gt;</description> <pubDate>Wed, 28 November 0001 09:57</pubDate> <link></link> <title>&#x26;#x1F600;</title> <guid isPermaLink="false">Caf&#xE9;-guid</guid></item>
+<item><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" type="application/srt"/><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.json" type="application/x-subrip" language="en"/>
+  <title><![CDATA[sep]]></title>
+  <guid>
+</guid>
+  <pubDate>2002-07-20T13:35:49.679+0000</pubDate>
+  <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/th.jpg"/></item></channel>
+  </rss>

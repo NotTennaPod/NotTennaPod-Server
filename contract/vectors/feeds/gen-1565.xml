@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters"><channel xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/"><link>https://example.com</link>
+<image><title>Image title</title><url></url></image>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/" rel="next" title=""/>
+<itunes:subtitle><![CDATA[&#128512;  <dl><dt>😀</dt><dd>b</dd></dl>]]></itunes:subtitle>
+<itunes:author><![CDATA[A, B]]></itunes:author>
+<language>fr
+</language>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" type='' length="20000" rel="alternate" href="https://example.com/feed?page=2" title=''/>
+<!-- comment --><?pi data?>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/pay" title='Café' length="abc" rel="alternate" type="application/xml+xhtml"/>
+<description><![CDATA[ééé &AMP;]]></description>
+<item><guid isPermaLink="true">a&#38;b</guid>
+<link></link>
+<pubDate>24 Sep 23 03:21:27 +0200</pubDate>
+<description>&lt;br&gt;&#x3C;/b<![CDATA[r>]]></description>
+<it:summary>&#60;img src="x&quot; alt=&quot;y&quot;/&gt;&#60;li&gt;&#38;#;&lt;/li&gt;&lt;div>&amp;AMP;&#60;/div>aaaaaééé&#x26;#65;&amp;#66;&lt;br>
+&#x26;hellip;&lt;p&gt; leading&#x3C;/p></it:summary>
+<itunes:image/>
+<it:duration> </it:duration>
+<enclosure url="https://xn--caf-dma.example/154.m3u8?auth=yes" length='2147483647' type="image/png"/>
+<psc:chapters version="1.2"><psc:chapter title='Café &amp;amp; more' image="https://example.com/ch.png" href="" start="1:2:"/><psc:chapter href="" start="１:００"/><psc:chapter title="Café &amp;amp; more" start="87:55" href="https://example.com/ch"/><psc:chapter href="" image="https://example.com/ch.png" start="02:26:54"/><psc:chapter start="01:36:11.827"/></psc:chapters>
+<source url="https://example.com/s"><title>Source title</title></source></item>
+<item><enclosure url="https://xn--caf-dma.example/ep56.mov" length='9223372036854775807' type="audio/wav"/> <podcast:chapters url="" type="application/json+chapters"/> <it:summary><![CDATA[&mdash;<br>]]></it:summary> <title>&amp;#xA9; trailing </title> <guid isPermaLink="false">Café-guid</guid> <pubDate>Tue Nov 99 07:02:09 2006</pubDate></item>
+<item><link></link>
+<pubDate>Wednesday, 04 Jul 2018 20:13:11 +0000</pubDate>
+<title>sep</title>
+<enclosure url="https://xn--caf-dma.example/café/261.m4a" type="application/ogg"/>
+<guid>  spaced guid  </guid>
+<content:encoded>&amp;#169;</content:encoded>
+<it:duration>9223372036854775807</it:duration>
+<media:group><media:content type='Audio/MPEG' fileSize='52428800' medium='document'/></media:group>
+<enclosure url="//example.com/49.pdf" length="52428800" type="application/pdf"/>
+<it:image href="https://example.com/ep.jpg"/></item>
+<dc:creator>DC Creator</dc:creator>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="enclosure" length="20000" type="application/rss+xml" title="" href="https://example.com/alt.xml"/></channel> </rss>

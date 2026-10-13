@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- generated -->
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters">
+<atom:id> raw </atom:id>
+  <atom:author><atom:name>C&amp;D</atom:name></atom:author>
+  <atom:author><atom:name>  Bob  </atom:name><atom:email>a@example.com</atom:email></atom:author>
+  <atom:subtitle type="plain">ééé   spaced  </atom:subtitle>
+  <atom:author><atom:name>  Bob  </atom:name><atom:email>a@example.com</atom:email></atom:author>
+  <atom:title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">é &lt;cite&gt;a
+  b&#60;/cite&gt;</div></atom:title>
+  <atom:link rel="first" type='application/xml+xhtml' title="Alternate" href='HTTPS://EXAMPLE.COM/e p216.ogg'/>
+  <atom:entry><atom:published>2016-01-18T11:07:04EDT</atom:published> <atom:content type="html"><![CDATA[<br /> &amp;amp;Episode 12<br>]]></atom:content> <atom:id>urn:uuid:1</atom:id> <atom:updated>Sat, 01 December 2170 11:26:35 -0500</atom:updated> <atom:summary type="plain"></atom:summary></atom:entry>
+  <atom:entry><atom:link rel="self" length="abc" type='application/rss+xml' title="Alternate" href="https://example.com/"/> <atom:link title="MP3 feed" href="https://example.com/pay" rel="Next" length="abc" type=""/> <atom:published>Saturday, 06 May 1899 18:13 -0000</atom:published> <atom:updated>2380</atom:updated> <atom:title type="html">
+
+</atom:title> <media:content fileSize="16384" isDefault='true' duration="1" url=" HTTPS://EXAMPLE.COM/café/352.mid " type='video/webm'/> <atom:id></atom:id></atom:entry>
+</atom:feed>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md"><language>pt-BR</language><description></description><link></link><dcterms:creator>DC Creator</dcterms:creator><title><![CDATA[&AMP;]]></title><itunes:subtitle><![CDATA[Folge 540: Über alles
+Tom &amp; Jerry &lt;3
+&amp;]]></itunes:subtitle><itunes:image/><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><itunes:new-feed-url>https://new.example.com/feed</itunes:new-feed-url><item><title>#302 – Interview  {json: 1}  &lt;section&gt;a&#13;
+b&#x3C;/section&gt;</title>
+<guid>Café-guid</guid>
+<pubDate>Thu, 27 May 1999 12:53:04</pubDate>
+<description><![CDATA[aa]]></description>
+<itunes:summary><![CDATA[
+tab	here<img src="x.png"><p>{json: 1}</p> Tom & Jerry <3😀😀😀<img><li>AT&T</li><p/>]]></itunes:summary>
+<itunes:subtitle><![CDATA[a
+  b]]></itunes:subtitle>
+<itunes:duration>662.531</itunes:duration>
+<media:content fileSize="123456" type="AUDIO/MPEG" duration='1.5'/>
+<psc:chapters></psc:chapters></item><item><title>&amp;#xFFFF;&#x3C;h1>back\slash&lt;/h1&gt;</title> <guid>  spaced guid  </guid> <link></link> <pubDate>
+Thu, 09 May 1996 21:21:10 -1200:00&#13;
+</pubDate> <description>&#160;&#38;amp;</description> <enclosure url="" length="2147483648" type='audio/x-m4a'/> <media:content fileSize="-9223372036854775808" duration="+60" medium="image" type="audio/"></media:content> <comments>https://example.com/c</comments></item></channel> </rss>

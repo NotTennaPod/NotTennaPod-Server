@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><image><title>Image title</title><link>https://example.com/img-link</link><url></url></image><itunes:author><![CDATA[&#31532;&#19968;]]></itunes:author><link></link><itunes:image href="https://example.com/it.jpg"/><title>x&#x3C;y100%</title><description><![CDATA[&#128512;]]></description><item><title><![CDATA[&amp; &;]]></title>
+<sc:chapters><sc:chapter start="00:39:13" href="https://example.com/ch" image='https://example.com/ch.png' title=""/><sc:chapter start="01:32:43" title="Café &amp;amp; more"/><sc:chapter href="" title='' image="https://example.com/ch.png" start="120:44"/><sc:chapter title="Café &amp;amp; more" start="0x10:00"></sc:chapter><sc:chapter href='https://example.com/ch' start="" title="Café &amp;amp; more"/><sc:chapter title="&#128512;" href="" start='abc'/></sc:chapters>
+<itunes:duration>2510</itunes:duration>
+<media:group><media:content type=" audio/mpeg" duration='1.5' url="https://user:pass@media.example.net/e p327.avi" isDefault='false' fileSize="9007199254740991" medium="audio"></media:content><media:content type="application/octet-stream" isDefault='1' url="https://xn--caf-dma.example/café/179.amr" fileSize="9007199254740992" medium='document' duration="59"/><media:content url="https://xn--caf-dma.example/café/179.amr" duration='2147483' medium="audio" type="image/jpeg" fileSize="20000.0" isDefault='true'/></media:group>
+<enclosure url="https://user:pass@media.example.net/a/b/c236.aif" length='1,000,000' type="audio/"/>
+<googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+<guid></guid>
+<content:encoded>&amp;copy;&#x3C;br> &#38;euro;</content:encoded>
+<link> https://e.com/x </link></item></channel>
+</rss>

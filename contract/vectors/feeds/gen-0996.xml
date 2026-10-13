@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:a10="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:media="http://search.yahoo.com/mrss/"><i:summary><![CDATA[<p>&apos;a&apo]]>s;&#60;/p&gt; &amp;AMP;&#128512;&#128512;</i:summary><i:image href='https://example.com/it.jpg'/><language>en</language><atom:link type="application/xhtml+xml" href="https://example.com/" length="12" title="" rel="next"/><atom:link title='' type="application/atom+xml" rel="last" length="12" href="https://example.com/pay"/><a10:link rel="first" href="https://example.com/alt.xml" title='Alternate'/><i:new-feed-url>http</i:new-feed-url><title><![CDATA[<span style="color:red">&#128512;</span>  <b>Bold</b> title  &#;]]></title><i:author><![CDATA[Tom ]]>&amp; Jerry &lt;3</i:author><link>https://example.com</link><i:subtitle>&lt;img src="x.png&quot;&gt; cover</i:subtitle><item><i:image href=""/>
+  <content:encoded>  spaced  &#128512;&#128512;aaa&#60;p&gt;&amp;#x1F600;&#60;/p&gt;&#13;
+&amp;amp;amp;&#x3C;p>&amp;#xA9;&#60;/p&gt;&lt;div>a &#x3C; b&#60;/div&gt;ééé</content:encoded>
+  <enclosure url="" type="video/quicktime"/>
+  <description>&#60;hr/&gt;<![CDATA[  &#33590;]]></description>
+  <media:content fileSize="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;" duration="2147483" type="text/plain" url="https://user:pass@media.example.net/e p247.m4a#t=10"/>
+  <title><![CDATA[#hash  <img src="x.png"> cover  #hash]]></title>
+  <guid isPermaLink='false'>Café-guid</guid>
+  <media:content medium="video" fileSize="16384" type="unknown" duration="+60" isDefault="false" url="https://example.com/a.b/café/317.mp3.zip"/>
+  <pubDate>13 MAY 23 12:58 -0000</pubDate>
+  <link>https://example.com/ep</link>
+  <media:content fileSize="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;" url=' //example.com/e p373.m3u8 ' medium="document" duration='1' type="audio/flac"/></item><item><description>&#60;img src="x.png"&gt;
+multi
+line&#60;img&gt;
+100%aaaa leading&#x3C;br>
+&#x26;mdash;&lt;p>AT&amp;T&lt;/p&gt;</description>
+<enclosure url="//example.com/e p152.wma" length="0" type="video"/>
+<i:subtitle>R&amp;D
+cr&#13;lf
+&#8203;</i:subtitle>
+<i:duration>140:17</i:duration>
+<title>Tom &amp;amp; Jerry &#38;lt;3</title>
+<i:image href=""/>
+<pubDate>Sun 17 Mar 2216 03:55:30 GMT+</pubDate>
+<guid isPermaLink="false"></guid></item><item><enclosure url="HTTPS://EXAMPLE.COM/ep265.torrent" length="-16384" type="image/*"/>
+  <guid>dup</guid>
+  <i:duration>	1:00
+</i:duration>
+  <title> leading
+a&#13;
+b</title>
+  <media:thumbnail url=""/>
+  <media:content isDefault="1" duration="3600" type="x-audio/mpeg" fileSize="16384"/>
+  <i:summary>&lt;br></i:summary>
+  <pubDate>1984-01-09T08:43:45+1400</pubDate></item><item><enclosure url=" //example.com/a/b/c131.mp3.zip " length="-0" type="audio/x-wav"/>
+  <content:encoded>aaaaaa  Episode 12
+R&amp;D&lt;br/&gt;&#60;hr></content:encoded>
+  <media:content isDefault="1" duration="+60" fileSize="52428800" type="application/x-bittorrent"/>
+  <guid>a&#38;b</guid>
+  <media:content type="audio/mp4" url="https://example.com:8443/dir.with.dots/ep25.m3u8?a=1&amp;b=2" fileSize="16384" isDefault='TRUE' duration="3600" medium="image"/>
+  <pubDate>&#13;
+2003-04-14T22:15:48+1400&#8195; </pubDate>
+  <media:content fileSize="123456" medium="video" duration="59" type="Audio/MPEG" url="https://example.com:8443/café/140.mid"/>
+  <enclosure url="//example.com/ep60.aac" length="12" type="video"/>
+  <podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/>
+  <title><![CDATA[Folge 450: Über alles
+Line<br>break
+<ul><li>S01E526</li><li>two</li></ul>]]></title>
+  <media:thumbnail/>
+  <enclosure url="https://cdn.example.com/dir.with.dots/ep116" length="123456789012345678" type=""/></item><item><pubDate>Monday, 31 Sep 2015 18:44:20</pubDate> <i:summary><![CDATA[  &apos;a&apos; a < b&#1605;&#1585;&#1581;&#1576;&#1575;<br><li>a=b&c=d</li><p>café</p>]]></i:summary> <title><![CDATA[  'single'  <p>Para</p> ]]></title> <description><![CDATA[ &amp;amp; &unknown;]]></description> <guid isPermaLink="false">Café-guid</guid> <enclosure url="http://example.org/ep112.torrent" length="1" type="audio/mp4"/> <content:encoded>&#60;img&gt;&lt;div&gt;&#38;&#x3C;/div&gt;  sep</content:encoded> <i:duration>:30</i:duration></item><item><enclosure length="4294967296" type=''></enclosure> <title>&#x26;amp;amp; &#1513;&#1500;&#1493;&#1501; 100%</title> <guid isPermaLink="false">a&amp;b</guid> <description><![CDATA[&AMP;<br>]]></description> <x:foo xmlns:x="urn:x"><title>Nested <![CDATA[title]]></title></x:foo> <i:duration>1:-1</i:duration> <pubDate>1991-08-23Z</pubDate> <enclosure url="https://example.com/a.b/dir.with.dots/ep88.pdf" length="20000.0" type="audio/flac"/> <enclosure url="https://user:pass@media.example.net/144.webm?dl=1.0" length="12" type="image/*"/></item><item><link>https://example.com/ep</link>
+<i:summary> &#x26;#xA9;&lt;img src="x" alt="y&quot;/&gt;&#38;hellip;&#60;br&gt;  trailing &#x3C;p&gt;&lt;b&gt;Bold&lt;/b> title&lt;/p></i:summary>
+<guid isPermaLink="false">  spaced guid  </guid>
+<i:duration>0:57:36</i:duration>
+<content:encoded>&#60;b&gt;Bold&#60;/b> title&#60;br&gt; &#128512;&amp;#65;&amp;#66;&#128512;&#128512;&lt;p&gt;sep&lt;/p&gt;ééé&#x3C;p<![CDATA[>a=b&c=d</p>&lt;b&gt;]]></content:encoded>
+<enclosure url="" length=" 20000" type="audio/mpeg"/>
+<pubDate>2009-06-27T22:50:12Europe/Berlin</pubDate>
+<title><![CDATA[]]>tab	here  http://example.com/?a=1&#38;b=2  &amp;Lt;</title></item><item><media:description>&#128512;
+cr&#13;lf&#60;p>&amp;#0;&#x3C;/p></media:description>
+<i:image href="https://example.com/ep.jpg"/>
+<media:content isDefault="true" duration="2147483648" url="https://example.com:8443/dir.with.dots/ep6.m3u8?dl=1.0" fileSize="0" type="audio/" medium="Audio"/>
+<link> https://e.com/x </link>
+<i:duration>12:34:56.789</i:duration>
+<pubDate>07 Nov 96 02:33:28 +1400</pubDate>
+<enclosure length="0" type="audio/opus"/>
+<guid isPermaLink="true">
+</guid>
+<description>&#128512;&#128512;</description>
+<dc:date>2022-12-29T12:34:61.179+0100</dc:date>
+<media:content medium='audio' fileSize="9007199254740993" type="unknown" duration="9223372036854775807"/>
+<title>&#38;AMP;&amp;mdash;&lt;p&gt;&amp;#x1F600;</title></item><item><guid isPermaLink="true"></guid> <description><![CDATA[<div>&#0;</div><div>&hellip;</]]>div&gt;&#x3C;li>&amp;#0;&lt;/li>
+trailing 	&amp;#xD800;&lt;p>&#x26;lt;b&amp;gt;&lt;/p>&#60;p>&#60;/p&gt;aaa</description> <i:duration>100:00:00</i:duration> <media:content fileSize="&#1634;&#1632;&#1632;&#1632;&#1632;" type='audio/ogg' medium="Audio" isDefault="true"></media:content> <dc:date>24 Oct 70 14:15:36 -0800</dc:date> <link></link> <media:content type="video" fileSize="2147483647" isDefault="1" duration="2147483648"/> <title>&lt;section&gt;&#8203;&#60;/section&gt;    padded    &#1513;&#1500;&#1493;&#1501;</title></item><item><enclosure type="image/png"/><i:duration>3:56:22</i:duration><guid>urn:uuid:443ee76b</guid><pubDate>Tue feb 7 07:46:55 1984</pubDate><i:image href=' '/><description>&#60;br /&gt;</description><title><![CDATA[tab	here]]></title></item><item><description><![CDATA[ &#33590;  space]]>d  </description>
+  <enclosure url="//example.com/café/209.webm?auth=yes" length="2e5" type="image/png"/>
+  <i:image href=""/>
+  <guid isPermaLink="false">a&#x26;b</guid>
+  <i:subtitle>  &#38;	</i:subtitle>
+  <i:duration>5139.648</i:duration>
+  <title>a&#13;
+b
+x&lt;y</title>
+  <media:thumbnail url=""/>
+  <pubDate>Thursday,  1975-05-27T22:31:41Z</pubDate>
+  <link>https://example.com/ep</link></item><item><!-- comment --><?pi data?>
+  <i:image/>
+  <guid></guid>
+  <pubDate>
+  Tue, 30 Dec 2213 16:03:54 +0530
+  </pubDate>
+  <title>#813 &#8211; Interview
+tab	her<![CDATA[e
+&#xA9;]]></title>
+  <enclosure url="" length="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;" type="Audio/MPEG"/>
+  <podcast:transcript url="https://example.com/t.json" type="application/srt"/><podcast:transcript url="https://example.com/t.vtt" type="application/x-subrip"/></item></channel> </rss>

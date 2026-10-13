@@ -1,0 +1,20 @@
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><podcast:funding url="https://example.com/donate"></podcast:funding> <title><![CDATA[Line<br>break]]></title> <a10:link href="" length="9223372036854775808" title="Café" type="application/atom+xml" rel="payment"/> <a10:link type="" rel="next" href="https://example.com/feed?page=2" length="12"/> <title>&amp;lt http://example.com/?a=1&#38;b=2 &#38;lt;b&#38;gt;escaped&#x26;lt;/b&amp;gt;</title> <itunes:subtitle><![CDATA[&#;  &]]>#65;&amp;#66;  &#60;label&gt;ש&#1500;ו&#1501;&lt;/label&gt;</itunes:subtitle> <itunes:image href='https://example.com/it.jpg'/> <i:author>第一</i:author> <link> https://example.com/ </link> <a10:link href="HTTPS://EXAMPLE.COM/ep63.txt" type="text/html" rel="alternate" length="9223372036854775808" title="MP3 feed"/> <description><![CDATA[ééé<li>'single'</li><div>é</div>  😀 leading<br>]]></description> <podcast:funding>  spaced  </podcast:funding> <item><description><![CDATA[Folge 7: Über alles<br> http://example.com/?a=1&b=2]]></description>
+<guid isPermaLink="false"></guid>
+<enclosure url="HTTPS://EXAMPLE.COM/café/337" length="20000.0" type="image/jpeg"/>
+<pubDate>Wed, 27 Feb 2008 09:40:05 +0530</pubDate>
+<link> https://e.com/x </link>
+<title/>
+<i:duration>1e3</i:duration></item> <item><i:image href=''></i:image>
+<link> https://e.com/x </link>
+<dc:date>Saturday, 33 Jun 2532 21:57:52</dc:date>
+<description>&lt;p&gt;[x]&lt;/p&gt;</description>
+<title><![CDATA[&#x1F600;​]]></title>
+<i:subtitle>
+&#x3C;a href="https://example.com/x?a=1&amp;amp;b=2&quot;>&#x26;#x;&lt;/a>&#13;
+</i:subtitle>
+<i:duration>1:06:10</i:duration>
+<guid>dup</guid>
+<a10:link type='application/xml+xhtml' href='https://example.com/pay' rel="enclosure" length="9223372036854775808"/>
+<enclosure url="" length="12" type="x-audio/mpeg"/></item> <podcast:funding>  spaced  </podcast:funding> <a10:link rel="related" href="" title='MP3 feed'/> <image><url></url><title>Image title</title><link>https://example.com/img-link</link></image></channel>
+</rss>

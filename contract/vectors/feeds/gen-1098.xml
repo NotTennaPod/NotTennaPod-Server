@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<title type="text"><![CDATA[a ]]>&#x3C; b</title>
+<subtitle><![CDATA[&#128512;<img src="x.png">	AT&T]]></subtitle>
+<author><name>C&amp;D</name><email>a@example.com</email></author>
+<id>urn:x</id>
+<itunes:author>  Spaced  </itunes:author>
+<entry><summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x3C;BR&gt;</div></summary>
+<link length="20000" href="https://example.com/pay" type='' rel="alternate" title=""/>
+<title type="plain">&amp;amp;  &amp;AMP;</title>
+<updated>Mon, 11 Dec 2456 06:46 +0100x</updated>
+<updated>2002-02-09T06:00</updated>
+<id>tag:x,2020:1</id>
+<link rel="" type='application/xml+xhtml' title="Alternate"/></entry>
+<entry><link title="" type="" length="12"/><updated>24 May 62 05:23:17 +0530</updated><published>2589-12-27T02:49:33Z</published><id>urn:uuid:1</id><title type="HTML"><![CDATA[<font color="red">  padded ]]> &lt;/font&gt;&amp;#65;&amp;#66;</title></entry></feed>

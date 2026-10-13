@@ -1,0 +1,12 @@
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">
+<atom:link rel="enclosure" length="abc" type="application/rss+xml" href="https://example.com/a.b/ep135.pdf?a=1&amp;b=2" title="MP3 feed"/> <atom:icon>https://example.com/icon.png</atom:icon> <atom:subtitle type="html"><![CDATA[  &Lt;<p>a < b</p>]]></atom:subtitle> <atom:updated>Sunday, 09 May 2500 07:47:59 HST</atom:updated> <atom:title type='html'><![CDATA[&AMP; <i>&#x1F60]]>0;&lt;/i&gt; &#x26;#65;&#38;#66;</atom:title> <itunes:summary></itunes:summary> <atom:entry><atom:link href="https://example.com/" title="Café" rel="enclosure" length="abc" type="application/xml+xhtml"/>
+<itunes:duration>3:26:14</itunes:duration>
+<atom:updated>2010-06-25T05:46:51+0100</atom:updated>
+<atom:summary>&#60;br>&lt;p/&gt;</atom:summary>
+<atom:id>
+id
+</atom:id>
+<atom:title type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">  padded   multi
+line #954 – Interview</div></atom:title>
+<atom:link href="https://example.com/" type="audio/mpeg" rel="hub" title='MP3 feed'/></atom:entry>
+</atom:feed>

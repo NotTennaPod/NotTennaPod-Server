@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><description>	multi
+line&#60;img src=&quot;x.png&quot;&gt; cover&#60;br>&#x3C;p>"quoted&quot;&lt;/p&gt;&lt;div>שלום&lt;/div&gt;ééé</description> <link></link> <image><link>https://example.com/img-link</link><url></url></image> <pi:funding xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url="https://example.com/donate">  spaced  </pi:funding> <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[<del>&AMP;</del>  &lt  &#;]]></itunes:subtitle> <itunes:owner xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:name xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Owner</itunes:name><itunes:email xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">o@example.com</itunes:email></itunes:owner> <language>en</language> <lastBuildDate>SAT, 07 Jan 2440 12:45:05 -0000</lastBuildDate> <itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[😀 Pod]]></itunes:author> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" "/> <title>Episode 12 &amp;#169; &#60;em&gt;AT&amp;T&lt;/em></title> <item><title><![CDATA[<article>{json: 1}</article>  Episode 78  <p>&lt;b&gt;]]></title><guid>  spaced guid  </guid><link></link><description>&#60;p&gt;&amp;#xD800;&#60;/p&gt;</description><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">2147483.648</itunes:duration><enclosure url="ftp://files.example.com/a/b/c18.mpga" length="" type="application/pdf"/><pi:socialInteract xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" protocol="activitypub"/></item> <item><title>	 leading&#13;
+</title>
+  <link>https://example.com/ep</link>
+  <pubDate>Sunday, 06 Nov 1988 08:03:45</pubDate>
+  <description>	&amp;</description>
+  <content:encoded><![CDATA[<img src="x.png"><p>100%</p><p/><p></p><br></br>]]></content:encoded>
+  <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">	&#60;img src="x.png&quot;&gt; cover &#60;span style="color:red"&gt;&amp;#65;&amp;#66;&lt;/span&gt; &#x26;copy;&#13;
+</itunes:subtitle>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"/>
+  <enclosure url="" length="16384" type="audio/ogg"/></item></channel>
+</rss>

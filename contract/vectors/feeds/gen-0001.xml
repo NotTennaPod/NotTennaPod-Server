@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><title>&amp;mdash;  #hash</title>
+  <language></language>
+  <podcast:funding url="https://example.com/donate">&lt;b&gt;x&#x3C;/b></podcast:funding>
+  <wrapper><inner><deeper>text</deeper></inner></wrapper>
+  <podcast:funding>&lt;b&gt;x&lt;/b></podcast:funding>
+  <m:thumbnail url=''/>
+  <description><![CDATA[😀😀  a < b<div>Folge 7: Über alles</div>]]></description>
+  <podcast:funding url="">Support us</podcast:funding>
+  <link></link>
+  <item><description>&lt;p>a&#13;
+b&#x3C;/p&gt;  ​</description>
+  <link> https://e.com/x </link>
+  <m:content type="audio/mp3" medium="video" isDefault="true" duration="2147483648" url="//example.com/a/b/c234.html" fileSize="-0"></m:content>
+  <link xmlns="http://www.w3.org/2005/Atom" type='text/html' title="" href="https://example.com/feed?page=2" rel="Next"/>
+  <title>&amp;AMP;
+&#x26;quot;q&amp;quot;
+&amp;hellip;</title>
+  <guid isPermaLink="true">  spaced guid  </guid></item>
+  <item><content:encoded>Folge 7: Über alles&#60;br&gt;</content:encoded>
+  <description>&lt;img>Episode 7&#60;br&gt;&lt;img src="x" alt=&quot;y&quot;/&gt;</description>
+  <pubDate>Sunday, 24 Sep 2000 08:18:00 AKST</pubDate>
+  <podcast:chapters url="" type="application/json+chapters"/>
+  <title><![CDATA[S01E777 'single']]></title>
+  <link>https://example.com/ep</link>
+  <enclosure url='https://xn--caf-dma.example/ep1.php' length="-9223372036854775808" type="unknown"></enclosure></item>
+  <item><title><![CDATA[<section>&mdash;</section>第642集Folge 142: Über alles]]></title>
+  <link></link>
+  <pubDate>  07 jun 86 10:14 +0000	</pubDate>
+  <description></description>
+  <dc:date>Sun, 16 Feb 1986 13:29</dc:date>
+  <m:group><m:content fileSize="-0" type="video" isDefault="1" duration='0'/><m:content url="https://example.com:8443/e p39.MP3" duration="0" medium="Audio" type="image/png" fileSize="4294967296"/></m:group>
+  <pc:chapters version="1.2"><pc:chapter start="00:52:32" title="Intro"/><pc:chapter start="8055" href="https://example.com/ch" title="&lt;b>x&lt;/b>"/><pc:chapter href="https://example.com/ch" image="https://example.com/ch.png" title='Café &amp;amp; more' start="01:45:00.923"/><pc:chapter image='https://example.com/ch.png' start="1:1e2" title="&lt;b>x&lt;/b>"/></pc:chapters></item>
+  <item><link></link> <m:content type="audio/opus" fileSize="52428800" url='http://example.org/dir.with.dots/ep239.OGG?auth=yes' duration="0060"/> <title>&#x3C;p&gt;&lt;p&gt;a&#13;
+b&lt;/p&gt;&lt;/p&gt;  &#60;div dir=&quot;rtl">&#x26;unknown;&#x3C;/div&gt;  Episode 563</title> <m:content type='application/ogg' fileSize="" medium="image" duration="01:00"/> <m:content duration="1" fileSize="16385" isDefault="false" type='application/json' medium="document" url="https://cdn.example.com/e p320.m4a"/> <description>aa</description> <podcast:socialInteract uri="" protocol='activitypub'/> <guid>
+</guid> <enclosure length="00020000" type=" audio/mpeg"></enclosure></item>
+  <item><title>R&#38;D&amp;mdash;</title>
+<pubDate>Sun, 14 August 1983 10:29</pubDate>
+<description>é&#233;éaaaaaa&#60;p>&#x26;lt;b&amp;gt;&lt;/p></description>
+<enclosure length="20000.0" type="audio/mp3"/>
+<m:content type="audio/mp4" url="https://xn--caf-dma.example/café/17.aac" fileSize='12' duration="9223372036854775807" medium="audio"/>
+<m:description></m:description>
+<podcast:season>2</podcast:season></item></channel>
+  </rss>

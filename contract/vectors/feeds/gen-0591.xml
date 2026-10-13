@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <author><name>Émile</name><email>a@example.com</email></author>
+<itunesu:author></itunesu:author>
+<author><name>C&#x26;D</name></author>
+<author><name>  Bob  </name></author>
+<link rel="related" length="12" href="https://example.com/" title="MP3 feed" type="application/xhtml+xml"/>
+<id>urn:x</id>
+<title><![CDATA[&
+R&D]]></title>
+<entry><updated>1978-03-26T14:02:36EEST</updated>
+<psc:chapters><psc:chapter start=':' title="Café &amp;amp; more"/><psc:chapter href="https://example.com/ch" start="3208" image="https://example.com/ch.png"/><psc:chapter href="https://example.com/ch" start="" title=""/><psc:chapter start="4391" image="https://example.com/ch.png" title=""/><psc:chapter href="" start="2147483647:00:00"/><psc:chapter href="https://example.com/ch" start='١:٠٢' image="https://example.com/ch.png"/></psc:chapters>
+<id>
+id
+</id>
+<content type="html"><![CDATA[&quot;q&quot;]]></content>
+<title type="HTML">&#x26;hellip;
+Folge 561: Über alles
+&amp;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt;</title>
+<summary type="text">aaaaaaaaaa	&amp;#x1F600;&#60;p/&gt;&lt;p&gt;Folge 7: Über alles&#x3C;/p&gt;	&amp;apos;a&#x26;apos;	&amp;amp;amp;&lt;p&gt;&#38;#x;&#60;/p></summary></entry>
+<entry><content type="html">&#60;img src=&quot;x" alt="y&quot;/></content>
+<title type="html">cr&#13;lf &#60;section>[x]&lt;/section&gt;</title>
+<id>urn:uuid:1</id>
+<itunesu:image href=""/>
+<link length='abc' type='application/rss+xml' title="MP3 feed" href="https://user:pass@media.example.net/e p318.pdf"></link></entry></feed>

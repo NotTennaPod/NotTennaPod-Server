@@ -1,0 +1,87 @@
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><title>
+&#x26;#x;</title> <atom:link title='Café' rel="self" href="" type=""/> <podcast:funding url="">&#x3C;b>x&#x3C;/b></podcast:funding> <lastBuildDate>Foo, 	Sun, 01 Mar 2009 12:19:08 +0000</lastBuildDate> <atom:link type="application/rss+xml" rel="archives" title='Alternate' length='9223372036854775808' href=""/> <podcast:funding url="">  spaced  </podcast:funding> <link> https://example.com/ </link> <description>&lt;div&gt;é&lt;/div&gt;&#x3C;div&gt;Tom &amp; Jerry &lt;3&#x3C;/div&gt;</description> <item><title>"quoted"  café  &#8203;</title>
+<guid isPermaLink="true">https://example.com/item/81536</guid>
+<pubDate>1999-01-31T11:55:04.387 -1200</pubDate>
+<description><![CDATA[<div>&Lt;</div>]]></description>
+<content:encoded>&#x3C;img src="x.png&quot;&gt;&lt;p&gt;Tom &#x26; Jerry &lt;3&lt;/p&gt;</content:encoded>
+<it:image href=" https://e.com/i.png "/>
+<it:duration>4:59:26</it:duration>
+<enclosure url="https://example.com/a.b/café/273.OGG" length="+20000" type="video/webm"/></item> <item><link>https://example.com/ep</link>
+  <content:encoded>
+&amp;apos;a&amp;apos;</content:encoded>
+  <podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/>
+  <title>&#13;
+&#38;copy;	</title>
+  <podcast:socialInteract uri="" protocol='activitypub'/>
+  <enclosure length="-16384" type="video/quicktime"/>
+  <atom:link type="application/rss+xml" href="https://example.com/alt.xml" rel=""/>
+  <guid isPermaLink='false'>  spaced guid  </guid>
+  <pubDate>2589-12-27T02:49:33Z</pubDate>
+  <description> &amp;hellip;&#60;br&gt;</description></item> <item><title><![CDATA[trailing ]]></title>
+  <guid isPermaLink="false">a&#x26;b</guid>
+  <pubDate>Wednesday, 20 Jul 2332 02:37:02</pubDate>
+  <description>&lt;hr&gt;</description>
+  <it:summary><![CDATA[	trailing ]]></it:summary>
+  <it:subtitle><![CDATA[a
+  ]]>b leading</it:subtitle>
+  <it:image href=""/>
+  <enclosure url="" length="9223372036854775808" type="audio/x-wav"/>
+  <podcast:chapters type="application/json+chapters"/>
+  <link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/pay" rel='next' length="abc" type="text/html"/></item> <item><it:image href=' https://e.com/i.png '/>
+  <pubDate>Sat, 23 Jan 1971 08:40:33 +0945 GMT GMT</pubDate>
+  <title><![CDATA[  spaced    <sub>"quoted"</sub>  a
+  b]]></title>
+  <description><![CDATA[<li>&#0;</li>  &unknown;]]></description>
+  <enclosure url="https://cdn.example.com/ep245.mov" length="" type=" audio/mpeg"/>
+  <guid isPermaLink="true">https://example.com/item/54390</guid>
+  <link> https://e.com/x </link>
+  <it:author>Item author</it:author></item> <item><enclosure url='HTTPS://EXAMPLE.COM/ep232.xyz?auth=yes' length='16385'/>
+  <pubDate>2323-12-13T02:59:02z</pubDate>
+  <title><![CDATA[&]]>amp;multi
+line</title>
+  <content:encoded></content:encoded>
+  <it:duration>166:35</it:duration>
+  <link></link>
+  <it:subtitle><![CDATA[&#xA9; AT&T "quoted"]]></it:subtitle></item> <item><it:duration>3385.116</it:duration>
+<description>éé&#233; &#x26;AMP;&lt;p&gt;&#x26;#x;&lt;/p>
+
+cr
+lf&#x3C;hr/&gt;&amp;amp;amp;&#60;img src="x&quot; alt=&quot;y"/&gt;&lt;br&gt;</description>
+<it:image href=''/>
+<pubDate>Thu, 29 February 1980 09:04</pubDate>
+<guid isPermaLink="false">urn:uuid:a48c4ab8</guid>
+<enclosure length="9007199254740993" type="image/*"/>
+<link> https://e.com/x </link></item> <item><enclosure url='https://example.com/a.b/a/b/c61.webm' length='9007199254740991' type="application/json"/>
+  <title>&lt;strong&gt;#18 – Interview&#x3C;/strong&gt;
+a&#13;
+b
+😀</title>
+  <pubDate>1976-08-12 ()</pubDate>
+  <content:encoded>  &#x26;#x;&lt;li&gt;&amp;#xA9;&lt;/li&gt;</content:encoded>
+  <guid>https://example.com/item/87573</guid></item> <item><it:duration>1e3</it:duration> <pubDate>19 Aug 2021 15:24:46 +1400
+  </pubDate> <title>e<![CDATA[́]]></title> <enclosure url="" length="1,000,000" type="audio/"/> <guid isPermaLink="true">a&amp;b</guid></item> <item><guid isPermaLink="false">Café-guid</guid><description></description><x:foo xmlns:x="urn:x"><title><![CDATA[Nested ]]>title</title></x:foo><pubDate>2021-03-090000</pubDate><enclosure length='-1' type="audio/mpeg"/><title>Tom &#x26; Jerry &#x3C;3</title><it:summary>
+
+#hash&lt;li&gt;第7集&lt;/li&gt;&amp;#;</it:summary></item> <item><pubDate>Sun 17 Mar 2216 03:55:30 GMT+</pubDate>
+<guid isPermaLink="true">urn:uuid:de0bb686</guid>
+<it:duration>7414</it:duration>
+<podcast:chapters url="https://example.com/ch.json" type='application/json+chapters'/>
+<content:encoded>&lt;li>Line&#60;br&gt;break&lt;/li&gt;&lt;div&gt;&amp;hellip;&#x3C;/div&gt;&#60;br /> é&lt;div&gt;&amp;#x;&#60;/div&gt;😀&#x3C;div>第7&#38598;&#60;/div&gt; multi
+line</content:encoded>
+<link></link>
+<title>a&#13;
+b
+  padded  </title>
+<description><![CDATA[  &euro;<3 <3<br>  http://example.com/?a=1&b=2<p>&unknown;</p><li>]]>tab	here&lt;/li&gt;</description>
+<enclosure url="//example.com/a/b/c319.ts" length="16384" type="audio/"/></item> <item><it:duration>176:50</it:duration>
+<enclosure url="https://example.com/a.b/379.mov" length='abc' type="application/x-bittorrent"></enclosure>
+<enclosure type='video/x-matroska'/>
+<enclosure url="https://xn--caf-dma.example/café/335.ogx" length="0x4E20" type="Audio/MPEG"/>
+<title>  padded  &#60;unknown&gt;&#38;&#x3C;/unknown>&#38;quot;q&#38;quot;</title>
+<guid isPermaLink="true">  spaced guid  </guid>
+<pubDate>Wed, 05 APRIL 2023 08:25:28 -1200</pubDate>
+<description></description></item> <item><title>Tom &amp; Jerry &#x3C;3
+#hash
+&amp;lt</title> <it:duration>.5</it:duration> <guid isPermaLink="true">
+</guid> <link> https://e.com/x </link> <description>	a&#13;
+b&#60;div>&amp;#x1F600;&lt;/div&gt;😀😀😀😀&lt;img>&lt;br/></description> <pubDate>Sat 7 Jun 2008 03:40:24 GMT-0500 (z)</pubDate></item> <link xmlns="http://www.w3.org/2005/Atom" length="20000" type="application/xml+xhtml" rel='first'/> <atom:link length="abc" title="MP3 feed" rel="related" href="ftp://files.example.com/280.webm"></atom:link> <podcast:funding url="https://example.com/donate">Support us</podcast:funding> <it:owner><it:name>Owner</it:name><it:email>o@example.com</it:email></it:owner></channel></rss>

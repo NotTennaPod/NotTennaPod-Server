@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1252"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+  <author><name>C&#38;D</name></author><author><name>&#201;mile</name><email>a@example.com</email></author><title> leading  &#8203;  &#60;p&gt;S01E954</title><link title="Café" length="9223372036854775808" href="https://example.com/alt.xml"></link><itunes:summary>&#38;#xA9;
+trailing &lt;br/>a=b&#38;c=d&#128512;&#128512;&#128512;&#128512;&#128512;&#128512;&#128512;&lt;div>sep&lt;/div>
+&#x26;#xA9;</itunes:summary><author><name>  Bob  </name></author><entry><content type='plain'>  &#38;amp; back\slashé&#233;&#233;&#x26;#0;&lt;hr&gt;</content>
+  <updated>1601-07-21T15:05:37-1200</updated>
+  <published>&#13;
+Thursday, 12 Oct 49 10:06:29 +0000
+</published>
+  <title type="html"><![CDATA[&#xD800;
+<b>Bold</b> title
+<small>{json: 1}</small>]]></title>
+  <summary type="html"></summary></entry><entry><content type="text">&lt;br&gt;#7 –<![CDATA[ Interview<br>]]></content>
+<link length="9223372036854775808" href="" type='application/xml+xhtml' rel="archives"/>
+<summary type="html">&#x3C;p>&#33590;&#60;/p>&#38;Lt;&#60;br&gt;"quoted"</summary>
+<link rel="payment" title="Café" href="" length="abc" type="text/html"/>
+<updated>Mon 14 Dec 2161 09:12:25 +0200</updated>
+<title type="text">Line&lt;br>break&#128512;</title>
+<id>tag:x,2020:1</id></entry><entry><itunes:duration>2049</itunes:duration> <podcast:transcript url="https://example.com/t.vtt" type="application/x-subrip"/> <published>X, 16 September 1975 09:30:22</published> <id>
+id
+</id> <updated>Mon, 07 Sep 05 07:40:30 +0530</updated> <title>R&#38;D e&#769;</title> <itunes:image href=""/> <media:content type="audio/flac" fileSize="16384" medium='video' url="https://xn--caf-dma.example/ep29.png?auth=yes" duration="1.5"/> <content type="HTML">&#60;p&gt;&#x26;unknown;&lt;/p></content></entry><entry><updated>2326-08-08T22:03:42.5</updated> <id>urn:uuid:1</id> <itunes:duration>5:36:59</itunes:duration> <title>x&lt;ytrailing </title> <itunes:image href=""></itunes:image></entry><entry><updated>2013-08-27T17:47:18  </updated>
+<link title="Alternate" href='https://example.com/feed?page=2' rel="" length="20000" type="application/xhtml+xml"/>
+<content type="plain">&#x26;lt;b&#x26;gt;escaped&amp;lt;/b&amp;gt;sep&#128512; &#1513;&#1500;&#1493;&#1501;&#x26;amp;</content>
+<itunes:duration>1309</itunes:duration>
+<title type="xhtml"><![CDATA[&quot;q&quot;sep]]></title>
+<link rel="hub" title="" length="abc" type="text/html"/></entry><entry><title><![CDATA[<s>Tom & Jerry <3</s>]]></title> <updated>  Tue., 24 Jan 1984 12:29:45 +1400&#13;
+</updated></entry><entry><content>aaaaaaaaEpisode 7</content>
+  <it:duration>6461.141</it:duration>
+  <title type="text">&amp;amp  &#31532;33&#38598;</title>
+  <link title="Alternate" href="https://example.com/" rel="self"/>
+  <published>Sat 22 Apr 1899 10:18:43 GMT+1400 (MST)</published>
+  <media:content duration="01:00" type="image/jpeg" isDefault="TRUE" url="ftp://files.example.com/48.webm" fileSize="52428800"/>
+  <podcast:transcript url='https://example.com/t.vtt' language="en"/></entry><entry><id></id>
+  <link title="Café" length="12" rel="next" type='text/html' href="https://example.com/pay"/>
+  <title type="text">&#60;p&gt;&amp;apos;a&#x26;apos;&#x3C;/p&gt;</title>
+  <dcterms:date>2022-11-22T04:10:51.17552z</dcterms:date></entry>
+</feed>

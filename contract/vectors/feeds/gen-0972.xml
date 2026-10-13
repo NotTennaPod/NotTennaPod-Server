@@ -1,0 +1,30 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:chapters="http://podlove.org/simple-chapters">
+<channel xmlns:dc="http://purl.org/dc/elements/1.1/"><itunes:author>Tom &amp; Jerry &#x3C;3</itunes:author>
+<language>de-DE</language>
+<link> https://example.com/ </link>
+<image><url></url><link>https://example.com/img-link</link></image>
+<title>multi
+line</title>
+<atom:link title="Alternate" type="" href="" rel="next"/>
+<itunes:image href="https://example.com/it.jpg"/>
+<podcastindex:funding></podcastindex:funding>
+<item><description><![CDATA[
+  spaced  <BR>]]></description><media:description type="html"><![CDATA[<br>]]></media:description><content:encoded>&lt;p>&#38;#xA9;&#x3C;/p>
+​&lt;p&gt;http://example.com/?a=1&#x26;b=2&#x3C;/p&gt;
+
+مرحبا&amp;ltaaaaaaaa&#x3C;img>	 </content:encoded><enclosure url="" length="16384" type="application/json"/><pubDate>1969-11-20T15:05:21+0530 UTC</pubDate><media:content fileSize="-9223372036854775808" duration="1.5" type="AUDIO/MPEG" isDefault="false"/><itunes:duration>1:-1</itunes:duration><title><![CDATA[{json: 1}]]></title><enclosure url="ftp://files.example.com/156.amr" length='9223372036854775808' type="text/plain"/></item>
+<item><title><![CDATA[&lt;b&gt; &hellip; &l]]>t</title>
+<guid>urn:uuid:8d6cbc78</guid>
+<link></link>
+<pubDate>2425-09-10T20:45:23+0100</pubDate>
+<content:encoded>
+
+x&lt;y&lt;li&gt;مرحبا&lt;/li&gt;&#60;li&gt;第7集&#x3C;/li>&#60;p&gt;Para&lt;/p>&#x3C;li&gt;R&#38;D&lt;/li&gt;aaaa
+
+&#38;nbsp;&#60;img></content:encoded>
+<itunes:subtitle>a &gt; b
+Episode 12
+&amp;#;</itunes:subtitle>
+<itunes:duration>1:33:40</itunes:duration>
+<enclosure length="" type="video/webm"/></item></channel>
+</rss>

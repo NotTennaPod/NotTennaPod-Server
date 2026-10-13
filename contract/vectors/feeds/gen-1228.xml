@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+  <channel><image><url></url></image><link>https://example.com</link><title><![CDATA[<img src="x.png"> cover<u>AT&T</u>]]></title><description>&lt;li>&amp;nbsp;&#60;/li><![CDATA[]]></description><item><title>&amp;mdash;
+</title>
+<guid isPermaLink="true">urn:uuid:7f5d1cab</guid>
+<link>https://example.com/ep</link>
+<pubDate>Monday, 03 Apr 72 21:18</pubDate>
+<enclosure url="" length="-9223372036854775808" type='application/ogg'/></item><item><enclosure url='' length="9223372036854775807" type="application/json"/>
+<description>&#13;
+AT&amp;T&#x3C;p&gt;&lt;/p>aaaa &amp;;&lt;img&gt;&#60;p>R&amp;D&lt;/p&gt;a=b&#38;c=d&#x3C;br&gt;&#38;#x1F600;&lt;br&gt;</description>
+<enclosure url="HTTPS://EXAMPLE.COM/ep158.mp3.zip" length="-1" type="AUDIO/MPEG"/>
+<title>😀  &#38;#169;</title>
+<link>https://example.com/ep</link>
+<guid isPermaLink="true">a&#38;b</guid>
+<pubDate>19 Jul 78 18:04 +0945</pubDate></item><item><guid isPermaLink="true">  spaced guid  </guid> <pubDate>Tue 21 Apr 1974 19:04:03 GMT+0945 (IST)</pubDate> <description></description> <title><![CDATA[Tom &amp; Jerry &lt;3]]></title> <atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="Café" type="application/xhtml+xml" length="abc" href="" rel="hub"/> <enclosure url="ftp://files.example.com/a/b/c181.ts" length="abc" type='application/json'/></item><item><media:content fileSize="" duration='0060' medium="audio" isDefault="1"/>
+<title><![CDATA[😀]]></title>
+<enclosure url="//example.com/ep80.txt#t=10" length="16383" type='video/x-matroska'/>
+<guid isPermaLink="true">  spaced guid  </guid>
+<link></link></item><item><title>100%  &lt;b&gt;&#x3C;i&gt;&lt;p>Para&#60;/p&gt;&#60;/b>&lt;/i>   </title>
+  <link> https://e.com/x </link>
+  <sc:chapters><sc:chapter title="😀" start='1:00 '/><sc:chapter start='1.5e3' title="Intro"/><sc:chapter title="&lt;b>x&lt;/b>" start="" href="https://example.com/ch"></sc:chapter><sc:chapter start="00:57:22" href="" title=""/><sc:chapter start="72:10" title="😀"/><sc:chapter title="&lt;b>x&lt;/b>" href="https://example.com/ch" start="107"/></sc:chapters>
+  <media:content medium="image" type="application/x-bittorrent" duration="3600" isDefault='true' url="HTTPS://EXAMPLE.COM/ep176.wav" fileSize="12"/>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <media:description><![CDATA[<p>&#x1F600;</p>
+
+"quoted"&amp;<br>]]></media:description>
+  <media:content duration="3600" medium="video" fileSize="16385" type="audio/x-wav"/>
+  <enclosure url="" length="-1" type="application/octet-stream"/>
+  <media:content medium="document" duration='3600' isDefault="false" type="audio/mp4" url="HTTPS://EXAMPLE.COM/346.aac?a=1&amp;b=2" fileSize="9007199254740992"/>
+  <pubDate>2014-08-24T18:05:03&#13;
+</pubDate></item></channel> </rss>

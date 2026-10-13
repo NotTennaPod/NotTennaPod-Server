@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>en</language>
+<title>&amp;#65;&amp;#66;&lt;div>&lt;p>&amp;#x1F600;&lt;/p>&#60;/div&gt;cr&#13;lf</title>
+<link> https://example.com/ </link>
+<p:transcript url="https://example.com/t.json" type="application/json"/>
+<p:funding url="https://example.com/donate">&lt;b>x&#x3C;/b&gt;</p:funding>
+<image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url><title>Image title</title></image>
+<media:thumbnail url=''/>
+<itunes:new-feed-url>http</itunes:new-feed-url>
+<p:funding url="https://example.com/donate"></p:funding>
+<p:funding url="https://example.com/donate">  spaced  </p:funding>
+<item><title>&#x26;#;</title>
+<guid isPermaLink='true'> </guid>
+<link> https://e.com/x </link>
+<pubDate>2528-11-27T23:17:58-1200x</pubDate>
+<description>&lt;br&gt;&lt;/br<![CDATA[>]]></description>
+<content:encoded>&#60;li>​&#60;/li></content:encoded>
+<itunes:subtitle>&lt;label&gt;&amp;#;&#60;/label&gt;</itunes:subtitle>
+<itunes:duration>4:41:15</itunes:duration>
+<enclosure url="" length="16383" type="application/ogg"/>
+<media:content url="https://example.com:8443/e p16.mp4" type="audio" fileSize="9223372036854775807" isDefault="true" duration="-5"/>
+<media:content type="text/plain" duration=" 60" url="ftp://files.example.com/dir.with.dots/ep392.aif" medium="document" fileSize="abc" isDefault="1"/>
+<media:content type="audio/x-m4a" duration="abc" medium="video" url="HTTPS://EXAMPLE.COM/ep7.aac" isDefault="1" fileSize="1"/>
+<media:thumbnail/>
+<atom:link title="Café" rel="first" href="https://example.com/" type=""/></item>
+<item><pubDate>Wed, 03 november 1976 20:08:30 +0100</pubDate>
+  <link>https://example.com/ep</link>
+  <psc:chapters><psc:chapter start='6753'/><psc:chapter href="https://example.com/ch" start="110:18" image="https://example.com/ch.png"/></psc:chapters>
+  <enclosure url="https://cdn.example.com/a/b/c250.php" length="2e5" type="image/png"/>
+  <content:encoded><![CDATA[<li>plain words</li> &#128512;<br>  😀 a
+
+b]]></content:encoded>
+  <media:content isDefault="false" type="video/quicktime" duration="1" fileSize="4294967296" medium="audio"/>
+  <guid> </guid>
+  <enclosure url="HTTPS://EXAMPLE.COM/a/b/c101.php" length='9007199254740991' type="audio/flac"/>
+  <title>	&amp;#0; </title>
+  <itunes:duration>35791:23:47</itunes:duration>
+  <media:content url="http://example.org/e p395.3gp" type=" audio/mpeg" duration='0060' fileSize="-0" medium="video"/>
+  <enclosure url="//example.com/378.mid" length="0" type="audio/opus"/></item></channel></rss>

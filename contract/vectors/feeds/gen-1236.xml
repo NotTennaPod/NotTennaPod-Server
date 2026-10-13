@@ -1,0 +1,43 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><item><itunes:summary><![CDATA[&lt;b&gt;<br>]]></itunes:summary>
+  <description>  &#38;#128512;</description>
+  <enclosure length="18446744073709551616" type='video/quicktime'/>
+  <link></link>
+  <itunes:duration>12:34:56.789</itunes:duration>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <pubDate> 1995-12-11T21:30:30+1400&#13;
+</pubDate>
+  <title><![CDATA[AT&T]]></title></item>
+<item><title>&#38;copy; &#x26;lt;b&#x26;gt;escaped&#38;lt;/b&amp;gt;</title>
+<itunes:duration>1e2</itunes:duration>
+<description><![CDATA['single'<br>&quot;q&quot;<br>]]></description>
+<enclosure url="" length="20000 " type="audio/"/>
+<media:content type='image/*' duration="2147484" url="https://xn--caf-dma.example/e p3.wav" fileSize="2e5"/>
+<link></link>
+<pubDate>1900-04-22T05:61:03-0000</pubDate>
+<guid isPermaLink='true'>urn:uuid:28cf74b2</guid>
+<itunes:image href=' '/></item>
+<item><pubDate>Thu 1 Aug 0999 16:55:01 GMT-0500 </pubDate>
+<enclosure length='' type="Audio/MPEG"/>
+<guid>urn:uuid:df509b80</guid>
+<itunes:summary>&#x26;quot;q&#38;quot;ééé&#x26;euro;&lt;li&gt;a
+
+b&lt;/li>&lt;hr>&lt;p>café&#x3C;/p&gt; Tom &amp; Jerry &#x3C;3
+
+plain words</itunes:summary>
+<description>&#60;br&gt;&lt;div&gt;'single'&#60;/div&gt;</description>
+<media:group><media:content duration="2147483" isDefault="1" fileSize="12" type="audio/x-wav" medium='image'/><media:content medium="audio" type="text/plain" fileSize="00020000" url="ftp://files.example.com/a/b/c341.mid" isDefault='false' duration="-5"/></media:group>
+<title>&#x26;Lt;#823 &#8211; Interviewa&#13;
+b&lt;/p&gt;</title></item>
+<title>100%
+&amp;apo<![CDATA[s;a&apos;
+&lt]]></title>
+<link xmlns="http://www.w3.org/2005/Atom" title="MP3 feed" type="application/rss+xml" length="abc" rel="enclosure"/>
+<language> EN-US </language>
+<description><![CDATA[<hr/><li>Tom &amp; Jerry &lt;3</li><p></p>ééé<li>&copy;</]]>li&gt;&#60;div&gt;Tom &amp;amp; Jerry &amp;lt;3&lt;/div&gt;&#60;br>&lt;/br> a &lt; b</description>
+<atom:link type="text/html" href="" rel="last" length='20000'/>
+<image><link>https://example.com/img-link</link><url></url></image>
+<atom:link href="https://example.com/" title="MP3 feed" rel='hub' type='audio/mpeg'/>
+<itunes:summary></itunes:summary>
+<atom:link rel="last" href="https://example.com/" type="application/rss+xml"/></channel>
+</rss>

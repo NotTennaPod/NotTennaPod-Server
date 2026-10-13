@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters"><channel><itunes:summary>&#x3C;p&gt;&lt;/p&gt;</itunes:summary>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <title><![CDATA['single' שלום Folge 17: Über alles]]></title>
+  <language>fr
+</language>
+  <description>plain words&#60;br&gt;ééé&#60;div>a=b&amp;c=d&#60;/div&gt;&#60;img&gt;  ​aaaaaaaaaaaaaaaTom &#x26; Jerry &lt;3</description>
+  <link>https://example.com</link>
+  <item><enclosure url="HTTPS://EXAMPLE.COM/e p148.oga" length="２０００００" type="image/jpeg"/> <description><![CDATA[<img>]]></description> <title>&amp;#x1F600;</title> <content:encoded>&#13;
+&amp;hellip;</content:encoded> <guid isPermaLink="false">dup</guid> <pubDate>Monday, 03 Nov 1986 20:25</pubDate> <link> https://e.com/x </link> <itunes:duration>45</itunes:duration> <media:content type="audio/opus" duration="2147483648" fileSize="20000.0" url="https://cdn.example.com/ep376.Mp4" isDefault="1" medium="audio"/> <itunes:image href=" "/></item>
+  <item><link>https://example.com/ep</link>
+<title><![CDATA[#825 – Interview]]>
+&#x3C;dfn>第518集&lt;/dfn></title>
+<itunes:duration>3656</itunes:duration>
+<enclosure type="text/plain"/>
+<guid isPermaLink="false">  spaced guid  </guid>
+<pubDate>2017-10-15T03:16:01utc</pubDate>
+<itunes:subtitle><![CDATA[#hash]]></itunes:subtitle>
+<media:group><media:content medium="video" type='video/quicktime' isDefault='TRUE' fileSize="18446744073709551616" duration="abc"/><media:content duration="2147483" fileSize="16384" isDefault="false" medium="audio" type="audio/aac"/></media:group></item>
+  <item><description>第7集</description><title>&#x3C;dl>&#60;dt&gt;S0<![CDATA[1E931</dt><dd>b</dd></dl>
+{json: 1}]]></title><enclosure url="HTTPS://EXAMPLE.COM/182.txt" length='9223372036854775808' type="audio/mpeg"></enclosure><pubDate>	Sun, 25 Jan 0099 09:20:47 -0500  </pubDate><guid isPermaLink="false">
+</guid></item></channel>
+</rss>

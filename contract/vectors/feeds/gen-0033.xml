@@ -1,0 +1,40 @@
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:at="http://www.w3.org/2005/Atom">
+<channel><link></link><p2:funding url="">Support us</p2:funding><p2:funding url=""></p2:funding><itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">第一</itunes:author><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[Tom &amp; Jerry &lt;3 שלום]]></itunes:subtitle><image><title>Image title</title><url>  https://example.com/ws.png
+</url></image><title>R&#x26;D</title><description>&amp;#xA9;&lt;li&gt;Tom &#x26; Jerry &#x3C;3&#x3C;/li&gt;&lt;li>&amp;amp&lt;/li&gt;&#233;&#233;écr
+lf</description><at:link rel="self" href='https://example.com/pay' length="abc" title="Alternate"/><itunes:category xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" text="Arts"><itunes:category xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" text="Design"/></itunes:category><item><title>tab<![CDATA[	here  spaced  a > b]]></title>
+<link></link>
+<pubDate>Mittwoch 3 Aug 2383 05:20:31 GMT-0800 (MST)</pubDate>
+<content:encoded></content:encoded>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/ep.jpg"/>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1:30 </itunes:duration>
+<enclosure url="https://example.com:8443/a/b/c360.3gp?dl=1.0" length="2147483647" type=" audio/mpeg"/></item><item><pubDate>1752-08-13T03:23:21.490Z</pubDate> <title><![CDATA[​  &#;]]></title> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"/> <description>	multi
+line &#x3C;li>Tom &#38;amp; Jerry &amp;lt;3&lt;/li>	😀#hash
+&#x26;euro;aaaaa
+
+b</description> <p2:chapters url="" type="application/json+chapters"/> <enclosure url="" length="18446744073709551616" type="Audio/MPEG"/></item><item><title>&#x26;amp;amp;  a=b&#38;c=d  cr&#13;lf</title><guid isPermaLink="false">a&amp;b</guid><pubDate>Wed, 23 Feb 2022 10:61:06 +0000</pubDate><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[&AMP;]]></itunes:subtitle><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">4474.249</itunes:duration><enclosure url="https://example.com/a.b/a/b/c160.m4v" length="20000 " type="application/pdf"/><mrss:group><mrss:content url="https://xn--caf-dma.example/165.html" isDefault="false" medium='document' fileSize="9223372036854775807" duration="" type="video/quicktime"/><mrss:content url="https://example.com:8443/e p72.m4v" isDefault="1" duration="abc" medium="audio" type="audio" fileSize="0x4E20"></mrss:content><mrss:content duration='1' url="//example.com/dir.with.dots/ep109.mp4" type="audio/mpeg; charset=binary" fileSize='-1' medium="document"/></mrss:group></item><item><link>https://example.com/ep</link>
+<pubDate>Mon, 14 Jul 2014 11:50 GMT</pubDate>
+<description>😀😀&#60;li>1 &#60;2&#x3C;/li&gt;&#x3C;p>&amp;amp&lt;/p&gt;
+&#38;apos;a&amp;apos;aaaaa
+
+b&amp;lt;b&#x26;gt;escaped&#38;lt;/b&amp;gt;&#x3C;li>tab	here&#60;/li&gt;</description>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[
+
+ <li>Folge 7: Über alles</li>a > b<br><div>  padded  </div>	a > b<div>&#;</div>
+&hellip;a]]></itunes:summary>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=''/>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">63:34</itunes:duration>
+<enclosure url='ftp://files.example.com/e p28.m4v?file=x.mp3' length="" type="image/png"/>
+<mrss:group><mrss:content duration="2147484" url="http://example.org/70.mkv" fileSize="18446744073709551616" isDefault="1" medium='video' type="application/json"/></mrss:group></item><item><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1:-1</itunes:duration>
+<pubDate>Sun Feb 3 06:00:47 1991</pubDate>
+<mrss:description type="html"></mrss:description>
+<mrss:content fileSize="-16384" isDefault="1" type="audio/*" medium="image"/>
+<link> https://e.com/x </link>
+<title>&#x26;#169;</title>
+<mrss:content isDefault="TRUE" type="audio" url="https://cdn.example.com/café/199.aac" duration=" 60" medium="video" fileSize="20000 "/>
+<enclosure url="http://example.org/357.ogx" length="-9223372036854775808" type="audio/wav"/>
+<guid isPermaLink="false">  spaced guid  </guid>
+<mrss:content url="//example.com/café/209.webm?auth=yes" fileSize="16385" duration="59" type="audio/ogg" medium="video"/>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"/></item><item><link>https://example.com/ep</link><description><![CDATA[a😀😀😀😀<3 <3<br>]]></description><pubDate>Sat, 05 Apr 1980 19:41 EEST</pubDate><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"/><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">32:02</itunes:duration><title>&lt;img src=&quot;x.png"&gt; cover  &amp;unknown;</title><guid>urn:uuid:82942220</guid><enclosure length="20000 " type="application/json"/></item><item><title>&#13;
+{json: 1} &lt;3 &#x3C;3
+</title><guid isPermaLink="false">dup</guid><link>https://example.com/ep</link><pubDate>2009-10-05T03:51:22+0000
+</pubDate><itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">ééé&lt;img src="x&quot; alt="y&quot;/></itunes:summary><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&amp;amp;</itunes:subtitle><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">+7</itunes:duration><enclosure length='2e5' type="audio/mp3"/><p2:chapters url="" type="application/json+chapters"/></item><item><title>1 &#60;2&lt;b&gt;&#x26;amp</title><guid></guid><link> https://e.com/x </link><pubDate>2024-04-21T18:08:45.851WET</pubDate><description></description><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Infinity</itunes:duration><enclosure url="//example.com/dir.with.dots/ep109.mp4" length="-9223372036854775808" type="video/mp4"/><mrss:content medium="video" fileSize="" type="audio/flac" isDefault='TRUE' duration="2147483648"/></item></channel> </rss>

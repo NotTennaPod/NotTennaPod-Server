@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<channel xmlns:atom="http://www.w3.org/2005/Atom"><language> EN-US </language>
+<link>https://example.com</link>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<x xmlns="urn:other"><title>Default namespace title</title></x>
+<title>
+#239 – InterviewLine&lt;br>break&#60;3 &lt;3 </title>
+<dc:creator>DC Creator</dc:creator>
+<item><title>"quoted" back\slash</title>
+<guid isPermaLink="true">a&amp;b</guid>
+<link> https://e.com/x </link>
+<pubDate>Mon, 16 Oct 2209 15:51:46 BST</pubDate>
+<description>&lt;li&gt;&#1513;&#1500;&#1493;&#1501;&#60;/li>Tom &amp;amp; Jerry &#38;lt;3&lt;br&gt;</description>
+<dc:date>Tuesday, 19 Aug 1986 05:11:51 -0500</dc:date>
+<enclosure url="https://user:pass@media.example.net/144.webm?dl=1.0" length="16384" type="application/octet-stream"/>
+<enclosure url="" length="-1" type="image/png"/></item></channel>
+  </rss>

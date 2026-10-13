@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE rss [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel><itunes:explicit>yes</itunes:explicit>
+  <title><![CDATA[&;  مرحبا  back\slash]]></title>
+  <a10:link title='Café' length="9223372036854775808" rel="hub"></a10:link>
+  <itunes:author>😀 Pod</itunes:author>
+  <a10:link rel="first" title="MP3 feed" href='https://example.com/' type="application/xhtml+xml"/>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <itunes:image href=""/>
+  <description>a&#13;
+b</description>
+  <a10:link title="Café" type="application/atom+xml" length='9223372036854775808' href="https://example.com/feed?page=2" rel=""/>
+  <language></language>
+  <link></link>
+  <item><title>&#x26;#0;
+cr&#13;lf</title>
+<guid isPermaLink="true">Caf&#233;-guid</guid>
+<link>https://example.com/ep</link>
+<pubDate>Mon, 15 November 1993 16:40:31 -1200</pubDate>
+<description></description>
+<itunes:duration>66:25</itunes:duration>
+<enclosure url="//example.com/café/301.mkv#t=10" length="123456789012345678" type="audio/mp3"/>
+<mrss:thumbnail url=""/></item></channel></rss>

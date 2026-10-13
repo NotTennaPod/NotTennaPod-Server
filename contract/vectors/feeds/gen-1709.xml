@@ -1,0 +1,10 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel><itunes:subtitle><![CDATA[&#x1F600;]]></itunes:subtitle>
+  <itunes:image/>
+  <title>&#38;AMP;
+Tom &amp; Jerry &lt;3</title>
+  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" length="12" href='https://example.com/pay' rel="last" title='Alternate'/>
+  <media:thumbnail url="https://example.com/mt.jpg"></media:thumbnail>
+  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/alt.xml" type="application/rss+xml" title="MP3 feed" rel="alternate" length="abc"/>
+  <itunes:summary><![CDATA[ééé]]></itunes:summary></channel>
+</rss>

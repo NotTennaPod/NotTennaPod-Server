@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<title>&#38;#169;</title>
+  <it:episodeType>full</it:episodeType>
+  <link length="12" rel="next" title="" type="application/rss+xml"/>
+  <subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">	&amp;#128512;</div></subtitle>
+  <id> raw </id>
+  <entry><author><name>Entry author</name></author>
+  <published>Thu, 04 sep 1975 23:21:14 -1200</published>
+  <updated>Fri, 05 Apr 1996 05.07.05 +0100</updated>
+  <title type="html">a&#13;
+b
+Folge 571: &#xDC;ber alles
+</title>
+  <content>	  spaced  &#x3C;div&gt;&#8203;&lt;/div&gt;&#x3C;3 &lt;3</content>
+  <link length="12" title="" rel="alternate" href="https://example.com/pay" type="application/xml+xhtml"/></entry>
+  <entry><updated>1976-03-16T00:56:47.824PST</updated><id>tag:x,2020:1</id><title>&#x3C;span&gt;&#1513;&#1500;&#1493;&#1501;&lt;/span&gt;</title><summary></summary><it:duration>1:2:3:4</it:duration><content type="html"><![CDATA[<p></p><div>&#xA9;</div>	100%ééé<img src="x.png">&#xFFFF;<br><li>&apos;a&apos;</li><li> leading</li>]]></content><link type="application/rss+xml" rel="related" href="https://user:pass@media.example.net/dir.with.dots/ep264.ogx"/></entry>
+  <entry><id>urn:uuid:1</id> <title type="html">1 <![CDATA[<2]]></title> <summary><![CDATA[<p>sep</p>]]></summary> <published>thu 1 Nov 1979 15:47:16 GMT+0530 (CST)</published> <link title="MP3 feed" href="https://example.com/feed?page=2" type="text/html" rel="related"/> <updated>2339-04-13T13:50:53Z</updated></entry>
+  <entry><it:image href="https://example.com/e.jpg"/>
+<content type="text"><![CDATA[<p/> &quot;q&quot;<li>  padded  </li>&amp<br><p/>
+
+plain words
+http://example.com/?a=1&b=2<img>]]></content>
+<title><![CDATA[plain words
+&apos;a&apos;
+a
+  b]]></title>
+<updated>Sun, 27 Sep 2274 99:16 +0530</updated>
+<published>2020-01-03T17:25:35</published>
+<id>tag:x,2020:1</id>
+<it:duration>0:27:13</it:duration></entry>
+  <entry><media:content type="" duration="59" fileSize="20000 "/><id></id><summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x3C;img src=&quot;x" alt="y&quot;/&gt;</div></summary><link title="Café" rel='' type="application/xml+xhtml" href="https://example.com/alt.xml" length="12"/><updated>1995-08-04T11:45:36.4Z</updated><author><name>Entry author</name></author><title type="text">&#60;p&gt;&#x26;nbsp;&#x3C;/p></title></entry>
+  <entry><published>1981-10-21T01:01:20</published>
+<updated>Mon., 02 Jul 2018 19:35:29 +1400</updated>
+<title type="html">café  &amp;lt;b&#x26;gt;escaped&#x26;lt;/b&amp;gt;  'single'</title>
+<id> raw </id></entry>
+  <entry><published>Sun, 24 JUL 2016 08:48:58 +0530</published>
+<id>
+id
+</id>
+<dc:date>Thu 8 Feb 2022 19:34:52 GMT+0100 (CET)</dc:date>
+<title type="HTML">&#60;<![CDATA[3 <3]]></title></entry>
+  <entry><link href="https://example.com/pay" title="" length="20000" rel="payment" type=""/>
+<link type="application/rss+xml" rel="" href='https://example.com/' title="Café"/>
+<summary type="html">Line&lt;br&gt;break&lt;br></summary>
+<link href='https://example.com:8443/café/140.mid' title="Alternate" rel="related"></link>
+<title type="html">#hash  &amp;  &#128512;</title></entry>
+</feed>

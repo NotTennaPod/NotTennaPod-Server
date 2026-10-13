@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?><rss xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><lastBuildDate>Tue, 15 Jul 2003 00:00:00 CET</lastBuildDate> <atom:link href="https://example.com/feed?page=2" length='20000' rel="related" type="application/atom+xml"/> <itunesu:subtitle><![CDATA[]]>a &#60; b  &#60;u>&amp;lt;b&#38;gt;&lt;/u></itunesu:subtitle> <description> &amp;lt;b&amp;gt;</description> <itunesu:author>Café Radio</itunesu:author> <language>pt-BR</language> <atom:link href='https://example.com/pay' length="9223372036854775808" title="MP3 feed" rel='Next'/> <title>&#38;#x1F600;
+&lt;p&gt;Para&lt;/p&gt;
+Tom &amp; Jerry &lt;3</title> <item><media:thumbnail/>
+  <itunesu:duration>2:43:21</itunesu:duration>
+  <podcast:chapters type="application/json+chapters"/>
+  <guid isPermaLink="false">a&amp;b</guid>
+  <enclosure url='' length="-1" type="audio/aac"/>
+  <description>&#x3C;hr&gt;&#x3C;p>[x]&lt;/p>éé&#233;&lt;br /&gt;
+  spaced  </description>
+  <content:encoded>  &amp;#xFFFF;&#60;br /&gt;</content:encoded>
+  <title>AT&#38;T</title></item> <item><pubDate>	Mon, 01 Jun 1970 07:19:06 +0945  </pubDate>
+  <itunesu:image href=" https://e.com/i.png "/>
+  <enclosure url="https://example.com/a.b/a/b/c123.m4v" length="-9223372036854775808" type="audio"/>
+  <itunesu:duration>1989.218</itunesu:duration>
+  <title/></item> <item><pubDate>Mon 6 Jun 2495 09:29:37 GMT-05</pubDate>
+  <guid isPermaLink="false">urn:uuid:b91ec841</guid>
+  <media:description type='plain'><![CDATA[éééééé<br/>]]></media:description>
+  <title>trailing  &#38;#0;<![CDATA[ &#128512;]]></title>
+  <itunesu:author>Item author</itunesu:author>
+  <enclosure length="-9223372036854775808" type="text/html"/>
+  <description>&lt;li><![CDATA[&quot;q&quot;</li>]]></description>
+  <link> https://e.com/x </link>
+  <enclosure url="" length="16384" type=" audio/mpeg"/></item></channel>
+</rss>

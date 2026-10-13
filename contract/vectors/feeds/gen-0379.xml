@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters"><channel><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/mt.jpg"/>
+<it:summary>	http:/<![CDATA[/example.com/?a=1&b=2]]></it:summary>
+<description><![CDATA[<hr>]]></description>
+<d:creator>DC Creator</d:creator>
+<it:image/>
+<title>&#38;copy;&amp;amp;amp;&#38;hellip;</title>
+<link>https://example.com</link>
+<item><title>&#x26;#xA9;שלום</title>
+<link> https://e.com/x </link>
+<content:encoded>😀😀&#128512;&#128512;</content:encoded>
+<enclosure url=" https://xn--caf-dma.example/a/b/c386 " length="123456789012345678" type=""/>
+<it:duration>1h30m</it:duration>
+<pubDate>Fri 12 Mar 2021 23:33:51 GMT+0100 (MST)</pubDate>
+<it:subtitle>&lt;i> leading&#x3C;/i></it:subtitle>
+<description>	café</description></item>
+<item><title><![CDATA[&copy;  ]]></title>
+<enclosure url='' length="9007199254740993" type="audio/wav"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="HTTPS://EXAMPLE.COM/café/64.3gp" fileSize="00020000" isDefault="true" medium="document" type="application/ogg" duration="0060"/>
+<content:encoded><![CDATA[<p/>]]></content:encoded>
+<guid isPermaLink="true"></guid>
+<link></link>
+<it:image href="https://example.com/ep.jpg"/>
+<enclosure url="" length="0x4E20" type="audio/flac"/>
+<it:duration>6415</it:duration>
+<pubDate>1990-09-21T21:40:29AKST</pubDate></item></channel>
+</rss>

@@ -1,0 +1,19 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang=""><id>urn:x</id><subtitle type="html">&#x26;amp;
+
+{json: 1}</subtitle><link title="Alternate" rel="next" href="https://example.com/" length='20000'/><title> &amp;#;
+a &gt; b
+ leading </title><entry><link rel="self" title="Café" type='application/rss+xml'/>
+  <updated>08 Apr 1988 08:27:31 Central European Standard Time</updated>
+  <title><![CDATA[<]]>3 &#x3C;3</title>
+  <link type="text/html" href="https://example.com/alt.xml" length="12" rel="first"/>
+  <published> Foo,  2019-12-26	</published>
+  <content><![CDATA[aaaaaaa]]></content></entry><entry><link rel="archives" title="Alternate" type="audio/mpeg" href="https://example.com/"/>
+  <i:duration>1973.386</i:duration>
+  <title>	&amp;#;  שלום  ​  </title>
+  <media:content medium="document" fileSize="9007199254740991" duration="3600" url="ftp://files.example.com/a/b/c18.mpga"></media:content>
+  <id>
+id
+</id>
+  <summary type="plain"><![CDATA[<BR>😀😀😀😀#7 – Interview &amp<img src="x" alt="y"/>&#xD800;<br>&#xD800;<br><div>​</div>]]></summary>
+  <updated>04 Mar 2016 20:19:02 CEST</updated></entry>
+  </feed>

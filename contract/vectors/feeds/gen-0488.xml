@@ -1,0 +1,26 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><itunes:image/><image><url>https://example.com/img.png</url></image><link> https://example.com/ </link><title><![CDATA[&lt&#x1F600;]]></title><pi:funding url="https://example.com/donate">  spaced  </pi:funding><link xmlns="http://www.w3.org/2005/Atom" title="Alternate" href="https://example.com/pay" rel="archives" type="application/xml+xhtml" length="12"/><description></description><item><title>&#60;p&gt;Para&#x3C;/p> Tom &amp;amp; Jerry &#x26;lt;3 &lt;h6&gt;é&#x3C;/h6&gt;</title>
+<guid isPermaLink="true">a&amp;b</guid>
+<link> https://e.com/x </link>
+<pubDate>1978-07-10T18:40:08+0200</pubDate>
+<description>	 &#x3C;li&gt;&amp;#0;&lt;/li&gt;</description>
+<itunes:image href="https://example.com/ep.jpg"/>
+<itunes:duration>4073</itunes:duration>
+<enclosure url="//example.com/e p76.caf" length="٢٠٠٠٠" type="application/pdf"/>
+<media:thumbnail url=""/>
+<pi:chapters type='application/json+chapters'/></item><item><link> https://e.com/x </link>
+  <title>&#38;c<![CDATA[opy;&apos;a&apos;]]></title>
+  <itunes:image href=' https://e.com/i.png '/>
+  <guid>urn:uuid:7c6d5304</guid>
+  <enclosure url="" length="123456" type="audio/x-wav"/>
+  <pi:chapters type="application/json+chapters"/>
+  <pubDate>27 Jul 50 08:18 -0800</pubDate></item><item><guid> </guid><pubDate>Thurs 21 Feb 1974 20:09:11 GMT+0945 (CEST)</pubDate><description>&lt;p/&gt;aaaaaaaaa</description><itunes:summary>&lt;img src=&quot;x.png">&#60;div>&lt;img src=&quot;x.png"> cover&lt;/div>&lt;br> AT&#x26;T&lt;li>a &gt; b&#x3C;/li&gt;
+&amp;;😀 &#x26;amp</itunes:summary><itunes:duration>1:58:24</itunes:duration></item><item><title>&amp;<![CDATA[#;]]></title>
+  <guid isPermaLink="false">dup</guid>
+  <link></link>
+  <pubDate>Sat, 29 Jun 2251 22:50:23 -0800</pubDate>
+  <description>&#13;
+AT&amp;T&lt;p&gt;{json: 1}&#x3C;/p>&#x3C;br />ééééé&#233;&#60;li>[x]&#x3C;/li>aaa&lt;hr></description>
+  <itunes:summary><![CDATA[ééé<img src="x.png">aaaaa]]></itunes:summary>
+  <itunes:image href=''/>
+  <itunes:duration>1:01:12</itunes:duration></item></channel></rss>

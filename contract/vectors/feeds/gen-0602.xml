@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="US-ASCII"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="">
+  <updated>27 Sep 1973 22:01:27 -0800</updated>
+<link length="12" title="Alternate" href="ftp://files.example.com/241.mp3" type="application/xhtml+xml" rel="hub"/>
+<link href="https://user:pass@media.example.net/caf&#233;/81.mpga" title="" type="application/atom+xml" rel="first"/>
+<author><name>C&#38;D</name></author>
+<id>urn:x</id>
+<subtitle type="text">&lt;p&gt;&#x26;#65;&#x26;#66;&lt;/p>&#38;&lt;br>&lt;p&gt;&#x3C;/p&gt;aaaaaaaa&#60;li&gt;&amp;#169;&#x3C;/li&gt;&#160;a
+
+b&lt;div>&amp;;&lt;/div>&lt;img&gt;</subtitle>
+<itunes:image href='https://example.com/ai.jpg'/>
+<title type="plain"> leading</title>
+<itunes:summary>&lt;li>&#38;lt&lt;/li&gt;&#38;#128512;&#60;br>aaaa  &#38;lt;b&amp;gt;  spaced  &#x26;#0;&lt;br&gt;&#160;a&#13;
+b&lt;hr&gt;</itunes:summary>
+<link type='application/xhtml+xml' title="Alternate" rel="Next"/>
+<entry><link title='Caf&#233;' length="abc" rel='payment'></link>
+  <title type="plain"><![CDATA[trail]]>ing 
+&#x26;mdash;</title>
+  <id>urn:uuid:1</id>
+  <content type="html">&#128512;&lt;br&gt;&#160;&#38;#xA9;  padded  &#60;br>&#13;
+&#x26;#xFFFF;&lt;br/&gt;</content>
+  <summary type="text"> http://example.com/?a=1&#38;b=2</summary>
+  <updated>Sat, 12 Aug 2130 01:06:43 +0200</updated></entry> </feed>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pc="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><itunes:image href=""/><description>&lt;br /&gt;</description><itunes:summary>&#x3C;BR&gt;&lt;li&gt;{json: 1}&#60;/li&gt;&lt;br/&gt;&#233;&#233;&#233;&lt;p>&#60;/p&gt;a=b&amp;c=d&#60;br&gt;	#hash
+multi
+line</itunes:summary><link xmlns="http://www.w3.org/2005/Atom" href="" type="audio/mpeg" length="12" title="Alternate" rel="Next"/><language>fr
+</language><itunes:subtitle><![CDATA[]]>&#x3C;label>  padded  &#60;/label&gt;</itunes:subtitle><link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/" title="" type="audio/mpeg" length="abc" rel="last"/><itunes:author><![CDATA[<b>St]]>udio&lt;/b&gt;</itunes:author><title>cr&#13;lf</title><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><item><link>https://example.com/ep</link><atom:link length='12' rel="enclosure" type="audio/mpeg" title="Caf&#233;" href="ftp://files.example.com/a/b/c97.torrent"/><title>&#x3C;div>#hash&#60;/div&gt;</title><description>&#13;
+&amp;lt;b&amp;gt;&#x3C;br&gt;&#60;/br></description><guid isPermaLink="true">a&#x26;b</guid><enclosure url='HTTPS://EXAMPLE.COM/e p286.png' length="abc" type="video/mp4"></enclosure><itunes:duration>15715</itunes:duration><itunes:image href=" https://e.com/i.png "/><pubDate>Sun, 25 Nov 1900 14:24 UT</pubDate></item><item><enclosure url="https://user:pass@media.example.net/ep125.MP3" length="1,000,000" type="text/html"/>
+<guid> </guid>
+<itunes:duration>195:08</itunes:duration>
+<pubDate>Sun, 01 Nov 1970 09:35:14.83011 -0500</pubDate>
+<itunes:image href=" https://e.com/i.png "/>
+<link>https://example.com/ep</link>
+<enclosure url="https://example.com/a.b/caf&#233;/317.mp3.zip" length="9223372036854775807" type="audio/*"/>
+<title>"quoted" &amp;#xD800; &lt;table&gt;&#x3C;tr>&#x3C;td&gt;1 &lt;2&#60;/td>&lt;td&gt;b&lt;/td&gt;&lt;/tr&gt;&#x3C;/table&gt;</title>
+<enclosure url="HTTPS://EXAMPLE.COM/caf&#233;/64.3gp" length='9223372036854775808' type="audio/mp3"/>
+<description><![CDATA[&#128512;]]>
+100%aaaaaaaa</description></item><item><media:content medium='Audio' duration="+60" type="audio/mpeg" fileSize="" isDefault="true"/> <title>&#160;</title> <enclosure url="ftp://files.example.com/30" length="16385" type='application/json'/> <x xmlns="urn:other"><title>Default namespace title</title></x> <guid isPermaLink="true">
+</guid> <m:content type="audio/mp3" medium="Audio" fileSize="4294967296" duration="1"/> <description><![CDATA[<img src="x.png"><img>]]></description> <content:encoded><![CDATA[
+
+&#169;<img src="x.png">]]></content:encoded> <itunes:image/> <itunes:duration>00:45</itunes:duration> <dc:date>04 Apr 2005 01:08:20.9840261 +0100</dc:date> <m:content isDefault="false" type="application/octet-stream" fileSize="52428800" duration="2147484"/> <pubDate>08 Oct 2018 16:58:54 +0200	</pubDate></item></channel>
+</rss>

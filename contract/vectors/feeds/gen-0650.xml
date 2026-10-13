@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en">
+<itunes:image href=""/>
+  <link rel='' href="HTTPS://EXAMPLE.COM/caf&#233;/53.wav" type="application/xhtml+xml" title='Alternate' length='9223372036854775808'/>
+  <id>https://example.com/feed</id>
+  <author><name>C&amp;D</name></author>
+  <title type="xhtml"><![CDATA[&#x; sep]]></title>
+  <podcast:funding url="https://example.com/give">Give</podcast:funding>
+  <entry><id>
+id
+</id>
+  <m:content medium="video" duration="2147483" isDefault="false" fileSize="16384" type="audio/*"/>
+  <link length='20000' rel='last' type='application/atom+xml' title="Caf&#233;"/>
+  <published> 	 2342-06-10T11:22:03-1200
+</published>
+  <content type="HTML"><![CDATA[<p/>]]></content>
+  <title type="html">&#160;&amp;#x1F600;cr&#13;lf</title>
+  <updated>Wed 23 Mar 2022 18:00:53 +0530</updated>
+  <itunes:duration>45</itunes:duration>
+  <link href="http://example.org/ep289.php" length='12' rel="related" title="Alternate"/>
+  <summary type="html">&#160;&amp;#x1F600;&amp;amp&#x3C;br&gt;&#x3C;p>Line&lt;br&gt;break&#60;/p>&#31532;7&#38598;&#x3C;br>&#60;br /&gt;&lt;li&gt;AT&amp;T&lt;/li&gt;&#x3C;div&gt;  padded  &lt;/div&gt;&#60;hr&gt;</summary></entry>
+  <entry><updated>Sat, 20 Feb 1971 11:16</updated>
+<published>&#13;
+1991-01-20T22:22:61Z  </published>
+<itunes:duration>03:06</itunes:duration>
+<title> &amp;amp;
+&#x3C;sup&gt;a&#13;
+b&lt;/sup&gt;
+a &gt; b </title></entry>
+  </feed>

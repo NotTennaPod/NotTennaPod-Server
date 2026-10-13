@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<author><name></name></author>
+  <atom:icon>https://example.com/icon.png</atom:icon>
+  <link rel="alternate" length="12" type="" href="https://example.com/pay"/>
+  <link rel="payment" title="Caf&#233;" href=''/>
+  <subtitle type="html"><![CDATA[aa<div>&mdash;</div><img src="x.png">&#233;&#233;&#233;<p>&#65;&#66;</p>]]></subtitle>
+  <title>&amp;#;</title>
+  <atom:id>https://example.com/feed</atom:id>
+  <atom:link rel="self" type="application/rss+xml"/>
+  <atom:entry><title type="plain"></title> <atom:link length="9223372036854775808" title="" rel='enclosure'/> <content type="HTML">&lt;p&gt;&amp;#x;&lt;/p>a=b&amp;c=d&#x3C;br&gt;plain words&#x3C;br&gt;&lt;p>&#x26;mdash;&lt;/p&gt;&#160;&#8203;&#13;
+&#128512;aa&#233;&#233;&#233;</content> <published>2244-10-19T11:08:28-0800</published> <id>
+id
+</id> <updated>Saturday, 24 Feb 2024 19:29 -0500</updated></atom:entry>
+  <atom:entry><published>Thu, 30 Jul 1983 23:22:06 CET</published>
+<media:content medium="audio" type="audio/flac" isDefault='false' duration="2147484" fileSize="52428800"/>
+<author><name>Entry author</name></author>
+<atom:summary>
+Episode 12</atom:summary>
+<title type="HTML">&amp;#x1F600;
+a&#13;
+b
+&amp;#xD800;</title>
+<atom:id> raw </atom:id>
+<podcast:transcript url="https://example.com/t.vtt" type="Application/JSON"/><podcast:transcript url="" type="application/json"/>
+<atom:updated>Sun, 06 Oct 92 02:21:00 -0000</atom:updated></atom:entry>
+  <entry><atom:title><![CDATA["quoted"&nbsp;e&#769;]]></atom:title>
+<link title="Alternate" rel="payment" href="https://xn--caf-dma.example/382.html" length="abc"></link>
+<atom:link length="20000" rel="hub" type="application/atom+xml" href="https://example.com/a.b/caf&#233;/113.Mp4?file=x.mp3"/>
+<atom:published>Tue, 22 Nov 1983 02:</atom:published>
+<link rel="" title="Caf&#233;" length="9223372036854775808" type=''/>
+<id>
+id
+</id>
+<atom:author><atom:name>Entry author</atom:name></atom:author>
+<atom:updated>Saturday, 09 Nov 0999 05:99:10</atom:updated>
+<atom:content type="plain"><![CDATA[  &]]></atom:content></entry>
+</feed>

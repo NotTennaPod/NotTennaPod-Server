@@ -1,0 +1,35 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate">  spaced  </podcast:funding>
+<atom:link href="https://example.com/feed?page=2" rel='related' title="Café"/>
+<description><![CDATA[<div>&#xFFFF;</div><p/><hr/><hr>	R&D<div>cr
+lf</div><br></br>&#xA9;]]>&#60;br&gt;</description>
+<title><![CDATA[​]]></title>
+<link>https://example.com</link>
+<itunes:summary><![CDATA[<div>&#xD800;</div>]]></itunes:summary>
+<atom:link rel="archives" title='Alternate' type="application/rss+xml" href=""/>
+<itunes:author>Jane Doe</itunes:author>
+<atom:link length="12" title="MP3 feed" rel="related"/>
+<item><description><![CDATA[<p></p> <br>]]></description>
+<itunes:duration>1e2</itunes:duration>
+<guid isPermaLink='true'>dup</guid>
+<title><![CDATA[&amp
+a
+  b
+<b><i>&</b></i>]]></title>
+<podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/ch.json" type="application/json+chapters"/>
+<media:description type="plain"><![CDATA[<li> </li>]]></media:description>
+<enclosure url="ftp://files.example.com/206.3gp" length="9223372036854775807" type='audio/mpeg; charset=binary'/></item>
+<item><enclosure url="https://example.com:8443/ep192.mp4?dl=1.0" length="" type="application/x-bittorrent"/>
+<description>&#160;&#38;amp😀&#x1F600;😀&lt;div&gt;&#x3C;3 &lt;3&#60;/div&gt;</description>
+<link></link>
+<dc:date>TUE 4 Sep 1066 10:16:53 GMT+0530 (PST)</dc:date>
+<title>&amp;copy;  cr&#13;lf</title>
+<media:content fileSize='12' isDefault="1" type="video" duration="2147483648"/>
+<media:content url="https://example.com/a.b/a/b/c270.mpga" duration="abc" fileSize="2147483647" type="text/plain"/>
+<pubDate>Thu, 08 March 1984 14:54:33 +0530</pubDate>
+<guid isPermaLink="true"></guid>
+<itunes:summary>&#13;
+Episode 12</itunes:summary>
+<podcast:person xmlns:podcast="https://podcastindex.org/namespace/1.0" role='host'>Jane</podcast:person>
+<media:content medium="audio" duration="1.5" isDefault="1" type="image/png" fileSize="4294967296"></media:content></item></channel>
+  </rss>

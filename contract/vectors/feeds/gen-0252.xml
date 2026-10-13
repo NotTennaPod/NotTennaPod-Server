@@ -1,0 +1,18 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:sc="http://podlove.org/simple-chapters">
+  <itunes:summary>&#x3C;br>
+
+#hash&amp;Lt;&lt;br></itunes:summary><author><name></name></author><title type='plain'>Episode 513 &amp;AMP; &quot;quoted"</title><updated>Tue, 08 Jul 2008 17:58 +0945</updated><id></id><subtitle type="html">  <![CDATA[  spaced  ]]></subtitle><entry><updated>Fri, 26 Jun 1998 15:13:03 -1200</updated> <link href="https://example.com/alt.xml" rel="archives"/> <itunes:image href=""/> <content type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">&lt;img&gt;&lt;br>&lt;/br>	x&lt;y</div></content> <itunes:duration>0x1.8p2</itunes:duration> <summary type="plain">&amp;#65;&amp;#66; &#x5E9;לום&#xE9;éé</summary> <sc:chapters><sc:chapter title="Intro" image='https://example.com/ch.png' href="https://example.com/ch" start="03:48:28.579"/></sc:chapters></entry><entry><title type="plain">&#x3C;b>Bold&#60;/b&gt; title</title>
+<link rel="payment" title="Café" length="20000" href="https://example.com/alt.xml"></link>
+<id>
+id
+</id>
+<itunes:duration>3.4028235e38</itunes:duration>
+<published>1982-09-07T12:4</published>
+<content><![CDATA[<div>tab	here</div><li>"quoted"</li>]]></content>
+<link type="application/xml+xhtml" rel="archives" title="Café" length="12"/></entry><entry><itunes:duration>5425.872</itunes:duration>
+<content type='text'><![CDATA[
+cr
+lféééééé<p/><br>]]></content>
+<link href="https://example.com/" title="Café" rel="hub" length="9223372036854775808"/>
+<title type="xhtml">&amp;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt; &#60;B>第577集&lt;/b&gt; &lt;p style=&quot;text-align:center">cr&#13;lf&lt;/p&gt;</title></entry><entry><link length='12' rel='archives' href="https://example.com/alt.xml" type="application/xhtml+xml"/><link length="abc" rel='enclosure' title="Alternate" href="https://example.com/alt.xml"/><summary type="HTML">😀😀😀 'single'&#x3C;div&gt;x&lt;y&lt;/div&gt;a > b&#60;br>&lt;img>&lt;li&gt;&amp;#x1F600;&#x3C;/li&gt;&lt;p>&#x26;apos;a&#38;apos;&lt;/p>&#x26;euro;&lt;br&gt;</summary><title>100%  sep  &lt;small&gt;&lt;/small></title><link rel="hub" length='20000' type="text/html" href="" title="Café"/><id> raw </id></entry>
+</feed>

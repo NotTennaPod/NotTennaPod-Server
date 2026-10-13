@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><description><![CDATA[
+&#65;&#66;<li>cr
+lf</li><d]]>iv>Episode 7&#x3C;/div&gt;</description>
+<podcast:funding url='https://example.com/donate'>  spaced  </podcast:funding>
+<podcast:funding url="https://example.com/donate">&lt;b>x&#x3C;/b></podcast:funding>
+<podcast:funding url="https://example.com/donate"/>
+<title><![CDATA[<ul><li>&amp;amp;</]]>li&gt;&lt;li&gt;two&#60;/li>&lt;/ul&gt; &lt;blockquote>  spaced  &#60;/blockquote> &lt;p&gt;Para&#x3C;/p></title>
+<atom:link title='MP3 feed' href="https://example.com:8443/ep192.mp4?dl=1.0" rel="self" type="text/html"/>
+<item><enclosure url="https://user:pass@media.example.net/café/363.OGG" length="0" type="application/octet-stream"/> <media:content fileSize=" 20000" medium="audio" isDefault="TRUE" duration="0" url="https://user:pass@media.example.net/ep132.html#t=10" type="video/mp4"></media:content> <enclosure url="https://xn--caf-dma.example/a/b/c323.ogx?dl=1.0" length="abc" type="audio/*"/> <guid isPermaLink="true"></guid> <title>&lt;h6&gt;&amp;#169;&lt;/h6&gt;http://example.com/?a=1&#x26;b=2&lt;dfn&gt;&amp;lt;b&#38;<![CDATA[gt;escaped&lt;/b&gt;</dfn>]]></title> <media:content type="audio/opus" medium="audio" duration='2147484' isDefault='true' fileSize="-0"/> <media:content duration="2147484" medium="image" isDefault="TRUE" type="audio/x-wav" fileSize="16384"/> <description>  [x]&#13;
+&#x26;lt;b&#x26;gt;مر&#x62D;با&#60;br&gt;</description> <pubDate>2006-03-22+0000</pubDate></item></channel></rss>

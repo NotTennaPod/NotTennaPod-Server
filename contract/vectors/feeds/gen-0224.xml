@@ -1,0 +1,23 @@
+<rss version="0.91" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters"> <channel><itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">第一</itunes:author>
+  <p:funding url="https://example.com/donate"/>
+  <media:thumbnail url=""/>
+  <title><![CDATA[Line<br>break
+tab	here
+<section>#288 – Interview</section>]]></title>
+  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="https://example.com/"/>
+  <item><title>&amp;#128512;
+&amp;#xFFFF;
+ leading</title>
+  <guid isPermaLink="false"> </guid>
+  <link> https://e.com/x </link>
+  <pubDate>Tue, 16 Sept 2123 19:58:03 +0000</pubDate>
+  <description>&lt;p>x&lt;y&lt;/p&gt;</description>
+  <enclosure url="//example.com/e p57.mid" length="1" type="application/ogg"/>
+  <media:content type="audio/x-wav" fileSize="-9223372036854775808" isDefault="TRUE" medium="video" duration="2147483648"/></item>
+  <item><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">	1:00
+</itunes:duration>
+<pubDate>Monday, 17 October 1066 00:49:43</pubDate>
+<title><![CDATA[{json: 1}]]></title>
+<m:group><m:content url="//example.com/dir.with.dots/ep109.mp4" duration="2147483" type="audio/x-m4a" fileSize='20000.0' isDefault='true'/><m:content fileSize='0x4E20' duration="0060" type="text/plain" url="https://example.com/a.b/café/333.php"/></m:group>
+<description><![CDATA[<li>a > b</li>aaa<div>第7集</div><br/>Line<br>break<br>]]></description>
+<enclosure url="http://example.org/e p58.mkv" length="" type='audio/'/></item></channel> </rss>

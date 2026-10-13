@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+  <icon></icon>
+<link href="https://example.com/pay" type="text/html" rel="archives" length="9223372036854775808"></link>
+<p2:funding url="https://example.com/give">Give</p2:funding>
+<link length='9223372036854775808' href="" type="application/xml+xhtml" title="MP3 feed"></link>
+<link title="Alternate" href='' type="application/rss+xml"/>
+<id>https://example.com/feed</id>
+<title>&lt;img src=&quot;x.png"&gt; cover&amp;mdash;</title>
+<author><name>  Bob  </name></author>
+<entry><link rel="last" href='' length="20000" type="application/xhtml+xml" title="Alternate"/>
+<id></id>
+<updated>1990-03-31T17:39:29+0200</updated>
+<link title="Café" href="https://example.com/feed?page=2" length="12" type="" rel="hub"/>
+<published>Mon 3 Apr 1899 15:06:22 GMT+0200 (GMT+01:00)</published>
+<updated>Foo,  2005-01-03T17:37:43Z</updated>
+<link type="application/atom+xml" rel='self' href="https://example.com/feed?page=2" length="abc" title="MP3 feed"></link>
+<dc:date>Thu, 10 Aug 2237 07:08 -0500</dc:date>
+<itunes:duration>&#1633;:&#1634;&#1635;</itunes:duration>
+<content type='xhtml'>
+a
+
+b&#60;div>&#60;img src="x.png"> cover&lt;/div&gt;</content>
+<title type="html">  padded  &#38;copy;&amp;AMP;</title></entry>
+<entry><link rel="archives" title="MP3 feed" length="9223372036854775808" type="" href='https://example.com/'/>
+  <id> raw </id>
+  <psc:chapters><psc:chapter start="00:06:11" image="https://example.com/ch.png" href="" title="Intro"></psc:chapter></psc:chapters>
+  <itunes:image href="https://example.com/e.jpg"/>
+  <link length="9223372036854775808" rel='enclosure' type="audio/mpeg" href="https://example.com/"/>
+  <link href='https://example.com/feed?page=2' rel="Next" length="12" title="Café"/>
+  <updated>Wednesday, 26 May 1971 02:30</updated>
+  <category><![CDATA[Technology]]></category>
+  <content>&#38;lt</content>
+  <title type="html"><![CDATA[<label>#hash</label> <strong>&#xA9;</strong> <3 <3]]></title></entry></feed>

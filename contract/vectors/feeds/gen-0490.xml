@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns="http://backend.userland.com/rss2" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><title>  spaced   &quot;quoted&quot; &lt;font color=&quot;red"&gt;Tom &#x26;amp; Jerry &amp;lt;3&#60;/font></title> <link> https://example.com/ </link> <podcastindex:funding url="https://example.com/donate"></podcastindex:funding> <podcastindex:funding url="https://example.com/donate">&lt;b&gt;x&#60;/b&gt;</podcastindex:funding> <description>&#x3C;p&gt;&#x26;#0;&lt;/p></description> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=' https://example.com/sp.jpg '/> <item><guid isPermaLink="true"> </guid><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">90 min</itunes:duration><enclosure url="https://cdn.example.com/café/50.torrent" length="0x4E20" type="audio/ogg"/><link> https://e.com/x </link><itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#13;
+&#x26;hellip;multi
+line&#x3C;br&gt;http://example.com/?a=1&amp;b=2</itunes:summary><description>ééé😀😀😀😀
+&#38;Lt;&#60;div&gt;&#38;#;&#60;/div&gt;&#x3C;img src=&quot;x" alt=&quot;y&quot;/>&lt;li>Episode 12&lt;/li&gt;&#13;
+茶ééé</description><pubDate>2010-10-22T14:43:60.844+0000</pubDate><title>😀   padded   S01E527</title><media:content medium="image" fileSize="abc" type='x-audio/mpeg' url="ftp://files.example.com/280.webm" duration="+60"/><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&lt;img src="x.png"> cover</itunes:subtitle><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" https://e.com/i.png "/></item> <item><title>&#38;apos;a&#x26;apos;</title>
+  <guid isPermaLink="true">a&amp;b</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>2006-05-02Z</pubDate>
+  <description> &amp;AMP;éé&#xE9; &#38;lt;b&#38;gt;</description>
+  <content:encoded>😀😀&#128512;&#x3C;br&gt;&#x3C;/br&gt;&lt;li>Tom &amp; Jerry &lt;3&lt;/li&gt;&#x3C;div>[x]&lt;/div&gt;&lt;br/&gt;</content:encoded>
+  <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">3754.967</itunes:duration>
+  <enclosure url="https://cdn.example.com/a/b/c397.jpg" length='0x4E20' type="video/x-matroska"/></item></channel>
+</rss>

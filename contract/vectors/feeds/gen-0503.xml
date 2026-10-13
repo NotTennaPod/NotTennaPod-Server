@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+  <itunes:image href="https://example.com/ai.jpg"/>
+  <id> raw </id>
+  <author><name>Ann</name><email>a@example.com</email></author>
+  <link rel='alternate' type="text/html" title="MP3 feed" href="https://example.com/feed?page=2"/>
+  <link title="Café" length="12" href="https://example.com/" type='application/rss+xml' rel=""/>
+  <title type="HTML">&#38;amp;a<![CDATA[mp;  <cite>&nbsp;</cite>]]></title>
+  <itunes:author><![CDATA[第一]]></itunes:author>
+  <link type="text/html" rel="first" length="12" title="" href="//example.com/a/b/c313.torrent"/>
+  <entry><updated>Sat, 14 Nov 2567 04:44:11 +0200</updated> <id> raw </id> <published>Tue 19 Dec 2000 08:45:43 GMT+0945 (BST)</published> <title>&lt;p&gt;Para&#x3C;/p&gt;  &amp;mdash;</title> <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;#xD800;&lt;br&gt;</div></content> <itunes:image href="https://example.com/e.jpg"/></entry>
+  <entry><content type="plain"><![CDATA[	tab	here  ​<div>&amp;amp;</div>Folge 7: Über alles<br><div>&apos;a&apos;</div>]]></content>
+<updated>Tue, 29 May 2469 19:52 +0100</updated>
+<updated>Thu 8 Feb 2022 19:34:52 GMT+0100 (CET)</updated>
+<title type='html'>{json: 1}<![CDATA[]]></title>
+<link rel="first" length="20000" title="Café" href="https://example.com/pay" type='application/xhtml+xml'></link>
+<summary></summary>
+<id> raw </id>
+<itunes:duration>-1:00:00</itunes:duration>
+<published>	2002-10-16T20:28:14.287&#13;
+</published></entry> </feed>

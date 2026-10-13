@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="x-unknown-charset"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<title type="html">&lt;tt&gt;&amp;#xD800;&lt;/tt&gt;</title>
+  <link length="12" href="https://example.com/" rel="enclosure" title="Café" type="text/html"/>
+  <subtitle type="html"><![CDATA[<p>a=b&c=d</p> &#x1F600;<p>&#xD800;</p><hr><li><img src="x.png"> cover</li>Tom & Jerry <3<p>  padded  </p>  &#65;&#66;]]></subtitle>
+  <id></id>
+  <link rel="first" href="https://example.com/pay"/>
+  <entry><summary></summary>
+  <updated>2011-08-06+0000</updated>
+  <link title='Alternate' length="9223372036854775808" rel="alternate" href="https://example.com/feed?page=2"></link>
+  <title type="html">&#x7B2C;395集  &lt;li&gt;&#60;3 &lt;3&lt;/li&gt;</title></entry></feed>

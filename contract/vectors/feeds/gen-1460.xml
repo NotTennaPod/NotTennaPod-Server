@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel><link>https://example.com</link>
+  <dc:creator>DC Creator</dc:creator>
+  <description>a=b&#x26;c=d&#x3C;br>&lt;BR&gt;</description>
+  <itunesu:summary></itunesu:summary>
+  <itunesu:author>Jane<![CDATA[ Doe]]></itunesu:author>
+  <title>a
+  b &#60;div&gt;&amp;amp;&lt;/div></title>
+  <image><url>  https://example.com/ws.png
+</url></image>
+  <language>pt-BR</language>
+  <item><enclosure url='HTTPS://EXAMPLE.COM/e p19.mpga' length="4294967296" type="audio/mp4"/>
+<itunesu:subtitle>http://example.com/?a=1&amp;b=2&amp;amp;amp;</itunesu:subtitle>
+<itunesu:image href="https://example.com/ep.jpg"/>
+<title><![CDATA[<li>S01E375</li> 茶 <sub>a
+  b</sub>]]></title>
+<guid isPermaLink="true"></guid>
+<link></link>
+<podcast:socialInteract protocol="activitypub"/>
+<description><![CDATA[😀<b]]>r&gt;&#60;p&gt;&#x3C;/p></description>
+<pubDate>Tue, 02 Apr 2024 19:34 UTC+01:00</pubDate>
+<itunesu:duration>1:52:38</itunesu:duration></item>
+  <item><title/><guid isPermaLink='false'>Café-guid</guid><enclosure url="" length="2147483648" type="audio/flac"/><pubDate>Sunday, 13 Jan 1991 09:16 +1400</pubDate><link> https://e.com/x </link></item>
+  <item><enclosure url='' length="2e5" type="Audio/MPEG"/><enclosure url='https://user:pass@media.example.net/ep198.jpg' length="-0" type="audio/aac"/><description><![CDATA[ a=b&c=d<p>a=b&c=d</p>Episode 12<br>Episode 12<br>&euro;]]></description><itunesu:duration>0:02:31</itunesu:duration><guid>dup</guid></item>
+  <item><title><![CDATA[<a href="https://example.com/x?a=1&amp;b=2">&unknown;</a>
+​
+<center>&#xA9;</center>]]></title><link> https://e.com/x </link><pubDate>21 Nov 85 09:14:00 +0945</pubDate><description><![CDATA[<p>Episode 12</p>éééééé<p></p><img src="x" alt="y"/>ééé<p/>&lt;b&gt;escaped&lt;/b&gt;]]></description><content:encoded>&lt;li>مرحبا&lt;/li&gt;&lt;img src="x" alt="y"/>&lt;div&gt;&lt;p>Para&#60;/p&gt;&lt;/div></content:encoded><enclosure url="ftp://files.example.com/241.mp3" length='16383' type="audio/opus"/><enclosure url="" length="9007199254740992" type="application/ogg"/><enclosure url="//example.com/café/293.wma" length="16383" type="video/webm"/></item>
+  <item><itunesu:duration>12:34:56.789</itunesu:duration><link>https://example.com/ep</link><title>&lt;p&gt;Para&#x3C;/p></title><guid isPermaLink="false">  spaced guid  </guid><description><![CDATA[	tab	here<p]]>/>&#60;img src=&quot;x.png"&gt;</description></item></channel></rss>

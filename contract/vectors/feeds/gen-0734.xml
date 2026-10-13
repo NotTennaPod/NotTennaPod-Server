@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0"><channel><description></description>
+<title>&#38;#xFFFF;caf<![CDATA[é]]></title>
+<itunes:author></itunes:author>
+<link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/alt.xml" type="application/atom+xml" rel="last"/>
+<itunes:summary><![CDATA[<p/>]]></itunes:summary>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/a.b/a/b/c61.webm" length='12' title="Café" type='audio/mpeg' rel="payment"></atom:link>
+<link>https://example.com</link>
+<item><guid isPermaLink="false">
+</guid><enclosure url="https://xn--caf-dma.example/ep1.php" type='unknown'/><itunes:subtitle><![CDATA[&#x1F600;
+<h3>100%</h3>]]></itunes:subtitle><content:encoded>&lt;img src=&quot;x.png&quot;&gt;</content:encoded><podcast:chapters url="" type='application/json+chapters'/><title>	مرحبا
+&lt;tt&gt;&amp;amp&#60;/tt>
+&amp;#169;&#13;
+</title></item>
+<itunes:image href=" https://example.com/sp.jpg "></itunes:image>
+<dc:creator>DC Creator</dc:creator>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" type="application/atom+xml" title="Café" href="https://example.com/feed?page=2"/>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="payment" title='Alternate' href="https://example.com/alt.xml" length="12"/></channel>
+</rss>

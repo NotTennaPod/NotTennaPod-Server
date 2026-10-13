@@ -1,0 +1,37 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><language>de-DE</language>
+<link> https://example.com/ </link>
+<itunes:new-feed-url>
+https://nl.example
+</itunes:new-feed-url>
+<media:thumbnail/>
+<itunes:image href=" "/>
+<itunes:author>😀 Pod</itunes:author>
+<title>&#38;nbsp;
+100%</title>
+<item><enclosure url="HTTPS://EXAMPLE.COM/a/b/c384.aif" length="+20000" type='audio/mpeg; charset=binary'/>
+  <media:group><media:content medium="image" duration="+60" fileSize="123456789012345678" type="audio/opus" isDefault='TRUE' url="https://xn--caf-dma.example/382.html"/></media:group>
+  <itunes:duration>32:46</itunes:duration>
+  <guid isPermaLink="true">  spaced guid  </guid>
+  <podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/ch.json" type="application/json+chapters"/>
+  <pubDate>SUN, 01 Apr 1601 09:53 +0530</pubDate>
+  <title>100%</title>
+  <link> https://e.com/x </link></item>
+<item><media:thumbnail/>
+  <media:content medium="image" isDefault="TRUE" url='https://example.com/a.b/café/155.m4v' fileSize="2e5" type="video/mp4" duration=' 60'/>
+  <guid>
+</guid>
+  <enclosure url="" length="２０００００" type="audio/x-m4a"/>
+  <itunes:duration>.5</itunes:duration>
+  <itunes:summary><![CDATA[ &lt]]></itunes:summary>
+  <itunes:image href=" https://e.com/i.png "/>
+  <pubDate>2016-06-03T00:44:44+0000</pubDate>
+  <media:content duration="59" fileSize='12' isDefault='TRUE' type='video'/>
+  <itunes:subtitle>&lt;section>&#x26;#;&#x3C;/section>
+Episode 680</itunes:subtitle>
+  <title><![CDATA[é
+<ol><li>茶</li></ol>]]></title>
+  <link> https://e.com/x </link></item>
+<item><title>  spaced  </title><guid isPermaLink="true"></guid><link></link><description></description><content:encoded>&#60;p&gt;&#x26;amp;amp;&#x3C;/p>&#x3C;div&gt;שלום&lt;/div&gt;</content:encoded><itunes:duration>932.606</itunes:duration><enclosure url="https://example.com:8443/café/283.xyz" length="123456789012345678" type=" audio/mpeg"></enclosure><enclosure url="https://example.com/a.b/161" length="00020000" type="audio/x-wav"/><media:thumbnail url=""/></item>
+<item><enclosure url="" length='4294967296' type="audio/mpeg"/> <content:encoded><![CDATA[&mdash;]]></content:encoded> <pubDate>Wed, 21 Mar 2446 11:35:48 +0530</pubDate> <title>&amp;copy; &lt;p>Para&lt;/p&gt;</title> <itunes:duration>6354.318</itunes:duration> <description> &#8203;</description> <itunes:subtitle><![CDATA[<p>Para</p>  &apos;a&apos;  &quot;q&quot;]]></itunes:subtitle> <guid isPermaLink="true">Caf&#xE9;-guid</guid> <link>https://example.com/ep</link></item></channel>
+  </rss>

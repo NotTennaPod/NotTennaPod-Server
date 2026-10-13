@@ -1,0 +1,25 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"><author><name>&#xC9;mile</name><email>a@example.com</email></author> <logo>https://example.com/logo.png</logo> <id>urn:x</id> <link length="9223372036854775808" title="" href='https://example.com/pay' rel="archives" type="text/html"/> <title type="plain">😀
+&amp;#x;
+cr&#13;lf</title> <subtitle type='plain'>&lt;img src="x.png"&gt;&#xA0;x&lt;y	"quoted&quot;éaa</subtitle> <icon>https://example.com/icon.png</icon> <author><name>  Bob  </name><email>a@example.com</email></author> <podcast:funding url="https://example.com/give">Give</podcast:funding> <it:summary>&lt;img src=&quot;x.png&quot;>&lt;div>مرحبا&lt;/div&gt; &amp;hellip; &amp;#;R&amp;D&lt;br&gt;ééé&#xA0;&#x26;#xD800;&#160;</it:summary> <entry><link length="20000" href='https://example.com/pay' rel="last" type="audio/mpeg"/>
+<published>Mo, 06 Sep 2007 20:01 -0800</published>
+<id>
+id
+</id>
+<media:content medium="Audio" url="https://example.com:8443/dir.with.dots/ep25.m3u8?a=1&amp;b=2" duration="3600" type="audio/opus" fileSize='abc'/>
+<it:duration>-1:00:00</it:duration>
+<updated>Sun, 23 Feb 2369 24:52 +0000</updated>
+<author><name>Entry author</name></author>
+<summary type="html">&lt;div>cr&#13;lf&#x3C;/div&gt;	&#x26;nbsp;aaaaa&lt;div&gt;cr&#13;lf&#60;/div&gt;
+茶</summary>
+<title type="xhtml">&#60;span style="color:red"&gt;  padded  &lt;/span>
+​
+&#x26;amp;amp;</title></entry> <entry><media:content isDefault="true" fileSize='20000.0' url="https://user:pass@media.example.net/café/150.ts?dl=1.0" type="image/png"/>
+<author><name>Entry author</name></author>
+<content type="html">	Tom &amp; Jerry &lt;3&amp;lt;b&#38;gt;escaped&#38;lt;/b&#x26;gt;&#x3C;br>&lt;div&gt;  padded  &lt;/div&gt;&lt;li&gt;AT&#x26;T&#60;/li>&#60;li>&amp;#x1F600;&lt;/li>aaaaaééé
+</content>
+<link length="12" title="" href="https://example.com/alt.xml" type='audio/mpeg'/>
+<title type="plain"><![CDATA["quot]]>ed"  &lt;sup>AT&#38;T&lt;/sup></title>
+<it:duration>2:29:28</it:duration>
+<summary type="html">&#x3C;img></summary>
+<updated>Mon, 20 Feb 59 10:30:10 +0530</updated>
+<it:episodeType>full</it:episodeType></entry> </feed>

@@ -1,0 +1,47 @@
+NotTennaPod-Server is licensed under the GNU General Public License v3 (LICENSE).
+It is not affiliated with AntennaPod.
+
+Parts of the server port behaviour from, or generate tables from, the following
+works. Each entry names its licence and the file in this repository that holds
+the licence text, followed by the work's copyright notice.
+
+- AntennaPod 3.12.1 (GPL-3.0, LICENSE): the feed parser classes, UrlChecker and
+  FeedDiscoverer (internal/feed); its parser test feeds are in
+  contract/vectors/feeds. Also its database upgrader (DBUpgrader, ported in
+  internal/importer/androiddb) and the statistics queries the independent
+  import reference models (contract/reference/import_android.py).
+  Copyright: the AntennaPod contributors (see LICENSE).
+
+- The Android Open Source Project, Android 16 (Apache License 2.0,
+  LICENSES/Apache-2.0.txt): android.text.Html and the MIME type map
+  (internal/feed).
+  Copyright (C) The Android Open Source Project
+
+- TagSoup, as in AOSP platform/external/tagsoup (Apache License 2.0,
+  LICENSES/Apache-2.0.txt): the HTML scanner, parser and schema tables
+  (internal/feed/tagsoup_schema.go).
+  Copyright 2002-2008 by John Cowan
+
+- ICU, as in AOSP platform/external/icu (Unicode License v3,
+  LICENSES/Unicode-3.0.txt): English time zone names and metazones
+  (internal/feed/datezones.go).
+  Copyright © 1991-2026 Unicode, Inc.
+
+- The IANA time zone database 2025a (public domain), as packaged in AOSP
+  platform/system/timezone (internal/feed/datezones.go).
+
+- jsoup 1.15.1 (MIT License, LICENSES/jsoup-MIT.txt): behaviour ported for
+  website titles and feed links (internal/feed).
+  Copyright (c) 2009-2022 Jonathan Hedley
+
+- Apache Commons IO 2.5 (Apache License 2.0, LICENSES/Apache-2.0.txt): behaviour
+  ported from XmlStreamReader and FilenameUtils.getExtension (internal/feed).
+  Its NOTICE:
+
+    Apache Commons IO
+    Copyright 2002-2016 The Apache Software Foundation
+
+    This product includes software developed at
+    The Apache Software Foundation (http://www.apache.org/).
+
+The generated files name their exact sources and commits.

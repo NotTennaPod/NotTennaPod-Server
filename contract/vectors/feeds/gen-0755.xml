@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en">
+  <author><name>Émile</name></author>
+  <title type="html"><![CDATA[Folge 425: Über alles]]></title>
+  <logo> https://e.com/l.png
+</logo>
+  <id></id>
+  <link title="MP3 feed" type="audio/mpeg" rel="self" href="https://example.com/a.b/a/b/c61.webm"/>
+  <itunes:image href=""/>
+  <link rel="alternate" title="Café" length='20000' type="application/xml+xhtml"/>
+  <link type="audio/mpeg" rel="Next" href='https://example.com/' title="MP3 feed"/>
+  <author><name>C&amp;D</name></author>
+  <entry><summary></summary> <psc:chapters version="1.2"><psc:chapter title="" start="-1:00"/><psc:chapter href="https://example.com/ch" start="45:52" title='Café &amp;amp; more'/><psc:chapter start="10:01" title="&lt;b>x&lt;/b>" href=""/><psc:chapter title="Café &amp;amp; more" start="00:28:00" href=""/></psc:chapters> <updated> Thu, 10 January 2599 18:44:31  </updated> <itunes:duration>1e2</itunes:duration> <id>urn:uuid:1</id> <media:content duration="01:00" url="https://example.com/a.b/dir.with.dots/ep195.m4v" type="AUDIO/MPEG" medium="video" fileSize="20000 " isDefault="1"/> <title type='plain'>	&#60;ol>&lt;li>第198集&#60;/li>&lt;/ol&gt;#30 – Interview&lt;s&gt;&amp;#x1F600;&#60;/s&gt;	</title> <published>Mon 5 Feb 1996 01:11:28 GMT+0100 (UT)</published> <author><name>Entry author</name></author></entry>
+  </feed>

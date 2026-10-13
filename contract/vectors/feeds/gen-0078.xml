@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md"><channel><itunes:subtitle>S01E5 a
+  b &lt;s&gt;a
+  b&lt;/s></itunes:subtitle>
+  <title>&#38;#169;</title>
+  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="MP3 feed" rel="first" href="https://example.com/pay" type="audio/mpeg" length='9223372036854775808'/>
+  <item><description> &lt;3 &#x3C;3&lt;div&gt;&#x26;lt;b&amp;gt;escaped&#38;lt;/b&#38;gt;&#60;/div&gt;<![CDATA[]]></description>
+<pubDate>0999-12-21T15:04:16Z</pubDate>
+<itunes:summary>&lt;br&gt;trailing </itunes:summary>
+<podcast:transcript url="" type="application/json"/>
+<enclosure length="20000.0" type="audio/mpeg"></enclosure>
+<guid isPermaLink="true">urn:uuid:8563b4ef</guid>
+<itunes:duration>4:54:56</itunes:duration>
+<title>AT&amp;T</title></item>
+  <item><itunes:subtitle>&#38;#x1F600; multi
+line</itunes:subtitle>
+  <pubDate>Tue, 14 Oct 2594 15:13:25 NZST</pubDate>
+  <description> leading&#60;br&gt;</description>
+  <enclosure url="https://example.com/a.b/238.mov" type="audio/x-wav"></enclosure>
+  <media:group><media:content medium="audio" fileSize="-0" type="image/png" isDefault="true" url="https://example.com:8443/175.xyz"/></media:group>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <title>&#38;#;  "quoted"</title></item>
+  <podcast:funding url=""></podcast:funding>
+  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/pay" rel='enclosure' type="application/rss+xml"/>
+  <description><![CDATA[ééé<p><p>Para</p></p>]]></description>
+  <itunes:summary><![CDATA[<br />"quoted"<br>]]></itunes:summary>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <itunes:image href="https://example.com/it.jpg"/>
+  <title>&amp;unknown;  &lt;cite&gt;http://example.com/?a=1&#x26;b=2&lt;/cite&gt;</title>
+  <link></link>
+  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" length="abc" title="Café" rel="next" type='application/xml+xhtml'/>
+  <language>TR</language></channel>
+</rss>

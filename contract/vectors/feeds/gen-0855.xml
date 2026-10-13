@@ -1,0 +1,20 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pc="http://podlove.org/simple-chapters"><channel><link></link>
+<link xmlns="http://www.w3.org/2005/Atom" href="ftp://files.example.com/241.mp3" type='application/xml+xhtml' length="12" rel="" title='Alternate'/>
+<it:episodeType>full</it:episodeType>
+<language>en</language>
+<title>&amp;#xA9;</title>
+<item><title><![CDATA[a
+  b&mdash;]]></title>
+<link>https://example.com/ep</link>
+<pubDate>13 Aug 1066 21:47:12 +0000</pubDate>
+<description>&lt;li&gt;&#60;/li&gt;😀😀&amp;#65;&amp;#66;&lt;br&gt;	#hash
+
+&amp;amp;amp;&#x3C;li>  spaced  &lt;/li&gt;aaa
+&#38;#65;&amp;#66;</description>
+<it:duration>	1:00
+</it:duration></item>
+<item><pubDate>été, 	17 Dec 48 16:18 +0530</pubDate><description>&lt;p&gt;'single'&#x3C;/p>	&#x26;#x<![CDATA[FFFF;<br/><img>  "quoted"]]></description><itunes:image href="https://example.com/ep.jpg"/><it:duration>5326.269</it:duration><enclosure url="//example.com/a/b/c74.pdf?a=1&amp;b=2" length="123456" type="application/octet-stream"/><media:content isDefault="TRUE" fileSize='abc' duration="2147483648" medium="video" type="application/ogg"/><media:content isDefault='true' type="audio/" url="https://cdn.example.com/a/b/c180.opus" duration="2147483" fileSize="20000.0"/><media:content url="ftp://files.example.com/dir.with.dots/ep392.aif" duration="0" fileSize="1" type="application/ogg" medium="document"/><pc:chapters version="1.2"></pc:chapters></item>
+<itunes:author>  Spaced  </itunes:author>
+<link xmlns="http://www.w3.org/2005/Atom" type="application/atom+xml" rel="hub" href="https://example.com/alt.xml" title="Café" length='12'/>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="Café" length="12" rel="alternate" href="https://example.com/pay" type='application/atom+xml'/></channel>
+</rss>

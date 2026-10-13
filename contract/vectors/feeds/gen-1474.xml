@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <channel><itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[]]>&#60;b>Studio&lt;/b&gt;</itunes:author>
+  <itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:summary>
+  <image><link>https://example.com/img-link</link><url></url><title>Image title</title></image>
+  <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[&hellip; Episode 12]]></itunes:subtitle>
+  <description><![CDATA[<div>x<y</div>]]></description>
+  <link></link>
+  <itunes:owner xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:name xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Owner</itunes:name><itunes:email xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">o@example.com</itunes:email></itunes:owner>
+  <title>&#13;
+&#60;big&gt;Episode 758&#x3C;/big>
+a=b&#38;c=d
+#598 – Interview
+</title>
+  <language>de-DE</language>
+  <item><link> https://e.com/x </link>
+  <pubDate>	2024-015	</pubDate>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/ep.jpg"></itunes:image>
+  <description><![CDATA[ &apos;a&apos;#hashFolge 7: Über alles<b]]>r>&lt;br> Tom &#38; Jerry &#x3C;3</description>
+  <guid isPermaLink="false">https://example.com/item/94186</guid>
+  <enclosure url="" length="２０００００" type="audio/*"/>
+  <media:group><media:content url="https://user:pass@media.example.net/204.avi?auth=yes" type="application/json" fileSize="abc" duration='0060' isDefault="1" medium="document"/></media:group>
+  <podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/>
+  <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1442.354</itunes:duration>
+  <title>sepa &gt; b</title></item>
+  <item><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"/>
+  <enclosure url="https://xn--caf-dma.example/371.m4v" length="1" type="Audio/MPEG"/>
+  <title>"quoted&quot;שלום&#38;#x1F600;</title>
+  <link>https://example.com/ep</link>
+  <guid isPermaLink='true'>dup</guid>
+  <pubDate>Tuesday, 01 Jul 1986 14:39</pubDate>
+  <description><![CDATA[<p>sep</p>😀😀😀<img>]]></description>
+  <media:group><media:content url="https://user:pass@media.example.net/e p41.pdf" duration=" 60" type='audio/mpeg' fileSize='9223372036854775808' medium="document" isDefault="1"/></media:group>
+  <itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:summary>
+  <dc:date>Sun,27 Feb 2135 05:38:18 +0200</dc:date></item>
+  <item><link></link>
+<enclosure length="٢٠٠٠٠" type="Audio/MPEG"></enclosure>
+<itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">"quoted&quot;&#x3C;sub>café&#60;/sub&gt;&lt;pre>trailing 
+  pre&#60;/pre></itunes:subtitle>
+<pubDate>1979-03-23T12:01:26.314+00:00</pubDate>
+<media:description> 100%&#x3C;li&gt;😀&#60;/li>&lt;li><![CDATA[​</li>]]></media:description>
+<description>  茶&#38;#128512;&#x3C;br&gt; &#60;br></description>
+<media:content isDefault="false" type="audio/" fileSize="0" duration="9223372036854775807" medium="audio" url="https://user:pass@media.example.net/dir.with.dots/ep264.ogx"></media:content>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">  a=b&#x26;<![CDATA[c=d]]></itunes:summary>
+<title>	&#60;p&gt;é&lt;/p&gt;
+</title>
+<guid>a&amp;b</guid>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">44:14</itunes:duration>
+<content:encoded>&#38;#65;&#x26;#66;&lt;br&gt;</content:encoded></item>
+  <item><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">00:00:01.999999</itunes:duration>
+  <title>R&amp;D</title>
+  <pubDate>2009-07-02T05:39:02.12CEST</pubDate>
+  <enclosure url="https://xn--caf-dma.example/a/b/c149.flac" length="1,000,000" type="audio/wav"/>
+  <guid>  spaced guid  </guid>
+  <media:content duration='01:00' fileSize='16383' type="audio/x-wav" isDefault="false"/>
+  <content:encoded><![CDATA[<p/><hr/>]]></content:encoded>
+  <description><![CDATA[&<br> ]]>&lt;br&gt;&#60;br /&gt;&#60;p/&gt; 100%&lt;br>
+&#38;#x1F600;&lt;hr&gt;</description>
+  <podcast:socialInteract uri="https://social.example/@a/1" protocol='activitypub'/>
+  <itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:summary>
+  <media:content medium="audio" type='audio/aac' duration="01:00" isDefault="true" fileSize="1"/></item></channel>
+  </rss>

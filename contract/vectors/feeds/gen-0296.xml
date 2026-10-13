@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us"><author><name>Émile</name></author>
+<author><name></name><email>a@example.com</email></author>
+<id>urn:x</id>
+<title type="text">&lt;unknown>Line&lt;br&gt;break&lt;/unknown> &lt;dl>&lt;dt>Tom &#38;amp; Jerry &#38;lt;3&#60;/dt>&#x3C;dd&gt;b&#x3C;/dd>&#60;/dl&gt; &amp;euro;</title>
+<author><name></name></author>
+<logo> https://e.com/l.png
+</logo>
+<entry><id>
+id
+</id><title type="plain">&#38;mdash;</title><published>Friday, 14 Apr 88 17:41 +0200</published><content type="html">&#x3C;div&gt;&#x3C;b>Bold&lt;/b> title&#x3C;/div></content><link type='' title="" href="https://example.com/pay" length="9223372036854775808"></link></entry>
+<entry><link type="" length="20000" href="https://example.com/feed?page=2" rel="archives"/>
+<updated>Thu, 22 Oct 2020 03:</updated>
+<updated>Mon May 5 07:54 1997</updated>
+<author><name>Entry author</name></author>
+<title type="html">&lt;p&gt;&amp;unknown;&#60;/p></title>
+<published>Thu,   07   Sep   2344 02:17:29 -0500</published>
+<id>
+id
+</id></entry>
+</feed>

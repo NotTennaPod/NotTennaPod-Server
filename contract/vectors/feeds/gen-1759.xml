@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:chapters="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <title type='text'>&#38;#169;</title>
+<subtitle type="HTML"><![CDATA[<li>&mdash;</li>]]></subtitle>
+<itunes:author></itunes:author>
+<logo>https://example.com/logo.png</logo>
+<author><name>  Bob  </name></author>
+<entry><content>茶&lt;div&gt;&amp;#0;&lt;/div>S01E7&lt;br&gt;éé&#xE9;&lt;p>100%&lt;/p&gt;</content>
+  <author><name>Entry author</name></author>
+  <published>1976-12-24T02:18:40.346+0530</published>
+  <summary type="text"><![CDATA[<li><p>Para</p></li><3 <3  茶]]></summary>
+  <id></id>
+  <updated>2300-07-07T04:22:56.843</updated>
+  <title type="text"><![CDATA[&#xA9; <d]]>el&gt;&lt;3 &lt;3&lt;/del> e&#769;</title></entry></feed>

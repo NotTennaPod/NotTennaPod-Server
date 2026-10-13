@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="0.92" xmlns="" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><description></description><itunes:image href=" https://example.com/sp.jpg "/><title>sep
+&#x26;#;</title><atom:link href="https://example.com/alt.xml" length="20000" rel="archives"/><link xmlns="http://www.w3.org/2005/Atom" rel="first" title="Alternate" href='https://example.com/'/><atom:link href='https://example.com:8443/38.MP3' title="Café" length='9223372036854775808'/><link>https://example.com</link><itunes:summary> &#x26;#0;</itunes:summary><itunes:author><![CDATA[😀 Pod]]></itunes:author><item><atom:link title="Café" type="application/xhtml+xml" length='12' rel="enclosure" href='https://example.com/'/>
+<guid isPermaLink="true">  spaced guid  </guid>
+<content:encoded></content:encoded>
+<title><![CDATA[http://example.com/?a=1&b=2 100%]]></title></item><item><title>café  &#38;hellip;  &#38;lt</title>
+  <guid></guid>
+  <pubDate>Donnerstag,  Sat, 16 Sep 2006 20:01:02 -0500</pubDate>
+  <description><![CDATA[
+مرحباa=b&c=daa<div>&</div><BR>]]></description>
+  <enclosure url="https://example.com/a.b/dir.with.dots/ep242.ogx" length='16383' type="video/webm"/></item><item><content:encoded><![CDATA[<br/><br/>  spaced  ]]></content:encoded>
+<guid isPermaLink='false'>  spaced guid  </guid>
+<pubDate>Wed,   04 May 2422 16:20:37 +0000</pubDate>
+<itunes:summary><![CDATA[😀😀 茶<li>Line<br>break</li>sep<br>x<y<br>]]></itunes:summary>
+<title>&lt;blockquote&gt;&amp;apos;a&#38;apos;&#x3C;/blockquote>&amp;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;</title>
+<p2:chapters url="" type='application/json+chapters'/>
+<link></link>
+<itunes:duration>35:13</itunes:duration>
+<p2:transcript type="application/srt" language='en'/><p2:transcript url='' type="text/vtt" language="en"/>
+<media:group><media:content medium="audio" duration="01:00" type="Audio/MPEG" isDefault="false" url="http://example.org/café/40.mpga?dl=1.0" fileSize="123456"/><media:content duration="-5" fileSize="20000 " type='text/html'/><media:content type='video' duration="-5" fileSize="-16384" medium="audio" url="https://cdn.example.com/ep376.Mp4"/></media:group></item></channel></rss>

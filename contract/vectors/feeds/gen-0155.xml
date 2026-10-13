@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><it:image href=" "/>
+<description>  שלום</description>
+<it:subtitle>茶</it:subtitle>
+<link></link>
+<title>caf<![CDATA[é]]></title>
+<item><it:image/>
+<it:duration>4143.72</it:duration>
+<title>&amp;<![CDATA[quot;q&quot;]]></title>
+<link></link>
+<media:content url='https://xn--caf-dma.example/ep237.3gp?dl=1.0' type="audio/mp4" fileSize="12" duration="2147483648"/>
+<podcast:transcript url="https://example.com/t.json" type="text/html"/><podcast:transcript url="https://example.com/t.json" type="application/srt" language="en"/><podcast:transcript url='https://example.com/t.vtt' type="application/srr" language="en"/>
+<media:description>😀😀😀</media:description>
+<media:content type=" audio/mpeg" isDefault='false' medium='Audio' fileSize="２０００００"/>
+<description><![CDATA[<br /> &#xFFFF;]]></description>
+<enclosure length='2147483648' type="application/json"/></item>
+<item><enclosure length=" 20000" type="application/json"/>
+  <it:duration>1:2:3:4</it:duration>
+  <pubDate>1997-03-03T03:29:07Z</pubDate>
+  <link>https://example.com/ep</link>
+  <sc:chapters version="1.2"><sc:chapter title="&lt;b>x&lt;/b>" href="" image="https://example.com/ch.png" start="91:56"/></sc:chapters>
+  <description></description>
+  <it:subtitle>multi
+line 100%</it:subtitle>
+  <it:image href="https://example.com/ep.jpg"/>
+  <media:content url="https://example.com/a.b/a/b/c270.mpga" isDefault='true' duration="9223372036854775807" fileSize="12" type="audio/mpeg"/>
+  <content:encoded><![CDATA[<div>&#;</div>aaaaaaa]]></content:encoded>
+  <title><![CDATA[<label]]>&gt;&amp;#;&lt;/label>
+tab	here</title>
+  <guid isPermaLink="true"></guid>
+  <media:content type='image/jpeg' url="https://example.com:8443/133.ogg" medium="audio" duration="2147483" fileSize='12'/>
+  <it:summary> x&lt;y&#38;#169;&lt;hr&gt;  &#38;amp&#60;p/&gt;&#60;img src="x" alt=&quot;y&quot;/&gt;😀😀😀&#x1F600;  [x]</it:summary>
+  <enclosure url="ftp://files.example.com/e p350.wma?a=1&amp;b=2" length="-9223372036854775808" type="audio/opus"/>
+  <media:content url="HTTPS://EXAMPLE.COM/e p191.png" type="application/pdf" medium="document" fileSize='٢٠٠٠٠' duration="0"></media:content></item></channel><channel><title>Second channel</title><item><guid isPermaLink="false">dup</guid> <link>https://example.com/ep</link> <it:image href=""/> <pubDate>1900-08-05T00:34:03.CST</pubDate> <description>a=<![CDATA[b&c=d<br>]]></description> <enclosure url="https://user:pass@media.example.net/271.mp3" length="9007199254740992" type="text/plain"/> <title><![CDATA[AT&T  &hellip;]]></title> <it:duration>99999999999</it:duration></item></channel>
+</rss>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><image><link>https://example.com/img-link</link><url></url><title>Image title</title></image>
+  <language>de-DE</language>
+  <atom:link length="20000" type='text/html' rel="enclosure" href="https://example.com/pay" title=""/>
+  <atom:link rel="next" type="application/xhtml+xml"/>
+  <itunes:image href="https://example.com/it.jpg"/>
+  <link> https://example.com/ </link>
+  <itunes:subtitle>Tom &#x26;amp; Jerry &amp;lt;3
+Episode 691</itunes:subtitle>
+  <title><![CDATA[&]]>#xA9;</title>
+  <atom:link length="9223372036854775808" title="Café" rel="payment" href="" type="application/xhtml+xml"/>
+  <item><guid></guid><enclosure url="https://xn--caf-dma.example/382.html" length="9223372036854775807" type="video/quicktime"></enclosure><pubDate>Tuesday, 29 Feb 2597 16:31:48</pubDate><itunes:duration>2562047788015215:30:07</itunes:duration><description>&lt;li&gt;&amp;hellip;&lt;/li>&lt;p>  spaced  &lt;/p&gt;</description><comments>https://example.com/c</comments><link>https://example.com/ep</link><title>a
+  b</title></item>
+  <item><itunes:duration>1E3:00</itunes:duration>
+  <title>Tom &amp;amp; Jerry &amp;lt;3  مر&#x62D;با<![CDATA[  <P>#hash</P>]]></title>
+  <enclosure url="ftp://files.example.com/e p92.m4b?dl=1.0" length="123456789012345678" type="video/mp4"/>
+  <media:content type="Audio/MPEG" duration='2147484' fileSize="12"/>
+  <content:encoded>&lt;p&gt;100%&lt;/p&gt;</content:encoded>
+  <pubDate>Wednesday, 07 May 2003 22:45:23 gmt</pubDate>
+  <link>https://example.com/ep</link>
+  <guid isPermaLink="false">https://example.com/item/53003</guid>
+  <media:content url="https://example.com/a.b/ep256.mp3" fileSize="1" medium="audio" duration='2147483' type="audio/aac" isDefault="TRUE"/>
+  <media:content medium="audio" duration='2147483' type="application/octet-stream" fileSize="20000 " url='https://user:pass@media.example.net/ep282.Mp4' isDefault='false'/></item>
+  <item><link></link> <media:content type="audio/x-m4a" isDefault='1' medium="document" fileSize="-1" duration="3600"/> <guid isPermaLink="false">a&amp;b</guid> <pubDate>1066-08-14T14:12:09CET</pubDate> <enclosure url='https://example.com/a.b/café/325.ogg' type="audio/flac"/> <itunes:duration>5:54:46</itunes:duration> <atom:link rel="payment" length="20000" href="https://example.com/pay" title=""/> <itunes:image href="https://example.com/ep.jpg"/> <title>&#60;img <![CDATA[src="x.png"> cover  {json: 1}  a < b]]></title></item>
+  <item><guid isPermaLink="true">Café-guid</guid>
+<link>https://example.com/ep</link>
+<description><![CDATA[<br/>😀😀😀😀]]></description>
+<enclosure url="//example.com/dir.with.dots/ep162.amr" length="2147483647" type="application/json"/>
+<enclosure url='' length="1,000,000" type='application/ogg'/>
+<media:content isDefault="1" type="x-audio/mpeg" duration='-5' fileSize="16384"/></item>
+  <item><media:content url="HTTPS://EXAMPLE.COM/ep7.aac" medium="video" isDefault="true" fileSize="16383" type="application/ogg" duration="9223372036854775807"/>
+  <enclosure url="https://example.com/a.b/ep396.aac" length="9223372036854775808" type="application/ogg"/>
+  <guid isPermaLink="true">https://example.com/item/23931</guid>
+  <description> 100%</description>
+  <pubDate>&#13;
+Wed Sept. 14 12:22:08 1987
+</pubDate>
+  <title><![CDATA[a > b]]></title>
+  <itunes:duration>1:60:60</itunes:duration></item>
+  <item><title>AT&amp;T
+</title>
+<guid isPermaLink="true">dup</guid>
+<link></link>
+<itunes:duration>1.2f</itunes:duration>
+<itunes:image href="https://example.com/ep.jpg"/>
+<description></description></item>
+  <item><title>&#x26;#xD800;http://example.com/?a=1&amp;b=2</title><itunes:duration>12928</itunes:duration><guid>
+</guid><enclosure url="ftp://files.example.com/30" length="9007199254740993" type="audio/"/><link></link><pubDate>Friday, 10 Jan 14 04:55:34</pubDate></item>
+  <item><enclosure url="" length="16384" type="x-audio/mpeg"/>
+<link> https://e.com/x </link>
+<media:thumbnail/>
+<description>&lt;p&gt;&lt;img src="x.png"&gt; cover&lt;/p></description>
+<title><![CDATA[&#xFFFF;
+AT&T
+&]]>;</title>
+<guid isPermaLink="false">dup</guid>
+<itunes:summary>😀😀😀😀Tom &amp;amp; Jerry &amp;lt;3&lt;br>&lt;br>&#60;/br&gt;&#31532;7集&lt;BR></itunes:summary>
+<itunes:image href=""></itunes:image>
+<itunes:duration>1.2f</itunes:duration></item></channel>
+</rss>

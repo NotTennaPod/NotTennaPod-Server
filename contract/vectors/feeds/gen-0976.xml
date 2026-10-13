@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:dc="http://purl.org/dc/elements/1.1/"><atom:link href="https://example.com/alt.xml" title="Alternate" length="12" type='application/atom+xml' rel="self"/>
+<link></link>
+<atom:link length="9223372036854775808" title="Café" href="https://example.com/" type="application/rss+xml"/>
+<description>&#13;
+&apos;single&apos;&#38;AMP;&lt;br&gt;</description>
+<atom:link rel="next" title="MP3 feed" href="https://example.com/alt.xml" type="audio/mpeg"/>
+<language>en</language>
+<i:image href="https://example.com/it.jpg"/>
+<atom:link title="Alternate" href="https://example.com/alt.xml" type="text/html" rel="enclosure"/>
+<i:owner><i:name>Owner</i:name><i:email>o@example.com</i:email></i:owner>
+<title><![CDATA[a=b&c=d
+'sing]]>le'
+plain words</title>
+<podcast:funding url=""></podcast:funding>
+<item><title>  padded    &lt;h1>​&#x3C;/h1&gt;  back\slash</title>
+<guid>a&amp;b</guid>
+<link>https://example.com/ep</link>
+<pubDate>	Tue, 03 Jun 1969 17:20:53 -1200&#13;
+</pubDate>
+<description>&#xA0;R&amp;D</description>
+<i:summary>😀</i:summary>
+<i:image href="https://example.com/ep.jpg"/>
+<enclosure url="//example.com/dir.with.dots/ep266.avi" length="2147483648" type="audio/mp4"/>
+<media:content duration='0060' isDefault="1" url="ftp://files.example.com/48.webm" medium="document" fileSize="9007199254740992" type="image/png"/>
+<media:content duration="" url="http://example.org/a/b/c244.wav#t=10" medium="document" type="audio/aac" fileSize="123456"></media:content>
+<media:content url="https://user:pass@media.example.net/café/363.OGG" duration="2147483648" medium="image" fileSize="0x4E20" type='text/plain'/>
+<podcast:transcript type="application/x-subrip" language="en"/><podcast:transcript url='https://example.com/t.vtt' type="" language="en"/></item></channel>
+</rss>

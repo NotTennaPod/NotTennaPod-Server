@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="en">
+  <author><name>Ann</name><email>a@example.com</email></author><itunesu:image href="https://example.com/ai.jpg"/><subtitle type="plain"><![CDATA[<li>&lt</li><div>&quot;q&quot;</div><hr/>]]></subtitle><link title='MP3 feed' length="12" type="application/xhtml+xml" rel='Next' href="http://example.org/357.ogx"/><title type="html">&#x26;;&lt;span style="color:red"&gt;a &#x3C; b&lt;/span&gt;</title><id> raw </id><entry><author><name>Entry author</name></author>
+<id>urn:uuid:1</id>
+<published>Wed Jun 14 01:11:14 2023</published>
+<content type="HTML">&#60;BR&gt;</content>
+<updated>SUNDAY, 11 Jan 2004 10:01 +0100</updated>
+<title><![CDATA[&#0;<strike>&#;</strike>]]></title></entry><entry><id>urn:uuid:1</id>
+<updated>Wednesday, 07 Jul 69 18:50</updated>
+<wrapper><inner><deeper>text</deeper></inner></wrapper>
+<summary type="html"><![CDATA[<img> ש]]>&#x5DC;ום&lt;div>a=b&#38;c=d&lt;/div></summary>
+<content type="text">
+&amp;amp;</content>
+<title type="html">	&#x26;AMP;  </title>
+<itunesu:duration>2484</itunesu:duration>
+<published>1899-12-99</published></entry>
+</feed>

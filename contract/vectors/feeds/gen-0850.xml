@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <subtitle type="text"></subtitle>
+<title type="text">a &lt; b</title>
+<author><name>Ann</name></author>
+<author><name>Émile</name></author>
+<id> raw </id>
+<link rel="" type="audio/mpeg" href="https://example.com/alt.xml" title='Café' length='abc'/>
+<link type='audio/mpeg' href="https://example.com/pay" title='' rel="self" length="9223372036854775808"></link>
+<author><name>Émile</name><email>a@example.com</email></author>
+<itunes:image href=""/>
+<link href="https://example.com/feed?page=2" title="Café" length="12" type="" rel="payment"/>
+<entry><title type='html'>&#38;unknown;</title>
+  <content> &amp;nbsp;<![CDATA[]]></content>
+  <published>2289-10-16T01:57:48WET</published>
+  <summary><![CDATA[<li>tab	here</li>http://example.com/?a=1&b=2	&#128512;]]></summary>
+  <updated>Thu, 06 October 2005 14:50:18</updated></entry>
+</feed>

@@ -1,0 +1,29 @@
+<rss version="2.0" xmlns="http://backend.userland.com/rss2" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:at="http://www.w3.org/2005/Atom">
+<channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<image><url>  https://example.com/ws.png
+</url><title>Image title</title></image>
+<language>de-DE</language>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<link>https://example.com</link>
+<itunes:summary></itunes:summary>
+<lastBuildDate> 0999-09-03T01:03:27  </lastBuildDate>
+<description>&lt;br />aaaaaa &#x26;#xA9;&lt;div>&lt;/div&gt;&#13;
+tab	here</description>
+<item><title>مرح&#1576;ا  R&amp;D</title><itunes:subtitle><![CDATA[&#65;&#66;  <b>Bold</b> title]]></itunes:subtitle><enclosure length="" type='video/x-matroska'/><itunes:image href=" https://e.com/i.png "/><description>&#x3C;div>&#x3C;b&gt;Bold&lt;/b> title&lt;/div&gt;&#x26;#xD800;&lt;div&gt;a&#13;
+b&#x3C;/div&gt;&lt;BR&gt;	sep	&amp;copy;&lt;li> leading&lt;/li&gt;x&lt;y</description><psc:chapters version="1.2"><psc:chapter start="" href="" title=""/><psc:chapter start="7923" title=""/></psc:chapters><itunes:duration>00:00:01.999999</itunes:duration><pubDate>1990-06-16T14:26:300</pubDate><enclosure url="https://user:pass@media.example.net/ep343.webm" length="20000 " type="unknown"/><enclosure url="" length="٢٠٠٠٠" type="audio/aac"/><link> https://e.com/x </link><guid isPermaLink="false">  spaced guid  </guid></item>
+<item><description><![CDATA[<img src="x" alt="y"/>]]></description>
+<guid isPermaLink="false">urn:uuid:36e8a678</guid>
+<podcast:person role="host">Jane</podcast:person>
+<link> https://e.com/x </link>
+<title><![CDATA[&#;]]></title>
+<pubDate>Thursday, 	2018-10-04T17:20:28</pubDate>
+<enclosure url="http://example.org/e p275.opus" length="abc" type="application/octet-stream"/>
+<content:encoded>&lt;p&gt;#7 – Interview&#x3C;/p>&lt;p/>&#60;div&gt;&amp;#169;&lt;/div&gt;</content:encoded></item>
+<item><itunes:summary>&lt;hr/&gt;</itunes:summary>
+  <enclosure length="00020000" type=" audio/mpeg"/>
+  <title><![CDATA[AT&T &#0; [x]]]></title>
+  <enclosure url="ftp://files.example.com/a/b/c181.ts" length="9007199254740993" type='video/x-matroska'/>
+  <pubDate>Thu, 21 Dec </pubDate>
+  <content:encoded>&lt;p>&lt;/p&gt;	&#x26;amp;&lt;li&gt;&lt;/li&gt;
+&#x26;AMP; &#38;Lt;&lt;p>&#x26;AMP;&lt;/p>&#x3C;br/&gt;  R&amp;D</content:encoded>
+  <guid isPermaLink="false">urn:uuid:47868004</guid></item></channel></rss>

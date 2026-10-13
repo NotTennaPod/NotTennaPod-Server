@@ -1,0 +1,24 @@
+﻿<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><atom:link href="https://example.com:8443/dir.with.dots/ep25.m3u8?a=1&amp;b=2" rel="next" title="Café" type="application/atom+xml"></atom:link>
+<podcast:funding>Support us</podcast:funding>
+<itunes:author>第一</itunes:author>
+<title>😀</title>
+<podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+<description>	#hash	&amp;#xA9;&lt;p&gt;&#x3C;/p>😀 &#x26;#;&#60;li&gt;[x]&#x3C;/li&gt;&#x3C;div>trailing &lt;/div&gt;aaaaaaa</description>
+<link> https://example.com/ </link>
+<language>de-DE</language>
+<itunes:new-feed-url> https://new.example.com/sp </itunes:new-feed-url>
+<item><title>&amp;#;</title>
+  <link></link>
+  <itunes:summary>&#13;
+&amp;#0;&#60;p>a &#60; b&#x3C;/p>&#x3C;div>#hash&#x3C;/div&gt; x&#60;y&#x3C;p>&#x3C;/p&gt;&#x3C;br&gt;&lt;/br&gt; plain words مرحب&#1575;</itunes:summary>
+  <itunes:subtitle>&amp;
+&#128512;
+&lt;P&gt;Line&lt;br&gt;break&#60;/P&gt;</itunes:subtitle>
+  <itunes:image href=""/>
+  <itunes:duration>121:15</itunes:duration>
+  <enclosure url="//example.com/a/b/c385.jpg?file=x.mp3" length="9223372036854775807" type="audio/opus"/>
+  <media:group><media:content type="video" fileSize="2147483648" url="http://example.org/a/b/c244.wav#t=10" duration="" medium="audio"/><m:content url="https://example.com:8443/a/b/c214.mov" duration='1' type="image/*" fileSize="16384"/></media:group>
+  <media:description>Episode 12</media:description>
+  <atom:link title="Café" type="text/html"/></item></channel>
+</rss>

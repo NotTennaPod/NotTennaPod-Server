@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:sc="http://podlove.org/simple-chapters"><itunes:image/>
+<link>https://example.com</link>
+<atom:link href="https://example.com/pay" title="MP3 feed" type="" rel="Next" length="9223372036854775808"/>
+<language> EN-US </language>
+<atom:link rel="hub" title="" length="20000" type="text/html"/>
+<atom:link href="" rel="hub" type="application/rss+xml" title='Café'/>
+<atom:link href="" type="" rel="self"/>
+<title>&#x26;lt;b&amp;gt;&#x3C;center&gt;&#38;#;&lt;/center></title>
+<item><title>sep</title> <guid>dup</guid> <link>https://example.com/ep</link> <pubDate>29 Sept 48 08:14 +0100</pubDate> <dc:date>THURSDAY, 29 Dec 2417 19:48:01 +0100</dc:date> <itunes:duration>7955.248</itunes:duration> <enclosure url="https://example.com:8443/dir.with.dots/ep235.mp3" length="&#1634;&#1632;&#1632;&#1632;&#1632;"></enclosure> <pi:socialInteract uri="" protocol="activitypub"/> <atom:link type="text/html" rel="last" title="Café"/></item>
+<item><enclosure url="" length="0" type="text/plain"></enclosure>
+<description><![CDATA[<li>100%</li><br />]]></description>
+<title><![CDATA[&#xFFFF]]>;</title>
+<guid isPermaLink="false">urn:uuid:7df47aa2</guid>
+<pubDate>2010-10-01</pubDate>
+<link>https://example.com/ep</link>
+<itunes:author>Item author</itunes:author></item>
+<item><itunes:duration>1096.931</itunes:duration>
+<media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="16383" isDefault='1' duration="2147483" type=""/></media:group>
+<link>https://example.com/ep</link>
+<enclosure url='https://example.com:8443/café/262.mp4' length="+20000" type="video/x-matroska"></enclosure>
+<pubDate>1999-01-31T11:55:04.387 -1200</pubDate>
+<title>&lt;3 &#x3C;3{json: 1}&#x3C;div dir="rtl"&gt;{json: 1}&#60;/div&gt;</title>
+<googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description></item>
+<item><!-- comment --><?pi data?>
+<pi:chapters url='https://example.com/ch.json' type="application/json+chapters"/>
+<guid>dup</guid>
+<description>&#233;éé</description>
+<title></title>
+<pubDate>2114-02-21T08:20:19</pubDate>
+<enclosure length="-16384" type="x-audio/mpeg"/>
+<dc:date>Thursday, 11 May 1972 12:53:07 +0100</dc:date>
+<itunes:duration>22:27</itunes:duration>
+<link>https://example.com/ep</link></item>
+<item><title><![CDATA[ 100%  &#xA9;	]]></title> <pubDate>Fri Aug 11 08:11:59 2243 CEST</pubDate> <link>https://example.com/ep</link> <guid isPermaLink="false">
+</guid> <itunes:summary>&#128512;&#128512;&#128512;	&amp;mdash;&#xA0;x&lt;y</itunes:summary> <enclosure url="https://example.com:8443/ep170.webm" length='9007199254740993' type="application/octet-stream"/></item></channel> </rss>

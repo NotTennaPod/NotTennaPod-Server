@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters">
+<channel><title>&#13;
+&#38;#169;
+​	</title><image><link>https://example.com/img-link</link><url></url><title>Image title</title></image><link> https://example.com/ </link><media:thumbnail></media:thumbnail><language> EN-US </language><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><item><title><![CDATA[שלום
+ leading]]></title><guid>
+</guid><link>https://example.com/ep</link><pubDate>Wed, 23 January 2002 04:12:27 +0100</pubDate><enclosure url="https://xn--caf-dma.example/e p364.3gp" length="9007199254740993" type="audio/mp4"/><itunes:duration>NaN</itunes:duration></item><item><enclosure url='https://example.com:8443/dir.with.dots/ep394.OGG' length="16383" type="audio/mp4"/><guid>a&#x26;b</guid><enclosure url="" length="9223372036854775807" type="audio/wav"/><pubDate>1/2/2003</pubDate><link> https://e.com/x </link><enclosure url='https://user:pass@media.example.net/dir.with.dots/ep43.oga' length="-1" type="Audio/MPEG"/><title>&#60;div&gt;&#x5E9;ל&#x5D5;ם&#x3C;/div> 茶</title><itunes:image href=""/></item><item><pubDate>1975-11-16T23:37:61</pubDate>
+<media:thumbnail url=""/>
+<guid isPermaLink='false'> </guid>
+<link></link>
+<itunes:subtitle><![CDATA[&AMP;]]></itunes:subtitle>
+<title>&#38;#xA9;</title>
+<enclosure url="HTTPS://EXAMPLE.COM/e p171.mkv?a=1&amp;b=2" length="00020000" type='Audio/MPEG'/>
+<itunes:duration>2147483.647</itunes:duration>
+<description><![CDATA[&#x1F600;]]></description></item><item><title>http<![CDATA[://example.com/?a=1&b=2   padded   x<y]]></title>
+<link> https://e.com/x </link>
+<enclosure length="18446744073709551616" type=""></enclosure>
+<pubDate>1981-05-01T</pubDate>
+<itunes:subtitle>&#x3C;span style="color:red&quot;&gt;&amp;lt;b&#38;gt;&#x3C;/span>plain words</itunes:subtitle></item><item><title>&#x26;#x1F600;</title>
+<guid></guid>
+<pubDate>&#13;
+: jPgaaKJCrjZjutRh(rJWTBIM </pubDate>
+<description></description>
+<itunes:duration>
+45:00
+</itunes:duration>
+<enclosure url="https://xn--caf-dma.example/e p364.3gp" length="52428800" type="x-audio/mpeg"/></item></channel></rss>

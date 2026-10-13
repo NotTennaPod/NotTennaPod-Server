@@ -1,0 +1,117 @@
+{
+ "cases": [
+  {
+   "kind": "podcast",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+   "output": "p1:fc3b4ebdaa92f8db758a04d6d9cb53dc4a127a4911d389849df83553ca1c2ecd"
+  },
+  {
+   "kind": "podcast",
+   "namespace": "0a0b0c0d-0e0f-4011-8213-141516171819",
+   "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+   "output": "p1:fe267e427cd2551e92990a0b24c59278a573a7420f68f37a8e39b803897ed83b"
+  },
+  {
+   "kind": "podcast",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "op_id": "01234567-89ab-4cde-8f01-23456789abcd",
+   "output": "p1:11a40926c21206c59ce924cf217efe503d876a04be87e5a2627dcebe82beca0b"
+  },
+  {
+   "kind": "generation",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+   "output": "g1:751f997cc89927167a6df88131493d5e72b9533a5929380e15fa690ffd097421",
+   "podcast_id": "p1:fc3b4ebdaa92f8db758a04d6d9cb53dc4a127a4911d389849df83553ca1c2ecd"
+  },
+  {
+   "kind": "generation",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "op_id": "01234567-89ab-4cde-8f01-23456789abcd",
+   "output": "g1:59f9e83b6fbfe95473e3df98e7d976c8fe6b59384fc874ef44081abf2f4152df",
+   "podcast_id": "p1:fc3b4ebdaa92f8db758a04d6d9cb53dc4a127a4911d389849df83553ca1c2ecd"
+  },
+  {
+   "k": "rss-guid",
+   "kind": "episode",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "output": "e1:7eddc2f81fdee5d42587cd512c8bb6225f58b44a9f88c5e063899dec863c4af9",
+   "podcast_id": "p1:fc3b4ebdaa92f8db758a04d6d9cb53dc4a127a4911d389849df83553ca1c2ecd",
+   "v": "https://example.com/?p=123"
+  },
+  {
+   "k": "atom-id",
+   "kind": "episode",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "output": "e1:10deaa40fb6354e56c747f381f73c54cfe13b44099ee0d49fe04208b01a32c72",
+   "podcast_id": "p1:fc3b4ebdaa92f8db758a04d6d9cb53dc4a127a4911d389849df83553ca1c2ecd",
+   "v": "https://example.com/?p=123"
+  },
+  {
+   "k": "rss-guid",
+   "kind": "episode",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "output": "e1:90347b2de714048ae96fbc16f2cab18108b400a4ddfd96565d0c63c206009247",
+   "podcast_id": "p1:fe267e427cd2551e92990a0b24c59278a573a7420f68f37a8e39b803897ed83b",
+   "v": "https://example.com/?p=123"
+  },
+  {
+   "k": "rss-guid+enclosure",
+   "kind": "episode",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "output": "e1:b0da9e5efd1c59c88e43604d737d1041678b5714936be507ad7213c62496fe62",
+   "podcast_id": "p1:fc3b4ebdaa92f8db758a04d6d9cb53dc4a127a4911d389849df83553ca1c2ecd",
+   "v": "ep-1\u001fhttps://cdn.example.com/ep1.mp3"
+  },
+  {
+   "k": "enclosure",
+   "kind": "episode",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "output": "e1:f74f6095f5ca5869124d067ccffe9c4ba09c072a3fd07269da95854417cf4824",
+   "podcast_id": "p1:fc3b4ebdaa92f8db758a04d6d9cb53dc4a127a4911d389849df83553ca1c2ecd",
+   "v": "https://cdn.example.com/ep1.mp3"
+  },
+  {
+   "k": "rss-guid",
+   "kind": "episode",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "output": "e1:c4ea079d50df8d51e2dd72254d795ed06c9dc295530092fba0f4a68d3e8f4581",
+   "podcast_id": "p1:fc3b4ebdaa92f8db758a04d6d9cb53dc4a127a4911d389849df83553ca1c2ecd",
+   "v": "Épisode 😀 é"
+  },
+  {
+   "k": "rss-guid",
+   "kind": "episode",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "output": "e1:5eda7ea3704b75aca4880850225c4971ff9df465dd601869df8aa9caa49b3dc6",
+   "podcast_id": "p1:fc3b4ebdaa92f8db758a04d6d9cb53dc4a127a4911d389849df83553ca1c2ecd",
+   "v": "Épisode 😀 é"
+  },
+  {
+   "k": "rss-guid",
+   "kind": "episode",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "output": "e1:6671f11c252f21cc43b362fb032bd72b5be8c173757aa293949a81e8f1e57c3e",
+   "podcast_id": "p1:fc3b4ebdaa92f8db758a04d6d9cb53dc4a127a4911d389849df83553ca1c2ecd",
+   "v": ""
+  },
+  {
+   "error": true,
+   "k": "guid",
+   "kind": "episode",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "podcast_id": "p1:fc3b4ebdaa92f8db758a04d6d9cb53dc4a127a4911d389849df83553ca1c2ecd",
+   "v": "x"
+  },
+  {
+   "error": true,
+   "k": "RSS-GUID",
+   "kind": "episode",
+   "namespace": "6f1c2d3e-4a5b-4c6d-8e7f-90a1b2c3d4e5",
+   "podcast_id": "p1:fc3b4ebdaa92f8db758a04d6d9cb53dc4a127a4911d389849df83553ca1c2ecd",
+   "v": "x"
+  }
+ ],
+ "suite": "ids"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><description></description><itunes:summary> AT&amp;T</itunes:summary><title>  &#x26;#x1F600;&amp;ampa &#x3C; b </title><language>TR</language><atom:link type="text/html" href="https://example.com/" title="MP3 feed" rel="last"/><p2:funding/><itunes:episodeType>full</itunes:episodeType><p2:funding url='https://example.com/donate'/><p2:funding url=""/><link> https://example.com/ </link><item><link>https://example.com/ep</link>
+  <enclosure url="https://example.com:8443/café/267.MP3" length=" 20000" type=''/>
+  <guid isPermaLink="true">urn:uuid:1dd87516</guid>
+  <content:encoded><![CDATA[<p></p><li>x<y</li>
+&hellip;<div>&#169;</div>
+plain words😀<br>😀😀😀]]></content:encoded>
+  <media:group><media:content type='application/x-bittorrent' duration="2147483648" url="HTTPS://EXAMPLE.COM/café/274.mp3.zip" isDefault="1" medium="image" fileSize="-1"/></media:group>
+  <media:thumbnail url=""/>
+  <p2:chapters url="" type="application/json+chapters"/>
+  <title>{json: 1}  AT&#38;T</title>
+  <itunes:image href=""></itunes:image>
+  <itunes:summary>&#60;p>Line&#x3C;br&gt;break&#x3C;/p&gt;&#160;  spaced  </itunes:summary></item><item><link>https://example.com/ep</link> <title>S01E89</title> <p2:socialInteract protocol="activitypub"></p2:socialInteract> <description>&#60;li&gt;a
+  b&lt;/li&gt;x&#x3C;y</description> <pubDate>2022-12-15T02:50:14Z</pubDate> <guid>
+</guid></item><item><guid>urn:uuid:ca22f845</guid><pubDate>1990-06-16T14:26:300</pubDate><p2:locked>yes</p2:locked><content:encoded>&#60;br /></content:encoded><enclosure url="" length="16383" type="Audio/MPEG"/><description></description><title>{json: 1}</title></item><item><guid isPermaLink="true">Caf&#xE9;-guid</guid>
+  <pubDate>Thu 1 Aug 0999 16:55:01 GMT-0500 </pubDate>
+  <title><![CDATA[{json: 1}  &#xFFFF;]]></title>
+  <link> https://e.com/x </link>
+  <enclosure url="//example.com/a/b/c351.mov?file=x.mp3" length="-0" type="audio/mp4"></enclosure>
+  <description>&#60;div&gt;&#x26;#xD800;&lt;/div&gt;</description>
+  <media:content url="https://cdn.example.com/dir.with.dots/ep47.OGG" duration="01:00" medium='Audio' isDefault='true' fileSize="4294967296" type="video/quicktime"></media:content></item></channel>
+  </rss>

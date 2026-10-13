@@ -1,0 +1,30 @@
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><description></description>
+<itunes:new-feed-url>http</itunes:new-feed-url>
+<podcast:funding url=""/>
+<lastBuildDate>Tue, 24 Dec 2002 14:51:16.9383791 +1400</lastBuildDate>
+<link></link>
+<title><![CDATA[&euro;]]></title>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<podcast:funding url=""/>
+<item><guid isPermaLink="true">https://example.com/item/54953</guid>
+<enclosure url="https://xn--caf-dma.example/e p146.jpg?a=1&amp;b=2" length='18446744073709551616' type='application/json'/>
+<title>&lt;unknown&gt;Tom &amp; Jerry &#x3C;3&#x3C;/unknown>&lt;b&gt;Bold&#60;/b> titleé</title>
+<link> https://e.com/x </link>
+<pubDate>Wed, 08 Jan 2549 13:00:56 +0200</pubDate>
+<description>&lt;div>茶&lt;/div&gt;&#x1F600;&lt;p/>aaaaaaaaa&#60;p&gt;<![CDATA[#7 – Interview</p>éééLine<br>break<br> #hash]]></description>
+<itunes:author>Item author</itunes:author>
+<media:group><media:content medium="audio" fileSize="9007199254740992" duration="1" url='https://example.com:8443/dir.with.dots/ep272.mp3.zip'/></media:group></item>
+<item><media:description type='plain'>a&#13;
+b&lt;br&gt;</media:description>
+<pubDate>2004-05-04T11</pubDate>
+<itunes:subtitle>R&amp;D</itunes:subtitle>
+<description><![CDATA[<p>  spaced  </p><hr/>  leading]]></description>
+<p2:chapters url="" type='application/json+chapters'/>
+<title><![CDATA[S01E21
+<p>Para</p>]]></title>
+<itunes:summary>&#38;hellip;&#60;br> &amp;hellip;</itunes:summary>
+<link> https://e.com/x </link>
+<itunes:duration>4:11:49</itunes:duration>
+<guid>
+</guid>
+<content:encoded>😀😀😀😀</content:encoded></item></channel> </rss>

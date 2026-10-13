@@ -1,0 +1,5 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+<entry><updated>2020-01-01</updated><published>2021-01-01</published><updated>2022-01-01</updated></entry>
+<entry><published>2099-01-01</published><updated>2020-01-01</updated></entry>
+<entry><updated>2020-01-01</updated><published>2099-01-01</published></entry>
+</feed>

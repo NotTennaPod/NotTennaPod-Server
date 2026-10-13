@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="windows-1252"?><atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:pc="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en"> <atom:link href="https://example.com/pay" length="9223372036854775808" rel='alternate' type="application/xhtml+xml"/><atom:link type='application/rss+xml' rel=""/><atom:link rel="hub" length="12" href='https://example.com/feed?page=2' title="Alternate"/><atom:icon>https://example.com/icon.png</atom:icon><atom:link href="https://example.com/" rel="related" type="application/atom+xml" length="abc"/><atom:title type="html">Episode<![CDATA[ 12]]></atom:title><atom:id>https://example.com/feed</atom:id><atom:author><atom:name>Émile</atom:name></atom:author><atom:entry><atom:link rel="first" title="" href="https://example.com/pay" type="application/rss+xml"/>
+<atom:published>2009-10-05T03:51:22+0000
+</atom:published>
+<atom:link length="20000" href="https://example.com/" type='application/atom+xml'/>
+<atom:link title="Alternate" href='' rel="last" type="text/html"/>
+<atom:title type="plain">&amp;unknown;&#8203;</atom:title>
+<mrss:content medium="image" type="audio/flac" isDefault="TRUE" fileSize="9007199254740993" url="http://example.org/185.caf" duration="9223372036854775807"></mrss:content>
+<atom:summary>&#x3C;p&gt;&amp;#128512;&lt;/p&gt;</atom:summary></atom:entry><atom:entry><atom:id>tag:x,2020:1</atom:id>
+  <atom:content>&#x3C;p/&gt;&#60;p&gt;caf&#233;&lt;/p&gt;<![CDATA[<img src="x" alt="y"/>]]></atom:content>
+  <atom:published>_,  Mon, 08 Oct 2018 05:48:50 +0945</atom:published>
+  <atom:title type="html">&amp;Lt; a &#x3C; b</atom:title></atom:entry>
+</atom:feed>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><media:thumbnail url="https://example.com/mt.jpg"/>
+  <item><enclosure url="" length="&#1634;&#1632;&#1632;&#1632;&#1632;" type="audio/mp3"/>
+  <i:duration>165:21</i:duration>
+  <title>http://example.com/?a=1&amp;b=2 &lt;p&gt;café&#x3C;/p&gt;</title>
+  <guid isPermaLink='false'>
+</guid>
+  <description></description>
+  <pubDate>Tue, 06 Sep 1988 06:06 +0530</pubDate>
+  <enclosure length="+20000" type="image/jpeg"/>
+  <content:encoded>éééééé&amp;#;&#x3C;br&gt;
+
+&#x26;apos;a&#x26;apos; a &gt; b</content:encoded>
+  <link></link>
+  <media:content url="https://example.com/a.b/ep135.pdf?a=1&amp;b=2" medium="image" duration="2147483648" fileSize="9007199254740991" type="audio/mp3"/>
+  <i:summary>aa</i:summary></item>
+  <item><guid>urn:uuid:cd3bb6c6</guid>
+<title>x&lt;y</title>
+<enclosure url="" length="2147483648" type="application/ogg"/>
+<i:image href=" "/>
+<content:encoded>&#31532;7&#38598;</content:encoded>
+<enclosure length=" 20000" type="audio/wav"/>
+<enclosure url="https://cdn.example.com/98.mp4" length="4294967296" type="video/quicktime"/>
+<pubDate>Sun, 30 Oct 2001 07:57 Central European Summer Time</pubDate>
+<description>&lt;br/&gt;&#x3C;hr&gt;&#60;hr/>&#60;div&gt;Folge 7: &#xDC;ber alles&lt;/div&gt;&lt;hr/></description>
+<media:group><media:content fileSize="16384" url="https://example.com:8443/café/283.xyz" duration='01:00' type="application/json" isDefault="TRUE"/></media:group></item>
+  <item><description>aaaaaaa&lt;br />&lt;p/&gt;
+x&lt;y&#x3C;p/&gt;</description>
+<title><![CDATA[&#169; ]]>&amp;#xD800; plain words</title>
+<media:content fileSize="12" url="https://example.com:8443/e p13.ts" medium='video' type="application/pdf" duration="+60" isDefault="true"/>
+<enclosure url="https://example.com:8443/e p326.m4v" length="&#1634;&#1632;&#1632;&#1632;&#1632;" type="video/quicktime"/>
+<pubDate>Sunday, 11 Dec 14 00:06:09</pubDate>
+<guid>https://example.com/item/70777</guid>
+<i:duration>-9223372036854775808</i:duration>
+<media:content duration='3600' type="image/png" isDefault="1" fileSize="1" medium="Audio"/></item>
+  <item><title>&#38;lt;b&amp;gt; &amp;#; &amp;nbsp;</title> <link></link> <pubDate>  1973-09-16;
+</pubDate> <description>&lt;p/&gt; &#x26;#x1F600;'single'&#60;br>&#xA0;{json: 1}<![CDATA[ééé]]></description> <i:summary>éé&#233;&#13;
+AT&#x26;T</i:summary> <i:duration>4500</i:duration> <enclosure url="//example.com/dir.with.dots/ep52.Mp4" length="52428800" type=" audio/mpeg"/> <podcast:transcript url="https://example.com/t.vtt" type="application/srr" language="en"/><podcast:transcript type="" language="en"/><podcast:transcript url='https://example.com/t.json' type="" language="en"/></item>
+  <title> </title>
+  <podcast:funding url="">  spaced  </podcast:funding>
+  <description>&#60;li>&amp;lt&lt;/li>
+&#x26;lt&#60;br /></description>
+  <i:author>Café Radio</i:author>
+  <atom:link title="" rel="self" length="9223372036854775808" href="" type=""/>
+  <podcast:funding>&#x3C;b>x&lt;/b></podcast:funding>
+  <atom:link href="https://example.com/alt.xml" rel="first" type="application/xhtml+xml" title='MP3 feed' length="abc"/>
+  <language></language>
+  <i:image href=" "/>
+  <link></link>
+  <podcast:funding url="https://example.com/donate">  spaced  </podcast:funding></channel>
+  </rss>

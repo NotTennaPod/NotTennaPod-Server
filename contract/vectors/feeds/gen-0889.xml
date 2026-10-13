@@ -1,0 +1,12 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"><author><name>  Bob  </name></author><subtitle type="HTML"><![CDATA[aaaaaaaééé]]></subtitle><link title='Café' rel="self" length="20000" href=""/><link rel="Next" href="https://example.com/alt.xml" type="text/html"/><icon></icon><author><name></name><email>a@example.com</email></author><id>https://example.com/feed</id><title type="plain">a &gt; b
+&amp;lt</title><entry><dc:date>Sat, 21 Mar 2020 02:02:56 +01:00</dc:date>
+<published>Tue Dec 16 09:44:05 1980 WET</published>
+<summary type="text"><![CDATA[  café]]></summary>
+<updated>Wednesday, 22 Aug 1601 13:53:43 -1200</updated>
+<id>urn:uuid:1</id>
+<link href="//example.com/a/b/c324.xyz" type="audio/mpeg" length="9223372036854775808" rel="first" title='Alternate'/></entry><entry><link length="20000" rel="enclosure" title="" type="application/xhtml+xml"/> <itunes:duration>0</itunes:duration> <updated>1991-08-10T01:12:33.12XYZ</updated> <link length="20000" title="MP3 feed" type="text/html" href="" rel="related"/> <id>
+id
+</id> <summary>&#x1F600;😀😀</summary> <title type="HTML"> &lt;h6&gt;Episode 123&lt;/h6>&#13;
+</title> <link length="12" title="MP3 feed" href='https://example.com/feed?page=2' type="" rel="archives"></link></entry><entry><author><name>Entry author</name></author> <link href="https://example.com/" length="20000" title="" rel="related" type="application/xml+xhtml"/> <summary type="HTML">  &#x26;#0;x&#x3C;y&lt;br>&#128512;ééé&lt;p>&amp;amp;amp;&#60;/p&gt;
+e&#x301;&#x7B2C;7集&#60;div&gt;&#38;#0;&lt;/div&gt;</summary> <published>Sun, 29 Feb 1971 07:16:37 -0500</published> <title type="html"><![CDATA[<center>&#x1F600;</center>&#0;<img src="x.png"> cover]]></title> <link length="12" rel="hub" type="application/xml+xhtml" href="https://example.com/pay" title="MP3 feed"></link> <link type="audio/mpeg" rel="related" href="https://example.com/alt.xml" title="Café"/> <id> raw </id></entry>
+</feed>

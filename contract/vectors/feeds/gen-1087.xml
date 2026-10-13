@@ -1,0 +1,35 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="EN-us"><id> raw </id>
+<itunes:image href="https://example.com/ai.jpg"></itunes:image>
+<icon>https://example.com/icon.png</icon>
+<author><name>  Bob  </name></author>
+<title type="text">&amp;hellip; &amp;;</title>
+<link title="Café" href='' type="application/xml+xhtml" rel="related"/>
+<subtitle type="html">&lt;p&gt;a > b&lt;/p&gt;&lt;hr&gt;&#233;é&#xE9;éééa&#13;
+b&#x3C;p>&lt;/p>&#x3C;li&gt;a &lt; b&lt;/li>&lt;li&gt;&amp;#128512;&lt;/li&gt;</subtitle>
+<media:thumbnail url="https://example.com/amt.jpg"></media:thumbnail>
+<link href="https://example.com/pay" rel="last" type="application/xhtml+xml" title="Café" length="9223372036854775808"/>
+<podcast:funding url='https://example.com/give'>Give</podcast:funding>
+<itunes:summary>😀😀&#x1F600;😀</itunes:summary>
+<entry><id></id>
+  <summary type="html"><![CDATA[<div>back\slash</div>
+&Lt;<div>مرحبا</div>a<li>Tom &amp; Jerry &lt;3</li>]]></summary>
+  <title>caf&#233;&lt;div&gt;&lt;img src="x.png"> cover&#x3C;/div>Folge 539: &#xDC;ber alles</title>
+  <link href="" rel="first" type="application/xhtml+xml" length='12'/></entry>
+<entry><id></id>
+<link rel="hub" href="https://example.com/pay" type="application/atom+xml" title="Café" length="abc"/>
+<title type='html'>  padded  &amp;#xD800;​</title>
+<summary type="HTML"> 'single&apos;&#60;div&gt;&amp;euro;&lt;/div&gt;  padded  a	&#38;#;&lt;3 &#60;3	tab	here&lt;p&gt;a
+
+b&#60;/p&gt;</summary>
+<link title="Alternate" href="http://example.org/e p0.OGG?file=x.mp3" rel='related' type=""/>
+<published>Thu, 01 Dec 2005 17:55:52 +0200Z</published></entry>
+<entry><updated>Fri 11 May 2018 10:19:03 -0800</updated> <link rel="last" type="application/atom+xml" title="Alternate" href='https://example.com/feed?page=2'/> <id>tag:x,2020:1</id> <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">	&#38;#0; &lt;cite>tab	here&#x3C;/cite&gt;  </div></title> <itunes:duration>+7</itunes:duration> <link title="MP3 feed" type="application/rss+xml" href="https://example.com/"/> <dc:date>29 Dec 49 08:21:49 +0200</dc:date></entry>
+<entry><summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">😀😀😀😀😀😀aaaa&lt;li>​&lt;/li&gt;&#38;quot;q&#x26;quot;  &#38;copy;	&#38;nbsp;&lt;li>café&lt;/li&gt;</div></summary>
+<author><name>Entry author</name></author>
+<id>
+id
+</id>
+<title type='plain'>&quot;quoted"</title>
+<itunes:image href=''/>
+<link href="https://example.com/pay" rel="" title="" length="12"/>
+<updated>Sat, 13 Apr 1991 00:24:41 +0200</updated></entry> </feed>

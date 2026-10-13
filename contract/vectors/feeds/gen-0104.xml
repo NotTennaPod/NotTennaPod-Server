@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><atom:link rel="archives" title="Café" type='application/xml+xhtml' href="https://example.com/pay"/> <media:thumbnail url=""/> <atom:link title="" type="application/xml+xhtml" rel="self" href="https://example.com/alt.xml"/> <language> EN-US </language> <category><![CDATA[Technology]]></category> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <link> https://example.com/ </link> <itunes:image href=''/> <title> &#60;b>&lt;i&gt;AT&amp;T&lt;/b>&#60;/i>#hashtab	here </title> <item><title>&#x26;euro;S01E347&amp;lt</title> <link> https://e.com/x </link> <pubDate>thu, 16 Jan 2014 11:11:51 -0000</pubDate> <content:encoded><![CDATA[<li>tab	here</li>&nbsp;<br>ééé]]></content:encoded> <itunes:subtitle>[x]  Tom &#38; Jerry &#x3C;3  &amp;lt;b&#38;gt;escaped&amp;lt;/b&#38;gt;</itunes:subtitle> <itunes:image href=" "/> <itunes:duration>596:31:23.648</itunes:duration> <media:content fileSize="0x4E20" duration=" 60" url="https://xn--caf-dma.example/65.wav" type="audio/ogg"/></item> <item><title>back\slash &#38;#x; &amp;#xFFFF;</title>
+  <guid isPermaLink="true">
+</guid>
+  <link> https://e.com/x </link>
+  <description>1 &lt;2  padded  &#x3C;br&gt;&#60;li>第7集&#60;/li&gt;aaaaaaa😀😀😀&#13;
+caf&#xE9;aaaa&lt;img></description>
+  <itunes:subtitle><![CDATA[שלום
+AT&T]]></itunes:subtitle>
+  <itunes:duration>106:23</itunes:duration>
+  <enclosure url="" length="12" type="audio/ogg"/></item> <item><itunes:duration>1:01:53</itunes:duration>
+<enclosure url="https://xn--caf-dma.example/e p82.mpga" length='' type="audio/mpeg"></enclosure>
+<itunes:image href="https://example.com/ep.jpg"/>
+<guid>urn:uuid:bc0a2f13</guid>
+<description>&#60;p&gt;trailing &#60;/p&gt;</description>
+<title>&amp;apos;a&#x26;apos; http://example.com/?a=1&amp;b=2 S01E802</title></item></channel>
+</rss>

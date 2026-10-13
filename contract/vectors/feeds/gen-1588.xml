@@ -1,0 +1,23 @@
+﻿<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><lastBuildDate>Tuesday, 99 Jul 0099 20:59:48</lastBuildDate>
+<link> https://example.com/ </link>
+<itunes:summary></itunes:summary>
+<description> &apos;single'</description>
+<itunes:image href="https://example.com/it.jpg"/>
+<title>&#x3C;dl&gt;&#x3C;dt>&amp;hellip;&#60;/dt&gt;&#x3C;dd&gt;b&lt;/dd&gt;&lt;/dl> &amp;</title>
+<atom:link type='application/rss+xml' title="Café" rel="" href="" length="9223372036854775808"/>
+<itunes:subtitle>&#38;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt;</itunes:subtitle>
+<item><title>&amp;mdash;</title>
+  <itunes:duration>01:30:00</itunes:duration>
+  <enclosure url='ftp://files.example.com/café/107.wma#t=10' length="123456789012345678" type="Audio/MPEG"/>
+  <pc:chapters><pc:chapter href="https://example.com/ch" start="01:28:38.911" title="Intro" image='https://example.com/ch.png'/></pc:chapters>
+  <itunes:image href=""/>
+  <link></link>
+  <description>&#x3C;li&gt;&#x26;#0;&#x3C;/li></description>
+  <pubDate>2006-09-04T01:32:32
+  </pubDate>
+  <itunes:summary><![CDATA[​]]></itunes:summary></item>
+<item><pubDate> 1998-03-14-0500 </pubDate><itunes:subtitle><![CDATA[مرحبا]]></itunes:subtitle><title>&#x3C;img src="x.png"&gt; cover a=b&amp;c=d</title><link> https://e.com/x </link><itunes:duration>15967</itunes:duration><guid>  spaced guid  </guid><podcast:socialInteract xmlns:podcast="https://podcastindex.org/namespace/1.0" uri="" protocol='activitypub'/><enclosure url="https://xn--caf-dma.example/e p186.m4a" length="18446744073709551616" type="audio/mp3"/></item>
+<item><title/><guid isPermaLink="false">Café-guid</guid><link>https://example.com/ep</link><description>&#60;BR&gt;&lt;p&gt;Line&#60;br&gt;break&#60;/p&gt;</description><c:encoded>&#x3C;p>a=b&amp;c=d&lt;/p&gt;&#x3C;br/></c:encoded><itunes:summary><![CDATA[<br /]]>&gt;   leading&lt;p&gt; &lt;/p&gt;😀😀😀cr
+lf&#x3C;br&gt;&lt;BR>&#x3C;img&gt;&#x3C;li>&#38;&#x3C;/li&gt;</itunes:summary><itunes:duration>90 min</itunes:duration><enclosure url="//example.com/a/b/c138.m4b?a=1&amp;b=2" length=" 20000" type="audio/x-wav"/></item></channel>
+  </rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+<channel><atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/" title="" rel="Next" type="application/rss+xml"/>
+<title>&amp;#; é {json: 1}</title>
+<description><![CDATA[<p><b>Bold</b> title</p>&mdash;<br><img src="x" alt="y"/><div>1 <2</div>a > b<br>]]></description>
+<itunes:new-feed-url>https://new.example.com/feed</itunes:new-feed-url>
+<itunes:author>Tom &#38; Jerry &lt;3</itunes:author>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="" type='' length='12' title="Café" href="https://example.com/alt.xml"/>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" type="application/rss+xml" rel="archives" href="https://example.com/"/>
+<language>fr
+</language>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="archives" href='https://example.com/' title="Café" type="" length="abc"/>
+<item><description>  [x]</description>
+<guid isPermaLink="true">  spaced guid  </guid>
+<link></link>
+<title>&#x26;#x1F600; leading</title>
+<itunes:image/></item>
+<item><title>S01E95 &amp;#0; 第958集</title>
+  <guid>
+</guid>
+  <link>https://example.com/ep</link>
+  <description></description>
+  <itunes:duration>3871</itunes:duration>
+  <enclosure url='https://example.com:8443/175.xyz' length='-0' type="audio/mp3"/>
+  <enclosure url="ftp://files.example.com/206.3gp" length="-1" type=""/>
+  <pi:transcript url="https://example.com/t.json" type="" language="en"/><pi:transcript url="https://example.com/t.vtt" type="application/srt" language="en"/><pi:transcript url="https://example.com/t.vtt" type="Application/JSON" language="en"/></item>
+<item><title><![CDATA[&#65;&#66; <B>第383集</b> #hash]]></title> <link> https://e.com/x </link> <pubDate>15 Jul 1987 22:58:32 GMT+</pubDate> <description>&#60;br/>&#x3C;li&gt;&amp;#xD800;&lt;/li&gt;   مرحبا
+cr&#13;lf</description> <enclosure url="//example.com/dir.with.dots/ep231.mp3.zip" length="123456789012345678" type="application/octet-stream"></enclosure></item>
+<item><itunes:duration>4685.38</itunes:duration> <guid isPermaLink="true">https://example.com/item/63070</guid> <enclosure length="9007199254740992" type="text/html"></enclosure> <pubDate>1066-05-11T25:31:54</pubDate> <itunes:summary>&quot;quoted"&lt;div&gt;trailing &lt;/div&gt;&#x3C;br&gt;
+
+&#x26;ampaaaaaaaaaaa&#60;hr/>&#60;li&gt;#7 – Interview&lt;/li></itunes:summary> <link> https://e.com/x </link> <title>&#60;strike&gt;&#x3C;p>Para&lt;/p>&#60;/strike>
+Folge 320: Über alles
+Folge 309: Über alles</title> <itunes:image href="https://example.com/ep.jpg"/></item>
+<item><itunes:duration>1:2:3:4</itunes:duration><guid>Café-guid</guid><media:group><media:content duration="2147484" isDefault="TRUE" medium="audio" url="https://xn--caf-dma.example/a/b/c215.xyz" fileSize="9007199254740993" type="video/webm"/><media:content duration="2147484" fileSize="-1" type="application/x-bittorrent"/><media:content fileSize="123456789012345678" duration="abc" type="audio/x-wav" medium="document"/></media:group><description><![CDATA[<p>&#169;</p>]]></description><link>https://example.com/ep</link><pubDate>Thu May 27 01:46:10 1971 -1200</pubDate><enclosure url=" HTTPS://EXAMPLE.COM/ep340.3gp " length="-9223372036854775808" type="audio/mpeg; charset=binary"/></item>
+<item><title>&#x3C;em&gt;S01E222&#60;/em>&amp;#128512;</title> <enclosure url='' length='9223372036854775808' type='audio/wav'/> <description>&lt;img src=&quot;x" alt="y"/&gt;&lt;br&gt;&lt;/br&gt;a=b&#x26;c=d&#x3C;br>&lt;div>&#38;nbsp;&lt;/div&gt;&#x3C;hr&gt;</description> <itunes:summary>  </itunes:summary> <pi:socialInteract uri="" protocol="activitypub"/> <itunes:image href=""/> <comments>https://example.com/c</comments> <pubDate>Tuesday, 07 Aug 98 17:15 +0100</pubDate> <guid>Caf&#xE9;-guid</guid></item></channel>
+  </rss>

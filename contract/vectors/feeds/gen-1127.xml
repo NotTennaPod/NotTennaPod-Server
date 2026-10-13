@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link>https://example.com</link> <itunes:author></itunes:author> <description>&lt;li>&#38;nbsp;&lt;/<![CDATA[li><p>x<y</p>a > b<br>]]></description> <p:funding url="">&#x3C;b&gt;x&#60;/b></p:funding> <itunes:image/> <p:funding url=""></p:funding> <title><![CDATA[]]>​</title> <dc:creator>DC Creator</dc:creator> <item><title>Folge 136: Über alles</title>
+<guid>https://example.com/item/18241</guid>
+<link></link>
+<pubDate>Fri Aug 26 07:39 1994</pubDate>
+<itunes:duration>1:02:03</itunes:duration>
+<enclosure url="https://example.com/a.b/ep366.oga" length='00020000' type="audio/mpeg"/></item> <item><title>  مر&#x62D;با</title>
+<guid isPermaLink="true">https://example.com/item/87348</guid>
+<pubDate>Fri Apr 27 01:50:03 2001 MST</pubDate>
+<dc:date>Sunday, 04 Feb 2007 12:38:02 -1200</dc:date>
+<itunes:image href=' '/>
+<enclosure length="0x4E20" type="application/octet-stream"/></item> <item><itunes:summary><![CDATA[sep<div>  padded  </div><p>#hash</p><div>&mdash;</div><li>&#xFFFF;</li> 茶<p>&#x1F600;</p>
+茶]]></itunes:summary>
+<description>aaaaaaaaaééé&#x3C;p>&#x26;#xD800;&#x3C;/p></description>
+<pubDate>Mon, 32 Aug 2017 12:59:01 +0945</pubDate>
+<enclosure length="9007199254740993" type='audio/opus'/>
+<itunes:duration>3:55:30</itunes:duration>
+<itunes:subtitle>&#38;amp;   leading  {json: 1}</itunes:subtitle>
+<guid isPermaLink="true">  spaced guid  </guid></item></channel> </rss>

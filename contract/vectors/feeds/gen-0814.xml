@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><pi:funding url='https://example.com/donate'>  spaced  </pi:funding>
+<atom:link rel="next" type="text/html" href="http://example.org/a/b/c5.oga" title="Café" length='12'/>
+<itunes:summary>&#60;p&gt;&#x3C;/p&gt;&#x3C;li>[x]&lt;/li&gt;&#60;img&gt;	  spaced  	http://example.com/?a=1&amp;b=2</itunes:summary>
+<title>&lt;span&gt;​&lt;/span&gt;  &#x26;hellip;</title>
+<description></description>
+<link> https://example.com/ </link>
+<link xmlns="http://www.w3.org/2005/Atom" length="9223372036854775808" href="HTTPS://EXAMPLE.COM/e p19.mpga" title="Alternate" rel="next" type="application/atom+xml"/>
+<itunes:subtitle>  Episode 604 </itunes:subtitle></channel>
+</rss>

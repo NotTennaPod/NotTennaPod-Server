@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate">Support us</podcast:funding> <lastBuildDate>Mon, 24 Dec 1973 11:12 Central European Standard Time</lastBuildDate> <language>de-DE</language> <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate"/> <atom:link title="MP3 feed" type="" href="https://example.com/feed?page=2" rel="enclosure"/> <title>#hash</title> <x:title xmlns:x="urn:x">Other namespace title</x:title> <itunes:subtitle>&#38;mdash;plain wordsé</itunes:subtitle> <description>&#60;div&gt;x&lt;y&lt;/div></description> <link>https://example.com</link> <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="">&#60;b&gt;x&#x3C;/b></podcast:funding> <item><pubDate>Wed 31 Oct 2353 08:14:46 GMT+0200 (Pacific Daylight Time)</pubDate>
+<link></link>
+<itunes:subtitle> back\slash  ש&#x5DC;ו&#x5DD;  &amp;#1285<![CDATA[12;  ]]></itunes:subtitle>
+<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"></media:thumbnail>
+<guid>https://example.com/item/39811</guid>
+<itunes:duration>8364.775</itunes:duration>
+<enclosure length="18446744073709551616" type="text/plain"/>
+<media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" duration="+60" isDefault="TRUE" fileSize="123456789012345678" medium="document" type="audio/x-m4a"/><media:content xmlns:media="http://search.yahoo.com/mrss/" type='audio/flac' medium="document" url="https://example.com:8443/café/213.mkv" fileSize="123456789012345678" duration="" isDefault="true"></media:content></media:group>
+<itunes:author>Item author</itunes:author>
+<title>a &#60; b AT&#38;T</title></item></channel>
+</rss>

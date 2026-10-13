@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:pc="http://podlove.org/simple-chapters">
+<channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><title>  a
+  b&#13;
+</title>
+<itunes:author><![CDATA[Jane Doe]]></itunes:author>
+<itunes:image href=""/>
+<media:thumbnail url=""/>
+<itunes:subtitle><![CDATA[&#;]]></itunes:subtitle>
+<item><title><![CDATA[&;]]></title>
+<guid isPermaLink="true">urn:uuid:fd31841b</guid>
+<link>https://example.com/ep</link>
+<pubDate>1984-09-03T13:60:53</pubDate>
+<description><![CDATA[<li>&nbsp;</li>]]></description>
+<enclosure url="https://example.com/a.b/café/205.aspx" length="1" type='audio/mpeg; charset=binary'/>
+<media:group><media:content fileSize="" url="http://example.org/e p307.flac" duration='abc' medium='image' type="audio/x-wav"/><media:content fileSize="00020000" url="https://example.com/a.b/a/b/c31.webm" type="video" duration=' 60' medium='video'></media:content></media:group></item>
+<item><title>&#x3C;p>Para&#60;/p> mu<![CDATA[lti
+line]]></title>
+  <pubDate>Thu, 05 Jul 1984 08:35 GMT+01:00</pubDate>
+  <itunes:duration>-1:00:00</itunes:duration>
+  <enclosure url=" https://user:pass@media.example.net/e p55.amr " length=" 20000" type="application/json"/>
+  <link>https://example.com/ep</link>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <description>&#60;BR></description></item>
+<item><itunes:image href=''></itunes:image>
+<itunes:author>Item author</itunes:author>
+<title>
+
+</title>
+<enclosure url="https://cdn.example.com/98.mp4" length="9223372036854775808" type="video"/>
+<pubDate>Monday, 17 Jan 2552 12:22:13 EEST</pubDate>
+<enclosure url="HTTPS://EXAMPLE.COM/222.caf" length="12" type="audio/mp4"/>
+<enclosure url="http://example.org/71.wav" length="16383" type="video"/>
+<description><![CDATA[aaa {json: 1}
+plain words]]></description>
+<podcast:socialInteract uri="" protocol="activitypub"/>
+<link>https://example.com/ep</link>
+<media:content duration="-5" fileSize="123456789012345678" url='HTTPS://EXAMPLE.COM/e p171.mkv?a=1&amp;b=2' medium="Audio" type="application/pdf"/></item>
+<item><title><![CDATA[R&D]]>  trailing </title><guid>urn:uuid:0f844e6f</guid><link></link><pubDate>2016-11-23</pubDate><description>&amp;Lt;&#x3C;br&gt;  &#38;hellip;</description><dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">Thursday, 03 Aug 1950 20:43:05 +-0100</dc:date><content:encoded>&#x3C;p/></content:encoded><itunes:summary></itunes:summary><itunes:subtitle>cr&#13;lfe&#769;</itunes:subtitle><itunes:duration>0:49:55</itunes:duration><enclosure url="https://xn--caf-dma.example/ep23.flac" length="123456" type="image/png"/><media:thumbnail url=""/></item></channel>
+</rss>

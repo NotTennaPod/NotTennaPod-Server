@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="">
+<link href="ftp://files.example.com/e p349.opus?a=1&amp;b=2" length="abc" rel="enclosure" title="Café" type=""/>
+<id></id>
+<link rel="payment" length="9223372036854775808" href="https://example.com/alt.xml"/>
+<link rel="last" href='https://example.com/feed?page=2' title='' type="text/html"></link>
+<icon>https://example.com/icon.png</icon>
+<title type="xhtml"><![CDATA[	&mdash;  a=b&c=d	]]></title>
+<link type="audio/mpeg" href=''></link>
+<author><name></name></author></feed>

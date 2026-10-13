@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p2="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pc="http://podlove.org/simple-chapters">
+<icon>https://example.com/icon.png</icon>
+<itunes:author><![CDATA[A, B]]></itunes:author>
+<itunes:summary><![CDATA[&copy;<br><div>café</div><br></br>]]></itunes:summary>
+<title type="plain"><![CDATA[&; #722 – Inte]]>rview</title>
+<author><name>C&#38;D</name></author>
+<link type="" rel="alternate" href="https://example.com/a.b/café/333.php" title='Café'/>
+<updated>Fri 9 Jan 2505 04:35:33 G</updated>
+<link href="" length="20000" type="text/html" title='Alternate' rel="hub"></link>
+<link rel="enclosure" href='https://example.com/' title="MP3 feed" type="application/atom+xml"/>
+<subtitle><![CDATA[x<y<br><li>مرحبا</li>]]></subtitle>
+<link length="20000" href="https://example.com/pay" type="text/html"></link>
+<entry><updated>Mon, 05 Nov 49 14:09:17 +0200</updated>
+  <itunes:category text="Arts"><itunes:category text="Design"/></itunes:category>
+  <title type="html">trailing 
+a &#x3C; b</title>
+  <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">Mon,   27   Jul   1970   07:43:05 +1400</dc:date></entry>
+<entry><link rel="hub" type="application/xhtml+xml" title="Café" length='abc'/><author><name>Entry author</name></author><link length="9223372036854775808" title="Café" type="application/xhtml+xml" href=""/><content type="html">	100%</content><updated>2023-02-18T13:25:24.012-0500</updated><id>urn:uuid:1</id><link title="Alternate" length="20000" rel=""/><itunes:image href=""/></entry>
+<entry><link rel="hub" length="12" href='' title=""/>
+<id>urn:uuid:1</id>
+<title type="html">&lt;code>sep&#x3C;/code> &amp;#xD800;</title>
+<itunes:duration>2838.221</itunes:duration>
+<updated>Sun, 15 Mar 2331 16:16:46 CETCEST</updated>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">sat 14 Feb 2015 10:24:35 GMT+1400 (PDT)</dc:date>
+<itunes:image href="https://example.com/e.jpg"/>
+<media:content type="x-audio/mpeg" medium="document" url="https://example.com/a.b/e p85.aac?a=1&amp;b=2" fileSize="2147483648" duration=" 60"/></entry>
+<entry><summary><![CDATA[ plain wordsשלום<br><p>&#xD800;</p> #hashééé <br><p></p>a < b<br>]]></summary> <updated>Wed,03 Dec 1969 00:31:00 -0500</updated> <title type="html">&#13;
+  padded    </title> <published>	2259-06-03-0000	</published></entry>
+<entry><published>Sun, 28 October 2007 15:29 +1400</published>
+  <media:content medium="video" url="//example.com/dir.with.dots/ep345.aif" duration="1.5" type="video" fileSize="16383"/>
+  <title type="text">&lt;blockquote&gt;a=b&#x26;c=d&lt;/blockquote&gt; cr&#13;lf</title>
+  <itunes:duration>114:12</itunes:duration>
+  <updated>Thursday, 16 Jun 2242 04:38:50 -0800</updated>
+  <id>
+id
+</id>
+  <link title="MP3 feed" href="https://example.com/pay" length='20000'/></entry>
+<entry><published>2014-03-22T17:27:40-0800</published><link title="Alternate" href="https://example.com/alt.xml" length="abc" rel="next"/><itunes:duration>00:42</itunes:duration><id></id><updated>Thursday, 	0099-05-03T20:45:12</updated><title type="plain"><![CDATA[&lt;b&gt;escaped&lt;/b&gt;  &lt;b&gt;escaped&lt;/b&gt;    padded  ]]></title><summary>&lt;br /&gt; 'single&apos;&#xA0;&amp;unknown;aaaa&#60;p&gt;  padded  &#60;/p&gt;aaaaaaaaaaa=b&#x26;c=d</summary></entry>
+<entry><dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1971-06-15T18:05:43.5-0500</dc:date>
+  <content type="html"><![CDATA[	&#128512;]]></content>
+  <published>1989-03-31T22:37:42:00</published>
+  <title type='html'>&#x26;amp
+&#60;h3>&amp;#169;&#x3C;/h3&gt;</title></entry>
+<entry><title type="text">  padded   &amp;Lt; &amp;#x1F600;</title>
+<author><name>Entry author</name></author>
+<updated>Thu, 28 Nov 1985 11:09:45 +00:00</updated></entry>
+</feed>

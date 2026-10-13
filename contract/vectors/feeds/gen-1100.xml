@@ -1,0 +1,20 @@
+<rss version="2.0" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="next" title="MP3 feed"/><description></description><itunes:image href=""/><title><![CDATA[ ]]></title><atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="" title="Café" rel="" type="audio/mpeg"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/" rel="first" type="application/xhtml+xml" length="abc"></atom:link><language>de-DE</language><link> https://example.com/ </link><item><title>&#x26;#xA9; caf&#233; &#60;3 &lt;3</title><enclosure url="https://cdn.example.com/dir.with.dots/ep254.mov?file=x.mp3" length="٢٠٠٠٠" type='x-audio/mpeg'/><pubDate>FRIDAY 7 Feb 1975 21:33:05 GMT+0000 (PST)</pubDate><guid>
+</guid><link> https://e.com/x </link><itunes:duration>596:31:23.648</itunes:duration><c:encoded>
+a&#13;
+b&lt;p&gt;x&lt;y&lt;/p></c:encoded></item><item><description>&#x3C;br /></description>
+  <pubDate>01 Nov 50 02:26:21 -0800</pubDate>
+  <guid isPermaLink="true">dup</guid>
+  <link>https://example.com/ep</link>
+  <enclosure url="" length="20000 " type="audio/mp3"/>
+  <enclosure url="https://example.com:8443/e p72.m4v" length="9223372036854775807" type="audio/x-wav"/>
+  <itunes:summary>a&#13;
+b</itunes:summary>
+  <itunes:duration>3766.660</itunes:duration></item><item><title>&amp;#xD800;&lt;div>&lt;p&gt;&amp;unknown;&lt;/p&gt;&#x3C;/div&gt;</title>
+<guid isPermaLink="false"> </guid>
+<link> https://e.com/x </link>
+<pubDate>2023-04-17UT</pubDate>
+<description><![CDATA[<img>
+😀]]></description>
+<enclosure url="ftp://files.example.com/ep383.xyz#t=10" length='0x4E20' type="image/png"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" isDefault="TRUE" url="http://example.org/dir.with.dots/ep239.OGG?auth=yes" duration='59' type="audio/mp3"/></item><atom:link xmlns:atom="http://www.w3.org/2005/Atom" type="audio/mpeg" href="https://example.com/pay" rel="next"/></channel> </rss>

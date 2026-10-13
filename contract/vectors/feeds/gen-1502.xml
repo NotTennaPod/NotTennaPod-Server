@@ -1,0 +1,31 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="en">
+<logo>https://example.com/logo.png</logo>
+<title type="xhtml">  padded  </title>
+<itunes:author>  Spaced  </itunes:author>
+<id>urn:x</id>
+<author><name></name><email>a@example.com</email></author>
+<subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">éé&#233;&#60;p&gt;&lt;/p>
+&#x26;#xFFFF;é&#xE9;é&amp;#;&lt;br></div></subtitle>
+<entry><itunes:duration>1535</itunes:duration>
+<id> raw </id>
+<summary>&amp;nbsp;#7 – Interview&lt;br&gt;</summary>
+<media:content type='video/webm' duration="01:00" fileSize="1,000,000" url="https://example.com:8443/dir.with.dots/ep6.m3u8?dl=1.0" isDefault="true" medium='audio'/>
+<published>Mon Sep 14 14:51:10 2020 Europe/Berlin</published>
+<title type='HTML'><![CDATA[&mdash;S01E446]]></title>
+<updated>Sat, 06 Sep 2436 17:11:50 -12:00</updated>
+<link href="https://example.com/pay" title='Alternate' rel="last" type="" length="20000"/></entry>
+<entry><author><name>Entry author</name></author>
+<itunes:duration>495</itunes:duration>
+<link type="application/xhtml+xml" rel="archives" href="" title=""/>
+<updated> Fri, 16 Feb 1601 22:45 +1400  </updated>
+<summary type="plain">a&#13;
+b</summary>
+<id>
+id
+</id>
+<published>	1992-06-15GMT+00:00
+</published>
+<title>&#60;s>&lt;/s&gt;
+مرحبا
+&lt;b&gt;Bold<![CDATA[</b> title]]></title>
+<updated>Thursday 13 Aug 2015 01:47:46 GMT-0500 (PDT)</updated></entry> </feed>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>pt-BR</language><title>'single'
+שלו&#x5DD;</title><description><![CDATA[<br>]]></description><podcast:funding url="https://example.com/donate"></podcast:funding><item><title>&#38;#xF<![CDATA[FFF;
+שלום]]></title>
+<description><![CDATA[
+​<li>multi
+line</li>😀😀😀😀]]></description>
+<link>https://example.com/ep</link>
+<enclosure url="https://user:pass@media.example.net/204.avi?auth=yes" length="4294967296" type="audio/mpeg"/>
+<content:encoded>&#60;div>plain words&lt;/div&gt;	&amp;#x;
+R&#38;D
+plain words&#x3C;img&gt;</content:encoded>
+<pubDate>Tue, 24 Okt 1950 11:41:04 +0945</pubDate></item><item><link>https://example.com/ep</link> <title>&#60;span style=&quot;color:red&quot;&gt;&amp;&lt;/sp<![CDATA[an>]]></title> <enclosure url="https://user:pass@media.example.net/café/296.mp4" length="123456789012345678" type="audio"/> <pubDate>1981-01-31T04:36:23Z</pubDate> <guid> </guid></item><item><enclosure url="https://example.com:8443/ep355.html" length="0x4E20" type="text/html"/>
+<link> https://e.com/x </link>
+<pubDate>2024-09-12-1200</pubDate>
+<guid>dup</guid>
+<chapters:chapters version='1.2'></chapters:chapters>
+<enclosure url='https://xn--caf-dma.example/e p146.jpg?a=1&amp;b=2' length="18446744073709551616" type="image/png"/>
+<title>café</title></item></channel></rss>

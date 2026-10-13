@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters">
+<title>Folge 477: Über alles leading1 &lt;2</title>
+<icon>https://example.com/icon.png</icon>
+<updated>Thu, 07 May 1981 22:50 est</updated>
+<author><name>Émile</name></author>
+<link length="20000" title="Alternate" rel="last" href="https://example.com/pay"/>
+<itunesu:image href="https://example.com/ai.jpg"/>
+<podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/give">Give</podcast:funding>
+<subtitle>ééé&#60;p/&gt;</subtitle>
+<entry><published>2285-07-09T16:08:59Z</published> <updated>2265-10-03T14:06:30.9678Z</updated> <title>Line&lt;br&gt;break</title> <link type="audio/mpeg" length="9223372036854775808" href="" rel="payment" title="Café"/> <content type='HTML'></content></entry>
+<entry><id>
+id
+</id><updated>1979-11-24</updated><link href="https://example.com/" rel="enclosure" title="" length="9223372036854775808" type="application/atom+xml"/><link href="https://example.com/feed?page=2" rel="enclosure" title="MP3 feed" type="text/html" length="abc"/><summary type='html'></summary><author><name>Entry author</name></author><title>&amp;nbsp; leadin<![CDATA[g]]></title><content><![CDATA[&#x1F600;<br><div>#hash</div><p><p>Para</p></p>]]></content></entry></feed>

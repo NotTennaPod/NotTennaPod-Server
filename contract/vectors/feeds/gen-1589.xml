@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters">
+  <subtitle type="html">café&#60;br&gt;
+&amp;#xA9; &#38;#x1F600; &#x26;#169;&#60;hr>&amp;nbsp;1 &lt;2&lt;hr&gt;</subtitle> <title type="text">&#x26;A<![CDATA[MP;]]></title> <id>urn:x</id> <updated>Wed, 28 Jan 54 19:32:37 +0200</updated> <author><name>Ann</name></author> <author><name>Émile</name></author> <icon></icon> <itunes:image href="https://example.com/ai.jpg"/> <link href="https://example.com/" type="application/atom+xml" title=''/> <entry><id></id><content type="html">  padded   a=b&#x26;c=d&#60;div>S01E7&#x3C;/div&gt;
+&amp;#x;F<![CDATA[olge 7: Über alles]]></content><link rel="" title="MP3 feed"/><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x26;quot;q&amp;quot;</div></title><link href="https://example.com/pay" type="application/xhtml+xml"/></entry>
+</feed>

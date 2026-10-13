@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><language> EN-US </language> <link> https://example.com/ </link> <itunes:subtitle>&#38;#x1F600;plain <![CDATA[words]]></itunes:subtitle> <link xmlns="http://www.w3.org/2005/Atom" type="application/rss+xml" rel="enclosure" title='Café' href="https://example.com/feed?page=2"/> <itunes:image href="https://example.com/it.jpg"/> <item><itunes:summary><![CDATA[<div>&#xD800;</div>ééé<img>]]></itunes:summary> <guid isPermaLink="true">urn:uuid:e1ed1c07</guid> <enclosure url="" length="-0"/> <pubDate>Sat, 16 Apr 20 12:41:16 -0500</pubDate> <enclosure url="" length="18446744073709551616" type="application/ogg"></enclosure> <media:content fileSize="+20000" duration='' url='https://example.com/a.b/ep135.pdf?a=1&amp;b=2' type="application/octet-stream"/> <title><![CDATA[&#128512;&nbsp;&#x;]]></title> <podcast:transcript type="text/plain" language="en"/><podcast:transcript url="https://example.com/t.json" type="application/json"/> <link>https://example.com/ep</link> <media:content fileSize="0x4E20" duration='' type='audio/mpeg; charset=binary' medium="audio" isDefault="true"/></item> <item><title>&#x3C;unknown>&#38;#169;&lt;/unknown&gt;</title>
+<guid></guid>
+<link> https://e.com/x </link>
+<pubDate>Tuesday, 16 May 1752 12:54:05 GMT</pubDate>
+<description>éé<![CDATA[é
+&copy;
+a
+
+b&#xA9;
+
+&#1513;&#1500;&#1493;&#1501;]]></description>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"></content:encoded>
+<itunes:duration>0x1.8p2</itunes:duration>
+<enclosure url='' length="0x4E20" type="application/json"/>
+<media:content medium="document" isDefault='true' duration="0060" type="audio/ogg" fileSize="-1" url="HTTPS://EXAMPLE.COM/a/b/c321.m4a"></media:content></item> <description>&lt;<![CDATA[p/>]]></description> <title><![CDATA[&AMP;]]></title></channel></rss>

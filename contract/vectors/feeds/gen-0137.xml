@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<itunes:author><![CDATA[😀 Pod]]></itunes:author>
+<itunes:image href="https://example.com/ai.jpg"/>
+<author><name></name></author>
+<updated>Friday, 26 Mar 96 04:16 +1400</updated>
+<subtitle type="html"><![CDATA[	&nbsp;<hr/><li>&Lt;</li>]]></subtitle>
+<id> raw </id>
+<media:thumbnail url="https://example.com/amt.jpg"/>
+<title type="html"><![CDATA[#166 – Interview<center>&quot;q&quot;</center><b>Bold]]>&lt;/b> title</title> </feed>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1252"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters">
+<author><name>C&amp;D</name></author>
+  <itunes:summary>	&#x26;euro;</itunes:summary>
+  <id> raw </id>
+  <link rel="archives" length="abc" href="" title="Café"/>
+  <title type="text">&#60;article&gt;&amp;;&lt;/article&gt;</title>
+  <link title="" rel="enclosure" type="application/atom+xml" length='12' href=""/>
+  <entry><link type="" rel="hub" href="https://example.com/"/>
+<published>Wed, 01 Nov 2006 04.44.31 +0200</published>
+<link href="https://example.com/pay" type='application/xhtml+xml' rel="last" title="Café"></link>
+<id> raw </id>
+<title type="html">&amp;Lt;</title>
+<content> trailing  &amp;#x;&#60;p&gt;&#38;#xA9;&#x3C;/p>  padded  &#x3C;br&gt;&lt;li&gt;  spaced  &lt;/li&gt;aaaaaa&#60;br&gt;&#60;/br&gt;&#60;li&gt;&#x3C;3 &#60;3&#x3C;/li&gt;</content>
+<updated>SUNDAY, 31 January 2007 13:14:23</updated>
+<psc:chapters version="1.2"><psc:chapter start="53:22" href="https://example.com/ch" title=""/></psc:chapters>
+<itunes:duration>13:51</itunes:duration></entry>
+  <entry><id> raw </id>
+  <summary type="HTML"><![CDATA[&#128512;<p> </p>
+ <li>&euro;</li><p>'single'</p>"quoted"Episode 7<br><div>&</div>]]></summary>
+  <updated>Wednesday, 30 Aug 90 11:34 -0500</updated>
+  <title><![CDATA[&#]]>65;&#x26;#66;</title></entry>
+  <entry><published>Sat 30 Sep 2278 07:07:58 GMT+1400 (IST)</published> <updated>Sun, 28 September 1997 10:15:47</updated> <link length='20000' rel="Next" title="Alternate" href="" type=''/> <itunes:duration>00:00:01.999999</itunes:duration> <id></id> <title><![CDATA[tab	hereEpisode 404]]></title></entry>
+  <entry><link title="Alternate" rel="alternate" href="https://example.com/"/><content>&amp;;</content><link length="12" type="text/html" title="Alternate"/><summary></summary><link title="Alternate" length="20000" type="application/xml+xhtml" href="https://example.com/pay" rel="payment"/><title><![CDATA[multi
+line]]></title><updated>  Friday, 31 May 58 04:40 +0530
+</updated></entry>
+  <entry><dc:date>Sat Oct 33 02:47:13 1995</dc:date>
+<content type="html"><![CDATA[<p/>]]></content>
+<link type="audio/mpeg" rel="self"/>
+<link title="MP3 feed" href="https://example.com/alt.xml" rel="last" type="application/atom+xml" length='20000'/>
+<title type='html'>&amp;; &#38;#128512;</title>
+<link length="12" href="https://example.com/alt.xml"/>
+<updated>1969-03-07T07:05:14.633+1400</updated></entry>
+  <entry><link rel="payment" title="Café" length="12" href='https://example.com/alt.xml'/> <podcast:transcript url="https://example.com/t.vtt" type="application/srr" language="en"/><podcast:transcript url="" type="text/html" language='en'/> <updated>2137-08-24</updated> <link length="9223372036854775808" href="https://example.com/a.b/a/b/c227.aspx" type="application/xhtml+xml" title="Alternate" rel="self"/> <wrapper><inner><deeper>text</deeper></inner></wrapper> <summary><![CDATA[ééé<div>#7 – Interview</div>multi
+line<br>]]></summary> <title type="text"><![CDATA[&#0;]]></title> <published>Fri, 10 Aug 1066 17:36:51 +14:00</published> <id>urn:uuid:1</id> <link rel="related" title="Alternate" href="https://example.com/alt.xml" type="application/xhtml+xml"/></entry>
+  <entry><updated>Monday, 22 Aug 11 20:50 -0500</updated>
+<link type='' href="https://example.com/pay" title="Alternate" rel="self"/>
+<published>2253-05-22T11:12:06 ()</published>
+<summary type="html"><![CDATA[
+{json: 1}&#128512;&#128512;<p></p>]]></summary>
+<content type="text"><![CDATA[	'single']]></content>
+<itunes:duration>6026.20</itunes:duration>
+<id>
+id
+</id>
+<title type="html">&#13;
+&amp;;
+&amp;#169;
+trailing &#13;
+</title></entry>
+  <entry><id>urn:uuid:1</id>
+  <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x26;Lt;</div></content>
+  <updated>1995-12-24T18:02:29Z</updated>
+  <itunes:duration>60:03</itunes:duration>
+  <link rel="payment" length="20000" title='' type="application/xhtml+xml"></link>
+  <link title="Café" rel="related" type="text/html" href="https://example.com/feed?page=2"/>
+  <link length='9223372036854775808' href="https://xn--caf-dma.example/11.xyz" title="MP3 feed" type="application/xml+xhtml" rel="archives"/>
+  <title type="xhtml"> leading
+&#x3C;tt&gt;&amp;#xD800;&#60;/tt&gt;</title>
+  <published>FRIDAY 14 Nov 2487 07:03:50 GMT+1400 (CET)</published></entry> </feed>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="EN-us"><author><name>Émile</name></author>
+<updated>Wed 2 Jul 1986 </updated>
+<author><name>  Bob  </name></author>
+<title type="text"><![CDATA[שלום]]></title>
+<logo>https://example.com/logo.png</logo>
+<id>urn:x</id>
+<author><name>Émile</name></author>
+<entry><title type="plain">&amp;mdash;</title><updated>Mon, 22 May 2023 07:46 UTC</updated><published>Fri, 29 Sep 1601</published><link rel='next' type="application/xml+xhtml" href="//example.com/a/b/c313.torrent" title="" length="abc"/><content type='plain'><![CDATA[
+
+back\slash<p>&amp</p>  a < b]]></content><id>
+id
+</id></entry>
+</feed>

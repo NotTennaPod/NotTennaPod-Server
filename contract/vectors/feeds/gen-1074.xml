@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters">
+<title type='plain'><![CDATA[&AMP;   leading    pad]]>ded  </title><link rel="payment" href="https://example.com/alt.xml" length='abc' title="Alternate"/><media:thumbnail url="https://example.com/amt.jpg"/><itunes:image href="https://example.com/ai.jpg"/><id>https://example.com/feed</id><link type="application/xhtml+xml" rel="self" title="" href="https://example.com/alt.xml"/><entry><link length="abc" type="audio/mpeg" rel='related' title='MP3 feed'/>
+<itunes:duration>10955</itunes:duration>
+<link href="HTTPS://EXAMPLE.COM/dir.with.dots/ep359.ts" rel="archives"/>
+<itunes:image href="https://example.com/e.jpg"/>
+<id> raw </id>
+<author><name>Entry author</name></author>
+<title type="text">&lt;B&gt;&#38;unknown;&lt;/b>e&#769;</title>
+<link title="Alternate" length='9223372036854775808' rel="alternate" href=" //example.com/a/b/c131.mp3.zip " type="application/atom+xml"/></entry><entry><title><![CDATA[&unknown;]]></title><updated>Fri, 	25 	Dec 	1992 	14:47:11 -0800</updated><id> raw </id><link type="application/xhtml+xml" rel="alternate" href="https://example.com/pay"/><link length='20000' rel="enclosure" href="https://example.com/"/><link href="https://example.com/pay" type="application/xhtml+xml" title="Café" length="20000" rel="archives"/><psc:chapters/></entry> </feed>

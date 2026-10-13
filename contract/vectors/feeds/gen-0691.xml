@@ -1,0 +1,26 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:psc="http://podlove.org/simple-chapters"><link></link><title>茶
+茶
+a&#13;
+b</title><lastBuildDate>2369-10-03T01:08:54.642+</lastBuildDate><item><pubDate>2401-04-29T10:50:20+0200</pubDate>
+  <enclosure url="ftp://files.example.com/a/b/c97.torrent" length="123456789012345678" type="Audio/MPEG"/>
+  <description></description>
+  <pi:transcript url="https://example.com/t.json" type=""/><pi:transcript type="application/srr" language="en"/>
+  <media:content fileSize="0" type="audio/ogg" isDefault="true" url='https://example.com/a.b/e p85.aac?a=1&amp;b=2' duration="1"></media:content>
+  <pi:chapters type="application/json+chapters"/>
+  <media:thumbnail/>
+  <psc:chapters version="1.2"><psc:chapter start='4642' title=""/><psc:chapter start="1:00 " title="&lt;b>x&lt;/b>" href='https://example.com/ch'></psc:chapter><psc:chapter start="02:34:15.770" image="https://example.com/ch.png" title="😀" href=""/></psc:chapters>
+  <guid>https://example.com/item/96562</guid>
+  <content:encoded>😀&#13;
+م&#x631;حبا</content:encoded>
+  <title>&amp;Lt; &#38;lt</title>
+  <itunes:duration>01:30:00</itunes:duration></item><item><enclosure url="" length="2e5" type=' audio/mpeg'/>
+<itunes:duration>3:59:23</itunes:duration>
+<atom:link length="12" rel='hub' type="application/xml+xhtml" href='HTTPS://EXAMPLE.COM/a/b/c321.m4a'/>
+<title><![CDATA[&#x1F600;]]></title>
+<link> https://e.com/x </link>
+<media:group><media:content duration="2147484" fileSize="0x4E20" medium="image" type="video/webm" isDefault="1" url="https://xn--caf-dma.example/ep1.php"/></media:group>
+<itunes:subtitle><![CDATA[  padded   a > b &#x1F600;]]></itunes:subtitle>
+<guid> </guid>
+<enclosure length="16383" type="image/jpeg"/>
+<pubDate>Sunday, 11 Apr 1999 06:31:47</pubDate></item><language>TR</language><title>R&amp;D &#x26;nbsp;</title><itunes:image href=" "/><itunes:summary><![CDATA[<p></p>]]></itunes:summary></channel>
+  </rss>

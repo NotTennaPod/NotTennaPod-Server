@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><title>&lt;s&gt;&#38;lt&#x3C;/s&gt;</title>
+<media:thumbnail/>
+<lastBuildDate>Wed, 23 Nov 2321 14:03:39 +1400</lastBuildDate>
+<language> EN-US </language>
+<atom:link type="text/html" rel="last" title="MP3 feed"/>
+<description><![CDATA[😀😀😀😀ééé<3 <3  &nbsp;<br/> trailing 	&<div> leading</div>]]></description>
+<link> https://example.com/ </link>
+<item><title><![CDATA[{json: 1}
+<p>Para</p>]]></title>
+<content:encoded>&amp;lt;b&#38;gt;&#x3C;br&gt;</content:encoded>
+<link></link>
+<guid isPermaLink="false">urn:uuid:46710284</guid>
+<description><![CDATA[&copy;<div>&;</div>a]]></description></item>
+<item><content:encoded><![CDATA[<br/>&AMP;<br>]]></content:encoded> <link></link> <title>&#60;b&gt;AT&amp;T</title> <pubDate>2022-09-24T03:47:35+0200</pubDate> <enclosure url="https://cdn.example.com/ep376.Mp4" length="16384" type="audio/mp3"/> <guid>  spaced guid  </guid> <podcast:season>2</podcast:season></item>
+<item><guid isPermaLink="true">dup</guid>
+<media:content fileSize='52428800' duration="59" url="https://xn--caf-dma.example/café/261.m4a" medium="audio" type='video/webm'/>
+<title><![CDATA[{json: 1}<p><p>&amp;</p></p>&lt;b&gt;]]></title>
+<enclosure length="+20000"/>
+<x:title xmlns:x="urn:x">Other namespace title</x:title>
+<pubDate>2007-09-15T</pubDate></item>
+<item><enclosure url='https://user:pass@media.example.net/144.webm?dl=1.0' length="20000 " type='video'/>
+<title><![CDATA[😀#705 – Interview]]></title>
+<media:description type="plain">😀😀&#x1F600;ééécr&#13;lf&#60;br&gt; 茶&lt;div>שלום&lt;/div>&#x26;#0;&#13;
+Tom &amp; Jerry &lt;3&#60;li&gt;&amp;&lt;/li></media:description>
+<media:group><media:content fileSize="-9223372036854775808" duration="01:00" url='//example.com/a/b/c351.mov?file=x.mp3' type="video/x-matroska"/><media:content medium="audio" duration="3600" isDefault="true" fileSize="9007199254740992" type="audio/x-m4a"/><media:content fileSize="0" duration='1' medium="Audio" type="text/html"/></media:group>
+<enclosure url='https://xn--caf-dma.example/e p364.3gp' length="9007199254740993" type="audio/ogg"/>
+<pubDate>Fri, 23 SEPT 0099 02:33:18 +0100</pubDate>
+<enclosure length='123456789012345678' type="audio/mpeg"/></item>
+<item><title>1 &lt;2&#38;nbsp;AT&#38;T</title><guid></guid><link></link><pubDate>1971-03-18T09:27:19+0000 2024</pubDate><description>&amp;lt;b&#x26;gt;escaped&amp;lt;/b&#38;gt;</description><enclosure url="https://xn--caf-dma.example/dir.with.dots/ep219.mp4" length="-9223372036854775808" type="audio/ogg"/></item>
+<item><title>  spaced  </title><link></link><x:title xmlns:x="urn:x">Other namespace title</x:title><pubDate>24 Sep 03 10:37:15 +0000</pubDate><podcast:transcript type="text/vtt"/><podcast:transcript url="https://example.com/t.vtt" type="Application/JSON" language="en"/><description>
+Tom &#38; Jerry &lt;3</description></item>
+<item><enclosure length="9223372036854775808" type="audio/mpeg; charset=binary"/><guid isPermaLink="true"></guid><pubDate>2024-01-15T10:00:00+01:00:00</pubDate><description></description><content:encoded> R&amp;D</content:encoded><media:content duration="+60" url="http://example.org/café/32.mp3.zip" medium="video" type="audio/mp4" fileSize="-0"/><title>&lt;img src=&quot;x.png"> cover  &amp;;  a &lt; b</title><media:content fileSize="9223372036854775808" duration="1.5" type="application/json" medium="Audio"/><link>https://example.com/ep</link></item>
+<item><media:content type="AUDIO/MPEG" duration="+60" fileSize=" 20000" isDefault="1" medium="audio"/>
+<podcast:chapters url="" type='application/json+chapters'></podcast:chapters>
+<media:content type='video/webm' duration='2147484' fileSize=" 20000" url="HTTPS://EXAMPLE.COM/café/374.mp3"/>
+<enclosure url="" length="12" type='video/quicktime'/>
+<guid isPermaLink='true'>  spaced guid  </guid>
+<title>[x]
+茶</title>
+<description><![CDATA[  &a]]>mp;amp;</description>
+<pubDate>&#13;
+0099-07-23T02:05:13+0200	</pubDate>
+<link>https://example.com/ep</link></item></channel>
+</rss>

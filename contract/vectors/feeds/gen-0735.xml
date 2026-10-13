@@ -1,0 +1,14 @@
+﻿<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><title>'single<![CDATA['שלום]]></title>
+<itunes:image/>
+<itunes:summary><![CDATA[aaaa<li>#7 – Interview</li>
+&euro;
+&apos;a&apos; AT&T<img src="x.png">&nbsp;]]></itunes:summary>
+<atom:link rel="" length="abc" title="Alternate"/>
+<language>pt-BR</language>
+<atom:link length="12" href='https://example.com/pay' title='MP3 feed' rel="self"></atom:link>
+<link> https://example.com/ </link>
+<link xmlns="http://www.w3.org/2005/Atom" href="ftp://files.example.com/189.jpg?dl=1.0" type="application/xhtml+xml" rel="enclosure"/>
+<description>aaaaaa&lt;img src=&quot;x.png"></description>
+<atom:link title="Alternate" href="HTTPS://EXAMPLE.COM/a/b/c217.OGG" rel="related"/></channel>
+</rss>

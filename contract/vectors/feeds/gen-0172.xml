@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><!-- generated -->
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+  <link rel="Next" title="" type='' href="https://example.com/alt.xml"/>
+  <author><name>Ann</name><email>a@example.com</email></author>
+  <link length="20000" href="" rel="" type="text/html"/>
+  <id> raw </id>
+  <link rel="first" href='https://xn--caf-dma.example/a/b/c14.torrent' length='9223372036854775808' title=""/>
+  <title type="html"><![CDATA[Tom &amp; Jerry &lt;3]]></title>
+  <author><name>Émile</name></author>
+  <link title="" href="//example.com/a/b/c203.m3u8" type="application/rss+xml" rel="" length="12"/>
+  <subtitle type="html"></subtitle>
+  <entry><link title="" length="9223372036854775808" href="https://example.com/feed?page=2" rel="alternate"/>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content>
+<link rel='enclosure' type="" href="https://example.com/" title=""/>
+<title type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">100%
+&lt;strike&gt;back\slash&#60;/strike&gt;</div></title>
+<link length="abc" type='application/atom+xml' rel='related' href="https://example.com/" title=""/>
+<id></id>
+<itunes:duration>1:02:03</itunes:duration>
+<published>Mon, 16 Jun 2566 07:49:34 AEST</published></entry>
+  </feed>

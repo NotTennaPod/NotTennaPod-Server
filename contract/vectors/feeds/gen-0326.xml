@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel><language></language><it:author></it:author><title>&#x26;#x;</title><link> https://example.com/ </link><it:subtitle>​  &#38;#xD800;  &#x3C;dl>&lt;dt>&#x26;;&#x3C;/dt&gt;&#60;dd&gt;b&lt;/dd>&lt;/dl></it:subtitle><item><pubDate>0999-05-25</pubDate>
+<enclosure url='ftp://files.example.com/e p46.pdf' length="0" type="video/x-matroska"/>
+<title>&amp;#x1F600; &amp;#<![CDATA[xD800; &#128512;]]></title>
+<media:content url="HTTPS://EXAMPLE.COM/dir.with.dots/ep299.avi" fileSize="-1" type="image/png" isDefault="false" medium="video" duration="2147484"/>
+<it:duration>5162.564</it:duration>
+<guid isPermaLink="true">Café-guid</guid>
+<it:subtitle><![CDATA[Tom & Jerry <3&#0;plain words]]></it:subtitle></item><item><podcast:locked>yes</podcast:locked>
+<enclosure url="" length='9007199254740993' type=""/>
+<media:group><media:content type="application/ogg" fileSize="-9223372036854775808" url='//example.com/dir.with.dots/ep399.xyz' duration="2147483648"/><media:content isDefault="1" type="audio/flac" fileSize="2147483648" duration="01:00" url="https://example.com:8443/e p13.ts"/><media:content duration="" type="audio/mpeg; charset=binary" isDefault="true" fileSize="-0" medium="video" url="https://cdn.example.com/café/117.wav"/></media:group>
+<description>é&#233;é leading&#60;div&gt;#7 – Interview&#60;/div>&#60;p&gt;&#38;#xFFFF;&#x3C;/p&gt;
+&#38;lt</description>
+<title>a &lt; b[x]&#60;section&gt;<![CDATA[&#x1F600;</section>]]></title>
+<link>https://example.com/ep</link>
+<guid>dup</guid>
+<it:image href=" "/>
+<content:encoded></content:encoded>
+<pubDate>Wed 23 Aug 2023 13:11:25 GMT+0200 (CEST)</pubDate></item><item><title><![CDATA[<h3>back\slash</h3>&nbsp;<h1>&#x1F600;</h1>]]></title>
+<media:group><media:content type="audio/aac" isDefault="TRUE" medium="image" url="ftp://files.example.com/café/120.ogx" duration="01:00" fileSize="+20000"/><media:content type="audio/mpeg; charset=binary" url="https://cdn.example.com/a/b/c33.pdf" medium="image" duration='0' fileSize="1,000,000"/></media:group>
+<it:summary>aa</it:summary>
+<enclosure url="https://xn--caf-dma.example/e p336.MP3" length="12" type='audio/aac'/>
+<pubDate>&#13;
+Saturday, 11 Mar 03 19:20 +1400
+</pubDate>
+<description></description>
+<it:subtitle>&amp;#128512;  &#60;div>&#x26;euro;&lt;/div&gt;  Line&lt;br>break</it:subtitle>
+<link>https://example.com/ep</link>
+<guid isPermaLink="true"></guid></item></channel> </rss>

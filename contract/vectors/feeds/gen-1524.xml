@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><link>https://example.com</link>
+<item><itunes:duration>1024.98</itunes:duration> <m:content duration="1" fileSize="-9223372036854775808" type="audio/aac" medium="image" url="https://xn--caf-dma.example/165.html"/> <link>https://example.com/ep</link> <itunes:image href=" https://e.com/i.png "/> <itunes:subtitle>sep</itunes:subtitle> <description></description> <enclosure url="" length="12" type="Audio/MPEG"></enclosure> <title>R&D 
+😀
+<![CDATA[]]></title></item>
+<item><title>Line&#60;br&gt;break</title>
+<link>https://example.com/ep</link>
+<pubDate>Mon, 23 May 53 23:30:39 +0945</pubDate>
+<description>aaaaa</description>
+<enclosure url="https://cdn.example.com/a/b/c397.jpg" length="9007199254740992" type="video/mp4"/></item>
+<item><title><![CDATA[&#xA9;  &#x;  茶]]></title>
+<guid isPermaLink="false">urn:uuid:135231ec</guid>
+<link> https://e.com/x </link>
+<pubDate>	MONDAY, 09 Mar 2240 01:42:17 -0800  </pubDate>
+<description>&lt;div&gt;&#38;AMP;&#x3C;/div&gt;
+&amp;amp;&#x3C;p&gt;&lt;img src="x.png"&gt; cover&lt;/p>
+
+  spaced    &#x26;<![CDATA[#xD800;]]></description>
+<content:encoded>éééx&lt;y&lt;br&gt;&lt;div>  padded  &#x3C;/div&gt;&#60;img src=&quot;x&quot; alt="y"/&gt;&amp;#x1F600;&#x26;#;&#x3C;img src="x" alt="y"/&gt;&#x3C;p&gt;&#38;Lt;&#x3C;/p></content:encoded>
+<enclosure url="//example.com/dir.with.dots/ep162.amr" length='52428800' type="video"></enclosure>
+<m:thumbnail url='https://example.com/th.jpg'/></item>
+<itunes:author>Caf&#233; Radio</itunes:author>
+<language></language>
+<itunes:summary>&lt;div>&#x26;#169;&#60;/div&gt;</itunes:summary>
+<atom:link rel="last" type="" href='https://example.com/feed?page=2'/>
+<description><![CDATA[<li>{json:]]> 1}&#60;/li&gt;</description>
+<p:funding url="https://example.com/donate"></p:funding>
+<title><![CDATA[&hellip;]]></title>
+<itunes:subtitle><![CDATA[<p>Para</p>]]></itunes:subtitle></channel></rss>

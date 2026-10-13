@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sc="http://podlove.org/simple-chapters"><itunes:subtitle>&#38;#xFFFF;
+&amp;#x;
+&#x3C;3 &lt;3</itunes:subtitle>
+<atom:link rel="next" title="Alternate" href="https://example.com/pay" type="application/xml+xhtml"/>
+<atom:link title="Alternate" href="https://example.com/alt.xml" length='9223372036854775808'/>
+<atom:link length="12" href="https://example.com/pay" title="" type="audio/mpeg" rel='payment'/>
+<podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+<title>&amp;amp;a<![CDATA[mp;]]></title>
+<description>&amp;amp;&#60;br>&#x3C;div>é&lt;/div>&#60;p>&#60;/p></description>
+<googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+<itunes:summary><![CDATA[<p>&#x;</p>]]></itunes:summary>
+<itunes:image href=""/>
+<atom:link type='application/rss+xml' length="20000" title="Alternate" rel="first"/>
+<link></link>
+<podcast:funding/>
+<item><itunes:summary>&#60;li>trailing &#x3C;/li>
+a=b&amp;c=d&#60;br>	&#x8336;aaaaaa &amp;ampéé&#233;&#x26;</itunes:summary><title><![CDATA['single' &nbsp;]]></title><link> https://e.com/x </link><itunes:duration>&#x661;:٢٣</itunes:duration><dcterms:date>Mon, 23 Oct 2226 16:15:14 +0100 ()</dcterms:date><mrss:content url='https://xn--caf-dma.example/ep212.oga?dl=1.0' fileSize="0x4E20" duration="+60" type="video/x-matroska" medium="audio"/><description>&#60;p&gt;&amp;copy;&lt;/p>mu<![CDATA[lti
+line]]></description><enclosure url="HTTPS://EXAMPLE.COM/a/b/c217.OGG" length="٢٠٠٠٠" type="audio/flac"/><pubDate>Sat, 06 Aug 1977 08:10:22 +0000</pubDate><guid isPermaLink="false"></guid></item>
+<item><enclosure url="" length='+20000' type=" audio/mpeg"/>
+<enclosure url="https://example.com:8443/dir.with.dots/ep106.3gp" length="20000 " type="image/jpeg"/>
+<title><![CDATA[Episode 82  <em>R&D</em>  &AMP;]]></title>
+<enclosure url="https://cdn.example.com/dir.with.dots/ep118.mp3.zip#t=10" length="2147483648" type="video/x-matroska"/>
+<mrss:content medium="Audio" url='https://example.com:8443/e p93.opus' fileSize="9223372036854775807" duration="" isDefault="1" type="audio/x-wav"/>
+<guid>dup</guid>
+<link>https://example.com/ep</link>
+<pubDate>Wed, 28 Mar 2553 07:61:32 +0200</pubDate>
+<mrss:content isDefault="false" fileSize="20000 " type=' audio/mpeg' duration="59"/>
+<itunes:subtitle>&lt;div&gt;&#60;p&gt;&amp;&lt;/p&gt;&lt;/div&gt;
+&#38;lt;b&#38;gt;</itunes:subtitle>
+<itunes:duration>4019.585</itunes:duration>
+<mrss:content type='audio/' duration="0060" fileSize="+20000" url="HTTPS://EXAMPLE.COM/ep265.torrent" medium='video' isDefault="TRUE"/>
+<itunes:summary><![CDATA[<div>#7 – Interview</div>aaaaaaaaa
+<3 <3]]></itunes:summary></item>
+<item><pubDate>)oP)vDxjS: I(C</pubDate>
+<title>a&#13;
+b  &#38;Lt;</title>
+<dcterms:date>Wednesday, 22 Aug 1601 13:53:43 -1200</dcterms:date>
+<podcast:chapters url='https://example.com/ch.json' type='application/json+chapters'/>
+<description><![CDATA[<li> </li>]]></description>
+<itunes:image href=" https://e.com/i.png "/>
+<enclosure url='' length="2147483648" type="audio/"/>
+<link></link>
+<podcast:transcript language="en"/><podcast:transcript type="text/html"/>
+<itunes:summary>&#x3C;p&gt;a &lt; b&lt;/p&gt;&#x3C;p&gt;a &gt; b&lt;/p&gt;&#60;p&gt;&#x3C;3 &#60;3&#60;/p>&lt;li&gt;[x]&#x3C;/li&gt;&#60;img></itunes:summary>
+<comments>https://example.com/c</comments>
+<guid></guid></item></channel> </rss>

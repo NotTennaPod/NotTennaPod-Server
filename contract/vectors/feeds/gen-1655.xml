@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><description> &amp;quot;q&amp;quot;  http://example.com/?a=1&#x26;b=2</description><image><url></url><link>https://example.com/img-link</link></image><item><guid isPermaLink="false">dup</guid>
+  <description>&lt;p>a
+  b&lt;/p></description>
+  <pubDate>Fri, 27 Feb 1987 99:54 +1400</pubDate>
+  <link> https://e.com/x </link>
+  <media:content duration="1.5" isDefault="true" type='application/ogg' fileSize="-9223372036854775808" medium="audio"></media:content>
+  <enclosure length="9007199254740991" type="image/*"/>
+  <media:thumbnail/></item><item><enclosure length='-0' type="audio/mpeg; charset=binary"/>
+  <description>&amp;#65;&#38;#66;</description>
+  <enclosure url="http://example.org/a/b/c27.amr" length="٢٠٠٠٠" type=""/>
+  <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">5:09:47</itunes:duration>
+  <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">x&lt;y</itunes:subtitle>
+  <itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Item author</itunes:author>
+  <guid isPermaLink="true"> </guid>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=''/>
+  <media:content isDefault="true" type="image/png" duration="2147484" url=' https://example.com:8443/dir.with.dots/ep68.m4b ' fileSize='52428800'/>
+  <enclosure length="18446744073709551616" type="application/ogg"/>
+  <pubDate>Tue, 02 May 1972 00:51</pubDate></item><media:thumbnail/><p:funding>Support us</p:funding><lastBuildDate>Fri 27 Jun 1975 02:56:36 GMT-0800 (GMT+)</lastBuildDate><title>sep &#60;del&gt;&amp;#0;&lt;/del&gt;</title><language>TR</language><link>https://example.com</link></channel>
+</rss>

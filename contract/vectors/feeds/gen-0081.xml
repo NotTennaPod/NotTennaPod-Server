@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom"><channel><description><![CDATA[<p/>]]></description> <itunes:image href="https://example.com/it.jpg"/> <title><![CDATA[&#;
+<span>&#1285]]>12;&#60;/span></title> <link> https://example.com/ </link> <image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image> <item><title>#47 – InterviewAT&amp;T</title> <guid>a&#38;b</guid> <link> https://e.com/x </link> <pubDate>1976-01-15T23:39:23:00</pubDate> <enclosure url="" length="20000.0" type="unknown"/></item> <item><description></description> <media:content duration='-5' isDefault="false" url="https://example.com/a.b/dir.with.dots/ep129.avi" fileSize='2147483647'></media:content> <c:encoded>&lt;div>a &gt; b&lt;/div>&lt;li&gt;&amp;quot;q&amp;quot;&#60;/li&gt;&#x3C;p&gt;&lt;/p&gt;&#13;
+&#x26;#xA9;&#60;img src="x" alt="y"/>&lt;hr/>😀	x&#x3C;y</c:encoded> <itunes:summary>&#13;
+&amp;#169;😀😀😀&#x1F600;&lt;p&gt;a
+  b&#x3C;/p&gt;&lt;div&gt;trailing &lt;/div&gt;&#60;div&gt;&amp;euro;&lt;/div></itunes:summary> <itunes:image href=" https://e.com/i.png "/> <guid>dup</guid> <itunes:duration>69:02</itunes:duration> <pubDate>Sun, 20 Jan 1985 19:44:56 +1400</pubDate> <enclosure length="-0" type="audio/"/> <title><![CDATA[&#x1F600;
+&#x;
+&unknown;]]></title></item></channel>
+  </rss>

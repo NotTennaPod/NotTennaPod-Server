@@ -1,0 +1,23 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en">
+  <author><name>Émile</name><email>a@example.com</email></author>
+<logo> https://e.com/l.png
+</logo>
+<title><![CDATA[]]>&#x200B;#hash</title>
+<author><name>  Bob  </name></author>
+<updated>Tue, 11 Apr 1989 19:15:48</updated>
+<id> raw </id>
+<itunes:new-feed-url xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">https://moved.example.com/atom</itunes:new-feed-url>
+<link title="" length="20000" rel="next" type=''/>
+<icon></icon>
+<entry><link href="https://example.com/" length="20000" rel="next" title='MP3 feed'/>
+  <id>tag:x,2020:1</id>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/e.jpg"/>
+  <podcast:transcript url="https://example.com/t.json"/>
+  <link rel="self" title="Café" type="application/xhtml+xml" href="https://example.com/pay"/>
+  <title type="text">a&#13;
+b&lt;/p> &#38;#x; &#60;p&gt;&amp;apos;a&amp;apos;</title>
+  <updated>Fri, 06 July 2474 20:35:33</updated>
+  <updated>1993-02-02+2400</updated>
+  <summary type='text'><![CDATA[  &euro; &copy;]]></summary></entry>
+<entry><updated>Wed 8 Jun 1977 06:3</updated> <summary><![CDATA[&copy;<br><p/>]]></summary> <content type="html"><![CDATA[<div>[x]</div><p><b>Bold</b> title</p>aaaaaaaa]]></content> <title type="html">  a=b&#38;c=d&#13;
+</title> <link length="12" rel="first" href="https://example.com/a.b/e p85.aac?a=1&amp;b=2" title="Café"/> <id>urn:uuid:1</id> <published>Thu 21 Apr 2016 09:07:24 GMT-1200 (UT)</published></entry> </feed>

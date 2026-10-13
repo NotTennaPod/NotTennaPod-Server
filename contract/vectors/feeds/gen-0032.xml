@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE feed [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<link title="MP3 feed" rel="Next" length="9223372036854775808" href="" type="application/atom+xml"/>
+<id>https://example.com/feed</id>
+<link type="application/xml+xhtml" href="https://example.com/alt.xml" title="Alternate" rel='archives'/>
+<author><name>  Bob  </name><email>a@example.com</email></author>
+<entry><content></content>
+<link type="application/rss+xml" title="Alternate" href="" rel="Next"/>
+<author><name>Entry author</name></author>
+<title type="plain">x&#60;y&#x26;lt&amp;mdash;</title>
+<updated>Thursday, 11 Feb 1988 18:46 -0000</updated>
+<id></id>
+<link type="application/xhtml+xml" href="https://example.com/alt.xml" title=""/>
+<summary>&#60;br /></summary>
+<link href="http://example.org/dir.with.dots/ep380.php?a=1&amp;b=2" rel="enclosure" type="application/rss+xml" length="abc" title="MP3 feed"/></entry>
+</feed>

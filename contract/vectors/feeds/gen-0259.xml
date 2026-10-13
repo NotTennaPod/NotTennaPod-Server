@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><title>é  &amp;quot;q&amp;quot;</title>
+<atom:link length="12" rel='' title="" href="" type="application/atom+xml"/>
+<language> EN-US </language>
+<media:thumbnail/>
+<itunes:author>Jane &amp;amp; John</itunes:author>
+<description><![CDATA[aaaa]]></description>
+<link>https://example.com</link>
+<p2:funding url="https://example.com/donate">Support us</p2:funding>
+<itunes:subtitle>é</itunes:subtitle>
+<image><url></url></image>
+<item><link></link>
+<media:content fileSize="52428800" medium="audio" type="audio/*"/>
+<title>&#60;h6>​&#60;/h6&gt;
+&#x26;hellip;
+cr&#13;lf</title>
+<cont:encoded>&lt;p&gt;<![CDATA[&#0;</p>]]></cont:encoded>
+<media:content duration="9223372036854775807" isDefault="false" type="application/octet-stream" url="https://xn--caf-dma.example/dir.with.dots/ep145.webm" fileSize="16383" medium="image"/>
+<pubDate>23 JUN 03 18:52 +0200</pubDate>
+<description><![CDATA[ééé'single'<br>]]></description>
+<guid isPermaLink="true">a&amp;b</guid>
+<enclosure url="https://xn--caf-dma.example/e p146.jpg?a=1&amp;b=2" length="2e5" type="application/octet-stream"/></item>
+<item><title><![CDATA[  spaced  <center>é</center>&lt;b&gt;escaped&lt;/b&gt;]]></title>
+<guid>dup</guid>
+<link> https://e.com/x </link>
+<pubDate>Wed, 26 Jun 1996 19:44 EDT</pubDate>
+<enclosure url="https://example.com:8443/a/b/c111.m4a" length="9007199254740991" type="image/*"/>
+<psc:chapters version='1.2'><psc:chapter start="52:50"/><psc:chapter start="86:17" title='😀' image="https://example.com/ch.png"></psc:chapter><psc:chapter start='00:24:38'/><psc:chapter title="" start="43:16" href="" image="https://example.com/ch.png"/><psc:chapter image="https://example.com/ch.png" href="https://example.com/ch" title="😀" start='1:30:00'/><psc:chapter title="Café &amp;amp; more" image="https://example.com/ch.png" href="" start="01:45:35.559"/></psc:chapters>
+<p2:socialInteract uri="" protocol='activitypub'/></item>
+<item><title><![CDATA[Folge 739: Über alles
+plain words]]></title> <psc:chapters version="1.2"/> <link>https://example.com/ep</link> <enclosure url="" length='123456789012345678' type="video"/> <guid isPermaLink="false"> </guid> <pubDate>2280-03-27T23:38:57+0100</pubDate> <cont:encoded>&lt;p&gt;م&#x631;حب&#1575;&#x3C;/p><![CDATA[ééé&euro;<br><div>&amp;amp;</div><li>第7集</li>  &AMP;😀😀😀😀a]]></cont:encoded> <enclosure url="" length="00020000" type="video/webm"></enclosure></item>
+<item><guid isPermaLink='false'>Café-guid</guid>
+<media:content type="text/html" url="HTTPS://EXAMPLE.COM/ep176.wav" isDefault="true" medium="video" fileSize="٢٠٠٠٠" duration="3600"/>
+<itunes:summary>&#13;
+sep  &#60;3 &#x3C;3</itunes:summary>
+<description>&lt;li>第7集&lt;/li&gt; &#38;euro;	"quoted"éééaaaaaaaaa&#13;
+1 &lt;2&#x3C;li&gt;&amp;#xA9;&lt;/li&gt;
+tab	here</description>
+<media:thumbnail url=""></media:thumbnail>
+<media:content url="https://user:pass@media.example.net/e p41.pdf" duration="0060" medium="Audio" fileSize="-9223372036854775808" type="audio/mpeg" isDefault="1"/>
+<media:content fileSize="20000.0" duration="1" type=' audio/mpeg' isDefault="1"/>
+<title>&#38;lt;b&#38;gt; plain words &#x3C;label&gt;tab	here&#60;/label></title>
+<enclosure url='HTTPS://EXAMPLE.COM/ep7.aac' length="9007199254740991" type="Audio/MPEG"></enclosure></item></channel>
+  </rss>

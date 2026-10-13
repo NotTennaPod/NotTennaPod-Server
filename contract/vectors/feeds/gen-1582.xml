@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+  <title type="text">&#38;euro;
+</title><media:thumbnail url="https://example.com/amt.jpg"></media:thumbnail><id>urn:x</id><itunes:image href="https://example.com/ai.jpg"/><logo> https://e.com/l.png
+</logo><subtitle type='HTML'>aaaaa</subtitle><entry><id>urn:uuid:1</id>
+<link rel='last' title="Café" href="https://example.com/pay"/>
+<itunes:duration>9963.704</itunes:duration>
+<author><name>Entry author</name></author>
+<updated>2553-05-18T21:25:50+0530</updated>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">مرحبا &#38;;</div></title>
+<link type="application/xhtml+xml" title="Alternate" href='' rel="archives" length="20000"/>
+<published>Wednesday, 07 Nov 2136 10:36:37 +0945</published></entry><entry><title>a &gt; b
+a &#60; b</title>
+  <link length="12" title='Café' href="https://example.com/" type="application/rss+xml" rel="first"/>
+  <published>2012-01-01T10:27:56.672+09</published>
+  <id> raw </id>
+  <updated>Fri, 14 Oct 2016 04:21</updated>
+  <itunes:duration>5260.658</itunes:duration>
+  <content type="text"></content></entry><entry><content type='html'>aaaaaaa&#60;li&gt;&#38;unknown;&lt;/li></content>
+<link href="https://example.com/feed?page=2" rel='Next' type="application/rss+xml"/>
+<author><name>Entry author</name></author>
+<link length="12" rel='Next' type="audio/mpeg"/>
+<title type="html">&#13;
+Tom &#38;amp; Jerry &amp;lt;3
+&amp;#169; </title></entry><entry><title>&lt;u>"quoted"&#60;/u> cr&#13;lf &#60;b&gt;Bold&lt;/b&gt; title</title> <id>tag:x,2020:1</id> <itunes:duration>3093.421</itunes:duration> <published>
+1978-05-04T19:26:58NZST	</published> <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">مرحبا</div></content> <updated>1899-08-05T14:56:26-05:00</updated> <summary>&lt;br></summary></entry><entry><title type="HTML">&#xA0; &amp;amp;amp; &#x26;amp;amp;</title>
+<published>Fri., 13 Jul 1990 20:07:47 +1400</published>
+<link rel='enclosure' title="Café" type="" href="https://example.com/" length="abc"/>
+<updated>Thu 1 Jan 2024 10:00:00 GMT+0100 (XYZ)</updated>
+<id>
+id
+</id>
+<itunes:duration>3483.393</itunes:duration></entry><entry><published>Sat apr 23 05:27:34 1983</published>
+  <id> raw </id>
+  <summary type="html">
+
+1 &#x3C;2 &amp;#;</summary>
+  <title type="HTML">&amp;#xFFFF;</title>
+  <updated>	Saturday, 16 Dec 2541 23:16:11 UT
+</updated>
+  <itunes:image href=""/>
+  <link length="abc" rel="first" title="Café" href="ftp://files.example.com/a/b/c97.torrent" type='application/xml+xhtml'/>
+  <media:content fileSize="9007199254740991" url="https://example.com/a.b/ep135.pdf?a=1&amp;b=2" duration="-5" isDefault="true" medium="audio"/>
+  <content type='HTML'></content></entry><entry><link href="https://example.com:8443/e p196.avi" type="application/atom+xml" title="Alternate" rel="self"/> <itunes:image href=''/> <wrapper><inner><deeper>text</deeper></inner></wrapper> <author><name>Entry author</name></author> <title type="html">Episode 18 &#x26;#;</title> <id>urn:uuid:1</id> <link title="Alternate" rel='archives' href="https://example.com/pay" type="application/atom+xml"/></entry><entry><summary type="plain">&#38;#x;&#x3C;p&gt;multi
+line&lt;/p></summary>
+  <id>urn:uuid:1</id>
+  <content type="plain"><![CDATA[<br />]]></content>
+  <updated>Tue oct 12 16:17:24 2021</updated>
+  <published>1977-03-21T23:04:28.209</published>
+  <link title="" length='12' rel="hub" href="https://example.com/" type="application/atom+xml"/>
+  <title type="text">&#x26;copy;</title>
+  <author><name>Entry author</name></author></entry>
+  </feed>

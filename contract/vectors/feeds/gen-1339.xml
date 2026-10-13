@@ -1,0 +1,23 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><atom:link href="https://example.com/" title='' rel="first"></atom:link> <podcast:funding url='https://example.com/donate'>  spaced  </podcast:funding> <podcast:funding url="https://example.com/donate"/> <description><![CDATA[<p></p><img src="x" alt="y"/>  &#65;&#66;   leading &copy;]]></description> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <title><![CDATA[<b>Bold</b> ti]]>tle  Episode 916</title> <itunes:image href=" https://example.com/sp.jpg "/> <atom:link type='text/html' rel="enclosure" href="https://example.com/a.b/café/273.OGG" length="abc" title="Alternate"/> <link>https://example.com</link> <item><link> https://e.com/x </link>
+<itunes:image/>
+<guid isPermaLink="false">urn:uuid:9ee4ccf0</guid>
+<m:group><m:content fileSize="16385" isDefault='true' duration="" url="//example.com/122.aif" type="image/png"/></m:group>
+<title>plain words</title>
+<pubDate>Sun, 08 Nov 1992 11:54</pubDate>
+<enclosure url='https://example.com/a.b/a/b/c163' length="9007199254740992" type="video/quicktime"/></item> <item><link> https://e.com/x </link>
+<itunes:summary>&lt;p&gt;&#x3C;/p>😀100%
+&amp;quot;q&#38;quot;
+&amp;copy;</itunes:summary>
+<m:group><m:content type="Audio/MPEG" fileSize="abc" duration=" 60" medium="image"/><m:content duration="2147483" isDefault='true' url=" //example.com/a/b/c131.mp3.zip " type="video/quicktime" fileSize="-16384"/></m:group>
+<guid>  spaced guid  </guid>
+<title>&#38;#65;&#x26;#66;
+100%
+a
+  b</title>
+<enclosure url="" length="abc" type="audio"/>
+<description></description>
+<itunes:duration>9237</itunes:duration>
+<itunes:image href=""/>
+<pubDate>Saturday, 22 Apr 2017 07:18 -0000</pubDate>
+<content:encoded>&#38;#128512;&#x3C;br> &#x26;apos;a&#x26;apos;S01E7&lt;br&gt;  leadi<![CDATA[ng	&amp;amp;ééé &Lt;	cr
+lf]]></content:encoded></item></channel> </rss>

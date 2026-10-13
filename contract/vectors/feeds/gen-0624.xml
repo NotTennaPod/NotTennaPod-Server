@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns="" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:m="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><atom:link title="MP3 feed" rel="hub" length="12" type="application/rss+xml"/>
+  <image><title>Image title</title><link>https://example.com/img-link</link><url></url></image>
+  <atom:link length="abc" type='' href='https://example.com/a.b/dir.with.dots/ep242.ogx' title="MP3 feed" rel="Next"/>
+  <item><guid>https://example.com/item/55351</guid>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/"> TUESDAY, 28 Apr 2516 17:01:45 -0800 </dc:date>
+<media:content url="ftp://files.example.com/a/b/c228.xyz" medium="image" fileSize='9007199254740992' type="image/png" duration="+60" isDefault="false"/>
+<title>&amp;quot;q&#38;quot;   leading  &#60;a href=&quot;https://example.com/x?a=1&amp;amp;b=2&quot;>&amp;amp;&lt;/a></title>
+<itunes:duration>16909</itunes:duration>
+<enclosure url="" length="２０００００" type="audio/mpeg; charset=binary"/></item>
+  <language></language>
+  <description><![CDATA[é<li>{json: 1}</li><li>&#x;</li>  &#128512;<p>第7集</p>]]></description>
+  <title>trailing S01E202&#x3C;b&gt;<![CDATA[Bold</b> title]]></title>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <link> https://example.com/ </link></channel> </rss>

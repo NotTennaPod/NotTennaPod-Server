@@ -1,0 +1,26 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><description>&#x26;;&lt;br></description>
+<podcast:funding url="https://example.com/donate">&#60;b>x&lt;/b&gt;</podcast:funding>
+<itunes:author><![CDATA[  Spac]]>ed  </itunes:author>
+<itunes:image href="https://example.com/it.jpg"/>
+<link></link>
+<language>pt-BR</language>
+<title><![CDATA[第175集]]></title>
+<itunes:summary><![CDATA[  &AMP;
+
+&lt;b&gt;<li>http://example.com/?a=1&b=2</li><br><div>a=b&c=d</div>]]></itunes:summary>
+<podcast:funding url=''></podcast:funding>
+<podcast:funding url="">Support us</podcast:funding>
+<item><media:content xmlns:media="http://search.yahoo.com/mrss/" type="video/x-matroska" medium="Audio" fileSize="20000.0" duration='2147484' isDefault="1" url="http://example.org/e p381.ts?dl=1.0"/>
+<content:encoded><![CDATA[<br></br>	&#;	&apos;a&apos;]]></content:encoded>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" type=" audio/mpeg" duration='9223372036854775807' medium="image" fileSize="２０００００" url="https://example.com:8443/110.aspx"></media:content>
+<title><![CDATA[R&D  &#0;  1]]>00%</title>
+<enclosure url="" length="2147483647" type="video/webm"/>
+<link> https://e.com/x </link>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" duration="0060" medium="document" url="//example.com/café/209.webm?auth=yes" type="video/mp4" isDefault="false" fileSize='9223372036854775808'/>
+<enclosure url="https://example.com:8443/e p353.ogx" length="9223372036854775808" type='audio/ogg'/>
+<psc:chapters version='1.2'><psc:chapter href="https://example.com/ch" start='101:37' title="😀"/><psc:chapter image="https://example.com/ch.png" start="116:57" title='Café &amp;amp; more' href="https://example.com/ch"/><psc:chapter title="Café &amp;amp; more" href="https://example.com/ch" start="62"/><psc:chapter href="" start="0x10:00" title="😀"/><psc:chapter image="https://example.com/ch.png" start="12:34:56" title=""></psc:chapter><psc:chapter start="-2147483648:00:00" href=""/></psc:chapters>
+<pubDate>  1976-05-13T05:38:23.12345pst	</pubDate></item>
+<item><title>&#38;amp;
+&#x26;quot;q&amp;quot;
+&amp;mdash;</title><guid>a&amp;b</guid><link>https://example.com/ep</link><pubDate>Wed Nov 1 18:46 2023</pubDate><description></description><content:encoded>  &#38;amp&#x3C;div>plain words&lt;/div&gt;a&lt;br/&gt;&#60;br/>éé&#233;&lt;p&gt;Tom &#x26; Jerry &lt;3&#x3C;/p>&#60;br/&gt;</content:encoded><itunes:duration>125:21</itunes:duration><enclosure url="https://example.com/a.b/dir.with.dots/ep143.MP3?a=1&amp;b=2" length='9007199254740991' type="audio/ogg"></enclosure><psc:chapters version="1.2"><psc:chapter title="😀" image="https://example.com/ch.png" href="" start="90:47"/><psc:chapter title="" start="7122" href="" image='https://example.com/ch.png'/></psc:chapters><podcast:chapters type="application/json+chapters"/></item></channel>
+  </rss>

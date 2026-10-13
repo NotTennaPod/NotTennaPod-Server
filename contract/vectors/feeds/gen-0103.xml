@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="0.92" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:a10="http://www.w3.org/2005/Atom"> <channel><podcast:funding>  spaced  </podcast:funding> <podcast:person role="host">Jane</podcast:person> <language>fr
+</language> <description>  a=b&#x26;c=d</description> <title><![CDATA[&#65;&#66;]]></title> <item><title>#hash</title>
+  <guid isPermaLink="true"> </guid>
+  <link>https://example.com/ep</link>
+  <pubDate>08 Aug 10 04:58:16 +0000</pubDate>
+  <description>	&#38;#x1F600;  &amp;#0;aaaaaaaaa</description>
+  <enclosure url='//example.com/dir.with.dots/ep207.amr' length="123456789012345678" type="application/json"/></item> <textInput><title>Search</title><link>https://example.com/search</link></textInput> <dc:creator>DC Creator</dc:creator> <link></link></channel>
+  </rss>

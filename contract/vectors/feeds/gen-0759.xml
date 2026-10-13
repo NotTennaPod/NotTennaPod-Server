@@ -1,0 +1,7 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="">
+<link type="application/xml+xhtml" rel="payment" href="https://example.com/feed?page=2" length="9223372036854775808"/><author><name>  Bob  </name></author><link href="https://example.com/pay" title='Café' rel="related"/><icon></icon><link type="" title="" rel="next" href="https://example.com/feed?page=2" length="12"/><link href="https://example.com/feed?page=2" type='audio/mpeg' title="MP3 feed"/><itunes:image href="https://example.com/ai.jpg"/><title type="html">&amp;unknown;
+של&#1493;ם
+&lt;section>Tom &#38; Jerry &lt;3&lt;/section></title><entry><title><![CDATA[&quot;q&quot;multi
+line<p><p>&apos;a&apos;</p></p>]]></title> <id> raw </id> <published>TUESDAY, 28 Jul 1981 16:49 -1200</published> <content><![CDATA[<hr/>]]></content> <summary type='html'>&#13;
+&#x26;hellip;&lt;hr>&lt;hr&gt;&#60;p>&amp;euro;&lt;/p&gt;a=b&amp;c=d&#x3C;br&gt;</summary> <itunes:image href="https://example.com/e.jpg"/></entry>
+  </feed>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en">
+  <author><name>C&amp;D</name></author>
+  <id></id>
+  <link type="application/xhtml+xml" href="https://example.com/" length="abc" rel="first" title="Alternate"/>
+  <author><name>Ann</name><email>a@example.com</email></author>
+  <itunes:image href=""/>
+  <updated>SUN, 04 August 1974 21:51:10</updated>
+  <title type="html"><![CDATA[Line<br>break 第5]]>17集</title>
+  <itunes:summary>aaaaaaaa&#60;img src="x" alt="y"/&gt;a
+  b</itunes:summary>
+  <link length="9223372036854775808" href="https://example.com/feed?page=2" type="application/xhtml+xml"/>
+  <entry><title>&amp;apos;a&#38;apos;</title><link href="https://example.com/pay" rel="Next" length="abc" title="MP3 feed"/><link type="application/xml+xhtml" rel="last" title="Alternate"/><itunes:duration>1:44:45</itunes:duration><updated>FRI 2 Jun 2006 13:58:42 GMT+1400 (GMT+01:00)</updated><id>urn:uuid:1</id><link href="https://example.com/alt.xml" rel="next" type="audio/mpeg" title="Café" length="12"/><content type="plain">😀😀&#x1F600;&#x1F600;aaa&lt;li&gt;&amp;lt;b&amp;gt;&#60;/li&gt;&#60;p&gt;&#x26;quot;q&amp;quot;&#60;/p></content></entry>
+</feed>

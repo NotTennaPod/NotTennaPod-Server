@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters"><channel><itunes:image href=""/>
+<language>de-DE</language>
+<podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url=""/>
+<description>&#x3C;p&gt;&lt;/p>&#60;img src="x" alt=&quot;y&quot;/&gt;</description>
+<link>https://example.com</link>
+<title>&lt;u>  spaced  &lt;/u>  م&#1585;ح&#1576;ا</title>
+<item><media:thumbnail url=""/>
+<media:content url="https://user:pass@media.example.net/ep282.Mp4" duration="-5" fileSize="123456" isDefault="1" medium="Audio"/>
+<media:content type='audio/x-m4a' fileSize="12" duration=' 60' medium="Audio" isDefault="1" url="//example.com/dir.with.dots/ep399.xyz"/>
+<guid isPermaLink="false">  spaced guid  </guid>
+<link> https://e.com/x </link>
+<content:encoded><![CDATA[  &#0;]]></content:encoded>
+<pubDate>1979-03-23T12:01:26.314+00:00</pubDate>
+<title><![CDATA[<label>&mdash;</label> &lt;b&gt; &lt]]></title></item>
+<item><content:encoded>&lt;div&gt;مر&#x62D;با&lt;/div&gt;&#60;br/>&#13;
+http://example.com/?a=1&#x26;b=2&lt;div&gt;&amp;lt&#x3C;/div&gt;&#60;p>&#1513;לום&lt;/p>	 &#60;hr/> &#38;#128512;</content:encoded>
+<itunes:author>Item author</itunes:author>
+<psc:chapters></psc:chapters>
+<media:description>&#60;img src="x.png"&gt;</media:description>
+<enclosure url="https://example.com/a.b/a/b/c227.aspx" length="16384" type="image/jpeg"/>
+<title> http://example.com/?a=1&amp;b=2  "quoted"  plain words  </title>
+<description>
+مرح<![CDATA[با[x]<br><p>茶</p>ééé<p>&lt;b&gt;</p>]]></description>
+<itunes:duration>07:09</itunes:duration>
+<media:content type='image/jpeg' url="https://example.com:8443/e p353.ogx" duration="abc" fileSize="4294967296" medium="image"/></item>
+<item><title><![CDATA[#933 – Interview
+<sup><p>Para</p></sup>
+  spaced  ]]></title>
+<link>https://example.com/ep</link>
+<pubDate>2014-08-24T18:05:03&#13;
+</pubDate>
+<description>&#x3C;li&gt;&#x26;AMP;&lt;/li&gt;  padded  &#60;p>a
+  b&lt;/p&gt;</description>
+<itunes:duration>3723</itunes:duration>
+<enclosure url="https://example.com/a.b/e p85.aac?a=1&amp;b=2" length="-0" type="audio/mp4"></enclosure>
+<enclosure url="//example.com/a/b/c73.m4v" length="12" type="audio/mpeg"/>
+<media:content url="https://example.com:8443/a/b/c178.aspx" fileSize="20000.0" type="video" duration="0060"/>
+<media:content type="audio/mpeg" duration="" isDefault='1' fileSize="1" medium="audio"/>
+<media:thumbnail url="https://example.com/th.jpg"/></item>
+<item><title>a=b&amp;c=d
+a
+  <![CDATA[b
+[x]]]></title>
+<content:encoded>&lt;div&gt;&#38;#;&#60;/div></content:encoded>
+<pubDate>1996-03-05utc</pubDate>
+<podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/ch.json" type="application/json+chapters"/>
+<enclosure url="https://xn--caf-dma.example/e p372.php" length="9007199254740993" type="audio/flac"/>
+<guid isPermaLink="true">
+</guid>
+<link> https://e.com/x </link>
+<description><![CDATA[aa😀😀]]></description>
+<podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="" type="text/html"/>
+<enclosure url='https://example.com:8443/ep192.mp4?dl=1.0' length="2147483647" type="image/*"/></item></channel>
+</rss>

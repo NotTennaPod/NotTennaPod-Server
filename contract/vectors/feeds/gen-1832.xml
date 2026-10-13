@@ -1,0 +1,15 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:image href=' https://example.com/sp.jpg '/><description><![CDATA[<img src="x" alt="y"/><div>&#x;]]>&lt;/div></description><podcast:funding url="https://example.com/donate"/><link> https://example.com/ </link><title>&#8203;&amp;#x;&amp;amp;amp;</title><lastBuildDate>Sun, 11 Feb 1979 23:56:50</lastBuildDate><itunes:subtitle><![CDATA[<strike>&nbsp;</strike>]]></itunes:subtitle><itunes:author>Jane &#38;amp; John</itunes:author><language>pt-BR</language><podcast:funding url="">Support us</podcast:funding><atom:link rel="archives" href=""></atom:link><item><title>&#38;amp;  Line&#x3C;br&gt;break</title>
+<pubDate>1976-05-21T22:37:54.2382z</pubDate>
+<enclosure url="https://xn--caf-dma.example/154.m3u8?auth=yes" length="9007199254740992" type="audio/mp3"/>
+<link></link>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep66.aif" length=" 20000" type="Audio/MPEG"/>
+<guid isPermaLink="true">a&amp;b</guid>
+<enclosure url="" length="18446744073709551616" type="video/quicktime"/>
+<atom:link rel="archives" href="https://example.com/pay" length="12" title=""/></itme><item><description><![CDATA[<div>茶</div>]]></description><title><![CDATA[&#x;
+&#169;]]></title><media:thumbnail/><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[{json: 1}&;<br>
+&Lt;aaa<p>​</p>]]></content:encoded><itunes:subtitle><![CDATA[&#128512;&#65;&#66;]]></itunes:subtitle><enclosure url="https://example.com:8443/38.MP3" length="18446744073709551616" type="audio/"/><itunes:duration>23:58</itunes:duration><link> https://e.com/x </link></item><item><title>&amp;hellip;  &apos;single'  של&#1493;ם</title><pubDate>08 Sep 83 15:40 +0100</pubDate><description>
+
+tab	here</description><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"></content:encoded><itunes:summary>&lt;li&gt;&amp;amp&lt;/li&gt;&#13;
+&#38;#x;back\slash&#60;br/&gt;aaaaaaa  &#38;nbsp;&lt;li&gt;&#38;mdash;&lt;/li&gt;&lt;img src="x.png&quot;&gt;</itunes:summary><itunes:duration>1:01:28</itunes:duration><enclosure url=" http://example.org/café/137.avi " length="16383" type="video/webm"/><media:content url='ftp://files.example.com/a/b/c341.mid' duration="3600" type=" audio/mpeg" fileSize="16384" medium="Audio"></media:content></item></channel>
+</rss>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en"> <icon></icon>
+  <id>https://example.com/feed</id>
+  <title type="html">&amp;#0;
+<![CDATA[<p>Para</p>]]></title>
+  <itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:author>
+  <link rel="archives" title="" length="12" href="https://example.com/"/>
+  <entry><title type="HTML">&#x26;#xD800;<![CDATA[Episode 12茶]]></title><id>
+id
+</id><link type="audio/mpeg" length="12" rel="payment" title="" href="https://example.com/feed?page=2"/><content type="text">&#x3C;br /&gt; &amp;nbsp;</content><summary><![CDATA[<li><p>Para</p></li><div>Episode 12</div><img src="x" alt="y"/>]]></summary><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">5512.314</itunes:duration></entry>
+  <entry><updated>Wed, 22 Feb 2378 08:51 pst</updated>
+  <link length="12" href="https://xn--caf-dma.example/dir.with.dots/ep145.webm" type="audio/mpeg" rel="enclosure"/>
+  <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">8847.441</itunes:duration>
+  <content><![CDATA[<div>&euro;</div>	 multi
+line	&;&amp<br>]]></content>
+  <title type="html">cr&#13;lf</title>
+  <id></id></entry> </feed>

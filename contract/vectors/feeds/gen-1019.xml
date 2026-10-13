@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang=""><logo>https://example.com/logo.png</logo>
+<id></id>
+<itunes:author>Café Radio</itunes:author>
+<subtitle><![CDATA[ שלום  &#169;	&quot;q&quot;]]></subtitle>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">a &gt; b&#x26;;</div></title>
+<link href="https://example.com/feed?page=2" type="application/atom+xml" rel="archives"/>
+<entry><author><name>Entry author</name></author>
+<updated>vi-)HEI ZiAZjUhiJtm.dMijOFl</updated>
+<content> [x]&#x3C;3 <![CDATA[<3]]></content>
+<link type="application/xml+xhtml" title="MP3 feed" href='https://example.com/feed?page=2' rel="last"/>
+<title type="HTML">AT&#x26;T</title>
+<link type="audio/mpeg" href="" rel="enclosure"/>
+<id> raw </id>
+<summary>&#60;br&gt;&#x3C;div&gt;&#x26;lt;b&amp;gt;escaped&#x26;lt;/b&amp;gt;&lt;/div>#hash😀&lt;br/&gt;&lt;p&gt;multi
+line&#x3C;/p&gt;&#60;img src=&quot;x" alt="y"/&gt;😀😀&#128512;</summary>
+<itunes:duration>1e2</itunes:duration>
+<link rel="next" href="https://example.com/alt.xml" type="application/xhtml+xml" title="MP3 feed"/>
+<published>
+2400-12-12T18:04:35.750-0800  </published></entry>
+  </feed>

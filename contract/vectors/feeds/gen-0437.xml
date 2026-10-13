@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <link length="20000" title="Alternate" rel="" href=''/><id> raw </id><media:thumbnail url="https://example.com/amt.jpg"></media:thumbnail><subtitle>&lt;p&gt;http://example.com/?a=1&#38;b=2&#x3C;/p&gt;&lt;div> &#x3C;/div>&lt;p/>aaa&lt;p/&gt;</subtitle><link title="Alternate" rel="Next" type="audio/mpeg" href="https://example.com/" length="9223372036854775808"/><link type="application/rss+xml" title="" href="HTTPS://EXAMPLE.COM/dir.with.dots/ep359.ts" length="9223372036854775808" rel="archives"/><link rel="alternate" type="text/html" href="https://example.com/pay"/><entry><media:content medium="document" duration='0' type="audio/x-m4a" url='ftp://files.example.com/dir.with.dots/ep391.mp3' fileSize="52428800" isDefault="1"/><updated>20 SEP 2003 00:50:02 -0000</updated><published>1995-05-01T16:23:59.2539 +0000</published><content type="plain">&#60;div&gt;&amp;Lt;&#60;/div>
+&#38;ltcr&#13;lf</content><summary type="plain"><![CDATA[<div>&lt]]>&lt;/div&gt;</summary><id>tag:x,2020:1</id><link length='abc' type='application/xml+xhtml' href="https://example.com/feed?page=2" rel='last' title="Café"/></entry><entry><id>
+id
+</id><title>  tab	here  &#60;3 &lt;3 </title><media:content type="audio/*" medium='image' fileSize="12" duration="" isDefault="true"/><author><name>Entry author</name></author><published>08 APR 72 07:00 +0530</published></entry><entry><published>TUE May 25 12:00:00 2224</published>
+<summary><![CDATA[<br><p></p><div>&Lt;</div><li>100%</li><br> é<p>&copy;</p><p>a < b</p>]]></summary>
+<content type='html'>
+back\slashééé</content>
+<id>tag:x,2020:1</id>
+<link rel="first" href="" length='20000' type="application/rss+xml"></link>
+<link title='Alternate' rel="self" length="12" href='https://example.com/pay'/>
+<title type="html"><![CDATA[a < b<3 <3<sup>&apos;a&apos;</sup>]]></title>
+<link type="audio/mpeg" length="20000" rel="next" title="Café"/></entry></feed>

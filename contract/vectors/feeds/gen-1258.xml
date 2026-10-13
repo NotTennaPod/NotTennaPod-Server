@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[  Spac]]>ed  </itunes:author>
+  <description>  &amp;lt;b&#x26;gt;&#38;lt&#60;br&gt;&lt;hr&gt;&#x3C;img&gt;&lt;img></description>
+  <link></link>
+  <image><title>Image title</title><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link></image>
+  <title><![CDATA[Tom &amp; Jerry &lt;3]]></title>
+  <a10:link rel="hub" type='audio/mpeg' title="Alternate"></a10:link>
+  <a10:link length="abc" title=""/>
+  <a10:link rel="Next" type="application/rss+xml" length="20000" title='Café' href="http://example.org/ep151.m4v"/>
+  <item><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&amp;#169;</itunes:subtitle><content:encoded>aaa&#x3C;div>&#x26;#128512;&lt;/div>&lt;p&gt;​&lt;/p&gt;Folge 7: Über allescaf&#233;&lt;br>&lt;img src="x.png"&gt;&lt;BR>x&lt;y</content:encoded><pubDate>Mon 19 Mar 1601 19:18:56 GMT+0945 (PDT)</pubDate><guid isPermaLink='false'>dup</guid><link></link><a10:link rel="last" title="MP3 feed" href="" length="abc"/><title>&amp;Lt;
+plain words
+  spaced  </title><description>​&#x3C;br&gt;&#38;#65;&amp;#66;</description></item>
+  <item><itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&amp;#xA9;&#38;#;&lt;br<![CDATA[>]]></itunes:summary>
+  <enclosure url="https://example.com/a.b/a/b/c61.webm" length='9007199254740991' type="video/webm"/>
+  <media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="123456" medium="image" type="" duration='0' isDefault="true"/><media:content xmlns:media="http://search.yahoo.com/mrss/" isDefault="TRUE" fileSize='' medium="image" duration="0060" type="image/png"></media:content><media:content xmlns:media="http://search.yahoo.com/mrss/" duration='+60' type="video" url="https://example.com/a.b/dir.with.dots/ep229.aac?auth=yes" fileSize="12"></media:content></media:group>
+  <pubDate>0999-08-33T11:48:53.339-0800</pubDate>
+  <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">176:32</itunes:duration>
+  <link>https://example.com/ep</link>
+  <guid isPermaLink="false">a&#38;b</guid>
+  <title>café  &#38;hellip;  &amp;#;</title>
+  <content:encoded><![CDATA[aaaaaaa<p><3 <3</p>]]></content:encoded></item></channel></rss>

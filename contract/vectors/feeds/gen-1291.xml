@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><link> https://example.com/ </link><description>&#60;br /&gt;</description><link xmlns="http://www.w3.org/2005/Atom" href="http://example.org/café/32.mp3.zip" type="application/atom+xml" title="" rel="" length='abc'/><podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/feed-chapters.json"/><language> EN-US </language><image><url>  https://example.com/ws.png
+</url></image><title><![CDATA[&amp;😀😀]]></title><item><link></link>
+<enclosure url="https://cdn.example.com/98.mp4" length="2147483648" type="video"/>
+<description><![CDATA[<p><img src="x.png"> cover</p>]]></description>
+<title><![CDATA[	<small]]>&gt;&amp;lt&lt;/small&gt;	</title>
+<pubDate>
+Sun, 09 Aug 13 22:08:49 -0500  </pubDate>
+<guid>https://example.com/item/83094</guid></item><item><title>&amp;  &amp;#x;  &amp;nbsp;</title>
+  <pubDate>Sun Nov 24 19:38:27 1985</pubDate>
+  <description></description>
+  <enclosure length="9007199254740993" type="Audio/MPEG"></enclosure>
+  <enclosure url="" length="16384" type="video/quicktime"/>
+  <enclosure length="9007199254740991" type="audio/mpeg; charset=binary"/>
+  <media:description type='html'>aaaaaaaaa &amp;<![CDATA[;<div>&#xFFFF;</div>]]></media:description>
+  <psc:chapters><psc:chapter href="" image="https://example.com/ch.png" title="😀"/><psc:chapter title="😀" start="03:13:25" href="https://example.com/ch"/></psc:chapters></item><item><title>100%  Tom &#38;amp; Jerry &amp;lt;3</title>
+  <media:description type="plain">&#x3C;img src="x.pn<![CDATA[g"><BR>a
+
+b<div> leading</div><hr>]]></media:description>
+  <media:content fileSize="-9223372036854775808" url='HTTPS://EXAMPLE.COM/346.aac?a=1&amp;b=2' duration='abc' type="unknown" medium="video"/>
+  <pubDate>Fri Jul 12 05:42 2329</pubDate>
+  <guid>dup</guid>
+  <link>https://example.com/ep</link>
+  <podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url=""/><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" type='application/srt' language="en"/><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url='' type="Application/JSON" language='en'/>
+  <enclosure url="" length="9223372036854775808" type="application/json"/></item><item><podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="" type="application/json+chapters"/> <enclosure url="https://example.com/a.b/café/205.aspx" length="1,000,000" type='audio/'/> <enclosure url='' length="16383" type=""/> <link></link> <guid isPermaLink="false">Café-guid</guid> <title>م&#1585;حبا &#38;lt;b&amp;gt;escaped&amp;lt;/b&#x26;gt;</title> <pubDate>Mon 13 Aug 1984 21:28:55 GMT+0100 (UTC+01:00)</pubDate> <description><![CDATA[tab	here<br>]]></description> <cont:encoded></cont:encoded></item><item><title><![CDATA[{json: 1}]]></title> <guid isPermaLink="true">a&amp;b</guid> <description>aaaa</description> <cont:encoded>😀😀😀</cont:encoded> <enclosure url="https://example.com/a.b/a/b/c61.webm" length="16383" type='application/ogg'/> <media:content type="application/ogg" url="//example.com/café/69.mpga" duration="9223372036854775807" medium="video" fileSize="abc"></media:content> <podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="" type="application/srr" language="en"/> <podcast:socialInteract xmlns:podcast="https://podcastindex.org/namespace/1.0" uri='' protocol="activitypub"/> <atom:link title='Café' type="application/atom+xml" href='https://example.com/pay' rel="hub"></atom:link></item><item><podcast:person xmlns:podcast="https://podcastindex.org/namespace/1.0" role='host'>Jane</podcast:person><guid>https://example.com/item/88935</guid><enclosure url="HTTPS://EXAMPLE.COM/190.aspx" length="1" type="application/pdf"/><pubDate>0099-08-16T12:48:06Z</pubDate><link> https://e.com/x </link><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" type="text/vtt"/><description></description><media:content isDefault="TRUE" type="unknown" fileSize=" 20000" url="//example.com/a/b/c313.torrent" duration='59' medium='Audio'></media:content><title><![CDATA[a
+  b  Folge 117: Über alles]]></title></item><item><media:content isDefault="1" fileSize="2147483648" type="image/*" duration="1"/>
+  <enclosure length=" 20000" type="unknown"/>
+  <!-- comment --><?pi data?>
+  <cont:encoded><![CDATA[<p>é</p><li>שלום</li>]]></cont:encoded>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <link></link>
+  <pubDate>_,  0999-06-16T23:12:35</pubDate>
+  <description></description>
+  <title>a&#13;
+b
+café
+&#60;u&gt;100%&lt;/u></title>
+  <media:content fileSize='2147483647' duration="+60" url="ftp://files.example.com/a/b/c251.caf" type="video/quicktime"/></item><item><guid isPermaLink="false">
+</guid>
+<link> https://e.com/x </link>
+<description>aa
+&amp;#x1F600;	&amp;#65;&#38;#66;😀&lt;br /></description>
+<cont:encoded><![CDATA[&#x1F600;<p>#7 – Interview</p>😀😀😀<hr>aaaaaaaaa😀😀  &nbsp;<li>{json: 1}</li>]]></cont:encoded>
+<enclosure type="application/json"/>
+<enclosure url="//example.com/dir.with.dots/ep266.avi" length="16384" type="audio/opus"/>
+<enclosure url="//example.com/e p240.jpg?file=x.mp3" length="18446744073709551616" type="text/plain"/>
+<media:content medium='video' isDefault="false" type="application/ogg" duration="1.5" fileSize=""/>
+<media:description type='html'></media:description></item></channel>
+</rss>

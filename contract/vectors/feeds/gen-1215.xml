@@ -1,0 +1,14 @@
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><podcast:funding url=""></podcast:funding><itunes:author><![CDATA[A, B]]></itunes:author><title><![CDATA[&#x1F600; &; plain words]]></title><atom:link type="application/rss+xml" href='https://example.com/alt.xml' rel="first" title=""/><podcast:funding url=""></podcast:funding><item><enclosure url="" length="12" type="video/mp4"/><guid isPermaLink='true'> </guid><content:encoded><![CDATA[
+{json: 1}]]></content:encoded><podcast:transcript type="text/plain"/><podcast:transcript url='https://example.com/t.vtt' type="application/srr" language="en"/><itunes:duration>77:12</itunes:duration><title>&#60;b&gt;Bold&#x3C;/b> title  &lt;3 &lt;3  http://example.com/?a=1&amp;b=2</title><media:description type="plain"><![CDATA[<div>multi
+line</div>]]></media:description><pubDate>Mon 25 Jan 2455 10:54:31 GMT</pubDate><description><![CDATA[http://examp]]>le.com/?a=1&#x26;b=2</description></item><item><title>&amp;quot;q&#38;quot;
+a=b&#x26;c=d
+&lt;em&gt;tab	here&#x3C;/em></title>
+  <guid isPermaLink='false'>a&#x26;b</guid>
+  <pubDate>2023-08-26T05:06:00CEST</pubDate>
+  <description><![CDATA[<br/>	tab	here<br></br><p>&#128512;</p><br /> back\slash<p>&#x1F600;</p><hr>]]></description>
+  <dc:date>2019-03-08T03:04:11.290+01</dc:date>
+  <itunes:summary>&lt;img src=&quot;x.png"&gt;&#60;div>a &lt; b&#60;/div>&amp;quot;q&amp;quot;&#60;br>😀😀&#128512;😀  {json: 1}</itunes:summary>
+  <itunes:image href=""/>
+  <enclosure url="//example.com/dir.with.dots/ep231.mp3.zip" length="9007199254740992" type="AUDIO/MPEG"/>
+  <podcast:chapters url="" type="application/json+chapters"/></item><lastBuildDate>2437-07-19T13:26:99.215+1400</lastBuildDate><image><url></url><link>https://example.com/img-link</link></image><language></language><description></description><podcast:funding url="https://example.com/donate"/></channel> </rss>

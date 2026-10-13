@@ -1,0 +1,53 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><description><![CDATA[ééé]]></description>
+  <link> https://example.com/ </link>
+  <title>&lt;img src="x.png&quot;&gt; cover multi
+line &lt;section&gt; &#60;/section&gt;</title>
+  <item><guid>
+</guid>
+  <pubDate>sat, 23 Dec 1978 14:53:04 +1400</pubDate>
+  <enclosure length="16385" type='image/jpeg'></enclosure>
+  <title>	&#60;article>Folge 976: Über alles<![CDATA[</article>  &  &#0;	]]></title>
+  <dc:date>mWjYzIE(eoIIi/uVWIU-r</dc:date>
+  <content:encoded>&lt;p&gt;&#38;Lt;&#x3C;/p>&#38;hellip;&lt;br&gt;&lt;p&gt;&lt;/p>&#60;div>plain <![CDATA[words</div><div>مرحبا</div><div>茶</div>&quot;q&quot;ééé]]></content:encoded>
+  <media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//example.com/a/b/c385.jpg?file=x.mp3" type="audio/x-wav" duration="1.5" isDefault="true" medium="document"/><media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="12" medium="document" duration='01:00'/></media:group></item>
+  <item><enclosure url="https://user:pass@media.example.net/dir.with.dots/ep187.m4a" length="2e5" type="unknown"/>
+<title>a &lt; b
+&#x26;hellip;
+&#x26;lt;b&#x26;gt;escaped&amp;lt;/b&#38;gt;</title>
+<pubDate>Sat, 21 Mar 2020 02:02:56 +01:00</pubDate>
+<media:description xmlns:media="http://search.yahoo.com/mrss/"> plain words</media:description>
+<link> https://e.com/x </link>
+<psc:chapters version='1.2'><psc:chapter title='' image='https://example.com/ch.png' start=' ' href=''/><psc:chapter start="27:44" title="Intro" image="https://example.com/ch.png"></psc:chapter><psc:chapter title="&lt;b>x&lt;/b>" image="https://example.com/ch.png" start="00:00:00.000"/><psc:chapter start="55:43" image="https://example.com/ch.png" title='😀'/><psc:chapter start='01:20:36.704' title="Intro" image="https://example.com/ch.png"/></psc:chapters></item>
+  <item><podcast:socialInteract protocol="activitypub"/>
+  <enclosure url="//example.com/dir.with.dots/ep52.Mp4" length="２０００００" type="Audio/MPEG"></enclosure>
+  <description><![CDATA[<p>  padded  </p>]]></description>
+  <link>https://example.com/ep</link>
+  <enclosure length='2147483647' type="audio/wav"/>
+  <guid isPermaLink="false"> </guid>
+  <title> &amp;#x; </title></item>
+  <item><title>&lt;pre>a=b&#x26;c=d
+  pre&#60;/pre> &#x26;#; של&#1493;ם</title> <guid isPermaLink="false">dup</guid> <link></link> <pubDate>Wednesday, 26 Dec 72 11:49 -0800</pubDate> <description>&#x3C;br></description> <content:encoded><![CDATA[<hr>]]></content:encoded> <enclosure url="http://example.org/e p0.OGG?file=x.mp3" length="4294967296" type="image/*"/> <media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="1" type="audio/mpeg; charset=binary" isDefault="1" duration="-5"/> <media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="1" url="https://example.com/a.b/e p95.mkv?a=1&amp;b=2" isDefault='TRUE' medium="video" duration="1.5" type="audio/"/> <media:content xmlns:media="http://search.yahoo.com/mrss/" type="video/quicktime" url="ftp://files.example.com/ep361.jpg" fileSize="16384" duration="1.5"/></item>
+  <item><title>&#38;#;</title>
+<guid> </guid>
+<link> https://e.com/x </link>
+<pubDate>1971-03-18T09:27:19+0000 2024</pubDate>
+<description><![CDATA[aa<p> leading</p><img src="x" alt="y"/>]]></description>
+<enclosure url="//example.com/café/293.wma" length="1" type="unknown"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" medium='document' isDefault="TRUE" fileSize='00020000' url="HTTPS://EXAMPLE.COM/a/b/c217.OGG" duration="1" type="audio/x-wav"/>
+<media:description xmlns:media="http://search.yahoo.com/mrss/" type="plain">&#60;p/&gt;&lt;p>&lt;/p&gt;😀😀</media:description></item>
+  <item><title>&lt;3 &#60;3
+&lt;big&gt;  padded  &#x3C;/big&gt;
+ </title>
+<guid isPermaLink="false"> </guid>
+<pubDate>Friday, 10 Jan 14 04:55:34</pubDate>
+<description>  &#x26;amp;&#60;p&gt;Tom &amp;amp; Jerry &amp;lt;3&#60;/p>a &lt; b&lt;br></description>
+<content:encoded>&#x26;amp</content:encoded>
+<enclosure url="HTTPS://EXAMPLE.COM/e p348.aspx" length="2e5" type="audio/x-m4a"/>
+<enclosure url="https://example.com/a.b/a/b/c287.avi" length="1" type="image/png"/>
+<media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" duration="0060" isDefault="false" url="http://example.org/a/b/c157.opus" fileSize="2147483647" type="application/octet-stream"/><media:content xmlns:media="http://search.yahoo.com/mrss/" type="audio" medium="document" isDefault='TRUE' url="https://cdn.example.com/a/b/c33.pdf" fileSize="20000.0"/></media:group></item>
+  <podcast:funding url="https://example.com/donate"/>
+  <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/mt.jpg"/>
+  <podcast:funding>&lt;b>x&lt;/b></podcast:funding>
+  <language>TR</language>
+  <image><title>Image title</title><url>https://example.com/img.png</url></image></channel> </rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel xmlns:atom="http://www.w3.org/2005/Atom"><itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Tom &#x26; Jerry &#x3C;3</itunes:author><language>de-DE</language><description><![CDATA[aa<li>&#128512;</li><li>a
+  b</li><div>&Lt;</div>  &#0;]]></description><image><url>  https://example.com/ws.png
+</url><title>Image title</title><link>https://example.com/img-link</link></image><dc:creator>DC Creator</dc:creator><link>https://example.com</link><title>a&#13;
+b cr&#13;lf</title><item><media:content type="video/quicktime" duration="0" url="//example.com/a/b/c255.mid" medium="document" fileSize='-0' isDefault="false"/><dc:date>Friday, 26 Mar 96 04:16 +1400</dc:date><title>multi
+line
+&#38;#xFFFF;</title><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">00:45</itunes:duration><pubDate>Thu 29 May 2009 23:18:20 GMT-0500 (Japan Standard Time)</pubDate><guid isPermaLink="false"></guid><link>https://example.com/ep</link><enclosure url="" length="٢٠٠٠٠" type="unknown"></enclosure></item><item><itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&amp;nbsp;&#60;br&gt;&#x26;lt;b&amp;gt;aaaaaaa&#60;br />aaaaaaa&lt;p>a
+  b&lt;/p&gt;&#60;hr&gt;&#x3C;li&gt;​&lt;/li&gt;</itunes:summary><pubDate>Mon 10 Mar 1975 19:43:07 +0200</pubDate><guid>dup</guid><media:thumbnail url=""/><media:content medium="audio" duration="+60" fileSize='２０００００' type="application/x-bittorrent"/><title>S01E8</title><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">#hash  &#60;span style=&quot;color:red&quot;>&#38;nbsp;&#60;/span>  &#x26;nbsp;</itunes:subtitle><description>Tom &#x26;amp; Jerry &amp;lt;3&lt;br&gt;</description></item><item><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"/>
+<podcast:season>2</podcast:season>
+<content:encoded><![CDATA[ééé<p>sep</p>ééé]]></content:encoded>
+<description>&#x3C;div>100%&#60;/div&gt;</description>
+<enclosure url="https://cdn.example.com/a/b/c33.pdf" length="-9223372036854775808" type="video/mp4"/>
+<guid>dup</guid>
+<title>&#x3C;p&gt;a&#13;
+b&#x3C;/p>
+&lt;b&gt;&amp;nbsp;&lt;/b&gt;</title>
+<pubDate>Sun, 06 Oct 92 02:21:00 -0000</pubDate>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&lt;p>café&#x3C;/p&gt;&lt;img src="x" alt="y"/&gt;</itunes:summary></item><item><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1.2f</itunes:duration><pubDate>Wednesday, 20 Jul 2332 02:37:02</pubDate><itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[ שלום]]>😀	&amp;AMP;</itunes:summary><title><![CDATA[&#x;]]></title><guid isPermaLink="false">urn:uuid:88880f3f</guid><enclosure length="２０００００" type="video/webm"/><description>  http://example.com/?a=1&#x26;b=2</description><podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/><link></link></item></channel>
+</rss>

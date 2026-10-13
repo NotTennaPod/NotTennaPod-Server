@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE feed [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<title type="xhtml"><![CDATA[&#0;]]></title>
+<link length="9223372036854775808" rel="payment" type="application/rss+xml"/>
+<subtitle type="HTML">&#60;div&gt;[x]&lt;/div>&#60;img src=&quot;x&quot; alt=&quot;y"/&gt;aaacafé  &amp;#128512;aaaaa&#60;p&gt;&amp;AMP;&lt;/p&gt;Tom &#x26;amp; Jerry &amp;lt;3</subtitle>
+<updated>1993-07-17T04:14:16.530-08</updated>
+<link href="https://example.com/" length="9223372036854775808" rel=""/>
+<link type="application/atom+xml"/>
+<link href="https://example.com/pay" rel="alternate" length="9223372036854775808" title="Café"/>
+<entry><link title="Café" type="application/atom+xml" rel="Next"/>
+<updated>1973-06-23--0500</updated>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;p&gt;a &#60; b&#60;/p>&#128512;&#x1F600;&#128512;  &#38;nbsp;</div></summary>
+<id>
+id
+</id>
+<updated>1985/04/23T09:26:18/0000</updated>
+<title>[x] &show; 130 Folge 80: Über alles</title>
+<link length="12" type="application/rss+xml" rel="last" href="https://user:pass@media.example.net/café/363.OGG"/></entry>
+<entry><updated>Sunday, 25 Dec 1994 02:24:18</updated> <summary type="HTML"></summary> <title type="html">a &lt; b</title> <id>urn:uuid:1</id> <content type="html">&lt;br/> &#x26;amp;&lt;br /&gt;</content> <published>Monday, 03 Apr 2102 25:34:48</published></entry>
+<entry><updated>Mon,   20 Feb 1899 21:07:58 +0200</updated>
+  <link rel="next" href="https://example.com/feed?page=2"></link>
+  <title type="text">plain words</title>
+  <id>tag:x,2020:1</id>
+  <media:content fileSize="-0" duration=' 60' medium='document' type="x-audio/mpeg"/>
+  <link type="" rel="hub" length="12"/></entry>
+<entry><link length='9223372036854775808' type="text/html" href="https://example.com/alt.xml" rel='alternate' title=""/><d:date>Fri 24 Sep 2202 23:11:50 GMT+1400 (NZST)</d:date><updated>Fri, 06 Dec 1974 06:26:15</updated><itunes:duration>388.971</itunes:duration><id>tag:x,2020:1</id><published>thu, 28 Jun 1984 09:52 -0000</published><link href="https://example.com/feed?page=2" type="application/xml+xhtml" rel="last" length='20000'/><title type="text">Tom &amp;amp; Jerry &amp;lt;3trailing a&#13;
+b</title><link title="" rel="last" type="application/xml+xhtml" href="https://example.com/pay"/><summary type='text'></summary></entry>
+<entry><published>Tue, 30 Oct 2003 18:01:39 +14:00</published> <title>Episode 984 &amp;nbsp; &#x3C;B>trailing &#x3C;/b></title> <summary type='HTML'></summary> <link title='Café' href="https://example.com/pay" rel="hub" length="9223372036854775808"/> <link rel="next" title='MP3 feed' type="application/atom+xml" href=""></link> <author><name>Entry author</name></author></entry>
+<entry><content type="html">&#x3C;p>R&#38;D&lt;/p&gt;Episode 7ééé</content>
+<podcast:transcript url="" type="text/vtt"/>
+<link type="audio/mpeg" rel="payment" href="https://example.com/alt.xml" title="Alternate" length="20000"/>
+<link title="MP3 feed" type="application/xhtml+xml" href="https://user:pass@media.example.net/café/75.OGG"/>
+<link title="MP3 feed" href="https://example.com/feed?page=2" rel="enclosure"/>
+<id> raw </id>
+<updated>2589-12-27T02:49:33Z</updated>
+<title type="HTML"><![CDATA[http://]]>example.com/?a=1&amp;b=2"quoted&quot;Tom &#x26; Jerry &lt;3</title></entry>
+<entry><category>Technology</category>
+  <id></id>
+  <updated>2398-02-14.</updated>
+  <author><name>Entry author</name></author>
+  <title type="html">&#x26;amp sep 1 &#60;2</title>
+  <link title="" type="audio/mpeg" length="9223372036854775808" rel="first"/>
+  <published>
+1601-11-11T01:04:53+0000  </published></entry>
+<entry><summary type="plain">
+cr
+lf</summary>
+<id>
+id
+</id>
+<link title="Alternate" rel="next" type="text/html" length='abc' href='https://user:pass@media.example.net/café/363.OGG'/>
+<title type="text">&#x3C;b&gt;&lt;i&gt;&#x26;amp&#x3C;/<![CDATA[b></i>
+<small>AT&T</small>]]></title>
+<media:content medium="image" url="https://example.com/a.b/e p95.mkv?a=1&amp;b=2" duration="abc" isDefault="TRUE" type="application/octet-stream" fileSize="4294967296"/>
+<updated>Tuesday, 14 Apr 92 23:02 +0945</updated>
+<content type="html"></content>
+<author><name>Entry author</name></author></entry>
+  </feed>

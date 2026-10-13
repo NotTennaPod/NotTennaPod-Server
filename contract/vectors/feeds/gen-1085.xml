@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE feed [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <title type="html">sep</title>
+<logo></logo>
+<link type='audio/mpeg' title="Café" href="https://example.com/" rel="first" length='20000'/>
+<subtitle>&lt;p>cr
+lf&lt;/p>  &#38;aaaaaaaa  cr
+lf&#60;li&gt;back\slash&lt;/li>&lt;BR&gt;  sep&lt;li>&lt;3 &#60;3&lt;/li&gt;</subtitle>
+<link length="9223372036854775808" rel="payment" title="MP3 feed" href="https://example.com/alt.xml"></link>
+<link length="20000" type='application/rss+xml' title="MP3 feed" href="https://example.com/feed?page=2"/>
+<id>https://example.com/feed</id>
+</feed>

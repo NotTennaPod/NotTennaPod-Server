@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <channel><item><content:encoded>&lt;li&gt;&amp;apos;a&#38;apos;&#x3C;/li></content:encoded>
+<guid isPermaLink="true">  spaced guid  </guid>
+<media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" type="x-audio/mpeg" fileSize="" medium="audio" url="HTTPS://EXAMPLE.COM/ep232.xyz?auth=yes" isDefault='TRUE' duration="3600"/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://xn--caf-dma.example/ep212.oga?dl=1.0" medium="Audio" fileSize="9223372036854775808" type="audio/wav" duration="0060"/><media:content xmlns:media="http://search.yahoo.com/mrss/" type='video' fileSize="2147483648" duration="9223372036854775807"/></media:group>
+<description><![CDATA[trailing ]]></description>
+<pubDate>2166-06-21T11:44:15GMT+01</pubDate>
+<title>&#38;#;  &lt;table&gt;&#x3C;tr&gt;&#x3C;td>http://example.com/?a=1&#x26;b=2&#60;/td&gt;&#60;td&gt;b&#x3C;/td&gt;&#x3C;/tr&gt;&#60;/table&gt;  &amp;nbsp;</title>
+<enclosure url="https://example.com/a.b/café/333.php" length="0x4E20" type="audio/aac"/></item><item><description><![CDATA[😀😀&nbsp;<li>back\slash</li><p>&lt;b&gt;</p>😀😀😀😀<li><img src="x.png"> cover</li><img src="x" alt="y"/>]]></description>
+  <link>https://example.com/ep</link>
+  <title>😀</title>
+  <enclosure url="" length=" 20000"/>
+  <pubDate>202</pubDate>
+  <itunes:image href=''/></item><item><title>Folge<![CDATA[ 72: Über alles]]></title>
+<guid>
+</guid>
+<pubDate>Fri, 18 July 1986 06:46:14 -1200</pubDate>
+<description><![CDATA[שלום]]>&#x3C;br&gt;
+
+&amp;mdash;&#x3C;br/&gt;&lt;div>&#38;#0;&lt;/div&gt;&#x3C;br/&gt;	http://example.com/?a=1&amp;b=2&lt;p&gt;Line&lt;br>break&#60;/p>&#x3C;li>S01E7&lt;/li></description>
+<enclosure length="2147483648" type="video/x-matroska"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://example.com/a.b/café/273.OGG" fileSize="-1" type="audio/ogg" duration="59" isDefault="1"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" duration="2147483" type="audio/mp4" fileSize="1" url="https://user:pass@media.example.net/e p318.pdf"/></item><title><![CDATA[ &#xA9;  <b>Bold</b> title ]]> &#x26;Lt;  </title><title>&#38;apos;a&#x26;apos;&lt;span&gt;Tom &#38; Jerry &lt;3&lt;/span&gt;</title><itunes:author></itunes:author><link></link><description>&lt;li&gt;&#x26;&lt;/li>&#60;div&gt;cr
+lf&lt;/div&gt;aaaaaaaaa	a=b&#x26;c=d x&#x3C;y ​&lt;br/&gt;ééé</description><image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image></channel> </rss>

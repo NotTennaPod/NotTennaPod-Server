@@ -1,0 +1,27 @@
+<!-- generated -->
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><description>&#x3C;li>100%&lt;/li&gt;  &#38;;  a=b&amp;c=d</description>
+  <link></link>
+  <atom:link length="12" type="application/rss+xml" rel="hub" href="https://example.com/feed?page=2" title='Alternate'/>
+  <itunes:image href=" "/>
+  <title>&amp;#6<![CDATA[5;&#66;]]></title>
+  <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url=""/>
+  <itunes:summary>&#13;
+1 &#x3C;2</itunes:summary>
+  <language>en</language>
+  <atom:link href="https://example.com/" length='12' type="application/atom+xml" rel='' title=""/>
+  <item><content:encoded><![CDATA[<p>  padded  </p>	a=b&c=d]]></content:encoded>
+<itunes:duration>+7</itunes:duration>
+<description><![CDATA[<div>'single'</div><li>Folge 7: Über alles</li> &Lt;Line<br>break<br><div>Folge 7: Über alles</div>]]></description>
+<enclosure url=" https://user:pass@media.example.net/e p55.amr " length='9007199254740992' type="audio/aac"/>
+<pubDate>TUESDAY, 28 Jul 1981 16:49 -1200</pubDate></item>
+  <item><description><![CDATA[<br>S01E7ééé<li>#hash</li><p></p>]]></description> <link>https://example.com/ep</link> <pubDate>Sunday, 24 Nov 1985 15:20</pubDate> <enclosure url="https://xn--caf-dma.example/café/153.html" length='20000.0' type="audio/mp4"></enclosure> <title>  padded  </title> <guid isPermaLink="true">urn:uuid:9c4ee7cb</guid> <podcastindex:transcript url="" type=""/><podcastindex:transcript url="" language="en"/><podcastindex:transcript url="https://example.com/t.vtt" type=""/> <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="audio" isDefault="true" duration="-5" url="https://cdn.example.com/ep375.mov?dl=1.0" type="application/pdf"/></item>
+  <item><enclosure url="https://xn--caf-dma.example/ep212.oga?dl=1.0" length="-1" type='audio/aac'/> <guid>
+</guid> <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url='https://example.com/th.jpg'/> <itunes:duration>01:02</itunes:duration> <itunes:image href=" https://e.com/i.png "/> <link></link> <title>Tom &amp; Jerry &lt;3  &#x26;#65;&#38;#66;  &#38;AMP;</title> <pubDate>07 Dec 20 02:27 -0800</pubDate> <description>&lt;p>R&amp;D&lt;/p>&#x3C;p> &lt;/p&gt;&#x3C;p>Folge 7: Über alles&lt;/p&gt;</description> <itunes:summary><![CDATA[&#x;ééé<p><p>Para</p></p>]]></itunes:summary></item>
+  <item><title>&#38;mdash;</title>
+<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"></media:thumbnail>
+<itunes:summary><![CDATA[<p> </p><p>&quot;q&quot;</p>]]></itunes:summary>
+<itunes:duration>4604.659</itunes:duration>
+<guid isPermaLink="true">urn:uuid:62a34eac</guid>
+<enclosure url="https://cdn.example.com/café/338.opus" length="123456" type="audio/opus"/>
+<pubDate>Fri, 05 Mar 2162 02:51:22 +0200 -</pubDate></item></channel>
+</rss>

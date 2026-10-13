@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><item><title>é &amp;lt;b&amp;gt; &#x3C;dl>&lt;dt&gt;&amp;amp&#60;/dt>&#x3C;dd>b&lt;/dd&gt;&#x3C;/dl></title>
+<guid>dup</guid>
+<link></link>
+<pubDate>
+Sun, 26 Mar 1995 04:38:16 +0100 </pubDate>
+<description>&#233;éé
+
+&#x26;hellip;[x]
+
+&#x26;apos;a&amp;apos;مرحبا&lt;br>	&amp;#;😀&#x3C;li&gt;#7 – Interview&#x3C;/li&gt;</description>
+<itunes:duration>1346.907</itunes:duration>
+<enclosure url="https://xn--caf-dma.example/e p331.3gp" length='9007199254740992' type="audio/mp3"/>
+<media:content duration="59" isDefault="TRUE" fileSize="00020000" type='audio/mp4'/>
+<media:content duration="9223372036854775807" fileSize="20000 " isDefault="TRUE" medium="video" type="image/jpeg"/>
+<media:content fileSize="9007199254740991" medium="audio" url="ftp://files.example.com/ep8.flac" isDefault="true" duration='1.5' type="text/plain"/>
+<podcast:transcript url="https://example.com/t.vtt" type="application/x-subrip" language="en"/></item>
+<item><title/>
+<guid>urn:uuid:0b7a9cf5</guid>
+<link>https://example.com/ep</link>
+<pubDate>Sun, 15 Jan 2023 14:15 +0100:00</pubDate>
+<description>  trailing </description>
+<dc:date>1601-05-16T17:15:56.369EDT</dc:date>
+<itunes:image href=""/>
+<enclosure url="HTTPS://EXAMPLE.COM/ep130.amr" length="1" type="audio/x-m4a"/>
+<enclosure url="" length='9007199254740992' type="audio/mpeg"></enclosure>
+<enclosure url=" //example.com/e p373.m3u8 " length="123456789012345678" type="audio/mp3"/></item>
+<title>😀
+&amp;</title>
+<title> &#38;#xFFFF;&#13;
+</title>
+<itunes:subtitle>&#13;
+&amp;amp; &#38; &#38;amp	</itunes:subtitle>
+<language></language>
+<atom:link type="application/rss+xml" length="9223372036854775808" href="https://example.com/pay" rel="archives"/>
+<link>https://example.com</link>
+<itunes:author>&#x3C;b&gt;Studio&#60;/b></itunes:author>
+<image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+<description></description>
+<itunes:image href=" https://example.com/sp.jpg "/></channel></rss>

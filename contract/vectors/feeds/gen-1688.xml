@@ -1,0 +1,27 @@
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:psc="http://podlove.org/simple-chapters"><image><link>https://example.com/img-link</link><title>Image title</title><url></url></image>
+  <itunes:author><![CDATA[Jane Doe]]></itunes:author>
+  <podcast:funding url="">  spaced  </podcast:funding>
+  <itunes:image href=''/>
+  <atom:link rel="related" href="https://example.com/alt.xml" type='application/rss+xml' title="Café" length="12"/>
+  <description>😀</description>
+  <title>&amp;#65;&#x26;#66;</title>
+  <link></link>
+  <item><title><![CDATA[Tom & Jerry <3  &quot;q&quot;]]></title>
+  <guid isPermaLink="false"> </guid>
+  <link> https://e.com/x </link>
+  <pubDate>1066-02-07T06:03:56+1400</pubDate>
+  <it:image href=""/>
+  <itunes:duration>01:02</itunes:duration>
+  <enclosure url="https://user:pass@media.example.net/ep132.html#t=10" length="16383" type="audio/aac"/>
+  <media:description type='plain'>éééx&lt;y&lt;div&gt; &lt;/div>😀&lt;div>#hash&#60;/div&gt;&lt;div>ש&#x5DC;&#1493;ם&#60;/div&gt;
+1 &lt;2 茶</media:description>
+  <atom:link type="application/rss+xml" href="https://example.com/a.b/dir.with.dots/ep342"/></item>
+  <item><title>&amp;unknown; &lt;B>100%&lt;/b&gt; &lt;p>&#x26;nbsp;&lt;/p&gt;</title> <guid isPermaLink="true"> </guid> <link> https://e.com/x </link> <pubDate>Mon, 09 Oct 1972 12:11:44 CEST</pubDate> <description></description> <it:image href="https://example.com/ep.jpg"/> <it:duration>6382.448</it:duration> <enclosure url="" length="-1" type="video/mp4"/></item>
+  <item><description></description>
+  <it:subtitle>#464 – Interview
+"quoted"</it:subtitle>
+  <link> https://e.com/x </link>
+  <media:thumbnail url=""/>
+  <title>&lt;table>&lt;tr&gt;&#60;td&gt;&#38;nbsp;&lt;/td&gt;&#60;td&gt;b&#60;/td>&#60;/tr&gt;&#60;/table&gt; AT&#38;T &amp;mdash;</title>
+  <content:encoded> a &lt; b&#x3C;p/>&#60;li&gt;http://example.com/?a=1&#x26;b=2&lt;/li&gt;&#x3C;p/&gt;&lt;hr/></content:encoded>
+  <guid> </guid></item></channel></rss>

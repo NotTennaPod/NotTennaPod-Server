@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><podcast:funding></podcast:funding><item><itunes:duration>163:30</itunes:duration>
+<title>&amp;amp第169集</title>
+<itunes:summary><![CDATA[  http://exa]]>mple.com/?a=1&#x26;b=2</itunes:summary>
+<description><![CDATA[&quot;q&quot;<br><div>&#;</div><p></p>aaaaaa<div>multi
+line</div>&amp;
+
+a < b😀]]></description>
+<pubDate>Thu, 01 Mar 0001 23.22.02 +0530</pubDate>
+<guid isPermaLink='false'> </guid></item><item><enclosure url="" length="2147483647" type="audio/x-m4a"/> <itunes:duration>0</itunes:duration> <description></description> <content:encoded><![CDATA[
+
+&Lt; 茶aaaaaaaa]]></content:encoded> <media:content type="x-audio/mpeg" url='//example.com/ep281' duration="2147483648" fileSize="123456"/> <link> https://e.com/x </link> <title/> <x xmlns="urn:other"><title>Default namespace title</title></x></item><itunes:author><![CDATA[😀 Pod]]></itunes:author><atom:link type="" href="https://example.com/alt.xml" length="abc" title="Alternate" rel="last"/><title>&#x26;lt;b&#x26;gt;escaped&#x26;lt;/b&amp;gt;  &lt;s&gt;café&#x3C;/s&gt;</title><link></link><language> EN-US </language><link xmlns="http://www.w3.org/2005/Atom" length="9223372036854775808" rel="next" href='https://example.com/feed?page=2' type="application/xhtml+xml"/><podcast:funding url=''>&lt;b&gt;x&#60;/b&gt;</podcast:funding></channel>
+  </rss>

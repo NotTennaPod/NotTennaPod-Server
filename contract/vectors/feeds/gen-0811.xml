@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters">
+<channel><atom:link xmlns:atom="http://www.w3.org/2005/Atom" title='Alternate' rel="Next" length="12" type="application/xhtml+xml"/>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" href='https://example.com/' title="Alternate" type="application/rss+xml" rel="hub" length="9223372036854775808"/>
+<link></link>
+<item><guid isPermaLink="false">Caf&#xE9;-guid</guid> <itunes:subtitle></itunes:subtitle> <link>https://example.com/ep</link> <pubDate>Sun, 27 Sep 2274 99:16 +0530</pubDate> <enclosure url="" length="２０００００" type="image/jpeg"/> <title>'single' Line&lt;br>break</title> <description><![CDATA[<li>é</li>]]></description></item>
+<item><itunes:author>Item author</itunes:author>
+  <media:content url="//example.com/dir.with.dots/ep52.Mp4" medium="document" duration='2147483648' type="audio/x-wav" isDefault="false" fileSize="12"/>
+  <guid>dup</guid>
+  <description>&#x3C;p&gt;x&#x3C;y&lt;/p&gt;</description>
+  <media:content fileSize="abc" duration="0060" type="image/*" url="HTTPS://EXAMPLE.COM/dir.with.dots/ep66.aif" isDefault="TRUE"/>
+  <pubDate>2020-03-05T13:13:28.438Gmt</pubDate>
+  <title>100%
+&#38;
+&#x26;</title>
+  <link></link>
+  <media:content url='https://example.com/a.b/dir.with.dots/ep229.aac?auth=yes' isDefault="TRUE" duration="" fileSize="20000 " type="video/x-matroska"/>
+  <itunes:duration>10959</itunes:duration>
+  <enclosure url='https://example.com:8443/e p16.mp4' length="2147483648" type="AUDIO/MPEG"/>
+  <enclosure length="1,000,000" type="Audio/MPEG"/></item>
+<itunes:image href=' https://example.com/sp.jpg '></itunes:image>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="Alternate" href="//example.com/café/69.mpga" type="audio/mpeg" rel="enclosure"/>
+<description><![CDATA[<p>"quoted"</p>]]></description>
+<podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+<itunes:author><![CDATA[😀 ]]>Pod</itunes:author>
+<title>&lt;li&gt;&#x26;#x;&#60;/li&gt;</title>
+<language>en</language></channel> </rss>

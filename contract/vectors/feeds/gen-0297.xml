@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-15"?><rss version="2.0" xmlns="" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><media:thumbnail url="https://example.com/mt.jpg"/>
+  <link> https://example.com/ </link>
+  <itunes:author><![CDATA[Café Radio]]></itunes:author>
+  <title>&#x3C;table&gt;&lt;tr&gt;&lt;td&gt;&#8203;&lt;/td&gt;&#x3C;td&gt;b&lt;/td&gt;&lt;/tr&gt;&#x3C;/table>&#x3C;del>&amp;#0;&lt;/del&gt;&#60;small>&amp;amp&#60;/small&gt;</title>
+  <itunes:image href="https://example.com/it.jpg"/>
+  <itunes:new-feed-url></itunes:new-feed-url>
+  <itunes:subtitle> 
+100%
+&#x26;lt</itunes:subtitle>
+  <atom:link href="" rel="archives" length="abc" type='application/atom+xml' title="Alternate"/>
+  <description><![CDATA[&#xD800;<p></p>&#128512;&#128512;&#128512;&#128512;<br />
+&copy;[x]<br /><br />]]></description>
+  <link xmlns="http://www.w3.org/2005/Atom" title="Café" type="text/html" href="" rel=""/>
+  <item><title>S01E980</title>
+<guid isPermaLink="true">urn:uuid:eb40e052</guid>
+<pubDate>Sat, 20 March 2286 03:03 -1200</pubDate>
+<description><![CDATA[a > b<br><div>x<y</div>]]></description>
+<itunes:summary> &#1605;&#1585;&#1581;&#1576;&#1575;&lt;br>&amp;copy;</itunes:summary>
+<enclosure url="//example.com/café/78.3gp" length="abc" type="image/*"/>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep124.oga" length='abc' type="video/quicktime"/>
+<podcast:transcript url="https://example.com/t.json" type="application/json" language="en"/></item>
+  <item><pubDate>&#13;
+Fri May 1 23:57:14 2015 </pubDate>
+<itunes:duration>2:32:18</itunes:duration>
+<psc:chapters version="1.2"><psc:chapter start="02:33:16" image="https://example.com/ch.png" href="https://example.com/ch" title=""/><psc:chapter image="https://example.com/ch.png" start="2147483647:00:00"/><psc:chapter title="" start='00:20:56' href=""/><psc:chapter start="1:02.5x" href='https://example.com/ch'/><psc:chapter href="" title="&#128512;" start="37:45" image='https://example.com/ch.png'/><psc:chapter start="Infinity:00" image="https://example.com/ch.png" href=""></psc:chapter></psc:chapters>
+<description></description>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep369.ts" length="abc" type="audio"></enclosure>
+<enclosure url=" HTTPS://EXAMPLE.COM/café/352.mid " length='00020000' type="audio/"/>
+<enclosure url="" length="+20000" type='audio/x-wav'/>
+<content:encoded>&#x3C;p&gt;&#x26;apos;a&#38;apos;&#60;/p>&lt;p>&lt;/p> a=b&#x26;c=d  &#33590;&#60;div>&#38;amp;amp;&#x3C;/div></content:encoded>
+<title><![CDATA[<img src="x.png"> cover&unknown;&lt;b&gt;escaped&lt;/b&gt;]]></title>
+<itunes:image/>
+<guid>  spaced guid  </guid></item>
+  <item><title>&amp;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt; &#38;#xD800; &#60;b&gt;Bold&lt;/b> title</title> <guid isPermaLink="true">Café-guid</guid> <link></link> <description>&#60;div>cr
+lf&#x3C;/div&gt;a
+  b&lt;br&gt;</description> <content:encoded><![CDATA[<br></br><div>Tom &amp; Jerry &lt;3</div>]]></content:encoded> <enclosure url="" length="-1" type='audio/*'/> <podcast:chapters type="application/json+chapters"/> <podcast:socialInteract protocol='activitypub'/></item></channel>
+</rss>

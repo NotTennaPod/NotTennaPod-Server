@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><description>&#x3C;hr/&gt;aa
+של&#x5D5;ם</description>
+<language>fr
+</language>
+<title>100%&amp;#xD800;</title>
+<link>https://example.com</link>
+<pi:funding url='https://example.com/donate'>&#60;b&gt;x&#x3C;/b></pi:funding>
+<item><pi:chapters url="" type='application/json+chapters'/>
+<content:encoded><![CDATA[<BR>]]>éééa</content:encoded>
+<description>&#x3C;div&gt;Episode 7&#60;/div&gt;😀&#x3C;div&gt;&#38;Lt;&lt;/div></description>
+<link></link>
+<sc:chapters version="1.2"><sc:chapter image="https://example.com/ch.png" start="1:2:3:4" href="https://example.com/ch" title="&lt;b>x&lt;/b>"/><sc:chapter start="01:36:03" href="" title="Intro" image='https://example.com/ch.png'/><sc:chapter start="01:02:03.123456" title="😀" href=""/><sc:chapter title="Intro" start="01:18:12" href="https://example.com/ch"/><sc:chapter image="https://example.com/ch.png" start="02:27:41"></sc:chapter><sc:chapter title="&lt;b>x&lt;/b>" href="https://example.com/ch" start=""></sc:chapter></sc:chapters>
+<enclosure url="http://example.org/ep51.m4a" length="123456789012345678" type="application/json"/>
+<guid isPermaLink="false"></guid>
+<title> leading
+&amp;mdash;</title>
+<pubDate>2401-04-29T10:50:20+0200</pubDate></item>
+<item><link>https://example.com/ep</link>
+  <pubDate>Day1, Sat Dec 13 22:48:27 2408</pubDate>
+  <description>&#x3C;li&gt;  spaced  &#60;/li>&#60;li&gt;&amp;mdash;&#60;/li&gt;&#60;img src=&quot;x&quot; alt="y"/&gt;</description>
+  <enclosure url="https://user:pass@media.example.net/dir.with.dots/ep94" length="+20000" type=""/>
+  <link xmlns="http://www.w3.org/2005/Atom" title="Alternate" length="abc" type="application/rss+xml" rel="hub"/></item>
+<item><title> 
+AT&#38;T
+sep</title>
+<guid isPermaLink="false">
+</guid>
+<pubDate>Sun, 12 Nov 1989 20:22:09 +0530</pubDate>
+<description></description>
+<dc:date>1973-06-02-0800</dc:date>
+<enclosure url="http://example.org/71.wav" length="9007199254740991" type="audio/x-m4a"/></item></channel>
+</rss>

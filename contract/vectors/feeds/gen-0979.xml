@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
+<channel xmlns:atom="http://www.w3.org/2005/Atom"><itunes:new-feed-url> https://new.example.com/sp </itunes:new-feed-url><dc:creator>DC Creator</dc:creator><podcastindex:funding url="https://example.com/donate"/><podcastindex:funding url="https://example.com/donate">  spaced  </podcastindex:funding><link>https://example.com</link><link xmlns="http://www.w3.org/2005/Atom" title="MP3 feed" length="12" href="https://example.com/pay" type="application/xml+xhtml" rel='Next'/><description><![CDATA[茶<br><l]]>i&gt;&amp;lt&lt;/li&gt;  &amp;amp</description><itunes:author><![CDATA[]]>  Spaced  </itunes:author><podcastindex:funding url="https://example.com/donate"/><title>&lt;p&gt;&#x3C;p&gt;&#x3C;img src="x.png"&gt;<![CDATA[ cover</p></p>]]></title><atom:link href="https://example.com/alt.xml" rel="payment" title="Café" length="9223372036854775808"/><item><podcastindex:transcript url="https://example.com/t.json" type='application/x-subrip'/><podcastindex:transcript url="https://example.com/t.vtt" type="Application/JSON"/>
+<podcastindex:chapters url="https://example.com/ch.json" type="application/json+chapters"/>
+<sc:chapters xmlns:sc="http://podlove.org/simple-chapters"><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" start="abc" href="https://example.com/ch" title=""/></sc:chapters>
+<guid isPermaLink="true">dup</guid>
+<pubDate>Fri Jul 12 99:47:46 2024</pubDate>
+<itunes:duration>1:00:00:00</itunes:duration>
+<media:thumbnail url=""/>
+<description>'single' &amp;#xFFFF;ééécaf&#233;trailing &#60;br></description>
+<content:encoded>	#hash&#13;
+&#38;#128512;&lt;hr/></content:encoded>
+<title>&amp;nbsp;  مرحبا</title>
+<enclosure url="" length="9223372036854775807" type="audio/mpeg"/>
+<link> https://e.com/x </link></item><item><itunes:image href=""/>
+<itunes:author>Item author</itunes:author>
+<pubDate>2546-1</pubDate>
+<itunes:duration>52:58</itunes:duration>
+<description><![CDATA[&#128512;<br><p>&unknown;</p>  a > b"quoted"<br> &#xFFFF;]]></description>
+<title>plain words &lt;pre&gt;&lt;p&gt;Para&lt;/p&gt;
+  pre&lt;/pre&gt;</title>
+<guid>dup</guid>
+<link> https://e.com/x </link>
+<sc:chapters xmlns:sc="http://podlove.org/simple-chapters" version="1.2"><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" href="" image="https://example.com/ch.png" start='03:20:27.219'></sc:chapter><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" href='' title="" start="02:14:48" image='https://example.com/ch.png'/></sc:chapters></item><item><guid isPermaLink="false"> </guid> <title><![CDATA[]]>&#x26;amp</title> <enclosure url='http://example.org/a/b/c334.wma#t=10' length="123456789012345678" type="text/plain"/> <link></link></item><item><title>multi
+line</title><guid isPermaLink="true"></guid><itunes:summary>&lt;p&gt;  spaced  &lt;/p>&lt;li&gt;&#38;lt&#60;/li&gt;Episode 12&lt;br&gt;&#x3C;img src="x.png"&gt;&#x3C;b>Bold&lt;/b&gt; title&lt;br&gt;</itunes:summary><media:content medium="video" duration='1.5' fileSize="2e5" isDefault="false" type="video/webm"/><description><![CDATA[<li>tab	here</li><br></br><div>back\slash</div><p></p><hr/>]]></description><dc:date>2396-09-24T06:37:36.282EST</dc:date><itunes:image/><pubDate>08 Sep 52 16:21:12 +0000</pubDate><link>https://example.com/ep</link></item><item><title><![CDATA[&#x1F600;&#128512;&;]]></title> <guid isPermaLink='true'>https://example.com/item/73004</guid> <link></link> <pubDate>Fri, 23 Oct 0099 05:50 +0945 -</pubDate> <content:encoded>&lt;p&gt;&amp;#xA9;&lt;/p&gt;Episode 12&#60;li&gt;sep&lt;/li&gt;</content:encoded> <itunes:image href=" https://e.com/i.png "/> <itunes:duration>2:15:14</itunes:duration> <itunes:author>Item author</itunes:author> <enclosure url="" length="9223372036854775808" type="video"/> <media:content duration="abc" type="application/octet-stream" fileSize="1" medium="video"/> <media:content type="image/*" isDefault='false' duration="1.5" medium='Audio' fileSize='0x4E20'/></item><item><title><![CDATA[&copy;]]></title>
+<guid isPermaLink='false'></guid>
+<link></link>
+<enclosure length='0x4E20' type="video/quicktime"/>
+<itunes:subtitle><![CDATA[[x]
+&#xD800;]]></itunes:subtitle>
+<pubDate>Wed, 25 Aug 1993 22:17:43 +0945</pubDate></item></channel> </rss>

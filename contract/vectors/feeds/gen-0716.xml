@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0">
+<id>https://example.com/feed</id>
+<itunes:author>第一</itunes:author>
+<itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url>
+<logo> https://e.com/l.png
+</logo>
+<link href="https://example.com/pay" rel="self" title="MP3 feed" type="application/xhtml+xml"/>
+<title>&lt;h6&gt;a &gt; b&lt;/h6&gt;</title>
+<author><name>  Bob  </name></author></feed>

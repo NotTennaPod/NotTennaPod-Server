@@ -1,0 +1,10 @@
+﻿<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><link></link>
+<description></description>
+<language> EN-US </language>
+<podcast:funding url=""/>
+<podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+<lastBuildDate>1993-05-16T22:58:49;</lastBuildDate>
+<podcast:funding url="">&lt;b&gt;x&#60;/b&gt;</podcast:funding>
+<title>'single'  #hash  &amp;#65;&amp;#66;</title></channel>
+</rss>

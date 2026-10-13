@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><podcast:funding>Support us</podcast:funding>
+  <description></description>
+  <itunes:subtitle>Line&#60;br&gt;break  cr&#13;lf  &apos;single&apos;</itunes:subtitle>
+  <language>de-DE</language>
+  <link>https://example.com</link>
+  <podcast:funding url="">Support us</podcast:funding>
+  <atom:link title="MP3 feed" rel="first" href="https://example.com/pay" type=""/>
+  <title>&#38;amp  trailing </title>
+  <itunes:author><![CDATA[😀 Pod]]></itunes:author>
+  <itunes:image href="https://example.com/it.jpg"/>
+  <atom:link href="https://example.com/alt.xml" title='Café' rel="last"/>
+  <atom:link rel="" length="9223372036854775808" href='https://example.com/pay' type="application/xhtml+xml"></atom:link>
+  <link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/feed?page=2" rel="first" type="application/rss+xml" title=""/>
+  <item><enclosure length="2e5" type="audio/opus"/> <title><![CDATA[&lt;b&gt;]]></title> <content:encoded>&lt;div&gt;&#x26;#x1F600;&#x3C;/div&gt;</content:encoded> <enclosure url="HTTPS://EXAMPLE.COM/e p19.mpga" type="video/mp4"/> <enclosure length='2147483647' type="application/json"/> <description>&lt;br&gt;&#x3C;/br&gt;&#60;div>tab	here&lt;/div&gt;&#60;img src="x.png"&gt;&lt;hr/> [x]</description> <podcast:socialInteract protocol="activitypub"/> <itunes:duration>::</itunes:duration></item></channel></rss>

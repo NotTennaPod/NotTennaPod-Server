@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><itunes:author><![CDATA[Jane Doe]]></itunes:author>
+  <lastBuildDate>2006-07-29T08:22:29:00</lastBuildDate>
+  <language>de-DE</language>
+  <title>&amp;#xA9;  a &lt; b  a > b</title>
+  <link></link>
+  <atom:link type="application/xml+xhtml" length='20000' title="Café" rel="alternate"/>
+  <itunes:subtitle>a > b &lt;center&gt;"quoted"&#x3C;/center&gt; &amp;#65;&amp;#66;</itunes:subtitle>
+  <itunes:image href=" "/>
+  <item><title><![CDATA[&hellip;]]></title> <guid isPermaLink="false">https://example.com/item/75994</guid> <link> https://e.com/x </link> <pubDate>Thu, 25 Jan 1601 06:14 -0500</pubDate> <content:encoded><![CDATA[ééé&euro;<br>
+Episode 12	&#169;😀😀<p>&]]>#xFFFF;&#x3C;/p&gt;e&#769;	&amp;</content:encoded> <itunes:duration>1:30 </itunes:duration> <enclosure length="2e5" type="video/mp4"/></item></channel>
+</rss>

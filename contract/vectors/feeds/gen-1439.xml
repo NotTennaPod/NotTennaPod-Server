@@ -1,0 +1,27 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<author><name>C&amp;D</name></author>
+<id></id>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">1 &lt;2Folge 354: Über alles&amp;#128512;</div></title>
+<subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></subtitle>
+<entry><id> raw </id> <content></content> <link title="Alternate" length="12" href='https://example.com/feed?page=2' rel="related"/> <published>IbJbFvLxqp)bYd,vZ</published></entry>
+<entry><title type="text">&#38;#<![CDATA[128512;]]></title><author><name>Entry author</name></author><id>urn:uuid:1</id><published>Friday, 30 Mar 1980 14:38</published><content type="html"></content><link length="abc" type="application/atom+xml" href="https://example.com/" title="" rel="last"/></entry>
+<entry><title type="html">&amp;copy; #76 – Interview</title><id>
+id
+</id><link type="audio/mpeg" href='https://xn--caf-dma.example/café/261.m4a' rel="first"></link><link type="text/html" href='' rel="archives" title="Alternate"/></entry>
+<entry><title>cr&#13;lf</title>
+<link length="abc" href="https://example.com/feed?page=2" title=""/>
+<updated>Wed, 18 Oct 2000 22:43:13 -05:30</updated>
+<published>Wed, 16 Feb 2000 09:57 utc</published>
+<!-- comment --><?pi data?>
+<summary>&lt;p>&#60;/p>&#x26;&lt;br&gt;&lt;li&gt;cr
+lf&lt;/li&gt;😀&#160;x&#x3C;y</summary>
+<media:content url=" http://example.org/café/137.avi " medium="audio" type="audio/x-wav" fileSize="20000 " isDefault="1" duration=''/>
+<link rel="related" title="MP3 feed" href="" length="9223372036854775808"/>
+<content><![CDATA[cr
+lf<br>x<y<br>]]></content>
+<link length="abc" title="MP3 feed" rel='first' type=""/>
+<id>
+id
+</id></entry>
+<entry><updated>Thu Jun 20 11:29:05 2002</updated> <link href="https://example.com/pay" rel="" type="application/xhtml+xml" title="Alternate"></link> <link rel="self" length="20000" title="Café" href="https://example.com/alt.xml"></link> <published>14 Jul 80 07:23:49 +0530</published> <link rel="next" type="audio/mpeg" length="12" title="Café" href="https://example.com/"/> <id></id> <title type="html"><![CDATA[{json: 1}  <u>&#xA9;</u>]]></title></entry>
+  </feed>

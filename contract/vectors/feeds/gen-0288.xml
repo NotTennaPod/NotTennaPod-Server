@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- generated -->
+<!DOCTYPE rss [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><atom:link href="https://example.com/feed?page=2" type="application/atom+xml" rel="payment" title=""/> <pi:funding url="https://example.com/donate">Support us</pi:funding> <textInput><title>Search</title><link>https://example.com/search</link></textInput> <title><![CDATA[  spaced  &]]></title> <link> https://example.com/ </link> <language>TR</language> <description>&#x3C;img src="x" alt=&quot;y&quot;/></description> <itunes:author>  Spac<![CDATA[ed  ]]></itunes:author> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <media:thumbnail/> <item><title> plain words
+&#x26;quot;q&#x26;quot;
+&#38;lt </title>
+  <pubDate>2292-05-28T16:47:04Z</pubDate>
+  <description><![CDATA[<li><b>Bold</b> title</li><li>&lt;b&gt;escaped&lt;/b&gt;</li><div>  spaced  </div><hr/><p>&amp;amp;</p><hr><img><img src="x" al]]>t="y"/></description>
+  <enclosure length="20000 " type="text/plain"></enclosure></item></channel>
+  </rss>

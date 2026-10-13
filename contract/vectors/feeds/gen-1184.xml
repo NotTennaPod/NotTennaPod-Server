@@ -1,0 +1,26 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:pc="http://podlove.org/simple-chapters">
+<channel xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom"><itunes:summary>&#xE9;éé&lt;div&gt;back\slash&lt;/div>{json: 1}&#x3C;br>&lt;div>&#38;#xFFFF;&lt;/div&gt;&lt;hr></itunes:summary>
+<media:thumbnail></media:thumbnail>
+<image><url>  https://example.com/ws.png
+</url></image>
+<atom:link type="application/xml+xhtml" rel="" title="MP3 feed"/>
+<atom:link length="20000" href="https://cdn.example.com/ep245.mov" rel="payment" type="application/xml+xhtml"/>
+<podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate">Support us</podcast:funding>
+<description> &#x26;#x;&#x3C;div>&#x26;nbsp;&#x3C;/div&gt;</description>
+<link xmlns="http://www.w3.org/2005/Atom" type="text/html" rel="archives" title='Café' href="https://example.com/" length="9223372036854775808"/>
+<title><![CDATA[&#65;&#66;
+'single'
+ leading]]></title>
+<link>https://example.com</link>
+<language></language>
+<atom:link title="MP3 feed" href="https://example.com/pay" type="" length="abc"/>
+<item><title>#75 – Interview a&#13;
+b</title>
+  <guid isPermaLink='false'></guid>
+  <link> https://e.com/x </link>
+  <description>ééé&lt;br/&gt;&lt;div>&#x3C;3 &lt;3&#x3C;/div&gt;aaaaaaa&#x26;amp;amp;&#60;br&gt;</description>
+  <itunes:summary>&lt;br /&gt;</itunes:summary>
+  <enclosure url="https://xn--caf-dma.example/ep344.ogg" length="16384" type="application/x-bittorrent"/></item>
+<item><guid>https://example.com/item/39974</guid> <enclosure url='https://example.com/a.b/ep256.mp3' length="20000.0" type='audio/ogg'/> <itunes:subtitle><![CDATA[AT&T]]></itunes:subtitle> <x:title xmlns:x="urn:x">Other namespace title</x:title> <title><![CDATA[&nbsp; Episode 12 &#xA9;]]></title> <podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.vtt" type="text/vtt" language="en"/><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="" type="text/vtt"/><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.vtt" type="application/srr"/> <link></link> <description>  &#x26;AMP;&#x3C;li&gt;Episode 12&lt;/li&gt;  a &#x3C; b&#x3C;img src=&quot;x" alt="y"/&gt;&#60;br&gt;&lt;/br>Folge 7: &#xDC;ber alles&#x3C;br&gt;&#60;li>&#38;amp;amp;&#60;/li&gt;&lt;p/&gt;</description></item>
+<item><enclosure url="" length='-1' type="image/*"/><guid>a&amp;b</guid><description><![CDATA[ 'single']]></description><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="" type="text/vtt"/><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.vtt" type="application/json" language="en"/><podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/ch.json" type='application/json+chapters'/><title><![CDATA[<table><tr><]]>td&gt;&#x3C;p&gt;Para&lt;/p&gt;&#x3C;/td>&#60;td&gt;b&lt;/td>&#60;/tr&gt;&lt;/table&gt;</title><itunes:subtitle><![CDATA[&amp  [x]]]></itunes:subtitle><link>https://example.com/ep</link><itunes:duration>2:32:15</itunes:duration><c:encoded>&#x3C;p>&#60;3 &#60;3&lt;/p>&lt;li&gt; &lt;/li></c:encoded><pubDate>2024-02-01T21:51</pubDate></item></channel>
+</rss>

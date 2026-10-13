@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><atom:link title="MP3 feed" rel="related" href=""/>
+<image><title>Image title</title><link>https://example.com/img-link</link><url>https://example.com/img.png</url></image>
+<link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/feed?page=2" title="MP3 feed" rel="alternate"/>
+<link>https://example.com</link>
+<it:image href=" "/>
+<atom:link type="application/xhtml+xml" href='https://example.com/' rel='Next' length="20000"/>
+<podcast:funding url=''>Support us</podcast:funding>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<atom:link length="abc" type="application/rss+xml" rel="next" title="" href=""/>
+<description>[x]&amp;#xD800;&lt;br>&#x3C;l<![CDATA[i>&euro;</li><p>Line<br>break</p><p/>
+100%	&lt  ]]></description>
+<title>&#x26;#xFFFF;  <![CDATA[&;]]></title>
+<it:author>&#128512; Pod</it:author>
+<item><it:summary></it:summary>
+<wrapper><inner><deeper>text</deeper></inner></wrapper>
+<content:encoded>&#38;hellip;&lt;img src=&quot;x.png"></content:encoded>
+<description> plain words</description>
+<pubDate>04 May 1900 02:57:38 +0000</pubDate>
+<enclosure url="ftp://files.example.com/dir.with.dots/ep391.mp3" length="٢٠٠٠٠" type='audio/mp4'/>
+<it:subtitle>&lt;blockquote>&#60;b&gt;Bold&lt;/b&gt; title&#60;/blockquote&gt;plain words</it:subtitle>
+<link></link>
+<title>a &lt; b &#1605;رح&#1576;ا</title>
+<m:content type="audio/wav" url="https://example.com/a.b/ep366.oga" duration="59" fileSize="" isDefault="TRUE"></m:content></item>
+<item><title>&lt;3 &#60;3&#x3C;h6>&amp;amp;amp;&#x3C;/h6></title>
+  <guid isPermaLink="true">a&amp;b</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>&#13;
+Monday, 04 Apr 1983 10:08:02 </pubDate>
+  <description>&#60;p>&#x3C;/p>&#38;nbsp;&lt;br>ééé&#x3C;hr/&gt;&#60;div>AT&#38;T&#60;/div&gt;&lt;hr/&gt;&#x3C;p&gt;trailing &#60;/p>&lt;di<![CDATA[v>100%</div>]]></description>
+  <it:image href="https://example.com/ep.jpg"/>
+  <it:duration>PT1H30M</it:duration>
+  <enclosure url="http://example.org/café/243.wma" length="16384" type="image/*"/>
+  <enclosure length='1,000,000' type="image/png"/>
+  <enclosure url=" //example.com/ep304.txt " length="+20000" type="audio/opus"></enclosure>
+  <media:thumbnail url="https://example.com/th.jpg"/></item></channel></rss>

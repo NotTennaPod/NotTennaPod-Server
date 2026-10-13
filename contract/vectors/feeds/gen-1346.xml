@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><link></link><image><link>https://example.com/img-link</link><title>Image title</title><url>  https://example.com/ws.png
+</url></image><description></description><title><![CDATA[{json: 1}
+&#xA9;
+&#xD800;]]></title><pi:funding/><atom:link title="Alternate" length="12" rel="next"></atom:link><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><itunes:author></itunes:author><pi:funding url="https://example.com/donate"/><itunes:explicit>clean</itunes:explicit><pi:funding url="">  spaced  </pi:funding><language>en</language><itunes:image href="https://example.com/it.jpg"/><item><atom:link rel='hub' title='Café' href="https://example.com/a.b/dir.with.dots/ep129.avi"/>
+  <description><![CDATA[ &quot;q&quot;<div>&amp;amp;</div>]]></description>
+  <guid isPermaLink="true">  spaced guid  </guid>
+  <pubDate>Donnerstag, 	Sat, 15 Apr 2023 05:55:06 +0530</pubDate></item><item><title><![CDATA[Folge 485: Über alles &; #hash]]></title>
+<guid isPermaLink="true"></guid>
+<link> https://e.com/x </link>
+<pubDate>2005-06-20T08:44:54</pubDate>
+<description>a > b&lt;br&gt;	1 &lt;2&#38;amp</description>
+<sc:chapters version="1.2"/></item><item><title><![CDATA[#hash<p style="text-align:center">&#xA9;</p>]]></title>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[<br />]]></content:encoded>
+<pubDate>Sun,07 Jul 2002 09:14:14 -1200</pubDate>
+<itunes:summary><![CDATA[<li>&#xA9;</li><p>Folge 7: Über alles</p><p/>]]></itunes:summary>
+<itunes:duration>:30</itunes:duration>
+<enclosure url="https://user:pass@media.example.net/café/150.ts?dl=1.0" type='x-audio/mpeg'/>
+<guid isPermaLink="true">Caf&#xE9;-guid</guid></item><item><guid isPermaLink="true"> </guid>
+  <mrss:group><mrss:content medium="image" url="https://example.com:8443/ep355.html" duration="2147483" type="Audio/MPEG" fileSize="-16384"/><mrss:content duration=" 60" type="application/pdf" isDefault="true" medium="audio" fileSize="9007199254740992"/></mrss:group>
+  <itunes:subtitle><![CDATA[a=b&c=d  Episod]]>e 12</itunes:subtitle>
+  <title>茶
+&amp;unknown<![CDATA[;]]></title>
+  <itunes:image href=' https://e.com/i.png '/>
+  <pubDate>1980-08-06T21:24:00 	 </pubDate>
+  <link></link>
+  <description>  😀aaa&#x26;&lt;br&gt;  &#38;amp&lt;BR>&#x3C;div>&amp;#0;&lt;/div&gt;a&#13;
+b  http://example.com/?a=1&amp;b=2</description></item></channel>
+</rss>

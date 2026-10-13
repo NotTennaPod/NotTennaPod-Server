@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><language>fr
+</language>
+<title><![CDATA[back\slash]]></title>
+<itunes:image></itunes:image>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<a10:link rel="alternate" href="https://example.com/feed?page=2" length="9223372036854775808"/>
+<podcast:funding>  spaced  </podcast:funding>
+<podcast:funding url=""></podcast:funding>
+<link xmlns="http://www.w3.org/2005/Atom" length="20000" title="Alternate" type='application/atom+xml' rel="related" href='https://example.com/pay'/>
+<podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+<dc:creator>DC Creator</dc:creator>
+<link>https://example.com</link>
+<description>
+
+http://example.com/?a=1&amp;b=2
+plain words
+tab	here</description>
+<item><title>&amp;lt;b&#38;gt; [x] [x]</title>
+<guid isPermaLink="true">a&#x26;b</guid>
+<link> https://e.com/x </link>
+<pubDate>1998-99-03</pubDate>
+<itunes:image href=" "/>
+<itunes:duration>1333.573</itunes:duration></item>
+<item><title>&amp;#;  x&#60;y  AT&#x26;T</title>
+<podcast:chapters url="" type="application/json+chapters"></podcast:chapters>
+<guid>dup</guid>
+<itunes:duration>35791:23:47</itunes:duration>
+<media:content type="audio/opus" duration="+60" url=" //example.com/ep304.txt " fileSize="-1"/>
+<media:content fileSize="20000.0" type="audio/ogg" isDefault="TRUE" medium="Audio" duration=""></media:content>
+<enclosure length="4294967296" type="audio/wav"/>
+<description>&#60;p&gt;&lt;/p&gt;aaa  &#x5E9;לו&#x5DD;100%&#x3C;br&gt;'single'</description>
+<link></link></item>
+<item><title>&#38;#;  &#38;amp</title>
+  <guid isPermaLink="true"></guid>
+  <pubDate>Tue, 09 Jul 2002 01:53:56 -0500</pubDate>
+  <dc:date>Fri, 24 Apr 1970 13:08:45 +0000 (Central European Standard Time)</dc:date>
+  <content:encoded><![CDATA[😀😀😀<div>&#x1F600]]>;&lt;/div&gt;</content:encoded>
+  <itunes:summary>&#60;div&gt;trailing &#x3C;/div&gt;ééé&lt;br /&gt;a
+a=b&amp;c=d</itunes:summary>
+  <itunes:subtitle>&amp;amp  tab	here  &#38;lt;b&#x26;gt;</itunes:subtitle>
+  <itunes:duration>1432</itunes:duration>
+  <enclosure url="https://cdn.example.com/a/b/c368.m4b" length="16384" type=" audio/mpeg"></enclosure></item>
+<item><description>&#x3C;p&gt;&lt;/p></description>
+  <itunes:image></itunes:image>
+  <pubDate>Sunday, 17 Jul 2501 23:11 +0530</pubDate>
+  <content:encoded><![CDATA[<br>F]]>olge 7: Über alles</content:encoded>
+  <media:group><media:content type="audio/aac" isDefault="false" duration="0" url="ftp://files.example.com/a/b/c97.torrent" medium="document" fileSize="2147483647"/></media:group>
+  <enclosure url="" length="9223372036854775807" type="audio/opus"/>
+  <title>&#38;#169;#64 – Interviewmulti
+line</title>
+  <guid isPermaLink="true">urn:uuid:3debad43</guid></item>
+<item><itunes:author>Item author</itunes:author>
+  <enclosure url="" length="123456789012345678"/>
+  <guid isPermaLink="true">urn:uuid:748b1b14</guid>
+  <pubDate>Thu, 03 Dec 2561 10:09:57 IST</pubDate>
+  <title>&amp;#0;&amp;#xA9;&lt;unknown&gt;1 &#60;2&#x3C;/unknown&gt;</title>
+  <media:content medium="video" type='application/ogg' url="ftp://files.example.com/189.jpg?dl=1.0" fileSize="" duration="01:00" isDefault="true"/>
+  <media:thumbnail url=""/>
+  <podcast:socialInteract uri="" protocol="activitypub"/>
+  <itunes:subtitle>  &#38;#xFFFF;&#38;#xA9;Episode 12  </itunes:subtitle>
+  <x:title xmlns:x="urn:x">Other namespace title</x:title></item>
+<item><media:description type="plain"><![CDATA[S01E7<br><div>&euro;</div>]]>  &amp;copy;&lt;img src=&quot;x&quot; alt="y"/>
+multi
+line</media:description>
+  <guid>  spaced guid  </guid>
+  <pubDate>1995-08-24T12:50:44.696</pubDate>
+  <description><![CDATA[	trailing <li>&#xA9;</li><li>é</li>]]></description>
+  <itunes:duration>62:03</itunes:duration>
+  <title>של&#1493;ם  plain words  &#x26;</title>
+  <enclosure url="ftp://files.example.com/ep383.xyz#t=10" length="4294967296" type="audio/x-m4a"/>
+  <media:content url="HTTPS://EXAMPLE.COM/dir.with.dots/ep124.oga" type='image/png' isDefault="false" fileSize="12" medium="document" duration="2147483648"/></item></channel></rss>

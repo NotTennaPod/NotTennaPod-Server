@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><image><url></url><title>Image title</title><link>https://example.com/img-link</link></image>
+<atom:link title='' href="https://example.com/pay" type="text/html" rel=""/>
+<itunes:subtitle>
+trailing   </itunes:subtitle>
+<item><media:content type="unknown" medium="video" duration="1.5" fileSize="123456" url='//example.com/a/b/c319.ts'/> <link> https://e.com/x </link> <title><![CDATA["quoted"
+&#169;
+&amp;]]></title> <guid isPermaLink="true">
+</guid> <description>&lt;br&gt;</description> <pubDate>Sat Jan 22 08:40:33 2011</pubDate> <podcast:chapters url="" type="application/json+chapters"/> <enclosure url="//example.com/a/b/c200.MP3#t=10" length=' 20000' type="audio/mp3"/> <itunes:subtitle> </itunes:subtitle> <itunes:duration>9205.627</itunes:duration></item>
+<item><description><![CDATA[<p>&amp</p><BR><img src="x.png">]]></description> <media:content fileSize='20000 ' duration="2147483" type="audio/flac" url="https://example.com:8443/e p93.opus" isDefault="1" medium='Audio'/> <enclosure length="9007199254740993" type='Audio/MPEG'/> <link> https://e.com/x </link> <title>trailing  &#x26;apos;a&#x26;apos; مرحبا</title> <itunes:duration>76:42</itunes:duration> <media:content fileSize="9223372036854775808" type='text/plain' medium='image' duration="3600"></media:content> <itunes:image href=""/> <itunes:summary>&#13;
+'single'</itunes:summary> <guid isPermaLink="true">
+</guid></item>
+<description></description>
+<link></link>
+<link xmlns="http://www.w3.org/2005/Atom" length="abc" href="https://example.com/pay" type="audio/mpeg" rel=""/>
+<atom:link rel="related" href="https://example.com/"/>
+<lastBuildDate>x, 	14 Jan 1973 13:21:16 -0800</lastBuildDate>
+<atom:link length='12' type="application/rss+xml" href="https://xn--caf-dma.example/e p331.3gp" title="Café" rel='Next'/>
+<title>a=b&amp;c=d
+tab	here
+a > b</title>
+<dc:creator>DC Creator</dc:creator></channel> </rss>

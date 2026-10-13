@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link title="Café" rel="self" length='20000' type="application/xml+xhtml" href="https://example.com/feed?page=2"></atom:link> <atom:link href="https://example.com/alt.xml" type="application/atom+xml" title="MP3 feed" rel="payment"/> <description><![CDATA[
+100%multi
+line<br>aaaaaaa😀😀	&#0;<li>&lt</li>éééééé]]></description> <atom:link href="https://example.com/alt.xml" rel="Next" title="Alternate" length="20000"/> <comments>https://example.com/c</comments> <language></language> <itunes:subtitle>	&#60;span&gt;&#38;&#60;/span>	</itunes:subtitle> <title><![CDATA[trailing  &copy;]]></title> <link> https://example.com/ </link> <atom:link rel="alternate" title="Alternate" type="audio/mpeg" href="https://example.com/feed?page=2" length="abc"></atom:link> <itunes:image href=''></itunes:image> <podcast:funding url="">Support us</podcast:funding> <itunes:author></itunes:author> <item><pubDate>Wed, 01 Aug 2227 23:15 -1200</pubDate> <title><![CDATA['single'  <em>[x]</em>  http://example.com/?a=1&b=2]]></title> <guid isPermaLink="true"> </guid> <enclosure url="https://example.com/a.b/a/b/c160.m4v" length="2e5" type="audio/"/> <content:encoded><![CDATA[&#xD800;<br>]]></content:encoded> <enclosure url='' length="52428800" type="audio"/></item> <item><description><![CDATA[  a
+
+b<div>sep<]]>/div>&lt;p&gt;Episode 7&lt;/p&gt;😀😀😀😀&lt;hr/></description>
+<itunes:duration>1:60:60</itunes:duration>
+<guid isPermaLink='false'> </guid>
+<pubDate>1993-10-02T11:38:29 (Central European Standard Time)</pubDate>
+<enclosure length="1,000,000" type="application/pdf"/>
+<media:content isDefault="TRUE" medium='audio' duration="2147483" fileSize="123456" type="audio/mpeg; charset=binary"/>
+<itunes:subtitle><![CDATA[a=b&c=d&#xFFFF;]]></itunes:subtitle>
+<title>مرح&#x628;ا
+第375集</title></item> <item><pubDate>Mon, 26 Sep 1983 23:47:42 +0100 2024</pubDate>
+<enclosure length="4294967296" type="application/json"/>
+<description><![CDATA[ééé]]></description>
+<x:title xmlns:x="urn:x">Other namespace title</x:title>
+<guid isPermaLink="true"></guid>
+<itunes:duration>9656.360</itunes:duration>
+<media:description></media:description>
+<title>a&#13;
+b Line&lt;br&gt;break</title></item> <item><enclosure url="https://xn--caf-dma.example/154.m3u8?auth=yes" length="+20000" type="image/*"/> <itunes:image href="https://example.com/ep.jpg"/> <podcast:socialInteract protocol="activitypub"/> <itunes:duration>3723.5</itunes:duration> <pubDate>2006-11-17T11:02:59</pubDate> <guid isPermaLink="false">  spaced guid  </guid> <description><![CDATA[&#x;]]></description> <title>&#x26;#xA9;
+&amp;#128512;</title> <link> https://e.com/x </link></item></channel> </rss>

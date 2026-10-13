@@ -1,0 +1,11 @@
+﻿<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="en">
+<itunes:author>Jane Doe</itunes:author><icon></icon><itunes:summary><![CDATA[  padded  ]]></itunes:summary><link href="https://example.com/pay" title="MP3 feed" type="application/atom+xml" length="20000" rel="last"/><link href="https://example.com/pay" rel="related"/><id>urn:x</id><title type="plain"> "quoted"  </title><subtitle type="plain">&lt;p>S01E7&lt;/p>a
+  b</subtitle><entry><link type="" rel="Next" href="https://example.com/"/>
+  <id>tag:x,2020:1</id>
+  <updated>16 Sep 0001 21:56:21 -0000</updated>
+  <itunes:image href="https://example.com/e.jpg"/>
+  <link rel='last' href="https://example.com/a.b/café/273.OGG" title="" type="application/atom+xml"/>
+  <title><![CDATA[a > b
+AT&T
+back\slash]]></title></entry><entry><published>Fri, 31 Feb 2498 02:25 +0530</published> <itunes:duration>8035.577</itunes:duration> <updated>Day1, 1974-05-08</updated> <title type="plain"><![CDATA[café Episode 12]]></title> <link type="application/rss+xml" title="Alternate" rel="self"/> <id> raw </id> <link length="20000" href="https://example.com/alt.xml" rel="archives" title="MP3 feed"/></entry>
+</feed>

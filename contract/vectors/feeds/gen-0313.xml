@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="EN-us"><it:image href=""/><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Episode 12</div></title><author><name></name></author><subtitle type="plain">&lt;BR&gt; &#38;#169;&#xE9;éé&#60;p&gt;&#x26;nbsp;&#60;/p>&#x3C;div>"quoted"&lt;/div>&#13;
+back\slash&lt;br&gt;&#x3C;img&gt;</subtitle><id> raw </id><entry><author><name>Entry author</name></author><title type='html'>م&#1585;حبا &#x3C;P&gt;&amp;lt;b&#x26;gt;escaped&#x26;lt;/b&amp;gt;&#x3C;/P></title><it:image href="https://example.com/e.jpg"/><published>
+1987-11-14T18:09:25.49618273+00:00	</published><id> raw </id><updated>1989-09-18T05:27:51 CET</updated></entry><entry><author><name>Entry author</name></author>
+<link href="HTTPS://EXAMPLE.COM/226.OGG" title="Café" length="12"/>
+<title type="text"><![CDATA[&quot;q&quot;]]></title>
+<x:foo xmlns:x="urn:x"><title><![CDATA[Nested title]]></title></x:foo>
+<link title="Alternate" rel=""/>
+<link title="Alternate" length="20000" rel="hub" href="https://example.com/alt.xml"/>
+<podcast:transcript type="application/x-subrip"/><podcast:transcript url="" type="text/html"/>
+<id> raw </id>
+<published>Thu, 27 Jul 2017 19:53 +0945</published></entry><entry><it:duration>0.5</it:duration>
+<title>&amp;#65;&#x26;#66;</title>
+<link title="" rel='next' href="https://example.com/pay" length="abc" type="application/rss+xml"/>
+<summary type="text"></summary>
+<updated>2003-08-20+0945</updated>
+<link length="9223372036854775808" rel="last" title='MP3 feed'/>
+<id>
+id
+</id>
+<it:image href="https://example.com/e.jpg"/></entry><entry><media:content isDefault='true' url="ftp://files.example.com/ep169.m3u8" type="x-audio/mpeg" fileSize="-0" duration="59"></media:content>
+<link type="audio/mpeg" length="20000" href="https://example.com/feed?page=2" title=""/>
+<id>
+id
+</id>
+<published>Thu, 28 September 2552 05:10:08</published>
+<updated>Thu, 	29 Dec 2575 10:27:51 -0800</updated>
+<author><name>Entry author</name></author>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">مرحبا caf&#233;</div></title></entry><entry><content>  padded  &lt;div&gt;&amp;#x1F600;&lt;/div>&lt;BR&gt;&lt;p&gt;&#60;3 &#60;3&#60;/p&gt;&lt;div&gt;Folge 7: &#xDC;ber alles&#60;/div&gt;</content>
+  <link rel="payment" href=""></link>
+  <it:duration>8453.550</it:duration>
+  <id>urn:uuid:1</id>
+  <link title='MP3 feed' length="20000" rel="Next" type=""/>
+  <updated>0001-05-08T16:23:27+1400</updated>
+  <title type="HTML"><![CDATA[<blockquote>multi
+line</blockquote>]]></title>
+  <link rel='next' href="" title="" type="" length="abc"></link></entry>
+</feed>

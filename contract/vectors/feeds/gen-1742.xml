@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <logo>https://example.com/logo.png</logo>
+  <author><name>  Bob  </name></author>
+  <subtitle type="html">   spaced    &#60;BR&gt;&lt;p<![CDATA[>&#0;</p>
+tab	here  éééé<div>😀</div>]]></subtitle>
+  <updated>08 Mar 2010 03:31 +0200</updated>
+  <author><name>Ann</name></author>
+  <it:author>Jane Doe</it:author>
+  <title type="html"><![CDATA[<sub>Episode 12</sub>  <b>&apos;a&apos;</b>  <B>multi
+line</b>]]></title>
+  <id>urn:x</id>
+  <it:image href="https://example.com/ai.jpg"/>
+  <author><name>  Bob  </name><email>a@example.com</email></author>
+  <entry><summary></summary>
+  <it:duration>3.4028235e38</it:duration>
+  <id>urn:uuid:1</id>
+  <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">שלום</div></content></entry>
+  <entry><content>😀<![CDATA[😀😀😀]]></content>
+<updated>Sun, 31 Aug 2489 00:49:21 +0200</updated>
+<id> raw </id>
+<title><![CDATA[&quot;q&quot;
+&unknown;
+#902 – Interview]]></title></entry></feed>

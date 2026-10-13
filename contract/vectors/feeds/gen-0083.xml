@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xml:lang=""><subtitle type='html'>&lt;p&gt;café&#x3C;/p&gt; leading&lt;p&gt;&#60;/p&gt;&lt;br/>aaaaaaaa&lt;img src="x" alt="y"/>&#13;
+#hash&#60;div&gt;Folge 7: &#xDC;ber alles&#x3C;/div></subtitle>
+<link rel="hub" length="12" title="" type='application/xhtml+xml' href="https://example.com/"/>
+<link rel="last" href="https://example.com/feed?page=2" type="application/xml+xhtml"/>
+<title>​</title>
+<link rel="self" href='https://example.com/alt.xml'/>
+<link length="abc" type="text/html" href="https://example.com/alt.xml" rel="self"/>
+<id>https://example.com/feed</id></feed>

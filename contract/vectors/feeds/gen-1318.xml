@@ -1,0 +1,20 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:psc="http://podlove.org/simple-chapters" xml:lang=""><icon>https://example.com/icon.png</icon>
+  <link rel='Next' type="application/atom+xml" title=""></link>
+  <podcastindex:funding xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url="https://example.com/give">Give</podcastindex:funding>
+  <author><name>C&#x26;D</name></author>
+  <logo></logo>
+  <title type="plain">
+Line&#60;br>break&lt;section>"quoted"&lt;/section&gt;&#60;dfn&gt;&#38;#xFFFF;&lt;/dfn&gt;  </title>
+  <itunes:author>Tom &#38; Jerry &lt;3</itunes:author>
+  <entry><updated>Mon, 24 Apr 2017 22:43:25 CEST</updated>
+  <title type="HTML"><![CDATA[#has]]>h  &#60;p&gt;Para&#60;/p></title>
+  <summary type="html"></summary>
+  <link type="application/atom+xml" href="//example.com/e p152.wma" rel="hub" title="MP3 feed"/>
+  <published>2002-07-20T13:35:49.679+0000</published>
+  <id>
+id
+</id></entry>
+  <entry><content>
+
+Episode 12&#60;p>&lt;/p>&lt;img src="x.png"&gt; cover&lt;br>&#x3C;div&gt;&#38;lt;b&#38;gt;escaped&#38;lt;/b&#38;gt;&lt;/div> </content><title>&#60;del&gt;plain words&lt;/del&gt;</title><id> raw </id><published>Thu, 26 Apr 1601 04:25:35 +14:00</published><itunes:duration>168:16</itunes:duration><link length="abc" type="application/xml+xhtml" href="https://example.com/feed?page=2" title="" rel=""/><updated>Tue, 29 May 2469 19:52 +0100</updated></entry>
+</feed>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:m="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom">
+<channel><image><url></url></image><itunes:summary><![CDATA[
+&amp;]]></itunes:summary><podcast:funding url=''>&lt;b>x&lt;/b&gt;</podcast:funding><at:link rel="payment" type="application/atom+xml" title='MP3 feed' href='https://example.com/alt.xml'/><title>&#x26;quot;q&amp;quot;  &amp;#128512;</title><description>&#x3C;li>&#x26;quot;q&#x26;quot;&lt;/li>&#60;p&gt;&#38;#xFFFF;&#x3C;/p>&#233;&#xE9;é&amp;amp;&#x3C;br>&lt;p&gt;​&lt;/p></description><itunes:image href="https://example.com/it.jpg"/><itunes:subtitle>&amp;amp;</itunes:subtitle><link>https://example.com</link><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><at:link href="https://example.com/alt.xml" type="application/xhtml+xml" rel="Next" title="Café"/><item><title><![CDATA[a < b]]></title>
+<guid isPermaLink="false">a&amp;b</guid>
+<link> https://e.com/x </link>
+<pubDate>Sunday, 25 Jan 2024 23:35 +0945</pubDate>
+<description>	café  Tom &amp; Jer<![CDATA[ry <3 &nbsp;]]></description>
+<itunes:duration>596:31:23.648</itunes:duration></item><item><description><![CDATA[😀aa#7 – Interview]]></description>
+<itunes:duration>-0</itunes:duration>
+<enclosure url="ftp://files.example.com/café/120.ogx" length=" 20000" type='x-audio/mpeg'/>
+<guid>https://example.com/item/43930</guid>
+<title><![CDATA[مرحبا
+<ol><li>a < b</li></ol>
+<ol><li> leading</li></ol>]]></title>
+<at:link type='' href="https://example.com/" title='Café' length="abc" rel=''/></item><item><title><![CDATA[<3 <3&unknown;trailing ]]></title>
+<guid isPermaLink="true">
+</guid>
+<link></link>
+<pubDate>_, Sat, 18 Jun 1994 01:39:54 -0800</pubDate>
+<description>&#233;éé
+😀 é&lt;div&gt;&amp;lt&lt;/div>	"quoted"</description>
+<itunes:duration>-0</itunes:duration>
+<enclosure url="http://example.org/91.mp3.zip" length="-0" type="x-audio/mpeg"/></item></channel>
+</rss>

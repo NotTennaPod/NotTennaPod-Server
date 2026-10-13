@@ -1,0 +1,20 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link></link>
+  <atom:link title="MP3 feed" href="https://example.com/feed?page=2" rel="hub" length="abc" type=""/>
+  <title>S01E944</title>
+  <image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+  <itunes:image/>
+  <atom:link type="application/atom+xml" title="Café" href="https://example.com/feed?page=2" rel="first" length="20000"/>
+  <item><media:description xmlns:media="http://search.yahoo.com/mrss/" type='html'><![CDATA[<li>café</li>]]></media:description> <media:content xmlns:media="http://search.yahoo.com/mrss/" url="HTTPS://EXAMPLE.COM/ep176.wav" isDefault="false" duration="0" type="application/json" medium="image" fileSize="-16384"/> <enclosure length="" type="video/x-matroska"/> <media:content xmlns:media="http://search.yahoo.com/mrss/" isDefault="true" type="audio/mpeg; charset=binary" duration="2147483" fileSize="16385" url="https://example.com/a.b/a/b/c103.caf" medium='image'></media:content> <media:content xmlns:media="http://search.yahoo.com/mrss/" isDefault="false" medium='audio' fileSize="9007199254740992" duration="2147483648" type="x-audio/mpeg" url="https://example.com/a.b/a/b/c163"/> <title>&amp;Lt; #234 – Interview &amp;Lt;</title> <guid>Café-guid</guid> <itunes:duration>1:30 </itunes:duration> <link>https://example.com/ep</link> <pubDate>Tuesday, 23 Mar 1993 06:45 +0100</pubDate> <description>back\slash&amp;;&#60;br>&#60;p>&lt;/p>
+&#38;#xFFFF;&lt;img&gt;</description></item>
+  <item><guid isPermaLink='true'>https://example.com/item/75375</guid><media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="-1" isDefault="TRUE" type="application/x-bittorrent" duration="2147483648" url="ftp://files.example.com/a/b/c181.ts"/><media:description xmlns:media="http://search.yahoo.com/mrss/" type="html"> ​
+😀&#60;img src="x" alt="y"/&gt;</media:description><itunes:author>Item author</itunes:author><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/th.jpg"/><pubDate>Fri 10 Feb 1995 14:27:56 -0000</pubDate><description></description><media:content xmlns:media="http://search.yahoo.com/mrss/" type="text/html" isDefault="true" medium="Audio" url="https://xn--caf-dma.example/165.html"/><enclosure url="https://cdn.example.com/ep298.webm" length="00020000" type="application/octet-stream"/><media:content xmlns:media="http://search.yahoo.com/mrss/" duration="01:00" medium="audio" fileSize="16384" isDefault="1"/><title><![CDATA[&#0; 1 <2 &#xA9;]]></title><link>https://example.com/ep</link></item>
+  <item><media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="12" url='http://example.org/e p15' isDefault="1" medium="image" type='application/json' duration="0060"/></media:group>
+  <itunes:image href=''></itunes:image>
+  <enclosure length="18446744073709551616" type=""/>
+  <title>&lt;img src="x.png"> coverFolge 901: Über alles</title>
+  <itunes:author>Item author</itunes:author>
+  <itunes:summary>😀&#13;
+back\slash&lt;br>&#x3C;/br&gt;</itunes:summary>
+  <guid isPermaLink="false"> </guid></item></channel>
+  </rss>

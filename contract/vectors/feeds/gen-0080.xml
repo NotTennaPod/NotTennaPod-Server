@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1252"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters"> <channel><description> &#x26;#128512;a > b&lt;br/&gt;aaaa
+&amp;amp;a&#13;
+b&lt;p>1 &lt;2&#60;/p&gt;&lt;hr/&gt;</description> <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/feed?page=2" rel="Next" title=""/> <title><![CDATA[Tom & Jerry <3  <b>Bold</b> title]]></title> <item><enclosure url="//example.com/café/168.html" length="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;"/><pubDate>Thu Dec 17 24:31:44 2195</pubDate><title>Episode 698 &#x3C;dfn&gt;&amp;#0;&lt;/dfn&gt;</title><link></link><dc:date>1988-01-10Central European Summer Time</dc:date></item> <item><enclosure url='ftp://files.example.com/a/b/c269.aif' length="9223372036854775808" type="audio"/>
+<enclosure url="https://example.com:8443/ep192.mp4?dl=1.0" length="-1" type=" audio/mpeg"/>
+<pubDate> 2024-01-02+0945  </pubDate>
+<guid isPermaLink="true">dup</guid>
+<media:group><media:content isDefault='TRUE' url="HTTPS://EXAMPLE.COM/346.aac?a=1&amp;b=2" fileSize="52428800" type="image/jpeg" medium="video" duration="+60"></media:content><media:content medium="Audio" duration='abc' isDefault="TRUE" url="https://example.com/a.b/221.m4b" type="application/ogg" fileSize="16383"/><media:content type='x-audio/mpeg' duration='2147483648' fileSize="2147483647" isDefault="false" medium="Audio"/></media:group>
+<description><![CDATA[<img src="x" alt="y"/><img src="x.png">ééé   leading
+
+&AMP;]]></description>
+<enclosure url='' length='2e5' type="audio/aac"/>
+<title><![CDATA[&AMP; #hash <B>&amp;amp;</b>]]></title></item> <item><enclosure url="https://cdn.example.com/café/50.torrent" length="2e5" type="text/html"/>
+  <media:group><media:content duration=' 60' fileSize="9007199254740991" type="application/pdf" isDefault="TRUE"/></media:group>
+  <link></link>
+  <description> a
+
+baaaa</description>
+  <guid isPermaLink="false"> </guid></item> <item><psc:chapters><psc:chapter title="&lt;b>x&lt;/b>" start='6164' href="" image='https://example.com/ch.png'/></psc:chapters> <enclosure length='' type="application/ogg"/> <link></link> <title><![CDATA[&m]]>dash;&#x26;hellip;</title> <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">aaaaaaTom &#38; Jerry &lt;3&#60;div&gt;&#31532;7&#38598;&#x3C;/div&gt;</content:encoded> <guid isPermaLink="true">urn:uuid:b891dd1d</guid> <pubDate>Friday, 20 Sep 2013 18:15</pubDate></item> <item><title>
+<![CDATA[&#8203;&amp&#8203; ]]></title><link> https://e.com/x </link><pubDate>0099-03-22T22:09:19 CET</pubDate><description>&#xE9;&#xE9;é&#60;li&gt;&#1513;&#1500;&#1493;&#1501;&#x3C;/li>&#x3C;img&gt;&lt;br>&lt;li>Tom &#38;amp; Jerry &amp;lt;3&lt;/li>&lt;div>&#38;#169;&#x3C;/div>&lt;img src=&quot;x" alt=&quot;y"/&gt;&amp;;&lt;br&gt;</description><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">  Tom &#38; Jerry &lt;3&lt;p&gt;Tom &#x26;amp; Jerry &amp;lt;3&#x3C;/p&gt;R&#38;D&#60;br></content:encoded><enclosure url="http://example.org/e p34.flac" length=" 20000" type="video/webm"></enclosure><media:content type='audio/wav' fileSize="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;" duration="9223372036854775807" medium="Audio" isDefault='false'/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" length="20000" rel="self" type="audio/mpeg" title="MP3 feed" href=""/></item> <language> EN-US </language> <atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="Alternate" rel="" length="20000" type="application/rss+xml" href="https://example.com/"></atom:link> <link></link></channel> </rss>

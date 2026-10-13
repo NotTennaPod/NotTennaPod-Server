@@ -1,0 +1,22 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url=''>&#60;b>x&lt;/b></podcast:funding> <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0">Support us</podcast:funding> <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url=""/> <description>&#60;hr></description> <atom:link type="application/xhtml+xml" title="MP3 feed" href="https://example.com/a.b/a/b/c287.avi" rel="" length="12"></atom:link> <atom:link title="" href='https://example.com/pay' rel="related" type="application/xhtml+xml"/> <title><![CDATA[&AMP;<img src="x.png"> cover<p>"quoted"</p>]]></title> <atom:link type="" href="https://example.com/pay" rel="archives" title="Café"/> <item><description>&lt;p&gt;&#x26;Lt;&#x3C;/p></description>
+  <enclosure length="00020000" type="application/octet-stream"/>
+  <pubDate>28 Oct 79 21:53 +0000</pubDate>
+  <itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Item author</itunes:author>
+  <podcast:socialInteract xmlns:podcast="https://podcastindex.org/namespace/1.0" protocol="activitypub"/>
+  <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&lt;p&gt;&#x3C;/p&gt; trailing 
+
+sep[x]&lt;br&gt;&amp;#0;&lt;p>&#x26;amp;&#x3C;/p>&lt;br>"quoted&quot;</content:encoded>
+  <itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&lt;div>&amp;#0;&lt;/div&gt;</itunes:summary>
+  <guid>  spaced guid  </guid>
+  <title>&lt;sup>&amp;apos;a&#x26;apos;&lt;/sup>  &amp;amp  #hash</title></item> <item><title><![CDATA[<code>Episode 12</code>  <article>&#;</article>  &amp;amp;]]></title>
+<guid isPermaLink="true">Café-guid</guid>
+<link></link>
+<description>
+
+&#x26;;&#60;li&gt;&apos;single&apos;&lt;/li&gt;	&amp;nbsp;éaaa&#60;BR&gt;&#x3C;BR&gt;</description>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&#x3C;li&gt;&amp;amp;amp;&#x3C;/li&gt;😀&lt;p&gt;&lt;3 &#x3C;3&#60;/p&gt;aaaaa  tab	here</content:encoded>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=''/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize='123456789012345678' medium="audio" url="HTTPS://EXAMPLE.COM/e p191.png" isDefault="false" duration="2147484" type="audio/aac"></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" medium="document" url="https://example.com:8443/e p93.opus" type="video" duration=" 60" fileSize='-0' isDefault='1'/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" type="application/octet-stream" url=" https://example.com:8443/dir.with.dots/ep68.m4b " fileSize="9007199254740993" medium="image"/></item></channel> </rss>

@@ -1,0 +1,15 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <icon>https://example.com/icon.png</icon>
+  <title type='html'><![CDATA[&#x1F600; Line<br>break &lt]]></title>
+  <subtitle><![CDATA[<br/>]]></subtitle>
+  <link rel='alternate' title="Alternate" length="12"></link>
+  <itunes:image href="https://example.com/ai.jpg"/>
+  <id>https://example.com/feed</id>
+  <updated>Thu, 18 Jun 1987 17:09:50 +0000 ()</updated>
+  <entry><content type="html">&lt;p&gt;&lt;/p&gt;</content>
+  <title><![CDATA[a < b]]></title>
+  <itunes:duration>121:09</itunes:duration>
+  <id>tag:x,2020:1</id>
+  <author><name>Entry author</name></author>
+  <link rel="first" href="" title="MP3 feed" type="text/html"/></entry>
+  </feed>

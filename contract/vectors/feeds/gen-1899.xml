@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:p2="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:at="http://www.w3.org/2005/Atom">
+  <channel><textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<item><guid isPermaLink="true"> </guid>
+  <link> https://e.com/x </link>
+  <pubDate>  Thu 16 Dec 1999 14:10:26 GMT-1200 (EEST)	</pubDate>
+  <itunes:summary>	&#x26;amp;</itunes:summary>
+  <enclosure length="123456789012345678" type="video/quicktime"></enclosure>
+  <description>&#60;br/&gt;&#128512;&#128512;  &#38;hellip;e&#769;&#60;BR&gt;</description>
+  <content:encoded></content:encoded></item>
+<item><title><![CDATA[<b>  <h6>&#x;</h6> <3 <3]]></title>
+  <itunes:subtitle><![CDATA[&amp; 100% Tom & Jerry <3]]></itunes:subtitle>
+  <guid isPermaLink="true"> </guid>
+  <itunes:image href=" "/>
+  <pubDate>2013-08-27T17:47:18  </pubDate>
+  <enclosure url="//example.com/a/b/c200.MP3#t=10" length="9007199254740992" type="audio/mp3"/>
+  <description><![CDATA[ &quot;q&quot;]]></description></item>
+<item><title/>
+<guid isPermaLink="true">
+</guid>
+<link> https://e.com/x </link>
+<pubDate>2011-02-16T11:09:52.886Central European Summer Time</pubDate>
+<content:encoded><![CDATA[&quot;q&quot;<br>]]></content:encoded>
+<itunes:image href="https://example.com/ep.jpg"/>
+<itunes:duration>
+45:00
+</itunes:duration>
+<enclosure length="9007199254740992"/></item>
+<language> EN-US </language>
+<description></description>
+<itunes:author>Tom &#x26; Jerry &#60;3</itunes:author>
+<at:link length="12" rel="Next" type="application/xml+xhtml" href="https://example.com/pay"/>
+<itunes:summary><![CDATA[  spaced  <br><li>&euro;</li><li>&lt</li> &lt<br/>]]></itunes:summary>
+<at:link length="abc" type="application/rss+xml" rel="last" href="https://example.com/"></at:link>
+<itunes:new-feed-url>https://new.example.com/feed</itunes:new-feed-url>
+<at:link length='abc' href="https://example.com/feed?page=2" type="application/xhtml+xml" rel="archives"/>
+<lastBuildDate>Fri, 26 Jun 2122 12:41</lastBuildDate>
+<title>&amp;apos;a&#x26;apos;</title></channel>
+  </rss>

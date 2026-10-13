@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0"><channel><link>https://example.com</link> <language></language> <itunes:image href=' '/> <podcast:funding url="">&#60;b>x&#x3C;/b></podcast:funding> <description>&lt;li&gt;cr
+lf&lt;/li&gt;</description> <image><url>https://example.com/img.png</url></image> <podcast:funding url=""/> <item><title>  padded  
+&lt;h6&gt;'single'&lt;/h6></title>
+  <pubDate>Wednesday, 20 November 0999 08:57:18</pubDate>
+  <media:group><media:content medium="document" duration="0" url="https://example.com/a.b/379.mov" fileSize="1,000,000" type="unknown"/></media:group>
+  <enclosure length="16383" type="video/quicktime"/>
+  <link> https://e.com/x </link>
+  <sc:chapters xmlns:sc="http://podlove.org/simple-chapters"><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" href='https://example.com/ch' start='104:20' title='Intro'/><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" href="https://example.com/ch" title="😀" start="71:38" image="https://example.com/ch.png"/><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" title="Café &amp;amp; more" href="https://example.com/ch" start='105:03'/><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" start="73:22" title=""/><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" title="Intro" start="1:30:00"/></sc:chapters>
+  <itunes:summary></itunes:summary>
+  <enclosure url="https://example.com/a.b/a/b/c227.aspx" length="20000.0" type=""/></item> <item><enclosure url="https://xn--caf-dma.example/ep237.3gp?dl=1.0" length="52428800" type="video/webm"/>
+  <link> https://e.com/x </link>
+  <description></description>
+  <title><![CDATA[a > b
+<img src="x.png"> cover]]></title>
+  <guid isPermaLink="true">urn:uuid:ed184843</guid>
+  <pubDate>2383-11-28T09:45:39.536Z</pubDate></item> <item><title><![CDATA[&copy;
+<i>&unknown;</i>
+&quot;q&quot;]]></title>
+<link> https://e.com/x </link>
+<description>&#60;li&gt;#hash&lt;/li&gt;</description>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">Friday, 10 Jan 14 04:55:34</dc:date>
+<itunes:summary></itunes:summary>
+<itunes:subtitle>T<![CDATA[om &amp; Jerry &lt;3  &mdash;]]></itunes:subtitle>
+<itunes:duration>1.2e2</itunes:duration>
+<enclosure length="1" type="audio/wav"/>
+<media:group><media:content medium="image" fileSize='18446744073709551616' type='x-audio/mpeg' duration="2147483"/><media:content isDefault='false' type="video/x-matroska" fileSize="16383"/><media:content duration='2147484' type="audio" url="//example.com/347.png"/></media:group>
+<media:thumbnail/></item> <item><enclosure url="ftp://files.example.com/ep8.flac" length="1,000,000"></enclosure> <enclosure url="https://example.com:8443/dir.with.dots/ep394.OGG" length="２０００００" type="audio/mpeg; charset=binary"/> <podcast:transcript url='' type="text/plain"/> <guid isPermaLink="true">Caf&#233;-guid</guid> <enclosure length="16383" type="x-audio/mpeg"/> <media:content medium="image" type="audio/opus" fileSize='123456' duration="2147484"/> <title><![CDATA[<sup>​</sup> AT&T]]></title> <sc:chapters xmlns:sc="http://podlove.org/simple-chapters" version="1.2"><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" image="https://example.com/ch.png" href="" title="Café &amp;amp; more" start="596523:14:07.999"/><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" image="https://example.com/ch.png" title="😀" start="01:07:55.051"/></sc:chapters> <description>&#x3C;p&gt;&amp;quot;q&#x26;quot;&lt;/p>&lt;li&gt;&amp;#xA9;&lt;/li>&lt;li>&#x26;#xD800;&lt;/li&gt;</description> <media:content url="HTTPS://EXAMPLE.COM/dir.with.dots/ep339.m4b?auth=yes" duration='+60' type="audio/wav" medium="video" fileSize='00020000'/> <pubDate>Wed,09 Aug 1995 22:49:14 +0100</pubDate> <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">Mon,   20 Feb 1899 21:07:58 +0200</dc:date></item></channel>
+</rss>

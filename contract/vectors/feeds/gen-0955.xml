@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><title>&amp;#;{json: 1}&#60;3 &lt;3</title>
+<itunes:author>第一</itunes:author>
+<item><title>1 &#60;2 &#38;#x;</title>
+<guid isPermaLink="false">
+</guid>
+<link></link>
+<pubDate>Thu, 03 Sept 1974 11:03:01 +0000</pubDate>
+<description>&lt;br/>&#60;div&gt;[x]&#60;/div&gt;&lt;br&gt;é&#x3C;br&gt;aaaa</description>
+<itunes:duration>-5</itunes:duration>
+<enclosure url="" type="audio/mp4"/>
+<enclosure url='https://example.com/a.b/café/325.ogg' length="52428800" type='video/quicktime'/>
+<enclosure url="https://user:pass@media.example.net/e p327.avi" length='16383' type="audio/x-m4a"/>
+<media:content isDefault="TRUE" medium="image" url="https://cdn.example.com/dir.with.dots/ep254.mov?file=x.mp3" type="image/png" fileSize='0x4E20' duration=" 60"/>
+<media:content type="audio/mp3" fileSize="52428800" duration='3600' medium="video"></media:content>
+<media:content fileSize='9007199254740992' type="audio/mp3" duration="1" isDefault='1'/></item>
+<item><content:encoded><![CDATA[第7集<br>]]></content:encoded>
+<itunes:summary>&#x3C;li&gt;&#x26;quot;q&amp;quot;&lt;/li&gt;</itunes:summary>
+<enclosure url="" length="18446744073709551616" type="application/octet-stream"/>
+<itunes:duration>-0</itunes:duration>
+<pubDate>x, Thu Dec 31 23:18:06 2158</pubDate>
+<enclosure url="https://user:pass@media.example.net/café/224.avi" length="9223372036854775807" type="audio/x-m4a"></enclosure>
+<title>Tom &#x26;amp; Jerry &#38;lt;3&lt;dfn>&#x26;&lt;/dfn>100%</title>
+<enclosure url="http://example.org/e p58.mkv" length="123456789012345678" type="application/json"/>
+<description><![CDATA[  &mdash;]]></description>
+<guid isPermaLink="true">Café-guid</guid>
+<link> https://e.com/x </link></item>
+<itunes:summary>&lt;p&gt;&amp;#169;&#x3C;/p>&#60;li>a
+  b&#x3C;/li>&lt;p/&gt;</itunes:summary>
+<link></link>
+<itunes:image href=" "/>
+<media:thumbnail/>
+<description>&lt;p>&amp;;&lt;/p&gt;</description></channel> </rss>

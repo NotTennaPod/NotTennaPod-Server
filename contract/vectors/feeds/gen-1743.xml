@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rss version="0.92" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><item><i:duration>45</i:duration>
+<content:encoded>&#x3C;div&gt;😀&lt;/div&gt; &amp;lt;b&amp;gt;&lt;p&gt;&#x26;amp;amp;&lt;/p&gt;&#60;p>{json: 1}&#x3C;/p>Folge 7: Über alles&#60;br></content:encoded>
+<link>https://example.com/ep</link>
+<description><![CDATA[<img src="x" alt="y"/>]]></description>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep66.aif" length="16383" type="audio/opus"/>
+<title><![CDATA[multi
+line
+&apos;a&apos;
+"quoted"]]></title>
+<guid isPermaLink="false">a&#x26;b</guid>
+<pubDate>Tue, 31 Jan 2020 16:61:20 -0000</pubDate></item> <item><description><![CDATA[<br>😀😀 &quot;q&quot;sep<br><li>a
+  b</li>]]></description>
+  <guid>urn:uuid:a735db59</guid>
+  <i:image href=" https://e.com/i.png "/>
+  <enclosure length="2147483647" type="audio/mp3"/>
+  <pubDate>2021-03-090000</pubDate>
+  <title><![CDATA[<p>Para</p>]]></title></item> <description></description> <link> https://example.com/ </link> <title>	&amp;lt&#60;p&gt;&amp;amp&#60;/p&gt;
+</title> <textInput><title>Search</title><link>https://example.com/search</link></textInput> <language> EN-US </language> <atom:link rel="archives" title="" length='12' type="audio/mpeg" href=""/> <i:owner><i:name>Owner</i:name><i:email>o@example.com</i:email></i:owner></channel>
+  </rss>

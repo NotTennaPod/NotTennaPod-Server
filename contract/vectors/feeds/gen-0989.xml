@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom"><channel xmlns:media="http://search.yahoo.com/mrss/"><link> https://example.com/ </link>
+  <itunes:author><![CDATA[😀 Pod]]></itunes:author>
+  <a10:link href='https://example.com/alt.xml' type="application/xml+xhtml"/>
+  <itunes:image href=""/>
+  <link xmlns="http://www.w3.org/2005/Atom" type='text/html' rel="" title="MP3 feed" href=""/>
+  <a10:link rel="last" type="application/xml+xhtml" length="9223372036854775808" href="https://example.com/feed?page=2"/>
+  <title><![CDATA[ &#x1F600;
+R&D
+مرحبا ]]></title>
+  <a10:link href="https://example.com/alt.xml" type="application/xml+xhtml" length='12' title="Café"/>
+  <language>de-DE</language>
+  <item><title>'single&apos;</title>
+  <guid isPermaLink="false">https://example.com/item/32575</guid>
+  <link> https://e.com/x </link>
+  <description>Episode 12</description>
+  <itunes:subtitle><![CDATA[
+&amp;amp;
+&lt;b&gt;escaped&lt;/b&gt;
+{json: 1}	]]></itunes:subtitle>
+  <itunes:image/>
+  <enclosure url="http://example.org/dir.with.dots/ep259.torrent?dl=1.0" length="-1" type="video/x-matroska"/>
+  <media:content medium="video" duration="9223372036854775807" url="HTTPS://EXAMPLE.COM/ep130.amr" isDefault='1' fileSize='4294967296' type="application/pdf"/>
+  <media:description></media:description>
+  <p2:chapters url="" type="application/json+chapters"/></item>
+  <item><guid isPermaLink="false">https://example.com/item/9268</guid>
+<link>https://example.com/ep</link>
+<pubDate>27 Jul 2481 22:48:39 +0945
+</pubDate>
+<description>&#x3C;br /&gt; leading&#x26;euro;&#38;#;&#x3C;br>&lt;br />&amp;#;&amp;AMP;	&#x26;#128512;</description>
+<itunes:duration>16130</itunes:duration>
+<enclosure url='HTTPS://EXAMPLE.COM/dir.with.dots/ep393.wma' length="2e5" type="image/png"/>
+<enclosure length="２０００００" type="Audio/MPEG"/></item>
+  <item><guid isPermaLink="false">https://example.com/item/27606</guid><link>https://example.com/ep</link><itunes:subtitle>&lt;h6>&#x26;#65;&#x26;#66;&#60;/h6&gt;</itunes:subtitle><description>&#x3C;p&gt;&lt;p&gt;Para&lt;/p&gt;&lt;/p>&#x3C;BR&gt;😀&#128512;😀&#128512;é&#233;é  茶</description><title><![CDATA[&unknown;]]></title><itunes:duration>00:00:01.999999</itunes:duration><enclosure length="18446744073709551616" type="text/plain"/><pubDate>Fri, 27 Dec 14 06:38:54 +0000</pubDate></item></channel>
+  </rss>

@@ -1,0 +1,54 @@
+<!DOCTYPE rss [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:at="http://www.w3.org/2005/Atom">
+<channel><textInput><title>Search</title><link>https://example.com/search</link></textInput> <title>#114 – Interview</title> <language>fr
+</language> <dc:creator>DC Creator</dc:creator> <link>https://example.com</link> <image><url>https://example.com/img.png</url></image> <description>&lt;img src="x.png&quot;&gt;multi
+lineaaaaaaa&#60;hr>&#x3C;br></description> <item><title>&lt;div>&#x3C;p>  spaced  &#x3C;/p&gt;&#60;/div> &#60;b&gt;sep&lt;/b> plain words</title> <pubDate>Wednesday, 18 Sep 56 02:06 +0945</pubDate> <description><![CDATA[😀😀😀  &#169;<p>'single'</p>]]></description> <dc:date>
+08 Sep 52 16:21:12 +0000	</dc:date> <enclosure url="https://example.com/a.b/a/b/c218.ogx" length="16385" type="audio/mp3"/> <enclosure url="" length="9223372036854775807" type="application/octet-stream"></enclosure> <enclosure length="1" type="video/x-matroska"/></item> <item><title><![CDATA[<p>Para</p> مرحبا <tt>a=b&c=d</tt>]]></title><guid isPermaLink="false">  spaced guid  </guid><link>https://example.com/ep</link><pubDate>&#13;
+2251-04-14 AM
+</pubDate><description>&lt;p&gt;&#38;lt&#60;/p>&lt;div&gt;&#x3C;p>Para&lt;/p>&lt;/div&gt;😀😀😀&#x1F600;</description><content:encoded>&#60;img>&amp;lt;<![CDATA[b&gt;]]></content:encoded><media:content url="http://example.org/70.mkv" fileSize="-9223372036854775808" medium="image" duration="2147483" type="audio/mpeg; charset=binary"/><media:content type='application/x-bittorrent' fileSize='-0' medium="video" duration="2147483" isDefault='false' url="http://example.org/ep151.m4v"/><media:content medium="document" url="https://example.com:8443/ep170.webm" fileSize="-16384" isDefault="TRUE" type="image/png" duration="abc"/></item> <item><title> &apos;single' "quoted"  </title>
+<description><![CDATA[<div>&amp;</div><p>  spaced  </p><li>{json: 1}</li><li> </li> "quoted"<div>مرحبا</div>&amp<div>S01E7</div>]]></description>
+<enclosure length="16385" type="video"/>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep369.ts" length="٢٠٠٠٠" type="AUDIO/MPEG"/>
+<guid> </guid>
+<!-- comment --><?pi data?>
+<media:group><media:content url="//example.com/ep276.txt?file=x.mp3" isDefault="true" fileSize="-9223372036854775808" medium="image" duration='0060' type="video"/><media:content duration="-5" type="image/jpeg" fileSize="9223372036854775807" url="https://user:pass@media.example.net/ep132.html#t=10" isDefault="1" medium="image"/><media:content type="video/x-matroska" medium="video" fileSize='00020000' duration="1"/></media:group>
+<pubDate>2001-04-25T03:50:04UT</pubDate>
+<enclosure length="9007199254740992" type="audio/"/>
+<content:encoded><![CDATA[ café]]></content:encoded></item> <item><enclosure url='ftp://files.example.com/a/b/c18.mpga' length="20000.0" type='image/png'/>
+<title/>
+<guid>Café-guid</guid>
+<description>&#x3C;p&gt; leading&#x3C;/p>&#x3C;br>&lt;/br&gt;😀😀😀😀茶&#x3C;br&gt;&amp;#0; é
+&#x8336;&#x3C;div&gt;&amp;copy;&#x3C;/div&gt;</description></item> <item><title>&#60;div>&#60;p>e&#x301;&lt;/p&gt;&lt;/div>    padded    &#60;span style="color:red">​&lt;/span></title>
+<link>https://example.com/ep</link>
+<pubDate>2010-02-31</pubDate>
+<description> &#38;euro;</description>
+<enclosure url="https://xn--caf-dma.example/e p336.MP3" length="-0" type="audio"/>
+<media:content medium='Audio' isDefault="1" type="audio" duration="3600" url="http://example.org/dir.with.dots/ep380.php?a=1&amp;b=2" fileSize='123456789012345678'/></item> <item><dc:date>Sat. 27 Jun 2023 19:27:09 GMT-0800 (Greenwich Mean Time)</dc:date>
+<enclosure url="HTTPS://EXAMPLE.COM/e p171.mkv?a=1&amp;b=2" length='-0' type='application/octet-stream'/>
+<enclosure length="２０００００" type="x-audio/mpeg"/>
+<link></link>
+<enclosure url="" length="9007199254740991" type="Audio/MPEG"/>
+<guid isPermaLink='false'>urn:uuid:0583bc20</guid>
+<title>&#x26;amp;</title></item> <item><title>  spaced  &lt;sup&gt;&amp;#xA9;&lt;/sup&gt;{json: 1}</title> <description>&#60;div>&amp;quot;q&amp;quot;&lt;/div>&#13;
+cr&#13;lf</description> <!-- comment --><?pi data?> <pubDate>Sun Feb 31 09:15:34 2275</pubDate> <psc:chapters version="1.2"><psc:chapter href="https://example.com/ch" title='😀' start="02:02:10"/></psc:chapters> <guid isPermaLink="true">
+</guid> <enclosure url="//example.com/e p240.jpg?file=x.mp3" length="1" type='audio/x-wav'></enclosure> <link>https://example.com/ep</link></item> <item><guid isPermaLink="true">
+</guid><description><![CDATA[
+multi
+lin]]>e</description><link></link><title>&#38;#65;&#38;#66;</title></item> <item><title>back\slash</title><link></link><pubDate>Tue May 8 06:58:36 1979 CST</pubDate><description></description><enclosure url="//example.com/62.xyz" type="audio/"/><at:link length="12" href="https://example.com:8443/119.mpga" title="Café" type="application/atom+xml" rel='related'/></item> <item><guid isPermaLink="true">https://example.com/item/52541</guid> <at:link length="abc" rel="related" type=""/> <description><![CDATA[<]]>br/&gt;</description> <media:thumbnail url=""/> <link> https://e.com/x </link> <pubDate>Fri, 05 June 2567 11:22:48 +0000</pubDate></item> <item><title><![CDATA[multi
+line]]></title>
+  <pubDate>2009-01-08T11:16:53+0945.5</pubDate>
+  <description>&lt;p>Line&#x3C;br>break&#x3C;/p><![CDATA[ééé<li>a < b</li>ééé
+R&D]]></description>
+  <enclosure length="9007199254740992" type="audio/*"/>
+  <media:thumbnail/>
+  <x:title xmlns:x="urn:x">Other namespace title</x:title></item> <item><title>&#x26;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;</title>
+  <guid isPermaLink="true">
+</guid>
+  <link> https://e.com/x </link>
+  <pubDate>Wed 02 Jan 1985 09:39:54 +0530</pubDate>
+  <description>&lt;p>&show; 7&lt;/p>😀😀&#38;#xD800; &amp;#169;&lt;p/></description>
+  <content:encoded></content:encoded>
+  <enclosure url="https://user:pass@media.example.net/a/b/c365.oga" length="abc" type="text/html"/>
+  <media:group><media:content duration="-5" type="audio/*" medium="video" url="https://user:pass@media.example.net/a/b/c236.aif" isDefault="false" fileSize="18446744073709551616"/></media:group>
+  <media:thumbnail url="https://example.com/th.jpg"></media:thumbnail></item></channel>
+</rss>

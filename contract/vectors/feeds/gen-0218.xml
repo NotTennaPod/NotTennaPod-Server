@@ -1,0 +1,20 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+<item><itunes:duration>1.0e99</itunes:duration>
+<guid isPermaLink="false"> </guid>
+<enclosure length="1" type="application/ogg"/>
+<pubDate>Friday, 24 Nov 1989 00:39:10 WET</pubDate>
+<title>R&#x26;D</title>
+<link> https://e.com/x </link>
+<description><![CDATA[multi
+line<br>]]></description></item>
+<itunes:author><![CDATA[  Spaced  ]]></itunes:author>
+<image><url></url><link>https://example.com/img-link</link><title>Image title</title></image>
+<title>multi
+line</title>
+<link>https://example.com</link>
+<language>fr
+</language>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<atom:link title="" rel="related" type="application/xml+xhtml" href="https://example.com/pay"/>
+<atom:link rel="related" href="ftp://files.example.com/329.MP3" title=''></atom:link></channel>
+</rss>

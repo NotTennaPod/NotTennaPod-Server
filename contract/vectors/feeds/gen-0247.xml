@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+<id> raw </id>
+<logo>https://example.com/logo.png</logo>
+<title type="html"><![CDATA[ plain words&quot;q&quot;]]></title>
+<entry><link length="12" rel='hub' type="text/html" href="ftp://files.example.com/dir.with.dots/ep312.aac"/><published>Sat 18 Aug 1979 02:39:</published><title><![CDATA[<u>&lt;b&gt;</u>
+<p>Para</p>]]></title><id> raw </id><updated>1991-05-06T22:59:50.273</updated></entry>
+<entry><updated>2537-12-20T23:38:02.448</updated> <content type="plain">
+مرحبا&lt;div&gt;a
+
+b&lt;/div>&#60;p>&lt;p>Para&lt;/p&gt;&#60;/p&gt;&#60;i<![CDATA[mg><BR>]]></content> <media:content fileSize='' isDefault="false" medium="video" type="audio/x-m4a" url="https://example.com:8443/38.MP3" duration='abc'/> <source url="https://example.com/s"><title>Source title</title></source> <summary type="plain"><![CDATA[<br>]]></summary></entry>
+<entry><summary>&#13;
+&#x26;#128512;ééé &#x26;#65;&#x26;#66;ééé&#13;
+a &#60; b</summary>
+  <media:content type="video/x-matroska" url="ftp://files.example.com/ep311.mp3.zip" duration="+60" isDefault='false' fileSize="-16384"></media:content>
+  <link type="application/xhtml+xml" length="12" title="Alternate" href="https://example.com/" rel="first"/>
+  <id></id>
+  <published>Mon, 11 Jan 2016 16:08:33 JST</published>
+  <title type='html'>  &amp;<![CDATA[; &unknown;
+]]></title></entry>
+<entry><podcast:transcript type="text/vtt"/><podcast:transcript url='' type="" language='en'/><podcast:transcript url="" type="application/json" language="en"/><id> raw </id><summary type='HTML'>&#x3C;p&gt;&amp;copy;&lt;/p></summary><itunes:image href='https://example.com/e.jpg'/><title><![CDATA[&apos;a&apos;  100%  &lt]]></title></entry>
+<entry><itunes:duration>45</itunes:duration><content type="HTML">&lt;div&gt;a<![CDATA[=b&c=d</div>]]></content><title>&#x26;#x;<![CDATA[]]></title><summary type="text">&#13;
+  spaced  &lt;BR>&lt;p>x&lt;y&lt;/p&gt;</summary><source url="https://example.com/s"><title>Source title</title></source><updated>
+Fri, 29 May 2584 06:18 Eastern Standard Time&#13;
+</updated></entry>
+<entry><itunes:image href=""/>
+<title>&#60;p&gt;&#x26;nbsp;&lt;/p&gt;a
+  bR&#x26;D</title>
+<media:content isDefault="1" duration="0060" url='https://example.com:8443/e p39.MP3' fileSize="12" medium="video"/>
+<itunes:duration> </itunes:duration>
+<published>1997-02-20</published>
+<summary type="HTML"><![CDATA[aaaaaaaa<img src="x" alt="y"/><br/>]]></summary>
+<updated>1999-01-03Greenwich Mean Time</updated></entry>
+<entry><itunes:image href="https://example.com/e.jpg"/> <title type="HTML">'single'  [x]  a=b&amp;c=d</title> <id></id> <updated>2537-12-22T14:37:02Japan Standard Time</updated> <published>Saturday, 27 Feb 1971 05:13 -0500</published> <itunes:duration>2927.998</itunes:duration> <link href="https://example.com/pay" rel="enclosure" title="Alternate" type="" length="20000"/></entry>
+<entry><published>Sunday, 13 Jun 1993 10:50</published>
+  <link type="application/xhtml+xml" rel="first" length="12"/>
+  <x:title xmlns:x="urn:x">Other namespace title</x:title>
+  <title type="text">  &#38;lt
+&#38;
+&#60;pre>&amp;quot;q&amp;quot;
+  pre&#60;/pre&gt;  </title>
+  <summary type="html">Episode 7&lt;br&gt;</summary>
+  <id>
+id
+</id>
+  <itunes:duration>942</itunes:duration>
+  <link rel="Next" href="HTTPS://EXAMPLE.COM/e p19.mpga" title="Café"/></entry></feed>

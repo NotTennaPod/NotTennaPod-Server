@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rss [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<rss version="0.92" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link length="12" type="application/atom+xml" rel="payment" href="https://example.com/"/>
+<title>sep</title>
+<item><psc:chapters><psc:chapter image="https://example.com/ch.png" start="7987" title="&#128512;" href=''/><psc:chapter title="&lt;b>x&lt;/b>" href="" image="https://example.com/ch.png"/><psc:chapter start="00:08:48.889" href="" title="&lt;b>x&lt;/b>"/><psc:chapter title="Intro" href="https://example.com/ch" start="20:20" image="https://example.com/ch.png"/><psc:chapter title='&lt;b>x&lt;/b>' href="" start="3309" image="https://example.com/ch.png"/><psc:chapter title="Café &amp;amp; more" start="9600" href=""/></psc:chapters>
+<link></link>
+<description>&#60;img src="x.png&quot;> coverééé tab	here&lt;p&gt;&amp;euro;&#x3C;/p&gt;&lt;img></description>
+<guid isPermaLink="false">  spaced guid  </guid>
+<title><![CDATA[10]]>0%</title>
+<pubDate>Saturday, 28 Oct 22 10:18 -0000</pubDate></item>
+<item><title><![CDATA[e&#769;  <strong>plain words</strong>  &mdash;]]></title> <guid isPermaLink="true"></guid> <pubDate>Mon 09 Jul 2536 19:34:00 -0800</pubDate> <description> &#38;#xA9;&lt;p&gt;e&#x301;&lt;/p&gt;&#60;br/></description></item>
+<item><title>&amp;eu<![CDATA[ro;]]></title> <guid isPermaLink="false">
+</guid> <pubDate>2114-02-21T08:20:19</pubDate> <description></description> <enclosure url="http://example.org/a/b/c244.wav#t=10" length="123456" type="image/png"/></item>
+<podcastindex:funding url="https://example.com/donate"/></channel>
+  </rss>

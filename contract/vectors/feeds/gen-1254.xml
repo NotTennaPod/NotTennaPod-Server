@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:p2="https://podcastindex.org/namespace/1.0" xml:lang="EN-us">
+  <updated>1983-00-29T14:30:08Z</updated><link length="abc" type="application/xml+xhtml" href="https://example.com/pay" title='MP3 feed'/><id>https://example.com/feed</id><link rel="next" title="MP3 feed" length="abc" type="audio/mpeg"/><icon>https://example.com/icon.png</icon><title type="xhtml">&#x26;lt;b&#38;gt;escaped&#38;lt;/b&#x26;gt;cr&#13;lf</title></feed>

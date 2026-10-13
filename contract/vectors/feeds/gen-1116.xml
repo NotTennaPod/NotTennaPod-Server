@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters">
+  <channel xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0"><language>de-DE</language>
+  <itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#x3C;b&gt;Studio&#60;/b&gt;</itunes:author>
+  <link> https://example.com/ </link>
+  <title>&#x3C;img src="x.png"&gt; cover #hash</title>
+  <itunes:owner xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:name xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Owner</itunes:name><itunes:email xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">o@example.com</itunes:email></itunes:owner>
+  <item><title>&amp;#65;&#x26;#66;</title>
+  <link></link>
+  <description>
+&#38;<![CDATA[amp]]></description>
+  <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">'single'&amp;#xFFFF;</itunes:subtitle>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/ep.jpg"/>
+  <enclosure url="//example.com/a/b/c389.MP3" length="18446744073709551616" type="audio/mpeg"/>
+  <media:content type="application/octet-stream" isDefault="TRUE" fileSize="12" url=" https://user:pass@media.example.net/e p55.amr " duration="0060"/>
+  <media:thumbnail url=""/>
+  <podcast:socialInteract protocol="activitypub"/></item>
+  <title><![CDATA[sep]]></title>
+  <atom:link href="https://example.com/feed?page=2" title="Café" type="application/xml+xhtml"/>
+  <media:thumbnail url='https://example.com/mt.jpg'/></channel> </rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><language>en</language>
+<description></description>
+<item><title>a &gt; b&#60;section>שלום&lt;/section&gt;&amp;AMP;</title>
+<guid>
+</guid>
+<pubDate>23 Mar 2577 06:24:40 -0000</pubDate>
+<content:encoded></content:encoded>
+<enclosure length="2e5" type='image/jpeg'></enclosure>
+<media:content isDefault="TRUE" fileSize="" type="audio/*" duration="1.5" medium="Audio"/>
+<media:content medium='image' fileSize="-9223372036854775808" duration="+60" type="x-audio/mpeg"/></item>
+<item><title><![CDATA[​]]></title>
+<description>&#x3C;li&gt;&lt;img src="x.png"> cover&#60;/li&gt;&#x3C;img src="x" alt="y"/&gt;&#38;nbsp;&#60;br&gt;
+
+&#128512;&#60;div&gt;&#38;copy;&#x3C;/div>  caféEpisode 7&lt;br&gt;&lt;p&gt;Episode 7&lt;/p&gt;</description>
+<guid isPermaLink="true"></guid>
+<pubDate>	Thu 11 Jun 1998 07:	</pubDate>
+<link>https://example.com/ep</link></item>
+<item><enclosure length='9223372036854775808' type="audio/ogg"/> <link></link> <enclosure url="https://example.com/a.b/dir.with.dots/ep129.avi" length="9007199254740992" type="audio/wav"/> <guid isPermaLink="true">https://example.com/item/44157</guid> <dc:date>&#13;
+Sat Jan 6 11:10:00 2007&#13;
+</dc:date> <content:encoded><![CDATA[<br><img src="x" alt="y"/> &quot;q&quot;😀😀😀😀<br>]]></content:encoded> <enclosure url="" length="9223372036854775808" type="audio/x-wav"/> <title><![CDATA[Line<br>break]]></title> <pubDate>FRI, 19 August 2444 21:38:41</pubDate></item>
+<item><pubDate>2474-08-14T17:40:48  </pubDate><psc:chapters><psc:chapter start="10:00:00.000001" href="https://example.com/ch"/><psc:chapter start="00:22:36.076" href="https://example.com/ch" title="😀"></psc:chapter><psc:chapter title="Intro" start="Infinity:00"/><psc:chapter title="😀" image="https://example.com/ch.png" href="" start="03:34:12"/><psc:chapter title='&lt;b>x&lt;/b>' href="https://example.com/ch" start='03:15:56.995'/><psc:chapter title='&lt;b>x&lt;/b>' start="48:58"/></psc:chapters><media:content isDefault="TRUE" url="https://xn--caf-dma.example/ep230.wav?dl=1.0" duration="-5" type="audio/opus" fileSize="123456789012345678"/><description>Folge 7: Über all<![CDATA[es<p>  padded  </p><li>&AMP;</li><hr>  مرحبا]]></description><guid></guid><enclosure length="2147483648" type="audio/flac"></enclosure><link> https://e.com/x </link><content:encoded><![CDATA[]]>&lt;img&gt;&lt;p>&lt;/p&gt;</content:encoded><title>&#38;#169;</title></item>
+<link xmlns="http://www.w3.org/2005/Atom" type="application/xhtml+xml" href="" length="abc" rel=""/>
+<link>https://example.com</link>
+<title>&#38;#;  a > b  http://example.com/?a=1&#38;b=2</title>
+<atom:link length="20000" rel="alternate" title="Café" href="https://example.com/alt.xml" type="application/rss+xml"/>
+<atom:link type="" rel="alternate" title='Café' href=""/></channel>
+  </rss>

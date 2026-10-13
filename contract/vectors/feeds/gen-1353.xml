@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><atom:link rel="next" href="https://example.com/" title="Alternate" type="application/rss+xml"/>
+<title>R&D &#x26;#x;
+<![CDATA[ leading]]></title>
+<itunes:new-feed-url>http</itunes:new-feed-url>
+<description>aaaaaa</description>
+<link> https://example.com/ </link>
+<atom:link title="MP3 feed" length="abc" href="https://example.com/alt.xml" type="application/xhtml+xml" rel="next"/>
+<atom:link href="" title="Alternate" rel="Next"/>
+<language>de-DE</language>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/" rel="archives"/>
+<item><link> https://e.com/x </link>
+<podcast:socialInteract uri="" protocol='activitypub'></podcast:socialInteract>
+<pubDate>Thu, 14 Sept 1985 21:30:32 -0500</pubDate>
+<itunes:image href=" "></itunes:image>
+<content:encoded>&lt;img src=&quot;x" alt=&quot;y"/&gt;&amp;euro;</content:encoded>
+<title><![CDATA[back\slash]]></title>
+<guid isPermaLink="false">Café-guid</guid>
+<podcast:transcript url="" language="en"/><podcast:transcript url="https://example.com/t.json" type="application/x-subrip" language="en"/><podcast:transcript url="https://example.com/t.json" type="application/srr" language="en"/>
+<description> x&#x3C;y&lt;div&gt;第7&#38598;&#60;/div&gt;&#233;éé
+  &amp;lt&lt;p&gt;&#38;#xFFFF;&#x3C;/p>&#60;p>&#x26;amp;&#60;/p&gt;aaaaaa</description></item>
+<item><enclosure url="//example.com/a/b/c351.mov?file=x.mp3" length="-9223372036854775808" type="image/*"/> <content:encoded> مرحبا</content:encoded> <pubDate>Tuesday, 16 May 1752 12:54:05 GMT</pubDate> <itunes:image href=''/> <title><![CDATA[<sup>&apos;a&apos;]]>&lt;/sup>&#38;#169;</title> <description></description> <guid isPermaLink="true">a&#38;b</guid></item>
+<item><title>'single&apos; &amp;amp; &#x26;hellip;</title>
+  <guid isPermaLink='false'>Caf&#233;-guid</guid>
+  <link>https://example.com/ep</link>
+  <description>&lt;br&gt;</description>
+  <itunes:summary>&#13;
+&#x26;amp;😀	&#x26;mdash;&lt;p&gt;http://example.com/?a=1&#38;b=2&#x3C;/p>	a&#13;
+b&#60;div&gt;Folge 7: Über alles&lt;/div>1 &lt;2&#60;br&gt;	#hash</itunes:summary>
+  <enclosure url='HTTPS://EXAMPLE.COM/ep104.m4v?a=1&amp;b=2' length="" type="application/octet-stream"></enclosure>
+  <podcast:transcript url="https://example.com/t.json" type="application/srr" language="en"/>
+  <x:foo xmlns:x="urn:x"><title>Nested title</title></x:foo></item></channel>
+  </rss>

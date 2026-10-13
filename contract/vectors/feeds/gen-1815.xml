@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><media:thumbnail url="https://example.com/mt.jpg"/>
+  <image><url>https://example.com/img.png</url><title>Image title</title></image>
+  <itunes:author><![CDATA[😀 Pod]]></itunes:author>
+  <language>de-DE</language>
+  <atom:link rel="alternate" type="" length="abc" title="MP3 feed"></atom:link>
+  <description>&#60;br&gt;&#x3C;/br&gt;&lt;li&gt;&#38;;&#x3C;/li&gt;éé&#233;&#x3C;img src=&quot;x" alt=&quot;y"/&gt;&#x3C;li>back\slash&lt;/li>a &lt; b&#60;hr>&#13;
+&#38;amp;amp;</description>
+  <itunes:image/>
+  <itunes:summary></itunes:summary>
+  <link></link>
+  <item><title><![CDATA[ &amp; ]]></title> <guid isPermaLink="false">  spaced guid  </guid> <pubDate>Tuesday, 32 Nov 2006 10:32:25</pubDate> <description><![CDATA[<hr/>]]></description> <itunes:subtitle>back\slash</itunes:subtitle> <enclosure length='-0' type="audio/x-wav"/> <enclosure url="" length=" 20000" type="audio/x-wav"/> <enclosure url="//example.com/café/69.mpga" length="123456" type='x-audio/mpeg'/> <media:content fileSize="-1" type="Audio/MPEG" duration="1.5"/></item>
+  <item><itunes:summary>茶&#60;div&gt;&amp;euro;&lt;/div&gt;&#13;
+&amp;euro;</itunes:summary><itunes:duration>10651</itunes:duration><atom:link type="application/rss+xml" rel="first" length='12' href="https://example.com/alt.xml"/><media:group><media:content medium="Audio" duration=" 60" fileSize="2147483648" type="image/png"></media:content><media:content duration="abc" type="audio/mpeg" medium="Audio" fileSize="00020000" url="https://xn--caf-dma.example/e p82.mpga"/></media:group><guid>urn:uuid:5a1035b8</guid><itunes:image/><title>sep</title></item>
+  <item><pubDate>2195-11-23T06:99:37-0000</pubDate> <title>a &#x3C; b
+&amp;#x1F600;</title> <guid>a&amp;b</guid> <dc:date>Monday, 27 Sep 1971 23:20:28</dc:date> <itunes:duration>1962.508</itunes:duration> <enclosure length="-0" type="video/mp4"/></item>
+  <item><itunes:duration>4:49:16</itunes:duration> <description><![CDATA[<img>]]></description> <title>&#60;small>sep&#60;/small&gt; {json: 1} a > b</title> <media:group><media:content duration="0060" isDefault="1" fileSize="16384" type='application/octet-stream' medium='video'/></media:group> <enclosure length="+20000" type="audio/opus"/> <itunes:image></itunes:image> <pubDate>1950-12-08T11:21:18 </pubDate> <link>https://example.com/ep</link> <enclosure url="https://user:pass@media.example.net/ep164.m4a" length="16384" type="video/webm"/></item></channel>
+  </rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"><itunes:image href=''/>
+<atom:subtitle type='html'>&#x26;#xA9;&lt;br>&#233;&#233;&#233;</atom:subtitle>
+<atom:title type="text"><![CDATA[&#128512; S01E962]]></atom:title>
+<atom:updated>Wed, 02 may 2012 15:01:41 -1200</atom:updated>
+<atom:id></atom:id>
+<itunes:summary>&#60;p&gt;&#8203;&#x3C;/p></itunes:summary>
+<atom:link title='' type="audio/mpeg" rel='enclosure' href="https://example.com/" length='abc'/>
+<atom:entry><itunes:duration>1E3:00</itunes:duration>
+<media:content type="audio/mp4" duration="2147483648" medium="audio" fileSize="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;"/>
+<itunes:image href="https://example.com/e.jpg"/>
+<atom:id>urn:uuid:1</atom:id>
+<x xmlns="urn:other"><title>Default namespace title</title></x>
+<atom:link href='' title="Caf&#233;" length="20000" rel='first' type='application/rss+xml'></atom:link>
+<atom:summary type="plain">	back\slash&lt;div&gt;&lt;img src="x.png&quot;> cover&#60;/div&gt;  &#38;#xFFFF;&#x26;#0;&lt;hr&gt;</atom:summary>
+<atom:title type="html">&#38;lt;b&#x26;gt;escaped&amp;lt;/b&#x26;gt; &#60;dfn>&#38;#0<![CDATA[;</dfn>]]></atom:title>
+<atom:updated>1985-04-13T14:24:24.111Z</atom:updated>
+<atom:updated>15 Sep 50 21:31:48 +0200</atom:updated></atom:entry>
+<atom:entry><atom:updated>tue Aug 22 12:36:12 1899</atom:updated><psc:chapters><psc:chapter title="&lt;b>x&lt;/b>" start="01:20:46.038" image="https://example.com/ch.png"/><psc:chapter start="1:00 " title="Caf&#233; &amp;amp; more"></psc:chapter><psc:chapter start="-1:00" title="&lt;b>x&lt;/b>" href="https://example.com/ch" image="https://example.com/ch.png"/><psc:chapter image='https://example.com/ch.png' start="889" title="" href=""/></psc:chapters><atom:content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#128512;&#128512;&#128512;&#128512;  &amp;copy;</div></atom:content><atom:published>2024-09-12-1200</atom:published><atom:link href="https://example.com:8443/e p72.m4v" type="text/html" title='MP3 feed' rel="alternate"/><media:content medium="document" isDefault="true" fileSize="" type="Audio/MPEG" duration='0' url="http://example.org/a/b/c257.php"/><podcast:transcript url="https://example.com/t.json" type="application/srt" language="en"/><atom:title type="HTML"><![CDATA['single' &; &mdash;]]></atom:title><atom:id> raw </atom:id></atom:entry>
+  </atom:feed>

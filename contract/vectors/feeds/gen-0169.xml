@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1252"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0"> <itunes:author>&lt;b&gt;Studio&lt;/b></itunes:author> <itunes:image href=''/> <id></id> <author><name>  Bob  </name></author> <title><![CDATA[#hash  &copy;  Tom & Jerry <3]]></title> <subtitle type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">&lt;BR></div></subtitle> <logo></logo> <link title="MP3 feed" type="application/xhtml+xml" length="abc" rel="enclosure"/> <entry><id>urn:uuid:1</id><content>&#128512;&#128512;&lt;div<![CDATA[>  padded  </div>]]></content><link type="audio/mpeg" title="Alternate"/><link type="" title="MP3 feed" length="20000" rel='related'/><title type="HTML">    padded   R&#38;D &#60;b>&#60;i>&#60;p&gt;Para&#60;/p&gt;&#x3C;/b&gt;&#60;/i> </title></entry> <entry><link title="Café" type='application/rss+xml' href="https://example.com/alt.xml" length="9223372036854775808"/>
+<id>
+id
+</id>
+<published>1977-10-08T13:20:07-0800 </published>
+<summary>&#x3C;hr/&gt;&#13;
+&amp;ééé&#128512;&#128512;&#13;
+&#128512;&#60;li&gt;#7 – Interview&#60;/li&gt;e&#769;&lt;br&gt;&#60;b&gt;Bold&lt;/b> title&#x3C;br&gt;</summary>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">aaaaaaaa&lt;li>&amp;unknown;&#60;/li></div></content>
+<link href="https://example.com/feed?page=2" title="MP3 feed" rel="alternate"/>
+<link length="12" rel="" title="Alternate" href="https://example.com/"/>
+<title type='html'>&#13;
+&lt;del&gt;&lt;/del>&lt;dfn&gt;&#38;lt;b&#x26;gt;escaped&#38;lt;/b&amp;gt;&#x3C;/dfn>	</title></entry> <entry><link rel='' href="HTTPS://EXAMPLE.COM/182.txt" type="text/html" title="Café"/><id>tag:x,2020:1</id><content type="html"><![CDATA[&#128512;&#128512;&#128512;&#128512;]]></content><itunes:duration>1185</itunes:duration><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;euro;</div></title><updated>Wednesday, 22 Apr 71 01:07 -0800</updated><author><name>Entry author</name></author><media:content fileSize="abc" url="//example.com/café/209.webm?auth=yes" medium="video" type="audio/ogg" duration="abc" isDefault="false"/></entry> <entry><updated>1998-01-17T03:16:59.541Z</updated> <id>urn:uuid:1</id> <itunes:duration>3786</itunes:duration> <itunes:image href="https://example.com/e.jpg"/> <link type="audio/mpeg" rel="first"/> <content type="HTML"><![CDATA[<br/><br><div>&#65;&#66;</div>aaaaaaaa &Lt;<b>Bold</b> title<br><li>sep</li><p>&#128512;</p>]]></content> <title type="html"><![CDATA[	&#1513;&#1500;&#1493;&#1501;  'single' ]]></title></entry> <entry><author><name>Entry author</name></author>
+<link title="Café" href="https://example.com/a.b/dir.with.dots/ep193.mp3" rel="last"/>
+<link type="text/html" length='20000' rel="archives" title="Alternate"/>
+<title type="plain"><![CDATA[&#31532;284]]>&#38598; &#38;#;</title>
+<link href="//example.com/dir.with.dots/ep52.Mp4" rel="payment" title="MP3 feed" length="20000" type="application/rss+xml"/>
+<content type="plain">	&amp;#xA9;&#x3C;div>&lt;b&gt;Bold&lt;/b> title&lt;/div>&lt;li&gt;&amp;apos;a&amp;apos;&lt;/li&gt;</content>
+<itunes:duration>0x1.8p2</itunes:duration>
+<updated>	l+Q	</updated></entry> <entry><content type='text'>tab	here</content>
+<title type="html">&#38;#xD800;
+tab	<![CDATA[here]]></title>
+<podcast:transcript url="" type="application/x-subrip" language='en'/><podcast:transcript url="https://example.com/t.json" type="Application/JSON"/><podcast:transcript type="application/srr" language="en"/>
+<published>Thu, 01 Jan 2024 10::00 +0000</published>
+<link title="Café" href="https://example.com/pay" rel="related" type='application/xhtml+xml'></link>
+<googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+<id></id></entry> <entry><content type='html'><![CDATA[a
+
+b<br>  &AMP;Folge 7: Über alles tab	here&#x1F600;<br>
+100%<div>&#xD800;</div><li>Tom &amp; Jerry &lt;3</li>]]></content> <published>2448-06-11T06:11:57+0100</published> <summary>  &#38;mdash;</summary> <author><name>Entry author</name></author> <title type="HTML"><![CDATA[<3 <3
+]]></title> <id></id> <link length="abc" href="https://example.com/alt.xml" rel="Next" title="Alternate" type="application/xhtml+xml"></link> <itunes:duration>10026</itunes:duration></entry> <entry><updated>Fri, 29 September 2001 04:02</updated><summary></summary><title><![CDATA[R&D]]></title><content type="HTML"><![CDATA[<img>]]></content><psc:chapters xmlns:psc="http://podlove.org/simple-chapters"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title="&lt;b>x&lt;/b>" href="" start="&#65297;:&#65296;&#65296;"/></psc:chapters><id>urn:uuid:1</id><updated>1982-06-28T15:52:35+-0100</updated></entry> </feed>

@@ -1,0 +1,18 @@
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <atom:title><![CDATA[<tt>#hash</tt>]]></atom:title>
+<atom:logo></atom:logo>
+<atom:link rel="hub" title='Café' type='application/xml+xhtml' href="https://example.com/feed?page=2"/>
+<itunes:image href="https://example.com/ai.jpg"/>
+<itunes:summary>&lt;li&gt;第7&#x96C6;&#x3C;/li> "quoted"</itunes:summary>
+<atom:entry><atom:content type="plain">&#60;p>&amp;quot;q&#x26;quot;&#x3C;/p&gt;</atom:content>
+  <atom:link type='text/html' rel="self" href="https://example.com/pay"/>
+  <atom:link length="abc" href="https://example.com/feed?page=2" rel='next' type=""/>
+  <atom:title type="HTML"><![CDATA[<sup>مرحبا</sup>
+&#x;]]></atom:title>
+  <atom:link title="MP3 feed" rel="next" length='20000'/>
+  <atom:summary type="plain"><![CDATA[ééé]]></atom:summary>
+  <atom:id>tag:x,2020:1</atom:id></atom:entry>
+<atom:entry><atom:id></atom:id><atom:link href="https://example.com/pay"/><atom:link rel='archives' length="abc" href="https://example.com/pay" title="MP3 feed" type='text/html'/><atom:title type="plain"><![CDATA[a=b&c=d
+a > b]]></atom:title><itunes:image href=""/><atom:content type="HTML">&amp;apos;a&#38;apos;  &amp;unknown;[x]é&#x3C;BR>&lt;li&gt;&#38;amp&lt;/li>&#x3C;li>&amp;euro;&#60;/li>é&#x3C;br></atom:content><atom:published>1974-09-09T10:37:42.12UTC+01:00</atom:published><atom:author><atom:name>Entry author</atom:name></atom:author><atom:summary type="text"><![CDATA[<li>&#xA9;</li>Tom & Jerry <3<br>&lt;b&gt;escaped&lt;/b&gt;<br>a
+
+b<img>&#x1F600;<br>😀😀😀
+a=b&c=d]]></atom:summary></atom:entry></atom:feed>

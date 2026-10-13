@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en"><subtitle type="html">é&#233;é&amp;#128512;&#60;p&gt;&amp;quot;q&amp;quot;&lt;/p&gt;&lt;div&gt;茶&#x3C;/div>&#x26;unknown;ééé&#60;p&gt;&#x3C;/p>  plain words</subtitle>
+<id>https://example.com/feed</id>
+<link rel="hub" title='MP3 feed' type="" href="http://example.org/a/b/c210.mp3.zip"/>
+<title>&#x26;amp &amp;mdash; &amp;hellip;</title>
+<itunes:image href=""/>
+<author><name>C&#x26;D</name><email>a@example.com</email></author>
+<p2:funding url="https://example.com/give">Give</p2:funding>
+<logo></logo>
+<entry><summary>&lt;p/&gt;&#60;div&gt;&#x26;;&#60;/div&gt;&#60;img src=&quot;x" alt="y"/&gt;</summary><link length="9223372036854775808" title="" rel="Next" href="https://example.com/" type="text/html"/><id>tag:x,2020:1</id><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">100% plain words</div></title><updated>1977-05-22T02:25:36.5</updated><googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description><itunes:image href='https://example.com/e.jpg'></itunes:image><published>2002-02-08+1</published><link title="Alternate" rel="last" href="" type="application/xhtml+xml"/><link href="https://example.com/feed?page=2" title='MP3 feed' type="text/html" length="12" rel="last"></link></entry>
+<entry><link length="12" href="https://example.com/feed?page=2" title="MP3 feed" rel="alternate"/><link length="abc" href="HTTPS://EXAMPLE.COM/a/b/c101.php" rel="hub"/><summary>&#x3C;<![CDATA[br/><p/>]]></summary><id>urn:uuid:1</id><title type="HTML">&#xA0;
+a &gt; b
+&#x26;hellip;</title><updated>Wednesday, 21 Apr 1982 07:27:01</updated></entry>
+</feed>

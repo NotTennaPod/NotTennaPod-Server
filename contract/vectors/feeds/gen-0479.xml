@@ -1,0 +1,22 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding/>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" https://example.com/sp.jpg "></itunes:image>
+<language>pt-BR</language>
+<description>plain words&#60;br&gt;  plain words&#60;li&gt;&amp;amp&#60;/li&gt;😀😀😀😀&#60;div&gt;مرح&#1576;ا&lt;/div&gt;</description>
+<image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+<title>Folge 209: &#220;ber alles
+  padded  
+&#x26;Lt;</title>
+<podcast:funding/>
+<link> https://example.com/ </link>
+<atom:link rel="payment" type="application/xhtml+xml" href='' length="12"/>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">  Spaced  </itunes:author>
+<item><enclosure url="http://example.org/a/b/c5.oga" length="٢٠٠٠٠"/> <c:encoded>aaaaaaa&lt;li>  padded  &#x3C;/li&gt;&lt;div&gt;plain words&#60;/div>&#60;div>&amp;#0;&lt;/div>😀😀😀😀</c:encoded> <pubDate>Tue May 19 00:39:99 1992</pubDate> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">0:42:03</itunes:duration> <media:thumbnail url=''/> <guid isPermaLink="false"> </guid> <title><![CDATA[&quot;q&quot;]]></title> <podcast:transcript url="" type="text/vtt"/></item>
+<item><title>&#38;hellip;  &amp;#xA9;</title>
+<guid></guid>
+<pubDate>Tue, 33 Apr 1981 02:31:32 -0500</pubDate>
+<description><![CDATA[	&lt;b&gt; مرحبا  &unknown;]]></description>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#x3C;br/&gt;&lt;BR&gt;&#x3C;br /></itunes:summary>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=' '/>
+<enclosure url="HTTPS://EXAMPLE.COM/a/b/c384.aif" length=" 20000" type="application/octet-stream"/></item></channel></rss>

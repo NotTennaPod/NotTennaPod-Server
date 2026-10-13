@@ -1,0 +1,17 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters">
+<link rel="last" title="" type="application/atom+xml" href="http://example.org/e p34.flac"/>
+<link href="https://example.com/" rel="last" type=""/>
+<logo> https://e.com/l.png
+</logo>
+<title type="HTML">
+&amp;hellip; </title>
+<podcast:funding url='https://example.com/give'>Give</podcast:funding>
+<id> raw </id>
+<link rel='alternate' type="application/xhtml+xml" title="Alternate"/>
+<entry><summary type="html">&lt;li> &#x3C;/li&gt;&#x3C;li&gt;100%&#60;/li&gt;&#60;img src="x.png"&gt;&lt;p&gt;&#38;amp&lt;/p&gt;&lt;li&gt;&amp;&#60;/li>&#13;
+cr&#13;lf	R&#x26;Daaaaaaa</summary>
+<link rel='related' href="https://example.com/feed?page=2" title='MP3 feed' type="application/rss+xml"/>
+<media:content type='image/*' isDefault="TRUE" fileSize='16383' duration="3600" medium="Audio"/>
+<title>&#x26;amp; &#x3C;sub&gt;AT&#x26;T&lt;/sub> &#60;h3>cr&#13;lf&lt;/h3&gt;</title>
+<id> raw </id></entry>
+</feed>

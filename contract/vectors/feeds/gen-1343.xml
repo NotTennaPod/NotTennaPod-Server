@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><language></language>
+<podcast:funding url=""/>
+<title><![CDATA[x<y]]></title>
+<link> https://example.com/ </link>
+<i:summary><![CDATA[<br><p/>]]></i:summary>
+<lastBuildDate>Tue Jun 28 22:51 2005</lastBuildDate>
+<media:thumbnail url="https://example.com/mt.jpg"/>
+<link xmlns="http://www.w3.org/2005/Atom" rel="archives" length="abc"/>
+<description></description>
+<item><cont:encoded>&lt;p>&#x26;mdash;&#60;/p&gt;&lt;p/>&amp;amp&lt;br&gt;aaaaaaaaaaaaa</cont:encoded>
+<description><![CDATA[<div>caf&#233;</div>aaa	a=b&c=d]]></description>
+<enclosure url='ftp://files.example.com/ep294.html' length='16385' type="audio/opus"/>
+<link> https://e.com/x </link>
+<title><![CDATA[{json: 1}]]></title>
+<pubDate>2018-03-16-0500</pubDate></item>
+<item><title><![CDATA[&]]>lt</title><enclosure length="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;" type="video"></enclosure><enclosure url="https://example.com:8443/a/b/c214.mov" length="1,000,000" type="audio/mpeg; charset=binary"/><i:duration>-9223372036854775808</i:duration><media:content url='https://xn--caf-dma.example/a/b/c14.torrent' isDefault="1" type='audio/mp4' duration='3600' fileSize="20000.0" medium='document'/><i:image href="https://example.com/ep.jpg"/><guid> </guid><googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description><i:summary><![CDATA[aaaaaaaaa<div>x<y</div><br>&unknown;	&mdash;a
+
+&#xA9;&#160;&#65;&#66;]]></i:summary><enclosure length="" type="Audio/MPEG"/><pubDate>2428-05-22T18:16:16.Z</pubDate></item>
+<item><description><![CDATA[&lt<br><p>&</p>Tom & Jerry <3]]></description>
+<i:summary>&#233;&#233;&#233;aaaaaaaa</i:summary>
+<title>&quot;quoted"  100%  Folge 530: &#220;ber alles</title>
+<psc:chapters version="1.2"><psc:chapter image="https://example.com/ch.png" title="&lt;b>x&lt;/b>" start="99:59:59.999" href="https://example.com/ch"/><psc:chapter start="6931" title="Intro" href=''/></psc:chapters>
+<link></link>
+<enclosure url="https://user:pass@media.example.net/caf&#233;/150.ts?dl=1.0" length="-0" type="audio/x-wav"/>
+<pubDate>17 Oct 67 02:40:40 -0500</pubDate>
+<media:thumbnail/>
+<i:duration>5:07:19</i:duration>
+<i:author>Item author</i:author>
+<guid>
+</guid></item>
+<i:image href=" https://example.com/sp.jpg "/>
+<atom:link title="MP3 feed" length='12' rel="enclosure" href="https://example.com/" type='application/rss+xml'/>
+<i:author><![CDATA[Tom & Jerry <3]]></i:author>
+<link xmlns="http://www.w3.org/2005/Atom" length="9223372036854775808" title="Alternate" href="" rel="self" type="application/xml+xhtml"/>
+<link xmlns="http://www.w3.org/2005/Atom" rel='archives' title="Caf&#233;" type="application/atom+xml" href="https://example.com/"/></channel><channel><title>Second channel</title><item><enclosure type='audio/ogg'/> <guid>urn:uuid:e1335ed1</guid> <i:duration>3169.886</i:duration> <description>&#60;p>&lt;/p&gt;</description> <pubDate>Fri 20 Mar 2020 21:50:22 +0530</pubDate> <title>http:<![CDATA[//example.com/?a=1&b=2]]></title> <i:image href=" "/> <podcast:chapters url="" type='application/json+chapters'></podcast:chapters> <link>https://example.com/ep</link></item></channel></rss>

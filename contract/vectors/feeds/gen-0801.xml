@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="latin1"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><link> https://example.com/ </link>
+<image><url></url></image>
+<podcast:funding url='https://example.com/donate'>Support us</podcast:funding>
+<itunes:image href="https://example.com/it.jpg"></itunes:image>
+<description>
+
+&amp;copy; &#x8336;
+R&amp;D&lt;p>&lt;b&gt;Bold&#x3C;/b<![CDATA[> title</p>&#128512;&#128512;&#128512;&#128512;]]></description>
+<item><title>  &#x26;copy;&amp;mdash;	</title>
+<guid isPermaLink="true">urn:uuid:90107d98</guid>
+<link>https://example.com/ep</link>
+<pubDate>Sat, 22 Aug 2020 00:51:20 +01:00</pubDate>
+<description>&lt;div>&#38;#169;&#x3C;/div&gt;&#13;
+café</description>
+<enclosure url="" length="2147483648" type="video"/>
+<enclosure url="" length="0x4E20" type="AUDIO/MPEG"/>
+<enclosure url="https://xn--caf-dma.example/165.html" length="1" type="video/webm"/>
+<media:group><media:content url='https://example.com/a.b/café/208.ts' duration="59" fileSize="2147483647" type="text/plain"></media:content><media:content duration="1.5" isDefault="true" type='Audio/MPEG' fileSize='-0' medium="image" url="https://example.com/a.b/ep37.aac"/><media:content duration="" type="" isDefault="true" url="https://xn--caf-dma.example/café/17.aac"/></media:group>
+<!-- comment --><?pi data?></item>
+<item><title>a&#13;
+b plain words</title> <guid isPermaLink="true">dup</guid> <pubDate>2018-08-16T09:31:29.864074473Z</pubDate> <description>&#60;br>&#160;[x]aaaaaaaa</description> <itunes:subtitle><![CDATA[&;  1 <2]]></itunes:subtitle> <itunes:image href='https://example.com/ep.jpg'/> <itunes:duration>1064</itunes:duration> <enclosure url='' length="-9223372036854775808" type="text/html"/> <media:group><media:content url="https://cdn.example.com/98.mp4" fileSize="-16384" type="image/png" duration='0060'/><media:content type="image/jpeg" fileSize="2147483647" duration='3600' url="https://user:pass@media.example.net/a/b/c9.m4a"/><media:content medium="Audio" type='audio/' fileSize="0" duration="3600"/></media:group></item>
+<item><itunes:summary> &amp;#xA9;&lt;div&gt;&#38;hellip;&#60;/div&gt;&lt;p>&#x26;lt&#60;/p></itunes:summary>
+<title><![CDATA[&unknown;]]></title>
+<guid isPermaLink='false'>  spaced guid  </guid>
+<itunes:duration>Infinity</itunes:duration>
+<itunes:subtitle>&lt;cite>multi
+line&lt;/cite&gt;  &amp;unknown;</itunes:subtitle>
+<description><![CDATA[<BR>]]></description></item>
+<item><link>https://example.com/ep</link>
+<description>&lt;br/&gt;</description>
+<pubDate>20 August 2280 17:37:11 -0000</pubDate>
+<itunes:image/>
+<itunes:duration>2:11:41</itunes:duration>
+<guid isPermaLink="false"> </guid>
+<enclosure url="https://example.com:8443/café/213.mkv" length="12"/>
+<title><![CDATA[
+<cite>&#xFFFF;</cite> ]]></title>
+<itunes:summary><![CDATA[aaa&apos;a&apos;<li>{json: 1}</li>	&#169;  1 <2<p>Tom &amp; Jerry &lt;3</p><div>Episode 12</div>[x]]]></itunes:summary>
+<itunes:subtitle><![CDATA[<img src="x.png"> cover
+trailing 
+]]></itunes:subtitle></item>
+<item><description>&#38;lt;b&amp;gt;&#60;br&gt;</description>
+<itunes:duration>01:17</itunes:duration>
+<enclosure length="123456" type="audio/mp4"/>
+<content:encoded></content:encoded>
+<title><![CDATA[a < b&unknown;<span style]]>="color:red"&gt;sep&lt;/span&gt;</title>
+<pubDate>1993-09-13T16:32:21.189</pubDate>
+<itunes:subtitle>&#x26;AMP;&#60;blockquote&gt;cr&#13;lf&lt;/blockquote>&amp;Lt;</itunes:subtitle>
+<guid>
+</guid></item>
+<itunes:author>Caf<![CDATA[é Radio]]></itunes:author>
+<media:thumbnail url=""/>
+<title><![CDATA[AT&T &quot;q&quot; <ul><li>&#x1F600;</li><li>two</li></ul>]]></title>
+<podcast:funding/>
+<podcast:funding></podcast:funding></channel>
+  </rss>

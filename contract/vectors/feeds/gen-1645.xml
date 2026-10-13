@@ -1,0 +1,23 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><description></description>
+<atom:link type="application/atom+xml" href="https://xn--caf-dma.example/371.m4v" length='9223372036854775808' rel='next'/>
+<atom:link href='https://example.com/a.b/dir.with.dots/ep88.pdf' length="12" type="text/html" title="" rel="hub"/>
+<atom:link type="audio/mpeg" title="" href='https://example.com/alt.xml' length="9223372036854775808" rel="archives"/>
+<itunes:author><![CDATA[A, B]]></itunes:author>
+<title><![CDATA[&#169;  <h6>é</h6>  'single']]></title>
+<itunes:image href='https://example.com/it.jpg'/>
+<language></language>
+<item><link> https://e.com/x </link><enclosure url="https://example.com:8443/dir.with.dots/ep6.m3u8?dl=1.0" length="-9223372036854775808" type='application/octet-stream'/><content:encoded><![CDATA[&#xFFFF;]]></content:encoded><guid> </guid><itunes:duration>00:08</itunes:duration><title><![CDATA[#3 – Interview&amp; ]]></title><itunes:image href='https://example.com/ep.jpg'/><pubDate>Wed Jan 99 04:51:01 1976</pubDate><description></description></item>
+<item><link> https://e.com/x </link>
+<media:description type="plain">&lt;li>Tom &amp;amp; Jerry &#38;lt;3&#x3C;/li&gt;&#13;
+&#38;#;&#60;p>Para&#x3C;/p>&lt;br&gt;
+😀&#60;li&gt;第7集&lt;/li>back\slash&#x3C;p/&gt;&lt;div&gt;  padded  &lt;/div></media:description>
+<dc:date>20 oct 99 22:27 +0530</dc:date>
+<enclosure length="٢٠٠٠٠" type="audio/"/>
+<title>&#x3C;code>&lt;img src="x.png&quot;&gt; cov<![CDATA[er</code> Tom & Jerry <3]]></title>
+<media:group><media:content isDefault="TRUE" fileSize="" url="ftp://files.example.com/156.amr" duration="0" type="image/*"/></media:group>
+<media:thumbnail></media:thumbnail>
+<pubDate>Fri, 22 Dec 1978 13:28 -1200 +0000</pubDate>
+<guid isPermaLink="true">urn:uuid:0a2b0b41</guid>
+<itunes:duration>87:04</itunes:duration></item></channel>
+</rss>

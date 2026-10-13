@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="en">
+<itunes:summary><![CDATA[<p><3 <3</p>	&lt<li>&amp;amp;</li>]]></itunes:summary>
+<title type="html">&amp;amp;</title>
+<subtitle type="html"></subtitle>
+<link rel="self" href="//example.com/a/b/c188.wav" length="20000" type='application/xhtml+xml' title="MP3 feed"/>
+<updated>Sun, 10 Jun 1984 23:02 +0200 (CET)</updated>
+<itunes:author>Jane &amp;amp; John</itunes:author>
+<link href="https://example.com/alt.xml" rel="next" type="application/atom+xml" length="9223372036854775808"/>
+<id>https://example.com/feed</id>
+<entry><id></id><dc:date>1987-06-07T20:99:14</dc:date><title type="plain">back\slash &amp;quot;q&amp;quot; &amp;#x1F600;</title><media:content fileSize="123456" duration="0060" medium='audio' url="https://xn--caf-dma.example/ep212.oga?dl=1.0" type="image/png"></media:content><link title="MP3 feed" type="" href="//example.com/49.pdf" rel="alternate" length="9223372036854775808"/></entry>
+  </feed>

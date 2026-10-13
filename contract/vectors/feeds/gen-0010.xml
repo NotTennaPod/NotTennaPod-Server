@@ -1,0 +1,13 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link title="Alternate" type="audio/mpeg" length="abc" rel="next" href="https://example.com/alt.xml"/><title><![CDATA[&#xFFFF;
+Folge 11: Über alles
+&mdash;]]></title><description>&#x3C;br/>	1 &#x3C;2  &amp;lt&#60;li>&amp;&#x3C;/li&gt;&#x3C;br /&gt;</description><atom:link type="" title="Alternate" href="" rel="related"/><itunes:summary><![CDATA[  http://example.com/?a=1&b=2]]></itunes:summary><link>https://example.com</link><atom:link title="MP3 feed" rel="hub" href="https://example.com/" type="application/xhtml+xml"/><podcast:funding/><itunes:author>Café Radio</itunes:author><atom:link title='Café' type="text/html" href="https://example.com/a.b/238.mov" length="abc" rel="last"/><item><d:date>
+2009-03-29T11:59:47
+  </d:date>
+  <pubDate>1752-11-23</pubDate>
+  <media:thumbnail url="https://example.com/th.jpg"/>
+  <itunes:summary>a &gt; b&lt;br&gt;AT&#38;T</itunes:summary>
+  <guid isPermaLink="true">dup</guid>
+  <enclosure url="HTTPS://EXAMPLE.COM/e p362.m4a?file=x.mp3" length="-1" type="audio/x-wav"/>
+  <enclosure url="https://user:pass@media.example.net/45.aif?a=1&amp;b=2" length="4294967296" type="AUDIO/MPEG"/>
+  <title>a=b&#38;c=dcafé</title></item></channel></rss>

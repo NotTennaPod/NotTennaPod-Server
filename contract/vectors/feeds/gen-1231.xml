@@ -1,0 +1,19 @@
+﻿<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><itunes:new-feed-url>http</itunes:new-feed-url>
+<x:title xmlns:x="urn:x">Other namespace title</x:title>
+<link>https://example.com</link>
+<podcast:funding></podcast:funding>
+<atom:link type="application/rss+xml" rel="archives" length='12' title="Alternate" href="https://example.com/alt.xml"></atom:link>
+<description>&amp;amp&lt;br>aaaaaaaa
+&amp;amp;amp;&#x26;euro;&lt;div>plain words&#60;/div&gt;&#x3C;br&gt;&#x3C;/br&gt;&#x3C;b&gt;Bold&lt;/b> title&lt;br>&#x3C;li&gt;R&#x26;D&#60;/li&gt;</description>
+<title>#hash1 &#x3C;2 </title>
+<language></language>
+<item><description></description><itunes:duration>99999999999</itunes:duration><itunes:summary><![CDATA[&amp;<br>]]></itunes:summary><podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/><title>&amp;euro;<![CDATA[ Tom & Jerry <3]]></title><guid></guid><link></link><itunes:subtitle><![CDATA[&lt;b&gt;escaped&lt;/b&gt;
+שלום
+<center>Episode 12</center>]]></itunes:subtitle></item>
+<item><pubDate>Fri 24 Oct 2279 04:33:00 GMT+0945 (Gmt)</pubDate> <itunes:summary>  Episode 12&lt;p&gt;&lt;/p&gt;&#60;li&gt;&amp;AMP;&lt;/li&gt;&lt;div&gt;&amp;euro;&#60;/div>
+
+'single&apos;ééé
+
+&amp;nbsp;&lt;br></itunes:summary> <title><![CDATA[h]]>ttp://example.com/?a=1&amp;b=2&#x26;#128512;</title> <link></link> <guid isPermaLink="true">https://example.com/item/37924</guid> <description>&lt;br&gt;&lt;hr>&#60;p>&#x3C;/p&gt;&lt;p&gt;a &#x3C; b&#60;/p>&#13;
+&amp;Lt;&lt;br&gt; &#x26;#169;	{json: 1}</description></item></channel></rss>

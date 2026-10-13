@@ -1,0 +1,29 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:image href="https://example.com/it.jpg"/>
+  <link>https://example.com</link>
+  <language>de-DE</language>
+  <title>&lt;b>  padded  &#60;/b&gt;
+&lt;b&gt;&#60;i>é&lt;/b&gt;&#60;/i&gt;</title>
+  <itunes:subtitle><![CDATA[  spaced  
+&#0;]]></itunes:subtitle>
+  <title><![CDATA[​ &quot;q&quot;]]></title>
+  <itunes:author>Jane Doe</itunes:author>
+  <description>&#13;
+plain words 'single'</description>
+  <item><enclosure url="" length="9223372036854775808" type="audio/opus"/> <itunes:summary>&#60;div&gt;100%&#x3C;/div&gt;第7集&lt;br>  Tom &amp; Jerry &#60;3</itunes:summary> <media:content duration='1' medium='image' type="audio/x-wav" fileSize='abc'/> <description>&lt;li&gt;&#x26;AMP;&lt;/li>
+&#38;lt;b&#x26;gt;&lt;p>trailing &lt;/p&gt;aaaaaa&lt;hr/&gt;</description> <link></link> <media:content fileSize="00020000" type="application/json" isDefault="false" medium="video" duration="-5"/> <pubDate>&#13;
+2184-11-04T12:41:99.056-1200 </pubDate> <title>&#x26;</title> <itunes:subtitle>&lt;img src="x.png"> cover&lt;i>a
+  b&#60;/i>[x]&lt;/p></itunes:subtitle> <itunes:duration>0x1.8p2</itunes:duration></item>
+  <item><media:content medium="audio" fileSize="-1" duration="+60" isDefault="true" type="audio/opus"/>
+  <enclosure url="//example.com/dir.with.dots/ep266.avi" length="2e5" type="audio/mp3"/>
+  <enclosure url="HTTPS://EXAMPLE.COM/e p367" length='+20000' type="audio/mp4"/>
+  <guid isPermaLink="false"> </guid>
+  <podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"></podcast:socialInteract>
+  <media:thumbnail/>
+  <pubDate>Sunday, 22 Jun 00 11:15:13</pubDate>
+  <media:content url="HTTPS://EXAMPLE.COM/ep7.aac" fileSize="12" isDefault="true" duration="2147484" medium="document" type="audio/mp3"/>
+  <link></link>
+  <enclosure url="//example.com/dir.with.dots/ep345.aif" length="" type="audio/x-wav"/>
+  <title>http://example.com/?a=1&amp;b=2
+&amp;#;
+&lt;b&gt;&#x26;euro;</title></item></channel></rss>

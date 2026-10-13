@@ -1,0 +1,7 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="en"> <updated>Wed, 03 May 2006 07:40:09.374958 +0000</updated>
+  <itunes:image href=""/>
+  <logo>https://example.com/logo.png</logo>
+  <title type="HTML">&#38;#0;
+a &#x3C; b</title>
+  <itunes:author><![CDATA[A, B]]></itunes:author>
+</feed>

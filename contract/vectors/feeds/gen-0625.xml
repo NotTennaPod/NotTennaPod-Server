@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><title><![CDATA[&&euro;]]></title><description> http://example.com/?a=1&amp;b=2</description><itunes:subtitle>&#60;a href=&quot;https://example.com/x?a=1&#38;amp;b=2&quot;>&#60;3 &#60;3&#x3C;/a&gt;
+&#x3C;strong&gt;&#x26;&lt;/strong&gt;
+Episode 12</itunes:subtitle><image><title>Image title</title><url></url></image><link>https://example.com</link><itunes:summary> &amp;lt&lt;img src="x.png"&gt;&#60;p&gt;&amp;amp&#x3C;/p></itunes:summary><textInput><title>Search</title><link>https://example.com/search</link></textInput><item><title>100% &#60;b>Bold&lt;/b&gt; title</title>
+  <enclosure url="https://example.com:8443/e p16.mp4" length="123456789012345678" type="x-audio/mpeg"/>
+  <itunes:duration>3.4028235e38</itunes:duration>
+  <enclosure length="9223372036854775807" type="image/*"/>
+  <guid>a&#x26;b</guid>
+  <link> https://e.com/x </link>
+  <content:encoded>مرحبا&#x3C;br></content:encoded></item><item><guid>  spaced guid  </guid>
+<comments>https://example.com/c</comments>
+<pubDate>1984-01-24T04:19:55+0000 </pubDate>
+<title><![CDATA[sep<b><i><b>Bold</b> title</b></i>]]></title>
+<itunes:subtitle><![CDATA[multi
+line]]></itunes:subtitle>
+<enclosure url="" length="2e5" type="audio"/>
+<m:thumbnail url="https://example.com/th.jpg"/>
+<link> https://e.com/x </link>
+<description>&lt;div>&#x26;#;&lt;/div>&lt;p&gt;Episode 12&#x3C;/p>&#60;p>&#x26;nbsp;&#60;/p&gt;  http://example.com/?a=1&amp;b=2Folge 7: Über alles&#60;br&gt;aaaaa&#38;nbsp;&amp;lt;b&amp;gt;escaped&#38;lt;/b&amp;gt;&lt;br&gt;</description></item><item><link>https://example.com/ep</link>
+<itunes:image href='https://example.com/ep.jpg'/>
+<description></description>
+<m:content url="HTTPS://EXAMPLE.COM/dir.with.dots/ep339.m4b?auth=yes" fileSize="12" duration="0" type="audio/x-wav" medium="audio"/>
+<title>&amp;</title>
+<guid> </guid>
+<pubDate>1994-08-28</pubDate>
+<itunes:duration>17:34</itunes:duration>
+<enclosure url="ftp://files.example.com/ep361.jpg" length="-9223372036854775808" type="unknown"/></item></channel>
+</rss>

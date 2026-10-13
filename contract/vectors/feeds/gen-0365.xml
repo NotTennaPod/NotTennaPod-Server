@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters"> <id> raw </id> <podcast:funding url="https://example.com/give">Give</podcast:funding> <link rel='related' length="9223372036854775808" href=""/> <author><name>  Bob  </name></author> <updated>	1987-11-24T16:47:42-0500 	 </updated> <author><name>  Bob  </name><email>a@example.com</email></author> <itunes:author><![CDATA[&#31532;]]>&#19968;</itunes:author> <itunes:image href=''/> <subtitle>&lt;li&gt;&amp;lt&#60;/li&gt;&#x3C;li&gt;a&#13;
+b&lt;/li&gt;&#60;br&gt;&#x3C;div&gt;tab	here&#60;/div>aa&lt;div&gt;trailing &#60;/div&gt;aaaaaaaaa	"quoted"</subtitle> <title type='html'>"quoted"</title> <entry><id>urn:uuid:1</id>
+  <link rel="related" type="application/rss+xml" href="https://example.com/feed?page=2"/>
+  <link href="https://example.com/pay" type="application/xhtml+xml" title="Alternate" length="20000" rel="alternate"/>
+  <summary type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">&#128512;&lt;br&gt;  R&amp;D &#x645;&#x631;&#1581;&#1576;&#1575;&amp;nbsp;</div></summary>
+  <link rel="hub" href='https://example.com/feed?page=2' length="9223372036854775808" title="Café"/>
+  <author><name>Entry author</name></author>
+  <published>2017-02-21T13:60:11-0800</published>
+  <content type="text">Tom &amp;amp; Jerry &#38;lt;3&#x3C;br&gt;</content>
+  <title>&#60;u&gt;&amp;lt;b&amp;gt;escaped&#x26;lt;/b&amp;gt;&lt;/u&gt;  &#60;h3&gt;&#33590;&#x3C;/h3></title>
+  <updated>Sat 30 May 2022 07:27:33 GMT+0945 (+0)</updated>
+  <updated>Tuesday, 14 Apr 92 23:02 +0945</updated></entry> <entry><content type='HTML'></content>
+  <pc:chapters version="1.2"><pc:chapter href="" start='02:10:04.801' title="&lt;b>x&lt;/b>"/><pc:chapter start="2079"/><pc:chapter start="00:01:55" image="https://example.com/ch.png" title="&lt;b>x&lt;/b>" href="https://example.com/ch"/><pc:chapter start='00:01:52' title="&#128512;" image="https://example.com/ch.png"/><pc:chapter start="02:47:57" title="Intro" href="https://example.com/ch"/><pc:chapter start="00:19:27" href='https://example.com/ch' title='&#128512;' image="https://example.com/ch.png"/></pc:chapters>
+  <published>Thu May 27 01:46:10 1971 -1200</published>
+  <link type="application/xml+xhtml" rel="hub" length="20000" title="Alternate" href="https://example.com/pay"></link>
+  <title type="html">&lt;font color=&quot;red"&gt;S01E938&lt;/font&gt;#792 &#8211; Interview&#1605;&#1585;&#1581;&#1576;&#1575;</title>
+  <id>tag:x,2020:1</id></entry> <entry><title type="plain">  spaced  &amp;amp</title> <updated>Tue,  30  Apr  0099 07:56:54 +0200</updated> <pc:chapters version='1.2'><pc:chapter start="01:02:03:04:05"/><pc:chapter image="https://example.com/ch.png" start="1:00:00.5" href="https://example.com/ch" title="&lt;b>x&lt;/b>"/></pc:chapters> <summary type="plain">  sep&#38;lt;b&amp;gt;escaped&#38;lt;/b&#38;gt;&#60;div>&lt;/div&gt; sep&#13;
+100%
+sep  http://example.com/?a=1&amp;b=2&#x3C;img src="x" alt=&quot;y"/></summary> <id>urn:uuid:1</id> <published>&#13;
+27 Mar 1989 05:05:36. -0500
+</published></entry> <entry><published>1973-01-29T04:49:50.12345-05</published>
+<title type="HTML"> 
+&#38;#128512;
+&#x26;hellip;</title>
+<updated>Saturday, 13 Apr 84 22:45 -0500</updated>
+<updated>&#13;
+Fri 15 Dec 2000 01:23:13 GMT-0800 (MSK)&#13;
+</updated>
+<content type="text">
+&#x26;;plain words	a&#13;
+b</content>
+<summary type='text'><![CDATA[]]>&#x3C;p>R&amp;D&#x3C;/p&gt;</summary>
+<id></id></entry>
+</feed>

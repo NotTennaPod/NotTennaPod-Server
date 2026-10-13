@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"><atom:link type="" rel="Next" href="" title='MP3 feed'></atom:link>
+  <atom:link type="text/html" title="MP3 feed" rel="Next" href="https://example.com/" length="abc"/>
+  <itunes:image href="https://example.com/ai.jpg"/>
+  <atom:link title="Alternate" rel="Next" length="abc" type="application/xml+xhtml"/>
+  <atom:title>&amp;Lt;</atom:title>
+  <atom:id>https://example.com/feed</atom:id>
+  <atom:logo> https://e.com/l.png
+</atom:logo>
+  <atom:entry><atom:id>tag:x,2020:1</atom:id> <atom:updated>x, 	1992-02-12T04:46:40Z</atom:updated> <atom:title type="HTML"> a=b&amp;c=d 100% a &lt; b </atom:title></atom:entry> </atom:feed>

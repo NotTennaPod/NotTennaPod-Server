@@ -1,0 +1,2180 @@
+{
+ "cases": [
+  {
+   "description": "empty queue",
+   "items": [],
+   "output": {
+    "date_new_old": [],
+    "date_old_new": [],
+    "duration_long_short": [],
+    "duration_short_long": [],
+    "episode_title_a_z": [],
+    "episode_title_z_a": [],
+    "feed_title_a_z": [],
+    "feed_title_z_a": [],
+    "smart_shuffle_new_old": [],
+    "smart_shuffle_old_new": []
+   }
+  },
+  {
+   "description": "one item",
+   "items": [
+    {
+     "duration": 7,
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "publication_time": 5,
+     "title": "Only"
+    }
+   ],
+   "output": {
+    "date_new_old": [
+     0
+    ],
+    "date_old_new": [
+     0
+    ],
+    "duration_long_short": [
+     0
+    ],
+    "duration_short_long": [
+     0
+    ],
+    "episode_title_a_z": [
+     0
+    ],
+    "episode_title_z_a": [
+     0
+    ],
+    "feed_title_a_z": [
+     0
+    ],
+    "feed_title_z_a": [
+     0
+    ],
+    "smart_shuffle_new_old": [
+     0
+    ],
+    "smart_shuffle_old_new": [
+     0
+    ]
+   }
+  },
+  {
+   "description": "all values equal: every order keeps the queue order (stability)",
+   "items": [
+    {
+     "duration": 9,
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "podcast_title": "Show",
+     "publication_time": 9,
+     "title": "Same"
+    },
+    {
+     "duration": 9,
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "podcast_title": "Show",
+     "publication_time": 9,
+     "title": "Same"
+    },
+    {
+     "duration": 9,
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "podcast_title": "Show",
+     "publication_time": 9,
+     "title": "Same"
+    },
+    {
+     "duration": 9,
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "podcast_title": "Show",
+     "publication_time": 9,
+     "title": "Same"
+    }
+   ],
+   "output": {
+    "date_new_old": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "date_old_new": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "duration_long_short": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "duration_short_long": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "episode_title_a_z": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "episode_title_z_a": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "feed_title_a_z": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "feed_title_z_a": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "smart_shuffle_new_old": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "smart_shuffle_old_new": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "description": "all values missing: Android's defaults, every order is stable",
+   "items": [
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+     "podcast_id": "p1:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+     "podcast_id": "p1:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    }
+   ],
+   "output": {
+    "date_new_old": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "date_old_new": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "duration_long_short": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "duration_short_long": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "episode_title_a_z": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "episode_title_z_a": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "feed_title_a_z": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "feed_title_z_a": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "smart_shuffle_new_old": [
+     1,
+     0,
+     2,
+     3
+    ],
+    "smart_shuffle_old_new": [
+     1,
+     0,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "description": "Unicode simple lowercase, then code points",
+   "items": [
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "banana"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "Apple"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "ÄRGER"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "äpfel"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "Zebra"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "zebra"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "İstanbul"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "istanbul"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "ΟΔΟΣ"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "οδος"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "Straße"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "STRASSE"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "ǅemal"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "ǆemal"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "𐐀x"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "𐐨w"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "ﬁle"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "😀"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": ""
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "apple"
+    }
+   ],
+   "output": {
+    "date_new_old": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "date_old_new": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "duration_long_short": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "duration_short_long": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "episode_title_a_z": [
+     18,
+     1,
+     19,
+     0,
+     6,
+     7,
+     11,
+     10,
+     4,
+     5,
+     3,
+     2,
+     12,
+     13,
+     9,
+     8,
+     16,
+     15,
+     14,
+     17
+    ],
+    "episode_title_z_a": [
+     17,
+     14,
+     15,
+     16,
+     8,
+     9,
+     12,
+     13,
+     2,
+     3,
+     4,
+     5,
+     10,
+     11,
+     6,
+     7,
+     0,
+     1,
+     19,
+     18
+    ],
+    "feed_title_a_z": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "feed_title_z_a": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "smart_shuffle_new_old": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "smart_shuffle_old_new": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ]
+   }
+  },
+  {
+   "description": "missing titles sort as the empty string",
+   "items": [
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "b"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "A"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": ""
+    },
+    {
+     "podcast_id": "p1:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+   ],
+   "output": {
+    "date_new_old": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "date_old_new": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "duration_long_short": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "duration_short_long": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "episode_title_a_z": [
+     1,
+     3,
+     4,
+     2,
+     0
+    ],
+    "episode_title_z_a": [
+     0,
+     2,
+     1,
+     3,
+     4
+    ],
+    "feed_title_a_z": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "feed_title_z_a": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "smart_shuffle_new_old": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "smart_shuffle_old_new": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "description": "feed titles: lowercase, missing, ties",
+   "items": [
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "podcast_title": "Zeta",
+     "title": "1"
+    },
+    {
+     "podcast_id": "p1:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+     "title": "2"
+    },
+    {
+     "podcast_id": "p1:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+     "podcast_title": "alpha",
+     "title": "3"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "podcast_title": "ZETA",
+     "title": "4"
+    },
+    {
+     "podcast_id": "p1:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+     "podcast_title": "Älpha",
+     "title": "5"
+    }
+   ],
+   "output": {
+    "date_new_old": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "date_old_new": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "duration_long_short": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "duration_short_long": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "episode_title_a_z": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "episode_title_z_a": [
+     4,
+     3,
+     2,
+     1,
+     0
+    ],
+    "feed_title_a_z": [
+     1,
+     2,
+     0,
+     3,
+     4
+    ],
+    "feed_title_z_a": [
+     4,
+     0,
+     3,
+     2,
+     1
+    ],
+    "smart_shuffle_new_old": [
+     1,
+     0,
+     4,
+     3,
+     2
+    ],
+    "smart_shuffle_old_new": [
+     1,
+     0,
+     4,
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "description": "dates: missing is 0, negative times, ties",
+   "items": [
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "publication_time": 1000,
+     "title": "a"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "b"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "publication_time": -5,
+     "title": "c"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "publication_time": 1000,
+     "title": "d"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "publication_time": 1760000000000,
+     "title": "e"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "publication_time": 0,
+     "title": "f"
+    }
+   ],
+   "output": {
+    "date_new_old": [
+     4,
+     0,
+     3,
+     1,
+     5,
+     2
+    ],
+    "date_old_new": [
+     2,
+     1,
+     5,
+     0,
+     3,
+     4
+    ],
+    "duration_long_short": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "duration_short_long": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "episode_title_a_z": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "episode_title_z_a": [
+     5,
+     4,
+     3,
+     2,
+     1,
+     0
+    ],
+    "feed_title_a_z": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "feed_title_z_a": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "smart_shuffle_new_old": [
+     4,
+     0,
+     3,
+     1,
+     5,
+     2
+    ],
+    "smart_shuffle_old_new": [
+     2,
+     1,
+     5,
+     0,
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "description": "durations: missing is 0, ties, large values",
+   "items": [
+    {
+     "duration": 600000,
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "a"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "b"
+    },
+    {
+     "duration": 600000,
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "c"
+    },
+    {
+     "duration": 9007199254740991,
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "d"
+    },
+    {
+     "duration": 1,
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "e"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "f"
+    }
+   ],
+   "output": {
+    "date_new_old": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "date_old_new": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "duration_long_short": [
+     3,
+     0,
+     2,
+     4,
+     1,
+     5
+    ],
+    "duration_short_long": [
+     1,
+     5,
+     4,
+     0,
+     2,
+     3
+    ],
+    "episode_title_a_z": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "episode_title_z_a": [
+     5,
+     4,
+     3,
+     2,
+     1,
+     0
+    ],
+    "feed_title_a_z": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "feed_title_z_a": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "smart_shuffle_new_old": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "smart_shuffle_old_new": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  },
+  {
+   "description": "smart shuffle: two equally large groups (tie by podcast ID)",
+   "items": [
+    {
+     "podcast_id": "p1:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+     "publication_time": 10,
+     "title": "b1"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "publication_time": 20,
+     "title": "a1"
+    },
+    {
+     "podcast_id": "p1:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+     "publication_time": 5,
+     "title": "b2"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "publication_time": 1,
+     "title": "a2"
+    }
+   ],
+   "output": {
+    "date_new_old": [
+     1,
+     0,
+     2,
+     3
+    ],
+    "date_old_new": [
+     3,
+     2,
+     0,
+     1
+    ],
+    "duration_long_short": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "duration_short_long": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "episode_title_a_z": [
+     1,
+     3,
+     0,
+     2
+    ],
+    "episode_title_z_a": [
+     2,
+     0,
+     3,
+     1
+    ],
+    "feed_title_a_z": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "feed_title_z_a": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "smart_shuffle_new_old": [
+     0,
+     1,
+     3,
+     2
+    ],
+    "smart_shuffle_old_new": [
+     2,
+     3,
+     1,
+     0
+    ]
+   }
+  },
+  {
+   "description": "smart shuffle: three podcasts, ties inside a group, missing dates",
+   "items": [
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "publication_time": 3,
+     "title": "a1"
+    },
+    {
+     "podcast_id": "p1:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+     "title": "c1"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "publication_time": 3,
+     "title": "a2"
+    },
+    {
+     "podcast_id": "p1:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+     "publication_time": 7,
+     "title": "b1"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "publication_time": 1,
+     "title": "a3"
+    },
+    {
+     "podcast_id": "p1:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+     "publication_time": 2,
+     "title": "c2"
+    },
+    {
+     "podcast_id": "p1:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "title": "a4"
+    },
+    {
+     "podcast_id": "p1:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+     "publication_time": 7,
+     "title": "b2"
+    }
+   ],
+   "output": {
+    "date_new_old": [
+     3,
+     7,
+     0,
+     2,
+     5,
+     4,
+     1,
+     6
+    ],
+    "date_old_new": [
+     1,
+     6,
+     4,
+     5,
+     0,
+     2,
+     3,
+     7
+    ],
+    "duration_long_short": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "duration_short_long": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "episode_title_a_z": [
+     0,
+     2,
+     4,
+     6,
+     3,
+     7,
+     1,
+     5
+    ],
+    "episode_title_z_a": [
+     5,
+     1,
+     7,
+     3,
+     6,
+     4,
+     2,
+     0
+    ],
+    "feed_title_a_z": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "feed_title_z_a": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "smart_shuffle_new_old": [
+     5,
+     0,
+     3,
+     2,
+     4,
+     7,
+     6,
+     1
+    ],
+    "smart_shuffle_old_new": [
+     1,
+     6,
+     3,
+     4,
+     0,
+     7,
+     2,
+     5
+    ]
+   }
+  },
+  {
+   "description": "generated queue of 17 items (seed 6161)",
+   "items": [
+    {
+     "duration": 60000,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "publication_time": 563242989379,
+     "title": "Ep 8"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "podcast_title": "show",
+     "publication_time": 2000,
+     "title": "Zz"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "podcast_title": "Show",
+     "publication_time": 0,
+     "title": "Zz"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "podcast_title": "show",
+     "title": "Épisode"
+    },
+    {
+     "podcast_id": "p1:2222222222222222222222222222222222222222222222222222222222222222",
+     "podcast_title": "Zulu",
+     "publication_time": 2000,
+     "title": "ep 9"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "podcast_title": "show",
+     "title": "ep 4"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:2222222222222222222222222222222222222222222222222222222222222222",
+     "podcast_title": "Émission",
+     "publication_time": 2000,
+     "title": "Zz"
+    },
+    {
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "publication_time": 0,
+     "title": "ep 5"
+    },
+    {
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "publication_time": 700166218618,
+     "title": "Ep 3"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "publication_time": 1000,
+     "title": "Épisode"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "podcast_title": "Émission",
+     "publication_time": 1000,
+     "title": "Zz"
+    },
+    {
+     "duration": 7862455,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "podcast_title": "Émission",
+     "publication_time": 1000,
+     "title": "ep 6"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:2222222222222222222222222222222222222222222222222222222222222222",
+     "podcast_title": "Émission",
+     "publication_time": 93371868214
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "podcast_title": "Show",
+     "publication_time": 2000,
+     "title": "ep 7"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "publication_time": 2000
+    },
+    {
+     "duration": 5815022,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "publication_time": 2000
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "podcast_title": "Show",
+     "publication_time": 1000,
+     "title": "Ep 2"
+    }
+   ],
+   "output": {
+    "date_new_old": [
+     8,
+     0,
+     12,
+     1,
+     4,
+     6,
+     13,
+     14,
+     15,
+     9,
+     10,
+     11,
+     16,
+     2,
+     3,
+     5,
+     7
+    ],
+    "date_old_new": [
+     2,
+     3,
+     5,
+     7,
+     9,
+     10,
+     11,
+     16,
+     1,
+     4,
+     6,
+     13,
+     14,
+     15,
+     12,
+     0,
+     8
+    ],
+    "duration_long_short": [
+     11,
+     15,
+     0,
+     1,
+     2,
+     5,
+     9,
+     10,
+     3,
+     4,
+     6,
+     7,
+     8,
+     12,
+     13,
+     14,
+     16
+    ],
+    "duration_short_long": [
+     3,
+     4,
+     6,
+     7,
+     8,
+     12,
+     13,
+     14,
+     16,
+     0,
+     1,
+     2,
+     5,
+     9,
+     10,
+     15,
+     11
+    ],
+    "episode_title_a_z": [
+     12,
+     14,
+     15,
+     16,
+     8,
+     5,
+     7,
+     11,
+     13,
+     0,
+     4,
+     1,
+     2,
+     6,
+     10,
+     3,
+     9
+    ],
+    "episode_title_z_a": [
+     3,
+     9,
+     1,
+     2,
+     6,
+     10,
+     4,
+     0,
+     13,
+     11,
+     7,
+     5,
+     8,
+     16,
+     12,
+     14,
+     15
+    ],
+    "feed_title_a_z": [
+     0,
+     7,
+     8,
+     9,
+     14,
+     15,
+     1,
+     2,
+     3,
+     5,
+     13,
+     16,
+     4,
+     6,
+     10,
+     11,
+     12
+    ],
+    "feed_title_z_a": [
+     6,
+     10,
+     11,
+     12,
+     4,
+     1,
+     2,
+     3,
+     5,
+     13,
+     16,
+     0,
+     7,
+     8,
+     9,
+     14,
+     15
+    ],
+    "smart_shuffle_new_old": [
+     12,
+     13,
+     8,
+     14,
+     0,
+     9,
+     11,
+     1,
+     16,
+     4,
+     2,
+     3,
+     15,
+     5,
+     10,
+     7,
+     6
+    ],
+    "smart_shuffle_old_new": [
+     4,
+     2,
+     10,
+     3,
+     1,
+     5,
+     7,
+     15,
+     9,
+     6,
+     11,
+     16,
+     0,
+     13,
+     8,
+     14,
+     12
+    ]
+   }
+  },
+  {
+   "description": "generated queue of 40 items (seed 6161)",
+   "items": [
+    {
+     "duration": 60000,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "title": "ep 7"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:4444444444444444444444444444444444444444444444444444444444444444",
+     "podcast_title": "Show",
+     "publication_time": 2000,
+     "title": "ep 3"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:5555555555555555555555555555555555555555555555555555555555555555",
+     "podcast_title": "Émission",
+     "publication_time": 2000,
+     "title": "Épisode"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "publication_time": 0,
+     "title": "Épisode"
+    },
+    {
+     "podcast_id": "p1:2222222222222222222222222222222222222222222222222222222222222222",
+     "podcast_title": "Émission",
+     "title": "Ep 2"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "title": "Épisode"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:4444444444444444444444444444444444444444444444444444444444444444",
+     "podcast_title": "show",
+     "publication_time": 1000,
+     "title": "ep 6"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "publication_time": 945952475551,
+     "title": "Ep 8"
+    },
+    {
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "publication_time": 188805914862,
+     "title": "Ep 4"
+    },
+    {
+     "podcast_id": "p1:2222222222222222222222222222222222222222222222222222222222222222",
+     "podcast_title": "Émission",
+     "publication_time": 18308756457,
+     "title": "Ep 3"
+    },
+    {
+     "podcast_id": "p1:4444444444444444444444444444444444444444444444444444444444444444",
+     "podcast_title": "Show",
+     "publication_time": 0,
+     "title": "Ep 6"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "publication_time": 760779778459,
+     "title": "ep 4"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "publication_time": 131653273589,
+     "title": "ep 6"
+    },
+    {
+     "duration": 392231,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "publication_time": 2000,
+     "title": "Ep 8"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:4444444444444444444444444444444444444444444444444444444444444444",
+     "podcast_title": "Zulu",
+     "publication_time": 0,
+     "title": "ep 5"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "podcast_title": "Zulu",
+     "publication_time": 0,
+     "title": "Zz"
+    },
+    {
+     "podcast_id": "p1:2222222222222222222222222222222222222222222222222222222222222222",
+     "podcast_title": "show",
+     "publication_time": 0,
+     "title": "ep 8"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:2222222222222222222222222222222222222222222222222222222222222222",
+     "publication_time": 0,
+     "title": "Ep 5"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:4444444444444444444444444444444444444444444444444444444444444444",
+     "podcast_title": "Zulu",
+     "title": "Zz"
+    },
+    {
+     "podcast_id": "p1:4444444444444444444444444444444444444444444444444444444444444444",
+     "publication_time": 459702102219,
+     "title": "Ep 4"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:2222222222222222222222222222222222222222222222222222222222222222",
+     "podcast_title": "Zulu",
+     "publication_time": 0,
+     "title": "Ep 8"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "publication_time": 381181544770,
+     "title": "Épisode"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "publication_time": 1000,
+     "title": "Ep 8"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "podcast_title": "Show",
+     "publication_time": 2000,
+     "title": "Épisode"
+    },
+    {
+     "duration": 9508524,
+     "podcast_id": "p1:5555555555555555555555555555555555555555555555555555555555555555",
+     "publication_time": 0,
+     "title": "Zz"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:2222222222222222222222222222222222222222222222222222222222222222",
+     "podcast_title": "Show",
+     "publication_time": 507830367888
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:2222222222222222222222222222222222222222222222222222222222222222",
+     "publication_time": 0,
+     "title": "Zz"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:5555555555555555555555555555555555555555555555555555555555555555",
+     "podcast_title": "Zulu",
+     "publication_time": 2000,
+     "title": "ep 4"
+    },
+    {
+     "duration": 8117563,
+     "podcast_id": "p1:5555555555555555555555555555555555555555555555555555555555555555",
+     "podcast_title": "Émission",
+     "publication_time": 717316283589,
+     "title": "Épisode"
+    },
+    {
+     "duration": 7643173,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "publication_time": 1000,
+     "title": "ep 3"
+    },
+    {
+     "podcast_id": "p1:5555555555555555555555555555555555555555555555555555555555555555",
+     "podcast_title": "Zulu",
+     "publication_time": 2000,
+     "title": "Épisode"
+    },
+    {
+     "podcast_id": "p1:3333333333333333333333333333333333333333333333333333333333333333",
+     "podcast_title": "show",
+     "title": "Ep 1"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:4444444444444444444444444444444444444444444444444444444444444444",
+     "publication_time": 1000,
+     "title": "Ep 9"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:4444444444444444444444444444444444444444444444444444444444444444",
+     "podcast_title": "Show",
+     "publication_time": 0
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "publication_time": 2000,
+     "title": "Zz"
+    },
+    {
+     "duration": 0,
+     "podcast_id": "p1:2222222222222222222222222222222222222222222222222222222222222222",
+     "publication_time": 1000,
+     "title": "Ep 8"
+    },
+    {
+     "duration": 1643601,
+     "podcast_id": "p1:2222222222222222222222222222222222222222222222222222222222222222",
+     "podcast_title": "show",
+     "publication_time": 0,
+     "title": "Zz"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:4444444444444444444444444444444444444444444444444444444444444444",
+     "podcast_title": "Zulu",
+     "publication_time": 1000,
+     "title": "Zz"
+    },
+    {
+     "duration": 7144204,
+     "podcast_id": "p1:5555555555555555555555555555555555555555555555555555555555555555",
+     "podcast_title": "Zulu",
+     "publication_time": 1000,
+     "title": "ep 8"
+    },
+    {
+     "duration": 60000,
+     "podcast_id": "p1:1111111111111111111111111111111111111111111111111111111111111111",
+     "podcast_title": "show",
+     "title": "ep 1"
+    }
+   ],
+   "output": {
+    "date_new_old": [
+     7,
+     11,
+     28,
+     25,
+     19,
+     21,
+     8,
+     12,
+     9,
+     1,
+     2,
+     13,
+     23,
+     27,
+     30,
+     34,
+     6,
+     22,
+     29,
+     32,
+     35,
+     37,
+     38,
+     0,
+     3,
+     4,
+     5,
+     10,
+     14,
+     15,
+     16,
+     17,
+     18,
+     20,
+     24,
+     26,
+     31,
+     33,
+     36,
+     39
+    ],
+    "date_old_new": [
+     0,
+     3,
+     4,
+     5,
+     10,
+     14,
+     15,
+     16,
+     17,
+     18,
+     20,
+     24,
+     26,
+     31,
+     33,
+     36,
+     39,
+     6,
+     22,
+     29,
+     32,
+     35,
+     37,
+     38,
+     1,
+     2,
+     13,
+     23,
+     27,
+     30,
+     34,
+     9,
+     12,
+     8,
+     21,
+     19,
+     25,
+     28,
+     11,
+     7
+    ],
+    "duration_long_short": [
+     24,
+     28,
+     29,
+     38,
+     36,
+     13,
+     0,
+     1,
+     3,
+     11,
+     12,
+     14,
+     15,
+     18,
+     22,
+     27,
+     32,
+     37,
+     39,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     16,
+     17,
+     19,
+     20,
+     21,
+     23,
+     25,
+     26,
+     30,
+     31,
+     33,
+     34,
+     35
+    ],
+    "duration_short_long": [
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     16,
+     17,
+     19,
+     20,
+     21,
+     23,
+     25,
+     26,
+     30,
+     31,
+     33,
+     34,
+     35,
+     0,
+     1,
+     3,
+     11,
+     12,
+     14,
+     15,
+     18,
+     22,
+     27,
+     32,
+     37,
+     39,
+     13,
+     36,
+     38,
+     29,
+     28,
+     24
+    ],
+    "episode_title_a_z": [
+     25,
+     33,
+     31,
+     39,
+     4,
+     1,
+     9,
+     29,
+     8,
+     11,
+     19,
+     27,
+     14,
+     17,
+     6,
+     10,
+     12,
+     0,
+     7,
+     13,
+     16,
+     20,
+     22,
+     35,
+     38,
+     32,
+     15,
+     18,
+     24,
+     26,
+     34,
+     36,
+     37,
+     2,
+     3,
+     5,
+     21,
+     23,
+     28,
+     30
+    ],
+    "episode_title_z_a": [
+     2,
+     3,
+     5,
+     21,
+     23,
+     28,
+     30,
+     15,
+     18,
+     24,
+     26,
+     34,
+     36,
+     37,
+     32,
+     7,
+     13,
+     16,
+     20,
+     22,
+     35,
+     38,
+     0,
+     6,
+     10,
+     12,
+     14,
+     17,
+     8,
+     11,
+     19,
+     27,
+     1,
+     9,
+     29,
+     4,
+     31,
+     39,
+     25,
+     33
+    ],
+    "feed_title_a_z": [
+     0,
+     3,
+     5,
+     7,
+     8,
+     11,
+     12,
+     13,
+     17,
+     19,
+     21,
+     22,
+     24,
+     26,
+     29,
+     32,
+     34,
+     35,
+     1,
+     6,
+     10,
+     16,
+     23,
+     25,
+     31,
+     33,
+     36,
+     39,
+     14,
+     15,
+     18,
+     20,
+     27,
+     30,
+     37,
+     38,
+     2,
+     4,
+     9,
+     28
+    ],
+    "feed_title_z_a": [
+     2,
+     4,
+     9,
+     28,
+     14,
+     15,
+     18,
+     20,
+     27,
+     30,
+     37,
+     38,
+     1,
+     6,
+     10,
+     16,
+     23,
+     25,
+     31,
+     33,
+     36,
+     39,
+     0,
+     3,
+     5,
+     7,
+     8,
+     11,
+     12,
+     13,
+     17,
+     19,
+     21,
+     22,
+     24,
+     26,
+     29,
+     32,
+     34,
+     35
+    ],
+    "smart_shuffle_new_old": [
+     28,
+     7,
+     19,
+     11,
+     25,
+     2,
+     1,
+     21,
+     9,
+     8,
+     6,
+     12,
+     35,
+     13,
+     32,
+     34,
+     4,
+     27,
+     37,
+     22,
+     16,
+     23,
+     30,
+     29,
+     17,
+     10,
+     0,
+     3,
+     20,
+     14,
+     5,
+     15,
+     26,
+     18,
+     38,
+     39,
+     36,
+     33,
+     31,
+     24
+    ],
+    "smart_shuffle_old_new": [
+     24,
+     0,
+     10,
+     3,
+     4,
+     38,
+     14,
+     15,
+     16,
+     5,
+     18,
+     39,
+     17,
+     31,
+     33,
+     22,
+     20,
+     2,
+     6,
+     29,
+     26,
+     13,
+     27,
+     34,
+     36,
+     32,
+     23,
+     12,
+     35,
+     37,
+     8,
+     21,
+     9,
+     1,
+     30,
+     11,
+     25,
+     19,
+     7,
+     28
+    ]
+   }
+  }
+ ],
+ "suite": "queue_sort"
+}

@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns="http://backend.userland.com/rss2" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:subtitle>multi
+line&lt;blockquote&gt;&#38;amp&#x3C;/blockquote&gt;plain words</itunes:subtitle>
+  <itunes:author>Tom &#38; Jerry &#60;3</itunes:author>
+  <title><![CDATA[1 ]]>&#60;2</title>
+  <link> https://example.com/ </link>
+  <atom:link type="application/xml+xhtml" length='abc'/>
+  <description>  &#x3C;3 &#60;3&#13;
+a &gt; btrailing &lt;br></description>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <itunes:image/>
+  <itunes:summary>&lt;div&gt;a
+
+b&#60;/div&gt;&lt;li>{json: 1}&#60;/li&gt;😀😀ééé  &amp;mdash;&#60;p/>caf&#233;&#60;img src="x" alt=&quot;y"/&gt;</itunes:summary>
+  <item><description>&lt;div&gt;שלום&lt;/div&gt;</description>
+<media:content duration="1.5" medium="audio" fileSize="16385" type="application/pdf"/>
+<itunes:subtitle>&#38;euro;  &#38;euro;  &lt;span style="color:red">​&#x3C;/span></itunes:subtitle>
+<dc:date>1950-01-13T1</dc:date>
+<enclosure url='' type="audio/mp3"/>
+<pubDate>27 May 0099 12:35:58 utc</pubDate>
+<guid isPermaLink='false'>
+</guid>
+<itunes:author>Item author</itunes:author>
+<title><![CDATA[a > ]]>b
+&amp;Lt;</title>
+<itunes:duration>7475.780</itunes:duration>
+<link></link></item></channel>
+</rss>

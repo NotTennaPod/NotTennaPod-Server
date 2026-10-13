@@ -1,0 +1,8 @@
+﻿<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"><author><name>C&amp;D</name></author>
+  <link type="application/xhtml+xml" title="MP3 feed" href="https://example.com/alt.xml" rel="archives"/>
+  <link title="Café" href='https://example.com/' type="" rel="Next"/>
+  <title type="html">&lt;B>a&#13;
+b&#x3C;/b></title>
+  <author><name>&#201;mile</name></author>
+  <id></id>
+  <author><name>Émile</name></author></feed>

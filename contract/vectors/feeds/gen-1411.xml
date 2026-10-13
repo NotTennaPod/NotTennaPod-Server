@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<rss version="2.0" xmlns:m="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters"><image><url>  https://example.com/ws.png
+</url><title>Image title</title></image>
+  <title><![CDATA[&nbsp;]]></title>
+  <dc:creator>DC Creator</dc:creator>
+  <link>https://example.com</link>
+  <link xmlns="http://www.w3.org/2005/Atom" rel="first" href='https://example.com/alt.xml' length="20000" title='Alternate'/>
+  <p2:funding url="https://example.com/donate">&lt;b&gt;x&#x3C;/b&gt;</p2:funding>
+  <item><m:content isDefault="true" url="HTTPS://EXAMPLE.COM/caf&#233;/274.mp3.zip" fileSize="9007199254740991" duration="9223372036854775807" medium="document" type="audio/x-m4a"/> <description><![CDATA[ &#1513;&#1500;&#1493;&#1501;&]]>#xD800;</description> <title>&lt;s&gt;&amp;#169;&#x3C;/s&gt;&#x26;amp;&#38;apos;a&amp;apos;</title> <link>https://example.com/ep</link> <pubDate>Thursday, 17 Nov 91 20:07 +0200</pubDate> <itunes:duration>182</itunes:duration> <itunes:summary><![CDATA[<BR>
+multi
+line  &quot;q&quot;100%<p>cr
+lf</p>]]></itunes:summary> <enclosure url="HTTPS://EXAMPLE.COM/377.xyz" length="abc" type="audio/aac"/> <guid isPermaLink="false">https://example.com/item/31116</guid></item>
+  <item><pubDate>Friday, 10 Jan 14 04:55:34</pubDate>
+<p2:socialInteract uri="" protocol="activitypub"/>
+<guid> </guid>
+<itunes:duration> 1:30</itunes:duration>
+<description><![CDATA[a]]></description></item>
+  <item><title>Tom &amp; Jerry &#x3C;3
+a&#13;
+b
+&#60;b&gt;  spaced  </title>
+<enclosure length="20000.0" type="application/x-bittorrent"/>
+<itunes:duration>152:52</itunes:duration>
+<enclosure url="//example.com/caf&#233;/209.webm?auth=yes" length='0x4E20' type="text/plain"/>
+<guid>urn:uuid:aa7e60ae</guid>
+<enclosure url='' length="123456" type='audio'></enclosure>
+<pubDate>2016-09-07T21:35:35+0530</pubDate>
+<link>https://example.com/ep</link></item>
+  <item><title>multi
+line
+trailing 
+&amp;apos;a&amp;apos;</title><guid isPermaLink='true'>
+</guid><link></link><pubDate>2528-07-29T10:38:19pst</pubDate><description>&#x3C;div&gt;Folge 7: &#220;ber alles&#60;/div></description><itunes:duration>1:51:16</itunes:duration><enclosure url="https://example.com/a.b/caf&#233;/330.mp4" length="00020000" type="video/x-matroska"/><m:content isDefault="TRUE" type="audio/flac" medium="document" duration="abc" url="https://xn--caf-dma.example/a/b/c354.m4b#t=10" fileSize="9223372036854775807"/><m:content fileSize="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;" isDefault="TRUE" type="application/ogg" duration="1.5"/></item></channel></rss>

@@ -1,0 +1,27 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:media="http://search.yahoo.com/mrss/"><language>TR</language>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<description><![CDATA[<br/>	&;aaaaaa  &#169;<hr/>]]></description>
+<atom:link length="20000" rel="first" type='application/xml+xhtml' href="https://example.com/feed?page=2" title=""/>
+<title><![CDATA[<tt>&lt;b&gt;</tt>]]></title>
+<atom:link title="Café" rel="first" type="application/xml+xhtml" href=''/>
+<media:thumbnail/>
+<item><title><![CDATA[&hellip;  &mdash;]]></title>
+<link>https://example.com/ep</link>
+<pubDate>Sun, 16 MAY 1999 16:55:37 -1200</pubDate>
+<itunes:duration>2147483.647</itunes:duration>
+<enclosure url=" //example.com/ep304.txt " length="-1" type="video/x-matroska"/>
+<media:thumbnail url=''/>
+<p2:transcript url="https://example.com/t.json" type="Application/JSON"></p2:transcript><p2:transcript url='' type="Application/JSON" language="en"/><p2:transcript url="" type="Application/JSON"/></item>
+<item><link>https://example.com/ep</link>
+  <guid isPermaLink="true">https://example.com/item/66309</guid>
+  <description>	 leading	cr
+lf</description>
+  <title>&#x26;AMP;Line&lt;br>break</title>
+  <itunes:subtitle><![CDATA[&apos;a&]]>apos;&#60;ol&gt;&lt;li> &#60;/li>&#x3C;/ol&gt;مرحبا</itunes:subtitle>
+  <enclosure length="12" type="audio/mpeg; charset=binary"/>
+  <pubDate>Fri, 27 Dec 1991 20:18:36</pubDate>
+  <itunes:image href=" "/>
+  <enclosure url="https://cdn.example.com/dir.with.dots/ep22.OGG?dl=1.0" length="20000 " type="video/mp4"/></item>
+<item><description>&lt;li&gt;&#38;#xFFFF;&lt;/li&gt; Tom &#38; Jerry &lt;3&#60;div>&#38;nbsp;&#x3C;/div&gt;&#x3C;div&gt;&amp;lt&lt;/div&gt;&#60;li&gt;#hash&lt;/li></description> <sc:chapters version="1.2"><sc:chapter image="https://example.com/ch.png" start='00:19:53.794' title="Café &amp;amp; more" href=""></sc:chapter><sc:chapter start="2147483648:00:00" title=""/><sc:chapter title="Intro" start="01:23:10" image="https://example.com/ch.png"/></sc:chapters> <itunes:author>Item author</itunes:author> <title>&lt;small&gt;&amp;#x1F600;&#60;/small&gt;
+#827 &#8211; Interview</title> <pubDate>Thu, 20 Aug 1992 19:14:32 </pubDate> <guid isPermaLink="false"></guid> <link> https://e.com/x </link> <enclosure url=" ftp://files.example.com/a/b/c253.wma " length="9223372036854775808" type="application/x-bittorrent"/></item></channel>
+</rss>

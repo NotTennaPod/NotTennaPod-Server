@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><podcast:funding url="https://example.com/donate">  spaced  </podcast:funding>
+<link>https://example.com</link>
+<podcast:funding url='https://example.com/donate'>  spaced  </podcast:funding>
+<language>en</language>
+<podcast:funding url=""></podcast:funding>
+<description></description>
+<itunes:subtitle>Tom &amp;amp; Jerry &amp;lt;3</itunes:subtitle></channel>
+  </rss>

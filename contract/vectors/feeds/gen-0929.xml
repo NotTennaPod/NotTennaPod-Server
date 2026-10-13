@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<title>	&amp;amp;a=b&#x26;c=d&amp;#;
+</title>
+<atom:link href='https://example.com/' type="application/xhtml+xml" title="" rel="first"/>
+<language>de-DE</language>
+<description> multi
+line</description>
+<image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+<item><title><![CDATA[&;<sectio]]>n&gt;é&lt;/section>{json: 1}</title>
+<guid isPermaLink="false">https://example.com/item/24834</guid>
+<link></link>
+<pubDate>Tue, 13 Jun 1752 11.01:24 -1200</pubDate>
+<description><![CDATA[<div>R&D</div> &quot;q&quot;<p>S01E7</p><li>x<y</li><br />]]></description>
+<itunes:summary> &#38;;&lt;hr/&gt;&#x3C;hr&gt;&#x3C;img src="x.png">
+sep&#38;#x1F600;&#13;
+'single' trailing </itunes:summary>
+<itunes:image/>
+<itunes:duration>4:12:04</itunes:duration>
+<enclosure url="https://example.com:8443/e p13.ts" type="Audio/MPEG"/></item>
+<item><title><![CDATA[​]]></title>
+<itunes:image href=" https://e.com/i.png "/>
+<pubDate>1752-07-14T21:52:30+0200&#13;
+</pubDate>
+<link>https://example.com/ep</link>
+<enclosure length="-9223372036854775808" type='application/x-bittorrent'/>
+<media:thumbnail url="https://example.com/th.jpg"/>
+<guid> </guid></item></channel> </rss>

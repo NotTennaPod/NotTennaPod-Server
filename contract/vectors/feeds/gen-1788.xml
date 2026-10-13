@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<title><![CDATA['single']]></title>
+<description></description>
+<category>Technology</category>
+<link>https://example.com</link>
+<item><link> https://e.com/x </link> <title>茶</title> <itunes:duration>1:00:00:00</itunes:duration> <enclosure url='' length="abc" type='text/plain'/> <media:group><media:content isDefault="1" fileSize="1" medium="video" type="video/mp4" duration="59"/><media:content medium="audio" type="application/octet-stream" duration="+60" isDefault="false" fileSize="12"/></media:group> <guid>
+</guid> <description>a
+  b&lt;li&gt;&#38;unknown;&lt;/li>😀&#128512;&lt;li>S01E7&#60;/li&gt;  padded  </description></item>
+<item><title><![CDATA[<img src="x.png"> cover]]></title>
+<guid isPermaLink='true'>urn:uuid:d04f4313</guid>
+<itunes:image href=" "/>
+<enclosure length="２０００００"></enclosure></item>
+<item><enclosure url="" length="9007199254740992" type="video/webm"></enclosure> <title>&#38;amp</title> <guid>https://example.com/item/74081</guid> <enclosure url="" length="1" type="audio/*"/></item>
+<item><title>x<![CDATA[<y]]></title>
+  <guid> </guid>
+  <link> https://e.com/x </link>
+  <pubDate> Monday, 17 Jan 2552 12:22:13 EEST
+</pubDate>
+  <description><![CDATA[<hr/> 
+​😀<img src="x" alt="y"/>]]></description>
+  <content:encoded>
+
+&amp;lt;b&#x26;gt;</content:encoded>
+  <itunes:summary>&#x3C;p>&amp;#65;&amp;#66;&lt;/p&gt;R&#x26;D&lt;p&gt;&#38;#xA9;&#60;/p>&lt;p>&#x26;&lt;/p>&#60;div&gt;&lt;p>Para&lt;/p&gt;&lt;/div&gt;</itunes:summary>
+  <itunes:image href=""></itunes:image>
+  <enclosure url="" length="12" type='application/octet-stream'/>
+  <enclosure url="ftp://files.example.com/ep169.m3u8" length="2e5" type="Audio/MPEG"/>
+  <media:group><media:content duration="3600" fileSize="9007199254740991" type='audio' url="https://user:pass@media.example.net/ep343.webm" isDefault="false"/></media:group>
+  <media:thumbnail url="https://example.com/th.jpg"/></item></channel>
+  </rss>

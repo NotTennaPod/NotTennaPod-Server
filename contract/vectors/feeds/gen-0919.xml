@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p2="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><title><![CDATA[#7]]>36 – Interview</title> <language>pt-BR</language> <atom:link href="https://example.com/pay" type="audio/mpeg" length='9223372036854775808' rel="" title="Alternate"/> <description><![CDATA[😀]]></description> <link xmlns="http://www.w3.org/2005/Atom" rel="Next" type="text/html" href="https://cdn.example.com/café/77.opus" title=""/> <item><guid isPermaLink="true">dup</guid>
+<title><![CDATA[]]>&amp;amp;amp;&#x26;#169;</title>
+<enclosure url="https://cdn.example.com/café/50.torrent" length="123456789012345678" type="Audio/MPEG"/>
+<description><![CDATA[http://example.com/?a=1&b=2<br>]]></description>
+<link>https://example.com/ep</link>
+<pubDate>2000-11-23AEST</pubDate></item> <item><enclosure length="4294967296" type="video/mp4"/>
+<guid isPermaLink='true'>Café-guid</guid>
+<content:encoded>&#233;&#233;é&#233;é&#233; a=b&amp;c=dTom &amp; Jerry &lt;3</content:encoded>
+<atom:link href="https://example.com/alt.xml" type="" title="Alternate"/>
+<pubDate>1981-10-02T07:28:38+0</pubDate>
+<title>  padded    &#x26;;  Episode 641</title>
+<p2:transcript url="https://example.com/t.vtt" type="application/x-subrip"></p2:transcript><p2:transcript url="https://example.com/t.json" type="" language="en"/></item> <item><title>&amp;amp;&amp;#169;</title>
+<link> https://e.com/x </link>
+<enclosure length='abc' type="audio/x-wav"/>
+<media:content fileSize="20000 " duration='2147483648' type="image/png" url="https://user:pass@media.example.net/45.aif?a=1&amp;b=2" medium="Audio"/>
+<media:content isDefault="true" url='HTTPS://EXAMPLE.COM/café/159.amr' fileSize='123456' type="unknown" medium="image"></media:content>
+<media:content medium="video" duration='9223372036854775807' type="AUDIO/MPEG" isDefault="true"/>
+<psc:chapters version="1.2"><psc:chapter title="&lt;b>x&lt;/b>" href="https://example.com/ch" start="1:00:NaN"/><psc:chapter start="00:59:33" href="https://example.com/ch" title=''/><psc:chapter start="" href="https://example.com/ch"/><psc:chapter start="0x10:00"/><psc:chapter start="3493" title="Intro" href="https://example.com/ch"/><psc:chapter href="https://example.com/ch" start="112:27" title="Intro"/></psc:chapters></item> <item><guid isPermaLink="false">
+</guid>
+<link></link>
+<pubDate>&#13;
+Tue, 27 June 2597 21:15 </pubDate>
+<description></description>
+<content:encoded>&#13;
+http://example.com/?a=1&amp;b=2&lt;img src=&quot;x&quot; alt="y"/>&#13;
+trailing aaaaaaa
+  spaced  </content:encoded>
+<enclosure url="ftp://files.example.com/café/107.wma#t=10" length="1" type="video/x-matroska"/>
+<media:content url="ftp://files.example.com/ep294.html" medium='image' fileSize="0" type="AUDIO/MPEG" duration="-5"/></item></channel>
+</rss>

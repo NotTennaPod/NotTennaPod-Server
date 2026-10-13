@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><itunes:image href=" https://example.com/sp.jpg "></itunes:image>
+<itunes:summary></itunes:summary>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<item><guid isPermaLink="false">  spaced guid  </guid>
+<itunes:subtitle><![CDATA[&#xD800;
+<strike>]]>#hash&#60;/strike&gt;</itunes:subtitle>
+<pubDate>Sat, 26 Oct 52 05:36:25 +0945</pubDate>
+<enclosure url="ftp://files.example.com/30" length="16383" type="image/png"/>
+<link> https://e.com/x </link>
+<title><![CDATA[&euro;</p> http://example.com/?a=1&b=2 <B> leading</b>]]></title></item>
+<item><content:encoded><![CDATA[ http://example.com/?a=1&b=2<img>]]></content:encoded>
+<title>&amp;amp;
+&#31532;105&#38598;</title>
+<description>&lt;hr/&gt;&lt;br>
+ leading</description>
+<itunes:duration>9223372036854775807</itunes:duration>
+<pubDate>Sat, 03 february 1990 02:31:28 +0000</pubDate>
+<guid isPermaLink="false">dup</guid>
+<enclosure url="" length="9007199254740991" type="audio/mp4"/></item>
+<title><![CDATA[R&D
+Folge 376: Über alles]]></title>
+<image><url>https://example.com/img.png</url><link>https://example.com/img-link</link><title>Image title</title></image>
+<itunes:author><![CDATA[A]]>, B</itunes:author>
+<language>TR</language>
+<link>https://example.com</link>
+<dcterms:creator>DC Creator</dcterms:creator>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<description></description></channel></rss>

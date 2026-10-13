@@ -1,0 +1,29 @@
+<rss version="2.0" xmlns="http://backend.userland.com/rss2" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters"><channel xmlns:dc="http://purl.org/dc/elements/1.1/"><textInput><title>Search</title><link>https://example.com/search</link></textInput> <itunes:author>Jane Doe</itunes:author> <item><media:content isDefault="false" duration="-5" fileSize="-0" type='image/png'></media:content>
+  <media:content duration="1" medium="audio" type="audio/mpeg; charset=binary" fileSize="2147483648"/>
+  <itunes:image href=' https://e.com/i.png '></itunes:image>
+  <media:content isDefault="1" medium="audio" url="//example.com/a/b/c73.m4v" type='AUDIO/MPEG' fileSize="1,000,000" duration='2147484'/>
+  <pubDate>1985-06-23 (CET)</pubDate>
+  <title>"quoted" &#x26;Lt;</title>
+  <link></link>
+  <enclosure url='https://user:pass@media.example.net/ep211.mp3' length="abc" type="image/png"/>
+  <itunes:duration>15</itunes:duration></item> <item><description>	&amp;Lt;</description>
+<pubDate>Friday, 99 Jul 2006 02:46:37</pubDate>
+<title>[x]</title>
+<enclosure length="18446744073709551616" type='video'/>
+<itunes:duration>1:32:20</itunes:duration>
+<guid isPermaLink="true">  spaced guid  </guid>
+<link></link></item> <item><title>a=b&amp;c=d</title>
+  <enclosure url="HTTPS://EXAMPLE.COM/a/b/c217.OGG" length="-0"/>
+  <itunes:summary>&lt;br /&gt;</itunes:summary>
+  <description>
+#hash&#60;br></description>
+  <pubDate>2300-07-07T04:22:56.843</pubDate>
+  <guid isPermaLink="true">https://example.com/item/94625</guid>
+  <media:description type="plain">&#60;li&gt;http://example.com/?a=1&amp;b=2&lt;/li&gt;</media:description>
+  <content:encoded>S01E7&#x3C;br>😀&lt;div&gt;&#x1F600;&#x3C;/div&gt;&lt;div&gt;Episode 7&lt;/div&gt;AT&amp;T&#x3C;p>&amp;quot;q&amp;quot;&#x3C;/p&gt;&#60;li&gt;&amp;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;&lt;/li&gt;&lt;li&gt;tab	here&#x3C;/li></content:encoded>
+  <itunes:duration>1e2</itunes:duration>
+  <link> https://e.com/x </link>
+  <itunes:image href=""></itunes:image></item> <title>&#x3C;b>Bold&lt;/b&gt; title &lt;dfn&gt;  spaced  &lt;/dfn></title> <description><![CDATA[<p/>
+
+#hash<br></br><div>&copy;</div>  Episode 12שלום<br><p>Line<br>break</p><div>&lt</div>]]></description> <podcast:funding url="https://example.com/donate"></podcast:funding> <media:thumbnail/> <itunes:image href=" "/> <link>https://example.com</link></channel>
+</rss>

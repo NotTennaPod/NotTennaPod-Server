@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:m="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><itunes:image href="https://example.com/it.jpg"/>
+<language>pt-BR</language>
+<atom:link length="20000" rel="first" href='https://example.com/' title=""/>
+<description>&lt;BR>&#60;br/>&lt;li&gt;Folge 7: Über alles&#60;/li>😀😀&lt;BR></description>
+<title><![CDATA[  Tom & Jerry]]> &#x3C;3 ​
+</title>
+<atom:link type='application/xhtml+xml' title="MP3 feed" rel="related" href=""/>
+<link xmlns="http://www.w3.org/2005/Atom" rel='hub' type="text/html" length="9223372036854775808" href="https://example.com/feed?page=2" title="Café"/>
+<link>https://example.com</link>
+<item><guid isPermaLink="false">https://example.com/item/71771</guid>
+<title><![CDATA[]]>#hash</title>
+<m:group><m:content duration='3600' fileSize='16383' medium="document" type="audio/opus" url="http://example.org/e p58.mkv" isDefault="1"/></m:group>
+<link>https://example.com/ep</link>
+<description>"quoted"Folge 7: Über alles&lt;br&gt;&#x3C;img src="x" alt="y&quot;/&gt;</description>
+<enclosure url='' length="abc" type="audio"></enclosure>
+<atom:link title='' type="application/xhtml+xml" length="abc"></atom:link>
+<content:encoded>&#x3C;li&gt;1 &#x3C;2&#60;/li&gt;</content:encoded>
+<itunes:image href=" https://e.com/i.png "/></item>
+<item><itunes:duration>2057.277</itunes:duration>
+<link></link>
+<title><![CDATA[  Folge 559: Über alles  ​ ]]></title>
+<m:group><m:content duration="abc" url="https://cdn.example.com/e p297.m4a" medium='audio' type="video" fileSize=""/><m:content duration="2147484" medium='video' type="video/webm" isDefault="true" fileSize="-1" url='//example.com/e p152.wma'/><m:content type="text/plain" url="ftp://files.example.com/dir.with.dots/ep392.aif" medium="audio" fileSize="52428800" duration="-5"/></m:group>
+<guid isPermaLink='false'></guid>
+<itunes:image/>
+<pubDate>Fri, 00 Nov 2002 05:54:28 -1200</pubDate>
+<enclosure url="http://example.org/a/b/c210.mp3.zip" length="0x4E20" type="audio"/>
+<itunes:summary><![CDATA[<hr/>]]></itunes:summary>
+<enclosure url="https://cdn.example.com/a/b/c33.pdf" length="-16384" type="audio/mp3"></enclosure>
+<itunes:subtitle> &#38;#x1F600;  &#38;lt  Folge 190: Über alles<![CDATA[ ]]></itunes:subtitle></item>
+<item><description><![CDATA[<p/>&#xFFFF;aaaaaaa]]></description><title><![CDATA[[x]a
+  b<p style="text-align:center">&#169;</p>]]></title><enclosure url="https://example.com/a.b/a/b/c103.caf" length="18446744073709551616" type="video/mp4"/><m:description type="plain"></m:description><enclosure url="" type="audio/aac"/><m:group><m:content isDefault="TRUE" duration="0060" medium="document" fileSize="0x4E20" url="//example.com/a/b/c255.mid" type="image/png"/></m:group><itunes:duration>::</itunes:duration><itunes:summary>&lt;hr&gt;<![CDATA[<br/>]]></itunes:summary><enclosure url="" type="application/pdf"/><guid>dup</guid><pubDate>1998-07-23Europe/Berlin</pubDate><content:encoded><![CDATA[	مرحبا<div>&lt;b&gt;escaped&lt;/b&gt;</div>]]></content:encoded></item></channel>
+</rss>

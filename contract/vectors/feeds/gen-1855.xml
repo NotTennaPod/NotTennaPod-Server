@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><link> https://example.com/ </link>
+<description> &amp;unknown;multi
+line</description>
+<source url="https://example.com/s"><title>Source title</title></source>
+<title>{json: 1} &amp;#0;</title>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<itunes:summary>&lt;div&gt;a &gt; b&lt;/div&gt; &amp;copy;&#60;div&gt;&amp;#xD800;&lt;/div&gt;</itunes:summary>
+<language>pt-BR</language>
+<atom:link href="https://example.com/feed?page=2" type='application/xhtml+xml' rel="payment"/>
+<image><url>  https://example.com/ws.png
+</url><title>Image title</title><link>https://example.com/img-link</link></image>
+<itunes:author>Café Radio</itunes:author>
+<item><link>https://example.com/ep</link>
+<itunes:duration>3395.639</itunes:duration>
+<guid isPermaLink="true">  spaced guid  </guid>
+<media:group><m:content isDefault="TRUE" url='https://cdn.example.com/a/b/c33.pdf' duration="0060" medium="video" fileSize="+20000" type="x-audio/mpeg"/><media:content isDefault="TRUE" duration="2147484" fileSize='+20000' type="image/png" url="https://cdn.example.com/dir.with.dots/ep47.OGG" medium="audio"/></media:group>
+<enclosure url="https://example.com/a.b/221.m4b" length="20000.0" type="video"/>
+<pubDate>Sat Oct 17 06:19:34 2009 NZST</pubDate>
+<title><![CDATA[1 <2 AT&T café]]></title>
+<itunes:subtitle>{json: 1}Line&lt;br&gt;break</itunes:subtitle></item></channel>
+</rss>

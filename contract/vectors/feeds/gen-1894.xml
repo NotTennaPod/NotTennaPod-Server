@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:psc="http://podlove.org/simple-chapters"><link></link>
+<source url="https://example.com/s"><title>Source title</title></source>
+<title><![CDATA[😀]]></title>
+<image><url></url></image>
+<podcast:funding>  spaced  </podcast:funding>
+<itunes:author><![CDATA[&copy; 2020 Org]]></itunes:author>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<atom:link length="12" rel="enclosure" href='https://example.com/pay'/>
+<itunes:subtitle>tab	here  &lt;article&gt;&amp;#xFFFF;&#x3C;/article&gt;</itunes:subtitle>
+<description>&lt;p>&lt;/p>&#x3C;hr/&gt;x&#60;y&#13;
+x&#60;y&#13;
+😀	&lt;3 &#x3C;3😀aaa</description>
+<itunes:new-feed-url>HTTP://upper.example</itunes:new-feed-url>
+<item><title>&amp;#x;
+a &gt;<![CDATA[ b]]></title>
+<guid>urn:uuid:bd81f135</guid>
+<link>https://example.com/ep</link>
+<pubDate>Sun 19 Apr 2015 00:26:28 GMT+0100 (+2400)</pubDate>
+<itunes:duration>14721</itunes:duration>
+<enclosure url="ftp://files.example.com/134.mp3.zip" length="16384" type="audio/x-wav"></enclosure></item>
+<item><title><![CDATA[&Lt;]]></title><guid isPermaLink="true"> </guid><link> https://e.com/x </link><pubDate>2426-09-07 garbage</pubDate><description></description><itunes:image href=" https://e.com/i.png "/><itunes:duration>6344.487</itunes:duration><enclosure url="https://example.com/a.b/dir.with.dots/ep143.MP3?a=1&amp;b=2" length=' 20000' type="video/quicktime"/><media:group><media:content type="application/x-bittorrent" duration="-5" url="http://example.org/dir.with.dots/ep239.OGG?auth=yes" medium="document" fileSize="+20000"/><m:content type='application/pdf' fileSize="9007199254740993" url="https://xn--caf-dma.example/dir.with.dots/ep121.png?file=x.mp3" duration=""/></media:group><media:thumbnail url=''/><googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description></item></channel> </rss>

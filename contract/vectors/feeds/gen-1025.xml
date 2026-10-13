@@ -1,0 +1,9 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Episode 12</title>
+<language>en</language>
+<podcast:funding>Support us</podcast:funding>
+<item><title><![CDATA[مرحبا
+&#xA9;]]></title><itunes:category text="Arts"><itunes:category text="Design"/></itunes:category><guid isPermaLink="false">a&amp;b</guid><description>&#60;img&gt; multi
+line
+&#38;lt;b&amp;gt;   leading&lt;li&gt;&#x26;;&lt;/li></description><enclosure url="" length=" 20000"></enclosure><itunes:summary>😀😀</itunes:summary><pubDate>Tues 24 Jan 2380 16:38:39 GMT-0000 (Pacific Standard Time)</pubDate><itunes:duration>170:01</itunes:duration></item>
+<item><title><![CDATA[x<y
+&lt;b&gt;escaped&lt;/b&gt;]]></title><guid>dup</guid><link> https://e.com/x </link><pubDate>Sun Nov 24 19:38:27 1985</pubDate><description>   spaced  </description><itunes:image href=" "/><itunes:duration>7553.172</itunes:duration><enclosure url=' https://user:pass@media.example.net/e p55.amr ' length='-0' type="audio/opus"/><podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/></item></channel></rss>

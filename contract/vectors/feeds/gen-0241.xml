@@ -1,0 +1,26 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xml:lang=""> <author><name>Ann</name></author> <title type='html'><![CDATA[x<y a
+  b]]></title> <subtitle><![CDATA[aaa
+&quot;q&quot;]]></subtitle> <itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url> <itunes:image href=""/> <author><name>Émile</name></author> <itunes:author></itunes:author> <media:thumbnail url="https://example.com/amt.jpg"/> <entry><media:content medium="document" isDefault="false" duration='9223372036854775807' fileSize="4294967296" type=" audio/mpeg"/>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;div&gt;Episode 7&lt;/div&gt;é	tab	here'single'&lt;br>  &amp;;</div></summary>
+<id></id>
+<published>1997-02-15PST</published>
+<link rel="Next" type="application/rss+xml" href="https://example.com/" title=""/>
+<title type='plain'><![CDATA[	é
+1 <2
+"quoted" ]]></title>
+<updated>08 Nov 1972 19:35:53 -0800	</updated></entry> <entry><itunes:duration>1872.695</itunes:duration>
+<author><name>Entry author</name></author>
+<id>urn:uuid:1</id>
+<title type="text">&#x3C;b&gt;Bold&lt;/b&gt; title</title>
+<summary><![CDATA[<hr><hr>]]></summary>
+<published>16 Apr 2006 08:24:58 +0530</published></entry> <entry><pc:chapters><pc:chapter start="97:54" href="" title="Café &amp;amp; more"/><pc:chapter href="https://example.com/ch" title="Café &amp;amp; more" image='https://example.com/ch.png' start="Infinity:00"/><pc:chapter start="5952" title="Café &amp;amp; more"/></pc:chapters><itunes:image href=""/><summary>aaaaaaaaaa</summary><title>&amp;<![CDATA[#169; ​]]></title><updated>sat, 12 July 1969 02:40:07</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;p>#7 – Interview&#x3C;/p&gt;&lt;p/>&#x3C;img src=&quot;x" alt=&quot;y"/&gt;</div></content><published>Tue, 06 January 1970 10:47:59 +0100</published><id></id></entry> <entry><published>&#13;
+2581-01-09-0000&#13;
+</published>
+<summary type="text"><![CDATA[ &]]></summary>
+<title type="xhtml">&#x26;lt;b&#x26;gt;escaped&#x26;lt;/b&#38;gt;100%</title>
+<id>urn:uuid:1</id>
+<itunes:duration>117:53</itunes:duration>
+<updated>1992-09-27T08:09:99Z</updated>
+<media:content type="audio/*" isDefault="false" fileSize="16384" medium="video" duration="59"/></entry> <entry><title type="html"><![CDATA[<h1>Folge 46: Über alles</h1>&quot;q&quot;a=b&c=d]]></title> <itunes:image href=""/> <link href="https://xn--caf-dma.example/a/b/c96.aac#t=10" length="20000" rel='last' title="Alternate"></link> <id>urn:uuid:1</id> <itunes:duration></itunes:duration> <link rel='last' href="https://example.com/feed?page=2" type="audio/mpeg" length="20000"/> <summary type="text">&#x26;#x1F600;
+שלום&lt;br/&gt;</summary></entry>
+  </feed>

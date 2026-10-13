@@ -1,0 +1,51 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel><itunes:author><![CDATA[&copy; 2020 Org]]></itunes:author>
+<title>&#x26;#xFFFF; &amp;lt &amp;#xD800;</title>
+<link> https://example.com/ </link>
+<description>&#160;a&#13;
+b&lt;p>&lt;/p&gt;</description>
+<item><enclosure url="//example.com/café/293.wma" length="9223372036854775808" type="audio/mpeg"></enclosure>
+<pubDate>mUZSYi</pubDate>
+<content:encoded></content:encoded>
+<title>&#38;#x;  &#x26;amp;  trailing </title></item>
+<item><link></link><itunes:subtitle>&amp;quot;q&amp;qu<![CDATA[ot;]]></itunes:subtitle><itunes:duration>3552.12</itunes:duration><description>&#x3C;li&gt;&amp;amp&#x3C;/li&gt;  multi
+line</description><itunes:image></itunes:image><guid> </guid><title>&#160;</title><pubDate>29 Jun 90 15:58:28 +0200</pubDate><media:thumbnail/><media:description type="plain">Tom &amp; Jerry &#60;3&#x3C;br&gt;&#x3C;p&gt;"quoted<![CDATA["</p>]]></media:description></item>
+<item><title><![CDATA[&Lt; sep &lt;b&gt;]]></title> <guid>urn:uuid:f4e01aa3</guid> <pubDate>1999-01-02T08:47:40-0500 +0000</pubDate> <description></description> <content:encoded><![CDATA[caféééé<img src="x.png"> cover<br>]]></content:encoded> <itunes:duration>3225.850</itunes:duration> <enclosure length="0x4E20" type='video/quicktime'/></item>
+<item><title>&amp;Lt; &#31532;669集 #hash</title>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <link>https://example.com/ep</link>
+  <pubDate>Wednesday, 19 May 75 11:09:43</pubDate>
+  <itunes:image/>
+  <media:content type="application/json" duration="-5" isDefault="1" medium='Audio' fileSize="+20000"/>
+  <media:content type="audio/x-m4a" duration="0060" fileSize="4294967296" url="https://xn--caf-dma.example/165.html" medium="image"/></item>
+<item><podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/ch.json" type="application/json+chapters"/> <description><![CDATA[<img src="x.png"><br />back\slash<br>	&copy;[x]<li>&#169;</li> a < ba]]></description> <guid isPermaLink="true">urn:uuid:3668c6e2</guid> <enclosure url="" length="-1" type="audio/aac"/> <title><![CDATA[	&#xA9;  café
+]]></title> <link> https://e.com/x </link> <itunes:duration>189:25</itunes:duration> <pubDate>été,  18 Jul 15 03:58 +0945</pubDate> <itunes:subtitle>	&#38;mdash;&#13;
+</itunes:subtitle></item>
+<item><title>&amp;#0;
+Tom &#38; Jerry &#60;3</title> <guid>  spaced guid  </guid> <link>https://example.com/ep</link> <pubDate>Fri 20 May 2011 02:18:18 +0945</pubDate> <itunes:summary>  é</itunes:summary> <itunes:duration>2562047788015215:30:07</itunes:duration> <enclosure length="9007199254740993" type='unknown'/> <media:content duration="59" type="audio/x-m4a" fileSize="16385" url='http://example.org/a/b/c244.wav#t=10' isDefault="TRUE"/> <media:content duration="2147483" isDefault="false" fileSize='16384' medium="Audio" type="video/x-matroska"/></item>
+<item><title><![CDATA[]]>[x]</title>
+<guid isPermaLink="true">
+</guid>
+<link></link>
+<description>&#60;li&gt;&apos;single&apos;&lt;/li&gt;&#60;br>&#60;/br></description>
+<content:encoded><![CDATA[	multi
+line<br><li>back\slash</li>
+&#169;<p>&#x1F600;</p><hr>	茶<br />]]></content:encoded>
+<itunes:duration>4:45:51</itunes:duration>
+<media:content type="image/png" duration="abc" fileSize="2147483647"/>
+<media:content fileSize="9007199254740993" type="application/pdf" medium='Audio' duration="1.5" isDefault="TRUE"></media:content>
+<media:description type="plain"></media:description>
+<podcast:socialInteract xmlns:podcast="https://podcastindex.org/namespace/1.0" uri="https://social.example/@a/1" protocol='activitypub'/>
+<!-- comment --><?pi data?></item>
+<item><itunes:duration>11117</itunes:duration>
+  <media:group><media:content duration="2147484" type="image/png" url="HTTPS://EXAMPLE.COM/dir.with.dots/ep66.aif" fileSize='-9223372036854775808' medium="image"></media:content></media:group>
+  <enclosure url="" length="00020000" type=" audio/mpeg"/>
+  <pubDate> 2158-12-27T17:16:17Z </pubDate>
+  <podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="" type="application/json+chapters"/>
+  <description></description>
+  <itunes:summary></itunes:summary>
+  <itunes:image href=" "/>
+  <title>x&lt;y  &amp;unknown;</title></item>
+<itunes:subtitle>مرحبا100%{json: 1}</itunes:subtitle>
+<language> EN-US </language></channel>
+  </rss>

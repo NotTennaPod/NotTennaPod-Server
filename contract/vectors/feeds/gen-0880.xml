@@ -1,0 +1,20 @@
+﻿<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<subtitle><![CDATA[ééé multi
+li]]>ne</subtitle>
+<media:thumbnail url="https://example.com/amt.jpg"/>
+<id>urn:x</id>
+<link href="https://example.com/alt.xml" rel="archives" type="application/atom+xml"/>
+<title type="html">&#13;
+  spaced    </title>
+<author><name>Émile</name></author>
+<author><name>  Bob  </name></author>
+<itunes:image href=""></itunes:image>
+<link href="https://cdn.example.com/e p320.m4a" rel="last" title='Alternate' type="application/rss+xml"/>
+<entry><id></id>
+<content type="HTML">aaaaaaaaééé  &amp;#0;</content>
+<link href="https://example.com/pay" length="12" title="Alternate" rel="payment"/>
+<title type="text">&amp;lt</title>
+<updated>Wed, 14 May 2014 02:12 -0800</updated>
+<dc:date>2024-09-12-1200</dc:date></entry>
+<entry><itunes:duration>1.2f</itunes:duration> <published>S</published> <media:content fileSize="18446744073709551616" medium="document" type='Audio/MPEG' isDefault='false' duration="abc"/> <link rel="alternate" title="" type="audio/mpeg"/> <title type="text">Tom &amp; Jerry &lt;3</title> <link length="abc" href="https://example.com/alt.xml" title="" rel='related'></link> <updated>January 15, 2024</updated> <updated>1992-09-23T08:35:22.493576193</updated></entry>
+</feed>

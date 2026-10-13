@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="">
+<link length="12" rel="alternate" href="https://example.com/alt.xml"/>
+<author><name>Ann</name></author>
+<subtitle type="html">
+multi
+line&#128512;&#128512;&#128512;&lt;li&gt;&quot;quoted"&#x3C;/li>&#13;
+&amp;#65;&amp;#66;&#x3C;p&gt;&amp;amp;amp;&#x3C;/p></subtitle>
+<link type="application/xhtml+xml" href="" rel="alternate" title=""/>
+<itunes:author></itunes:author>
+<itunes:image href=""/>
+<title>	cr&#13;lf
+</title>
+<id>urn:x</id> </feed>

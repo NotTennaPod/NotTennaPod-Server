@@ -1,0 +1,19 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters">
+<channel><item><title><![CDATA[back\slash]]></title>
+<guid isPermaLink="true">a&#38;b</guid>
+<link></link>
+<pubDate>Saturday Apr 21 03:04:03 0001</pubDate>
+<description>
+&amp;amp;amp;</description>
+<content:encoded>
+a=b&#38;c=d😀  &amp;AMP;  &#x26;#x1F600;	茶a=b&amp;c=d&#x3C;br&gt;&#x3C;p&gt;Line&#x3C;br&gt;break&lt;/p>&#13;
+&amp;#65;&#x26;#66;</content:encoded>
+<itunes:duration>0:14:12</itunes:duration>
+<enclosure url="https://example.com:8443/e p263.wma?auth=yes" length="0x4E20" type="audio/aac"/></item>
+<item><title>S01E666</title> <enclosure url="" length="4294967296" type="audio/wav"/> <pubDate>2444-09-29T05:36:18.245 -1200</pubDate> <link></link> <itunes:subtitle>  &#x3C;tt>Episode 705&#x3C;/tt> &#x26;apos;a&amp;apos;  </itunes:subtitle> <guid isPermaLink="false">  spaced guid  </guid> <itunes:image/> <itunes:summary><![CDATA[<li>&unknown;</li>😀😀😀aaaa  padded  <br><p><b>Bold</b> title</p>   leading<p></p>&;]]></itunes:summary></item>
+<title>&#38;#xD800;  &amp;AMP;  &#x26;#0;</title>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<pi:funding url="https://example.com/donate">Support us</pi:funding>
+<itunes:author>&lt;b>Studio&#60;/b></itunes:author>
+<description>😀😀😀😀  &#x3C;3 &#60;3	😀 שלום&lt;div&gt;S01E7&#x3C;/div>&lt;li>Episode 12&lt;/li>http://example.com/?a=1&amp;b=2&#x1F600;</description>
+<link>https://example.com</link></channel></rss>

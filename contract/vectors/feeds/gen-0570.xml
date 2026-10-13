@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters"><title type="text">&lt;a href="https://example.com/x?a=1&#38;amp;b=2"&gt;&amp;amp;amp;&lt;/a&gt; cr&#13;lf Episode 12</title>
+  <id></id>
+  <link type="application/rss+xml" rel="hub" title="MP3 feed" length="20000"/>
+  <icon></icon>
+  <subtitle type="text"></subtitle>
+  <author><name>&#xC9;mile</name></author>
+  <link title='MP3 feed' length="abc" rel="first" type="application/atom+xml" href="https://example.com/alt.xml"></link>
+  <link title="MP3 feed" rel='related' type="audio/mpeg" href=""/>
+  <entry><itunes:duration>2:51:48</itunes:duration>
+<title type='plain'><![CDATA[&#33590;]]></title>
+<link title="" length='20000' type="application/atom+xml" href="" rel="first"/>
+<updated>30 Apr 21 21:49:31 +1400</updated>
+<summary></summary>
+<id>urn:uuid:1</id></entry>
+  <entry><title><![CDATA[&#128512;]]></title>
+<link length='9223372036854775808' title="" type="application/xml+xhtml" href="https://example.com/feed?page=2" rel="enclosure"></link>
+<id>urn:uuid:1</id>
+<content type="html">  cr
+lf</content></entry>
+  <entry><id>urn:uuid:1</id>
+<link type='application/atom+xml' length="12" rel="" href=""/>
+<published>Tue, 24 Okt 1950 11:41:04 +0945</published>
+<link href="https://example.com/alt.xml" rel="first" type="application/rss+xml"/>
+<title type="plain">&#x5E9;&#1500;&#1493;&#1501;  sep</title>
+<content>R&amp;D</content>
+<updated>Saturday, 02 Apr 2292 09:20 -0000</updated>
+<link rel="Next" type="" href="https://example.com/alt.xml"/></entry></feed>

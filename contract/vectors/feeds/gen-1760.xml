@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0"><channel xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><itunes:author>Café Radio</itunes:author>
+  <atom:link length='12' title="" type="application/atom+xml" href='https://example.com/' rel='alternate'/>
+  <link>https://example.com</link>
+  <podcast:funding url="https://example.com/donate"/>
+  <description>back\slash&lt;li>http://example.com/?a=1&amp;b=2&#60;/li&gt;😀&lt;br/&gt;&#60;br&gt;&#x3C;/br>&lt;p/>aa&#60;img&gt;</description>
+  <title><![CDATA[Episode]]> 768</title>
+  <item><title>a &gt; bAT&amp;T</title>
+<enclosure url='https://example.com:8443/café/248.txt?file=x.mp3' length="-0" type='application/json'/>
+<itunes:summary>&#60;div><![CDATA[&euro;</div>]]></itunes:summary>
+<guid isPermaLink="false">urn:uuid:b763e2ed</guid>
+<pubDate>Tues, 09 September 2019 07:51:33</pubDate>
+<enclosure length="9007199254740992" type='image/png'/>
+<description>&lt;div>Line&lt;br&gt;break&lt;/div></description>
+<enclosure url="" length="9223372036854775807" type="audio/mp3"/></item>
+  <item><title><![CDATA[1 <2]]></title> <guid></guid> <link>https://example.com/ep</link> <pubDate>2424-13-09T06:30:44Z</pubDate> <description>&#x3C;br></description> <itunes:summary>Episode 7&lt;br&gt;&#13;
+Episode 12&lt;li&gt;[x]&lt;/li&gt;</itunes:summary> <itunes:subtitle>&lt;div dir="rtl"&gt;&#38;AMP;&#x3C;/div&gt; leading</itunes:subtitle> <enclosure url="https://xn--caf-dma.example/a/b/c323.ogx?dl=1.0" length="-9223372036854775808" type="audio/aac"/></item>
+  <item><title>&amp;copy;
+&#x26;lt;b&amp;gt;escaped&#38;lt<![CDATA[;/b&gt;]]></title>
+  <guid isPermaLink="true">urn:uuid:ffb9b46a</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>Day1, 21 Jun 2014 01:53:19 +0530</pubDate>
+  <description>&lt;li>é&#60;/li&gt;&#x3C;b>Bold&#60;/b> title&#x3C;br&gt;&lt;li>S01E7&#60;/li&gt;&lt;div&gt;&amp;quot;q&amp;quot;&lt;/div&gt;&#233;&#xE9;é</description>
+  <itunes:subtitle>To<![CDATA[m & Jerry <3AT&T]]></itunes:subtitle>
+  <itunes:duration>١:&#x662;٣</itunes:duration>
+  <enclosure url='HTTPS://EXAMPLE.COM/café/274.mp3.zip' length="-0"/>
+  <enclosure url="//example.com/dir.with.dots/ep109.mp4" length='+20000' type="audio/opus"/>
+  <psc:chapters version="1.2"><psc:chapter image="https://example.com/ch.png" title="Café &amp;amp; more" href="https://example.com/ch" start="28:33"/><psc:chapter href="https://example.com/ch" image='https://example.com/ch.png' start="0"></psc:chapter><psc:chapter title="Intro" start="81:32"/><psc:chapter start='2081' title="Café &amp;amp; more" href="" image="https://example.com/ch.png"/><psc:chapter start="01:24:49.255" title="Café &amp;amp; more" href=""/></psc:chapters></item>
+  <item><title>&#60;img src=&quot;x.png"&gt; cover</title>
+<guid>Café-guid</guid>
+<link> https://e.com/x </link>
+<description><![CDATA[<p>[x]</p> "quoted"<p>Episode 7</p><p>http://example.com/?a=1&b=2</p>  back\slash]]></description>
+<itunes:image href=""></itunes:image>
+<itunes:duration>0.5</itunes:duration>
+<enclosure url="https://example.com:8443/ep170.webm" length="-9223372036854775808" type="audio/ogg"/></item>
+  <item><dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">Mon, 20 Feb 59 10:30:10 +0530</dc:date>
+  <itunes:summary><![CDATA[multi
+line<br><p>&#xFFFF;</p><div>第7集</div><p>&AMP;</p>  &]]></itunes:summary>
+  <enclosure length="-16384" type="application/json"/>
+  <pubDate>Mon, 15 May 1989 16:44:55 +0200</pubDate>
+  <itunes:duration>5:24:40</itunes:duration>
+  <title>&amp;amp;Tom &amp;amp; Jerry &amp;lt;3</title>
+  <media:description><![CDATA[	R&D]]></media:description></item>
+  <item><title>&amp;#xA9; Episode 429</title>
+<enclosure url="https://example.com:8443/102.aac" length="9007199254740992" type="audio/x-wav"/>
+<guid>
+</guid>
+<media:content type="application/pdf" fileSize="9223372036854775807" medium="audio" duration="2147483648" isDefault='false' url="ftp://files.example.com/a/b/c341.mid"/>
+<link> https://e.com/x </link>
+<pubDate>13 MAY 23 12:58 -0000</pubDate>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">Sunday, 21 Jan 11 06:01:07</dc:date>
+<description><![CDATA[	a=b&c=d]]></description></item></channel>
+</rss>

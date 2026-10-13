@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!-- generated -->
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title><![CDATA[a
+  b <p style="text-align:center">tab	here</p> 10]]>0%</title>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<image><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link></image>
+<link></link>
+<description>caf&#233;&#x26;lt&lt;br&gt;&lt;<![CDATA[p></p>]]></description>
+<foo><description>Nested description</description></foo>
+<pi:funding url="">&#60;b&gt;x&lt;/b></pi:funding>
+<language>TR</language>
+<item><title>{json: 1}</title>
+<guid isPermaLink="false">https://example.com/item/25485</guid>
+<link> https://e.com/x </link>
+<itunes:subtitle>Folge 648: &#220;ber alles
+ leading
+&#38;quot;q&amp;quot;</itunes:subtitle>
+<itunes:image/>
+<itunes:duration>170:34</itunes:duration>
+<enclosure url="https://cdn.example.com/e p260.m4v" length="" type="audio/aac"></enclosure>
+<media:group><media:content fileSize="9223372036854775807" url="HTTPS://EXAMPLE.COM/café/274.mp3.zip" duration="2147483" medium='Audio' type="video"></media:content></media:group>
+<pi:transcript url="" type="Application/JSON"></pi:transcript><pi:transcript url="" type="application/json" language="en"/><pi:transcript url="https://example.com/t.json" type="application/json"/></item>
+<item><title>&lt;h6&gt;&#x26;#xA9;&#x3C;/h6></title>
+<guid>urn:uuid:74c2724a</guid>
+<link>https://example.com/ep</link>
+<pubDate>Thu, 19 Aug 2010 25:33 +1400</pubDate>
+<i:duration>-5</i:duration>
+<i:author>Item author</i:author>
+<enclosure url="HTTPS://EXAMPLE.COM/ep130.amr" length="9007199254740993" type="audio/"/>
+<atom:link length="9223372036854775808" rel='next' title="" href="https://example.com/feed?page=2"/></item>
+<item><title><![CDATA[<div dir="rtl">trailing </div>  1 <2  &#x1F600;]]></title>
+<guid></guid>
+<enclosure url="" length="16383" type="audio/mp3"/>
+<pubDate>2021-03-090000</pubDate>
+<m:group><media:content duration="3600" fileSize="2147483647" url="https://example.com:8443/a/b/c178.aspx" medium="audio" type="video/webm"/></m:group>
+<itunes:duration>12033</itunes:duration>
+<content:encoded><![CDATA[<img src="x" alt="y"/><div>&#x;</div> &hellip;&copy;<BR>]]></content:encoded>
+<i:image href=""/></item>
+<item><description></description>
+<media:group><media:content duration="3600" fileSize="2e5" medium="audio" type="audio/*" isDefault="true"/><m:content type="unknown" duration="01:00" fileSize='20000.0' url="https://example.com:8443/136.caf?a=1&amp;b=2"/></media:group>
+<enclosure url=' //example.com/10.html ' length="00020000" type="text/html"/>
+<guid isPermaLink="true">  spaced guid  </guid>
+<pubDate>1981-11-07T07:59:06.855 -1200</pubDate>
+<enclosure length="-9223372036854775808" type='AUDIO/MPEG'/>
+<link>https://example.com/ep</link>
+<title><![CDATA[
+&euro;Tom & Jerry <3<b>  p]]>added  	</title></item>
+<item><description>&#60;img src=&quot;x.png">{json: 1}&#38;#xFFFF;éé&#xE9;&#x3C;p/></description> <i:duration>1h30m</i:duration> <enclosure url='https://xn--caf-dma.example/e p331.3gp' length="9007199254740991" type="x-audio/mpeg"/> <pubDate>2469-12-04T15:48:23-12000</pubDate> <enclosure url="https://user:pass@media.example.net/dir.with.dots/ep187.m4a" length="&#1634;&#1632;&#1632;&#1632;&#1632;" type="audio/mp4"/> <link>https://example.com/ep</link> <enclosure length="20000 " type="application/octet-stream"/> <guid isPermaLink="false">  spaced guid  </guid> <title><![CDATA[R&]]>D</title></item>
+<item><content:encoded>&#x3C;li&gt;&amp;#xFFFF;&#x3C;/li&gt;&#128512;S01E7&lt;br>&#60;p&gt;#7 – Interview&lt;/p&gt;x&lt;y&lt;br&gt;ééé&#60;p>S01E7&#x3C;/p>ééé</content:encoded><enclosure url="" length=" 20000" type="unknown"/><enclosure url="https://example.com:8443/e p13.ts" length="9223372036854775807" type="audio/wav"/><title/><guid isPermaLink="true">https://example.com/item/83903</guid><i:category text='Arts'><i:category text='Design'/></i:category><link> https://e.com/x </link><i:duration>1:32:14</i:duration><dc:date>02 feb 2023 07:40:40 +0945</dc:date><pubDate>Sun., 15 Apr 1973 07:23:17 -0500</pubDate></item>
+<item><guid isPermaLink="false"> </guid>
+<dc:date>Friday, 24 Oct 78 08:35 +0000</dc:date>
+<pubDate>0999-02-14T16:43:58 garbage</pubDate>
+<title><![CDATA[e&#769; <strike>&apos;a&apos;</strike>]]></title>
+<foo><description>Nested description</description></foo>
+<itunes:subtitle><![CDATA[&#33590; &#0;]]></itunes:subtitle>
+<description><![CDATA[&copy;]]></description>
+<enclosure url="" length="2e5" type=""/>
+<link xmlns="http://www.w3.org/2005/Atom" length="9223372036854775808" title="" type="application/atom+xml" href="https://example.com/pay" rel="next"/></item>
+<item><pi:chapters url="https://example.com/ch.json" type="application/json+chapters"/>
+  <enclosure url="" length="123456789012345678" type="audio/mpeg; charset=binary"/>
+  <pubDate>Wed, 17 May 2006 02.30.07 +0945</pubDate>
+  <title>a &gt; b</title>
+  <description> trailing   tab	here&lt;div&gt;&apos;single'&lt;/div&gt;&#x26;lt;b&amp;gt;escaped&#x26;lt;/b&amp;gt;&#x3C;br&gt;&#60;p>e&#769;&lt;/p&gt;</description>
+  <guid>urn:uuid:af80d2ba</guid></item></channel> </rss>

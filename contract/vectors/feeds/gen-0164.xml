@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><itunes:subtitle>&lt;h3>&#1605;&#1585;&#x62D;&#1576;&#1575;&#60;/h3>  &#38;euro;</itunes:subtitle>
+<title>&#x26;#128512;
+&amp;nbsp;</title>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<itunes:summary>&#60;BR&gt;&#128512;&#128512;&#128512;	cr
+lf&#x3C;div>"quoted"&#x3C;/div&gt;&amp;AMP;&lt;br&gt;&#x3C;BR>	&quot;quoted"&#38;Lt;&#x3C;br&gt;</itunes:summary>
+<description>&lt;li&gt;plain words&lt;/li></description>
+<link>https://example.com</link>
+<atom:link title="Alternate" href='' type="" rel="archives" length="abc"/>
+<itunes:author>  Spaced  </itunes:author>
+<atom:link href="https://example.com/pay" rel="payment" length="20000" type=""/>
+<atom:link rel="enclosure" title="Café"/>
+<atom:link rel="self" title="Alternate" href="https://xn--caf-dma.example/65.wav"/>
+<podcast:funding>  spaced  </podcast:funding>
+<item><pubDate>
+09 Mar 2269 04:59:57 pst </pubDate>
+  <itunes:duration>60:11</itunes:duration>
+  <title>	tab	here [x]	</title>
+  <guid isPermaLink="false">dup</guid>
+  <itunes:subtitle>&#31532;6<![CDATA[66&#38598;]]></itunes:subtitle>
+  <enclosure url="https://example.com/a.b/221.m4b" length="&#1634;&#1632;&#1632;&#1632;&#1632;" type="video/quicktime"/>
+  <link></link>
+  <podcast:chapters url='' type="application/json+chapters"/></item>
+<item><title><![CDATA[<table><tr><td>&</td><td>b</td></tr></table><h1>#hash</h1>]]></title> <guid isPermaLink="false"> </guid> <link> https://e.com/x </link> <pubDate>Wednesday, 26 May 1971 02:30</pubDate> <description><![CDATA[<p>Line<br>break</p>]]></description> <itunes:subtitle>trailing &amp;;</itunes:subtitle> <enclosure length="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;" type="audio/*"/> <media:content xmlns:media="http://search.yahoo.com/mrss/" type="video" duration="2147483648" url="http://example.org/a/b/c86.ts" medium="image" fileSize='123456789012345678'/></item></channel>
+</rss>

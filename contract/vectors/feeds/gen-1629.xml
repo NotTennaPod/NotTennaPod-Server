@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><title>Episode 520</title><a10:link rel="archives" type="application/xhtml+xml" title="Café" href="https://example.com/alt.xml"/><itunes:new-feed-url>http</itunes:new-feed-url><language></language><a10:link title="" rel="related" type="audio/mpeg" href="https://example.com/alt.xml"/><link> https://example.com/ </link><i:author>😀 Pod</i:author><i:owner><itunes:name>Owner</itunes:name><i:email>o@example.com</i:email></i:owner><description><![CDATA[ cr
+lf<p></p><div>&lt;b&gt;</div>]]></description><textInput><title>Search</title><link>https://example.com/search</link></textInput><i:subtitle><![CDATA[&mdash;
+a > b]]></i:subtitle><item><media:content type="audio/aac" fileSize="1,000,000" duration='0' isDefault="TRUE"/>
+<link>https://example.com/ep</link>
+<itunes:image/>
+<description>&lt;li>&amp;lt;b&#x26;gt;escaped&#38;lt;/b&#x26;gt;&#x3C;/li&gt;</description>
+<pubDate>Wed, 25 Aug 1993 22:17:43 +0945</pubDate>
+<media:content url="https://example.com/a.b/a/b/c252.m4v" isDefault="TRUE" fileSize="abc" duration='59' medium="Audio"/>
+<guid isPermaLink='true'> </guid>
+<enclosure url="https://xn--caf-dma.example/e p364.3gp" length="0" type="application/ogg"/>
+<title>	"quoted"
+&lt;s>{json: 1}&#60;/s>
+S01E947 </title>
+<i:duration> 1:30</i:duration></item></channel></rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><link></link>
+  <description>&lt;p&gt;&#33590;&#60;/p></description>
+  <m:thumbnail url="https://example.com/mt.jpg"/>
+  <atom:link title="MP3 feed" type="text/html" rel="first" length="20000" href="https://example.com/"/>
+  <itunes:image></itunes:image>
+  <x:title xmlns:x="urn:x">Other namespace title</x:title>
+  <image><url>  https://example.com/ws.png
+</url><title>Image title</title><link>https://example.com/img-link</link></image>
+  <language>TR</language>
+  <itunes:author>Jane &amp;amp; John</itunes:author>
+  <title>&#x26;<![CDATA[#x1F600;]]></title>
+  <item><enclosure length="abc" type="application/octet-stream"/> <itunes:category text="Arts"><itunes:category text="Design"/></itunes:category> <guid isPermaLink='false'>Caf&#233;-guid</guid> <pubDate>Day1,  23 Feb 49 05:27 +0000</pubDate> <title>&#x26;#65;&#38;#66; a=b&#x26;c=d &#33590;</title> <description>&#128512;&#x1F600;&#x26;hellip;&lt;br&gt;</description> <itunes:duration>1:02:03.5</itunes:duration> <link></link></item>
+  <item><title>back\slash leading</title>
+<guid isPermaLink="true">dup</guid>
+<link></link>
+<description><![CDATA[<li>&euro;</li>  padded  <br> &lt]]></description>
+<itunes:image href=" "/>
+<itunes:duration>115:00</itunes:duration>
+<enclosure url="https://user:pass@media.example.net/45.aif?a=1&amp;b=2" length='20000.0' type="x-audio/mpeg"/></item>
+  <item><c:encoded>
+sep&amp;amp;&lt;br></c:encoded>
+<enclosure url="https://example.com:8443/24.webm" length="abc" type="audio/"/>
+<link> https://e.com/x </link>
+<guid isPermaLink="false"> </guid>
+<description>&#8203;</description>
+<title><![CDATA[back\slash]]></title>
+<itunes:summary></itunes:summary>
+<pubDate>Friday, 01 Mar 2002 07:46 +1400</pubDate></item>
+  <item><guid isPermaLink="false">a&#x26;b</guid>
+<m:thumbnail url="https://example.com/th.jpg"/>
+<enclosure length="-9223372036854775808" type=" audio/mpeg"/>
+<description><![CDATA[<br><hr/><li>a
+  b</li>&nbsp;<br><p>  padded  </p>]]></description>
+<itunes:summary>aa&lt;p&gt;&#x26;#65;&amp;#66;&lt;/p&gt;  &amp;#;&#13;
+AT&amp;T&#160;caf&#233;</itunes:summary>
+<c:encoded></c:encoded>
+<psc:chapters><psc:chapter title="Caf&#233; &amp;amp; more" start='1:00:00.5' image="https://example.com/ch.png" href="https://example.com/ch"/><psc:chapter href="https://example.com/ch" start="14:32"/><psc:chapter href="" title="&lt;b>x&lt;/b>" start="01:05:59"/><psc:chapter image="https://example.com/ch.png" title="Intro" start="42:46"/><psc:chapter image='https://example.com/ch.png' start="03:29:25" title="&lt;b>x&lt;/b>"/><psc:chapter href="https://example.com/ch" title="&#128512;" start="02:26:51"/></psc:chapters>
+<title>a&#13;
+b
+&lt;img src=&quot;x.png"> cover</title></item></channel>
+</rss>

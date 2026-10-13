@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom"> <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><title>&#x26;euro;  a > b</title>
+<description>&#60;br>&#x3C;/br&gt;</description>
+<item><itunesu:duration> 1:30</itunesu:duration>
+  <description><![CDATA[ #ha]]>sh</description>
+  <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&#x3C;div&gt;back\slash&#60;/div>
+back\slash&#60;li&gt;'single'&#60;/li>&lt;div>cr&#13;lf&#60;/div&gt;&lt;li&gt;&#x26;#xFFFF;&lt;/li&gt;</content:encoded>
+  <guid isPermaLink="true">a&amp;b</guid>
+  <dc:date>	2010-01-16T11:29:19.913+0000
+</dc:date>
+  <media:content fileSize="20000 " url="http://example.org/a/b/c157.opus" medium="document" type="audio/" isDefault="TRUE" duration="59"/>
+  <media:content url="https://example.com/a.b/café/333.php" duration="0" type="audio/" fileSize="-9223372036854775808" isDefault="TRUE" medium="document"/>
+  <title><![CDATA[back\slash  back\slash  <b>trailing </b>]]></title>
+  <media:content fileSize='20000 ' type='video/webm' isDefault='1' duration="2147483" url="https://user:pass@media.example.net/café/75.OGG"/>
+  <pubDate>Sun, 22 Sep 62 04:07:34 +0100</pubDate>
+  <enclosure length="18446744073709551616" type="video/x-matroska"/>
+  <itunesu:summary><![CDATA[<div>&nbsp;</div>
+
+cr
+lf  &amp;amp;aasep<br><hr/><br/>&lt;b&gt;escaped&lt;/b&gt;<br>]]></itunesu:summary></item>
+<podcast:funding>  spaced  </podcast:funding>
+<media:thumbnail url=""/>
+<podcast:funding url=""/>
+<itunesu:subtitle>R&#38;D</itunesu:subtitle>
+<itunesu:image/>
+<link></link>
+<language>TR</language></channel><item><title>Outside</title><enclosure url="https://example.com/o.mp3" type="audio/mpeg"/></item>
+</rss>

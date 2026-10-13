@@ -1,0 +1,37 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><title>  padded  
+&#x3C;div dir=&quot;rtl">&#x26;nbsp;&lt;/div&gt;</title>
+  <itunes:author>Café Radio<![CDATA[]]></itunes:author>
+  <atom:link type="application/atom+xml" title="Alternate" length="20000" href="https://example.com/pay" rel="last"/>
+  <link></link>
+  <itunes:image href=" "/>
+  <description></description>
+  <item><itunes:image/><link></link><description>&#38;#128512;&lt;br&gt;&lt;img src="x&quot; alt="y"/></description><pubDate>Sun, 17 Jun 1979 05:39:31 -12:00</pubDate><title><![CDATA[Tom &amp; Jerry &lt;3&amp]]></title><guid>
+</guid></item>
+  <item><enclosure url="ftp://files.example.com/e p28.m4v?file=x.mp3" length="9007199254740992" type="audio/"/>
+  <itunes:duration>56:48</itunes:duration>
+  <description>&#13;
+Tom &#x26; Jerry &#x3C;3&#x3C;li&gt;&amp;lt&#x3C;/li&gt;
+a > b&lt;p/&gt;&#13;
+&#x26;euro;</description>
+  <title>"quoted"&amp;#169;</title>
+  <itunes:image href="https://example.com/ep.jpg"/></item>
+  <item><title>a &lt; b  &#38;mdash;</title>
+<guid isPermaLink="true">urn:uuid:94d3d7a1</guid>
+<link>https://example.com/ep</link>
+<pubDate>22 Feb 69 11:20 -0500</pubDate>
+<description><![CDATA[ a > b<hr/>😀😀😀	&#xFFFF;aaaa100%<br> é&euro;]]></description>
+<dcterms:date>28 Jun 14 00:10 +0530</dcterms:date>
+<content:encoded><![CDATA[  &nbsp;😀😀😀😀<div>&unknown;</div>ééé<br/>Folge 7: Über alles{json: 1}	&quot;q&quot;]]></content:encoded>
+<itunes:image/>
+<itunes:author>Item author</itunes:author>
+<enclosure url='http://example.org/e p34.flac' length="2147483648" type="image/png"/></item>
+  <item><podcast:transcript url="https://example.com/t.json" type=''/><podcast:transcript url="https://example.com/t.json" type="text/plain" language="en"/>
+<itunes:duration>3098.583</itunes:duration>
+<description>	sepmulti
+line&lt;br&gt;&#60;li&gt;#7 – Interview&#60;/li>&#x3C;div>&#x26;mdash;&lt;/div&gt; {json: 1}&lt;BR&gt;&#x3C;li>茶&lt;/li&gt;&lt;<![CDATA[p>a < b</p>]]></description>
+<pubDate>Fri OCT 11 03:01:28 2335</pubDate>
+<link></link>
+<enclosure url='' length="20000.0" type="video/webm"/>
+<guid>a&amp;b</guid>
+<title><![CDATA[  spaced  ]]></title></item></channel>
+  </rss>

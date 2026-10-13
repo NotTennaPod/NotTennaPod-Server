@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE feed [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<itunes:summary>&#13;
+a &gt; baaaa</itunes:summary>
+  <id> raw </id>
+  <updated>MONDAY 14 Dec 2009 18:58:16 GMT-0000 (Eastern Standard Time)</updated>
+  <subtitle type="html">&#x3C;li>trailing &#60;/li&gt;	&amp;#0;&lt;br/></subtitle>
+  <link type="text/html" href="" length="9223372036854775808" rel="" title="Café"/>
+  <title type="text"><![CDATA[&unknown;
+&amp;
+<strike>茶</strike>]]></title>
+  <logo>https://example.com/logo.png</logo>
+  <link length='9223372036854775808' rel='related' href=""/>
+  <link length="20000" href="https://example.com:8443/dir.with.dots/ep272.mp3.zip" rel="self"></link>
+  <link href="https://example.com/pay" type="application/rss+xml"/>
+  <entry><id>urn:uuid:1</id><title type="html">a&#13;
+b</title><author><name>Entry author</name></author><published>1987-06-07T20:99:14</published><summary type='text'></summary></entry>
+  <entry><updated>19 Oct 13 13:21:30 +0945</updated>
+  <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x26;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;</div></title>
+  <id> raw </id>
+  <itunes:duration>5:42:00</itunes:duration>
+  <link length="12" title="Café" rel="first" href="https://example.com/"/>
+  <link rel="self" type="application/rss+xml" length="9223372036854775808" href="https://example.com/a.b/dir.with.dots/ep342"></link>
+  <itunes:image href="https://example.com/e.jpg"/></entry>
+  <entry><link type="audio/mpeg" href='https://example.com/alt.xml' title='Alternate' rel="archives" length="12"/>
+<title type="plain"><![CDATA[&#0;]]></title></entry>
+  <entry><title>x&#60;y&#x26;amp&#60;div>&#60;p&gt;R&#38;D&#x3C;/p>&lt;/div></title><published>1984-07-24T11:01:30.12GMT</published><id>urn:uuid:1</id><psc:chapters><psc:chapter image="https://example.com/ch.png" start="66:30" href=""/></psc:chapters><link type="application/xml+xhtml" rel="next" title="Alternate" length="12"/><link href="https://example.com/pay" title="" length='abc' type="application/rss+xml" rel="archives"/><content type='html'>aaaaaaaa</content></entry>
+  <entry><id></id><itunes:duration>3:23:28</itunes:duration><title type="xhtml">a<![CDATA[ > b
+100%
+&unknown;]]></title><published>Fri, 20 Sep 2340 18:00 +0200 2024</published><content></content><media:content duration="2147483648" url="https://xn--caf-dma.example/ep258.ogg" fileSize="20000 " type='AUDIO/MPEG'/><updated>Thu, 24 Jun 2488 21:03:14 +25:00</updated><link href="https://example.com/pay" length='20000' rel="self" type="application/rss+xml" title="MP3 feed"/></entry> </feed>

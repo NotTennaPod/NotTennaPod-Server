@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><link>https://example.com</link> <image><url>https://example.com/img.png</url><link>https://example.com/img-link</link><title>Image title</title></image> <p2:funding>&lt;b&gt;x&lt;/b&gt;</p2:funding> <media:thumbnail/> <itunes:subtitle>&#60;dfn&gt;&#x26;hellip;&lt;/dfn&gt;  &amp;unknown;</itunes:subtitle> <language> EN-US </language> <title><![CDATA[Episode 976  &#128512;]]></title> <item><itunes:duration>6691.103</itunes:duration> <itunes:summary>
+
+back\slashمرحبا</itunes:summary> <media:description type="plain">😀😀&#60;div&gt;plain words&#x3C;/div&gt;&#x26;mdash;&lt;BR&gt; "quoted"</media:description> <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&#60;p&gt;&#60;/p&gt;</content:encoded> <sc:chapters><sc:chapter start="3169" title="Café &amp;amp; more"/><sc:chapter image="https://example.com/ch.png" start="5119" title="&lt;b>x&lt;/b>"></sc:chapter><sc:chapter title="&lt;b>x&lt;/b>" image="https://example.com/ch.png" start="01:00:30" href="https://example.com/ch"/><sc:chapter title='Intro' href="https://example.com/ch" image="https://example.com/ch.png" start="03:00:15.317"/><sc:chapter href="" start="02:39:17" title=""></sc:chapter></sc:chapters> <guid isPermaLink="false"></guid> <title>&lt;b>Bold&lt;/b> title</title> <description>&lt;br /></description></item> <item><itunes:summary>	&amp;#xD800;</itunes:summary><enclosure length='16385' type="text/html"/><title>plain words&amp;lt;b&amp;gt;&#x3C;strong&gt;a &lt; b&#60;/strong&gt;</title><link> https://e.com/x </link><itunes:duration>6153</itunes:duration><pubDate>Saturday, 02 Jul 2232 15:58:28 -1200</pubDate></item> <item><enclosure url="ftp://files.example.com/e p350.wma?a=1&amp;b=2" length="1,000,000" type='application/pdf'/> <enclosure url="HTTPS://EXAMPLE.COM/café/274.mp3.zip" length="-9223372036854775808" type="application/octet-stream"/> <link>https://example.com/ep</link> <description><![CDATA[éééa<p>AT&T</p>]]></description> <title>R&amp;D  a&#13;
+b</title> <itunes:subtitle>cr&#13;lf  &lt;code&gt;&amp;hellip;&#60;/code>  é</itunes:subtitle> <itunes:duration>1.2f</itunes:duration> <itunes:image href=""/></item> <item><title>&#x26;#0;
+&#38;#;</title> <guid> </guid> <link></link> <pubDate>2437-07-19T13:26:99.215+1400</pubDate> <itunes:image href="https://example.com/ep.jpg"/> <itunes:duration>:30</itunes:duration> <enclosure length="0"/> <media:content isDefault="false" type="image/*" duration="0" fileSize="1" medium="video" url='https://example.com:8443/e p196.avi'/></item> <item><guid isPermaLink="true">dup</guid>
+<pubDate>sat 14 Feb 2015 10:24:35 GMT+1400 (PDT)</pubDate>
+<description>  &amp;#0;&lt;img>&#x1F600;aaaaa茶&lt;br></description>
+<itunes:image href=""/>
+<enclosure length="9007199254740993" type="audio/opus"/>
+<media:group><media:content medium="document" fileSize="9007199254740993" type="audio/x-wav" duration="abc" url="http://example.org/e p58.mkv" isDefault="TRUE"/></media:group>
+<sc:chapters><sc:chapter image="https://example.com/ch.png" start="03:31:58" href="https://example.com/ch"></sc:chapter><sc:chapter title="&lt;b>x&lt;/b>" start="26:08" image="https://example.com/ch.png" href="https://example.com/ch"/><sc:chapter href="" start="03:02:48" title="&lt;b>x&lt;/b>"/></sc:chapters></item> <item><description><![CDATA[<BR>
+
+100%&mdash;&nbsp;<div>#hash</div>&euro;	&#x1F600;	a=b&c=d]]></description>
+<enclosure url="" length="+20000" type="audio"/>
+<itunes:subtitle><![CDATA[&#65;&#66;  sep]]></itunes:subtitle>
+<pubDate>Thu, 21 Aug 75 17:25:41 -1200</pubDate>
+<dc:date>Sun., 27 Mar 2016 08:40:38 +0530</dc:date>
+<link>https://example.com/ep</link>
+<guid isPermaLink="true">  spaced guid  </guid>
+<title>&lt;h3>Line&lt;<![CDATA[br>break</h3>]]></title></item></channel>
+</rss>

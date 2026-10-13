@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>&#x3C;img src=&quot;x.png"&gt; cover</title>
+<podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate">  spaced  </podcast:funding>
+<description>  spaced  😀&#xE9;&#xE9;&#xE9;</description>
+<podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url=""/>
+<itunesu:image href=" https://example.com/sp.jpg "/>
+<atom:link title="Café" rel="hub" type="audio/mpeg" length="20000"/>
+<link></link>
+<atom:link href="https://example.com/pay" type='' title="MP3 feed" length="20000" rel="hub"/>
+<lastBuildDate>Mon, 27 Mar 1995 08:14:99 +0200</lastBuildDate>
+<atom:link type="audio/mpeg" length="abc" href=" //example.com/ep304.txt "></atom:link>
+<atom:link rel="related" href='' title="Alternate" length="abc"/>
+<podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate">&#x3C;b&gt;x&#60;/b></podcast:funding>
+<item><enclosure length='-16384' type="image/png"/>
+<content:encoded>&lt;div>back\slash&#60;/div&gt;</content:encoded>
+<description></description>
+<atom:link type="text/html" href="https://user:pass@media.example.net/ep198.jpg" rel="last" title='Alternate'/>
+<media:thumbnail url=""/>
+<itunesu:summary></itunesu:summary>
+<itunesu:duration>4:43:22</itunesu:duration>
+<guid isPermaLink="false">https://example.com/item/5568</guid>
+<title><![CDATA[  <table><tr><td>R&D</td><td>b</td></tr></table>  &;  x<y  ]]></title>
+<pubDate>15 Jun 2015 07:34:44 WET</pubDate>
+<link></link></item>
+<item><title>Tom &#38; Jerry &#60;3 第313集</title>
+<link> https://e.com/x </link>
+<dcterms:date>2020-11-24T15:58:08.622+-0100</dcterms:date>
+<itunesu:image href="https://example.com/ep.jpg"/>
+<itunesu:duration>3:19:13</itunesu:duration>
+<enclosure url="https://example.com:8443/a/b/c111.m4a" length="-0" type='unknown'/>
+<podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" type="text/plain" language="en"/><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="" type="text/html"></podcast:transcript><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url='https://example.com/t.json' type='application/json'/></item>
+<item><title>a &lt; b</title>
+  <guid>https://example.com/item/54313</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>Day1, 1983-12-04</pubDate>
+  <content:encoded>&lt;p&gt;R&amp;D&#60;/p&gt;&lt;p&gt;茶&lt;/p&gt;&lt;img src="x.png"></content:encoded>
+  <itunesu:summary></itunesu:summary>
+  <itunesu:image href=""/>
+  <itunesu:duration>3723.5</itunesu:duration>
+  <enclosure url="" length="" type="unknown"/>
+  <media:description></media:description></item>
+<item><link></link>
+  <media:thumbnail url=""/>
+  <enclosure url="HTTPS://EXAMPLE.COM/e p348.aspx" length="2e5" type=" audio/mpeg"></enclosure>
+  <pubDate>1900-05-07pst</pubDate>
+  <guid>dup</guid>
+  <title>&lt;<![CDATA[b>Bold</b> title]]></title>
+  <itunesu:subtitle><![CDATA[&#x1F600;]]></itunesu:subtitle>
+  <podcast:socialInteract xmlns:podcast="https://podcastindex.org/namespace/1.0" protocol="activitypub"/>
+  <description></description></item>
+<item><guid isPermaLink="false">urn:uuid:ff5d5c9e</guid>
+<description> {json: 1}&#xA0;trailing &lt;p>{json: 1}&#x3C;/p>&lt;br /&gt; Tom &amp; Jerry &lt;3</description>
+<title>茶 trailing  #657 – Interview</title>
+<enclosure url="http://example.org/e p0.OGG?file=x.mp3" length="٢٠٠٠٠" type='application/x-bittorrent'></enclosure>
+<itunesu:duration>01:31</itunesu:duration>
+<pubDate>Donnerstag,  Sat Mar 30 04:29:19 0099</pubDate>
+<podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="" type='application/json+chapters'/></item></channel> </rss>

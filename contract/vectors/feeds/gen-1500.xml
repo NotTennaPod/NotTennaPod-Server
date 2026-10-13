@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link type="" title="MP3 feed" href="https://example.com/pay" rel="archives"/>
+  <comments>https://example.com/c</comments>
+  <link>https://example.com</link>
+  <description>😀😀😀😀multi
+line&#60;b<![CDATA[r>]]></description>
+  <atom:link rel='' length="12" href="https://example.com/" type="audio/mpeg" title="MP3 feed"/>
+  <title>Tom &amp; Jerry &lt;3
+a&#13;
+b
+&amp;</title>
+  <atom:link rel='last' href="https://example.com/alt.xml" type="text/html" title='Café' length='20000'/>
+  <item><title>&amp;#xD800; cr&#13;lf &#160;</title>
+<guid>dup</guid>
+<link> https://e.com/x </link>
+<description><![CDATA[ &mdash;<li></li>a > b😀😀😀]]></description>
+<content:encoded>&amp;lt&#x3C;p&gt;#7 – Interview&lt;/p&gt;#hash100%😀&#128512;&#x1F600;😀&#60;div>R&#x26;D&#x3C;/div>&#x3C;img src=&quot;x.png&quot;&gt;مرحبا&lt;br></content:encoded>
+<itunes:duration>8318</itunes:duration></item>
+  <itunes:summary><![CDATA[<br />]]></itunes:summary>
+  <atom:link rel="first" title="Café" length="9223372036854775808"/>
+  <itunes:author>Café Radio</itunes:author></channel> </rss>

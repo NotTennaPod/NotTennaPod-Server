@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><pi:funding url="https://example.com/donate">Support us</pi:funding>
+  <language>de-DE</language>
+  <image><url></url><title>Image title</title></image>
+  <lastBuildDate>1972-08-06T21:10:06-01:00</lastBuildDate>
+  <pi:funding>&#x3C;b&gt;x&#60;/b&gt;</pi:funding>
+  <title>&#38;lt back\slash &amp;#xFFFF;</title>
+  <pi:funding url="https://example.com/donate">  spaced  </pi:funding>
+  <item><title><![CDATA[AT&T]]></title>
+<enclosure url=" https://user:pass@media.example.net/e p128.wma " type="video/x-matroska"/>
+<link></link>
+<pubDate>Sunday, 18 Aug 2024 14:36:03</pubDate>
+<pi:socialInteract uri='' protocol="activitypub"/>
+<guid> </guid></item>
+  <item><enclosure url="https://user:pass@media.example.net/café/296.mp4" length="-0" type="audio/mp4"/><description><![CDATA[	😀    s]]>paced  </description><content:encoded>	tab	hereS01E7&lt;br&gt;</content:encoded><media:content duration="59" medium="video" type='audio/x-m4a' isDefault="1" fileSize="9223372036854775808"/><title>Tom &amp;amp; Jerry &#38;lt;3&amp;lt</title><pubDate>Wed, 30 May 2003 19:01</pubDate><media:content duration="" medium="image" url="ftp://files.example.com/ep383.xyz#t=10" isDefault="TRUE" type="audio/mp4" fileSize=' 20000'/><link> https://e.com/x </link><pi:chapters url="https://example.com/ch.json" type="application/json+chapters"/><media:content fileSize="9007199254740992" medium="document" isDefault="true" type="text/html" duration="-5" url="http://example.org/café/225.html?file=x.mp3"/></item>
+  <item><content:encoded>  http://example.com/?a=1&amp;b=2</content:encoded>
+<description>&#x26;#xA9;</description>
+<guid isPermaLink="false">urn:uuid:80cbf15b</guid>
+<enclosure length="16385" type='application/ogg'/>
+<pi:transcript url="https://example.com/t.vtt" type="application/srr"/>
+<title><![CDATA[Tom & Jerr]]>y &lt;3 &amp;#128512;</title>
+<enclosure url="http://example.org/dir.with.dots/ep54.aif" length="16384" type='audio/aac'></enclosure>
+<pubDate>29 Dec 49 08:21:49 +0200</pubDate>
+<link></link>
+<media:group><media:content type="application/json" isDefault="false" duration="" fileSize="9007199254740992" url="https://cdn.example.com/a/b/c33.pdf" medium="Audio"/></media:group></item>
+  <item><enclosure url='//example.com/122.aif' length="16385" type="audio/wav"/><link></link><media:content duration="59" isDefault="true" url=" http://example.org/café/137.avi " fileSize="20000.0"/><title><![CDATA[<font color="red">#hash</font>AT&T]]></title><guid isPermaLink="true">  spaced guid  </guid><content:encoded></content:encoded><media:content type="audio/x-m4a" medium="audio" duration="59" isDefault="false" fileSize='9007199254740993' url="https://xn--caf-dma.example/dir.with.dots/ep145.webm"/></item>
+  <item><enclosure url="" length="-9223372036854775808" type="application/json"/> <title>  R&#x26;D<![CDATA[ ]]></title> <description><![CDATA[aa]]></description> <enclosure length='16385' type=" audio/mpeg"/> <content:encoded><![CDATA[<p>&#128512;</p> R&D<li>[x]</li>ééé<p>&unknown;</p>]]></content:encoded> <pubDate>1996-10-17T03:26:47CET</pubDate> <enclosure url="https://user:pass@media.example.net/café/224.avi" length="00020000" type="audio/x-wav"></enclosure> <pi:transcript url="" type="application/json"/><pi:transcript url="https://example.com/t.vtt" language="en"/></item></channel></rss>

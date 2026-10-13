@@ -1,0 +1,8 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title><![CDATA[<b>Bold</b> title
+<span>Episode 12</span>]]></title>
+  <podcast:funding url="">  spaced  </podcast:funding>
+  <itunes:image href=" "/>
+  <link>https://example.com</link>
+  <atom:link length="abc" href="" type="audio/mpeg" title="MP3 feed" rel="first"/>
+  <description>Episode 12&lt;br></description></channel>
+</rss>

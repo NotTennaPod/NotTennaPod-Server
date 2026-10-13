@@ -1,0 +1,20 @@
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><title>&#60;label&gt;&lt;/label&gt;</title>
+<description>&#60;br /&gt;</description>
+<itunes:summary></itunes:summary>
+<link></link>
+<atom:link rel="first" length='9223372036854775808' type="audio/mpeg"/>
+<itunes:author>Jane &amp;amp; John</itunes:author>
+<image><url>https://example.com/img.png</url></image>
+<podcast:funding>&lt;b&gt;x&#60;/b&gt;</podcast:funding>
+<atom:link href="https://example.com/"/>
+<item><title>&amp;mdash;</title>
+<guid isPermaLink="true">
+</guid>
+<link>https://example.com/ep</link>
+<description><![CDATA[&unknown;<br>ééé]]></description>
+<itunes:summary>&#13;
+sep&lt;div>100%&lt;/div></itunes:summary>
+<itunes:duration>62:03</itunes:duration>
+<enclosure url="https://user:pass@media.example.net/ep211.mp3" length="20000 " type="audio/aac"/></item></channel>
+  </rss>

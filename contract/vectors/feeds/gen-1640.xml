@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <channel><itunes:author><![CDATA[Tom & Jerry <3]]></itunes:author>
+<podcast:funding/>
+<language> EN-US </language>
+<podcast:funding url="">&lt;b&gt;x&#x3C;/b></podcast:funding>
+<image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+<podcast:funding url="https://example.com/donate">&lt;b&gt;x&lt;/b></podcast:funding>
+<title>&amp;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt;café</title>
+<description>cr&#13;lf</description>
+<itunes:image/>
+<link> https://example.com/ </link>
+<item><title>&amp;hellip;</title>
+<guid isPermaLink='false'></guid>
+<link>https://example.com/ep</link>
+<pubDate>Fri 4 Sep 1992 07:55:30 GMT+0000 (India Standard Time)</pubDate>
+<itunes:image/>
+<itunes:duration>0:26:05</itunes:duration>
+<enclosure url="https://example.com/a.b/dir.with.dots/ep88.pdf" length="16384" type="audio/mp4"/>
+<podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/>
+<podcast:transcript url="https://example.com/t.vtt" language="en"/><podcast:transcript url="" type="application/json" language="en"/><podcast:transcript url="https://example.com/t.json" type="Application/JSON" language="en"></podcast:transcript>
+<x:title xmlns:x="urn:x">Other namespace title</x:title></item>
+<item><link>https://example.com/ep</link>
+<guid isPermaLink="true">  spaced guid  </guid>
+<enclosure url='http://example.org/e p42.mp4' length="00020000" type="audio"></enclosure>
+<pubDate>Mon, 10 Aug 2448 21:42:16 +1400</pubDate>
+<itunes:subtitle><![CDATA[<cite>مرحبا</cite>
+&#xD800;
+<b>Line<br>break]]></itunes:subtitle>
+<itunes:duration>1:2:3:4</itunes:duration>
+<title>&amp;lt</title></item>
+<item><title><![CDATA[café  &#xD800;  multi
+line]]></title>
+<guid isPermaLink="false">dup</guid>
+<link> https://e.com/x </link>
+<pubDate>été, 2483-05-22</pubDate>
+<description>aaaaaa  م&#1585;حبا</description>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"></content:encoded>
+<itunes:summary>&#13;
+é a&#13;
+b</itunes:summary>
+<enclosure length="２０００００" type="audio/flac"/>
+<podcast:chapters type="application/json+chapters"/></item>
+<item><dc:date>Wed, 27 Mar 11 19:19:16 +0200</dc:date> <itunes:duration>99999999999</itunes:duration> <guid isPermaLink="true">
+</guid> <link></link> <enclosure url='' length="1,000,000" type="unknown"/> <itunes:subtitle>{json: 1}</itunes:subtitle> <itunes:summary>&lt;img src="x.png">&amp;nbsp;</itunes:summary> <enclosure url="//example.com/ep80.txt#t=10" length="123456789012345678" type="application/ogg"/> <pubDate>Thu, 09 Jul 2122 00:24:07 -0000</pubDate> <description><![CDATA[aaaaaa😀😀]]></description> <title>multi
+line</title> <enclosure url="https://cdn.example.com/a/b/c180.opus" length="9223372036854775808" type="video/webm"/> <itunes:image/></item>
+<item><description>&lt;li&gt;a&#13;
+b&#x3C;/li&gt;é&#xE9;é&lt;br /&gt;&#x3C;div&gt;café&#x3C;/div&gt; &amp;#0;</description>
+<guid isPermaLink="true">
+</guid>
+<title>Line&#60;br&gt;break&amp;AMP;</title>
+<enclosure length="16384" type=""/>
+<itunes:duration>1.5.5</itunes:duration>
+<link>https://example.com/ep</link></item>
+<item><guid isPermaLink="false">a&amp;b</guid><enclosure url="HTTPS://EXAMPLE.COM/café/274.mp3.zip" length="9223372036854775808" type="AUDIO/MPEG"/><itunes:summary><![CDATA[<div>&#169;</div>Tom & Jerry <31 <2<br><div>​</div>ééé]]></itunes:summary><podcast:chapters url="" type="application/json+chapters"/><description></description><itunes:subtitle>trailing </itunes:subtitle><title>&lt;dfn>😀&lt;/d<![CDATA[fn>  S01E170]]></title><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&lt;li>a=b&#38;c=d&lt;/li>第7&#x96C6;  &amp;copy;&#60;br />&lt;br /&gt;&#60;p/>&lt;img>café&#60;br&gt;</content:encoded><enclosure url='ftp://files.example.com/e p349.opus?a=1&amp;b=2' length="-9223372036854775808" type="application/x-bittorrent"/><enclosure url="https://example.com:8443/dir.with.dots/ep166.m4a" length="123456" type="image/jpeg"/></item></channel>
+  </rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>fr
+</language> <link>https://example.com</link> <podcast:funding url='https://example.com/donate'></podcast:funding> <itunes:image href=" https://example.com/sp.jpg "/> <atom:link href="https://example.com/" title="" type="application/rss+xml" rel="archives"/> <image><url></url><link>https://example.com/img-link</link></image> <itunes:author>A, B</itunes:author> <atom:link title="Alternate" href="https://example.com/feed?page=2" length="20000" type=""/> <podcast:funding url="">&lt;b&gt;x&#60;/b&gt;</podcast:funding> <title><![CDATA[<i>&#x;</i>
+<B>multi
+line</b>]]></title> <podcast:funding>Support us</podcast:funding> <description>é<![CDATA[éé]]></description> <item><enclosure url=" https://cdn.example.com/a/b/c246.txt " length="２０００００" type="audio"/>
+<description>&#x3C;img&gt;&#x3C;img src="x" alt="y&quot;/&gt;</description>
+<i:summary><![CDATA[ééé &#xD800;<br>&copy; &#65;&#66;1 <2<div>#hash</div>
+a
+
+b]]></i:summary>
+<guid isPermaLink="true">
+</guid>
+<link>https://example.com/ep</link>
+<itunes:duration>5767.714</itunes:duration>
+<i:image href=" https://e.com/i.png "/>
+<pubDate>2184-11-04T12:41:99.056-1200</pubDate>
+<enclosure url="" length="12" type="audio/opus"/>
+<mrss:content medium="video" duration="0060" isDefault='1' type="text/html" fileSize='4294967296'/>
+<enclosure url="https://example.com:8443/dir.with.dots/ep166.m4a" length="18446744073709551616" type="audio/mpeg"/>
+<title>&#x3C;blockquote&gt;AT&amp;T&#60;/blockquote&gt;AT&amp;T</title>
+<mrss:content medium="image" type="audio/x-wav" duration="2147483" fileSize=''/></item> <item><guid isPermaLink='false'>a&amp;b</guid>
+<itunes:image/>
+<link>https://example.com/ep</link>
+<itunes:duration>0:55:30</itunes:duration>
+<title>&amp;apos;a&#38;apos;</title>
+<mrss:content isDefault="TRUE" fileSize=" 20000" duration='0' url="HTTPS://EXAMPLE.COM/e p367" type="video/mp4"/>
+<itunes:summary></itunes:summary>
+<mrss:content duration="59" fileSize="1,000,000" type='image/jpeg'/>
+<pubDate>Wed, 23 Nov 2472 23:34:54 CEST</pubDate>
+<podcast:transcript url="https://example.com/t.vtt" type="text/html" language="en"/>
+<enclosure url="" length="" type='audio'/>
+<mrss:content medium='audio' url="http://example.org/a/b/c5.oga" duration="2147483648" type="audio/x-m4a" fileSize="123456789012345678"/>
+<description>R&amp;D&#60;br&gt;</description></item> <item><pubDate>2022-12-15T02:50:14Z</pubDate>
+<enclosure url="https://xn--caf-dma.example/65.wav" length="0" type="unknown"/>
+<itunes:summary><![CDATA[
+
+שלום😀😀😀😀]]></itunes:summary>
+<description>&amp;lt</description>
+<link></link>
+<i:image href=""/>
+<title><![CDATA[第271集
+a=b&c=d
+S01E207]]></title>
+<guid>https://example.com/item/74056</guid></item></channel>
+</rss>

@@ -1,0 +1,318 @@
+{
+ "cases": [
+  {
+   "account_id": "980b83ee-af60-416f-a3e0-a933720e59a0",
+   "arrivals": [
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [],
+     "fact": {
+      "author_id": "5c000000-0000-4000-8000-000000000001",
+      "author_seq": 1,
+      "client_time": 1760000001000,
+      "dependencies": [],
+      "op_id": "5c000000-0000-4000-8000-000000000002",
+      "payload": {
+       "feed_url": "https://feeds.example.com/one.xml"
+      },
+      "targets": [],
+      "type": "podcast.subscribe",
+      "type_version": 1
+     },
+     "normalized_time": 1760000001000,
+     "receipt": {
+      "epoch": 2,
+      "index": 0,
+      "outcome": "applied",
+      "seq": 2
+     },
+     "receive_time": 1760000500000,
+     "recovery": true
+    },
+    {
+     "decision": {
+      "decision_id": "5c000000-0000-4000-8000-0000000000d1",
+      "decision_type": "podcast.resolution",
+      "decision_version": 1,
+      "dependencies": [
+       "5c000000-0000-4000-8000-000000000002"
+      ],
+      "epoch": 2,
+      "index": 1,
+      "inputs": {},
+      "normalized_time": 1760000500000,
+      "result": {
+       "generation_id": "g1:480066a815640fb1490b31d23881f333420691284ca26e5164e5b9417b9c3853",
+       "mode": "created",
+       "podcast_id": "p1:c71c5d89c0d98fefb5fbf863b0469de59c09d17e8ca964440c0d829ea484497b"
+      },
+      "seq": 2,
+      "subject": "5c000000-0000-4000-8000-000000000002"
+     }
+    },
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [],
+     "fact": {
+      "author_id": "5c000000-0000-4000-8000-000000000001",
+      "author_seq": 1,
+      "client_time": 1760000001000,
+      "dependencies": [],
+      "op_id": "5c000000-0000-4000-8000-000000000002",
+      "payload": {
+       "feed_url": "https://feeds.example.com/one.xml"
+      },
+      "targets": [],
+      "type": "podcast.subscribe",
+      "type_version": 1
+     },
+     "normalized_time": 1760000001000,
+     "receipt": {
+      "epoch": 1,
+      "index": 0,
+      "outcome": "rejected",
+      "reason": "invalid_payload",
+      "seq": 2
+     },
+     "receive_time": 1760000001000,
+     "recovery": true
+    },
+    {
+     "receive_time": 1760000501000,
+     "recovery_end": true
+    }
+   ],
+   "expected": {
+    "decisions": [],
+    "outcomes": {},
+    "records": [],
+    "resolutions": {}
+   },
+   "name": "a provisional acceptance after a restore: the provisional receipt first, then the decision, then the original rejection",
+   "namespace": "a5967571-7d7d-42c9-a18e-63a07d35b64f"
+  },
+  {
+   "account_id": "980b83ee-af60-416f-a3e0-a933720e59a0",
+   "arrivals": [
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [],
+     "fact": {
+      "author_id": "5c000000-0000-4000-8000-000000000001",
+      "author_seq": 1,
+      "client_time": 1760000001000,
+      "dependencies": [],
+      "op_id": "5c000000-0000-4000-8000-000000000002",
+      "payload": {
+       "feed_url": "https://feeds.example.com/one.xml"
+      },
+      "targets": [],
+      "type": "podcast.subscribe",
+      "type_version": 1
+     },
+     "normalized_time": 1760000001000,
+     "receipt": {
+      "epoch": 1,
+      "index": 0,
+      "outcome": "rejected",
+      "reason": "invalid_payload",
+      "seq": 2
+     },
+     "receive_time": 1760000001000,
+     "recovery": true
+    },
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [],
+     "fact": {
+      "author_id": "5c000000-0000-4000-8000-000000000001",
+      "author_seq": 1,
+      "client_time": 1760000001000,
+      "dependencies": [],
+      "op_id": "5c000000-0000-4000-8000-000000000002",
+      "payload": {
+       "feed_url": "https://feeds.example.com/one.xml"
+      },
+      "targets": [],
+      "type": "podcast.subscribe",
+      "type_version": 1
+     },
+     "normalized_time": 1760000001000,
+     "receipt": {
+      "epoch": 2,
+      "index": 0,
+      "outcome": "applied",
+      "seq": 2
+     },
+     "receive_time": 1760000500000,
+     "recovery": true
+    },
+    {
+     "decision": {
+      "decision_id": "5c000000-0000-4000-8000-0000000000d1",
+      "decision_type": "podcast.resolution",
+      "decision_version": 1,
+      "dependencies": [
+       "5c000000-0000-4000-8000-000000000002"
+      ],
+      "epoch": 2,
+      "index": 1,
+      "inputs": {},
+      "normalized_time": 1760000500000,
+      "result": {
+       "generation_id": "g1:480066a815640fb1490b31d23881f333420691284ca26e5164e5b9417b9c3853",
+       "mode": "created",
+       "podcast_id": "p1:c71c5d89c0d98fefb5fbf863b0469de59c09d17e8ca964440c0d829ea484497b"
+      },
+      "seq": 2,
+      "subject": "5c000000-0000-4000-8000-000000000002"
+     }
+    },
+    {
+     "receive_time": 1760000501000,
+     "recovery_end": true
+    }
+   ],
+   "expected": {
+    "decisions": [],
+    "outcomes": {},
+    "records": [],
+    "resolutions": {}
+   },
+   "name": "a provisional acceptance after a restore: the original rejection first, then the provisional receipt, then the decision",
+   "namespace": "a5967571-7d7d-42c9-a18e-63a07d35b64f"
+  },
+  {
+   "account_id": "980b83ee-af60-416f-a3e0-a933720e59a0",
+   "arrivals": [
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [],
+     "fact": {
+      "author_id": "5c000000-0000-4000-8000-000000000001",
+      "author_seq": 1,
+      "client_time": 1760000001000,
+      "dependencies": [],
+      "op_id": "5c000000-0000-4000-8000-000000000002",
+      "payload": {
+       "feed_url": "https://feeds.example.com/one.xml"
+      },
+      "targets": [],
+      "type": "podcast.subscribe",
+      "type_version": 1
+     },
+     "normalized_time": 1760000001000,
+     "receipt": {
+      "epoch": 1,
+      "index": 0,
+      "outcome": "rejected",
+      "reason": "invalid_payload",
+      "seq": 2
+     },
+     "receive_time": 1760000001000,
+     "recovery": true
+    },
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [],
+     "fact": {
+      "author_id": "5c000000-0000-4000-8000-000000000001",
+      "author_seq": 1,
+      "client_time": 1760000001000,
+      "dependencies": [],
+      "op_id": "5c000000-0000-4000-8000-000000000002",
+      "payload": {
+       "feed_url": "https://feeds.example.com/one.xml"
+      },
+      "targets": [],
+      "type": "podcast.subscribe",
+      "type_version": 1
+     },
+     "normalized_time": 1760000001000,
+     "receipt": {
+      "epoch": 2,
+      "index": 0,
+      "outcome": "applied",
+      "seq": 2
+     },
+     "receive_time": 1760000500000,
+     "recovery": true
+    },
+    {
+     "receive_time": 1760000501000,
+     "recovery_end": true
+    },
+    {
+     "decision": {
+      "decision_id": "5c000000-0000-4000-8000-0000000000d1",
+      "decision_type": "podcast.resolution",
+      "decision_version": 1,
+      "dependencies": [
+       "5c000000-0000-4000-8000-000000000002"
+      ],
+      "epoch": 2,
+      "index": 1,
+      "inputs": {},
+      "normalized_time": 1760000500000,
+      "result": {
+       "generation_id": "g1:480066a815640fb1490b31d23881f333420691284ca26e5164e5b9417b9c3853",
+       "mode": "created",
+       "podcast_id": "p1:c71c5d89c0d98fefb5fbf863b0469de59c09d17e8ca964440c0d829ea484497b"
+      },
+      "seq": 2,
+      "subject": "5c000000-0000-4000-8000-000000000002"
+     }
+    },
+    {
+     "receive_time": 1760000501000,
+     "recovery_end": true
+    }
+   ],
+   "expected": {
+    "decisions": [],
+    "outcomes": {},
+    "records": [],
+    "resolutions": {}
+   },
+   "name": "a provisional acceptance after a restore: the original rejection and the provisional receipt in one request, the decision in the next",
+   "namespace": "a5967571-7d7d-42c9-a18e-63a07d35b64f"
+  }
+ ],
+ "suite": "rules"
+}

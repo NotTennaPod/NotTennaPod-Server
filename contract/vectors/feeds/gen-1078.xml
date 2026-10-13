@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xml:lang=""> <author><name>C&#x26;D</name><email>a@example.com</email></author> <author><name>  Bob  </name></author> <logo> https://e.com/l.png
+</logo> <subtitle type="html">&#x3C;li&gt;  spaced  &lt;/li>&lt;li&gt;&#x26;copy;&#60;/li></subtitle> <entry><id>tag:x,2020:1</id>
+<content>&#233;ééééé	&amp;amp&#60;br&gt;aé&#233;é&lt;<![CDATA[p></p>&amp<br>]]></content>
+<summary type="plain">&lt;p&gt;&amp;#x1F600;&#x3C;/p></summary>
+<link href="//example.com/ep306.3gp" rel="next" type='application/rss+xml' length="abc"/>
+<link title="MP3 feed" rel="hub" href="https://example.com/pay"/>
+<title>&#x26;#169; &#x26;#xFFFF;</title>
+<link rel="enclosure" title='Alternate' type=""/>
+<itunes:duration>105:49</itunes:duration>
+<published>Jan 2024</published>
+<dc:date>Sat, 22 Sep 2001 15:39:50 -0000</dc:date></entry> <entry><id>tag:x,2020:1</id>
+<published>Mon, 04 Nov 2307 06:13:57 +0200</published>
+<link rel="archives" length="20000" href="https://example.com/feed?page=2" title='Café' type="application/rss+xml"/>
+<media:content duration="0" url='HTTPS://EXAMPLE.COM/dir.with.dots/ep299.avi' medium='image' fileSize="9007199254740991" type="audio/*"/>
+<link length="9223372036854775808" rel="payment" title='Alternate' href="HTTPS://EXAMPLE.COM/e p19.mpga" type=""/>
+<updated>Tue, 30 November 2119 10:27:26 -0000</updated>
+<content><![CDATA[<p>sep</p>]]></content></entry> <entry><author><name>Entry author</name></author> <updated>1973-01-29T04:49:50.12345-05</updated> <summary type="plain"><![CDATA[ &euro;]]></summary> <link title="Alternate" href='' rel="next" type="application/atom+xml" length="12"/> <itunes:duration>2562047788015215:30:07</itunes:duration> <id>
+id
+</id></entry> <entry><content type='plain'></content>
+<updated> 2017-10-05T10:06:38.204 </updated>
+<title>&#13;
+م&#1585;حبا
+第426&#38598;
+cr&#13;lf
+</title>
+<id></id>
+<author><name>Entry author</name></author>
+<published>Tue, 14 April 2009 03:31:53 +1400</published></entry> </feed>

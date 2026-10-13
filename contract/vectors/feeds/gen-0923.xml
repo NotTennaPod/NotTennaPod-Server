@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters"> <atom:logo>https://example.com/logo.png</atom:logo>
+  <atom:link length="9223372036854775808" title="" type="" rel='alternate' href="https://example.com/alt.xml"/>
+  <atom:subtitle type="html"><![CDATA['single'<br><li>sep</li>100%<br> tab	here<li>&hellip;</li><div>&;</div>	&unknown;<hr>]]></atom:subtitle>
+  <atom:author><name></name></atom:author>
+  <atom:title type="html"><![CDATA[  spaced   &;]]></atom:title>
+  <podcastindex:funding url="https://example.com/give">Give</podcastindex:funding>
+  <link href="https://example.com/alt.xml" title='Café' type="text/html"></link>
+  <itunes:summary></itunes:summary>
+  <atom:link href="https://example.com/feed?page=2" rel="last"/>
+  <entry><title type="xhtml"><![CDATA[​]]></title><atom:id>
+id
+</atom:id><podcastindex:transcript url='https://example.com/t.json' type="application/srr"></podcastindex:transcript><atom:author><name>Entry author</name></atom:author><content>&#60;hr/&gt;</content><published>Mon 3 Apr 1899 15:06:22 GMT+0200 (GMT+01:00)</published><itunes:duration>1.5.5</itunes:duration><updated>Fri, 01 Feb 2002 01:15 MDT</updated></entry>
+  <entry><atom:published>1986-05-17T18:49:58.996451+01</atom:published>
+  <atom:title><![CDATA[<section>&lt;b&gt;escaped&lt;/b&gt;</section>
+&#xD800;]]></atom:title>
+  <id>urn:uuid:1</id>
+  <link title="" length="20000" rel="archives" type="application/xhtml+xml"></link>
+  <itunes:image href="https://example.com/e.jpg"/>
+  <atom:updated>2009-07-02T05:39:02.12CEST</atom:updated></entry>
+  <entry><summary type="plain">&lt;img&gt;&#38;mdash;#7 – Interview&#60;br&gt;</summary>
+<atom:author><name>Entry author</name></atom:author>
+<atom:updated>2001/02/21T23:22:51</atom:updated>
+<link title="Alternate" href='https://example.com/' type="audio/mpeg" rel="self" length="12"/>
+<atom:link length="12" title="Café" type="application/xml+xhtml" href="https://example.com/alt.xml" rel="related"/>
+<atom:title type="xhtml"><![CDATA[&#xFFFF]]>;café</atom:title>
+<itunes:image href=""/>
+<podcastindex:person role="host">Jane</podcastindex:person></entry>
+  <atom:entry><id>urn:uuid:1</id>
+  <updated>2003-10-15T05:19:24Z</updated>
+  <summary type='plain'>
+
+x&lt;yééé&lt;img&gt;&lt;BR&gt;&#60;div>&amp;lt&lt;/div&gt;</summary>
+  <atom:published>1987-09-11T06:28:49+1400.</atom:published>
+  <psc:chapters><psc:chapter title="Intro" start="03:20:52.891"/><psc:chapter title="" image='https://example.com/ch.png'/></psc:chapters>
+  <atom:title type="plain">#216 – Interview&amp;unknown;&amp;AMP;</atom:title></atom:entry> </feed>

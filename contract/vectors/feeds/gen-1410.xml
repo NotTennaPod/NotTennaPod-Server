@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:psc="http://podlove.org/simple-chapters"><podcast:funding>  spaced  </podcast:funding>
+  <image><url>https://example.com/img.png</url><link>https://example.com/img-link</link><title>Image title</title></image>
+  <atom:link rel="hub" type="application/atom+xml"></atom:link>
+  <link> https://example.com/ </link>
+  <title>&lt;b&gt;&lt;i>Folge 739: Über alles&lt;/b&gt;&lt;/i> é</title>
+  <podcast:funding url="">  spaced  </podcast:funding>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <atom:link rel='' title='MP3 feed' type=''/>
+  <item><title><![CDATA[&#x1F600;]]></title><guid isPermaLink="false">
+</guid><link></link><pubDate>15 Feb 2440 15:00:07 EST</pubDate><content:encoded></content:encoded><itunes:subtitle>שלו&#1501;  &amp;lt;b&amp;gt;esca<![CDATA[ped&lt;/b&gt;]]></itunes:subtitle><itunes:image href="https://example.com/ep.jpg"/><itunes:duration>25:40</itunes:duration><enclosure length="16383" type="image/*"/><media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="9007199254740992" duration="59" isDefault='1' type="audio/x-m4a"/></item>
+  <item><content:encoded></content:encoded> <pubDate>Mon Dec 14 17:21:27 2443</pubDate> <enclosure length="1" type="application/pdf"/> <itunes:subtitle>a
+  b &#x26;lt;b&amp;gt;escaped&#x26;lt;/b&amp;gt;</itunes:subtitle> <title>م&#1585;حب&#x627;  &lt;pre>Line&#x3C;br&gt;break
+  pre&lt;/pre&gt;</title> <guid isPermaLink='false'>urn:uuid:6f05462e</guid> <itunes:image href=" "/></item>
+  <description>&lt;li<![CDATA[>&euro;</li>
+&#xA9;<br/><p>&#0;</p><li>​</li> &lt😀😀&#;]]></description>
+  <itunes:subtitle>&#38;mdash; &#60;b>&#60;img src="x.png&quot;&gt; cover&lt;/b></itunes:subtitle>
+  <podcast:funding>Support us</podcast:funding>
+  <itunes:image/>
+  <itunes:author><![CDATA[第一]]></itunes:author></channel>
+  </rss>

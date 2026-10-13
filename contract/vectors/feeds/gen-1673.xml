@@ -1,0 +1,40 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><language>fr
+</language>
+<title>&#13;
+&lt;img src="x.png"> cover  http://example.com/?a=1&amp;b=2 </title>
+<description></description>
+<image><link>https://example.com/img-link</link><title>Image title</title><url>https://example.com/img.png</url></image>
+<podcast:funding url=''></podcast:funding>
+<link> https://example.com/ </link>
+<media:thumbnail url=''/>
+<item><itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#13;
+e&#769;&#x3C;br/&gt;</itunes:summary>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""/>
+<pubDate>Sat, 21 Nov 2443 17:39</pubDate>
+<description>aaaaaa&#x1F600;😀😀	[x]</description>
+<psc:chapters version="1.2"><psc:chapter href=""></psc:chapter><psc:chapter title="" start="596523:14:07.999"/><psc:chapter href="" start="00:30"/></psc:chapters></item>
+<item><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">461</itunes:duration>
+<description><![CDATA[[x]<br>]]></description>
+<pubDate>Fri 2 Dec 2444 04:49:54 GMT-0500 (WET)</pubDate>
+<guid isPermaLink="true">
+</guid>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[<li>t]]>railing &#60;/li&gt;</itunes:summary>
+<enclosure url="https://example.com:8443/136.caf?a=1&amp;b=2" length="2e5" type="application/ogg"/>
+<title>&#x26;amp;</title>
+<mrss:group><media:content type="unknown" fileSize='9007199254740991' isDefault="true" medium="video" url='https://xn--caf-dma.example/ep370.aif'/><mrss:content type="audio/mpeg; charset=binary" isDefault="TRUE" duration="1.5" fileSize="00020000" medium='document'/><media:content duration="0060" fileSize="123456" isDefault="false" type='video/webm'/></mrss:group>
+<content:encoded>aa&lt;BR&gt;
+   spaced  &#60;p>&#x26;euro;&lt;/p&gt;</content:encoded>
+<link> https://e.com/x </link></item>
+<item><link> https://e.com/x </link>
+<description>a&#13;
+b</description>
+<title>a
+  b</title>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[<div>&#;</div><p>a=b&c=d</p><br/><p>Tom &amp; Jerry &lt;3</p>Tom &amp; Jerry &lt;3<br>]]></itunes:summary>
+<guid isPermaLink="false">urn:uuid:47fcea2a</guid>
+<enclosure url="http://example.org/302.mov" length="9007199254740993" type='audio/ogg'/>
+<atom:link rel="next" title="Alternate" type="application/xhtml+xml" href="https://example.com/feed?page=2"/>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" "/>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">0</itunes:duration>
+<content:encoded><![CDATA[😀😀😀 #hash  <3 <3ééé<li>第7集</li><div> leading</div><hr/><li>&AMP]]>;&#x3C;/li></content:encoded></item></channel>
+</rss>

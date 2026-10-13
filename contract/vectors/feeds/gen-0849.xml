@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><language> EN-US </language>
+<description>{json: 1}&#60;br&gt;a
+
+b&#60;p>S01E7&#x3C;/p>&lt;BR&gt;&#xA0;&apos;single&apos;</description>
+<atom:link rel='hub' href="" length="9223372036854775808" type="application/xml+xhtml" title='Alternate'/>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">A, B</itunes:author>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/it.jpg"/>
+<title>&#60;s&gt;[x]&lt;/s> &#x3C;big&gt;tab	here&lt;/big> cr&#13;lf</title>
+<itunes:owner xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:name xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Owner</itunes:name><itunes:email xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">o@example.com</itunes:email></itunes:owner>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:summary>
+<podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate"></podcast:funding>
+<link> https://example.com/ </link>
+<item><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" https://e.com/i.png "/>
+<pubDate>1993-02-02+2400</pubDate>
+<guid isPermaLink="true">
+</guid>
+<enclosure url="" length="18446744073709551616" type="AUDIO/MPEG"/>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">33:28</itunes:duration>
+<title><![CDATA[café  ]]></title>
+<link></link></item></channel>
+  </rss>

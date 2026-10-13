@@ -1,0 +1,39 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:psc="http://podlove.org/simple-chapters"><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><link>https://example.com</link><atom:link title="Café" type="application/xml+xhtml" href='https://example.com/alt.xml' rel="first" length="20000"/><description>&#x3C;img></description><title>&#x3C;section>&#38;mdash;&#60;/section> &#60;section&gt;a
+  b&lt;/section&gt;</title><language> EN-US </language><itunes:summary>&#60;li>Episode 7&lt;/li&gt;
+
+&#33590;	茶مرح&#x628;ا&lt;br>&#x3C;img&gt;&lt;br&gt;&lt;/br&gt;&#60;li&gt;&#38;apos;a&amp;apos;&#x3C;/li>ééé</itunes:summary><itunes:author><![CDATA[]]>第一</itunes:author><item><pubDate>20 apr 1975 10:00:23 +0530</pubDate>
+<itunes:subtitle>😀  multi
+line  &#60;p&gt;Para&lt;/p&gt;</itunes:subtitle>
+<podcast:transcript url="" type="" language='en'/><podcast:transcript url="https://example.com/t.vtt" type="Application/JSON" language='en'/>
+<podcast:person role="host">Jane</podcast:person>
+<itunes:summary>&#60;p/>&amp;#xA9;&#x3C;br&gt;&#60;hr/&gt;éé&#233;&lt;div>&#x26;#;&#x3C;/div&gt;</itunes:summary>
+<guid isPermaLink="true">dup</guid>
+<enclosure url="http://example.org/dir.with.dots/ep259.torrent?dl=1.0" length=" 20000" type="audio/mpeg"/>
+<description><![CDATA[<div>שלום</div>  &mda]]>sh;</description>
+<title>茶  a
+  b  &lt;b&gt;Bold&#60;/b&gt; title</title></item><item><title>&#60;ul>&#x3C;li>&amp;apos;a&#38;apos;&lt;/li&gt;&#60;li&gt;two&lt;/li&gt;&#60;/ul&gt;</title> <dc:date>Thu, 26 Apr 1601 04:25:35 +14:00</dc:date> <pubDate>Fri, 01 Feb 1991 04:13 -0500</pubDate> <itunes:duration>9467</itunes:duration> <description><![CDATA[ééé<li>Tom & Jerry <3</li>a<p></p><li>&#0;</li><div>1 <2</div>aaaaaaaa<div>&euro;</div>]]></description> <guid>  spaced guid  </guid> <psc:chapters version="1.2"><psc:chapter href="" title="Intro" start='97:36'/></psc:chapters> <enclosure length='-1' type="audio/"/></item><item><pubDate>Wednesday 4 Nov 2178 20:48:18 GMT+0945 (CST)</pubDate> <link xmlns="http://www.w3.org/2005/Atom" type="application/xml+xhtml" rel="first" length="9223372036854775808" href=""/> <enclosure url='' length="123456789012345678" type="audio/opus"/> <enclosure url="ftp://files.example.com/e p28.m4v?file=x.mp3" length='abc' type="audio/mpeg; charset=binary"/> <title>cr&#13;lf
+back\slash
+&#38;lt;b&amp;gt;</title> <description><![CDATA[<hr]]>/&gt;</description> <itunes:duration>3723.5</itunes:duration> <link></link> <guid isPermaLink="false">a&amp;b</guid> <itunes:author>Item author</itunes:author> <enclosure length="16384" type="audio/x-wav"/></item><item><itunes:summary></itunes:summary>
+  <enclosure url="" length="123456" type="audio/opus"/>
+  <itunes:duration>2562047788015215:30:07</itunes:duration>
+  <guid isPermaLink="false">a&amp;b</guid>
+  <pubDate>Sat,19 Mar 2022 10:52:39 -0800</pubDate>
+  <dc:date>  Day1, 1983-12-04
+</dc:date>
+  <link></link>
+  <itunes:image href=" https://e.com/i.png "/>
+  <title><![CDATA[#hash  <font color="red">a < b</font>]]></title></item><item><pubDate>Tue 17 Sep 2019 14:56:10 GMT-0500 (utc)</pubDate><description><![CDATA[<div> leading</div>😀😀😀😀<img>]]></description><enclosure url="" length="9007199254740991" type="AUDIO/MPEG"/><itunes:image href=" https://e.com/i.png "/><itunes:subtitle>tab	here</itunes:subtitle><title/><link>https://example.com/ep</link><guid isPermaLink="false"> </guid></item><item><title>'single'</title>
+<guid> </guid>
+<pubDate>11 Septem 1988 15:46:07 -0000</pubDate>
+<description></description>
+<itunes:subtitle>a&#13;
+b&#x26;#169;</itunes:subtitle>
+<itunes:image href=" "/>
+<itunes:author>Item author</itunes:author>
+<enclosure url="HTTPS://EXAMPLE.COM/a/b/c384.aif" length="9007199254740993" type="audio/*"/>
+<enclosure url='//example.com/62.xyz' length="123456789012345678" type='text/plain'/>
+<enclosure url="https://cdn.example.com/a/b/c99.jpg" length="9007199254740993" type="text/html"/>
+<podcast:socialInteract uri="" protocol="activitypub"/>
+<atom:link href='HTTPS://EXAMPLE.COM/ep176.wav' title="Café" type="application/atom+xml" rel="last" length='abc'></atom:link></item></channel>
+</rss>

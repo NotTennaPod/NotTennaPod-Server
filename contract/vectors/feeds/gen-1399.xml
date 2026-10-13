@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sc="http://podlove.org/simple-chapters">
+<channel xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"><itunes:author>&#x3C;b&gt;St<![CDATA[udio</b>]]></itunes:author>
+<link xmlns="http://www.w3.org/2005/Atom" rel="archives" title='MP3 feed' length="12" href='https://example.com/pay'/>
+<atom:link rel="next" length="9223372036854775808" type="application/rss+xml" title="" href='https://example.com/feed?page=2'/>
+<title>&#38;#xFFFF;</title>
+<language>pt-BR</language>
+<link>https://example.com</link>
+<itunes:image href="https://example.com/it.jpg"/>
+<description><![CDATA[<img src="x.png">aaaaééé]]></description>
+<atom:link type='application/xhtml+xml' length="abc" title="" rel="last" href=" //example.com/a/b/c131.mp3.zip "/>
+<item><guid isPermaLink="false">https://example.com/item/15153</guid>
+  <link></link>
+  <pubDate>Fri, 14 Jan 2163 13:27:20 +0200</pubDate>
+  <description>&lt;p>&#x26;amp;&#x3C;/p&gt;&amp;AMP;&lt;br&gt;Episode 12&lt;br></description>
+  <enclosure url="https://example.com:8443/dir.with.dots/ep115.mp4" length='1,000,000' type="video/webm"/></item></channel>
+</rss>

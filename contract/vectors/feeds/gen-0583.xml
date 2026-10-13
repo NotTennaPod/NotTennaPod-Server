@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><atom:link rel="hub" href="https://example.com/pay" title="Alternate" length="20000"/>
+  <title>cr&#13;lf</title>
+  <description><![CDATA[<img src="x" alt="y"/>]]></description>
+  <image><url>https://example.com/img.png</url></image>
+  <link></link>
+  <item><content:encoded> &#x645;رحبا&#60;li&gt;é&#x3C;/li&gt; &amp;#xA9;</content:encoded>
+<title><![CDATA[<3 <3]]></title>
+<itunes:summary><![CDATA[
+sep<div>café</div>&amp;amp;<br><li></li>😀😀😀a
+
+b<br><br></br><br />]]></itunes:summary>
+<itunes:duration>14887</itunes:duration>
+<link>https://example.com/ep</link>
+<guid>Caf&#233;-guid</guid>
+<enclosure length="52428800" type="application/x-bittorrent"/>
+<pubDate>Tue 30 Apr 2015 02:27:40 -0500</pubDate>
+<podcast:socialInteract uri="" protocol='activitypub'/></item></channel>
+  </rss>

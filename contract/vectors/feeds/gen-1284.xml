@@ -1,0 +1,31 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters">
+  <channel><title>x&#x3C;y</title>
+<itunes:subtitle>&lt;dl&gt;&#60;dt&gt;&#x26;euro;&#x3C;/dt&gt;&lt;dd&gt;b&lt;/dd&gt;&#x3C;/dl&gt; &#x3C;s&gt;&amp;amp;&lt;/s&gt; #440 &#x2013; Interview</itunes:subtitle>
+<description>&#x3C;img&gt; cr&#13;lf&#13;
+é  padded  &lt;br>&amp;nbsp;</description>
+<itunes:image/>
+<link> https://example.com/ </link>
+<language> EN-US </language>
+<item><title>&#x26;#169;  S01E942  &amp;lt;b&amp;gt;</title>
+<description><![CDATA[ééé]]></description>
+<itunes:image href=" https://e.com/i.png "/>
+<pubDate>2002-04-21T06:59:46.123456GMT+00:00</pubDate></item>
+<item><title>第37集<![CDATA[  back\slash]]></title>
+<guid isPermaLink='true'>https://example.com/item/18980</guid>
+<link>https://example.com/ep</link>
+<itunes:summary>&#x3C;BR&gt;{json: 1}&lt;img&gt;&#x26;AMP;😀😀😀&#x1F600;</itunes:summary>
+<itunes:duration>1:30 </itunes:duration>
+<enclosure url="https://xn--caf-dma.example/café/153.html" length="20000.0" type='video/x-matroska'></enclosure>
+<enclosure length="" type="video/mp4"/>
+<podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.vtt" type='application/srr' language="en"/><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.vtt" type=""/><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.vtt" type="application/srr" language="en"/></item>
+<item><title><![CDATA[café
+&#;]]></title>
+<guid>
+</guid>
+<link></link>
+<pubDate>Tue, 27 Nov 0001 21:00:38 +0200</pubDate>
+<description>&#60;img src=&quot;x&quot; alt="y&quot;/></description>
+<content:encoded>&lt;hr>&#x3C;li>100%&#60;/li&gt;</content:encoded>
+<itunes:duration>1478</itunes:duration>
+<itunes:author>Item author</itunes:author>
+<enclosure url="https://example.com/a.b/a/b/c123.m4v" length="2e5" type=" audio/mpeg"/></item></channel></rss>

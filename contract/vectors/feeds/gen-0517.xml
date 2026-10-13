@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- generated -->
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><media:thumbnail url=''/>
+  <podcast:funding url='https://example.com/donate'/>
+  <p2:funding/>
+  <title>&amp;nbsp;  &#x26;AMP;  a &gt; b</title>
+  <p2:funding url=""></p2:funding>
+  <description><![CDATA[&Lt;&mdash;	[x]<br></br>
+&]]>#;</description>
+  <item><media:group><media:content url="http://example.org/ep151.m4v" type="application/x-bittorrent" duration="+60" medium="document" fileSize="52428800"/></media:group>
+<description>&#13;
+a &gt; b&#60;li>http://example.com/?a=1&amp;b=2&lt;/li></description>
+<enclosure url="//example.com/ep276.txt?file=x.mp3" length='123456789012345678' type="AUDIO/MPEG"/>
+<title>&#1605;رحبا #717 – Interview &amp;quot;q&amp;quot;</title>
+<guid isPermaLink="true">https://example.com/item/93238</guid>
+<pubDate>Foo,2024-01-15</pubDate>
+<media:description type="html">plain words&lt;br></media:description></item>
+  <item><link> https://e.com/x </link>
+  <enclosure url="//example.com/dir.with.dots/ep109.mp4" length='00020000' type="video/webm"/>
+  <title>&amp;#12<![CDATA[8512;
+שלום]]></title>
+  <guid>dup</guid>
+  <content:encoded><![CDATA[<li>茶</li><p></p>&unknown;<br> 1]]>00%ééé</content:encoded>
+  <pubDate>Friday, 04 Mar 95 07:38 +0530</pubDate></item>
+  <item><media:content duration="2147483648" fileSize="-1" type="application/pdf" medium="document"/>
+  <pubDate>Tue,18 Aug 2009 08:17:39 +0945</pubDate>
+  <title><![CDATA[Episode 12 <ul><li>&euro;</li><li>two</li></ul>]]></title>
+  <guid isPermaLink="false"> </guid>
+  <enclosure url="" length="２０００００" type="audio/*"/>
+  <p2:transcript type="text/html"/><p2:transcript type='Application/JSON' language="en"/><podcast:transcript type="application/x-subrip" language="en"/>
+  <description><![CDATA[ R&D<p><b>Bold</b> title</p> &#;R&D<br><li>  s]]>paced  &lt;/li>&lt;p&gt;&amp;lt;b&#x26;gt;escaped&amp;lt;/b&amp;gt;&lt;/p&gt;&#x3C;p&gt;Episode 7&lt;/p>é&#xE9;&#xE9;</description>
+  <link></link>
+  <media:content fileSize="20000 " type='audio/wav' duration="1"/></item></channel>
+  </rss>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en">
+  <atom:link length="20000" rel="payment" href="https://example.com/" type="application/xhtml+xml"/><atom:subtitle type="HTML"></atom:subtitle><atom:id>https://example.com/feed</atom:id><atom:title type="HTML"><![CDATA[  spaced ]]> </atom:title><atom:icon></atom:icon><podcast:funding url="https://example.com/give">Give</podcast:funding><atom:link type="audio/mpeg" href="https://xn--caf-dma.example/ep56.mov" title="" rel='hub'/><atom:link type="application/atom+xml" title="" rel="alternate" length='9223372036854775808'></atom:link><atom:link type="application/atom+xml" rel="first" title="" href="https://example.com/alt.xml"/><atom:entry><atom:link rel="first" length="12" href="" type="" title="MP3 feed"/>
+<x xmlns="urn:other"><title>Default namespace title</title></x>
+<atom:updated>2571-11-20T09:54:34.12345EST</atom:updated>
+<atom:id> raw </atom:id>
+<atom:title><![CDATA[<em> leading</em> &lt;b&gt;escaped&lt;/b&gt; AT&T]]></atom:title>
+<atom:link rel="last" length="abc" href='https://example.com/pay'/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" type="unknown" url="//example.com/dir.with.dots/ep388.xyz" fileSize="12" medium="Audio" duration="2147483648" isDefault="true"/>
+<atom:updated>Thu, 	09 Jun 2016 21:21:09 +1400</atom:updated>
+<atom:summary type="HTML">Folge 7: Über alles&lt;div<![CDATA[>&#169;</div><p/>]]></atom:summary>
+<atom:link rel="payment" href="https://example.com/pay" length="9223372036854775808" title="Café" type="application/xhtml+xml"/>
+<atom:content>&lt;p>cr&#13;lf&lt;/p></atom:content>
+<podcast:transcript url="" type='application/x-subrip' language="en"/>
+<atom:published>28 Jul 1971 16:00:54 CEST</atom:published></atom:entry> </atom:feed>

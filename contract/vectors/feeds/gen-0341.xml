@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><description>http://example.com/?a=1&#x26;b=2 &#1513;&#1500;&#1493;&#1501;&lt;li&gt;tab	here&#x3C;/li>R&#x26;D
+
+&#x26;amp</description>
+  <a10:link length="20000" rel="archives" title="MP3 feed" type="audio/mpeg" href=""/>
+  <itunes:image href=""/>
+  <source url="https://example.com/s"><title>Source title</title></source>
+  <title>1 &#x3C;2 &lt;code>&lt;b&gt;Bold&lt;/b> title&lt;/code&gt; &#x26;nbsp;</title>
+  <itunes:summary><![CDATA[<div>&euro;</div><div>a=b&c=d</div>aa<br/>&#160; &mdash;<b]]>r />  &#33590;</itunes:summary>
+  <a10:link rel="Next" type="application/atom+xml" href="https://example.com/pay" length="20000" title="Caf&#233;"/>
+  <language>TR</language></channel>
+</rss>

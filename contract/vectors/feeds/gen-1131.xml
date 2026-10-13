@@ -1,0 +1,61 @@
+<rss version="2.0" xmlns="" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><description><![CDATA[	&#xA9;<p>&copy;</p>aaaééé<img><li>&apos;a&apos;</li> leading<img src="x.png">]]></description> <itunesu:summary></itunesu:summary> <itunesu:author></itunesu:author> <atom:link length="12" href='https://example.com/pay' type="audio/mpeg" rel="last" title="MP3 feed"/> <atom:link rel="self" href="https://example.com/" length="12" title=""/> <itunesu:image href=' '></itunesu:image> <title><![CDATA[é]]></title> <item><media:description type="html">&#x3C;p&gt;&#38;#128512;&#60;/p&gt;&lt;li>第7集&lt;/li></media:description>
+<media:content fileSize='00020000' isDefault="false" type="audio/mp4" duration="+60"/>
+<link> https://e.com/x </link>
+<dc:date>13 Jul 01 03:09:37 +0100</dc:date>
+<title>&#13;
+Episode 12&lt;p style="text-align:center">&amp;#xA9;&lt;/p&gt;&amp;hellip;  </title>
+<pubDate>2014-01-17T04:12:11.653</pubDate>
+<guid>  spaced guid  </guid>
+<description><![CDATA[<p>a < b</p>]]></description></item> <item><title><![CDATA['single'
+&#0;
+&]]></title>
+<guid isPermaLink="false">https://example.com/item/65012</guid>
+<link></link>
+<pubDate>1971-10-09</pubDate>
+<itunesu:subtitle><![CDATA[S01E974
+<B>&#xD]]>800;&#60;/b&gt;
+ </itunesu:subtitle>
+<itunesu:duration>0:48:33</itunesu:duration>
+<itunesu:author>Item author</itunesu:author>
+<enclosure url="https://user:pass@media.example.net/ep343.webm" length="-0"/>
+<media:thumbnail url=""/></item> <item><itunesu:subtitle><![CDATA[<h3>Folge 675: Über alles</h3>&unknown;]]></itunesu:subtitle> <link></link> <media:content type='audio/aac' isDefault="1" fileSize="2e5" duration="" url="https://example.com:8443/133.ogg"/> <podcastindex:transcript type="application/json" language="en"/><podcastindex:transcript url="https://example.com/t.json" type="text/plain"/> <description></description> <guid isPermaLink="true">urn:uuid:c62d8ffa</guid> <pubDate>2001-07-27T18:58:06.054CST</pubDate> <content:encoded><![CDATA[  &amp;amp;<div>trailing </div>]]>&#60;img src="x.png">  aaaaaaaaa&lt;li&gt;&amp;amp;amp;&#60;/li>&#x3C;li&gt;S01E7&lt;/li></content:encoded> <enclosure url="https://xn--caf-dma.example/ep56.mov" length="٢٠٠٠٠" type="application/pdf"/> <itunesu:duration>1 :30</itunesu:duration> <title><![CDATA[10]]>0%x&lt;ya &#x3C; b</title></item> <item><itunesu:duration>122:23</itunesu:duration>
+<enclosure url='https://cdn.example.com/a/b/c279.3gp' length='' type='video/webm'/>
+<title>a&#13;
+b</title>
+<itunesu:image/>
+<itunesu:subtitle>&#60;unknown&gt;&#38;#x1F600;&lt;/unknown&gt;
+&#x7B2C;102集
+  padded  </itunesu:subtitle>
+<link> https://e.com/x </link>
+<itunesu:summary></itunesu:summary></item> <item><title>plain words</title>
+  <guid>https://example.com/item/5706</guid>
+  <pubDate>1983-03-14T16:53:35Z</pubDate>
+  <description>&#60;p&gt;&#x26;amp&#x3C;/p&gt; &amp;amp;<![CDATA[ &Lt;]]></description>
+  <itunesu:image href=" "/>
+  <itunesu:duration>3:36:44</itunesu:duration>
+  <enclosure url="" length='123456' type="video/mp4"/>
+  <media:thumbnail url=""/></item> <item><itunesu:image href=" "/>
+<enclosure length="20000 " type='application/json'></enclosure>
+<title><![CDATA[#435 – Interview a > b S01E637]]></title>
+<enclosure url="http://example.org/e p0.OGG?file=x.mp3" length="16385" type="video/webm"/>
+<guid>  spaced guid  </guid>
+<media:description><![CDATA[<img src="x" alt="y"/><p/><img src="x" alt="y"/>&mdash;<br><li>café</li>ééé&euro;<br>ééé]]></media:description>
+<itunesu:duration>1E3:00</itunesu:duration>
+<itunesu:author>Item author</itunesu:author>
+<itunesu:subtitle><![CDATA[&#xA9;]]></itunesu:subtitle>
+<link>https://example.com/ep</link></item> <item><title><![CDATA[]]>&#x26;#;
+&amp;#xD800;
+&amp;mdash;</title>
+  <link> https://e.com/x </link>
+  <pubDate>Day1, 11 Aug 1950 20:24:28 +1400</pubDate>
+  <description><![CDATA[aa<li>&copy;</li>]]></description>
+  <dc:date>Monday, 17 Jan 2552 12:22:13 EEST</dc:date>
+  <enclosure length="２０００００" type='application/octet-stream'/>
+  <media:content type="audio/mpeg" fileSize="9223372036854775807" isDefault="false" duration="1.5" medium="document"/></item> <item><enclosure length="16383" type="Audio/MPEG"/>
+  <link> https://e.com/x </link>
+  <podcastindex:chapters url="https://example.com/ch.json" type="application/json+chapters"/>
+  <title>&#x26;#x;  &lt;span style="color:red"&gt;&amp;amp;amp;&lt;/span></title>
+  <pubDate>, 01 Jan 2024 10:00:00 +0000</pubDate>
+  <guid isPermaLink="true">urn:uuid:74ba6842</guid></item></channel>
+</rss>

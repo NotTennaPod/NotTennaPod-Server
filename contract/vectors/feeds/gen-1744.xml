@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters">
+<channel xmlns:atom="http://www.w3.org/2005/Atom"><link></link>
+  <atom:link href="" type="audio/mpeg" title="" rel="Next"/>
+  <description>&#128512;&#x1F600;&#128512;&#128512;</description>
+  <title>sep</title>
+  <atom:link rel="related" href="https://example.com/feed?page=2" length="abc" title="MP3 feed" type="application/rss+xml"/>
+  <language>fr
+</language>
+  <item><title>S01E211 Episode 12 &amp;unknown;</title>
+<itunes:summary>  &#38;#169;&#x3C;p>&amp;;&lt;/p&gt;&lt;li&gt; leading&lt;/li>&#128512;&#128512;&#128512;&lt;p&gt;&amp;Lt;&#x3C;/p></itunes:summary>
+<itunes:image href=" https://e.com/i.png "/>
+<description>R&amp;D&lt;br>&#128512;</description>
+<pubDate>MONDAY 15 Sep 2008 10:17:07 GMT+0100 (Pacific Standard Time)</pubDate>
+<media:content medium='Audio' fileSize="4294967296" type=" audio/mpeg" duration=' 60' url="HTTPS://EXAMPLE.COM/346.aac?a=1&amp;b=2"/>
+<enclosure length="9223372036854775807" type="audio/"/>
+<media:content isDefault="TRUE" url="https://xn--caf-dma.example/café/278.m4a" fileSize="+20000" duration="0060" type=" audio/mpeg"/>
+<itunes:duration>94:57</itunes:duration></item>
+  <item><title>cr&#13;lf&lt;unknown>café&lt;/unknown></title>
+<guid isPermaLink="false"> </guid>
+<link>https://example.com/ep</link>
+<pubDate>2358/01/07T15:06:19</pubDate>
+<content:encoded><![CDATA[<p>{json: 1}</p><img><hr>]]></content:encoded>
+<itunes:image href=' '/>
+<enclosure length="&#1634;&#1632;&#1632;&#1632;&#1632;" type="application/pdf"></enclosure>
+<media:content fileSize="52428800" duration="01:00" type="text/plain" medium="image" isDefault="1"/></item>
+  <item><title><![CDATA[  AT&T ]]></title> <guid>https://example.com/item/19702</guid> <link> https://e.com/x </link> <pubDate>1975-04-23T04:33:05Central European Summer Time</pubDate> <description>&#60;BR&gt;&#60;p&gt;&#38;hellip;&#x3C;/p&gt;	&#x26;amp;amp;</description> <content:encoded><![CDATA[<hr/>aaaaa]]>a &#128512;&lt;br&gt;&#x3C;/br&gt;
+&#x26;#x;</content:encoded> <itunes:summary><![CDATA[	&#1513;&#1500;&#1493;&#1501;<p>&AMP;</p>]]></itunes:summary> <itunes:image href=""/> <itunes:duration>2147483.647</itunes:duration> <enclosure length="00020000" type="image/png"/> <enclosure length=" 20000" type="audio"/> <enclosure url="ftp://files.example.com/café/120.ogx" length=" 20000" type="audio/mpeg"/></item></channel> </rss>

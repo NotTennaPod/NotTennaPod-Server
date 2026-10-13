@@ -1,0 +1,197 @@
+{
+ "cases": [
+  {
+   "account_id": "11111111-2222-4333-8444-555555555555",
+   "key": "0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b",
+   "object": {
+    "content_hash": "22ac5d521cbd628093595565b029cdf33d5201671e094bdedfa02c6bb938f6c2",
+    "epoch": 1,
+    "key_id": "k1",
+    "normalized_time": 1700000000123,
+    "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "outcome": "applied",
+    "seq": 42
+   },
+   "output": "fb8ab6ba27bad0652ef1d89a40f9239863b81bb9b81506a0f1dfeeef34cf9dd6"
+  },
+  {
+   "account_id": "0a0b0c0d-0e0f-4011-8213-141516171819",
+   "key": "0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b",
+   "object": {
+    "content_hash": "22ac5d521cbd628093595565b029cdf33d5201671e094bdedfa02c6bb938f6c2",
+    "epoch": 1,
+    "key_id": "k1",
+    "normalized_time": 1700000000123,
+    "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "outcome": "applied",
+    "seq": 42
+   },
+   "output": "10cabe6cf0392624676c7ac90e45e487b046b0b5732ca9feec624a7c753a4a24"
+  },
+  {
+   "account_id": "11111111-2222-4333-8444-555555555555",
+   "key": "0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b",
+   "object": {
+    "content_hash": "22ac5d521cbd628093595565b029cdf33d5201671e094bdedfa02c6bb938f6c2",
+    "epoch": 1,
+    "frontier": [
+     "01234567-89ab-4cde-8f01-23456789abcd"
+    ],
+    "key_id": "k1",
+    "normalized_time": 1700000000123,
+    "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "outcome": "rejected",
+    "reason": "invalid_payload",
+    "seq": 42
+   },
+   "output": "134613bc85ad796e0a637f634cc2bc02b78c796d70cae98b3f6bdd1f13acd9c7"
+  },
+  {
+   "account_id": "0a0b0c0d-0e0f-4011-8213-141516171819",
+   "key": "0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b",
+   "object": {
+    "content_hash": "22ac5d521cbd628093595565b029cdf33d5201671e094bdedfa02c6bb938f6c2",
+    "epoch": 1,
+    "frontier": [
+     "01234567-89ab-4cde-8f01-23456789abcd"
+    ],
+    "key_id": "k1",
+    "normalized_time": 1700000000123,
+    "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "outcome": "rejected",
+    "reason": "invalid_payload",
+    "seq": 42
+   },
+   "output": "69746cdb47f949a6a746d281091d6afa27fdc796b5bc6e909ddc1eb9ea9af948"
+  },
+  {
+   "account_id": "11111111-2222-4333-8444-555555555555",
+   "key": "0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b",
+   "object": {
+    "content_hash": "22ac5d521cbd628093595565b029cdf33d5201671e094bdedfa02c6bb938f6c2",
+    "epoch": 1,
+    "key_id": "k1",
+    "normalized_time": 1700000000123,
+    "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "outcome": "applied",
+    "seq": 42,
+    "sort_values": [
+     {
+      "duration": 3600000,
+      "episode_id": "e1:abababababababababababababababababababababababababababababababab",
+      "generation_id": "g1:cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+      "podcast_id": "p1:efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef",
+      "podcast_title": "Show",
+      "publication_time": 1699999000000,
+      "title": "Épisode \"1\""
+     }
+    ]
+   },
+   "output": "538196fee5863481bc6db5a02f0e471ca77a9a674d1f89e91e620e578fe80ec6"
+  },
+  {
+   "account_id": "0a0b0c0d-0e0f-4011-8213-141516171819",
+   "key": "0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b",
+   "object": {
+    "content_hash": "22ac5d521cbd628093595565b029cdf33d5201671e094bdedfa02c6bb938f6c2",
+    "epoch": 1,
+    "key_id": "k1",
+    "normalized_time": 1700000000123,
+    "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "outcome": "applied",
+    "seq": 42,
+    "sort_values": [
+     {
+      "duration": 3600000,
+      "episode_id": "e1:abababababababababababababababababababababababababababababababab",
+      "generation_id": "g1:cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+      "podcast_id": "p1:efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef",
+      "podcast_title": "Show",
+      "publication_time": 1699999000000,
+      "title": "Épisode \"1\""
+     }
+    ]
+   },
+   "output": "9345ebc723a4d6a1bd3508ce74ff4730332a2aeeee6fcbb6a1846498b66d25f4"
+  },
+  {
+   "account_id": "11111111-2222-4333-8444-555555555555",
+   "key": "0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b",
+   "object": {
+    "decision_id": "01234567-89ab-4cde-8f01-23456789abcd",
+    "decision_type": "queue.layout",
+    "decision_version": 1,
+    "dependencies": [
+     "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+    ],
+    "epoch": 1,
+    "index": 1,
+    "inputs": {
+     "frontier": [
+      "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+     ],
+     "mapping_version": 0,
+     "policy": {
+      "keep_sorted": false,
+      "sort_order": "date_new_old"
+     }
+    },
+    "key_id": "k1",
+    "normalized_time": 1700000010000,
+    "result": {
+     "members": [
+      {
+       "episode_id": "e1:abababababababababababababababababababababababababababababababab",
+       "generation_id": "g1:cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+       "key": "q1:1:1",
+       "position_id": "00000000-0000-4000-8000-000000000000"
+      }
+     ]
+    },
+    "seq": 43,
+    "subject": "queue"
+   },
+   "output": "8257c54c46790ce553a8261311805075596b5a961e4e5836a5cde2cc8254d12f"
+  },
+  {
+   "account_id": "0a0b0c0d-0e0f-4011-8213-141516171819",
+   "key": "0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b",
+   "object": {
+    "decision_id": "01234567-89ab-4cde-8f01-23456789abcd",
+    "decision_type": "queue.layout",
+    "decision_version": 1,
+    "dependencies": [
+     "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+    ],
+    "epoch": 1,
+    "index": 1,
+    "inputs": {
+     "frontier": [
+      "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+     ],
+     "mapping_version": 0,
+     "policy": {
+      "keep_sorted": false,
+      "sort_order": "date_new_old"
+     }
+    },
+    "key_id": "k1",
+    "normalized_time": 1700000010000,
+    "result": {
+     "members": [
+      {
+       "episode_id": "e1:abababababababababababababababababababababababababababababababab",
+       "generation_id": "g1:cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+       "key": "q1:1:1",
+       "position_id": "00000000-0000-4000-8000-000000000000"
+      }
+     ]
+    },
+    "seq": 43,
+    "subject": "queue"
+   },
+   "output": "b2949e7e81f8c3d35cf8eb849b69e0098be3aec85650771ce9b59043a62f9dd5"
+  }
+ ],
+ "suite": "mac"
+}

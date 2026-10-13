@@ -1,0 +1,78 @@
+{
+ "cases": [
+  {
+   "client_time": 100,
+   "dependency_times": [],
+   "output": 100,
+   "receive_time": 200
+  },
+  {
+   "client_time": 300,
+   "dependency_times": [],
+   "output": 200,
+   "receive_time": 200
+  },
+  {
+   "client_time": 100,
+   "dependency_times": [
+    150
+   ],
+   "output": 150,
+   "receive_time": 200
+  },
+  {
+   "client_time": 100,
+   "dependency_times": [
+    150,
+    120
+   ],
+   "output": 150,
+   "receive_time": 200
+  },
+  {
+   "client_time": 100,
+   "dependency_times": [
+    250
+   ],
+   "output": 250,
+   "receive_time": 200
+  },
+  {
+   "client_time": 300,
+   "dependency_times": [
+    250
+   ],
+   "output": 250,
+   "receive_time": 200
+  },
+  {
+   "client_time": -5,
+   "dependency_times": [],
+   "output": -5,
+   "receive_time": 200
+  },
+  {
+   "client_time": 200,
+   "dependency_times": [
+    200
+   ],
+   "output": 200,
+   "receive_time": 200
+  },
+  {
+   "client_time": 0,
+   "dependency_times": [],
+   "output": 0,
+   "receive_time": 0
+  },
+  {
+   "client_time": 1700000005000,
+   "dependency_times": [
+    1700000010000
+   ],
+   "output": 1700000010000,
+   "receive_time": 1700000005000
+  }
+ ],
+ "suite": "time_normalization"
+}

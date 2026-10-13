@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="latin1"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters"><icon></icon><author><name>  Bob  </name><email>a@example.com</email></author><i:new-feed-url>https://moved.example.com/atom</i:new-feed-url><title type="plain"><![CDATA[a < b multi
+line a > b]]></title><author><name>C&#x26;D</name></author><id></id><i:image href="https://example.com/ai.jpg"/><entry><i:image href=""/> <title type='text'><![CDATA[&#xD800;
+&mdash;]]></title> <i:duration>	1:00
+</i:duration> <link length='12' href="https://example.com/feed?page=2" rel="self" title="Café"/> <content type="text"> sep</content> <link title="Alternate" type="application/rss+xml" length='12' href="https://example.com/pay"/> <updated>2002-06-28gmt</updated> <id>urn:uuid:1</id></entry><entry><published>Sun Sep 30 18:03:18 0001</published><id>
+id
+</id><updated>07 May 1977 04:10:44 -0500</updated><title type="html"><![CDATA[&amp;  &#xFFFF;]]></title></entry> </feed>

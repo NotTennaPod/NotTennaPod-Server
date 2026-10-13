@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title><![CDATA[{json: 1}  [x]  <s>a > b</s>]]></title> <itunes:image href="https://example.com/it.jpg"/> <link> https://example.com/ </link> <itunes:subtitle><![CDATA[ café ]]></itunes:subtitle> <language>pt-BR</language> <itunes:author><![CDATA[Jane Doe]]></itunes:author> <item><media:content duration="-5" fileSize='1' medium="Audio" isDefault="true" type="audio/mp3"/>
+  <pubDate>20 May 54 14:37 +1400</pubDate>
+  <enclosure length="00020000" type="video"/>
+  <itunes:duration>NaN</itunes:duration>
+  <enclosure url='' length="9007199254740991" type="x-audio/mpeg"/>
+  <link>https://example.com/ep</link>
+  <description><![CDATA[<li><b>Bold</b> title</li><br><div>a=b&c=d</div>]]></description>
+  <title>&#38;#169;</title>
+  <guid>urn:uuid:ab1e35ad</guid></item> <item><itunes:duration>5:03:54</itunes:duration><enclosure url="http://example.org/e p395.3gp" length="-1" type="audio/x-wav"/><title>&quot;quoted"</title><pubDate>1979-02-27T12:03:10Z</pubDate><enclosure url="https://example.com:8443/ep170.webm" length="2147483648" type='Audio/MPEG'/><link>https://example.com/ep</link><enclosure url='http://example.org/café/32.mp3.zip' length="12" type="application/octet-stream"/><guid>a&amp;b</guid></item> <item><guid isPermaLink="true"></guid>
+  <itunes:summary>&lt;hr/&gt;éé&#233; trailing </itunes:summary>
+  <dc:date>29 Aug 1752 09:38:08 +1400</dc:date>
+  <itunes:duration>-1:00:00</itunes:duration>
+  <enclosure url="HTTPS://EXAMPLE.COM/e p362.m4a?file=x.mp3" length="4294967296" type='video/quicktime'></enclosure>
+  <pubDate>&#13;
+1988-06-03T00:50:42.2&#13;
+</pubDate>
+  <link>https://example.com/ep</link>
+  <title>cr&#13;lf</title>
+  <media:content type="image/png" url="HTTPS://EXAMPLE.COM/dir.with.dots/ep393.wma" fileSize="9223372036854775808" medium="video" duration="01:00"/>
+  <description></description></item></channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><!-- generated -->
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:media="http://search.yahoo.com/mrss/"><description></description>
+<title>&#x26;amp
+S01E391
+plain words</title>
+<item><link></link>
+<guid>a&amp;b</guid>
+<itunes:summary>
+
+<![CDATA[a
+
+b]]></itunes:summary>
+<description>ééé&#60;p>[x]&lt;/p>aaa</description>
+<media:group><media:content url="ftp://files.example.com/30" fileSize="-1" isDefault='true' medium="document" duration="2147483648"/></media:group>
+<media:description type="plain"><![CDATA[<p>tab	here</p>]]></media:description>
+<enclosure length="20000.0" type="audio/flac"/>
+<content:encoded>&#160;&amp;apos;a&#38;apos;</content:encoded>
+<itunes:image href=" "/>
+<title><![CDATA[a=b]]>&#38;c=d</title>
+<itunes:duration>17148</itunes:duration>
+<pubDate>Fri., 27 Nov 1987 15:07:52 +0200</pubDate></item>
+<item><title><![CDATA[&Lt;]]></title>
+<guid isPermaLink="true"> </guid>
+<link>https://example.com/ep</link>
+<pubDate>Saturday, 24 Oct 21 03:30 +0945</pubDate>
+<description>&#60;div&gt;sep&#60;/div>&#x3C;br>&lt;/br&gt;plain words&lt;br&gt;&lt;p>&amp;mdash;&#x3C;/p&gt;  &amp;#128512;</description>
+<enclosure url="" length="1,000,000" type="audio/mpeg; charset=binary"/>
+<media:thumbnail url=''/></item>
+<item><guid isPermaLink="true"></guid>
+<enclosure url='https://example.com/a.b/a/b/c160.m4v' length="20000.0" type="audio/x-m4a"/>
+<description>trailing </description>
+<itunes:image href=""/>
+<pubDate>Thursday, 	0099-05-03T20:45:12</pubDate>
+<content:encoded></content:encoded>
+<link>https://example.com/ep</link></item>
+<itunes:summary><![CDATA[<div>café</div>😀😀]]></itunes:summary>
+<link> https://example.com/ </link>
+<atom:link rel="last" length="20000" title="MP3 feed" href="https://example.com/pay"/>
+<media:thumbnail url="https://example.com/mt.jpg"/>
+<atom:link title="Alternate" href="https://example.com/pay" type='application/rss+xml' length="abc" rel="hub"/>
+<atom:link href="https://example.com/" title="Café" type="application/xml+xhtml" rel="related" length="9223372036854775808"/></channel>
+</rss>

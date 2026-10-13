@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en"> <title type="text"><![CDATA[<table><tr><td>R&D</td><td>b</td></tr></table> &#0;]]></title> <itunes:image href="https://example.com/ai.jpg"/> <updated>06 Jun 69 19:52 +0200</updated> <id> raw </id> <media:thumbnail url="https://example.com/amt.jpg"></media:thumbnail> <subtitle><![CDATA[ &#169;]]></subtitle> <itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url> <entry><id>urn:uuid:1</id>
+  <title type='text'>100%http://example.com/?a=1&#38;<![CDATA[b=2]]></title>
+  <updated>Wed, 31</updated>
+  <link type="audio/mpeg" title="MP3 feed"></link>
+  <summary>😀&#x1F600;</summary>
+  <published>2005-05-03T18:0</published>
+  <media:content duration="2147483648" fileSize="abc" type="" isDefault="TRUE" url="https://example.com:8443/café/87.txt" medium="image"></media:content></entry>
+  </feed>

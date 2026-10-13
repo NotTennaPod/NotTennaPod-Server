@@ -1,0 +1,26 @@
+﻿<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+<itunes:summary> &amp;#xFFFF;&lt;p>&#x3C;/p&gt;&lt;hr/>&#x3C;div&gt;&#x26;#65;&amp;#66;&lt;/div>
+&amp;#x1F600;😀a&#13;
+b&lt;br /&gt;</itunes:summary>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;
+sep
+café</div></title>
+<id></id>
+<entry><link type="application/rss+xml" rel='alternate' length="12" href="ftp://files.example.com/e p387.mp3.zip" title="Alternate"/>
+<id> raw </id>
+<title><![CDATA[&quot;q&quot;]]></title>
+<link href='https://example.com/feed?page=2' type="" length="abc" rel="alternate" title="MP3 feed"/>
+<content>&#x3C;li>plain words&lt;/li&gt;😀😀😀😀&lt;hr/></content>
+<updated>0999-11-05 </updated></entry>
+<entry><podcast:transcript url="https://example.com/t.vtt" type="application/json"/><podcast:transcript url="https://example.com/t.json" type="text/plain"/><podcast:transcript url='https://example.com/t.vtt' type='text/vtt'/> <summary type='text'><![CDATA[<div>&#xA9;</div><p>&amp;amp;</p>]]></summary> <id>urn:uuid:1</id> <link title="Alternate" rel="archives" href="https://example.com/pay" type="audio/mpeg" length="abc"/> <published>2344-10-19CST</published> <title type="xhtml">&amp;nbsp;</title> <link rel="alternate" type="" href="https://example.com/pay" title='MP3 feed'/> <itunes:duration>4:36:00</itunes:duration></entry>
+<entry><itunes:image href="https://example.com/e.jpg"/><id>
+id
+</id><x xmlns="urn:other"><title>Default namespace title</title></x><link type="application/xml+xhtml" rel="self" length="abc" title=""/><link title='Café' type="text/html" href="https://example.com/a.b/dir.with.dots/ep342" rel="related" length="9223372036854775808"/><title type="plain">&#x26;#xD800; <![CDATA[ 😀  &]]></title><updated>Fri 23 Dec 1988 14:23:25 GMT-1200 (GMT+1)</updated><published>27 Jul 1900 15:19:27 Coordinated Universal Time</published><link title="Alternate" length='abc' href="https://example.com/alt.xml"/><itunes:duration>7433.549</itunes:duration></entry>
+<entry><summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#38;Lt;&#x3C;br></div></summary>
+<link href="https://example.com/feed?page=2" title="Café" type="application/xhtml+xml" length='12'/>
+<title type="plain">  &amp;#x1F600; <![CDATA[ ]]></title>
+<itunes:image href=""/>
+<updated>1978-12-25T19:35:39</updated>
+<link rel="last" href='https://example.com/feed?page=2' title="Alternate" type="application/rss+xml" length="abc"/></entry>
+<entry><id></id><summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;euro;&#x3C;br&gt;&lt;img>&#160;a &lt; b&lt;p&gt;&lt;/p&gt;&#160;&#x26;amp;amp;</div></summary><link type="audio/mpeg" href='https://example.com/feed?page=2' length="9223372036854775808" rel="last" title="Alternate"/><itunes:image href="https://example.com/e.jpg"/><updated>2018-10-03T00:44:55Z</updated><updated>Mon, 14 May 2007 11:31:50 +00:00</updated><title type='HTML'><![CDATA[&hellip; 1 <2]]></title><link title="MP3 feed" href="https://example.com/alt.xml" type="application/xml+xhtml" length="12"/></entry>
+</feed>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+<channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:author><![CDATA[Café Radio]]></itunes:author>
+  <title>&amp;apos;a&amp;apos;
+&#38;unknown;
+&#x26;#xFFFF;</title>
+  <itunes:new-feed-url>
+https://nl.example
+</itunes:new-feed-url>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <link>https://example.com</link>
+  <item><media:content duration="-5" fileSize="4294967296" type="video/quicktime" url='ftp://files.example.com/ep361.jpg'></media:content>
+<guid>urn:uuid:5cf32216</guid>
+<itunes:image href="https://example.com/ep.jpg"/>
+<itunes:duration>18:08</itunes:duration>
+<itunes:summary>&#13;
+café</itunes:summary>
+<pubDate>2023-02-02T07:08:13CEST</pubDate>
+<link></link>
+<title>&#x26;#xFFFF; &lt;p>&#60;p>S01E546&lt;/p&gt;&#60;/p> &#x26;</title></item>
+  <description><![CDATA[ &mdash]]>;&#128512;&#x1F600;</description>
+  <lastBuildDate>Day1, 2000-07-31</lastBuildDate></channel></rss>

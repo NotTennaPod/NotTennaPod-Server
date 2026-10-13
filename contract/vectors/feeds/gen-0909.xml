@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang=""> <title><![CDATA[Tom & Jerry <3&amp]]></title> <author><name>C&amp;D</name></author> <link rel='alternate' length="12" href="https://example.com/pay" title="MP3 feed"></link> <link type="application/rss+xml" href='https://example.com/pay' rel="payment"/> <subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">aaaaaa&amp;#169;&#x3C;br&gt;</div></subtitle> <id>urn:x</id> <link title="Café" length="abc" href="https://example.com/" type="application/xml+xhtml" rel='hub'/> <logo> https://e.com/l.png
+</logo> <entry><link rel="related" type="audio/mpeg"/>
+  <published>2464-08-03T21:03:46</published>
+  <link rel="next" type="application/rss+xml" title="" href="https://example.com/"/>
+  <id>
+id
+</id>
+  <updated>Sunday, 14 Apr 65 03:25:55</updated>
+  <title><![CDATA[&;
+<font color="red">&amp;</font>
+&#0;]]></title>
+  <content type="text"><![CDATA[<img src="x" alt="y"/> back\slash<br></br><li>Episode 12</li>
+multi
+line<img src="x" alt="y"/><li> </li>ééé]]></content></entry> <entry><link length="abc" rel="alternate" type="application/xml+xhtml"/>
+<link rel="payment" type="text/html" title="MP3 feed"/>
+<summary type="html"><![CDATA[ &amp😀😀😀😀aa  שלום<img src="x.png"><p></p>
+&;<li><img src="x.png"> cover</li>]]></summary>
+<content>&#60;br>&#x3C;/br&gt;sep</content>
+<link title='Alternate' type="" length="9223372036854775808" rel="first"></link>
+<psc:chapters version="1.2"><psc:chapter start="2147483648:00:00" href="https://example.com/ch" image="https://example.com/ch.png" title='&lt;b>x&lt;/b>'></psc:chapter><psc:chapter start="1:0x1p3" image="https://example.com/ch.png" href="https://example.com/ch"></psc:chapter><psc:chapter start="0:0:3.4028235e38" title="" href=""/><psc:chapter start="02:38:44.915" image='https://example.com/ch.png' title="😀"/><psc:chapter title="Intro" image="https://example.com/ch.png" start='01:32:36'/><psc:chapter image="https://example.com/ch.png" start="01:05:02.063" href="" title=""></psc:chapter></psc:chapters>
+<title>&amp;apos;a&amp;apos; a=b&amp;c=d  </title></entry> <entry><itunes:category text="Arts"><itunes:category text="Design"/></itunes:category>
+<content type="plain">&#x3C;br&gt;</content>
+<id></id>
+<title type='plain'><![CDATA[]]>&#38;AMP;</title>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/a.b/café/325.ogg" duration='2147483' type='text/html' fileSize="123456" medium="image"/>
+<link type="application/xml+xhtml" rel="related" length="12"/>
+<summary type="html">a&lt;p&gt;&#60;img src="x.png"&gt; cover&#x3C;/p>&#38;lt;b&amp;gt;escaped&#x26;lt;/b&#x26;gt;&#60;br&gt;</summary>
+<link title="Café" href="" rel="alternate" length='20000'/></entry> <entry><id>urn:uuid:1</id>
+  <updated>1996/06/04</updated>
+  <published>Fri, 14 Jun 67 11:13:26 +0530</published>
+  <itunes:duration>8031.266</itunes:duration>
+  <link length="12" title="Café" type="application/atom+xml" rel="related" href="https://example.com/alt.xml"/>
+  <title>plain words  Folge 337: Über alles  &#38;#65;&#38;#66;</title>
+  <content type='html'>	&amp;lt&lt;div&gt;Tom &#38; Jerry &lt;3&lt;/div&gt;100%&#60;br&gt;</content>
+  <link rel="last" href="https://xn--caf-dma.example/a/b/c149.flac" length="abc" type="application/rss+xml"/></entry> <entry><link href="" length="20000" rel="next" type=""/><updated>1974-05-24T15:47:45-0800 PM</updated><published>Friday, 06 Jun 1986 23:05</published><title type='html'><![CDATA[<b>&#128512;</b>&#65;&#66;<tt> </tt>]]></title><id></id></entry> <entry><itunes:duration>5990</itunes:duration>
+<link length='abc' href="https://example.com/pay" type="application/rss+xml" title="" rel="archives"/>
+<published>Fri, 18 Oct 2419 00:22:57 -0500</published>
+<title type="html">[x]  {json: 1}  back\slash</title>
+<id>
+id
+</id></entry> <entry><link type="application/atom+xml" rel="archives" length="9223372036854775808" title="MP3 feed"/>
+<link rel="self" href="https://example.com/feed?page=2"></link>
+<published>Mon 3 Apr 1899 15:06:22 GMT+0200 (GMT+01:00)</published>
+<updated>Mon 22 Jun 2207 05:03:40 GMT+0200 (--0500)</updated>
+<title type='html'>&lt;em&gt;​&#x3C;/em&gt;</title>
+<content type="html"></content>
+<id>
+id
+</id>
+<link length="9223372036854775808" title="MP3 feed" href="" rel=''/></entry> <entry><summary type="HTML">
+<![CDATA[&;]]></summary> <itunes:duration>5:43:15</itunes:duration> <link type="" href="http://example.org/a/b/c257.php" rel="hub" length='abc' title="Alternate"/> <title type="text"><![CDATA[<p>#hash</p>]]>
+</title> <id></id> <link title="Café" type="application/xhtml+xml" rel="last" length="9223372036854775808" href="https://example.com/"/> <published>1970-10-06</published> <link type="application/atom+xml" title="MP3 feed" href="" length='9223372036854775808'/></entry>
+  </feed>

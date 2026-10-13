@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><p:funding>Support us</p:funding>
+  <atom:link rel="first" href="https://example.com/feed?page=2" title="Alternate"/>
+  <title><![CDATA[a=b&c=d]]></title>
+  <description><![CDATA[<div>a < b</div><hr><p>Para</p>Tom &amp; Jerry &lt;3<br>ééé]]></description>
+  <dc:creator>DC Creator</dc:creator>
+  <pi:funding url="">&lt;b&gt;x&#60;/b&gt;</pi:funding>
+  <language>en</language>
+  <itunes:image href=""/>
+  <image><url>https://example.com/img.png</url></image>
+  <item><atom:link title="MP3 feed" type="text/html" rel="alternate" length='12' href="ftp://files.example.com/a/b/c251.caf"/>
+  <content:encoded>&#x3C;p>&#38;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt;&lt;/p>&#60;BR&gt;&#60;div&gt;&#x200B;&#x3C;/div>	&amp;lt;b&amp;gt;&#60;br&gt;&#60;/br></content:encoded>
+  <dc:date>Saturday, 22 Dec 88 00:44:26</dc:date>
+  <enclosure length="0" type=" audio/mpeg"/>
+  <itunes:summary>ééé&lt;br /></itunes:summary>
+  <media:group><media:content isDefault="false" medium="image" duration="abc" fileSize="9007199254740991" url='//example.com/a/b/c234.html' type="audio/mpeg; charset=binary"/></media:group>
+  <title>a &lt; bEpisode 875#hash</title>
+  <guid></guid></item>
+  <item><link></link> <title>a &#x3C; b
+ </title> <media:content type="audio/mpeg; charset=binary" medium="image" fileSize="abc" duration="0060"/> <description></description> <guid isPermaLink="true">urn:uuid:2da980d7</guid> <media:content duration="abc" fileSize='9223372036854775807' type=" audio/mpeg" medium="image" url="https://user:pass@media.example.net/ep35.wav"/> <content:encoded>&lt;p&gt;مرحبا&#x3C;/p&gt;éééa
+  b&lt;br&gt;&#x3C;p&gt;&#x5E9;לום&lt;/p&gt;&lt;hr/>Tom &#x26; Jerry &#60;3&lt;br>&lt;hr/>&amp;amp;amp;&#x3C;br></content:encoded> <enclosure url="https://example.com/a.b/dir.with.dots/ep193.mp3" length="" type="audio/mpeg"/></item></channel>
+  </rss>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:a10="http://www.w3.org/2005/Atom"><channel><itunes:summary>&#38;AMP;</itunes:summary><image><title>Image title</title><url></url></image><link>https://example.com</link><title>a
+  b</title><itunes:author><![CDATA[  Spaced ]]> </itunes:author><link xmlns="http://www.w3.org/2005/Atom" title="Alternate" href="https://example.com/" length="20000" rel="related"/><lastBuildDate>2336-08-05T20:21:42.235 +1400</lastBuildDate><description>&lt;img src="x.png"&gt;</description><item><title>&lt;font color="red&quot;>&amp;&lt;/font&gt;
+&amp;#;</title> <guid></guid> <pubDate>2001-12-31T13:05:29Z</pubDate> <description></description> <itunes:image href=""/> <itunes:duration>1:00:00:00</itunes:duration> <media:group><media:content medium="image" fileSize="２０００００" type="application/pdf" duration="01:00"></media:content></media:group> <media:thumbnail url="https://example.com/th.jpg"/> <foo><description>Nested description</description></foo></item><item><podcast:transcript type="text/plain" language="en"/><podcast:transcript url="https://example.com/t.json" type="text/html" language="en"/>
+<media:group><media:content duration="2147484" fileSize='16383' type="audio/opus" isDefault='1' url="//example.com/a/b/c234.html"/><media:content fileSize='1' medium="image" duration="2147483" url="HTTPS://EXAMPLE.COM/ep265.torrent" isDefault='1' type="video/mp4"/><media:content type='video' fileSize="٢٠٠٠٠" duration="3600" isDefault='false' url="//example.com/a/b/c319.ts" medium="audio"/></media:group>
+<pubDate>25 MAY 2136 05:11:25 +0100</pubDate>
+<guid>dup</guid>
+<link> https://e.com/x </link>
+<description>	&amp;#65;&amp;#66;&lt;br /&gt;&#x3C;br>&#60;/br&gt;</description>
+<itunes:image href=" https://e.com/i.png "/>
+<content:encoded>&#x3C;div&gt;trailing &#x3C;/div&gt;</content:encoded>
+<title>&#x3C;h6&gt;Line&#x3C;br>brea<![CDATA[k</h6>]]></title>
+<enclosure url="https://example.com:8443/e p358.MP3" length="+20000" type="audio/*"/>
+<itunes:duration>174:46</itunes:duration></item></channel>
+</rss>

@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"> <channel xmlns:atom="http://www.w3.org/2005/Atom"><link>https://example.com</link>
+<foo><description>Nested description</description></foo>
+<itunes:author>A, B</itunes:author>
+<atom:link title="" length="12" rel="related" type="application/xhtml+xml" href="HTTPS://EXAMPLE.COM/ep130.amr"/>
+<description><![CDATA[[x]<br><img src="x" alt="y"/>back\slash<br><div>&#xA9;</div><hr/>]]></description>
+<title><![CDATA[S01E356  S01E225]]></title>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<atom:link rel="alternate" length='20000' type='application/atom+xml' title="" href="https://example.com/"/>
+<atom:link href="https://example.com/alt.xml" type="application/xml+xhtml" length="20000" title="Café" rel="next"/>
+<atom:link type="" title="Alternate" length="9223372036854775808" href="https://example.com/alt.xml" rel="first"/>
+<itunes:image href=" "/>
+<item><title>&#13;
+&amp;amp;
+&lt;b&gt;Bold&lt;/b&gt; title	</title><content:encoded>&#13;
+&#x26;#169;</content:encoded><description><![CDATA[<img>]]></description><pubDate>Tue Apr 6 06:53:59 2010 AEST</pubDate><enclosure length="00020000" type="audio/opus"/><guid></guid><dc:date>Fri, 26 Jun 2122 12:41</dc:date></item>
+<item><title>第782&#x96C6;&lt;ul&gt;&lt;li&gt;第607集&lt;/li&gt;&#x3C;li&gt;two&#x3C;/li&gt;&#60;/ul&gt;<![CDATA[]]></title>
+<link>https://example.com/ep</link>
+<pubDate>1899-05-06T13:10:06.78183718+01</pubDate>
+<description>😀&lt;li>&#x26;AMP;&#60;/li&gt;  a > b a=b&amp;c=d&lt;li>a
+  b&#x3C;/li>&#1513;לו&#x5DD;&lt;br&gt; 1 &lt;2&#60;br /></description>
+<content:encoded></content:encoded>
+<itunes:summary></itunes:summary>
+<enclosure url="https://cdn.example.com/dir.with.dots/ep254.mov?file=x.mp3" length="52428800" type="text/plain"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" duration="9223372036854775807" fileSize='9223372036854775807' medium="audio" type="video/mp4"/></item></channel>
+  </rss>

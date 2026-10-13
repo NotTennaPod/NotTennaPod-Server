@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><title>a &gt; b</title>
+<description><![CDATA[<li>&#31532;7&#38598;</li>
+ ]]></description>
+<podcast:funding url=''>&lt;b&gt;x&lt;/b></podcast:funding>
+<link> https://example.com/ </link>
+<language>en</language>
+<item><itunes:summary>
+
+http://example.com/?a=1&amp;b=2 &#x26;#<![CDATA[128512;  ]]></itunes:summary> <enclosure url="" length="18446744073709551616" type="audio/"/> <link></link> <itunes:duration>123:58</itunes:duration> <atom:link rel="enclosure" type="text/html" href="https://example.com:8443/ep192.mp4?dl=1.0" length="20000"/> <media:content isDefault="1" type="audio/flac" fileSize="16384" duration="9223372036854775807" url="https://example.com:8443/ep355.html" medium="video"/> <enclosure length="9007199254740992" type="application/json"/> <description> &amp;amp</description> <guid isPermaLink="true">https://example.com/item/5597</guid> <pubDate>Sat, 01 Aug 04 01:36:20 +0200</pubDate> <enclosure url="https://xn--caf-dma.example/dir.with.dots/ep219.mp4" length="abc" type="application/json"/></item>
+<item><description></description>
+<pubDate>Sat Jan 4 25:41:26 2003</pubDate>
+<media:group><media:content type="audio" isDefault="1" url="https://cdn.example.com/dir.with.dots/ep316.flac?auth=yes" fileSize='16384'></media:content><media:content duration="+60" url="https://user:pass@media.example.net/dir.with.dots/ep43.oga" fileSize="0x4E20" isDefault="1" type="text/html"/><media:content fileSize="18446744073709551616" duration="2147483648" medium='document'/></media:group>
+<media:thumbnail url=""/>
+<title><![CDATA[&#;http://example.com/?a=1]]>&#38;b=2#297 &#8211; Interview</title>
+<enclosure url="https://example.com/a.b/ep396.aac" length="1,000,000" type="audio/x-m4a"></enclosure>
+<link> https://e.com/x </link>
+<itunes:image href=" https://e.com/i.png "/>
+<guid isPermaLink="true">https://example.com/item/16784</guid></item></channel>
+  </rss>

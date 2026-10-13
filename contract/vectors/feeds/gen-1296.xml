@@ -1,0 +1,22 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+  <subtitle type='html'>&#13;
+​</subtitle>
+<id> raw </id>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[<img src="x.png"><div>&lt</div>aaaaaaa]]></itunes:summary>
+<icon></icon>
+<link type="application/atom+xml" href="" rel="last" title="MP3 feed"/>
+<updated>2006-07-29T08:22:29:00</updated>
+<logo> https://e.com/l.png
+</logo>
+<title type="HTML"><![CDATA[trailing 
+<p>Tom & Jerry <3</p>
+<dfn>back\slash</dfn>]]></title>
+<entry><published>Fri 20 Mar 2020 21:50:22 +0530</published>
+<title>Folge 955: Über alles</title>
+<link title="Alternate" href='' rel="last"/>
+<id>tag:x,2020:1</id>
+<link href="https://example.com/" type="application/xhtml+xml" rel="" length="12" title="MP3 feed"/>
+<updated>Saturday, 04 Jan 10 03:03 -0500</updated>
+<podcast:transcript url=""/><podcast:transcript type="Application/JSON"/><podcast:transcript url="https://example.com/t.vtt" type="text/plain" language='en'/>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">71:38</itunes:duration></entry>
+</feed>

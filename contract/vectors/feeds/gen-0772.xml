@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generated -->
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><link>https://example.com</link><podcast:funding url="https://example.com/donate">  spaced  </podcast:funding><atom:link href="https://example.com/feed?page=2" rel="payment" type="application/rss+xml"/><itunes:summary><![CDATA[  😀​<br>]]></itunes:summary><item><content:encoded><![CDATA[
+&amp;amp;]]></content:encoded>
+  <description></description>
+  <podcast:person role="host">Jane</podcast:person>
+  <link> https://e.com/x </link>
+  <itunes:duration>4632.55</itunes:duration>
+  <media:thumbnail/>
+  <title>{json: 1}
+é
+</title>
+  <enclosure url="//example.com/ep177.opus" length="2147483647" type="audio/aac"></enclosure></item><item><title>&lt;ol&gt;&#x3C;li>  spaced  &#60;/li&gt;&#60;/ol>"quoted&quot;#728 – Interview</title><guid isPermaLink="false"> </guid><link> https://e.com/x </link><pubDate>Wed, 16 Jun 1993 10:01:17 +0945</pubDate><description><![CDATA[😀😀ééé	&#x1F600;#hashaaaa<p></p><p>&quot;q&quot;</p><hr>]]></description><content:encoded>&#128512;&#128512;😀😀
+trailing </content:encoded><itunes:image href="https://example.com/ep.jpg"/><itunes:duration>3620</itunes:duration><itunes:author>Item author</itunes:author><enclosure url="https://example.com:8443/a/b/c360.3gp?dl=1.0" length="2e5" type="application/ogg"/><media:group><media:content fileSize="٢٠٠٠٠" duration="-5" type="audio/"/><media:content fileSize="9007199254740993" medium="video" type="audio/*" url='https://example.com/a.b/a/b/c252.m4v'/></media:group><media:thumbnail/></item><a10:link rel="enclosure" href="https://example.com/pay" type="" length="abc" title=''/><itunes:author><![CDATA[Café Radio]]></itunes:author><textInput><title>Search</title><link>https://example.com/search</link></textInput><title>&#13;
+茶  &amp;;	</title><itunes:image href=""/><atom:link href="" length="abc" rel="hub"/><language>en</language><a10:link href="https://example.com/feed?page=2" type="text/html" rel="archives" title="Café"/></channel>
+  </rss>

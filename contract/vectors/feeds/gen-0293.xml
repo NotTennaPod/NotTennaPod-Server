@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/"><textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<link></link>
+<language>TR</language>
+<title>&amp;#x<![CDATA[D800;]]></title>
+<podcast:funding url=""></podcast:funding>
+<itunes:author><![CDATA[<b>Studio</b>]]></itunes:author>
+<image><url>  https://example.com/ws.png
+</url></image>
+<item><content:encoded>&#160;&amp;lt&#x3C;li>a
+  b&#60;/li&gt;</content:encoded>
+<guid isPermaLink="false">  spaced guid  </guid>
+<podcast:chapters type="application/json+chapters"/>
+<description><![CDATA[ &#xD800; [x]
+&quot;q&quot;<br/>😀<p></p>
+
+x<y	R&D]]></description>
+<title>multi
+line</title>
+<pubDate>Friday 13 Dec 2002 16:57:47 GMT+0000 (MST)</pubDate>
+<itunes:subtitle>&lt;p>&#x3C;p&gt;plain words&#x3C;/p>&#60;/p&gt;&lt;p style=&quot;text-align:center&quot;>  padded  &lt;/p>100%</itunes:subtitle>
+<link>https://example.com/ep</link>
+<itunes:duration>:30</itunes:duration>
+<enclosure url="HTTPS://EXAMPLE.COM/e p367" length='2147483648' type="x-audio/mpeg"/></item>
+<item><itunes:duration>
+45:00
+</itunes:duration> <description><![CDATA[<img><p>&#x;</p>]]></description> <pubDate>06 May 1986 17:37:49 UTC</pubDate> <itunes:image href="https://example.com/ep.jpg"/> <media:content isDefault="true" url="//example.com/e p4.aif" duration="9223372036854775807" type="application/json" fileSize='2147483648'/> <guid isPermaLink="true">Café-guid</guid> <media:content type="video/webm" fileSize="2147483648" isDefault="1" duration='0060' url="//example.com/dir.with.dots/ep266.avi"/> <enclosure url="//example.com/dir.with.dots/ep162.amr" length="-0" type="audio/mpeg"/> <title>&lt;u&gt; leading&lt;/u&gt;</title> <itunes:summary>&lt;div>&amp;euro;&lt;/div>aa&#38;#169;&#233;éé&lt;br/&gt;</itunes:summary> <media:content medium="image" fileSize="２０００００" type="audio/mp4" duration='2147484'/></item></channel></rss>

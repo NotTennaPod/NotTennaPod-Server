@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters"> <link type="application/atom+xml" length="9223372036854775808" rel='self' title="Alternate"/>
+<itunes:image href="https://example.com/ai.jpg"/>
+<title type='html'><![CDATA[<p>Para</p> &#xFFFF; AT&T]]></title>
+<id>urn:x</id>
+<author><name></name></author>
+<link length="20000" type="application/rss+xml" rel='next' title="Alternate" href=""/>
+<author><name>Ann</name></author>
+<link href="https://example.com/feed?page=2" rel="first" type="application/xml+xhtml" length="9223372036854775808"/>
+<link title="MP3 feed" type="" length="12" href="https://example.com/alt.xml" rel="payment"/>
+<updated>Sat, 20 March 2286 03:03 -1200</updated>
+<author><name>C&#x26;D</name><email>a@example.com</email></author>
+<entry><id> raw </id>
+  <title type="html">&apos;single&apos;&#x26;#;&amp;AMP;</title>
+  <updated>Sun Apr 21 00:43:22 1974 Coordinated Universal Time</updated>
+  <summary>ééé&lt;img&gt;ééé&lt;li&gt;&#38;apos;a&amp;apos;&lt;/li>&lt;img&gt;</summary>
+  <itunes:image href=''/></entry>
+  </feed>

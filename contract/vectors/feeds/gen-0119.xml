@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:at="http://www.w3.org/2005/Atom">
+  <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><atom:link rel='last' title="Café" href="https://example.com/" type="application/atom+xml"/><language>pt-BR</language><title><![CDATA[sep]]></title><description><![CDATA[<li>&Lt;</li><div>&#128512;</div> trailing ]]></description><image><title>Image title</title><url>https://example.com/img.png</url></image><itunes:subtitle>&#38;amp http://example.com/?a=1&amp;b=2</itunes:subtitle><itunes:author><![CDATA[A, B]]></itunes:author><at:link type="audio/mpeg" rel="enclosure" href="https://example.com/feed?page=2"/><itunes:image/><dc:creator>DC Creator</dc:creator><link>https://example.com</link><item><title><![CDATA[a > b]]></title>
+<guid isPermaLink="true">urn:uuid:119226c2</guid>
+<pubDate>Sat, 32 May 2016 05:39:16 -1200</pubDate>
+<description>&#x3C;img src="x.png">	&amp;;&#13;
+a&#13;
+b</description>
+<itunes:summary>&#x26;lt&lt;p>cr
+lf&lt;/p></itunes:summary>
+<enclosure url='https://cdn.example.com/e p220.MP3' length="00020000" type="video/quicktime"/></item><item><itunes:duration>2209</itunes:duration> <description><![CDATA[&#128512;]]></description> <guid>
+</guid> <link> https://e.com/x </link> <itunes:author>Item author</itunes:author> <pubDate>Thursday, 	0099-05-03T20:45:12</pubDate> <enclosure url="" length="+20000" type="audio/*"></enclosure></item></channel>
+</rss>

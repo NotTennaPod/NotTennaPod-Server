@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns="http://backend.userland.com/rss2" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:media="http://search.yahoo.com/mrss/"><description></description>
+<atom:link rel='' title="MP3 feed" href="https://example.com/alt.xml"/>
+<atom:link title="Alternate" rel="self" href="https://example.com/" type="text/html"/>
+<image><link>https://example.com/img-link</link><url></url><title>Image title</title></image>
+<i:subtitle>a&#13;
+b</i:subtitle>
+<title><![CDATA[&#0; &nbsp;  ]]></title>
+<link></link>
+<i:image href=" https://example.com/sp.jpg "></i:image>
+<item><title>&#x26;quot;q&amp;quot;  'single'  &amp;Lt;</title>
+  <guid>Caf&#xE9;-guid</guid>
+  <pubDate>1977-12-03T03:56:44-0000</pubDate>
+  <description><![CDATA[&apos;a&apos;]]></description>
+  <content:encoded>&#x3C;li&gt;&amp;;&#60;/li&gt;第7集&lt;br></content:encoded>
+  <i:summary><![CDATA[<br></br><li>&amp]]>&lt;/li> tab	here</i:summary>
+  <i:image href="https://example.com/ep.jpg"/>
+  <i:duration>6172</i:duration>
+  <enclosure url="//example.com/a/b/c100.html" length="2e5" type='Audio/MPEG'/>
+  <media:content type="image/jpeg" duration="2147483648" url="https://xn--caf-dma.example/café/17.aac" isDefault="true" medium="Audio"/>
+  <podcast:transcript url=""/><podcast:transcript url="https://example.com/t.json" type='application/json' language='en'/><podcast:transcript url='https://example.com/t.json' type="text/plain" language="en"/>
+  <atom:link href="https://example.com/alt.xml" rel="enclosure" type="text/html" title='Alternate'></atom:link>
+  <x:foo xmlns:x="urn:x"><title>Nested title</title></x:foo></item>
+<item><i:subtitle><![CDATA[&#]]>;  a=b&#x26;c=d</i:subtitle> <i:summary>&lt;img&gt;
+&amp;#169;&#x3C;hr>&lt;li&gt;AT&amp;T&#60;/li>&lt;br&gt;</i:summary> <enclosure url="" length="4294967296" type="audio/flac"/> <i:image href="https://example.com/ep.jpg"/> <i:duration>179:42</i:duration> <title>&amp;;</title> <media:content duration='01:00' fileSize="123456789012345678" type='application/x-bittorrent' medium="video"/> <guid isPermaLink="true">dup</guid> <pubDate>Sat, 13 June 2015 02:03</pubDate></item>
+<item><content:encoded></content:encoded>
+  <sc:chapters version="1.2"><sc:chapter href="" title=""></sc:chapter><sc:chapter href="" title='😀' start="0x10:00"></sc:chapter><sc:chapter start="-1:00" title="Intro"/></sc:chapters>
+  <i:duration>123:33</i:duration>
+  <description><![CDATA[<p></p><p/>😀S01E7aaaaaaaaa<li>R&D</li>
+
+1 <2
+&lt;b&gt;]]></description>
+  <title>sep
+Episode 784
+&#38;#;</title>
+  <link> https://e.com/x </link></item>
+<item><media:content type="application/ogg" duration="2147483" url="https://example.com:8443/dir.with.dots/ep272.mp3.zip" fileSize="16385"></media:content>
+<i:author>Item author</i:author>
+<media:content isDefault="TRUE" fileSize="9007199254740992" duration="9223372036854775807" url="HTTPS://EXAMPLE.COM/222.caf" medium="audio" type="audio"/>
+<pubDate>Wed 27 Feb 1974 02:51:54</pubDate>
+<media:content duration="2147484" medium="document" type="audio/ogg" fileSize="+20000"/>
+<enclosure url="//example.com/e p57.mid" length="-0" type="application/pdf"/>
+<sc:chapters><sc:chapter title="&lt;b>x&lt;/b>" image='https://example.com/ch.png' start="8294" href=""/></sc:chapters>
+<podcast:chapters url="" type="application/json+chapters"/>
+<title>&#x26;lt;b&amp;gt;</title>
+<description>aa</description></item>
+<item><title>Line&lt;br&gt;break  http://example.com/?a=1&amp;b=2  Line&lt;br&gt;break</title>
+<guid isPermaLink='false'>
+</guid>
+<link></link>
+<pubDate>2336-08-05T20:21:42.235 +1400</pubDate>
+<i:subtitle><![CDATA[مرحبا   leading  &;]]></i:subtitle>
+<i:duration>4477</i:duration>
+<enclosure url=" //example.com/10.html " length="9007199254740993" type='image/jpeg'/>
+<media:content fileSize="20000.0" isDefault="true" type="unknown" medium="Audio"/>
+<media:content type="Audio/MPEG" medium="Audio" duration="-5" isDefault="false" fileSize="9223372036854775807"></media:content>
+<x xmlns="urn:other"><title>Default namespace title</title></x></item></channel>
+</rss>

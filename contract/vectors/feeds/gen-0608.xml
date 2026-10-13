@@ -1,0 +1,29 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><podcast:funding url=""/> <link> https://example.com/ </link> <itunes:image/> <image><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link></image> <language>pt-BR</language> <description>	sep&lt;li>第7集&#60;/li&gt;</description> <d:creator>DC Creator</d:creator> <title>back\slash
+&lt;div&gt;&#x26;#0;&#x3C;/div>
+trailing </title> <itunes:summary>&#x1F600;😀😀😀&lt;p&gt;Episode 7&#60;/p></itunes:summary> <podcast:funding></podcast:funding> <podcast:funding url="https://example.com/donate"/> <item><pubDate>2495-01-17T17:05:34</pubDate>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep359.ts" length="9007199254740991" type="audio/x-m4a"/>
+<media:content duration="-5" type='image/*' fileSize="20000 "/>
+<itunes:image href=" "/>
+<title><![CDATA[<font color="red">sep</font> 100%]]></title>
+<link>https://example.com/ep</link>
+<cont:encoded><![CDATA[<p></p>&lt<br>​<br>
+&amp;<p/>ééé
+
+<div> </div>]]></cont:encoded>
+<enclosure url="https://user:pass@media.example.net/e p390.m4v" length="123456" type='audio/aac'/>
+<itunes:summary><![CDATA[<hr/> &apos;a&ap]]>os;</itunes:summary>
+<guid></guid>
+<media:content isDefault="false" url="https://example.com/a.b/a/b/c287.avi" duration="abc" type="application/pdf"/></item> <item><title>&lt;ol>&#60;li> &lt;/li>&lt;/ol&gt; &#38;amp;amp;</title> <guid isPermaLink="true">https://example.com/item/90357</guid> <link>https://example.com/ep</link> <enclosure length="9007199254740991" type="video"></enclosure> <media:content duration="" type="audio/mp3" medium="image" fileSize="2147483648" isDefault="1"/> <media:description type="html"><![CDATA[<hr/><p/><br></br>]]></media:description> <atom:link href="https://user:pass@media.example.net/e p327.avi" rel="next" title="Café" type="audio/mpeg"></atom:link></item> <item><guid>a&#38;b</guid>
+<title>&#38;#x1F600;&lt;b&gt;Bold&lt;/b> title</title>
+<itunes:duration>2147483.648</itunes:duration>
+<enclosure url='' length="20000.0" type="image/jpeg"/>
+<itunes:image href='https://example.com/ep.jpg'/>
+<link>https://example.com/ep</link>
+<cont:encoded><![CDATA[	a
+
+b #hash😀]]></cont:encoded>
+<description><![CDATA[aaaa<br/>ééé]]></description>
+<media:thumbnail url=""/></item> <item><link>https://example.com/ep</link> <itunes:summary>
+trailing a=b&#x26;c=d&lt;br&gt;&#60;li>a=b&#x26;c=d&#x3C;/li&gt;&#x3C;hr>&lt;hr/&gt;</itunes:summary> <pubDate>04 Apr 19 07:53 +1400</pubDate> <guid>https://example.com/item/30642</guid> <description></description></item></channel>
+</rss>

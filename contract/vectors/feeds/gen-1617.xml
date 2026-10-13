@@ -1,0 +1,17 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang=""> <link length="20000" rel='first' title='' type="application/xml+xhtml"/> <link title="Café" href="" type="application/atom+xml" rel="Next" length="12"/> <link href="https://example.com/" rel="hub" type='audio/mpeg' title='Alternate'/> <author><name></name><email>a@example.com</email></author> <author><name>Émile</name></author> <itunes:summary>&lt;br>100%&lt;br>&#x3C;div>'single'&lt;/div&gt; ​&amp;#xFFFF;aa&#60;li>  padded  &lt;/li>
+&amp;#128512;</itunes:summary> <id></id> <entry><media:content xmlns:media="http://search.yahoo.com/mrss/" url="ftp://files.example.com/ep383.xyz#t=10" type='image/jpeg' isDefault="1" duration=' 60' medium="audio" fileSize=""/><link href='https://example.com/feed?page=2' rel="self" type="" title="Café"/><id>urn:uuid:1</id><itunes:duration>
+45:00
+</itunes:duration><link title="" href="https://example.com/" type="text/html" rel="payment"/><updated>2134-10-01+0200</updated><title type="text"><![CDATA[é  <div>"quoted"</div>  "quoted"]]></title><content type="html">	&#38;lt;b&#38;gt;&lt;img src="x.png<![CDATA[">cr
+lftab	heretrailing <br>]]></content><author><name>Entry author</name></author></entry> <entry><pi:transcript url='https://example.com/t.vtt' type="" language="en"/><pi:transcript url="https://example.com/t.vtt" type="text/html" language="en"/><pi:transcript url="https://example.com/t.vtt" type="application/srt" language="en"/>
+  <title type="html">Line&lt;br>break&#38;#xA9;&#38;#;</title>
+  <updated>Sat, 	13 	Jan 	1601 	16:48:58 +0200</updated>
+  <id>tag:x,2020:1</id>
+  <itunes:duration>2147483.647</itunes:duration>
+  <summary type='plain'>&#13;
+ Episode 12&#x3C;div&gt;茶&lt;/div>
+100%[x]&#x3C;br&gt;&#x3C;p&gt;&lt;3 &lt;3&#x3C;/p>&amp;lt   spaced  </summary>
+  <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;hr/&gt;sep&#60;br>
+
+&#x26;mdash;&lt;br>&lt;/br>&#x3C;li&gt;'single'&lt;/li&gt;مر&#1581;باFolge 7: Über alles&#60;p>sep&#x3C;/p&gt;</div></content>
+  <link rel='last' type="audio/mpeg" href="https://example.com/feed?page=2"/></entry>
+</feed>

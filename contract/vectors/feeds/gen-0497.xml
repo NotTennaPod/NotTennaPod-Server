@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters">
+<channel><description>
+plain words&#233;éé😀😀&lt;li>plain words&#60;/li&gt;&#13;
+ leading&#13;
+ &#x3C;img src="x&quot; alt=&quot;y&quot;/>&#60;hr/></description>
+<itunes:author>&#x26;copy; 2020 Org</itunes:author>
+<itunes:image href="https://example.com/it.jpg"/>
+<podcast:funding></podcast:funding>
+<media:thumbnail/>
+<link>https://example.com</link>
+<podcast:funding url="">  spaced  </podcast:funding>
+<title>​</title>
+<language>TR</language>
+<image><url>  https://example.com/ws.png
+</url></image>
+<item><title/><guid isPermaLink="true">a&amp;b</guid><link> https://e.com/x </link><pubDate>Sun, 12 Sep 1971 01:14:23 +020</pubDate><description><![CDATA[<p>x<y</p>]]></description><enclosure url="https://xn--caf-dma.example/a/b/c323.ogx?dl=1.0" length='0x4E20' type="application/ogg"/><media:content url="HTTPS://EXAMPLE.COM/dir.with.dots/ep339.m4b?auth=yes" medium='audio' fileSize="52428800" type="application/octet-stream" duration="59" isDefault='1'/><media:content duration="0" type="audio/x-m4a" fileSize='123456' medium="Audio" url='//example.com/a/b/c200.MP3#t=10' isDefault="true"/><foo><description>Nested description</description></foo></item>
+<item><title><![CDATA[	&#65;&#66;  ]]></title>
+<media:content url="https://xn--caf-dma.example/dir.with.dots/ep219.mp4" duration="0060" fileSize="-0" type="application/octet-stream"/>
+<media:content url="https://example.com/a.b/a/b/c61.webm" duration=" 60" type="image/jpeg" medium="video" isDefault="false" fileSize='+20000'></media:content>
+<itunes:image href=""/>
+<enclosure url="https://cdn.example.com/98.mp4" length="00020000" type="audio/mp4"/>
+<itunes:duration>3806</itunes:duration>
+<guid isPermaLink="true">
+</guid>
+<link>https://example.com/ep</link>
+<pubDate> Tue, 23 Dec 1986 14:45&#13;
+</pubDate></item></channel>
+</rss>

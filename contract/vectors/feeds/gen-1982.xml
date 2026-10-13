@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md"><link>https://example.com</link><atom:link rel="first" type="text/html" length="20000" title=""/><description><![CDATA[
+&#xA9;]]></description><title><![CDATA[ ]]></title><language></language><itunes:subtitle><![CDATA[  Line<br>break
+<unknown>  padded  </unknown>
+back\sl]]>ash </itunes:subtitle><itunes:image></itunes:image><item><title>&#x3C;label&gt;a
+  b&#60;/label></title>
+<guid isPermaLink="false">
+</guid>
+<link> https://e.com/x </link>
+<pubDate>2126-08-28T22:56:17CET</pubDate>
+<description><![CDATA[<br>&#;<br>😀😀 cr
+]]>lf&lt;li&gt;Episode 12&#60;/li></description>
+<itunes:subtitle>
+1 &lt;2
+مر&#1581;با</itunes:subtitle>
+<itunes:image href="https://example.com/ep.jpg"/>
+<itunes:duration>NaN</itunes:duration>
+<enclosure url="https://example.com/a.b/a/b/c252.m4v" length="16385" type="image/*"/>
+<enclosure length="2147483647" type="audio/x-m4a"/>
+<enclosure url="ftp://files.example.com/ep169.m3u8" type="video/webm"/>
+<mrss:thumbnail/>
+<mrss:description type='html'></mrss:description>
+<podcastindex:chapters url="https://example.com/ch.json" type="application/json+chapters"/></item><item><title>&#x26;nb<![CDATA[sp;]]></title>
+<guid isPermaLink="true">Café-guid</guid>
+<pubDate>&#13;
+1980-10-20T07:37:06.1+00:00 </pubDate>
+<description>&lt;li&gt;Episode 12&#60;/li&gt;&lt;li&gt;trailing &lt;/li>😀</description>
+<itunes:image/>
+<itunes:duration>179:41</itunes:duration>
+<enclosure url='http://example.org/a/b/c27.amr' length="+20000" type="video"></enclosure>
+<enclosure url='https://user:pass@media.example.net/a/b/c236.aif' length='4294967296' type="application/x-bittorrent"/>
+<category><![CDATA[T]]>echnology</category></item><item><title>cr&#13;lf
+&amp;#;</title><mrss:content isDefault="1" duration="3600" url="https://user:pass@media.example.net/ep343.webm" type="audio/mpeg; charset=binary" fileSize="2147483648"/><guid isPermaLink="false">a&#x26;b</guid><mrss:description>
+"quoted&quot;&lt;p>&#60;/p>&lt;img src=&quot;x.png&quot;> cover	trailing &#13;
+multi
+line&#38;quot;q&#38;quot; &#x26;euro;&#x3C;img></mrss:description><enclosure length="16385" type="application/ogg"/><itunes:duration>195:33</itunes:duration><itunes:image/><pubDate>Sat, 24 Feb 1973 05:45:42 -0500</pubDate><description>cr&#13;lfx&lt;y&#x3C;p>&#60;3 &lt;3&#x3C;/p&gt;&lt;hr>&#60;br&gt;&#x3C;/br>&amp;#x;aaaaaaaa</description></item><atom:link title="Alternate" length="20000" type="application/atom+xml" rel="related"/></channel></rss>

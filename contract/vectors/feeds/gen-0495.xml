@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom">
+<channel><itunes:image/><itunes:author>😀 Pod</itunes:author><at:link rel="self" href="https://example.com/pay" title="Café" type="application/xml+xhtml" length="abc"/><language>pt-BR</language><link> https://example.com/ </link><item><pubDate>Friday, 26 Mar 2466 03:25:30</pubDate>
+  <media:content isDefault="TRUE" type="audio/aac" duration="+60" fileSize="1" url="https://xn--caf-dma.example/382.html" medium="image"/>
+  <media:content type="audio/mpeg; charset=binary" fileSize='4294967296' url="http://example.org/e p34.flac" duration="1.5" medium="audio"/>
+  <media:content fileSize="2147483648" type="image/*" medium="audio" duration=" 60" isDefault="1" url="https://user:pass@media.example.net/a/b/c365.oga"/>
+  <itunes:duration>2147483.648</itunes:duration>
+  <link>https://example.com/ep</link>
+  <podcast:transcript url='https://example.com/t.json' type="application/srr"/><podcast:transcript url="" type="application/json" language="en"/><podcast:transcript url='https://example.com/t.json' type='text/vtt' language='en'></podcast:transcript>
+  <guid isPermaLink="false">https://example.com/item/59877</guid>
+  <description>&#60;li>trailing &#x3C;/li&gt;aaaa&lt;li&gt;back\slash&#60;/li&gt;😀&lt;img&gt;</description>
+  <enclosure length="16383" type="image/jpeg"/>
+  <psc:chapters version="1.2"><psc:chapter image="https://example.com/ch.png" start="6546" title=""></psc:chapter><psc:chapter start="735" title="&lt;b>x&lt;/b>" href=''/><psc:chapter start="3311" title="Intro" href="https://example.com/ch"/><psc:chapter title="&lt;b>x&lt;/b>" image='https://example.com/ch.png' start="0:0:3.4028235e38" href="https://example.com/ch"/><psc:chapter start="00:07:07" title='Café &amp;amp; more' href="https://example.com/ch"/></psc:chapters>
+  <title><![CDATA[&apos;a&apos; ​ tab	here]]></title></item><item><media:content url="https://example.com:8443/ep355.html" type='image/*' isDefault="false" duration="9223372036854775807" fileSize="20000 "/>
+  <itunes:duration>.5</itunes:duration>
+  <description><![CDATA[<p><b>Bold</b> title</p><br/>ééé]]></description>
+  <pubDate>1995-10-23T15:43:15.155</pubDate>
+  <guid></guid>
+  <title>&lt;del&gt;😀&lt;/del>
+&#60;div dir=&quot;rtl"&gt;multi
+line&lt;/div&gt;</title>
+  <media:content isDefault="false" url="http://example.org/dir.with.dots/ep21.caf" medium="image" fileSize="0" duration="-5" type="video/mp4"/>
+  <enclosure url="" length="+20000" type="image/png"/>
+  <psc:chapters version="1.2"><psc:chapter title="Café &amp;amp; more" start="02:16:14.790"></psc:chapter><psc:chapter href="" title="Café &amp;amp; more" start=" 1:00"/><psc:chapter title="😀" image="https://example.com/ch.png" start="0:0:0.0001"/></psc:chapters>
+  <media:content duration="0" fileSize="0" type="application/x-bittorrent"/></item></channel></rss>

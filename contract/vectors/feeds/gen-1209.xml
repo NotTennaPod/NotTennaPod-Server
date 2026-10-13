@@ -1,0 +1,7 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+  <id></id>
+<author><name>  Bob  </name><email>a@example.com</email></author>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/ai.jpg"/>
+<updated>17 Nov 1976 02:03:20.119662 +1400</updated>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[第一]]></itunes:author>
+<link length="20000" href="" rel="alternate" type="text/html" title="Café"/> </feed>

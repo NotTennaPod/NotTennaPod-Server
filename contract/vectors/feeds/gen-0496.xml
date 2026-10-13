@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom">
+<channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><at:link rel="hub" type="" href="" length="12" title=""/>
+<description><![CDATA[<img><p>&#x1F600;</p>😀]]></description>
+<title><![CDATA[100%]]></title>
+<link> https://example.com/ </link>
+<title>&#38;#65;&#x26;#66;
+<![CDATA[&#xD800;]]></title>
+<at:link type="application/xhtml+xml" href="https://example.com/alt.xml" title="Café" rel="archives"/>
+<dc:creator>DC Creator</dc:creator>
+<item><title>&lt;section>&#x26;unknown;&lt;/section></title> <media:description type="html">&#x3C;br>&#60;div&gt;😀&#60;/div&gt;&#13;
+1 &lt;2&#60;p&gt;&#38;#x;&lt;/p&gt; &lt;3 &lt;3</media:description> <guid isPermaLink="false">a&#38;b</guid> <enclosure length="20000 " type=' audio/mpeg'/> <pubDate>Thu, 29 Jun 1990 02:29:07 -0500</pubDate></item></channel></rss>

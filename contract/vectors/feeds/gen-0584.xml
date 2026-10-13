@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+  <id></id><updated>1982-07-13T10:24:49.225 -0500</updated><title type="text"><![CDATA[&#31532;34&#38598;  &lt;b&gt;escaped&lt;/b&gt;  &]]></title><author><name>Ann</name></author><subtitle type="text"><![CDATA[<li>&#169;</li><p>100%</p>]]></subtitle><media:thumbnail url="https://example.com/amt.jpg"/><entry><content type="xhtml">&#x3C;p&gt;cr&#13;lf&lt;/p&gt;&lt;hr>&#x3C;li&gt;&amp;amp;&#60;/li&gt;</content>
+  <updated>Tue, 13 Jun 1752 11.01:24 -1200</updated>
+  <itunes:duration>73:19</itunes:duration>
+  <published>Thursday, 17 Aug 200000 17:50 -1200</published>
+  <link href='' title="Alternate" type="application/xhtml+xml" rel="Next" length="abc"/>
+  <summary type="html">
+cr
+lf
+
+&amp;#x;aaaaa</summary>
+  <id>
+id
+</id>
+  <title type="HTML">&#1513;&#1500;&#1493;&#1501;  trailing </title></entry><entry><itunes:duration>3210.41</itunes:duration>
+  <published> 2346-12-31T01:22:09 	 </published>
+  <id>tag:x,2020:1</id>
+  <link title="Alternate" href="https://example.com/pay" type='text/html' rel="alternate"></link>
+  <source url="https://example.com/s"><title>Source title</title></source>
+  <updated>Thursday, 21 Aug 2408 18:35:33 CEST</updated>
+  <title type="text">&amp;#x; &#1605;&#1585;&#1581;&#1576;&#1575; &#38;euro;</title></entry><entry><content type="html">&lt;br>&lt;/br&gt; a&#13;
+b&#13;
+&amp;AMP;</content><title type="html">&amp;mdash;  &#x8336;  &apos;<![CDATA[single']]></title><updated>Fri SEP 18 17:19:02 2539</updated><itunes:duration>3349</itunes:duration><published>Sunday, 25 Oct 14 07:22</published></entry><entry><updated>29 Sep 1988 08:16:08 GMT</updated>
+<id>urn:uuid:1</id>
+<title type="HTML">&#60;font color="red">plain words&lt;/font&gt;
+&#x3C;p>Para&#x3C;/p&gt;
+multi
+line</title>
+<published>Sat, 08 August 1992 10:48:35</published></entry><entry><published>SATURDAY, 24 Dec 1983 23:19 +0000</published> <title>x&#x3C;y  &#x3C;p>&amp;apos;a&#x26;apos;  &amp;</title> <id>
+id
+</id> <link href="HTTPS://EXAMPLE.COM/e p286.png" rel="Next" title="MP3 feed" length="9223372036854775808"></link> <link href="" rel="hub" title="MP3 feed" length="20000"></link></entry></feed>

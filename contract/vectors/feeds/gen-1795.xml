@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+<channel><item><pubDate>11 Septem 1988 15:46:07 -0000</pubDate>
+<media:content url="//example.com/ep306.3gp" type="audio/mpeg" duration=" 60" isDefault="TRUE" fileSize="9223372036854775808"/>
+<enclosure url="" length="0x4E20" type="audio/opus"/>
+<title>R&D <![CDATA[	Tom &amp; Jerry &lt;3 <p>&#xD800;</p>	]]></title>
+<podcast:socialInteract uri="https://social.example/@a/1" protocol='activitypub'/>
+<link></link>
+<content:encoded>  😀</content:encoded>
+<guid></guid>
+<media:content duration="+60" fileSize="9223372036854775808" url="ftp://files.example.com/a/b/c228.xyz" type='audio/mp3'/></item>
+<item><title><![CDATA[茶]]></title>
+<pubDate>11 Sep 12 07:48 -0000</pubDate>
+<content:encoded>&#60;p&gt;茶&#60;/p>&lt;BR>&#x3C;li&gt;100%&lt;/li&gt;	trailing   &amp;nbsp;</content:encoded>
+<enclosure url='//example.com/e p12.Mp4' length="-16384" type="video/mp4"/></item>
+<item><title> 
+&#x26;quot;q&#38;quot;</title>
+<guid isPermaLink="true">  spaced guid  </guid>
+<link></link>
+<pubDate>Wed 18 Jan 2215 12:58:10 GMT+0</pubDate>
+<description><![CDATA[<p>😀</p>Tom & Jerry <3<br>😀😀😀😀 leading<br> &lt;b&gt;aaa&#169;<p>&#;</p>]]></description>
+<enclosure length="abc" type="audio/flac"></enclosure>
+<media:content type='audio' duration="01:00" fileSize='9007199254740992' medium="video" url="https://user:pass@media.example.net/café/296.mp4"/></item>
+<item><content:encoded>aaa&#60;br/>	&amp;#x;&#60;br /&gt;&lt;div&gt;AT&amp;T&#60;/div></content:encoded> <pubDate>Thursday, 19 Jul 1066 10:30:27</pubDate> <link></link> <guid isPermaLink="false">dup</guid> <title>#277 – Interview &#x3C;P&gt;&#38;Lt;&#60;/P&gt;</title> <enclosure url="https://xn--caf-dma.example/ep23.flac" length="1" type='image/jpeg'/> <description>&#x3C;br>&#x3C;/br>&#60;br /&gt;</description></item>
+<item><title><![CDATA[<p>&hellip; ]]></title><enclosure url="" length="9007199254740991" type="text/html"/><guid>  spaced guid  </guid><link>https://example.com/ep</link></item>
+<podcast:funding/>
+<description>&#x26;copy;&#60;br&gt;&#x3C;div&gt;&amp;;&lt;/div>&#x26;lt;b&#38;gt;&#x3C;br></description>
+<language> EN-US </language>
+<title>&amp;apos;a&amp;apos;</title>
+<media:thumbnail url="https://example.com/mt.jpg"/></channel></rss>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+<itunes:image href=""/><subtitle type="html"></subtitle><id> raw </id><title type="HTML">a=b&amp;c=d S01E984  leading</title><link title="Café" type="text/html" href="https://example.com/alt.xml" length="9223372036854775808" rel="enclosure"/><entry><title type="plain">#715 – Interview</title> <id>urn:uuid:1</id> <updated> Wed, 15 August 1601 17:43:28
+</updated> <podcastindex:transcript type="text/plain"/><podcastindex:transcript language="en"/> <content type="plain">	&#38;</content> <link length="abc" rel="next" type="application/xhtml+xml" title="MP3 feed"/> <!-- comment --><?pi data?></entry><entry><link rel="Next" length='20000' type="audio/mpeg" title="Alternate" href="https://example.com/"/>
+<published>Sat, 09 June 1973 15:26:52 +0100</published>
+<media:content fileSize="2147483647" url="//example.com/dir.with.dots/ep388.xyz" medium="audio" duration="1.5" isDefault='TRUE' type="image/*"/>
+<updated>Donnerstag,  Mon, 04 May 2150 11:08:13 -0000</updated>
+<title>&#38;copy; a > b</title>
+<author><name>Entry author</name></author>
+<id>tag:x,2020:1</id></entry><entry><id> raw </id>
+<updated>Friday, 17 Mar 2462 01:42:58 Europe/Berlin</updated>
+<link type="audio/mpeg" rel="" href="https://example.com/feed?page=2"/>
+<title><![CDATA[&#xFFFF;]]></title>
+<published>1994-08-28</published></entry></feed>

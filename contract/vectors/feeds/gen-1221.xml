@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<atom:id> raw </atom:id> <atom:subtitle type="text"><![CDATA[
+trailing a]]></atom:subtitle> <pi:funding url="https://example.com/give">Give</pi:funding> <atom:link title="MP3 feed" href="https://cdn.example.com/314.MP3" length='20000' rel="payment" type=''/> <media:thumbnail url='https://example.com/amt.jpg'></media:thumbnail> <atom:logo>https://example.com/logo.png</atom:logo> <atom:link rel="payment" type="application/rss+xml" length="12" title='' href=""/> <pi:person role="host">Jane</pi:person> <atom:link href="https://example.com/pay" length="12" rel="first" title="Alternate"/> <atom:author><atom:name></atom:name></atom:author> <atom:title type="xhtml"><![CDATA[[x] a
+  b]]></atom:title> <atom:entry><atom:link rel="next" type="audio/mpeg" href="https://example.com/alt.xml" length="9223372036854775808"/>
+  <atom:link rel="last" type="audio/mpeg" href='' length="12" title=""/>
+  <atom:content type="text">&#x3C;div&gt;multi
+line&lt;/div></atom:content>
+  <atom:id></atom:id>
+  <atom:summary type="plain"><![CDATA[&lt;b&gt;<br>😀
+&lt	مرحبا<div>第7集</div>]]></atom:summary>
+  <i:duration>100:00:00</i:duration></atom:entry> <atom:entry><atom:id>urn:uuid:1</atom:id>
+<atom:link href='https://example.com/' type="text/html" rel=""/>
+<atom:title type="html"><![CDATA[<3 ]]>&#60;3  &amp;;</atom:title>
+<atom:updated>1975-06-25T11:02:39CDT</atom:updated></atom:entry> <atom:entry><atom:link rel='last' length="9223372036854775808"/>
+  <atom:summary type="html"></atom:summary>
+  <atom:id>tag:x,2020:1</atom:id>
+  <atom:title> leading a &lt; b</atom:title></atom:entry> <atom:entry><atom:updated>2018-07-12T21:28:39-01:00</atom:updated>
+<atom:summary type="text"></atom:summary>
+<atom:id>urn:uuid:1</atom:id>
+<atom:author><atom:name>Entry author</atom:name></atom:author>
+<atom:title type="plain">tab	here &#x3C;code&gt;back\slash&lt;/code&gt; &#38;copy;</atom:title>
+<atom:link title="Café" length='12' rel='enclosure' type="application/xhtml+xml" href=''/>
+<atom:link href="//example.com/e p152.wma" rel="enclosure"></atom:link></atom:entry>
+  </atom:feed>

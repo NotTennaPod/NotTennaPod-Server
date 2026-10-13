@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding>Support us</podcast:funding>
+<atom:link type="application/xml+xhtml" length="12" title="Alternate" href="https://example.com/pay" rel="alternate"></atom:link>
+<itunes:image href='https://example.com/it.jpg'/>
+<atom:link type='application/xhtml+xml' rel="self" length='20000' title="Café" href="https://example.com/pay"/>
+<dcterms:creator>DC Creator</dcterms:creator>
+<description>😀😀😀&lt;div&gt;Episode 12&lt;/div&gt;</description>
+<link>https://example.com</link>
+<title>&#x3C;p&gt;Para&lt;/p&gt;</title>
+<atom:link rel="payment" href="//example.com/dir.with.dots/ep266.avi" type="text/html" title="" length="12"/>
+<x:foo xmlns:x="urn:x"><title><![CDATA[Neste]]>d title</title></x:foo>
+<atom:link rel="last" title='Café' href="https://example.com/feed?page=2" type='application/xhtml+xml' length="20000"/>
+<itunes:subtitle>cr&#13;lf
+Line&lt;br>break
+&amp;euro;</itunes:subtitle>
+<podcast:funding>Support us</podcast:funding>
+<language> EN-US </language>
+<podcast:funding url="">Support us</podcast:funding>
+<lastBuildDate>0099-06-21T03:00:50.595Z</lastBuildDate>
+<item><pubDate>2413-02-31T00:47:21.851+0945</pubDate>
+  <title>  &#38;hellip; &#x26;&#13;
+</title>
+  <itunes:image href="https://example.com/ep.jpg"/>
+  <itunes:duration>2:10:09</itunes:duration></item>
+<item><title>&#x26;mdash;</title><description><![CDATA[ééé]]></description><i:image href=" https://e.com/i.png "/><i:duration>3:41:28</i:duration><enclosure url="" length="1" type="video"/><media:content isDefault="false" duration="2147483" medium="Audio" fileSize="" url="http://example.org/e p309.webm" type="audio/ogg"/><media:thumbnail url=""/></item>
+<item><title>&#60;p&gt;&#60;p<![CDATA[>&#xA9;</p></p>]]></title>
+<guid isPermaLink="false">https://example.com/item/59451</guid>
+<link> https://e.com/x </link>
+<pubDate>Thu,  Wed, 04 Jun 1975 19:46:55 -1200</pubDate>
+<description><![CDATA[	trailing <p>&quot;q&quot;</p>]]></description>
+<content:encoded></content:encoded>
+<itunes:subtitle>&#38;euro;</itunes:subtitle>
+<enclosure length="-0" type="application/octet-stream"/></item>
+<item><link> https://e.com/x </link>
+  <guid isPermaLink="true">urn:uuid:c83fb496</guid>
+  <title>  padded  </title>
+  <description></description>
+  <i:subtitle><![CDATA[&hellip;  &amp;  &#169;]]></i:subtitle>
+  <itunes:duration>0:15:58</itunes:duration></item>
+<item><podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/> <pubDate>Mon, 10 Nov 1997 18:27:17 +0000</pubDate> <itunes:summary></itunes:summary> <description>
+sep</description> <guid>
+</guid> <itunes:duration>173:09</itunes:duration> <enclosure url="HTTPS://EXAMPLE.COM/ep295.aif?file=x.mp3" length="9007199254740992" type="audio/opus"/> <itunes:image href=""/> <source url="https://example.com/s"><title>Source title</title></source> <media:content duration="+60" medium="video" url="//example.com/e p76.caf" type="image/*" fileSize="0"></media:content></item>
+<item><title>Episode 12</title><guid>  spaced guid  </guid><pubDate>Mon, 23 Nov 84 01:04:37 -1200</pubDate><description>	&#x26;AMP;ééé&lt;div&gt;&#38;#x1F600;&#x3C;/div&gt;</description><enclosure url='//example.com/a/b/c385.jpg?file=x.mp3' length='16383' type="video/webm"/><media:thumbnail/></item></channel>
+</rss>

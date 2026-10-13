@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generated -->
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters">
+  <link title="MP3 feed" rel="enclosure" length="12" href='https://example.com/'/>
+  <id></id>
+  <title type="text">plain words
+a&#13;
+b
+&#38;#;</title>
+  <author><name>  Bob  </name></author>
+  <entry><published>Monday, 30 Oct 2024 21:38:28 -0000</published><title type="plain">http://example.com/?a=1&amp;b=2sep{json: 1}</title><author><name>Entry author</name></author><updated>Fri, 01 Dec 1972 02:54:19 +0530 GMT GMT</updated></entry>
+  <entry><updated>2008-08-14T19:58:33.123Japan Standard Time</updated><link href="https://xn--caf-dma.example/e p336.MP3" title="Alternate" rel="Next" type="application/rss+xml" length='abc'/><title><![CDATA[a > b
+multi
+line]]></title><media:content isDefault="false" type="AUDIO/MPEG" url='https://xn--caf-dma.example/ep237.3gp?dl=1.0' duration="1.5" fileSize="9007199254740993"/><link type="text/html" href="https://example.com/alt.xml" length="abc" rel="alternate" title="MP3 feed"></link><id>
+id
+</id><summary type="html"></summary><link title="MP3 feed" rel="payment" type="application/xml+xhtml" length="12"/></entry>
+  <entry><title type="html">  &amp;#128512; &amp;#x;  </title><updated>.,X-bpxGGSqzJsh.dKXjawsdBgYT</updated><link href="https://example.com/pay" rel="payment" type="audio/mpeg"/><summary type="plain"></summary><id> raw </id></entry>
+  <entry><content>&#13;
+a=b&#x26;c=d&#60;div>&#38;nbsp;&#x3C;/div&gt;&#13;
+&amp;copy;😀😀 a&#13;
+b&#13;
+&amp;#xFFFF;&amp;#128512;&lt;img src=&quot;x" alt="y"/></content>
+<id> raw </id>
+<updated>&#13;
+Saturday, 29 Oct 62 03:46
+</updated>
+<title type='text'><![CDATA[
+#hash]]></title>
+<media:content type="image/png" duration="" isDefault="false" fileSize="-9223372036854775808" url="ftp://files.example.com/ep294.html" medium="Audio"/>
+<summary type="HTML">&#x3C;li>&#x26;amp;amp;&lt;/li>&lt;br>&#60;/br&gt;</summary>
+<link length="abc" rel="payment" title="Alternate" href="https://example.com/alt.xml" type='application/atom+xml'/>
+<link rel="related" title="Alternate" type="text/html" href=''/>
+<link type="text/html" href="https://example.com/pay" rel="last" title=''/>
+<published>1900-02-29T01:29:26Z</published></entry>
+  <entry><title>
+&#38;amp;amp; </title><id>
+id
+</id><updated>1992-12-25T04:02:99</updated><link rel="alternate" title="Café" href="https://example.com/a.b/café/205.aspx" type="text/html"/><link title="MP3 feed" length='abc' type="application/rss+xml" rel='self' href="https://xn--caf-dma.example/a/b/c323.ogx?dl=1.0"/></entry>
+  <entry><id></id><link rel="" href="https://example.com/" length="9223372036854775808"/><title type="HTML">#722 – Int<![CDATA[erview]]></title><updated>Sun, 08 Feb 2004 16:16 -0500 garbage</updated><author><name>Entry author</name></author><summary type='html'>&#60;p/&gt;&lt;li&gt;plain words&#60;/li>&#60;p>Para&lt;/p&gt;😀😀&#128512;😀<![CDATA[{json: 1}]]></summary></entry>
+  <entry><id>tag:x,2020:1</id>
+<updated>28 Jan 2013 19:29:23.26678392 +0200</updated>
+<link length='abc' href="ftp://files.example.com/a/b/c18.mpga" title="Café" type="application/xhtml+xml" rel="alternate"></link>
+<link type="application/xhtml+xml" rel="Next" href="https://example.com/alt.xml" title="Alternate"/>
+<link title="MP3 feed" type="application/rss+xml" rel="" length="9223372036854775808"/>
+<title type='html'>&#38;apos;a&#x26;apos;</title>
+<content type="html"></content></entry>
+  <entry><title type="html">第761集</title>
+<media:content type="audio/wav" duration='0060' fileSize="2e5"></media:content>
+<id>
+id
+</id>
+<link rel="archives" type="application/rss+xml" href="" title="Café"/>
+<pi:transcript url="https://example.com/t.json" type="application/srt" language="en"/><pi:transcript url="" type="text/plain"/>
+<link title="" type="audio/mpeg" href="https://example.com/pay" rel="payment" length='9223372036854775808'/></entry>
+  </feed>

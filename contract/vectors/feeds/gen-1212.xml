@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:at="http://www.w3.org/2005/Atom"> <channel xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md"><atom:link length="12" type="application/xhtml+xml" rel='Next'/>
+<title>&#38;;
+&#x26;quot;q&amp;quot;</title>
+<podcast:funding url="https://example.com/donate">  spaced  </podcast:funding>
+<language>fr
+</language>
+<itunes:author>Jane &amp;amp; John</itunes:author>
+<link xmlns="http://www.w3.org/2005/Atom" rel="next" type="application/xml+xhtml"/>
+<at:link type="application/xhtml+xml" length="9223372036854775808" title="Alternate" href="https://example.com/pay" rel="first"></at:link>
+<at:link title="Alternate" href="https://example.com/" rel=""></at:link>
+<link></link>
+<description>&lt;img src="x&quot; alt="y&quot;/&gt;&#128512;&lt;hr/></description>
+<podcast:funding url="https://example.com/donate">&#60;b>x&lt;/b&gt;</podcast:funding>
+<itunes:image href=""/>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<podcast:funding url='https://example.com/donate'></podcast:funding>
+<item><title><![CDATA[&;]]></title>
+  <description>  &#x26;nbsp;</description>
+  <pubDate>Thursday, 21 Aug 2408 18:35:33 CEST</pubDate>
+  <link></link>
+  <media:content isDefault="true" medium="Audio" duration="3600" type="image/*"/>
+  <atom:link type="" length="9223372036854775808" href="https://user:pass@media.example.net/ep132.html#t=10" rel="alternate"/>
+  <itunes:summary>&lt;p&gt;&#38;#169;&#x3C;/p&gt;&lt;li&gt;sep&#60;/li>   spaced  &#13;
+R&amp;D&#x3C;img></itunes:summary>
+  <enclosure length="9223372036854775807" type='audio/*'/>
+  <enclosure length="2147483647" type="image/*"/>
+  <guid isPermaLink="true">  spaced guid  </guid></item>
+<item><guid isPermaLink="false">Café-guid</guid> <title>sep</title> <itunes:duration>133:28</itunes:duration> <media:description><![CDATA[<hr/]]>>&amp;#xD800;&lt;br>&#38;amp</media:description> <enclosure length="20000 " type="audio/"></enclosure> <description>&lt;li>&#x26;#x;&lt;/li&gt;ééé&#x3C;p>Folge 7: Über alles&#60;/p&gt;</description></item>
+<item><itunes:duration>1 :30</itunes:duration>
+<media:content duration="-5" url="https://user:pass@media.example.net/café/150.ts?dl=1.0" type='unknown' isDefault="1" medium='document' fileSize="9223372036854775807"/>
+<media:description type='html'>back\slash</media:description>
+<link></link>
+<media:content fileSize="9007199254740993" isDefault="1" medium="document" duration="1"></media:content>
+<title>&#x3C;b&gt;Bold&#x3C;/b&gt; titleback\slash</title>
+<atom:link type="text/html" length="9223372036854775808" href='https://example.com/alt.xml' title="" rel='related'/>
+<enclosure length="52428800" type=''/>
+<podcast:transcript url="" type="application/srt" language="en"/><podcast:transcript type="application/x-subrip" language="en"></podcast:transcript></item>
+<item><title><![CDATA[&nbsp;  #hash  <dfn>Episode 679</dfn>]]></title><guid>  spaced guid  </guid><link></link><pubDate>Friday, 33 Sep 1973 13:44:53</pubDate><description>aaaaaa&#x3C;BR&gt;&#x3C;p>  spaced  &#x3C;/p&gt;
+ &#x3C;li&gt;&amp;#xD800;&#x3C;/li></description><itunes:summary>&lt;p>Folge 7: Über alles&lt;/p&gt;&#x26;quot;q&amp;quot;&#13;
+trailing &lt;div&gt;back\slash&lt;/div&gt;&lt;li&gt;a=b&amp;c=d&#x3C;/li>&#x3C;img src="x.png"&gt;😀😀&lt;div>#7 – Interview&#60;/div></itunes:summary><itunes:duration>3498.952</itunes:duration><x xmlns="urn:other"><title>Default namespace title</title></x></item></channel> </rss>

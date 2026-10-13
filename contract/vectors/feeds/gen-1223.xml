@@ -1,0 +1,21 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en"> <link href="https://example.com/" title='Café' length="12" type='application/xml+xhtml' rel="Next"/>
+<id>urn:x</id>
+<subtitle type="HTML">&lt;p>&amp;#x1F600;&lt;/p>aaaa&#x26;amp</subtitle>
+<link length="9223372036854775808" rel="next" title="Café"/>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">a=b&#38;c=d</div></title>
+<link type="application/xml+xhtml" length="9223372036854775808" href='' rel="first" title=""/>
+<entry><title type="HTML"> leading tab	here &#60;p&gt;&amp;#x1F600;</title>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">3536.459</itunes:duration>
+<updated>Fri, 07 Apr 2023 12:38 +0530Z</updated></entry>
+<entry><media:content fileSize="" url="HTTPS://EXAMPLE.COM/e p362.m4a?file=x.mp3" duration=" 60" type="audio/opus" medium="document" isDefault="1"></media:content>
+  <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">90 min</itunes:duration>
+  <title type="text"><![CDATA[  trailing 
+&nbsp;
+]]></title>
+  <link title="MP3 feed" rel="" href="https://example.com/pay" type=""/>
+  <link type="application/atom+xml" href="https://example.com/pay" rel="next" title="Café"/>
+  <summary type="html">
+Episode 12
+&#x3C;3 &lt;3&lt;hr/&gt;&#x3C;li&gt;cr&#13;lf&lt;/li&gt;&#60;div>#hash&lt;/div></summary>
+  <content>&#x3C;div&gt;&#x3C;img src=&quot;x.png"&gt; cover&lt;/div&gt; é</content></entry>
+</feed>

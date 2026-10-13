@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <subtitle type='HTML'></subtitle>
+<title type="HTML">&#x26;nbsp;  &#x3C;span style=&quot;color:red&quot;>100%&lt;/span></title>
+<media:thumbnail url="https://example.com/amt.jpg"/>
+<author><name>C&#38;D</name><email>a@example.com</email></author>
+<author><name>C&amp;D</name><email>a@example.com</email></author>
+<author><name>  Bob  </name><email>a@example.com</email></author>
+<id></id>
+<logo>https://example.com/logo.png</logo>
+<link type='application/xhtml+xml' title="Alternate" href="https://example.com/alt.xml" length="12" rel="self"/>
+<itunes:image href="https://example.com/ai.jpg"></itunes:image>
+<itunes:summary>
+
+#hashééé&lt;p&gt;Episode 12&lt;/p&gt;</itunes:summary>
+<entry><link length="abc" href="https://example.com/pay" type='audio/mpeg' title="MP3 feed" rel="hub"/>
+<content type="HTML"><![CDATA[<br />]]></content>
+<author><name>Entry author</name></author>
+<updated>1986-05-17T18:49:58.996451+01</updated>
+<link length="12" rel="first" type="audio/mpeg" title='Alternate' href="https://example.com/"/>
+<published>2024-10-22T05:35:33.494Central European Standard Time</published>
+<title><![CDATA[Episode 120]]></title>
+<link type='application/xml+xhtml' length='abc' rel='hub' href='https://example.com/alt.xml' title="Alternate"/>
+<id>urn:uuid:1</id></entry>
+<entry><link rel="related" title='MP3 feed' href="https://example.com/alt.xml"/>
+  <author><name>Entry author</name></author>
+  <link length="9223372036854775808" href="https://example.com/pay" title="Café" rel="hub" type="application/xml+xhtml"/>
+  <title type="text"><![CDATA[&nbsp; <a href="https://example.com/x?a=1&amp;b=2">E]]>pisode 600&lt;/a&gt; &lt;blockquote&gt;Line&#x3C;br>break&lt;/blockquote></title>
+  <mrss:content type="image/jpeg" url="https://example.com/a.b/dir.with.dots/ep129.avi" fileSize='16385' duration="" medium="document"/>
+  <summary type='HTML'> </summary>
+  <id> raw </id>
+  <published>Sun, 27 Nov 1983 01:56 +0945.</published>
+  <link rel="enclosure" href="https://cdn.example.com/ep127.OGG" title="Alternate"/></entry>
+</feed>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="yes"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<atom:link length="20000" href="https://example.com/pay" title='Alternate' rel="first" type="application/rss+xml"/> <atom:id>urn:x</atom:id> <atom:subtitle type="html">&lt;br /&gt;</atom:subtitle> <i:new-feed-url>https://moved.example.com/atom</i:new-feed-url> <i:image href=""/> <atom:link title="MP3 feed" href="https://example.com/" length="20000" type="application/rss+xml" rel="hub"/> <atom:link type="" rel="Next" href='https://example.com/pay' length="12" title="Café"/> <atom:author><atom:name>&#201;mile</atom:name></atom:author> <atom:icon>https://example.com/icon.png</atom:icon> <atom:author><atom:name>C&#x26;D</atom:name><atom:email>a@example.com</atom:email></atom:author> <atom:title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Tom &amp; Jerry &#60;3</div></atom:title> <atom:entry><atom:updated>1985-01-23GMT+0100</atom:updated>
+<atom:updated>Wed, 04 Apr 09 09:15:35 -0500</atom:updated>
+<atom:link type="application/rss+xml" href="" length="12" rel="enclosure"/>
+<atom:title type="HTML">{json: 1} <![CDATA[ &#xA9;]]></atom:title>
+<atom:link type="application/atom+xml" rel="related" length="20000"/>
+<atom:link type="audio/mpeg" title="MP3 feed" href=""/>
+<atom:published>20 April 2297 00:43:48 +0530</atom:published></atom:entry> <atom:entry><atom:title type="html">&#x3C;p&gt;Para&lt;/p></atom:title>
+  <atom:summary></atom:summary>
+  <atom:id>urn:uuid:1</atom:id>
+  <atom:link type="application/atom+xml" href="" rel="first" length="20000" title='MP3 feed'/>
+  <atom:link type="audio/mpeg" rel="self" length="abc"/>
+  <atom:link title='Café' rel='related' href='https://example.com/feed?page=2'/></atom:entry>
+  </atom:feed>

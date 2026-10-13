@@ -1,0 +1,10 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description> <link xmlns="http://www.w3.org/2005/Atom" type="" rel="payment" href="https://example.com/a.b/dir.with.dots/ep195.m4v" title="MP3 feed" length="9223372036854775808"/> <title>&lt;3 &lt;3 &#x26; {json: 1}</title> <itunes:author><![CDATA[<b>]]>Studio&lt;/b&gt;</itunes:author> <atom:link title="Café" href="https://example.com/pay" length="20000" rel='next' type='audio/mpeg'/> <link>https://example.com</link> <atom:link rel="last" title="Alternate" type="" href="https://example.com/feed?page=2"/> <item><description>&lt;div>&apos;single'&lt;/div&gt;😀&#128512;&#x1F600;&#128512; &#38;mdash;</description>
+<itunes:author>Item author</itunes:author>
+<pubDate>08 Jan 2413 21:05 -1200</pubDate>
+<guid isPermaLink="false"></guid>
+<c:encoded>&#60;p&gt;&amp;#65;&#38;#66;&lt;/p&gt;&#60;br>&#x3C;/br>&lt;p&gt;Para&lt;/p&gt;</c:encoded>
+<media:thumbnail url=""/>
+<link> https://e.com/x </link>
+<title><![CDATA[]]>[x]</title>
+<enclosure length="20000.0" type="audio/mp4"/></item></channel>
+</rss>

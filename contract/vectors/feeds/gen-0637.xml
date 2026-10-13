@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0"><link xmlns="http://www.w3.org/2005/Atom" type="audio/mpeg" rel="last" href='' length="20000"/>
+<media:thumbnail/>
+<link xmlns="http://www.w3.org/2005/Atom" rel="hub" href="https://example.com/" type="text/html" length="9223372036854775808"/>
+<atom:link length='12' type='text/html' href="https://example.com/alt.xml"/>
+<title><![CDATA[&quot;q&quot;
+&quot;q&qu]]>ot;</title>
+<image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+<source url="https://example.com/s"><title>Source title</title></source>
+<item><enclosure url="" length="" type="unknown"></enclosure>
+<guid isPermaLink="true">a&#38;b</guid>
+<media:description type="plain">&#x3C;img src="x" alt="y&quot;/>&#x3C;p&gt;&#38;#xD800;&#x3C;/p>&#60;br&gt;&lt;/br>&lt;div>&amp;#x1F600;&lt;/div&gt;&#60;p&gt;&#x3C;/p&gt;&#60;p&gt;Para&lt;/p&gt;&lt;br&gt;&#38;#169;a</media:description>
+<title>&lt;strike&gt;مر&#x62D;با&lt;/strike&gt;</title>
+<enclosure url='' length="-1" type='audio/flac'/>
+<media:thumbnail url="https://example.com/th.jpg"/>
+<pubDate>Fri, 18 Jun 1976 15:19 -1200 AM</pubDate></item>
+<item><content:encoded></content:encoded>
+<guid isPermaLink="false"> </guid>
+<enclosure url="https://example.com/a.b/a/b/c252.m4v" length="52428800" type="audio/*"/>
+<title>&amp;copy;Tom &amp; Jerry &lt;3</title>
+<pubDate>1900-11-20T21:31:33</pubDate></item>
+<item><enclosure url="https://xn--caf-dma.example/café/278.m4a" length='2e5' type='audio/x-m4a'/>
+<psc:chapters version="1.2"><psc:chapter start='01:02:03:04:05' title="Intro" href="https://example.com/ch" image="https://example.com/ch.png"/><psc:chapter title='Café &amp;amp; more' href="https://example.com/ch" start="114:07"></psc:chapter><psc:chapter start='1:00:NaN' title="Intro" href=""/><psc:chapter href='https://example.com/ch' title="" start="99:59:59.999"/><psc:chapter start="2312" image="https://example.com/ch.png" title="Café &amp;amp; more" href=""/><psc:chapter href="https://example.com/ch" title="Café &amp;amp; more" start="4077" image="https://example.com/ch.png"/></psc:chapters>
+<content:encoded></content:encoded>
+<link></link>
+<media:content duration="-5" type='video/quicktime' fileSize="9007199254740993" isDefault="TRUE" url='https://cdn.example.com/dir.with.dots/ep22.OGG?dl=1.0'/>
+<media:content duration="3600" url="http://example.org/a/b/c167" type="unknown" medium="Audio" fileSize='9223372036854775807'/>
+<pubDate>2023-09-17T12:19:19</pubDate>
+<description>aaaa&#60;p/&gt;&#x3C;div&gt;&#38;#xA9;&lt;/div>&#38;#128512;&#13;
+&#38;#xFFFF;&#13;
+ &#13;
+&#38;#xFFFF; &amp;;</description>
+<guid isPermaLink="true">dup</guid>
+<title>  padded  'single'&#38;lt</title>
+<enclosure url='' length="-0" type=" audio/mpeg"/></item>
+<item><description>&lt;p&gt;1 &lt;2&#x3C;/p&gt;&lt;div&gt;&amp;#128512;&#60;/div&gt;&#60;p>&amp;#65;<![CDATA[&#66;</p>Tom & Jerry <3
+
+a
+
+b
+&#65;&#66;<p></p>aaaaaa]]></description><guid>a&#x26;b</guid><title> leading  &#x26;;</title><content:encoded><![CDATA[<img src="x" alt="y"/><b>Bold</b> title	😀]]></content:encoded><media:group><media:content duration=" 60" fileSize="0" isDefault="1" url="HTTPS://EXAMPLE.COM/e p348.aspx"/></media:group><enclosure url="https://xn--caf-dma.example/a/b/c96.aac#t=10" length='２０００００' type='audio/aac'/><link></link></item></channel> </rss>

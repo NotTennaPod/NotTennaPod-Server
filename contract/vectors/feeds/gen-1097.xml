@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom">
+<channel><description> &#38;euro;
+
+a
+
+b
+
+&amp;amp;amp;</description>
+  <i:image href=' '/>
+  <at:link href='' type='application/xhtml+xml' title="Café" rel="related"/>
+  <image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+  <link></link>
+  <title><![CDATA[שלום &#128512; #75 – Interview]]></title>
+  <at:link type="audio/mpeg" length="9223372036854775808" title="Café"/>
+  <podcast:funding>Support us</podcast:funding>
+  <title>&#x26;copy;</title>
+  <at:link type="application/xml+xhtml" rel="next" href="https://example.com/alt.xml" title='MP3 feed'/>
+  <language>en</language>
+  <item><psc:chapters><psc:chapter start="6192" title="" image="https://example.com/ch.png"></psc:chapter></psc:chapters>
+<i:subtitle><![CDATA[
+&lt;b&gt;
+S01E549]]></i:subtitle>
+<pubDate>Tue, 24 Jul 2012 01:51:36 +0000</pubDate>
+<itunes:duration>62:10</itunes:duration>
+<guid isPermaLink="true">a&amp;b</guid>
+<description>é&#xE9;éEpisode 12&lt;div&gt;&#x26;#128512;&lt;/div>éééaaaaaaaaa&#60;img src=&quot;x" alt="y&quot;/&gt;
+caféa
+  b&lt;br&gt;</description>
+<title>&lt;P&gt;😀&lt;/P&gt;
+AT&amp;T
+&amp;#x;</title>
+<dc:date>Thu, 30 Mai 0099 02:42:28 +0000</dc:date>
+<enclosure url="http://example.org/a/b/c257.php" length="1" type="text/html"></enclosure></item>
+  <item><at:link title="Alternate" length="12" href="https://example.com/feed?page=2"/>
+<link>https://example.com/ep</link>
+<description>
+&#x26;#x1F600;</description>
+<enclosure url="https://xn--caf-dma.example/dir.with.dots/ep139.oga" length='9007199254740991' type="audio/mp3"/>
+<enclosure url="//example.com/café/209.webm?auth=yes" length="9223372036854775808" type="Audio/MPEG"/>
+<title>  spaced  </title>
+<pubDate>1950-05-16T13:39:53.681 -1200</pubDate>
+<podcast:chapters url="" type="application/json+chapters"/>
+<podcast:socialInteract protocol="activitypub"/>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep299.avi" length="52428800" type="audio/ogg"/>
+<i:duration>197:07</i:duration>
+<guid isPermaLink="false">urn:uuid:7f4e7779</guid>
+<content:encoded> 茶</content:encoded></item></channel>
+  </rss>

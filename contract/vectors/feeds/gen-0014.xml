@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="EN-us"><atom:id> raw </atom:id>
+<atom:subtitle>&#60;p>100%&lt;/p&gt;</atom:subtitle>
+<atom:title type="plain"><![CDATA[&#169;
+&apos;a&apos;]]></atom:title>
+<atom:author><atom:name>  Bob  </atom:name></atom:author>
+<atom:entry><atom:published>Sat, 24 September 2011 21:02</atom:published>
+<podcast:transcript url="https://example.com/t.vtt" type="application/srr"/><podcast:transcript url="https://example.com/t.vtt" type="application/srr" language="en"/><podcast:transcript url="https://example.com/t.json" language="en"></podcast:transcript>
+<atom:id> raw </atom:id>
+<x:foo xmlns:x="urn:x"><title>Nested title</title></x:foo>
+<atom:link type="application/xml+xhtml" href="https://example.com/feed?page=2" title="Alternate"/>
+<atom:author><atom:name>Entry author</atom:name></atom:author></atom:entry>
+</atom:feed>

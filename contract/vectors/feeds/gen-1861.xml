@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"><language>pt-BR</language>
+<title><![CDATA[&;  <dfn>&</dfn>]]></title>
+<link> https://example.com/ </link>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<itunes:author>A, B</itunes:author>
+<atom:link href="https://example.com/" length="20000" title="Café" rel="related"/>
+<itunes:image href="https://example.com/it.jpg"/>
+<description>	Tom &#x26; Jerry &#60;3&#x3C;img src="x.png"&gt; [x]</description>
+<item><title>&lt;strong&gt;Episode 41&lt;/strong&gt;  &amp;euro;  &lt;unknown>café&lt;/unknown&gt;</title>
+<guid> </guid>
+<pubDate>1983-04-06T20:34:32.12345America/New_York</pubDate>
+<description>&lt;p>&#38;quot;q&amp;quot;&#60;/p&gt;&#x3C;li&gt;Tom &#38;amp; Jerry &amp;lt;3&#x3C;/li>&#60;div&gt;שלום&#60;/div&gt;😀😀Tom &#x26;amp; Jerry &#x26;lt;3&#x3C;br>&lt;p>S01E7&lt;/p&gt;	a=b&#x26;c=d&#13;
+plain words</description>
+<itunes:duration>abc</itunes:duration>
+<enclosure length="20000 " type="audio/aac"/>
+<media:content duration="2147483" medium="video" fileSize="20000 " type='audio/'/>
+<media:content medium='video' isDefault='true' type="application/octet-stream" duration="0060" fileSize="２０００００"></media:content></item></channel>
+</rss>

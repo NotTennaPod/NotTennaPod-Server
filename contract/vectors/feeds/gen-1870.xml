@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en">
+<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/amt.jpg"/><atom:author><atom:name>C&amp;D</atom:name></atom:author><atom:icon></atom:icon><atom:link type='application/xhtml+xml' title="" rel="" length="9223372036854775808" href="https://example.com/pay"/><atom:subtitle type="HTML"> AT&amp;T  &amp;#169;</atom:subtitle><atom:title>&#8203;</atom:title><atom:entry><atom:content><![CDATA[&#xD800;]]></atom:content>
+<atom:title type="plain"><![CDATA[Line<br>break]]></atom:title>
+<atom:link length='12' title="Alternate" type="application/atom+xml" href="https://example.com/alt.xml" rel="first"/>
+<atom:author><atom:name>Entry author</atom:name></atom:author>
+<atom:published> 2017-01-03T02:40:21-0500  </atom:published>
+<atom:link rel="enclosure" length='abc' href="https://example.com/feed?page=2"/>
+<atom:link href="https://example.com/pay" rel="Next" type="application/atom+xml" title=''/>
+<atom:updated>Sun, 31 Feb 1971 11:01 +0100</atom:updated></atom:entry>
+</atom:feed>

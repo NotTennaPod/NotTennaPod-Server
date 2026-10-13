@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:media="http://search.yahoo.com/mrss/"><lastBuildDate>1996/09/25T00:09:25+0100</lastBuildDate>
+  <link xmlns="http://www.w3.org/2005/Atom" type="application/atom+xml" length="abc" href="https://example.com/pay" title="MP3 feed" rel="Next"/>
+  <atom:link rel="Next" title="Café" href="https://example.com/a.b/a/b/c287.avi" type="application/rss+xml" length="abc"/>
+  <itunes:author><![CDATA[Tom & Jerry <3]]></itunes:author>
+  <link></link>
+  <itunes:new-feed-url>http</itunes:new-feed-url>
+  <podcast:funding url="https://example.com/donate"/>
+  <description><![CDATA[<li>&lt;b&gt;escaped&lt;/b&gt;</li>]]></description>
+  <language>fr
+</language>
+  <title>	של&#x5D5;ם&#13;
+</title>
+  <image><url>  https://example.com/ws.png
+</url><title>Image title</title><link>https://example.com/img-link</link></image>
+  <itunes:image href=" "></itunes:image>
+  <atom:link length="9223372036854775808" title="" type="" href=''/>
+  <item><itunes:author>Item author</itunes:author> <description><![CDATA[<br><p>1 <2</p> back\slash &hellip;
+  spa]]>ced  </description> <enclosure url="ftp://files.example.com/ep174.png" length="52428800" type="audio/mp4"/> <sc:chapters version='1.2'><sc:chapter title="" image="https://example.com/ch.png" start="0x10:00"/></sc:chapters> <pubDate>Sat, 02 November 2002 09:34:03 +0100</pubDate> <title><![CDATA[é]]></title> <link>https://example.com/ep</link> <content:encoded><![CDATA[aaaa]]>a</content:encoded> <media:content duration="3600" type="audio/aac" fileSize="2147483647"/> <guid isPermaLink="false"></guid> <itunes:image href=" "/> <!-- comment --><?pi data?></item>
+  <item><description>
+&amp;#xD800;</description>
+<itunes:duration>3:57:09</itunes:duration>
+<guid isPermaLink="false"></guid>
+<pubDate>Thu Jan  1 10:00:00 2024</pubDate></item>
+  <item><link></link> <title><![CDATA[<cite>a < b</cite>  {json: 1}  😀]]></title> <itunes:summary><![CDATA[<div>Episode 12</div><li>1 <2</li>&#0;ééé
+
+​]]></itunes:summary> <media:content type="unknown" fileSize="4294967296" isDefault='TRUE' medium="audio" duration=""/> <guid isPermaLink="true">dup</guid> <description><![CDATA[<p> </p>S01E7<hr/><div>http://example.com/?a=1&b=2</div>R&D<p>a > b</p>&lt<br>]]></description> <pubDate>1985-06-23 (CET)</pubDate></item></channel>
+</rss>

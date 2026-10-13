@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0"> <logo> https://e.com/l.png
+</logo>
+<x:title xmlns:x="urn:x">Other namespace title</x:title>
+<author><name>Émile</name></author>
+<link type="application/xhtml+xml" rel="first" title="MP3 feed" href="" length="9223372036854775808"/>
+<id> raw </id>
+<title><![CDATA[<img src="x]]>.png"> cover R&amp;D a=b&amp;c=d</title>
+<entry><link title="MP3 feed" href="" length="abc" type="application/xml+xhtml" rel="related"/>
+  <title type="plain"><![CDATA[Tom & Jerry <3  ​  Line]]>&#x3C;br&gt;break</title>
+  <updated>1899-02-31T00:11:40+0100</updated>
+  <content>&lt;br>&lt;/br>&amp;#0;</content>
+  <id>urn:uuid:1</id>
+  <published>1975-01-07T</published></entry>
+<entry><id>
+id
+</id> <title type="plain"><![CDATA[    spaced      ]]></title> <updated>Monday, 16 May 1988 19:06 +0000</updated> <summary type="HTML"></summary> <link type="application/xml+xhtml" rel="related" length="12"/> <content type="html"><![CDATA[  'single'é]]>&#60;br&gt;</content> <link rel="hub" title="" type='application/rss+xml' href="https://example.com/"/> <link title="" length="9223372036854775808" type="" href="" rel="enclosure"/> <published> Tue, 15 Aug 1972 12:32:14 -0800	</published> <media:content duration=' 60' type="application/octet-stream" medium="document" fileSize="abc" isDefault="false" url="https://cdn.example.com/ep245.mov"/></entry>
+<entry><author><name>Entry author</name></author>
+<published>Mon, 30 Aug 1950 15:40</published>
+<link rel='related' length="abc"/>
+<updated>Monday, 23 Jan 57 14:57 -0000</updated>
+<id> raw </id>
+<link rel='first' href="https://example.com/alt.xml" type="audio/mpeg"/>
+<title><![CDATA[&#169; http://example.com/?a=1&b=2]]></title>
+<summary><![CDATA[<br>ééé  cr
+lféééééé😀 1 <2
+&nbsp;]]></summary>
+<link title="" rel="hub" href="https://example.com/feed?page=2"/></entry>
+<entry><id></id>
+<content type="HTML">  spaced  &#x3C;br&gt;&#60;div>&#38;Lt;&#x3C;/div></content>
+<itunes:duration>-0.5</itunes:duration>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x26;#128512;&#38;unknown;</div></title>
+<media:content medium="audio" duration="1.5" url="https://example.com/a.b/a/b/c31.webm" isDefault="TRUE" type="audio/x-m4a" fileSize="16385"/></entry>
+<entry><published>14 August 83 08:31 +0945</published><link href="https://example.com/feed?page=2" length='12' type="audio/mpeg" rel="hub"/><itunes:duration>2:02:03</itunes:duration><link href="https://cdn.example.com/e p320.m4a" type="application/atom+xml" length="12" rel="related"/><itunes:image href=""/><link type="application/atom+xml" rel="related" length="20000" title="Alternate" href="https://example.com/pay"/><id>
+id
+</id><title type="xhtml"><![CDATA[&#169; &#128512; S01E577]]></title><updated>Foo, Bar</updated></entry>
+</feed>

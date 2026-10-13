@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link rel="Next" href="" title="Café"></atom:link>
+<language></language>
+<title>	a&#13;
+b&amp;amp;amp;&amp;lt </title>
+<description><![CDATA[	a=b&c=d<li>'single'</li><img src="x" alt="y"/>]]></description>
+<item><title>&#x3C;section>a&#13;
+b&lt;/section&gt;  &lt;sup&gt;"quoted"&#x3C;/sup&gt;  Episode 12</title>
+<media:content type='image/png' medium="audio" fileSize="-1" url="//example.com/café/78.3gp" isDefault="false" duration=""/>
+<guid isPermaLink="false"></guid>
+<enclosure url="" length="٢٠٠٠٠" type="audio/mpeg; charset=binary"/>
+<pubDate>Thu, 01 Jan. 2024 10:00:00 +0000</pubDate>
+<description>&#xA0;http://example.com/?a=1&#x26;b=2&#38;quot;q&#38;quot;&lt;br&gt;tab	here&#x3C;br&gt; &amp;nbsp;  &amp;lt;b&amp;gt;</description>
+<link></link>
+<enclosure length="0x4E20" type="AUDIO/MPEG"/></item>
+<item><description> back\slash&#60;img src="x.png">😀😀éé&#233;é&#233;é	茶 &amp;#x1F600;</description>
+<pubDate>Thu Jul 10 25:16:59 2588</pubDate>
+<guid isPermaLink="false"></guid>
+<title>&#38;nbsp;مرحبا</title>
+<enclosure url="https://user:pass@media.example.net/café/363.OGG" length="9007199254740993" type="application/ogg"/>
+<link></link></item></channel></rss>

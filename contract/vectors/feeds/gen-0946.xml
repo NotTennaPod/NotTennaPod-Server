@@ -1,0 +1,12 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0"><channel><title>[x]</title>
+<language>en</language>
+<itunes:image/>
+<podcast:funding url="https://example.com/donate">  spaced  </podcast:funding>
+<link> https://example.com/ </link>
+<itunes:subtitle>&#13;
+&#x26;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;a &#x3C; bTom &amp; Jerry &#x3C;3 </itunes:subtitle>
+<podcast:funding url="https://example.com/donate"></podcast:funding>
+<description>&amp;#x1F600;&#13;
+a=b&#38;c=d&#13;
+&amp;lt;b&amp;gt;</description></channel>
+</rss>

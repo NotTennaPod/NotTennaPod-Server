@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<rss version="2.0" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><image><url></url></image>
+<item><title>&#x26;#xFFFF;</title><pubDate>Sat, 13 June 2015 02:03</pubDate><description>&amp;#xD800;&#60;img src="x.png">	&amp;;</description><itunes:author>Item author</itunes:author><enclosure url='https://cdn.example.com/ep376.Mp4' type="audio/aac"/><itunes:episodeType>full</itunes:episodeType></item>
+<item><title><![CDATA[&#8203;<s>multi
+line</s>]]></title>
+  <pubDate>Thu, 	1979-10-24T09:36:13Z</pubDate>
+  <itunes:duration>4:53:39</itunes:duration>
+  <enclosure length="0" type="audio/"/></item>
+<item><atom:link href="https://example.com/alt.xml" type="text/html" length="20000" rel="last" title="Alternate"/>
+  <itunes:duration>1433</itunes:duration>
+  <enclosure url="//example.com/e p126.mkv" length="9007199254740992" type='audio/mpeg; charset=binary'/>
+  <title>
+&#60;b&gt;&amp;#xA9;&amp;#xA9;&amp;amp </title>
+  <pubDate>Wednesday, 05 Dec 1998 22:47:28 +0000</pubDate>
+  <link> https://e.com/x </link>
+  <description>AT&#x26;T&#60;br>&#60;div&gt;&amp;#xD800;&lt;/div&gt;&lt;div&gt;#hash&#x3C;/div&gt;&#x3C;div&gt;"quoted"&#60;/div>Tom &amp; Jerry &#60;3&lt;br></description></item>
+<item><link> https://e.com/x </link>
+<enclosure url="" length="-0" type="audio/"/>
+<itunes:duration>141:09</itunes:duration>
+<guid isPermaLink="true">urn:uuid:abfd53f9</guid>
+<itunes:subtitle>a=b&amp;c=d <![CDATA[ e&#769;]]></itunes:subtitle>
+<pubDate>	2004-08-13T03:52:39.887-0500 </pubDate></item>
+<item><link></link><itunes:duration>695.247</itunes:duration><podcast:chapters type="application/json+chapters"/><description><![CDATA[<li>S01E7</li> Tom & Jerry <3<hr/>]]></description><itunes:subtitle>&#13;
+&amp;unknown;
+&#8203;
+&amp;  </itunes:subtitle><guid>dup</guid><enclosure url="HTTPS://EXAMPLE.COM/e p191.png" length="9223372036854775807" type="audio/mpeg; charset=binary"/><title>&lt;strike&gt;&#x26;lt&#60;/strike>a=b&#x26;c=d{json: 1}</title><pubDate>Tue March 22 07:12:43 2310</pubDate></item>
+<item><title>&amp;mdash; a=b&amp;c=d &#x3C;blockquote&gt;&amp;#169;&lt;/blockquote&gt;</title>
+<guid>a&amp;b</guid>
+<link></link>
+<pubDate>06 Sept 1983 21:17:58 +0100</pubDate>
+<enclosure length="20000 " type="audio/mpeg; charset=binary"/></item>
+<title>&amp;mdash;</title>
+<link></link>
+<language>de-DE</language>
+<itunes:image/></channel>
+</rss>

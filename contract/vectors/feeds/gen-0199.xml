@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en">
+  <link href="https://cdn.example.com/a/b/c250.php" length="9223372036854775808" type="audio/mpeg" rel="last" title="Alternate"/><id>https://example.com/feed</id><subtitle type="html"><![CDATA[	& a
+
+b
+
+Tom & Jerry <3]]></subtitle><link href='ftp://files.example.com/e p349.opus?a=1&amp;b=2' length="12" rel="first" type="application/xml+xhtml" title="Alternate"/><link rel="enclosure" length="20000" type="application/xhtml+xml" href="https://example.com/pay"/><itunes:image href=""/><logo></logo><title type="plain"><![CDATA[&AMP;
+&#]]>65;&#x26;#66;</title><link length="20000" href='http://example.org/a/b/c210.mp3.zip' type="application/rss+xml" rel="enclosure"/><entry><updated>1998-09-04x</updated>
+  <title>#hash</title>
+  <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;hr&gt;</div></summary>
+  <author><name>Entry author</name></author>
+  <published>1994-04-03T02:31:54Z</published>
+  <itunes:image href="https://example.com/e.jpg"/>
+  <id></id>
+  <content type="html"><![CDATA[<br />]]></content></entry><entry><link rel="next" href="https://example.com/" title="MP3 feed"/>
+<summary>&#60;p/>Episode 7&#x3C;br&gt;a&lt;p&gt;&#1513;&#1500;&#1493;&#1501;&lt;/p>
+café  plain words&lt;li&gt;&#x3C;3 &#x3C;3&#x3C;/li&gt;<![CDATA[<div>cr
+lf</div>]]></summary>
+<podcast:transcript type="Application/JSON" language="en"></podcast:transcript><podcast:transcript url="https://example.com/t.vtt" type="application/x-subrip"/>
+<content>&#1605;&#1585;&#1581;&#1576;&#1575;</content>
+<itunes:duration>0:00:11</itunes:duration>
+<title type='xhtml'>&#13;
+  spaced  
+</title>
+<m:content type="audio/opus" isDefault="TRUE" duration="1.5" fileSize="1" medium="image"/>
+<updated>Fri, 28 Jan 1994 07.58.12 +0530</updated>
+<id> raw </id></entry><entry><itunes:duration>1:30</itunes:duration>
+<id> raw </id>
+<published>0001-09-16T12:50:19Z</published>
+<link length="12" type="application/atom+xml" title="" href="https://example.com/alt.xml" rel="archives"/>
+<title type='HTML'>Folge 462: Über alles</title>
+<content type="html"> &#x3C;p&gt;S01E7&#60;/p>&amp;#169;&lt;br>&#60;li>#hash&lt;/li&gt;&#128512;&#128512;</content></entry>
+</feed>

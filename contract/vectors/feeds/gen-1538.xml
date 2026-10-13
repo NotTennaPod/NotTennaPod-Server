@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0"><id></id><title type="text">plain wordsTom &#x26;amp; Jerry &amp;lt;3</title><author><name>Émile</name></author><itunes:author></itunes:author><subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">aaaaaaaa😀😀😀😀S01E7&lt;br&gt;</div></subtitle><entry><id> raw </id>
+<media:content type="x-audio/mpeg" isDefault="TRUE" fileSize="9223372036854775808" duration="-5" medium="audio" url="https://user:pass@media.example.net/dir.with.dots/ep264.ogx"/>
+<content type="HTML">aaa  שלום&#60;img src=&quot;x.png"&gt;</content>
+<dc:date>Saturday Mar 8 00:52:16 2149</dc:date>
+<title type="HTML">T<![CDATA[om & Jerry <3]]></title>
+<updated>Sun, 29 Jun 1981 17:17:26 -12:00</updated></entry><entry><link href="" rel="last" type="application/rss+xml" title="Alternate" length="12"/>
+<itunes:duration>51:30</itunes:duration>
+<summary type='html'><![CDATA[<br/>]]></summary>
+<title type="plain"><![CDATA[Folge 215: Über alles  &#65;&#66;]]></title>
+<content type="html">&lt;div&gt;&amp;nbsp;&#x3C;/div&gt;</content>
+<link title="MP3 feed" href="https://example.com/alt.xml" rel="" type='application/xhtml+xml'/>
+<updated>Sat, 18 August 1979 08:39 -0000</updated>
+<link title="MP3 feed" type='application/xhtml+xml' rel="alternate"/>
+<media:content type="application/ogg" fileSize="16385" duration="2147483648" medium="video" url='https://user:pass@media.example.net/45.aif?a=1&amp;b=2'/>
+<id>urn:uuid:1</id></entry><entry><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">100%</div></title>
+  <id></id>
+  <published>Monday, 19 Dec 2005 07:40:25</published>
+  <content type="html">&#x3C;li>a=b&#38;c=d&#x3C;/li&gt;</content>
+  <itunes:duration>35791:23:48</itunes:duration>
+  <updated>Tuesday, 01 May 2007 13:39:45 pst</updated></entry><entry><published>Fri 20 Mar 2020 21:50:22 +0530</published>
+<author><name>Entry author</name></author>
+<link rel="" length="20000" title="Alternate" type="application/xml+xhtml" href="https://user:pass@media.example.net/dir.with.dots/ep187.m4a"/>
+<title type="html"><![CDATA[  padded  ]]></title>
+<id>urn:uuid:1</id></entry><entry><link rel="next" length="9223372036854775808" href="https://example.com/pay" title="Alternate"/>
+<summary type="html">
+&amp;#169;</summary>
+<id> raw </id>
+<title type="HTML"><![CDATA[ http://example.com/?a=1&b=2  ]]></title>
+<link length="20000" title='MP3 feed' rel="hub" type="application/xhtml+xml"/>
+<link href="https://example.com/pay" rel="hub" title="Café" length="abc"/>
+<itunes:duration>12:34:56.789</itunes:duration>
+<published>1601-99-03T02:34:08+1400</published></entry><entry><id>urn:uuid:1</id>
+  <published>20 Mar 2000 25:05:26 +0100</published>
+  <title type="html">'single&apos;
+&lt;article&gt;café&#x3C;/article&gt;</title>
+  <updated>1983-04-06T20:34:32.12345America/New_York</updated>
+  <x xmlns="urn:other"><title>Default namespace title</title></x>
+  <link title="Café" length="9223372036854775808" rel="next" href="ftp://files.example.com/a/b/c251.caf" type='text/html'/></entry><entry><itunes:duration>5894.431</itunes:duration>
+<summary type="HTML"><![CDATA[<div>Tom &amp; Jerry &lt;3</div>😀<b>Bold</b> title<br><p>&#xA9;</p>& &amp;amp;ééé<p>plain words</p>]]></summary>
+<title type="html">第<![CDATA[234集 café]]></title>
+<link length="9223372036854775808" title="MP3 feed" type='application/rss+xml' href="https://example.com/" rel="first"/>
+<link href="https://example.com/pay" title="" rel="hub" length="20000" type="application/xml+xhtml"/>
+<id>
+id
+</id></entry><entry><title>&#x3C;b>back\slash &lt;img src=&quot;x.png&quot;&gt; cover</title><content type="text">&#xE9;éé	&#x26;unknown;&amp;#x1F600;&lt;p>  spaced  &lt;/p&gt;	x&#60;y</content><published>Sun, 07 April 1996 03:33 +0200</published><link type="text/html" length="abc" title="Café" rel="related" href="https://example.com/a.b/379.mov"/><link type="application/rss+xml" rel="next" href='https://example.com/pay'/><id>tag:x,2020:1</id><summary type="HTML">&lt;li>&amp;lt;b&#x26;gt;&#60;/li&gt;</summary></entry> </feed>

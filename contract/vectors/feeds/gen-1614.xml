@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pc="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><description></description><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><atom:link type='audio/mpeg' length='abc' rel='payment'/><atom:link href="https://example.com/pay" rel="hub" title="Café"/><image><title>Image title</title><url></url><link>https://example.com/img-link</link></image><itunes:author>😀 Pod</itunes:author><atom:link title="Café" href="https://example.com/feed?page=2" rel="Next" type="application/atom+xml" length="20000"/><title>&#13;
+&lt;b&gt;Bold&#x3C;/b&gt; title&#13;
+</title><link>https://example.com</link><item><title> </title>
+  <guid isPermaLink="false">https://example.com/item/68104</guid>
+  <link></link>
+  <pubDate>Wednesday, 30 Aug 90 11:34 -0500</pubDate>
+  <description><![CDATA[&#128512;]]></description>
+  <itunes:summary></itunes:summary>
+  <itunes:duration>3:44:12</itunes:duration>
+  <enclosure url="//example.com/a/b/c234.html" length='-9223372036854775808' type="audio/x-wav"/>
+  <enclosure length='16384' type="image/jpeg"></enclosure>
+  <enclosure url="" length="-9223372036854775808" type="audio/x-wav"/></item></channel>
+</rss>

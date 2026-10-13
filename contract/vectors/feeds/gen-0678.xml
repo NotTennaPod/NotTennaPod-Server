@@ -1,0 +1,19 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en">
+<author><name>Ann</name></author>
+<id>https://example.com/feed</id>
+<link rel="first" length="20000" type="application/xml+xhtml" title="MP3 feed" href="https://example.com/pay"/>
+<link type="application/xhtml+xml" rel="self" length='9223372036854775808' href='https://example.com/pay'/>
+<link href='http://example.org/café/243.wma' rel="archives" length="abc"/>
+<title type="text">  a &lt; b
+</title>
+<updated>2212-08-20T04:18:15.</updated>
+<entry><published>2014-04-12T13:37:10 2024</published>
+<itunes:duration>2147483.648</itunes:duration>
+<id>
+id
+</id>
+<updated>Tuesday, 07 Aug 1984 23:40</updated>
+<title type="HTML">&#x26;#x1F600;</title>
+<link type="application/xhtml+xml" rel="related" href="https://example.com/pay"/>
+<link href="https://example.com/pay" length="9223372036854775808" rel="first" title="Café" type='application/rss+xml'></link>
+<summary type="html"></summary></entry> </feed>

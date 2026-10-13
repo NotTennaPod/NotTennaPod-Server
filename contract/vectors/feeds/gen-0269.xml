@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters">
+  <channel><itunes:author><![CDATA[Tom & Jerry <3]]></itunes:author> <link></link> <itunes:image href="https://example.com/it.jpg"/> <language>en</language> <title><![CDATA[Episode 345 S01E915 &#128512;]]></title> <item><title>&#x3C;del&gt;&amp;quot;q&#38;quot;&lt;/del&gt;</title><guid isPermaLink="false">  spaced guid  </guid><link>https://example.com/ep</link><itunes:summary>&#x3C;br&gt;</itunes:summary><itunes:subtitle>&lt;b>  spaced   &amp;; #hash<![CDATA[]]></itunes:subtitle><itunes:image href=""/><itunes:duration>0</itunes:duration><enclosure url="//example.com/dir.with.dots/ep345.aif" length='16384' type='audio/mp4'/></item> <item><itunes:duration>13341</itunes:duration><media:content medium="image" duration="0" url="HTTPS://EXAMPLE.COM/a/b/c384.aif" fileSize="1" type="video/quicktime"/><guid isPermaLink="true">a&#38;b</guid><enclosure length="+20000" type='audio/wav'/><link></link><cont:encoded>&#x3C;p&gt;S01E7&lt;/p>é&lt;br&gt;&#60;br&gt;&lt;/br></cont:encoded><title>Tom &amp;amp; Jerry &#x26;lt;3  &lt;div&gt;&amp;#x1F600;&lt;/div&gt;   </title><pubDate> Monday, 19 Dec 2005 07:40:25 </pubDate></item> <item><title>tab	here</title><guid isPermaLink="false"> </guid><itunes:summary>😀😀 1 &lt;2Episode 12&lt;br></itunes:summary><itunes:duration>35791:23:47</itunes:duration><enclosure url="" length="9223372036854775808" type="Audio/MPEG"/><psc:chapters version="1.2"><psc:chapter image="https://example.com/ch.png" start="1:00 " title="😀"/><psc:chapter image="https://example.com/ch.png" title="😀" start="74:21"></psc:chapter></psc:chapters></item> <item><itunes:subtitle><![CDATA[[x]<ul><li>Tom & Jerry <3</li><li>two</li></ul><h3>😀</h3>]]></itunes:subtitle>
+<media:content isDefault="1" url="HTTPS://EXAMPLE.COM/377.xyz" type='video/mp4' medium="Audio" fileSize="２０００００" duration=" 60"/>
+<title>שלו<![CDATA[ם]]></title>
+<link> https://e.com/x </link>
+<itunes:summary><![CDATA[ééé]]></itunes:summary>
+<itunes:author>Item author</itunes:author>
+<cont:encoded>	&amp;&lt;br&gt;&lt;/br&gt;&#13;
+Tom &amp; Jerry &#60;3</cont:encoded>
+<description><![CDATA[<p/><br />&euro;<br>😀😀<div>&#xA9;</div>]]></description>
+<media:content duration="2147483" url="https://cdn.example.com/ep245.mov" type='audio/ogg' fileSize="0x4E20"/>
+<enclosure length="2e5" type="application/pdf"/>
+<pubDate>2018-09-26T15:26:22CEST</pubDate>
+<itunes:duration>99999999999</itunes:duration></item></channel>
+  </rss>

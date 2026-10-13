@@ -1,0 +1,12 @@
+<!-- generated -->
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><language>pt-BR</language>
+<title>	&#x3C;h6&gt;1 &#x3C;2&lt;/h6&gt;
+שלום </title>
+<item><title>&amp;quot;q&#38;quot;
+a &#x3C; b</title> <guid>https://example.com/item/49734</guid> <pubDate>Fri Nov 4 22:18:26 2383 +00:00</pubDate> <enclosure length=" 20000" type="audio/flac"/> <comments>https://example.com/c</comments></item>
+<item><title>&amp;#xA9;  &lt;p>Para&lt;/p&gt;</title>
+<link> https://e.com/x </link>
+<pubDate>1988-07-24T22:36:04-0800 GMT GMT</pubDate>
+<description>&#60;br/>&#x26;lt;b&#x26;gt;escaped&amp;lt;/b&#x26;gt;</description>
+<enclosure url='' length="9223372036854775808" type='application/ogg'/></item>
+<link></link></channel></rss>

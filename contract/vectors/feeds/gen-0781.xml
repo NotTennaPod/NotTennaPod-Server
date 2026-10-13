@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><itunes:summary><![CDATA[a < b<br><li>S01E7</li><p>&#0;</p>]]></itunes:summary>
+<description>&lt;p/&gt;&lt;p/&gt;&lt;p> leading&#x3C;/p>&lt;p&gt;&amp;am<![CDATA[p;amp;</p>😀😀😀😀<p/><p/>&lt;b&gt;escaped&lt;/b&gt;]]></description>
+<item><guid isPermaLink="true">dup</guid>
+  <psc:chapters version="1.2"><psc:chapter image="https://example.com/ch.png" href="" start=" "/><psc:chapter href="" start="01:51:00.983" image="https://example.com/ch.png" title="Intro"/><psc:chapter href="" start="74:42" title="&lt;b>x&lt;/b>"/><psc:chapter start="10:00:00.000001" href='https://example.com/ch' title='😀' image="https://example.com/ch.png"/><psc:chapter start="1::" image="https://example.com/ch.png"/><psc:chapter href="" image='https://example.com/ch.png' start="01:02:03:04:05"/></psc:chapters>
+  <content:encoded>back\slash😀&#xE9;éé&#60;div>&amp;mdash;&#60;/div&gt;  Tom &amp; Jerry &#x3C;3ééé&lt;p&gt;&#x7B2C;7集&#60;/p>&#x3C;li&gt;&amp;Lt;&lt;/li&gt;</content:encoded>
+  <enclosure url="https://xn--caf-dma.example/a/b/c215.xyz" length="9007199254740991" type="image/jpeg"/>
+  <title><![CDATA[caf]]>&#xE9;</title>
+  <itunes:duration>17058</itunes:duration>
+  <podcast:transcript type="application/x-subrip" language="en"/><podcast:transcript url='https://example.com/t.json' type="text/html" language="en"></podcast:transcript>
+  <link>https://example.com/ep</link>
+  <mrss:content type='x-audio/mpeg' duration="abc" fileSize="0" medium="image"/>
+  <mrss:content isDefault="1" fileSize="18446744073709551616" type="application/pdf" url="HTTPS://EXAMPLE.COM/290.html" duration="+60" medium="audio"/>
+  <x:title xmlns:x="urn:x">Other namespace title</x:title>
+  <mrss:content duration="9223372036854775807" url="https://example.com/a.b/café/317.mp3.zip" medium="audio" fileSize="16383" type="video" isDefault="false"/>
+  <pubDate>Sun, 28 Nov 91 16:21:17 +0200</pubDate></item>
+<item><guid isPermaLink="false"></guid> <pubDate>Tue, 02 Jul 2002 23:50:40</pubDate> <description><![CDATA[  &hellip;ééé]]></description> <content:encoded>  leading</content:encoded> <link>https://example.com/ep</link> <itunes:subtitle>&lt;div dir="rtl">a > b&lt;/div&gt; &#x26;lt &#60;i&gt;&lt;img src="x.png"> cover&#x3C;/i></itunes:subtitle> <enclosure url="" length="16383" type="audio/aac"/> <itunes:duration>00:42</itunes:duration> <title>1 &#x3C;<![CDATA[2]]></title></item>
+<item><enclosure url="https://example.com:8443/café/267.MP3" length='-16384' type="audio/mp3"/> <guid isPermaLink="false">https://example.com/item/42919</guid> <enclosure url="https://xn--caf-dma.example/a/b/c96.aac#t=10" length="123456789012345678" type="audio/*"/> <title><![CDATA['single'
+#885 – Interview
+é]]></title> <description>&#x3C;p&gt;&lt;/p&gt;</description> <x xmlns="urn:other"><title>Default namespace title</title></x> <enclosure url='' length="٢٠٠٠٠" type="audio/*"/> <pubDate>Mon, 12 Feb 2001 11:09:30.323 +0200</pubDate> <itunes:duration>1:45:33</itunes:duration> <link>https://example.com/ep</link></item>
+<mrss:thumbnail></mrss:thumbnail>
+<link>https://example.com</link>
+<title>&amp;#xFFFF; &amp;#xFFFF;</title></channel>
+</rss>

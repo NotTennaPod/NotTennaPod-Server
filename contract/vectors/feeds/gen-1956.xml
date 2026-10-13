@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><podcast:funding url="">Support us</podcast:funding>
+  <atom:link href="https://example.com/feed?page=2" rel="related" title='Café'/>
+  <item><title><![CDATA[#458 – Interview]]></title> <guid>
+</guid> <link></link> <pubDate>0099-11-12IST</pubDate> <content:encoded><![CDATA[&amp;amp;<br>]]></content:encoded> <itunesu:subtitle>&lt;code>&#38;euro;&lt;/code&gt;&#38;#169;</itunesu:subtitle> <itunesu:duration>163:34</itunesu:duration> <enclosure url="https://example.com:8443/a/b/c105.aif" length="1,000,000" type="audio/mpeg"/> <media:content xmlns:media="http://search.yahoo.com/mrss/" type="audio/x-wav" url=" https://user:pass@media.example.net/e p128.wma " fileSize='12' duration=" 60" medium="image"/> <atom:link rel="related" title='Café' href=""/></item>
+  <item><pubDate>2012-05-09T09:14:15-01:00</pubDate><link></link><description><![CDATA[<div>&#x]]>D800;&#60;/div&gt;</description><title>&#x26;#128512;  #hash  a &lt; b</title><itunesu:duration>4303.492</itunesu:duration><enclosure url="ftp://files.example.com/ep294.html" length="123456789012345678" type="x-audio/mpeg"/><enclosure url="" length="abc" type="video/mp4"/></item>
+  <item><enclosure url="https://cdn.example.com/dir.with.dots/ep116" length="2e5" type='image/jpeg'/>
+<itunesu:category text="Arts"><itunesu:category text="Design"/></itunesu:category>
+<guid>a&#38;b</guid>
+<itunesu:image href=""/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" duration="2147483648" medium="Audio" fileSize="0x4E20" type="application/octet-stream" url=" https://user:pass@media.example.net/e p55.amr "/>
+<itunesu:duration>7131.66</itunesu:duration>
+<link></link>
+<title>&#x26;#xD800; &#x26;Lt; 1 &lt;2</title></item>
+  <item><enclosure url="http://example.org/357.ogx" length="1"/> <p2:chapters type="application/json+chapters"/> <title>第579集  &#x3C;b>&lt;i&gt;&lt;/b>&#x3C;/i&gt;  Tom &amp;amp; Jerry &#x26;lt;3</title> <description>ééé</description> <itunesu:image href=" https://e.com/i.png "/> <pubDate>Donnerstag, 	Sun Jul 8 22:02:32 2012</pubDate> <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url=''/> <guid></guid></item>
+  <image><url></url></image>
+  <itunesu:image href="https://example.com/it.jpg"/>
+  <itunesu:subtitle>&#x3C;p&gt;茶</itunesu:subtitle>
+  <atom:link length="12" rel="first" type='text/html' href="https://cdn.example.com/a/b/c397.jpg" title="Alternate"/>
+  <language>de-DE</language>
+  <atom:link title="" type="application/xhtml+xml" rel="archives" href="https://example.com/alt.xml" length="9223372036854775808"/>
+  <link></link>
+  <itunesu:author>Jane &#38;amp; John</itunesu:author>
+  <link xmlns="http://www.w3.org/2005/Atom" type="" href="https://example.com/pay" rel="self"/>
+  <title>S01E325&amp;AMP;&#x26;#xD800;</title>
+  <description>&lt;div&gt;&#38;#xFFFF;&#60;/div&gt;&lt;br>café</description></channel>
+</rss>

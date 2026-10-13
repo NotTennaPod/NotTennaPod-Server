@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate">&#60;b&gt;x&#x3C;/b></podcast:funding>
+<title><![CDATA[<strong>&#33590;</strong>  spaced  AT&T]]></title>
+<link></link>
+<description>&lt;div>R&#38;D&lt;/div&gt;</description>
+<image><url>  https://example.com/ws.png
+</url></image>
+<itunes:new-feed-url>
+https://nl.example
+</itunes:new-feed-url>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<itunes:author>Jane Doe</itunes:author>
+<item><media:description>&#128512;</media:description>
+<content:encoded>&lt;hr></content:encoded>
+<link>https://example.com/ep</link>
+<title>  sep
+x&#x3C;y
+&#38;AMP;&#13;
+</title>
+<description></description>
+<guid>Café-guid</guid>
+<enclosure url='https://example.com/a.b/ep366.oga' length='9223372036854775808' type="audio/mp3"/></item>
+<item><enclosure url="" length='-0' type='audio/wav'/><media:content medium='image' isDefault="false" fileSize="20000.0" type="audio/mp3" url=" //example.com/a/b/c131.mp3.zip "/><media:content medium="Audio" type="video/x-matroska" duration="59" url='https://example.com:8443/102.aac' fileSize='00020000' isDefault="TRUE"/><media:thumbnail url="https://example.com/th.jpg"/><guid>dup</guid><atom:link type="application/atom+xml" href="https://cdn.example.com/dir.with.dots/ep316.flac?auth=yes" length="20000" title="Café" rel='enclosure'/><itunes:subtitle>
+&#x26;#<![CDATA[x;
+R&D]]></itunes:subtitle><title>&#1513;&#1500;&#1493;&#1501;</title><media:content fileSize="18446744073709551616" url="https://xn--caf-dma.example/371.m4v" duration=" 60" type="audio/x-wav"/><pubDate>1066-08-14T14:12:09CET</pubDate></item></channel> </rss>

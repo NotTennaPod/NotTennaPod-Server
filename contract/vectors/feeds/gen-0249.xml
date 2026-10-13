@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>pt-BR</language><podcast:funding>&#x3C;b>x&lt;/b&gt;</podcast:funding><description>&#60;p>&amp;nbsp;&#x3C;/p&gt;&#x3C;li>&#38;Lt;&#x3C;/li&gt;</description><x:title xmlns:x="urn:x">Other namespace title</x:title><title><![CDATA[&nbsp;  x<y  http://example.com/?a=1&b=2]]></title><link>https://example.com</link><atom:link href='//example.com/dir.with.dots/ep207.amr' type='application/rss+xml' title="" rel='archives'/><item><title><![CDATA[Tom &amp; Jerry &lt;3]]> &#x3C;p style="text-align:center&quot;&gt;Tom &amp; Jerry &lt;3&#60;/p&gt;</title>
+<guid>dup</guid>
+<pubDate>2391-04-14T21:59:60</pubDate></item><item><title>a &lt; b
+&amp;mdash;</title> <guid isPermaLink="true">Café-guid</guid> <link>https://example.com/ep</link> <pubDate>Sun 29 Oct 1984 21:53:21 GMT+0200 (EST)</pubDate> <description>&#60;p>sep&lt;/p></description> <dc:date>2402-02-09T22:11:21-0800</dc:date> <enclosure url="" length='&#1634;&#1632;&#1632;&#1632;&#1632;'/> <podcast:transcript type=""></podcast:transcript></item><item><content:encoded><![CDATA[<img src="x" alt="y"/>]]>&lt;BR&gt;
+#hashEpisode 7&lt;div>x&lt;y&#x3C;/div&gt;</content:encoded>
+<guid isPermaLink='true'>urn:uuid:06cb7f67</guid>
+<source url="https://example.com/s"><title>Source title</title></source>
+<pubDate>2479-04-18T17:24:18Z</pubDate>
+<link>https://example.com/ep</link>
+<title>S01E544
+&amp;#xD800;</title>
+<enclosure url="https://example.com:8443/e p13.ts" length="1" type="audio/x-wav"/>
+<media:thumbnail url=""/></item></channel></rss>

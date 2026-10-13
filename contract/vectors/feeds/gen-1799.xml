@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters">
+  <id>https://example.com/feed</id>
+  <subtitle type="html"><![CDATA[<p>a
+
+b</p> <3 <3]]></subtitle>
+  <itunes:author><![CDATA[A, B]]></itunes:author>
+  <logo> https://e.com/l.png
+</logo>
+  <title type="plain">&#38;copy;
+a=b&amp;c=d
+&#38;AMP;</title>
+  <link title="Alternate" type="text/html" href="https://example.com/" rel=''></link>
+  <entry><summary type="html">	&#38;amp;&amp;#0;&lt;br>&amp;AMP;&#60;p&gt;café&lt;/p>&#x3C;p/&gt;
+
+م&#x631;حب&#x627;&#x3C;div&gt;😀&#60;/div>
+
+&amp;amp;amp;</summary>
+  <published>Friday, 15 May 48 07:23</published>
+  <id>urn:uuid:1</id>
+  <sc:chapters version="1.2"><sc:chapter start='1:00:Infinity' href="https://example.com/ch" title="😀"/><sc:chapter href="" title='Café &amp;amp; more' start="10:11"/><sc:chapter href="" start="" image='https://example.com/ch.png' title="Intro"/><sc:chapter href="" title='😀'/><sc:chapter href="" start="101:58" image="https://example.com/ch.png" title="Intro"></sc:chapter><sc:chapter image="https://example.com/ch.png" start="::" href="https://example.com/ch" title="Café &amp;amp; more"/></sc:chapters>
+  <updated>2024-01-15T10:00</updated>
+  <title type="html">S01E87
+&amp;lt;b&#38;gt;escaped&#x26;lt;/b&#38;gt;</title>
+  <link type="application/xhtml+xml" rel="archives" href="https://user:pass@media.example.net/ep125.MP3" title="" length='20000'/>
+  <link rel='hub' href="https://example.com/feed?page=2" type="audio/mpeg" title="" length="12"></link></entry>
+  <entry><published>Sat Jan 6 11:10:00 2007</published><link rel="" length="9223372036854775808" type="application/atom+xml" title='' href="https://example.com/alt.xml"/><title><![CDATA[<p><p>{json: 1}</p></p>]]></title><updated>1978-08-11T07:35:51-0500&#13;
+</updated><id> raw </id></entry>
+</feed>

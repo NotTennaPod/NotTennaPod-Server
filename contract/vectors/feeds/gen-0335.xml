@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters"><channel xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md"><link></link> <i:owner><i:name>Owner</i:name><itunes:email>o@example.com</itunes:email></i:owner> <title>&lt;u&gt;&#38;mdash;&lt;/u&gt;</title> <description>&#x3C;div>&#160;&#60;/div<![CDATA[>]]></description> <language>fr
+</language> <item><itunes:duration>1:2:3:4</itunes:duration> <guid>
+</guid> <i:image href=""/> <dc:date>Thu, 11 Oct 1990 07:23:04 CETCEST</dc:date> <enclosure length="0x4E20" type="image/jpeg"/> <title><![CDATA[<b>Bold</b> title &amp]]>;amp;</title> <itunes:subtitle><![CDATA[#hash
+  spa]]>ced  </itunes:subtitle></item></channel>
+</rss>

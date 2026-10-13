@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0"><channel xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><link></link>
+<itunes:summary></itunes:summary>
+<title>&#x26;#169;</title>
+<language>TR</language>
+<itunes:author>  Spaced  </itunes:author>
+<podcast:funding url=""/>
+<itunes:image href=""/>
+<podcast:funding url="https://example.com/donate"></podcast:funding>
+<description>&lt;div&gt;&amp;#16<![CDATA[9;</div>]]></description>
+<link xmlns="http://www.w3.org/2005/Atom" type="application/xhtml+xml" href="https://example.com/pay" rel="hub" title="MP3 feed"/>
+<item><guid isPermaLink="false"></guid>
+<pubDate>Fri Dec 24 22:61:19 2010</pubDate>
+<enclosure url="" length="20000 " type="video/mp4"/>
+<title><![CDATA[]]>&#60;dl>&lt;dt&gt;&amp;quot;q&#38;quot;&lt;/dt&gt;&lt;dd&gt;b&lt;/dd&gt;&#60;/dl&gt;
+&amp;copy;
+&#60;p&gt;Para&#60;/p&gt;</title>
+<podcast:transcript url="https://example.com/t.vtt"/><podcast:transcript url="https://example.com/t.vtt" type="text/html"/><podcast:transcript url="" type='text/vtt' language="en"/></item>
+<item><title><![CDATA[<p></p> back\slash]]></title>
+<guid isPermaLink="false">https://example.com/item/21463</guid>
+<link> https://e.com/x </link>
+<description><![CDATA[<p>]]>Para&lt;/p&gt;
+
+ </description>
+<itunes:duration>0:17:32</itunes:duration>
+<enclosure url='https://example.com:8443/ep249.m4v' length="1" type="Audio/MPEG"/>
+<media:content type="video/x-matroska" duration="2147483648" isDefault="false" url="http://example.org/e p395.3gp" fileSize="52428800"/></item>
+<item><pubDate>21 Oct 15 06:00 +0100</pubDate>
+<guid> </guid>
+<itunes:duration>1:59:08</itunes:duration>
+<enclosure length="123456789012345678" type='video/quicktime'></enclosure>
+<media:content fileSize="16384" type="audio/x-m4a" duration='2147483' medium="video"/>
+<description></description>
+<itunes:subtitle><![CDATA[x<y]]> &amp;copy; &#38;euro;</itunes:subtitle>
+<link></link>
+<psc:chapters><psc:chapter title="&lt;b>x&lt;/b>" start="5267" href="https://example.com/ch"></psc:chapter><psc:chapter start="01:35:52.150" href=""/><psc:chapter title="" start="107:18"/><psc:chapter title="Café &amp;amp; more" image="https://example.com/ch.png" href="https://example.com/ch" start="03:47:19"/><psc:chapter title="" image="https://example.com/ch.png" start=":"/></psc:chapters>
+<itunes:image href=" https://e.com/i.png "/>
+<title> leading  sep</title></item></channel>
+  </rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><dc:creator>DC Creator</dc:creator><title>caf&#xE9;</title><podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url=""/><itunes:subtitle>&#x26;Lt;&#x26;#x;</itunes:subtitle><atom:link title="" length="20000" href="https://example.com/alt.xml" type="audio/mpeg"/><podcast:season xmlns:podcast="https://podcastindex.org/namespace/1.0">2</podcast:season><link></link><language>en</language><item><title>[x]  spaced  </title>
+<description><![CDATA[
+café]]></description>
+<itunes:subtitle><![CDATA[x<y]]></itunes:subtitle>
+<itunes:image href=" https://e.com/i.png "/>
+<itunes:duration>3.4028235e38</itunes:duration>
+<enclosure url="https://cdn.example.com/café/194.ogx" length="-9223372036854775808" type="text/html"/>
+<m:group><m:content medium="video" url="HTTPS://EXAMPLE.COM/e p191.png" duration="2147483" type="video/webm" fileSize="-16384" isDefault="1"/></m:group>
+<podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/ch.json" type="application/json+chapters"/></item><item><itunes:image href=" "/> <content:encoded>aaaaaa&lt;li&gt;של&#x5D5;ם&lt;/li&gt;  padded  
+café&#60;li&gt;'single&apos;&lt;/li></content:encoded> <description>x&lt;y&lt;br>
+ leading&amp;#128512;&lt;br&gt;&lt;div&gt;&#x26;#;&lt;/div&gt;  &#38;;</description> <pubDate>Sat, 15 Aug 2589 20:15 +0200.</pubDate> <guid></guid> <link> https://e.com/x </link> <enclosure url='' length="+20000" type="application/octet-stream"/> <itunes:duration>5:07:58</itunes:duration> <enclosure url="" length="00020000" type="audio/ogg"></enclosure> <title><![CDATA[sep]]></title></item><item><title>&amp;#0;
+Episode 12</title>
+<guid isPermaLink="false">  spaced guid  </guid>
+<link></link>
+<pubDate>Fri Jun 8 11:19:51 0001 PDT</pubDate>
+<description><![CDATA[<img src="x.png"> cove]]>r&#60;hr/&gt;&lt;li>&amp;amp;&lt;/li&gt;</description>
+<itunes:summary>&amp;#0; &amp;hellip;&#60;br>&#60;p&gt;&#x3C;/p&gt;
+
+a
+
+b</itunes:summary>
+<itunes:duration>9392</itunes:duration>
+<enclosure url="http://example.org/e p275.opus" length="9223372036854775808" type="image/png"/>
+<m:content fileSize='9223372036854775808' type=' audio/mpeg' url='http://example.org/café/32.mp3.zip' duration="9223372036854775807"/>
+<sc:chapters><sc:chapter href="https://example.com/ch" start="1:1e2" image='https://example.com/ch.png' title="😀"></sc:chapter><sc:chapter title='Intro' image="https://example.com/ch.png" start="0:0:0.0001" href="https://example.com/ch"/><sc:chapter href="" start="01:58:17"></sc:chapter></sc:chapters></item></channel>
+</rss>

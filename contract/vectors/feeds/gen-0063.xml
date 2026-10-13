@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:summary>&#60;br /></itunes:summary><image><url>  https://example.com/ws.png
+</url><title>Image title</title></image><dc:creator>DC Creator</dc:creator><description><![CDATA[1 <2]]></description><link>https://example.com</link><item><itunes:duration>1:10:54</itunes:duration>
+  <itunes:image href=" "/>
+  <link>https://example.com/ep</link>
+  <title>a &gt; b
+[x]</title>
+  <pubDate>Sun, 15 Sept 2024 10:00:00 +0000x</pubDate>
+  <description>aaa</description>
+  <guid isPermaLink="true">a&#x26;b</guid>
+  <enclosure url="ftp://files.example.com/a/b/c269.aif" length="0" type="application/ogg"/></item><item><itunes:author>Item author</itunes:author>
+  <description>&#x3C;div&gt;&#x26;lt;b&#x26;gt;&#x3C;/div&gt;aaaaaa&lt;3 &#x3C;3&#60;br>&lt;div&gt;#7 – Interview&lt;/div&gt;&lt;br/&gt;😀ééé 茶</description>
+  <itunes:explicit>false</itunes:explicit>
+  <enclosure url="//example.com/e p4.aif" length="2e5" type='audio/opus'></enclosure>
+  <link>https://example.com/ep</link>
+  <title><![CDATA[&mdash;​&]]></title>
+  <itunes:duration>11:30</itunes:duration>
+  <pubDate>Saturday, 23 May 2020 00:48:13</pubDate>
+  <guid>https://example.com/item/89143</guid></item><item><title>&#60;b&gt;Bold&#60;/b&gt; title100%</title>
+<description>&#60;li>cr&#13;lf&lt;/li&gt;
+"quoted"</description>
+<guid isPermaLink="false"></guid>
+<itunes:summary>&#x3C;img>&#60;hr/&gt;&#60;p&gt;  spaced  &lt;/p></itunes:summary>
+<itunes:duration>35791:23:48</itunes:duration>
+<pubDate>12 Oct 03 13:53 +0200</pubDate>
+<enclosure url="" length="-9223372036854775808" type="image/jpeg"/>
+<link></link></item><item><guid isPermaLink="true">dup</guid>
+<title><![CDATA[AT&]]>T  مرحبا  &amp;#x1F600;</title>
+<itunes:image href=""></itunes:image>
+<atom:link title="" href="https://example.com/"/>
+<description><![CDATA[😀😀]]></description>
+<link> https://e.com/x </link>
+<pubDate>Thursday Jul 14 07:37:08 2529</pubDate>
+<itunes:duration>1 :30</itunes:duration></item><item><pubDate>2006-04-29T00:20:22.948UTC+01:00</pubDate><description></description><title>&amp;hellip; sep &lt;s>&amp;amp;amp;&lt;/s></title><itunes:duration>09:21</itunes:duration><enclosure url='https://cdn.example.com/ep375.mov?dl=1.0' length="2147483647" type="audio/flac"/></item><item><title>back\slash</title> <guid>urn:uuid:163f8560</guid> <link> https://e.com/x </link> <pubDate>Fri, 10 Aug 1066 17:36:51 +14:00</pubDate> <itunes:summary><![CDATA[<br />]]></itunes:summary></item></channel> </rss>

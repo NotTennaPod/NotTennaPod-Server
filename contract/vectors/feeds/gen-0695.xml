@@ -1,0 +1,15 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md"><media:thumbnail></media:thumbnail>
+  <language></language>
+  <image><link>https://example.com/img-link</link><title>Image title</title><url>  https://example.com/ws.png
+</url></image>
+  <description>&#x3C;li&gt;  spaced  &#60;/li&gt;&#60;br&gt;&#60;/br&gt;</description>
+  <itunes:summary></itunes:summary>
+  <itunes:subtitle>&amp;;</itunes:subtitle>
+  <itunes:author>&lt;b>Studio&lt;/b&gt;</itunes:author>
+  <title>&lt;p style="text-align:center">مرحبا&lt;/p&gt; &#38;#x; &#8203;</title>
+  <item><guid isPermaLink='true'> </guid>
+<atom:link href="ftp://files.example.com/189.jpg?dl=1.0" rel='self' title=''/>
+<link></link>
+<title>Tom &amp; Jerry &#60;3 &amp;#128512;</title>
+<pubDate>Saturday, 25 Feb 1984 18:12</pubDate></item></channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><itunes:image href='https://example.com/it.jpg'/><itunes:subtitle><![CDATA[&#0;]]></itunes:subtitle><title>&amp;hellip;  &lt;div&gt;&#x3C;p&gt;{json: 1}&#60;/p>&#60;/div&gt;   </title><atom:link length="abc" title="" type="application/atom+xml" href='https://example.com/alt.xml'/><link> https://example.com/ </link><image><url>https://example.com/img.png</url><title>Image title</title></image><language> EN-US </language><title>#114 – Interview &#x3C;strike&gt;&lt;/strike&gt; R&amp;D</title><p:funding url=''>&#60;b>x&#60;/b&gt;</p:funding><p:funding url="">Support us</p:funding><itunes:new-feed-url></itunes:new-feed-url><atom:link type="application/atom+xml" title='MP3 feed' length="abc" rel="self" href="https://example.com/pay"/><itunes:author>  Spaced  </itunes:author><item><description><![CDATA[ééé]]></description> <itunes:subtitle>&#38;#0;</itunes:subtitle> <itunes:image href="https://example.com/ep.jpg"/> <pubDate>Tue, 23 Jul 1985 08:27:03</pubDate> <itunes:duration>1:00:00:00</itunes:duration> <title>&#x3C;p&gt;Para&#x3C;/p></title> <enclosure url="https://cdn.example.com/dir.with.dots/ep116" length="1" type="x-audio/mpeg"/> <guid isPermaLink="false"></guid> <dc:date>e.NuPEfERLBdcKAZgXX+</dc:date> <link> https://e.com/x </link></item><item><link>https://example.com/ep</link>
+  <title><![CDATA[&#xA9;]]></title>
+  <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&#x3C;div&gt;&#x26;;&#60;/div></content:encoded>
+  <guid isPermaLink="false">urn:uuid:eda705a8</guid>
+  <p:transcript url='https://example.com/t.json' type="application/srt" language="en"/>
+  <pubDate>Sun, 29 Feb 1971 07:16:37 -0500</pubDate>
+  <enclosure url="" length="" type="video/quicktime"/>
+  <itunes:summary>   spaced  &#x3C;p>&amp;#x;&#x3C;/p&gt;😀😀😀&#x3C;img&gt;   </itunes:summary>
+  <itunes:duration>1323.637</itunes:duration></item></channel> </rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>R&amp;D&lt;strong>Folge 955: Über alles&lt;/strong></title>
+  <image><url>https://example.com/img.png</url></image>
+  <title><![CDATA[  'single' ]]></title>
+  <itunes:image href="https://example.com/it.jpg"/>
+  <itunes:subtitle>{json: 1}
+&amp;hellip;
+&lt;li&gt;plain words&lt;/li&gt;</itunes:subtitle>
+  <item><title>Tom &amp;amp; Jerry &#x26;lt;3</title><guid> </guid><link>https://example.com/ep</link><pubDate>1970-09-19T14:18:46+0945 +0000</pubDate><description>&#x26;#xD800;ééé
+
+1 &#60;2&#60;hr/&gt;&#60;br<![CDATA[/>	&#65;&#66;<p>&amp;</p>😀]]></description><cont:encoded>&#31532;7集&lt;br></cont:encoded><itunes:subtitle>&#x26;#x1F600;
+back\slash</itunes:subtitle><enclosure url='https://example.com/a.b/a/b/c270.mpga' length="" type=" audio/mpeg"/><media:group><media:content url="https://example.com:8443/a/b/c105.aif" duration="2147483" medium="document" type='Audio/MPEG' fileSize="-0" isDefault="true"/><media:content fileSize="-9223372036854775808" medium="document" url="https://cdn.example.com/ep375.mov?dl=1.0" duration="9223372036854775807" type="video/webm"/></media:group></item>
+  <item><title> a=b&amp;c=d </title>
+<guid isPermaLink="false">a&#38;b</guid>
+<cont:encoded><![CDATA[a
+  b<br>]]></cont:encoded>
+<itunes:duration>9464</itunes:duration>
+<media:group><media:content type="audio/mp3" fileSize="20000 " isDefault="1" medium="video" duration="2147484"/></media:group>
+<media:description type="plain"> &lt;br&gt;
+&#38;amp;amp;
+&#x3C;3 &#60;3&lt;img src=&quot;x&quot; alt="y"/&gt;&#60;div>Tom &amp; Jerry &lt;3&lt;/div&gt;&lt;img&gt;&lt;li>&#38;#x;&#60;/li&gt;&#60;p&gt;&amp;apos;a&amp;apos;&lt;/p&gt;</media:description></item>
+  <item><title>&#38;amp;{json: 1}</title>
+<guid>
+</guid>
+<link></link>
+<pubDate>1066-</pubDate>
+<description>sep&lt;br></description>
+<enclosure url="//example.com/ep177.opus" length='٢٠٠٠٠' type="audio"/>
+<enclosure url="" length='18446744073709551616' type="unknown"/></item>
+  <item><description></description>
+  <enclosure url='http://example.org/ep289.php' length="٢٠٠٠٠" type="audio/"></enclosure>
+  <title>trailing  &amp;amp;   padded  </title>
+  <itunes:subtitle><![CDATA[E]]>pisode 12</itunes:subtitle>
+  <link>https://example.com/ep</link>
+  <pubDate>2019-08-19+0530</pubDate>
+  <enclosure url='https://example.com/a.b/ep366.oga' length="123456789012345678" type="video/mp4"/></item></channel>
+</rss>

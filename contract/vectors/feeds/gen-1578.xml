@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en"><subtitle>&lt;p>&amp;#x1F600;&lt;/p></subtitle><link href="https://example.com/pay" title="Alternate" length="9223372036854775808" type="application/xml+xhtml" rel="alternate"></link><itunes:image href="https://example.com/ai.jpg"/><link title="" href="https://example.com/feed?page=2" rel="Next" length='20000'/><link href="https://example.com/alt.xml" rel="last" length="20000" title=''/><id>urn:x</id><pi:funding url='https://example.com/give'>Give</pi:funding><link rel="alternate" href="https://example.com/a.b/e p85.aac?a=1&amp;b=2" type="application/rss+xml" title=""/><author><name></name></author><title type='xhtml'>&amp;mdash;</title><entry><title>&#13;
+&#x3C;h1&gt;&#x26;;&#60;/h1&gt; &#x26;copy; </title>
+<content type="HTML">
+&#x26;AMP; &amp;euro;&lt;hr/>&lt;div>"quoted"&#60;/div&gt;&lt;img></content>
+<author><name>Entry author</name></author>
+<id>tag:x,2020:1</id></entry><entry><summary type="HTML">&#60;div>&amp;#169;&lt;/div></summary>
+  <updated>1988-01-10Central European Summer Time</updated>
+  <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">[x]</div></title>
+  <id> raw </id>
+  <link href="" length="abc" type="application/xml+xhtml" rel="self"/></entry><entry><title>&lt;s&gt;multi
+line&lt;/s> Episode 760  leading</title> <link rel="related" type='application/rss+xml' length="9223372036854775808" href="https://example.com/"/> <updated>10 August 2307 21:37:25 +0530</updated> <updated>Wed, 17 February 2258 19:03:25 +0200</updated> <published>Monday, 29 Nov 1988 00:35:07 +0000</published> <author><name>Entry author</name></author> <id></id></entry><entry><content type="plain">&#128512;&#128512;&#128512;&#x3C;p&gt;S01E7&#60;/p&gt;&lt;img&gt;&lt;hr/>&#13;
+back\slash</content>
+  <updated>&#13;
+Wed, 23 Jun 1993 21.13:42 -0500&#13;
+</updated>
+  <link rel="self" href="https://example.com/pay" type="audio/mpeg" title="Caf&#233;"/>
+  <title>	Episode 508 S01E878&#13;
+</title>
+  <id> raw </id>
+  <pi:transcript url='https://example.com/t.vtt' type="application/srr" language="en"/><pi:transcript url="https://example.com/t.json" type="application/srr" language="en"></pi:transcript></entry><entry><id>urn:uuid:1</id> <link length='abc' title="" href="https://example.com/" type="text/html"/> <link title="Caf&#233;" href="https://example.com/" rel="" type="application/xml+xhtml"/> <published>2004-09-29T14:24:40Z</published> <content type="plain"></content> <updated>Sat, 24 Jun 1972 01:61 +0200</updated> <itunes:duration>3:50:58</itunes:duration> <title type="html">&#33590;  &#33590;</title></entry><entry><link title='' href="https://example.com/a.b/238.mov" rel="payment"/>
+<link type="application/xhtml+xml" href="https://cdn.example.com/a/b/c99.jpg" length='9223372036854775808' rel="hub"/>
+<title>Episode 351  &amp;unknown;</title>
+<published>Tuesday, 01 Jun 2014 19:15:25 -0800</published>
+<link href="https://example.com/a.b/e p95.mkv?a=1&amp;b=2" title="MP3 feed" length="20000" rel="archives"/>
+<id> raw </id>
+<psc:chapters><psc:chapter title="Intro" href="https://example.com/ch" image="https://example.com/ch.png" start="01:02:03.123456"/><psc:chapter href="" image='https://example.com/ch.png' start="00:42:33.231" title="Caf&#233; &amp;amp; more"/><psc:chapter title="Caf&#233; &amp;amp; more" href="" start=""/><psc:chapter title="" start="00:58:00.535"/><psc:chapter start="" href="" title="&#128512;"/><psc:chapter start="33:01" image='https://example.com/ch.png' title="Intro"/></psc:chapters></entry><entry><link rel="archives" href="" title="Alternate" type="audio/mpeg"/>
+  <media:content isDefault='false' url="https://xn--caf-dma.example/ep29.png?auth=yes" type="image/jpeg" medium="image" duration="2147483" fileSize="1"/>
+  <title type="text">&#160;</title>
+  <updated>2361-09-22T16:06:13.473CET</updated>
+  <published>sat, 12 July 1969 02:40:07</published>
+  <id>urn:uuid:1</id></entry><entry><published>Wed, 20 Jan 1988 20:61 -0500</published>
+<author><name>Entry author</name></author>
+<title type="html">http://example.com/?a=1&amp;b=2 &lt;span style="color:red">&amp;quot;q&#38;quot;&lt;/span></title>
+<link length="20000" href="https://cdn.example.com/a/b/c279.3gp"/>
+<id>urn:uuid:1</id></entry>
+</feed>

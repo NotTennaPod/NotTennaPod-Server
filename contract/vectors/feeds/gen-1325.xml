@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters">
+<channel><itunes:author>Jane Doe</itunes:author><title>&#60;table>&lt;tr&gt;&#60;td&gt;trailing &#x3C;/td&gt;&#x3C;td>b&lt;/td>&#x3C;/tr&gt;&#60;/table&gt;</title><image><title>Image title</title><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image><language></language><description>  &amp;;</description><link> https://example.com/ </link><item><title> multi
+line[x]&amp;#x1F600; </title><guid>Caf&#233;-guid</guid><link></link><pubDate>Sun, 22 Sep 62 04:07:34 +0100</pubDate><description>&#60;br&gt;&lt;/br> sep&lt;li>Tom &amp;amp; Jerry &#x26;lt;3&lt;/li&gt;</description><itunes:subtitle>Tom &amp; Jerry &#60;3 &#x26;#128512;</itunes:subtitle><itunes:image href=" https://e.com/i.png "/><enclosure url="https://cdn.example.com/98.mp4" length="٢٠٠٠٠" type="audio/mp4"/></item><item><pubDate>Sat, 20 Mai 2006 09:53:01 +0530</pubDate>
+<link>https://example.com/ep</link>
+<itunes:duration>2562047788015215:30:07</itunes:duration>
+<description><![CDATA[<p><img src="x.png"> cover</p><div>&nbsp;</div>]]></description>
+<itunes:summary>	'single'  &amp;lt&#60;div&gt;{json: 1}&lt;/div></itunes:summary>
+<guid>https://example.com/item/1709</guid></item></channel></rss>

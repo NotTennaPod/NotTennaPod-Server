@@ -1,0 +1,30 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding>Support us</podcast:funding>
+<dc:creator>DC Creator</dc:creator>
+<itunes:summary>&lt;img&gt;&#x3C;div&gt; leading&lt;/div&gt;&#x3C;b&gt;Bold&lt;/b&gt; title&#60;br&gt;
+
+&amp;#xFFFF;&#x3C;p>&#60;/p&gt;&#60;br>&lt;/br&gt;
+
+&#38;multi
+line</itunes:summary>
+<itunes:author><![CDATA[第一]]></itunes:author>
+<description>
+&#38;#169;</description>
+<!-- comment --><?pi data?>
+<language></language>
+<title>x&lt;y مرحبا &amp;#128512;</title>
+<link></link>
+<atom:link title="Café" type="" href="https://example.com/alt.xml"/>
+<link xmlns="http://www.w3.org/2005/Atom" href='https://example.com/alt.xml' title='Café' length="20000"/>
+<atom:link href='https://example.com/alt.xml' length="12" rel="last" title="MP3 feed"/>
+<item><itunes:duration>6690.493</itunes:duration>
+<enclosure length="9007199254740991" type="image/*"></enclosure>
+<description>&#60;div>&#x26;Lt;&#x3C;/div>&lt;p>&lt;/p>&lt;img src<![CDATA[="x.png"> cover]]></description>
+<guid isPermaLink="false">
+</guid>
+<enclosure url="https://cdn.example.com/dir.with.dots/ep254.mov?file=x.mp3" length="9007199254740992" type="audio"></enclosure>
+<pubDate>Sat 29 Jun 1980 08:50:04 GMT-0500 (GMT)</pubDate>
+<enclosure url="" length='16385' type="audio/mpeg; charset=binary"/>
+<title>back\slash&lt;/p></title>
+<itunes:subtitle>שלום  cr&#13;lf</itunes:subtitle></item></channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF8"?>
+<rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md"> <channel xmlns:sc="http://podlove.org/simple-chapters"><link>https://example.com</link><image><url></url><link>https://example.com/img-link</link></image><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">DC Creator</dc:creator><pi:funding url="https://example.com/donate"></pi:funding><language>en</language><itunesu:image href=" https://example.com/sp.jpg "/><title><![CDATA['single'    padded     leading]]></title><item><media:thumbnail url="https://example.com/th.jpg"/>
+<title>&#x3C;ul&gt;&#60;li&gt;é&#x3C;/li>&lt;li>two&#x3C;/li&gt;&#60;/ul&gt;</title>
+<sc:chapters><sc:chapter start="4:34" href="https://example.com/ch"/></sc:chapters>
+<description>  &#38;#xD800;
+שלום</description>
+<link>https://example.com/ep</link>
+<guid isPermaLink="false">dup</guid>
+<itunesu:image/>
+<enclosure type='video/quicktime'/>
+<itunesu:summary>&#x1F600;&#60;div&gt;&#x26;;&#60;/div&gt;&lt;img src=&quot;x.png&quot;&gt;</itunesu:summary>
+<pubDate>Saturday, 20 May 2271 19:48:20 +1400</pubDate></item><item><media:content duration="9223372036854775807" medium="document" fileSize="9007199254740993" type="Audio/MPEG"/>
+<pubDate>1979-09-25 GMT GMT</pubDate>
+<guid isPermaLink='true'>dup</guid>
+<link></link>
+<content:encoded><![CDATA[茶<br>]]></content:encoded>
+<itunesu:duration>13246</itunesu:duration>
+<title>&lt;unknown>&#x26;#0;&lt;/unknown&gt; a&#13;
+b [x]</title></item><item><link>https://example.com/ep</link>
+<pubDate>&#13;
+1976-03-16T00:56:47.824PST
+</pubDate>
+<description>&lt;div&gt;&amp;euro;&#60;/div&gt;éé&#xE9;	é&#233;é#7 – Interview&#60;br>&#x3C;div&gt;&#x26;Lt;&#60;/div&gt;&lt;br&gt;&#x3C;/br&gt;&lt;img src="x&quot; alt=&quot;y"/&gt;</description>
+<itunesu:image href=' https://e.com/i.png '/>
+<itunesu:duration>141:26</itunesu:duration>
+<enclosure length="16384" type="video/quicktime"/>
+<media:content medium="Audio" type="video/x-matroska" duration="3600" fileSize='0' isDefault="TRUE" url="https://example.com:8443/24.webm"/>
+<media:thumbnail/></item></channel>
+</rss>

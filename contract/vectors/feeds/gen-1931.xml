@@ -1,0 +1,21 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters"><subtitle><![CDATA[😀
+
+&c]]>opy;</subtitle>
+<title type="xhtml"><![CDATA[ &unknown; <p>&amp;amp;
+]]></title>
+<link href="https://example.com/" length="abc" title="MP3 feed" type="audio/mpeg"/>
+<logo> https://e.com/l.png
+</logo>
+<it:summary>&#x3C;br&gt;<![CDATA[</br>  café]]></it:summary>
+<updated>Tuesday, 29 Oct 1980 01:03:22 +0200</updated>
+<entry><id>tag:x,2020:1</id>
+  <updated>2531-12-18T03:35:42.087+0100</updated>
+  <link href="https://example.com/alt.xml" length='20000' rel="related" title=''/>
+  <itunes:duration>3723</itunes:duration>
+  <title type="HTML">trailing   &#x26;</title></entry>
+<entry><title type="HTML"> &amp; 
+</title>
+  <id> raw </id>
+  <updated>	Monday, 22 May 16 22:39 +1400	</updated>
+  <author><name>Entry author</name></author></entry>
+</feed>

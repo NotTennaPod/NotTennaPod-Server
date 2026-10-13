@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding>  spaced  </podcast:funding><description>  </description><podcast:funding></podcast:funding><link>https://example.com</link><itunes:image href=" https://example.com/sp.jpg "/><itunes:author><![CDATA[  Spaced  ]]></itunes:author><title>&lt;dfn&gt;S<![CDATA[01E791</dfn>]]></title><item><guid isPermaLink="false">Café-guid</guid> <pubDate>03 Dec 61 18:03:21 +0200</pubDate> <title><![CDATA[http://example.com/?a=1&b=2
+  spaced  
+a
+  b]]></title> <enclosure length="" type="image/jpeg"/> <link></link> <media:group><media:content type="application/ogg" fileSize='123456' duration="1" url="https://example.com:8443/dir.with.dots/ep394.OGG"/><media:content type="video" isDefault='false' fileSize="2147483648" duration="01:00"></media:content><media:content type="Audio/MPEG" fileSize='18446744073709551616' url="ftp://files.example.com/ep169.m3u8" duration="abc" isDefault="true" medium='Audio'></media:content></media:group></item><item><pubDate>Thu,  1979-01-27T20:25:44Z</pubDate>
+<enclosure url='https://xn--caf-dma.example/382.html' length="2147483648" type="audio/wav"/>
+<psc:chapters version="1.2"><psc:chapter title="😀" href="" image="https://example.com/ch.png" start="3244"></psc:chapter><chapters:chapter start="00:51:31.059" title="" image="https://example.com/ch.png" href=''/><psc:chapter title='Café &amp;amp; more' image="https://example.com/ch.png" href="" start="02:05:00.867"/><chapters:chapter title='Intro' image='https://example.com/ch.png' href="" start="9:43"/><psc:chapter image="https://example.com/ch.png" title="&lt;b>x&lt;/b>" href="" start="1:1.5f"/><psc:chapter start="00:30" title="😀"/></psc:chapters>
+<guid isPermaLink='true'>dup</guid>
+<link> https://e.com/x </link>
+<title>&amp;hellip; S01E876 שלום</title>
+<description><![CDATA[😀<br>AT&T<br>]]></description></item><item><title><![CDATA[trailing ]]></title><guid isPermaLink="true">urn:uuid:37ed8923</guid><pubDate>19 Dec 0001 06:16 -0500</pubDate><description>&lt;br></description><itunes:image href=" https://e.com/i.png "/><enclosure url='HTTPS://EXAMPLE.COM/e p19.mpga' length="9223372036854775808" type="audio/mp4"/></item><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner></channel>
+  </rss>

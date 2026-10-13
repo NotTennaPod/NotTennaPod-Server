@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- generated -->
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters"> <channel><podcast:funding url="">  spaced  </podcast:funding>
+  <language> EN-US </language>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+  <title>multi
+line</title>
+  <description>&#38;AMP;&lt;br>&lt;p>&lt;/p></description>
+  <item><pubDate>Friday, 32 Apr 2237 20:28:55</pubDate>
+  <itunes:image/>
+  <enclosure length="2147483648" type="AUDIO/MPEG"/>
+  <description></description>
+  <title>&amp;apos;a&amp;apos;第114集</title>
+  <link></link>
+  <enclosure length="123456789012345678" type="image/*"></enclosure></item>
+  <item><title>[x]
+&#60;sup&gt;#hash&#x3C;/sup></title>
+<guid>  spaced guid  </guid>
+<pubDate>Saturday, 19 Jul 2555 21:30</pubDate>
+<description>&lt;p/>&lt;p>&#x26;lt;b&#x26;gt;escaped&amp;lt;/b&#x26;gt;&#60;/p>&#128512;😀😀😀</description>
+<enclosure url="https://user:pass@media.example.net/204.avi?auth=yes" length="00020000" type="video/quicktime"/></item></channel></rss>

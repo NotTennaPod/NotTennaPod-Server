@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><link> https://example.com/ </link> <image><title>Image title</title><url></url></image> <itunes:new-feed-url> https://new.example.com/sp </itunes:new-feed-url> <media:thumbnail url=""/> <title><![CDATA[&#1605;&#1585;&#1581;&#1576;&#1575;
+x<y
+<p><p>multi
+line</p></p>]]></title> <description>&#x3C;div&gt;Folge 7: Über alles&#60;/div&gt;
+
+&#x26;Lt;aaaaaaaaa</description> <itunes:image href="https://example.com/it.jpg"/> <atom:link title="" href="https://example.com/feed?page=2" type="application/atom+xml" length="abc"/> <atom:link length="abc" rel="payment" type="application/atom+xml" title="Alternate"/> <item><title>&#128512;&lt;strike&gt;  spaced  &lt;/strike&gt;&#38;#169;</title>
+  <guid>Café-guid</guid>
+  <pubDate>Sun, 16 MAY 1999 16:55:37 -1200</pubDate>
+  <enclosure url="HTTPS://EXAMPLE.COM/a/b/c384.aif" length="4294967296" type="video/quicktime"/>
+  <media:thumbnail url=""/></item> <item><title>&#x26;#128512;  &#38;lt;b&amp;gt;  http://example.com/?a=1&amp;b=2</title>
+<pubDate>Wed,02 May 2012 08:59:53 +0100</pubDate>
+<content:encoded>&#60;br&gt;&lt;/br&gt;&#x3C;img&gt;&#60;BR&gt;&#128512;&#128512;&lt;div&gt;Folge 7: Über alles&#x3C;/div&gt;</content:encoded>
+<description></description>
+<guid isPermaLink="true">a&amp;b</guid>
+<podcast:chapters url="" type="application/json+chapters"/>
+<itunes:summary>&#60;hr/&gt;</itunes:summary>
+<link>https://example.com/ep</link></item> <item><link></link><itunes:summary>
+
+&#38;copy;ééé</itunes:summary><pubDate>04 Apr 19 07:53 +1400</pubDate><description>&#x3C;li&gt;a > b&#60;/li&gt;&#60;BR&gt;&#x3C;br/&gt;&#60;p/&gt; &#x26;lt;b&amp;gt;&#x3C;div>[x]&#60;/div&gt;aaaaa &#38;#65;&#x26;#66;</description><podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/><title>&#13;
+&lt;img src="x.png"&gt; cover	</title><content:encoded></content:encoded><enclosure url="//example.com/ep310.ogg" length="9007199254740991" type="image/*"/><itunes:duration>19081</itunes:duration><guid isPermaLink="false">dup</guid></item></channel>
+</rss>

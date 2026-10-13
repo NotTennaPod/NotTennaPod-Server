@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><podcast:funding url="">Support us</podcast:funding>
+  <itunes:image href=" "/>
+  <a10:link title="" type="text/html" rel="" href="http://example.org/79.m3u8" length="20000"/>
+  <link xmlns="http://www.w3.org/2005/Atom" href="//example.com/café/78.3gp" type="application/atom+xml" rel="Next" length="abc"/>
+  <language>pt-BR</language>
+  <title>  &#38;hellip;&#13;
+</title>
+  <a10:link rel="last" type="application/xml+xhtml" href="https://example.com/pay" title=""/>
+  <podcast:funding>Support us</podcast:funding>
+  <podcast:funding url="https://example.com/donate"></podcast:funding>
+  <link> https://example.com/ </link>
+  <itunes:author>A, B</itunes:author>
+  <description><![CDATA[]]>&#x3C;p&gt;a
+
+b&lt;/p></description>
+  <item><pubDate>2017-11-16T10:22:16.892CEST</pubDate>
+<title>sep  &lt;3 &lt;3</title>
+<enclosure url="https://example.com/a.b/dir.with.dots/ep143.MP3?a=1&amp;b=2" length="16383" type='audio/*'/>
+<guid isPermaLink="false">urn:uuid:c184f861</guid>
+<description>&amp;Lt;&#x3C;br&gt;</description>
+<itunes:summary> Episode 12é&lt;br&gt;</itunes:summary>
+<itunes:subtitle>&#38;amp;</itunes:subtitle></item></channel> </rss>

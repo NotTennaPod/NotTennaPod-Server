@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><atom:link href="https://example.com/feed?page=2" length="12" rel="payment" title="Café"/>
+<title><![CDATA[&#x1F600;
+a > b
+[x]]]></title>
+<itunes:image href="https://example.com/it.jpg"/>
+<atom:link type="" length="12" rel="related"/>
+<atom:link type='application/xml+xhtml' rel="" title="Café" href="https://xn--caf-dma.example/a/b/c323.ogx?dl=1.0"/>
+<item><title>&amp;quot;q&#x26;quot; x&lt;y &lt;a href=&quot;https://example.com/x?a=1&#x26;amp;b=2">sep&#60;/a><![CDATA[]]></title>
+  <guid>  spaced guid  </guid>
+  <link></link>
+  <pubDate>1989-08-19T13:14:22.1234567EDT</pubDate>
+  <description>&#x26;&#x3C;br> a&#13;
+b&#233;éé</description>
+  <content:encoded><![CDATA[<li]]>>​&lt;/li&gt;&#60;li&gt;back\slash&#60;/li&gt;</content:encoded>
+  <itunes:subtitle>&lt;ol&gt;&lt;li&gt;http://example.com/?a=1&amp;b=2&#x3C;/li&gt;&#x3C;/ol&gt;&amp;amp;amp;</itunes:subtitle>
+  <itunes:image href=" "/>
+  <itunes:duration>0.5</itunes:duration>
+  <enclosure url="https://example.com/a.b/café/273.OGG" length="２０００００" type='audio/opus'/>
+  <enclosure url="https://example.com/a.b/café/205.aspx" length="16383" type="audio/*"/>
+  <media:content medium='video' url="HTTPS://EXAMPLE.COM/e p286.png" duration="0" fileSize="２０００００" type="audio/x-wav"/>
+  <podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="" type="application/json+chapters"></podcast:chapters></item>
+<item><psc:chapters><psc:chapter start='101:13' image="https://example.com/ch.png" title="😀"/><psc:chapter image="https://example.com/ch.png" href="" title="Café &amp;amp; more" start=" "/><psc:chapter href="https://example.com/ch" start="7516" title="Intro" image="https://example.com/ch.png"/></psc:chapters>
+  <media:content duration="0" isDefault="false" medium="image" type="video" fileSize="+20000"/>
+  <googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+  <enclosure url="" length="12" type='Audio/MPEG'/>
+  <guid></guid>
+  <media:content isDefault="1" medium='video' duration='0' type="audio/mpeg; charset=binary" fileSize='2147483648'/>
+  <itunes:duration>195:57</itunes:duration>
+  <content:encoded>&lt;di<![CDATA[v>茶</div><img><br/>  &apos;a&apos;مرحبا]]></content:encoded>
+  <media:content fileSize="abc" medium="audio" isDefault="false" url="https://example.com/a.b/a/b/c227.aspx" duration="+60" type='application/ogg'/>
+  <title>R&amp;D
+{json: 1}</title>
+  <pubDate>Saturday, 22 Apr 2017 07:18 -0000</pubDate>
+  <podcast:socialInteract xmlns:podcast="https://podcastindex.org/namespace/1.0" protocol="activitypub"></podcast:socialInteract></item>
+<item><title><![CDATA[&AMP;مرحباFolge 184: Über alles]]></title>
+  <pubDate>Wed, 07 Apr 63 22:16:19 +0000</pubDate>
+  <itunes:image href=' '/>
+  <itunes:duration>:30</itunes:duration>
+  <enclosure url="" length="4294967296" type='application/pdf'/>
+  <media:description type="plain"><![CDATA[😀😀&;<br><img src="x" alt="y"/>
+&quot;q&quot;<br />]]></media:description>
+  <psc:chapters/></item>
+<item><title>#hash <![CDATA[ Episode 285]]></title>
+<guid isPermaLink="false"> </guid>
+<link></link>
+<description><![CDATA[&amp]]></description>
+<content:encoded>x&lt;y</content:encoded>
+<enclosure url="http://example.org/79.m3u8" length='2147483647' type="application/octet-stream"/></item>
+<item><title>​<![CDATA[]]></title>
+<content:encoded><![CDATA[<li>שלום</li>😀😀😀]]></content:encoded>
+<enclosure length="+20000" type="audio/mp3"/>
+<guid>
+</guid>
+<psc:chapters><psc:chapter title="😀" start="93:39"/></psc:chapters>
+<pubDate>Sun, 09 November 1969 09:08:15</pubDate>
+<link>https://example.com/ep</link></item>
+<item><description><![CDATA[<d]]>iv&gt;&#x26;lt;b&amp;gt;&#60;/div&gt;</description>
+  <itunes:duration>54:26</itunes:duration>
+  <link></link>
+  <title>&amp;#0;</title>
+  <podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/ch.json" type="application/json+chapters"/>
+  <guid isPermaLink="true">urn:uuid:58c94973</guid>
+  <media:content fileSize='-16384' duration="59" url='https://xn--caf-dma.example/e p336.MP3' type="Audio/MPEG"/>
+  <pubDate>Sat, 20 Nov 228</pubDate>
+  <enclosure url="ftp://files.example.com/ep8.flac" length="+20000" type='audio/ogg'></enclosure></item>
+<item><description>&#x3C;hr>&#60;li>&amp;amp;&#60;/li&gt;	
+
+&#x26;lt
+
+http://example.com/?a=1&amp;b=2</description> <enclosure url="ftp://files.example.com/café/120.ogx" length='-9223372036854775808' type="text/plain"/> <itunes:image href=' https://e.com/i.png '/> <podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" type="application/srt"/> <media:description type="html"><![CDATA[<li]]>>&#60;p&gt;Para&#60;/p&gt;&lt;/li></media:description> <media:thumbnail url=""/> <title>{json: 1}100%</title> <pubDate>Wednesday, 21 Dec 1999 04:16:55 -0500</pubDate> <guid></guid> <enclosure url='https://xn--caf-dma.example/11.xyz' length="9007199254740991" type="Audio/MPEG"/> <content:encoded><![CDATA[<BR><li>&#xA9;</li>aaaaaaa]]></content:encoded> <enclosure url="HTTPS://EXAMPLE.COM/e p362.m4a?file=x.mp3" type="audio/wav"/></item>
+<item><enclosure url='//example.com/e p240.jpg?file=x.mp3' length='٢٠٠٠٠' type='audio/flac'/>
+<content:encoded><![CDATA[	&#xFFFF;]]></content:encoded>
+<enclosure url="https://example.com/a.b/a/b/c163" length="16385" type="audio/ogg"/>
+<media:content type="Audio/MPEG" duration="59" medium="audio" fileSize='123456' isDefault="false"/>
+<pubDate>1997/06/27T20:34:36</pubDate>
+<link> https://e.com/x </link>
+<title><![CDATA[trailing <li>Line<br>break</li>]]></title>
+<enclosure url='//example.com/café/293.wma' length="16383" type='image/*'/>
+<description>ééé</description>
+<media:content type="audio/mpeg" isDefault="false" fileSize="-16384" url="ftp://files.example.com/dir.with.dots/ep391.mp3" medium="document"/>
+<guid isPermaLink="true">Café-guid</guid>
+<!-- comment --><?pi data?></item>
+<link></link>
+<description></description>
+<x:title xmlns:x="urn:x">Other namespace title</x:title>
+<language> EN-US </language>
+<image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+<atom:link rel="self" length="12" title=""/></channel>
+  </rss>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><atom:link rel="hub" href="" type="application/xhtml+xml" length='12'/><atom:link title="Café" length="12" href="https://example.com/" rel="last" type=""/><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><language>pt-BR</language><link>https://example.com</link><image><url>https://example.com/img.png</url></image><podcast:funding url="">&#60;b&gt;x&#x3C;/b></podcast:funding><atom:link title="" length="9223372036854775808" type="application/rss+xml" href="https://example.com/alt.xml"/><title><![CDATA[{json: 1}Folge 752: Über alles]]></title><itunes:image/><atom:link title="Café" length="9223372036854775808" type=""/><description>
+
+&#38;#0;😀😀😀😀&#x3C;br&gt;&lt;br/&gt;&#x3C;br/&gt;</description><item><title><![CDATA[&#128512;  leading]]></title><guid isPermaLink="false"></guid><pubDate>	Tue, 04 Feb 2003 09:08:50 -0000&#13;
+</pubDate><description><![CDATA[<hr/> &#xFFFF;]]></description><enclosure url="HTTPS://EXAMPLE.COM/café/337" length="2147483648" type="audio/aac"/><media:description>&lt;p>&#60;/p>&amp;#65;&#38;#66;
+
+back\slash</media:description><psc:chapters version="1.2"><psc:chapter start="1:2:" href="" image="https://example.com/ch.png" title='Intro'/><psc:chapter href="" start='00:01:02.5'></psc:chapter><psc:chapter title="&lt;b>x&lt;/b>" href="https://example.com/ch" start="5070"/><psc:chapter start="" image="https://example.com/ch.png" href="https://example.com/ch" title="Intro"/><psc:chapter start="03:03:17.209" title='Intro'/></psc:chapters></item></channel>
+  </rss>

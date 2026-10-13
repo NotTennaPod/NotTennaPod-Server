@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><description>
+</description>
+<podcast:funding url="">&lt;b>x&#x3C;/b&gt;</podcast:funding>
+<language>fr
+</language>
+<it:image/>
+<item><title>café</title>
+  <guid isPermaLink='false'>a&amp;b</guid>
+  <pubDate>1986-11-20T21:19:41.12345EET</pubDate>
+  <content:encoded><![CDATA[<p>café</p>]]></content:encoded>
+  <enclosure url="" length="12" type="video/quicktime"></enclosure>
+  <media:group><media:content duration="59" url="http://example.org/71.wav" type="video/x-matroska" medium="document"/></media:group>
+  <media:description type="plain">&lt;p&gt;&#x3C;/p&gt;</media:description>
+  <podcast:socialInteract uri="" protocol="activitypub"/></item>
+<item><dcterms:date>12 Nov 24 12:07:53 +0000</dcterms:date>
+<guid isPermaLink="false">  spaced guid  </guid>
+<sc:chapters><sc:chapter start="1830" title="Café &amp;amp; more" href='https://example.com/ch'/></sc:chapters>
+<media:thumbnail url=""/>
+<title>&#13;
+&amp;ampcafé </title>
+<it:image href=' https://e.com/i.png '/>
+<media:group><media:content medium="image" type='audio/mpeg' duration="01:00" fileSize="" isDefault="true"></media:content></media:group>
+<enclosure url='http://example.org/café/225.html?file=x.mp3' length="٢٠٠٠٠" type="audio/x-m4a"/>
+<link> https://e.com/x </link>
+<it:summary><![CDATA[  "quoted"<div> leading</div><p>&Lt;</p>aaaaaaaaaaa]]></it:summary>
+<content:encoded>&#13;
+tab	here&#60;BR></content:encoded>
+<it:duration>0:31:10</it:duration>
+<pubDate>2537-12-22T14:37:02Japan Standard Time</pubDate></item>
+<item><title>​
+&lt;unknown>x&lt;y&#x3C;/unknown&gt;</title>
+<guid>dup</guid>
+<pubDate>(N(IAToUVpp,ePzqOgkWtdep,TpéJV</pubDate>
+<description>&#x3C;br>&#60;/br&gt;  spaced  </description>
+<dcterms:date>1999-10-12T06:32:45.230+000</dcterms:date>
+<enclosure length="123456789012345678" type="unknown"/>
+<enclosure url="HTTPS://EXAMPLE.COM/a/b/c101.php" length="00020000" type='application/pdf'/></item>
+<item><media:group><media:content type="image/jpeg" duration="2147484" fileSize="9007199254740993" url="https://cdn.example.com/café/77.opus" medium="Audio"/></media:group>
+  <link> https://e.com/x </link>
+  <pubDate>Tuesday, 14 Oct 1975 07:57 -0000</pubDate>
+  <it:duration>1.0e99</it:duration>
+  <atom:link title="Café" length='9223372036854775808' type="audio/mpeg" rel="self"/>
+  <title>{json: 1}</title></item>
+<item><title>100%</title>
+  <media:content duration="2147484" isDefault="true" fileSize='12' medium="Audio" type='audio/mpeg'/>
+  <guid>Café-guid</guid>
+  <it:duration>1h30m</it:duration>
+  <link>https://example.com/ep</link>
+  <pubDate>Thursday, 27 Dec 14 15:59:21 +0200</pubDate>
+  <enclosure url='http://example.org/a/b/c86.ts' length='+20000' type="application/x-bittorrent"/>
+  <it:image href=" "/></item>
+<dc:creator>DC Creator</dc:creator>
+<title><![CDATA[tab	here]]></title>
+<podcast:funding url="https://example.com/donate"></podcast:funding>
+<image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+<atom:link href="https://example.com/feed?page=2" title='' rel='archives'/>
+<podcast:funding></podcast:funding>
+<it:owner><it:name>Owner</it:name><it:email>o@example.com</it:email></it:owner></channel>
+</rss>

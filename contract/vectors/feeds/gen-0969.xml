@@ -1,0 +1,51 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <itunes:image/>
+  <link>https://example.com</link>
+  <description>&#60;br>	&quot;quoted&quot;x&#60;y&#60;br></description>
+  <image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+  <itunes:summary></itunes:summary>
+  <language></language>
+  <itunes:new-feed-url></itunes:new-feed-url>
+  <itunes:author><![CDATA[Café Radio]]></itunes:author>
+  <podcast:funding>  spaced  </podcast:funding>
+  <item><itunes:summary>&#x3C;img&gt;</itunes:summary>
+  <title>&#13;
+&#38;#0;
+&#38;euro;
+</title>
+  <description><![CDATA[<div>x<y</div> x<y &amp;amp; &apos;a&apos;<br/>]]></description>
+  <guid>https://example.com/item/10290</guid>
+  <itunes:duration>5:57:02</itunes:duration>
+  <pubDate>Mon, 28 Apr 2487 01:17 -1200</pubDate>
+  <link>https://example.com/ep</link>
+  <dc:date>
+Thu., 15 Jul 1982 08:03:49 -1200
+</dc:date></item>
+  <item><link> https://e.com/x </link><enclosure length="20000.0" type="audio/x-wav"/><enclosure url="ftp://files.example.com/ep294.html" length="1" type="image/png"/><description>&lt;br /&gt;a=b&#x26;c=d
+&apos;single'&#60;li&gt;'single'&#x3C;/li&gt;&#60;br>&#x3C;/br></description><guid isPermaLink="true">a&#x26;b</guid><pubDate>Tue,  04  Dec  2474  13:54:51 -0000</pubDate></item>
+  <item><title></title>
+  <guid isPermaLink="true">https://example.com/item/77151</guid>
+  <link></link>
+  <description><![CDATA[<hr>aa<p>&amp;</p><br></br>​<br>]]></description>
+  <dc:date>2425-10-11T03:34:27 -</dc:date>
+  <content:encoded></content:encoded>
+  <itunes:subtitle>ca<![CDATA[fé]]></itunes:subtitle>
+  <itunes:image href=" https://e.com/i.png "/>
+  <itunes:duration>3:26:21</itunes:duration></item>
+  <item><pubDate>2002-02-08+1</pubDate><description>a
+x&lt;y
+x&#x3C;y&#x3C;br>&lt;/br>😀&#x1F600;😀</description><content:encoded>ש&#1500;ום&#x3C;BR&gt;  &amp;amp&lt;div&gt;back\slash&#60;/div&gt; &#x3C;br&gt;&lt;div&gt;a&#13;
+b&#60;/div>&lt;p/&gt;&#60;p>100%&lt;/p></content:encoded><link> https://e.com/x </link><title>trailing   a&#13;
+b  &#38;#65;&#38;#66;</title></item>
+  <item><guid isPermaLink='true'>urn:uuid:ea5f117d</guid><title><![CDATA[&amp;amp;]]></title><itunes:duration>2529.416</itunes:duration><pubDate>Wed, 20 Nov 2013 07:58:57</pubDate><link></link><description><![CDATA[<br />ééé]]></description><enclosure url="HTTPS://EXAMPLE.COM/182.txt" length="2e5" type='audio/opus'/><itunes:image href=" https://e.com/i.png "/></item>
+  <item><itunes:duration>47:32</itunes:duration>
+<link></link>
+<description>&#60;div&gt;R&amp;D&#x3C;/div></description>
+<pubDate>Mon JAN 9 05:44:32 1950</pubDate>
+<itunes:image href=" https://e.com/i.png "/>
+<guid isPermaLink='true'>a&amp;b</guid></item>
+  <title>&#13;
+שלו&#x5DD;&#38;amp;amp; </title></channel>
+  </rss>

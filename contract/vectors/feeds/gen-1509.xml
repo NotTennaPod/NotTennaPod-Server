@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<rss version="0.91" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><link>https://example.com</link>
+<lastBuildDate>1982-08-14</lastBuildDate>
+<description>&#x3C;hr/></description>
+<title>&lt;p>Para&lt;/p> http://example.com/?a=1&#38;b=2</title>
+<language>fr
+</language>
+<item><title>&#38;AMP; Line&#60;br&gt;break &#60;tt&gt;&amp;amp;&lt;/tt></title>
+  <link>https://example.com/ep</link>
+  <content:encoded>&lt;li>café&#60;/li></content:encoded>
+  <enclosure url="HTTPS://EXAMPLE.COM/ep130.amr" length="1" type="audio/wav"/>
+  <media:content url="https://example.com/a.b/dir.with.dots/ep229.aac?auth=yes" duration="0" fileSize="123456789012345678" type="audio/mpeg; charset=binary" medium="audio" isDefault="true"/>
+  <media:content fileSize="0x4E20" url="https://example.com:8443/a/b/c360.3gp?dl=1.0" type="application/x-bittorrent" isDefault="1" medium="audio" duration=""></media:content></item>
+<item><title>1 &lt;2 [x]</title><guid>urn:uuid:12abad7c</guid><link>https://example.com/ep</link><pubDate>2003-05-13T21:19:02.782Z</pubDate><content:encoded>	&#128512;</content:encoded><enclosure url='//example.com/ep60.aac' length="4294967296" type="audio/"></enclosure></item>
+<item><guid>
+</guid><link></link><description>    spaced  
+&amp;copy;&#60;div&gt;  spaced  &lt;/div>&lt;div&gt;a=b&#x26;c=d&#x3C;/div&gt;&#x3C;p&gt;  spaced  &#x3C;/p>&lt;br/&gt;  &amp;#;&lt;img src="x.png"></description><pubDate>Wednesday, 08 November 2169 00:02:48</pubDate><title><![CDATA[<b>Bold</b> title]]></title><enclosure url="https://example.com:8443/38.MP3" length="52428800" type='application/x-bittorrent'/></item>
+<item><pubDate>08 Nov 1977 16:36:15 -0000</pubDate> <guid isPermaLink="true">Café-guid</guid> <title>&#38;euro;</title> <description><![CDATA[
+a=b&c=d<hr><img src="x" alt="y"/>]]></description> <enclosure url="//example.com/a/b/c255.mid" length="-16384" type='AUDIO/MPEG'></enclosure></item></channel>
+</rss>

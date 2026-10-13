@@ -1,0 +1,9 @@
+<rss version="0.92" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pc="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"> </itunes:subtitle> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=''/> <category>Technology</category> <itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:author> <itunes:new-feed-url xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">HTTP://upper.example</itunes:new-feed-url> <image><title>Image title</title><url>  https://example.com/ws.png
+</url></image> <description><![CDATA[<img src="x" alt="y"/><div>&hellip;</div>]]></description> <dc:creator>DC Creator</dc:creator> <title>&#x26;#xD800;1 &#x3C;2&amp;#65;&amp;#66;</title> <item><enclosure url="http://example.org/a/b/c157.opus" length='00020000' type="audio/*"></enclosure>
+<guid isPermaLink='true'>urn:uuid:379e0f0b</guid>
+<pubDate>Tue, 21 Apr 1970 07:04 +0945</pubDate>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1455</itunes:duration>
+<pc:chapters/>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[  茶100%<br>שלום<br>]]></itunes:summary>
+<title><![CDATA[[x]]]></title>
+<link> https://e.com/x </link></item></channel></rss>

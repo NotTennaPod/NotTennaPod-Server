@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang=""><link title="Café" href="https://example.com/" type="application/xml+xhtml" rel="hub"/>
+<itunes:image href=''/>
+<itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url>
+<id> raw </id>
+<title>Episode 12&#60;small>שלום&#x3C;/small&gt;</title>
+<subtitle type="plain"> a &gt; b&#60;li&gt;&#x26;&lt;/li>&#60;li>&#x26;;&lt;/li>&#x3C;p&gt;café&lt;/p>&#x3C;BR>&lt;p/&gt;&#60;hr/>&lt;img&gt;</subtitle>
+<podcast:funding url="https://example.com/give">Give</podcast:funding>
+<entry><published>Wednesday, 14 Mar 2018 00:20:48</published>
+<summary type="text"></summary>
+<content type='html'><![CDATA[<hr/>	&apos;a&]]>apos;éé&#233;é&#38;#0;</content>
+<title type="html"> &#38;amp;amp; x&#60;y&#13;
+</title></entry>
+<entry><summary> &#x26;#0;&#13;
+&amp;&#x3C;div&gt;&lt;p&gt;Para&lt;/p>&lt;/div></summary><link type="text/html" rel="last" href="https://example.com/"/><id>urn:uuid:1</id><updated>2019-03-08T03:04:11.290+01</updated><title>&#x26;#xA9;</title><link rel="self" title="" href="https://example.com/"/></entry>
+<entry><link type="application/xml+xhtml" length="9223372036854775808" rel="archives" title="" href="https://example.com/"/><updated>Thursday, 02 Aug 2018 24:55:23</updated><id>tag:x,2020:1</id><content type="html">😀&#x3C;img src="x" alt=&quot;y"/&gt;&lt;hr/> &amp;lt;b&#38;gt;&lt;p&gt;&#x26;amp&#60;/p&gt;</content><summary type="html">&#x3C;img src="x.png&quot;&gt;ééé&#x645;ر&#1581;با&lt;br&gt;</summary><itunes:image href="https://example.com/e.jpg"></itunes:image><updated>1973-02-06T11:18:38.312MSK</updated><title type="plain">Episode 12
+&#x26;lt;b&amp;gt;escaped<![CDATA[&lt;/b&gt;]]></title><link href="" type='application/xhtml+xml' rel="enclosure" title="" length="9223372036854775808"/><link href="https://example.com/alt.xml" type="" title='MP3 feed' length='12' rel="enclosure"/></entry>
+  </feed>

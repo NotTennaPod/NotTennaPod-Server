@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><item><itunes:duration>5.</itunes:duration>
+  <description>&lt;li>a
+
+b&#x3C;/li>&lt;p>Episode 12&#60;/p>&#x3C;p>back\slash&lt;/p&gt;</description>
+  <title>&amp;apos;a&amp;apos;  &#x26;unknown;</title>
+  <link>https://example.com/ep</link>
+  <media:description type="plain">&lt;p>cr&#13;lf&#60;/p&gt;&lt;img src="x&quot; alt="y"/&gt;&lt;br /></media:description>
+  <pubDate>21 apr 94 04:45 -0000</pubDate>
+  <media:content type="video/mp4" medium="Audio" isDefault="false" fileSize="16385"></media:content>
+  <cont:encoded>&#x3C;br&gt;&#60;/br></cont:encoded>
+  <enclosure url="" length="9007199254740991" type="image/jpeg"/></item>
+  <item><title><![CDATA[&nbsp; trailing ]]></title><media:group><media:content fileSize="20000.0" duration="abc" medium="image" url="ftp://files.example.com/ep8.flac" type=""/><media:content url="https://user:pass@media.example.net/café/224.avi" duration="0060" isDefault="TRUE" type='application/ogg' fileSize='-1'/><media:content duration="2147483" fileSize="+20000" type="audio/wav" isDefault="TRUE"/></media:group><link> https://e.com/x </link><media:thumbnail url=""/><guid> </guid><enclosure url="https://example.com/a.b/café/330.mp4" length="٢٠٠٠٠" type="x-audio/mpeg"/><itunes:duration>5832.579</itunes:duration><itunes:image href=" https://e.com/i.png "/><description></description><pubDate>2019-07-30T09:19:44+0945</pubDate></item>
+  <itunes:author>Jane Doe</itunes:author>
+  <itunes:explicit>yes</itunes:explicit>
+  <title>	tab	here  &amp;amp;  &#13;
+</title>
+  <link></link>
+  <language>fr
+</language>
+  <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0">&#60;b>x&lt;/b&gt;</podcast:funding>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <description>ééé&#60;div>Folge 7: Über alles&lt;/div&gt;&lt;li>&amp;copy;&lt;/li&gt;</description>
+  <atom:link type="application/rss+xml" href='ftp://files.example.com/48.webm' title='MP3 feed' rel="payment"/>
+  <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate">  spaced  </podcast:funding>
+  <itunes:subtitle><![CDATA[Tom &amp; Jerry &lt;3]]></itunes:subtitle>
+  <image><title>Image title</title><url>  https://example.com/ws.png
+</url></image></channel></rss>

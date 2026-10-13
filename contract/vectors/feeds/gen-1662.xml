@@ -1,0 +1,10 @@
+<rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>de-DE</language>
+<image><title>Image title</title><url></url></image>
+<description><![CDATA[éééééé<div>a < b]]>&#x3C;/div&gt;</description>
+<title><![CDATA[&nbsp;]]></title>
+<pi:funding url='https://example.com/donate'></pi:funding>
+<link> https://example.com/ </link>
+<pi:funding url="https://example.com/donate"/>
+<pi:funding url="">&#x3C;b>x&lt;/b&gt;</pi:funding>
+<itunesu:owner><itunesu:name>Owner</itunesu:name><itunesu:email>o@example.com</itunesu:email></itunesu:owner></channel> </rss>

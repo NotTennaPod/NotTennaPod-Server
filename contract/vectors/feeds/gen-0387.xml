@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><!DOCTYPE rss [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters"> <channel><link> https://example.com/ </link>
+<language>pt-BR</language>
+<itunes:image href='https://example.com/it.jpg'/>
+<title>&nbsp;&#x3C;tt>&amp;nbsp;&lt;/tt></title>
+<itunes:summary>
+
+&#38;</itunes:summary>
+<item><enclosure url="" length='' type="video/webm"/>
+<enclosure url="https://example.com:8443/ep192.mp4?dl=1.0" type="application/ogg"/>
+<enclosure url='HTTPS://EXAMPLE.COM/ep130.amr' length=" 20000" type="audio/wav"/>
+<pubDate>Fri, 08 SEPTEMBER 2017 12:08:02 -0800</pubDate>
+<title>back\slash</title>
+<guid>https://example.com/item/19607</guid>
+<description>&#x3C;br&gt;	</description></item>
+<item><itunes:summary><![CDATA[ &;<br/><p>茶</p><div>&lt;b&gt;</div><br></br> &#xD800;é<p]]>>茶&#x3C;/p></itunes:summary> <itunes:image/> <itunes:duration>08:15</itunes:duration> <enclosure length="２０００００" type="unknown"/> <title><![CDATA[&unknown;
+&quot;q&quot;
+]]></title> <guid isPermaLink='false'>
+</guid> <link></link> <description><![CDATA[<div>&#xFFFF;</div>]]></description></item>
+<item><itunes:duration>2:32:48</itunes:duration> <itunes:summary><![CDATA[<br/>]]></itunes:summary> <description>  a &gt; b&lt;div>&#8203;&#60;/div&gt;&#60;div&gt;&#x26;AMP;&#x3C;/div&gt;&lt;p> leading&#x3C;/p>a&#60;br/&gt;&#60;b>Bold&lt;/b&gt; title&lt;br&gt;&#13;
+&#x26;#128512;</description> <guid isPermaLink="false">urn:uuid:da607dd9</guid> <link>https://example.com/ep</link> <title><![CDATA[&#xD800;]]></title></item>
+<itunes:subtitle><![CDATA[&  &lt;b&gt;escaped&lt;/b&gt;  ]]></itunes:subtitle></channel>
+</rss>

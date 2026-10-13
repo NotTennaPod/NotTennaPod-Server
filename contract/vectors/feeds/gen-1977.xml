@@ -1,0 +1,26 @@
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0"> <channel><podcast:funding url="https://example.com/donate">  spaced  </podcast:funding>
+<podcast:funding>&lt;b>x&lt;/b></podcast:funding>
+<language>TR</language>
+<podcast:funding url=''></podcast:funding>
+<title>&#38;amp; <![CDATA[ Line<br>break]]></title>
+<link> https://example.com/ </link>
+<item><enclosure url="https://user:pass@media.example.net/ep35.wav" length="0x4E20" type="text/html"/> <pubDate>Sun, 	12 	Mar 	1899 23:12:48 -0500</pubDate> <link>https://example.com/ep</link> <description><![CDATA[<li>]]>&amp;#x;&#x3C;/li&gt;</description> <title><![CDATA[&AMP;  tab	here  😀]]></title></item>
+<item><title>
+​ </title>
+<guid isPermaLink="true">https://example.com/item/77794</guid>
+<link> https://e.com/x </link>
+<pubDate>0001-05-32T05:16:24</pubDate>
+<enclosure url="https://example.com:8443/ep355.html" length="9007199254740992" type="video/webm"/>
+<media:content fileSize="12" duration="+60" url='https://user:pass@media.example.net/dir.with.dots/ep43.oga'/>
+<mrss:content medium="audio" url="https://example.com:8443/café/248.txt?file=x.mp3" fileSize="9223372036854775807" isDefault='1' duration="2147483648" type="text/html"/>
+<mrss:content fileSize="2147483648" url='https://xn--caf-dma.example/café/335.ogx' type="application/pdf" duration="0060" medium="audio"/>
+<sc:chapters xmlns:sc="http://podlove.org/simple-chapters" version="1.2"><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" href="https://example.com/ch" title="😀" start="96:36"></sc:chapter></sc:chapters>
+<podcast:person role="host">Jane</podcast:person></item>
+<item><media:thumbnail url=""/>
+<guid isPermaLink="false">Caf&#xE9;-guid</guid>
+<description></description>
+<pubDate>Sun, 29 Nov 2421 02:59 Japan Standard Time</pubDate>
+<title><![CDATA[Line<b]]>r&gt;break
+&amp;#xD800;</title>
+<enclosure url="" length="00020000" type="audio/mp4"/></item></channel>
+</rss>

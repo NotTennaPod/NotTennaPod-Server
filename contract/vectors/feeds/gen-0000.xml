@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1252"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:dc="http://purl.org/dc/elements/1.1/"><itunes:author>&#31532;&#x4E00;</itunes:author><image><url>  https://example.com/ws.png
+</url></image><link></link><title>&#60;a href="https://example.com/x?a=1&amp;amp;b=2&quot;&gt;a&#13;
+b&lt;/a&gt; &lt;3 &lt;3 &amp;hellip;</title><description>&lt;img></description><item><title><![CDATA[&amp Epi]]>sode 82 trailing </title>
+  <link> https://e.com/x </link>
+  <description>&amp;#;</description>
+  <content:encoded>&lt;hr/&gt;&#x3C;br /&gt;</content:encoded>
+  <itunes:summary>&lt;BR>&quot;quoted&quot;&#60;div>R&#x26;D&lt;/div&gt;&#x3C;li>&#x26;euro;&#x3C;/li&gt;&lt;img src=&quot;x.png"></itunes:summary>
+  <itunes:image href='https://example.com/ep.jpg'/>
+  <itunes:duration>2982</itunes:duration>
+  <enclosure url="" length="9007199254740992" type="text/plain"/>
+  <podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/></item><language>fr
+</language><itunes:image href="https://example.com/it.jpg"/></channel> </rss>

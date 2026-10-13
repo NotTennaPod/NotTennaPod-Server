@@ -1,0 +1,14 @@
+﻿<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><link> https://example.com/ </link> <image><url>  https://example.com/ws.png
+</url></image> <itunes:image href=""/> <atom:link type="text/html" rel='enclosure' length='20000' title='Café'/> <itunes:author>😀 Pod</itunes:author> <description><![CDATA[<br/><div>multi
+l]]>ine&#60;/div&gt;</description> <podcast:funding url="https://example.com/donate"/> <lastBuildDate>Thu Feb 30 17:01:28 1974</lastBuildDate> <title>plain words &lt;strike&gt;&#38;#xFFFF;&lt;/strike&gt; 1 &#60;2</title> <item><guid isPermaLink="true">
+</guid><media:group><media:content medium="Audio" isDefault="TRUE" type="x-audio/mpeg" fileSize="" duration="-5" url="ftp://files.example.com/ep383.xyz#t=10"></media:content><media:content medium="audio" duration="3600" url="HTTPS://EXAMPLE.COM/e p148.oga" type='video/quicktime' fileSize="123456"/><media:content medium="Audio" type="application/x-bittorrent" duration=' 60' fileSize="9223372036854775808"/></media:group><itunes:duration>15117</itunes:duration><description><![CDATA[&#x;<br>]]></description><title>  spaced  
+&lt;img src="x.png&quot;&gt; cover
+&lt;img src=&quot;x.png"> cover</title><pubDate>Tue, 01 NOV 2011 19:40:18 -0500</pubDate><enclosure url="https://example.com:8443/133.ogg" length="9007199254740993" type="application/ogg"/></item> <item><title><![CDATA[AT&T  &    padded  ]]></title>
+<guid isPermaLink="false"> </guid>
+<link> https://e.com/x </link>
+<pubDate>2146-08-29T11:01:39Z</pubDate>
+<itunes:summary>&#x26;#0;&lt;br&gt;AT&amp;T&lt;br></itunes:summary>
+<itunes:duration>0:25:56</itunes:duration>
+<enclosure url="HTTPS://EXAMPLE.COM/ep158.mp3.zip" type="video/webm"/>
+<enclosure url="" length="1" type="application/ogg"/>
+<media:content type="audio/wav" duration="" fileSize='12' url="//example.com/62.xyz" medium="document"/></item> <item><title/> <guid isPermaLink='true'>  spaced guid  </guid> <pubDate>1996-02-17T08:38:</pubDate> <itunes:image href=""/> <itunes:duration>0:27:21</itunes:duration> <enclosure url="https://example.com:8443/ep355.html" length="+20000" type="audio/flac"/> <media:content fileSize="00020000" duration="2147484" medium="audio" type="text/plain" isDefault="true" url="https://example.com/a.b/ep288.avi"/> <media:content duration='abc' medium="audio" isDefault="true" url="https://example.com:8443/e p39.MP3" fileSize="52428800" type="image/jpeg"/> <media:description type='html'><![CDATA[<p></p>	&euro;<img src="x" alt="y"/>]]></media:description> <podcast:locked>yes</podcast:locked></item></channel> </rss>

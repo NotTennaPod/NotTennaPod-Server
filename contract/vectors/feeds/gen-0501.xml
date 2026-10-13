@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><description>&#x3C;div&gt;café&#60;/div&gt;&#x3C;img&gt; &amp;#xD800;</description> <podcastindex:funding xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">&lt;b>x&#x3C;/b&gt;</podcastindex:funding> <title><![CDATA[{json: 1}é]]></title> <itunes:author><![CDATA[Café Radio]]></itunes:author> <atom:link type='application/xhtml+xml' length="20000" rel="" title='MP3 feed'/> <atom:link type="text/html" rel="last"/> <podcastindex:funding xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url="">Support us</podcastindex:funding> <link> https://example.com/ </link> <image><url></url><title>Image title</title></image> <podcastindex:funding xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url="https://example.com/donate"/> <itunes:image href=" "/> <item><content:encoded><![CDATA[<p>#7 – Interview</p>]]></content:encoded> <pubDate>1995-02-29T21:05:42.252+0200</pubDate> <description>&lt;img src="x.png"> cover</description> <media:content xmlns:media="http://search.yahoo.com/mrss/" medium='Audio' type="text/plain" url="https://example.com/a.b/a/b/c61.webm" isDefault="false" fileSize="2e5" duration=" 60"/> <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://xn--caf-dma.example/371.m4v" isDefault='1' duration="0060" fileSize="1,000,000" type="audio/*"></media:content> <guid isPermaLink="false"> </guid> <enclosure url="https://xn--caf-dma.example/café/179.amr" length='00020000' type='application/ogg'/> <title><![CDATA[&]]></title> <podcastindex:chapters xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" type="application/json+chapters"/> <itunes:duration>NaN</itunes:duration> <link></link> <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="audio" fileSize="2e5" type="" duration="9223372036854775807" isDefault="false"/></item> <item><title>	&amp;copy;&#13;
+</title>
+<guid isPermaLink='true'>  spaced guid  </guid>
+<pubDate>Mon 4 Jan 1982 02:42:01 GMT-0800 (pst)</pubDate>
+<description><![CDATA[😀😀<div></div>sep<br><p>"quoted"</]]>p>cr
+lf&lt;br></description>
+<itunes:image/>
+<itunes:duration>
+45:00
+</itunes:duration>
+<enclosure url="//example.com/e p4.aif" length="-1" type="application/json"/></item></channel>
+  </rss>

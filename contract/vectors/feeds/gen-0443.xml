@@ -1,0 +1,5 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:chapters="http://podlove.org/simple-chapters" xml:lang=""><author><name>C&amp;D</name><email>a@example.com</email></author>
+<link rel="next" href="https://example.com/" title="Café" type="application/rss+xml"/>
+<title type="plain"><![CDATA[&lt &apos;a&apos;]]></title>
+<id>https://example.com/feed</id>
+<itunes:author>&#31532;一<![CDATA[]]></itunes:author> </feed>

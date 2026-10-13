@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><description><![CDATA[<br><br/>]]></description>
+<language>de-DE</language>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" https://example.com/sp.jpg "/>
+<title>multi
+line</title>
+<dc:creator>DC Creator</dc:creator>
+<link>https://example.com</link>
+<item><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" https://e.com/i.png "/><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">:30</itunes:duration><enclosure length="2e5" type='application/ogg'></enclosure><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[&a]]>mp #288 – Interview</itunes:subtitle><itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Item author</itunes:author><pubDate>2016-11-23</pubDate><guid>urn:uuid:98ed2292</guid><description>&#60;p>&amp;&lt;/p>é&#xE9;&#xE9;&lt;div&gt;&amp;Lt;&#60;/div&gt;</description><link></link></item>
+<item><title>&amp;#xA9;cr&#13;lfa=b&amp;c=d</title> <guid isPermaLink="true">dup</guid> <link></link> <itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[<li>&euro;</li><p></p><img src="x.png">	&euro;ééé]]></itunes:summary> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href='https://example.com/ep.jpg'/> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">5968.465</itunes:duration></item>
+<item><description>&#x3C;p>  padded  &lt;/p<![CDATA[>R&D<br>]]></description>
+  <enclosure url="https://example.com/a.b/dir.with.dots/ep88.pdf" length="0x4E20"/>
+  <guid isPermaLink="true">dup</guid>
+  <title>&amp;copy;1 &#60;2&#x3C;font color="red">Tom &#x26; Jerry &lt;3&#60;/font&gt;</title>
+  <pubDate>0999-01-02T16:00:49.424z</pubDate>
+  <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[<div><p>café</p>]]>&lt;/div&gt;&#x26;unknown;</itunes:subtitle>
+  <link></link></item></channel></rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:pc="http://podlove.org/simple-chapters">
+<channel><language> EN-US </language>
+  <link> https://example.com/ </link>
+  <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0"></podcast:funding>
+  <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate"/>
+  <image><title>Image title</title><link>https://example.com/img-link</link><url>https://example.com/img.png</url></image>
+  <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url=''>  spaced  </podcast:funding>
+  <title> trailing &#13;
+</title>
+  <item><title><![CDATA[ </p>]]></title>
+  <guid isPermaLink="true">Café-guid</guid>
+  <pubDate>Wed, 08 Jul 2009 15:34:31 -0000</pubDate>
+  <description>&lt;img src="x" alt="y"/>&#60;img src=&quot;x" alt=&quot;y"/>&#60;img src=&quot;x" alt="y"/>&#38;nbsp;&lt;br&gt;&lt;p&gt;&#38;amp&#60;/p&gt;ééétrailing &#x3C;br&gt;&lt;div&gt;Tom &amp;amp; Jerry &#38;lt;3&lt;/div&gt;</description>
+  <dc:date>1979-11-13T09:23:03.105-0500</dc:date>
+  <itunes:duration>13521</itunes:duration>
+  <enclosure length="abc" type=" audio/mpeg"/>
+  <media:content fileSize="4294967296" url="https://user:pass@media.example.net/café/296.mp4" duration="" isDefault="1" type='text/plain'/>
+  <media:thumbnail url="https://example.com/th.jpg"/>
+  <media:description type="html"></media:description>
+  <pc:chapters></pc:chapters></item>
+  <item><guid isPermaLink="true">a&#x26;b</guid>
+<content:encoded>&#60;div&gt;Episode 12&lt;/div&gt;&lt;img src="x&quot; alt="y"/&gt;</content:encoded>
+<enclosure url='https://example.com/a.b/dir.with.dots/ep88.pdf' length="2147483647" type=' audio/mpeg'/>
+<description><![CDATA["quoted"]]></description>
+<title>&#x645;رح&#1576;ا</title>
+<link></link></item>
+  <item><title>&amp;#0;
+a=b&#x26;c=d
+a
+  b</title><guid isPermaLink="true">  spaced guid  </guid><link> https://e.com/x </link><pubDate> 1979-09-07  </pubDate><description>&#x3C;img src="x" alt="y"/&gt; a=b&amp;c=d&lt;br/&gt;😀&#128512;😀&#60;p&gt;&amp;amp;&#x3C;/p>a &gt; b&lt;br&gt;&lt;p/></description><content:encoded>&#60;p/&gt;</content:encoded><itunes:image href='https://example.com/ep.jpg'/><itunes:duration>9318.925</itunes:duration><enclosure url=""/></item></channel>
+  </rss>

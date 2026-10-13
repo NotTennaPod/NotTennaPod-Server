@@ -1,0 +1,61 @@
+{
+ "cases": [
+  {
+   "input": "  abc  ",
+   "output": "abc"
+  },
+  {
+   "input": "\t\n\u0000abc def\u001f ",
+   "output": "abc def"
+  },
+  {
+   "input": " abc ",
+   "output": " abc "
+  },
+  {
+   "input": "null",
+   "output": null
+  },
+  {
+   "input": " null ",
+   "output": null
+  },
+  {
+   "input": "NULL",
+   "output": "NULL"
+  },
+  {
+   "input": "Null",
+   "output": "Null"
+  },
+  {
+   "input": "   ",
+   "output": null
+  },
+  {
+   "input": "",
+   "output": null
+  },
+  {
+   "input": "ABC",
+   "output": "ABC"
+  },
+  {
+   "input": "urn:uuid:1234",
+   "output": "urn:uuid:1234"
+  },
+  {
+   "input": " a ",
+   "output": "a "
+  },
+  {
+   "input": "abc",
+   "output": "abc"
+  },
+  {
+   "input": " !",
+   "output": "!"
+  }
+ ],
+ "suite": "guid"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us"> <subtitle type="plain">שלום&#x3C;br&gt;&lt;li>a&#13;
+b&lt;/li&gt;&#60;img src="x&quot; alt="y"/>&lt;BR&gt;&#x3C;br>&lt;/br>&lt;br>😀😀&#128512;&#60;BR></subtitle>
+<author><name>C&amp;D</name><email>a@example.com</email></author>
+<id></id>
+<media:thumbnail url="https://example.com/amt.jpg"/>
+<title>Line&#x3C;br&gt;break &amp;mdash; &#38;#128512;</title>
+<entry><itunes:image href=''></itunes:image> <content type="plain">&lt;div&gt;&#x26;&#60;/div&gt;</content> <updated>11 Jun 0999 13:32:57 CET</updated> <link title="MP3 feed" rel="enclosure"/> <id></id> <title>tab	here &#x26;#128512; ​</title></entry>
+<entry><link title="Alternate" type="application/rss+xml" href="https://example.com/alt.xml"></link> <link title='Alternate' href="https://example.com/feed?page=2" rel="last" type="application/atom+xml"/> <title type="text">#hash</title> <published>x,  1973-03-12T00:05:18</published> <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">	Episode 12</div></content> <updated>1994-08-09T04:51:10:00</updated></entry>
+<entry><summary>Episode 12100%</summary>
+<itunes:duration>7566</itunes:duration>
+<id></id>
+<title type="plain">  spaced  a&#13;
+b&lt;label&gt;&amp;quot;q&#38;quot;&#60;/label></title>
+<link type="application/xml+xhtml" rel='next' href="https://example.com/" length="9223372036854775808" title="MP3 feed"/></entry>
+<entry><content>&lt;p&gt;S01E7&lt;/p&gt;</content> <updated>
+Tue, 	31 	Mar 	2130 05:19:56 +0100	</updated> <link type="application/xml+xhtml" rel="last"/> <title type="text">&amp;#xA9;
+Tom &#x26; Jerry &lt;3
+&amp;amp</title> <link title="Café" length="abc" rel="alternate" href="" type='application/xml+xhtml'/> <id>
+id
+</id> <link type="application/xml+xhtml" href="" rel='payment' title="MP3 feed"/> <media:content fileSize="2147483647" type="video/quicktime"/></entry>
+<entry><published>1979-05-23T22:27:06 CET</published>
+<podcastindex:transcript url="https://example.com/t.json" type="text/plain" language="en"/>
+<link href="https://cdn.example.com/ep245.mov" title="Alternate" length="abc" type='application/rss+xml' rel="last"></link>
+<title>a<![CDATA[ < b  &lt]]></title>
+<id>tag:x,2020:1</id>
+<link length="20000" href="https://example.com/feed?page=2"/>
+<content type="html">a&lt;p/>&lt;hr&gt;</content>
+<updated>2369-10-03T01:08:54.642+</updated></entry></feed>

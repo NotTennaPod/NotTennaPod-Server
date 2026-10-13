@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><itunes:summary>aaaaaaaa&#x26;unknown;</itunes:summary><image><title>Image title</title><url></url></image><description> a &gt; b &#38;euro;&lt;div>&amp;#x;&lt;/div></description><itunes:image href=""></itunes:image><podcastindex:funding>Support us</podcastindex:funding><link></link><a10:link href="" title='' rel="related" type="application/xhtml+xml" length="9223372036854775808"/><media:thumbnail url=''/><podcastindex:funding></podcastindex:funding><podcastindex:funding url="">Support us</podcastindex:funding><itunes:episodeType>full</itunes:episodeType><itunes:author><![CDATA[Café Radio]]></itunes:author><title>	​
+&#x26;copy;
+sep  </title><item><title></title>
+<guid isPermaLink="true">a&amp;b</guid>
+<link> https://e.com/x </link>
+<pubDate>Wednesday, 05 Jun 2024 03:02:24</pubDate>
+<description> café&#13;
+&amp;#128512;aaaaaa&lt;li>plain words&#x3C;/li>&lt;b>Bold&#x3C;/b> title&#60;br></description>
+<itunes:duration>Infinity</itunes:duration>
+<enclosure url='//example.com/e p4.aif' length="٢٠٠٠٠" type="audio/"></enclosure>
+<enclosure url="HTTPS://EXAMPLE.COM/377.xyz" length="52428800" type="video/quicktime"/>
+<enclosure url='https://cdn.example.com/café/194.ogx' length="٢٠٠٠٠" type="video/mp4"/></item><item><media:content duration="2147484" fileSize='2147483648' isDefault="TRUE" type="text/plain" url="http://example.org/71.wav" medium="Audio"/>
+  <guid isPermaLink="false">a&#38;b</guid>
+  <link> https://e.com/x </link>
+  <pubDate>
+Wednesday, 16 Sep 2015 23:23:29 AEST	</pubDate>
+  <media:content type="audio/mpeg" duration="59" url="https://cdn.example.com/e p260.m4v" medium="audio" isDefault='true' fileSize="0"/>
+  <title>&#13;
+ &#13;
+</title>
+  <description></description>
+  <enclosure url='https://user:pass@media.example.net/ep211.mp3' length="16383" type='audio/flac'/>
+  <itunes:duration>62:03</itunes:duration>
+  <itunes:subtitle>&quot;quoted"  Episode 236</itunes:subtitle></item></channel>
+</rss>

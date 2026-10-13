@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom"> <channel><podcast:funding url="https://example.com/donate"/>
+  <title>back\slash  &lt;unknown>R&#x26;D&lt;/unknown></title>
+  <link></link>
+  <description>&lt;img>&lt;li&gt;&#x3C;img src="x.png"&gt; cover&#x3C;/li&gt;&#13;
+&amp;euro;</description>
+  <itunes:author>第一</itunes:author>
+  <image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <item><title><![CDATA[<b>sep</b>]]></title>
+<guid>Café-guid</guid>
+<link> https://e.com/x </link>
+<pubDate>Fri, 14 Sep 0001 23:35:31 AKST</pubDate>
+<description><![CDATA[<hr/>]]></description>
+<itunes:subtitle>&#60;ul&gt;&#x3C;li&gt;&amp;#128512;&#60;/li&gt;&lt;li>two&lt;/li>&#x3C;/ul>
+multi
+line
+&#x26;#65;&#x26;#66;</itunes:subtitle>
+<itunes:image/>
+<itunes:duration>2:09:16</itunes:duration>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep124.oga" length="" type="application/ogg"/></item>
+  <item><title><![CDATA[
+&amp#423 – Interv]]>iew
+</title>
+  <guid isPermaLink="false">
+</guid>
+  <pubDate>Mon 14 Oct 2013 06:34:26 +0530</pubDate>
+  <description>&#60;BR>&lt;hr&gt;é&#xE9;é</description>
+  <dc:date>1974-07-16T19:34:15+01</dc:date>
+  <itunes:image href=" https://e.com/i.png "/>
+  <enclosure length="-1" type="Audio/MPEG"/>
+  <m:thumbnail url=""></m:thumbnail>
+  <googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description></item>
+  <item><title>Tom &amp;amp; Jerry &amp;lt;3  &amp;#xA9;  😀</title>
+<m:content duration="1" type="audio/x-wav" fileSize="-9223372036854775808"/>
+<content:encoded>&#60;b&gt;Bold&lt;/b&gt; title&lt;br>&lt;p&gt;multi
+line&lt;/p></content:encoded>
+<guid isPermaLink="true">  spaced guid  </guid>
+<pubDate>2111-03-29T22:57:57Z</pubDate>
+<description>&#60;br/&gt;&lt;hr/&gt;&#x3C;br&gt;&#60;/br&gt;  &amp;;éééhttp://example.com/?a=1&amp;b=2😀😀😀ééé</description>
+<podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/>
+<enclosure url="//example.com/a/b/c385.jpg?file=x.mp3" length="12" type='audio/aac'/>
+<enclosure length="1" type="image/png"/></item></channel></rss>

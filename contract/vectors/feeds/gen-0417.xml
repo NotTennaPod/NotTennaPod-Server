@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><link> https://example.com/ </link> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <itunes:image href=' https://example.com/sp.jpg '/> <language>pt-BR</language> <itunes:new-feed-url>ftp://x</itunes:new-feed-url> <itunes:subtitle><![CDATA[&#;]]></itunes:subtitle> <description>&#60;li&gt;S01E7&lt;/li&gt;</description> <title>第779集 &#x26;#65;&amp;#66; Tom &amp; Jerry &lt;3</title> <item><title>cr&#13;lf</title><guid>  spaced guid  </guid><link> https://e.com/x </link><pubDate>Tue, 	26 	Apr 1983 23:33:07 +0530</pubDate><description>&lt;li>&#38;#xD800;&lt;/li&gt;م&#1585;حبا&#x1F600;😀😀&lt;li>&amp;AMP;&lt;/li&gt;&#x3C;br>&lt;/br></description><enclosure url="https://example.com/a.b/a/b/c270.mpga" length='0' type=""/></item> <item><description>  cr&#13;lf	x&#60;y	trailing S01E7&lt;br&gt;😀&lt;br&gt;</description>
+<itunes:duration>1103</itunes:duration>
+<pubDate>Fri, 16 Mar 2012 22:07:48 -1200 </pubDate>
+<guid>Caf&#233;-guid</guid>
+<enclosure length="16383" type="AUDIO/MPEG"/>
+<content:encoded><![CDATA[<hr>]]></content:encoded></item> <item><enclosure url="https://cdn.example.com/café/194.ogx" length="1,000,000" type='application/octet-stream'/>
+<media:content type=" audio/mpeg" medium="Audio" duration="59" isDefault="1" url="https://example.com/a.b/a/b/c252.m4v" fileSize="٢٠٠٠٠"/>
+<content:encoded></content:encoded>
+<description><![CDATA[<div>Tom &amp; Jerry &lt;3</div><div>plain words</div> trailing   &copy;<li>é</li>]]></description>
+<media:content duration="0060" medium='audio' fileSize="-16384" type='audio/wav' url="//example.com/e p152.wma"/>
+<pubDate>1988-11-25T02:28:14.1+2400</pubDate>
+<guid>https://example.com/item/71798</guid>
+<media:content isDefault='true' medium="Audio" fileSize="1,000,000" duration="9223372036854775807" type="x-audio/mpeg"/>
+<title>  padded   &#38;amp</title>
+<link>https://example.com/ep</link></item> <item><itunes:duration>28:25</itunes:duration>
+<enclosure url="https://example.com:8443/dir.with.dots/ep394.OGG" length="abc" type="audio/mp4"/>
+<title><![CDATA[😀]]></title>
+<pubDate>2160-08-17T12:34:00.294123590+05:30</pubDate>
+<guid>urn:uuid:dbc7b698</guid></item></channel>
+</rss>

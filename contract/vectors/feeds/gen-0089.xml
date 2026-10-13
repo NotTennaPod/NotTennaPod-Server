@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:dc="http://purl.org/dc/elements/1.1/"><link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/alt.xml" type='application/xhtml+xml' length="20000" title="Café"/> <itunes:author><![CDATA[😀 Pod]]></itunes:author> <textInput><title><undeclared:x/>Search</title><link>https://example.com/search</link></textInput> <title><![CDATA[&#0; sep &lt;b&gt;escaped&lt;/b&gt;]]></title> <link> https://example.com/ </link> <p2:funding url="">Support us</p2:funding> <item><title>cr&#13;lfback\slash&amp;</title>
+<guid isPermaLink="false">a&amp;b</guid>
+<link>https://example.com/ep</link>
+<pubDate>2249-04-08T21:15:46Z</pubDate>
+<description>S01E7&#x3C;div&gt;tab	here&#60;/div&gt;&#60;hr>&#60;div>a=b&#38;c=d&lt;/div&gt;aaaaaaaaa&#60;p&gt; leading&#60;<![CDATA[/p>第7集<br><li><img src="x.png"> cover</li>]]></description>
+<itunes:summary></itunes:summary>
+<enclosure url="" length="1" type="audio/*"/>
+<media:content fileSize="-16384" duration='0060' medium='video' url='https://xn--caf-dma.example/e p186.m4a' type="video/quicktime"/>
+<media:content duration='3600' url="http://example.org/e p395.3gp" medium="document" isDefault='false' fileSize="9223372036854775807" type="audio/mp4"/>
+<media:content type="audio/wav" duration='-5' url="https://example.com/a.b/a/b/c31.webm" medium="document" fileSize='1' isDefault="true"/>
+<media:thumbnail url=""/></item></channel>
+</rss>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang=""><link type="application/atom+xml" rel="hub" title="MP3 feed" length="20000" href="https://example.com/feed?page=2"/>
+<author><name></name></author>
+<itunes:author><![CDATA[Jane Doe]]></itunes:author>
+<itunes:summary><![CDATA[&amp;amp;<p/><div>&euro;</di]]>v></itunes:summary>
+<link rel="last" href="" length="abc" title="MP3 feed" type=''/>
+<link rel="hub" length="12" title=""/>
+<subtitle type="HTML">a > b&lt;br></subtitle>
+<title type="html">a=b&amp;c=dR&#x26;D</title></feed>

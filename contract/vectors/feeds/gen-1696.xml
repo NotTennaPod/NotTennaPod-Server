@@ -1,0 +1,23 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <channel><link></link>
+  <itunes:image href="https://example.com/it.jpg"/>
+  <podcast:funding url="https://example.com/donate"></podcast:funding>
+  <podcast:funding>  spaced  </podcast:funding>
+  <itunes:summary><![CDATA[ééé]]></itunes:summary>
+  <podcast:funding url="">  spaced  </podcast:funding>
+  <title>AT&#38;T</title>
+  <itunes:author>Tom &amp; Jerry &#60;3</itunes:author>
+  <item><enclosure length='52428800' type="image/png"/>
+<title>é</title>
+<itunes:image href="https://example.com/ep.jpg"></itunes:image>
+<pubDate>  Sun, 22 Feb 2004 00:17:12 -1200  </pubDate>
+<guid isPermaLink="true"> </guid></item>
+  <item><itunes:duration>2:54:57</itunes:duration> <itunes:image href=""/> <link></link> <enclosure url="" length="9007199254740991" type="audio/mpeg; charset=binary"/> <pubDate>Thu 01 Jan 2024 10:00:00 +0000</pubDate> <title><![CDATA[Tom & Jerry <3]]></title> <description></description> <enclosure url="https://example.com:8443/dir.with.dots/ep106.3gp" length="12" type="video/webm"/> <guid isPermaLink="true">a&#38;b</guid> <content:encoded><![CDATA[<li><img src="x.png"> cover</li>]]></content:encoded></item>
+  <item><itunes:duration>2:14:20</itunes:duration>
+<link></link>
+<title><![CDATA[trailing ]]></title>
+<description>&#60;p&gt;م&#x631;ح&#x628;ا&lt;/p&gt;  </description>
+<pubDate>1601-01-31T18:54:35&#13;
+</pubDate>
+<enclosure url="https://example.com/a.b/café/113.Mp4?file=x.mp3" length=" 20000" type="video"/></item></channel>
+</rss>

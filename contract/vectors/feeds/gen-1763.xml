@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><lastBuildDate>2000-03-02T08:57:38.010</lastBuildDate>
+<atom:link title="Café" rel="hub"/>
+<title> &#60;span&gt;😀&lt;/span>
+</title>
+<!-- comment --><?pi data?>
+<language></language>
+<description>&lt;img src="x.png"&gt;</description>
+<link> https://example.com/ </link>
+<item><title>a&#13;
+b</title>
+<guid>a&amp;b</guid>
+<content:encoded>&#38;lt;b&#x26;gt;escaped&amp;lt;/b&#38;gt;aaaaaaa &amp;#xFFFF;</content:encoded>
+<enclosure url="" type="audio/mpeg; charset=binary"></enclosure>
+<pubDate>Sat 11 Jul 1998 21:46:57 GMT-0500 (GMT)</pubDate>
+<link></link></item>
+<item><title>第17集a&#13;
+b&lt;strong&gt;Episode 12&#x3C;/strong&gt;</title>
+<guid>Caf&#233;-guid</guid>
+<pubDate>Thu, 05 Apr 0001 02:58:22 +0945</pubDate>
+<dc:date>Tue, 31 Jan 2020 16:61:20 -0000</dc:date>
+<enclosure url="http://example.org/a/b/c86.ts" length="16385" type="application/ogg"/>
+<media:group><media:content type="audio" duration="0060" isDefault="TRUE" fileSize="123456"></media:content><media:content fileSize="abc" medium="audio" type="AUDIO/MPEG" url="https://example.com:8443/e p358.MP3" duration="0"/><media:content type="audio/opus" fileSize="9223372036854775808" duration="abc" isDefault='TRUE'/></media:group>
+<media:description>aaaaaaaaa&#x3C;li&gt;é&lt;/li>&amp;euro;&#60;br> a &lt; b&amp;amp;&#x3C;br>&#60;div>&lt;p>Para&#x3C;/p&gt;&#x3C;/div&gt;
+&#x26;apos;a&amp;apos;&lt;br&gt;</media:description>
+<pi:transcript url="" type="application/srt"/><pi:transcript type="application/srt" language="en"/></item>
+<item><title>Tom &#38;amp; Jerry &#38;lt;3</title>
+<guid isPermaLink="false">https://example.com/item/56121</guid>
+<link> https://e.com/x </link>
+<description></description>
+<enclosure url="//example.com/e p152.wma" length="1" type="audio/x-wav"/>
+<wrapper><inner><deeper>text</deeper></inner></wrapper></item>
+<item><atom:link href="https://example.com/alt.xml" rel="self" type="application/xml+xhtml" title="Alternate"/>
+<title><![CDATA[<dfn></dfn]]>></title>
+<guid isPermaLink="false">Café-guid</guid>
+<content:encoded>	#hash&lt;li>multi
+line&lt;/li>&#x3C;div&gt; leading&lt;/div>	[x]'single&apos;&#60;br&gt;
+&amp;quot;q&amp;quot;&#x3C;p>Tom &amp; Jerry &lt;3&lt;/p&gt;&#xA0;multi
+line</content:encoded></item>
+<item><enclosure url="https://xn--caf-dma.example/e p336.MP3" length='9007199254740993' type="video"/><guid isPermaLink="false"></guid><media:content type="video/x-matroska" fileSize="16383" duration="-5" medium="video"/><pubDate>Wednesday, 16 Sep 2015 23:23:29 AEST</pubDate><media:thumbnail/><description>aaaaaaa  مرحبا&#60;p>&#60;/p&gt;é&#xE9;é&#60;img src=&quot;x" alt="y"/></description><media:content url="https://xn--caf-dma.example/dir.with.dots/ep219.mp4" type="image/jpeg" medium="Audio" fileSize="2147483648" duration='2147483648' isDefault="false"/></item>
+<item><title>
+sep &amp;mdash; &amp;#xD800;  </title>
+  <guid isPermaLink="true">urn:uuid:0ecdcac3</guid>
+  <link> https://e.com/x </link>
+  <description>&#x3C;li>&amp;#xA9;&#x3C;/li>&#x26;amp;amp;&#x3C;br&gt;&lt;hr/&gt;</description>
+  <enclosure url="http://example.org/a/b/c244.wav#t=10" length='-9223372036854775808' type="audio/ogg"/>
+  <media:content type="application/ogg" duration=" 60" url="https://user:pass@media.example.net/204.avi?auth=yes" isDefault="1" fileSize="16383"/></item>
+<item><title><![CDATA[&euro;]]></title> <guid> </guid> <description>a
+  b&lt;br&gt;</description> <dc:date>Sunday, 09 Apr 1989 04:23:23 -1200</dc:date> <enclosure url="" length="16385" type='text/html'></enclosure> <enclosure url="ftp://files.example.com/280.webm" length="1,000,000" type="application/octet-stream"></enclosure> <media:thumbnail url=""/> <psc:chapters version='1.2'><psc:chapter title='&lt;b>x&lt;/b>' start="0:0:3.4028235e38" href="https://example.com/ch"/><psc:chapter start="02:08:11" title='Café &amp;amp; more'/></psc:chapters></item>
+<item><enclosure url="//example.com/a/b/c319.ts" length="1,000,000" type="unknown"/><dc:date>2369-07-28T21:55:15.8</dc:date><pubDate>Monday, 19 Dec 2005 07:40:25</pubDate><enclosure length="16383" type="audio/ogg"/><media:group><media:content isDefault="TRUE" type="video/mp4" duration="0" medium='audio' fileSize="52428800"/></media:group><guid isPermaLink='true'>https://example.com/item/48087</guid><description><![CDATA[<p/><li>http://example.com/?a=1&b=2</li><p/>]]></description><media:thumbnail/><title><![CDATA[[x]&#xA9;é]]></title></item>
+<item><pi:season>2</pi:season>
+<pubDate>Sat Jul 23 15:56 2011</pubDate>
+<title>&#38;#65;&amp;#66;  &#60;p>#816 – Interview&lt;/p&gt;  &#x26;#xA9;</title>
+<content:encoded>&lt;p/>&#60;img src=&quot;x.png"> 1 &lt;2#7 – Interview&lt;p&gt;&#x3C;/p&gt;</content:encoded>
+<link>https://example.com/ep</link>
+<enclosure url="http://example.org/e p275.opus" length="4294967296" type="unknown"/>
+<description>茶AT&amp;T&#x3C;br&gt;&lt;br&gt;</description></item>
+<item><description>&amp;#x;&#60;br&gt;</description>
+<link> https://e.com/x </link>
+<enclosure url='https://example.com:8443/ep355.html' length="52428800" type="x-audio/mpeg"/>
+<pubDate>Thu, 32 Dec 2017 01:43 -0000</pubDate>
+<guid isPermaLink='false'>  spaced guid  </guid></item>
+<item><enclosure url="" length="0" type='audio/*'/>
+<title/>
+<pubDate>Sat, 08 Oct 2022 10:50:00 -05:30</pubDate>
+<media:thumbnail/>
+<link> https://e.com/x </link>
+<guid isPermaLink="false">
+</guid></item>
+<item><title>cr&#13;lf Folge 472: Über alles</title><pubDate>2014-08-24T18:05:03&#13;
+</pubDate><link> https://e.com/x </link><pi:transcript url='' type='application/json'/><podcast:transcript url="https://example.com/t.json" type="application/srr" language="en"/><enclosure length="20000 " type="audio/opus"/><enclosure url="HTTPS://EXAMPLE.COM/a/b/c217.OGG" length="4294967296" type='audio/opus'/><description> </description><media:content medium="Audio" fileSize="18446744073709551616" url="https://example.com/a.b/ep135.pdf?a=1&amp;b=2" duration="abc" isDefault="TRUE"/><enclosure url='' length="2147483647" type='application/octet-stream'/></item>
+<item><media:content type="video/x-matroska" fileSize="0" duration="9223372036854775807" isDefault="false" medium="Audio" url="http://example.org/dir.with.dots/ep380.php?a=1&amp;b=2"/>
+<title>&amp;#<![CDATA[xD800;
+#hash]]></title>
+<pubDate>2537-12-20T23:38:02.448</pubDate>
+<media:thumbnail url=""/>
+<description><![CDATA[ééé]]></description>
+<guid isPermaLink="true">Café-guid</guid>
+<content:encoded><![CDATA[<BR> &u]]>nknown;</content:encoded></item>
+<item><title><![CDATA[<b>a < b</b>100%]]></title>
+<guid isPermaLink="false">
+</guid>
+<link> https://e.com/x </link>
+<pubDate>  Sat 30 Sep 2278 07:07:58 GMT+1400 (IST)
+</pubDate>
+<description></description>
+<enclosure url="https://xn--caf-dma.example/café/153.html" length='12' type="audio/mp4"/>
+<media:thumbnail/>
+<media:description type="plain">	茶&lt;br&gt;&#60;/br<![CDATA[>&copy;]]></media:description>
+<pi:chapters type="application/json+chapters"/>
+<podcast:transcript/><pi:transcript url="https://example.com/t.vtt" type="application/x-subrip" language="en"/><podcast:transcript url="" type="application/x-subrip"></podcast:transcript></item>
+<item><link> https://e.com/x </link>
+<pi:chapters url='https://example.com/ch.json' type="application/json+chapters"/>
+<description></description>
+<guid isPermaLink="true">urn:uuid:6a8407f3</guid>
+<pubDate>1978-08-11T07:35:51-0500&#13;
+</pubDate>
+<media:content type="audio/" medium="document" url="ftp://files.example.com/a/b/c18.mpga" duration="0" isDefault="false" fileSize="-16384"/>
+<title>  &#60;div dir="rtl&quot;&gt;T<![CDATA[om &amp; Jerry &lt;3</div>  ]]></title></item>
+<item><enclosure length='123456789012345678' type="audio/flac"/> <link>https://example.com/ep</link> <pubDate>Sun Apr 21 00:43:22 1974 Coordinated Universal Time</pubDate> <title><![CDATA[&#xFFFF;
+trailing 
+  spaced  ]]></title> <guid isPermaLink="true">a&amp;b</guid> <description>&#xE9;ééaaa😀&#x3C;p&gt;&lt;/p&gt;&lt;p/&gt;</description></item>
+<item><title>&#38;#xA9; &amp;hellip;</title>
+<link></link>
+<pubDate>Tue, 02 Jan 2024 19:29:41</pubDate>
+<description>
+&amp;copy;</description>
+<enclosure length="1,000,000" type="audio/x-wav"/>
+<enclosure length="" type="video"/>
+<enclosure url="" length='abc' type="audio/aac"/></item>
+<item><link> https://e.com/x </link>
+  <enclosure url="https://xn--caf-dma.example/e p3.wav" length="2147483648" type="video/mp4"/>
+  <enclosure url='https://example.com:8443/e p326.m4v' length="0x4E20" type="video/x-matroska"/>
+  <title>#343 – Interview
+&#1513;לום</title>
+  <enclosure url="https://example.com:8443/café/283.xyz" length="20000 " type="audio"></enclosure>
+  <description>&#60;BR&gt;&lt;img src="x.png&quot;&gt;</description>
+  <guid isPermaLink="false"></guid></item>
+<item><pubDate>Wed, 13 May 2009 20:34:12 +1400
+  </pubDate> <media:group><media:content url="HTTPS://EXAMPLE.COM/ep130.amr" duration="59" isDefault="false" type="audio" fileSize="20000 "/></media:group> <guid>urn:uuid:792ce8ed</guid> <title>100%😀&apos;single&apos;</title> <link>https://example.com/ep</link> <enclosure length="+20000" type="image/*"/> <psc:chapters version="1.2"><psc:chapter title="😀" start="03:11:13" href=""/><psc:chapter start="١:٠٢" title="" href="https://example.com/ch"></psc:chapter><psc:chapter title="" href="" start="02:21:05.142"/><psc:chapter href="" start='１:００' title="Café &amp;amp; more"/><psc:chapter image="https://example.com/ch.png" start="00:46:24.513"/><psc:chapter title="Intro"></psc:chapter></psc:chapters></item>
+<item><title>&lt;cite&gt;Episode 12&#x3C;/cite></title>
+<guid isPermaLink="false">
+</guid>
+<link>https://example.com/ep</link>
+<pubDate>Monday, 09 Jul 55 23:56 +0945</pubDate>
+<enclosure url='https://example.com:8443/café/87.txt' length="-1" type="audio/"/>
+<media:content isDefault='1' fileSize="20000 " medium="Audio" duration="1" type="video/x-matroska"/>
+<media:content url='https://example.com/a.b/café/113.Mp4?file=x.mp3' medium="image" duration='1.5' isDefault="1" type='text/html' fileSize='9007199254740993'/>
+<media:content fileSize="12" url="HTTPS://EXAMPLE.COM/201.3gp" isDefault="TRUE" duration="" medium='document' type='application/pdf'/>
+<psc:chapters><psc:chapter image="https://example.com/ch.png" start="02:05:52.530" title=""/><psc:chapter image="https://example.com/ch.png" title="&lt;b>x&lt;/b>" start="5831" href="https://example.com/ch"/><psc:chapter start="01:46:53" href="https://example.com/ch" image="https://example.com/ch.png"/><psc:chapter title='😀' href="https://example.com/ch" image="https://example.com/ch.png" start="01:24:59.192"/><psc:chapter start='9504' title="😀"/><psc:chapter start="10:00:00.000001" title="&lt;b>x&lt;/b>" href="https://example.com/ch"/></psc:chapters></item></channel></rss>

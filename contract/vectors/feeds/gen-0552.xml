@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="US-ASCII"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:dc="http://purl.org/dc/elements/1.1/"><link xmlns="http://www.w3.org/2005/Atom" title="" rel="related" href="https://example.com/pay" length="12"/> <link> https://example.com/ </link> <title>x&lt;y</title> <lastBuildDate>26 Jan 15 15:21:29 +0200</lastBuildDate> <itunes:summary>&lt;li&gt;&quot;quoted"&lt;/li&gt;  &amp;lt&#x3C;br&gt;&lt;p/>&#60;div&gt;&#1513;&#x5DC;&#1493;&#1501;&#60;/div&gt;&#60;BR&gt;
+
+&#8203;	&lt;3 &lt;3</itunes:summary> <item><title>x&lt;y R&amp;D #hash</title> <media:description type="html">&lt;img src="x" alt=&quot;y"/&gt;&#x3C;p&gt;&#x3C;/p&gt;Line&#x3C;br>break</media:description> <media:content duration="0" medium='image' url="https://example.com/a.b/ep256.mp3" type="video/mp4" fileSize='16384'></media:content> <media:content medium="video" duration="3600" type="audio/aac" fileSize=" 20000"/> <pubDate>&#13;
+Tue, 27 Sep 2011 10:48:16 +0100&#13;
+</pubDate> <link> https://e.com/x </link> <itunes:image href='https://example.com/ep.jpg'/> <content:encoded><![CDATA[<p/>]]></content:encoded> <enclosure url="http://example.org/e p34.flac" length="16384" type="video/quicktime"/> <guid isPermaLink="true"> </guid> <description><![CDATA[<br]]> /&gt;</description> <itunes:duration>110:03</itunes:duration> <media:content type="audio/x-wav" fileSize="9007199254740991" url="https://cdn.example.com/e p297.m4a" duration="01:00" isDefault="false" medium="document"/> <media:thumbnail/></item> <item><guid isPermaLink="false">dup</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>29 Sept 48 08:14 +0100</pubDate>
+  <description><![CDATA[<p/>]]></description>
+  <content:encoded>	&amp;unknown;&#38;#65;&#x26;#66;&lt;br&gt;aaaaaaa&amp;copy;	1 &#60;2 trailing &lt;hr&gt;aaa</content:encoded>
+  <itunes:summary>&lt;p/&gt;</itunes:summary>
+  <itunes:image href=" https://e.com/i.png "/>
+  <itunes:duration>0</itunes:duration>
+  <itunes:author>Item author</itunes:author>
+  <enclosure url="https://example.com:8443/ep192.mp4?dl=1.0" length="4294967296" type="image/*"/>
+  <enclosure url='' length="123456" type="image/*"/>
+  <media:content fileSize="-1" duration="0060" medium="video" url="//example.com/a/b/c188.wav" type='audio/mp4'></media:content></item> <item><itunes:summary><![CDATA[<br /><hr/>]]>&lt;BR&gt;</itunes:summary>
+  <enclosure length="4294967296" type="audio/opus"/>
+  <description><![CDATA[<br><hr/>&#233;&#233;&#233;&#160;&#x1F600;<hr><p>{json: 1}</p>tab	here<br>&lt;b&gt;escaped&lt;/b&gt;<br>]]></description>
+  <pubDate>17 aug 68 03:43 +1400</pubDate>
+  <title>S01E39</title>
+  <guid isPermaLink="false"></guid></item> <item><title>plain words caf&#233;</title>
+  <media:content type="audio/mpeg; charset=binary" url="ftp://files.example.com/dir.with.dots/ep202.xyz?dl=1.0" isDefault="false" duration="1.5" medium="video" fileSize="2e5"/>
+  <pubDate>X, 08 Jan 1986 10:13 +0530</pubDate>
+  <content:encoded>&#60;br&gt;&lt;div>&lt;b>Bold&#60;/b&gt; title&lt;/div>&amp;AMP;&#x3C;br&gt;&lt;p>e&#769;&lt;/p&gt;&#x3C;p>x&#x3C;y&lt;/p&gt;  &#38;#x;&lt;img>&lt;li>Tom &amp;amp; Jerry &#38;lt;3&lt;/li></content:encoded>
+  <description>&#233;&#233;&#233;&lt;img&gt;  &amp;unknown;&#x3C;BR&gt;&#128512; &#x26;#128512;&#x1F600;&#128512;&lt;li>&#38;euro;&#x3C;/li&gt;</description>
+  <p:transcript url="https://example.com/t.vtt" type='text/html' language="en"/><p:transcript url="https://example.com/t.vtt" language="en"/><p:transcript url="" type="text/html"/></item> <item><title><![CDATA[  a=b&]]>c=d  </title>
+<guid isPermaLink="false"></guid>
+<link></link>
+<pubDate>Sunday, 25 Jan 2024 23:35 +0945</pubDate>
+<itunes:subtitle><![CDATA[S01E359
+&#x1F600;
+1 <2]]></itunes:subtitle>
+<itunes:duration>19496</itunes:duration>
+<enclosure url="" length="0" type="video/quicktime"/>
+<p:transcript type="text/html" language="en"/><p:transcript type="text/vtt"/><p:transcript url="https://example.com/t.json"/>
+<googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description></item> <item><media:thumbnail/><title><![CDATA[a
+  b  &lt;b&gt;escaped&lt;/b&gt;  &#x1F600;]]></title><guid isPermaLink="false"> </guid><media:content isDefault="false" duration="3600" type="audio/aac" fileSize="123456789012345678"/><itunes:summary><![CDATA[#7 &#8211; Interview<br><img src="x" alt="y"/>&#128512;&#128512;<div>&#169;</div>Tom &amp; Jerry &lt;3<br>&#xFFFF;	&#128512;&#xFFFF;]]></itunes:summary><link>https://example.com/ep</link><itunes:duration>149:15</itunes:duration><pubDate>Tue, 24 May 2022 18:00:19 +01:00</pubDate><enclosure url="" length="4294967296" type="Audio/MPEG"/><itunes:image/></item> <itunes:author><![CDATA[&cop]]>y; 2020 Org</itunes:author></channel>
+</rss>

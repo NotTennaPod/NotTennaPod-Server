@@ -1,0 +1,27 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
+<id>https://example.com/feed</id>
+<author><name>Émile</name></author>
+<author><name>C&amp;D</name></author>
+<subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#60;li>a=b&#x26;c=d&#x3C;/li&gt;</div></subtitle>
+<media:thumbnail url='https://example.com/amt.jpg'/>
+<title><![CDATA[שלום]]></title>
+<entry><id> raw </id>
+<media:content url="ftp://files.example.com/241.mp3" duration="+60" type="video/webm" isDefault="TRUE" fileSize="123456"/>
+<title>&lt;h1>​&#x3C;/h1>  cr&#13;lf</title>
+<published>2382-05-24T12:48:55.12345Central European Standard Time</published>
+<author><name>Entry author</name></author></entry>
+<entry><id>tag:x,2020:1</id>
+<summary type="plain">	שלום</summary>
+<updated>2010-10-99</updated>
+<link rel='hub' type="application/atom+xml" length="20000" title="Café"/>
+<link length="abc" title="Café" rel="hub" type="text/html" href="https://example.com/feed?page=2"/>
+<title type="xhtml">&amp;AMP;
+trailing 
+&amp;unkn<![CDATA[own;]]></title></entry>
+<entry><summary type="text">&lt;p>&#38;#128512;&#60;/p>aaa</summary> <id></id> <published>1066-05-04T17:57:47.077+00:0</published> <title type="HTML">&#38;hellip;&#60;img src="x.png&quot;> cover&lt;B>Line&#60;br&gt;break&lt;/b></title> <link type="application/atom+xml" rel='first' title='Alternate' length="20000"/> <link rel="enclosure" title="MP3 feed" type="" href=''/> <media:content isDefault="true" duration="59" medium="image" type='AUDIO/MPEG' url="http://example.org/e p275.opus" fileSize=""/> <updated>1995-07-23T15:01:12.850-0000</updated></entry>
+<entry><title type="html">a &gt; b&#38;AMP;trailing </title><author><name>Entry author</name></author><published>1993-09-18-1200</published><updated>18 Jun 2009 14:23:13 India Standard Time</updated><link rel="payment" href="https://cdn.example.com/ep375.mov?dl=1.0" title="MP3 feed" length="12" type="application/xml+xhtml"></link><id> raw </id><link type="application/xhtml+xml" rel="archives"/><link rel="payment" length="20000" href="https://example.com/" type='' title="Café"/><content type='plain'>Line&#x3C;br>break&#x3C;br&gt;</content></entry>
+<entry><updated>Mon, 11 Oct 2280 20:47 -0800</updated> <published>Saturday, 15 Dec 2283 12:30:00</published> <title type="html"> 100%
+Folge 984: Über alles
+&#60;p&gt;Para&#60;/p&gt;	</title> <media:content url="ftp://files.example.com/dir.with.dots/ep312.aac" medium="video" type="audio/flac" fileSize="2147483647" isDefault="false" duration="0"></media:content> <summary type='html'> a
+
+b café&#60;hr/&gt;</summary> <link type='text/html' href="https://example.com/pay"/></entry> </feed>

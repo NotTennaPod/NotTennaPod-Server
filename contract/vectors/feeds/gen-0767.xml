@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="">
+<logo>https://example.com/logo.png</logo>
+<title type="text"><![CDATA[a
+  b]]></title>
+<id>https://example.com/feed</id>
+<author><name>Ann</name></author>
+<link title="" type="application/rss+xml" href='https://example.com/pay' rel='payment'/>
+<link href="https://example.com/feed?page=2" type="audio/mpeg" title="MP3 feed" rel="enclosure" length="abc"/> </feed>

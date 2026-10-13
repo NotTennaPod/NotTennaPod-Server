@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
+<channel xmlns:atom="http://www.w3.org/2005/Atom"><pi:funding>&lt;b&gt;x&#x3C;/b></pi:funding> <itunes:subtitle>&#60;s&gt;http://example.com/?a=1&amp;b=2&lt;/s></itunes:subtitle> <description>&lt;p>x&#60;y&#x3C;/p&gt; &lt;div>&lt;/div&gt;</description> <image><link>https://example.com/img-link</link><url></url></image> <link> https://example.com/ </link> <title><![CDATA[&#65;&#66;]]></title> <item><enclosure url="HTTPS://EXAMPLE.COM/ep308.ogg" length="0x4E20" type="audio/opus"/><itunes:summary><![CDATA[a
+
+bééé]]></itunes:summary><title>&amp;amp;amp; 1 &#x3C;2</title><pubDate>été, 	1601-07-26T00:43:12Z</pubDate><description>&lt;div>&#38;#xD800;&#60;/div&gt;</description><itunes:image href="https://example.com/ep.jpg"/></item> <item><x:title xmlns:x="urn:x">Other namespace title</x:title> <title>&apos;single&apos;
+&#60;strong&gt;שלום&lt;/strong&gt;</title> <enclosure url="" length="9223372036854775807" type="video/webm"/> <pubDate>2008-08-17T02:21:26.876+1400</pubDate> <enclosure url="https://user:pass@media.example.net/277.mp3" length="2147483648" type="x-audio/mpeg"></enclosure> <link></link> <enclosure url="https://example.com:8443/172.m4v" length='-0' type='audio/opus'/> <guid isPermaLink="false">https://example.com/item/48961</guid> <itunes:duration>10410</itunes:duration> <description>ééé sep&#60;div&gt;a&#13;
+b&lt;/div></description></item> <item><title>  padded   &#x3C;dfn>x&lt;y&#60;/dfn> Episode 478</title>
+<guid>  spaced guid  </guid>
+<link>https://example.com/ep</link>
+<pubDate>1978-06-04</pubDate>
+<description>  &amp;amp;</description>
+<content:encoded>aaaa</content:encoded>
+<itunes:summary><![CDATA[😀]]></itunes:summary>
+<itunes:subtitle><![CDATA[&lt;b&gt;escaped&lt;/b&g]]>t; 😀</itunes:subtitle></item></channel> </rss>

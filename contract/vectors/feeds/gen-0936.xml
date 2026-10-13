@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<atom:author><atom:name>C&#x26;D</atom:name><atom:email>a@example.com</atom:email></atom:author> <atom:link rel="last" length="abc" type="" href="http://example.org/e p0.OGG?file=x.mp3" title="Alternate"/> <atom:author><atom:name>Ann</atom:name><atom:email>a@example.com</atom:email></atom:author> <atom:subtitle>
+&amp;#xD800;&#13;
+​😀😀😀😀</atom:subtitle> <atom:title type="html">&#38;AMP;مرحبا&amp;;</atom:title> <atom:entry><atom:id>urn:uuid:1</atom:id>
+<atom:updated>2322-03-20-0800</atom:updated>
+<itunes:duration>00:00:01.999999</itunes:duration>
+<atom:title><![CDATA[]]>&#38;#xFFFF;</atom:title>
+<atom:link href="https://cdn.example.com/dir.with.dots/ep114.MP3" title="Café" type="application/atom+xml" rel='Next'/></atom:entry> <atom:entry><atom:author><atom:name>Entry author</atom:name></atom:author> <itunes:duration>1.5:00</itunes:duration> <atom:content type="text">  &amp;amp&#x3C;p>&#x3C;3 &#x3C;3&lt;/p&gt;&#60;p>http://example.com/?a=1&#38;b=2&#60;/p>&lt;hr&gt;&#13;
+&amp;AMP;  &amp;#;&#x3C;p&gt;sep&#60;/p&gt;&#60;p&gt; &#x3C;/p></atom:content> <atom:published>Mon 17 Oct 1983 20:21:08 GMT+0945 (HST)</atom:published> <atom:link title="MP3 feed" type="application/xhtml+xml" length="20000" href="" rel="payment"/> <atom:id> raw </atom:id> <atom:title type="plain">Episode 12</atom:title></atom:entry>
+</atom:feed>

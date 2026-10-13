@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"> <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+<itunes:image href="https://example.com/it.jpg"/>
+<image><title>Image title</title><link>https://example.com/img-link</link><url></url></image>
+<link>https://example.com</link>
+<title>&#38;AMP; &lt;b&gt;Bold&lt;/b&gt; title &amp;euro;</title>
+<title>&lt;table>&#60;tr&gt;&#60;td&gt;http://example.com/?a=1&#38;b=2&#60;/td&gt;&#60;td&gt;b&#60;/td&gt;&lt;/tr>&lt;/table&gt;
+&#38;copy;</title>
+<itunes:summary>&lt;p/&gt;
+&amp;ltTom &amp; Jerry &#x3C;3&#60;br&gt;&lt;br>
+&#38;hellip;</itunes:summary>
+<item><title>&#60;li>Episode 12&#x3C;/li&gt;</title> <guid isPermaLink="false"> </guid> <link></link> <pubDate>1992-06-15GMT+00:00</pubDate> <itunes:image href=" "/> <itunes:duration>1:-1</itunes:duration> <enclosure length="16385" type="audio/x-m4a"></enclosure> <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"/></item></channel>
+</rss>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link href='' type='' rel="hub"/>
+<atom:link rel="alternate" type="audio/mpeg" href="https://example.com/" length="12" title="Café"/>
+<i:author></i:author>
+<title><![CDATA[ e&#769; ]]></title>
+<atom:link type="application/atom+xml" length="12" href="https://example.com/feed?page=2" rel="last" title="Café"/>
+<description>   spaced    a&#13;
+b&lt;BR>&#x3C;img>aaaaaaaa&lt;p&gt;&amp;#128512;&#60;/p&gt;&lt;div>100%&#x3C;/div></description>
+<item><link>https://example.com/ep</link>
+<content:encoded>aaaaaaa</content:encoded>
+<enclosure url="https://user:pass@media.example.net/204.avi?auth=yes" length="0" type="video"/>
+<pubDate>Day1, 1983-12-04</pubDate>
+<title>&lt;span>&amp;copy;&lt;/span&gt; &amp;amp; &#38;Lt;</title>
+<i:summary>a
+  b&#x3C;br>&lt;hr>&#x3C;div&gt;{json: 1}&lt;/div&gt; &#x26;AMP;&#128512;&#60;br&gt;1 &lt;2&#x3C;br&gt;&#x3C;img src="x.png"&gt;&#60;div&gt;tab	here&#x3C;/div></i:summary>
+<i:subtitle>&#60;pre>x&#60;y
+  pre&lt;/pre></i:subtitle>
+<description><![CDATA[<img>]]></description>
+<i:author>Item author</i:author>
+<guid>urn:uuid:ebe8d469</guid></item>
+<item><title>&#38;#x1F600;  'single'</title><guid isPermaLink="true">a&#38;b</guid><link>https://example.com/ep</link><pubDate>Thu 16 Dec 1999 14:10:26 GMT-1200 (EEST)</pubDate><description>	&#38;#x;&#x3C;div&gt;a > b&#60;/div&gt;&#60;p>&lt;/p&gt;</description><i:summary><![CDATA[<p>&#31532;7&#38598;</p><div>&#128512;</div>  "quoted"&#1605;&#1585;&#1581;&#1576;&#1575;<br>
+&;]]></i:summary><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/a.b/238.mov" fileSize='52428800' type="text/plain" medium="Audio" duration="2147484"/><atom:link href='https://example.com/pay' type='' rel="last" length="abc" title=""/></item>
+<item><guid isPermaLink='true'></guid>
+  <link>https://example.com/ep</link>
+  <title>&amp;#65;&amp;#66;
+&lt;b>Bold&#60;/b> title</title>
+  <description><![CDATA[
+  &#128512;<hr/>]]></description>
+  <content:encoded><![CDATA[e&#769;&#128512;<div>&#128512;</div>]]></content:encoded>
+  <media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize='16384' isDefault="1" medium="video" duration="2147483648"/>
+  <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"/>
+  <enclosure length="-9223372036854775808" type="audio/wav"/></item>
+<item><title><![CDATA[Tom & Jerry <3]]></title>
+  <guid>Café-guid</guid>
+  <link> https://e.com/x </link>
+  <pubDate>2024-03-07T18:</pubDate>
+  <content:encoded></content:encoded>
+  <i:summary><![CDATA[<li>&AMP;</li>  &#1605;&#1585;&#1581;&#1576;&#1575;<BR>]]></i:summary>
+  <i:image href=' https://e.com/i.png '/>
+  <i:duration>00:00:00</i:duration>
+  <enclosure url="//example.com/e p240.jpg?file=x.mp3" length="20000 "/>
+  <enclosure url='https://xn--caf-dma.example/ep230.wav?dl=1.0' length="0x4E20" type='video'/>
+  <media:description xmlns:media="http://search.yahoo.com/mrss/" type="html">&#x3C;p&gt;&amp;#128512;&#60;/p>&lt;br&gt;&#60;/br&gt;&#233;&#xE9;é</media:description></item>
+<item><content:encoded><![CDATA[<div>e&#769;</div>ééémulti
+line]]></content:encoded>
+<pubDate>Tue, 16 Nov 2004 03:16:14 +0945:00</pubDate>
+<enclosure url="http://example.org/a/b/c244.wav#t=10" length=" 20000" type="audio/flac"/>
+<i:duration>1:20:27</i:duration>
+<title><![CDATA[#hash&#;]]></title>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url='https://example.com:8443/e p358.MP3' fileSize="4294967296" type=" audio/mpeg" duration="0060" isDefault="false"/>
+<description>&lt;img <![CDATA[src="x" alt="y"/>]]></description>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="123456" duration="2147483648" type="application/ogg"></media:content>
+<guid isPermaLink="true">dup</guid>
+<i:image/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="9007199254740992" isDefault='false' duration="+60" type="video/x-matroska" url="https://user:pass@media.example.net/ep125.MP3"/></item>
+<i:category text="Arts"><i:category text="Design"/></i:category>
+<i:owner><i:name>Owner</i:name><i:email>o@example.com</i:email></i:owner>
+<atom:link href='https://example.com/' rel='payment' title="" length="12" type='application/xhtml+xml'/></channel> </rss>

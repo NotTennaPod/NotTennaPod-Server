@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"> <channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><link> https://example.com/ </link>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<podcast:funding url="https://example.com/donate">&#60;b&gt;x&lt;/b&gt;</podcast:funding>
+<itunes:image href=' https://example.com/sp.jpg '/>
+<title>"quoted" &#60;b&gt;Bold&lt;/b&gt; title Episode 590</title>
+<itunes:summary>
+&#x26;lt;b&amp;gt;http://example.com/?a=1&amp;b=2aaaaaaaa</itunes:summary>
+<item><itunes:subtitle><![CDATA[&lt;b&gt;]]></itunes:subtitle><media:content type="application/octet-stream" isDefault="1" medium="video" fileSize="9223372036854775808" duration="0060"/><content:encoded>&lt;<![CDATA[b>Bold</b> title<br>]]></content:encoded><enclosure url='ftp://files.example.com/ep89.wma' length="1,000,000" type="image/png"/><description><![CDATA[<div>&#0;</div>]]></description><title>cr&#13;lf &#38;#x; &#60;dl&gt;&lt;dt&gt; &#60;/dt&gt;&lt;dd>b&#x3C;/dd&gt;&#60;/dl&gt;</title><itunes:summary><![CDATA[ &euro;]]></itunes:summary><pubDate>Sun, 27 May 2277 05:16:14 +0</pubDate><media:content type="unknown" fileSize="0x4E20" medium="Audio" duration="2147483" url="HTTPS://EXAMPLE.COM/dir.with.dots/ep369.ts"/><itunes:image href=""></itunes:image><media:content fileSize='20000.0' isDefault='false' duration="1.5" type="text/plain"/></item></channel>
+</rss>

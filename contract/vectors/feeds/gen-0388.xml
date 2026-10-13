@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><image><url>https://example.com/img.png</url><title>Image title</title><link>https://example.com/img-link</link></image>
+<title>[x]&#x26;amp;café</title>
+<language>TR</language>
+<link></link>
+<item><media:content medium="audio" url="http://example.org/70.mkv" type="application/json" fileSize=" 20000" duration="-5"></media:content>
+  <link>https://example.com/ep</link>
+  <guid>a&#38;b</guid>
+  <media:thumbnail url="https://example.com/th.jpg"/>
+  <enclosure url="https://user:pass@media.example.net/café/296.mp4" length="" type="audio/opus"/>
+  <content:encoded><![CDATA[<div>&AMP;</div>aaaaaaaa
+  spaced  ]]></content:encoded>
+  <dc:date>Mon 18 Jun 2001 21:37:17 GMT-0800 (CDT)</dc:date>
+  <title><![CDATA[
+café 茶	]]></title>
+  <pubDate>Thu, 01 Sept. 2108 18:00:43 -0800</pubDate></item>
+<item><title><![CDATA[&hellip;]]></title>
+<guid isPermaLink="true">Café-guid</guid>
+<link></link>
+<pubDate>2013-04-19T10:12:02Z</pubDate>
+<itunes:duration>1.5.5</itunes:duration>
+<media:content fileSize="٢٠٠٠٠" medium="video" isDefault='false' type="audio/" url="https://xn--caf-dma.example/e p331.3gp" duration="-5"/>
+<media:content duration='' medium="document" isDefault="1" fileSize="9223372036854775808" type='application/ogg' url="https://example.com:8443/133.ogg"/>
+<media:content fileSize="-1" type="video/x-matroska" duration="+60" medium='video' isDefault="1"></media:content>
+<podcast:socialInteract uri="" protocol="activitypub"/>
+<!-- comment --><?pi data?></item>
+<item><itunes:explicit>false</itunes:explicit>
+<itunes:duration>5:47:47</itunes:duration>
+<link>https://example.com/ep</link>
+<pubDate>Thursday, 30 Feb 2002 10:59:42</pubDate>
+<description>&#60;p>&amp;#x;&lt;/p&gt;Episode 7&lt;br></description>
+<enclosure url="ftp://files.example.com/134.mp3.zip" length="9007199254740992" type="application/octet-stream"/>
+<itunes:image href=" "/>
+<guid>  spaced guid  </guid>
+<title>a > b</title></item></channel> </rss>

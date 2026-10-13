@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><media:thumbnail url=""/> <link>https://example.com</link> <itunes:image href=" "/> <language>TR</language> <title>http://example.com/?a=1&#x26;b=2
+&amp;euro;<![CDATA[]]></title> <itunes:summary><![CDATA[&#xFFFF;&#0;<br><div>sep</div>]]></itunes:summary> <dc:creator>DC Creator</dc:creator> <description><![CDATA[<li>trailing </li>]]>Folge 7: Über alles&#31532;7&#38598;&lt;br&gt;</description> <item><media:content fileSize='2e5' type="audio/mpeg; charset=binary" duration="59" isDefault="false" url="https://example.com/a.b/café/155.m4v" medium="video"/>
+<enclosure length="16385" type="video/mp4"></enclosure>
+<media:content duration="9223372036854775807" fileSize="9223372036854775808" url="https://example.com:8443/café/213.mkv" isDefault="1" medium="video" type="audio"/>
+<itunes:image href=" "/>
+<description>	&amp;#169; http://example.com/?a=1&#x26;b=<![CDATA[2]]></description>
+<enclosure url="https://user:pass@media.example.net/ep35.wav" length="9007199254740991" type="AUDIO/MPEG"/>
+<media:thumbnail url=""/>
+<title>	&amp;;
+100%&#13;
+</title>
+<itunes:subtitle>Episode 12    spaced    &lt;div dir=&quot;rtl&quot;&gt;a &gt; b&lt;/div></itunes:subtitle>
+<pubDate>Thu, 21 July 2129 00:21</pubDate>
+<guid> </guid>
+<link>https://example.com/ep</link>
+<enclosure length="9007199254740993" type="text/html"/>
+<content:encoded>sep&#x3C;br&gt;&#128512;&#128512;&#128512;</content:encoded></item> <item><description></description><itunes:duration>33:23</itunes:duration><link></link><title>a=b&#x26;c=d&amp;amp</title><content:encoded>multi
+line&#60;div&gt;&amp;#x;&lt;/div>&#38;;&lt;p>&#38;apos;a&amp;apos;&lt;/p&gt;&#13;
+&lt;br>  &amp;amp;&lt;p>&#31532;7&#38598;&#x3C;/p&gt;</content:encoded><guid isPermaLink="true">https://example.com/item/58991</guid></item> <item><title><![CDATA[&#xD800;  e&#769;]]></title>
+<guid isPermaLink="false">Café-guid</guid>
+<link></link>
+<pubDate>  Tue September 25 11:35:08 2018 </pubDate>
+<description>AT&#38;T  tab	here&lt;br /&gt;	&#128512;&#128512;&#128512;</description>
+<itunes:subtitle><![CDATA[Episode 12 &unknown;]]></itunes:subtitle>
+<enclosure url="HTTPS://EXAMPLE.COM/226.OGG" length="12" type="video/mp4"/>
+<media:group><media:content duration="2147483" type="application/json" fileSize="4294967296" url="https://xn--caf-dma.example/café/179.amr" medium="image"/><media:content fileSize="&#1634;&#1632;&#1632;&#1632;&#1632;" isDefault="false" duration="59" medium='Audio' type="text/plain" url="http://example.org/café/40.mpga?dl=1.0"/><media:content fileSize="-0" duration='2147484' isDefault="true" type=""/></media:group>
+<media:description type="html">&lt;p&gt;&amp;copy;&lt;/p></media:description>
+<podcast:transcript url='' type="Application/JSON" language="en"/><podcast:transcript url="" type="application/srt" language="en"/>
+<x:foo xmlns:x="urn:x"><title>Nested title</title></x:foo></item></channel></rss>

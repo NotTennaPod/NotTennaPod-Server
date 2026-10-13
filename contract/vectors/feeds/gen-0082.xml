@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="US-ASCII"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><atom:link type="application/atom+xml" href="https://example.com/feed?page=2" rel="hub"/><image><url></url></image><link>https://example.com</link><language>en</language><atom:link title="" rel="first" href="https://example.com/alt.xml" type='application/atom+xml'/><itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">A, B</itunes:author><atom:link length="20000" rel="archives" href="https://example.com/" title="MP3 feed"/><title><![CDATA[a=b&c=d]]></title><item><title>
+&#60;a href="https://example.com/x?a=1&amp;amp;b=2"&gt;{json: 1}&lt;/a&gt;  &lt;div>a
+  b&lt;/div>&#13;
+</title>
+<guid isPermaLink='true'>dup</guid>
+<link> https://e.com/x </link>
+<pubDate>Sat, 09 November 2002 09:09:40 +1400</pubDate>
+<description><![CDATA[aa]]>&lt;img>{json: 1}&#x3C;br&gt;</description>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"></content:encoded>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[<img><div>#hash</div>aa]]></itunes:summary>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" "/>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">96:19</itunes:duration>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Item author</itunes:author>
+<enclosure url="" length="9223372036854775807" type="AUDIO/MPEG"/></item><item><podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/><pubDate>tue, 15 May 2136 07:29:01 +0945</pubDate><description>&lt;br />&#x3C;div&gt;&lt;/div>	&#1513;&#x5DC;&#1493;&#1501;</description><enclosure url='' length="-0" type="video/x-matroska"/><sc:chapters version="1.2"><sc:chapter image="https://example.com/ch.png" start="1772" href="https://example.com/ch" title='&#128512;'/><sc:chapter href='https://example.com/ch' title="&lt;b>x&lt;/b>" start="00:30"/><sc:chapter title="&lt;b>x&lt;/b>" start="7905" href="" image="https://example.com/ch.png"/><sc:chapter href="" title="" image='https://example.com/ch.png' start="54:46"/></sc:chapters><enclosure url="HTTPS://EXAMPLE.COM/ep232.xyz?auth=yes" length='abc' type="image/jpeg"/><link></link><enclosure url="https://xn--caf-dma.example/e p82.mpga" length="-16384" type="video/mp4"/><title>
+&#38;helli<![CDATA[p; &unknown;	]]></title><guid>https://example.com/item/50090</guid></item><item><pubDate>04 November 75 17:03 -0000</pubDate>
+<description></description>
+<googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+<guid>https://example.com/item/16178</guid>
+<enclosure url='' length="20000 " type="application/json"/>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">24:11</itunes:duration>
+<title><![CDATA[Episode 12  tab	here  <big>&#0;</big>]]></title>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"></content:encoded></item><item><enclosure url="https://cdn.example.com/caf&#233;/338.opus" length="-9223372036854775808" type="audio"/><description></description><enclosure url="" length="" type="audio"/><enclosure url="https://example.com/a.b/ep37.aac" length="9007199254740993" type=""/><itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Item author</itunes:author><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">30:</itunes:duration><title>back\slash    spaced  </title><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">  multi
+line  Folge 36: &#220;ber alles  &#60;3 &lt;3	</itunes:subtitle><link></link><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&#x3C;p>"quoted&quot;&lt;/p>
+&amp;mdash;&#13;
+&amp;lt;b&#x26;gt; 100%&#x3C;p>&quot;quoted"&#60;/p>aaaaaaaaaaaa cr&#13;lf</content:encoded><pubDate>Foo, Fri, 18 Nov 1983 11:08:23 -1200</pubDate></item><item><title>&amp;nbsp<![CDATA[; <3 <3]]></title>
+  <pubDate>Samstag 26 Aug 1972 00:53:41 GMT+0100 (GMT+01:00)</pubDate>
+  <description><![CDATA[<div>&#xD800;</div><p>tab	here</p><br></br><div>&lt;b&gt;escaped&lt;/b&gt;</div><p></p>]]></description>
+  <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[&#x1F600;]]></itunes:subtitle>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href='https://example.com/ep.jpg'/>
+  <enclosure url="HTTPS://EXAMPLE.COM/182.txt" length='18446744073709551616' type="audio/mpeg; charset=binary"></enclosure></item><item><title>Episode 2<![CDATA[37]]></title> <link></link> <pubDate>Sun, 30 Mar 2004 1</pubDate> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" "/> <enclosure url="//example.com/a/b/c138.m4b?a=1&amp;b=2" length="-9223372036854775808" type="audio/aac"/> <enclosure url="ftp://files.example.com/e p46.pdf" length="0x4E20" type="audio/flac"/> <sc:chapters version="1.2"><sc:chapter start="0x10:00" title="&#128512;"/></sc:chapters></item><item><title><![CDATA[	&nbsp;  <b>Episode 617  ]]></title><guid isPermaLink="false">Caf&#233;-guid</guid><pubDate>16 Sep 0001 21:56:21 -0000</pubDate><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">4711.550</itunes:duration><enclosure url=" https://user:pass@media.example.net/e p55.amr " length="+20000" type="video/x-matroska"/></item><item><guid isPermaLink="false">dup</guid>
+<enclosure url="https://xn--caf-dma.example/ep237.3gp?dl=1.0" length="00020000" type="application/octet-stream"/>
+<pubDate>
+2014-04-26+25:00  </pubDate>
+<link></link>
+<description><![CDATA[ &#169;e&#769;]]></description>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">127:15</itunes:duration>
+<enclosure url="HTTPS://EXAMPLE.COM/e p348.aspx" length="12" type="audio/mpeg; charset=binary"/>
+<enclosure url="https://example.com/a.b/caf&#233;/155.m4v" length="-0" type="unknown"/></item></channel></rss>

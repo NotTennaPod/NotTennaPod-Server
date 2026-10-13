@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters">
+  <author><name>  Bob  </name></author>
+<author><name>Ann</name><email>a@example.com</email></author>
+<subtitle>  &amp;Lt;&#x3C;p>&amp;#;&#60;/p>ééé  &#38;copy;&#60;hr/></subtitle>
+<id></id>
+<media:thumbnail url="https://example.com/amt.jpg"/>
+<author><name>Émile</name><email>a@example.com</email></author>
+<title type='text'>{json: 1} &lt;tt>cr&#13;lf&#x3C;/tt></title>
+<entry><media:content duration="2147483648" medium="video" type="audio/x-m4a" fileSize="9007199254740992"/>
+<id>
+id
+</id>
+<updated>17 Sep 16 22:59 +0000</updated>
+<title type="html">&#x3C;ol&gt;&#60;li&gt;x&lt;y&lt;/li&gt;&lt;/ol></title>
+<published>  21 Feb 1979 17:13:07 +0945
+</published>
+<link rel="enclosure" title='Alternate'/>
+<link href='https://example.com/pay' title="MP3 feed" type="application/xhtml+xml"/></entry>
+<entry><id> raw </id>
+<itunes:image href=""/>
+<itunes:duration>::</itunes:duration>
+<link title="Alternate" href="https://example.com/alt.xml" type="text/html" rel="alternate"/>
+<title type="HTML">&amp;#;</title>
+<author><name>Entry author</name></author>
+<summary>&#x3C;li&gt;שלו&#x5DD;&lt;/li>&lt;li&gt;&amp;lt;b&amp;gt;&#60;/li&gt;&#x3C;br></summary></entry>
+<entry><title type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">[x]
+100%
+&amp;euro;</div></title>
+  <id> raw </id>
+  <itunes:duration>4596.360</itunes:duration>
+  <summary type="HTML">a</summary>
+  <author><name>Entry author</name></author>
+  <link rel="self" title="MP3 feed" type="text/html" href="https://example.com/"/>
+  <link length="abc" href="https://example.com:8443/e p13.ts" rel="next" title=""/>
+  <link href="https://example.com/pay" rel="hub" title="" length="abc" type="application/xhtml+xml"/>
+  <content type="html"><![CDATA[<p>&lt</p><br><li>&#169;</li>]]></content></entry> </feed>

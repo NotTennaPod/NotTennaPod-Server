@@ -1,0 +1,61 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:subtitle>  padded  &#1605;رحباback\slash</itunes:subtitle>
+<title><![CDATA[&amp;amp;<font color="red">&euro;</font>S01E632]]></title>
+<atom:link length='abc' href="" rel="Next" title="Café"/>
+<atom:link href='' rel="payment" length="20000" type="text/html"></atom:link>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<media:thumbnail/>
+<description><![CDATA[<hr>ééé<img src="x.png"> trailing ééé<p>Episode 12</p>aaaaaa<p>trailing </p>]]></description>
+<image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+<atom:link href="https://example.com/feed?page=2" title="MP3 feed" rel="self" type='application/xml+xhtml'/>
+<language></language>
+<atom:link type='application/rss+xml' length="12" rel="related" href=""/>
+<item><title>مرحبا100%</title>
+  <guid isPermaLink="true"></guid>
+  <description><![CDATA[<p>{json: 1}</p>שלום<div>100%</div><p>&apos;a&apos;</p>😀😀😀😀	sep
+&quot;q&quot;&lt;b&gt;escaped&lt;/b&gt;<br>]]></description>
+  <itunes:duration>28:28</itunes:duration>
+  <enclosure url="https://user:pass@media.example.net/ep35.wav" length="52428800" type="image/jpeg"/>
+  <enclosure url="http://example.org/a/b/c86.ts" length='20000 ' type="Audio/MPEG"/>
+  <enclosure url="https://cdn.example.com/dir.with.dots/ep114.MP3" length="00020000" type="x-audio/mpeg"/>
+  <media:content isDefault='1' fileSize='0x4E20' duration="1" type="video/webm"/>
+  <media:content fileSize="9223372036854775808" duration="" type="application/ogg" url="//example.com/a/b/c356.torrent" isDefault='1'/></item>
+<item><itunes:duration>12:34:56.789</itunes:duration>
+<link>https://example.com/ep</link>
+<guid> </guid>
+<pubDate>Tue,   23   Oct   1973 02:49:10 -1200</pubDate>
+<itunes:subtitle>第210&#38598; &#x26;Lt; &amp;amp;amp;</itunes:subtitle>
+<title>
+&#x26;amp  </title>
+<media:group><media:content duration="0060" fileSize="16383" isDefault="TRUE" url="https://xn--caf-dma.example/a/b/c354.m4b#t=10" type="" medium="audio"/><media:content type="video/mp4" fileSize="1" duration="1"/></media:group></item>
+<item><dc:date>Tue Dec 33 05:57:08 1976</dc:date>
+<pubDate>Mon, 21 Mar 1988 20:48:40 CEST</pubDate>
+<enclosure url="https://xn--caf-dma.example/dir.with.dots/ep139.oga" length="123456789012345678" type="video"/>
+<title>&#13;
+&amp;mdash;  
+</title>
+<content:encoded>&lt;div&gt;100%&lt;/div>&lt;br&gt;&#60;/br&gt;&#xA0;&amp;unknown;&lt;p&gt;plain words&lt;/p&gt;😀😀</content:encoded>
+<itunes:duration>813.922</itunes:duration>
+<psc:chapters version='1.2'><psc:chapter start="02:52:09.680" image="https://example.com/ch.png"></psc:chapter></psc:chapters>
+<itunes:image href=""/>
+<itunes:subtitle><![CDATA[#357 – Interview  {json: 1}  第683集]]></itunes:subtitle></item>
+<item><title>S01E55  &#x26;amp;amp;  café</title>
+  <guid isPermaLink="true"></guid>
+  <link> https://e.com/x </link>
+  <pubDate>Montag, 30 May 2536 16:55:41 +0100</pubDate>
+  <itunes:duration>9946</itunes:duration>
+  <enclosure url="HTTPS://EXAMPLE.COM/café/53.wav" length="2147483647" type="audio/wav"/>
+  <enclosure length='18446744073709551616' type="video/webm"/>
+  <enclosure url="https://example.com/a.b/dir.with.dots/ep229.aac?auth=yes" length="0" type='audio/mp4'/>
+  <media:content type='audio/mpeg' duration="1.5" isDefault="1" fileSize="16384" url="HTTPS://EXAMPLE.COM/dir.with.dots/ep67.m4b"/>
+  <media:content type="application/x-bittorrent" duration="2147483648" medium="video" fileSize="18446744073709551616" url="https://example.com:8443/e p16.mp4"/>
+  <media:content isDefault="1" type="text/plain" fileSize="0" duration=" 60"/></item>
+<item><itunes:duration>62:03</itunes:duration> <pubDate>1900/05/26T07:06:33</pubDate> <enclosure url='https://xn--caf-dma.example/11.xyz' length="4294967296" type="audio/x-wav"/> <guid isPermaLink="false"> </guid> <title><![CDATA[<cite>&#169;</cite>]]></title></item>
+<item><title>&#13;
+back\slash&#x26;;a &#x3C; b	</title>
+<guid>a&#38;b</guid>
+<pubDate>Saturday, 06 Jul 68 10:36 -1200</pubDate>
+<description><![CDATA[😀😀]]></description>
+<enclosure url="https://user:pass@media.example.net/dir.with.dots/ep187.m4a" length='16385' type="application/x-bittorrent"/></item></channel>
+  </rss>

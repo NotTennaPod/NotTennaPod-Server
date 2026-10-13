@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><atom:link type="" href='https://cdn.example.com/e p297.m4a' rel=''/>
+<title>sep
+a
+  b</title>
+<atom:link title='Café' type="application/atom+xml" href="https://example.com/pay" rel="alternate"/>
+<atom:link rel="next" type="application/rss+xml" length="12"/>
+<atom:link rel="last" type="application/xml+xhtml" title="Alternate" length="12"></atom:link>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<pi:chapters url="https://example.com/feed-chapters.json"/>
+<link></link>
+<description></description>
+<itunes:summary>&#13;
+&amp;#;</itunes:summary>
+<item><guid>https://example.com/item/12580</guid><link> https://e.com/x </link><pubDate>1950-08-09T00:36:12 -</pubDate><description><![CDATA[&#;<br><li>&apos;a&apos;</li>]]></description><itunes:subtitle>
+a
+  b 'single&apos;&#13;
+</itunes:subtitle><enclosure url="https://cdn.example.com/a/b/c33.pdf" length="abc" type="audio/"></enclosure><enclosure url="https://example.com:8443/café/262.mp4" length="٢٠٠٠٠" type="Audio/MPEG"></enclosure><enclosure url="https://example.com/a.b/a/b/c123.m4v" length="abc" type="audio/flac"/><media:content duration="abc" type="unknown" medium='image' fileSize="52428800" url='http://example.org/e p381.ts?dl=1.0'/><media:description type="plain">&#13;
+tab	here&#x1F600;😀&lt;p>x&#60;y&#x3C;/p></media:description><itunes:category text="Arts"><itunes:category text="Design"/></itunes:category></item>
+<item><title> &amp;quot;q&#38;quot;  </title>
+<link>https://example.com/ep</link>
+<pubDate>  1950-07-07T13:22:49.gmt	</pubDate>
+<description><![CDATA[<p> <]]>/p>&#60;div>café&#60;/div&gt;茶&#60;br></description>
+<itunes:subtitle>&amp;mdash; café</itunes:subtitle>
+<itunes:duration>1:07:23</itunes:duration>
+<enclosure url="//example.com/café/168.html" length=' 20000' type="text/html"/></item></channel></rss>

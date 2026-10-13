@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- generated -->
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters">
+  <channel><podcast:funding url="https://example.com/donate">  spaced  </podcast:funding> <description>&lt;div>&amp;#65;&#38;#66;&#60;/div&gt;</description> <language></language> <title>&amp;lt;b&amp;gt;
+&lt;h6&gt;R&amp;D&lt;/h6&gt;
+  spaced  </title> <item><title><![CDATA[tr]]>ailing </title><guid isPermaLink="true"></guid><pubDate>Sun, 23 Jun 2013 08:05:00</pubDate><description><![CDATA[&#x1F600;<br>]]></description><enclosure url="http://example.org/a/b/c5.oga" length="16383" type='video/mp4'/><media:content fileSize="00020000" duration="3600" medium="image" type=" audio/mpeg" isDefault="1"></media:content><media:thumbnail url=""/></item> <item><pubDate>
+2002-11-21T02:33:56x	</pubDate><media:content type="application/octet-stream" url="https://user:pass@media.example.net/café/75.OGG" medium="Audio" duration="59" fileSize="0" isDefault='1'/><enclosure length="1,000,000" type="audio/mpeg; charset=binary"/><media:content fileSize='16385' duration="2147483" url="//example.com/e p12.Mp4" type="AUDIO/MPEG" medium='document'/><podcast:socialInteract uri="" protocol="activitypub"/><description>aaaaaa > b&#60;br&gt;&#233;&#233;é</description><guid isPermaLink="false">https://example.com/item/22099</guid><link> https://e.com/x </link></item> <item><description> &#38;<![CDATA[AMP;]]></description><enclosure length="9007199254740991" type="application/octet-stream"></enclosure><guid isPermaLink="true">
+</guid><title>&amp;#x;</title><pubDate>Monday, 01 Oct 1979 04:32:20</pubDate><link> https://e.com/x </link></item> <item><title><![CDATA[#222 – I]]>nterview&#60;sup>[x]&lt;/sup>&#38;euro;</title>
+<link></link>
+<description> http://ex<![CDATA[ample.com/?a=1&b=2<br />  http://example.com/?a=1&b=2]]></description>
+<guid>dup</guid>
+<pubDate>2003-08-20+0945</pubDate></item></channel> </rss>

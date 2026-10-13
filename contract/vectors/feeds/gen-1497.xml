@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en"><author><name>C&#38;D</name></author>
+<link length="9223372036854775808" rel="hub" type="audio/mpeg" title="Alternate" href="https://example.com/pay"/>
+<author><name>C&#x26;D</name></author>
+<updated>&#13;
+0099-07-23T02:05:13+0200	</updated>
+<link href="http://example.org/café/243.wma" type="text/html" title="" length="20000" rel=""/>
+<subtitle type="text">&lt;div&gt;Tom &amp; Jerry &lt;3&lt;/div>éééx&#x3C;y</subtitle>
+<id>https://example.com/feed</id>
+<logo>https://example.com/logo.png</logo>
+<title type="text">&amp;AMP;  &#38;#65;&#38;#66;</title>
+<entry><id> raw </id> <published>Thu Mar 15 11:32:45 1979</published> <title>&#38;copy; &amp;Lt; Tom &#38;amp; Jerry &amp;lt;3</title> <summary type='HTML'>&#x3C;img src="x" alt="y"/&gt;&lt;hr/&gt;ééé</summary> <link rel="first" href="https://example.com/" title="Alternate" length="9223372036854775808"></link> <media:content medium="audio" type="image/*" duration="0" fileSize="-9223372036854775808" isDefault="false"/> <link rel="payment" href="//example.com/ep310.ogg" title="Alternate" type="application/xhtml+xml" length="12"/></entry>
+</feed>

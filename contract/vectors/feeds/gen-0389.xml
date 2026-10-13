@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<media:thumbnail url="https://example.com/amt.jpg"/>
+<title type="HTML">&#13;
+&#x26;AMP;  &amp;copy; </title>
+<link length="9223372036854775808" rel="self" title="Café" type=""/>
+<id> raw </id>
+<author><name>  Bob  </name></author>
+<link rel='enclosure' href="https://example.com/a.b/dir.with.dots/ep242.ogx" type="text/html" title="Café"/>
+</feed>

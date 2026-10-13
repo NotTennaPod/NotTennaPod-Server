@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="latin1" standalone="yes"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><link xmlns="http://www.w3.org/2005/Atom" rel='payment' title="" href="https://example.com/" type="audio/mpeg"/>
+<description>
+R&#x26;D&#x26;Lt;</description>
+<title><![CDATA[&a]]>pos;a&#38;apos;</title>
+<link> https://example.com/ </link>
+<item><title><![CDATA[&#1513;&#1500;&#1493;&#1501;]]></title>
+  <guid isPermaLink='true'>
+</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>Tue, 08 Mar 1988 08:15:06 +0200 </pubDate>
+  <description>#hash&#60;br></description>
+  <enclosure url="//example.com/café/69.mpga" length="&#1634;&#1632;&#1632;&#1632;&#1632;" type="text/html"/>
+  <enclosure url="" length="-16384" type="image/*"/>
+  <enclosure url='https://xn--caf-dma.example/ep1.php' length="18446744073709551616" type="audio/aac"></enclosure></item>
+<item><description><![CDATA[<p>café</p>]]></description><pubDate>Donnerstag,  Fri May 1 06:59:31 2015</pubDate><pc:chapters version="1.2"><pc:chapter start="5585" image="https://example.com/ch.png"/><pc:chapter href="" start="00:30"/><pc:chapter start="03:16:11" image="https://example.com/ch.png" title="Café &amp;amp; more"/><pc:chapter start='7410' title='Intro' href="" image="https://example.com/ch.png"/></pc:chapters><enclosure length="123456" type='audio/*'></enclosure><title>&lt;u&gt;cr&#13;lf&#60;/u&gt;</title><link></link><media:description xmlns:media="http://search.yahoo.com/mrss/" type="html">a&#13;
+ba &lt; bcr&#13;lf&#60;br&gt;&#128512;&#128512;&#128512;&#60;img src=&quot;x.png&quot;&gt;  &#38;&lt;hr&gt;aa</media:description></item>
+<item><enclosure url="https://user:pass@media.example.net/e p247.m4a#t=10" length="9223372036854775808" type="audio/flac"/>
+  <pubDate>Thursday, 01 Jul 1993 19:15</pubDate>
+  <link></link>
+  <description> &#33590;	café&lt;br&gt;&lt;/br> &amp;AMP; &amp;unknown;&#128512;&#128512;&#128512;&#128512;&#x3C;p>tab	here&#60;/p&gt;&#38;#0;&#x3C;br&gt;</description>
+  <guid> </guid>
+  <title><![CDATA[&quot;q&quot;  &AMP;]]></title></item></channel>
+</rss>

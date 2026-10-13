@@ -1,0 +1,19 @@
+<rss xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:at="http://www.w3.org/2005/Atom"> <channel><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[&#128512; <s>שלום</s> Tom & Jerry <3]]></itunes:subtitle>
+<podcast:funding url="https://example.com/donate">&#60;b>x&lt;/b&gt;</podcast:funding>
+<image><url></url><title>Image title</title><link>https://example.com/img-link</link></image>
+<atom:link title="MP3 feed" rel="payment" href=''/>
+<itunes:owner xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:name xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Owner</itunes:name><itunes:email xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">o@example.com</itunes:email></itunes:owner>
+<atom:link type="application/rss+xml" rel="archives" href="https://example.com/" title=""/>
+<podcast:funding url="https://example.com/donate">&lt;b>x&lt;/b&gt;</podcast:funding>
+<link></link>
+<podcast:funding url="https://example.com/donate">  spaced  </podcast:funding>
+<title>&#x3C;b&gt;tab	here&#60;/b&gt; a &gt; b</title>
+<!-- comment --><?pi data?>
+<item><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">cr&#13;lfsep</itunes:subtitle>
+<guid isPermaLink="true">  spaced guid  </guid>
+<pubDate>17 Sep 16 22:59 +0000</pubDate>
+<title>😀 x&lt;y</title>
+<description><![CDATA[  plain wordsa > b<br>]]></description></item>
+<item><title><![CDATA[S01E716
+<P> </P>]]></title><guid isPermaLink="false"> </guid><link>https://example.com/ep</link><pubDate>x, 	01 Nov 24 10:36 +0530</pubDate><description></description><enclosure length=" 20000" type="video/quicktime"/><media:content xmlns:media="http://search.yahoo.com/mrss/" type="text/plain" medium='Audio' duration="+60" fileSize=" 20000" isDefault="1"/><podcast:chapters url="" type='application/json+chapters'/><podcast:transcript url="" type="Application/JSON" language="en"/><podcast:transcript type="application/srr"/></item></channel>
+  </rss>

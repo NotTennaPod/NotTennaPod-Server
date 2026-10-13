@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- generated -->
+<!DOCTYPE rss [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><itunesu:subtitle><![CDATA[<section>&#xD800;</section>#777 – Interview<i>שלום</i>]]></itunesu:subtitle>
+<itunesu:author>Caf&#xE9; Radio</itunesu:author>
+<link>https://example.com</link>
+<podcast:funding url="">  spaced  </podcast:funding>
+<itunesu:image href="https://example.com/it.jpg"/>
+<itunesu:summary><![CDATA[ &lt;b&gt;	&#xA9;<p/>AT&T<br>aaaaaaa]]></itunesu:summary>
+<itunesu:owner><itunesu:name>Owner</itunesu:name><itunesu:email>o@example.com</itunesu:email></itunesu:owner>
+<atom:link title="MP3 feed" rel="next" type=""/>
+<language>pt-BR</language>
+<description>&#x3C;img&gt; &amp;amp;</description>
+<item><title>&#x26;lt<![CDATA[;b&gt;  <u>AT&T</u>  ​]]></title> <itunesu:image href=""/> <psc:chapters><psc:chapter href="" start="03:15:09.369" title='Intro'/><psc:chapter title="Intro" start="35:47" href=''/><psc:chapter image="https://example.com/ch.png" href="https://example.com/ch" title="" start="4:03"/><psc:chapter start="12:34:56" href="https://example.com/ch" title="😀" image="https://example.com/ch.png"/></psc:chapters> <itunesu:summary><![CDATA[ leading<br>]]></itunesu:summary> <media:thumbnail url="https://example.com/th.jpg"/> <media:group><media:content duration="01:00" type="image/*" isDefault="false" medium="image" fileSize=" 20000"/></media:group> <pubDate>Foo, 2024-07-03T22:31:31Z</pubDate> <content:encoded>Line&#60;br&gt;break&lt;br&gt;</content:encoded> <link> https://e.com/x </link> <guid isPermaLink="true"></guid> <description><![CDATA[<p></p><div>&hellip;</div> &euro;]]></description></item>
+<item><description>&#60;hr></description>
+<enclosure url="ftp://files.example.com/a/b/c181.ts" length="0" type="audio"/>
+<title><![CDATA[&amp]]></title>
+<itunesu:duration>90 min</itunesu:duration>
+<link>https://example.com/ep</link>
+<pubDate>1988-07-07T09:41:37Pacific Daylight Time</pubDate></item></channel>
+</rss>

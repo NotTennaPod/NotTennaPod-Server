@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters">
+<author><name>Ann</name></author>
+  <link title='' href="https://example.com/alt.xml"/>
+  <id></id>
+  <icon></icon>
+  <author><name></name></author>
+  <subtitle type="plain">&#x3C;hr/&gt;</subtitle>
+  <updated>Thu Jun 20 11:29:05 2002</updated>
+  <title type="html">​ Tom &amp;amp; Jerry <![CDATA[&lt;3]]></title>
+  <itunes:summary>&#60;p>&amp;copy;&#60;/p&gt;&#60;br/>  a &lt; b&#60;img src="x.png"> cover&#60;br&gt;ééé😀😀&#60;p>&amp;#xA9;&lt;/p>&lt;hr/&gt;</itunes:summary>
+  <itunes:image href=""/>
+  <author><name>Ann</name></author>
+  <entry><id>tag:x,2020:1</id> <title type="html">&amp;apos;a&amp;apos;</title> <link href="https://example.com/alt.xml" rel="" title="Café" type="application/xhtml+xml"/> <published>&#xE9;t&#233;, Mon Dec 20 03:18:38 1993</published> <content type="html"><![CDATA[ 茶😀]]></content> <link href='https://example.com/pay' rel="self" title='' type="text/html"/> <updated>2538-04-15T19:52:55 </updated> <link rel='Next' title="" href='' type='application/xml+xhtml'/> <dc:date>Tue 25 Sep 2001 03:31:49 GMT+0945 (GMT-05:00)</dc:date> <author><name>Entry author</name></author> <media:content medium="Audio" url="https://cdn.example.com/ep298.webm" fileSize='+20000' isDefault="1" type="video" duration="abc"/></entry>
+  <entry><id>
+id
+</id> <itunes:image href="https://example.com/e.jpg"/> <author><name>Entry author</name></author> <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;3 &#60;3</div></title></entry>
+  <entry><updated>1989-11-27T16:00:20BST</updated><title>&#x26;#0;</title><dc:date>Sat, 29 July 0001 07:10 -1200</dc:date><link title="MP3 feed" rel="archives" href="https://example.com/"/><id></id></entry>
+  <entry><link length="12" type="text/html" title='MP3 feed'/><published>Saturday, 30 Jun 1900 04:52:12 -0500</published><title><![CDATA[&amp;<p><p><p>Para</p></p></p>&#;]]></title><id>
+id
+</id><updated>
+Wednesday, 09 Jan 2013 09:53:50 UTC+01:00  </updated></entry> </feed>

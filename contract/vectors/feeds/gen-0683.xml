@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters">
+<link rel="Next" title="Café" href="" type="application/xhtml+xml"/>
+<itunes:image href=""/>
+<title type="plain">e&#x301;</title>
+<id>https://example.com/feed</id>
+<link type="application/xml+xhtml" length="20000" rel="archives" href=''/>
+<entry><published>Thu, 03 Aug 69 11:47:19 +0945</published>
+  <title type="HTML"><![CDATA[<label>&nbsp;</label>
+a < b]]></title>
+  <summary type="xhtml">&lt;img src="x" alt="y"/> plain words&#60;div&gt;a
+  b&#x3C;/div&gt;</summary>
+  <id> raw </id></entry></feed>

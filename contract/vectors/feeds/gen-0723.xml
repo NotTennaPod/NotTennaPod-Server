@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <id>https://example.com/feed</id><icon></icon><itunes:summary>  &#38;#169;aaaaaaaa&lt;br>&lt;p&gt;&#60;p&gt;Para&#x3C;/p>&lt;/p&gt;&lt;p>&#38;#65;&amp;#66;&lt;/p></itunes:summary><title type="html">trailing   &#x26;lt;b&#x26;gt;  back\slash</title><entry><id>tag:x,2020:1</id> <summary><![CDATA[<br ]]>/&gt;</summary> <link type="audio/mpeg" length="12" href='https://example.com/pay' rel="self"/> <content type="plain"><![CDATA[<br /><br></br><br>]]></content> <itunes:duration>::</itunes:duration> <title type="html">&amp;copy;  a
+  b  back\slash</title> <updated>Tue, 13 Nov 77 10:06:51 -0800</updated></entry><entry><link type="audio/mpeg" title="" rel="alternate"/>
+<link title="Café" rel="last" type="audio/mpeg" href="https://example.com/alt.xml" length="9223372036854775808"/>
+<itunes:duration></itunes:duration>
+<title type="xhtml">a > b
+#hash
+é</title>
+<updated>Donnerstag,  1989-03-23</updated>
+<author><name>Entry author</name></author>
+<link title="Alternate" length="20000" rel="archives" type="text/html" href="https://example.com/alt.xml"/>
+<itunes:image href="https://example.com/e.jpg"/></entry><entry><author><name>Entry author</name></author>
+<updated>1990-02-04T13:10:40.944Z</updated>
+<updated>SATURDAY, 14 Jul 0001 18:47:30 -0500</updated>
+<link type="application/xml+xhtml" rel='first' length="9223372036854775808" href="https://example.com/alt.xml"/>
+<title>Line&lt;br&gt;break ​  </title>
+<id>
+id
+</id>
+<link href='https://user:pass@media.example.net/e p327.avi' rel="hub"/>
+<link rel='self' length="9223372036854775808" type="" href="https://example.com/alt.xml" title=""/></entry><entry><link type="application/rss+xml" href="" rel="hub" title="Alternate" length="20000"/><link rel="enclosure" href="https://example.com/feed?page=2" title="" type=""/><summary type="plain">é&#233;éaa</summary><link href="https://cdn.example.com/dir.with.dots/ep118.mp3.zip#t=10" rel="alternate" type='application/atom+xml' title="Café"></link><itunes:duration>.5</itunes:duration><id> raw </id><title type="HTML">	&amp;copy; &lt;p&gt;café	</title><itunes:image href=""/><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.vtt" type='text/html'></podcast:transcript></entry><entry><link type="audio/mpeg" rel="last" href="https://example.com/pay" length="20000" title="MP3 feed"/>
+<title type="plain"><![CDATA[&lt;b&gt;]]></title></entry><entry><published>2156-06-12T23:31:09.564 -0500</published> <updated>Sun, 06 Mar 1994 13:10:55 MSK</updated> <summary type="text">
+  spaced  &lt;div&gt;&#38;euro;&lt;/div&gt;x&#60;y	1 &lt;2&lt;p>&lt;/p&gt;</summary> <content><![CDATA[ &#x1F600;<div>"quoted"</div>
+&]]>Lt;</content> <title type="HTML">&amp;#x1F600;&amp;amp;amp;</title></entry><entry><id>tag:x,2020:1</id> <title type="xhtml">&amp;#xD800;</title> <published>1986-09-10T17:45:52CET</published> <updated>1981-12-26T05:45:02Z</updated></entry><entry><itunes:image href=""/>
+  <id> raw </id>
+  <published>Mon, 23 Jul 2192 12:29 BST</published>
+  <title type="html"><![CDATA[&#x1F600; a > b &hellip;]]></title>
+  <link length="12" rel="alternate" href="https://example.com/" title="Café"/>
+  <link rel="self" title="MP3 feed"/>
+  <updated>Tuesday, 30 Jul 1981 12:41</updated></entry>
+  </feed>

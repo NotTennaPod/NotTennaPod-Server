@@ -1,0 +1,221 @@
+{
+ "cases": [
+  {
+   "fixture": "internal/importer/androiddb/testdata/android-3.12.1/first-journey-downloaded.db",
+   "format": "nottennapod-import-android-v1",
+   "ignored": {
+    "dropped_favorite_rows": [],
+    "dropped_queue_rows": [],
+    "extra_media": [],
+    "orphan_items": [],
+    "orphan_media": []
+   },
+   "podcasts": [
+    {
+     "creating_feed_id": 1,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": {
+        "history": 1789251404017,
+        "last_played": 1789251404017,
+        "played_ms": 33930,
+        "source_item_id": 1,
+        "source_media_id": 1
+       },
+       "duration_ms": 30040,
+       "favorite": false,
+       "history": 1789251404017,
+       "identity": {
+        "k": "rss-guid",
+        "v": "parity-episode-2"
+       },
+       "inbox": false,
+       "play_state": "played",
+       "position_ms": 3883,
+       "queued": true,
+       "source_item_ids": [
+        1
+       ],
+       "state_item_id": 1,
+       "title": "Second episode: queue and resume",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 30000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "parity-episode-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        2
+       ],
+       "state_item_id": 2,
+       "title": "First episode: a short introduction",
+       "units": []
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "global",
+     "normalized_url": "http://127.0.0.1:18765/feed.xml",
+     "populated": true,
+     "properties_feed_id": 1,
+     "source_feed_ids": [
+      1
+     ],
+     "state": "subscribed",
+     "title": "Parity Listening Lab",
+     "url": "http://127.0.0.1:18765/feed.xml"
+    }
+   ],
+   "queue": [
+    1
+   ],
+   "result": {
+    "ambiguous": [],
+    "imported": {
+     "episodes": 2,
+     "favorites": 0,
+     "history": 1,
+     "inbox": 0,
+     "podcasts": 1,
+     "queue": 1
+    },
+    "merged": [],
+    "skipped": []
+   },
+   "sha256": "6fde464f7bb949bf3440701c112bf60a801c3e199d105b96a4c10271602ed376",
+   "statistics": {
+    "android": {
+     "monthly": [
+      {
+       "month": 9,
+       "played_ms": 33930,
+       "year": 2026
+      }
+     ],
+     "per_feed": [
+      {
+       "episodes": 2,
+       "episodes_started": 1,
+       "episodes_started_marked": 1,
+       "feed_id": 1,
+       "played_marked_ms": 33930,
+       "played_ms": 33930,
+       "total_ms": 60040
+      }
+     ],
+     "per_podcast": [
+      {
+       "creating_feed_id": 1,
+       "episodes": 2,
+       "episodes_started": 1,
+       "episodes_started_marked": 1,
+       "played_marked_ms": 33930,
+       "played_ms": 33930,
+       "total_ms": 60040
+      }
+     ],
+     "windows": [
+      {
+       "from": 0,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 33930
+        }
+       ],
+       "to": null
+      },
+      {
+       "from": 1788220800000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 33930
+        }
+       ],
+       "to": null
+      },
+      {
+       "from": 1788220800000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 33930
+        }
+       ],
+       "to": 1790812800000
+      }
+     ]
+    },
+    "causes": [],
+    "expected_differences": [],
+    "mismatches": [],
+    "projection": {
+     "monthly": [
+      {
+       "month": 9,
+       "played_ms": 33930,
+       "year": 2026
+      }
+     ],
+     "per_podcast": [
+      {
+       "creating_feed_id": 1,
+       "episodes": 2,
+       "episodes_started": 1,
+       "episodes_started_marked": 1,
+       "played_marked_ms": 33930,
+       "played_ms": 33930,
+       "total_ms": 60040
+      }
+     ],
+     "windows": [
+      {
+       "from": 0,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 33930
+        }
+       ],
+       "to": null
+      },
+      {
+       "from": 1788220800000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 33930
+        }
+       ],
+       "to": null
+      },
+      {
+       "from": 1788220800000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 33930
+        }
+       ],
+       "to": 1790812800000
+      }
+     ]
+    }
+   },
+   "user_version": 3110000
+  }
+ ],
+ "suite": "import_android"
+}

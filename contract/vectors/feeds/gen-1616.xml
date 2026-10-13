@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<feed xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"><link href="https://example.com/" title="Alternate" length="20000" rel="alternate"/>
+  <subtitle type="HTML">&#x3C;li&gt;  padded  &#x3C;/li&gt; cr&#13;lf</subtitle>
+  <icon>https://example.com/icon.png</icon>
+  <title type="plain"><![CDATA[<b>Bold</b> title]]></title>
+  <author><name></name></author>
+  <author><name>Ann</name></author>
+  <itunes:summary>&#60;div>plain words&lt;/div&gt;&lt;div&gt;&#x26;#128512;&lt;/div> AT&amp;T&#60;br /&gt;&#x3C;div&gt;&#x26;lt;b&amp;gt;&#60;/div></itunes:summary>
+  <author><name></name></author>
+  <logo></logo>
+  <entry><link href="https://example.com/alt.xml" type="audio/mpeg" title='Caf&#233;' length="20000" rel="archives"/> <link href="http://example.org/91.mp3.zip" type="" length='12' rel="self"/> <id>tag:x,2020:1</id> <itunes:image href=""/> <title type='HTML'>&amp;&#31532;15&#38598;Episode 347</title> <link href="https://example.com/pay" title="" type="text/html" rel="Next" length="12"/> <author><name>Entry author</name></author></entry>
+  <entry><podcast:transcript url="https://example.com/t.json" type="application/srt" language="en"/>
+<itunes:duration>149:50</itunes:duration>
+<link rel="Next" href='' title="Caf&#233;" type="text/html"></link>
+<updated>Fri, 19 Jul 2222 12:11 HST</updated>
+<link rel='self' href="https://example.com/feed?page=2" length="12"/>
+<id>urn:uuid:1</id>
+<sc:chapters/>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x26;#; &#x26;#169; &#x3C;p&gt;{json: 1}</div></title>
+<published>2532-10-03T15:21:38.559847881+00:00</published></entry>
+  <entry><title type="HTML"><![CDATA[  <u>"quoted"</u>  ]]></title>
+<link length="12" type="audio/mpeg" rel="" title="MP3 feed"/>
+<media:content duration="01:00" fileSize="9223372036854775807" isDefault="1" url="HTTPS://EXAMPLE.COM/e p216.ogg" type="application/pdf"></media:content>
+<updated> 2114-02-24T11:37:42 (CET)
+</updated>
+<itunes:image href="https://example.com/e.jpg"/>
+<summary></summary>
+<updated>10 Feb 56 22:26:00 +0530</updated></entry></feed>

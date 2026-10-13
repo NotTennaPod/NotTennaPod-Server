@@ -1,0 +1,268 @@
+{
+ "cases": [
+  {
+   "object": {
+    "accepted": [
+     {
+      "fact": {
+       "author_id": "22222222-3333-4444-8555-666666666666",
+       "author_seq": 1,
+       "client_time": 1700000000123,
+       "dependencies": [],
+       "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+       "payload": {
+        "reset_position": true,
+        "title": "Épisode \"1\"\n😀"
+       },
+       "targets": [
+        {
+         "entity": "episode",
+         "generation": "g1:cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+         "id": "e1:abababababababababababababababababababababababababababababababab"
+        }
+       ],
+       "type": "episode.mark_played",
+       "type_version": 1
+      },
+      "receipt": {
+       "content_hash": "22ac5d521cbd628093595565b029cdf33d5201671e094bdedfa02c6bb938f6c2",
+       "epoch": 1,
+       "key_id": "k1",
+       "mac": "fb8ab6ba27bad0652ef1d89a40f9239863b81bb9b81506a0f1dfeeef34cf9dd6",
+       "normalized_time": 1700000000123,
+       "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+       "outcome": "applied",
+       "seq": 42
+      }
+     }
+    ],
+    "decisions": [],
+    "epoch": 1,
+    "records": [
+     {
+      "entity": "episode",
+      "field_group": "play_state",
+      "id": "e1:abababababababababababababababababababababababababababababababab",
+      "provenance": [
+       "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+      ],
+      "value": {
+       "play_state": "played"
+      }
+     }
+    ],
+    "seq": 1,
+    "slots": [
+     {
+      "content_hash": "22ac5d521cbd628093595565b029cdf33d5201671e094bdedfa02c6bb938f6c2",
+      "install_id": "0a0b0c0d-0e0f-4011-8213-141516171819",
+      "install_seq": 1,
+      "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+      "result": "accepted"
+     }
+    ]
+   },
+   "output": "7288b01767e706e93f96d0d1aa1a2a958940edcf5e1060be0e0a439cf3375bb9",
+   "previous": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+   "object": {
+    "accepted": [],
+    "decisions": [],
+    "epoch": 1,
+    "records": [],
+    "seq": 2,
+    "slots": [
+     {
+      "content_hash": "22ac5d521cbd628093595565b029cdf33d5201671e094bdedfa02c6bb938f6c2",
+      "install_id": "0a0b0c0d-0e0f-4011-8213-141516171819",
+      "install_seq": 2,
+      "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+      "result": "duplicate"
+     }
+    ]
+   },
+   "output": "456b09c793e184c99ed3f58749584eec1a73c6a29a03965c0a259d94e183521f",
+   "previous": "7288b01767e706e93f96d0d1aa1a2a958940edcf5e1060be0e0a439cf3375bb9"
+  },
+  {
+   "object": {
+    "accepted": [],
+    "decisions": [],
+    "epoch": 2,
+    "records": [
+     {
+      "entity": "episode",
+      "field_group": "favorite",
+      "id": "e1:abababababababababababababababababababababababababababababababab",
+      "provenance": [
+       "01234567-89ab-4cde-8f01-23456789abcd"
+      ],
+      "tombstone": true
+     }
+    ],
+    "seq": 3,
+    "slots": []
+   },
+   "output": "e8ac7e484da00078bf12a65a72025fb5e311139a799a5b047012c928e95bfc7d",
+   "previous": "456b09c793e184c99ed3f58749584eec1a73c6a29a03965c0a259d94e183521f"
+  },
+  {
+   "object": {
+    "accepted": [],
+    "decisions": [
+     {
+      "decision_id": "01234567-89ab-4cde-8f01-23456789abcd",
+      "decision_type": "queue.layout",
+      "decision_version": 1,
+      "dependencies": [
+       "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+      ],
+      "epoch": 2,
+      "index": 1,
+      "inputs": {
+       "frontier": [
+        "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+       ],
+       "mapping_version": 0,
+       "policy": {
+        "keep_sorted": false,
+        "sort_order": "date_new_old"
+       }
+      },
+      "key_id": "k1",
+      "mac": "e16a97d58159ad78fbcec3fb44be6e0d86b79f1f6d863a6c0788cac2f4103dc9",
+      "normalized_time": 1700000010000,
+      "result": {
+       "members": [
+        {
+         "episode_id": "e1:abababababababababababababababababababababababababababababababab",
+         "generation_id": "g1:cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+         "key": "q1:1:1",
+         "position_id": "00000000-0000-4000-8000-000000000000"
+        }
+       ]
+      },
+      "seq": 4,
+      "subject": "queue"
+     }
+    ],
+    "epoch": 2,
+    "records": [
+     {
+      "entity": "queue",
+      "field_group": "queue_position",
+      "id": "e1:abababababababababababababababababababababababababababababababab",
+      "provenance": [
+       "01234567-89ab-4cde-8f01-23456789abcd"
+      ],
+      "value": {
+       "key": "q1:1:1"
+      }
+     }
+    ],
+    "seq": 4,
+    "slots": []
+   },
+   "output": "f9b8caff76ecbbfee92b527501cd6df7ad722dcbc3cafbe59b29c3ceca157597",
+   "previous": "e8ac7e484da00078bf12a65a72025fb5e311139a799a5b047012c928e95bfc7d"
+  },
+  {
+   "object": {
+    "accepted": {
+     "fact": {
+      "author_id": "22222222-3333-4444-8555-666666666666",
+      "author_seq": 1,
+      "client_time": 1700000000123,
+      "dependencies": [],
+      "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+      "payload": {
+       "reset_position": true,
+       "title": "Épisode \"1\"\n😀"
+      },
+      "targets": [
+       {
+        "entity": "episode",
+        "generation": "g1:cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "id": "e1:abababababababababababababababababababababababababababababababab"
+       }
+      ],
+      "type": "episode.mark_played",
+      "type_version": 1
+     },
+     "receipt": {
+      "content_hash": "22ac5d521cbd628093595565b029cdf33d5201671e094bdedfa02c6bb938f6c2",
+      "epoch": 1,
+      "key_id": "k1",
+      "mac": "fb8ab6ba27bad0652ef1d89a40f9239863b81bb9b81506a0f1dfeeef34cf9dd6",
+      "normalized_time": 1700000000123,
+      "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+      "outcome": "applied",
+      "seq": 42
+     }
+    }
+   },
+   "output": "d7d4758382bd0f9383840e53d05ff5f681d8168725037eff54342bc2050eeb35",
+   "previous": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+   "object": {
+    "decision": {
+     "decision_id": "01234567-89ab-4cde-8f01-23456789abcd",
+     "decision_type": "queue.layout",
+     "decision_version": 1,
+     "dependencies": [
+      "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+     ],
+     "epoch": 2,
+     "index": 1,
+     "inputs": {
+      "frontier": [
+       "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+      ],
+      "mapping_version": 0,
+      "policy": {
+       "keep_sorted": false,
+       "sort_order": "date_new_old"
+      }
+     },
+     "key_id": "k1",
+     "mac": "e16a97d58159ad78fbcec3fb44be6e0d86b79f1f6d863a6c0788cac2f4103dc9",
+     "normalized_time": 1700000010000,
+     "result": {
+      "members": [
+       {
+        "episode_id": "e1:abababababababababababababababababababababababababababababababab",
+        "generation_id": "g1:cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "key": "q1:1:1",
+        "position_id": "00000000-0000-4000-8000-000000000000"
+       }
+      ]
+     },
+     "seq": 4,
+     "subject": "queue"
+    }
+   },
+   "output": "7d049dba7ae742b9f1e991ae4db2dd05171c71f148352b0ba2c918f2ab3977d8",
+   "previous": "d7d4758382bd0f9383840e53d05ff5f681d8168725037eff54342bc2050eeb35"
+  },
+  {
+   "object": {
+    "record": {
+     "entity": "episode",
+     "field_group": "play_state",
+     "id": "e1:abababababababababababababababababababababababababababababababab",
+     "provenance": [
+      "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+     ],
+     "value": {
+      "play_state": "played"
+     }
+    }
+   },
+   "output": "6f0ed714b8076d57095c484afc0b3b3031bd302f3a5ba447e2d768c548ed6054",
+   "previous": "7d049dba7ae742b9f1e991ae4db2dd05171c71f148352b0ba2c918f2ab3977d8"
+  }
+ ],
+ "suite": "digest_chain"
+}

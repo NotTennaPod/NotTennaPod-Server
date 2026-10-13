@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel xmlns:dc="http://purl.org/dc/elements/1.1/"><link> https://example.com/ </link>
+<title>&amp;#xA9; a > b a=b&amp;c=d</title>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" type='' length="9223372036854775808" href=''/>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="first" length="9223372036854775808" type="application/rss+xml" href='https://example.com/feed?page=2' title="MP3 feed"/>
+<description>  cr
+lf</description>
+<podcast:locked>yes</podcast:locked>
+<item><title><![CDATA[&#xD800;Episode 717]]></title> <guid isPermaLink="false"></guid> <link>https://example.com/ep</link> <pubDate>2365-03-17T11:54:00.745 -0800</pubDate> <description> {json: 1}&lt;br>&#x3C;/br&gt;</description> <enclosure length="" type='video/x-matroska'/> <podcast:transcript url="https://example.com/t.json" type="application/x-subrip"/></item>
+<item><title><![CDATA[&amp;]]></title>
+<guid isPermaLink="false"> </guid>
+<link>https://example.com/ep</link>
+<pubDate>  24 Nov 1969 14:07:58 EDT	</pubDate>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">  trailing &#x3C;p>a <![CDATA[< b</p><p>[x]</p><BR><p>plain words</p>aaaaaaa  &amp;amp;café<br>]]></content:encoded>
+<podcast:socialInteract protocol="activitypub"/>
+<!-- comment --><?pi data?></item>
+<item><title><![CDATA[<dfn>&lt;b&gt;escaped&lt;/b&gt;</dfn> Tom & Jerry <3]]></title>
+<guid isPermaLink="true">urn:uuid:5c2b75f1</guid>
+<pubDate>Thu, 20 Jul 08 19:36:12 -0500</pubDate>
+<description>&#13;
+&amp;#169;aaaa😀😀😀</description>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">  &#x26;#169; [x]&#x3C;p&gt;&#x3C;/p&gt;
+
+​a
+
+b&lt;br>&#60;br>&amp;&#x3C;br&gt;&#x26;#x1F600;&lt;br&gt;</content:encoded>
+<media:group><media:content url="https://example.com:8443/e p93.opus" fileSize="-1" medium="document" duration="-5" type="text/plain" isDefault="false"></media:content><media:content url="ftp://files.example.com/241.mp3" duration="3600" type="" fileSize="20000 "/></media:group>
+<media:description type="plain"> &#38;#xFFFF;&lt;br /&gt;	"quoted&quot;  &amp;#xFFFF;{json: 1}&lt;br&gt;</media:description></item></channel>
+</rss>

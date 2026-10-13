@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+<channel xmlns:atom="http://www.w3.org/2005/Atom"><podcast:funding>&#60;b&gt;x&lt;/b></podcast:funding>
+<description>&amp;#x;&#x3C;br&gt;Tom &amp;amp; Jerry &#x26;lt;3&#60;br&gt;</description>
+<image><url></url><link>https://example.com/img-link</link><title>Image title</title></image>
+<podcast:funding url="">&#x3C;b&gt;x&lt;/b&gt;</podcast:funding>
+<podcast:funding url="">&#x3C;b&gt;x&lt;/b&gt;</podcast:funding>
+<itunesu:author></itunesu:author>
+<link></link>
+<title>back\slash&lt;p&gt;Para&#60;/p>&#x3C;span>&#x26;#x1F600;&#60;/span></title>
+<atom:link title="Café" length="9223372036854775808" href="https://example.com/alt.xml" type="audio/mpeg" rel="next"/>
+<item><description>&#x3C;p&gt;​&lt;/p>&#x3C;p>&#x3C;img src="x.png"&gt; cover&#x3C;/p>trailing &#x3C;br></description>
+  <guid isPermaLink="true">Café-guid</guid>
+  <link>https://example.com/ep</link>
+  <title>&lt;3<![CDATA[ <3]]></title>
+  <pubDate>Thu Jan 29 17:42 1993</pubDate></item>
+<item><title>a=b&#x26;c=d</title>
+<guid isPermaLink="false">https://example.com/item/20274</guid>
+<link></link>
+<description></description>
+<itunesu:image href=' https://e.com/i.png '/>
+<itunesu:duration>118:54</itunesu:duration>
+<enclosure url="https://example.com:8443/dir.with.dots/ep6.m3u8?dl=1.0" length="20000 " type="video/webm"/>
+<mrss:group><mrss:content fileSize='9223372036854775807' type="application/octet-stream" url="https://xn--caf-dma.example/ep23.flac" medium="audio" duration="+60"/><mrss:content type=" audio/mpeg" duration="59" medium="video" isDefault='TRUE' fileSize="0" url="https://example.com:8443/dir.with.dots/ep394.OGG"/></mrss:group></item>
+<item><pubDate>SATURDAY, 27 Oct 2131 13:22:51 -1200</pubDate><title>&lt;p>&#38;unknown;  [x]</title><dc:date>Foo,2024-01-15</dc:date><guid>Café-guid</guid><link> https://e.com/x </link><itunesu:duration>65:52</itunesu:duration><enclosure url="https://cdn.example.com/café/50.torrent" length="9223372036854775808" type="Audio/MPEG"/><itunesu:image href="https://example.com/ep.jpg"/></item>
+<item><title>&amp;lt
+茶
+é</title>
+  <itunesu:duration>1 :30</itunesu:duration>
+  <pubDate>Sat, 18 May 1974 08:33:31 +14:00</pubDate>
+  <itunesu:subtitle><![CDATA[&lt;b&gt;]]></itunesu:subtitle>
+  <itunesu:image href=" https://e.com/i.png "/>
+  <dc:date>1978-05-04T19:26:58NZST</dc:date>
+  <description>&#60;hr></description>
+  <link></link></item>
+<item><title><![CDATA[Episode 66 <b>Bold</b> title]]></title><guid>https://example.com/item/88554</guid><link></link><description></description><enclosure length='18446744073709551616' type="audio/mpeg"/></item></channel> </rss>

@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <title>trailing  &amp;#0;</title> <itunes:image href=" https://example.com/sp.jpg "/> <lastBuildDate>Thu, 18 March 2528 10:04:23 +0100</lastBuildDate> <link>https://example.com</link> <textInput><title>Search</title><link>https://example.com/search</link></textInput> <language>TR</language> <item><title>&amp;copy;</title>
+<guid isPermaLink="true">Café-guid</guid>
+<link> https://e.com/x </link>
+<pubDate>2010-03-06T22:10:52+0530 </pubDate>
+<itunes:duration>121:20</itunes:duration>
+<enclosure url="ftp://files.example.com/a/b/c251.caf" length="123456" type="application/json"></enclosure>
+<mrss:content type="audio/mpeg; charset=binary" duration='01:00' medium="video" isDefault="true" url="ftp://files.example.com/e p92.m4b?dl=1.0" fileSize="-0"/></item> <item><enclosure length="2e5" type="audio"/> <link> https://e.com/x </link> <pubDate>Tue, 20 February 2187 19:03 -0800</pubDate> <description><![CDATA[<li>&euro;</li>&lt;b&gt;escaped&lt;/b&gt; 100%]]></description> <atom:link length='12' title="Café" href="HTTPS://EXAMPLE.COM/e p171.mkv?a=1&amp;b=2" type="text/html"/> <content:encoded> {json: 1}éééé&#60;br&gt;&lt;br> leading&lt;br&gt; {json: 1}&#13;
+&#x26;#xA9;
+ </content:encoded> <title>&#x3C;dfn&gt;'single'&lt;/dfn&gt;
+&#x26;#;</title> <dcterms:date>1900/07/23</dcterms:date> <itunes:subtitle>&amp;#65;&#38;#66;
+#hash</itunes:subtitle></item> <item><content:encoded>&lt;div>café&#x3C;/div&gt;éé&#233;
+e&#769;</content:encoded> <link>https://example.com/ep</link> <title><![CDATA[&#xD800;100%]]></title> <enclosure length="-0" type="audio/"></enclosure> <mrss:group><mrss:content fileSize="16384" isDefault="1" duration="+60" medium="video" type='audio/x-wav' url="//example.com/café/69.mpga"/></mrss:group> <pubDate>&#13;
+thu 1 Nov 1979 15:47:16 GMT+0530 (CST)	</pubDate> <itunes:subtitle>Episode 12</itunes:subtitle> <itunes:summary>&lt;div>cr&#13;lf&lt;/div&gt;😀😀&#x3C;div>100%&#x3C;/div&gt;  cr&#13;lf&lt;li&gt;R&amp;D&#x3C;/li&gt;</itunes:summary></item> <item><content:encoded><![CDATA[ééé<br/><p>&apos;a&apos;</p><p>x<y</p><br>ééé<BR> &#x;]]></content:encoded>
+  <enclosure url='HTTPS://EXAMPLE.COM/dir.with.dots/ep124.oga' length="16384" type="image/*"></enclosure>
+  <guid isPermaLink="true">dup</guid>
+  <enclosure length="-9223372036854775808" type='text/plain'></enclosure>
+  <pubDate>Thu, 01 Jan 2024 10:00:00 −0500</pubDate>
+  <enclosure url="HTTPS://EXAMPLE.COM/a/b/c384.aif" length="1" type="audio/mp3"/>
+  <title>[x]</title>
+  <itunes:duration>Infinity</itunes:duration>
+  <link></link>
+  <description></description></item> <item><title/> <link>https://example.com/ep</link> <pubDate>Thu Feb 29 19:09:48 2497</pubDate> <description>&lt;p&gt;Tom &#38; Jerry &#x3C;3&#60;/p&gt;</description> <itunes:subtitle>&lt;<![CDATA[li>&#128512;</li>]]></itunes:subtitle> <itunes:image href=' '></itunes:image> <itunes:duration></itunes:duration> <enclosure url="https://example.com/a.b/161" length="-9223372036854775808" type="Audio/MPEG"/> <atom:link length="abc" rel="" type="text/html" href="https://example.com/feed?page=2" title="Alternate"/></item> <item><title/> <media:content duration=" 60" type="unknown" fileSize="123456789012345678" isDefault="1" medium="document"/> <pubDate>
+Sun, 29 Jun 1981 17:17:26 -12:00  </pubDate> <guid isPermaLink="false">
+</guid> <media:content type="text/html" duration="" medium="audio" fileSize="123456789012345678"/> <description>&lt;br /&gt;</description> <link> https://e.com/x </link> <mrss:content url='//example.com/a/b/c319.ts' type='audio/' isDefault="1" medium='image' duration="3600" fileSize="9223372036854775808"/> <itunes:author>Item author</itunes:author> <enclosure url="http://example.org/café/223.jpg" length="2e5" type="audio/*"/> <mrss:thumbnail url=""/></item></channel>
+  </rss>

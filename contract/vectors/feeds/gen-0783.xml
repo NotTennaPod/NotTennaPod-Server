@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<rss version="3.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><image><link>https://example.com/img-link</link><title>Image title</title><url>  https://example.com/ws.png
+</url></image><title>&#38;AMP; trailing  multi
+line</title><itunes:author><![CDATA[Jane Doe]]></itunes:author><m:thumbnail url='https://example.com/mt.jpg'/><description>&lt;div>第7集&#x3C;/div></description><itunes:image href=""/><link> https://example.com/ </link><atom:link rel='hub' length="abc" type="text/html"/><itunes:subtitle>&#60;strong>[x]&#x3C;/strong> leadinga &gt; b</itunes:subtitle><item><guid isPermaLink='false'></guid> <itunes:duration>35791:23:48</itunes:duration> <link>https://example.com/ep</link> <pubDate>Sat, 07 January 2209 18:36</pubDate> <title>&#60;strong>R&amp;D&#x3C;/strong>   padded  </title> <description>&#60;div&gt;第7集&lt;/div&gt;&#60;div&gt;&amp;hellip;&lt;/div&gt;ééé</description> <enclosure url="" length="9223372036854775807" type="audio/flac"/></item><item><title>a&#13;
+b</title>
+  <guid isPermaLink="true">Café-guid</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>FRIDAY, 19 Sep 2014 06:03:44 -1200</pubDate>
+  <description>&#x3C;BR>&#x3C;br/>&#13;
+x&#x3C;y😀😀😀  spaced  </description>
+  <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1998-10-07T17:44:32.1234EEST</dc:date>
+  <itunes:duration>8020.351</itunes:duration></item></channel></rss>

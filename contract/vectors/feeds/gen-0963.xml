@@ -1,0 +1,35 @@
+<!-- generated -->
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>pt-BR</language>
+  <media:thumbnail/>
+  <title>a
+  b
+&amp;quot;q&#x26;quot;
+&#38;unknown;</title>
+  <itunes:summary></itunes:summary>
+  <link> https://example.com/ </link>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <description>	cr&#13;lf</description>
+  <itunes:author>Jane Doe</itunes:author>
+  <itunes:image/>
+  <item><title><![CDATA[&mdash; &quot;q]]>&#x26;quot;</title>
+  <guid isPermaLink="true">
+</guid>
+  <link></link>
+  <pubDate>25 Oct 2021 04:46:39 EET</pubDate>
+  <description><![CDATA[trailing <br><p>trailing </p>
+
+plain words<div>&#xA9;</div><p/>ééé<br /><div>'single'</div>]]></description>
+  <dc:date>21 Dec 1985 16:50:56 CET</dc:date>
+  <itunes:subtitle><![CDATA[&AMP;]]></itunes:subtitle>
+  <itunes:duration>38:16</itunes:duration>
+  <enclosure url='' length="20000.0" type="application/pdf"/>
+  <media:content isDefault="TRUE" type="video/webm" duration="3600" fileSize="1,000,000"/>
+  <media:content medium="audio" url="https://example.com:8443/dir.with.dots/ep235.mp3" fileSize="-0" type='application/x-bittorrent'/></item>
+  <item><link></link>
+<pubDate> 	 25 Apr 2003 02:34:26 +0945&#xA0;</pubDate>
+<enclosure url="" length="２０００００" type="audio/*"></enclosure>
+<title>&#38;#0;&amp;hellip;</title>
+<dc:date>Monday, 27 Sep 1971 23:20:28</dc:date>
+<guid>a&#38;b</guid></item></channel>
+  </rss>

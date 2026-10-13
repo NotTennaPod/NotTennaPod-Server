@@ -1,0 +1,19 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<title type='xhtml'><![CDATA[<strong>trailing </strong>]]></title>
+  <author><name>Émile</name><email>a@example.com</email></author>
+  <link length="abc" rel="alternate" href="https://example.com/" title="MP3 feed"/>
+  <link title="Alternate" rel="related" href="https://example.com/alt.xml"/>
+  <id></id>
+  <logo>https://example.com/logo.png</logo>
+  <updated>1900-12-09-0500</updated>
+  <link title="Café" length="abc" href="https://example.com/alt.xml" rel="alternate"/>
+  <entry><published>2013-02-23T04:10:40Z</published>
+<updated>1982-08-06T09:06:55+0000</updated>
+<id>tag:x,2020:1</id>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">	  padded  	</div></title>
+<media:content type='audio/mpeg' url="https://example.com:8443/a/b/c360.3gp?dl=1.0" duration='1' fileSize="abc"/>
+<link title="Café" href="https://example.com/pay" rel=""/>
+<summary>&#x3C;p&gt;{json: 1}&lt;/p>a
+
+b&lt;br&gt;&#60;div>&amp;quot;q&amp;quot;&lt;/div&gt;</summary></entry>
+  </feed>

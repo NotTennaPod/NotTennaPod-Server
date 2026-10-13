@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:summary><![CDATA[
+茶&copy;<br> "quoted"]]></itunes:summary>
+<atom:link title='Alternate' rel="alternate" href="https://example.com/feed?page=2" length="9223372036854775808"/>
+<title><![CDATA[&lt;b&gt;]]></title>
+<atom:link rel="self" title="Alternate" length="abc" href='https://example.com/pay'/>
+<language></language>
+<item><pubDate>09 JAN 2011 21:14:05 -0500</pubDate> <title>&#38;#0;</title> <enclosure url="https://cdn.example.com/e p320.m4a" length="16384" type="audio"/> <itunes:author>Item author</itunes:author> <description>"quoted"éééaaaa &amp;AMP;&lt;div>&#38;euro;&#60;/div&gt;</description> <media:content duration="0" type="application/octet-stream" fileSize="12"/> <link> https://e.com/x </link> <guid>urn:uuid:c4ff0d79</guid></item>
+<item><media:content type="audio/flac" fileSize='0x4E20' url="//example.com/ep80.txt#t=10" duration="01:00" medium="audio"/> <guid></guid> <title>😀 &#x3C;div dir=&quot;rtl"&gt;&amp;#169;&lt;/div&gt;</title> <description>plain words&lt;br>Folge 7: Über alles&lt;div&gt;Line&lt;br>break&#60;/div&gt;  &#38;amp;amp;ééé</description> <pubDate>2177-04-1</pubDate> <itunes:duration>6912</itunes:duration> <media:content isDefault="true" url="https://xn--caf-dma.example/382.html" duration="0060" fileSize="1,000,000" medium="image" type="audio/*"/> <media:content medium="image" isDefault='true' type='image/png' duration="01:00" fileSize="9223372036854775808"/> <link> https://e.com/x </link></item></channel></rss>

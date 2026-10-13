@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding url="">&lt;b&gt;x&#60;/b></podcast:funding>
+  <language></language>
+  <title>&#x26;#;  </title>
+  <image><url></url><link>https://example.com/img-link</link><title>Image title</title></image>
+  <itunes:summary>&#x3C;li>&#38;#x1F600;&lt;/li&gt;&#38;amp😀</itunes:summary>
+  <podcast:funding url="">  spaced  </podcast:funding>
+  <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/mt.jpg"/>
+  <description>&#38;#xA9;&lt;br&gt;
+a &#x3C; b</description>
+  <podcast:funding url="https://example.com/donate"></podcast:funding>
+  <atom:link title="Café" href="https://xn--caf-dma.example/café/278.m4a" rel="archives"/>
+  <itunes:image/>
+  <item><title>&lt;font color="red">a&#13;
+b&lt;/font>  a &gt; b</title>
+<enclosure url="https://xn--caf-dma.example/café/108.php" length="52428800" type="image/jpeg"/>
+<itunes:subtitle>back\slash</itunes:subtitle>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" duration="0060" medium="audio" type="audio/aac" fileSize="abc" url="https://user:pass@media.example.net/e p41.pdf"/>
+<description><![CDATA[ <br>]]></description>
+<link> https://e.com/x </link>
+<guid isPermaLink='false'>https://example.com/item/79399</guid>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"></content:encoded>
+<sc:chapters version="1.2"><sc:chapter href="https://example.com/ch" image="https://example.com/ch.png" start='02:02:00.732' title="Intro"/><sc:chapter start="1:0x1p3" image="https://example.com/ch.png"/></sc:chapters>
+<itunes:duration>4:58:46</itunes:duration>
+<pubDate>Thu, 33 Feb 2019 16:07:09 -1200</pubDate></item>
+  <item><title><![CDATA[&Lt;]]></title>
+<link></link>
+<pubDate>Wednesday, 16 Sep 2015 23:23:29 AEST</pubDate>
+<description><![CDATA[	'single'R&D<br><img src="x.png">]]></description>
+<itunes:summary><![CDATA[<br />
+😀ééé<p>&#xA9;</p>  a > b]]></itunes:summary>
+<itunes:duration></itunes:duration>
+<enclosure url="https://xn--caf-dma.example/café/278.m4a" length="9223372036854775807" type='audio'/>
+<enclosure url="" length="00020000" type="AUDIO/MPEG"/>
+<enclosure url="https://user:pass@media.example.net/ep132.html#t=10" length="２０００００" type="audio/opus"/>
+<atom:link title="Alternate" href="" length='20000' rel="alternate" type="application/xml+xhtml"/></item></channel></rss>

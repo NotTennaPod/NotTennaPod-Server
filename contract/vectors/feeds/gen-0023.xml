@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xml:lang="">
+  <link length='abc' title="Alternate" rel='last' type="application/xhtml+xml" href="https://example.com/feed?page=2"/><logo></logo><updated>24 jul 1899 08:50:29 -0500</updated><id>https://example.com/feed</id><link title="Café" rel="hub" type='application/xhtml+xml' href="https://example.com/"/><itunes:image href=""/><link length="20000" href="https://example.com/" type="application/rss+xml" rel="self"/><link href="https://example.com/alt.xml" title="Café" rel="Next" type=""/><itunes:summary>  a &gt; b<![CDATA[]]></itunes:summary><author><name>C&#38;D</name></author><title type='text'>S01E52</title><entry><link rel="related" title="Alternate" type="application/xml+xhtml" href=""/>
+<link rel="Next" href="https://example.com/" length="9223372036854775808" title="Café" type="application/xhtml+xml"/>
+<updated>1974-02-02T17:30:38.106</updated>
+<updated>0099-05-21T11:51:56-0000 </updated>
+<media:content isDefault="true" fileSize="" medium="audio" url="https://user:pass@media.example.net/277.mp3" type="video/quicktime" duration="2147483648"/>
+<itunes:duration>101:36</itunes:duration>
+<author><name>Entry author</name></author>
+<published>Thu, 01-Jan-2024 10:00:00 GMT</published>
+<id>
+id
+</id>
+<title type="html"><![CDATA[Episode 12]]></title>
+<link length='abc' href="https://example.com/feed?page=2" type="application/rss+xml" rel="payment" title="MP3 feed"/>
+<summary><![CDATA[<hr/><div>😀</div>a < b  padded  <br><img src="x" alt="y"/>	a > b<hr> &hellip;]]></summary></entry><entry><content type='html'>aaééé&amp;#x1F600;&lt;BR&gt;&lt;p&gt;1 &lt;2&lt;/p>&lt;BR&gt;&#38;#xA9;&#60;img&gt;</content>
+<summary type="html"><![CDATA[	&copy;<div>😀</div>]]></summary>
+<media:content duration="2147483648" url="https://user:pass@media.example.net/café/150.ts?dl=1.0" fileSize="2e5" type="audio/x-m4a" medium="video" isDefault="TRUE"/>
+<id> raw </id>
+<title type="html">&lt;img s<![CDATA[rc="x.png"> cover]]></title>
+<link rel="Next" href='https://example.com/alt.xml' title="" type="application/xhtml+xml"/></entry></feed>

@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link></link>
+<image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+<description>&lt;br /&gt; &#38;Lt;a back\slashé&#xE9;é</description>
+<language>de-DE</language>
+<title>&lt;img src="x.png"> cover  &#x26;unknown;  &#38;quot;q&amp;quot;</title>
+<item><title><![CDATA[&amp;
+100%
+<su]]>b>"quoted"&lt;/sub&gt;</title><guid isPermaLink="false">  spaced guid  </guid><pubDate>été, 	16 Jan 1752 00:53:40 +0100</pubDate><content:encoded><![CDATA[😀
+AT&T]]></content:encoded><enclosure type="audio/flac"/><media:description type='html'>&lt;p>&#x26;amp;amp;&#x3C;/p>plain words&lt;br&gt;
+Episode 12&#13;
+&#38;#x;</media:description></item>
+<item><title>R&amp;D</title><link>https://example.com/ep</link><pubDate>22 Apr 1997 18:58:41 +0945
+  </pubDate><enclosure url="" length="" type="audio"/><media:group><media:content duration="0" fileSize="20000.0" type='audio/mp3' isDefault="TRUE" medium="document"/><media:content fileSize="16383" duration='9223372036854775807' url='HTTPS://EXAMPLE.COM/dir.with.dots/ep359.ts' medium="Audio" isDefault="1" type="x-audio/mpeg"/></media:group></item>
+<item><media:content fileSize="2147483647" medium="audio" duration="2147483" url="https://example.com:8443/dir.with.dots/ep166.m4a" type='text/html'/> <foo><description>Nested description</description></foo> <link> https://e.com/x </link> <title><![CDATA[sep    padded    &#xA9;]]></title> <guid isPermaLink="false">a&amp;b</guid> <enclosure url="http://example.org/a/b/c27.amr" length="00020000" type="audio/opus"/> <pubDate>2287-11-02T14:05:46</pubDate></item>
+<item><pubDate>Thu 11 Jun 1998 07:</pubDate> <wrapper><inner><deeper>text</deeper></inner></wrapper> <link></link> <description></description> <enclosure url="" length='0' type='video/webm'/> <guid isPermaLink="false">
+</guid> <enclosure url="" length="20000.0" type="video/mp4"/> <enclosure url="//example.com/café/301.mkv#t=10" length="٢٠٠٠٠" type="video/mp4"/></item>
+<item><title>第137集</title> <p:transcript url="" type="application/srt" language="en"/> <description><![CDATA[<br/>]]></description> <media:content isDefault="1" duration="-5" type="video/quicktime" medium="document" fileSize='9223372036854775808' url="https://cdn.example.com/a/b/c99.jpg"></media:content> <enclosure url="http://example.org/e p307.flac" length="abc" type="audio/"/> <enclosure url="" length="1,000,000" type="video"></enclosure> <pubDate>2217-10-29T00:17:23.6100998</pubDate> <guid isPermaLink='true'>https://example.com/item/4948</guid> <psc:chapters version="1.2"><psc:chapter start='02:45:12' image="https://example.com/ch.png" href=""/><psc:chapter href="https://example.com/ch" image="https://example.com/ch.png" start="47:47"/></psc:chapters> <enclosure url="//example.com/e p90.m3u8" length="abc" type="image/*"/></item>
+<item><enclosure url="" length="9223372036854775808" type="image/jpeg"/>
+<title><![CDATA[<div dir="rtl">  padded  </div>  <p>Para</p>  第62集]]></title>
+<link> https://e.com/x </link>
+<media:thumbnail url=""/>
+<enclosure url="" length="1,000,000" type='application/json'/>
+<description>&lt;p>&amp;euro;&lt;/p>&lt;p>&#x3C;/p></description>
+<pubDate>2007-11-20T18:31:61.525-0800</pubDate>
+<guid isPermaLink="false">a&#x26;b</guid></item>
+<item><source url="https://example.com/s"><title>Source title</title></source> <description>&#x3C;div>Tom &#38;amp; Jerry<![CDATA[ &lt;3</div><p></p><li>&nbsp;</li>]]></description> <media:content duration="01:00" fileSize="20000 " type="audio/x-m4a" isDefault="false" medium="video"/> <title>&lt;unknown&gt;sep&#60;/unknown&gt;  S01E19  [x]</title> <media:content fileSize="9007199254740991" medium="video" isDefault='true' duration="" type="application/pdf" url='https://xn--caf-dma.example/165.html'></media:content> <pubDate>Saturday, 06 Jan 2142 05:56:02 +1400</pubDate> <enclosure url="//example.com/378.mid" length="-9223372036854775808" type='text/html'/> <media:content url="https://cdn.example.com/dir.with.dots/ep47.OGG" type="audio/wav" medium="video" fileSize='16384' isDefault="1" duration="1.5"/></item>
+<item><pubDate>Saturday Aug 5 14:08:21 1999</pubDate><content:encoded>😀😀&#128512;😀&lt;p&gt;S01E7&#x3C;/p&gt;&#60;li&gt;plain words&#60;/li></content:encoded><link></link><media:content medium='video' fileSize='20000.0' isDefault='true' type="audio/x-wav" url="https://user:pass@media.example.net/a/b/c398.caf?a=1&amp;b=2" 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p2="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters" xml:lang=""> <link title="" type='application/rss+xml' rel="" href="https://example.com/feed?page=2"/>
+  <media:thumbnail url="https://example.com/amt.jpg"/>
+  <id></id>
+  <subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></subtitle>
+  <title type="text"><![CDATA[&apos;a&apos; <article>http://example.com/?a=1&b=2</article>]]></title>
+  <entry><id>urn:uuid:1</id> <published>L(UAotcqoslIUze yézkoewWhH</published> <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">a=b&amp;c=d&lt;br&gt;</div></summary> <psc:chapters><pc:chapter title="Café &amp;amp; more" start="45:31" image="https://example.com/ch.png"/><pc:chapter image="https://example.com/ch.png" start="2076" href="" title='Café &amp;amp; more'/><pc:chapter title="&lt;b>x&lt;/b>" start='1:00:Infinity'/><pc:chapter title="😀" image="https://example.com/ch.png" start='03:24:57.256'/><pc:chapter image="https://example.com/ch.png" start="03:42:55.418" title='' href='https://example.com/ch'/></psc:chapters> <title>&#13;
+&#38;#;
+</title> <link rel="enclosure"/> <updated>14 Jul 75 09:25 -0500</updated></entry>
+  <entry><summary type='html'>&lt;p&gt;  padded  &lt;/p></summary>
+<published>Sun, 17 Jun 1979 05:39:31 -12:00</published>
+<title><![CDATA[<s>AT&T</s>  "quoted"]]></title>
+<p2:transcript url="https://example.com/t.vtt" type="application/json"/>
+<id>
+id
+</id>
+<link title="MP3 feed" length='12' rel="related" type="text/html"/></entry>
+  <entry><published>Sat 11 Jan 1997 02:16:34 +1400</published>
+<updated>2326-08-15T15:15:13+05:30</updated>
+<id> raw </id>
+<summary>&#60;p>&#60;/p&gt;
+cr
+lf&lt;BR>  100%	&#x26;quot;q&amp;quot;</summary>
+<media:content url="HTTPS://EXAMPLE.COM/e p171.mkv?a=1&amp;b=2" duration="+60" fileSize="4294967296" isDefault="true" medium="image" type=""/>
+<title type='html'><![CDATA[x<y]]></title></entry>
+  </feed>

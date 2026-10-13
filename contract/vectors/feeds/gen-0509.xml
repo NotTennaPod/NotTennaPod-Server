@@ -1,0 +1,12 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"><channel><itunes:author>  Spaced  </itunes:author> <lastBuildDate>Tues, 27 March 1986 23:46:14</lastBuildDate> <title>&lt;strike>第191集&lt;/strike&gt;
+&#60;h6&gt;&#x26;unknown;&lt;/h6></title> <link> https://example.com/ </link> <itunes:subtitle><![CDATA[a
+]]>  b</itunes:subtitle> <description>tab	here&lt;br&gt;&#x3C;br&gt;	&amp;#xD800;&lt;BR>
+&#38;#65;&#38;#66;&lt;hr&gt;&lt;p&gt;  padded  &#60;/p&gt;&lt;p>😀&#60;/p&gt;</description> <item><title>&#x3C;del&gt;&lt;/del&gt;</title>
+  <guid isPermaLink="false">dup</guid>
+  <link></link>
+  <pubDate>1601-09-09T18:01:47Z</pubDate>
+  <description>&lt;hr/&gt;</description>
+  <cont:encoded>&lt;li>&#60;/li>&#60;li&gt;é&lt;/li&gt;&#x3C;br /&gt;&#60;p&gt;&amp;hellip;&lt;/p&gt;&#60;img src="x" alt="y"/&gt;</cont:encoded>
+  <itunes:duration>7966.955</itunes:duration>
+  <enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep393.wma" length='2147483647' type='video/quicktime'/></item></channel>
+</rss>

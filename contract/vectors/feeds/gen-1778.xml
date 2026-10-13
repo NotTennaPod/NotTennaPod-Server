@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><it:author>&#x26;copy; 2020 Org</it:author>
+<atom:link length="20000" href="https://example.com/feed?page=2" type="application/xml+xhtml" rel="self" title='Alternate'/>
+<description></description>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<dc:creator>DC Creator</dc:creator>
+<title>&quot;quoted&quot;  Folge 738: Über alles  &#x26;euro;</title>
+<language>pt-BR</language>
+<p2:funding></p2:funding>
+<it:summary>	{json: 1}&#x3C;div>&#x26;&#x3C;/div&gt;&lt;p&gt;Episode 12&lt;/p>&#60;br />&#13;
+&#x26;#xD800;</it:summary>
+<item><guid isPermaLink="false"></guid>
+<p2:chapters type="application/json+chapters"/>
+<pubDate> 	 2013-12-10T01:24:35
+</pubDate>
+<link> https://e.com/x </link>
+<enclosure url="HTTPS://EXAMPLE.COM/ep265.torrent" length="٢٠٠٠٠" type="application/x-bittorrent"/>
+<title>&lt;center&gt;[x]&lt;/center&gt;&amp;#65;&#38;#66;&#38;#65;&#38;#66;</title>
+<itunes:episodeType>full</itunes:episodeType></item>
+<item><media:content type="video/webm" fileSize="16385" duration="01:00" url="//example.com/a/b/c234.html" medium="video"/>
+<media:description type="html">😀😀😀&#60;div&gt;茶&#60;/div&gt;multi
+line&lt;br></media:description>
+<dc:date>Thu, 03 Sept 1974 11:03:01 +0000</dc:date>
+<enclosure url="https://cdn.example.com/dir.with.dots/ep254.mov?file=x.mp3" length="9007199254740993" type="video/quicktime"/>
+<it:summary>&#x3C;div>#hash&#60;/div&gt;&#60;br />ééé&#60;div&gt;AT&amp;T&#x3C;/div> x&#60;y</it:summary>
+<pubDate>2018-09-26T15:26:22CEST</pubDate>
+<description><![CDATA[  &;]]></description>
+<link></link>
+<title><![CDATA[<b>Bold</b> title]]></title></item>
+<item><enclosure url="https://xn--caf-dma.example/165.html" length="16383" type="image/png"/>
+  <title>a &lt; b plain w<![CDATA[ords #527 – Interview]]></title>
+  <media:content duration="01:00" isDefault='1' fileSize='2147483648' url="HTTPS://EXAMPLE.COM/190.aspx" type="image/png"/>
+  <dc:date>Monday, 28 Aug 1899 05:10:36 XYZ</dc:date>
+  <media:thumbnail url="https://example.com/th.jpg"/>
+  <itunes:image href="https://example.com/ep.jpg"/>
+  <enclosure length="20000 " type="audio"/>
+  <description> Episode 12&#x3C;hr&gt; a=b&amp;c=d&#13;
+a=b&#x26;c=d&#60;p&gt;茶&#x3C;/p&gt;</description>
+  <guid>urn:uuid:07413dd8</guid>
+  <itunes:summary><![CDATA[<hr> "quoted"
+&#169;]]></itunes:summary>
+  <link> https://e.com/x </link></item></channel>
+  </rss>

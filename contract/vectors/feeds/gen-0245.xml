@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pi="https://podcastindex.org/namespace/1.0">
+  <channel><podcast:funding url="https://example.com/donate">  spaced  </podcast:funding>
+  <item><itunes:image href=" https://e.com/i.png "/>
+  <itunes:summary>&#128512;😀😀&#x1F600;  café&lt;img src="x" alt="y"/></itunes:summary>
+  <itunes:duration>19947</itunes:duration>
+  <enclosure url="HTTPS://EXAMPLE.COM/ep265.torrent" length="-9223372036854775808" type='text/html'/>
+  <title> שלו&#1501;
+ leading
+&#x26;amp </title>
+  <description>&#13;
+&amp;lt &#38;quot;q&#38;quot;&#60;BR&gt;&amp;#65;&amp;#66;
+&#38;copy;tab	here&#60;br&gt;&#xE9;éé&#60;p/&gt;</description>
+  <guid isPermaLink="true">
+</guid>
+  <pubDate>Tue, 25 Apr 2276 22:15:34 -0000 PM</pubDate></item>
+  <item><title><![CDATA[&quot;q&quot;
+a=b&c=d
+第135集]]></title>
+<guid isPermaLink='false'>
+</guid>
+<pubDate>05 SEPT 1900 16:00:31 -0000</pubDate>
+<description><![CDATA[sep<li></li>]]></description>
+<dc:date>Sat 8 Jan 2016 12:42:20 GMT+0100 (CET)</dc:date>
+<itunes:duration>1:30 </itunes:duration>
+<enclosure url='https://cdn.example.com/ep375.mov?dl=1.0' length="16383" type="audio"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="00020000" type="video/x-matroska" url=' https://cdn.example.com/a/b/c246.txt ' isDefault="false" duration="0060"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url=" ftp://files.example.com/a/b/c253.wma " duration="59" type="audio/mp4" medium="document" fileSize="1,000,000"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" medium="audio" fileSize="abc" isDefault="false" url="ftp://files.example.com/48.webm" duration="0060" type="audio/mpeg; charset=binary"/>
+<pi:chapters url="" type="application/json+chapters"/>
+<pi:season>2</pi:season></item>
+  <itunes:subtitle>1 &#x3C;2</itunes:subtitle>
+  <title>Tom &#x26; Jerry &lt;3</title>
+  <itunes:summary></itunes:summary>
+  <link>https://example.com</link>
+  <itunes:image href="https://example.com/it.jpg"/>
+  <itunes:author>&#31532;&#19968;</itunes:author></channel>
+</rss>

@@ -1,0 +1,29 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><language></language>
+<wrapper><inner><deeper>text</deeper></inner></wrapper>
+<atom:link title="Alternate" href="https://example.com/alt.xml" rel="related"/>
+<title><![CDATA[
+]]>&amp; &amp;AMP;  </title>
+<description><![CDATA[&#]]>x;  R&#x26;D</description>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<image><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link></image>
+<atom:link href="" title='MP3 feed' type="" rel=""/>
+<itunes:subtitle>a &lt; b</itunes:subtitle>
+<itunes:author>😀 Po<![CDATA[d]]></itunes:author>
+<atom:link title="MP3 feed" length='abc' rel="related" href="" type="application/xml+xhtml"/>
+<itunes:summary>&lt;img>&#60;img src="x.png"></itunes:summary>
+<podcastindex:funding url='https://example.com/donate'>&#60;b>x&#60;/b></podcastindex:funding>
+<item><guid isPermaLink="true">Café-guid</guid> <itunes:summary><![CDATA[Line<br>break<p>&#xD800;</p>]]></itunes:summary> <pubDate>Tue 17 Jul 2001 07:04:38 GMT+0945 (JST)</pubDate> <media:content type="text/html" duration="1" fileSize="2e5" isDefault="true" medium="image"/> <title>&amp;#128512; &#60;li>&#x26;quot;q&amp;quot;&#x3C;/li&gt; &#x26;#xA9;</title> <description>&lt;p>&#38;#x;&lt;/p&gt;
+
+'single'&#60;div&gt;مر&#x62D;با&lt;/div&gt;</description> <media:content type="audio/" url='//example.com/a/b/c138.m4b?a=1&amp;b=2' medium="audio" duration='9223372036854775807' isDefault="1" fileSize=' 20000'/></item>
+<item><description></description>
+<psc:chapters xmlns:psc="http://podlove.org/simple-chapters"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" href="" start="31:21"></psc:chapter></psc:chapters>
+<pubDate>Sun, 10 Jun 1984 23:02 +0200 (CET)</pubDate>
+<title><![CDATA[plain words &nbsp; {json: 1}]]></title>
+<enclosure url="//example.com/café/293.wma" length="16383" type='Audio/MPEG'/>
+<guid isPermaLink="true"> </guid>
+<link> https://e.com/x </link></item>
+<item><title><![CDATA[1 <2]]></title><guid isPermaLink="false">
+</guid><link>https://example.com/ep</link><pubDate>Sat, 18 June 2016 17:05:26 -0800</pubDate><description><![CDATA[<p>&hellip;</p><p>AT&T</p>]]></description><itunes:subtitle>&#13;
+&#38;AMP; </itunes:subtitle><enclosure url="" length="20000.0" type="audio/flac"></enclosure><podcastindex:transcript type="application/srr"/><wrapper><inner><deeper>text</deeper></inner></wrapper></item></channel>
+</rss>

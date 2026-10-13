@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang=""> <comments>https://example.com/c</comments><link length="abc" rel="archives" href="" type="application/rss+xml"/><link title="Alternate" type="application/xhtml+xml" href="ftp://files.example.com/ep174.png" length="12"></link><link href="https://example.com/" rel="self" title=""/><title type="html">Tom &amp;amp; Jerry &amp;lt;3 &#60;p>&lt;p&gt;&amp;unknown;&#60;/p>&#60;/p&gt;</title><id>urn:x</id><logo>https://example.com/logo.png</logo><link type='text/html' rel='related' title="Café" length="12" href='https://example.com/'/><it:summary>  &amp;</it:summary><it:author></it:author><entry><link href="https://example.com/pay" type="application/rss+xml" rel="Next" length="20000" title="MP3 feed"/>
+<updated>Sun 25 Apr 1982 17:33:27 GMT+0000 (BST)</updated>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;del>sep&#60;/del></div></title>
+<it:duration>9616.690</it:duration>
+<content type="plain"></content>
+<podcast:transcript url='https://example.com/t.vtt' type='text/html' language="en"/><podcast:transcript url="https://example.com/t.vtt" type='text/vtt'/>
+<link rel="archives" href="https://example.com/"/>
+<id>tag:x,2020:1</id></entry><entry><id> raw </id>
+<title type="xhtml">&amp;#x1F600;
+&amp;hellip;
+&#x3C;ul&gt;&lt;li>&#x26;euro;&lt;/<![CDATA[li><li>two</li></ul>]]></title>
+<published>1980-08-01+1400</published>
+<updated>2018-04-00T09:33:19</updated>
+<link href="https://example.com/a.b/café/113.Mp4?file=x.mp3" title='Alternate' rel="next"/>
+<link type='' rel='hub' href="" title="MP3 feed"/>
+<link length="9223372036854775808" rel="enclosure" title="" type="application/xhtml+xml" href=""></link></entry><entry><title type="text"><![CDATA[&euro;  &#12851]]>2;  &amp;#128512;</title>
+<summary type='html'><![CDATA[😀😀😀😀<li>&lt;b&gt;escaped&lt;/b&gt;</li>&<li>a
+  b</li>aaaaaaaaa]]></summary>
+<it:duration>12:17</it:duration>
+<updated>Tuesday, 08 Jun 73 21:36 +0945</updated>
+<link rel="Next" href="https://example.com/pay" type="application/atom+xml" title="Alternate"/>
+<it:image href=""/>
+<id> raw </id>
+<link rel="payment" title="MP3 feed" length="abc" href="https://example.com/alt.xml"/></entry><entry><id>
+id
+</id>
+<it:duration>3082.749</it:duration>
+<title type="html"><![CDATA[back\slash  R&D]]></title>
+<content type="xhtml"> 茶</content>
+<link rel="enclosure" href="https://example.com/"/>
+<link type="application/atom+xml" length="20000" rel='next' href="https://example.com/a.b/161"/></entry><entry><id> raw </id>
+<psc:chapters version='1.2'><psc:chapter href="https://example.com/ch" image="https://example.com/ch.png" title='😀' start="1:30:00"/><psc:chapter title="Café &amp;amp; more" image="https://example.com/ch.png" href="https://example.com/ch"/><psc:chapter start='02:49:22' title="Intro" href=""/><psc:chapter start=":" title="" href=''/></psc:chapters>
+<title>&#60;i&gt;100%&#x3C;/i&gt; cr&#13;lf</title>
+<link type="application/xml+xhtml" href="https://example.com/pay" rel="related" title="Alternate"/>
+<updated>Sun, 99 Apr 1974 23:52 +0200</updated></entry><entry><title type="text">AT&amp;T</title> <id>
+id
+</id> <published>2340-10-18T11:43:47+0100 	 </published> <content><![CDATA[
+&apos;a&apos;<li>#hash</li>]]></content></entry><entry><it:duration>6801.78</it:duration> <it:image href="https://example.com/e.jpg"></it:image> <link title="MP3 feed" length="9223372036854775808" rel="self" type="application/atom+xml" href="https://example.com/"></link> <published>Thu SEPT 22 13:47:48 2014</published> <updated>Mon, 03 Apr 1752 00:24 +0200 -</updated> <title>&lt;article&gt;&#x3C;p>Para&#x3C;/p&gt;&lt;/article&gt;  &lt;u<![CDATA[>R&D</u>]]></title> <id></id></entry><entry><updated>20 Mar 72 10:42:07 -0000</updated>
+<it:duration>99999999999</it:duration>
+<title>&#60;sub>http://example.com/?a=1&amp;b=2&lt;/sub&gt; &#x26;lt</title>
+<psc:chapters version="1.2"><psc:chapter start="02:57:06.424" image="https://example.com/ch.png" href="https://example.com/ch" title=""/><psc:chapter start="03:19:34.038" href="" title=""/><psc:chapter title="" image="https://example.com/ch.png" href=""/><psc:chapter start="3615" title="😀"/><psc:chapter image="https://example.com/ch.png" start="02:42:39.033" title="Café &amp;amp; more" href=""/><psc:chapter title='😀' image='https://example.com/ch.png' start=":"></psc:chapter></psc:chapters></entry>
+</feed>

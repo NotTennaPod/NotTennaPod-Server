@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<link href="https://example.com/alt.xml" rel='archives' title="Alternate" type=""/>
+<itunes:summary><![CDATA[<div>]]>第7集&lt;/div&gt;</itunes:summary>
+<link title='MP3 feed' href="https://example.com/pay" rel="last" type="application/rss+xml"/>
+<itunes:image href="https://example.com/ai.jpg"/>
+<id>urn:x</id>
+<title type="plain"><![CDATA[é]]></title>
+<entry><link type="application/xml+xhtml" length="20000" href="https://example.com/pay" title='Café'/>
+  <link href="https://example.com/feed?page=2" rel="last" type="application/rss+xml"/>
+  <title type="plain">&#38;mdash;
+&#x26;#;</title>
+  <media:content isDefault="true" type="audio/" url="ftp://files.example.com/dir.with.dots/ep392.aif" fileSize="9223372036854775807" medium="image" duration="3600"/>
+  <summary type="plain">😀😀x&lt;y&lt;br>&lt;img&gt;&#x3C;li>é&#60;/li&gt;&#60;img src=&quot;x.png"&gt; cover&#x3C;br&gt;&amp;#x;&lt;br&gt;&#60;br/>&#x3C;p&gt;&#x3C;/p&gt;</summary>
+  <id> raw </id>
+  <link rel="next" title="Alternate" href='https://example.com/feed?page=2'/>
+  <published>Tuesday, 10 Apr 1900 18:42 +0200</published></entry>
+</feed>

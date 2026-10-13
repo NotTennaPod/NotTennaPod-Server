@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <subtitle type="html">
+&#x26;#0;</subtitle>
+  <author><name>C&amp;D</name><email>a@example.com</email></author>
+  <i:image href='https://example.com/ai.jpg'/>
+  <link title="Café" length="abc" href="https://example.com/pay"/>
+  <updated>Thu, 19 Aug 2010 25:33 +1400</updated>
+  <media:thumbnail url='https://example.com/amt.jpg'/>
+  <title><![CDATA[<sup>&#1605;&#1585;&#1581;&#1576;&#1575;</sup>]]></title>
+  <id> raw </id>
+  <entry><link type='application/xml+xhtml' rel="archives" href="https://example.com/" title="Alternate"></link>
+  <link rel="archives" title='MP3 feed' length="12"/>
+  <id>tag:x,2020:1</id>
+  <link type="application/xml+xhtml" rel="first" title="Alternate" href="https://example.com/a.b/dir.with.dots/ep141.3gp"/>
+  <updated>Thursday, 06 Jan 1752 22:45:19 GMT+01</updated>
+  <title><![CDATA[&lt;b&gt;escaped&lt;/b&gt;  Tom &amp; Jerry &lt;3    padded  </p>]]></title></entry> </feed>

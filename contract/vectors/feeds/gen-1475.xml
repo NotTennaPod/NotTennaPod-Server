@@ -1,0 +1,18 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<updated>23 OCT 2019 02:58:52 +1400</updated>
+<link length="20000" rel="next" type="application/rss+xml" href=''/>
+<title><![CDATA[  spaced  ]]></title>
+<subtitle>&lt;br />&lt;div>'single'&lt;/div&gt;  ​&#13;
+1 &lt;2&#x3C;hr&gt;  &#38;#xFFFF; 100%&#x3C;br/&gt;</subtitle>
+<id>https://example.com/feed</id>
+<itunes:summary>&#60;3 &lt;3&lt;br&gt;AT&amp;T&lt;br>&#13;
+a&#13;
+b</itunes:summary>
+<itunes:image href=""/>
+<entry><content>&#x3C;p&gt; leading&#60;/p&gt;&#60;img src=&quot;x.png&quot;>
+
+&amp;hellip;</content>
+<itunes:duration>1h30m</itunes:duration>
+<id> raw </id>
+<published>2016-05-10T21:23:41+1400</published>
+<link length="9223372036854775808" href="https://example.com/alt.xml" title="Café" rel="last" type="application/atom+xml"/></entry> </feed>

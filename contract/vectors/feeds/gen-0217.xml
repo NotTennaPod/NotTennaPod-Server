@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+  <channel><atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="Café" href="https://example.com/" rel='hub' type="application/rss+xml"/> <link>https://example.com</link> <image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image> <item><enclosure url="https://example.com:8443/café/283.xyz" length="16383" type="audio/wav"></enclosure>
+<title>Folge 126: Über alles</title>
+<psc:chapters version="1.2"><psc:chapter href="" title="" start="1:2:3:4"/><psc:chapter title="Intro" image="https://example.com/ch.png" start='02:27:59.810' href="https://example.com/ch"/><psc:chapter href="" title="Intro" image="https://example.com/ch.png" start="5513"/></psc:chapters>
+<link>https://example.com/ep</link>
+<enclosure url="" length="20000.0" type="text/plain"/>
+<content:encoded><![CDATA[<br><br/>ééé &#x;<br/>]]></content:encoded>
+<pubDate>Saturday, 04 Jul 93 00:41:04</pubDate>
+<guid>  spaced guid  </guid></item> <item><content:encoded>&#60;img src=&quot;x.png"&gt;&#60;li&gt;&amp;amp;amp;&#x3C;/li&gt;</content:encoded>
+  <link>https://example.com/ep</link>
+  <title>Episode 996&#x26;#0;</title>
+  <enclosure url='HTTPS://EXAMPLE.COM/a/b/c268.aif' length="-1" type="video/x-matroska"/>
+  <guid isPermaLink="true"> </guid>
+  <dc:date>Tuesday, 01 Feb 1986 08:52 -0800</dc:date>
+  <description>&#x3C;li&gt;&#x26;amp&#60;/li>&lt;li&gt;&#x26;quot;q&#38;quot;&lt;/li>&lt;li&gt;مرحبا&#60;/li&gt;😀😀😀 &#x26;</description></item> <item><title>	  spaced  &#13;
+</title> <guid>urn:uuid:47b9a0e8</guid> <link> https://e.com/x </link> <pubDate>Tue, 16 Nov 2004 03:16:14 +0945:00</pubDate> <description>&#60;img src="x.png"&gt;aaaaaaaaa&#x3C;p>&amp;amp;&lt;/p&gt;😀😀😀&#60;img src="x.png&quot;&gt; cover&lt;br>&lt;div>&#38;#0;&#x3C;/div&gt;😀😀😀&lt;li>&#x26;;&#x3C;/li></description> <psc:chapters/></item> <item><guid isPermaLink="false">Café-guid</guid>
+<foo><description>Nested description</description></foo>
+<enclosure url="" length="16384" type="image/jpeg"/>
+<title>&#38;amp</title>
+<link> https://e.com/x </link>
+<pubDate> 2010-03-12T19:11:04
+  </pubDate>
+<enclosure url='' length=" 20000" type='text/plain'/></item> <item><enclosure url="HTTPS://EXAMPLE.COM/café/303.m3u8?a=1&amp;b=2" length="16383" type="text/plain"/>
+<description>&lt;p&gt;שלום&#x3C;/p&gt;&#233;ééééé	&#38;copy;&#60;p/&gt; multi
+line&#x3C;p>multi
+line&lt;/p> trailing </description>
+<pubDate>07 MAY 1999 17:24:02 +0530</pubDate>
+<guid isPermaLink='true'>Café-guid</guid>
+<link></link></item> <item><title>&lt;p&gt;100%&#60;/p&gt;</title>
+<pubDate>
+Friday, 20 Sep 2013 18:15	</pubDate>
+<enclosure url="https://cdn.example.com/e p260.m4v" length='9223372036854775807' type="audio/*"></enclosure>
+<guid isPermaLink="false">  spaced guid  </guid>
+<link>https://example.com/ep</link></item> <item><guid isPermaLink="false"> </guid>
+<pubDate>Thu 16 Dec 1999 14:10:26 GMT-1200 (EEST)</pubDate>
+<dc:date>2004-07-03T10:32:27Z</dc:date>
+<enclosure url="" length="9223372036854775807" type="audio"/>
+<content:encoded>&#x26;apos;a&amp;apos;&lt;br&gt;</content:encoded>
+<description><![CDATA[[x]<br><p><p>Para</p></p>&AMP;<br>]]></description>
+<link>https://example.com/ep</link>
+<title>م&#x631;حبا</title></item> <item><title>&#38;#169;  &#x26;nbsp;  tab	here</title><guid isPermaLink="true"></guid><pubDate>mon, 08 February 1993 19:31:03</pubDate><content:encoded>😀😀😀😀😀&#x1F600;😀😀&lt;br&gt;
+&#x26;Lt;&#13;
+Tom &#38; Jerry &lt;3#7 – Interviewééé</content:encoded><enclosure url="https://user:pass@media.example.net/271.mp3" length="2147483647" type="image/png"/></item> <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href='https://example.com/alt.xml' length="9223372036854775808" title="Alternate"/> <title><![CDATA[back\slash  ​]]></title> <atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="MP3 feed" rel="next" length="9223372036854775808" type="audio/mpeg" href=""/></channel>
+</rss>

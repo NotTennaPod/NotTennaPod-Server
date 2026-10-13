@@ -1,0 +1,6 @@
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<atom:subtitle type="html">&lt;div&gt;a &#60; b&#60;/div>&#60;br&gt;</atom:subtitle>
+  <atom:link rel="last" href="ftp://files.example.com/a/b/c269.aif" title=''/>
+  <atom:title type="html">&#x3C;ul&gt;&lt;li&gt;&#x3C;b>Bold&#x3C;/b&gt;<![CDATA[ title</li><li>two</li></ul> Tom & Jerry <3]]></atom:title>
+  <atom:icon></atom:icon>
+</atom:feed>

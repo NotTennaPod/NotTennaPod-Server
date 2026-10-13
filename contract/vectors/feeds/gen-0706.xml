@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:image href=" "></itunes:image><atom:link rel="payment" href="https://example.com/pay" length="abc" title='' type="application/atom+xml"/><atom:link type='application/atom+xml' length='abc' rel=""/><language> EN-US </language><description></description><title>&lt;label>مرحبا&lt;/label>  a
+  b</title><link></link><item><media:content url="https://example.com/a.b/café/208.ts" medium='audio' type="audio/opus" fileSize="9007199254740992" duration='1.5'/> <media:content url="ftp://files.example.com/ep311.mp3.zip" type='audio/ogg' fileSize="٢٠٠٠٠" isDefault="TRUE" duration='-5'/> <itunes:subtitle><![CDATA[&unknown;]]></itunes:subtitle> <description><![CDATA[
+
+​]]></description> <title>&amp;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt;&#x26;#xD800;&#x3C;b>AT&#x26;T&lt;/b&gt;</title> <media:content fileSize='2e5' duration="1.5" medium="Audio" type="x-audio/mpeg" isDefault="1"></media:content> <link>https://example.com/ep</link> <enclosure type="application/x-bittorrent"></enclosure> <enclosure url='' length='20000.0' type='Audio/MPEG'/></item><item><media:group><media:content type="image/*" medium="document" duration="2147483" fileSize="2147483647"/><media:content duration="2147483648" fileSize="9007199254740992" type='application/x-bittorrent' isDefault="1" url="ftp://files.example.com/a/b/c328.mp3"/></media:group> <itunes:duration>1:09:58</itunes:duration> <pubDate>2014-02-27T16:19:28.3</pubDate> <enclosure url="https://xn--caf-dma.example/dir.with.dots/ep145.webm" length="1,000,000" type='audio/*'/> <enclosure url="http://example.org/e p395.3gp" length='-9223372036854775808' type="video/x-matroska"/> <guid isPermaLink="true">Café-guid</guid> <enclosure length="9223372036854775808" type="AUDIO/MPEG"/> <title>  spaced   cr&#13;lf</title></item><item><media:content url=" https://cdn.example.com/a/b/c246.txt " type="text/html" duration="2147484" isDefault="false" fileSize='9223372036854775808'/>
+<enclosure url="https://user:pass@media.example.net/ep164.m4a" length="+20000" type="audio/opus"/>
+<content:encoded><![CDATA[<img src="x.png">	http://example.com/?a=1&b=2Line<br>break<br>	&copy;&lt;b&gt;escaped&lt;/b&gt;<br> &hellip;<div>Line<br>break<]]>/div&gt;ééé</content:encoded>
+<enclosure url='http://example.org/dir.with.dots/ep259.torrent?dl=1.0' length=" 20000" type='audio/'/>
+<link> https://e.com/x </link>
+<guid isPermaLink="false">urn:uuid:cb706176</guid>
+<itunes:duration>05:12</itunes:duration>
+<description>	&#38;#x;  a&#13;
+b&amp;Lt;&lt;br&gt;</description>
+<title>&#x26;#xFFFF;</title></item></channel>
+</rss>

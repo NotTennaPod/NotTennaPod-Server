@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><itunes:summary>&#60;p&gt;&#x3C;/p&gt;ééééé&#233;Folge 7: Über alles&#x3C;br&gt;&lt;div&gt;#ha<![CDATA[sh</div>]]></itunes:summary> <podcast:funding url="https://example.com/donate"/> <link xmlns="http://www.w3.org/2005/Atom" rel="self" length="abc" href=""/> <description> &amp;#x1F600; trailing aaa&#60;p/>&lt;div>&amp;#x1F600;&#60;/div>&lt;p&gt;  padded  &#x3C;/p&gt;&#x3C;li>&amp;AMP;&lt;/li>ééé</description> <media:thumbnail url="https://example.com/mt.jpg"/> <itunes:image href=" "/> <title>a &lt; b
+&amp;amp
+&#x3C;dl&gt;&lt;dt>&#38;#0;&#60;/dt>&#x3C;dd>b&#60;/dd&gt;&lt;/dl></title> <item><title>{json: 1}"quoted"&lt;img src="x.png"&gt; cover</title> <guid>urn:uuid:40fcbcd5</guid> <pubDate>2014-09-23T12:60:39</pubDate> <itunes:subtitle>&amp;#x1F600; שלום</itunes:subtitle> <itunes:image href=" "/> <itunes:duration>4057</itunes:duration> <enclosure url="https://cdn.example.com/ep184.php" length="-0" type="video/mp4"/> <enclosure url="//example.com/378.mid" length="9223372036854775807" type="video/quicktime"/> <media:content url="https://cdn.example.com/ep245.mov" duration="1" fileSize="9223372036854775807" type="audio/*" medium="video"/> <media:content url='https://user:pass@media.example.net/ep132.html#t=10' isDefault="false" type="application/x-bittorrent" fileSize="0x4E20"/> <podcast:transcript url="" type="text/plain"/></item> <item><link>https://example.com/ep</link>
+  <media:content fileSize="9223372036854775808" type='audio/*' medium="Audio" duration="1"/>
+  <podcast:chapters url="" type="application/json+chapters"/>
+  <itunes:image href=" https://e.com/i.png "/>
+  <description><![CDATA[ plain words &#xFFFF;
+
+&copy;]]></description>
+  <itunes:duration>40:11</itunes:duration>
+  <x:foo xmlns:x="urn:x"><title>Nested title</title></x:foo>
+  <enclosure length=" 20000" type='image/*'/>
+  <media:content medium="Audio" type='application/octet-stream' url="//example.com/a/b/c356.torrent" duration="-5" fileSize="4294967296"/>
+  <title>  é
+</title>
+  <content:encoded><![CDATA[<p>multi
+line</p>]]></content:encoded></item> <item><title>100%
+&#x26;#xFFFF;
+😀</title>
+<guid isPermaLink="false">
+</guid>
+<link></link>
+<pubDate>2132-00-27T14:27:33+0530</pubDate>
+<itunes:image href=""></itunes:image>
+<enclosure length='٢٠٠٠٠' type='audio/*'/>
+<media:group><media:content fileSize="123456789012345678" medium="Audio" type="audio/*" isDefault="true"/></media:group>
+<podcast:transcript type="application/srr"/><podcast:transcript url="" type="text/html"/><podcast:transcript url="" type="application/x-subrip" language="en"/></item></channel>
+</rss>

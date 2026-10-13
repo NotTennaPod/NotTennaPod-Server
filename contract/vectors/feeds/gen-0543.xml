@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:psc="http://podlove.org/simple-chapters"><title><![CDATA['single'&#;<i>a < b</i>]]></title>
+  <pi:funding url="">Support us</pi:funding>
+  <dc:creator>DC Creator</dc:creator>
+  <description>&lt;p&gt;plain words&lt;/p&gt;ééé
+&amp;amp</description>
+  <comments>https://example.com/c</comments>
+  <link> https://example.com/ </link>
+  <language>en</language>
+  <itunes:image href='https://example.com/it.jpg'/>
+  <media:thumbnail/>
+  <item><title>a
+  <![CDATA[b  &#xFFFF;  x<y]]></title> <guid isPermaLink="false">Café-guid</guid> <pubDate>Thursday, 04 Feb 70 02:33:43</pubDate> <description><![CDATA[ééé]]></description> <itunes:image href=''/> <itunes:duration>4:29:18</itunes:duration> <enclosure url="https://example.com:8443/ep170.webm" length="9007199254740992" type="video/webm"/> <media:content duration="-5" url="ftp://files.example.com/e p349.opus?a=1&amp;b=2" fileSize="2e5" type="application/json" medium="audio"/></item>
+  <item><enclosure url="" length="18446744073709551616" type="audio/flac"/> <itunes:summary>aaaaaaaaa&lt;p&gt;&#x8336;&#60;/p&gt;</itunes:summary> <media:thumbnail/> <media:content type="audio/" duration=" 60" fileSize="52428800"/> <pubDate>Mon, 18 Jan 1982 04:28 -05000</pubDate> <link></link> <itunes:duration>8085</itunes:duration> <title>&amp;hellip;</title></item></channel></rss>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:a10="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link rel="related" title=""/> <description><![CDATA[<li>multi
+line<]]>/li>&lt;p&gt;sep&#x3C;/p></description> <pi:funding>  spaced  </pi:funding> <title><![CDATA[	<3 <3&#65;&#66;<em>é</em>	]]></title> <a10:link href="https://example.com/pay" rel="alternate" title="Alternate"/> <a10:link rel="enclosure" type="audio/mpeg" length="20000" href="https://example.com/alt.xml" title=''/> <link> https://example.com/ </link> <itunes:image href=''/> <itunes:summary>  é</itunes:summary> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <item><itunes:duration>2:33:47</itunes:duration>
+<content:encoded>Episode 12&lt;br&gt;&lt;li>cr
+lf&#x3C;/li> café  padded  &amp;unknown;&lt;br&gt;aaaaaaaa&lt;p>sep&#60;/p&gt;&#x3C;li&gt;tab	here&lt;/li&gt;</content:encoded>
+<pi:chapters url="" type="application/json+chapters"/>
+<itunes:subtitle><![CDATA[&#169;  http://example.com/?a=1&b=2  <strike>&#xFFFF;</strike>]]></itunes:subtitle>
+<atom:link rel='first' href="https://example.com/" title='MP3 feed' type="application/xml+xhtml"/>
+<title>cafémulti
+line</title>
+<description>&lt;img&gt;&#x3C;p&gt;{json: 1}&#60;/p&gt;&#60;p&gt;&amp;apos;a&#x26;apos;&#x3C;/p&gt;</description>
+<pubDate>Saturday, 19 May 1900 00:46</pubDate>
+<itunes:image href="https://example.com/ep.jpg"/>
+<link> https://e.com/x </link>
+<enclosure url="https://cdn.example.com/dir.with.dots/ep316.flac?auth=yes" length="-1" type="text/plain"/>
+<guid isPermaLink="true">  spaced guid  </guid></item> <item><guid isPermaLink="true">  spaced guid  </guid><itunes:duration>2562047788015215:30:07</itunes:duration><title><![CDATA[S]]>01E757http://example.com/?a=1&#38;b=2#627 – Interview</title><description>
+Tom &#x26; Jerry &lt;3&#x3C;p&gt;back\slash&lt;/p&gt;&#60;li>back\slash&#x3C;/li>&#60;img src=&quot;x" alt="y&quot;/&gt;&amp;amp;</description><itunes:image href=" https://e.com/i.png "/><mrss:description type="html"><![CDATA[aaaaa&amp;<p>&</p>]]></mrss:description><enclosure url="https://user:pass@media.example.net/dir.with.dots/ep264.ogx" length='٢٠٠٠٠' type="Audio/MPEG"/></item></channel> </rss>

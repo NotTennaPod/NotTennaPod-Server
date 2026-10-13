@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><dc:creator>DC Creator</dc:creator>
+<p:funding></p:funding>
+<description><![CDATA[<div>a > b</div>]]></description>
+<itunes:new-feed-url></itunes:new-feed-url>
+<itunes:subtitle><![CDATA[back\slash]]></itunes:subtitle>
+<title>&#38;#xFFFF; {json: 1}</title>
+<item><description>
+&#38;amp;amp;</description><media:thumbnail url=""/><link>https://example.com/ep</link><pubDate>Sat, 22 Apr 1995 01:04 CET</pubDate><content:encoded>😀</content:encoded><title>&#13;
+&#x3C;p>Para&#x3C;/p&gt;  </title><itunes:duration>5867.931</itunes:duration></item></channel>
+</rss>

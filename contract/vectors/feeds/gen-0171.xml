@@ -1,0 +1,22 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0">
+<itunes:image href=""/>
+<subtitle>aaaaa&lt;hr&gt;&amp;#169;&lt;br&gt;&lt;li>&amp;lt;b&#x26;gt;escaped&#x26;lt;/b&amp;gt;&#60;/li&gt;  &amp;#xFFFF;&lt;p&gt; &#60;/p&gt;&#x3C;div>Folge 7: Über alles&#60;/div>&#60;img></subtitle>
+<id> raw </id>
+<author><name></name></author>
+<title type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">&#x3C;b>Bold&lt;/b> title  Line&#x3C;br&gt;break  &#60;img src="x.png"&gt; cover</div></title>
+<link href='https://example.com/pay' rel="enclosure" type="application/xml+xhtml" length='20000' title="MP3 feed"></link>
+<logo></logo>
+<link type='audio/mpeg' rel="Next"/>
+<link rel="payment" href="https://user:pass@media.example.net/café/224.avi" length="abc" title="MP3 feed" type="application/rss+xml"/>
+<link href="" title="Alternate" rel="payment" length="9223372036854775808"/>
+<entry><id>urn:uuid:1</id>
+  <updated>30 Dec 2004 01:28:34 +12345</updated>
+  <published>
+Tue, 06 Feb 2018 19:38
+</published>
+  <author><name>Entry author</name></author>
+  <itunes:duration>79:47</itunes:duration>
+  <title type="plain">&#60;B&gt;multi
+li<![CDATA[ne</b> S01E537 &#x1F600;]]></title>
+  <link title='Alternate' rel="enclosure" href="https://example.com/pay" type=""/>
+  <media:content medium="Audio" url="http://example.org/a/b/c210.mp3.zip" duration='abc' type='audio/wav' isDefault='true' fileSize="1,000,000"/></entry> </feed>

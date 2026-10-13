@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="x-unknown-charset"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0">
+  <channel><title>100%
+שלו&#x5DD;
+&#x3C;span>&amp;nbsp;&lt;/span></title>
+<link> https://example.com/ </link>
+<media:thumbnail url=""/>
+<description>	"quoted"  &amp;hellip;</description>
+<p2:funding url="https://example.com/donate"/>
+<p2:funding url=''>&lt;b&gt;x&#60;/b></p2:funding>
+<language>fr
+</language>
+<p2:funding url="https://example.com/donate">&#x3C;b>x&lt;/b></p2:funding>
+<item><description><![CDATA[ééé{json: 1}<br>
+&#;<div>café</div><p>&amp;amp;</p>	&copy;<div>1 <2</div><img>]]></description> <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">  &amp;#xA9; &amp;#xD800;
+&#60;3 &lt;3</content:encoded> <p2:chapters url="https://example.com/ch.json" type="application/json+chapters"/> <pubDate>Mon, 10 Aug 2448 21:42:16 +1400</pubDate> <enclosure url="" length="" type="audio/mpeg; charset=binary"></enclosure> <title>&#x26;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt;</title></item>
+<item><media:content duration="0060" type="audio/mpeg; charset=binary" fileSize=" 20000" isDefault="true" medium="video" url='https://user:pass@media.example.net/ep125.MP3'/> <pubDate>Tuesday, 07 Aug 1984 23:40</pubDate> <title>&#13;
+&amp;apos;a&amp;apos;
+&#60;sup&gt;multi
+line&lt;/sup&gt;
+'single&apos;&#13;
+</title> <description><![CDATA[<p>&apos;a&apos;</p><div><img src="x.png"]]>&gt; cover&#x3C;/div&gt;&lt;p&gt;Line&#60;br&gt;break&lt;/p></description></item>
+<item><guid isPermaLink='false'>https://example.com/item/11365</guid>
+  <title>&amp;#;  &#x3C;article&gt;&#38;amp;&lt;<![CDATA[/article>]]></title>
+  <enclosure url='https://cdn.example.com/café/199.aac' length='0x4E20' type="audio/wav"></enclosure>
+  <description>tab	here&lt;br&gt;&#x26;quot;q&#x26;quot;&#60;br&gt; ​a&lt;br&gt;&lt;/br&gt;&#x3C;hr/&gt;😀😀&#60;li>plain words&lt;/li></description>
+  <media:group><media:content url="HTTPS://EXAMPLE.COM/346.aac?a=1&amp;b=2" medium='document' duration="1.5" type="video/mp4" fileSize="16384"/></media:group>
+  <pubDate>Thu, 15 May 1997 15:20</pubDate>
+  <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&#38;#xD800;&lt;br> multi
+line</content:encoded></item></channel>
+  </rss>

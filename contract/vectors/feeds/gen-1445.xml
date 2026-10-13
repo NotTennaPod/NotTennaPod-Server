@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><item><podcast:transcript type="text/vtt"/><podcast:transcript url="" type="application/json" language="en"/>
+  <media:content type="audio/mp3" fileSize="4294967296" isDefault="true" url='https://cdn.example.com/ep298.webm'/>
+  <title><![CDATA[&AMP;   leading]]></title>
+  <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1:-1</itunes:duration>
+  <itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#13;
+&amp;apos;a&#x26;apos;aa</itunes:summary>
+  <enclosure url="https://user:pass@media.example.net/e p247.m4a#t=10" length="9007199254740993" type="audio/*"/>
+  <media:content url="https://example.com:8443/a/b/c360.3gp?dl=1.0" fileSize="20000.0" medium="image" type="" isDefault='false' duration="1.5"/>
+  <pubDate>Fri 1 Feb 2205 01:28:18 GMT+1400 (-05:00)</pubDate>
+  <enclosure url="https://example.com:8443/119.mpga" length="abc" type='Audio/MPEG'/></item>
+<item><media:content type="audio/mpeg" isDefault="1" fileSize="16383" medium="video" url="https://example.com/a.b/ep396.aac" duration="01:00"/>
+<pubDate>Mon, 14 Feb 1981 00:55:44 -0000</pubDate>
+<link>https://example.com/ep</link>
+<title><![CDATA[ plain words<dfn>café</dfn><cite> leading</cite>	]]></title>
+<guid isPermaLink="false">  spaced guid  </guid></item>
+<atom:link length="20000" title="Alternate" href='https://example.com/feed?page=2' rel="enclosure" type="application/xhtml+xml"/>
+<title><![CDATA[&]]>nbsp;</title>
+<link xmlns="http://www.w3.org/2005/Atom" type="application/xhtml+xml" length='abc' rel="archives" title="" href="https://example.com:8443/136.caf?a=1&amp;b=2"/>
+<media:thumbnail url="https://example.com/mt.jpg"/>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" https://example.com/sp.jpg "/>
+<atom:link rel="first" title="Alternate" href=""/>
+<language></language>
+<description>&#60;br /&gt;&#x3C;l<![CDATA[i>&lt;b&gt;escaped&lt;/b&gt;</li><hr>]]></description></channel>
+  </rss>

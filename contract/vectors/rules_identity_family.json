@@ -1,0 +1,914 @@
+{
+ "cases": [
+  {
+   "account_id": "a0000000-0000-4000-8000-000000000001",
+   "arrivals": [
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [],
+     "fact": {
+      "author_id": "c7f00001-0000-4000-8000-000000000001",
+      "author_seq": 1,
+      "client_time": 1760000001000,
+      "dependencies": [],
+      "op_id": "c7f00001-0000-4000-8000-000000000003",
+      "payload": {
+       "feed_url": "https://feeds.example.com/one.xml"
+      },
+      "targets": [],
+      "type": "podcast.subscribe",
+      "type_version": 1
+     },
+     "normalized_time": 1760000001000,
+     "receive_time": 1760000001000
+    },
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [],
+     "fact": {
+      "author_id": "c7f00001-0000-4000-8000-000000000002",
+      "author_seq": 1,
+      "client_time": 1760000002000,
+      "dependencies": [],
+      "op_id": "c7f00001-0000-4000-8000-000000000004",
+      "payload": {
+       "feed_url": "https://q.example.org/feed"
+      },
+      "targets": [],
+      "type": "podcast.subscribe",
+      "type_version": 1
+     },
+     "normalized_time": 1760000002000,
+     "receive_time": 1760000002000
+    },
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [
+      "c7f00001-0000-4000-8000-000000000003"
+     ],
+     "fact": {
+      "author_id": "c7f00001-0000-4000-8000-000000000001",
+      "author_seq": 2,
+      "client_time": 1760000003000,
+      "dependencies": [
+       "c7f00001-0000-4000-8000-000000000003"
+      ],
+      "op_id": "c7f00001-0000-4000-8000-000000000005",
+      "payload": {
+       "episode": {
+        "episode_id": "e1:1e45ada6bd270088d289f5f033c03c4bc543abdcd50b1bdfddeeb442b72cd8bc",
+        "generation_id": "g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9",
+        "occurrence": {
+         "enclosure_url": "https://cdn.example.org/one.mp3",
+         "k": "enclosure",
+         "publication_time": 1760000000000,
+         "title": "One",
+         "v": "https://cdn.example.org/one.mp3"
+        },
+        "podcast_id": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f"
+       },
+       "reset_position": true
+      },
+      "previous_op_id": "c7f00001-0000-4000-8000-000000000003",
+      "targets": [
+       {
+        "entity": "episode",
+        "generation": "g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9",
+        "id": "e1:1e45ada6bd270088d289f5f033c03c4bc543abdcd50b1bdfddeeb442b72cd8bc"
+       }
+      ],
+      "type": "episode.mark_played",
+      "type_version": 1
+     },
+     "normalized_time": 1760000003000,
+     "receive_time": 1760000003000
+    },
+    {
+     "decisions": [
+      {
+       "decision_id": "497a680a-96c6-4fc0-956e-495a00dc53ca",
+       "decision_type": "catalog.refresh",
+       "epoch": 1,
+       "seq": 4
+      },
+      {
+       "decision_id": "8421d0a0-3c0b-4973-a234-da9457bd6a12",
+       "decision_type": "podcast.moved",
+       "epoch": 1,
+       "seq": 4
+      },
+      {
+       "decision_id": "fef89c60-3dd9-423d-85fb-6d3300df2e7c",
+       "decision_type": "podcast.merge",
+       "epoch": 1,
+       "seq": 4
+      }
+     ],
+     "fetch": {
+      "feed": {
+       "author": null,
+       "description": null,
+       "funding": [],
+       "image_url": null,
+       "language": null,
+       "link": null,
+       "next_page_url": null,
+       "paged": false,
+       "title": "Show",
+       "type": null
+      },
+      "fetch_time": 1760000004000,
+      "items": [],
+      "moved_to": "https://q.example.org/feed",
+      "new_feed_url": null,
+      "outcome": "success",
+      "podcast_id": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f",
+      "redirects": [
+       {
+        "location": "https://q.example.org/feed",
+        "status": 301
+       }
+      ],
+      "refresh_id": "e8af6f94-8d78-4407-ac31-b68a8a6d367d"
+     },
+     "receive_time": 1760000004000
+    },
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [
+      "c7f00001-0000-4000-8000-000000000004",
+      "c7f00001-0000-4000-8000-000000000005",
+      "fef89c60-3dd9-423d-85fb-6d3300df2e7c"
+     ],
+     "fact": {
+      "author_id": "c7f00001-0000-4000-8000-000000000002",
+      "author_seq": 2,
+      "client_time": 1760000005000,
+      "dependencies": [
+       "c7f00001-0000-4000-8000-000000000004",
+       "c7f00001-0000-4000-8000-000000000005",
+       "fef89c60-3dd9-423d-85fb-6d3300df2e7c"
+      ],
+      "op_id": "c7f00001-0000-4000-8000-000000000007",
+      "payload": {
+       "activity": true,
+       "episode": {
+        "episode_id": "e1:1e45ada6bd270088d289f5f033c03c4bc543abdcd50b1bdfddeeb442b72cd8bc",
+        "generation_id": "g1:01e571a4f743e74287050e6a0dd8afa8c45e3473c7d6ff1fcdc3927c96854f53",
+        "occurrence": {
+         "enclosure_url": "https://cdn.example.org/one.mp3",
+         "k": "enclosure",
+         "publication_time": 1760000000000,
+         "title": "One",
+         "v": "https://cdn.example.org/one.mp3"
+        },
+        "podcast_id": "p1:72edc8ceabe7cf7ea04d6f1af9eb259652c70246278a4108909b89550cb8a63b"
+       },
+       "session_id": "c7f00001-0000-4000-8000-000000000006",
+       "start_position": 0
+      },
+      "previous_op_id": "c7f00001-0000-4000-8000-000000000004",
+      "targets": [
+       {
+        "entity": "episode",
+        "generation": "g1:01e571a4f743e74287050e6a0dd8afa8c45e3473c7d6ff1fcdc3927c96854f53",
+        "id": "e1:1e45ada6bd270088d289f5f033c03c4bc543abdcd50b1bdfddeeb442b72cd8bc"
+       }
+      ],
+      "type": "session.start",
+      "type_version": 1
+     },
+     "normalized_time": 1760000005000,
+     "receive_time": 1760000005000
+    }
+   ],
+   "expected": {
+    "decisions": [
+     {
+      "decision_id": "497a680a-96c6-4fc0-956e-495a00dc53ca",
+      "decision_type": "catalog.refresh",
+      "decision_version": 1,
+      "dependencies": [
+       "c7f00001-0000-4000-8000-000000000003"
+      ],
+      "epoch": 1,
+      "index": 0,
+      "inputs": {
+       "fetch_time": 1760000004000,
+       "generation_id": "g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9",
+       "outcome": "success",
+       "part": 0,
+       "podcast_id": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f",
+       "refresh_id": "e8af6f94-8d78-4407-ac31-b68a8a6d367d"
+      },
+      "normalized_time": 1760000004000,
+      "result": {
+       "feed": {
+        "base": null,
+        "fields": {
+         "author": null,
+         "description": null,
+         "funding": [],
+         "image_url": null,
+         "language": null,
+         "link": null,
+         "next_page_url": null,
+         "paged": false,
+         "title": "Show",
+         "type": null
+        }
+       },
+       "items": [],
+       "population": true,
+       "status": {
+        "error": null,
+        "last_attempt": 1760000004000,
+        "last_success": 1760000004000,
+        "next_attempt": null
+       }
+      },
+      "seq": 4,
+      "subject": "refresh:p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f:e8af6f94-8d78-4407-ac31-b68a8a6d367d:0"
+     },
+     {
+      "decision_id": "8421d0a0-3c0b-4973-a234-da9457bd6a12",
+      "decision_type": "podcast.moved",
+      "decision_version": 1,
+      "dependencies": [
+       "497a680a-96c6-4fc0-956e-495a00dc53ca"
+      ],
+      "epoch": 1,
+      "index": 1,
+      "inputs": {
+       "generation_id": "g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9",
+       "podcast_id": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f",
+       "refresh_id": "e8af6f94-8d78-4407-ac31-b68a8a6d367d"
+      },
+      "normalized_time": 1760000004000,
+      "result": {
+       "aliases": [],
+       "refresh_url": "https://q.example.org/feed"
+      },
+      "seq": 4,
+      "subject": "moved:g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9:e8af6f94-8d78-4407-ac31-b68a8a6d367d"
+     },
+     {
+      "decision_id": "fef89c60-3dd9-423d-85fb-6d3300df2e7c",
+      "decision_type": "podcast.merge",
+      "decision_version": 1,
+      "dependencies": [
+       "497a680a-96c6-4fc0-956e-495a00dc53ca",
+       "c7f00001-0000-4000-8000-000000000003",
+       "c7f00001-0000-4000-8000-000000000004"
+      ],
+      "epoch": 1,
+      "index": 2,
+      "inputs": {
+       "into": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f",
+       "refresh_id": "e8af6f94-8d78-4407-ac31-b68a8a6d367d",
+       "source": "p1:72edc8ceabe7cf7ea04d6f1af9eb259652c70246278a4108909b89550cb8a63b",
+       "url": "https://q.example.org/feed"
+      },
+      "normalized_time": 1760000004000,
+      "result": {
+       "aliases": [
+        "https://q.example.org/feed"
+       ],
+       "episodes": [],
+       "generations": [
+        {
+         "generation_id": "g1:01e571a4f743e74287050e6a0dd8afa8c45e3473c7d6ff1fcdc3927c96854f53",
+         "into": "g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9",
+         "mode": "joined"
+        }
+       ],
+       "into": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f",
+       "properties": "survivor",
+       "source": "p1:72edc8ceabe7cf7ea04d6f1af9eb259652c70246278a4108909b89550cb8a63b"
+      },
+      "seq": 4,
+      "subject": "podcast-merge:p1:72edc8ceabe7cf7ea04d6f1af9eb259652c70246278a4108909b89550cb8a63b"
+     }
+    ],
+    "outcomes": {
+     "c7f00001-0000-4000-8000-000000000003": {
+      "outcome": "applied"
+     },
+     "c7f00001-0000-4000-8000-000000000004": {
+      "outcome": "applied"
+     },
+     "c7f00001-0000-4000-8000-000000000005": {
+      "outcome": "applied"
+     },
+     "c7f00001-0000-4000-8000-000000000007": {
+      "outcome": "applied"
+     }
+    },
+    "records": [
+     {
+      "entity": "episode",
+      "field_group": "history",
+      "id": "e1:1e45ada6bd270088d289f5f033c03c4bc543abdcd50b1bdfddeeb442b72cd8bc",
+      "value": {
+       "generation_id": "g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9",
+       "time": 1760000005000
+      }
+     },
+     {
+      "entity": "episode",
+      "field_group": "identity",
+      "id": "e1:1e45ada6bd270088d289f5f033c03c4bc543abdcd50b1bdfddeeb442b72cd8bc",
+      "value": {
+       "occurrence": {
+        "enclosure_url": "https://cdn.example.org/one.mp3",
+        "k": "enclosure",
+        "publication_time": 1760000000000,
+        "title": "One",
+        "v": "https://cdn.example.org/one.mp3"
+       },
+       "podcast_id": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f"
+      }
+     },
+     {
+      "entity": "episode",
+      "field_group": "last_played",
+      "id": "e1:1e45ada6bd270088d289f5f033c03c4bc543abdcd50b1bdfddeeb442b72cd8bc",
+      "value": {
+       "generation_id": "g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9",
+       "time": 1760000005000
+      }
+     },
+     {
+      "entity": "episode",
+      "field_group": "play_state",
+      "id": "e1:1e45ada6bd270088d289f5f033c03c4bc543abdcd50b1bdfddeeb442b72cd8bc",
+      "value": {
+       "generation_id": "g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9",
+       "play_state": "played"
+      }
+     },
+     {
+      "entity": "episode",
+      "field_group": "played_time",
+      "id": "e1:1e45ada6bd270088d289f5f033c03c4bc543abdcd50b1bdfddeeb442b72cd8bc",
+      "value": {
+       "generation_id": "g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9",
+       "played_ms": 0
+      }
+     },
+     {
+      "entity": "episode",
+      "field_group": "position",
+      "id": "e1:1e45ada6bd270088d289f5f033c03c4bc543abdcd50b1bdfddeeb442b72cd8bc",
+      "value": {
+       "claim_id": "c7f00001-0000-4000-8000-000000000007",
+       "generation_id": "g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9",
+       "position": 0
+      }
+     },
+     {
+      "entity": "podcast",
+      "field_group": "subscription",
+      "id": "p1:72edc8ceabe7cf7ea04d6f1af9eb259652c70246278a4108909b89550cb8a63b",
+      "value": {
+       "merged_into": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f",
+       "state": "merged"
+      }
+     },
+     {
+      "entity": "podcast",
+      "field_group": "identity",
+      "id": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f",
+      "value": {
+       "aliases": [
+        {
+         "normalized": "https://feeds.example.com/one.xml",
+         "url": "https://feeds.example.com/one.xml"
+        },
+        {
+         "normalized": "https://q.example.org/feed",
+         "url": "https://q.example.org/feed"
+        }
+       ],
+       "refresh_url": "https://q.example.org/feed"
+      }
+     },
+     {
+      "entity": "podcast",
+      "field_group": "metadata",
+      "id": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f",
+      "value": {
+       "author": null,
+       "description": null,
+       "fetch_time": 1760000004000,
+       "funding": [],
+       "image_url": null,
+       "language": null,
+       "link": null,
+       "next_page_url": null,
+       "paged": false,
+       "revision": "497a680a-96c6-4fc0-956e-495a00dc53ca",
+       "title": "Show",
+       "type": null
+      }
+     },
+     {
+      "entity": "podcast",
+      "field_group": "policy",
+      "id": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f",
+      "value": {
+       "keep_updated": true,
+       "new_episodes_action": "global"
+      }
+     },
+     {
+      "entity": "podcast",
+      "field_group": "refresh_status",
+      "id": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f",
+      "value": {
+       "error": null,
+       "last_attempt": 1760000004000,
+       "last_success": 1760000004000,
+       "next_attempt": null
+      }
+     },
+     {
+      "entity": "podcast",
+      "field_group": "subscription",
+      "id": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f",
+      "value": {
+       "generation_id": "g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9",
+       "state": "subscribed"
+      }
+     }
+    ],
+    "resolutions": {
+     "c7f00001-0000-4000-8000-000000000003": {
+      "generation_id": "g1:7b09870f1bdd89332ca9204ec94d70675e9d7244abbf6f1978a996bcdd777ed9",
+      "mode": "created",
+      "podcast_id": "p1:92d0b6b7cef70eb965a93205a4b7d0c315fba62b22f2e56db06247f53b5f899f"
+     },
+     "c7f00001-0000-4000-8000-000000000004": {
+      "generation_id": "g1:01e571a4f743e74287050e6a0dd8afa8c45e3473c7d6ff1fcdc3927c96854f53",
+      "mode": "created",
+      "podcast_id": "p1:72edc8ceabe7cf7ea04d6f1af9eb259652c70246278a4108909b89550cb8a63b"
+     }
+    }
+   },
+   "namespace": "b0000000-0000-4000-8000-000000000002"
+  },
+  {
+   "account_id": "a0000000-0000-4000-8000-000000000001",
+   "arrivals": [
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [],
+     "fact": {
+      "author_id": "c7f00002-0000-4000-8000-000000000001",
+      "author_seq": 1,
+      "client_time": 1760000001000,
+      "dependencies": [],
+      "op_id": "c7f00002-0000-4000-8000-000000000003",
+      "payload": {
+       "feed_url": "https://feeds.example.com/one.xml"
+      },
+      "targets": [],
+      "type": "podcast.subscribe",
+      "type_version": 1
+     },
+     "normalized_time": 1760000001000,
+     "receive_time": 1760000001000
+    },
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [],
+     "fact": {
+      "author_id": "c7f00002-0000-4000-8000-000000000002",
+      "author_seq": 1,
+      "client_time": 1760000002000,
+      "dependencies": [],
+      "op_id": "c7f00002-0000-4000-8000-000000000004",
+      "payload": {
+       "feed_url": "https://q.example.org/feed"
+      },
+      "targets": [],
+      "type": "podcast.subscribe",
+      "type_version": 1
+     },
+     "normalized_time": 1760000002000,
+     "receive_time": 1760000002000
+    },
+    {
+     "decisions": [
+      {
+       "decision_id": "c80ce9ef-8973-4a0c-818f-59e61ebb937a",
+       "decision_type": "catalog.refresh",
+       "epoch": 1,
+       "seq": 3
+      },
+      {
+       "decision_id": "dab78fad-4ac2-4bd8-a9d0-6b67d0dd29a4",
+       "decision_type": "podcast.moved",
+       "epoch": 1,
+       "seq": 3
+      },
+      {
+       "decision_id": "cf1406c0-43aa-417f-ab4d-259e5de76c9c",
+       "decision_type": "podcast.merge",
+       "epoch": 1,
+       "seq": 3
+      }
+     ],
+     "fetch": {
+      "feed": {
+       "author": null,
+       "description": null,
+       "funding": [],
+       "image_url": null,
+       "language": null,
+       "link": null,
+       "next_page_url": null,
+       "paged": false,
+       "title": "Show",
+       "type": null
+      },
+      "fetch_time": 1760000003000,
+      "items": [],
+      "moved_to": "https://q.example.org/feed",
+      "new_feed_url": null,
+      "outcome": "success",
+      "podcast_id": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d",
+      "redirects": [
+       {
+        "location": "https://q.example.org/feed",
+        "status": 301
+       }
+      ],
+      "refresh_id": "8b17cb48-a8c4-4f57-83cd-385df0471a88"
+     },
+     "receive_time": 1760000003000
+    },
+    {
+     "capabilities": [
+      "favorites",
+      "history",
+      "inbox",
+      "queue",
+      "statistics"
+     ],
+     "edges": [
+      "c7f00002-0000-4000-8000-000000000004",
+      "cf1406c0-43aa-417f-ab4d-259e5de76c9c"
+     ],
+     "fact": {
+      "author_id": "c7f00002-0000-4000-8000-000000000002",
+      "author_seq": 2,
+      "client_time": 1760000004000,
+      "dependencies": [
+       "c7f00002-0000-4000-8000-000000000004",
+       "cf1406c0-43aa-417f-ab4d-259e5de76c9c"
+      ],
+      "op_id": "c7f00002-0000-4000-8000-000000000006",
+      "payload": {
+       "activity": true,
+       "episode": {
+        "episode_id": "e1:07b73c2aabc43933db75e73e02c6db455800dc4c58de83b1132dd8521298994d",
+        "generation_id": "g1:c7e322d9213078ceadb15d583431cae3b115271d1de951d070429fd632f28a7e",
+        "occurrence": {
+         "enclosure_url": "https://cdn.example.org/one.mp3",
+         "k": "enclosure",
+         "publication_time": 1760000000000,
+         "title": "One",
+         "v": "https://cdn.example.org/one.mp3"
+        },
+        "podcast_id": "p1:9c5526148d8e92abcef310468bbd9b1527a88d895a5f309e423335c9c58bef2a"
+       },
+       "session_id": "c7f00002-0000-4000-8000-000000000005",
+       "start_position": 0
+      },
+      "previous_op_id": "c7f00002-0000-4000-8000-000000000004",
+      "targets": [
+       {
+        "entity": "episode",
+        "generation": "g1:c7e322d9213078ceadb15d583431cae3b115271d1de951d070429fd632f28a7e",
+        "id": "e1:07b73c2aabc43933db75e73e02c6db455800dc4c58de83b1132dd8521298994d"
+       }
+      ],
+      "type": "session.start",
+      "type_version": 1
+     },
+     "normalized_time": 1760000004000,
+     "receive_time": 1760000004000
+    }
+   ],
+   "expected": {
+    "decisions": [
+     {
+      "decision_id": "c80ce9ef-8973-4a0c-818f-59e61ebb937a",
+      "decision_type": "catalog.refresh",
+      "decision_version": 1,
+      "dependencies": [
+       "c7f00002-0000-4000-8000-000000000003"
+      ],
+      "epoch": 1,
+      "index": 0,
+      "inputs": {
+       "fetch_time": 1760000003000,
+       "generation_id": "g1:0154edb83203665aa4562b2e916e1fb1f2d2a3a7d3daa6aceadaa5ffc7a3e7b8",
+       "outcome": "success",
+       "part": 0,
+       "podcast_id": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d",
+       "refresh_id": "8b17cb48-a8c4-4f57-83cd-385df0471a88"
+      },
+      "normalized_time": 1760000003000,
+      "result": {
+       "feed": {
+        "base": null,
+        "fields": {
+         "author": null,
+         "description": null,
+         "funding": [],
+         "image_url": null,
+         "language": null,
+         "link": null,
+         "next_page_url": null,
+         "paged": false,
+         "title": "Show",
+         "type": null
+        }
+       },
+       "items": [],
+       "population": true,
+       "status": {
+        "error": null,
+        "last_attempt": 1760000003000,
+        "last_success": 1760000003000,
+        "next_attempt": null
+       }
+      },
+      "seq": 3,
+      "subject": "refresh:p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d:8b17cb48-a8c4-4f57-83cd-385df0471a88:0"
+     },
+     {
+      "decision_id": "cf1406c0-43aa-417f-ab4d-259e5de76c9c",
+      "decision_type": "podcast.merge",
+      "decision_version": 1,
+      "dependencies": [
+       "c7f00002-0000-4000-8000-000000000003",
+       "c7f00002-0000-4000-8000-000000000004",
+       "c80ce9ef-8973-4a0c-818f-59e61ebb937a"
+      ],
+      "epoch": 1,
+      "index": 2,
+      "inputs": {
+       "into": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d",
+       "refresh_id": "8b17cb48-a8c4-4f57-83cd-385df0471a88",
+       "source": "p1:9c5526148d8e92abcef310468bbd9b1527a88d895a5f309e423335c9c58bef2a",
+       "url": "https://q.example.org/feed"
+      },
+      "normalized_time": 1760000003000,
+      "result": {
+       "aliases": [
+        "https://q.example.org/feed"
+       ],
+       "episodes": [],
+       "generations": [
+        {
+         "generation_id": "g1:c7e322d9213078ceadb15d583431cae3b115271d1de951d070429fd632f28a7e",
+         "into": "g1:0154edb83203665aa4562b2e916e1fb1f2d2a3a7d3daa6aceadaa5ffc7a3e7b8",
+         "mode": "joined"
+        }
+       ],
+       "into": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d",
+       "properties": "survivor",
+       "source": "p1:9c5526148d8e92abcef310468bbd9b1527a88d895a5f309e423335c9c58bef2a"
+      },
+      "seq": 3,
+      "subject": "podcast-merge:p1:9c5526148d8e92abcef310468bbd9b1527a88d895a5f309e423335c9c58bef2a"
+     },
+     {
+      "decision_id": "dab78fad-4ac2-4bd8-a9d0-6b67d0dd29a4",
+      "decision_type": "podcast.moved",
+      "decision_version": 1,
+      "dependencies": [
+       "c80ce9ef-8973-4a0c-818f-59e61ebb937a"
+      ],
+      "epoch": 1,
+      "index": 1,
+      "inputs": {
+       "generation_id": "g1:0154edb83203665aa4562b2e916e1fb1f2d2a3a7d3daa6aceadaa5ffc7a3e7b8",
+       "podcast_id": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d",
+       "refresh_id": "8b17cb48-a8c4-4f57-83cd-385df0471a88"
+      },
+      "normalized_time": 1760000003000,
+      "result": {
+       "aliases": [],
+       "refresh_url": "https://q.example.org/feed"
+      },
+      "seq": 3,
+      "subject": "moved:g1:0154edb83203665aa4562b2e916e1fb1f2d2a3a7d3daa6aceadaa5ffc7a3e7b8:8b17cb48-a8c4-4f57-83cd-385df0471a88"
+     }
+    ],
+    "outcomes": {
+     "c7f00002-0000-4000-8000-000000000003": {
+      "outcome": "applied"
+     },
+     "c7f00002-0000-4000-8000-000000000004": {
+      "outcome": "applied"
+     },
+     "c7f00002-0000-4000-8000-000000000006": {
+      "outcome": "applied"
+     }
+    },
+    "records": [
+     {
+      "entity": "episode",
+      "field_group": "history",
+      "id": "e1:07b73c2aabc43933db75e73e02c6db455800dc4c58de83b1132dd8521298994d",
+      "value": {
+       "generation_id": "g1:0154edb83203665aa4562b2e916e1fb1f2d2a3a7d3daa6aceadaa5ffc7a3e7b8",
+       "time": 1760000004000
+      }
+     },
+     {
+      "entity": "episode",
+      "field_group": "identity",
+      "id": "e1:07b73c2aabc43933db75e73e02c6db455800dc4c58de83b1132dd8521298994d",
+      "value": {
+       "occurrence": {
+        "enclosure_url": "https://cdn.example.org/one.mp3",
+        "k": "enclosure",
+        "publication_time": 1760000000000,
+        "title": "One",
+        "v": "https://cdn.example.org/one.mp3"
+       },
+       "podcast_id": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d"
+      }
+     },
+     {
+      "entity": "episode",
+      "field_group": "last_played",
+      "id": "e1:07b73c2aabc43933db75e73e02c6db455800dc4c58de83b1132dd8521298994d",
+      "value": {
+       "generation_id": "g1:0154edb83203665aa4562b2e916e1fb1f2d2a3a7d3daa6aceadaa5ffc7a3e7b8",
+       "time": 1760000004000
+      }
+     },
+     {
+      "entity": "episode",
+      "field_group": "play_state",
+      "id": "e1:07b73c2aabc43933db75e73e02c6db455800dc4c58de83b1132dd8521298994d",
+      "value": {
+       "generation_id": "g1:0154edb83203665aa4562b2e916e1fb1f2d2a3a7d3daa6aceadaa5ffc7a3e7b8",
+       "play_state": "unplayed"
+      }
+     },
+     {
+      "entity": "episode",
+      "field_group": "played_time",
+      "id": "e1:07b73c2aabc43933db75e73e02c6db455800dc4c58de83b1132dd8521298994d",
+      "value": {
+       "generation_id": "g1:0154edb83203665aa4562b2e916e1fb1f2d2a3a7d3daa6aceadaa5ffc7a3e7b8",
+       "played_ms": 0
+      }
+     },
+     {
+      "entity": "episode",
+      "field_group": "position",
+      "id": "e1:07b73c2aabc43933db75e73e02c6db455800dc4c58de83b1132dd8521298994d",
+      "value": {
+       "claim_id": "c7f00002-0000-4000-8000-000000000006",
+       "generation_id": "g1:0154edb83203665aa4562b2e916e1fb1f2d2a3a7d3daa6aceadaa5ffc7a3e7b8",
+       "position": 0
+      }
+     },
+     {
+      "entity": "podcast",
+      "field_group": "subscription",
+      "id": "p1:9c5526148d8e92abcef310468bbd9b1527a88d895a5f309e423335c9c58bef2a",
+      "value": {
+       "merged_into": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d",
+       "state": "merged"
+      }
+     },
+     {
+      "entity": "podcast",
+      "field_group": "identity",
+      "id": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d",
+      "value": {
+       "aliases": [
+        {
+         "normalized": "https://feeds.example.com/one.xml",
+         "url": "https://feeds.example.com/one.xml"
+        },
+        {
+         "normalized": "https://q.example.org/feed",
+         "url": "https://q.example.org/feed"
+        }
+       ],
+       "refresh_url": "https://q.example.org/feed"
+      }
+     },
+     {
+      "entity": "podcast",
+      "field_group": "metadata",
+      "id": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d",
+      "value": {
+       "author": null,
+       "description": null,
+       "fetch_time": 1760000003000,
+       "funding": [],
+       "image_url": null,
+       "language": null,
+       "link": null,
+       "next_page_url": null,
+       "paged": false,
+       "revision": "c80ce9ef-8973-4a0c-818f-59e61ebb937a",
+       "title": "Show",
+       "type": null
+      }
+     },
+     {
+      "entity": "podcast",
+      "field_group": "policy",
+      "id": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d",
+      "value": {
+       "keep_updated": true,
+       "new_episodes_action": "global"
+      }
+     },
+     {
+      "entity": "podcast",
+      "field_group": "refresh_status",
+      "id": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d",
+      "value": {
+       "error": null,
+       "last_attempt": 1760000003000,
+       "last_success": 1760000003000,
+       "next_attempt": null
+      }
+     },
+     {
+      "entity": "podcast",
+      "field_group": "subscription",
+      "id": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d",
+      "value": {
+       "generation_id": "g1:0154edb83203665aa4562b2e916e1fb1f2d2a3a7d3daa6aceadaa5ffc7a3e7b8",
+       "state": "subscribed"
+      }
+     }
+    ],
+    "resolutions": {
+     "c7f00002-0000-4000-8000-000000000003": {
+      "generation_id": "g1:0154edb83203665aa4562b2e916e1fb1f2d2a3a7d3daa6aceadaa5ffc7a3e7b8",
+      "mode": "created",
+      "podcast_id": "p1:cf1fd6f769e887774919f92fed9d1ba47de781e04459d02cbda8906fc577507d"
+     },
+     "c7f00002-0000-4000-8000-000000000004": {
+      "generation_id": "g1:c7e322d9213078ceadb15d583431cae3b115271d1de951d070429fd632f28a7e",
+      "mode": "created",
+      "podcast_id": "p1:9c5526148d8e92abcef310468bbd9b1527a88d895a5f309e423335c9c58bef2a"
+     }
+    }
+   },
+   "namespace": "b0000000-0000-4000-8000-000000000002"
+  }
+ ],
+ "suite": "rules"
+}

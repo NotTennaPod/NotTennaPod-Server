@@ -1,0 +1,19 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><title>&#13;
+a&#13;
+b​Episode 12 </title>
+  <atom:link type="application/atom+xml" length="12" rel="enclosure" title="Café"/>
+  <image><url>  https://example.com/ws.png
+</url></image>
+  <item><pubDate>Fri, 06 Apr 1973 04:59:34</pubDate> <enclosure url="http://example.org/70.mkv" length="2e5" type="application/x-bittorrent"/> <dc:date>Thursday, 03 Feb 1977 10:43 +0000</dc:date> <enclosure url="https://xn--caf-dma.example/a/b/c14.torrent" length="20000.0" type=" audio/mpeg"></enclosure> <link>https://example.com/ep</link> <enclosure url="https://xn--caf-dma.example/café/335.ogx" length="-1" type="audio/mp3"/> <title>שלום sep</title> <media:thumbnail/> <description></description></item>
+  <item><content:encoded>&#160;  spaced   שלום&lt;br/>aaaaaaaaa'single'</content:encoded>
+<enclosure url="//example.com/café/301.mkv#t=10" length="9007199254740993" type='AUDIO/MPEG'/>
+<link>https://example.com/ep</link>
+<title>&#x26;#xD800;第614&#x96C6;</title>
+<guid isPermaLink="true">a&amp;b</guid>
+<podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/>
+<dc:date>
+Wednesday, 30 Feb 1900 16:02:17  </dc:date></item>
+  <media:thumbnail url="https://example.com/mt.jpg"></media:thumbnail>
+  <link>https://example.com</link></channel>
+  </rss>

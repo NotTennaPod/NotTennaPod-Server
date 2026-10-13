@@ -1,0 +1,20 @@
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+  <atom:logo> https://e.com/l.png
+</atom:logo><atom:id>urn:x</atom:id><itunes:image href="https://example.com/ai.jpg"/><atom:author><atom:name>C&#38;D</atom:name></atom:author><atom:link type="application/xhtml+xml" title="MP3 feed" href="https://example.com/alt.xml" length='9223372036854775808' rel="enclosure"/><atom:updated>Thu,  14  May 1970 16:58:11 -0500</atom:updated><atom:title type="html">&#38;; &#x3C;ul&gt;&lt;li&gt;&#x26;#x1F600;&lt;/li&gt;&#60;li>two&lt;/li&gt;&lt;/ul&gt;</atom:title><atom:subtitle><![CDATA[<hr>]]></atom:subtitle><itunes:author><![CDATA[Jane Doe]]></itunes:author><atom:entry><atom:id>
+id
+</atom:id>
+  <atom:title type="HTML">S01E235</atom:title>
+  <atom:published>_,  2005-11-17T22:20:17Z</atom:published>
+  <atom:updated>Tue, 24 AUGUST 2280 01:11:10 +0945</atom:updated></atom:entry><atom:entry><atom:content><![CDATA[	&amp<img src="x" alt="y"/>
+
+&AMP; back\slash<p/>]]></atom:content>
+  <atom:id></atom:id>
+  <atom:updated>YdlJ+BlMYapIWE-+éBHLW)Ky.</atom:updated>
+  <podcast:transcript url="https://example.com/t.json" type="application/json"/><podcast:transcript url="" type='application/json' language="en"></podcast:transcript><podcast:transcript type="application/x-subrip" language="en"/>
+  <atom:title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">  padded    &lt;img src="x.png"&gt; cover</div></atom:title>
+  <atom:author><atom:name>Entry author</atom:name></atom:author></atom:entry><atom:entry><atom:link type="application/atom+xml" title="Alternate" href="" rel=""/> <atom:content type='HTML'><![CDATA[😀😀😀<img>&lt;b&gt;<br><img src="x" alt="y"/><]]>li>&#x26;#xA9;&#x3C;/li&gt; a
+
+b😀
+
+&amp;#;</atom:content> <atom:updated>FRI, 21 August 0099 13:13:39</atom:updated> <atom:published>Thu, 01 Jan 2024 10:00:00 +</atom:published> <atom:link type="" title="Alternate" rel='last' length="12"/> <atom:id></atom:id></atom:entry><atom:entry><atom:title type="html">&#x3C;u&gt;a
+  b<![CDATA[</u>]]></atom:title><atom:link rel="next" href="https://example.com/alt.xml" title="Alternate" type='application/xhtml+xml'/><atom:updated>_, 2019-01-14T18:20:32</atom:updated></atom:entry><atom:entry><atom:link title="MP3 feed" href="https://example.com/feed?page=2" rel="first" type="audio/mpeg" length='12'/><atom:published>Wed 9 Mar 2011 19:14:40 GMT+0200 (GMT+0100)</atom:published><atom:link rel="last" title="MP3 feed"/><atom:id>tag:x,2020:1</atom:id><atom:author><atom:name>Entry author</atom:name></atom:author><atom:link length='20000' type="application/atom+xml" href='https://example.com/pay' title='' rel="hub"/><atom:title type="html">café #hash</atom:title><atom:summary></atom:summary><itunes:image href=""/><atom:updated>Fri Jul 18 23:34:20 1066</atom:updated></atom:entry></atom:feed>

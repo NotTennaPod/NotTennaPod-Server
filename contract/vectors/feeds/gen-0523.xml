@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="">
+<atom:title><![CDATA[&euro; Episode 12]]></atom:title>
+  <atom:link title="" href="https://example.com/pay" length='12' type="application/xml+xhtml" rel=""/>
+  <atom:link title="Alternate" type="text/html" rel="hub" href='https://example.com/pay'/>
+  <atom:id></atom:id>
+  <itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#31532;&#19968;</itunes:author>
+  <atom:link type="application/atom+xml" title='Café' href='https://example.com/' rel='last'/>
+  <atom:updated>2013-09-29T04:16:18.1234567Z</atom:updated>
+  <atom:logo>https://example.com/logo.png</atom:logo>
+  <atom:entry><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/e.jpg"/> <atom:link length="20000" title="Alternate" href="" rel="hub"/> <atom:summary><![CDATA[&#128512;
+]]>café&#x3C;li&gt;a=b&amp;c=d&#60;/li&gt;&#x3C;p&gt;[x]&#60;/p>ééé</atom:summary> <atom:link type="audio/mpeg" href="https://example.com/alt.xml" title="MP3 feed" length='9223372036854775808' rel="first"/> <atom:id></atom:id> <atom:title>&lt;i&gt;Episode 505&lt;/i>
+Tom &#38; Jerry &#x3C;3
+&lt;P&gt;plain words&#x3C;/P&gt;</atom:title> <atom:published>Thu Jan 01 2024 10:00:00 GMT+0100 (Central European Standard Time)</atom:published> <atom:content type="html">&#128512;&#x1F600;&#128512;&lt;br/>&#x3C;li> leading&#60;/li&gt;	1 &#x3C;2&#x3C;BR>
+
+&#x26;#169;&lt;br /&gt;a</atom:content></atom:entry>
+  <atom:entry><atom:updated>10 Nov 2000 15:34:51 Gmt</atom:updated> <atom:title>a&#13;
+b &#60;3 &lt;3 a=b&amp;c=d</atom:title> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/e.jpg"/> <atom:link length="abc" href="https://example.com/pay" title="" type="audio/mpeg"/> <atom:summary>&#x3C;p&gt;&#38;nbsp;&lt;/p&gt;&#13;
+x&lt;y&lt;p&gt;&#33590;&lt;/p&gt;  &#x26;#x1F600;&#38;#;&#60;br&gt;&lt;li>#7 &#8211; Interview&lt;/li&gt;	&amp;#65;&#x26;#66;&lt;hr&gt;</atom:summary> <atom:published>1972-01-11+-0100</atom:published> <atom:link length="9223372036854775808" href="https://example.com/pay" rel="first" type="application/rss+xml" title=""/> <atom:content type="HTML">
+
+&lt;3 &lt;3</atom:content> <atom:link title="Café" length="12" type="text/html" href="https://xn--caf-dma.example/ep23.flac" rel="archives"/> <atom:id> raw </atom:id></atom:entry>
+  </atom:feed>

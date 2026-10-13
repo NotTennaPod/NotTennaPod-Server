@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="latin1" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters">
+  <subtitle type='HTML'><![CDATA[<BR>  &nbsp;
+
+&AMP;]]></subtitle><id> raw </id><link type="application/rss+xml" rel="Next" title="Alternate"/><itunes:author>&#38;copy; 2020 Org</itunes:author><link href="https://example.com/" title="MP3 feed" type="application/atom+xml" rel="Next"/><title type="text">&#x3C;del>&#x26;lt&#x3C;/del>  &#60;small>&#x26;lt;b&#x26;gt;&lt;/small&gt;  café</title><itunes:image href='https://example.com/ai.jpg'/><entry><id> raw </id><link type="text/html" href="https://example.com/pay" title="Café" rel="last"/><itunes:image href='https://example.com/e.jpg'/><summary><![CDATA[<p>a
+
+b</p><li>a
+  b</li><3 <3<br><div> leading</div>ééé]]></summary><itunes:duration>1:30 </itunes:duration><content type="text">&#60;p>caf&#233;&lt;/p></content><updated>2010-09-09T12:99:55.580+0200</updated><title type="text">
+tab	here
+</title><published>03 May 88 15:20 -0500</published></entry><entry><itunes:image href='https://example.com/e.jpg'></itunes:image>
+<title>  Episode 12
+&amp;lt;b&#x26;gt;escaped&amp;lt;/b&#38;gt;
+&#1513;&#1500;&#1493;&#1501;
+</title>
+<link type="application/rss+xml" title="Café" rel="last" href='https://example.com/feed?page=2' length='abc'/>
+<content type="xhtml"><![CDATA[<p>#hash</p><p>Tom & Jerry <3</p>trailing <br> &euro;&#xD800;<br>]]></content>
+<id></id></entry><entry><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">café&#1513;&#1500;&#1493;&#1501;&lt;br&gt;&#60;hr/&gt;&lt;br/>é&#xE9;é   leading&#60;li&gt;&amp;copy;&#60;/li&gt; leading&#x3C;br&gt;</div></content><link type='' length='abc' rel="" href="https://example.com/pay" title="MP3 feed"/><id></id><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">x&#60;y  a > b</div></title><updated>GiKE(WRySéZkqBd</updated></entry><entry><title>&amp;#169;&#x26;quot;q&amp;quot;&#x26;apos;a&#38;apos;</title><itunes:image href="https://example.com/e.jpg"/><id>tag:x,2020:1</id><updated>FRI 2 Jun 2006 13:58:42 GMT+1400 (GMT+01:00)</updated><published>Mon Septem 27 21:23:13 1997</published><content>&#x26;euro;&#60;br></content><summary type="text"></summary></entry>
+  </feed>

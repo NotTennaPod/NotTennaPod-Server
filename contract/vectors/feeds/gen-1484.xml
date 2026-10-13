@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!-- generated -->
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding url='https://example.com/donate'/> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/it.jpg"/> <atom:link rel="next" href="https://example.com/a.b/a/b/c160.m4v" length="9223372036854775808" type="application/atom+xml" title="MP3 feed"/> <description><![CDATA[ééé]]></description> <lastBuildDate>Mon, 07 Dec 1987 13:24:10</lastBuildDate> <title>&amp;amp;  &lt;h6>&amp;&#x3C;/h6&gt;  &amp;hellip;</title> <link></link> <item><title>&#8203; Folge 370: Über alles Episode 12&#x3C;/p></title>
+  <guid isPermaLink="true">Café-guid</guid>
+  <link></link>
+  <pubDate>Sat, 18 May 2013 22:38:00 PDT</pubDate>
+  <description>&#60;div&gt;&#x26;#x;&lt;/div&gt;ééé	&#x26;</description>
+  <content:encoded><![CDATA[&#128512;&#128512;&#128512;&#128512; &hellip;<li>&lt;b&gt;escaped&lt;/b&gt;</li><p>e&#769;</p><li>AT&T</li>]]></content:encoded>
+  <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[<li>&lt]]>&#x3C;/li&gt;
+&#128512;</itunes:subtitle>
+  <enclosure url="https://xn--caf-dma.example/e p82.mpga" length="20000 " type='application/x-bittorrent'/>
+  <media:content type="video/mp4" medium="audio" duration="3600" fileSize='1,000,000' url="https://xn--caf-dma.example/café/108.php"/>
+  <sc:chapters><sc:chapter image="https://example.com/ch.png" href="https://example.com/ch" start="2624" title="&lt;b>x&lt;/b>"/><sc:chapter image="https://example.com/ch.png" href="" title="Intro" start="00:48:58.953"/><sc:chapter start="8642" href='' image="https://example.com/ch.png" title="Intro"/><sc:chapter href="" start=" 1:00" image="https://example.com/ch.png"/><sc:chapter href='https://example.com/ch' title='Café &amp;amp; more' image="https://example.com/ch.png" start="1:00:Infinity"></sc:chapter></sc:chapters></item> <item><enclosure url="HTTPS://EXAMPLE.COM/café/337" length="2147483647" type="audio/mp3"/> <podcast:chapters type="application/json+chapters"/> <itunes:category xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" text="Arts"><itunes:category xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" text='Design'/></itunes:category> <sc:chapters><sc:chapter start="13:08" title="&#128512;" href="https://example.com/ch"/><sc:chapter start="&#65297;:&#65296;&#65296;" image="https://example.com/ch.png" href=""/><sc:chapter title="Café &amp;amp; more" start='1:00:00.5'/><sc:chapter image="https://example.com/ch.png" title="Café &amp;amp; more" start="01:45:01.174"/><sc:chapter title="&#128512;" href="" start="NaN"/></sc:chapters> <title>plain words  Line&lt;br&gt;break  a
+  b</title> <pubDate>Sun 6 Jul 2138 01:57:01 GMT</pubDate> <guid> </guid></item></channel></rss>

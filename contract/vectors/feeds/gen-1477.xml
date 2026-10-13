@@ -1,0 +1,22 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0"><author><name>C&amp;D</name></author>
+<logo>https://example.com/logo.png</logo>
+<title><![CDATA[<img src="x.png"> cover]]></title>
+<id>urn:x</id>
+<link title="MP3 feed" href='https://example.com/feed?page=2' rel='next' length="12" type="application/xml+xhtml"></link>
+<itunes:summary><![CDATA[<div>x<y</div]]>></itunes:summary>
+<subtitle>R&#x26;D</subtitle>
+<itunes:image href=''/>
+<entry><link type="application/xhtml+xml" href="https://example.com/" title="" length="12"/>
+<id>
+id
+</id>
+<itunes:duration>1.0e99</itunes:duration>
+<podcast:person role="host">Jane</podcast:person>
+<summary type="html">&#x1F600;é&#233;é&lt;p>&amp;#x;&#60;/p></summary>
+<title type="html">"quoted"  [x]</title>
+<itunes:image href=""/></entry>
+<entry><author><name>Entry author</name></author><media:content xmlns:media="http://search.yahoo.com/mrss/" url='https://user:pass@media.example.net/e p390.m4v' isDefault="false" medium='document' duration="2147483648" type="video" fileSize="0x4E20"/><updated>1996-01-04T09:13:40-0800  </updated><title>&#x26;copy;
+&#x26;</title><published>1986-09-10T17:45:52CET</published></entry>
+<entry><itunes:duration>3:53:48</itunes:duration> <published>2015-12-25T00:24:38. Z</published> <link length='20000' type="application/rss+xml" rel="hub"></link> <title type="plain">&#x26;;  &lt;h1>&#x26;&lt;/h1&gt;  'single'</title> <id></id> <content type="html"><![CDATA[ Episode 12 &#0;]]></content></entry>
+<entry><content><![CDATA[<br/>AT&T<br><p/>]]></content> <itunes:duration>15983</itunes:duration> <title type="html"><![CDATA[<img src="x.png"> coveréx<y</p>]]></title> <itunes:image href='https://example.com/e.jpg'/> <link rel="hub" href=''/> <summary type="xhtml"></summary> <podcast:transcript url="https://example.com/t.vtt" type=''/> <published>1972-02-25T10:27:00+1400</published> <link length="20000" title="" href="https://example.com/feed?page=2" rel='first' type=""/> <id></id> <updated>	wed, 24 Oct 2001 11:42:55 +0530	</updated></entry>
+  </feed>

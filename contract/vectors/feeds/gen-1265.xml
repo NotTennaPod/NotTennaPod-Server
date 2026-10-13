@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="en">
+<atom:id></atom:id><itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url><atom:link href="https://example.com/feed?page=2" rel="last" type="application/xml+xhtml" length="12" title="Café"/><atom:title>Folge 642: Über alles</atom:title><itunes:summary>&lt;li&gt;&amp;mdash;&lt;/li&gt;</itunes:summary><itunes:image href=""/><itunes:author>A, B</itunes:author><atom:entry><atom:link href="https://example.com/feed?page=2" rel='enclosure' type='' title="" length='abc'/>
+<atom:id> raw </atom:id>
+<atom:title type="html"><![CDATA[<article>&Lt;</article>]]></atom:title>
+<itunes:duration>6895.879</itunes:duration>
+<atom:content type="html">&lt;li&gt;&#x26;nbsp;&#60;/li>&#60;br /&gt;
+
+1 &#x3C;2&#60;br />aaa&amp;;&lt;br&gt;&#x3C;div>&amp;#65;&#38;#66;&lt;/div&gt;&#x3C;li>Line&lt;br>break&#60;/li></atom:content>
+<atom:updated>Tue, 13 Nov 77 10:06:51 -0800</atom:updated></atom:entry>
+</atom:feed>

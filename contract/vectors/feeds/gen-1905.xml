@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters">
+<channel><description> &amp;#65;&#x26;#66;
+
+Episode 7&#60;br&gt;&#x3C;div>cr
+lf&lt;/div&gt;aaaaaaaa</description><title>&lt;li&gt;&#x26;#128512;&#x3C;/li> 1 &#60;2</title><textInput><title>Search</title><link>https://example.com/search</link></textInput><item><link>https://example.com/ep</link>
+<media:content url=" https://cdn.example.com/a/b/c246.txt " medium="Audio" type="image/*" fileSize="12"/>
+<media:content type="audio/opus" url="https://example.com:8443/dir.with.dots/ep272.mp3.zip" duration="-5"/>
+<pubDate>1989-05-13CDT</pubDate>
+<title>&amp;hellip;</title>
+<content:encoded><![CDATA[&;
+plain wordsééémulti
+line<br><p>back\slash</p>]]></content:encoded>
+<guid isPermaLink='false'>dup</guid></itme><item><dc:date>Fri., 09 Apr 2010 20:11:23 -0800</dc:date>
+<description>&lt;p&gt;cr&#13;lf&#x3C;/p>&#x3C;p&gt;http://example.com/?a=1&#38;b=2&lt;/p&gt;</description>
+<title><![CDATA[a
+  b [x] <article> leading</article>]]></title>
+<media:thumbnail url=''/>
+<media:description></media:description>
+<enclosure url="" length='٢٠٠٠٠' type='audio/ogg'/>
+<link>https://example.com/ep</link>
+<guid isPermaLink="false">a&#x26;b</guid></item><item><title>
+#145 – Interview
+&amp;hellip;
+&#60;P&gt;"quoted"&#x3C;/P>  </title>
+  <guid isPermaLink="false"> </guid>
+  <pubDate>2253-04-23T07:18:38+0945</pubDate>
+  <enclosure url="" length="20000.0" type='image/png'/>
+  <enclosure url="https://xn--caf-dma.example/e p336.MP3" length="16383"/>
+  <media:content duration="59" url="https://example.com:8443/café/262.mp4" fileSize="00020000" type='text/plain' medium="audio"/>
+  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="next" href='' type="application/atom+xml" title="Café"/></item><item><guid isPermaLink="false">  spaced guid  </guid> <pubDate>Tue, 	31 	Mar 	2130 05:19:56 +0100</pubDate> <description>😀&#x3C;br&gt;</description> <c:encoded><![CDATA[&#x1F600]]>;&lt;br&gt;aaa</c:encoded> <enclosure url="http://example.org/a/b/c257.php" length="18446744073709551616" type="audio/x-wav"/> <media:description type="plain">&lt;p/&gt;&#x3C;div>&#38;#xD800;&lt;/div>&lt;li>&amp;hellip;&#x3C;/li></media:description> <foo><description>Nested description</description></foo></item><item><guid isPermaLink="false">  spaced guid  </guid><title>Folge 919: &#220;ber<![CDATA[ alles   leading]]></title><pubDate>Mon, 31 jul 1969 09:40:28 -0500</pubDate><sc:chapters version='1.2'><sc:chapter start="1957" title='Intro' href="https://example.com/ch"/><sc:chapter title="😀" start='228'></sc:chapter><sc:chapter start="1:00:NaN" title="" href="https://example.com/ch"/><sc:chapter start='03:21:39.027' title="" image='https://example.com/ch.png' href=""/></sc:chapters><link></link><enclosure url="" length="20000 " type="audio/"/><media:group><media:content duration="abc" medium="audio" type=" audio/mpeg" fileSize="-16384" isDefault="false"/><media:content medium='Audio' type=' audio/mpeg' fileSize='12' duration="-5"/><media:content medium="Audio" fileSize="0" duration="0" url="http://example.org/a/b/c257.php" isDefault="1" type="AUDIO/MPEG"/></media:group></item><item><guid isPermaLink="true">https://example.com/item/51607</guid>
+  <description>&#60;p>Tom &#38;amp; Jerry &amp;lt;3&#60;/p>😀😀😀&lt;br>aaaaaaa  &amp;copy;&#x26;lt;b&amp;gt;escaped&#x26;lt;/b&amp;gt;&lt;li&gt;&#38;lt;b&#38;gt;&lt;/li&gt;&amp;#x;</description>
+  <title>&#60;strong&gt;1 &lt;2&#x3C;/stron<![CDATA[g>  😀  Episode 12]]></title>
+  <enclosure url="http://example.org/185.caf" length="0x4E20" type="unknown"/>
+  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="" title="Alternate" rel="payment" length="12"/>
+  <pubDate>Saturday, 31 Jul 1990 17:52:57 CST</pubDate>
+  <link>https://example.com/ep</link></item><link></link></channel></rss>

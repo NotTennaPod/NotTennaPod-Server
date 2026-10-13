@@ -1,0 +1,28 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom"> <channel xmlns:media="http://search.yahoo.com/mrss/"><description></description> <image><url>https://example.com/img.png</url><link>https://example.com/img-link</link><title>Image title</title></image> <podcast:funding/> <itunes:image href=""></itunes:image> <item><title>a &lt; b</title> <guid>https://example.com/item/46263</guid> <pubDate>2018-09-26T15:26:22CEST</pubDate> <description><![CDATA[aaaaaaaaa]]></description> <content:encoded>&#x26;#128512; ​&lt;img>&lt;br&gt;&#60;/br>&#x3C;p>&#60;/p&gt;&#x3C;hr>é&lt;img&gt;</content:encoded> <enclosure url="" length="20000 " type="audio/"/></item> <item><title>&amp;&#38;#x;&#38;#169;</title>
+<guid isPermaLink="false">urn:uuid:72b43f8f</guid>
+<link>https://example.com/ep</link>
+<pubDate>Monday, 09 Nov 08 07:25 +0200</pubDate>
+<description><![CDATA[	a
+
+bx<y<br>
+
+&#xA9;]]></description>
+<content:encoded>&#x3C;li&gt;&#60;p>Para&#60;/p&gt;&#60;/li&gt;&lt;li&gt;&amp;#128512;&#60;/li&gt;</content:encoded>
+<itunes:summary>&#233;éé&#60;p>&amp;#169;&#x3C;/p&gt;</itunes:summary>
+<enclosure url="https://example.com/a.b/ep135.pdf?a=1&amp;b=2" length=" 20000" type="application/pdf"/>
+<media:thumbnail/>
+<podcast:transcript type="application/srr"/><podcast:transcript url="https://example.com/t.vtt" type='text/html' language="en"/><podcast:transcript url="" type="" language="en"/></item> <item><itunes:duration>1:2:3:4</itunes:duration><guid isPermaLink="false">
+</guid><itunes:summary> leading&#x3C;br&gt;&lt;img src="x" alt="y"/&gt;😀😀😀&lt;img&gt;&lt;div>x&lt;y&#x3C;/div></itunes:summary><media:content type='audio/*' fileSize="0" url="https://cdn.example.com/a/b/c250.php" medium='audio' isDefault='true' duration=" 60"/><media:content type="image/*" isDefault="TRUE" fileSize="-9223372036854775808" url="https://cdn.example.com/dir.with.dots/ep116" medium='audio' duration=" 60"/><title><![CDATA[a=b&c=d]]></title><pubDate>Saturday, 05 Aug 2180 03:35:22 +0530</pubDate><podcast:transcript url='https://example.com/t.json'></podcast:transcript><podcast:transcript url="" type="Application/JSON"/><podcast:transcript url='https://example.com/t.vtt' type="text/html" language="en"/><enclosure length="2147483647" type='video/mp4'/></item> <item><title>&#38;lt;b&#x26;gt;escaped&#38;lt;/b&amp;gt; &amp;#xD800; &amp;#xA9;</title>
+  <guid isPermaLink="false">Caf&#xE9;-guid</guid>
+  <link> https://e.com/x </link>
+  <itunes:subtitle>Episode 636&#x26;Lt;</itunes:subtitle>
+  <itunes:image href=" https://e.com/i.png "/>
+  <itunes:duration>7597.672</itunes:duration>
+  <enclosure url="https://xn--caf-dma.example/café/108.php" length="1" type="AUDIO/MPEG"/>
+  <enclosure url="http://example.org/e p34.flac" length="9007199254740993" type='video/webm'/></item> <item><itunes:image/> <description><![CDATA[plain word]]>s&lt;br&gt;</description> <enclosure url="" length='16384' type="audio/mpeg"/> <enclosure url="" length="2147483648" type='audio/wav'></enclosure> <title><![CDATA['single' 第646集 &apos;a&apos;]]></title> <pubDate>2011-07-24T03:05:41+1400</pubDate> <enclosure url="//example.com/café/301.mkv#t=10" length="16385" type=""/> <itunes:duration>1:-1</itunes:duration> <itunes:subtitle><![CDATA[tab	here]]></itunes:subtitle></item> <item><title><![CDATA[&unknown; <sup>&#;</sup> <P>Tom & Jerry <3</P>]]></title><guid isPermaLink="true">  spaced guid  </guid><pubDate>2004-0</pubDate><content:encoded><![CDATA[
+multi
+line😀😀😀<br/>]]></content:encoded><itunes:duration>81:32</itunes:duration><enclosure length="52428800" type="unknown"/><enclosure url="https://example.com:8443/ep249.m4v" length="123456" type='application/octet-stream'/><media:description type='html'>ééé</media:description><pc:chapters version="1.2"><pc:chapter start="12:12" title="😀" href="https://example.com/ch"/><pc:chapter start="02:59:43.832" href="https://example.com/ch" title="😀"/><pc:chapter image='https://example.com/ch.png' title="Intro" href="https://example.com/ch" start="1:1e2"/></pc:chapters><podcast:chapters url="" type="application/json+chapters"></podcast:chapters></item> <link></link> <language>pt-BR</language> <podcast:funding url=""></podcast:funding> <title>Tom &#x26; Jerry &lt;3</title> <title>&#13;
+&#x26;
+​
+'single'&#13;
+</title></channel></rss>

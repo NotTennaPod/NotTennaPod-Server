@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<x:title xmlns:x="urn:x">Other namespace title</x:title>
+<subtitle type="html">   spaced  </subtitle>
+<updated>Thu Jul 23 19:49:51 2544</updated>
+<title type="plain"><![CDATA[Tom &amp; Jerry &lt;3  &euro;]]></title>
+<podcast:funding url="https://example.com/give">Give</podcast:funding>
+<entry><published>Monday, 21 Oct 1996 06:13:33 GMT+00:00</published> <title type="plain">&amp;amp;</title> <id>tag:x,2020:1</id> <content type="html"><![CDATA[ tab	here &#65;&#66;&lt;b&gt;<p>back\slash</p>
+
+&nbsp;]]></content> <itunes:duration>4:38:55</itunes:duration> <author><name>Entry author</name></author></entry></feed>

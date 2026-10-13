@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><title><![CDATA[
+&AMP;
+]]></title><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><podcast:funding/><item><description> &#38;Lt;</description>
+  <guid>a&#x26;b</guid>
+  <title><![CDATA[<p><p>se]]>p&#x3C;/p>&lt;/p&gt;</title>
+  <x:title xmlns:x="urn:x">Other namespace title</x:title>
+  <media:content duration="3600" medium="audio" isDefault="false" url="http://example.org/dir.with.dots/ep259.torrent?dl=1.0" type="application/ogg" fileSize='0'/>
+  <pubDate>Tuesday, 17 Jun 2008 04:12 -0000</pubDate>
+  <itunes:duration> 1:30</itunes:duration>
+  <link>https://example.com/ep</link>
+  <media:content url=" ftp://files.example.com/a/b/c253.wma " type="application/x-bittorrent" isDefault="false" duration="1.5" fileSize="２０００００" medium="image"></media:content>
+  <media:content fileSize="20000.0" duration="-5" type='audio/mp4' medium="audio"/></item><item><media:thumbnail url=""/>
+  <title><![CDATA[<img src="x.png"> cover]]></title>
+  <guid isPermaLink="true">dup</guid>
+  <pubDate>Fri, 18 Aug 1978 18:53</pubDate>
+  <link> https://e.com/x </link>
+  <enclosure url="//example.com/a/b/c389.MP3" length="" type="application/x-bittorrent"/>
+  <itunes:duration>03:00</itunes:duration>
+  <description><![CDATA[ &hellip;]]></description></item><description><![CDATA[	<3 <3&#65;&#66;<br> leading<br>]]></description><itunes:author>  Spaced  </itunes:author><podcast:funding>Support us</podcast:funding><link></link></channel></rss>

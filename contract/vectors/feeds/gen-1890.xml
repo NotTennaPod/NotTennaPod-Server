@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <updated>15 Feb 51 03:45:19 -0500</updated>
+  <title type="plain">  &lt;small&gt;#hash&#x3C;/small&gt;  &#x26;#xFFFF;  &lt;li>multi
+line&#60;/li>&#13;
+</title>
+  <id> raw </id>
+  <logo>https://example.com/logo.png</logo>
+  <entry><psc:chapters><pc:chapter title="Intro" start="35791:23:47.647"/><psc:chapter image="https://example.com/ch.png" title="&lt;b>x&lt;/b>" start="32:34" href="https://example.com/ch"/></psc:chapters><id></id><updated>2319-02-18T07:33:38 (CET)</updated></entry>
+  <entry><link rel="Next" length="20000" href="https://example.com/alt.xml"/>
+  <link length="9223372036854775808" title="Alternate" rel="first" type="text/html"/>
+  <published>2022-10-12T09:52:48.967Japan Standard Time</published>
+  <id>tag:x,2020:1</id>
+  <link title="Alternate" href="https://example.com/" rel="archives" length="20000"/>
+  <title type="html">'single<![CDATA[']]></title>
+  <updated>14 Nov 1979 11:59 -1200</updated></entry></feed>

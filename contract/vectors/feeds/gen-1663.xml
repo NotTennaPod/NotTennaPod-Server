@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><image><title>Image title</title><url>https://example.com/img.png</url></image>
+<podcast:funding>  spaced  </podcast:funding>
+<title><![CDATA[100%
+&Lt;]]></title>
+<i:image href=" "/>
+<language></language>
+<link></link>
+<item><title><![CDATA[<span style=]]>"color:red"&gt;  spaced  &#x3C;/span></title>
+<guid isPermaLink="true">dup</guid>
+<link></link>
+<pubDate>Mon 08 May 2417 16:45:24 +0945</pubDate>
+<i:summary></i:summary>
+<i:duration>596:31:23.647</i:duration>
+<enclosure url="https://example.com/a.b/ep37.aac" length="20000 " type="video"/>
+<enclosure length="9007199254740993" type="audio"/></item>
+<item><pubDate>1972-09-14+0200</pubDate>
+<media:content fileSize="+20000" duration="3600" isDefault="1" medium="image" type="audio/" url='//example.com/dir.with.dots/ep231.mp3.zip'/>
+<media:content medium="video" fileSize="4294967296" type="application/pdf" duration="9223372036854775807" url="https://cdn.example.com/a/b/c250.php" isDefault='TRUE'/>
+<title><![CDATA[[x]第486集茶]]></title>
+<podcast:chapters type="application/json+chapters"/>
+<guid isPermaLink="true">https://example.com/item/56522</guid>
+<description>😀<![CDATA[😀  100%]]></description>
+<enclosure url="" length="-0" type="application/pdf"/>
+<media:content fileSize="4294967296" isDefault="1" duration="9223372036854775807" type=''/>
+<link></link></item></channel>
+  </rss>

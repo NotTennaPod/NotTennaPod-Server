@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0"> <subtitle type="html"><![CDATA[#hash<br>]]></subtitle><author><name>C&#38;D</name></author><link title="Alternate" rel="Next" href="https://example.com/feed?page=2" type="application/rss+xml"/><author><name>Émile</name></author><title>trailing </title><podcast:funding url='https://example.com/give'>Give</podcast:funding><author><name>&#201;mile</name></author><link type="" rel='next' href="https://example.com/alt.xml" title=''/><logo> https://e.com/l.png
+</logo><entry><podcast:transcript url="https://example.com/t.json" type="text/vtt" language="en"/>
+<content>&#x3C;p>R&#x26;D&lt;/p></content>
+<title type="plain">a=b&#38;c=d</title>
+<id>urn:uuid:1</id></entyr><entry><!-- comment --><?pi data?>
+<id>tag:x,2020:1</id>
+<updated>2021/09/04T13:08:56/0000</updated>
+<title type="html">&lt;li>&#x26;#xFFFF;&lt;/li>
+a &gt; b</title>
+<summary><![CDATA[<br /><p>&#xA9;</p>]]></summary>
+<link rel="last" length="12" href="https://example.com/"/>
+<link rel="" length="9223372036854775808" type="application/rss+xml" title="" href="https://example.com/pay"/>
+<link href="https://example.com/pay" length="9223372036854775808" title="MP3 feed" rel="related" type="audio/mpeg"/>
+<content type="html">&lt;div&gt;  spaced  &lt;/div&gt;&#13;
+&#38;quot;q&#x26;quot;
+é&#x3C;img src="x" alt="y"/&gt;&#60;hr/></content></entry>
+</feed>

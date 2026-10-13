@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <channel><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[&l]]>t  [x]</itunes:subtitle> <language> EN-US </language> <title>&lt;3 &lt;3</title> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/it.jpg"/> <podcast:funding url=''>Support us</podcast:funding> <item><description><![CDATA[​<br> AT&T]]></description> <enclosure url="//example.com/a/b/c351.mov?file=x.mp3" length="123456" type="x-audio/mpeg"/> <media:group><media:content medium="image" duration=" 60" type="video/quicktime" fileSize="12" isDefault="1"/></media:group> <link>https://example.com/ep</link> <pubDate>Thu,  1950-12-26</pubDate> <guid isPermaLink="false">
+</guid> <content:encoded>é&#xE9;é&amp;lt;b&amp;gt;&amp;#0; &#38;hellip;&lt;p&gt;  padded  &#60;/p&gt;</content:encoded> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" "/></item> <item><title><![CDATA[&amp]]></title> <description><![CDATA[back\slashééé	&lt;b&gt;<div>http://example.com/?a=1&b=2</div><div>é</div>Line<br>break<br>&apos;a&apos;	مرحبا]]></description> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1h30m</itunes:duration> <psc:chapters version="1.2"></psc:chapters></item> <item><media:group><media:content type='application/pdf' duration="-5" medium="video" fileSize="18446744073709551616" isDefault="1"></media:content><media:content url="https://user:pass@media.example.net/a/b/c236.aif" duration="1" medium="audio" fileSize="" type="" isDefault="true"/><media:content medium="document" type="audio/mp4" isDefault="1" fileSize="2147483648" duration="2147483"/></media:group>
+<description>&#13;
+Episode 12&lt;p/>&#60;br /></description>
+<title>&#38;lt;b&#38;gt;</title>
+<pubDate>2008-04-22T04:56:36+1400</pubDate>
+<guid isPermaLink='true'>Café-guid</guid>
+<link> https://e.com/x </link>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">539</itunes:duration></item></channel>
+</rss>

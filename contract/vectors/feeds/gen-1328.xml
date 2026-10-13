@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><atom:link href="" rel="payment" title="Alternate"/><description></description><link></link><podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="">  spaced  </podcast:funding><title><![CDATA[Episode 681]]></title><item><link>https://example.com/ep</link><pubDate>2001/02/27T21:12:36</pubDate><enclosure url="" length="9223372036854775807" type="text/plain"/><title>plain words  &lt;div&gt;a&#13;
+b&lt;/div>  </title></item><item><content:encoded>&lt;br>&#x3C;/br> &amp;#1<![CDATA[28512;]]></content:encoded>
+<guid>
+</guid>
+<description>&amp;eur<![CDATA[o;<br>]]></description>
+<enclosure url="https://example.com/a.b/a/b/c252.m4v" length='2147483647' type="audio/x-wav"/>
+<media:content duration="9223372036854775807" fileSize='+20000' type="application/pdf" isDefault="1" url='//example.com/café/69.mpga'/>
+<link> https://e.com/x </link>
+<x:foo xmlns:x="urn:x"><title>Nested title</title></x:foo>
+<media:content duration="1.5" url="http://example.org/e p309.webm" type="audio/flac" fileSize='２０００００' medium="Audio" isDefault="TRUE"/>
+<media:content isDefault="true" duration="9223372036854775807" fileSize="123456" url="https://user:pass@media.example.net/144.webm?dl=1.0" medium="Audio" type="audio/x-wav"/>
+<pubDate>Thu,  14  May 1970 16:58:11 -0500</pubDate>
+<title>café &amp;unknown;</title></item><item><title>مرحبا</title> <guid isPermaLink="false">  spaced guid  </guid> <link>https://example.com/ep</link> <pubDate>Day1,  Mon Nov 3 14:50:08 1980</pubDate> <description>&#13;
+AT&#x26;T&#x3C;BR&gt;&lt;div>&quot;quoted"&#60;/div&gt;</description> <enclosure url="ftp://files.example.com/dir.with.dots/ep315.xyz" length="2147483647" type="text/html"/></item><item><title>&amp;quot;q&amp;qu<![CDATA[ot; plain words &]]></title>
+<guid>dup</guid>
+<link></link>
+<pubDate> 1998-07-11T17:45:0  </pubDate>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2489/05/26T04:39:20</dc:date>
+<enclosure url="" length="9007199254740993" type="audio"/>
+<media:thumbnail url="https://example.com/th.jpg"/></item><item><media:content isDefault="1" type="audio/mpeg" url="https://user:pass@media.example.net/144.webm?dl=1.0" fileSize='' medium="audio" duration="2147483648"/> <media:thumbnail url=""/> <guid>https://example.com/item/16541</guid> <content:encoded>
+
+&quot;quoted"  &amp;#169;
+
+&amp;#0;	&amp;euro; leading</content:encoded> <title><![CDATA[{j]]>son: 1}</title> <link> https://e.com/x </link> <enclosure url="http://example.org/e p307.flac" length="2147483647" type="audio/aac"/></item><item><title>S01E478</title> <guid isPermaLink="false">dup</guid> <link></link> <pubDate>Fri, 13 Mär 1981 16:00:40 -0500</pubDate> <enclosure url="" length="16385" type="audio/mp4"></enclosure> <enclosure url="https://example.com:8443/e p39.MP3" length="16384"></enclosure> <enclosure url="" length="1,000,000" type="application/x-bittorrent"/> <media:content fileSize="0" medium="video" url="https://example.com:8443/ep249.m4v" type="" duration="01:00"/></item></channel> </rss>

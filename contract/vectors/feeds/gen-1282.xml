@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="latin1" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="en"><link type="application/rss+xml" title="Alternate" rel='payment'/>
+  <mrss:thumbnail url="https://example.com/amt.jpg"/>
+  <id>https://example.com/feed</id>
+  <logo>https://example.com/logo.png</logo>
+  <link href="ftp://files.example.com/e p46.pdf" rel="archives" title="Alternate"/>
+  <itunes:author>&#38;copy; 2020 Org</itunes:author>
+  <author><name>Émile</name><email>a@example.com</email></author>
+  <title type="html">&amp;apos;a&#x26;apos;
+back\slash</title>
+  <link type="application/xhtml+xml" title="Café" rel="self"/>
+  <itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url>
+  <entry><id>tag:x,2020:1</id> <summary type="text"> &amp;amp&lt;div>  padded  &#x3C;/div&gt;    spaced  </summary> <published>Thu, 17 Apr 2555 12:07 MSK</published> <itunes:duration>66:18</itunes:duration> <itunes:image href=""/> <link type="application/rss+xml" href="https://example.com/feed?page=2" length="12" title="Alternate"></link></entry>
+  <entry><link rel="alternate" length='20000' title="MP3 feed" href="" type='application/atom+xml'/>
+  <published>Fri, 13 Mär 1981 16:00:40 -0500</published>
+  <link rel="Next" type="application/atom+xml" href="https://example.com/feed?page=2" length="abc" title="MP3 feed"/>
+  <content type="xhtml"> sep&lt;p&gt;trailing &lt;/p></content>
+  <id></id>
+  <itunes:image href="https://example.com/e.jpg"/>
+  <link title="Alternate" length="abc" href="https://cdn.example.com/café/285.ts" rel="last"/>
+  <summary type='html'>é&#xE9;&#233;
+
+&#x26;hellip;
+&#33590;&#x3C;li>&amp;quot;q&#x26;quot;&lt;/li>&lt;div>sep&lt;/div></summary>
+  <updated>Wednesday, 19 Apr 2102 19:59:99</updated>
+  <title type="html"><![CDATA[&#xD800;]]></title>
+  <itunes:duration>2:22:40</itunes:duration></entry>
+  <entry><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;div>&#31532;7&#38598;&lt;/div&gt;&#60;p>cr
+lf&#60;/p></div></content><updated>Thu, 01 Jan 2024 10:00:00 +0000 +0000</updated><id>
+id
+</id><updated>  FRIDAY 7 Feb 1975 21:33:05 GMT+0000 (PST)
+</updated><title><![CDATA[  1 <2 ]]></title></entry>
+  <entry><link href="https://example.com/alt.xml" rel="" type="audio/mpeg"/> <id></id> <title>#hash  &#x3C;b&gt;Bold&lt;/b&gt; title</title> <link rel="self" title="" length="12"/> <itunes:image href="https://example.com/e.jpg"/> <updated>28 Dec 10 06:58:10 -0800</updated> <summary type="text"><![CDATA[<i]]>mg&gt;aaaaaaaaa&#x3C;p>&#60;/p&gt;</summary></entry>
+</feed>

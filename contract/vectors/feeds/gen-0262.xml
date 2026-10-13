@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters">
+<channel xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><title>  &amp;lt  1 &lt;2 </title>
+<language>fr
+</language>
+<atom:link type="" rel="enclosure" length='20000' href="https://example.com/pay"/>
+<image><url>https://example.com/img.png</url><title>Image title</title><link>https://example.com/img-link</link></image>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate"/>
+<atom:link type="text/html" length="abc" href="https://example.com/" rel="archives" title="MP3 feed"/>
+<description><![CDATA[<hr><p>café</p>]]></description>
+<podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate"></podcast:funding>
+<item><title><![CDATA[1 <2<h6>x<y<]]>/h6&gt;</title>
+<guid isPermaLink="false">a&amp;b</guid>
+<link></link>
+<pubDate>1900-05-07pst</pubDate>
+<description>x&lt;y&#x3C;p&gt;a > b&lt;/p&gt;&lt;BR>	&#60;3 &#x3C;3	&amp;#x;</description>
+<itunes:duration>1e2</itunes:duration>
+<enclosure url=' //example.com/a/b/c131.mp3.zip ' length="123456789012345678" type="audio/"/>
+<podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" type="application/json+chapters"/></item>
+<item><itunes:summary>S0<![CDATA[1E7<br>]]></itunes:summary>
+<link></link>
+<mrss:content duration="3600" fileSize="20000 " medium='Audio' isDefault='true' type="audio/opus"/>
+<description>&#13;
+plain wordscafé&#60;br&gt;&#60;p>Episode 12&lt;/p>	café&lt;br></description>
+<mrss:content fileSize="9007199254740993" url="https://example.com:8443/dir.with.dots/ep394.OGG" type="application/octet-stream" duration="1" isDefault='true'/>
+<enclosure url="" length="00020000" type="application/json"/>
+<title><![CDATA[שלום&lt;b&gt;escaped&lt;/b&gt;]]></title>
+<guid isPermaLink="true"></guid>
+<pubDate>2010-02-31</pubDate>
+<enclosure url="https://cdn.example.com/café/197.mp3?a=1&amp;b=2" length="2147483647" type="audio/*"/>
+<itunes:explicit>false</itunes:explicit>
+<itunes:duration>4:00:41</itunes:duration></item>
+<item><title>&#60;label>x&#60;y&#60;/label> &#38;lt;b&amp;gt; &lt;cite>S01E289&lt;/cite&gt;</title><link></link><pubDate>Sat,  17  Apr 2376 09:27:22 -0500</pubDate><description>&lt;br/&gt;</description><dc:date>Thu, 15 March 2564 06:37</dc:date><itunes:summary>😀&#x1F600;</itunes:summary><enclosure url='https://example.com/a.b/ep135.pdf?a=1&amp;b=2' length="2e5" type='text/plain'/><enclosure length="-9223372036854775808" type='unknown'/><media:content type="audio/aac" duration="59" url='https://xn--caf-dma.example/café/17.aac' fileSize="16385"/><media:content isDefault="1" type="application/octet-stream" duration="1" url="https://example.com/a.b/café/333.php" fileSize="9007199254740993"/><podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/ch.json" type="application/json+chapters"/><wrapper><inner><deeper>text</deeper></inner></wrapper></item>
+<item><description><![CDATA[<p/>]]></description><guid></guid><link></link><enclosure url="//example.com/347.png" length='16385' type="application/octet-stream"/><enclosure url="ftp://files.example.com/241.mp3" length="2147483648" type="audio/*"/><title><![CDATA[&amp;amp; <b>multi
+line]]></title><podcast:locked xmlns:podcast="https://podcastindex.org/namespace/1.0">yes</podcast:locked><media:content type="audio/opus" isDefault='false' duration="0" fileSize="16385"/><psc:chapters version="1.2"><psc:chapter href="" start="0:04"/><chapters:chapter start="01:30:47" href=""/><chapters:chapter href="" image="https://example.com/ch.png" title='😀' start="02:20:10.809"></chapters:chapter><psc:chapter title="Intro" start="10:00:00.000001" href='https://example.com/ch'></psc:chapter><chapters:chapter start="15:47" title="Intro" href='https://example.com/ch'/><psc:chapter title="😀" start="59:57" image="https://example.com/ch.png" href=""/></psc:chapters><enclosure url="https://cdn.example.com/dir.with.dots/ep22.OGG?dl=1.0" length="0" type="image/*"/><itunes:image href=""/></item></channel> </rss>

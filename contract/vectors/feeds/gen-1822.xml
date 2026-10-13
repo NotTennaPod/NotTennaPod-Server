@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xml:lang="">
+  <subtitle type="html">&lt;img src=&quot;x&quot; alt=&quot;y"/&gt;é&#233;é&#60;BR&gt;&#x3C;br>aa</subtitle>
+<logo>https://example.com/logo.png</logo>
+<link type="text/html" rel="payment" href='https://example.com/' length="abc"/>
+<it:summary>&lt;div&gt;&#38;#x;&#x3C;/div&gt;	100%&#60;li&gt;'<![CDATA[single'</li>]]></it:summary>
+<link rel="Next" type='application/rss+xml' title="Café" length="12" href="https://example.com/alt.xml"/>
+<updated>2006-06-22T12:49:05-0500</updated>
+<title type="html"><![CDATA[ &Lt; <sup>  padded  </sup>]]></title>
+<media:thumbnail url="https://example.com/amt.jpg"/>
+<link rel="last" title="" href="https://example.com/" length="9223372036854775808"/>
+<link rel="enclosure" title='MP3 feed' href="https://example.com/alt.xml" length="12"/>
+</feed>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"><channel><description></description>
+<podcast:funding url=""/>
+<link>https://example.com</link>
+<podcast:funding url="">Support us</podcast:funding>
+<itunes:author>第&#x4E00;</itunes:author>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<title>&lt;section&gt;&amp;amp;&lt;/section>  &#x5E9;לום</title>
+<item><link></link>
+<enclosure length="20000.0" type='audio/mpeg; charset=binary'/>
+<media:thumbnail url=""/>
+<guid></guid>
+<pubDate>Saturday, 04 Jul 93 00:41:04</pubDate>
+<title>a &#60; b cr&#13;lf &lt;u>a
+  b&lt;/u></title>
+<description> 'single'</description></item>
+<item><guid> </guid><psc:chapters version="1.2"><psc:chapter title="Intro" image="https://example.com/ch.png" start='62' href="https://example.com/ch"></psc:chapter><psc:chapter start="1:1.5f" title="Intro" image="https://example.com/ch.png"></psc:chapter></psc:chapters><itunes:image href=""/><itunes:duration>5:22:46</itunes:duration><pubDate>Fri 8 Jun 1066 23:32:54 GMT+0200 (UTC)</pubDate><description>&lt;p/>  &amp;AMP;&#60;div&gt;Episode 12&#x3C;/div&gt; cr
+lf&lt;p&gt;&apos;single'&#x3C;/p&gt;</description><itunes:subtitle>&amp;hellip;
+&amp;euro;
+&lt;u&gt;茶&#x3C;/u&gt;</itunes:subtitle><title>&#x26;lt;b&#38;gt; &lt;div&gt;&lt;p>cr&#13;lf&lt;/p&gt;&lt;/div&gt; &lt;tt>Folge 343: Über alles&#60;/tt></title><media:group><media:content type='audio' url='HTTPS://EXAMPLE.COM/café/303.m3u8?a=1&amp;b=2' duration="1.5" fileSize="-16384" isDefault="TRUE" medium="image"/></media:group><enclosure length="-16384" type="image/jpeg"/><dc:date>/b</dc:date><enclosure url="" length="+20000" type="audio/"/><enclosure url="" length="2147483648" type="video"/></item></channel>
+  </rss>

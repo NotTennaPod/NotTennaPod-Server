@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><title><![CDATA[<sma]]>ll>&amp;#xD800;&lt;/small>AT&#x26;T</title>
+<link xmlns="http://www.w3.org/2005/Atom" type="application/xhtml+xml" length="9223372036854775808" title="Café" href="https://example.com:8443/café/283.xyz" rel="alternate"/>
+<link>https://example.com</link>
+<link xmlns="http://www.w3.org/2005/Atom" type="application/xhtml+xml" href="https://example.com/feed?page=2" title="Café" rel="enclosure"/>
+<itunesu:author>A, B</itunesu:author>
+<language> EN-US </language>
+<description>	tab	here&#x3C;br /> &#x26;#x1F600;&#60;br/>&lt;p&gt;&amp;#xFFFF;&lt;/p></description>
+<atom:link length="20000" rel='payment' type="text/html" title='Alternate'/>
+<item><title>[x]</title>
+<guid isPermaLink="true">  spaced guid  </guid>
+<link>https://example.com/ep</link>
+<pubDate>Mon JAN 9 05:44:32 1950</pubDate>
+<description></description>
+<itunesu:summary> &#x3C;3 &#60;3</itunesu:summary>
+<enclosure url="" length="٢٠٠٠٠" type="x-audio/mpeg"/>
+<media:content url="https://cdn.example.com/dir.with.dots/ep254.mov?file=x.mp3" medium="document" type='audio/opus' isDefault="1" fileSize="9223372036854775808"/>
+<media:content duration='0060' url="https://xn--caf-dma.example/e p3.wav" isDefault="1" fileSize="18446744073709551616" type="application/ogg" medium="document"/>
+<media:content isDefault='1' type="application/ogg" duration="2147483648" fileSize="12" medium="document"/></item>
+<item><guid>Café-guid</guid>
+  <enclosure url="https://example.com/a.b/ep37.aac" length="52428800" type="application/json"/>
+  <itunesu:summary><![CDATA[<br><li>&#65;&#66;</li>ééé茶<br>&hellip;
+
+&amp<hr>aaaaa]]></itunesu:summary>
+  <title><![CDATA[&#65;&#66; <b>Bold</b> title]]></title>
+  <media:content type="application/octet-stream" duration="" url="HTTPS://EXAMPLE.COM/e p148.oga" isDefault="false" medium="Audio" fileSize='16385'/>
+  <pubDate>  1969/05/09&#13;
+</pubDate>
+  <itunesu:duration>5:29:09</itunesu:duration>
+  <itunesu:image href=" https://e.com/i.png "/>
+  <itunesu:subtitle><![CDATA[Tom & Jerry <3]]></itunesu:subtitle>
+  <link>https://example.com/ep</link>
+  <media:description type='plain'></media:description>
+  <description>&lt;br/&gt;   leading&#60;hr/></description></item>
+<item><description><![CDATA[é<br>&<br>
+
+​&lt;b&gt;escaped&lt;/b&gt;plain words<br></br>aaaaaplain words]]></description><itunesu:subtitle><![CDATA[<div dir="rtl">&Lt;</div>
+​
+&#xD800;]]></itunesu:subtitle><title>&amp;quot;q&#x26;quot;  &amp;amp;</title><pubDate>07 Dec 20 02:27 -0800</pubDate><enclosure length="9007199254740993" type="audio"/><link>https://example.com/ep</link><guid>urn:uuid:4b625a66</guid><media:content duration="1" medium="video" type="text/html" url="https://cdn.example.com/café/285.ts" fileSize='2e5'/><media:content url='HTTPS://EXAMPLE.COM/dir.with.dots/ep339.m4b?auth=yes' fileSize="16385" duration="01:00" type='audio/mpeg; charset=binary'/><category>Technology</category></item>
+<item><title>&amp;euro;&amp;amp</title><description>&#x26;euro;&lt;br></description><itunesu:subtitle>Tom &#x26;amp; Jerry &amp;lt;3Tom &#38;amp; Jerry &amp;lt;3😀</itunesu:subtitle><enclosure url="https://example.com:8443/e p358.MP3" length='4294967296' type="video/webm"/><media:group><media:content fileSize="-16384" type='application/ogg' duration='0060' medium="document" url="https://cdn.example.com/café/194.ogx"/></media:group><itunesu:author>Item author</itunesu:author><itunesu:duration>1:2:3:4</itunesu:duration><pubDate>Wednesday, 20 Feb 2013 12:48:99</pubDate><guid isPermaLink="true">a&amp;b</guid></item>
+<item><media:content type="audio/opus" isDefault="1" fileSize="123456" duration="0060"/>
+  <enclosure length='+20000' type="AUDIO/MPEG"/>
+  <title><![CDATA[a < b]]></title>
+  <link>https://example.com/ep</link>
+  <description>&lt;p/&gt;</description>
+  <media:content type="application/x-bittorrent" url="https://xn--caf-dma.example/dir.with.dots/ep139.oga" isDefault="true" medium="image"></media:content>
+  <pubDate>Wed, 31 May 1980 20:05:09 -0500 AM</pubDate>
+  <media:thumbnail url=''/>
+  <psc:chapters xmlns:psc="http://podlove.org/simple-chapters" version="1.2"/>
+  <cont:encoded><![CDATA[ 茶éééé<br>a&lt;b&gt;]]></cont:encoded>
+  <media:content duration='2147483' fileSize="12" isDefault="TRUE" type="text/html"/>
+  <guid isPermaLink="true">Café-guid</guid></item></channel>
+</rss>

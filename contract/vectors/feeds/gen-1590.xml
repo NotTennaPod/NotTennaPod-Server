@@ -1,0 +1,59 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
+  <itunes:summary><![CDATA[<div>Folge 7: Über alles</div>]]></itunes:summary>
+  <itunes:image href="https://example.com/ai.jpg"/>
+  <updated>Monday, 09 Jun 11 21:09:27 +0200</updated>
+  <title type="HTML">Episode 103  &#x3C;unknown&gt;&#38;&lt;/unknown>  &#60;img src=&quot;x.png"> cover</title>
+  <author><name>Ann</name><email>a@example.com</email></author>
+  <subtitle type="plain"><![CDATA[<img src="x.png">aa]]></subtitle>
+  <link length="20000" rel="self" title="MP3 feed" href="https://example.com/pay" type="text/html"/>
+  <entry><published>   2011-09-05T23:26:21+0200&#160;
+</published> <updated>Wed, 23 January 2002 04:12:27 +0100</updated> <id> raw </id> <title type="html">Tom &#x26; Jerry &lt;3
+&#x26;amp
+&#x26;amp;amp;</title> <link length="abc" type="application/atom+xml" rel="last" title='Alternate'/> <itunes:duration>14111</itunes:duration> <!-- comment --><?pi data?></entry>
+  <entry><published>27 jun 66 17:27 -1200</published>
+  <updated>1998-04-23T16:32:27.123456Europe/Berlin</updated>
+  <id> raw </id>
+  <itunes:image href="https://example.com/e.jpg"/>
+  <title type="plain">a > b
+  padded  
+ש&#1500;ום</title>
+  <link title="" length="20000" rel="self"/>
+  <summary>&#60;img src="x.png&quot;&gt;Line&#60;br&gt;break&#x3C;br>&lt;div>&amp;lt;b&amp;gt;&#x3C;/div&gt;Tom &#x26;amp; Jerry &#38;lt;3&#x3C;br>&#128512;😀😀&#x1F600; a &lt; b&#x3C;p> leading&#x3C;/p>&#x3C;br>&#x3C;/br&gt;</summary>
+  <content type="plain"><![CDATA[<p>back\slash</p>]]></content></entry>
+  <entry><updated>2009-12-17T11:52:06.2047590+00:00</updated>
+<id>tag:x,2020:1</id>
+<summary type="html"><![CDATA[
+
+&euro;]]></summary>
+<published>Wed, 03 Feb 2472 00:29:12 +01:00</published>
+<itunes:duration>72:23</itunes:duration></entry>
+  <entry><link length="20000" href="https://example.com/pay" title="Alternate" rel="last" type='application/xml+xhtml'/>
+<id></id>
+<title type="plain">&#x3C;b>#435 – Interview&amp;#x1F600;&#x26;apos;a&#x26;apos;</title>
+<updated>Thursday, 07 Apr 06 02:54 -0500</updated>
+<itunes:image href=""/>
+<itunes:duration>3347</itunes:duration></entry>
+  <entry><link type="text/html" href="https://example.com:8443/a/b/c214.mov" rel="archives" title="Alternate"/><title><![CDATA[😀
+<span style="color:red">"quoted"</span>]]></title><published>Tue, 23 Aug 1977 06:09:21 -0800 	 </published><id></id><content type="xhtml">&lt;div>&#38;copy;&#x3C;/div&gt;&lt;br&gt;&#x3C;/br>&#60;li&gt;&amp;lt;b&amp;gt;escaped&amp;lt;/b&#x26;gt;&lt;/li&gt;&lt;div&gt; &lt;/div&gt;&#38;quot;q&#38;quot;&lt;br></content></entry>
+  <entry><itunes:duration>3723.5</itunes:duration> <title type="text"><![CDATA[<b>B]]>old&lt;/b&gt; title</title> <id>
+id
+</id> <link length="20000" href="https://example.com/a.b/83.php" type="application/rss+xml" title="Alternate" rel="Next"/> <link title="" href="ftp://files.example.com/a/b/c18.mpga" rel='' type="audio/mpeg"/> <content type="html"><![CDATA[<div>  padded  </div>]]></content></entry>
+  <entry><updated>2323-12-13T02:59:02z</updated>
+<title type="html"><![CDATA[Episode 12
+&#xD800;]]></title>
+<published>Mon, 05 Jan 1976 03:57:47 EST</published>
+<updated>2497-10-19</updated>
+<id></id>
+<content type="html">&#x3C;li&gt;&amp;#x;&lt;/li></content>
+<summary><![CDATA[<p/>]]></summary></entry>
+  <entry><podcastindex:transcript type="application/json"/><podcastindex:transcript url='https://example.com/t.vtt' type="application/srt" language="en"/><podcastindex:transcript url="https://example.com/t.json" type="Application/JSON"/>
+  <id>
+id
+</id>
+  <published>  21 Jan 16 15:42:22 +0000&#13;
+</published>
+  <updated>2021-09-24T12:34:52.851+05:30</updated>
+  <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">#hash
+&#x26;lt;b&#38;gt;escaped&#x26;lt;/b&amp;gt;
+&#x26;lt;b&amp;gt;</div></title></entry>
+</feed>

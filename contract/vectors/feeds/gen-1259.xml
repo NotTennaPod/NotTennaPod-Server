@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><title>&amp;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;</title>
+  <language> EN-US </language>
+  <podcast:funding xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">&lt;b&gt;x&lt;/b&gt;</podcast:funding>
+  <image><url>https://example.com/img.png</url><title>Image title</title></image>
+  <description>&lt;li>R&#38;D&#x3C;/li&gt;&lt;li>a
+  b&lt;/li>&lt;li&gt;&#38;copy;&lt;/li&gt;&lt;br>&#x3C;/br&gt;&lt;div&gt;a &#x3C; b&#60;/div></description>
+  <link></link></channel>
+</rss>

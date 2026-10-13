@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:chapters="http://podlove.org/simple-chapters" xml:lang="en">
+  <updated>1066-05-16T07:21:02:00</updated>
+<link title="Café" type="audio/mpeg" rel="payment" href="https://example.com/" length='12'/>
+<author><name>  Bob  </name></author>
+<logo></logo>
+<author><name></name></author>
+<author><name></name><email>a@example.com</email></author>
+<it:summary>&amp;AMP;&#60;br&gt;</it:summary>
+<it:author>&lt;b>Studio&#x3C;/b&gt;</it:author>
+<title type="html">&#38;AMP;
+&#38;#xFFFF;</title>
+<subtitle type="HTML">&lt;li&gt;a &gt; b&lt;/li>&amp;amp;
+a &lt; b&lt;br>aaaaaaa😀a &lt; b&lt;br&gt;&#60;div>&#38;unknown;&#60;/div&gt;</subtitle>
+<entry><link title="" type="" href="ftp://files.example.com/a/b/c18.mpga"/>
+<published>1981-11-13MST</published>
+<podcast:transcript url='https://example.com/t.json' type="text/vtt" language='en'/>
+<link href="" rel='Next' length="12" type="text/html" title=""/>
+<title>a &lt; b</title>
+<id>tag:x,2020:1</id>
+<updated>Fri, 04 Jul 1986 18:34:56 +0200</updated>
+<it:duration>-9223372036854775808</it:duration></entry>
+<entry><media:content fileSize="20000 " url="ftp://files.example.com/206.3gp" type="audio/x-wav" duration="+60" isDefault="TRUE"></media:content>
+<published>Fri, 18 May 1990 06:55 +1400</published>
+<summary>&#60;b&gt;Bold&lt;/b&gt; title&#x3C;br>aaaaaaaaa&lt;div>&lt;b&gt;Bold&#x3C;/b&gt; title&lt;/div&gt;&#60;br&gt;&#x3C;/br&gt;&lt;br&gt;&#x3C;/br&gt;</summary>
+<title type="xhtml">Line&#x3C;br>break
+&#38;lt;b&#x26;gt;escaped&#x26;lt;/b&#x26;gt;</title>
+<updated>0999-01-19T03:18:32</updated>
+<id></id></entry>
+<entry><link title="" href="https://cdn.example.com/314.MP3" type="text/html" rel="hub"/>
+  <link type="application/xml+xhtml" length="12" title="Alternate" href="" rel="related"/>
+  <updated>TUE May 25 12:00:00 2224</updated>
+  <published>1601-05-16T17:15:56.369EDT</published>
+  <author><name>Entry author</name></author>
+  <link title="MP3 feed" rel='Next' type="text/html" length="20000" href=""/>
+  <title type="html"> &#60;div&gt;茶&lt;/div>	</title></entry>
+<entry><title type="plain"><![CDATA[&nbsp; R&D &lt]]></title> <id>urn:uuid:1</id> <link title='' href="https://example.com/alt.xml" rel='hub' length="abc" type="application/xml+xhtml"/> <podcast:transcript type="text/html" language="en"/><podcast:transcript type="application/srr" language="en"/><podcast:transcript type='application/json' language="en"/> <link href='https://example.com/pay' type="application/atom+xml" length="20000" title=""/> <updated>21 Sep 51 02:37 +0200</updated> <published>1986-11-20T21:19:41.12345EET</published></entry>
+<entry><id> raw </id><title type="html">sep</title><updated>Tue Aug 15 09:34:99 1989</updated><published>FRI, 21 August 0099 13:13:39</published><it:duration>0:32:03</it:duration><author><name>Entry author</name></author></entry>
+<entry><it:image href="https://example.com/e.jpg"/>
+<id></id>
+<summary type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">
+Tom &#38; Jerry &lt;3&#60;img src=&quot;x.png"&gt;</div></summary>
+<content type="html">   &#x26;apos;a&amp;apos;&#x3C;p/&gt;aaaaaaaa&#60;br /&gt;</content>
+<title type="text">&#x26;unknown; &amp;unknown;</title>
+<published>09 Aug 1899 14:23:41 +1</published>
+<link type="audio/mpeg" title="" length="9223372036854775808" href="" rel="next"/></entry>
+<entry><title type="plain"><![CDATA[1 <2  &#x;]]></title> <id> raw </id> <media:content fileSize="16385" type="Audio/MPEG" duration="9223372036854775807" isDefault="true" url="https://user:pass@media.example.net/café/224.avi"/> <published>Thu 19 Apr 1973 11:10:56 GMT+0530 (MSK)</published> <link length="12" type="application/xml+xhtml" rel="next" title="MP3 feed" href="https://example.com/pay"/> <foo><description>Nested description</description></foo> <link type="application/rss+xml" rel="related" title="Alternate" length="9223372036854775808"/> <summary type="text"></summary></entry>
+<entry><title type="text">plain words  &#x3C;u&gt;Episode 82&#x3C;/u&gt;</title>
+  <id>tag:x,2020:1</id>
+  <content type="HTML"><![CDATA[<img src="x.png"> cover<br><img src="x" alt="y"/>&copy;<br><li>&Lt;</li>
+a > b sepEpisode 12<br><div> </div>]]></content>
+  <link rel="alternate" href="https://example.com/" length='9223372036854775808' title="" type=""/>
+  <summary type="html">&#x3C;li>1 <![CDATA[<2</li>]]></summary>
+  <author><name>Entry author</name></author></entry>
+<entry><summary type="html"><![CDATA[<p]]>/&gt;</summary>
+  <title type="text">&#60;unknown&gt;&#38;copy;&#60;/unknown&gt;</title>
+  <id>urn:uuid:1</id>
+  <author><name>Entry author</name></author></entry>
+<entry><link rel="payment" title="Alternate" href=""></link>
+<id>urn:uuid:1</id>
+<title type="html">&amp;#xFFFF;</title>
+<summary type="HTML">"quoted"&lt;br&gt;</summary>
+<it:duration>4:20:07</it:duration></entry>
+<entry><updated>Thu, 11 Oct 17 05:28:53 -0000</updated>
+<link title="MP3 feed" type="application/atom+xml" href="https://example.com/"/>
+<title type="text">&#x26;lt;b&#x26;gt;escaped&amp;lt;/b&#x26;gt;</title>
+<link length="12" href="https://example.com/alt.xml" rel='Next' title="Alternate" type="audio/mpeg"/>
+<it:image href=""/></entry>
+<entry><title type="text">x&lt;y</title>
+  <id>
+id
+</id>
+  <dc:date>Tue, 27 Nov 0001 21:00:38 +0200</dc:date>
+  <link rel="enclosure" title="" length="12" type='text/html'></link>
+  <link length="12" title="Café" rel='next' href="https://example.com/feed?page=2"/>
+  <author><name>Entry author</name></author></entry></feed>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:psc="http://podlove.org/simple-chapters"><itunes:author>Caf&#233; Radio</itunes:author> <itunes:subtitle>&#1605;&#1585;&#1581;&#1576;&#1575;</itunes:subtitle> <title>plain words  &#60;span&gt;a=b&amp;c=d&lt;/span&gt;  tab	here</title> <itunes:summary><![CDATA[<li>x<y</li>&#128512;&#128512;&mdash;]]></itunes:summary> <description>&lt;br />&lt;p/>&#x3C;br&gt;a &lt; b&#13;
+&#38;copy;&lt;p&gt;&#x3C;/p&gt;&#160;#hash&#x3C;div&gt;100%&#60;/div&gt;</description> <atom:link href="https://example.com/feed?page=2" type="" title='Alternate'/> <item><title>AT&amp;T &amp;quot;q&#x26;quot;</title> <enclosure url='https://cdn.example.com/a/b/c33.pdf' type=''/> <enclosure url=' HTTPS://EXAMPLE.COM/ep340.3gp ' length="12" type="audio/ogg"/> <itunes:duration>1 :30</itunes:duration> <itunes:subtitle>&#13;
+  padded  &#60;code>sep&#x3C;/code>  </itunes:subtitle> <itunes:category text="Arts"><itunes:category text="Design"/></itunes:category> <podcast:transcript url='https://example.com/t.json' type="text/plain"/><podcast:transcript url='' type="text/plain"/> <link></link> <enclosure url="http://example.org/e p34.flac" length="16383" type="Audio/MPEG"/> <pubDate>Tue DEC 9 22:19:27 1975</pubDate></item> <item><title>tab	here</title><itunes:subtitle>&#1513;&#1500;&#1493;&#1501;&#x3C;blockquote&gt;&#33590;&lt;/blockquote&gt;</itunes:subtitle><guid isPermaLink="true">  spaced guid  </guid><pubDate>Sun, 12 Feb 1899 16:05:51 -05:00</pubDate><link> https://e.com/x </link><description>&#160;Episode <![CDATA[12]]></description></item> <item><itunes:duration>5050.902</itunes:duration>
+<itunes:subtitle>&amp;#xFFFF;</itunes:subtitle>
+<enclosure url="" length='18446744073709551616' type="audio/*"/>
+<dc:date>Sat, 02 November 2002 09:34:03 +0100</dc:date>
+<media:content medium="document" duration="+60" fileSize='0x4E20' url="https://example.com/a.b/dir.with.dots/ep242.ogx" isDefault="true"/>
+<guid isPermaLink="false">Caf&#233;-guid</guid>
+<pubDate>Thu, 10 Aug 2237 07:08 -0500</pubDate>
+<link></link>
+<title>&#38;lt;b&amp;gt;</title></item></channel>
+</rss>

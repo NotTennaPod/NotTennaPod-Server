@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="en">
+  <link rel="first" type="application/xml+xhtml" length="20000" title="Alternate"/>
+  <title>&lt;span style="color:red">&#38;lt;b&#38;gt;&lt;/span&gt;&#x26;amp;amp;[x]</title>
+  <podcast:funding url="https://example.com/give">Give</podcast:funding>
+  <link type="text/html" href="https://example.com/" length='12' rel="archives" title="Alternate"/>
+  <link length="abc" type="application/xhtml+xml" href="ftp://files.example.com/dir.with.dots/ep392.aif"/>
+  <entry><link type="application/xml+xhtml" href="https://example.com/feed?page=2" title="Café" rel="related"/> <id>
+id
+</id> <title type="HTML">sep    spaced  </title> <link rel="" type='application/rss+xml' length="12" href="https://example.com/feed?page=2"/> <summary type="html">&#60;hr/&gt;&#x3C;p&gt;&amp;mdash;&#60;/p&gt;&#60;br&gt;
+café  padded  &lt;br&gt;&amp;Lt;	x&#x3C;y&#60;p>sep&lt;/p&gt;</summary> <published>2309-08-14T02:19:35.553</published> <link type="audio/mpeg" title="Alternate" href="https://example.com/alt.xml"/></entry>
+  <entry><title type='text'>&#x26;hellip; http://example.com/?a=1&amp;b=2 back\slash</title>
+  <updated>Sun, 13 Apr 2110 01:43:59</updated>
+  <summary>ééémulti
+linecr
+lf</summary>
+  <link rel="payment" title="" length="20000" href="https://example.com/alt.xml" type='audio/mpeg'/>
+  <content>&lt;p&gt;AT&#38;T&#60;/p&gt;	[x] trailing &#13;
+&amp;#xA9;
+&amp;amp;</content>
+  <link type="application/atom+xml" href="https://example.com/alt.xml" length="9223372036854775808" rel="Next" title=""/>
+  <link type="" rel="payment" length="abc" title="" href="https://example.com/"/></entry>
+  <entry><updated>Fri, 22 Jul 2022 05:48:05 -12:00</updated>
+<link length="abc" title="MP3 feed" href="https://example.com/pay" rel="last"/>
+<title type="html">&#38;quot;q&#x26;quot;café&#38;quot;q&#38;quot;</title>
+<link type="application/atom+xml" title="" rel="related" href="https://example.com/pay"></link>
+<link length='9223372036854775808' type="application/xhtml+xml" rel="enclosure" href="https://example.com/feed?page=2" title="Alternate"/>
+<id>tag:x,2020:1</id>
+<published>2436-08-25T16:21:31-1200</published></entry> </feed>

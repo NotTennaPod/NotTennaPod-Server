@@ -1,0 +1,239 @@
+{
+ "cases": [
+  {
+   "fixture": "internal/importer/androiddb/testdata/older-versions/v3110000-edges.db",
+   "format": "nottennapod-import-android-v1",
+   "ignored": {
+    "dropped_favorite_rows": [
+     1
+    ],
+    "dropped_queue_rows": [
+     2,
+     3
+    ],
+    "extra_media": [
+     10
+    ],
+    "orphan_items": [
+     2
+    ],
+    "orphan_media": [
+     11
+    ]
+   },
+   "podcasts": [
+    {
+     "creating_feed_id": 1,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": null,
+       "duration_ms": null,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "e0",
+        "reason": "no_guid_no_enclosure",
+        "source_item_id": 1
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        1
+       ],
+       "state_item_id": 1,
+       "title": "odd read",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 0,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "enclosure",
+        "v": "https://e.test/a.mp3"
+       },
+       "inbox": true,
+       "play_state": "new",
+       "position_ms": 1,
+       "queued": true,
+       "source_item_ids": [
+        3
+       ],
+       "state_item_id": 3,
+       "title": "two media",
+       "units": []
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "inbox",
+     "normalized_url": "https://e.test/f.xml",
+     "populated": true,
+     "properties_feed_id": 1,
+     "source_feed_ids": [
+      1
+     ],
+     "state": "subscribed",
+     "title": "Edges",
+     "url": "https://e.test/f.xml"
+    },
+    {
+     "creating_feed_id": 2,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "global",
+     "normalized_url": "https://e.test/g.xml",
+     "populated": false,
+     "properties_feed_id": 2,
+     "source_feed_ids": [
+      2
+     ],
+     "state": "subscribed",
+     "title": "Throwing funding",
+     "url": "https://e.test/g.xml"
+    }
+   ],
+   "queue": [
+    3
+   ],
+   "result": {
+    "ambiguous": [
+     {
+      "podcast": "Edges",
+      "reason": "no_guid_no_enclosure",
+      "source_item_id": 1,
+      "title": "odd read"
+     }
+    ],
+    "imported": {
+     "episodes": 2,
+     "favorites": 0,
+     "history": 0,
+     "inbox": 1,
+     "podcasts": 2,
+     "queue": 1
+    },
+    "merged": [],
+    "skipped": []
+   },
+   "sha256": "a49dece0b5b06db34ca29a0bb84f2e7ef4786aa04852fd6c704e422e07e5d2d2",
+   "statistics": {
+    "android": {
+     "monthly": [],
+     "per_feed": [
+      {
+       "episodes": 3,
+       "episodes_started": 0,
+       "episodes_started_marked": 1,
+       "feed_id": 1,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      }
+     ],
+     "per_podcast": [
+      {
+       "creating_feed_id": 1,
+       "episodes": 3,
+       "episodes_started": 0,
+       "episodes_started_marked": 1,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      }
+     ],
+     "windows": [
+      {
+       "from": 0,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 0
+        }
+       ],
+       "to": null
+      }
+     ]
+    },
+    "causes": [
+     {
+      "cause": "media_not_imported",
+      "detail": "media rows of missing items (Android's monthly statistics count them) or second media rows of one item (Android's LEFT JOIN counts each)",
+      "source_media_ids": [
+       10,
+       11
+      ]
+     },
+     {
+      "cause": "items_without_feed",
+      "detail": "items of a missing feed are not imported; Android's monthly statistics count their media",
+      "source_item_ids": [
+       2
+      ]
+     }
+    ],
+    "expected_differences": [
+     {
+      "android": 3,
+      "causes": [
+       "media_not_imported"
+      ],
+      "metric": "per_podcast.episodes",
+      "podcast": 1,
+      "projection": 2
+     }
+    ],
+    "mismatches": [],
+    "projection": {
+     "monthly": [],
+     "per_podcast": [
+      {
+       "creating_feed_id": 1,
+       "episodes": 2,
+       "episodes_started": 0,
+       "episodes_started_marked": 1,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      },
+      {
+       "creating_feed_id": 2,
+       "episodes": 0,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 0
+      }
+     ],
+     "windows": [
+      {
+       "from": 0,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": null
+      }
+     ]
+    }
+   },
+   "user_version": 3110000
+  }
+ ],
+ "suite": "import_android"
+}

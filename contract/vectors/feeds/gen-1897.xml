@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:p2="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters"><link href="https://example.com/" rel="alternate" title="MP3 feed" length="12" type="application/atom+xml"></link>
+<author><name>Ann</name><email>a@example.com</email></author>
+<itunes:summary><![CDATA[	sep]]></itunes:summary>
+<wrapper><inner><deeper>text</deeper></inner></wrapper>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">{json: 1}</div></title>
+<id>https://example.com/feed</id>
+<entry><link rel="" href="" length='12' type=""/>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;BR></div></content>
+<published>Wed, 27 Sep 1989 22:07 +0000</published>
+<title type='html'><![CDATA[  padd]]>ed    sep</title>
+<updated>28 Jun 14 00:10 +0530</updated></entry>
+<entry><id> raw </id>
+<title>  &#x3C;p&gt;  spaced  &lt;/p&gt;a > b&#x26;#65;&amp;#66;&#13;
+</title>
+<author><name>Entry author</name></author>
+<updated>Wed, 16 Jun 1993 10:01:17 +0945</updated>
+<link length="abc" rel="first" title="Alternate"/></entry>
+</feed>

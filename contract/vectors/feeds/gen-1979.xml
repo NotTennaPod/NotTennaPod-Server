@@ -1,0 +1,16 @@
+<rss xmlns="http://backend.userland.com/rss2" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:author><![CDATA[<b>Studi]]>o&#60;/b></itunes:author> <description><![CDATA[ééé<br/>	&#0;😀😀😀😀ééé]]></description> <itunes:subtitle>  multi
+line</itunes:subtitle> <atom:link title="Alternate" href="https://example.com/" rel="enclosure"/> <title>a=b&amp;c=d  &lt;dl&gt;&#x3C;dt&gt;&#x26;copy;&#60;/dt&gt;&lt;dd&gt;b&lt;/dd&gt;&#x3C;/dl></title> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <link> https://example.com/ </link> <itunes:image href=" "/> <language> EN-US </language> <item><enclosure url="//example.com/ep281" length="9223372036854775808"/><podcast:transcript url="https://example.com/t.json" type="Application/JSON" language="en"/><podcast:transcript url="https://example.com/t.vtt" type="application/x-subrip" language="en"/><content:encoded>
+&#x26;;</content:encoded><itunes:duration>.5</itunes:duration><itunes:subtitle><![CDATA[é Episode 12]]></itunes:subtitle><guid isPermaLink="true">urn:uuid:bf447fe9</guid><title><![CDATA[<3 <3é]]></title><wrapper><inner><deeper>text</deeper></inner></wrapper><description>&lt;p&gt;<![CDATA[</p>]]></description><link>https://example.com/ep</link><itunes:image href=" "/></item> <item><title>sep
+&#38;lt;b&#x26;gt;escaped&amp;lt;/b&amp;gt;</title>
+<guid>  spaced guid  </guid>
+<link> https://e.com/x </link>
+<pubDate>Friday, 26 Mar 2466 03:25:30</pubDate>
+<description>&#x3C;hr&gt;&lt;br/>&#x3C;p&gt; &lt;/p&gt; multi
+line&lt;hr/>&#x26;unknown;&#60;br&gt; [x]&lt;li&gt;&#x26;#169;&#60;/li></description>
+<itunes:summary>http://example.com/?a=1&#38;b=2 a
+
+b</itunes:summary>
+<itunes:subtitle>​
+1 &lt;2</itunes:subtitle>
+<enclosure length='123456' type="video/x-matroska"/></item></channel>
+</rss>

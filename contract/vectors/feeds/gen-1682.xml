@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+  <id>https://example.com/feed</id>
+<icon>https://example.com/icon.png</icon>
+<podcast:funding url="https://example.com/give">Give</podcast:funding>
+<title type="html">  &#60;font color="red&quot;&gt;"quoted"&lt;/font&gt;  &#38;AMP;  &amp;#x;  </title>
+<subtitle type="text">&#x26;;&lt;br&gt;&lt;img src=&quot;x" alt="y"/></subtitle>
+<author><name></name></author>
+<link type='audio/mpeg' length="12" rel='related' href="https://example.com/alt.xml"/>
+<entry><published>Foo, 2024-07-03T22:31:31Z</published> <link title="Alternate" rel="payment" href="https://example.com/" length="9223372036854775808"/> <title type="plain"><![CDATA[茶]]></title> <id>
+id
+</id> <media:content duration="0" type="text/html" isDefault='TRUE' fileSize="9223372036854775807"/></entry>
+<entry><title type="text">&#60;section&gt;trailing &lt;/section&gt;
+&lt;section>x&#x3C;y&lt;/section>
+&lt;p>Para&#60;/p&gt;</title>
+<author><name>Entry author</name></author>
+<summary type="HTML"><![CDATA[ &#128512;<p>trailing </p>]]></summary>
+<id>tag:x,2020:1</id></entry>
+</feed>

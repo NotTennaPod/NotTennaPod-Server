@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><description>&lt;p&gt;&lt;/p&gt; &#38;quot;q&#38;quot;</description>
+<link>https://example.com</link>
+<itunes:category text="Arts"><itunes:category text="Design"/></itunes:category>
+<link xmlns="http://www.w3.org/2005/Atom" title="" rel='enclosure' href='https://example.com/alt.xml' length="12"/>
+<item><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"></content:encoded>
+<itunes:duration>0x1.8p2</itunes:duration>
+<description><![CDATA[<p/>]]></description>
+<itunes:summary>😀😀😀&#128512;</itunes:summary>
+<media:group><media:content fileSize='16385' medium='video' duration="1" type="Audio/MPEG"/></media:group>
+<title>&#38;#128512;</title>
+<enclosure url="https://xn--caf-dma.example/a/b/c149.flac" length="-9223372036854775808" type="text/plain"/>
+<pubDate>1987-05-29T01:11:22-0000x</pubDate>
+<itunes:image href=""/>
+<guid></guid></item>
+<item><itunes:duration>3:27:41</itunes:duration>
+<link>https://example.com/ep</link>
+<guid isPermaLink="true"></guid>
+<atom:link length="abc" rel="self" href='https://example.com/pay' type="text/html" title='MP3 feed'/>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">'single'&lt;br>&lt;p/&gt;&lt;li&gt;a > b&lt;/li&gt;</content:encoded>
+<itunes:summary>&lt;div&gt;  spaced  &lt;/div></itunes:summary>
+<pubDate>1996/10/19</pubDate>
+<description>&#x3C;<![CDATA[br />]]></description>
+<enclosure url="https://xn--caf-dma.example/ep1.php" length="-16384" type="video/x-matroska"/>
+<title><![CDATA[​]]></title>
+<enclosure url="" type="audio/x-m4a"/></item>
+<item><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&#xA0;éééé😀😀😀😀</content:encoded>
+<title><![CDATA[&lt;b&gt;  &apos;a&apos;]]></title>
+<pubDate>  Mon, 03 Apr 2017 16:19 +0530.&#13;
+</pubDate>
+<itunes:duration>5:50:55</itunes:duration>
+<guid isPermaLink="true">a&amp;b</guid>
+<itunes:subtitle><![CDATA[a=b&c]]>=d</itunes:subtitle>
+<description>aaaaaa</description>
+<link></link>
+<psc:chapters version="1.2"><psc:chapter start="00:30" href="" title="&lt;b>x&lt;/b>"/><psc:chapter start="03:11:13" title="Café &amp;amp; more"/><psc:chapter image="https://example.com/ch.png" href="https://example.com/ch" start="00:22:21" title="Café &amp;amp; more"></psc:chapter><psc:chapter href="" title="Café &amp;amp; more" image="https://example.com/ch.png"/><psc:chapter href="" start="NaN"></psc:chapter></psc:chapters></item>
+<title>&#38;apos;a&#38;apos;trailing </title>
+<title>&#13;
+Episode 12 </title>
+<itunes:new-feed-url></itunes:new-feed-url>
+<itunes:image href=""/>
+<itunes:summary> &amp;amp; &amp;Lt;&#x3C;div&gt;sep&#60;/div>&lt;img src=&quot;x.png&quot;&gt;	&amp;;&#233;é&#xE9;&lt;p&gt;&#x26;#x1F600;&lt;/p&gt;</itunes:summary>
+<podcast:funding>&lt;b&gt;x&lt;/b></podcast:funding>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<itunes:author>A, B</itunes:author>
+<atom:link rel='hub' type="application/xml+xhtml" title="Café" href="https://example.com/"/>
+<atom:link rel="" title="Alternate" type="application/xhtml+xml" href="" length='20000'/>
+<atom:link title="Alternate" type='application/xml+xhtml' length="abc" href="https://example.com/" rel="next"/></channel>
+</rss>

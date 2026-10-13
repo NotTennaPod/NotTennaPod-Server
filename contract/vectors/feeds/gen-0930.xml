@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:media="http://search.yahoo.com/mrss/"><atom:link rel="" href="https://example.com/" title="Café" length="12"/>
+<link></link>
+<dc:creator>DC Creator</dc:creator>
+<podcast:funding>Support us</podcast:funding>
+<atom:link title="Alternate" rel="last" type="audio/mpeg" href="https://example.com/pay" length="9223372036854775808"/>
+<title>100%  &#x26;quot;q&amp;quot;  &amp;#;</title>
+<language>pt-BR</language>
+<description><![CDATA[<div>é</div>aaaaaaaaaaa&apos;a&apos;<br>&amp;<br><div>plain words</div><p>Folge 7: Über alles</p><div>a < b</div>]]></description>
+<psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start="00:00:01"/>
+<atom:link type="application/atom+xml" rel="hub" href="https://example.com/pay"/></channel> </rss>

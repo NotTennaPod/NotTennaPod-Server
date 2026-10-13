@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en"><id>https://example.com/feed</id>
+<author><name></name></author>
+<author><name>Ann</name></author>
+<media:thumbnail url='https://example.com/amt.jpg'/>
+<subtitle type="html"> #hash&#x3C;div&gt;a &gt; b&#x3C;/div&gt;aa &#38;Lt;&#13;
+a &lt; b
+&amp;#0;&#13;
+&amp;Lt;&lt;img></subtitle>
+<link rel="enclosure" title="Alternate" type='text/html'/>
+<author><name>C&#x26;D</name></author>
+<link rel="first" length="20000" title="Alternate" href=""/>
+<link type="" href="https://example.com/pay" length="9223372036854775808" title="MP3 feed" rel="first"/>
+<link rel='payment' href="https://example.com/" length="20000" type=""/>
+<title type="plain"><![CDATA[&lt]]></title>
+<entry><psc:chapters><psc:chapter start="1:1.5f" href="https://example.com/ch" title="😀"></psc:chapter><psc:chapter title='&lt;b>x&lt;/b>' start="1:00 " href="" image="https://example.com/ch.png"/></psc:chapters> <id></id> <itunes:duration>14953</itunes:duration> <link length='12' rel="related" type="application/xhtml+xml" title="MP3 feed" href="https://user:pass@media.example.net/café/296.mp4"/> <link rel="related" type='' title="Alternate"/> <title type='html'><![CDATA[Episode 12
+'single'
+<h1><3 <3</h1>]]></title> <link rel="hub" href="//example.com/e p4.aif" type="application/xml+xhtml"/> <content type="HTML"><![CDATA[a < b<br>]]></content></entry></feed>

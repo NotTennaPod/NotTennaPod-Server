@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <updated>Wed, 02 may 2012 15:01:41 -1200</updated>
+<author><name>C&amp;D</name></author>
+<id></id>
+<title>&#60;u>&amp;#x1F600;&lt;/u>
+​
+trailing </title>
+<author><name>Ann</name><email>a@example.com</email></author>
+<subtitle type="html">&amp;amp;amp;</subtitle>
+<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url='https://example.com/amt.jpg'/>
+<entry><author><name>Entry author</name></author>
+<published>1066-09-25T20:16:26</published>
+<summary>	&#60;3 &#60;3&#x3C;li>Line&lt;br&gt;break&#x3C;/li&gt;aaaaaa&lt;div>&#x3C;b&gt;Bold&#60;/b> title&#x3C;/div&gt;	cafétrailing  'singl<![CDATA[e'<p>&copy;</p>]]></summary>
+<title type="xhtml">plain words  &amp;#0;  &amp;quot;q&amp;quot;</title>
+<id> raw </id></entry>
+<entry><title type="text">&lt;code>&#60;3 &lt;3&#x3C;/code&gt;
+&lt;div>&lt;p>&amp;AMP;&#x3C;/p>&#60;/div&gt;
+&lt;img src="x.png"&gt; cover</title> <link rel="archives" length="12" type="application/rss+xml" href='https://example.com/pay' title="Alternate"/> <published>Sat, 22 Sep 2001 15:39:50 -0000</published> <updated>19 Dec 0001 06:16 -0500</updated> <podcast:transcript url="" type="application/x-subrip" language="en"/><podcast:transcript url="" type="text/vtt"/> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/e.jpg"/></entry>
+</feed>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding>&#x3C;b>x&#60;/b></podcast:funding>
+<itunes:subtitle>caf&#233;</itunes:subtitle>
+<language>fr
+</language>
+<x:title xmlns:x="urn:x">Other namespace title</x:title>
+<atom:link type="" href="" rel="alternate" title='MP3 feed'/>
+<link>https://example.com</link>
+<title> cr&#13;lf  &amp;lt  http://example.com/?a=1&amp;b=2 </title>
+<itunes:image href=" "/>
+<podcast:funding url=''>Support us</podcast:funding>
+<podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+<item><title>&amp;euro;</title>
+  <guid>dup</guid>
+  <link>https://example.com/ep</link>
+  <content:encoded><![CDATA[ &	&hellip;]]></content:encoded>
+  <itunes:summary>&lt;div&gt;&amp;#65;&amp;#66;&lt;/div>&lt;b&gt;Bold&lt;/b&gt; title	&#x26;#<![CDATA[x1F600;<div>&lt</div>plain words]]></itunes:summary>
+  <itunes:subtitle>&amp;Lt;</itunes:subtitle>
+  <itunes:image href=" https://e.com/i.png "/>
+  <itunes:duration>9691.753</itunes:duration>
+  <enclosure url="ftp://files.example.com/156.amr" length="18446744073709551616" type="audio/mp4"/></item>
+<item><link> https://e.com/x </link>
+  <guid>  spaced guid  </guid>
+  <enclosure url='http://example.org/e p381.ts?dl=1.0' length='' type="application/ogg"/>
+  <itunes:summary></itunes:summary>
+  <enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep66.aif" length="20000 " type="video/quicktime"/>
+  <title><![CDATA[&quot;q&quot;  <cite><img src="x.png"> cover</cite>  ]]>&lt;li&gt;&amp;&lt;/li></title>
+  <pubDate>Wednesday, 09 Nov 2292 09:02:99</pubDate>
+  <content:encoded>&lt;br /&gt;</content:encoded></item></channel>
+</rss>

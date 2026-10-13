@@ -1,0 +1,32 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel xmlns:media="http://search.yahoo.com/mrss/"><itunes:image href=" "/>
+<a10:link title="" rel="archives" href="" type='application/rss+xml'/>
+<a10:link type="application/atom+xml" title="" rel="self" href="https://example.com/" length='9223372036854775808'/>
+<media:thumbnail url=''></media:thumbnail>
+<image><link>https://example.com/img-link</link><title>Image title</title><url>  https://example.com/ws.png
+</url></image>
+<link>https://example.com</link>
+<a10:link title="" href="http://example.org/185.caf" rel="first"/>
+<title>&#38;unknown;'single'</title>
+<itunes:summary>aaaaa</itunes:summary>
+<item><title>&#38;#xA9;  AT&amp;T  &#60;dl>&lt;dt&gt;R&amp;D&#x3C;/dt&gt;&#60;dd&gt;b&#x3C;/dd>&lt;/dl></title>
+<guid isPermaLink='false'>dup</guid>
+<pubDate>_, 	19 Dec 10 17:48 -1200</pubDate>
+<content:encoded>😀😀😀&amp;mdash;&#60;br/&gt;</content:encoded>
+<itunes:image href=" "/>
+<itunes:duration>::</itunes:duration>
+<enclosure url="https://example.com/a.b/ep396.aac" length="2e5" type="video/x-matroska"/></item>
+<item><title>Episode 218
+plain words</title>
+<link xmlns="http://www.w3.org/2005/Atom" title="" href="https://example.com/feed?page=2" length="9223372036854775808" rel="next" type="application/xml+xhtml"/>
+<link></link>
+<enclosure url="https://xn--caf-dma.example/ep237.3gp?dl=1.0" length="-9223372036854775808" type="Audio/MPEG"/>
+<pubDate>Thu, 20 Aug 1992 19:14:32 </pubDate>
+<description> &#x26;#128512;&#60;img src=&quot;x" alt=&quot;y"/&gt;
+#hasha&#38;#x;&lt;br></description>
+<podcastindex:chapters xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url="https://example.com/ch.json" type="application/json+chapters"/>
+<itunes:image href='https://example.com/ep.jpg'/>
+<comments>https://example.com/c</comments>
+<content:encoded>  &amp;lt;b&#38;gt;&lt;li>'single&apos;&lt;/li></content:encoded>
+<podcastindex:transcript xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url='https://example.com/t.json' type="text/vtt"/><podcastindex:transcript xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url="https://example.com/t.vtt"/></item>
+<item><pubDate>Fri, 02 sept 1973 15:10:41 +0000</pubDate> <title><![CDATA[ leading  Tom & Jerry <3]]></title> <itunes:summary>&#60;p>&#60;/p&gt;ééé第7集&#x3C;br>&#60;li&gt;tab	here&#x3C;/li&gt;Episode 12&lt;br&gt;</itunes:summary> <enclosure url="https://cdn.example.com/café/338.opus" length="-16384" type="audio/x-m4a"/></item></channel></rss>

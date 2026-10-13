@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><atom:link length="9223372036854775808" rel="archives" href="https://example.com/feed?page=2" title="Café" type="audio/mpeg"/>
+  <link>https://example.com</link>
+  <podcast:funding url='https://example.com/donate'></podcast:funding>
+  <language>pt-BR</language>
+  <i:subtitle>AT&#x26;T  &#60;label&gt;1 &#60;2&lt;/label&gt;</i:subtitle>
+  <title>é</title>
+  <description>&lt;br>x&lt;y&lt;hr>&lt;p>&#x26;#128512;&#60;/p>&lt;img src="x.png"&gt;aa&#x3C;hr> &#1605;&#1585;حبا</description>
+  <item><content:encoded><![CDATA[<br><li>&hellip;</li>😀]]></content:encoded><m:content isDefault="true" url="http://example.org/e p58.mkv" duration="abc" fileSize="abc" type="AUDIO/MPEG"/><i:duration>2142</i:duration><title>a=b&#38;c=d
+&lt;img src="x.png"> cover</title><link>https://example.com/ep</link><description><![CDATA[<li> leading</li>]]></description><guid isPermaLink="true">Café-guid</guid><enclosure length="1,000,000" type="application/x-bittorrent"/><pubDate>08 Dec 2022 10:40:60 +0530</pubDate></item>
+  <item><i:image href=" https://e.com/i.png "/><podcast:chapters type="application/json+chapters"/><i:subtitle>&lt;p&gt;Para&lt;/p>&#60;small&gt;茶&lt;/s<![CDATA[mall>]]></i:subtitle><enclosure url="https://xn--caf-dma.example/ep212.oga?dl=1.0" length="+20000" type="text/html"/><link>https://example.com/ep</link><pubDate>
+2190-05-06T01:34:59CET	</pubDate><description></description><guid isPermaLink="true">Caf&#xE9;-guid</guid></item></channel> </rss>

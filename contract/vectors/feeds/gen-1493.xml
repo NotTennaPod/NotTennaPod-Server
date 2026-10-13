@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters"><channel xmlns:media="http://search.yahoo.com/mrss/"><i:owner><i:name>Owner</i:name><i:email>o@example.com</i:email></i:owner><title><![CDATA[<p>Para<]]>/p></title><language></language><image><url>  https://example.com/ws.png
+</url></image><i:image href="https://example.com/it.jpg"/><podcast:funding url="https://example.com/donate">  spaced  </podcast:funding><i:author>Café Radio</i:author><link></link><i:subtitle>1 &lt;2
+&#x3C;b>Bold&lt;/b> title</i:subtitle><description>ééé&lt;div&gt;&amp;Lt;&#60;/div>	&amp;quot;q&#38;quot;&lt;li&gt;tab	here&#x3C;/li>éééééé "quoted&quot;aa</description><item><title>"quoted&quot;</title> <guid isPermaLink='false'></guid> <link> https://e.com/x </link> <pubDate>Sat 11 Jan 1997 02:16:34 +1400</pubDate> <content:encoded><![CDATA[  &copy;]]></content:encoded> <enclosure url="https://xn--caf-dma.example/ep212.oga?dl=1.0" length="0" type="audio/flac"/> <media:thumbnail url="https://example.com/th.jpg"/></item><item><content:encoded>&lt;BR>&lt;p&gt;&#x26;nbsp;&lt;/p></content:encoded> <media:thumbnail/> <pubDate>
+Friday, 24 Feb 21 12:27	</pubDate> <title>back\slash
+'single&apos;</title> <media:group><media:content medium="Audio" type="audio/flac" isDefault="1" fileSize="1,000,000"/></media:group> <enclosure url="http://example.org/dir.with.dots/ep239.OGG?auth=yes" length='-1' type="audio/aac"/> <guid>https://example.com/item/4515</guid> <podcast:transcript url='https://example.com/t.vtt' type="application/srr"/><podcast:transcript url="https://example.com/t.json" type="Application/JSON"/> <media:description><![CDATA[<div>&</div>&lt;b&gt;<p><b>Bold</b> title</p>&Lt;<p>a=b&c=d</p>  leading<hr>😀😀😀😀]]></media:description> <description>&#60;br />&lt;img&gt;</description></item><item><guid>  spaced guid  </guid>
+<title><![CDATA[x<y]]></title>
+<pubDate>Tue, 23 Dec 1986 14:45</pubDate>
+<podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"></podcast:socialInteract>
+<enclosure url="" length="0x4E20" type="audio/*"/>
+<i:duration>1:00:00:00</i:duration>
+<link></link></item><item><guid>  spaced guid  </guid>
+<link> https://e.com/x </link>
+<media:content type="audio/" fileSize="２０００００" duration='0060'/>
+<i:subtitle>&lt;i&gt;1 &lt;2&#x3C;/i></i:subtitle>
+<enclosure url="ftp://files.example.com/café/120.ogx" length="-0" type="text/plain"/>
+<i:summary></i:summary>
+<pubDate>19 Dec 1975 14:24:20 +01</pubDate>
+<content:encoded>ééé&lt;p>&#x26;#0;&lt;/p>&#x3C;br/&gt;&#13;
+&#38;mdash;&#x3C;br/>&#128512;😀  &#38;#0;&lt;p&gt;[x]&#60;/p&gt;</content:encoded>
+<wrapper><inner><deeper>text</deeper></inner></wrapper>
+<title>&#60;<![CDATA[pre>é
+  pre</pre> &#xA9;]]></title></item><item><media:thumbnail/><enclosure url='https://user:pass@media.example.net/café/81.mpga' length="4294967296" type="audio/opus"/><i:image href=' https://e.com/i.png '/><guid>https://example.com/item/22792</guid><title>&lt;h6&gt;a&#13;
+b&#60;/h6&gt;  &lt;3 &#x3C;3</title><link></link><description></description></item></channel></rss>

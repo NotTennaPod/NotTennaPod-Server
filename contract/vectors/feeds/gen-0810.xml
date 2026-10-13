@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><description>&lt;div&gt;&#38;#128512;&lt;/div&gt;&lt;li&gt;a&#13;
+b&lt;/li&gt;&lt;p/></description>
+<language>TR</language>
+<itunes:summary><![CDATA[ &#128512;	&#xFFFF;1 <2<p>&AMP;</p>ééé]]></itunes:summary>
+<itunes:new-feed-url>ftp://x</itunes:new-feed-url>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<dc:creator>DC Creator</dc:creator>
+<lastBuildDate>x,  1973-03-12T00:05:18</lastBuildDate>
+<link></link>
+<itunes:author><![CDATA[  Spaced  ]]></itunes:author>
+<title><![CDATA[&;  &Lt;  &AMP;]]></title>
+<item><title><![CDATA[<b>Bold</b> t]]>itle</title>
+  <guid isPermaLink="true">
+</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>Wed 18 Jan 2215 12:58:10 GMT+0</pubDate>
+  <itunes:subtitle><![CDATA[Tom & Jerry <3]]></itunes:subtitle>
+  <enclosure length='&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;' type='audio/opus'/>
+  <enclosure url="" type="application/ogg"/>
+  <media:content fileSize="1,000,000" isDefault="false" type="audio/x-m4a" duration=' 60' medium="Audio"/>
+  <media:content type='audio/x-m4a' url="ftp://files.example.com/a/b/c97.torrent" medium="document" isDefault="false" fileSize="1" duration="3600"/>
+  <media:content type="audio/mpeg; charset=binary" medium="audio" duration="0060"/>
+  <psc:chapters><psc:chapter href="" title="Café &amp;amp; more" start='03:59:23'/><psc:chapter title="Intro"/><psc:chapter title="Café &amp;amp; more" start="10:00:00.000001" href=""/><psc:chapter start="02:00:22" title="Intro"/><psc:chapter start="::" title="&#128512;"/></psc:chapters>
+  <pi:chapters url="" type="application/json+chapters"/>
+  <atom:link href="" rel="next" title="Café" length="20000"/></item></channel></rss>

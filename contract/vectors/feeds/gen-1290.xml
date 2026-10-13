@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md"> <channel><title><![CDATA[&quot;q&quot;&#xD800;100%]]></title>
+<itunes:image/>
+<lastBuildDate> 2346-12-31T01:22:09 	 </lastBuildDate>
+<description><![CDATA[<br/> tab	here&lt;b&gt;escaped&lt;/b&gt;	cr
+lf<div>&#0;</div>
+
+'single'<p>multi
+line</p>	&#xA9;]]></description>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<itunes:author>&amp;copy; 2020 Org</itunes:author>
+<item><media:content type="image/jpeg" fileSize="2147483648" medium="audio" isDefault="1" duration='+60' url="https://xn--caf-dma.example/café/59.html"/>
+  <media:content medium="document" duration="59" fileSize="1,000,000" url="https://xn--caf-dma.example/e p331.3gp" type="application/ogg"/>
+  <itunes:subtitle>茶 مر&#x62D;با</itunes:subtitle>
+  <media:content duration="1" type="video/webm" medium="Audio" fileSize="abc" isDefault="true" url="HTTPS://EXAMPLE.COM/a/b/c284.m4a"/>
+  <guid isPermaLink="true">
+</guid>
+  <title>&amp;#x1F600;</title>
+  <link></link>
+  <content:encoded></content:encoded>
+  <pubDate>Sun, 04 May 1969 23:03:00 +0530</pubDate>
+  <itunes:summary><![CDATA[😀]]></itunes:summary>
+  <itunes:duration>12032</itunes:duration></item>
+<item><itunes:author>Item author</itunes:author>
+  <description>&amp;amp</description>
+  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="next" title="Alternate" type='application/xhtml+xml' href=""/>
+  <itunes:subtitle><![CDATA['single']]></itunes:subtitle>
+  <itunes:duration>1841.52</itunes:duration>
+  <title>a &lt; b</title>
+  <psc:chapters xmlns:psc="http://podlove.org/simple-chapters" version="1.2"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" image="https://example.com/ch.png" start="-2147483648:00:00"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" href='https://example.com/ch' start="03:38:09"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start='03:36:20.071' href="https://example.com/ch" image='https://example.com/ch.png' title="&lt;b>x&lt;/b>"/></psc:chapters>
+  <enclosure url="http://example.org/e p36.pdf" length="4294967296" type="audio/x-wav"/>
+  <pubDate>1993-10-31T12:19:15Gmt</pubDate></item>
+<item><title>Tom &#38; Jerry<![CDATA[ <3]]></title>
+<guid isPermaLink="true">dup</guid>
+<link> https://e.com/x </link>
+<pubDate>2161-02-24T18:30:02Z</pubDate>
+<description></description>
+<itunes:duration> 1:30</itunes:duration>
+<enclosure url=" http://example.org/café/137.avi " length="9007199254740993" type="application/pdf"/>
+<enclosure url='https://user:pass@media.example.net/ep132.html#t=10' length="20000 " type="audio/mpeg"/>
+<enclosure url="https://xn--caf-dma.example/154.m3u8?auth=yes" length="" type="audio/mp3"/>
+<media:thumbnail url=""/></item></channel></rss>

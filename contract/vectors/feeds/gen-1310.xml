@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en"> <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">café Tom &#x26;amp; Jerry &amp;lt;3</div></title>
+<subtitle type="html"><![CDATA[  &#128512;<br></br> sep &;<p></p>]]></subtitle>
+<author><name>Émile</name><email>a@example.com</email></author>
+<author><name>C&#38;D</name></author>
+<link rel="self" href="https://example.com/feed?page=2"/>
+<entry><published>Tuesday, 14 Jun 57 09:53:34</published>
+  <updated>Friday, 22 Mar 1996 14:61:35</updated>
+  <updated>Sun, 17 Aug 2290 04:34:05</updated>
+  <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">  spaced  </div></title>
+  <link href="https://example.com/pay" rel="last"/>
+  <p:transcript url=""/>
+  <summary type='HTML'>&#60;p>#hash&lt;/p&gt;&lt;br /&gt;</summary>
+  <link title="MP3 feed" length="9223372036854775808" rel="self"/>
+  <link href='https://example.com/feed?page=2' rel="archives" title="MP3 feed" type='application/atom+xml' length="12"/></entry>
+<entry><summary type='HTML'>é&lt;br&gt;Tom &#x26;amp; Jerry &amp;lt;3&#60;br&gt;&lt;li>1 &#x3C;2&lt;/li&gt;aaaa&#160;​&#x3C;div&gt;&lt;/div>&#13;
+a &gt; bééé</summary>
+<id>
+id
+</id>
+<title type="xhtml"><![CDATA[第666集
+sep
+&#0;]]></title>
+<link length="20000" href="https://example.com/" type="application/xml+xhtml"/>
+<updated>Thu Nov 22 99:05:19 2260</updated>
+<link href="" length="20000" rel="next" title="Café" type='audio/mpeg'/>
+<content type="html"><![CDATA[AT&T<br>]]></content></entry>
+</feed>

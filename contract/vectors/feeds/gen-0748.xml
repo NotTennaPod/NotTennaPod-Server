@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[&#x1F600;
+<b>AT&T
+<h6>a < b</h6>]]></itunes:subtitle>
+<itunes:owner xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:name xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Owner</itunes:name><itunes:email xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">o@example.com</itunes:email></itunes:owner>
+<title>	back\slash  </title>
+<item><link> https://e.com/x </link> <podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/> <guid isPermaLink="true"></guid> <pubDate>1977-08-10</pubDate> <description>&#60;p>&#x3C;/p></description> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" https://e.com/i.png "/> <title>a=b&amp;c=d茶&amp;nbsp;</title> <enclosure url="" length="２０００００" type="AUDIO/MPEG"/> <enclosure url="" length="2147483647" type='audio/mpeg; charset=binary'/></item>
+<item><enclosure url='' length="00020000" type="unknown"/>
+<description>ééé
+&amp;Lt;</description>
+<link></link>
+<content:encoded><![CDATA[<div>"quoted"</div>]]></content:encoded>
+<guid isPermaLink="true"> </guid>
+<pubDate>Thu, 04 sep 1975 23:21:14 -1200</pubDate>
+<itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#38;;  &#x3C;font color=&quot;red">&#x3C;/font></itunes:subtitle></item>
+<item><pubDate>Sun, 28 Sept. 1066 00:46:15 -0000</pubDate> <guid isPermaLink='true'>urn:uuid:c580f212</guid> <enclosure url="//example.com/378.mid" length="+20000" type="audio/"/> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">18963</itunes:duration> <link> https://e.com/x </link> <title>&amp;lt;b&amp;gt;</title> <media:content medium='document' duration="3600" fileSize="abc" isDefault='1'/> <description><![CDATA[<BR><div>sep</div><br><br><li>&lt;b&gt;escaped&lt;/b&gt;</li>]]></description></item>
+<link></link>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" "/>
+<podcast:funding url="">Support us</podcast:funding>
+<description><![CDATA[<p>Episode 7</p>]]></description>
+<atom:link rel="Next" type="application/xml+xhtml" href="https://example.com/feed?page=2"></atom:link></channel>
+</rss>

@@ -1,0 +1,7 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xml:lang="EN-us">
+<link length='abc' type="application/rss+xml" rel="hub" title="Alternate" href="https://example.com/feed?page=2"/>
+<subtitle type="HTML">&lt;img src=&quot;x" alt=&quot;y&quot;/&gt;</subtitle>
+<link href="ftp://files.example.com/ep311.mp3.zip" title="Alternate" rel='enclosure'></link>
+<link rel="first" title="Alternate" length="9223372036854775808" href="https://example.com/feed?page=2"/>
+<title type="html">Tom &#x26; Jerry &lt;3 a=b&#38;c=d</title>
+  </feed>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<title type='html'>&amp;</title>
+<id></id>
+<link rel="" title="" type="application/xml+xhtml"/>
+<logo>https://example.com/logo.png</logo>
+<updated>2557-02-10T11:35:41.009</updated>
+<author><name>Ann</name></author>
+<link type="application/xml+xhtml" length="abc" href="https://example.com/pay" rel="next" title='MP3 feed'/>
+<entry><id>
+id
+</id>
+<link rel='Next' length="20000" title="MP3 feed" href="https://example.com:8443/175.xyz" type="application/atom+xml"/>
+<published>2008-12-15T01:42:44Z</published>
+<title>&amp;amp;</title>
+<psc:chapters/></entry>
+<entry><link type="application/xhtml+xml" rel="" href='' length="abc"></link> <m:content fileSize='1' duration="01:00" isDefault="TRUE" medium="video" type="Audio/MPEG"/> <title>{json: 1} a=b&amp;c=d</title></entry>
+</feed>

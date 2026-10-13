@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:summary>éééTom &#38; Jerry &#x3C;3&lt;li&gt;&amp;#xFFFF;&#60;/li&gt;</itunes:summary> <description>&lt;li>&#x3C;p>Pa<![CDATA[ra</p></li>]]></description> <link> https://example.com/ </link> <title><![CDATA[<3 <3
+"quoted"
+&hellip;]]></title> <itunes:image href='https://example.com/it.jpg'/> <link xmlns="http://www.w3.org/2005/Atom" type="application/rss+xml" rel="self" length="abc" href="http://example.org/e p15"/> <language>fr
+</language> <atom:link type="" rel="self" length="12" title="MP3 feed"/> <atom:link href="" type="" length="20000" rel="last" title="Alternate"/> <pi:funding url="">  spaced  </pi:funding> <atom:link type='application/atom+xml' rel='first' href="" length="9223372036854775808"/> <itunes:subtitle><![CDATA["quoted"]]></itunes:subtitle> <item><itunes:duration>2:32:50</itunes:duration><title>&#x3C;h6>&#38;nbsp;&lt;/h6>
+&amp;;
+AT&#x26;T</title><guid isPermaLink="true">  spaced guid  </guid><pi:transcript type="application/srt"/><pi:transcript url="https://example.com/t.vtt" type="text/html" language="en"></pi:transcript><link></link><itunes:summary>&lt;hr></itunes:summary><itunes:subtitle><![CDATA[&#; "quoted" &amp;]]></itunes:subtitle><enclosure url='https://example.com/a.b/dir.with.dots/ep193.mp3' length='9007199254740991' type="application/octet-stream"/></item> <item><itunes:duration>2929</itunes:duration> <media:content fileSize="16383" duration="0" type="audio/ogg" medium="Audio"/> <enclosure length='-16384' type="video/quicktime"/> <googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description> <pubDate>&#13;
+Fri,   03 Jun 1977 21:32:41 -0000  </pubDate> <media:thumbnail url="https://example.com/th.jpg"/> <guid isPermaLink='false'>urn:uuid:e20f5ef1</guid> <description>&#60;li>&apos;single'&#60;/li&gt;
+#hash&lt;li&gt;1 &#60;2&lt;/li&gt; a &#60; b😀😀😀&#38;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;&lt;br&gt;&lt;li&gt;&#1513;&#1500;&#x5D5;ם&lt;/li>&#60;p>[x]&#60;/p&gt;</description> <title>  leading&amp;amp;Folge 546: Über alles </title> <chapters:chapters version="1.2"><chapters:chapter start="9797" href='' title="Café &amp;amp; more"/></chapters:chapters> <itunes:image href=" "/> <enclosure url="" length='4294967296'/> <link></link></item> <item><media:thumbnail url=""/>
+<guid></guid>
+<chapters:chapters><chapters:chapter title="Café &amp;amp; more" start="1:00 "/></chapters:chapters>
+<link>https://example.com/ep</link>
+<enclosure url="HTTPS://EXAMPLE.COM/ep104.m4v?a=1&amp;b=2" length='123456' type="audio/x-m4a"/>
+<pi:transcript url="https://example.com/t.vtt" type="application/json"/><pi:transcript type="application/srt" language="en"/><pi:transcript url="https://example.com/t.json" type="application/srr"/>
+<description><![CDATA[<li>Tom & Jerry <3</li>]]></description>
+<itunes:duration>153:59</itunes:duration>
+<title><![CDATA[sep]]></title></item></channel>
+  </rss>

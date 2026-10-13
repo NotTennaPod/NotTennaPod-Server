@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en"><itunes:image href=""/>
+<id>urn:x</id>
+<link type="application/atom+xml" title='Alternate' href='https://example.com/alt.xml' length="20000" rel="last"></link>
+<link rel="first" title='MP3 feed' length='abc' href="https://example.com/alt.xml" type="application/xml+xhtml"/>
+<title type="text">&#x3C;em&gt;&#38;hellip;&#x3C;/em>&lt;img src="x.png"&gt; cover  padded  </title>
+<entry><content></content>
+  <updated>2386-03-15T05:02:36</updated>
+  <itunes:duration>15767</itunes:duration></entry>
+<entry><author><name>Entry author</name></author>
+  <id>tag:x,2020:1</id>
+  <title><![CDATA[tab	here  1 <2  &#65;&#66;]]></title>
+  <published>Fri 28 Feb 1992 05:24:26 -0500</published>
+  <link rel='self' href="https://example.com/alt.xml" length='abc'></link></entry> </feed>

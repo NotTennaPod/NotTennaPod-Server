@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><atom:link length="9223372036854775808" href="HTTPS://EXAMPLE.COM/café/159.amr" title="Alternate" type="application/rss+xml"/> <atom:link rel="next" length="20000" title="MP3 feed" href='https://example.com/alt.xml'/> <atom:link href="" length="20000" type="application/atom+xml" title=""/> <description>&lt;p>trailing &#x3C;/p>&amp;&lt;br></description> <itunes:subtitle>&#x26;#x;</itunes:subtitle> <title><![CDATA[&hellip;&amp;]]></title> <itunes:summary>第7集&#60;br&gt;</itunes:summary> <link> https://example.com/ </link> <atom:link href="https://example.com/" title='Alternate' length="20000" rel="Next" type="audio/mpeg"/> <item><title>&#38;#xFFFF;</title>
+  <guid isPermaLink="true">dup</guid>
+  <link> https://e.com/x </link>
+  <pubDate>x, 	2522-06-13</pubDate>
+  <description>aaaa
+<![CDATA[a
+
+b
+茶<p>&#;</p><p></p>]]></description>
+  <itunes:duration>129:54</itunes:duration>
+  <enclosure length='9223372036854775808' type=""/>
+  <podcast:season xmlns:podcast="https://podcastindex.org/namespace/1.0">2</podcast:season></item> <item><title><![CDATA[tab	here
+&mdash;
+<s>&lt;b&gt;escaped&lt;/b&gt;]]>&#x3C;/s></title>
+<guid>urn:uuid:9a45ea2a</guid>
+<link> https://e.com/x </link>
+<enclosure url="https://example.com/a.b/café/325.ogg" type="audio"/>
+<pubDate>2574-12-10T10:34:42.65z</pubDate>
+<content:encoded><![CDATA[<div>Epi]]>sode 7&#x3C;/div&gt;&lt;p&gt;&lt;3 &lt;3&#x3C;/p&gt;</content:encoded>
+<itunes:image href='https://example.com/ep.jpg'/></item> <item><title><![CDATA[ 😀]]></title> <guid>Café-guid</guid> <link></link> <pubDate>Thu,  14  May 1970 16:58:11 -0500</pubDate> <itunes:summary> &amp;<![CDATA[#;<br/>]]></itunes:summary> <enclosure url="ftp://files.example.com/a/b/c251.caf" length="16385" type='audio/mp3'/></item> <item><enclosure url="//example.com/ep281" length="1" type="image/jpeg"/>
+<title><![CDATA[​ Episode 12 Folge 678: Über alles]]></title>
+<itunes:subtitle>cr&#13;lf &amp;nbsp;</itunes:subtitle>
+<link>https://example.com/ep</link>
+<guid>Café-guid</guid>
+<description>
+a &gt; b&amp;#169;&lt;br> &amp;mdash;aaaaaaaa	Episode 12</description>
+<itunes:image/>
+<podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" type="application/json+chapters"/></item> <item><title><![CDATA[#679 – Interview x<y <p>Para</p>]]></title>
+<guid isPermaLink="false"></guid>
+<link></link>
+<pubDate>
+2249-04-08T21:15:46Z	</pubDate>
+<description>
+
+&amp;#x;
+&#38;nbsp;&#60;hr>&lt;img&gt;aa</description>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-11-20T18:31:61.525-0800</dc:date>
+<content:encoded>&amp;#xD800;&#60;li&gt; &lt;/li></content:encoded>
+<itunes:image href='https://example.com/ep.jpg'/>
+<enclosure length="123456789012345678" type="audio/x-wav"/></item></channel> </rss>

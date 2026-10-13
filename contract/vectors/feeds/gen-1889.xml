@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><itunes:image href=" https://example.com/sp.jpg "/>
+<itunes:author>Jane &#x26;amp; John</itunes:author>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<image><link>https://example.com/img-link</link><url></url></image>
+<title>&#60;li>&#1513;ל<![CDATA[ום</li>]]></title>
+<language>de-DE</language>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<item><sc:chapters><sc:chapter href="" start="1:00:Infinity" title="Café &amp;amp; more"/><sc:chapter image='https://example.com/ch.png' title="&lt;b>x&lt;/b>"/><sc:chapter image="https://example.com/ch.png" title="" start="01:08:26.649" href="https://example.com/ch"/><sc:chapter href="" title="Intro" start="01:45:49.938"/><sc:chapter start="8609" title="" image="https://example.com/ch.png"/></sc:chapters><itunes:duration>14381</itunes:duration><enclosure url="HTTPS://EXAMPLE.COM/café/64.3gp" length="18446744073709551616"/><description><![CDATA[<img src="x" alt="y"/>]]></description><guid>urn:uuid:df2ba988</guid><title>&amp;#128512<![CDATA[;  a
+  b  <b><i>#hash</b></i>]]></title><podcast:chapters type="application/json+chapters"/><pubDate>i</pubDate><media:content fileSize="1" medium='document' isDefault="true" type="application/pdf" url="https://example.com/a.b/dir.with.dots/ep141.3gp" duration="3600"/><link>https://example.com/ep</link></item></channel>
+  </rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF8" standalone="yes"?>
+<rss xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><podcast:funding></podcast:funding> <language>en</language> <lastBuildDate>Friday, 22 Nov 1991 09:31</lastBuildDate> <link> https://example.com/ </link> <description>&#38;amp</description> <podcast:funding url="https://example.com/donate">  spaced  </podcast:funding> <atom:link rel="last" type="application/rss+xml" title=""/> <media:thumbnail url=''/> <title><![CDATA[<strike>100%</strike>]]></title> <itunes:subtitle><![CDATA[<b>Bold</b> title
+<b><i>&#xFFFF;</b></i>
+&]]></itunes:subtitle> <podcast:funding>Support us</podcast:funding> <item><title>&#x3C;s>S01E361&lt;/s&gt;</title><pubDate>1899-05-27T05:41:43.071Eastern Standard Time</pubDate><description> [x]aaaaaa&amp;#xA9;&#38;Lt;&#x3C;br&gt; &#38;#x1F600;&lt;li&gt;&#60;p&gt;Para&#x3C;/p&gt;&lt;/li>  &amp;#x1F600;&lt;p&gt;&lt;/p></description><itunes:duration>427</itunes:duration><enclosure url='https://xn--caf-dma.example/11.xyz' length="9223372036854775807" type="Audio/MPEG"/><enclosure url="" length="12" type="image/*"/><media:thumbnail url=""></media:thumbnail></item> <item><podcast:transcript url='https://example.com/t.vtt' type="application/srr"/><podcast:transcript url="https://example.com/t.vtt" type='text/plain' language='en'/>
+<enclosure url="" length="16384" type="AUDIO/MPEG"/>
+<itunes:image href="https://example.com/ep.jpg"/>
+<description>&lt;br /&gt;</description>
+<pubDate>2021-07-25T13:38:02+02:00</pubDate>
+<guid isPermaLink="true">urn:uuid:3ff04b50</guid>
+<enclosure url="" length="9007199254740993" type="audio/wav"/>
+<enclosure url="https://example.com/a.b/café/113.Mp4?file=x.mp3" length=" 20000" type='application/octet-stream'/>
+<link>https://example.com/ep</link>
+<podcast:person role="host">Jane</podcast:person>
+<psc:chapters><psc:chapter href='https://example.com/ch' start="03:30:16.875" image='https://example.com/ch.png'></psc:chapter><psc:chapter image='https://example.com/ch.png' start="01:02:03.123456" title="&lt;b>x&lt;/b>"/><psc:chapter start="03:44:16.202" title=""/><psc:chapter href='' start="2059" title="Café &amp;amp; more"/></psc:chapters>
+<title>第981集 Line&lt;br>break Tom &amp; Jerry &lt;3</title></item> <item><podcast:transcript url="" type="application/srt" language='en'/>
+<link></link>
+<enclosure url="ftp://files.example.com/e p349.opus?a=1&amp;b=2" type="audio/opus"/>
+<content:encoded>&lt;img&gt;&#x3C;p&gt;&amp;Lt;<![CDATA[</p>]]></content:encoded>
+<it:subtitle><![CDATA[<dfn>Episode 657</dfn>&]]>amp;</it:subtitle>
+<description><![CDATA[<3 <3<p>x<y</p>  spaced  <br>]]>&#38;#xFFFF;&#60;br&gt;&#60;p&gt;&amp;#xFFFF;&#60;/p>aaaaaaa&#38;amp;amp;&#60;br&gt;&#x3C;hr/></description>
+<enclosure url="" length="1,000,000" type="AUDIO/MPEG"/>
+<it:image href=' '/>
+<guid isPermaLink="true">urn:uuid:549c94d0</guid>
+<itunes:summary>😀😀😀&#13;
+&amp;lt;b&#x26;gt;&#60;br />&#x3C;img>&#x26;#0;&lt;br>😀😀😀😀cr&#13;lf&lt;li&gt;#7 – Interview&#x3C;/li&gt;</itunes:summary>
+<pubDate>Tue, 15 Jul 2003 00:00:00 CET</pubDate>
+<it:duration>84:27</it:duration></item></channel> </rss>

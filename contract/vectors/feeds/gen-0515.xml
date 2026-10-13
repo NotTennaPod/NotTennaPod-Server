@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<link rel="last" href="" length="9223372036854775808"/>
+<subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+&amp;;</div></subtitle>
+<title type="xhtml">
+&amp;#xFFFF; </title>
+<logo></logo>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Jane &#x26;amp; John</itunes:author>
+<id> raw </id>
+<entry><published>Fri, 18 Aug 1978 11:22:51 GMT+0100</published><podcast:transcript url="" type='text/html'/><podcast:transcript url="https://example.com/t.json" type="Application/JSON" language="en"/><podcast:transcript type="" language="en"/><title type="html"><![CDATA[
+Episode 213	]]></title><content type='html'>&lt;li>a > b&#60;/li&gt;</content><link href="" type="" length="9223372036854775808" rel='Next' title="MP3 feed"/><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">122:06</itunes:duration><updated>2005-10-25T20:39:25UTC+01:00</updated><link title="Alternate" rel="" href="https://cdn.example.com/a/b/c250.php" length="9223372036854775808"/><author><name>Entry author</name></author><id>tag:x,2020:1</id></entry>
+<entry><id> raw </id> <link title="MP3 feed" rel="hub" href='' type='text/html'/> <content type='plain'><![CDATA[multi
+line]]></content> <title type="plain">[x]  a&#13;
+b  Tom &amp;amp; Jerry &amp;lt;3</title> <summary type="text">aaaaaa&#13;
+x&lt;y&#x1F600;&#xE9;éé&lt;p&gt;&amp;lt;b&#38;gt;escaped&#38;lt;/b&amp;gt;&lt;/p&gt;&#x3C;div>&amp;#;&#60;/div&gt;😀</summary> <link href="https://example.com/" rel="enclosure" type="text/html" title="Café" length="20000"/> <link title="Café" type='application/xml+xhtml' href='https://example.com/alt.xml'/></entry>
+<entry><content type="html"><![CDATA[&copy;]]></content>
+<media:content fileSize="123456789012345678" type="text/plain" isDefault="true" duration="+60" medium="document"/>
+<link rel="enclosure" type="application/rss+xml" href="https://example.com/"/>
+<id>tag:x,2020:1</id>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#38;#;</div></title>
+<summary type="xhtml">aaa<![CDATA[a]]></summary>
+<published>23 OCT 2019 02:58:52 +1400</published>
+<link type="text/html" length="9223372036854775808" title="MP3 feed" rel="hub"/>
+<updated>Mon, 28 Oct 0999 19:33 -0000 GMT GMT</updated></entry>
+<entry><id></id><summary type="HTML"><![CDATA[ééé&AMP;<br><li>  spaced  </li>]]></summary><content type="html"></content><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">	&lt;sup>&amp;#xFFFF;&lt;/sup&gt;  </div></title><published>Sunday, 07 Jul 2301 16:48:34 +00:0</published><link type="audio/mpeg" href="" rel="self" title="Café" length="abc"/><link href="https://example.com/" title="" type="application/atom+xml" rel=''/><link type="application/xhtml+xml" href="https://example.com/" rel="alternate" title="Alternate"/></entry>
+</feed>

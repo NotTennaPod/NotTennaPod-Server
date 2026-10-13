@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><image><link>https://example.com/img-link</link><url></url></image>
+<description></description>
+<link>https://example.com</link>
+<i:image href=""/>
+<item><title>&#x26;Lt;</title> <i:subtitle>a&#13;
+b  &lt;dl>&lt;dt>sep&lt;/dt>&#60;dd&gt;b&lt;/dd&gt;&lt;/dl></i:subtitle> <i:summary><![CDATA[<div>back\slash</div>
+&#x1F600;	"quoted"]]></i:summary> <pubDate>Tue Nov 99 07:02:09 2006</pubDate> <link>https://example.com/ep</link> <enclosure length="20000.0" type="video"/> <i:image href=' '/> <guid>https://example.com/item/62336</guid> <description>ééé&#x26;AMP;&lt;br&gt;</description></item>
+<item><podcast:chapters type="application/json+chapters"/>
+  <enclosure length='9007199254740991' type="audio/mpeg; charset=binary"/>
+  <link>https://example.com/ep</link>
+  <guid>a&#38;b</guid>
+  <media:description xmlns:media="http://search.yahoo.com/mrss/" type="plain"><![CDATA[
+&#xD800; &copy;<hr/>]]></media:description>
+  <description>&#60;br /></description>
+  <pubDate>Tue, 23 Mar 2354 04:54 -0800 +0000</pubDate>
+  <title>&#60;div>&amp;#65;&amp;#66;&lt;/div&gt;</title></item>
+<item><title>e&#769;</title>
+<guid isPermaLink="true">Café-guid</guid>
+<link> https://e.com/x </link>
+<pubDate>1998-09-18T11:17:02Z</pubDate>
+<i:duration>3723</i:duration>
+<enclosure length="" type="video/mp4"/>
+<media:description xmlns:media="http://search.yahoo.com/mrss/" type="html"><![CDATA[aaaaaaa]]></media:description>
+<pc:chapters><pc:chapter title="Intro" image="https://example.com/ch.png" start="4052"/><pc:chapter href="https://example.com/ch" image="https://example.com/ch.png" start="" title=""/><pc:chapter title="&lt;b>x&lt;/b>" href="https://example.com/ch" start="1::"/><pc:chapter href="" image="https://example.com/ch.png" start='49:07' title=""/><pc:chapter title="Café &amp;amp; more" start="1:30:00" href='' image="https://example.com/ch.png"></pc:chapter></pc:chapters></item>
+<item><link> https://e.com/x </link> <guid isPermaLink="false">
+</guid> <podcast:chapters type="application/json+chapters"/> <enclosure url='HTTPS://EXAMPLE.COM/e p191.png' length="9007199254740993" type="application/json"/> <pubDate>&#xE9;té,  21 Mar 1973 20:37:27 +1400</pubDate> <description></description> <i:image href=""/> <title><![CDATA[ 
+&#128512;]]></title> <i:subtitle>e&#769;
+Episode 12
+Episode 12</i:subtitle></item>
+<item><media:description xmlns:media="http://search.yahoo.com/mrss/" type="html">&#x26;;
+  spaced  &lt;img src="x.png"&gt;</media:description> <link> https://e.com/x </link> <title>&amp;mdash;  &amp;#65;&#x26;#66;  [x]</title> <pubDate>Fri, 10 Aug 1066 17:36:51 +14:00</pubDate> <i:duration>19324</i:duration> <guid isPermaLink="false">  spaced guid  </guid> <description>&#60;br>&lt;p&gt;&#38;#169;&#60;/p&gt;&lt;div>Folge 7: Über alles&lt;/div> multi
+line&lt;div&gt;&amp;copy;&lt;/div></description> <enclosure url='https://example.com:8443/24.webm' length="9223372036854775807" type="image/*"/> <i:image href="https://example.com/ep.jpg"/></item>
+<atom:link rel="" type='text/html' title="MP3 feed"/>
+<dc:creator>DC Creator</dc:creator>
+<title>&lt;cite>AT&amp;T&#x3C;/cite&gt;Folge 71: &#220;ber alles&#60;div&gt;café&lt;/div&gt;</title></channel>
+</rss>

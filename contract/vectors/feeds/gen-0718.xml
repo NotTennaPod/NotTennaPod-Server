@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters">
+<itunes:image href=""/> <itunes:author><![CDATA[&copy; 2020 Org]]></itunes:author> <id>https://example.com/feed</id> <link length='abc' title="Alternate" type="text/html" rel="self"/> <itunes:summary>&lt;p&gt;&amp;Lt;&#60;/p>第7集&lt;li&gt;&amp;#x1F600;&#x3C;/li&gt;&lt;br /&gt;éé&#233;éé&#xE9;&#60;br />
+&lt;3 &lt;3</itunes:summary> <author><name>Émile</name></author> <subtitle><![CDATA[<li>#7 – Interview</li>&#169;<br>]]></subtitle> <entry><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;lt
+a
+  b
+Episode 564</div></title><author><name>Entry author</name></author><link href="https://example.com/" title="MP3 feed" rel="archives" type=""/><itunes:duration>1:02:03</itunes:duration><id>urn:uuid:1</id><updated>Sun, 11 Jul 2579 16:21</updated><link type="application/rss+xml" title="Alternate" length="abc" rel='alternate'/><m:content type="video/webm" medium="audio" url="https://cdn.example.com/café/50.torrent" fileSize="4294967296" duration="01:00"/></entry>
+</feed>

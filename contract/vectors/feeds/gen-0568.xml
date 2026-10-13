@@ -1,0 +1,12 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><image><url>https://example.com/img.png</url></image>
+<title>trailing   back\slash  cr&#13;lf</title>
+<description><![CDATA[ leading<br><img><p><3 <3</p><BR> &#xFFFF;]]></description>
+<atom:link title="Café" rel="Next" type="" href="HTTPS://EXAMPLE.COM/café/274.mp3.zip"/>
+<itunes:image/>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<language>en</language>
+<link xmlns="http://www.w3.org/2005/Atom" rel="self" title="MP3 feed" type="application/rss+xml" href="https://example.com/"/>
+<itunes:author><![CDATA[Tom & Jerry <3]]></itunes:author>
+<itunes:summary>&#x3C;div>Episode 12&lt;/div&gt;
+&#38;#0;</itunes:summary>
+<link> https://example.com/ </link></channel></rss>

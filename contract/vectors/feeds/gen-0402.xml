@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><image><url></url><title>Image title</title><link>https://example.com/img-link</link></image><link>https://example.com</link><textInput><title>Search</title><link>https://example.com/search</link></textInput><item><title>&#x26;lt;b&amp;gt;</title>
+<guid></guid>
+<dc:date>27 Jan 2002 01:18:25 gmt</dc:date>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&#60;img src="x&quot; alt="y<![CDATA["/> 😀	100%]]></content:encoded>
+<itunes:summary>'single&apos;aaéé&#233;&lt;br />&lt;p&gt;café&#x3C;/p&gt;</itunes:summary>
+<itunes:subtitle>&amp;apos;a&#x26;apos;  Episode 12</itunes:subtitle>
+<itunes:image/>
+<enclosure url="" length="9007199254740993"></enclosure>
+<p:transcript type="Application/JSON"/><p:transcript url="https://example.com/t.vtt" type="application/srt" language="en"/><p:transcript type="" language="en"/></item><item><guid isPermaLink="true">dup</guid> <enclosure url="https://example.com:8443/café/248.txt?file=x.mp3" length="-1" type="application/pdf"/> <link>https://example.com/ep</link> <itunes:duration>30:</itunes:duration> <title>'single'
+a&#13;
+b</title> <pubDate>2013-06-10</pubDate> <atom:link href="https://example.com/" rel="archives" type="application/atom+xml"/></item><itunes:subtitle>R&#38;D  &lt;strong>trailing &lt;/strong&gt;</itunes:subtitle><title>
+{json: 1}
+</title><description>😀😀😀<![CDATA[😀&quot;q&quot;<br>  tab	here'single'<br><p></p><br />ééé 'single']]></description><itunes:new-feed-url>
+https://nl.example
+</itunes:new-feed-url><language></language></channel></rss>

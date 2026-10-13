@@ -1,0 +1,33 @@
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<atom:updated>Wed, 14 Dec 2191 22:20:05 +0100 +0000</atom:updated>
+<atom:author><atom:name>C&amp;D</atom:name></atom:author>
+<atom:icon>https://example.com/icon.png</atom:icon>
+<atom:logo>https://example.com/logo.png</atom:logo>
+<atom:link length="9223372036854775808" rel='self' type="text/html" title="Alternate" href=""/>
+<atom:id>https://example.com/feed</atom:id>
+<atom:author><atom:name>C&#x26;D</atom:name></atom:author>
+<atom:title type="HTML">S01E558</atom:title>
+<atom:author><atom:name>C&#x26;D</atom:name></atom:author>
+<atom:entry><atom:title>  &amp;AMP;&#60;3 &lt;3&#13;
+</atom:title>
+  <atom:content type="text"></atom:content>
+  <atom:link title="MP3 feed" href="https://example.com/pay" length="abc"/>
+  <atom:published>1066-03-18T09:22:45.063</atom:published>
+  <atom:link rel="payment" length="abc" type="application/xml+xhtml" title="MP3 feed" href="https://example.com/alt.xml"/>
+  <itunes:duration>596:31:23.648</itunes:duration>
+  <atom:id>
+id
+</atom:id>
+  <atom:link rel="first" href="https://example.com/a.b/café/113.Mp4?file=x.mp3" length="9223372036854775808" title="Alternate" type="application/rss+xml"/></atom:entry>
+<atom:entry><atom:summary type="text">ééé  padded  &#60;br> 100%&#x3C;p&gt;&amp;amp;&lt;/p&gt;
+
+sep&lt;hr&gt;  &amp;#xFFFF;&lt;li&gt;&#x1F600;&#60;/li><![CDATA[]]></atom:summary>
+  <itunes:duration>3920.295</itunes:duration>
+  <atom:updated>Sun, 20 May 1984 11:15:45 +01</atom:updated>
+  <atom:title type="text">http://example.com/?a=1&amp;b=2</atom:title>
+  <itunes:image href=""/>
+  <atom:link title="Café" href='https://example.com:8443/e p93.opus' type="application/xhtml+xml" rel="" length="abc"/>
+  <atom:published>Saturday, 26 Nov 12 10:08 -0500</atom:published>
+  <atom:link length="9223372036854775808" href="https://example.com/alt.xml" rel="self" title='MP3 feed'/>
+  <atom:updated>Saturday, 12 Aug 59 04:43 +1400</atom:updated></atom:entry>
+</atom:feed>

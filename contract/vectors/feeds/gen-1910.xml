@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1252"?><rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:sc="http://podlove.org/simple-chapters"> <channel xmlns:media="http://search.yahoo.com/mrss/"><i:author>Jane Doe</i:author>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="" rel="alternate" type="application/xhtml+xml"/>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">DC Creator</dc:creator>
+<item><title><![CDATA[&apos;]]>a&#x26;apos;
+&amp;amp;amp;
+</title>
+<guid isPermaLink="false">
+</guid>
+<i:duration>7909.688</i:duration>
+<enclosure length="00020000" type="audio/"/></item>
+<media:thumbnail/>
+<i:image href=" https://example.com/sp.jpg "/>
+<i:new-feed-url>ftp://x</i:new-feed-url>
+<link></link>
+<lastBuildDate>21 Feb 1979 17:13:07 +0945</lastBuildDate>
+<description><![CDATA[<div>&#1605;&#1585;&#1581;&#1576;&#1575;</div>multi
+line]]></description>
+<title><![CDATA[&AMP; <s>Episode 780</s> &nbsp;]]></title></channel>
+</rss>

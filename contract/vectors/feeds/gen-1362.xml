@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><lastBuildDate>2021-02-29T00:33:53</lastBuildDate>
+  <link>https://example.com</link>
+  <image><url>  https://example.com/ws.png
+</url></image>
+  <podcast:funding url=""/>
+  <language></language>
+  <itunes:subtitle>AT&#x26;T&#x3C;img src="x.png"&gt; cover</itunes:subtitle>
+  <title>a&#13;
+b
+R&#x26;D
+a=b&#38;c=d&#60;/p&gt;</title>
+  <item><enclosure url='//example.com/a/b/c138.m4b?a=1&amp;b=2' length="16383" type="video/mp4"/><link></link><itunes:summary>&#13;
+&#x26;#xFFFF;&#x3C;li>#hash&lt;/li>&#x3C;p&gt;&lt;/p></itunes:summary><m:content medium='document' url="https://user:pass@media.example.net/e p327.avi" fileSize="9007199254740993" type="application/octet-stream" duration="01:00"/><media:content duration="9223372036854775807" url="HTTPS://EXAMPLE.COM/dir.with.dots/ep67.m4b" medium="document" type="video/x-matroska" fileSize='4294967296'/><itunes:image href=" https://e.com/i.png "/><pubDate>2019-01-09T13:59:43.4473908z</pubDate><m:content duration="2147483648" fileSize="2e5"/><title>100%&#38;#xFFFF;</title><description><![CDATA[ sep]]></description></item>
+  <item><itunes:duration>18465</itunes:duration>
+  <media:content fileSize="2e5" duration="+60" url="//example.com/dir.with.dots/ep345.aif" type="application/pdf" medium="document" isDefault='1'/>
+  <guid isPermaLink="true">urn:uuid:2821f96a</guid>
+  <media:thumbnail/>
+  <itunes:subtitle><![CDATA[<ol><li>a=b&c=d</li></ol>]]></itunes:subtitle>
+  <enclosure url="https://example.com/a.b/ep256.mp3" length="" type="audio/*"></enclosure>
+  <itunes:summary>&#x645;ر&#1581;&#1576;ا &lt;3 &#60;3&#13;
+a &lt; b&#13;
+ש&#x5DC;ום&#60;hr/&gt;&#60;div&gt;{json: 1}&#x3C;/div&gt;&#13;
+cr&#13;lftrailing &lt;br></itunes:summary>
+  <link>https://example.com/ep</link>
+  <title><![CDATA[​]]></title>
+  <content:encoded><![CDATA['single']]></content:encoded>
+  <pubDate>17 Sep 16 22:59 +0000</pubDate></item></channel> </rss>

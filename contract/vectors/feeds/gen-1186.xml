@@ -1,0 +1,98 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:a10="http://www.w3.org/2005/Atom"> <channel><title>&#x3C;dl&gt;&#60;dt>Tom &#38; Jerry &#x3C;3&lt;/dt&gt;&#x3C;dd&gt;b&lt;/dd>&#60;/dl>  </title>
+<podcastindex:funding url="https://example.com/donate">Support us</podcastindex:funding>
+<itunes:subtitle>שלום &#x3C;p&gt;Para&#60;/p&gt;</itunes:subtitle>
+<a10:link length="12" rel="hub" type="application/atom+xml"/>
+<item><description>&#x3C;p/&gt;é&#xE9;é</description><a10:link length="20000" title="Alternate"/><link> https://e.com/x </link><content:encoded></content:encoded><itunes:duration> 1:30</itunes:duration><enclosure url="HTTPS://EXAMPLE.COM/a/b/c321.m4a" length="9223372036854775807" type="Audio/MPEG"/><guid>  spaced guid  </guid><pubDate>Monday, 04 Apr 1983 10:08:02</pubDate><title><![CDATA[http://example.com/?a=1&b=2 <cite>Episode 350</cite>]]></title></item>
+<item><title><![CDATA[plain words]]></title>
+  <link>https://example.com/ep</link>
+  <pubDate>2199-12-18T09:49:52Z</pubDate>
+  <content:encoded>é&#233;é#7 – Interview&amp;copy;&#60;br> &amp;#128512;​&#60;br>&amp;mdash;&#60;img src=&quot;x.png&quot;&gt;&#x3C;li>  padded  &lt;/li&gt;</content:encoded>
+  <itunes:summary>sep</itunes:summary>
+  <enclosure url="https://user:pass@media.example.net/144.webm?dl=1.0" length="16384" type="audio/aac"/>
+  <enclosure length=" 20000" type="video/x-matroska"/>
+  <enclosure length="٢٠٠٠٠" type="audio/*"/>
+  <media:content type="audio/wav" duration="2147483" fileSize="2147483648" medium='document' url="https://user:pass@media.example.net/271.mp3"></media:content>
+  <podcastindex:transcript type="text/vtt"/><podcastindex:transcript url="https://example.com/t.vtt" type="" language="en"/><podcastindex:transcript url="https://example.com/t.json" type="application/x-subrip"/></item>
+<item><title>sep
+S01E110
+"quoted"</title> <guid></guid> <link></link> <pubDate>Sun Sep 9 20:02:48 2007 EET</pubDate> <description>
+
+R&#38;D&#60;p>&#38;#x1F600;&#60;/p&gt;&#x3C;p>'single&apos;&#x3C;/p>&#60;hr/&gt;&#x3C;li>café&lt;/li&gt;</description> <dc:date>12 Nov 24 12:07:53 +0000</dc:date> <itunes:subtitle>&#13;
+&apos;single'&#60;/p&gt;
+&amp;copy;
+ 	</itunes:subtitle> <itunes:duration>00:00:01.999999</itunes:duration> <enclosure url='https://cdn.example.com/a/b/c368.m4b' length="+20000" type="video/quicktime"/></item>
+<item><media:content fileSize="-16384" type='text/plain' duration="+60" medium='image'/>
+<itunes:subtitle>sep
+ leading</itunes:subtitle>
+<itunes:duration>6850.171</itunes:duration>
+<guid isPermaLink="false">https://example.com/item/320</guid>
+<pubDate>07 jun 86 10:14 +0000</pubDate>
+<content:encoded><![CDATA[ééé<img src="x" alt="y"/>ééé]]></content:encoded>
+<title> </title>
+<googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+<enclosure url="" length="52428800" type="audio/opus"/></item>
+<item><itunes:summary></itunes:summary>
+<description> x&lt;y</description>
+<itunes:image href=" "/>
+<pubDate>	Tue., 29 Aug 1066 04:11:59 +1400	</pubDate>
+<content:encoded>&#x3C;div>&amp;copy;&#60;/div&gt; &amp;</content:encoded>
+<enclosure url="https://example.com:8443/119.mpga" length="9223372036854775807" type="audio/"/>
+<media:content fileSize="16385" type="video/x-matroska" duration="2147483" url="https://example.com/a.b/238.mov" isDefault="false"/>
+<guid isPermaLink="true">urn:uuid:09429214</guid>
+<title><![CDATA[&amp]]></title>
+<itunes:duration>32:47</itunes:duration>
+<media:thumbnail url=""/></item>
+<item><enclosure url="ftp://files.example.com/ep383.xyz#t=10" length="-16384" type='audio/mpeg; charset=binary'/>
+<link>https://example.com/ep</link>
+<title>{json: 1}  &amp;lt</title>
+<media:content medium='video' fileSize="16383" duration='01:00' url='//example.com/a/b/c203.m3u8' type="application/ogg"/>
+<pubDate>2022-11-22T04:10:51.17552z</pubDate>
+<podcastindex:transcript url="https://example.com/t.vtt" type="application/json"/><podcastindex:transcript type="text/vtt"/><podcastindex:transcript url="https://example.com/t.json" type="application/srt" language="en"/>
+<media:content isDefault="false" url='https://user:pass@media.example.net/e p327.avi' duration=" 60" fileSize='16385' type="application/octet-stream"/>
+<description><![CDATA[ &lt<li>trailing </li><div>R&D</div>  #hash😀😀😀]]></description></item>
+<item><pubDate>Day1, 1983-12-04</pubDate> <itunes:subtitle><![CDATA[&lt;b&gt;escaped&lt;/b&]]>gt;  a
+  b  multi
+line</itunes:subtitle> <content:encoded>&lt;li&gt;&amp;AMP;&lt;/li>&lt;b<![CDATA[r />]]></content:encoded> <title>Tom &#x26; Jerry &#60;3
+&lt;label&gt;&#x26;AMP;&#60;/label&gt;
+&lt;p&gt;&amp;hellip;</title> <media:description><![CDATA[😀😀😀😀<br><p>trailing </p> trailing 
+R&Dx<y<br>aaaaa<img>]]></media:description> <description>&amp;amp&lt;<![CDATA[br>]]></description> <enclosure url="http://example.org/café/223.jpg" length='9007199254740991' type="text/html"/> <itunes:summary></itunes:summary> <media:content medium="image" fileSize="18446744073709551616" duration="abc" isDefault="TRUE" type="application/octet-stream"/></item>
+<item><pubDate>Mon Jul 1 20:36 0999</pubDate><itunes:image href=" "/><itunes:subtitle><![CDATA[ leading]]></itunes:subtitle><media:description> &#x26;mdash; &amp;mdash;
+
+​</media:description><content:encoded></content:encoded><title>S01E309</title><podcastindex:socialInteract uri='https://social.example/@a/1' protocol="activitypub"/><enclosure url="//example.com/a/b/c313.torrent" length='9007199254740992' type="application/json"/><link>https://example.com/ep</link><guid>Café-guid</guid></item>
+<item><itunes:subtitle><![CDATA[  spaced  ]]></itunes:subtitle>
+  <itunes:image href="https://example.com/ep.jpg"/>
+  <link>https://example.com/ep</link>
+  <itunes:summary></itunes:summary>
+  <enclosure url='' length="9007199254740992" type="audio/aac"/>
+  <podcastindex:transcript url="https://example.com/t.vtt" type="application/srr" language='en'/><podcastindex:transcript type="text/vtt"/><podcastindex:transcript url="" type="application/srt" language="en"/>
+  <enclosure url="" length='-0' type="unknown"/>
+  <enclosure length="0x4E20" type="audio/flac"/>
+  <pubDate>2141-06-02T13:48:34.746UTC</pubDate>
+  <itunes:duration>4:36:29</itunes:duration>
+  <media:description type="html">	&amp;Lt; cr&#13;lf&lt;p>plain words&#x3C;/p&gt;&#13;
+&amp;lt&#x3C;p/&gt;</media:description>
+  <guid isPermaLink="true">a&#x26;b</guid>
+  <description></description>
+  <itunes:author>Item author</itunes:author></item>
+<item><title><![CDATA[&lt;b&gt;escaped&lt;/b&gt;
+<p>Para</p>]]></title>
+<guid isPermaLink="false">https://example.com/item/2076</guid>
+<pubDate>Thu, 17 Oct 2019 06:53:36 -0800</pubDate>
+<description>
+
+&#60;3 &lt;3&#x3C;p/&gt;&lt;p&gt;Para&#x3C;/p&gt;</description>
+<dc:date>Sat, 32 Jul 1601 23:16:48 -0500</dc:date>
+<itunes:subtitle>a &gt; b
+&#x26;amp;
+第690集</itunes:subtitle>
+<itunes:image href="https://example.com/ep.jpg"/>
+<itunes:duration>11020</itunes:duration>
+<media:content medium="video" type="image/*" duration='2147483' url="https://user:pass@media.example.net/e p247.m4a#t=10" fileSize="12"/></item>
+<item><enclosure url="https://example.com:8443/175.xyz" length="" type="application/ogg"/> <title><![CDATA[&Lt; &lt;b&gt;escaped&lt;/b&gt; &AMP;]]></title> <media:thumbnail url="https://example.com/th.jpg"/> <pubDate> Monday, 09 Jul 55 23:56 +0945 </pubDate> <itunes:image href="https://example.com/ep.jpg"/> <enclosure length="1,000,000" type="text/plain"/> <guid isPermaLink="false">dup</guid> <description><![CDATA[<li>&euro;</li>
+#hash]]></description> <itunes:duration>5:30:03</itunes:duration> <enclosure url='HTTPS://EXAMPLE.COM/190.aspx' length="123456" type="audio/x-m4a"/> <dc:date>2015-09-21T20:19:</dc:date></item>
+<item><description>&#13;
+sep😀😀😀😀&lt;div>&amp;#128512;&lt;/div></description><media:thumbnail url=""/><itunes:image/><pubDate>Day1,  Tue, 04 Sep 1979 07:53:09 +0100</pubDate><title>plain words
+http://example.com/?a=1&amp;b=2</title><itunes:duration>10921</itunes:duration><guid>  spaced guid  </guid><link> https://e.com/x </link><content:encoded>&lt;hr<![CDATA[/><br></br>	<3 <3]]></content:encoded></item>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<link>https://example.com</link>
+<itunes:new-feed-url>ftp://x</itunes:new-feed-url></channel></rss>

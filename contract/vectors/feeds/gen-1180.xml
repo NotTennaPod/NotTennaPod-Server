@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
+<channel><p:funding url="https://example.com/donate">  spaced  </p:funding>
+<title><![CDATA[  padded  
+Tom &amp; Jerry &lt;3]]></title>
+<language>de-DE</language>
+<itunes:author>&lt;b&gt;Studio&#60;/b></itunes:author>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<image><link>https://example.com/img-link</link><url></url></image>
+<itunes:summary>&#x3C;br>&#60;/br&gt;  &amp;amp;amp;</itunes:summary>
+<link> https://example.com/ </link>
+<item><link></link>
+  <title>&amp;#128512; Line&lt;br>break</title>
+  <description>&lt;div&gt;&amp;copy;&#60;/div></description>
+  <itunes:summary>&#x3C;br /> &#x26;mdash;&lt;br/&gt; trailing   &#38;lt&#60;div>a > b&#60;/div>&#128512;éé&#xE9;</itunes:summary>
+  <enclosure url="//example.com/e p90.m3u8" length="-9223372036854775808" type="audio"/>
+  <p:chapters type="application/json+chapters"/>
+  <pubDate>	Friday, 14 Nov 2442 20:21:12&#13;
+</pubDate>
+  <content:encoded>&#60;div>&amp;lt;b&#x26;gt;escaped&amp;lt;/b&#38;gt;&lt;/div&gt;  &#x26;quot;q&#38;quot;&#x3C;li>&#38;#0;&lt;/li&gt;</content:encoded>
+  <media:description type='html'>&lt;p>a
+
+b&#x3C;/p&gt;</media:description>
+  <media:group><media:content isDefault="false" url="https://user:pass@media.example.net/a/b/c236.aif" type='text/html' duration="0" fileSize="12"/><media:content duration="59" fileSize="" url="https://example.com/a.b/a/b/c252.m4v" isDefault="TRUE" type="audio/mp3"/></media:group>
+  <guid isPermaLink="true">https://example.com/item/22103</guid>
+  <x:foo xmlns:x="urn:x"><title>Nested title</title></x:foo>
+  <itunes:duration>105:30</itunes:duration>
+  <enclosure length="1,000,000" type="audio/*"/></item>
+<item><enclosure url="" length="1,000,000" type="video/mp4"/><title> leading
+cr&#13;lf</title><guid></guid><media:content fileSize="+20000" duration="9223372036854775807" type="audio/x-m4a"/><media:content type=" audio/mpeg" isDefault='true' fileSize="-16384" duration="59" url="https://example.com/a.b/161"/><pubDate>  FRI, 07 Mar 1969 01:27:23 +0200  </pubDate></item>
+<item><itunes:subtitle>&amp;unknown; &lt;i&gt;back\slash&lt;/i> Line&lt;br&gt;break</itunes:subtitle>
+<pubDate>22 Oct 98 04:38:08 +0530</pubDate>
+<link>https://example.com/ep</link>
+<title>&#33590;</title>
+<description>&#13;
+AT&amp;T &amp;euro;&#x3C;img src="x" alt=&quot;y&quot;/></description>
+<guid isPermaLink="true">Café-guid</guid>
+<enclosure url='' length="-1" type="unknown"/>
+<itunes:duration>0:25:17</itunes:duration></item>
+<item><title><![CDATA[100%   padded  ]]></title>
+<guid isPermaLink="false">
+</guid>
+<link></link>
+<pubDate>2008-10-04T25:57:36+0100</pubDate>
+<description>#7 &#8211; Interview&#128512;&lt;br/>a&#x3C;div>&#x26;#169;&#60;/div&gt;  &#38;lt;b&#x26;gt;&#x3C;div>sep&#60;/div&gt; &#x26;#128512;</description>
+<cont:encoded><![CDATA[<div>plain words</div>]]></cont:encoded>
+<itunes:subtitle>&#60;dfn>&lt;p<![CDATA[>Para</p></dfn>]]></itunes:subtitle>
+<itunes:duration>5075.390</itunes:duration>
+<enclosure url="" length="+20000" type="audio/aac"/>
+<media:content url='https://example.com/a.b/café/155.m4v' fileSize="9007199254740992" isDefault="true" medium="image" type="audio/"/>
+<media:content fileSize="4294967296" isDefault='1' medium="image" type="audio/mp3" duration="0"/></item>
+<item><itunes:duration>1.2f</itunes:duration><link> https://e.com/x </link><guid isPermaLink="false">dup</guid><title><![CDATA[Folge 690: Über alles
+]]></title><description>&#x3C;div&gt;plain words&#x3C;/div&gt;&lt;div&gt;plain words&#x3C;/div&gt;</description><p:transcript url="" type="text/vtt" language="en"/><enclosure length="1" type="audio/mpeg; charset=binary"/><pubDate>2323-10-08T01:09:18.362 -1200</pubDate></item></channel>
+  </rss>

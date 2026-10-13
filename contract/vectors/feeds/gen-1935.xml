@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0"> <updated>1978-06-04</updated> <author><name>  Bob  </name><email>a@example.com</email></author> <author><name>  Bob  </name><email>a@example.com</email></author> <title type="plain"><![CDATA[1 <2]]></title> <subtitle><![CDATA[
+&;]]></subtitle> <itunes:author><![CDATA[😀 Po]]>d</itunes:author> <entry><itunes:duration>1:60:60</itunes:duration> <link href="http://example.org/ep151.m4v" rel="Next" length="9223372036854775808" type="text/html"/> <published>Sun, 14 August 1983 10:29</published> <author><name>Entry author</name></author> <id> raw </id> <title type="plain">  &#x3C;div&gt;&lt;p>#hash&lt;/p>&#60;/div&gt;&#13;
+</title> <updated>1978-99-29T01:55:00</updated></entry> <entry><content type="html"><![CDATA[<p/> 
+
+😀]]></content>
+<title type="html">مر&#x62D;با &lt;strong&gt;café&#x3C;/strong&gt; &#x26;nbsp;</title>
+<link length="12" title='MP3 feed' href="http://example.org/ep322.wav"/>
+<itunes:duration>132:39</itunes:duration>
+<id></id></entry> <entry><link title="Alternate" type="" length="12" rel="last"/><link title="" href="" rel="self" type="application/xml+xhtml"/><title type='xhtml'>a=b&amp;c=d</title><itunes:image href="https://example.com/e.jpg"/><content>&lt;p>&amp;&lt;/p&gt;&#60;BR&gt;	&#x26;;</content><link rel='first' type="" length="9223372036854775808" href="https://example.com/alt.xml" title=''/><summary><![CDATA[&euro;<br><div>&;</div><div><img src="x.png"> cover</div><div>Episode 7</div><p></p>]]></summary><id> raw </id></entry> <entry><dc:date>1982-09-16T08:00:00Z</dc:date>
+<content type="html"><![CDATA[<b]]>r /></content>
+<title>&lt;h6>plain words&lt;/h6&gt; 100%</title>
+<published>Fri, 17 Sep 2309 20:33 +1400</published>
+<id> raw </id>
+<updated>2361-07-12T15:34:30.785 +0530</updated>
+<author><name>Entry author</name></author>
+<updated>1970-09-11-0000</updated></entry> <entry><link type="text/html" length="abc" rel="archives" href="https://example.com/feed?page=2"/>
+<link rel="alternate" href="" length="abc" type="application/rss+xml"/>
+<podcast:transcript url="https://example.com/t.json" type="application/srr" language="en"/><podcast:transcript url="https://example.com/t.vtt" type="text/vtt" language="en"/><podcast:transcript type="" language='en'/>
+<title>&#38;mdash;'single'&#60;cite&gt;&#38;#xD800;&lt;/cite></title>
+<link rel='next' length="20000" title="Alternate" href="https://example.com/"/>
+<published>Tuesday, 10 Jul 66 13:54</published></entry> <entry><summary></summary><published>Foo, Fri, 18 Nov 1983 11:08:23 -1200</published><title type="html">http://example.com/?a=1&#38;b=2</title><id> raw </id></entry> <entry><link rel="first" type="audio/mpeg" href="https://cdn.example.com/dir.with.dots/ep114.MP3"/><link rel="" length="20000" title="Alternate" type="audio/mpeg" href="https://example.com/feed?page=2"/><updated>Monday, 09 Jul 55 23:56 +0945</updated><id>
+id
+</id><published>Foo, 	07 Apr 1993 13:50:22 +0945</published><content type="html">&lt;p>http://example.com/?a=1&#x26;b=2&lt;/p>&#60;li&gt;😀&lt;/li>&#x645;رحبا&#x3C;img src="x.png&quot;&gt;1 &#60;2</content><link title="Café" href='https://example.com/pay' type="application/atom+xml"/><title type="plain"><![CDATA[a
+  b http://example.com/?a=1&b=2]]></title><media:content xmlns:media="http://search.yahoo.com/mrss/" isDefault="true" url="http://example.org/e p395.3gp" duration="abc" type="audio/opus" fileSize="٢٠٠٠٠"/></entry> <entry><content type="plain"> &amp;#65;&#x26;#66;&#60;li>&amp;lt;b&amp;gt;&lt;/li&gt;&lt;li&gt;é&lt;/li&gt;</content> <updated>Mo Nov 24 22:46:16 2486</updated> <link title="Alternate" length="abc" rel="hub" href="https://example.com/alt.xml"/> <title><![CDATA[&#65;&#66; &hellip;]]></title> <published>Fri Jul 18 23:34:20 1066</published> <author><name>Entry author</name></author></entry> <entry><id></id><link type="application/rss+xml" rel="Next" title="" href="https://example.com/alt.xml"></link><itunes:duration>67:31</itunes:duration><title>sep  &#38;lt;b&#x26;gt;escaped&#x26;lt;/b&#38;gt;  &#x26;L<![CDATA[t;]]></title><link title="" href="https://example.com/alt.xml" rel="self" type="application/xhtml+xml"/></entry> <entry><id> raw </id><content type="xhtml"></content><title> &amp;amp;amp; S01E372  </title><itunes:duration>١:٢٣</itunes:duration><published>Mon, 09 Oct 1972 12:11:44 CEST</published></entry> <entry><published>29 Feb 1972 13:26:27 -0000</published>
+  <title type="html"><![CDATA[&#xA9;]]></title>
+  <id></id>
+  <updated>&#13;
+Monday, 30 Jun 2004 23:17
+</updated>
+  <itunes:duration>18282</itunes:duration>
+  <content type="html"><![CDATA[
+
+{json: 1}&#xD800;<br>100%<br>]]></content>
+  <link href="https://example.com/feed?page=2" type="" rel="last" title="MP3 feed"/></entry> <entry><link title="Café" href="HTTPS://EXAMPLE.COM/café/64.3gp" length="20000" type="" rel=''/>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content>
+<id> raw </id>
+<updated>28 Apr 1950 20:53 +0945</updated>
+<updated>Tue Nov 8 15:46:01 2349</updated>
+<itunes:duration>PT1H30M</itunes:duration>
+<published>Tuesday, 26 Oct 1982 09:23:06 Z</published>
+<title><![CDATA[&unknown; <div>back\slash</div> Tom &amp; Jerry &lt;3]]></title></entry> </feed>

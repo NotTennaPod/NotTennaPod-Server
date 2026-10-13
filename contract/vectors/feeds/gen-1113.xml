@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+  <link title="Alternate" length="abc" type="application/xml+xhtml" rel="payment" href="https://example.com/alt.xml"/>
+<logo>https://example.com/logo.png</logo>
+<mrss:thumbnail url='https://example.com/amt.jpg'></mrss:thumbnail>
+<title></title>
+<category><![CDATA[Technology]]></category>
+<link length="9223372036854775808" title='' rel="first" href="https://example.com/pay"></link>
+<link title="" rel="" type="" href="//example.com/e p240.jpg?file=x.mp3"/>
+<link type='application/atom+xml' title="" href="https://example.com/"/>
+<entry><author><name>Entry author</name></author><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#60;B>&#x26;amp&#60;/b&gt;</div></title><published>Tue 3 Mar 2493 15:53:06 GMT+0</published><link length="20000" type="application/xhtml+xml" title="Alternate" rel="next"></link><id>
+id
+</id><link length='20000' type="audio/mpeg" rel="self" href="https://example.com/" title="Alternate"/><link rel="first" href="http://example.org/café/225.html?file=x.mp3" length='20000'/></entry> </feed>

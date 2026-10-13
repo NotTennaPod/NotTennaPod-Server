@@ -1,0 +1,33 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:p2="https://podcastindex.org/namespace/1.0" xml:lang="">
+  <icon>https://example.com/icon.png</icon>
+<author><name>  Bob  </name></author>
+<itunes:author></itunes:author>
+<author><name>  Bob  </name><email>a@example.com</email></author>
+<title type="text">&#13;
+AT&#x26;T  שלום  a
+  b&#13;
+</title>
+<link href='https://example.com/alt.xml' type="application/rss+xml" length='12' rel="hub"></link>
+<link title="Alternate" length="20000" rel="Next" href="https://example.com/feed?page=2"/>
+<id> raw </id>
+<link rel="enclosure" type="application/rss+xml" length="12" href="" title=""/>
+<logo>https://example.com/logo.png</logo>
+<author><name>Ann</name><email>a@example.com</email></author>
+<entry><id>
+id
+</id> <summary></summary> <content type="HTML"><![CDATA[<p>&quot;q&quot;</p> &apos;a&apos; ​ééé<div>&mdash;</div>  &unknown;<div>&#65;&#66;</div><p></p>]]></content> <link href='https://example.com:8443/dir.with.dots/ep106.3gp' rel="archives" length="20000" type="application/xhtml+xml"/> <itunes:duration>0:28:35</itunes:duration> <author><name>Entry author</name></author> <title>
+Folge <![CDATA[747: Über alles
+&amp;amp;]]></title> <updated>Wed, 03 Feb 2472 00:29:12 +01:00</updated></entry>
+<entry><media:content isDefault="false" type="audio/x-wav" duration="0060" medium="Audio"/><itunes:duration>1:38:15</itunes:duration><title type="plain">[x] 100%</title><link type="" href="" rel="related" length="12" title=""></link><content></content><id>tag:x,2020:1</id><d:date> Fri, 13 aug 1999 14:44:52 +0200	</d:date><updated>2480-09-22T11:06:58+0530</updated></entry>
+<entry><title type="plain">&lt;div>&#60;p&gt;é&#60;/p&gt;&lt;/div>
+AT&amp;T</title>
+<content type="html">  http://example.com/?a=1&amp;b=2&lt;img>&lt;div&gt;100%&lt;/div&gt;</content>
+<media:content isDefault="1" duration="0060" type="video" url="https://user:pass@media.example.net/e p327.avi" fileSize="-1" medium="video"/>
+<p2:transcript url="https://example.com/t.vtt" type='application/x-subrip'/><p2:transcript url="https://example.com/t.vtt" type="application/json"/>
+<published>Tue, 24 May 2005 07:20 +0530</published>
+<itunes:image href=''/>
+<itunes:duration>1:02:03</itunes:duration>
+<summary><![CDATA[<li>&nbsp;</li><div>#hash</div><li>&#0;</li>]]></summary>
+<link type="audio/mpeg" rel="self"/>
+<updated>Monday, 10 Jul 2220 09:41:04 -0500</updated></entry>
+</feed>

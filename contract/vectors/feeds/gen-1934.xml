@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><atom:link length="abc" type="application/rss+xml" href="https://example.com/alt.xml"/>
+  <atom:link href="https://example.com/pay" length="20000" rel='self' title='MP3 feed'/>
+  <description><![CDATA[😀😀😀😀<img>
+
+a < b
+éba]]>ck\slash</description>
+  <link>https://example.com</link>
+  <title><![CDATA[t]]>railing </title>
+  <podcast:funding>&#60;b&gt;x&#60;/b></podcast:funding>
+  <itunes:summary>&lt;div&gt;&amp;#xFFFF;&lt;/div></itunes:summary>
+  <atom:link href="https://example.com/alt.xml" rel="Next" type='text/html'/>
+  <podcast:funding url="">Support us</podcast:funding>
+  <atom:link href="https://example.com/" type="text/html" rel="archives" length="12"/>
+  <podcast:funding url="">&#x3C;b&gt;x&#x3C;/b&gt;</podcast:funding>
+  <item><pubDate>Sat, 21 Mar 2020 02:02:56 +01:00</pubDate> <title>&amp;#0;
+  padded  </title> <guid isPermaLink="true"></guid> <content:encoded>#hash&lt;br&gt;Episode 7ééé</content:encoded> <enclosure url="https://cdn.example.com/dir.with.dots/ep114.MP3" length="9007199254740992" type="audio/mpeg; charset=binary"/> <description>   </description> <link></link> <itunes:summary><![CDATA[<li>multi
+line</li>😀😀#7 – Interviewaaacr
+lf<br> &amp;amp; &nbsp;a]]></itunes:summary></item>
+  <item><enclosure url="ftp://files.example.com/dir.with.dots/ep391.mp3" length="20000 " type="video/quicktime"/>
+<title> a<![CDATA[=b&c=d]]></title>
+<link> https://e.com/x </link>
+<media:group><media:content fileSize="+20000" duration="0" url="https://cdn.example.com/ep298.webm" medium="image" isDefault="false" type="image/*"/><media:content url='https://cdn.example.com/a/b/c397.jpg' duration="2147483648" fileSize="-0" medium='document' type="video/webm"/><media:content fileSize="-0" isDefault="true" url="https://xn--caf-dma.example/e p331.3gp" type='Audio/MPEG' duration="0060"/></media:group>
+<guid isPermaLink="true">Café-guid</guid>
+<media:thumbnail/>
+<itunes:summary><![CDATA[<br /><div>&lt;b&gt;</div><div>&nbsp;</div>aaa 100%  100%AT&T<li>&#xD800;</li>]]></itunes:summary></item></channel>
+  </rss>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><description>
+a=b&amp;c=daaa&#60;div&gt;Tom &#38; Jerry &#60;3&lt;/div>&lt;hr/>&#13;
+&#x26;#0;</description>
+  <itunes:subtitle>café  &amp;apos;a&amp;apos;  Tom &amp; Jerry &lt;3</itunes:subtitle>
+  <podcast:funding xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url=""/>
+  <language>TR</language>
+  <title>a=b&#38;c=d &amp;apos;a&#x26;apos; &amp;#xD800;</title>
+  <atom:link length="20000" title="" rel='Next' href="https://example.com/alt.xml"></atom:link>
+  <item><title>&lt;b>plain words&#60;/b></title> <enclosure url="http://example.org/café/225.html?file=x.mp3" length="20000.0" type="audio/*"/> <itunes:image href=""/> <guid isPermaLink="false">  spaced guid  </guid> <podcast:transcript xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" type="text/html" language="en"/><podcast:transcript xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url='https://example.com/t.vtt' type="application/srr"/><podcast:transcript xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url='https://example.com/t.json' type="" language="en"/> <pubDate>1993-07-17T04:14:16.530-08</pubDate></item></channel>
+</rss>

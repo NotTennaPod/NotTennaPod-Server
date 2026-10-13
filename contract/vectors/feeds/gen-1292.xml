@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE rss [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+<channel><description>Tom &amp;amp; Jerry &#x26;lt;3&#60;li>&#38;AMP;&lt;/li&gt;&#60;hr&gt;ééé&amp;#0;</description> <p2:funding url="https://example.com/donate"/> <p2:funding url='https://example.com/donate'>  spaced  </p2:funding> <title><![CDATA[
+AT&T <u>&AMP;</u> ]]></title> <language>fr
+</language> <link>https://example.com</link> <p2:funding url="https://example.com/donate">Support us</p2:funding> <item><title>&amp;copy; a=b&amp;c=d a&#13;
+b</title><link> https://e.com/x </link><pubDate>Thu, 20 Aug 1992 19:14:32 </pubDate><description><![CDATA[<li>&hellip;</li>&amp;]]></description><media:group><media:content type='audio/*' medium="image" isDefault="TRUE" duration="-5" fileSize="52428800"/><media:content url="http://example.org/e p275.opus" fileSize="+20000" type="audio/mpeg" duration="-5" medium='audio'></media:content></media:group><media:thumbnail url="https://example.com/th.jpg"/></item></channel>
+  </rss>

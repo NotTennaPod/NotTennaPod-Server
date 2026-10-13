@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang=""> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""/><id> raw </id><author><name>  Bob  </name></author><logo> https://e.com/l.png
+</logo><title type="text"><![CDATA[<sub>😀</sub>
+trailing 
+&nbsp;]]></title><link length="abc" type="application/xml+xhtml" rel="" title="" href=""/><entry><link length="12" rel="first" type="audio/mpeg"/>
+<title type="html">"quoted"   leading  &#x3C;img src="x.png"&gt; cover</title>
+<link length="12" rel="" href='https://example.com/alt.xml' type="audio/mpeg"/>
+<summary type="html"></summary>
+<updated>2126-06-18BST</updated>
+<published>&#13;
+Mon,19 Nov 1979 19:35:24 +0530	</published>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">2:05:49</itunes:duration>
+<link type="application/atom+xml" href="https://example.com/"></link>
+<id> raw </id></entry><entry><title type='html'>  spaced  </title>
+<updated>Fri, 28 June 1996 13:50:43</updated>
+<published>0001-09-16T12:50:19Z</published>
+<id></id>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">2330.457</itunes:duration></entry><entry><link rel='hub' type="audio/mpeg" length="abc" title='Café'/>
+<id>
+id
+</id>
+<updated>Thu. Jun 22 15:46:14 1995</updated>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">162:41</itunes:duration>
+<content>&#x3C;p/>"quoted&quot;&#60;br>مرحبا&lt;img src=&quot;x" alt="<![CDATA[y"/><br></br><div>a > b</div>&quot;q&quot;<br><li>S01E7</li>]]></content>
+<published>Tue Nov 99 07:02:09 2006</published>
+<title type="plain"><![CDATA[http://example.com/?a=1&b=2  &amp;amp;]]></title></entry>
+  </feed>

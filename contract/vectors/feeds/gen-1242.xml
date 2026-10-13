@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+  <author><name>C&amp;D</name></author>
+  <title> caf&#233; S01E704	</title>
+  <link rel="hub" type="application/xml+xhtml" href="https://xn--caf-dma.example/café/108.php"/>
+  <itunes:image href="https://example.com/ai.jpg"/>
+  <logo> https://e.com/l.png
+</logo>
+  <subtitle type="HTML">&lt;br>&amp;&lt;br>a &#x3C; b&#60;br>
+plain words&#x3C;img src="x.png&quot;&gt;aaaaaamulti
+line&lt;br>aaaaaaaaa</subtitle>
+  <id> raw </id>
+  <entry><link length="12" href='https://example.com/' title='Alternate' rel="alternate"/><title><![CDATA[😀]]></title><updated>1998-01-13T05:29:23.753</updated><link rel="Next" href="https://example.com/feed?page=2" length="12" type="application/rss+xml" title=""/><author><name>Entry author</name></author><published>XEV/m,S+x</published><summary type="plain"><![CDATA[<img src="]]>x.png&quot;&gt;</summary><updated>Sun MAY 23 16:47:53 2151</updated><id></id><content>&#x3C;div&gt;&#38;mdash;&#60;/di<![CDATA[v>]]></content></entry>
+  <entry><title><![CDATA[x<y
+<3 <3]]></title> <id>
+id
+</id> <published>	2249-04-08T21:15:46Z
+</published> <itunes:duration>-0</itunes:duration> <link title="MP3 feed" type="application/xml+xhtml" rel="Next" href='https://example.com/pay'/> <link type="application/rss+xml" rel="payment" href="ftp://files.example.com/329.MP3" length="12" title="MP3 feed"/></entry>
+  <entry><media:content medium="audio" type="audio" url="https://example.com:8443/dir.with.dots/ep235.mp3" duration="3600" isDefault="TRUE" fileSize="0"/><id>urn:uuid:1</id><link type="application/xhtml+xml" title='' href="https://example.com/feed?page=2" length="abc"/><link href="https://example.com/a.b/café/273.OGG" type="text/html" length="20000" title="MP3 feed" rel="Next"/><title><![CDATA[plain wordstrailing ]]></title><summary type="HTML"><![CDATA[aaaaaaaa<p/]]>&gt;</summary><updated>2009-09-23T20:46:50.862</updated><link length="12" href='https://example.com/' rel="alternate" title="Café" type="application/xhtml+xml"/><published>Thu, 21 May 1987 22:10 XYZ</published></entry>
+  <entry><title type="plain"><![CDATA[&#169;]]></title> <link href="https://example.com/alt.xml" length="20000" title="Alternate" rel="payment" type="text/html"/> <id>tag:x,2020:1</id> <psc:chapters/> <content type='plain'>&#13;
+&#38;AMP;&lt;li>&#38;lt&lt;/li>back\slash&lt;br>&#233;éé&#60;BR> leading&lt;br&gt;
+back\slashaaaaaaaa</content></entry>
+  <entry><published>Freitag Nov 2 09:50:26 1066</published>
+<title type='text'><![CDATA[Tom &amp; Jerry &lt;3 #127 – Interview <b>1 <2]]></title>
+<link href="https://example.com/feed?page=2" title="Café" rel="alternate" type="application/xhtml+xml" length="9223372036854775808"/>
+<id>tag:x,2020:1</id></entry>
+  <entry><link title="Alternate" type="application/rss+xml" length="9223372036854775808" href="https://example.com/a.b/café/333.php"/> <psc:chapters version='1.2'/> <updated>Donnerstag,  20 Feb 98 00:15 -0500</updated> <link href='https://example.com/pay' title='Alternate' type="text/html" rel="next"/> <itunes:duration>2147483.647</itunes:duration> <summary>&lt;li&gt;cr&#13;lf&lt;/li>&#60;li&gt;a&#13;
+b&lt;/li>
+&amp;#169;</summary> <title type='html'><![CDATA[Line<br>br]]>eak</title> <id>tag:x,2020:1</id></entry>
+  <entry><id>
+id
+</id>
+  <summary type="html"><![CDATA[aaaaaaaa😀😀😀
+multi
+line]]></summary>
+  <itunes:duration>2:38:57</itunes:duration>
+  <title type="plain">&#13;
+&#x26;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;  &amp;#;  </title>
+  <updated>1998-10-07T17:44:32.1234EEST</updated>
+  <published>Thu, 26 Feb 2291 00:58:21 +1400Z</published>
+  <p:season>2</p:season></entry>
+  <entry><updated>Mon Feb 30 14:12:02 1977</updated>
+<title><![CDATA[Tom &amp; Jerry &lt;3  <p>  spaced    <b>Bold</b> title]]></title>
+<summary>&amp;lt&#60;br&gt;  spaced  &lt;br>	a > b</summary></entry>
+</feed>

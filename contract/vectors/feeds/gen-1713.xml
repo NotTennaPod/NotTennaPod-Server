@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:owner xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:name xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Owner</itunes:name><itunes:email xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">o@example.com</itunes:email></itunes:owner>
+<title><![CDATA[café  <3 <3]]></title>
+<language></language>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Jane Doe</itunes:author>
+<image><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link></image>
+<atom:link rel="archives" title="" href=""/>
+<itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">[x]مرحبا</itunes:subtitle>
+<link>https://example.com</link>
+<dc:creator>DC Creator</dc:creator>
+<item><podcast:chapters type="application/json+chapters"/>
+  <guid></guid>
+  <enclosure length="-0" type="audio/ogg"/>
+  <itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&lt;li&gt;café&lt;/li&gt;&#x3C;li&gt;&amp;#0;&lt;/li&gt;</itunes:summary>
+  <pubDate>	2001/02/21T23:22:51
+</pubDate>
+  <title>http://example.com<![CDATA[/?a=1&b=2a < b]]></title>
+  <description><![CDATA[<li>Episode 12</li>]]></description></item></channel>
+  </rss>

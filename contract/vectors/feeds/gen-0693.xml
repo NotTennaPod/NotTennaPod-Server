@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:media="http://search.yahoo.com/mrss/"><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <image><url>https://example.com/img.png</url><title>Image title</title><link>https://example.com/img-link</link></image> <link></link> <itunes:subtitle>&#60;P&gt;😀&#x3C;/P&gt;</itunes:subtitle> <language>TR</language> <itunes:image href=""/> <title>a&#13;
+b</title> <item><title>'single&apos;
+
+&lt;p&gt;Para&#x3C;/p></title><guid isPermaLink="false">dup</guid><pubDate>
+Sat, 20 Jul 2458 20:08:32 +0200	</pubDate><description><![CDATA[&<br>  &quot;q&quot;<hr>]]></description><itunes:summary>&lt;div&gt;e&#x301;&#x3C;/div&gt;&#60;p/&gt;&lt;hr/>&#x26;#128512;&lt;br&gt;cr&#13;lf</itunes:summary><itunes:subtitle><![CDATA[&#0;  &#0;  &#xFFFF;]]></itunes:subtitle><itunes:image href="https://example.com/ep.jpg"/><itunes:author>Item author</itunes:author></item> <item><guid></guid><itunes:duration> 1:30</itunes:duration><media:thumbnail/><podcast:transcript url="" type="text/vtt" language='en'></podcast:transcript><enclosure length="123456789012345678" type="audio/mpeg"/><itunes:summary>&#x3C;br/&gt;</itunes:summary><link>https://example.com/ep</link><pubDate>Mon, 32 Aug 2017 12:59:01 +0945</pubDate><title><![CDATA[Tom &amp; Jerry &lt;3&#0;&#xFFFF;]]></title></item> <item><title> leading</title> <guid isPermaLink="false">Café-guid</guid> <link> https://e.com/x </link> <pubDate>Sun, 16 MAY 1999 16:55:37 -1200</pubDate> <description> &amp;mdash;</description> <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">26 Oct 2004 09:31:15 CET</dc:date> <itunes:duration>9449</itunes:duration> <enclosure url="https://user:pass@media.example.net/ep198.jpg" length="2e5" type="video/mp4"></enclosure></item> <item><pubDate>Sat, 11 Nov 16 20:47:45 +0000</pubDate>
+  <link> https://e.com/x </link>
+  <title>R&amp;D
+é</title>
+  <itunes:duration>3:22:30</itunes:duration>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <description>&lt;p&gt;&#60;/p>
+&#38;mdash;&#60;li&gt;&amp;;&#x3C;/li&gt;&lt;li&gt;&#38;#x1F600;&lt;/li&gt;&#60;div&gt;'single'&#60;/div>	&apos;single'&#x3C;li>a&#13;
+b&lt;/li&gt;&#60;img&gt;</description>
+  <enclosure url="" length="20000.0" type="x-audio/mpeg"/></item></channel>
+  </rss>

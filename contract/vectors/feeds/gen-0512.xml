@@ -1,0 +1,20 @@
+﻿<feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0"> <it:image href=""/>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">S01E883 茶 &lt;center&gt;&amp;#xFFFF;&lt;/center></div></title>
+<author><name>Émile</name><email>a@example.com</email></author>
+<subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">plain words&lt;br&gt; &#1513;לו&#x5DD;</div></subtitle>
+<podcast:funding url="https://example.com/give">Give</podcast:funding>
+<link title="Café" length="abc" type="application/xml+xhtml" rel="hub" href="https://example.com/feed?page=2"/>
+<id>urn:x</id>
+<entry><content type="xhtml">&#60;p/></content> <id> raw </id> <title type="html">&amp;#x1F600;
+</title> <published>Tue Sept 16 00:39:45 0999</published> <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;div&gt;a=b&#x26;c=d&#x3C;/div></div></summary> <updated>Sun, 21 Jul 2019 14:53:40 +0945&#160;</updated></entry>
+<entry><media:content url="ftp://files.example.com/dir.with.dots/ep392.aif" isDefault="1" medium="document" duration="abc" type="audio/x-m4a" fileSize="9007199254740992"/>
+  <updated>
+Mon Sept 20 18:15:08 1998&#13;
+</updated>
+  <content type="plain">a > béé&#233;ééé&lt;hr>  &amp;Lt;</content>
+  <link rel="first" type="application/xhtml+xml"/>
+  <link type="application/atom+xml" rel="" length="abc" href="https://user:pass@media.example.net/café/296.mp4" title='MP3 feed'/>
+  <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#38;Lt; &amp;amp</div></title>
+  <summary type="text">&#x26;amp;&#x3C;p/> &amp;#xD800;ééé&#x3C;li&gt;&lt;img src="x.png"&gt; cover&#x3C;/li>&#x3C;li&gt;Tom &amp;amp; Jerry &#x26;lt;3&lt;/li>&#x5E9;לום&lt;br>&#38;copy;&#x3C;br></summary>
+  <link rel="payment" href="https://example.com/" title="MP3 feed" length="9223372036854775808"/></entry>
+</feed>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<logo></logo>
+<podcast:funding url="https://example.com/give">Give</podcast:funding>
+<icon></icon>
+<subtitle type="HTML"><![CDATA[aaaaaaaaa]]></subtitle>
+<entry><link length="20000" title="Café" type='' rel="enclosure"/><title><![CDATA[]]>
+a > b 第578集
+</title><published>1996-05-32T07:06:37.341-0800</published><updated>Mon, 19 October 2015 13:17:33</updated></entry>
+<entry><link href="https://example.com/alt.xml" length="12" title="Alternate" rel="related"/><title> &#38;amp
+  padded    </title><published>33 Jul 1066 07:13:04 -0500</published><id>urn:uuid:1</id><updated>1999-</updated><link href="https://example.com/" title="Alternate" rel="last"/></entry>
+  </feed>

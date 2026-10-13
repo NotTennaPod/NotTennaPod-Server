@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns="" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><language> EN-US </language><link>https://example.com</link><itunes:subtitle>back\slash</itunes:subtitle><item><title>&#x26;Lt;&amp;lt;b&amp;gt;&amp;#xD800;</title>
+<link>https://example.com/ep</link>
+<pubDate>  2001-08-05 UTC </pubDate>
+<dcterms:date>1978-01-28T04:24:55
+  </dcterms:date>
+<content:encoded>&#x3C;li&gt;&amp;lt&lt;/li>&lt;div&gt;&#x26;hellip;&#60;/div&gt;&lt;br /&gt;&#x26;amp&#60;br&gt;😀&#x1F600;</content:encoded>
+<itunes:subtitle>&lt;b>&#60;i&gt; leading&#60;/b>&lt;/i&gt;</itunes:subtitle>
+<itunes:duration>10992</itunes:duration>
+<enclosure url="//example.com/a/b/c319.ts" length="9007199254740992" type="video/webm"/>
+<media:content isDefault="1" medium='audio' url=" https://xn--caf-dma.example/a/b/c386 " duration="0" type="audio/wav" fileSize="0"/>
+<media:content url="http://example.org/dir.with.dots/ep54.aif" fileSize="２０００００" duration="2147483648" type="audio/mpeg"/>
+<media:content fileSize="1,000,000" medium="image" type="audio/mpeg" duration="2147483"/></item><item><link>https://example.com/ep</link>
+  <title>tab	here  'single&apos;  &lt;img src="x.png"&gt; cover</title>
+  <pubDate>01 Sep 1977 20:52 +1400</pubDate>
+  <atom:link length="abc" rel='last' type="text/html" title='Alternate' href=''/>
+  <enclosure length="52428800" type="Audio/MPEG"></enclosure>
+  <enclosure url="HTTPS://EXAMPLE.COM/café/274.mp3.zip" type="audio/x-wav"/>
+  <description><![CDATA[😀😀😀]]></description>
+  <enclosure url="HTTPS://EXAMPLE.COM/226.OGG" length='٢٠٠٠٠' type="audio/opus"/></item><item><pubDate>Wed., 25 Oct 1989 22:51:47 +0945</pubDate>
+  <enclosure url="https://xn--caf-dma.example/ep29.png?auth=yes" length='-1' type="application/octet-stream"/>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <itunes:summary>😀</itunes:summary>
+  <enclosure length="9007199254740992" type='text/plain'/>
+  <description>&#60;div&gt;&amp;mdash;&#x3C;/div>&#60;li&gt;Line&lt;br&gt;break&lt;/li&gt;&#60;li>&#x26;;&#x3C;/li&gt;	&#x26;#x;&lt;p&gt;&#x3C;/p&gt;aaaaaaaaaaaaaaa</description>
+  <dcterms:date>Sun, 29 Apr 2019 11:54:11 +01:00</dcterms:date>
+  <title><![CDATA[Folge 177: Über allesmulti
+line​]]></title></item><description> leading&lt;br&gt;&#60;img></description><itunes:author></itunes:author><itunes:summary><![CDATA[<div>cr
+lf</div>
+
+R&D]]></itunes:summary><itunes:image/><dcterms:creator>DC Creator</dcterms:creator><title>
+sep&lt;b&gt;S01E777&#x3C;/b>a=b&amp;c=d	</title><p:person role="host">Jane</p:person></channel><item><title>Outside</title><enclosure url="https://example.com/o.mp3" type="audio/mpeg"/></item>
+  </rss>

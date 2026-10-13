@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xml:lang=""><link title="MP3 feed" href="https://example.com/alt.xml" type="application/xhtml+xml" length='12'/> <i:author><![CDATA[<b>Studio</b>]]></i:author> <subtitle><![CDATA[<hr>😀😀😀😀<BR><br><img src="x.png"><hr/>😀😀😀😀😀]]></subtitle> <title type="html">http://example.com/?a=1&#38;b=2 a &gt; b &#38;#xD800;</title> <i:image href=""/> <entry><title>&lt;ul&gt;&#60;li>#532 – Interview&#x3C;/li>&lt;li>two&#60;/li>&#60;/ul&gt;</title>
+  <updated>Wednesday, 16 Jun 2460 02:45:10</updated>
+  <podcast:locked>yes</podcast:locked>
+  <summary type="text">&lt;li&gt;&amp;#65;&#x26;#66;&#x3C;/li&gt;&amp;#65;&#x26;#66;&#x3C;br&gt;&#60;br>a&#13;
+b &amp;lt;b&#x26;gt;</summary>
+  <link href="https://example.com/pay" length="abc" title="Café" rel="self" type='application/xhtml+xml'/>
+  <content></content>
+  <i:duration>.5</i:duration>
+  <id></id>
+  <link rel="enclosure" href="http://example.org/ep112.torrent" title="" length="20000"/></entry> <entry><link length="20000" title="Café" rel="payment" type='application/atom+xml'></link><summary>&lt;p&gt;<![CDATA[#7 – Interview</p>a
+  b<br>]]></summary><i:duration>11040</i:duration><published>Fri,15 Sep 2141 10:02:36 +0200</published><id> raw </id><content type='plain'></content><chapters:chapters><chapters:chapter image="https://example.com/ch.png" start="11:03" title="&lt;b>x&lt;/b>" href=""/><chapters:chapter start="02:59:46.427" title='Intro'/><chapters:chapter image="https://example.com/ch.png" start="01:34:24.939" title="Intro"/><chapters:chapter start="42:54" title="&lt;b>x&lt;/b>" image="https://example.com/ch.png"/></chapters:chapters><title type="html">第142集  a&#13;
+b</title><link title="" href="https://example.com/alt.xml" rel="next" length='9223372036854775808' type="application/rss+xml"/><link href="https://example.com/alt.xml" rel="related" type="text/html" title="" length="9223372036854775808"/></entry>
+</feed>

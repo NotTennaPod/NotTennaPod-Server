@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:author><![CDATA[<b]]>>Studio&lt;/b&gt;</itunes:author>
+<link>https://example.com</link>
+<language>TR</language>
+<itunes:image href=' '/>
+<atom:link title="" type="text/html" rel="self" href=""/>
+<title>&amp;amp;&#x26;hellip;</title>
+<item><description></description>
+  <link> https://e.com/x </link>
+  <enclosure length='20000.0' type="video/x-matroska"/>
+  <title>&#13;
+&lt;b&gt;a
+  b&lt;/b&gt;
+&lt;3 &#x3C;3
+&#38;unknown;	</title>
+  <guid isPermaLink="false">urn:uuid:ddfd510e</guid>
+  <itunes:duration>90 min</itunes:duration>
+  <itunes:author>Item author</itunes:author></item>
+<item><enclosure url="https://example.com:8443/dir.with.dots/ep394.OGG" length="18446744073709551616" type="audio/flac"/>
+<itunes:image href=" "/>
+<title>plain words &amp;amp;amp;</title>
+<link>https://example.com/ep</link>
+<guid isPermaLink='false'>dup</guid></item></channel>
+</rss>

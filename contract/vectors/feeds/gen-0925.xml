@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><podcast:funding url="">&#60;b&gt;x&#60;/b&gt;</podcast:funding> <link> https://example.com/ </link> <description>&#x3C;img src=&quot;x&quot; alt=&quot;y"/&gt;&amp;AMP;&#13;
+&amp;hellip;</description> <itunes:subtitle>
+&#38;;
+&#x26;unknown;</itunes:subtitle> <item><title>  &amp;#169;
+&#x3C;font color="red&quot;&gt;Episode 12&#x3C;/font&gt;&#13;
+</title><guid> </guid><link>https://example.com/ep</link><pubDate>Mon Sept 20 18:15:08 1998</pubDate><description>aaaaaaaaa</description><content:encoded>&#13;
+AT&amp;T  spaced  &lt;br&gt;
+😀</content:encoded><enclosure length="9007199254740993" type='Audio/MPEG'/></item> <item><enclosure url='http://example.org/e p34.flac' length='-16384' type="unknown"/><link></link><itunes:image href=" https://e.com/i.png "/><guid isPermaLink="false">dup</guid><description>😀&#x1F600;😀</description></item> <item><title>a
+  b
+&#x26;Lt;</title> <itunes:image href=' '/> <description>  &#x26;amp&#38;Lt;</description> <guid>
+</guid> <content:encoded><![CDATA[<br>]]></content:encoded> <pubDate>Friday, 24 Nov 1978 03:57 -0000</pubDate> <dc:date>Montag, 16 Feb 1981 07:08 +0945</dc:date> <enclosure url='https://example.com:8443/24.webm' length="0x4E20" type='audio/ogg'/> <enclosure url="https://example.com:8443/café/213.mkv" length="abc" type="audio/x-m4a"/> <link></link> <enclosure url='//example.com/a/b/c74.pdf?a=1&amp;b=2' length='12' type=""/></item> <item><title><![CDATA[a]]> &lt; b</title> <link>https://example.com/ep</link> <pubDate>2019-11-20T00:12:43.709Z</pubDate> <description>&lt;br&gt;</description> <itunes:summary>
+
+مرحبا&#x3C;br /&gt;Episode 7
+
+&amp;#x;&lt;br&gt;</itunes:summary> <enclosure url="http://example.org/e p307.flac" length="20000.0" type="audio/mpeg; charset=binary"></enclosure></item> <podcast:funding url="https://example.com/donate">&#60;b&gt;x&#60;/b></podcast:funding> <atom:link title="Café" type='application/atom+xml' href="" length="12" rel="last"/> <title><![CDATA[&amp
+Episode 175]]></title> <dc:creator>DC Creator</dc:creator> <image><url>https://example.com/img.png</url><title>Image title</title><link>https://example.com/img-link</link></image></channel> </rss>

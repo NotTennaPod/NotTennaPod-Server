@@ -1,0 +1,16 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en">
+  <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">multi
+line a &lt; b</div></title>
+<id></id>
+<logo>https://example.com/logo.png</logo>
+<author><name>Émile</name></author>
+<link href="https://example.com/" rel="alternate" title="MP3 feed" type='audio/mpeg'/>
+<updated>Wed Jul 28 04:41:57 2004</updated>
+<author><name>Émile</name></author>
+<author><name>Émile</name><email>a@example.com</email></author>
+<icon></icon>
+<subtitle type="HTML"><![CDATA[<img>]]></subtitle>
+<entry><link rel="alternate" type="text/html" href=""/> <id>
+id
+</id> <itunes:image href=""/> <m:content medium="document" fileSize="abc" url="https://user:pass@media.example.net/a/b/c236.aif" isDefault="1" type="text/html" duration="-5"/> <published>Fri, 06 Mai 2005 18:16:30 +1400</published> <content type='html'>&lt;p&gt;&amp;#0;&#x3C;/p></content> <title type="html"><![CDATA[&#xFFFF;  café]]></title></entry>
+</feed>

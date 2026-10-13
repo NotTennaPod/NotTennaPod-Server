@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/"><itunes:author>Jane Doe</itunes:author><description>&amp;;&#60;br>&#x3C;li&gt;plain words&#x3C;/li&gt;</description><atom:link href="" rel="alternate" length='20000' type='application/xhtml+xml' title=""/><itunes:subtitle>&lt;del&gt;  padded<![CDATA[  </del>]]></itunes:subtitle><link></link><title>&amp;lt</title><language></language><item><guid>Café-guid</guid>
+  <pubDate>1991-06-24T01:29:01  </pubDate>
+  <content:encoded><![CDATA[<hr>aaaaaaa]]></content:encoded>
+  <title><![CDATA["quoted"  &AMP;  a > b]]></title>
+  <link></link>
+  <itunes:duration>12977</itunes:duration>
+  <media:group><media:content type="audio/*" isDefault='1' url="https://user:pass@media.example.net/a/b/c236.aif" duration="0" fileSize="-0"></media:content><media:content medium="image" url="https://example.com/a.b/ep288.avi" fileSize="0x4E20" type='audio/mpeg'/><media:content url="HTTPS://EXAMPLE.COM/café/374.mp3" fileSize='123456' duration="abc" medium="image" type="application/json"/></media:group></item><item><title>&#13;
+&#38;unknown; trailing   </title> <guid></guid> <link>https://example.com/ep</link> <pubDate>Thu, 31 May 1987 08:05:02</pubDate> <description>&lt;b&gt;Bold&lt;/b> title&#60;br&gt;</description> <content:encoded>&#x3C;li>&lt;3 &#60;3&#x3C;/li></content:encoded> <itunes:author>Item author</itunes:author> <enclosure url=" ftp://files.example.com/a/b/c253.wma " length="2e5" type="application/octet-stream"/> <enclosure url="" length="2147483647" type='application/json'/> <enclosure url="https://cdn.example.com/ep375.mov?dl=1.0" length="9007199254740993" type="audio"></enclosure> <media:content type="audio/mpeg" fileSize="12" duration="2147484" url="http://example.org/142.ts" medium="video"/> <media:description>&#233;éé&#13;
+م&#x631;حبا&lt;p>&#x26;mdash;&lt;/p></media:description></item><item><media:content medium="image" duration=" 60" url="HTTPS://EXAMPLE.COM/226.OGG" type="x-audio/mpeg" fileSize="123456"></media:content>
+  <media:content fileSize="16384" duration="0" type="audio/flac" isDefault="true" medium="document"/>
+  <itunes:duration>+7</itunes:duration>
+  <media:content type="image/jpeg" fileSize="16385" url='https://xn--caf-dma.example/a/b/c96.aac#t=10' isDefault="false"/>
+  <pubDate>Thursday Mar 16 18:04:27 2513</pubDate>
+  <dc:date>Thu Jan 26 03:24 2412</dc:date>
+  <title>Tom &amp;amp; Jerry &#x26;lt;3 a&#13;
+b S01E104</title>
+  <link> https://e.com/x </link>
+  <guid isPermaLink="false">https://example.com/item/27382</guid>
+  <enclosure url="https://example.com:8443/136.caf?a=1&amp;b=2" length="-16384" type='unknown'/>
+  <podcast:socialInteract protocol="activitypub"/></item></channel>
+  </rss>

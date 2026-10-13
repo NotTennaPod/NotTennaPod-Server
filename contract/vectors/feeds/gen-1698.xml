@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <author><name>  Bob  </name><email>a@example.com</email></author>
+<title type="HTML"><![CDATA[trailing &#1513;&#1500;&#1493;&#1501;]]></title>
+<updated>10 oct 64 16:11 +0200</updated>
+<author><name>  Bob  </name><email>a@example.com</email></author>
+<logo>https://example.com/logo.png</logo>
+<subtitle type='plain'><![CDATA[<]]>BR&gt;</subtitle>
+<author><name>C&#38;D</name></author>
+<link href="http://example.org/79.m3u8" type="application/xml+xhtml" rel="related" title="Café"/>
+<entry><id>tag:x,2020:1</id> <title type="html"><![CDATA[<pre>&quot;q&quot;
+  pre</pre>
+R&D
+<img src="x.png"> cover]]></title> <summary type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">&lt;div&gt;Episode 7&lt;/div&gt;
+&amp;#;&#60;li>[x]&lt;/li&gt;éééR&#38;D</div></summary> <updated>1997-04-15T15:23:10.86948+01</updated> <media:content url="https://cdn.example.com/ep127.OGG" duration="" medium="image" fileSize='18446744073709551616' type="application/ogg"/> <link rel="first" title="MP3 feed" href="https://example.com/alt.xml" length="9223372036854775808" type=""/> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/e.jpg"/></entry>
+</feed>

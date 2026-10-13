@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:media="http://search.yahoo.com/mrss/"><i:summary><![CDATA[
+
+&#65;&#66;😀😀😀 http://example.c]]>om/?a=1&amp;b=2&lt;li>&amp;Lt;&lt;/li&gt;&#x3C;li&gt;&lt;p>Para&#60;/p&gt;&#60;/li&gt;</i:summary> <link>https://example.com</link> <podcast:funding url="https://example.com/donate"></podcast:funding> <podcast:funding url=""/> <atom:link rel="related" title="Café" type="application/xml+xhtml"/> <podcast:locked>yes</podcast:locked> <description><![CDATA[ &lt
+&hellip;&;<br>]]></description> <title>'single'
+第470集
+第727集</title> <podcast:funding url='https://example.com/donate'/> <item><title>&lt;label&gt;&#x26;hellip;&#60;/label&gt;plain words</title>
+  <guid isPermaLink="false">https://example.com/item/53474</guid>
+  <link> https://e.com/x </link>
+  <pubDate>1995-12-24T18:02:29Z</pubDate>
+  <content:encoded></content:encoded>
+  <enclosure length="4294967296" type="video/x-matroska"/>
+  <psc:chapters><psc:chapter href="" image="https://example.com/ch.png" title=""/><psc:chapter image="https://example.com/ch.png" title="Café &amp;amp; more" start=""/><psc:chapter title='&lt;b>x&lt;/b>' href="https://example.com/ch" start="8285" image="https://example.com/ch.png"/></psc:chapters>
+  <podcast:locked>yes</podcast:locked></item> <item><description>&lt;p>x&#60;y&#60;/p&gt;</description>
+  <title><![CDATA[&#169;]]></title>
+  <enclosure url="" length="" type="image/*"/>
+  <i:duration>18963</i:duration>
+  <media:group><media:content type="audio/x-wav" isDefault="1" duration="3600" fileSize="２０００００" medium="Audio"/></media:group>
+  <guid isPermaLink="true"> </guid>
+  <i:summary><![CDATA[<BR>]]></i:summary>
+  <dc:date>1993-10-13T19:55:17MST</dc:date>
+  <i:image href=" https://e.com/i.png "/>
+  <link> https://e.com/x </link>
+  <psc:chapters version='1.2'><psc:chapter href="https://example.com/ch" image="https://example.com/ch.png" start="00:09:53"/><psc:chapter start='1015' image='https://example.com/ch.png' href="https://example.com/ch"/><psc:chapter href="" title="😀" image="https://example.com/ch.png" start="01:35:33"/></psc:chapters></item></channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters"><channel><pi:funding>Support us</pi:funding> <title><![CDATA[&#xFFFF;  &#169;  &mdash;]]></title> <itunes:image href="https://example.com/it.jpg"/> <itunes:category text="Arts"><itunes:category text="Design"/></itunes:category> <description><![CDATA[<BR>aaaaaaaaaa]]></description> <itunes:subtitle>trailing &lt;strike>&amp;#xFFFF;&lt;/strike></itunes:subtitle> <item><title>&#38;#xFFFF;
+&#60;table&gt;&lt;tr>&#x3C;td&gt;&apos;single'&#x3C;/td&gt;&#x3C;td&gt;b&lt;/td>&#60;/tr&gt;&lt;/table&gt;
+&amp;AMP;</title>
+<description><![CDATA[<p>  padded  </p>]]></description>
+<itunes:subtitle>  spaced  </itunes:subtitle>
+<guid> </guid>
+<psc:chapters><psc:chapter start="03:14:25" title="Intro" href="https://example.com/ch"/><psc:chapter image="https://example.com/ch.png" title='Intro' href=''/><psc:chapter title='Café &amp;amp; more' href="https://example.com/ch" start="00:51:58.631"/></psc:chapters>
+<pubDate>
+1899-10-25T07:17:46+0000 ()
+</pubDate>
+<link> https://e.com/x </link>
+<enclosure url='https://example.com:8443/ep192.mp4?dl=1.0' length="16383" type="text/html"></enclosure></item> <item><title>&#38;euro;
+café
+</title>
+<guid isPermaLink='false'></guid>
+<pubDate>2021-02-29T00:33:53</pubDate>
+<description><![CDATA[  [x]<div>AT&T</div><div>&#128512;</div><div>&amp</div><li> leading</li><hr><br>
+&mdash;]]></description>
+<itunes:summary><![CDATA[  &#169;
+&#1513;&#1500;&#1493;&#1501;ééé<br/>Folge 7: Über alles<br>&#128512;&#169;<br>&#128512;]]></itunes:summary>
+<itunes:image href='https://example.com/ep.jpg'/>
+<enclosure length="4294967296" type="audio/ogg"></enclosure>
+<pi:transcript url="https://example.com/t.json" type="application/srt"/><pi:transcript type="text/vtt" language="en"/><pi:transcript url='https://example.com/t.vtt' type=""/></item></channel>
+</rss>

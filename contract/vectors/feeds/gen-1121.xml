@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><description></description>
+<itunes:author>Caf&#233; Radio</itunes:author>
+<link></link>
+<atom:link type="audio/mpeg" title="MP3 feed" href='https://example.com/feed?page=2' length="20000" rel="enclosure"/>
+<link xmlns="http://www.w3.org/2005/Atom" type="" rel="Next" length="20000"/>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<language>fr
+</language>
+<lastBuildDate>THURSDAY Dec 4 08:31:56 2014</lastBuildDate>
+<atom:link href="https://example.com/pay" type="application/atom+xml" title="MP3 feed" length="abc" rel="next"/>
+<image><url>https://example.com/img.png</url></image>
+<title>&#x3C;span style="color:red">&#x26;#65;&#38;#66;&lt;/span&gt;&amp;lt;b&amp;gt;</title>
+<item><description><![CDATA[<div>back\slash</div>]]></description>
+<pubDate>Sun, 20 Oct 2013 22:27:54 -0000</pubDate>
+<itunes:subtitle>&#38;#x;&amp;nbsp;</itunes:subtitle>
+<enclosure url="//example.com/dir.with.dots/ep266.avi" length="123456789012345678" type="application/json"/>
+<itunes:summary>
+
+a
+
+b&#60;li&gt;&#x3C;b>Bold&lt;/b&gt; title&#x3C;/li&gt;&#60;li>&#38;;&lt;/li&gt;</itunes:summary>
+<title>#hash"quoted"</title>
+<enclosure length=" 20000" type='audio/flac'/>
+<itunes:duration>1.5.5</itunes:duration>
+<link> https://e.com/x </link>
+<enclosure length="0x4E20" type="audio/x-m4a"/>
+<itunes:image href=' https://e.com/i.png '/>
+<atom:link type="text/html" rel="self" length="12" title="MP3 feed" href="https://example.com/feed?page=2"/>
+<guid isPermaLink="true">dup</guid></item>
+<item><media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" medium='audio' isDefault='TRUE' duration='2147483' fileSize="0x4E20"/></media:group> <podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" url="" type="application/json+chapters"/> <enclosure url='http://example.org/e p395.3gp' length=" 20000" type="video/webm"></enclosure> <podcast:socialInteract xmlns:podcast="https://podcastindex.org/namespace/1.0" uri="" protocol="activitypub"/> <content:encoded>  &#x26;#xA9;&#13;
+&amp;euro;1 &lt;2&#60;br&gt;a&#x3C;br /&gt;</content:encoded> <itunes:image/> <guid isPermaLink='false'>
+</guid> <link></link> <description>&lt;div>&#38;#x1F600;&lt;/div> a &lt; b
+&amp;hellip;</description> <pubDate>Samstag, 26 Feb 1752 09:45:50 +0200</pubDate></item>
+<item><title>&#x26;#65;&#x26;#66;  </title><guid></guid><pubDate>1998-07-23Europe/Berlin</pubDate><description><![CDATA[<img src="x.png">aa<li>Episode 7</li>
+
+&am]]>p;amp;&lt;p&gt;AT&amp;T&#60;/p></description><itunes:subtitle>&#60;strike&gt;a&#13;
+b&lt;/strike></itunes:subtitle><media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" medium="document" isDefault="TRUE" type="video/x-matroska" fileSize='12' url="https://example.com/a.b/dir.with.dots/ep242.ogx" duration="1"/><media:content xmlns:media="http://search.yahoo.com/mrss/" type="audio/*" url="https://example.com/a.b/2.jpg" isDefault="1" fileSize="00020000" duration="0"/><media:content xmlns:media="http://search.yahoo.com/mrss/" type="Audio/MPEG" medium="image" duration="2147483" isDefault="1" fileSize="16383"></media:content></media:group></item></channel>
+  </rss>

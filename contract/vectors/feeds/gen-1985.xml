@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><link>https://example.com</link> <language>de-DE</language> <title>&#1605;&#1585;&#1581;&#1576;&#1575;</title> <podcast:funding></podcast:funding> <description></description> <image><link>https://example.com/img-link</link><title>Image title</title><url></url></image> <item><title><![CDATA[&lt;b&gt;&#xA9;]]></title>
+  <guid isPermaLink="false">Café-guid</guid>
+  <pubDate>28 Feb 2474 03:23:36 CESTCET</pubDate>
+  <description>&lt;p&gt;plain words&lt;/p&gt; Episode 12&#x26;unknown;&lt;br&gt;</description>
+  <enclosure length="0x4E20" type='AUDIO/MPEG'/>
+  <media:content duration="0060" isDefault="true" url="https://cdn.example.com/a/b/c250.php" type="video/webm" fileSize="18446744073709551616"/>
+  <x xmlns="urn:other"><title>Default namespace title</title></x></item> <item><pubDate>1981-01-31T04:36:23Z</pubDate> <link>https://example.com/ep</link> <enclosure url="" length="+20000"/> <title> {json: 1}&#13;
+</title> <enclosure url="//example.com/dir.with.dots/ep207.amr" length="00020000" type="video"></enclosure> <description>	R&amp;D
+#hash	R&amp;D</description></item> <item><title>plain words  #hash  &#1513;&#1500;&#1493;&#1501;</title>
+<guid isPermaLink='true'>urn:uuid:54e35730</guid>
+<pubDate>2021-05-11T11:28:14.716+0100</pubDate>
+<description><![CDATA[<br/>]]></description>
+<enclosure url="https://example.com/a.b/83.php" length="2147483648" type="audio/"/>
+<enclosure url=" ftp://files.example.com/a/b/c253.wma " length="0x4E20"/></item> <item><enclosure url="//example.com/ep310.ogg" length="2147483647" type="audio/ogg"/><pubDate>07 Jul 51 08:55:54 -0000</pubDate><title>&amp;#;multi
+line&#60;del&gt;AT&amp;T&lt;/del></title><description><![CDATA[ééé&#128512;<img><div>&#1605;&#1585;&#1581;&#1576;&#1575;</div>
+&#65;&#66;&#33590;
+&hellip;plain words<br>]]></description></item> <item><media:content medium="video" type="image/*" fileSize="0x4E20" isDefault='TRUE' duration="1.5"/><dc:date>1972-05-01T08:55:31.084+0000</dc:date><media:content type="text/plain" medium="audio" url="http://example.org/91.mp3.zip" duration="1" fileSize="9007199254740992"/><title>#766 &#8211; Inte<![CDATA[rview&#xD800;multi
+line]]></title><media:content isDefault="1" fileSize="2147483647" duration="59" type="audio/flac" medium='audio' url="http://example.org/café/223.jpg"/><link></link><enclosure url="HTTPS://EXAMPLE.COM/ep7.aac" length="9007199254740991" type="application/octet-stream"/></item> <item><title>&#13;
+back\slash  [x]  &#x3C;b&gt;Bold&lt;/b&gt; title&#13;
+</title> <guid isPermaLink="false">https://example.com/item/25505</guid> <pubDate>Mon, 31 Dec 1992 23:04:35 +1400 PM</pubDate> <dc:date>Foo,  1977-05-02T10:06:55</dc:date> <enclosure url="https://example.com/a.b/café/205.aspx" length='123456789012345678' type="application/ogg"/> <enclosure url="//example.com/dir.with.dots/ep52.Mp4" length="+20000" type="audio/x-m4a"/> <enclosure url="ftp://files.example.com/dir.with.dots/ep312.aac" length="abc" type="audio/mp3"/> <media:thumbnail url=""/></item> <item><link> https://e.com/x </link>
+<enclosure length="123456789012345678" type="audio/mpeg; charset=binary"/>
+<description><![CDATA[ééé<li>S01E7</li>
+
+&#xD800;]]></description>
+<guid isPermaLink='false'></guid>
+<enclosure url="" length="52428800" type="audio/aac"/>
+<enclosure url="https://cdn.example.com/e p297.m4a" length="abc" type="application/json"/>
+<title/>
+<pubDate>Sun, 27 September 1970 05:21:16 -0800</pubDate></item> <item><pubDate>mUZSYi</pubDate> <guid isPermaLink='true'>urn:uuid:d54142fc</guid> <media:content type='audio/mp4' medium="Audio" fileSize="0x4E20" isDefault="true" duration="2147484"/> <link> https://e.com/x </link> <description></description></item></channel> </rss>

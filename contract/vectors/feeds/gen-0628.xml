@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en">
+<title type="plain"><![CDATA[&]]></title>
+<comments>https://example.com/c</comments>
+<entry><summary type="html"><![CDATA[multi
+line<br>]]></summary>
+<content type="xhtml">
+ leading</content>
+<author><name>Entry author</name></author>
+<title type="html"><![CDATA[
+<unk]]>nown>​&#60;/unknown>  AT&#x26;T  &amp;apos;a&amp;apos; </title>
+<itunes:duration>4893.837</itunes:duration>
+<link title="MP3 feed" rel="related" href=' ftp://files.example.com/a/b/c253.wma ' type="application/xml+xhtml" length="20000"/>
+<updated>2018-07-12T21:28:39-01:00</updated>
+<link href="//example.com/a/b/c324.xyz" length="12" rel="enclosure" type="application/rss+xml" title="MP3 feed"/></entry>
+<entry><link type="application/atom+xml" length="20000" href="https://example.com/alt.xml" rel='hub'/>
+  <link rel='enclosure' type="application/xhtml+xml" length="12" title="Alternate"/>
+  <published>2340-10-18T11:43:47+0100 	 </published>
+  <updated>1984-04-03</updated>
+  <link rel="next" type="application/xhtml+xml" href="https://example.com/pay" length="abc" title=""/>
+  <summary type="text"><![CDATA[<li>  padded  </li>  [x] &]]></summary>
+  <title type="text">plain words  &amp;#65;&#x26;#66;  &amp;amp;amp;</title>
+  <author><name>Entry author</name></author>
+  <id> raw </id></entry>
+<entry><summary type="text">😀😀&lt;p&gt;back\slash&#x3C;/p&gt;&amp;mdash;&#60;div>&#60;p&gt;Para&lt;/p&gt;&#60;/div&gt;&#13;
+&#x26;</summary>
+  <updated>Sun, 27 May 2249 09.05.35 +0530</updated>
+  <title>&lt;h1&gt;a
+  b&lt;/h1&gt;  a&#13;
+b  multi
+line</title>
+  <link type="application/atom+xml" href="https://example.com/feed?page=2" rel="archives" title="MP3 feed" length="12"/>
+  <id>urn:uuid:1</id></entry>
+<entry><title>&amp;Lt;
+&#38;#x;</title> <updated>Sat apr 23 05:27:34 1983</updated> <published>Sat 16 Jul 2596 08:53:29 GMT-0800 (Greenwich Mean Time)</published> <id> raw </id></entry>
+<entry><summary type='text'>éé&#233; &#x3C;br&gt;&lt;li&gt;"quoted"&lt;/li>&#60;p>multi
+line&lt;/p&gt;&#x3C;br /></summary>
+<link length="9223372036854775808" href="https://example.com/pay" title='Café' rel="related" type="application/xml+xhtml"/>
+<title><![CDATA[100%]]> &amp;mdash;</title>
+<published>Sun Oct 29 01:46 1973</published>
+<content type="html"><![CDATA[  sep<br></br><div>1 <2</div>]]></content>
+<id>tag:x,2020:1</id>
+<link rel="hub" href=""/>
+<itunes:duration>2915</itunes:duration></entry> </feed>

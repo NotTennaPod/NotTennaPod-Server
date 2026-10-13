@@ -1,0 +1,32 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><image><title>Image title</title><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image><media:thumbnail url=""></media:thumbnail><atom:link type="application/xhtml+xml" rel='next' title="Café" length="20000"/><link> https://example.com/ </link><itunes:author>&lt;b&gt;Studio&#60;/b&gt;</itunes:author><title>&#x3C;div dir=&quot;rtl"&gt;  padded  &lt;/div&gt;cr&#13;lf</title><atom:link rel="" type="text/html" title='' href="https://example.com/alt.xml" length="12"/><atom:link href="https://example.com/" type="application/xml+xhtml" length="12" title="MP3 feed"/><atom:link href="https://example.com/alt.xml" rel="last"/><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><item><itunes:duration>4:09:55</itunes:duration>
+<link></link>
+<title><![CDATA[<font color="red">Episode 12</font>]]></title>
+<guid isPermaLink="false">urn:uuid:69d830af</guid>
+<description>&#x3C;p>&#60;img src=&quot;x.png"&gt; cover&lt;/p>&lt;li&gt;café&lt;/li>  &lt;img src="x.png"&gt;&lt;br /></description>
+<enclosure url="" length='52428800' type="video/quicktime"/>
+<pubDate>2015-11-27T21:15:26.333 +0100</pubDate>
+<media:thumbnail url="https://example.com/th.jpg"/>
+<itunes:subtitle>&lt;code>S01E157&#x3C;/code&gt; &#x26;mdash; 1 &lt;2</itunes:subtitle></item><item><itunes:summary> &amp;mdash;
+&amp;amp&#38;copy;&#60;p&gt;&lt;3 &#x3C;3&#x3C;/p>&#60;hr&gt;</itunes:summary> <enclosure url='https://user:pass@media.example.net/a/b/c9.m4a' length="12" type="audio/mp4"/> <title><![CDATA[ {json: 1} &apos;a&apos;]]></title> <enclosure url="https://xn--caf-dma.example/ep23.flac" length="9223372036854775807" type="unknown"/> <pubDate>Sun, 23 Feb 2369 24:52 +0000</pubDate> <link>https://example.com/ep</link> <guid isPermaLink="true">https://example.com/item/92524</guid> <description><![CDATA[	Tom & Jerry <3]]></description></item><item><pubDate>_, 	19 Dec 10 17:48 -1200</pubDate>
+<podcast:chapters type="application/json+chapters"/>
+<description>aaa😀&lt;br/>&lt;br/>  &#x26;#xA9;😀😀😀😀&amp;Lt;&#60;br&gt;&lt;img></description>
+<enclosure url="https://example.com/a.b/a/b/c270.mpga" length="abc" type="audio"/>
+<link></link>
+<itunes:duration></itunes:duration>
+<x:title xmlns:x="urn:x">Other namespace title</x:title>
+<itunes:image href=""/>
+<title>a &gt; b
+&amp;copy;</title></item><item><itunes:subtitle><![CDATA[<3 <3&]]></itunes:subtitle><itunes:duration>1.0e99</itunes:duration><podcast:season>2</podcast:season><pubDate>Wednesday, 27 Apr 2005 14:26</pubDate><link>https://example.com/ep</link><description>&lt;hr/&gt;&#233;&#233;é</description><enclosure url="ftp://files.example.com/a/b/c328.mp3" length='20000 ' type="video/webm"/><guid isPermaLink="false"></guid><title>&#13;
+&amp;lt;b&#38;gt; &#38;amp;	</title><podcast:chapters type="application/json+chapters"/></item><item><title>&amp;;    Line&#x3C;br&gt;break</title> <guid isPermaLink="true">a&#x26;b</guid> <link></link> <pubDate>2004-11-13T11:12:28.276-0800</pubDate> <description> cr
+lf
+
+"quoted"</description> <itunes:summary>&#x3C;li>Folge 7: Über alles&#60;/li&gt;ééémulti
+linea=b&amp;c=d&lt;br&gt;  a &gt; b	Episode 12 &#38;copy;</itunes:summary> <itunes:image href=' '></itunes:image> <itunes:duration>6873.755</itunes:duration> <enclosure url="https://cdn.example.com/dir.with.dots/ep118.mp3.zip#t=10" length="2e5" type="video/webm"/> <enclosure url="//example.com/e p90.m3u8" length="20000.0" type="audio"/> <enclosure url="https://user:pass@media.example.net/a/b/c9.m4a" length="123456789012345678" type='audio/x-m4a'></enclosure> <media:content fileSize="16383" url="https://xn--caf-dma.example/a/b/c354.m4b#t=10" duration="1.5" medium="audio" type="audio/ogg" isDefault="1"/></item><item><itunes:duration>1:30</itunes:duration>
+<description><![CDATA[&#0;<br><p></]]>p&gt;</description>
+<pubDate>2375-11-26T15:50:17+0530
+  </pubDate>
+<guid isPermaLink="false">https://example.com/item/54567</guid>
+<itunes:subtitle>&#38;#128512;&amp;AMP;</itunes:subtitle>
+<title>&amp;apos;a&#38;apos;</title></item></channel>
+</rss>

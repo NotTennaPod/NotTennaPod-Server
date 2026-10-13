@@ -1,0 +1,51 @@
+<rss version="" xmlns="http://backend.userland.com/rss2" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><atom:link title="Café" type="application/atom+xml" length="9223372036854775808" rel='first'/>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:author>Jane &amp;amp; John</itunes:author>
+<description>&#60;br>&#60;/br&gt;</description>
+<title><![CDATA[  padded    &lt;b&gt;escaped&lt;/b&gt;  &#xA9;]]></title>
+<link> https://example.com/ </link>
+<atom:link type="audio/mpeg" title="MP3 feed" href="https://example.com/" length='12'/>
+<itunes:summary>
+multi
+line&#60;img src="x.png"&gt;😀😀</itunes:summary>
+<image><title>Image title</title><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+<language>fr
+</language>
+<item><itunes:duration>
+45:00
+</itunes:duration> <pubDate>Sun, 08 Mar 1987 13:42 -0800</pubDate> <itunes:author>Item author</itunes:author> <title>Episode 134
+&amp;unknown;
+&#x3C;b&gt;Bold&#x3C;/b&gt; title</title> <enclosure url="https://cdn.example.com/café/199.aac" length="123456789012345678" type="audio/x-m4a"/> <dc:date>THURSDAY Dec 4 08:31:56 2014</dc:date> <psc:chapters><psc:chapter start="3337" title='Intro' href=""/><psc:chapter start="00:16:28" href="https://example.com/ch" title="&lt;b>x&lt;/b>"/><psc:chapter title="&lt;b>x&lt;/b>" start="01:29:10.917" href="https://example.com/ch" image="https://example.com/ch.png"/><psc:chapter start="" title="&lt;b>x&lt;/b>" href='https://example.com/ch'/><psc:chapter start='1:00 ' title="&lt;b>x&lt;/b>" href=""/></psc:chapters> <itunes:image href=""/></item>
+<item><itunes:image href=" https://e.com/i.png "/>
+  <title>
+&#x26;AMP;    spaced    x&#x3C;y  </title>
+  <podcastindex:transcript url="" language="en"/><podcastindex:transcript url='https://example.com/t.json' type="application/srt" language='en'/><podcastindex:transcript url="" type="text/plain" language="en"></podcastindex:transcript>
+  <itunes:duration>1h30m</itunes:duration>
+  <media:content medium="Audio" url="https://example.com:8443/e p353.ogx" type="audio/flac" fileSize="16385" isDefault="true"/>
+  <pubDate>Thursday, 25 Dec 1980 00:45:53 -0500</pubDate>
+  <guid isPermaLink="true">Caf&#xE9;-guid</guid>
+  <enclosure length="52428800" type="image/*"></enclosure>
+  <itunes:subtitle>&lt;b&gt;Bold&lt;/b> titlea=b&amp;c=dcr&#13;lf</itunes:subtitle>
+  <link>https://example.com/ep</link>
+  <podcastindex:socialInteract protocol="activitypub"/></item>
+<item><description>&#60;img src="x.png"&gt;</description>
+<pubDate>Fri 11 Aug 1899 07:28:36 GMT+1400 (-1200)</pubDate>
+<itunes:author>Item author</itunes:author>
+<enclosure url="https://example.com/a.b/a/b/c218.ogx" length="123456" type="audio/mpeg; charset=binary"/>
+<title><![CDATA[&#xFFFF;  a
+  b  &]]>;</title>
+<media:description type='plain'>&#x3C;p/></media:description>
+<itunes:duration>596:31:23.647</itunes:duration>
+<guid isPermaLink="true">https://example.com/item/85684</guid>
+<link> https://e.com/x </link></item>
+<item><pubDate>Fri Jul 33 11:52:13 2023</pubDate> <title>  &lt;h6>é&#60;/h6>  </title> <media:description type="html">	مرحبا</media:description> <enclosure length="52428800" type='audio/mpeg; charset=binary'/> <guid isPermaLink="true">https://example.com/item/46337</guid> <link></link></item>
+<item><enclosure url="https://example.com/a.b/café/205.aspx" length='18446744073709551616' type='application/pdf'/>
+  <itunes:duration>2:05:09</itunes:duration>
+  <link> https://e.com/x </link>
+  <dc:date>2014-04-29T11:24:59+1400 </dc:date>
+  <pubDate>11 Nov 22 16:30:01 +0000</pubDate>
+  <description>&lt;img src="x.png&quot;>	cr&#13;lfback\slash&#x3C;div&gt;1 &lt;2&#x3C;/div&gt;Tom &amp;amp; Jerry &#x26;lt;3&lt;br></description>
+  <guid>  spaced guid  </guid>
+  <itunes:summary>a&#13;
+b&lt;li&gt;&#38;#xD800;&#60;/li&gt;  &#38;#x;</itunes:summary></item></channel></rss>

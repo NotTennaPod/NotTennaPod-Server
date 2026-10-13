@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="windows-1252"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+  <channel xmlns:atom="http://www.w3.org/2005/Atom"><link></link>
+<itunes:author>Jane &amp;amp; John</itunes:author>
+<atom:link type="application/atom+xml" title="Café" rel="hub" length="abc"/>
+<title><![CDATA[ a > b  ]]></title>
+<it:owner><it:name>Owner</it:name><itunes:email>o@example.com</itunes:email></it:owner>
+<atom:link href='https://example.com/a.b/ep135.pdf?a=1&amp;b=2' title="Alternate" type="audio/mpeg" rel="related"/></channel> </rss>

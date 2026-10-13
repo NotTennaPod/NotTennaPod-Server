@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><image><title>Image title</title><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+  <link> https://example.com/ </link>
+  <title>plain words</title>
+  <description>&#60;img src="x.png"&gt;&lt;div&gt;x&lt;y&lt;/div&gt;&lt;p/&gt;&amp;hellip;&lt;div&gt;#hash&#60;/div&gt;</description>
+  <item><title>&#x26;euro; &amp;#;</title>
+<guid isPermaLink="false"></guid>
+<link>https://example.com/ep</link>
+<pubDate>Montag, 27 Jan 2020 22:30 +0200</pubDate>
+<description></description>
+<enclosure url="" length='' type="text/html"/></item></channel></rss>

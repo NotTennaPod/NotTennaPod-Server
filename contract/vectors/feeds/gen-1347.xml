@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/"><title><![CDATA[  trailing   ]]></title>
+  <language> EN-US </language>
+  <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">café &#38;euro;</itunes:subtitle>
+  <link> https://example.com/ </link>
+  <textInput><title>Search</title><link>https://example.com/search</link></textInput>
+  <image><title>Image title</title><url>  https://example.com/ws.png
+</url></image>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" "/>
+  <atom:link type="application/atom+xml" title="Café" href="https://example.com/" rel="last"/>
+  <atom:link type='application/xml+xhtml' title="Café" length="20000" rel="hub" href=""/>
+  <atom:link href='https://example.com/' rel='enclosure' type="application/xml+xhtml" title='Alternate'/>
+  <atom:link type="text/html" rel='next'/>
+  <description><![CDATA[<li>sep</li><div>&mdash;</div><div>&#8203;</div><li>&nbsp;</li>aaaaaa<br><3 <3 #hash]]></description>
+  <item><enclosure length='9007199254740992' type='application/octet-stream'/> <link> https://e.com/x </link> <description>&lt;br /&gt;</description> <media:group><media:content medium="document" fileSize='abc' duration="abc" isDefault="1" url="//example.com/café/305.mp3" type="application/x-bittorrent"></media:content></media:group> <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#128512;</itunes:subtitle> <title>#472 &#8211; Interview  a&#13;
+b  &#8203;</title> <guid isPermaLink='false'>urn:uuid:955586f2</guid> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1:00:00:00</itunes:duration> <pubDate>Monday, 33 May 2103 21:07:38</pubDate></item>
+  <item><title>&#128512; &#x3C;label>&amp;quot;q&#38;quot;&#60;/label&gt;</title>
+<guid>Café-guid</guid>
+<link>https://example.com/ep</link>
+<pubDate>Mon 2 May 1994 07:00:48 G</pubDate>
+<description></description>
+<content:encoded> 	&#38;#xA9;</content:encoded>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">596:31:23.648</itunes:duration>
+<media:group><media:content url="http://example.org/357.ogx" duration="2147484" medium="document" isDefault="1" type="audio/mpeg; charset=binary" fileSize="1,000,000"/><media:content type='application/ogg' duration="2147484" url="https://cdn.example.com/e p297.m4a" fileSize="52428800" medium="Audio"/></media:group></item>
+  <item><enclosure url="https://example.com/a.b/dir.with.dots/ep193.mp3" length="2e5" type="application/ogg"/>
+<media:content type="audio/" duration="2147483" url="//example.com/a/b/c234.html" fileSize="-1" isDefault="true"/>
+<guid>Café-guid</guid>
+<description>&lt;br>&#x3C;/br>{json: 1}</description>
+<media:content url="https://cdn.example.com/ep184.php" type='' duration="1" fileSize="123456" isDefault="1"/>
+<media:content isDefault="true" medium="Audio" fileSize="-9223372036854775808" duration='-5' type="unknown"/>
+<link>https://example.com/ep</link>
+<title/>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""/></item>
+  <item><title>{json: 1}
+</title><itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Item author</itunes:author><guid isPermaLink="false">  spaced guid  </guid><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"> #829 &#x2013; Interview
+trailing 
+&#38;lt;b&amp;gt;escaped&#38;lt;/b&amp;gt;&#13;
+</itunes:subtitle><pubDate>18 May 83 19:25:01 -1200</pubDate><enclosure url="http://example.org/302.mov" length="-0" type="audio/mpeg; charset=binary"/></item></channel></rss>

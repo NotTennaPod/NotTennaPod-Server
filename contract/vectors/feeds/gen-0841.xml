@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <id> raw </id>
+  <author><name>  Bob  </name></author>
+  <itunes:author>第一</itunes:author>
+  <subtitle type='text'><![CDATA[<li>第7集</li>]]></subtitle>
+  <itunes:summary></itunes:summary>
+  <title>&#38;</title>
+  <itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url>
+  <updated>Saturday, 24 Mar 68 00:35:09</updated></feed>

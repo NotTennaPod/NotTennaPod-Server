@@ -1,0 +1,13 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom"><channel><language></language> <itunes:subtitle>&#x26;;</itunes:subtitle> <podcast:funding url=''>Support us</podcast:funding> <link>https://example.com</link> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <at:link href="" title="" type='' rel="first" length="12"/> <dc:creator>DC Creator</dc:creator> <title><![CDATA[<pre>[x]
+  pre</pre> http://example.com/?a=1&b=2 &#128512;]]></title> <at:link length='12' rel="Next" title="Café" href=""/> <podcast:funding url="https://example.com/donate">  spaced  </podcast:funding> <itunes:image href=" https://example.com/sp.jpg "/> <media:thumbnail/> <item><title>café  a &#60; <![CDATA[b]]></title><enclosure url="https://example.com:8443/dir.with.dots/ep272.mp3.zip" length="-0" type="text/html"/><pubDate>1900/05/26T07:06:33</pubDate><enclosure url="https://user:pass@media.example.net/café/150.ts?dl=1.0" length="4294967296" type="audio/ogg"/><enclosure url='https://example.com/a.b/a/b/c61.webm' length="16385"/><media:group><media:content type="audio/opus" isDefault='1' fileSize="٢٠٠٠٠" duration=" 60" medium="video" url="http://example.org/91.mp3.zip"/></media:group><link> https://e.com/x </link><x:title xmlns:x="urn:x">Other namespace title</x:title></item> <item><link>https://example.com/ep</link>
+<podcast:transcript url="https://example.com/t.vtt" type="application/json"/><podcast:transcript url="" type="text/html" language="en"/>
+<title>&amp;Lt;</title>
+<media:content type=" audio/mpeg" duration=" 60" url="https://xn--caf-dma.example/café/278.m4a" medium="video" fileSize="18446744073709551616"/>
+<enclosure url="HTTPS://EXAMPLE.COM/café/374.mp3" length="-0" type="audio/mpeg"/>
+<itunes:image href="https://example.com/ep.jpg"/>
+<media:description type="plain"><![CDATA[ R&D]]></media:description>
+<guid isPermaLink="true"></guid>
+<pubDate>1982-02-05T07:03:56GMT+0100</pubDate>
+<media:content type="application/pdf" medium="Audio" duration='2147483648' isDefault='1' fileSize="123456"/>
+<itunes:duration>1130.943</itunes:duration>
+<media:content url="HTTPS://EXAMPLE.COM/ep176.wav" type='audio/mp4' fileSize="٢٠٠٠٠" medium="video" duration="+60"/></item></channel> </rss>

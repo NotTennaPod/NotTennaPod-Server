@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<rss version="2.0" xmlns="" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters">
+<channel xmlns:atom="http://www.w3.org/2005/Atom"><i:summary></i:summary>
+  <i:image href=" https://example.com/sp.jpg "/>
+  <title>&#60;strike>multi
+line&lt;/strike&gt;
+&#38;#xA9;</title>
+  <atom:link length="9223372036854775808" title="MP3 feed" href="https://example.com/" rel="alternate" type="audio/mpeg"/>
+  <podcastindex:funding>  spaced  </podcastindex:funding>
+  <atom:link href="https://example.com/alt.xml" length="9223372036854775808" title="Caf&#233;" type="application/atom+xml"/>
+  <atom:link rel="related" length="9223372036854775808" type="application/xml+xhtml" href="https://cdn.example.com/dir.with.dots/ep254.mov?file=x.mp3"/>
+  <itunes:owner><itunes:name>Owner</itunes:name><i:email>o@example.com</i:email></itunes:owner>
+  <i:new-feed-url>https://new.example.com/feed</i:new-feed-url>
+  <link> https://example.com/ </link>
+  <i:subtitle>&lt;p>&lt;p&gt;x&lt;y&lt;/p>&lt;/p&gt;</i:subtitle>
+  <itunes:author><![CDATA[  Spaced  ]]></itunes:author>
+  <description><![CDATA[<br />]]></description>
+  <item><title>tab	here &amp;#0;</title>
+<guid>Caf&#233;-guid</guid>
+<link>https://example.com/ep</link>
+<pubDate>Foo, Thu, 11 Oct 2001 01:26:35 +0200</pubDate>
+<description>&#x3C;div>plain words&lt;/div&gt;</description>
+<content:encoded>&lt;img src="x.png"&gt;</content:encoded>
+<itunes:subtitle><![CDATA[&#33590;]]></itunes:subtitle>
+<i:duration>15093</i:duration>
+<enclosure url='https://user:pass@media.example.net/caf&#233;/20' length="9007199254740993" type="Audio/MPEG"/></item>
+  <item><i:image href=""/>
+<pubDate>Thu, 07 Mar 2024 17:08 IST</pubDate>
+<itunes:summary>&lt;br/>&#13;
+caf&#233;&#60;li&gt;&amp;#x;&#x3C;/li>&#x3C;br /&gt;&#13;
+&#160;&amp;#128512;  &#8203;&#60;br/&gt;</itunes:summary>
+<link> https://e.com/x </link>
+<content:encoded>	&#x26;<![CDATA[#;]]></content:encoded>
+<enclosure url="//example.com/dir.with.dots/ep266.avi" length="&#1634;&#1632;&#1632;&#1632;&#1632;" type='audio/mpeg'/>
+<title>#hasht<![CDATA[ab	here1 <2]]></title></item></channel>
+</rss>

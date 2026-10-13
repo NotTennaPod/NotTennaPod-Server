@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><!-- generated -->
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><it:summary><![CDATA[aa
+
+<3 <3<br>]]></it:summary><it:author>Jane &#38;amp; John</it:author><title>  {json: 1}  #hash  &#x3C;p style="text-align:center&quot;&gt;&#x26;amp;amp;&lt;/p&gt;
+</title><link></link><podcast:funding>Support us</podcast:funding><description>&#38;mdash;&#x3C;br>aaaaaaa</description><x:title xmlns:x="urn:x">Other namespace title</x:title><it:subtitle><![CDATA[&#169;]]></it:subtitle><podcast:funding url=""></podcast:funding><item><link>https://example.com/ep</link>
+<content:encoded><![CDATA[<p>e&#769;</p>#7 &#8211; Interview<br><br>]]></content:encoded>
+<title>&lt;img src="x.png"&gt; cover &lt;3 &#60;3 &amp;lt</title>
+<guid>a&amp;b</guid>
+<enclosure url="//example.com/347.png" length="16385" type='audio/x-wav'/>
+<description></description>
+<it:duration>1:05:24</it:duration>
+<pubDate>Tuesday, 08 Dec 2428 23:23:55 +0200</pubDate>
+<it:summary>&#60;img src=&quot;x.png&quot;&gt; cover&lt;br&gt;</it:summary></item><item><title>&amp;#128512; &amp;quot;q&amp;qu<![CDATA[ot; ]]></title><guid isPermaLink="true">
+</guid><link></link><pubDate>THURSDAY, 29 Dec 2417 19:48:01 +0100</pubDate><description>
+ AT&amp;T&#60;br&gt;
+sepé&#xE9;é&#x3C;hr&gt;</description><it:summary>a &gt; b&#x3C;br&gt;</it:summary><media:content fileSize="20000.0" medium='document' url="//example.com/café/78.3gp" type="audio/flac" duration="01:00"/><media:content duration="-5" fileSize="9223372036854775808" medium="Audio" type="image/png"/></item><item><pubDate>28 May 78 09:49 +0000</pubDate> <link></link> <atom:link title="Café" rel='archives' type="application/xml+xhtml"/> <dc:date>16 Jun 95 14:09:17 -0800</dc:date> <guid isPermaLink="false">
+</guid> <enclosure length="18446744073709551616" type="AUDIO/MPEG"/> <it:image href=" "/> <enclosure url="http://example.org/a/b/c257.php" length="0" type="application/pdf"></enclosure> <title><![CDATA[]]>a
+  b &amp;#xD800; &amp;quot;q&#38;quot;</title> <description><![CDATA["quoted"<br><hr/>]]></description> <media:content url="http://example.org/ep151.m4v" medium="audio" type="audio/mp4" isDefault="1" duration='59' fileSize="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;"/></item><item><title>&#128512; &#38;euro;</title>
+<guid isPermaLink="true">a&amp;b</guid>
+<link> https://e.com/x </link>
+<pubDate>Fri, 25 Aug 2000 02:44</pubDate>
+<content:encoded><![CDATA[<div>x<y</div>]]></content:encoded>
+<enclosure url="https://example.com:8443/a/b/c214.mov" length="2147483647" type='audio/wav'/>
+<media:group><media:content fileSize="00020000" url="https://xn--caf-dma.example/café/179.amr" medium='Audio' isDefault="TRUE" duration="59" type="text/plain"/><media:content type="" url="http://example.org/a/b/c157.opus" duration=" 60" medium='audio' fileSize="0"/></media:group></item><item><pubDate>  05 SEPT 1900 16:00:31 -0000
+</pubDate>
+<guid isPermaLink="true"> </guid>
+<content:encoded></content:encoded>
+<enclosure url='https://xn--caf-dma.example/café/335.ogx' length="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;" type="audio/mp3"/>
+<enclosure length="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;" type="audio/mpeg; charset=binary"/>
+<podcast:socialInteract uri="" protocol="activitypub"/>
+<it:duration>199:23</it:duration>
+<link>https://example.com/ep</link>
+<podcast:transcript type="text/plain"/><podcast:transcript url="https://example.com/t.vtt" type="text/plain" language="en"/>
+<title><![CDATA[plain words leadingcafé]]></title></item><item><link> https://e.com/x </link>
+<enclosure length='00020000' type="application/ogg"></enclosure>
+<dc:date> 18 Sep 2328 17:01:45 +0100
+</dc:date>
+<guid isPermaLink="true">  spaced guid  </guid>
+<media:content type='audio/x-m4a' duration="2147483648" fileSize="1,000,000" isDefault="false" medium="video"/>
+<description><![CDATA[<br />]]></description>
+<enclosure url="//example.com/a/b/c100.html" length="9223372036854775807" type="application/ogg"/>
+<title><![CDATA[<cite>trailing </cite>  Tom & J]]>erry &#60;3</title>
+<it:duration>8961.408</it:duration></item></channel></rss>

@@ -1,0 +1,46 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><link> https://example.com/ </link><itunes:subtitle><![CDATA[&amp;amp; <B>Line<br>break</b> 😀]]></itunes:subtitle><itunes:summary>&#x3C;div&gt;multi
+line&#60;/div&gt;😀😀&lt;li>sep&#60;/li&gt;</itunes:summary><title><![CDATA[
+"quoted"Tom &amp; Jerry &lt;3	]]></title><description></description><itunes:author>第&#19968;</itunes:author><language></language><atom:link title='Alternate' href="https://example.com/alt.xml" type="audio/mpeg" length="12" rel="next"/><image><title>Image title</title><url></url></image><item><itunes:duration>::</itunes:duration><enclosure url="" length="+20000" type="audio/mpeg"></enclosure><title>Episode 12</title><guid isPermaLink="false">dup</guid></item><item><title><![CDATA[<li>&mdash;</li>
+<ul><li>&hellip;</li><li>two</li></ul>
+&#xFFFF;]]></title>
+<itunes:duration>4:59:50</itunes:duration>
+<link>https://example.com/ep</link>
+<dc:date>Mon, 01 Nov 2252 17:35:61 -0000</dc:date>
+<enclosure url="http://example.org/70.mkv" type="audio/mp3"/>
+<description>
+&#38;#x1F600;back\slash&lt;br>&#128512;</description>
+<pubDate>1975-03-19</pubDate>
+<psc:chapters xmlns:psc="http://podlove.org/simple-chapters"></psc:chapters>
+<guid isPermaLink="false"></guid>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:summary>&#x3C;hr/></itunes:summary>
+<itunes:image href=""/></item><item><itunes:duration>.5</itunes:duration>
+<pubDate>Sat, 04 Jul 1981 04:34 -0000Z</pubDate>
+<link> https://e.com/x </link>
+<description>&#x3C;br&gt;&lt;/br&gt;😀</description>
+<media:group><media:content type="text/plain" medium="document" isDefault="true" fileSize="123456" duration='3600'/></media:group>
+<title><![CDATA[&apos;a&apos;
+café
+Episode 741]]></title>
+<media:thumbnail/>
+<itunes:image href="https://example.com/ep.jpg"/>
+<itunes:summary><![CDATA[<p>Tom &amp; Jerry &lt;3</p>第7集<br> &AMP;trailing <br><div>Folge 7: Über alles</div>
+ 茶<br> ]]></itunes:summary>
+<enclosure url="https://cdn.example.com/dir.with.dots/ep118.mp3.zip#t=10" length="123456789012345678" type=""/>
+<guid isPermaLink='false'>
+</guid></item><item><title><![CDATA[sep
+&amp
+&#169;]]></title>
+<guid isPermaLink="false">
+</guid>
+<pubDate>
+15 Dec 1995 18:39:46 -0000
+  </pubDate>
+<description>back\slash&lt;<![CDATA[br>]]></description>
+<itunes:image href=" "/>
+<itunes:duration>2:04:06</itunes:duration>
+<enclosure url="HTTPS://EXAMPLE.COM/café/303.m3u8?a=1&amp;b=2" length="-9223372036854775808" type="audio/*"/>
+<media:content isDefault="true" duration="0060" medium="Audio" fileSize="18446744073709551616" type="application/octet-stream"/>
+<media:description type='plain'></media:description>
+<podcast:transcript url="" type="text/html"/><podcast:transcript url="https://example.com/t.json" type="application/json" language="en"/><podcast:transcript url="https://example.com/t.json" type="text/vtt" language="en"/></item></channel>
+</rss>

@@ -1,0 +1,28 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="en"> <link title="Café" href="https://example.com/" type="text/html" rel="next"></link>
+<link href="" rel="" title="Alternate" length="9223372036854775808" type="application/atom+xml"/>
+<link href="https://example.com/alt.xml" title='Alternate' length="9223372036854775808" rel="last" type="audio/mpeg"></link>
+<id>https://example.com/feed</id>
+<title type='plain'>tab	here</title>
+<subtitle type='plain'></subtitle>
+<icon></icon>
+<link href="https://example.com/a.b/café/208.ts" rel="alternate" length='9223372036854775808'/>
+<itunes:image href='https://example.com/ai.jpg'/>
+<updated>Fri, 00 Nov 2002 05:54:28 -1200</updated>
+<entry><published>2008-09-30 ()</published>
+  <title type="HTML"><![CDATA[
+sep	]]></title>
+  <content type="text">&#x26;hellip;aaaaaaaaa  [x]&#x26;lt;b&#x26;gt;escaped&#x26;lt;/b&amp;gt;&#x3C;br&gt;	&amp;lt;b&amp;gt;😀😀ééé&#13;
+AT&#x26;T</content>
+  <id></id>
+  <link rel="archives" length="9223372036854775808" type="application/xhtml+xml" href=""/>
+  <author><name>Entry author</name></author>
+  <link title="Café" type="application/atom+xml" rel="next"/></entry>
+<entry><title type="text"><![CDATA[مرحبا  'single'  &#xFFFF;]]></title> <itunes:duration>19125</itunes:duration> <published>Fri 30 May 2309 05:51:20 GMT-0500 (Coordinated Universal Time)</published> <id>tag:x,2020:1</id> <podcast:transcript url="" type="" language="en"/></entry>
+<entry><itunes:duration>3:15:19</itunes:duration>
+  <updated>29 Aug 1752 09:38:08 +1400</updated>
+  <published>1986-05-17T18:49:58.996451+01</published>
+  <title type="plain">Folge 804: Über alles &amp;#65;&amp;#66; 茶</title>
+  <link rel="hub" href="https://example.com/pay" length="9223372036854775808" type="application/atom+xml" title="MP3 feed"/>
+  <id></id>
+  <media:content type="text/html" isDefault="TRUE" fileSize="16384" duration="abc"/></entry>
+  </feed>

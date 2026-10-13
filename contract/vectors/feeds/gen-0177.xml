@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0"> <channel><podcast:funding url="https://example.com/donate">  spaced  </podcast:funding><lastBuildDate>Fri Jul 12 05:42 2329</lastBuildDate><podcast:funding>Support us</podcast:funding><podcast:funding url="">&lt;b&gt;x&#60;/b&gt;</podcast:funding><itunes:author>Jane Doe</itunes:author><image><url>https://example.com/img.png</url></image><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><description>&lt;p&gt;&amp;hellip;&lt;/p&gt;  AT&amp;T</description><title>&#13;
+&lt;b>Bold&lt;/b&gt; title
+שלו&#x5DD;
+</title><item><enclosure url="" length="-16384" type="image/png"></enclosure> <itunes:duration>144:42</itunes:duration> <link>https://example.com/ep</link> <pubDate>	Fri, 03 December 2021 18:15:46
+</pubDate> <title>第126&#38598;    padded  </title> <content:encoded> R&#38;D&lt;p&gt;&#x1F600;&#60;/p>&#60;hr/&gt;&#x3C;img src="x.png"&gt;&lt;img src=&quot;x" alt=&quot;y&quot;/&gt;</content:encoded></item></channel> </rss>

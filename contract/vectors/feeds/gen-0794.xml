@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <title>&#13;
+#hashhttp://example.com/?a=1&amp;b=2&#13;
+</title>
+  <itunes:summary><![CDATA[茶<br><p>a > b</p>ééé😀😀😀😀<p></p>]]></itunes:summary>
+  <link>https://example.com</link>
+  <atom:link href="https://example.com/pay" title="Alternate" type="application/xhtml+xml" rel="self"/>
+  <description></description>
+  <itunes:image href=' https://example.com/sp.jpg '/>
+  <itunes:author><![CDATA[<b>Studio</b>]]></itunes:author>
+  <atom:link href="https://example.com/" rel='' length='9223372036854775808' title='Alternate' type="application/xhtml+xml"/>
+  <item><title><![CDATA[&#xA9;&lt;b]]>&#x26;gt;</title>
+<guid isPermaLink="true">a&amp;b</guid>
+<pubDate>2023-04-17UT</pubDate>
+<description><![CDATA[<li>&hellip;</li> &nbsp;<li>&#128512;</li><p/>
+&#xFFFF;]]></description>
+<content:encoded><![CDATA[  &#128512;<br>]]></content:encoded>
+<itunes:image href=" "/>
+<itunes:duration>120:59</itunes:duration>
+<enclosure url="//example.com/a/b/c351.mov?file=x.mp3" length="9007199254740992" type="image/*"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="9223372036854775807" isDefault="1" type="x-audio/mpeg" duration='59'/></item>
+  <item><title><![CDATA[<img ]]>src="x.png"> cover   spaced  </title>
+<guid>  spaced guid  </guid>
+<link></link>
+<pubDate>2017-10-27T18:53:44+0200 2024</pubDate>
+<description>
+[x]&lt;p&gt;a
+  b&#x3C;/p>&#60;br />&lt;li>&lt;p&gt;Para&#x3C;/p&gt;&#x3C;/li>&#13;
+café&#60;p/&gt; leading&lt;br>&#13;
+cr&#13;lf</description>
+<content:encoded>&lt;li&gt;a &gt; b&lt;/li&gt;</content:encoded>
+<itunes:summary><![CDATA[ &amp;amp;<li><b>Bold</b> title</li>]]></itunes:summary>
+<enclosure url="" length="-9223372036854775808" type="video/webm"/>
+<enclosure url="" length="123456" type=" audio/mpeg"/>
+<enclosure url="" length=" 20000" type="audio/x-m4a"/>
+<link xmlns="http://www.w3.org/2005/Atom" rel="next" title="Café" type="application/rss+xml" href="ftp://files.example.com/a/b/c18.mpga"/></item></channel> </rss>

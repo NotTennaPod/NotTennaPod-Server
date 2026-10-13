@@ -1,0 +1,21 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters"> <pi:funding url="https://example.com/give">Give</pi:funding>
+<id>urn:x</id>
+<icon></icon>
+<author><name>Ann</name></author>
+<title type="text">&amp;#169; cr&#13;lf</title>
+<media:thumbnail url="https://example.com/amt.jpg"/>
+<subtitle type="html">trailing &lt;br></subtitle>
+<entry><title type="html"><![CDATA[&euro;
+<p>Para</p>]]></title>
+  <id>tag:x,2020:1</id>
+  <updated>1979-05-06T05:03:57+1400</updated>
+  <content>&lt;li>مرح&#1576;ا&#x3C;/li>&#60;br/>	a &gt; baa&lt;p&gt;Para&#60;/p&gt;&lt;br&gt;</content>
+  <link title="MP3 feed" rel="related" length='20000' type="application/xml+xhtml" href="https://example.com/alt.xml"></link>
+  <link length="20000" rel="first" href="https://example.com/" type="application/xml+xhtml"/></entry>
+<entry><updated>x,  1998-07-24T16:56:06</updated>
+<id> raw </id>
+<content> &amp;copy;</content>
+<link type="audio/mpeg" length="abc" title="MP3 feed"/>
+<title type="HTML"><![CDATA[&  <p>Para</p>]]></title>
+<updated>Thu, 18 Sep 123456 25:30 -0800</updated>
+<published>18 Sep 09 08:40:41 +0100</published></entry></feed>

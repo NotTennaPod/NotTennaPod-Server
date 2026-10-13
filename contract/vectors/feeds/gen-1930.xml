@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:dc="http://purl.org/dc/elements/1.1/"><language>en</language><description>&lt;di<![CDATA[v>&#xD800;</div>]]></description><title>第384&#38598;</title><link>https://example.com</link><mrss:thumbnail url="https://example.com/mt.jpg"/><itunes:author>😀 <![CDATA[Pod]]></itunes:author><item><title>  "quoted"  </title>
+<guid isPermaLink='false'>
+</guid>
+<link> https://e.com/x </link>
+<pubDate>Thu, 15 May 1997 15:20</pubDate>
+<description>&#60;img src=&quot;x.png"&gt;ééé  &lt;3 &#60;3&lt;li&gt;"quoted"&#60;/li>&lt;li>茶&lt;/li></description>
+<cont:encoded>&#60;li>a
+  b&#60;/li&gt;&#60;hr&gt;&#60;p/>
+Tom &amp; Jerry &lt;3plain words&#x3C;br>&#x3C;br/&gt;aaaaaaaa&#60;li&gt;&#38;hellip;&lt;/li&gt;</cont:encoded>
+<itunes:image href=""/>
+<itunes:duration>4633.456</itunes:duration>
+<itunes:author>Item author</itunes:author>
+<enclosure length='-1' type="audio/flac"/>
+<mrss:thumbnail url="https://example.com/th.jpg"></mrss:thumbnail></item><item><itunes:image/><title><![CDATA[&nbsp; <p>&#xFFFF;</p> &#65;&#66;]]></title><mrss:content fileSize="2147483648" type="text/html" url='https://xn--caf-dma.example/e p186.m4a' duration='abc' isDefault="TRUE" medium="image"/><guid>urn:uuid:89c96a0a</guid><enclosure url="//example.com/dir.with.dots/ep52.Mp4" length='２０００００' type='image/png'/><link></link><mrss:thumbnail url=""></mrss:thumbnail><pubDate>Thu 20 Jul 2023 00:15:57 GMT+000</pubDate><itunes:duration>7801.330</itunes:duration></item><item><pubDate>Sun, 13 Apr 2110 01:43:59</pubDate>
+<description>ééé</description>
+<title>&#38;hellip; &#x3C;p>Para&lt;/p&gt; Episode 744</title>
+<cont:encoded><![CDATA[<li>'single'</li>aaaa<hr/><p>&#xA9;</p>plain words tab	here<img src="x" alt="y"/>😀😀]]>😀</cont:encoded>
+<itunes:summary><![CDATA[<li>😀</li>]]></itunes:summary>
+<guid>a&amp;b</guid>
+<enclosure url='http://example.org/79.m3u8' length='abc' type="audio/x-m4a"/>
+<itunes:duration>abc</itunes:duration></item></channel>
+</rss>

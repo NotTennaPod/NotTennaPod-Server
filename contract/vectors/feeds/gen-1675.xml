@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en"><it:image href="https://example.com/ai.jpg"/>
+<link href="https://xn--caf-dma.example/a/b/c96.aac#t=10" length="20000" title="Alternate" type="application/rss+xml" rel="hub"/>
+<link length="20000" href="https://user:pass@media.example.net/277.mp3" title="Café" rel="payment"></link>
+<id></id>
+<it:author>  Spaced  </it:author>
+<entry><link href="https://example.com/" length='12' rel="alternate" title="Café" type="text/html"></link>
+  <updated>Sat, 11 Sep 1971 11:53:00</updated>
+  <content type="plain">&#38;lt;b&#x26;gt;escaped&#x26;lt;/b&#38;gt;</content>
+  <link href="https://example.com/" rel="related" title="MP3 feed"/>
+  <link rel="next" type="" href="" length="9223372036854775808" title=''/>
+  <author><name>Entry author</name></author>
+  <id>
+id
+</id>
+  <title type="text">Tom &#x26; Jerry &lt;3</title></entry>
+<entry><summary type="plain">  &#x26;hellip;&#60;p/&gt;&#x26;amp;amp;&lt;div&gt;http://example.com/?a=1&amp;b=2&lt;/div>&lt;br>&lt;/br&gt;</summary>
+<link rel="enclosure"/>
+<content type="text">ééé&lt;img src="x.png&quot;&gt; cover&#x3C;br>&amp;amp;&#60;div>café&lt;/div>&#x3C;br&gt;&#x3C;/br&gt;😀😀&lt;img src=&quot;x" alt="y"/>&#x3C;li&gt;S01E7&#x3C;/li&gt;</content>
+<author><name>Entry author</name></author>
+<title type="HTML"><![CDATA[<3 <]]>3</title></entry>
+<entry><it:duration> 12:34 </it:duration><link length="12" rel='related' title="Café" href=""/><title>	Tom &amp;amp; Jerry &amp;lt;3	</title><id>urn:uuid:1</id></entry>
+<entry><title type='html'>&#x26;#xFFFF;</title><content type="text"><![CDATA[<li>'single'</li>&copy; {json: 1}  AT&T  x<y]]></content><updated>Fri 11 Feb 2014 15:01:14 GMT+0200 (UT)</updated><author><name>Entry author</name></author><published>Fri, 12 Apr 2019 09:22:23 +0945</published><id></id><link title="Alternate" href="https://example.com/alt.xml" type="application/atom+xml" rel="archives" length='abc'/></entry></feed>

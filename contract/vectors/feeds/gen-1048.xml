@@ -1,0 +1,11 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<title type="xhtml">茶</title>
+<itunes:image href=""/>
+<id>https://example.com/feed</id>
+<link title="MP3 feed" type="audio/mpeg" rel="archives" href="https://example.com/" length="20000"/>
+<logo></logo>
+<subtitle>&amp;#x1F600;&lt;br&gt;ééé&lt;br /></subtitle>
+<itunesu:author>&amp;copy; 2020 Org</itunesu:author>
+<entry><title><![CDATA[	S01E9
+]]>1 &#x3C;2
+&amp;amp;  </title><summary type="html">&#x3C;p>#7 – Interview&lt;/p></summary><updated>Mon, 07 Nov 2011 12:13:13 XYZ</updated><id>tag:x,2020:1</id></entry></feed>

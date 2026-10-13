@@ -1,0 +1,39 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><itunes:author>Jane &amp;amp; John</itunes:author>
+  <atom:link title='' type="application/xml+xhtml" rel='archives'/>
+  <link>https://example.com</link>
+  <atom:link title='Café' href="" type=""/>
+  <image><link>https://example.com/img-link</link><title>Image title</title><url></url></image>
+  <language>de-DE</language>
+  <description>&#13;
+&amp;hellip;</description>
+  <link xmlns="http://www.w3.org/2005/Atom" rel="alternate" type="application/atom+xml" href="" length="9223372036854775808" title="Café"/>
+  <itunes:summary> back\slash</itunes:summary>
+  <link xmlns="http://www.w3.org/2005/Atom" rel='alternate' href="https://example.com/alt.xml" type="text/html" length="abc"/>
+  <item><title>&#x3C;ol>&#60;li>&amp;#169;&lt;/li&gt;&#x3C;/ol>a&#13;
+ba=b&#38;c=d</title> <guid isPermaLink="false">a&#x26;b</guid> <pubDate>Mon, 28 Nov 1988 19:56:04 GMT+01:00</pubDate> <description></description> <itunes:image href=""/> <enclosure url="" length="12"/> <media:content duration="9223372036854775807" isDefault="true" fileSize='+20000' medium="document" url="https://example.com:8443/e p353.ogx" type="AUDIO/MPEG"/></item>
+  <item><enclosure url="" length='9007199254740991' type="Audio/MPEG"/>
+<itunes:image href="https://example.com/ep.jpg"/>
+<guid isPermaLink="true">Café-guid</guid>
+<pubDate>Sat, 09 November 2002 09:09:40 +1400</pubDate>
+<link> https://e.com/x </link>
+<description>😀&#128512;😀</description>
+<title><![CDATA[#865 – Interview]]></title>
+<itunes:duration>194:40</itunes:duration></item>
+  <item><pubDate>2024-01-15 10:00:00 +0000</pubDate>
+<title>&lt;h3>&amp;#;&#60;/h3&gt;</title>
+<itunes:duration>2147483.647</itunes:duration>
+<media:group><media:content type="unknown" duration="59" fileSize="9007199254740991" isDefault='1'/></media:group>
+<enclosure url="http://example.org/142.ts" length="9007199254740992" type="application/pdf"></enclosure>
+<guid>
+</guid>
+<link> https://e.com/x </link>
+<dc:date>Fri, 28 Sep 1985 04:47 +0945</dc:date></item>
+  <item><itunes:summary> café</itunes:summary>
+<enclosure url='https://xn--caf-dma.example/e p3.wav' length="-16384" type="audio/mp3"/>
+<guid></guid>
+<description><![CDATA[<p>1 <2</p>]]></description>
+<title/>
+<pubDate>Sat. 29 Jun 2598 09:26:40 GMT+0200 (UT)</pubDate>
+<itunes:duration>2:11:32</itunes:duration></item>
+  <item><title>Tom &amp; Jerr<![CDATA[y <3]]></title> <itunes:duration>93:05</itunes:duration> <enclosure length="16384" type='audio/opus'/> <dc:date>Mon, 22 May 2372 22:46 +02000</dc:date> <description>
+100%</description></item></channel></rss>

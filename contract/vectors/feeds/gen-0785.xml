@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+  <channel><podcast:funding>  spaced  </podcast:funding>
+<link></link>
+<description><![CDATA[  &;]]></description>
+<podcast:funding url=""/>
+<title>&amp;#128512;
+&#x26;#xFFFF;</title>
+<item><dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2015-09-21T20:19:</dc:date>
+<title>a&#13;
+b tab	here &#38;amp</title>
+<description>&amp;amp;amp;&#60;li>&lt;/li&gt;</description>
+<enclosure length="9223372036854775808" type="video/webm"/>
+<guid>  spaced guid  </guid>
+<media:thumbnail url=""/>
+<pubDate>1601-08-19T20:47:30Z</pubDate>
+<link>https://example.com/ep</link></item>
+<item><title>&#38;amp</title> <guid isPermaLink="true">https://example.com/item/22047</guid> <link>https://example.com/ep</link> <pubDate>1950-12-29T01:43:50</pubDate> <description><![CDATA[<div>&#169;<]]>/div&gt;&lt;br/>
+sep	back\slash&#60;hr&gt;</description> <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">Sun, 16 Oct 2112 18:47:42 -0800</dc:date> <enclosure url='ftp://files.example.com/a/b/c269.aif' length="123456789012345678" type="audio/mp3"/></item>
+<item><link>https://example.com/ep</link> <pubDate>	Friday, 03 Feb 2012 21:07:44 -0000
+</pubDate> <enclosure length="1,000,000" type="video/mp4"/> <description>&#x26;#x1F600;&lt;br&gt;cr&#13;lf'single&apos;&#x3C;hr/&gt;&lt;div&gt;&#38;&#x3C;/div></description> <podcast:transcript url="" type="application/json"/><podcast:transcript url='https://example.com/t.json' type="text/vtt" language="en"/><podcast:transcript url="https://example.com/t.json" type="" language='en'/> <enclosure length="16385" type='video/x-matroska'/> <title>&#60;b&gt;&lt;i>multi
+line&lt;/b<![CDATA[></i>    spaced    <u>&#8203;</u>]]></title></item>
+<x:title xmlns:x="urn:x">Other namespace title</x:title>
+<language> EN-US </language>
+<podcast:funding url=''>Support us</podcast:funding></channel>
+</rss>

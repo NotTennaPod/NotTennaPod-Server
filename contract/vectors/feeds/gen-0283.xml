@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><feed xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters"><link rel="self" href="https://example.com/alt.xml" type="text/html" title="Alternate"/>
+<subtitle><![CDATA[<p>&#128512;</p><br /><div>&amp;amp;</div><p>&#169;</p]]>&gt;&#128512;&#128512;&#128512;</subtitle>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">multi
+line</div></title>
+<itunes:summary>&#x3C;li&gt;back\slash&lt;/li&gt;  &#38;Lt;&lt;div&gt;a &#60; b&lt;/div&gt;&#60;p>&#x26;AMP;&#x3C;/p&gt;&#x3C;BR></itunes:summary>
+<link rel="enclosure" href="https://example.com/" title="MP3 feed" type="audio/mpeg"/>
+<id>https://example.com/feed</id>
+<itunes:author>&#60;b>Studio&#x3C;/b><![CDATA[]]></itunes:author>
+<media:thumbnail url="https://example.com/amt.jpg"/>
+<itunes:image href=''/>
+<entry><id>urn:uuid:1</id><link length="12" type="application/xml+xhtml" href="https://example.com/feed?page=2" rel="last" title="Café"/><itunes:duration>30:</itunes:duration><title>Tom &amp; Jerry &lt;3   </title><published>Wed,  31  Aug 2013 02:36:45 -1200</published><updated>Sunday, 30 Jan 2277 16:56:12 +1400</updated></entry>
+<entry><link href="https://example.com/alt.xml" rel="first" length='12' title=""/> <id> raw </id> <link title="Café" type="" href="https://example.com/feed?page=2" rel='first'/> <link rel="archives" title="MP3 feed" href="https://example.com/alt.xml" type="audio/mpeg" length="12"/> <updated>Tue, 13 Jul 1971 12:40:55 Pacific Daylight Time</updated> <published>	1066/03/29 </published> <title type="html"><![CDATA[	plain words
+e&#769;
+&#128512;  ]]></title></entry>
+<entry><title type="html"><![CDATA[&#x1F600;  <s>&copy;</s>  <3 <3]]></title>
+<published>1899-02-05T06:33:48.313</published>
+<media:content isDefault="1" type="audio/x-m4a" duration="9223372036854775807" fileSize="1,000,000"/>
+<link rel='next' title="" type="audio/mpeg" href=""/></entry>
+<entry><id>
+id
+</id><author><name>Entry author</name></author><link title="Café" type="" length="abc" rel="enclosure"/><title>#hash
+  spaced  
+&#x26;lt;b&amp;gt;escaped&#x26;lt;/b&amp;gt;</title><link href="https://example.com/pay" length="9223372036854775808" title="Alternate" type='audio/mpeg' rel="archives"/><dc:date>2010-05-08T14:16:45GMT</dc:date><published>Mon Aug 6 20:99:26 0001</published></entry>
+<entry><updated>1977-04-01T23:51:44.123450000</updated><content type="text"><![CDATA[[x]]]></content><media:content duration="0" url="HTTPS://EXAMPLE.COM/e p148.oga" type="audio/x-wav" medium='Audio' isDefault="TRUE" fileSize="18446744073709551616"/><id> raw </id><title type="html"> &#x3C;h6&gt;Tom &#38;amp; Jerry &amp;lt;3&lt;/h6>
+&amp;Lt;&#13;
+</title></entry>
+</feed>

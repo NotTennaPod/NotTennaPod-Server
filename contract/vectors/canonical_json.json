@@ -1,0 +1,245 @@
+{
+ "cases": [
+  {
+   "input": "{\"b\":1,\"a\":[true,null,\"x\"]}",
+   "output": "{\"a\":[true,null,\"x\"],\"b\":1}"
+  },
+  {
+   "input": "{\"€\":1,\"😀\":2,\"z\":3,\"\":0}",
+   "output": "{\"\":0,\"z\":3,\"€\":1,\"😀\":2}"
+  },
+  {
+   "input": "{\"\\ud83d\\ude00\":1,\"\\ufb33\":2}",
+   "output": "{\"😀\":1,\"דּ\":2}"
+  },
+  {
+   "input": " { \"a\" : [ 1 , 2 ] , \"b\" : { } } ",
+   "output": "{\"a\":[1,2],\"b\":{}}"
+  },
+  {
+   "input": "\"a\\u0001\\b\\\"\\\\\\/ \\u007f\\u00e9\\u2028\"",
+   "output": "\"a\\u0001\\b\\\"\\\\/ é\u2028\""
+  },
+  {
+   "input": "\"\\u0000\\u001f\\u0020\"",
+   "output": "\"\\u0000\\u001f \""
+  },
+  {
+   "input": "9007199254740991",
+   "output": "9007199254740991"
+  },
+  {
+   "input": "-9007199254740991",
+   "output": "-9007199254740991"
+  },
+  {
+   "input": "0",
+   "output": "0"
+  },
+  {
+   "input": "-5",
+   "output": "-5"
+  },
+  {
+   "input": "[]",
+   "output": "[]"
+  },
+  {
+   "input": "{}",
+   "output": "{}"
+  },
+  {
+   "input": "null",
+   "output": "null"
+  },
+  {
+   "input": "true",
+   "output": "true"
+  },
+  {
+   "input": "false",
+   "output": "false"
+  },
+  {
+   "input": "[[[[[[[[[[1]]]]]]]]]]",
+   "output": "[[[[[[[[[[1]]]]]]]]]]"
+  },
+  {
+   "input": "{\"a\":{\"b\":{\"c\":[{\"d\":\"e\"}]}}}",
+   "output": "{\"a\":{\"b\":{\"c\":[{\"d\":\"e\"}]}}}"
+  },
+  {
+   "error": true,
+   "input": "1.5"
+  },
+  {
+   "error": true,
+   "input": "1e3"
+  },
+  {
+   "error": true,
+   "input": "1E3"
+  },
+  {
+   "error": true,
+   "input": "-0"
+  },
+  {
+   "error": true,
+   "input": "9007199254740992"
+  },
+  {
+   "error": true,
+   "input": "-9007199254740992"
+  },
+  {
+   "error": true,
+   "input": "01"
+  },
+  {
+   "error": true,
+   "input": "+1"
+  },
+  {
+   "error": true,
+   "input": ".5"
+  },
+  {
+   "error": true,
+   "input": "{\"a\":1} x"
+  },
+  {
+   "error": true,
+   "input": "{\"a\":1,\"a\":2}"
+  },
+  {
+   "error": true,
+   "input": "{\"a\":1,\"b\":{\"c\":1,\"c\":2}}"
+  },
+  {
+   "error": true,
+   "input": "\"\\ud800\""
+  },
+  {
+   "error": true,
+   "input": "\"\\udc00\""
+  },
+  {
+   "error": true,
+   "input": "\"\\udc00\\ud800\""
+  },
+  {
+   "error": true,
+   "input": "\"\\ud800\\u0041\""
+  },
+  {
+   "error": true,
+   "input": "\"a\u0001\""
+  },
+  {
+   "error": true,
+   "input": "\"\t\""
+  },
+  {
+   "error": true,
+   "input": "\"\\x\""
+  },
+  {
+   "error": true,
+   "input": "\"\\u12\""
+  },
+  {
+   "error": true,
+   "input": "[1,]"
+  },
+  {
+   "error": true,
+   "input": "{\"a\":1,}"
+  },
+  {
+   "error": true,
+   "input": "{a:1}"
+  },
+  {
+   "error": true,
+   "input": "tru"
+  },
+  {
+   "error": true,
+   "input": "nul"
+  },
+  {
+   "error": true,
+   "input": ""
+  },
+  {
+   "error": true,
+   "input": " "
+  },
+  {
+   "error": true,
+   "input": "\"abc"
+  },
+  {
+   "error": true,
+   "input": "["
+  },
+  {
+   "error": true,
+   "input": "{\"a\"}"
+  },
+  {
+   "error": true,
+   "input": "'a'"
+  },
+  {
+   "error": true,
+   "input": "NaN"
+  },
+  {
+   "error": true,
+   "input": "Infinity"
+  },
+  {
+   "error": true,
+   "input": "1.0"
+  },
+  {
+   "error": true,
+   "input": "-1.5e2"
+  },
+  {
+   "error": true,
+   "input": "﻿{}"
+  },
+  {
+   "input": "\"\\uFFFF\"",
+   "output": "\"￿\""
+  },
+  {
+   "input": "{\"a\":\"\\uD83D\\uDE00\"}",
+   "output": "{\"a\":\"😀\"}"
+  },
+  {
+   "input": "[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]",
+   "output": "[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]"
+  },
+  {
+   "error": true,
+   "input": "[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]"
+  },
+  {
+   "error": true,
+   "input_hex": "22ff22"
+  },
+  {
+   "error": true,
+   "input_hex": "22c322"
+  },
+  {
+   "error": true,
+   "input_hex": "22eda08022"
+  }
+ ],
+ "suite": "canonical_json"
+}

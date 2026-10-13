@@ -1,0 +1,10 @@
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><podcast:funding>Support us</podcast:funding><image><url></url><title>Image title</title></image><item><title> &amp;mdash;</title>
+<guid isPermaLink="false">urn:uuid:09877d5d</guid>
+<link></link>
+<pubDate>1983-12-01T03:12:29.535-0000</pubDate>
+<enclosure url="https://example.com/a.b/café/317.mp3.zip" length="1,000,000" type="unknown"/>
+<enclosure url="https://user:pass@media.example.net/café/296.mp4" length="12" type='text/html'/>
+<atom:link rel="" length="9223372036854775808" title='' href=""/>
+<x:foo xmlns:x="urn:x"><title><![CDATA[Nested title]]></title></x:foo></item><item><description>&#x3C;br&gt;&#60;p&gt;Line&#60;br&gt;break&#x3C;/p&gt;&lt;div>&amp;;&#x3C;/div&gt; &#x26;euro;&#60;li&gt;é&lt;/li></description><guid isPermaLink="true">urn:uuid:831a77c6</guid><title><![CDATA[&hellip; #336 – Interview AT&T]]></title><media:thumbnail/><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"></content:encoded><link>https://example.com/ep</link><pubDate>Tuesday, 13 Dec 2304 10:15:16 +0945</pubDate></item><podcast:funding>&#x3C;b>x&#x3C;/b></podcast:funding><podcast:funding>Support us</podcast:funding><description></description><language>de-DE</language><title>&#38;mdash;&quot;quoted"&#x26;;</title><link>https://example.com</link></channel>
+</rss>

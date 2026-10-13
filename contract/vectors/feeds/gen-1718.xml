@@ -1,0 +1,17 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<itunes:summary>&#60;li&gt;cr&#13;lf&lt;/li></itunes:summary><link title="Alternate" rel="alternate" href="https://example.com/pay" type="text/html"/><itunes:image href=""/><author><name>C&amp;D</name></author><updated>05 Nov 1976 25:28:56 -0000</updated><title type="text"><![CDATA[&amp;amp;AT&T#hash]]></title><subtitle type="plain"><![CDATA[&#169;<br><hr><p/>]]></subtitle><id>urn:x</id><entry><author><name>Entry author</name></author><updated>Friday, 04 Aug 93 04:03</updated><published>2006-11-17T11:02:59</published><content type="text">	&#x26; &amp;hellip;&#x3C;br/&gt;</content><title type="plain">
+#664 – Interview	</title><link rel="enclosure" length="20000" href="https://example.com:8443/a/b/c360.3gp?dl=1.0" title="Alternate"/><id>
+id
+</id><link href="https://example.com:8443/ep170.webm" title="Café" rel="alternate" type="application/atom+xml" length="12"/></entry><entry><updated>2472-09-10T22:20:16.282 +0530</updated><itunes:duration>35791:23:48</itunes:duration><link rel="self" type='' length="20000" href="https://example.com/a.b/café/273.OGG" title="Café"/><updated>Sunday, 07 Dec 1975 15:56</updated><title type="html"><![CDATA[第808集]]></title><summary></summary><content type="text">&lt;li&gt;&amp;#0;&lt;/li>&#x3C;img src="x.png"&gt;</content><id>tag:x,2020:1</id></entry><entry><link title="" href="https://example.com/" length="20000" type="application/xml+xhtml" rel=""/>
+<published>&#13;
+Sat Jan 22 08:40:33 2011 </published>
+<link length="20000" rel="Next" title='MP3 feed' href="https://example.com:8443/café/87.txt"/>
+<title type='HTML'>&amp;mdash;
+&amp;AMP;
+&#38;lt;b&#x26;gt;escaped&amp;lt;/b&#38;gt;</title>
+<podcast:transcript url="" type="application/srt"/>
+<id> raw </id>
+<updated>Sun, 20 Feb 1752 22:54</updated>
+<link rel="hub" type='application/xml+xhtml' href="https://example.com/feed?page=2" title="MP3 feed" length='abc'/>
+<itunes:duration>108:46</itunes:duration></entry>
+</feed>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xml:lang="">
+  <itunes:author>&amp;copy; 2020 Org</itunes:author>
+  <link rel="payment" title="MP3 feed" href="https://example.com/alt.xml" length="20000" type=""/>
+  <updated>2319/01/15T19:50:32</updated>
+  <subtitle type='html'><![CDATA[	]]></subtitle>
+  <title type="plain">multi
+line
+&#38;copy;
+😀</title>
+  <entry><content>a&lt;BR&gt;</content><pc:chapters/><link title="" type="application/xhtml+xml" rel="hub" href="//example.com/e p4.aif"/><title type="text">{json: 1}  a&#13;
+b</title><summary type="HTML"><![CDATA[
+&nbsp;]]></summary><id></id><podcast:transcript url="" type="text/plain" language="en"/><podcast:transcript url="https://example.com/t.vtt" type='' language='en'/><podcast:transcript url="" type='application/srt' language="en"/><published>Wednesday, 04 Nov 11 14:40 +0530</published><updated>FRIDAY 7 Feb 1975 21:33:05 GMT+0000 (PST)</updated></entry>
+</feed>

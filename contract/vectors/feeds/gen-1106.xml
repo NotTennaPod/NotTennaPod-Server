@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+<link rel='enclosure' type="application/xhtml+xml" href="" title="MP3 feed"/><icon>https://example.com/icon.png</icon><link length="abc" type="" href='ftp://files.example.com/caf&#233;/107.wma#t=10' rel=""/><subtitle type="plain"><![CDATA[<div>&amp;</div> 1 <2]]></subtitle><itunes:image href="https://example.com/ai.jpg"/><id>https://example.com/feed</id><title>Episode 312
+&amp;#;</title><entry><id> raw </id>
+<link href="https://example.com/feed?page=2" title="Caf&#233;" type="application/xml+xhtml" rel="alternate"/>
+<link title="MP3 feed" href="https://example.com/alt.xml" rel="first" type="application/xhtml+xml"></link>
+<summary type="html">&#160;&amp;unknown;</summary>
+<title>x&#x3C;y
+&#38;#;
+&#38;Lt;</title>
+<updated>1601-06-04T20:14:59.733 +0100</updated></entry><entry><content></content>
+  <summary type="html"></summary>
+  <title type="text">R&#38;DS01E636</title>
+  <updated>Fri, 09 November 1990 12:18:12 -0000</updated>
+  <link type="application/rss+xml" title="MP3 feed" length="20000" href='https://example.com/alt.xml' rel="related"/>
+  <id></id></entry><entry><link href="https://example.com/alt.xml" length="12" rel="self" title="MP3 feed"/> <link href="https://example.com/" title="Alternate" rel='archives' length="abc"/> <id>
+id
+</id> <media:content medium='document' fileSize="2147483648" url="//example.com/caf&#233;/168.html" type="audio/*"/> <link href="https://example.com/alt.xml" rel="self" type="application/xml+xhtml" length='9223372036854775808'/> <title>&#38;#x1F600;  &#x3C;blockquote&gt;a
+  b&lt;/blockquote>  Tom &amp; Jerry &#x3C;3</title> <summary type="text"><![CDATA[
+{json: 1}<p></p>]]></summary></entry><entry><updated>Donnerstag,  30 Sep 1997 06:53:17 +0100</updated>
+<title type="html">&#38;#xA9; &#38;mdash; &#160;</title>
+<podcast:transcript url="" type="text/vtt"/><podcast:transcript url="https://example.com/t.vtt" type="Application/JSON"/><podcast:transcript url="https://example.com/t.json" type="Application/JSON" language="en"/>
+<id>
+id
+</id>
+<published>Sat, 	13 	Jan 	1601 	16:48:58 +0200</published>
+<content type="plain">&apos;single'&lt;br>&#xA0;AT&#38;T</content>
+<itunes:duration>8722</itunes:duration></entry>
+</feed>

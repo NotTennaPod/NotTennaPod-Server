@@ -1,0 +1,29 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><description><![CDATA[<img src="x" alt="y"/><p>"quoted"</p>	 Folge 7: Über alles<b]]>r&gt;
+
+&amp;hellip;&apos;single&apos;	&#x26;euro;&lt;li>&amp;#128512;&#60;/li&gt;</description><itunes:subtitle>[x]
+R&amp;D
+ </itunes:subtitle><title>&lt;b>[x]&#60;/b&gt;
+&#38;#169;</title><podcast:funding url="">&#60;b>x&#60;/b></podcast:funding><podcast:funding url=""></podcast:funding><itunes:image href="https://example.com/it.jpg"/><language>TR</language><podcast:funding url="https://example.com/donate">&#x3C;b>x&#x3C;/b&gt;</podcast:funding><item><link>https://example.com/ep</link>
+  <itunes:image/>
+  <guid isPermaLink="true">https://example.com/item/66306</guid>
+  <itunes:subtitle>  padded  
+ leading
+&amp;quot;q&amp;quot;</itunes:subtitle>
+  <title>&amp;#x;</title>
+  <itunes:duration>1e2</itunes:duration></item><item><title><![CDATA[<span style="color:red">multi
+line</span> a
+  b café]]></title>
+<link> https://e.com/x </link>
+<pubDate>Thu Sep 20 12:04:50 1601</pubDate>
+<dc:date>ZqonoDJwer.mOqhaho</dc:date>
+<content:encoded></content:encoded>
+<itunes:summary>&#13;
+&#38;mdash;&amp;amp&lt;img src="x.png"&gt;第7集&lt;br&gt; &#38;amp;amp;</itunes:summary>
+<itunes:duration>1.5:00</itunes:duration>
+<enclosure url="https://user:pass@media.example.net/144.webm?dl=1.0" length="" type="video/webm"/></item><item><content:encoded><![CDATA[<br/><l]]>i>back\slash&lt;/li>&lt;hr>😀é&lt;li>&#x26;mdash;&lt;/li>&#x3C;div&gt;#hash&lt;/div&gt;	&amp;#65;&#x26;#66;</content:encoded><enclosure url="HTTPS://EXAMPLE.COM/222.caf" length="-16384" type="application/x-bittorrent"/><description>&lt;div&gt;  <![CDATA[spaced  </div>مرحبا<p>a
+  b</p>]]></description><media:content type="audio/ogg" duration="9223372036854775807" url="https://xn--caf-dma.example/dir.with.dots/ep219.mp4" fileSize="1,000,000" medium="audio"/><media:content url=' HTTPS://EXAMPLE.COM/ep340.3gp ' medium='video' type="Audio/MPEG" isDefault="true" duration="0" fileSize="٢٠٠٠٠"></media:content><link>https://example.com/ep</link><guid>https://example.com/item/40727</guid><title>S01E508
+&amp;#xA9;
+Episode 12</title><pubDate>&#13;
+Sun,27 Feb 2135 05:38:18 +0200&#13;
+</pubDate><itunes:duration>4500</itunes:duration><media:content isDefault="false" fileSize="1,000,000" url='https://user:pass@media.example.net/45.aif?a=1&amp;b=2' duration="59" medium='audio' type=""/></item></channel> </rss>

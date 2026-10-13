@@ -1,0 +1,39 @@
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>TR</language>
+<title><![CDATA[&#169; ]]>1 &lt;2 שלום</title>
+<description><![CDATA[ caféaaaaaaaa😀😀😀Folge 7: Über alles<div>&euro;</div>ééé<br />&AMP;]]></description>
+<link> https://example.com/ </link>
+<image><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link><title>Image title</title></image>
+<atom:link rel="next" length="20000" href="https://example.com/feed?page=2" type="application/xhtml+xml"/>
+<item><pubDate>Fri, 14 Jan 2163 13:27:20 +0200</pubDate>
+<enclosure url="" length="18446744073709551616" type="audio/"/>
+<description></description>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" type="audio/" duration="abc" isDefault="1" url="https://example.com:8443/175.xyz" fileSize="2147483648"/>
+<title>&#x26;amp
+&amp;unknown;</title>
+<link>https://example.com/ep</link></item>
+<item><guid isPermaLink="false"> </guid>
+  <pubDate>Wed., 25 Oct 1989 22:51:47 +0945</pubDate>
+  <link> https://e.com/x </link>
+  <description>  {json: 1}AT&amp;T&#60;br&gt;&lt;li&gt; &lt;/li>  &#38;AMP; 😀</description>
+  <title><![CDATA[{json: 1]]>}
+Line&#60;br>break</title>
+  <enclosure url="https://user:pass@media.example.net/ep343.webm" length="20000.0" type="application/octet-stream"/>
+  <enclosure length="00020000" type="application/ogg"/>
+  <enclosure url="" length="4294967296" type="image/*"/></item>
+<item><title>x&#60;y</title> <guid isPermaLink="false"></guid> <link></link> <pubDate>Sun, 15 Mar 2331 16:16:46 CETCEST</pubDate> <description>&lt;img src=&quot;x.png">&lt;br>&#x3C;/br>	http://example.com/?a=1&amp;b=2&amp;copy;&lt;br>&#x3C;div>שלום&lt;/div>&lt;p&gt;&lt;3 &#60;3&#60;/p>&lt;li&gt;trailing &#60;/li&gt;&lt;br&gt;</description> <enclosure type="audio/aac"/> <sc:chapters><sc:chapter start="00:54:05" image="https://example.com/ch.png" title="&lt;b>x&lt;/b>"/><sc:chapter title="😀" image='https://example.com/ch.png' start="35791:23:47.647" href="https://example.com/ch"/><sc:chapter start='02:36:46' href="https://example.com/ch"/><sc:chapter href='' title="😀" image="https://example.com/ch.png" start="0:0:3.4028235e38"/><sc:chapter start="117:52" title="Intro" href=""/></sc:chapters></item>
+<item><enclosure url="" length="123456789012345678" type='audio/x-wav'/>
+  <title>&#x26;#;</title>
+  <pi:transcript type="text/vtt"/><pi:transcript url="https://example.com/t.json" language="en"></pi:transcript><pi:transcript url='https://example.com/t.vtt' type="application/srt"/>
+  <pi:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/>
+  <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[😀
+
+&amp<BR>]]></content:encoded>
+  <link></link>
+  <source url="https://example.com/s"><title>Source title</title></source>
+  <guid></guid>
+  <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"/>
+  <description>  &#x26;copy;multi
+line&lt;br&gt;</description>
+  <pubDate>10 August 2307 21:37:25 +0530</pubDate></item></channel></rss>

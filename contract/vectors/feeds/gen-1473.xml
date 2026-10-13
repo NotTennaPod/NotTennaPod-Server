@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:season>2</podcast:season>
+<language> EN-US </language>
+<title>tab	here
+S01E647
+&#x3C;sup&gt;&amp;amp;&#60;/sup&gt;</title>
+<podcast:funding url="https://example.com/donate"></podcast:funding>
+<itunes:image href="https://example.com/it.jpg"/>
+<podcast:funding>&lt;b&gt;x&lt;/b></podcast:funding>
+<podcast:funding>Support us</podcast:funding>
+<link> https://example.com/ </link>
+<itunes:subtitle><![CDATA[ &#xD800;  spaced    ]]></itunes:subtitle>
+<item><enclosure url="ftp://files.example.com/café/107.wma#t=10" length="16384" type='video/x-matroska'/> <link> https://e.com/x </link> <itunes:duration>1e2</itunes:duration> <atom:link rel="related" title="Café" type="text/html"/> <guid isPermaLink="false">urn:uuid:628f88c9</guid> <itunes:image href=" https://e.com/i.png "/> <title><![CDATA[
+&Lt; ]]></title> <podcast:socialInteract uri='' protocol='activitypub'/> <pubDate>x, 	01 Nov 24 10:36 +0530</pubDate></item>
+<item><enclosure url="https://xn--caf-dma.example/ep29.png?auth=yes" length="16384" type=" audio/mpeg"/>
+<title><![CDATA[&lt]]></title>
+<enclosure url='HTTPS://EXAMPLE.COM/café/303.m3u8?a=1&amp;b=2' length="2147483648" type="image/jpeg"/>
+<link></link>
+<pubDate> Monday, 02 Oct 48 20:08:56
+</pubDate>
+<enclosure url="" length="-9223372036854775808" type='unknown'/>
+<itunes:duration>01:30:00</itunes:duration>
+<podcast:transcript url="https://example.com/t.vtt" type="application/srt"/><podcast:transcript url="https://example.com/t.vtt" type="application/srt"/>
+<guid></guid></item>
+<item><title><![CDATA[<big>&amp;</big>]]></title> <guid> </guid> <link>https://example.com/ep</link> <pubDate>20 May 54 14:37 +1400</pubDate> <description>&#60;br/&gt;Line&#x3C;br&gt;break&lt;br&gt;
+&amp;lt</description> <enclosure url="https://example.com:8443/a/b/c105.aif" type="audio/mpeg; charset=binary"/> <media:content url="//example.com/62.xyz" type="audio/wav" isDefault="false" medium="video" duration="2147483"/> <media:content fileSize="123456789012345678" url="https://user:pass@media.example.net/144.webm?dl=1.0" duration="01:00" isDefault="1" type="audio/ogg"/> <media:content isDefault="1" url="https://user:pass@media.example.net/dir.with.dots/ep264.ogx" medium="audio" type="audio/mp3" fileSize="2e5"/> <podcast:transcript url="https://example.com/t.json" type="text/html" language="en"/><podcast:transcript url='' type="text/plain"/></item>
+<item><title>&#x3C;h6>&#128512;&lt;/h6>&lt;p&gt;Para&lt;/p&gt;</title>
+<guid isPermaLink="true"></guid>
+<link> https://e.com/x </link>
+<itunes:duration>1954</itunes:duration>
+<enclosure url="" length="9223372036854775808" type="text/html"/></item></channel></rss>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:chapters="http://podlove.org/simple-chapters">
+  <link href="https://example.com/pay" type="application/xml+xhtml" rel="payment" length="20000"/>
+<title type="text"><![CDATA[
+http://example.com/?a=1&b=2
+&lt  ]]></title>
+<id>urn:x</id>
+<link title="MP3 feed" href="https://example.com/" type="text/html" rel="hub" length="20000"/>
+<link title="" href='https://example.com/pay' rel="related" type="text/html" length="9223372036854775808"/>
+<itunes:image href=""/>
+<link rel="enclosure" title="Alternate"/>
+<entry><link rel='first' href="https://example.com:8443/e p72.m4v" length='12'/> <updated>Sunday, 07 Jan 1994 06:53:48 +0100</updated> <content type="text">&#x3C;p&gt;trailing &lt;/p></content> <id>
+id
+</id> <summary type="HTML">éééa</summary> <podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.vtt" type="application/srr" language="en"/><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.vtt" type=""></podcast:transcript> <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x26;#169;
+"quoted"</div></title></entry>
+<entry><summary type="html">&lt;li>Tom &#38; Jerry &lt;3&lt;/li&gt;&#60;div>&apos;single'&#x3C;/div&gt;&#60;br></summary><title type="html">  spaced  </title><id> raw </id><published>Sat, 07 Jul 1979 11:55:15 +0200</published><updated>1971-09-30T23:15:40Z</updated><link href="https://example.com/alt.xml" type='application/atom+xml' title="" rel="archives" length="9223372036854775808"/></entry>
+  </feed>

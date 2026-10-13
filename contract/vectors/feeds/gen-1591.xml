@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<id> raw </id><title type="text">a
+  b</title><subtitle type='html'></subtitle><link length='20000' type="audio/mpeg" rel="alternate" href='https://example.com/pay' title=""/><author><name>C&amp;D</name></author><link href="https://example.com/pay" type="application/rss+xml" title="MP3 feed" length='abc'/><updated> 	 2362-11-16T04:42:52  </updated><entry><published>1066-04-25T16:04:43CEST</published>
+<summary>&lt;p&gt;😀&lt;/p>&lt;li>&apos;single&apos;&lt;/li&gt;&lt;p>&lt;/p&gt;&#128512;😀ééé&lt;li&gt;#7 – Interview&#60;/li&gt;
+&amp;mdash;aaaaaaa</summary>
+<author><name>Entry author</name></author>
+<title type="html"><![CDATA[&#169;"quoted"]]></title>
+<id></id>
+<link type="audio/mpeg" title="MP3 feed" rel="payment"></link>
+<content>&lt;br>  &#38;AMP;cr
+lf&lt;br&gt;&#x3C;p&gt;&#x3C;/p&gt;&#60;li&gt;#7 – Interview&lt;/li></content></entry><entry><link type="application/atom+xml" href="https://example.com/pay" title="MP3 feed" length="12" rel="self"/>
+<author><name>Entry author</name></author>
+<id></id>
+<title><![CDATA[Episode 423]]></title></entry><entry><summary></summary> <updated> Fri 22 Aug 1969 18:58:32 GMT+0530 (MST)&#13;
+</updated> <content type="HTML"><![CDATA[<p>trailing </p>]]></content> <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x3C;u>café&lt;/u&gt;  &#xA0;</div></title> <link type="text/html" title="Café" length="20000" href="https://cdn.example.com/a/b/c368.m4b" rel="related"/> <id>tag:x,2020:1</id> <published>	Mon, 13 Mar 2000 21:38 +0100  </published></entry><entry><content type="xhtml"><![CDATA[<p>&#;</p>]]></content> <link href="https://example.com/pay" type="" rel='next'/> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">13794</itunes:duration> <published>Wed 23 Aug 2023 13:11:25 GMT+0200 (CEST)</published> <id> raw </id> <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;quot;q&#38;quot;</div></title> <author><name>Entry author</name></author> <p2:transcript url="" type="application/srt" language="en"/><p2:transcript url="" type="text/plain"/><p2:transcript url="https://example.com/t.vtt" type="application/json"/></entry>
+  </feed>

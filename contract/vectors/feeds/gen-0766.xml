@@ -1,0 +1,37 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link>https://example.com</link> <atom:link type='application/xml+xhtml' title="MP3 feed" rel="alternate"></atom:link> <atom:link href='https://example.com/alt.xml' title="" type="application/xhtml+xml" rel="self"/> <item><title>&lt;div&gt;&#38;#x;&lt;/div>
+Line&lt;br&gt;break
+&lt;cite&gt;&#38;euro;&#60;/cite></title><guid isPermaLink="false"> </guid><link></link><pubDate>Fri, 20 May 2005 01:03 z</pubDate><description></description><cont:encoded><![CDATA[<hr/>a
+  b]]></cont:encoded><itunes:image/><it:duration>1e2</it:duration><enclosure url="https://xn--caf-dma.example/e p82.mpga" length="20000.0" type="video/x-matroska"/><media:content isDefault='true' duration="59" fileSize='12' medium="document"/><p2:chapters url="https://example.com/ch.json" type="application/json+chapters"/></item> <item><it:author>Item author</it:author>
+<title>שלום  &lt;3 &lt;3</title>
+<link> https://e.com/x </link>
+<itunes:image href="https://example.com/ep.jpg"/>
+<enclosure url='' length="9223372036854775807" type="application/x-bittorrent"/>
+<itunes:duration>15033</itunes:duration>
+<description><![CDATA[<br></br>]]></description>
+<itunes:subtitle> &#x26;#x1F600; &#x26;amp;amp; &amp;;	</itunes:subtitle>
+<media:description type="plain"></media:description>
+<it:summary><![CDATA[ééé<hr/><li><p>Para</p></li> &copy;
+
+1 <2]]></it:summary>
+<p2:transcript url="https://example.com/t.json" type='application/json' language="en"/><p2:transcript url="https://example.com/t.json" language="en"/></item> <item><cont:encoded><![CDATA[ R&D
+
+&amp]]>;amp;&#60;p&gt; leading&lt;/p></cont:encoded><enclosure url="https://example.com/a.b/ep396.aac" length="16383" type="text/html"></enclosure><pubDate>Thu 26 Apr 2221 15:51:22 GMT+0100 (Cent</pubDate><title><![CDATA[<b><p>Para</p>]]></title><enclosure url="" length='' type="video"/><guid isPermaLink="false">a&amp;b</guid><enclosure length="16383" type="text/plain"/><description><![CDATA[x<y<li>&apos;a&apos;</li>]]></description><p2:chapters url="https://example.com/ch.json" type="application/json+chapters"/></item> <item><cont:encoded>&lt;img>&#x3C;div&gt;plain words&lt;/div>مرحبا</cont:encoded>
+<title>茶&#38;lt;b&amp;gt;</title>
+<media:content type='audio/wav' medium="document" isDefault='1' url="https://xn--caf-dma.example/65.wav" fileSize="0x4E20" duration="abc"/>
+<media:content medium='Audio' type="image/png" fileSize="18446744073709551616" duration="59"/>
+<it:duration>12530</it:duration>
+<description>&#60;div&gt;&lt;img src="x.png"&gt; cover&#x3C;/div&gt;&#60;img src="x.png">&lt;br /&gt; ​ leading
+caf&#xE9;&#x3C;p&gt;&#60;/p&gt;&#x3C;p>back\slash&lt;/p></description>
+<enclosure length="2147483648" type='audio/*'/>
+<guid isPermaLink="false">
+</guid>
+<link></link>
+<media:content fileSize="4294967296" type="audio/opus" isDefault="TRUE"/>
+<enclosure url="https://example.com/a.b/ep256.mp3" length="0" type="application/json"/>
+<it:subtitle>&amp;#65;&amp;#66;</it:subtitle></item> <item><description></description> <enclosure length="16385" type="audio/ogg"/> <cont:encoded></cont:encoded> <link></link> <it:subtitle>&amp;quot;q&#x26;<![CDATA[quot;
+trailing 
+&Lt;]]></it:subtitle> <dc:date>2003-12-12T10:31:02.858 -0000</dc:date> <pubDate>Wed, 30 JULY 2010 18:44:29 +0530</pubDate> <guid isPermaLink="false"></guid></item> <item><enclosure url="HTTPS://EXAMPLE.COM/café/337" length="2147483647" type=" audio/mpeg"/> <description> leading&#60;li&gt;Tom &amp; Jerry &lt;3&lt;/li>😀&lt;li&gt;茶&#60;/li&gt;&#x3C;d<![CDATA[iv>&</div>&#xA9;<br>	&#0;<li>&AMP;</li>]]></description> <guid isPermaLink="false">Caf&#233;-guid</guid> <title>&#13;
+&amp;#;&amp;copy;茶	</title> <media:thumbnail/> <link>https://example.com/ep</link> <p2:chapters type='application/json+chapters'/> <media:content type="AUDIO/MPEG" medium="image" duration="59" url="ftp://files.example.com/e p291.MP3" fileSize="16385" isDefault="TRUE"></media:content> <media:content url=" HTTPS://EXAMPLE.COM/café/352.mid " duration="1" type="audio/mp4" fileSize='-9223372036854775808' medium="video"/></item> <language>fr
+</language> <itunes:summary>&lt;br&gt;&#x3C;/br></itunes:summary> <atom:link href="https://example.com/" rel="next" length="abc"/> <description>100%&lt;br></description> <title>&lt;b&gt;&#38;#; &lt;font color=&quot;red&quot;>sep&#x3C;/font&gt; &#x26;AMP;</title> <atom:link length="20000" rel="payment" href='https://example.com/feed?page=2' title="Alternate"/> <it:subtitle>😀&amp;#65;&#38;#66;café</it:subtitle> <media:thumbnail url=""/> <itunes:image href=" https://example.com/sp.jpg "/> <dc:creator>DC Creator</dc:creator> <p2:funding url="https://example.com/donate">&lt;b>x&lt;/b&gt;</p2:funding></channel>
+  </rss>

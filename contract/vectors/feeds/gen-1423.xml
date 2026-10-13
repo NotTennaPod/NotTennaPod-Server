@@ -1,0 +1,37 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:image href="https://example.com/it.jpg"/>
+  <title>&amp;#;
+a &gt; b
+&lt;code&gt;x&#x3C;y&#x3C;/code></title>
+  <itunes:summary>&#60;hr/&gt;</itunes:summary>
+  <link>https://example.com</link>
+  <image><url>  https://example.com/ws.png
+</url><title>Image title</title></image>
+  <language>TR</language>
+  <description>&#60;div>&#38;lt;b&amp;gt;escaped&amp;lt;/b&#x26;gt;&#x3C;/div&gt;Tom &#x26;amp; Jerry &#38;<![CDATA[lt;3]]></description>
+  <atom:link href="https://xn--caf-dma.example/e p146.jpg?a=1&amp;b=2" rel="self" type="audio/mpeg" length="9223372036854775808" title="Alternate"/>
+  <itunes:subtitle>  ש&#x5DC;ו&#1501; &#x26;#169;
+</itunes:subtitle>
+  <item><media:content duration="2147483648" medium="video" url='HTTPS://EXAMPLE.COM/ep130.amr' fileSize="123456789012345678" isDefault='false' type='audio/*'/>
+<itunes:duration>17118</itunes:duration>
+<enclosure url=" ftp://files.example.com/a/b/c253.wma " length="00020000" type="application/json"/>
+<title>&lt;sup&gt;&amp;nbsp;&lt;/sup&gt;</title>
+<description></description>
+<itunes:summary>😀😀😀plain words&lt;hr/>ééééé&#233;café&lt;br>
+​	back\slash</itunes:summary>
+<content:encoded></content:encoded>
+<guid>a&amp;b</guid>
+<m:content duration="2147484" type="image/png" isDefault="false" medium="document" fileSize="-0"/>
+<pubDate>Fri, 33 Sep 1066 08:46:50 +0000</pubDate>
+<link> https://e.com/x </link>
+<m:content fileSize="-9223372036854775808" type='Audio/MPEG' isDefault="false" duration="2147483" url='https://cdn.example.com/dir.with.dots/ep22.OGG?dl=1.0'/></item>
+  <item><guid isPermaLink="false">  spaced guid  </guid>
+<link></link>
+<description>😀😀😀</description>
+<title>
+&#x26;#xA9;  </title>
+<pubDate>0999-05-10T03:58:50-1200</pubDate>
+<enclosure length="-1" type='image/png'/>
+<itunes:image href=" https://e.com/i.png "/>
+<podcast:socialInteract uri="" protocol='activitypub'/>
+<atom:link rel="self" href="//example.com/62.xyz" length='abc' title="MP3 feed" type="application/xml+xhtml"/>
+<media:content type="audio/mp3" isDefault="true" duration='0' medium="video" fileSize="9007199254740993"/></item></channel></rss>

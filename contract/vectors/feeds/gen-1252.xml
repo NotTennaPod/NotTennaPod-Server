@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0"> <channel><podcast:funding/>
+<podcast:funding></podcast:funding>
+<description>&#60;img src=&quot;x.png"&gt;&#128512;&#128512;&#60;br /&gt;&lt;br/&gt;&lt;div>&#38;#169;&#60;/div&gt;</description>
+<mrss:thumbnail url=""/>
+<title><![CDATA[  &#x1F600;]]></title>
+<language>fr
+</language>
+<link>https://example.com</link>
+<itunes:subtitle>&amp;#;  e&#769;  trailing </itunes:subtitle>
+<podcast:funding url="https://example.com/donate">&lt;b&gt;x&#x3C;/b&gt;</podcast:funding>
+<item><pubDate>Fri JUN 8 09:52:55 1979</pubDate>
+  <description>&#38;#x1F600;&lt;br&gt;</description>
+  <cont:encoded><![CDATA[
+&#33590;]]></cont:encoded>
+  <guid>Café-guid</guid>
+  <enclosure url="https://example.com:8443/e p72.m4v" length="-0" type="audio/mp4"/>
+  <link> https://e.com/x </link>
+  <mrss:content isDefault='1' url="https://cdn.example.com/dir.with.dots/ep316.flac?auth=yes" duration=" 60" type="video/quicktime" fileSize="0"/>
+  <title><![CDATA[<tt>AT&T</tt><p>Para<]]>/p></title>
+  <itunes:summary><![CDATA[e&#769;<li>sep</li>100%<br>]]></itunes:summary>
+  <enclosure length="2147483647" type="audio/aac"/>
+  <mrss:content url="HTTPS://EXAMPLE.COM/ep104.m4v?a=1&amp;b=2" type="" isDefault="false" fileSize="+20000"/></item></channel>
+  </rss>

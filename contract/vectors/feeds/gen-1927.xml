@@ -1,0 +1,24 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters"> <id></id> <media:thumbnail url="https://example.com/amt.jpg"/> <subtitle type="text">&#x3C;img>&#60;div&gt;"quoted&quot;&lt;/div&gt;  leading100%&lt;br&gt;&lt;3 &lt;3&#x3C;br></subtitle> <link title="MP3 feed" rel="last" href="https://example.com/feed?page=2" length="12"/> <title type="plain">مرحبا
+&lt;span>Tom &amp;am<![CDATA[p; Jerry &lt;3</span>]]></title> <author><name>Émile</name></author> <entry><content type="HTML">
+t<![CDATA[ab	here]]></content>
+<summary>a &#60; b&#60;br&gt;</summary>
+<updated>Samstag, 14 Oct 2000 11:24:43 +0530</updated>
+<title type="xhtml">&amp;#xA9;  &lt;p&gt;Para&#x3C;/p&gt;</title>
+<published>Fri Feb 25 10:11 1977</published>
+<link rel='related' href="https://example.com/feed?page=2" title="" length="abc" type="application/atom+xml"></link>
+<itunes:duration>5430.842</itunes:duration>
+<link href="https://example.com:8443/café/283.xyz" rel="" type="audio/mpeg" title=""/>
+<itunes:episodeType>full</itunes:episodeType></entry> <entry><id>tag:x,2020:1</id> <updated>Sat, 08 Jul 2311 20:33 +1400;</updated> <link href="https://example.com/alt.xml" length="abc" type="audio/mpeg" rel="alternate"/> <title>multi
+line</title> <link title="Café" type="text/html" rel="enclosure"/></entry> <entry><updated>Fri 15 Dec 2000 01:23:13 GMT-0800 (MSK)</updated>
+<title type="xhtml">&#38;amp;amp; café</title>
+<published>Wed, 29 Apr 1993 19:49:05 +0100</published>
+<summary type="plain"><![CDATA[<div>Tom & Jerry <3</div>  'single'<li>&lt;b&gt;escaped&lt;/b&gt;</li>]]></summary></entry> <entry><title type="HTML">&#x26;<![CDATA[lt]]></title>
+<link href="https://xn--caf-dma.example/e p331.3gp" title="Alternate" length='12' rel="first" type="application/xml+xhtml"/>
+<published>1992-07-09T12:42:36.732 +0000</published>
+<updated>1972-03-27T21:29:59Z</updated></entry> <entry><id>
+id
+</id>
+  <title type="html"><![CDATA[&#;  &lt  <b><b>Bold</b> title]]></title>
+  <link href="https://example.com/" rel="self" title="Café" type="audio/mpeg"/>
+  <link type='application/rss+xml' href="https://example.com/" length="20000" rel="archives"/></entry>
+</feed>

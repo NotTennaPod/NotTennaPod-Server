@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<itunesu:image href=""/>
+<title><![CDATA[&lt;b&gt; <unknown>a
+  b</unknown> &lt;b&gt;escaped&lt;/b&gt;]]></title>
+<podcast:funding url="https://example.com/give">Give</podcast:funding>
+<itunesu:new-feed-url>https://moved.example.com/atom</itunesu:new-feed-url>
+<subtitle type="html">&#128512; &amp;mdash;	&amp;unknown;&lt;br/&gt;&amp;#xA9;&lt;hr&gt;&#13;
+&#33590;a &lt; b</subtitle>
+<author><name>Émile</name></author>
+<link href="https://example.com/alt.xml" type="application/atom+xml" title="" rel="self"/>
+<id> raw </id>
+<logo> https://e.com/l.png
+</logo>
+<entry><summary type="text">&lt;p&gt;&#8203;&#60;/p&gt;trailing &#x3C;br&gt;<![CDATA[]]></summary>
+  <link rel="first" length="20000" type="" href="HTTPS://EXAMPLE.COM/dir.with.dots/ep299.avi"/>
+  <itunesu:duration>1.2f</itunesu:duration>
+  <title type="plain">100%</title>
+  <published>Sun, 03 Feb 1985 18:52:25 -0500</published>
+  <id></id></entry>
+<entry><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Tom &amp;amp; Jerry &amp;lt;3
+[x]
+&lt;a href="https://example.com/x?a=1&#38;amp;b=2"&gt;&#x26;#xA9;&#x3C;/a&gt;</div></title> <updated>1900-05-07pst</updated> <summary>	&amp;#xFFFF;&#x3C;div>&#38;copy;&#60;/div&gt;&#x3C;div&gt;&amp;#0;&lt;/div&gt;&#x3C;br/&gt;&lt;p<![CDATA[/><br /><div>sep</div><li>&#xA9;</li>]]></summary> <id>
+id
+</id> <content type="html"> sep[x]&#x3C;br&gt;&#60;p/&gt;&lt;p><![CDATA[#7 &#8211; Interview</p>&#128512;&#128512;&#128512;&#128512;&#128512;&#128512;&#128512;<p> leading</p>
+&#;]]></content></entry>
+<entry><id> raw </id>
+  <updated>Thu, 16 Dec 2348 11:45:13 +0000</updated>
+  <title type="html">Episode 12&lt;p&gt;&#60;p&gt;Episode 341&lt;/p&gt;&#60;/p>&#x26;#169;</title>
+  <link href="https://example.com/pay" rel="last" length='abc'/></entry>
+<entry><author><name>Entry author</name></author><published>Sun, 08 Jan 06 10:58:45 +0100</published><updated>Monday, 11 Jun 15 19:07 -0500</updated><title type="HTML">  &amp;lt;b&#38;gt;escaped&amp;lt;/b&#x26;gt; &lt;label>&#38;euro;&lt;/label&gt; sep
+</title><id></id><link href='' type='application/rss+xml' rel="archives" title=""></link></entry>
+</feed>

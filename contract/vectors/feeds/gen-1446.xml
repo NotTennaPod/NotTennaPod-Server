@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"><podcast:funding url="https://example.com/give">Give</podcast:funding>
+  <id>https://example.com/feed</id>
+  <subtitle><![CDATA[<li></li><div>AT&T</div><div>&#;</div><img src="x" alt="y"/>😀ééé a=b&c=d	café]]></subtitle>
+  <author><name></name></author>
+  <title type="text">Folge 157: Über alles</title>
+  <link rel="archives" href="https://example.com/feed?page=2" type="" title="MP3 feed"/>
+  <logo>https://example.com/logo.png</logo>
+  <author><name>Émile</name><email>a@example.com</email></author>
+  <itunes:summary>&#60;BR>http://example.com/?a=1&amp;b=2aaa#hash&#x3C;br>&#x3C;p>&amp;&#60;/p&gt;</itunes:summary>
+  <author><name>Émile</name><email>a@example.com</email></author>
+  <updated>Monday, 16 May 1988 19:06 +0000</updated>
+  <entry><id>tag:x,2020:1</id>
+<updated>Monday, 21 May 2525 16:29:34 +12345</updated>
+<link length="20000" href="" rel="hub" title="Alternate" type="application/rss+xml"/>
+<author><name>Entry author</name></author>
+<title>&amp;#x;</title>
+<summary type="html">&lt;p>back\slash&lt;/p>  a=b&amp;c=d</summary>
+<updated>Tue, 29 July 1981 22:28:24</updated>
+<content type="html"><![CDATA[<br/><p></p>]]></content>
+<published>2003-05-13T21:19:02.782Z</published>
+<itunes:duration>2:54:40</itunes:duration></entry>
+  <entry><itunes:duration>5530.198</itunes:duration>
+<googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+<summary type="text"><![CDATA[😀😀😀😀<hr> &AMP;ééé<div><img src="x.png"> cover<]]>/div></summary>
+<media:content url="https://example.com:8443/dir.with.dots/ep394.OGG" fileSize="1" duration="9223372036854775807" type="video/webm"/>
+<title type="plain"><![CDATA[]]>&#38;apos;a&#x26;apos;</title>
+<author><name>Entry author</name></author>
+<updated>1998/08/15T21:41:47</updated>
+<id>
+id
+</id></entry>
+</feed>

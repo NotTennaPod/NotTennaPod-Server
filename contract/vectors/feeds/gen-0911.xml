@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+  <logo></logo>
+  <title type="HTML">[x]
+a=b&#38;c=d
+multi
+line</title>
+  <author><name>&#201;mile</name></author>
+  <podcast:funding url='https://example.com/give'>Give</podcast:funding>
+  <subtitle type="html">😀&#60;br /></subtitle>
+  <itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url>
+  <entry><updated>24 May 1989 03:15:41 +0530</updated>
+  <itunes:duration>84:11</itunes:duration>
+  <content>&lt;hr/>a<![CDATA[aaaaaaa<p>&quot;q&quot;</p>]]></content>
+  <id>tag:x,2020:1</id>
+  <podcast:transcript url="https://example.com/t.vtt" type="Application/JSON"/>
+  <published>YWS</published>
+  <title>&#x3C;p&gt;Para&#60;/p>
+&#60;b>Bold&lt;/b&gt; title
+&#x8336;</title></entry>
+  <entry><published>1978-08-11T07:35:51-0500&#13;
+</published> <title type="plain"><![CDATA[&;]]></title> <updated>Tuesday, 03 Oct 76 23:38 +0945</updated> <id></id></entry>
+</feed>

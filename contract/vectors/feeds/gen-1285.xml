@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters">
+<channel><title>a=b&#x26;c=d</title>
+<itunes:author><![CDATA[Tom & Jerry <3]]></itunes:author>
+<language>pt-BR</language>
+<podcastindex:funding url="https://example.com/donate">&lt;b>x&lt;/b&gt;</podcastindex:funding>
+<link> https://example.com/ </link>
+<itunes:image href=""></itunes:image></channel>
+</rss>

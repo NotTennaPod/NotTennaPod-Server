@@ -1,0 +1,20 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:chapters="http://podlove.org/simple-chapters" xml:lang="">
+  <id></id>
+<x:title xmlns:x="urn:x">Other namespace title</x:title>
+<title type="HTML">&#60;b&gt;&#38;#65;&amp;#66;&#x3C;/b&gt;</title>
+<subtitle type="plain">&#x26;lt&lt;br><![CDATA[]]></subtitle>
+<link rel="first" href="https://example.com/alt.xml" type=""/>
+<author><name>Émile</name><email>a@example.com</email></author>
+<entry><title type="text">😀&amp;</title><content type="plain">&#60;img&gt;&lt;img&gt;   spaced  </content><summary type="xhtml"><![CDATA[Line<br>break<br /><li>sep</li> plain words<p/>]]></summary><itunes:duration>15310</itunes:duration><id></id><updated>1988-02-14T07:24:33Greenwich Mean Time</updated></entry>
+<entry><content type="HTML">&#38;mdash;&lt;br&gt;&#60;p/>&#x3C;div&gt;100%&lt;/div></content>
+<published>Friday, 01 Mar 2002 07:46 +1400</published>
+<link length="12" type="" href='https://example.com/alt.xml' title="MP3 feed"/>
+<summary type='html'>&#13;
+R&#x26;D</summary>
+<title>multi
+line Episode 12</title>
+<media:content url="https://example.com:8443/café/87.txt" duration="" medium="Audio" type="audio/" fileSize="٢٠٠٠٠"/>
+<link title="Café" length="20000" rel="self" href="https://example.com/alt.xml"/>
+<dc:date>2004-05-06T13:41:31.794885 Z</dc:date>
+<link rel="first" href="http://example.org/e p309.webm" type="application/atom+xml" length="9223372036854775808"/></entry>
+</feed>

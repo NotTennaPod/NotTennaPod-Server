@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><podcast:funding url="https://example.com/donate">  spaced  </podcast:funding>
+<atom:link length="20000" rel="archives" href="https://example.com/a.b/ep366.oga" title="Café" type="application/xml+xhtml"/>
+<link xmlns="http://www.w3.org/2005/Atom" rel="" title='Café' length='12'/>
+<item><itunes:duration>１:３０</itunes:duration> <content:encoded></content:encoded> <description>&lt;img></description> <pubDate>1972-03-27T11:22:09&#13;
+</pubDate> <link> https://e.com/x </link> <title>&lt;label>plain words&lt;/label&gt;  &amp;apos;a&amp;apos;  &lt;b&gt;&lt;i>a > b&lt;/b>&#60;/i></title> <itunes:subtitle>&amp;;</itunes:subtitle> <enclosure length="-0" type=''/> <enclosure length="-1" type="audio/opus"/> <enclosure length="-9223372036854775808" type="audio"/></item>
+<item><title>Tom &#38;amp; Jerry &#x26;lt;3 &#38;apos;a&#x26;apos; 😀</title>
+<guid isPermaLink="true">Café-guid</guid>
+<pubDate>Wed, 13 May 2009 20:34:12 +1400
+  </pubDate>
+<description>ééé&lt;p&gt;&amp;unknown;&lt;/p&gt;</description>
+<content:encoded>&#60;div&gt;&lt;b&gt;Bold&lt;/b> title&lt;/div&gt;</content:encoded>
+<itunes:summary>  spaced  &lt;br>&#13;
+  茶</itunes:summary>
+<itunes:duration>7353.445</itunes:duration>
+<enclosure url="//example.com/dir.with.dots/ep345.aif" length="abc" type="audio/mpeg"/>
+<enclosure url="HTTPS://EXAMPLE.COM/café/64.3gp" length="-1" type="audio/x-m4a"/>
+<enclosure url="http://example.org/e p307.flac" length="16384" type="x-audio/mpeg"/>
+<podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/>
+<atom:link title="" rel="enclosure" type="text/html"/>
+<itunes:category text="Arts"><itunes:category text="Design"/></itunes:category></item>
+<link> https://example.com/ </link>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<language>pt-BR</language>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<itunes:subtitle><![CDATA[ leading]]></itunes:subtitle>
+<title>  spaced  
+&#x26;hellip;
+a &gt; b</title>
+<podcast:funding url=""></podcast:funding></channel>
+</rss>

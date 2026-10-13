@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><atom:link rel="hub" title="Café" href="https://example.com/" type="audio/mpeg"/>
+<image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+<title><![CDATA[第4]]>43集
+&#x26;#0;
+&#38;copy;</title>
+<link> https://example.com/ </link>
+<atom:link length="abc" href="https://example.com/" rel="enclosure" type="audio/mpeg" title='Café'/>
+<itunes:subtitle>AT&amp;T</itunes:subtitle>
+<atom:link title="" type="text/html" length="abc"/>
+<itunes:image href="https://example.com/it.jpg"/>
+<language>en</language>
+<atom:link rel='archives' type="application/xml+xhtml" href="https://example.com/pay" title="Alternate"/>
+<description>&#x3C;p>&amp;#xA9;&lt;/p&gt; &lt;br>	&#x26;apos;a&amp;apos;&lt;br /&gt;&#x3C;div>{json: 1}&#x3C;/div&gt;&#233;&#xE9;éaa&#13;
+😀</description>
+<title><![CDATA[<section>trailing </sec]]>tion&gt;
+&amp;#;
+&#60;b&gt;Bold&#60;/b> title</title>
+<item><title>&#x26;copy;
+R&#38;D</title>
+<media:content duration='2147484' medium="image" fileSize="16385" type="text/html" isDefault="TRUE" url="https://user:pass@media.example.net/e p327.avi"/>
+<link>https://example.com/ep</link>
+<enclosure url='https://user:pass@media.example.net/e p390.m4v' length="" type="video/quicktime"/>
+<pubDate>Tue Oct 10 06:05:50 2006</pubDate></item></channel>
+</rss>

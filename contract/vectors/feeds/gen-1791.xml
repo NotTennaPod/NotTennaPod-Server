@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding>&#x3C;b&gt;x&lt;/b&gt;</podcast:funding>
+<atom:link rel="related" href="https://example.com/alt.xml" title="MP3 feed" length="abc"/>
+<link>https://example.com</link>
+<itunes:author>Jane <![CDATA[Doe]]></itunes:author>
+<podcast:funding url="">  spaced  </podcast:funding>
+<foo><description>Nested description</description></foo>
+<description></description>
+<language></language>
+<podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+<title>{json: 1}
+<![CDATA[back\slash
+&hellip;]]></title>
+<item><title><![CDATA[<strike>&hellip;</strike>a < b&AMP;]]></title><guid isPermaLink="true">a&#38;b</guid><pubDate>2008-02-15T12:18:44GMT+1</pubDate><description> &#x26;#x;&#60;li>a
+
+b&#60;/li>&lt;p&gt;😀&#x3C;/p>&#x3C;br /&gt;&lt;hr/&gt;</description><itunes:subtitle>&amp;#;</itunes:subtitle><itunes:author>Item author</itunes:author><media:content duration="9223372036854775807" fileSize="20000.0" medium="audio" type='audio/x-m4a' url="https://cdn.example.com/café/338.opus"/></item></channel>
+  </rss>

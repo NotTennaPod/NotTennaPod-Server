@@ -1,0 +1,30 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:psc="http://podlove.org/simple-chapters"><link>https://example.com</link><language>en</language><itunes:image href="https://example.com/it.jpg"/><title><![CDATA[שלום
+&hellip;]]></title><item><title>  spaced  
+&lt;img src="x.png"&gt; cover</title> <guid>https://example.com/item/34234</guid> <link> https://e.com/x </link> <pubDate>Sat, 09 Jun 1601 </pubDate> <description><![CDATA[ééé<hr/>
+<3 <3<img src="x.png">a
+  b<br>]]></description> <itunes:summary></itunes:summary> <itunes:image href=""/> <itunes:duration>62:03</itunes:duration> <enclosure url='//example.com/café/305.mp3' length='9223372036854775807' type="audio/mpeg; charset=binary"/> <enclosure url='https://example.com:8443/175.xyz' length="9007199254740991" type='audio/mp3'></enclosure> <media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="٢٠٠٠٠" duration="2147483" type='audio/flac' medium='Audio'/><media:content xmlns:media="http://search.yahoo.com/mrss/" medium="video" url="https://example.com:8443/ep355.html" fileSize='abc' duration='1.5' type="text/html" isDefault="1"/></media:group></item><item><title>&amp;#0;
+Tom &amp;amp; Jerry &#38;lt;3</title><guid>https://example.com/item/13341</guid><link> https://e.com/x </link><pubDate>Thu, 17 May 1990 11:33:44 GMT+1</pubDate><description>😀😀😀  Tom &#x26; Jerry &lt;3&#38;lt;b&amp;gt;&lt;br&gt;😀😀#7 – Interviewaaa&#x3C;hr&gt;😀😀😀</description><itunes:summary>plain words&#x3C;br>  &amp;quot;q&amp;quot<![CDATA[;]]></itunes:summary><itunes:duration>+7</itunes:duration><enclosure url='https://xn--caf-dma.example/154.m3u8?auth=yes' length="4294967296" type="unknown"/><media:content xmlns:media="http://search.yahoo.com/mrss/" type='audio/mp4' fileSize="20000.0" duration="0060" url="https://user:pass@media.example.net/ep35.wav" isDefault="TRUE"/><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url=''/></item><item><title>cr&#13;lf</title>
+<pubDate>1995-04-05T09:43:23.5</pubDate>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"> &lt;br&gt;&lt;li>S01E7&lt;/li&gt;ééé&#x26;lt&#x3C;img src="x&quot; alt="y"/&gt;</content:encoded>
+<enclosure url="https://example.com:8443/a/b/c178.aspx" length="18446744073709551616" type="unknown"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" duration="2147484" type=' audio/mpeg' medium="video" fileSize="00020000"/>
+<x:title xmlns:x="urn:x">Other namespace title</x:title></item><item><pi:transcript url="https://example.com/t.vtt" type="application/x-subrip" language="en"/>
+  <pi:locked>yes</pi:locked>
+  <enclosure url="" length="20000 " type="Audio/MPEG"/>
+  <description>&lt;div>&#x26;#65;&amp;#66;&lt;/div&gt;&#x3C;hr/&gt;&lt;br/&gt;</description>
+  <link> https://e.com/x </link>
+  <guid isPermaLink="false"></guid>
+  <title><![CDATA[&copy;שלום]]></title>
+  <itunes:image href="https://example.com/ep.jpg"></itunes:image>
+  <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"></content:encoded>
+  <itunes:subtitle>Episode 148</itunes:subtitle>
+  <pubDate>2001-08-99T13:38:51</pubDate></item><item><title>100<![CDATA[%]]></title> <description>aaaaa</description> <link></link> <guid isPermaLink='false'>
+</guid> <itunes:duration>0:20:20</itunes:duration> <itunes:image href=" https://e.com/i.png "/> <enclosure url="" length="1,000,000" type='application/json'/></item><item><itunes:duration>5:15:26</itunes:duration> <description><![CDATA[ééé
+
+&unknown;ééééééééé]]></description> <itunes:summary>
+AT&amp;T
+
+1 &#x3C;2 100%</itunes:summary> <pubDate>Fri 23 Dec 1988 14:23:25 GMT-1200 (GMT+1)</pubDate> <media:content xmlns:media="http://search.yahoo.com/mrss/" isDefault="false" type=" audio/mpeg" medium="image" fileSize="٢٠٠٠٠"/> <enclosure url="https://example.com:8443/dir.with.dots/ep272.mp3.zip" length='-1' type="audio/*"/> <link> https://e.com/x </link> <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"> a=b&#x26;c=d</content:encoded> <podcast:chapters url='' type='application/json+chapters'/> <guid>Café-guid</guid></item><description>  &amp;&#60;div>&#38;#65;&#x26;#66;&lt;/div&gt;Tom &amp;amp; Jerry &#x26;lt;3&#60;img&gt;&#x3C;p&gt;a
+  b&#x3C;/p>sep  &#38;&#13;
+#hash</description><lastBuildDate>Mon, 16 Jun 1975 22:34:46 +00:00</lastBuildDate><image><link>https://example.com/img-link</link><url>https://example.com/img.png</url></image></channel> </rss>

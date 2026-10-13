@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="latin1" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<author><name></name></author>
+<author><name>  Bob  </name><email>a@example.com</email></author>
+<link href="//example.com/ep60.aac" title="Alternate" length="12" type="application/xml+xhtml" rel="self"/>
+<icon>https://example.com/icon.png</icon>
+<title type="html">&#13;
+&#38;AMP;&#13;
+</title>
+<id>https://example.com/feed</id>
+<link type="application/xml+xhtml" title="MP3 feed" rel="alternate" length="9223372036854775808" href=""/>
+<logo> https://e.com/l.png
+</logo>
+<subtitle type="html"><![CDATA[<li>Folge 7: Über alles</]]>li&gt;&#60;img src="x.png"></subtitle>
+<entry><link length="12" title="Alternate" type="application/xhtml+xml" href="" rel="Next"/><published>Wed, 02 May 2018 18:29 -1200</published><link href="https://cdn.example.com/98.mp4" type="" title="Alternate" length="abc" rel="next"/><updated>Tue, 22 Dec 0099 22:14</updated><id></id><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#13;
+&#x26;AMP;
+</div></title><link href='' rel="archives" length="20000"/></entry>
+<entry><summary type="text">	a &gt; b&lt;p&gt;cr&#13;lf&#60;/p></summary>
+<id>tag:x,2020:1</id>
+<published>2006-02-31T14:22:33+0945</published>
+<title type="HTML"><![CDATA[&hellip;"quoted"<b>sep</b>]]></title>
+<link href="https://example.com/pay" rel="alternate" length="abc" type="application/xhtml+xml"/>
+<updated>Mon, 31 jul 1969 09:40:28 -0500</updated></entry>
+<entry><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">S01E855 sep</div></title>
+  <link rel="self" href="https://example.com/a.b/dir.with.dots/ep84.mov" type="audio/mpeg" length="abc" title="Café"/>
+  <summary type="html">&#128512;<![CDATA[&#128512;]]></summary>
+  <published>Monday, 22 Nov 1976 12:58:23 +0945</published>
+  <id>urn:uuid:1</id></entry>
+  </feed>

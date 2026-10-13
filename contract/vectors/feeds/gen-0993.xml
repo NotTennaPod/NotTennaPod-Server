@@ -1,0 +1,37 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><link>https://example.com</link>
+<title>&#60;strong&gt;&amp;#x;&lt;/strong></title>
+<description>ééé😀😀😀&lt;p/&gt;&lt;li&gt;  spaced  &#60;/li>&#x3C;p&gt;sep&#x3C;/p&gt;&#x3C;br />&#60;p&gt;&amp;#xA9;&#x3C;/p&gt;&#13;
+#hash</description>
+<a10:link href='https://example.com/pay' title='MP3 feed' type=""/>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<language>pt-BR</language>
+<item><title>&lt;b>Bold&lt;/b&gt; title &#x26;lt</title>
+<guid>https://example.com/item/73162</guid>
+<link></link>
+<pubDate>Thu, 30 Feb 0999 05:05:33 +0100</pubDate>
+<description>&lt;i<![CDATA[mg src="x" alt="y"/>]]></description>
+<dc:date>03 Dec 61 18:03:21 +0200</dc:date>
+<itunes:summary><![CDATA[😀	&mdash;aaaa &#65;&#66;<BR><img src="x.png"> cover<br><li>&#128512;</li><br></br>]]></itunes:summary>
+<enclosure url="https://example.com/a.b/café/330.mp4" length="9223372036854775807" type="audio/*"/>
+<enclosure url='' length="9223372036854775808" type='image/jpeg'/>
+<media:content fileSize="" isDefault="false" duration="3600" url="//example.com/e p240.jpg?file=x.mp3" type="audio/ogg" medium="image"/>
+<media:content type="image/*" isDefault="1" medium='audio' fileSize="-9223372036854775808" duration="1"/></item>
+<item><media:description><![CDATA[😀&	&AMP;<BR>	&hellip;
+cr
+lfTom &amp; Jerry &lt;3]]>&#60;br>	&#x26;amp</media:description><enclosure url="https://example.com:8443/dir.with.dots/ep394.OGG" length="abc" type="application/json"/><itunes:summary> AT&#x26;T&#x3C;p>a
+
+b&#60;/p&gt;&#x3C;br /&gt;
+&#38;amp&lt;p>&amp;#128512;&#x3C;/p></itunes:summary><pubDate>Sunday, 08 Jan 2017 16:24</pubDate><description><![CDATA[<p>x<y</p>ééé<i]]>mg src=&quot;x.png">ééé&#x3C;li&gt;&amp;#xA9;&lt;/li></description><guid isPermaLink="true">a&#x26;b</guid><title><![CDATA[&#x1F600;
+&#xA9;
+&amp;]]></title><media:content isDefault="1" medium="document" duration="01:00" fileSize="00020000" type=" audio/mpeg" url="HTTPS://EXAMPLE.COM/dir.with.dots/ep67.m4b"></media:content></item>
+<item><link></link>
+<guid isPermaLink="true">a&amp;b</guid>
+<itunes:duration>596:31:23.648</itunes:duration>
+<media:content type="application/pdf" duration="2147483" fileSize='0' isDefault="false"></media:content>
+<title>&amp;lt</title>
+<pubDate>10 Sep 2192 18:17:02 +0000</pubDate>
+<content:encoded><![CDATA[aaaaa	'single'aaaaaaa&AMP;​<b]]>r></content:encoded>
+<media:content duration='2147483648' type="" isDefault='1' fileSize="16385" url="http://example.org/ep332.mkv"/>
+<enclosure length="1,000,000" type="application/pdf"/></item></channel>
+</rss>

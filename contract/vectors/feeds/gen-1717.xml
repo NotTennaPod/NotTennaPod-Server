@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><itunes:author>A, B</itunes:author>
+<pi:funding url="https://example.com/donate"/>
+<title><![CDATA[
+100% <pre>مرحبا
+  pre</pre>
+]]></title>
+<itunes:image href=" "/>
+<description>&#60;div&gt;Episode 7&#x3C;/div&gt;&#x3C;li>​&lt;/li>Line&#x3C;br&gt;break&lt;br&gt;&#60;p>Episode 12&#x3C;/p>trailing &#60;br>&amp;nbsp;&#233;é&#xE9;</description>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<atom:link title="MP3 feed" length='12' type="text/html" href="https://example.com/alt.xml" rel="archives"/>
+<language>pt-BR</language>
+<link> https://example.com/ </link>
+<itunes:new-feed-url>https://new.example.com/feed</itunes:new-feed-url>
+<item><description><![CDATA[éééEpisode 12   leading<br><hr><div>#hash</div>	a > b<br>]]></description> <link> https://e.com/x </link> <enclosure length="0" type="audio/ogg"/> <itunes:summary><![CDATA[😀😀😀😀]]></itunes:summary> <media:content type="unknown" fileSize="9007199254740993" duration=" 60" medium="Audio"/> <title>x&lt;y &lt;img src="x.png&quot;&gt; cover&lt;/p> Tom &#x26;amp; Jerry &amp;lt;3</title> <media:thumbnail url="https://example.com/th.jpg"/> <pubDate>2014-02-26T09:37:43+0000 </pubDate></item>
+<item><enclosure url="" length='1,000,000' type="video/mp4"/> <description>😀😀😀😀 &#128512;ééé&lt;div>Folge 7: &#xDC;ber alles&lt;/div>
+AT&#x26;T&#x3C;p/&gt;  a > bcr
+lf&lt;br&gt;</description> <link>https://example.com/ep</link> <title><![CDATA[&#169;]]></title> <itunes:duration>6613.981</itunes:duration> <itunes:subtitle>a &#60; <![CDATA[b
+Episode 524]]></itunes:subtitle> <pubDate>Tue Jul 21 16:11 2020</pubDate> <guid isPermaLink="true">dup</guid></item>
+<item><title><![CDATA[&#x1F600;  &unkn]]>own;</title>
+<guid isPermaLink="false">dup</guid>
+<pubDate>1974-08-11T08:08:24+0530</pubDate>
+<dc:date>2022-05-29T16:57:42+0200</dc:date>
+<itunes:duration>
+45:00
+</itunes:duration>
+<enclosure url=' https://user:pass@media.example.net/e p128.wma ' length="9007199254740992" type="audio/wav"/>
+<a10:link length="9223372036854775808" href="https://example.com/pay" type="" title='Café' rel="alternate"/></item>
+<item><itunes:image href='https://example.com/ep.jpg'/><enclosure url="https://example.com:8443/ep355.html" length="+20000" type='unknown'/><link> https://e.com/x </link><guid isPermaLink="true"> </guid><itunes:subtitle>&#x7B2C;801&#38598;&#x26;euro;&amp;euro;</itunes:subtitle><enclosure url='https://xn--caf-dma.example/café/153.html' length="-16384" type="audio/mp4"/><description>&#x3C;li&gt;plain words&#60;/li&gt;aa</description><itunes:summary>😀😀😀😀&lt;br/&gt;&#x3C;img src=&quot;x" al<![CDATA[t="y"/>a
+  spaced  ]]></itunes:summary><pi:transcript url="" type="application/srt" language="en"/><pi:transcript url="https://example.com/t.vtt" type="Application/JSON"/><pubDate>2001-10-15T03:57:16.721America/New_York</pubDate><title>​</title></item>
+<item><link>https://example.com/ep</link>
+<title><![CDATA[  &#0;é ]]></title>
+<enclosure url="" length="123456789012345678" type="Audio/MPEG"/>
+<itunes:author>Item author</itunes:author>
+<guid isPermaLink='false'>a&#38;b</guid>
+<pubDate>Wed, 14 Mar 1973 04:07:38 Central European Summer Time</pubDate>
+<itunes:duration>8161</itunes:duration>
+<media:content url="http://example.org/e p309.webm" duration="1.5" type="audio/flac" isDefault="TRUE" fileSize="123456789012345678"/>
+<description><![CDATA[<hr/><br></br><li>é</li><br/>'single'<br><div>&#x;</div><img src="x.png">😀😀😀😀]]></description></item>
+<item><title><![CDATA[​<h6>&amp;amp;</h6>100%]]></title>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <link>https://example.com/ep</link>
+  <description><![CDATA[ sep<p>​</p>&#128512;<br> &copy;aaaaaaa]]></description>
+  <itunes:summary><![CDATA[<div>{json: 1}</div>]]></itunes:summary>
+  <itunes:image href=" "/>
+  <itunes:duration>596:31:23.647</itunes:duration>
+  <media:thumbnail></media:thumbnail>
+  <pi:transcript type="application/json"/></item></channel>
+</rss>

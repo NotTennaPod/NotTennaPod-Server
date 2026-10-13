@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel xmlns:psc="http://podlove.org/simple-chapters"><title>&lt;img src="x.png"> cover Line&#60;br>break &#38;amp;</title> <language> EN-US </language> <description>	é</description> <title><![CDATA[back\slash&nbsp; ]]></title> <lastBuildDate>Fri, 27 Feb 1987 99:54 +1400</lastBuildDate> <dcterms:creator>DC Creator</dcterms:creator> <link> https://example.com/ </link> <item><title>&#38;AMP;</title> <guid>
+</guid> <link></link> <pubDate>1601-08-29Central European Standard Time</pubDate> <description>
+a&#13;
+b</description> <itunesu:duration>96:42</itunesu:duration> <enclosure url="http://example.org/e p395.3gp" length="16385" type=" audio/mpeg"/></item> <item><title><![CDATA[back\slash]]></title>
+  <guid isPermaLink="true">dup</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>Wed, 03 Apr 2024 11:25 Pacific Daylight Time</pubDate>
+  <description>&lt;div&gt;&lt;p&gt;Para&lt;/p&gt;&#60;/div&gt;&#x3C;br/>&lt;p&gt;&#x26;copy;&#x3C;/p>  cafétab	here</description>
+  <itunesu:image></itunesu:image>
+  <enclosure length="9223372036854775807" type="video/quicktime"/></item></channel>
+</rss>

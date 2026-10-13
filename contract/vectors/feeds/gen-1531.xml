@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+  <link rel="hub" title="Café" href="http://example.org/dir.with.dots/ep259.torrent?dl=1.0"/>
+<title>caf&#233;
+a
+  b</title>
+<author><name>Ann</name></author>
+<itunes:image href=""/>
+<updated>Sun, 25 Jan 0099 09:20:47 -0500</updated>
+<id>https://example.com/feed</id>
+<link length="12" href="https://example.com/pay" rel="self" type="application/rss+xml" title=""/>
+<link title="Alternate" href="" length="12"/>
+<subtitle type='text'>&#60;p&gt;"quoted&quot;&lt;/p&gt;a &lt; bé&#233;&#233; 1 &lt;2&lt;p&gt;trailing &#x3C;/p>&#x3C;img src=&quot;x.png"&gt;&lt;p>sep&#x3C;/p&gt;"quoted"</subtitle>
+<entry><itunes:duration>03:42</itunes:duration> <id>
+id
+</id> <link type="application/xml+xhtml" title="MP3 feed" length="12" rel="Next" href="https://cdn.example.com/98.mp4"/> <link title="Alternate" type="application/atom+xml" length="20000" rel="next" href="https://example.com/feed?page=2"/> <link rel="alternate" length="12" title="Alternate" type="audio/mpeg"/> <title><![CDATA[trailing ]]></title></entry>
+<entry><id>
+id
+</id>
+<title type="html">&lt;span&gt;Line&lt;br&gt;break&#x3C;/span&gt;  leading</title>
+<link href="https://user:pass@media.example.net/café/363.OGG" type="application/rss+xml" rel="hub"/>
+<content type="xhtml">&lt;div&gt;back\slash&#60;/div&gt;&#x3C;p&gt;trailing &#60;/p&gt;  &#x26;apos;a&#x26;apos;&lt;br&gt;    spaced  </content>
+<updated>Sat, 20 May 1950 07:54 +0530 +0000</updated>
+<link href='https://example.com/feed?page=2' type="audio/mpeg" rel="payment" length="9223372036854775808"/>
+<link rel="alternate" title="Alternate"></link>
+<published>1981-10-02T07:28:38+0</published>
+<dc:date>2143-01-04T22:12:39India Standard Time</dc:date>
+<updated>Tue Nov 24 12:56:05 1992</updated></entry> </feed>

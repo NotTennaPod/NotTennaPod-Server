@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding/>
+<atom:link length='9223372036854775808' href="https://example.com/alt.xml" type="application/atom+xml" title="Alternate" rel="payment"/>
+<itunes:subtitle>a
+  b</itunes:subtitle>
+<atom:link title="MP3 feed" length="9223372036854775808" rel="self"/>
+<itunes:summary>
+​</itunes:summary>
+<itunes:new-feed-url>
+https://nl.example
+</itunes:new-feed-url>
+<itunes:author>😀 Pod</itunes:author>
+<itunes:image href="https://example.com/it.jpg"/>
+<title><![CDATA[&mdash;http://example.com/?a=1&b=2]]></title>
+<atom:link length='9223372036854775808' type="application/xml+xhtml" title='Café' href="https://example.com/pay" rel="self"/>
+<image><url></url></image>
+<podcast:funding url=""/>
+<atom:link href="https://example.com/alt.xml" rel="related" length="12" title="MP3 feed"/>
+<link> https://example.com/ </link>
+<item><title>Line&lt;br>break  ​    padded  </title>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <pubDate>Sat, 26 Oct 52 05:36:25 +0945</pubDate>
+  <description><![CDATA[<br /> Tom & Jerry <3  #hash]]></description>
+  <content:encoded></content:encoded>
+  <enclosure url="https://xn--caf-dma.example/ep344.ogg" length=" 20000" type='audio/mp4'/>
+  <media:content xmlns:media="http://search.yahoo.com/mrss/" type="video/quicktime" medium="video" fileSize='0x4E20' duration="0060" isDefault="true" url="https://xn--caf-dma.example/café/278.m4a"/></item>
+<item><pubDate>Tuesday, 14 Oct 1975 07:57 -0000</pubDate>
+<content:encoded>&#13;
+AT&amp;T</content:encoded>
+<description>&#60;img src="x&quot; alt=&quot;y&quot;/&gt;	&#38;amp;amp;&#x3C;img></description>
+<itunes:summary><![CDATA[<br />]]></itunes:summary>
+<title>&#60;strong>trailing &lt;/strong&gt;</title>
+<enclosure length="18446744073709551616" type="video/mp4"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" duration="-5" fileSize="16384" medium="audio" type="image/*" url="https://xn--caf-dma.example/café/108.php"/>
+<itunes:image href="https://example.com/ep.jpg"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" isDefault='true' type="audio/x-m4a" fileSize="123456" duration='2147483648' medium="document" url="https://xn--caf-dma.example/café/17.aac"/>
+<enclosure url="https://example.com/a.b/ep37.aac" length="-9223372036854775808" type="audio/ogg"/>
+<itunes:duration>1:00:00:00</itunes:duration>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" isDefault="TRUE" medium="image" fileSize="2147483648" type="audio/wav"/>
+<link>https://example.com/ep</link>
+<guid isPermaLink="false"></guid></item></channel>
+</rss>

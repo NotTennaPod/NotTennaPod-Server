@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="Cp1252"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><description>&#x3C;p&gt;&#128512;&lt;/p&gt;&#38;hellip;ééé&lt;p&gt;&lt;p&gt;Para&#60;/p>&lt;/p&gt;&#38;#xD800;&lt;br></description>
+  <media:thumbnail url=""/>
+  <title>&#x26;apos;a&#x26;apos;</title>
+  <lastBuildDate>Tue Jun 28 22:51 2005</lastBuildDate>
+  <atom:link type="application/xml+xhtml" title='Café' length='abc' href="https://example.com/" rel="hub"/>
+  <itunes:subtitle>&amp;nbsp;</itunes:subtitle>
+  <language>de-DE</language>
+  <item><title>cr&#13;lf&#38;lt;b&amp;gt;a
+  b</title>
+<guid isPermaLink='true'></guid>
+<link>https://example.com/ep</link>
+<pubDate>08 Jan 2413 21:05 -1200</pubDate>
+<description>&#60;img src="x.png&quot;> cover&lt;hr/&gt;plain words&#x3C;br&gt;&lt;hr/>  &#60;p&gt;&lt;img src="x.png"&gt; cover&#60;/p>&lt;br&gt;&#60;/br&gt;&#x3C;img></description>
+<itunes:duration>1.5.5</itunes:duration>
+<enclosure url='https://xn--caf-dma.example/café/278.m4a' length="abc" type="audio"/>
+<enclosure url='//example.com/e p4.aif' length='2e5' type='image/jpeg'/>
+<media:description type="html">&lt;p/&gt;&lt;li&gt;&amp;lt&#x3C;/li>&#60;div>&#x26;#xA9;&#60;/div&gt;</media:description></item>
+  <item><title><![CDATA[trailing ]]>#989 – Interview&#128512;</title>
+<guid isPermaLink="false"></guid>
+<pubDate>2010-10-99</pubDate>
+<itunes:image/>
+<media:group><media:content isDefault="1" type="audio/*" url="https://xn--caf-dma.example/café/278.m4a" fileSize="-9223372036854775808" duration="0"/></media:group>
+<podcast:chapters url="" type='application/json+chapters'/></item></channel>
+  </rss>

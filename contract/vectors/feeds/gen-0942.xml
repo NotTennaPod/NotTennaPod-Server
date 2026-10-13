@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+  <channel><podcast:funding url="">&lt;b&gt;x&lt;/b&gt;</podcast:funding> <itunesu:image href=" "/> <description>&#x3C;br&gt;&#60;/br></description> <x:title xmlns:x="urn:x">Other namespace title</x:title> <atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="Alternate" rel="self" href="" length="9223372036854775808"/> <lastBuildDate>MONDAY, 04 Dec 1989 03:57:45 +0530</lastBuildDate> <podcast:funding></podcast:funding> <itunesu:summary>&#x3C;br/&gt;&lt;li&gt;a=b&#x26;c=d&lt;/li&gt;</itunesu:summary> <title><![CDATA[&lt;b&gt;escaped&lt;/b&gt; &nbsp; مرحبا]]></title> <item><guid isPermaLink='true'>a&amp;b</guid>
+<itunesu:author>Item author</itunesu:author>
+<title>&lt;article&gt;Episode 765&#60;/article&gt;
+<![CDATA[S01E967
+S01E433]]></title>
+<pubDate>1991-06-27T14:11:22.496Europe/Berlin</pubDate>
+<enclosure url="https://xn--caf-dma.example/ep344.ogg" length="0" type="AUDIO/MPEG"/>
+<itunesu:image/></item></channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters">
+<channel><language>pt-BR</language>
+<itunes:subtitle>[x]第79集</itunes:subtitle>
+<link> https://example.com/ </link>
+<title><![CDATA[&euro;&#x1F600;<table><tr><td>&Lt;</td><td>b</td></tr></table>]]></title>
+<item><enclosure url='http://example.org/a/b/c334.wma#t=10' length="16385" type="Audio/MPEG"/>
+<description>&lt;div&gt;plain words&#60;/div&gt;aaaa</description>
+<guid isPermaLink='false'>  spaced guid  </guid>
+<itunes:image href=""/>
+<title>&#x26;amp;</title>
+<m:content duration="1.5" type='video/webm' isDefault="TRUE" medium="video" fileSize="20000 "/>
+<c:encoded><![CDATA[
+ leading  http://example.com/?a=1&b=2]]></c:encoded>
+<pubDate>Wed, 04 Jul 1990 18:47:47 +01:00</pubDate>
+<enclosure length="9223372036854775808" type="audio/mpeg; charset=binary"/>
+<enclosure url="https://xn--caf-dma.example/e p82.mpga" length="9007199254740992" type="image/jpeg"/>
+<link></link></item>
+<item><title>cr&#13;lf</title>
+<guid>dup</guid>
+<link>https://example.com/ep</link>
+<description> trailing &#13;
+#hash</description>
+<c:encoded><![CDATA[<br />éé]]>é&lt;br>&#60;/br&gt;&#x26;mdash;&#60;li&gt;100%&lt;/li&gt;</c:encoded>
+<itunes:duration>1.2f</itunes:duration>
+<enclosure url="https://example.com:8443/dir.with.dots/ep6.m3u8?dl=1.0" length="00020000" type="image/jpeg"/>
+<m:group><m:content fileSize="-0" type="video/mp4" medium="Audio" url="https://user:pass@media.example.net/a/b/c365.oga" isDefault="1" duration='3600'/><m:content isDefault="TRUE" duration='1.5' fileSize="1"/><m:content isDefault="1" duration="59" fileSize="-16384" type='AUDIO/MPEG'/></m:group></item></channel> </rss>

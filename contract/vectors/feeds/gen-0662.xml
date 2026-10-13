@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<rss version="0.92" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding url="https://example.com/donate">  spaced  </podcast:funding>
+<title>&amp;euro;&#x3C;li&gt;a=b&amp;c=<![CDATA[d</li>]]></title>
+<podcast:season>2</podcast:season>
+<language>de-DE</language>
+<item><enclosure url="" length="12" type="audio/x-m4a"/>
+<media:content medium="image" duration="1.5" type="unknown" fileSize="0" url="https://example.com:8443/102.aac"/>
+<guid>dup</guid>
+<content:encoded><![CDATA[😀<li>trailing </li><BR>&;<br>
+😀]]></content:encoded>
+<title><![CDATA[&#x]]>D800;  #hash</title>
+<media:content url="https://example.com/a.b/dir.with.dots/ep229.aac?auth=yes" type="image/*" duration="9223372036854775807" fileSize='9007199254740992'/>
+<description>R&#38;D</description>
+<enclosure url='' length="4294967296" type="audio/opus"/>
+<pubDate>29 Jan 1969 09:57:16 +0530</pubDate>
+<media:content isDefault="true" medium="video" type='audio/mpeg' fileSize='9223372036854775808' duration="59"/></item>
+<item><enclosure url="" length="+20000" type="image/jpeg"/>
+<pubDate>Thu,  2011-02-07T00:25:58</pubDate>
+<enclosure url="" length="-9223372036854775808" type="audio/wav"/>
+<podcast:transcript url="" type='text/plain'></podcast:transcript><podcast:transcript url='https://example.com/t.vtt' type="application/srr" language="en"/>
+<title>&#13;
+ leading  multi
+line	</title>
+<guid isPermaLink="true">a&amp;b</guid>
+<d:date>Friday Oct 29 18:33:54 2011</d:date>
+<description>aaaaaa&amp;nbsp;&lt;hr/&gt; &#x26;mdash;&#60;br /&gt;</description></item>
+<item><title><![CDATA[<img src="x.png"> cover]]>
+100%</title>
+  <guid>  spaced guid  </guid>
+  <link>https://example.com/ep</link>
+  <pubDate>Wed 2 Jul 1986 </pubDate>
+  <description><![CDATA[<br></br>
+مرحبا<li>&#;</li>]]></description>
+  <d:date>14 May 2017 04:17 -0000</d:date>
+  <enclosure url="https://example.com:8443/ep170.webm" length="-0" type="image/jpeg"/></item>
+<item><title>multi
+<![CDATA[line]]></title>
+<guid isPermaLink="true">
+</guid>
+<link> https://e.com/x </link>
+<pubDate>1066-03-18T09:22:45.063</pubDate>
+<description>&#38;#65;&#x26;#66;</description>
+<enclosure url="" length="+20000" type="audio"/>
+<podcast:transcript url="" type="text/vtt"/><podcast:transcript type="text/vtt"/></item></channel> </rss>

@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><podcast:funding>  spaced  </podcast:funding> <description>&#xA0;&#38;#x1F600; &amp;#xA9;
+
+R&#x26;Dééé &amp;#xA9;</description> <link>https://example.com</link> <m:thumbnail></m:thumbnail> <title><![CDATA[trailing ]]></title> <title>
+​&#x3C;img src="x.png&quot;> cover&amp;AMP;
+</title> <itunes:subtitle><![CDATA[Episode 220
+100%
+&Lt;]]></itunes:subtitle> <atom:link title="Café" href="https://example.com/" type='application/rss+xml' length="abc" rel="self"/> <item><title>&#x26;#65;&#38;#66;&lt;p&gt;Para&#60;/p&gt;</title>
+<podcast:transcript url="https://example.com/t.vtt" language='en'/><podcast:transcript type="application/json"/>
+<pubDate>1978-99-29T01:55:00</pubDate>
+<description><![CDATA[😀😀😀😀😀<p>&#65;&#66;</p>]]></description>
+<itunes:duration>5588.490</itunes:duration>
+<content:encoded><![CDATA[<div>café</div>&#xD800;  &hellip;<p/>aaaaaaa
+
+&&AMP;<br><li>茶</li>]]></content:encoded>
+<enclosure url="https://example.com/a.b/café/333.php" length="20000.0" type=" audio/mpeg"/>
+<itunes:image/>
+<guid>urn:uuid:f68b65f5</guid>
+<itunes:subtitle>&#38;#xD800;</itunes:subtitle>
+<link> https://e.com/x </link></item></channel>
+</rss>

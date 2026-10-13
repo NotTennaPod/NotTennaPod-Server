@@ -1,0 +1,15 @@
+<rss version="2.0" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><atom:link rel="enclosure" length='abc' href="https://example.com/feed?page=2" title="MP3 feed" type="audio/mpeg"/>
+  <title>a&#13;
+b
+&#x7B2C;315集
+cr&#13;lf</title>
+  <atom:link title="" type="text/html" href='https://example.com/alt.xml' rel="next"/>
+  <description><![CDATA[ &quot;q&quot; http://example.com/?a=1&b=2]]></description>
+  <link></link>
+  <atom:link title="" type="" href="https://example.com/" rel="last"></atom:link>
+  <link xmlns="http://www.w3.org/2005/Atom" type="" rel="first" href=''/>
+  <podcast:funding url=""/>
+  <language>fr
+</language>
+  <image><title>Image title</title><url>https://example.com/img.png</url></image>
+  <item><media:content medium="video" isDefault="false" duration="0" fileSize="0x4E20" type="audio/mpeg; charset=binary"/><description><![CDATA[<3 <3]]></description><media:content type='video/mp4' duration='1' url="https://user:pass@media.example.net/45.aif?a=1&amp;b=2" isDefault="1" fileSize="٢٠٠٠٠"/><media:content fileSize="-1" duration='2147484' isDefault="1" type="audio/x-m4a" medium='Audio'/><title>&#38;#;  &#60;u>a=b&#x26;c=d&#60;/u&gt;</title></item></channel></rss>

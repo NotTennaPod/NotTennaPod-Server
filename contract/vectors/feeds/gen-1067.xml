@@ -1,0 +1,20 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <channel><link>https://example.com</link>
+<image><title>Image title</title><url>https://example.com/img.png</url></image>
+<itunes:summary><![CDATA[aaaaaaa<img> &#x1F600;aaaaaaa<br />]]></itunes:summary>
+<title>&lt;div&gt;&lt;p>&#x26;unknown;&lt;/p>&#60;/div&gt;</title>
+<itunes:category text="Arts"><itunes:category text="Design"/></itunes:category>
+<media:thumbnail url="https://example.com/mt.jpg"/>
+<language>pt-BR</language>
+<item><title>&#1513;&#1500;ום</title> <description></description> <itunes:summary><![CDATA[
+
+​]]></itunes:summary> <link> https://e.com/x </link> <guid isPermaLink="false">a&#38;b</guid> <pubDate>1973-01-29T04:49:50.12345-05</pubDate> <podcast:socialInteract protocol="activitypub"/></item>
+<item><itunes:subtitle>multi
+line</itunes:subtitle>
+  <title>  spaced   Tom &amp;amp; Jerry &amp;lt;3</title>
+  <enclosure url="" length='16383' type="video/x-matroska"/>
+  <itunes:summary>
+
+  spaced    padded  
+
+​</itunes:summary>
+  <guid isPermaLink="false">Café-guid</guid></item></channel></rss>

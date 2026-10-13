@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<link> https://example.com/ </link>
+<atom:link title="" rel="first" length="abc" type=""/>
+<title>&#x3C;li&gt;1 &lt;2&#x3C;/li> &#x26;#128512; café</title>
+<description>&lt;br /&gt;</description>
+<title>&amp;#x1F600;</title>
+<item><title/>
+  <podcast:person role="host">Jane</podcast:person>
+  <guid isPermaLink="false">a&amp;b</guid>
+  <link>https://example.com/ep</link>
+  <enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep67.m4b" length='2e5' type="audio/flac"/></item>
+<item><description><![CDATA[	multi
+lin]]>e</description>
+  <enclosure url="" length="16384" type="video"/>
+  <pc:chapters><psc:chapter href="https://example.com/ch" title='Intro' start='02:31:08'/><psc:chapter image="https://example.com/ch.png" href="" start='00:01:02.5'/><pc:chapter image="https://example.com/ch.png" start="740" href="https://example.com/ch"/><psc:chapter title="😀" start="01:31:44.591"/><pc:chapter href="https://example.com/ch" image="https://example.com/ch.png" title="&lt;b>x&lt;/b>" start=""/></pc:chapters>
+  <link>https://example.com/ep</link>
+  <podcast:transcript url='https://example.com/t.json' type="text/plain" language="en"/>
+  <guid isPermaLink="false">
+</guid>
+  <pubDate>	2285-07-09T16:08:59Z	</pubDate>
+  <title>&amp;#xD800;</title></item>
+<item><title><![CDATA[&euro;&copy;]]></title>
+<guid isPermaLink="false"></guid>
+<link></link>
+<description>&#128512;😀</description>
+<enclosure length="9223372036854775808" type='text/html'/></item></channel><item><title>Outside</title><enclosure url="https://example.com/o.mp3" type="audio/mpeg"/></item>
+</rss>

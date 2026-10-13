@@ -1,0 +1,86 @@
+{
+ "cases": [
+  {
+   "fact": {
+    "author_id": "22222222-3333-4444-8555-666666666666",
+    "author_seq": 1,
+    "client_time": 1700000000123,
+    "dependencies": [],
+    "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "payload": {
+     "reset_position": true,
+     "title": "Épisode \"1\"\n😀"
+    },
+    "targets": [
+     {
+      "entity": "episode",
+      "generation": "g1:cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+      "id": "e1:abababababababababababababababababababababababababababababababab"
+     }
+    ],
+    "type": "episode.mark_played",
+    "type_version": 1
+   },
+   "output": "22ac5d521cbd628093595565b029cdf33d5201671e094bdedfa02c6bb938f6c2"
+  },
+  {
+   "fact": {
+    "author_id": "22222222-3333-4444-8555-666666666666",
+    "author_seq": 2,
+    "client_time": 1700000000123,
+    "dependencies": [
+     "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+    ],
+    "op_id": "01234567-89ab-4cde-8f01-23456789abcd",
+    "payload": {
+     "reset_position": true,
+     "title": "Épisode \"1\"\n😀"
+    },
+    "targets": [
+     {
+      "entity": "episode",
+      "generation": "g1:cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+      "id": "e1:abababababababababababababababababababababababababababababababab"
+     }
+    ],
+    "type": "episode.mark_played",
+    "type_version": 1
+   },
+   "output": "bee10db4ac472f4165ce110bf864308094e4a3afee5ffdfce288940c8c9bf76c"
+  },
+  {
+   "fact": {
+    "op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "payload": {}
+   },
+   "output": "aaa8790658fdb5515d8539cd3f1c90485b4ae51a43cd7f709cad6167d17ee423"
+  },
+  {
+   "fact": {
+    "author_id": "22222222-3333-4444-8555-666666666666",
+    "author_seq": 3,
+    "client_time": 1700000000123,
+    "dependencies": [
+     "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+    ],
+    "op_id": "01234567-89ab-4cde-8f01-23456789abcd",
+    "payload": {
+     "reset_position": true,
+     "title": "Épisode \"1\"\n😀"
+    },
+    "previous_op_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "targets": [
+     {
+      "entity": "episode",
+      "generation": "g1:cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+      "id": "e1:abababababababababababababababababababababababababababababababab"
+     }
+    ],
+    "type": "episode.mark_played",
+    "type_version": 1
+   },
+   "output": "371687439b6a354921c1617c628c0fd47fda912ec680f4f02639cb268d57d51c"
+  }
+ ],
+ "suite": "content_hash"
+}

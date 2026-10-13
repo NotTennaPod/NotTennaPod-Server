@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+  <channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="Café" length="9223372036854775808" rel="enclosure" type="text/html" href="https://example.com/"/><podcast:funding url=''>Support us</podcast:funding><title> 
+&#x26;lt
+1 &#x3C;2</title><atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/alt.xml" rel="payment"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/" type="audio/mpeg" rel="archives"/><link> https://example.com/ </link><language>en</language><atom:link xmlns:atom="http://www.w3.org/2005/Atom" type="" href="https://user:pass@media.example.net/e p327.avi" rel="related" title='Alternate' length="12"/><itunes:image href=' https://example.com/sp.jpg '/><description><![CDATA[  &#xD800;<div>x<y</div><li>&#0;</li> "quoted"
+&#xA9;<br>	😀<BR>]]></description><image><url></url></image><item><title>&#x3C;section&gt;a&#13;
+b&lt;/section&gt;&#38;#xD800;&#x26;#;</title>
+<podcast:transcript url="https://example.com/t.vtt" type="application/srt" language="en"/>
+<description>&#60;div>&amp;amp;amp;&lt;/div>  😀&lt;div>100%&#60;/div&gt;multi
+line&#x3C;br&gt;  leading</description>
+<guid isPermaLink="true">  spaced guid  </guid>
+<enclosure url="https://example.com/a.b/café/333.php" length="16385" type="audio/mpeg"/>
+<itunes:author>Item author</itunes:author>
+<pubDate>Wed, 07 Aug 2024 05:02:49 -0000</pubDate>
+<itunes:summary>&lt;img src="x.png"&gt;</itunes:summary>
+<itunes:duration>1:24:37</itunes:duration></item><item><pubDate>1981-08-07T15:99:55</pubDate>
+  <itunes:image href="https://example.com/ep.jpg"/>
+  <enclosure url="https://example.com:8443/dir.with.dots/ep6.m3u8?dl=1.0" length="-16384" type="AUDIO/MPEG"/>
+  <enclosure url="" length="16383" type="video"/>
+  <itunes:subtitle>multi
+line &#60;img src="x.png&quot;> cover</itunes:subtitle>
+  <enclosure url="HTTPS://EXAMPLE.COM/201.3gp" length="２０００００" type='audio/*'/>
+  <description>&#60;BR<![CDATA[>]]></description>
+  <itunes:duration>00:00:01.999999</itunes:duration></item></channel>
+</rss>

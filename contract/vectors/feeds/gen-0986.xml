@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link xmlns="http://www.w3.org/2005/Atom" type="text/html" rel="self" href="https://example.com/feed?page=2" title="Café" length='12'/>
+<atom:link title="" href="https://example.com/pay" type='' rel="enclosure"/>
+<title><![CDATA[&'single'<ul><li>&#xFFFF;</li><li>two</li></ul>]]></title>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"/>
+<link></link>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">  Spaced  </itunes:author>
+<image><link>https://example.com/img-link</link><url></url><title>Image title</title></image>
+<description>tab	here  cr&#13;lf</description>
+<language> EN-US </language>
+<item><mrss:group><mrss:content type="application/ogg" fileSize='9223372036854775808' medium="Audio" duration="1.5"/></mrss:group> <guid isPermaLink="false">urn:uuid:79bc9e64</guid> <link></link> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">14938</itunes:duration> <title>Folge 417: Über alles&#x26;#65;&#x26;#66;&lt;font color="red&quot;&gt;'single&apos;&lt;/font&gt;</title> <pubDate>2023-02-02T07:08:13CEST</pubDate> <p:transcript url='https://example.com/t.json' type='' language="en"/><p:transcript url='https://example.com/t.vtt' type="text/plain" language="en"/><p:transcript url='https://example.com/t.json' type="" language="en"/> <enclosure url="HTTPS://EXAMPLE.COM/ep295.aif?file=x.mp3" length="２０００００" type='audio/aac'/></item>
+<item><title>&#38;amp;amp;</title>
+<guid>a&#x26;b</guid>
+<enclosure url="//example.com/café/293.wma" length="٢٠٠٠٠"></enclosure>
+<pubDate>2581-01-09-0000</pubDate>
+<enclosure url="//example.com/e p76.caf" length="9223372036854775807" type="image/*"/></item></channel>
+</rss>

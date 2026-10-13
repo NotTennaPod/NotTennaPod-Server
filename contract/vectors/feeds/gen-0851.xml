@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en"> <logo></logo> <subtitle type="HTML"></subtitle> <updated>2289-10-16T01:57:48WET</updated> <author><name>  Bob  </name></author> <link title='MP3 feed' href="https://example.com/"/> <title>[x]  tab	here  AT&#38;T</title> <itunes:image href=""/> <id>https://example.com/feed</id> <link type="application/xhtml+xml" title="" rel="payment" length="20000"/> <entry><published>1066-03-29T02:16:99+0000</published>
+<id>urn:uuid:1</id>
+<title type="HTML">&amp;lt;b&amp;gt;escaped&amp;lt;/b&#x26;gt;  padded  multi
+line</title>
+<content type='html'><![CDATA[  a < b مرحبا<hr/>aaaa<img src="x.png">	café<p></p> "quoted"]]></content>
+<updated>2000-09-07T09:58:47+0945</updated>
+<itunes:duration>1:00:00:00</itunes:duration></entry> <entry><itunes:duration>08:55</itunes:duration> <link length='9223372036854775808' rel="alternate" title="Café" href="https://example.com/pay"/> <id></id> <updated>Mon, 28 Apr 2487 01:17 -1200</updated> <title type="plain">plain words  &amp;#xD800;</title> <published>Fri, 14 Oct 2016 04:21</published></entry> <entry><id>urn:uuid:1</id>
+<updated>Thursday Mar 16 18:04:27 2513</updated>
+<title><![CDATA[Episode 585  <img src="x.png"> cover]]></title>
+<link title="Café" href="https://example.com/" rel='hub'/>
+<summary type="plain">&#x3C;p>sep&#60;/p&gt;&lt;div&gt;Episode 7&lt;/div&gt; &#38;;</summary>
+<itunes:duration>4623.288</itunes:duration></entry> <entry><published>1996-08-06T19:55:28+0100</published> <title>tab	here</title> <link href="https://example.com/alt.xml" length="abc" rel="archives" title=""/></entry> <entry><link type="application/xhtml+xml" href="https://cdn.example.com/a/b/c180.opus" title="Café" length="20000" rel="payment"/>
+<p2:transcript url="https://example.com/t.vtt" type="text/html" language="en"></p2:transcript><p2:transcript url="https://example.com/t.json" type="text/vtt" language="en"/><p2:transcript url='https://example.com/t.vtt' type="application/srr"/>
+<itunes:duration>11850</itunes:duration>
+<summary type="HTML"><![CDATA[😀😀😀😀
+a < b<BR> <3 <3  &apos;a&apos;<li>مرحبا</li>&AMP;<br>&amp<br>]]></summary>
+<title type="text">&#x26;amp &amp;#169;</title>
+<published>Wed, 23 Nov 2472 23:34:54 CEST</published>
+<content type="text"></content>
+<updated>Mon Feb 19 18:18:19 1990 MSK</updated>
+<id>
+id
+</id></entry> <entry><updated>Thursday, 	06 Oct 2409 15:27:58 -0000</updated>
+<id></id>
+<itunes:duration>45</itunes:duration>
+<link rel="related" type="application/xml+xhtml" length='12' title=""/>
+<title type="html">	
+&lt;del>שלום&#60;/del&gt;	</title>
+<summary type="html"><![CDATA[ &euro;]]></summary></entry> <entry><link title='Alternate' rel="related" type="text/html" length='abc'/><link href="" rel="last" type="text/html" title="MP3 feed"></link><title type="plain"><![CDATA[​
+[x]]]></title><content type="plain"></content><itunes:image href=""/><summary><![CDATA[😀<hr>]]></summary></entry> <entry><content type='text'></content>
+<summary><![CDATA[http://example.com/?a=1&b=2<br>]]></summary>
+<author><name>Entry author</name></author>
+<title type="plain"><![CDATA[&hellip;<b>Bold</b> title]]></title>
+<updated>	Wed, 25 October 1950 11:09&#13;
+</updated>
+<id>urn:uuid:1</id>
+<published>0099-06-21T03:00:50.595Z</published>
+<link href="" rel="enclosure" title="MP3 feed"/></entry> </feed>

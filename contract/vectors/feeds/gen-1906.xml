@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><podcast:funding url=""></podcast:funding>
+  <podcast:funding url="https://example.com/donate">&#x3C;b&gt;x&#x3C;/b></podcast:funding>
+  <itunes:author>Jane<![CDATA[ Doe]]></itunes:author>
+  <link> https://example.com/ </link>
+  <title><![CDATA['single'
+<b>Bold</b> title]]></title>
+  <description>ééé&lt;li&gt;&#60;img src="x.png"<![CDATA[> cover</li><p>100%</p>]]></description>
+  <itunes:image href=" https://example.com/sp.jpg "/>
+  <podcast:funding/>
+  <lastBuildDate>Mon, 32 Aug 1752 07:07 +1400</lastBuildDate>
+  <item><title>&lt;strong>café&#x3C;/strong&gt;  100%  &lt;section>&#x26;#;&#x3C;/section&gt;</title>
+<pubDate>Mon 08 May 2417 16:45:24 +0945</pubDate>
+<guid isPermaLink='true'> </guid>
+<itunes:summary>&lt;div>sep&#60;/div&gt;</itunes:summary>
+<description>
+#hash</description></item>
+  <item><enclosure url="" length="16383" type="text/plain"/> <description>&#x3C;div&gt;&#1605;&#1585;&#1581;&#1576;&#x627;&lt;/div&gt;</description> <enclosure length='00020000' type="application/octet-stream"/> <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2396-09-24T06:37:36.282EST</dc:date> <guid isPermaLink='true'>urn:uuid:d3254e78</guid> <itunes:duration>55:13</itunes:duration> <title><![CDATA[&hellip;  &Lt;]]></title> <pubDate>Tuesday, 03 Jun 2431 12:51:38 -0500</pubDate></item>
+  <item><title>
+a &#60; bTom &#38;amp; Jerry &#x26;lt;3
+</title> <content:encoded><![CDATA[&#128512;&#128512;&#128512;]]></content:encoded> <pubDate>Sat, 31 Oct 2006 22:27:22</pubDate> <itunes:summary></itunes:summary> <guid>urn:uuid:a9205328</guid> <itunes:image href=" "/> <description>
+&lt;3 &lt;<![CDATA[3]]></description> <enclosure url="https://xn--caf-dma.example/ep1.php" length="-9223372036854775808" type="Audio/MPEG"/></item></channel> </rss>

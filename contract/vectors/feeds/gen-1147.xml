@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<link length="9223372036854775808" title="MP3 feed" href="https://example.com/pay" rel="hub" type="application/xhtml+xml"/>
+  <title><![CDATA[100%]]></title>
+  <id> raw </id>
+  <link href="https://example.com/pay" length="20000" type="text/html" rel="enclosure"/>
+  <link type="" length="abc"/>
+  <subtitle type="plain"><![CDATA[    Episode 12
+
+&#169; cr
+lf
+&quot;q&quot;]]></subtitle>
+  <googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+  <entry><itunes:image href="https://example.com/e.jpg"/><content type="text">	&#x26;lt;b&#x26;gt;&#60;hr/&gt;</content><title type="text">&amp;nbsp;</title><summary type="html"><![CDATA[<li>&lt;b&gt;</li>]]></summary><id></id><link rel="enclosure" title="MP3 feed" length="12" href=""/><updated>2518-10-24T02:58:47.1234GMT+1</updated><published>Thu 01 Jan 2024 10:00:00 +0000</published><link rel="related" length="12" type="application/rss+xml" title="Alternate"></link></entry>
+  <entry><link type="audio/mpeg" href="" rel="last" title="Café" length="abc"/>
+<title type="text">100%  a=b&#x26;c=d</title>
+<id> raw </id>
+<link type="application/atom+xml" length="20000" href="" title="Café" rel="hub"/>
+<updated>x, 	15 Sep 2007 15:56:06 -0500</updated>
+<summary><![CDATA[<br></br> &;<p>&lt;b&gt;</p>]]></summary></entry>
+  <entry><updated>Tue, 06 Jan 1981 18:09:60 +1400</updated>
+  <id> raw </id>
+  <itunes:duration>155:40</itunes:duration>
+  <published>Wednesday, 04 Nov 11 14:40 +0530</published>
+  <title type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">S01E528</div></title></entry>
+  </feed>

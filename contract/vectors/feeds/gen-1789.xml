@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="en"><link rel="enclosure" type='application/rss+xml' length="12" title="MP3 feed" href="https://example.com/pay"/>
+<title type="html">&#x3C;b>שלום&lt;/b&gt;</title>
+<id></id>
+<logo></logo>
+<author><name>Émile</name></author>
+<icon>https://example.com/icon.png</icon>
+<entry><itunes:duration>45</itunes:duration>
+<link length="9223372036854775808" href="https://example.com/pay" type="application/atom+xml" rel="payment"></link>
+<author><name>Entry author</name></author>
+<title>&#x26;</title>
+<updated>	07 Feb 2230 15:16:14 +1400
+</updated>
+<summary type="html"><![CDATA[  multi
+li]]>ne &#x26;#;</summary></entry>
+<entry><published>Wednesday, 08 Sep 1982 09:14 -0800</published> <content type="HTML"></content> <summary type="html">&#60;br>&lt;/br&gt; &#60;3 &lt;3</summary> <updated>Thursday, 30 Oct 2021 21:02</updated> <id> raw </id> <title><![CDATA[trailing 
+<span>trailing </s]]>pan&gt;
+&#38;lt</title></entry>
+<entry><id> raw </id><summary><![CDATA[<img>😀
+]]></summary><itunes:image href=""/><link href="https://example.com/" rel="alternate" type="text/html" title=""/><author><name>Entry author</name></author><title type="text">&amp;copy;</title></entry>
+</feed>

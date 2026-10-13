@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="EN-us">
+<atom:title type="html"><![CDATA[1 <2
+茶]]></atom:title>
+<atom:link length="20000" type="application/xhtml+xml" rel="last" href="https://example.com/feed?page=2" title=""/>
+<atom:link length="abc" href="https://example.com/pay" rel="hub" type="" title="Alternate"/>
+<podcast:funding url="https://example.com/give">Give</podcast:funding>
+<atom:link title="MP3 feed" rel="enclosure" href="https://example.com/pay" type="application/atom+xml"/>
+<atom:id></atom:id>
+<atom:entry><atom:link href='https://example.com/feed?page=2' title="MP3 feed" length="abc" type="application/atom+xml"/>
+<atom:content type="HTML">&#60;BR&gt;</atom:content>
+<i:duration>5:23:43</i:duration>
+<atom:link href="https://example.com/" rel="related" type="application/atom+xml" title="Café"/>
+<media:content isDefault="false" type="unknown" fileSize="+20000" duration="59"/>
+<atom:link type="application/xhtml+xml" length="20000" title="" rel="last" href="https://example.com/feed?page=2"></atom:link>
+<atom:updated>Sat, 09 November 2002 09:09:40 +1400</atom:updated>
+<atom:title type="plain">&amp;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt;</atom:title>
+<atom:id></atom:id>
+<atom:published>Foo,  19 Sep 13 17:03 +0100</atom:published></atom:entry>
+<atom:entry><atom:content type='html'>😀😀😀</atom:content>
+<i:duration>2871</i:duration>
+<atom:updated>2012-04-19T14:44:12.537+0100</atom:updated>
+<atom:author><atom:name>Entry author</atom:name></atom:author>
+<atom:title>100%&amp;#x;&lt;table&gt;&#60;tr>&#60;td>茶&lt;/td>&lt;td&gt;b&lt;/td>&lt;/tr&gt;&#60;/table></atom:title>
+<atom:id>tag:x,2020:1</atom:id>
+<atom:published>Sun, 32 Jan 1900 07:14:43 +0100</atom:published></atom:entry>
+<atom:entry><media:content type="audio/mpeg" duration='0060' fileSize="-9223372036854775808" medium="image"/> <podcast:transcript url="" type="text/html"/><podcast:transcript url="" type='application/srt'></podcast:transcript> <atom:title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;#65;&amp;#66;</div></atom:title> <atom:id></atom:id> <atom:link rel="alternate" type='application/xhtml+xml' title="Alternate" length="abc" href='https://example.com/'/> <atom:updated>Monday, 04 Sep 1950 04:32:39 +0530</atom:updated> <atom:summary><![CDATA[<li>&#128512;</li>aaaaaaa"quo]]>ted"&lt;br&gt;&#x1F600;😀😀 &#x3C;3 &lt;3</atom:summary> <atom:published>Mon, 26 Aug 1974 06:45:05 +0530</atom:published> <atom:link href="ftp://files.example.com/156.amr" rel="next" type="application/xml+xhtml"></atom:link> <atom:author><atom:name>Entry author</atom:name></atom:author></atom:entry>
+  </atom:feed>

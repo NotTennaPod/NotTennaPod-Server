@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><!-- generated -->
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <icon>https://example.com/icon.png</icon> <link href='' rel="" type="" length="12"/> <author><name>Émile</name></author> <id></id> <link rel="self" type="application/atom+xml" title='Alternate' length='9223372036854775808'/> <link rel="" title=""/> <title type="xhtml">&lt;big<![CDATA[>&#33590;</big>
+<p>&Lt;</p>
+&#1513;&#1500;&#1493;&#1501;]]></title> <logo>https://example.com/logo.png</logo> <link type="application/atom+xml" rel="next" title='MP3 feed'/> <entry><id></id>
+<content><![CDATA[S01E]]>7</content>
+<itunes:duration>7356</itunes:duration>
+<podcast:transcript url="https://example.com/t.vtt" type="Application/JSON" language='en'/>
+<itunes:image href=""/>
+<title type="xhtml"><![CDATA[#hash
+&#65;&#66;
+1 <2]]></title></entry> <entry><published>
+ 2346-12-31T01:22:09 	  </published>
+<summary type='HTML'> &amp;#0;&#x3C;div&gt;&#x26;#xA9;&lt;/div&gt;&#60;img src="x.png&quot;>&#13;
+http://example.com/?a=1&amp;b=2&#x1F600;&#x1F600;&#128512;&#128512;</summary>
+<itunes:duration>7921</itunes:duration>
+<title type="text"><![CDATA[&euro;]]></title></entry> <entry><title type="plain">a &lt; b &amp;#0;  leading</title> <updated>2010-05-08T14:16:45GMT</updated> <content type="html"><![CDATA[&#128512;&#128512;&#128512;<div>x<y</div><li>trailing </li>&copy;<br>&#128512;&#128512;&#128512;<br>aaa]]>aaaaa&#128512;&#128512;&#128512;&#128512;</content> <itunes:duration>2:31:16</itunes:duration> <published>Fri, 03 Jul 2009 16:48:53 -0000</published> <summary><![CDATA[&copy;<br>&#128512;&#128512;&#128512; &#xA9; R&D]]></summary></entry> <entry><content>  &amp;mdash;
+
+a > b</content>
+<link length="9223372036854775808" title="Café" type='application/rss+xml' rel='next' href='https://example.com/feed?page=2'/>
+<title type="HTML">&#x3C;p&gt;Para&lt;/p> &amp;lt</title>
+<id>
+id
+</id>
+<link rel="related" title="MP3 feed" length="20000"/>
+<link href="https://example.com/feed?page=2" title='MP3 feed' rel="payment"/>
+<updated>2232-03-05T18:55:20+0200</updated></entry>
+</feed>

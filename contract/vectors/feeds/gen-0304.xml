@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:media="http://search.yahoo.com/mrss/"><i:subtitle><![CDATA["quoted"]]></i:subtitle><atom:link rel="self" type="audio/mpeg" length="20000" title="Alternate"/><title>&#60;h6&gt;a &lt; b&#60;/h6>Line&#x3C;br&gt;breakS01E118</title><atom:link length="abc" href='https://example.com/alt.xml' rel="related" title="" type="application/xml+xhtml"/><language>fr
+</language><link> https://example.com/ </link><podcast:funding/><podcast:funding url='https://example.com/donate'>  spaced  </podcast:funding><i:summary> &#38;<![CDATA[copy;<br />]]></i:summary><podcast:funding/><atom:link href="https://example.com/" type='' rel="next" length="20000" title="Alternate"/><description>&#x3C;p>  spaced  &#60;/p> #hash &amp;Lt;&lt;p> leading&lt;/p>  &#x26;lt;b&#38;gt;</description><atom:link type="application/xhtml+xml" title="Alternate" href="" rel="enclosure"/><item><link> https://e.com/x </link><guid isPermaLink='true'>https://example.com/item/27788</guid><description><![CDATA[&AMP;]]></description><i:image href=""/><i:duration>56:43</i:duration><title><![CDATA[http://example.com/?a=1&b=2]]></title><dc:date>25 Septem 2016 16:56:15 +1400</dc:date></item><item><title>x&#x3C;y {json: 1}</title><guid isPermaLink="true"></guid><link></link><pubDate>Sunday, 25 Oct 14 07:22</pubDate><enclosure url='ftp://files.example.com/ep169.m3u8' length="2e5" type="audio/"/><media:thumbnail url=""/></item><item><link> https://e.com/x </link>
+<content:encoded></content:encoded>
+<pubDate>January 15, 2024</pubDate>
+<title>&#x26;#;</title>
+<guid isPermaLink="false"> </guid>
+<description></description>
+<i:subtitle>#hash  &amp;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt;</i:subtitle></item></channel>
+</rss>

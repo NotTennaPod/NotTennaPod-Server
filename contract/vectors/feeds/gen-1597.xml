@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en"> <subtitle type="html">&lt;div&gt;Lin<![CDATA[e<br>break</div><img>]]></subtitle>
+<id></id>
+<link rel="first" href='https://example.com/feed?page=2' length='12'/>
+<title type='html'>&#13;
+#550 – Interview&#13;
+</title>
+<link title="Café" href="" length="9223372036854775808" rel="Next" type="audio/mpeg"></link>
+<link length='12' title="" href='https://example.com/pay' rel="first" type="application/atom+xml"/>
+<entry><title type="HTML">#534 – Interview&#x26;;&amp;unknown;</title>
+  <link rel="last" type="application/xml+xhtml" title="" href="https://example.com/feed?page=2" length="20000"/>
+  <author><name>Entry author</name></author>
+  <published>19 Feb 25 19:36 -0500</published>
+  <id>urn:uuid:1</id>
+  <link href="https://example.com/feed?page=2" rel='alternate' type="application/xml+xhtml"/>
+  <itunes:image href="https://example.com/e.jpg"></itunes:image></entry>
+<entry><link title="Alternate" href="" type='application/xml+xhtml' rel=""/>
+  <content type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">a &lt; b&#60;br></div></content>
+  <id>tag:x,2020:1</id>
+  <link length="12" href="http://example.org/ep151.m4v" title="Café" rel="alternate"/>
+  <title type="html">&amp;#xA9;&#x3C;code>&amp;mdash;&#x3C;/code></title>
+  <updated>Friday, 23 Mar 1066 25:49:03</updated>
+  <link href="https://example.com/alt.xml" length="20000" rel="enclosure" type="application/xml+xhtml"/></entry>
+<entry><title type="HTML"><![CDATA[a
+  b &amp;]]></title> <summary type="HTML">&lt;img&gt;
+'single' R&amp;D</summary> <published>Tue,09 Nov 1982 17:47:34 +0000</published> <link length="20000" title="" rel="related" type="" href="https://example.com/"/> <id>
+id
+</id> <link href="https://example.com/pay" type="" title="MP3 feed" rel="payment" length="20000"/> <updated>Sat, 08 Mar 2324 20:54:47 -0000</updated></entry>
+<entry><link title="Café" type="text/html" rel="payment"/>
+  <media:content fileSize="+20000" type="application/pdf" duration="-5"/>
+  <itunes:duration>35791:23:48</itunes:duration>
+  <id></id>
+  <updated>2012-12-17T08:03:23Z</updated>
+  <link title="Alternate" rel="enclosure" href='https://example.com/alt.xml' type="audio/mpeg"/>
+  <title>é &lt;label&gt;第539集&lt;/label&gt;</title></entry>
+<entry><link length="9223372036854775808" title="Alternate" href='https://example.com/' type="application/atom+xml"/>
+<id> raw </id>
+<title type="HTML">&#60;3 &lt;3</title>
+<itunes:duration>2:22:36</itunes:duration>
+<published>Monday, 17 Jul 1978 13:28:06 GMT-05:00</published>
+<content type="plain">&lt;p>&amp;unknown;&#x3C;/p>&#x3C;br>&lt;/br&gt;</content></entry>
+<entry><author><name>Entry author</name></author> <id></id> <content>&lt;br/&gt;	a &#60; b</content> <link rel="Next" title="" type="application/rss+xml" href='https://example.com/'/> <published>Friday, 26 September 2009 11:40:16</published> <itunes:image href="https://example.com/e.jpg"/> <title type="text">&#x3C;p&gt;&#x3C;p>&amp;mdash;&lt;/p>&lt;/p></title> <summary type="html">'s<![CDATA[ingle'<br>]]></summary> <link title="Café" length="12" type="application/rss+xml" href="https://example.com/feed?page=2" rel=''/> <podcast:transcript url="https://example.com/t.json" type="application/json" language='en'/></entry>
+<entry><title type="html">&#60;tt>{json: 1}&lt;/tt&gt;&#38;;</title>
+<id></id>
+<updated>1997-07-30T23:07:35.907 +0000</updated>
+<link type="text/html" title="MP3 feed" rel="related" length="12"/>
+<summary>&#xE9;éé</summary>
+<itunes:image href="https://example.com/e.jpg"/>
+<content type='html'>  sep&amp;lt;b&#x26;gt;&lt;br>&lt;<![CDATA[p>a > b</p>]]></content></entry>
+<entry><link rel="Next" href="https://user:pass@media.example.net/e p390.m4v" length="9223372036854775808" type="text/html" title=''/><itunes:duration>1:30 </itunes:duration><updated> TUE 1 Nov 2129 20:06:15 GMT+1400 (Coordinated Universal Time)  </updated><title type="plain">&#x7B2C;63集  &amp;copy;</title><itunes:image href=''/><link href="https://example.com/" title="Alternate" rel="last" type="application/atom+xml" length="9223372036854775808"/><id>
+id
+</id><content>&#13;
+&#x26;mdash;</content></entry>
+<entry><title type='text'>Folge 489: Über alles&amp;;</title> <id>urn:uuid:1</id> <content type='html'>&lt;li>&#38;lt&#x3C;/li>&#x3C;p&gt;&#x26;amp&lt;/p&gt;&lt;img src="x" alt="y"/></content> <updated>1998-04-30PDT</updated> <summary type="plain"><![CDATA[ ]]>&#x26;copy;</summary> <itunes:duration>
+45:00
+</itunes:duration> <link rel="payment" length="12" title="" type="application/xhtml+xml"></link></entry>
+<entry><id></id>
+<published>2008-08-14T19:58:33.123Japan Standard Time</published>
+<title type="html"> &lt;h6&gt;&amp;nbsp;&lt;/h6>&#x26;#0;
+</title>
+<link title="MP3 feed" type="" length="12" href="https://example.com/alt.xml" rel='alternate'/>
+<itunes:duration>14113</itunes:duration>
+<itunes:image href="https://example.com/e.jpg"/>
+<content type="text">
+&amp;lt
+
+multi
+line&lt;p&gt;&amp;#0;&lt;/p&gt;
+&#x26;c<![CDATA[opy;ééé]]></content>
+<updated>
+Montag 10 Aug 2561 05:42:52 GMT+0000 (PDT)&#13;
+</updated></entry>
+<entry><id>urn:uuid:1</id>
+<updated>Thu, 12 April 1601 16:12 +0000</updated>
+<published>2259-06-03-0000</published></entry>
+<entry><title type="text">S01E167  &#60;article&gt;​&#60;/article&gt;  &#x26;mdash;</title> <published>2003-11-16T25:50:34Z</published> <summary type="html"><![CDATA[<li>'single'</li>]]></summary> <sc:chapters><sc:chapter start='3:12' href="https://example.com/ch" image="https://example.com/ch.png"/><sc:chapter href="" start='02:30:48.420' title='Intro' image="https://example.com/ch.png"></sc:chapter><sc:chapter href="https://example.com/ch" start="01:02:03:04:05" title="😀"/><sc:chapter title="😀" image="https://example.com/ch.png" href="" start="1:2:"></sc:chapter></sc:chapters> <content type="HTML">trailing &#x3C;br&gt;&lt;p&gt;&lt;/p&gt;
+茶&lt;br /> &amp;apos;a&amp;apos;</content> <author><name>Entry author</name></author> <id>urn:uuid:1</id></entry>
+  </feed>

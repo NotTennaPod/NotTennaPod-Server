@@ -1,0 +1,19 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en"> <itunes:author>Café Radio</itunes:author>
+<author><name>Ann</name></author>
+<updated>Tue, 24 May 2005 07:20 +0530</updated>
+<link rel="archives" length="12" type="application/rss+xml" href='https://example.com/' title=''/>
+<media:thumbnail url="https://example.com/amt.jpg"/>
+<icon></icon>
+<subtitle type="html">&#x3C;div>&#x26;lt;b&amp;gt;escaped&#x26;lt;/b&amp;gt;&lt;/div&gt;Folge 7: Über allesTom &amp;amp; Jerry &#38;lt;3&#60;img>&#x3C;div&gt;a &lt; b&#x3C;/div&gt;</subtitle>
+<id>https://example.com/feed</id>
+<title type="HTML"><![CDATA[<b>Bold</b> title
+&#128512;
+plain words]]></title>
+<link href="https://example.com/feed?page=2" title="Alternate" rel='Next' length='9223372036854775808' type="application/xml+xhtml"/>
+<entry><id> raw </id>
+<title>&#x3C;sub&gt;multi
+line&lt;/sub> cr&#13;lf &#38;Lt;</title>
+<link type="text/html" rel="related" length='12' title=""/>
+<updated>Tuesday, 32 Nov 2006 10:32:25</updated>
+<link rel="first" title="" href="" type="text/html" length="abc"/></entry>
+</feed>

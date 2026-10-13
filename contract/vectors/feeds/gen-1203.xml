@@ -1,0 +1,22 @@
+<!-- generated -->
+<rss version="2.0" xmlns="http://backend.userland.com/rss2" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link rel="self" length="12" title="Café" href="https://example.com/alt.xml"/>
+<language>en</language>
+<description> שלום<![CDATA[]]></description>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">DC Creator</dc:creator>
+<lastBuildDate>1752-11-23</lastBuildDate>
+<item><content:encoded>R&#x26;D</content:encoded>
+  <description>😀😀</description>
+  <title>&lt;p>&#60;p>&amp;#xA9;&lt;/p&gt;&#x3C;/p&gt;
+&amp;Lt;<![CDATA[]]></title>
+  <mrss:description type="plain"><![CDATA[<div>&#xD800;</div> "quoted"{json: 1}aaaaaa  tab	here<hr/>😀 &amp;]]>amp;</mrss:description>
+  <pubDate>0001-06-07T21:58:23Z</pubDate>
+  <link></link>
+  <guid isPermaLink='false'>
+</guid></item>
+<link> https://example.com/ </link>
+<image><url>https://example.com/img.png</url></image>
+<title><![CDATA[<div dir="rtl">{json: 1}</div>&#x1F600;]]></title>
+<podcast:funding>&#x3C;b&gt;x&lt;/b&gt;</podcast:funding>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&lt;br /&gt;&lt;br />&#60;p&gt;&#x3C;/p&gt;</itunes:summary></channel>
+  </rss>

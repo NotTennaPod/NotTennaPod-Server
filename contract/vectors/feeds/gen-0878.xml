@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="EN-us">
+<updated>Sat, 29 Apr 2007 14:10 +0000</updated>
+<id>urn:x</id>
+<link title=""/>
+<logo> https://e.com/l.png
+</logo>
+<title type="html"> &lt;span style="color:red&quot;&gt;{json: 1}&lt;/span>&#60;b&gt;http://example.com/?a=1&amp;b=2&lt;/b> </title>
+<entry><itunes:image href="https://example.com/e.jpg"/> <published>Sun 21 Jan 2024 20:12:28 GMT-0000 (Pacific Standard Time)</published> <content type="text"><![CDATA[	café]]></content> <summary type="html"><![CDATA[<p>R&D</p><li>&lt;b&gt;</li><p/>	multi
+line<li>a=b&c=d</li>]]></summary> <updated>fri, 28 December 1979 16:23:27</updated></entry>
+<entry><published>2339-05-31T19:35:43.442+1400</published> <summary type="text">&#13;
+&amp;#169;aaaaaaa​&#x3C;br>&#x3C;p>&#x3C;b&gt;Bold&lt;/b&gt; title&#x3C;/p&gt;   leading</summary> <updated>Tue, 04 May 1976 02:29</updated> <author><name>Entry author</name></author> <itunes:duration>17008</itunes:duration> <title type="plain"><![CDATA[&unknown;
+back\slash
+茶]]></title></entry>
+<entry><content type="html"><![CDATA[<li>trailing </li>ééé]]></content>
+<id>
+id
+</id>
+<published>1899-07-09T09:55:43.1234567Greenwich Mean Time</published>
+<author><name>Entry author</name></author>
+<link rel="hub" href="https://example.com/pay" title="MP3 feed" length="20000" type="application/xhtml+xml"></link>
+<link length="9223372036854775808" type="" rel="self" title="Alternate"/>
+<link length="abc" rel="first" type="application/rss+xml" href="https://example.com/a.b/a/b/c183.m4b" title="Café"/>
+<title type='text'>  &#38;#65;&amp;#66;  &#60;small&gt;&lt;img src=&quot;x.png"&gt; cover&lt;/small&gt;  &amp;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;  </title></entry>
+  </feed>

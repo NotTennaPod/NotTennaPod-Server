@@ -1,0 +1,17 @@
+﻿<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><link>https://example.com</link>
+<item><title><![CDATA[ &copy;  <u><img src="x.png"> cover</u>  茶  ]]></title>
+<guid isPermaLink="false">dup</guid>
+<enclosure length=" 20000" type="image/jpeg"/>
+<pubDate>0001-05-02T19:26:46.1234+1400</pubDate>
+<link> https://e.com/x </link>
+<description>&lt;div&gt;&amp;AMP;&lt;/div&gt;&#60;p>a
+  b&#60;/p&gt;
+&#x26;lt;b&#38;gt;</description></item>
+<item><podcast:socialInteract uri='' protocol="activitypub"></podcast:socialInteract><link> https://e.com/x </link><description><![CDATA[
+
+&#0;😀😀	'single'<li>tab	here</li><p></p>]]></description><enclosure url="https://example.com/a.b/dir.with.dots/ep193.mp3" length="9007199254740993" type="application/json"/><title><![CDATA[<i>back\slash</i><cite>&Lt;</ci]]>te&gt;&amp;unknown;</title><podcast:transcript url="https://example.com/t.json" type="text/plain" language="en"/><podcast:transcript url="https://example.com/t.json" type='application/json' language="en"/></item>
+<link xmlns="http://www.w3.org/2005/Atom" length="9223372036854775808" type="application/xhtml+xml" rel='payment' href="https://example.com/feed?page=2"/>
+<language> EN-US </language>
+<podcast:funding>Support us</podcast:funding>
+<title>[x]a &#x3C; b</title>
+<description>&#x3C;div>&#38;euro;&lt;/div>aaplain words  &amp;#x;&#x3C;li&gt;&#60;p&gt;Para&lt;/p&gt;&lt;/li&gt;</description></channel></rss>

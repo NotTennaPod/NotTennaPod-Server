@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><pi:funding url="https://example.com/donate"></pi:funding>
+<link></link>
+<pi:funding url="">Support us</pi:funding>
+<itunes:subtitle> &#60;tt&gt;&#x26;#;&lt;/tt&gt; &#x26;amp  </itunes:subtitle>
+<language>en</language>
+<description>&#60;div&gt;茶&lt;/div>&#60;br/&gt;&#13;
+é</description>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<title><![CDATA[AT&T <del>é</del> مرحبا]]></title>
+<item><itunes:duration>26:18</itunes:duration>
+  <link> https://e.com/x </link>
+  <enclosure url="https://xn--caf-dma.example/dir.with.dots/ep139.oga" length="20000 " type="image/jpeg"></enclosure>
+  <pubDate>&#13;
+2002/12/08T14:29:35+0945  </pubDate>
+  <itunes:image href=" "></itunes:image>
+  <!-- comment --><?pi data?>
+  <description>&#x3C;p>&amp;copy;&lt;/p>&#38;lt&lt;br>é&#233;&#233;	&amp;#x; &#38;amp;&#x3C;div>cr&#13;lf&#x3C;/div&gt;&lt;p&gt;&#60;3 &lt;3&#x3C;/p&gt;😀😀😀😀</description>
+  <title>&amp;#0;
+&#38;euro;
+multi
+line</title></item>
+<item><title>&#31532;947集  a=b&#38;c=d  &#x26;#x1F600;</title>
+<guid isPermaLink="false">https://example.com/item/76228</guid>
+<link>https://example.com/ep</link>
+<description><![CDATA[<div>&apos;a&apos;</div>a > b<br><p><img src="x.png"> cover</p><br><p></p><li> </li><br></br><div>&#xD800;</div>]]></description>
+<itunes:duration>7963</itunes:duration>
+<enclosure url="" length="-1" type="Audio/MPEG"/></item></channel>
+  </rss>

@@ -1,0 +1,31 @@
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><atom:link href="https://example.com/alt.xml" rel="archives" type='text/html' title=''/><atom:link rel="payment" type='text/html' title="MP3 feed" href="https://example.com/pay"/><atom:link rel="related" type='application/atom+xml' length="9223372036854775808" href="https://example.com/" title="MP3 feed"/><itunes:owner xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:name xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Owner</itunes:name><itunes:email xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">o@example.com</itunes:email></itunes:owner><description><![CDATA[<div>&</div>tab	here<br><li></li>]]></description><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=''/><title><![CDATA[مرحبا <img src="x.png"> c]]>over</title><itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[<div>&#xFFFF;</div> "quoted"ééé<img src="x.png"><li>&</li>  spaced  <br/> &#65;&#66;]]></itunes:summary><language>fr
+</language><link></link><atom:link rel="self" type="application/xml+xhtml" href="" title=""/><item><guid>https://example.com/item/7803</guid>
+<link>https://example.com/ep</link>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">0:28:27</itunes:duration>
+<enclosure length="123456789012345678" type="application/x-bittorrent"></enclosure>
+<pubDate>2587-02</pubDate>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep67.m4b" length="18446744073709551616" type="image/jpeg"/>
+<media:content url="https://xn--caf-dma.example/café/17.aac" type="unknown" isDefault="1" fileSize="abc" duration=""/>
+<title>&#x3C;p&gt;a&#13;
+b&#x3C;/p&gt;&#60;3 &#x3C;3😀</title>
+<content:encoded> a
+
+b</content:encoded></item><item><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"> </itunes:duration><pubDate>2448-12-06T05:46:25PDT</pubDate><enclosure url="https://cdn.example.com/a/b/c99.jpg" length="9007199254740991" type="unknown"/><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" "/><link> https://e.com/x </link><title>第895集</title><media:group><media:content isDefault='TRUE' duration="01:00" url="https://cdn.example.com/a/b/c250.php" fileSize="20000.0" type="application/pdf"/></media:group><enclosure length="9007199254740991" type="video/quicktime"/></item><item><description>ééé</description>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">2515.753</itunes:duration>
+<itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#38;#0;  &amp;copy;  Tom &#x26; Jerry &#60;3</itunes:subtitle>
+<pubDate>1979-09-07</pubDate>
+<enclosure url="" length="2147483647" type="audio/*"/>
+<media:thumbnail/>
+<link></link>
+<title><![CDATA[😀 &lt;b&gt;]]></title>
+<media:description type="html">&lt;hr>&#x3C;br&gt;&#x3C;/br> &amp;#0;&#xE9;éé
+
+  spaced  </media:description>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""/></item><item><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1:24:50</itunes:duration>
+  <comments>https://example.com/c</comments>
+  <guid>dup</guid>
+  <enclosure url="" length="1,000,000" type="audio/mpeg"/>
+  <media:thumbnail url="https://example.com/th.jpg"></media:thumbnail>
+  <title>&#x3C;b&gt;&#x26;#xD800;</title>
+  <description></description>
+  <link></link></item><item><title>&lt;span style="color:red&quot;&gt;Line&#60;br&gt;break&lt;/span></title> <link>https://example.com/ep</link> <pubDate>08 Sep 83 15:40 +0100</pubDate> <description><![CDATA[  &#0; ​&apos;a&apos;<br><p>&nbsp;</p><br></br>]]></description> <content:encoded>&#x3C;br /&gt;</content:encoded> <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&lt;ul&gt;&#x3C;li&gt;&lt;3 &lt;3&#60;/li>&#x3C;li&gt;two&lt;/li>&#60;/ul>&amp;#;&amp;quot;q&amp;quot;</itunes:subtitle> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">3229</itunes:duration> <enclosure length="20000 " type=" audio/mpeg"/></item></channel></rss>

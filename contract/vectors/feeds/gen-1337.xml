@@ -1,0 +1,12 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:image/>
+<link xmlns="http://www.w3.org/2005/Atom" href="https://xn--caf-dma.example/ep230.wav?dl=1.0" rel="hub" type='application/atom+xml' length="12" title="Café"/>
+<media:thumbnail url="https://example.com/mt.jpg"/>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<atom:link href="https://example.com/" rel='payment'/>
+<title>Line&#60;br&gt;break a &gt; b a&#13;
+b</title>
+<link xmlns="http://www.w3.org/2005/Atom" href="https://user:pass@media.example.net/e p390.m4v" type="audio/mpeg" rel="related" title="MP3 feed" length="9223372036854775808"/>
+<language>pt-BR</language>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<link>https://example.com</link></channel></rss>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns="" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom">
+  <channel><itunes:author><![CDATA[😀 Pod]]></itunes:author> <podcast:funding url="https://example.com/donate"></podcast:funding> <item><guid isPermaLink="true">
+</guid><pubDate>Tue, 27 Mar 1601 15:10:54 +0945</pubDate><description>&#60;p>&#x3C;/p>&lt;div&gt;&amp;;&lt;/div></description><itunes:subtitle><![CDATA[&#xFFFF;]]></itunes:subtitle><itunes:duration>43:32</itunes:duration><enclosure type="audio/mpeg"></enclosure><enclosure length="-0" type="audio"/><enclosure length='20000.0' type="application/x-bittorrent"/><media:content isDefault="1" duration=" 60" url="https://example.com/a.b/dir.with.dots/ep229.aac?auth=yes" type="application/pdf" fileSize="20000 " medium="video"/><sc:chapters><sc:chapter image="https://example.com/ch.png" start=""/><sc:chapter title="😀" start="8806"/><sc:chapter start="3829" href="" title="Café &amp;amp; more"/><sc:chapter href="https://example.com/ch" start="00:10:57" title="😀"></sc:chapter></sc:chapters></item> <item><pubDate>Wednesday, 19 May 75 11:09:43</pubDate>
+  <itunes:image href="https://example.com/ep.jpg"/>
+  <link>https://example.com/ep</link>
+  <enclosure url='https://user:pass@media.example.net/ep343.webm' length="9007199254740991" type="video/quicktime"/>
+  <guid isPermaLink="false">Café-guid</guid>
+  <itunes:subtitle><![CDATA[<u>&amp;amp;</u>  Folge 323: Über alles]]></itunes:subtitle>
+  <content:encoded>aaaaaaaa</content:encoded>
+  <title><![CDATA[1 <2&#x;]]></title>
+  <itunes:duration>3:06:54</itunes:duration></item> <item><enclosure url="" length="9223372036854775807" type="video/webm"/> <media:group><media:content type="audio/mp4" fileSize="2147483647" url="https://example.com:8443/dir.with.dots/ep272.mp3.zip" duration="3600"/></media:group> <podcast:chapters type="application/json+chapters"/> <link> https://e.com/x </link> <title><![CDATA[  spaced  ]]></title> <guid isPermaLink="true"></guid> <itunes:duration>-9223372036854775808</itunes:duration> <description></description> <pubDate>Tuesday, 03 Sep 2486 18:35:53 GMT-0800</pubDate> <itunes:summary>1 &lt;2&lt;br&gt; </itunes:summary> <media:description></media:description> <enclosure length="52428800" type="audio/wav"/> <itunes:image href=' '/></item> <itunes:image href=""/> <title><![CDATA[​😀a
+  b]]></title> <link>https://example.com</link></channel>
+</rss>

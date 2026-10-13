@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pc="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en">
+<link type="application/xhtml+xml" length="abc" href="" title="Café" rel=""/>
+  <title type="HTML">back\slash  café  &#38;quot;q&#x26;quot;</title>
+  <link href="http://example.org/71.wav" length="abc" title="Café" rel="self"/>
+  <link type="application/rss+xml" title="" length="12" rel="Next" href="https://example.com/alt.xml"/>
+  <foo><description>Nested description</description></foo>
+  <id> raw </id>
+  <link type="text/html" rel="archives" href="HTTPS://EXAMPLE.COM/ep232.xyz?auth=yes" length="9223372036854775808"/>
+  <subtitle type="html"></subtitle>
+  <entry><summary><![CDATA[<li>back\slash</li>]]></summary> <title type='html'><![CDATA[Line<br>break 'single' &hellip;]]></title> <published>2392-01-23T03:46:36.881GMT-05:00</published> <id> raw </id> <updated>22 May 2240 20:07:03 America/New_York</updated> <link length='20000' title='Alternate' href="HTTPS://EXAMPLE.COM/a/b/c384.aif" type="text/html"/> <link href="" title="Alternate" length="abc" rel="payment"/></entry></feed>

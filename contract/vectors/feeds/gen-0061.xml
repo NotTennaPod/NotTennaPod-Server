@@ -1,0 +1,27 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:summary>&amp;#x;&#233;ééx&lt;yaaaaaaa&#x3C;p>&#38;AMP;&lt;/p&gt;</itunes:summary>
+  <itunes:author></itunes:author>
+  <atom:link rel="related" href="https://example.com/alt.xml" title="Café" type="" length="9223372036854775808"/>
+  <language></language>
+  <itunes:image href="https://example.com/it.jpg"/>
+  <link> https://example.com/ </link>
+  <title><![CDATA[<em>&copy;</em>]]></title>
+  <item><p:socialInteract xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" uri="https://social.example/@a/1" protocol='activitypub'/>
+  <pubDate>THURSDAY, 22 Sep 1988 20:37 +0000</pubDate>
+  <media:content url='https://cdn.example.com/café/197.mp3?a=1&amp;b=2' duration="2147483648" fileSize="9223372036854775808" type="video/x-matroska" isDefault='TRUE'/>
+  <enclosure url="ftp://files.example.com/a/b/c181.ts" length="2e5" type="application/json"/>
+  <link>https://example.com/ep</link>
+  <content:encoded><![CDATA[a]]>aaaa</content:encoded>
+  <psc:chapters><psc:chapter href="https://example.com/ch" start='8385'/><psc:chapter image="https://example.com/ch.png" start="113:36" href="https://example.com/ch" title="Café &amp;amp; more"/></psc:chapters>
+  <itunes:image href='https://example.com/ep.jpg'/>
+  <title>&#38;amp
+&#1513;לום
+a &gt; b</title></item>
+  <item><title><![CDATA[&apos;a&apos; &Lt;]]></title><guid isPermaLink="false">dup</guid><link></link><pubDate>2018-07-02WET</pubDate><description>  &#x26;</description><itunes:subtitle>multi
+line &amp;#65;&#x26;#66;</itunes:subtitle><itunes:duration>6776</itunes:duration><enclosure url="https://example.com/a.b/ep366.oga" length="123456" type="audio/opus"/></item>
+  <item><title>&amp;#xFFFF;</title><guid isPermaLink="false"> </guid><link></link><pubDate>1985-05-27T08:47:52Z</pubDate><description>&#x3C;p/&gt;&#x3C;br&gt;ééé&#60;li&gt;&#38;amp;amp;&#x3C;/li>&#x3C;p>multi
+line&#x3C;/p></description><itunes:summary></itunes:summary><itunes:subtitle><![CDATA[R&DTom &amp; Jerry &lt;3&AMP;]]></itunes:subtitle><itunes:duration>1:36:03</itunes:duration><itunes:author>Item author</itunes:author><enclosure url="HTTPS://EXAMPLE.COM/e p191.png" length='123456789012345678' type="text/plain"/><enclosure url="http://example.org/ep289.php" length="16383" type="Audio/MPEG"/><enclosure url="" length="0x4E20" type="application/octet-stream"/><media:thumbnail url=''></media:thumbnail><p:chapters xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url="https://example.com/ch.json" type="application/json+chapters"/></item>
+  <itunes:explicit>yes</itunes:explicit>
+  <description></description>
+  <atom:link title="" rel="Next" type='audio/mpeg' href="https://example.com/pay"/>
+  <at:link type="text/html" href="" rel="Next" title='Alternate' length="20000"/>
+  <p:funding xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url="https://example.com/donate"/></channel></rss>

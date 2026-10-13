@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en"><subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#60;img src="x.png"></div></subtitle>
+<itunes:image href="https://example.com/ai.jpg"/>
+<link type="application/xhtml+xml" rel="hub" length="12" title=""/>
+<id>urn:x</id>
+<title><![CDATA[a=b&c=d  שלום  plain words]]></title>
+<entry><summary>&lt;div>&#x3C;img src=&quot;x.png"> cover&#60;/div&gt;&lt;img&gt;&#x26;copy;</summary>
+<mrss:content fileSize="00020000" medium="Audio" url="//example.com/dir.with.dots/ep345.aif" type='audio/opus' duration="2147484"/>
+<updated>Mon, 28 December 2015 23:36</updated>
+<published>2020-05-16T19:34:34.700gmt</published>
+<link title="MP3 feed" type="text/html" rel="Next" length="20000"/>
+<link href="https://example.com/alt.xml" length="abc" title="Alternate" rel="payment"/>
+<id>urn:uuid:1</id></entry> </feed>

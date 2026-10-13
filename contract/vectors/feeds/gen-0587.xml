@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="US-ASCII"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+<title>
+  padded  
+&#x3C;strike&gt;&#x26;amp&lt;/strike&gt;
+e&#769;
+</title>
+<itunes:subtitle>&amp;#x1F600;  &#38;Lt;  &#x26;euro;</itunes:subtitle>
+<language>TR</language>
+<itunes:summary>&#60;p/&gt;&#128512;&#128512;&#x3C;p/&gt;&amp;copy;&#160;a
+
+b</itunes:summary>
+<link></link>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<item><itunes:duration>1:02:03.5</itunes:duration> <podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/> <title><![CDATA[&]]></title> <link></link> <description>S01E7&#1605;&#1585;&#x62D;&#1576;&#1575;&#x3C;br&gt;&#60;p&gt;&lt;3 &#x3C;3&lt;/p></description> <itunes:image href=" "/> <pubDate>Sat, 13 Mar 57 22:19:02 +0200</pubDate> <guid isPermaLink="true">urn:uuid:7632c59b</guid> <media:content url="https://user:pass@media.example.net/ep125.MP3" type=" audio/mpeg" duration=' 60' isDefault="TRUE" fileSize="16385" medium="audio"/> <enclosure length="-1" type="audio/ogg"/></item>
+<item><title>1 &#x3C;2&#60;B&gt;&#31532;462&#38598;&#x3C;/b></title>
+<link></link>
+<pubDate>1601-01-17T14:60:36Z</pubDate>
+<description>
+{json: 1}AT&amp;T&lt;br&gt;&lt;hr&gt;  &amp;#xA9;&#60;p&gt;x&lt;y&lt;/p&gt;</description>
+<itunes:duration>01:02</itunes:duration>
+<enclosure url="https://example.com:8443/e p39.MP3" length="9223372036854775808" type='application/pdf'/>
+<media:group><media:content type="audio/ogg" duration="1.5" fileSize="16383" url="https://example.com:8443/dir.with.dots/ep115.mp4" isDefault="false"/><media:content duration="abc" medium="Audio" fileSize="123456" type="audio/x-wav" url="https://cdn.example.com/caf&#233;/194.ogx"></media:content><media:content type="application/ogg" isDefault="true" duration=" 60" fileSize="&#1634;&#1632;&#1632;&#1632;&#1632;"></media:content></media:group>
+<media:description type="plain"></media:description></item>
+<item><title><![CDATA[<div>  padded  </div>  a=b&c=d  <label>100%</label>]]></title> <guid isPermaLink="false">Caf&#233;-guid</guid> <link></link> <pubDate>Su, 29 Jun 1950 20:14:25 +0100</pubDate> <description>&#233;&#233;&#233;aaaaaaaaa&amp;#xD800;&lt;br&gt;&lt;hr&gt;&lt;img src="x.png&quot;&gt; cover&#60;br&gt;&amp;unknown;	&#38;euro;
+
+&#x26;amp;amp;</description> <enclosure url="http://example.org/e p307.flac" length="123456789012345678" type="video/mp4"/> <media:content duration="9223372036854775807" url="https://xn--caf-dma.example/e p3.wav" isDefault='true' fileSize="1" type=" audio/mpeg"/></item>
+<item><itunes:author>Item author</itunes:author>
+  <c:encoded><![CDATA[<p>&#8203;</p><div>Episode 12</div> &amp<img src="x.png"> cover<br>&#233;&#233;&#233;]]></c:encoded>
+  <guid>a&#38;b</guid>
+  <media:group><media:content fileSize="12" isDefault='1' type="video/mp4" duration='2147483' medium="image"/><media:content fileSize="16383" isDefault="true" medium="video" type="audio/wav" duration="1"/></media:group>
+  <enclosure url="https://example.com/a.b/caf&#233;/113.Mp4?file=x.mp3" length="+20000" type="audio/wav"/>
+  <pubDate>Mon, 29 Jun 2004 13:34 British Summer Time</pubDate>
+  <title>  &#160;  Episode 12 </title>
+  <itunes:image href=' https://e.com/i.png '/>
+  <link></link></item></channel>
+  </rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><podcast:funding url="https://example.com/donate"></podcast:funding>
+  <itunes:subtitle>&#60;b&gt;Bold&lt;/b&gt; title
+&amp;#x;
+&amp;quot;q&amp;quot;</itunes:subtitle>
+  <title>é  leading</title>
+  <description><![CDATA[<div>"quoted"</div><div>שלום</div>]]></description>
+  <itunes:image href=" "/>
+  <link> https://example.com/ </link>
+  <itunes:summary>  &amp;amp&#13;
+&#x200B;</itunes:summary>
+  <itunes:new-feed-url>
+https://nl.example
+</itunes:new-feed-url>
+  <language>en</language>
+  <item><podcast:socialInteract uri="" protocol="activitypub"/> <media:thumbnail url="https://example.com/th.jpg"/> <guid isPermaLink="true"></guid> <itunes:duration>181:57</itunes:duration> <title>&#38;#;  &#x3C;img src="x.png"&gt; cover  &#x3C;del>&#38;amp;&lt;/del&gt;</title> <description>aaaaa<![CDATA[a  &lt<li>😀</li>]]></description> <enclosure url="http://example.org/142.ts" length="-9223372036854775808" type="application/octet-stream"></enclosure> <pubDate>THU, 19 Jan 2564 12:42 +0530</pubDate></item>
+  <item><title/>
+<guid>a&#x26;b</guid>
+<link>https://example.com/ep</link>
+<pubDate>2010-02-31</pubDate>
+<description>&lt;li&gt;{json: 1}&lt;/li&gt;</description>
+<content:encoded>&lt;hr/&gt;&#13;
+&amp;#0;&#60;div&gt;&amp;#65;&#x26;#66;&lt;/div&gt;</content:encoded>
+<enclosure length="2147483647" type="application/octet-stream"/>
+<media:thumbnail/>
+<psc:chapters version="1.2"><psc:chapter start="01:01:36.832" href="" title="&lt;b>x&lt;/b>"/></psc:chapters></item></channel>
+</rss>

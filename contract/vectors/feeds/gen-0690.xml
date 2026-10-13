@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1252"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><lastBuildDate>Sat, 30 Feb 1998 06:15:44 +0100</lastBuildDate>
+<title>&amp;hellip;&amp;#x;&#60;h1>&#38;#xA9;&#x3C;/h1&gt;</title>
+<language>de-DE</language>
+<description>é&#xE9;é&lt;hr&gt;</description>
+<item><title>Episode 905</title> <guid isPermaLink="false">
+</guid> <pubDate>2012-09-14T21:59:29EET</pubDate> <description>&#x3C;p/&gt;&#38;lt;b&#38;gt;&lt;br>	a
+
+b 100%&#x3C;img&gt;ééé&lt;hr>&#x3C;BR></description> <enclosure url="https://xn--caf-dma.example/dir.with.dots/ep121.png?file=x.mp3" length="123456789012345678" type="audio/mpeg; charset=binary"></enclosure> <media:group><media:content medium="Audio" fileSize="16384" duration=" 60" isDefault="false"/><media:content medium='Audio' url="https://xn--caf-dma.example/café/59.html" duration="abc" type="video" isDefault="true"/><media:content type="video/x-matroska" duration='1' isDefault="false" url="http://example.org/70.mkv" fileSize="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;"/></media:group> <sc:chapters version="1.2"><sc:chapter title="&#128512;" start="26:18" href="https://example.com/ch"></sc:chapter><sc:chapter start="bad:time" href="https://example.com/ch" image="https://example.com/ch.png" title=""/><sc:chapter title="&#128512;" start="9585"/></sc:chapters></item>
+<item><title><![CDATA[ <img src="x.png"> cove]]>r</title>
+  <guid>https://example.com/item/24477</guid>
+  <link></link>
+  <pubDate>0001-05-08T16:23:27+1400</pubDate>
+  <enclosure length="52428800" type="audio/*"/>
+  <podcast:socialInteract uri='https://social.example/@a/1' protocol="activitypub"/>
+  <category>Technology</category></item></channel>
+</rss>

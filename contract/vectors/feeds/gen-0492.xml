@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link> https://example.com/ </link>
+<title><![CDATA[Tom & Jerry <3]]></title>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<description>&lt;p&gt;http://example.com/?a=1&#x26;b=2&lt;/p&gt;</description>
+<itunes:author><![CDATA[Tom & Jerry <3]]></itunes:author>
+<itunes:summary>&#x3C;li&gt;&amp;nbsp;&#60;/li>	{json: 1}
+trailing &#60;hr/>&lt;p>Line&#60;br&gt;break&#x3C;/p>&amp;unknown;&#x26;mdash;&#60;br&gt;&#60;div>&#x26;#xFFFF;&#x3C;/div&gt;</itunes:summary>
+<item><itunes:summary><![CDATA[ &#xA9;]]></itunes:summary>
+<pubDate> Tue, 18 Jan 2574 19:99:33 +0000  </pubDate>
+<title>&lt;p&gt;Para&#60;/p&gt;  &#x26;lt;b&#x26;gt;escaped&amp;lt;/b&amp;gt;  &amp;euro;</title>
+<link></link>
+<enclosure length="9007199254740992" type='video/quicktime'></enclosure>
+<guid isPermaLink="false">Café-guid</guid>
+<itunes:duration>17425</itunes:duration></item>
+<item><title><![CDATA[Folge 585: Über allesx<y]]></title> <guid isPermaLink="false">dup</guid> <link>https://example.com/ep</link> <pubDate>Thu 20 Sep 1984 20:56:21 GMT</pubDate> <content:encoded>  </content:encoded> <itunes:image href="https://example.com/ep.jpg"/> <itunes:duration>PT1H30M</itunes:duration> <itunes:author>Item author</itunes:author> <enclosure length="-0" type="audio/mpeg; charset=binary"/></item></channel> </rss>

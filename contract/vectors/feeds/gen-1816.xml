@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<itunes:author><![CDATA[Café Radio]]></itunes:author>
+  <logo> https://e.com/l.png
+</logo>
+  <itunes:image href="https://example.com/ai.jpg"/>
+  <subtitle type='plain'><![CDATA[<li>100%</li><p></]]>p&gt;&lt;div&gt;R&#38;D&lt;/div>&lt;img src="x" alt=&quot;y"/&gt;😀😀😀&quot;quoted"&#60;p>&#60;b&gt;Bold&#x3C;/b&gt; title&lt;/p>&#60;div>&amp;amp&lt;/div&gt;</subtitle>
+  <title type='html'><![CDATA[&lt;b&gt;escaped&lt;/b&gt;]]></title>
+  <id>urn:x</id>
+  <entry><id> raw </id>
+<link href="" rel="first" length='20000' type="application/rss+xml"></link>
+<itunes:image href="https://example.com/e.jpg"/>
+<link title="MP3 feed" href="https://example.com/pay" length='abc' rel="enclosure" type='text/html'></link>
+<link rel="" length="12" type="application/xhtml+xml" title="Café" href="https://example.com/"/>
+<content></content>
+<summary type="HTML">  1 &lt;2&#x3C;div>Folge 7: Über alles&lt;/div&gt;</summary>
+<psc:chapters><psc:chapter title="😀" start="-1:00"/><psc:chapter start="115:46" image="https://example.com/ch.png" title="&lt;b>x&lt;/b>" href=""/><psc:chapter title='Café &amp;amp; more' start="5807" image='https://example.com/ch.png' href="https://example.com/ch"/><psc:chapter start='00:01:02,5' image='https://example.com/ch.png' href="https://example.com/ch" title="&lt;b>x&lt;/b>"/><psc:chapter title="Intro" href="" start="76:29"/></psc:chapters>
+<title type="html"><![CDATA[café  "quoted"  &#xA9;]]></title>
+<author><name>Entry author</name></author></entry>
+  <entry><link title="Café" href='' type='application/xml+xhtml' rel=""/><summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></summary><link length="9223372036854775808" type="" href="https://example.com/feed?page=2" rel="last" title=''/><title type="HTML"><![CDATA[S01E956]]></title><updated>Foo, 	18 Nov 2561 20:59:55 -0000</updated><media:content duration="1" type="audio/*" fileSize='16383' isDefault="TRUE"/><id></id><psc:chapters><psc:chapter title="" start="01:32:03.347" image="https://example.com/ch.png"/></psc:chapters></entry></feed>

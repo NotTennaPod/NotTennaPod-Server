@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><dc:creator>DC Creator</dc:creator> <description></description> <atom:link title="Café" length="abc" href="" rel="next" type="application/xhtml+xml"/> <language>TR</language> <image><url></url><link>https://example.com/img-link</link></image> <itunes:image href=''/> <title><![CDATA[&apos;a&apos; 茶 &#128512;]]></title> <itunes:summary></itunes:summary> <atom:link type="audio/mpeg" length="20000" title="MP3 feed" href="https://example.com/alt.xml"/> <link>https://example.com</link> <pi:funding url=''>Support us</pi:funding> <pi:funding url="https://example.com/donate">Support us</pi:funding> <pi:funding url="https://example.com/donate">&lt;b&gt;x&#60;/b></pi:funding> <item><link>https://example.com/ep</link>
+  <itunes:duration>151:04</itunes:duration>
+  <guid> </guid>
+  <pubDate>Fri, 22 Apr 2022 15:23:55 EET</pubDate>
+  <enclosure url="http://example.org/a/b/c5.oga" length="52428800" type="audio/mp3"/>
+  <description><![CDATA[ &hellip;]]></description>
+  <enclosure url="https://xn--caf-dma.example/ep1.php" length="00020000" type="audio/flac"/>
+  <foo><description>Nested description</description></foo>
+  <title>&lt;blockquote>&amp;#x1F600;&#60;/blockquote&gt;  &#x26;lt;b&#x26;gt;</title></item> <item><pubDate>Fri, 04 Septem 2006 06:50:40 -1200</pubDate>
+  <itunes:duration>NaN</itunes:duration>
+  <enclosure url="ftp://files.example.com/48.webm" length="52428800" type='video/quicktime'/>
+  <pi:chapters type="application/json+chapters"/>
+  <sc:chapters version="1.2"><sc:chapter href="https://example.com/ch" image='https://example.com/ch.png' start="71:32" title=""/><sc:chapter href="https://example.com/ch" start="49:09" image="https://example.com/ch.png" title="Intro"/><sc:chapter href="https://example.com/ch" start="1:2:3:4" title="😀"/><sc:chapter start='01:53:59' title="😀"/></sc:chapters>
+  <title>  padded  </title>
+  <guid isPermaLink='false'>https://example.com/item/64226</guid>
+  <dc:date>2121-02-10T23:04:17.104</dc:date>
+  <link>https://example.com/ep</link>
+  <description>  مر&#1581;ب&#x627;&#60;p&gt;&amp;#169;&#60;/p>aaaaaaaaa&lt;li&gt;http://example.com/?a=1&amp;b=2&#x3C;/li&gt;&#38;#x1F600;</description></item> <item><title>&#13;
+&#x3C;ul&gt;&lt;li&gt;{json: 1}&lt;/li&gt;&lt;li&gt;two&#60;/li&gt;&#x3C;/ul> http://example.com/?a=1&amp;b=2 &lt;strike&gt;&#38;#x;&#x3C;/strike>  </title>
+<pubDate>1982-03-99</pubDate>
+<description><![CDATA["quoted"<br>]]></description>
+<enclosure url="https://user:pass@media.example.net/ep132.html#t=10" length='-1' type="application/pdf"/>
+<enclosure url="ftp://files.example.com/156.amr" length="-9223372036854775808" type="audio/mp4"/>
+<sc:chapters version="1.2"><sc:chapter start="1::" href="" title="Intro"></sc:chapter><sc:chapter image="https://example.com/ch.png" title="Café &amp;amp; more"/></sc:chapters></item> <item><link></link>
+  <guid>  spaced guid  </guid>
+  <pubDate>Wednesday, 12 Feb 1969 14:26 +0100</pubDate>
+  <title>&#38;a<![CDATA[mp;amp;]]></title>
+  <description>Folge 7: &#220;ber alles&lt;br>ééé&lt;img src="x.png&quot;>ééé&#x3C;br/&gt;</description>
+  <enclosure url="https://xn--caf-dma.example/ep258.ogg" length="12" type="audio/wav"/>
+  <itunes:subtitle><![CDATA[S01E260]]></itunes:subtitle>
+  <itunes:summary></itunes:summary>
+  <sc:chapters><sc:chapter image="https://example.com/ch.png" title="Café &amp;amp; more" start="01:14:20.057"/><sc:chapter start="" title="😀" href="https://example.com/ch"/></sc:chapters></item> <item><link>https://example.com/ep</link>
+<description>&#38;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;&lt;p&gt;Tom &amp; Jerry &lt;3&lt;/p&gt;&#128512;
+
+&amp;#xD800;&#x3C;li&gt;#hash&#x3C;/li></description>
+<itunes:image href="https://example.com/ep.jpg"/>
+<enclosure length="9007199254740993" type='audio/x-m4a'/>
+<sc:chapters version="1.2"><sc:chapter href='https://example.com/ch' start="92:03"/><sc:chapter start="03:32:26.310" image="https://example.com/ch.png" title="&lt;b>x&lt;/b>"/><sc:chapter image="https://example.com/ch.png" title="Intro" start="00:01:02,5"></sc:chapter><sc:chapter title="&lt;b>x&lt;/b>" start="abc" image='https://example.com/ch.png'/><sc:chapter start='03:08:05.338' href="https://example.com/ch" image='https://example.com/ch.png'/><sc:chapter start="2270" title="😀" href="https://example.com/ch"/></sc:chapters></item> <item><pubDate>  Wednesday, 01 Jul 14 06:13:38 -1200&#13;
+</pubDate>
+<description>​&#x3C;br></description>
+<itunes:image href=""/>
+<itunes:subtitle>Line&lt;br&gt;break</itunes:subtitle>
+<guid>
+</guid>
+<source url="https://example.com/s"><title>Source title</title></source>
+<enclosure url=" https://example.com:8443/dir.with.dots/ep68.m4b " length="20000 " type="text/html"/>
+<title><![CDATA[Episode 874]]></title></item></channel>
+  </rss>

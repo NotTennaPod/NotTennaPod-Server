@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<rss version="2.0" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+<channel><title>&quot;quoted&quot; &#x26;nbsp; &amp;#xD80<![CDATA[0;]]></title>
+<link></link>
+<image><title>Image title</title><url></url></image>
+<item><guid isPermaLink="true">https://example.com/item/60591</guid>
+<podcast:chapters url="https://example.com/ch.json" type='application/json+chapters'/>
+<sc:chapters><sc:chapter title="Intro" start="" href=''/></sc:chapters>
+<title><![CDATA[&#8203;
+Episode 12]]></title>
+<media:group><media:content isDefault="TRUE" duration="1" fileSize="9223372036854775807" medium="document" type=""/></media:group>
+<link>https://example.com/ep</link></item>
+<item><enclosure url="https://cdn.example.com/a/b/c279.3gp" length=" 20000" type='video'/><podcast:chapters url="" type="application/json+chapters"/><pubDate>
+2022-12-29T12:34:61.179+0100
+</pubDate><title><![CDATA[
+<h3>tab	here</h3>  &#8203;  &nbsp;	]]></title><link>https://example.com/ep</link><description>&#xA0;&amp;#x; &amp;#xD800;	multi
+line  spaced  &lt;br /&gt; &amp;#xD800;&#60;br>&#60;/br&gt;sep&lt;br&gt;</description></item></channel>
+</rss>

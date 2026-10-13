@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rss version="0.91" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><language>en</language>
+<itunesu:image href=" "/>
+<itunesu:new-feed-url>
+https://nl.example
+</itunesu:new-feed-url>
+<description>&#x5E9;לום&lt;div>&#x3C;b&gt;Bold&lt;/b> title&lt;/div&gt;&lt;p>&lt;p&gt;Para&lt;/p>&lt;/p&gt;</description>
+<title>&#38;AMP;</title>
+<podcast:funding/>
+<itunesu:episodeType>full</itunesu:episodeType>
+<link>https://example.com</link>
+<media:thumbnail/>
+<item><enclosure length='2147483648' type="audio/mp4"/><link></link><enclosure url="ftp://files.example.com/a/b/c97.torrent" length="-9223372036854775808" type="audio"/><pubDate>Friday, 17 Aug 2007 02:18:47</pubDate><enclosure url="" length='16385' type="application/octet-stream"/><title>&#13;
+&#38;Lt;éS01E139&#13;
+</title><description>&lt;p/&gt;aa&#60;p>&#x26;#xFFFF;&lt;/p&gt;&lt;br>&#60;/br>&#x3C;p&gt;a &#60; b&lt;/p>&#x26;#65;&amp;#66;  cr
+lf😀😀😀😀</description><media:thumbnail url="https://example.com/th.jpg"/><podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/><itunesu:image href=""/></item></channel> </rss>

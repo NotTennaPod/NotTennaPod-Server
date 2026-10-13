@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><dc:creator>DC Creator</dc:creator>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<atom:link length="20000" href="" rel="last" title="Alternate" type="application/xml+xhtml"/>
+<atom:link title="Alternate" href="https://example.com/feed?page=2" length="20000"/>
+<language>en</language>
+<itunes:author><![CDATA[😀 Pod]]></itunes:author>
+<title> &#60;img src=&quot;x.png"> cover
+&#x3C;s&gt;a=b&amp;c=d&#60;/s&gt;	</title>
+<description><![CDATA[ &mdash;]]></description>
+<link> https://example.com/ </link>
+<atom:link href="" rel="alternate" type='application/xml+xhtml'></atom:link>
+<link xmlns="http://www.w3.org/2005/Atom" rel="next" length="12" type="audio/mpeg" title="Café" href="https://example.com/pay"/></channel>
+  </rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<channel><title>&amp;#x1F600<![CDATA[;  &#x;  &nbsp;]]></title>
+  <podcast:funding url=""/>
+  <item><pubDate>2012-10-06T18:57:15.102Z</pubDate><media:content medium="video" fileSize='16385' type='video/mp4' url="https://cdn.example.com/ep375.mov?dl=1.0" isDefault="TRUE" duration="01:00"></media:content><enclosure url="HTTPS://EXAMPLE.COM/ep63.txt" length='20000.0' type="x-audio/mpeg"/><media:content fileSize='0' type="" duration="" url="HTTPS://EXAMPLE.COM/ep232.xyz?auth=yes"/><guid isPermaLink="false"></guid><title>&lt;p>Para&lt;/p&gt;100%</title><media:content fileSize="4294967296" duration="2147483" type="image/png" isDefault='true' url='https://example.com/a.b/a/b/c227.aspx'/><dc:date>Friday, 05 Apr 2148 00:38 -1200</dc:date><description></description><podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">560</itunes:duration></item>
+  <item><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">5285.431</itunes:duration><guid>a&#38;b</guid><media:group><media:content duration='1' fileSize="16383" isDefault="1" type="image/*"/></media:group><podcast:socialInteract protocol="activitypub"/><title>&apos;single' 😀</title><itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[<div>"quot]]>ed&quot;&#60;/div&gt;aaaaaaaaa</itunes:summary><enclosure url="HTTPS://EXAMPLE.COM/e p19.mpga" length="9007199254740993" type='audio/aac'/><content:encoded>	back\slashééé&#x3C;li&gt;​&lt;/li&gt;&lt;b>Bold&lt;/b&gt; title&#x3C;p/&gt;</content:encoded><link></link></item>
+  <item><media:thumbnail url="https://example.com/th.jpg"/>
+<link> https://e.com/x </link>
+<content:encoded>&lt;img src=&quot;x.png">&lt;div>של&#x5D5;ם&lt;/div&gt;
+
+a
+
+b</content:encoded>
+<enclosure length="16385" type="application/octet-stream"/>
+<title>"quoted&quot; S01E31</title>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="first" type="audio/mpeg" length="abc" title="Café"/>
+<podcast:transcript url="https://example.com/t.json" type="application/json" language='en'/><podcast:transcript url="" type="Application/JSON"/>
+<pubDate>Fri, 20 Nov 19 13:47:44 +0100</pubDate></item>
+  <description></description>
+  <language>en</language>
+  <link> https://example.com/ </link>
+  <podcast:funding>Support us</podcast:funding>
+  <podcast:funding>Support us</podcast:funding></channel>
+</rss>

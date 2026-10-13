@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en">
+  <media:thumbnail url='https://example.com/amt.jpg'/><id>https://example.com/feed</id><link href="https://example.com/pay" length="12" type="text/html" rel="payment"/><link type="text/html" rel="alternate" href="https://example.com/alt.xml" length="9223372036854775808" title=""/><itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url><icon>https://example.com/icon.png</icon><title><![CDATA[a
+  b
+&amp
+<article>sep</article>]]></title><subtitle type="HTML"><![CDATA[  😀<img src="x" alt="y"/>
+&#xD800;<p/><li>&quot;q&quot;</li> leading<br>aaaaaa=b&c=d<br>]]></subtitle><it:author><![CDATA[]]>第一</it:author><entry><updated>Fri, 02 May 1980 03:27:27 +0530</updated>
+<summary type="text">&lt;div&gt;Line&lt;br>break&lt;/div>&lt;img src="x.png"&gt;café&#60;br&gt;	&amp;amp;amp;&lt;img src="x.png"></summary>
+<published>1976-01-15T23:39:23:00</published>
+<id> raw </id>
+<title type="xhtml">100% &#x26;lt</title>
+<content>&#x3C;li&gt;&#38;am<![CDATA[p;amp;</li>]]></content>
+<m:content duration="+60" type='unknown' isDefault="true" fileSize=""/></entry></feed>

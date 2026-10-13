@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="">
+<subtitle type="HTML"><![CDATA[&#128512;<br>  &#128512;café<p>a=b&c=d</p><img src="x" alt="y"/>&#128512;<br><p>tab	here</p><br/>]]></subtitle>
+  <title type="html"><![CDATA[&copy;]]></title>
+  <link rel="related" title='Alternate' type="audio/mpeg" length="20000" href="https://example.com/feed?page=2"/>
+  <i:summary>#has<![CDATA[h<br>]]></i:summary>
+  <logo></logo>
+  <id></id>
+  <i:image href=""/>
+  <author><name>C&amp;D</name></author>
+  <entry><title type="html">  &amp;lt;b&amp;gt; &amp;unknown;	</title>
+<published>
+Thu, 11 july 2019 03:16:13 -0000  </published>
+<i:explicit>false</i:explicit>
+<author><name>Entry author</name></author>
+<i:duration>1927.855</i:duration>
+<id>urn:uuid:1</id></entry>
+  <entry><updated>2523-01-25 AM</updated> <title type='xhtml'><![CDATA[&back\slash]]></title> <published>Thu Jan 29 17:42 1993</published> <i:category text="Arts"><i:category text="Design"/></i:category> <author><name>Entry author</name></author> <id> raw </id> <summary><![CDATA[éééééé	&#x1F600;<p>&#xA9;</p>مرحبا]]></summary></entry>
+  <entry><updated>Sat, 15 Apr 1752 18:21:16.17027298 -1200</updated> <link title="" rel="alternate" type="application/xhtml+xml" href="https://example.com/" length="12"/> <title type="html">&#x26;#x1F600;&apos;single'</title></entry>
+  </feed>

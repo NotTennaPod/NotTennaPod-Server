@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us"> <author><name></name></author>
+<author><name></name></author>
+<icon></icon>
+<id>urn:x</id>
+<link length="12" title="Café" rel="related" type="application/rss+xml" href="https://example.com/feed?page=2"/>
+<author><name>Ann</name><email>a@example.com</email></author>
+<title type="plain">&#60;b>&#x3C;i>&#xA0;&#x3C;/b&gt;&#x3C;/i&gt;</title>
+<logo>https://example.com/logo.png</logo>
+<itunes:author><![CDATA[]]>第一</itunes:author>
+<link href="" length="12" type='text/html' title="Café" rel='next'/>
+<link length="20000" href='' rel="alternate" title=""/>
+<link title="Alternate" href="https://example.com/pay" type="audio/mpeg"/>
+<entry><id>urn:uuid:1</id>
+  <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;img src="x.png"&gt; cover
+S01E448</div></title>
+  <author><name>Entry author</name></author>
+  <content type='text'><![CDATA[ééé&#169;<br><img sr]]>c="x" alt="y"/&gt;&lt;div&gt;a &gt; b&lt;/div&gt;&lt;hr&gt;</content>
+  <itunes:image href=""/>
+  <updated>Thu, 06 Aug 1987 01:28:43 +0530x</updated>
+  <summary type="text"><![CDATA[<hr/><p>&unknown;</p><div>😀</div>aaa😀]]></summary></entry>
+<entry><id>tag:x,2020:1</id>
+<link href="https://example.com/feed?page=2" title='MP3 feed' rel="first" type='audio/mpeg' length="abc"/>
+<updated>&#13;
+Mon, 02 Aug 1971 15:58:59 +1400Z
+</updated>
+<link title="Café" length='20000' rel="related" href="https://example.com/" type="application/rss+xml"/>
+<published>&#13;
+Sun 14 Apr 1974 19:52:56 GMT-0
+</published>
+<link href="https://example.com/alt.xml" title="Alternate" rel="first"/>
+<title type="HTML">&amp;lt
+  padded  
+{json: 1}</title></entry>
+<entry><author><name>Entry author</name></author>
+<link rel="alternate" href="https://example.com/feed?page=2" length="9223372036854775808" title="Alternate"/>
+<link title='' length="abc" type="audio/mpeg" href="https://example.com/alt.xml" rel="hub"/>
+<published>Wed 18 Jan 2215 12:58:10 GMT+0</published>
+<content type='html'><![CDATA[	multi
+line<br /><img src="x" alt="y"/>]]></content>
+<link type="text/html" title="Café" rel="next" href="https://example.com/alt.xml"/>
+<id>tag:x,2020:1</id>
+<updated>Sat, 08 Oct 2022 10:50:00 -05:30</updated>
+<title>第988集</title></entry>
+<entry><id>
+id
+</id>
+<title type="html"><![CDATA[a > b]]></title>
+<link type='application/rss+xml' rel="next" length='20000' title="MP3 feed"/>
+<published>Sunday, 12 Nov 1972 05:07</published>
+<content></content></entry>
+<entry><published>2009-06-27T22:50:12Europe/Berlin</published>
+<itunes:duration>170:41</itunes:duration>
+<link href="https://example.com/" length="12" rel="next" title="Alternate"></link>
+<link type="" href="https://example.com/" rel="related"/>
+<category>Technology</category>
+<title type='plain'><![CDATA[&#xA9;]]></title>
+<id></id>
+<link length="9223372036854775808" href="https://example.com/alt.xml" type='application/xhtml+xml' rel="related"/></entry>
+<entry><id></id> <author><name>Entry author</name></author> <link rel="first" title="MP3 feed" type="audio/mpeg" length="20000" href=""/> <itunes:duration>1E3:00</itunes:duration> <summary>&lt;li>&amp;amp;amp;&lt;/li>&lt;img&gt;</summary> <published>Thu,  14  Jan 2021 10:17:54 -1200</published> <title type="html">Folge 619: Über alles</title> <link title="" type="application/rss+xml" rel="enclosure"/> <psc:chapters><psc:chapter href='https://example.com/ch' start="01:02:03:04:05" title=''/></psc:chapters> <link title="Café" href="https://xn--caf-dma.example/154.m3u8?auth=yes" type="application/rss+xml"/></entry>
+<entry><id></id><published>Sat Sep 24 14:31:09 2011 British Summer Time</published><title><![CDATA[  <unknown>a < b</unknown> ]]></title><updated>FRIDAY, 19 Sep 2014 06:03:44 -1200</updated></entry>
+<entry><id>
+id
+</id><title>Folge 527: Über alles  &amp;#65;&amp;#66;</title><itunes:image href='https://example.com/e.jpg'/><link title="Alternate" length="abc" rel="first" type=""/></entry> </feed>

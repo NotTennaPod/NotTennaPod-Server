@@ -1,0 +1,27 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
+<channel><description>&#x3C;br/>&#x3C;br/&gt;</description>
+  <podcast:funding url="">Support us</podcast:funding>
+  <itunes:author>Jane &amp;amp; John</itunes:author>
+  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" length="12" rel="alternate" title="MP3 feed" type="application/atom+xml" href=""/>
+  <language></language>
+  <image><link>https://example.com/img-link</link><url></url></image>
+  <itunes:image href="https://example.com/it.jpg"/>
+  <podcast:funding url="">  spaced  </podcast:funding>
+  <itunes:summary><![CDATA[<li>&amp;amp;</l]]>i&gt;&amp;apos;a&#x26;apos;&lt;br></itunes:summary>
+  <podcast:funding>  spaced  </podcast:funding>
+  <title><![CDATA[#hash]]></title>
+  <item><content:encoded></content:encoded><pubDate>MONDAY, 09 Mar 2240 01:42:17 -0800</pubDate><enclosure url="https://example.com/a.b/a/b/c218.ogx" length="+20000" type="video/x-matroska"/><link> https://e.com/x </link><title>&amp;#xD800; &#38;copy;</title><guid isPermaLink="true">https://example.com/item/55925</guid></item>
+  <item><title>
+ leading &#x26;hellip;&#13;
+</title>
+<itunes:image/>
+<pubDate>Wed, 19 Aug 0099 16:60:34 -0000</pubDate>
+<guid isPermaLink="true">  spaced guid  </guid>
+<content:encoded></content:encoded>
+<itunes:subtitle>​  1 &lt;2  Tom &#38;amp; Jerry &amp;lt;3</itunes:subtitle>
+<enclosure url="" length="9223372036854775807" type="audio"/>
+<dc:date>Monday, 13 Jan 1975 04:46:45 +0000</dc:date>
+<description>&lt;p&gt;a
+  b&lt;/p></description></item>
+  <item><title>&lt;dl&gt;&#x3C;dt>&#38;#xA9;&#60;/dt&gt;&lt;dd>b&lt;/dd&gt;&lt;/dl&gt;</title><guid>  spaced guid  </guid><link>https://example.com/ep</link><pubDate>2114-02-21T08:20:19</pubDate><description>&lt;3 &#60;3&#60;br&gt;&#x3C;li>&#x26;nbsp;&lt;/li&gt;	a &gt; b</description><itunes:summary>שלו&#1501;&#x3C;br&gt;  &amp;amp;amp;</itunes:summary><itunes:image href=" https://e.com/i.png "/><itunes:duration>93:31</itunes:duration><enclosure length=""/></item></channel>
+  </rss>

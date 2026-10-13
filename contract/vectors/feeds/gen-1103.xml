@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns="http://backend.userland.com/rss2" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom"> <channel><language>en</language>
+<description>	 leading&lt;img src="x&quot; alt="y"/&gt;&#160;&quot;quoted"&#x3C;li&gt;&amp;amp;amp;&#60;/li>&lt;li&gt;Folge 7: &#220;ber alles&lt;/li&gt;  {json: 1}&#60;p&gt;sep&#60;/p&gt;&#x3C;li&gt;&#38;quot;q&amp;quot;&lt;/li&gt;</description>
+<title><![CDATA[	'single'	]]></title>
+<link></link>
+<item><description> &#x26;apos;a&#38;apos;&#x3C;p&gt;  padded  &#x3C;/p&gt;第7集&#60;br>&amp;;&lt;br&gt;	{json: 1}&lt;hr/&gt;&amp;unknown;&lt;br&gt;&lt;br/></description>
+  <title><![CDATA[&am]]>p</title>
+  <pubDate>2324/05/20T04:49:35</pubDate>
+  <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"> 1:30</itunes:duration>
+  <guid isPermaLink="true"></guid>
+  <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">café trailing </itunes:subtitle>
+  <enclosure url="https://user:pass@media.example.net/a/b/c9.m4a" length="-9223372036854775808" type="video/quicktime"/>
+  <content:encoded>ééé</content:encoded></item>
+<item><itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Item author</itunes:author>
+  <link>https://example.com/ep</link>
+  <title>	trailing   &amp;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt;&#13;
+</title>
+  <description><![CDATA[<img src="x.png"><p></p>ééé😀😀<img src="x.png"><li>&nbsp;</li>ééé#7 – Interview]]></description>
+  <media:content duration="abc" fileSize="9223372036854775808" medium='document' isDefault="false" type="video" url="https://example.com:8443/e p326.m4v"/>
+  <media:content type="application/x-bittorrent" duration="2147483" fileSize="4294967296" isDefault='true'/>
+  <enclosure url="https://example.com/a.b/ep288.avi" length="0x4E20" type="image/jpeg"/></item>
+<item><title/>
+<guid isPermaLink="false">https://example.com/item/6209</guid>
+<pubDate>   06 Sep 2010 17:23:04 +0530
+   </pubDate>
+<description></description>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/ep.jpg"/>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">6963.840</itunes:duration>
+<enclosure url="//example.com/dir.with.dots/ep266.avi" length="2e5" type="application/octet-stream"/>
+<media:content fileSize="12" type="image/png" duration="2147483648"></media:content>
+<media:description>&#x3C;p> leading&lt;/p&gt;ééé&#13;
+&#x26;unknown;</media:description></item>
+<item><title>a
+  bFolge 271: Über alles</title>
+<itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">sep
+&#x3C;p&gt;Para&#x3C;/p&gt;</itunes:subtitle>
+<enclosure url="//example.com/ep60.aac" length="٢٠٠٠٠" type="x-audio/mpeg"/>
+<link> https://e.com/x </link>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/ep.jpg"/></item></channel> </rss>

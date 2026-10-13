@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><title><![CDATA[<pre>&#x1F600;
+  pre</pre>
+&euro;]]></title> <description>&lt;img src="x.png&quot;&gt;	a &gt; b trailing &lt;div>a &lt; b&lt;/div&gt;&#60;div&gt;&lt;b&gt;Bold&lt;/b&gt; title&lt;/div&gt;&lt;hr&gt;&#x26;amp&#x3C;br&gt;&lt;li>&#x3C;b>Bold&lt;/b> title&#60;/li&gt;</description> <itunes:author>Jane D<![CDATA[oe]]></itunes:author> <link></link> <language>de-DE</language> <itunes:image href=" "/> <item><itunes:image href=" "/>
+<itunes:summary>&#x3C;p&gt;&#38;#128512;&lt;/p&gt;</itunes:summary>
+<guid isPermaLink="false">urn:uuid:1b833265</guid>
+<description><![CDATA[<li>&#128512;</li><img src="x.png">]]></description>
+<media:content medium="video" duration="01:00" fileSize='-0' type="Audio/MPEG"/>
+<link> https://e.com/x </link>
+<itunes:subtitle>&lt;u>&#38;mdash;&#60;/u&gt; &lt;b&gt;Bold&lt;/b&gt; title café</itunes:subtitle>
+<title>&#x26;#xD800;</title>
+<dcterms:date> Sat, 08 Apr 1995 01:55&#13;
+</dcterms:date>
+<podcast:socialInteract protocol="activitypub"></podcast:socialInteract></item></channel>
+</rss>

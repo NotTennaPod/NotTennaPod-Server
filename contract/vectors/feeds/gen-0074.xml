@@ -1,0 +1,23 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link rel="alternate" title="MP3 feed" type="" length="12" href='https://example.com/feed?page=2'/> <title><![CDATA[<sub>a
+  b</sub>&amp"quot]]>ed"</title> <image><url></url></image> <podcast:season>2</podcast:season> <title></title> <atom:link type="audio/mpeg" rel="archives" href="https://example.com:8443/e p72.m4v" title="MP3 feed"></atom:link> <p2:funding url="">  spaced  </p2:funding> <language>pt-BR</language> <link></link> <item><enclosure url="https://example.com:8443/ep192.mp4?dl=1.0" length="9007199254740992" type="audio/x-wav"/>
+<media:thumbnail></media:thumbnail>
+<content:encoded><![CDATA[Line<br>break<br>]]></content:encoded>
+<title><![CDATA[<font color="red">"quoted"</font> Episode 12]]></title>
+<guid isPermaLink="true">dup</guid>
+<p2:transcript url="https://example.com/t.json" type="application/x-subrip"/><p2:transcript url="https://example.com/t.vtt" type=""/><p2:transcript language="en"/>
+<pubDate>1980-09-19Z</pubDate>
+<link></link></item> <item><title>&#x3C;div&gt;&lt;p&gt;&amp;mdash;&lt;/p&gt;&#60;/div&gt;  é  &#x26;lt;b&#x26;gt;</title>
+<guid isPermaLink="false"></guid>
+<link>https://example.com/ep</link>
+<pubDate>2587-02</pubDate>
+<enclosure length="4294967296" type="unknown"/>
+<podcast:chapters url="" type="application/json+chapters"/>
+<atom:link rel="self" title="Alternate" href="https://example.com/alt.xml"/></item> <item><title>&lt;cite>ש&#1500;&#x5D5;&#1501;&lt;/cite&gt;</title>
+<guid isPermaLink="false"> </guid>
+<link></link>
+<pubDate>Wednesday, 15 Nov 2023 05:55 +1400</pubDate>
+<description>&#60;div&gt;Episode 12&#x3C;/div&gt;&#13;
+AT&amp;T &#x26;#;tab	here&#60;br&gt;&lt;img></description>
+<enclosure url="https://user:pass@media.example.net/ep198.jpg" length="0" type="image/png"/>
+<podcast:transcript url="https://example.com/t.json" type=""/><p2:transcript url="https://example.com/t.json" type="" language="en"/></item></channel> </rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en">
+<link type='application/atom+xml' length="12" href="https://example.com/" rel="next"/>
+  <icon>https://example.com/icon.png</icon>
+  <author><name>Ann</name><email>a@example.com</email></author>
+  <title>&#38;#xFFFF; back\slash</title>
+  <itunes:summary><![CDATA[😀<p></p> leading<br><img src="x" alt="y"/><li>&</li>]]></itunes:summary>
+  <entry><link length="abc" href="https://example.com/"/>
+<updated>18 Mar 77 09:50 +0200</updated>
+<id>urn:uuid:1</id>
+<summary type="plain"></summary>
+<title>
+&#x26;apos;a&#38;apos;  é  plain words
+</title>
+<published>Donnerstag, 1950-02-20T09:15:10Z</published>
+<itunes:duration>170:02</itunes:duration>
+<podcast:transcript type="application/srr"></podcast:transcript><p2:transcript url='https://example.com/t.vtt' type="text/plain" language='en'/></entry>
+  <entry><updated>Mon Oct 8 15:59:05 1980</updated>
+  <link type="text/html" href="https://example.com/pay" rel='self' title=""/>
+  <id>tag:x,2020:1</id>
+  <published>2448-12-31T10:26:55.1+0</published>
+  <summary type="text">&amp;#;&#x3C;img&gt;ééé&#x3C;BR>&lt;div&gt;&#x26;&lt;/div&gt;</summary>
+  <title>Folge 287: Über alles&lt;small&gt;a
+  b&lt;/small></title>
+  <itunes:duration>527</itunes:duration></entry> </feed>

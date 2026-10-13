@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<link rel='next' length='12' type="text/html" title=""></link>
+<author><name>C&amp;D</name></author>
+<author><name></name></author>
+<title type="html">&#38;AMP;</title>
+<author><name>Émile</name></author>
+<id></id>
+<subtitle type="plain">&#x3C;li>#7 – Interview&lt;/li> cr
+lf&lt;div>&amp;#0;&lt;/div&gt;ééé&#x3C;div&gt;a > b&#60;/div&gt;  multi
+line&#x26;#x;&#60;br&gt;&lt;p>&apos;single'&lt;/p&gt;</subtitle>
+<entry><published>Sat., 28 July 1987 10:38:10</published>
+<link type='audio/mpeg' rel="first" title="MP3 feed" length="20000" href="https://example.com/alt.xml"/>
+<summary type="text">&amp;quot;q&amp;quot;</summary>
+<title type="text"><![CDATA[&#128512;  Tom &amp; Jerry &lt;3  <h3>100%</h3>]]></title>
+<link title="Café" href="https://example.com/" rel="self" length='9223372036854775808'/>
+<updated>Sat,30 Jan 2006 22:07:54 +0945</updated>
+<link type="application/xhtml+xml" rel="first" href="https://example.com/feed?page=2"/></entry>
+<entry><title type="plain"><![CDATA[<B>R&D</]]>b&gt;</title> <id>
+id
+</id> <link title="Café" length="abc" rel="payment" href="https://example.com/feed?page=2" type="text/html"/> <link title='' type="text/html" rel="next"/> <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#13;
+&amp;amp;amp;&lt;img src="x.png">  100% Tom &#38; Jerry &lt;3	cr&#13;lf&#13;
+&amp;	  spaced  &#13;
+茶</div></content></entry>
+</feed>

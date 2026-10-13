@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><description><![CDATA[
+
+x<y]]></description>
+<itunes:image/>
+<itunes:summary>  &#38;hellip;&lt;BR&gt; ​    spaced   &amp;#x;</itunes:summary>
+<language>de-DE</language>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<item><itunes:subtitle>&#x3C;p&gt;Para&#60;/p></itunes:subtitle><description><![CDATA[ 茶<p>x<y</p>#7 – Interview<br>aaaaaaaééé]]></description><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&#x3C;br /&gt;&#60;p>第7集&#60;/p&gt;
+&amp;unknown;&#x3C;li>R&#38;D&#60;/li>&lt;p&gt;&amp;amp;amp;&#60;/p&gt;</content:encoded><enclosure url=" https://user:pass@media.example.net/e p55.amr " length="" type="application/pdf"/><link></link><itunes:duration>3723</itunes:duration><title>[x]</title><pubDate>1950-12-08T11:21:18 </pubDate><x xmlns="urn:other"><title>Default namespace title</title></x><dc:date xmlns:dc="http://purl.org/dc/elements/1.1/"> 18 Jun 2003 17:09:51 +1400
+</dc:date></item>
+<item><link>https://example.com/ep</link> <enclosure url='' length="2e5" type=' audio/mpeg'/> <psc:chapters version='1.2'><psc:chapter title="Café &amp;amp; more" href="https://example.com/ch" start="02:15:49.546" image="https://example.com/ch.png"/><psc:chapter image="https://example.com/ch.png" title="Intro" href="" start="1.5e3"/><psc:chapter href="https://example.com/ch" image="https://example.com/ch.png" start="1:2:3:4"/><psc:chapter href="https://example.com/ch" title="" image="https://example.com/ch.png" start="١:٠٢"/><psc:chapter title='Intro' image="https://example.com/ch.png" start='66:48'/><psc:chapter href='https://example.com/ch' start="1072" title="😀"/></psc:chapters> <enclosure url="https://cdn.example.com/a/b/c250.php" length="4294967296" type=" audio/mpeg"/> <description><![CDATA[<div>a > b</div>  &amp;<li></li> &#x;<li>1 <2</li><p>&amp;</p>	"quoted"&#1285]]>12;</description> <itunes:duration>-0.5</itunes:duration> <mrss:group><mrss:content fileSize="20000.0" type="audio" isDefault="false" duration="abc"/></mrss:group> <guid isPermaLink="false"> </guid> <title><![CDATA[​&#;]]></title> <itunes:subtitle>&#38;#169;
+&#x26;#x;
+a &#x3C; b</itunes:subtitle> <pubDate>&#13;
+Mon, 05 Jan 1976 03:57:47 EST  </pubDate></item>
+<item><title>étab	here</title>
+<guid isPermaLink='false'></guid>
+<psc:chapters></psc:chapters>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[ééé]]></content:encoded>
+<mrss:thumbnail url="https://example.com/th.jpg"></mrss:thumbnail>
+<pubDate>08 July 79 07:56 +0100</pubDate>
+<enclosure url="http://example.org/dir.with.dots/ep380.php?a=1&amp;b=2" length='1' type="video/x-matroska"/>
+<itunes:subtitle>	&lt;b&gt;&#38;unknown;&#60;/b>
+'single'
+a &gt; b </itunes:subtitle></item>
+<link></link>
+<podcast:funding url="https://example.com/donate"/>
+<itunes:subtitle><![CDATA[<em>&copy;</em>  sep  &quot;]]>q&amp;quot;</itunes:subtitle></channel>
+</rss>

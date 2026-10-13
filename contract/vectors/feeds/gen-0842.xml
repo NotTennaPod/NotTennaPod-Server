@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md"><textInput><title>Search</title><link>https://example.com/search</link></textInput>
+  <title>Episode 12&#x26;lt;b&#x26;gt;escaped&amp;lt;/b&amp;gt;&lt;h6&gt;#hash&#x3C;/h6&gt;</title>
+  <image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+  <description>&#x3C;p&gt;م&#x631;&#1581;با&lt;/p>&lt;p&gt;trailing &#60;/p&gt;aaaaa</description>
+  <link>https://example.com</link>
+  <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&amp;mdash;</itunes:subtitle>
+  <title>&#60;p&gt;Para&#x3C;/p&gt;</title>
+  <item><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"/><enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep299.avi" length="0" type='application/json'/><itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[&lt;b&gt;<br>a]]></itunes:summary><enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep393.wma" length="٢٠٠٠٠" type="x-audio/mpeg"/><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">62:03</itunes:duration><title>&#13;
+&amp;AMP;&lt;ul&gt;&lt;li>Episode 12&#x3C;/li&gt;&#60;li&gt;two&#60;/li>&lt;/ul>&#x3C;center&gt;&#x26;#;&lt;/center&gt;
+</title><description></description><link> https://e.com/x </link><enclosure url="https://user:pass@media.example.net/café/296.mp4" length="-1" type='audio/mpeg; charset=binary'></enclosure><guid isPermaLink="true"></guid></item></channel>
+  </rss>

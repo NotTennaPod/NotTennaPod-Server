@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><!DOCTYPE rss [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link href="ftp://files.example.com/ep174.png" rel="hub" length="abc" title="MP3 feed" type="audio/mpeg"/> <atom:link rel='hub' title="MP3 feed"/> <atom:link title="" href="https://example.com:8443/e p358.MP3" rel="related" type="application/atom+xml"></atom:link> <itunes:author><![CDATA[C]]>afé Radio</itunes:author> <textInput><title>Search</title><link>https://example.com/search</link></textInput> <itunes:summary>&lt;br /></itunes:summary> <itunes:new-feed-url>http</itunes:new-feed-url> <language></language> <atom:link title="Café" rel="archives" type="application/rss+xml" href="https://example.com/alt.xml"/> <itunes:image href='https://example.com/it.jpg'/> <title>&#60;b&gt;Bold&#x3C;/b> title  &amp;#x;</title> <link> https://example.com/ </link> <description>x&lt;yaaaaa</description> <item><enclosure url=' https://user:pass@media.example.net/e p55.amr ' length="00020000" type='video/quicktime'/>
+<enclosure url='HTTPS://EXAMPLE.COM/e p148.oga' length="2147483647" type="application/pdf"/>
+<itunes:duration>:30</itunes:duration>
+<link>https://example.com/ep</link>
+<pubDate>1995-13-18T10:56:25.493+1400</pubDate>
+<title>&show; 12</title>
+<itunes:summary>&#233;éé&#60;div&gt;茶&lt;/div>&lt;div&gt;&quot;quoted&quot;&lt;/div&gt;&#60;p&gt;Line&#60;br&gt;break&#x3C;/p>
+&#38;;</itunes:summary>
+<enclosure url="HTTPS://EXAMPLE.COM/e p367" length="4294967296" type="application/json"/>
+<mrss:group><mrss:content isDefault="TRUE" fileSize="123456" medium="video" duration="+60" type="application/pdf"/></mrss:group>
+<guid isPermaLink="true">
+</guid></item> <item><enclosure url='https://example.com:8443/ep355.html' length="9223372036854775808" type="audio/aac"/>
+<guid isPermaLink="false">
+</guid>
+<pubDate>Sat, 29 July 0001 07:10 -1200</pubDate>
+<link>https://example.com/ep</link>
+<description>&#60;img src=<![CDATA["x" alt="y"/><br></br>]]></description>
+<enclosure url="HTTPS://EXAMPLE.COM/e p171.mkv?a=1&amp;b=2" length="2e5" type="video/quicktime"/>
+<title><![CDATA[<li>Tom &amp; Jerry]]> &amp;lt;3&lt;/li&gt; AT&amp;T</title>
+<content:encoded>&lt;BR&gt;&#60;hr/&gt;&#x3C;li&gt;#hash&lt;/li>&#x3C;p/&gt;&lt;BR>&#60;BR&gt;ééé
+[x]</content:encoded>
+<psc:chapters version="1.2"/></item> <item><title>&lt;li&gt;"quoted&quot;&lt;/li></title>
+<guid></guid>
+<pubDate>1975-06-25T11:02:39CDT</pubDate>
+<description>
+plain words
+a
+
+b &amp;copy;&#60;p>multi
+line&lt;/p>
+x&lt;y
+Episode 12&#x26;#xD800;&#x3C;br&gt;&#x3C;hr/></description>
+<itunes:duration>9223372036854775807</itunes:duration>
+<media:content fileSize="-0" medium="video" type='video/quicktime' isDefault="1" duration="1" url="HTTPS://EXAMPLE.COM/ep63.txt"/>
+<mrss:content type='audio/mp4' fileSize="52428800" url="https://example.com:8443/a/b/c105.aif" medium="document" isDefault="TRUE"></mrss:content>
+<media:content url=" ftp://files.example.com/a/b/c253.wma " isDefault="true" type="application/pdf" medium="image" fileSize="-9223372036854775808" duration="59"/></item></channel>
+  </rss>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0"> <link rel="first" type="text/html" href="https://example.com/pay" title="Alternate"></link>
+<id>urn:x</id>
+<subtitle type="html"><![CDATA[	trailing aaaaa]]>aaa</subtitle>
+<title type="html">S01E500</title>
+<entry><published>Wednesday, 12 Aug 2268 10:49:17 -0500</published>
+  <title type="plain">&amp;#;R&amp;<![CDATA[D]]></title>
+  <updated>15 Mar 2003 05:32:33 +0000 	 </updated>
+  <link type="" length="9223372036854775808" title="" href="" rel="first"/>
+  <content>&#x3C;div&gt;a
+  b&#x3C;/div>&#13;
+http://example.com/?a=1&amp;b=2&lt;div&gt;#hash&lt;/div&gt;&amp;apos;a&amp;apos;ééé&#x3C;br>&lt;p>Episode 12&lt;/p&gt;&#60;li>1 &lt;2&lt;/li></content>
+  <id> raw </id>
+  <link title="MP3 feed" href="https://example.com/alt.xml" type="application/atom+xml" rel="self"/>
+  <link rel="hub" title="Alternate" href="https://example.com/" length="9223372036854775808" type="application/rss+xml"/></entry>
+</feed>

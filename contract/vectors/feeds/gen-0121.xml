@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><description><![CDATA[ &#8203;<li>Episode 12</li><br/><p></p><li>&#x1F600;</li><br><br></br>&#128512;]]></description>
+  <textInput><title>Search</title><link>https://example.com/search</link></textInput>
+  <itunes:image href=" "/>
+  <lastBuildDate>2024-015</lastBuildDate>
+  <language>pt-BR</language>
+  <atom:link type="application/xml+xhtml" rel='self'/>
+  <title>&lt;strong&gt; leading&lt;/strong>&lt;sub>&#x26;lt&lt;/sub&gt;</title>
+  <link> https://example.com/ </link>
+  <itunes:author><![CDATA[A, B]]></itunes:author>
+  <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url=''>Support us</podcast:funding>
+  <image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+  <item><itunes:summary><![CDATA[<p>&#169;</p><li>trailing </li><br /><img src="x.png">
+&lt;b&gt;<br></br><img src="x.png"><li>#hash</li>]]></itunes:summary>
+  <title>&amp;mdash; &#x26; &#x26;euro;</title>
+  <enclosure url='ftp://files.example.com/ep169.m3u8' length="9007199254740993" type="audio/ogg"/>
+  <guid isPermaLink='true'>https://example.com/item/4441</guid>
+  <itunes:subtitle><![CDATA[  &amp;amp;]]></itunes:subtitle>
+  <podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" type="application/json+chapters"/>
+  <dc:date>30 MAY 1977 13:04:39 -0800</dc:date>
+  <m:content url="https://xn--caf-dma.example/371.m4v" type='application/json' duration="-5" fileSize="1,000,000" medium="video" isDefault="1"/>
+  <pubDate>1990-09-21T21:40:29AKST</pubDate>
+  <m:content fileSize='1' isDefault="TRUE" url="ftp://files.example.com/café/120.ogx" type='AUDIO/MPEG' duration=" 60" medium="audio"/></item></channel>
+  </rss>

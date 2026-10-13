@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>fr
+</language>
+  <pi:funding xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url='https://example.com/donate'>Support us</pi:funding>
+  <title>&#x26;#xFFFF;</title>
+  <image><url></url></image>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <atom:link type="application/xhtml+xml" length='abc' title="Alternate" rel="first"/>
+  <atom:link href="https://example.com/pay" title="MP3 feed" length="9223372036854775808" type=""/>
+  <atom:link type="text/html" title="Alternate" rel="self" length="abc" href="https://example.com/alt.xml"/>
+  <description>&#60;div&gt;&amp;apos;a&#38;apos;&#x3C;/div&gt;</description>
+  <link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/pay" length="12" rel="next" type="application/rss+xml" title='Alternate'/>
+  <item><pubDate>2001-06-14America/New_York</pubDate>
+<enclosure url="https://example.com/a.b/221.m4b" length="-1" type='audio/opus'/>
+<description></description>
+<title>&#8203;</title>
+<itunes:image href=" https://e.com/i.png "></itunes:image>
+<link> https://e.com/x </link>
+<guid>https://example.com/item/43615</guid></item>
+  <item><title>&#x26;#65;&#x26;#66; #hash tab	here</title>
+<link> https://e.com/x </link>
+<pubDate>Sat 8 Sep 1900 07:43:46 GMT-1200 (Greenwich Mean Time)</pubDate>
+<itunes:image href=" "/>
+<itunes:duration>426.536</itunes:duration>
+<itunes:author>Item author</itunes:author>
+<enclosure url=" https://example.com:8443/dir.with.dots/ep68.m4b " length="-16384" type="audio/mp4"/></item>
+  <item><itunes:summary>&lt;img src="x" alt=&quot;y&quot;/>&#233;&#233;&#233;&#128512;&#128512;&#128512;&lt;img src="x.png"&gt;&#160;plain words	&#x200B;&#x3C;li&gt;&#1513;&#1500;&#1493;&#1501;&#x3C;/li&gt;aaaaa</itunes:summary> <enclosure url="//example.com/caf&#233;/301.mkv#t=10" length="00020000" type="audio/ogg"/> <enclosure url="//example.com/a/b/c351.mov?file=x.mp3" length="-0" type="AUDIO/MPEG"/> <guid isPermaLink="true">dup</guid> <pubDate>	1899-11-09T18:23:54.166MDT  </pubDate> <itunes:duration>62:03</itunes:duration> <description><![CDATA[
+
+trailing &Lt;<br><li>&#1605;&#1585;&#1581;&#1576;&#1575;</li>]]></description> <link></link> <title>&#31532;715&#38598;</title> <media:thumbnail url=""/> <pi:chapters xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url='https://example.com/ch.json' type="application/json+chapters"/> <media:group><media:content fileSize="abc" isDefault="1" url="//example.com/a/b/c138.m4b?a=1&amp;b=2" medium="video" duration="0060" type="unknown"/></media:group></item></channel>
+</rss>

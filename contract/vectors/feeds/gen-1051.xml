@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1252"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:media="http://search.yahoo.com/mrss/"><link></link>
+  <atom:link length="9223372036854775808" title="" type="application/atom+xml" rel='archives'/>
+  <itunes:image/>
+  <image><url>https://example.com/img.png</url><title>Image title</title></image>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <title>&amp;lt&#60;p>Para&lt;/p&gt;#882 – Interview</title>
+  <itunes:author>&#128512; Pod</itunes:author>
+  <description><![CDATA[<img>  100%<img>
+&amp;amp; &copy;<li>a > b</li>aaaaaa<div>&copy;</div>]]></description>
+  <item><title><![CDATA[&unknown;&lt;b&gt;]]></title>
+  <guid isPermaLink="true">  spaced guid  </guid>
+  <pubDate>1982-07-10T09:07</pubDate>
+  <itunes:duration>596:31:23.647</itunes:duration>
+  <enclosure url="https://example.com:8443/café/267.MP3" length="&#1634;&#1632;&#1632;&#1632;&#1632;" type="application/pdf"/>
+  <media:content duration="2147484" fileSize="9007199254740992" medium="document" type="image/jpeg" url="http://example.org/70.mkv" isDefault='false'/>
+  <category>Technology</category></item></channel>
+  </rss>

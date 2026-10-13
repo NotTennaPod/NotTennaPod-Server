@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<title>&lt;font color="red"&gt;tab	here&#60;/font&gt;a&#13;
+b</title>
+<image><title>Image title</title><url>https://example.com/img.png</url></image>
+<link> https://example.com/ </link>
+<link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/pay" title="MP3 feed" length="9223372036854775808" type='text/html'/>
+<itunes:image href=""></itunes:image>
+<item><title><![CDATA[1 <2
+&hellip;
+&]]>amp</title> <guid>https://example.com/item/98094</guid> <description>&#60;img src=&quot;x" alt="y&quot;/&gt;&lt;div>{json: 1}&#x3C;/div&gt;
+&#x1F600; &#38;apos;a&amp;apos;aaaaaaa&lt;br/>&lt;div>&#38;apos;a&amp;apos;&#x3C;/div>
+&#x26;#169;</description> <enclosure url="" length="1" type='video/mp4'></enclosure> <itunes:image href='https://example.com/ep.jpg'/> <itunes:duration>14590</itunes:duration> <podcastindex:transcript url='https://example.com/t.vtt' type="application/srr"/><podcastindex:transcript url="" type="application/srt" language="en"/><podcastindex:transcript url="https://example.com/t.vtt" type='application/srt'/> <media:content medium="video" duration="abc" isDefault="false" type="audio/ogg" fileSize='20000.0'/> <pubDate>17 Apr 13 17:22:14 -0000</pubDate></item>
+<item><link>https://example.com/ep</link> <description>😀😀😀😀</description> <pubDate>1601-07-21T15:05:37-1200</pubDate> <podcastindex:transcript url="" type='application/x-subrip' language="en"/> <itunes:summary>AT&#x26;T&lt;br&gt;é&#60;br>&#x3C;p&gt;S01E7&#x3C;/p&gt;</itunes:summary> <enclosure url="https://example.com:8443/a/b/c360.3gp?dl=1.0" length="12" type="video"/> <title>&amp;Lt;  padded  x&lt;y</title> <guid isPermaLink="true">Caf&#233;-guid</guid> <itunes:subtitle><![CDATA[100%
+<del>&#128512;</del>
+a < b]]></itunes:subtitle></item>
+<item><itunes:duration>3:17:57</itunes:duration>
+  <itunes:image href=" "/>
+  <enclosure url="HTTPS://EXAMPLE.COM/ep176.wav" length="２０００００" type="text/plain"/>
+  <pubDate>2010-07-28T15:31:40British Summer Time</pubDate>
+  <guid> </guid>
+  <title><![CDATA['single' 😀 &#128512;]]></title>
+  <link></link>
+  <description>&#128512;&#13;
+&amp;#xD800;&lt;li&gt;&#x26;AMP;&lt;/li&gt;&lt;BR>&lt;img src=&quot;x" alt="y"/></description></item></channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><i:summary>&#38;amp
+&amp;apos;a&amp;apos;&#x3C;p&gt;plain words&lt;/p&gt;&#x1F600;&#128512;&#x3C;li>  spaced  &#60;/li>&lt;p>{json: 1}&#x3C;/p&gt;&#60;li&gt;Tom &#x26;amp; Jerry &amp;lt;3&lt;/li&gt;éé&#233;</i:summary>
+<title><![CDATA[<del>1 <2</del>  <i>Episode 12</i>  Tom &amp; Jerry &lt;3]]></title>
+<link>https://example.com</link>
+<language></language>
+<podcastindex:funding url="">Support us</podcastindex:funding>
+<description>&#x3C;br/&gt;</description>
+<podcastindex:funding url=""></podcastindex:funding>
+<media:thumbnail/>
+<podcastindex:funding url="https://example.com/donate">&lt;b>x&lt;/b&gt;</podcastindex:funding>
+<i:image href="https://example.com/it.jpg"/>
+<item><title><![CDATA[& &#x; <h3>x<y</h3>]]></title><pubDate>Thu Sep 4 02:04:14 2008 +0</pubDate><description>&#x3C;br/&gt;</description><i:summary>&lt;li&gt;#7 &#8211; Interview&#x3C;/li&gt;&#x3C;div&gt;&amp;AMP;&#x3C;/div&gt;</i:summary><i:duration>2:06:19</i:duration><enclosure url="http://example.org/a/b/c86.ts" length="00020000" type="audio/*"/><enclosure url="https://xn--caf-dma.example/165.html" length="" type="video/x-matroska"/><media:content type="video/x-matroska" fileSize='18446744073709551616' isDefault='true' url="https://user:pass@media.example.net/café/150.ts?dl=1.0" duration='9223372036854775807'/><media:description type="html">&#x3C;br /&gt;&#x3C;li&gt;&#x26;&lt;/li>&#128512;&#128512;&#128512;&#128512;</media:description></item>
+<item><i:duration>
+45:00
+</i:duration> <guid>urn:uuid:3b8b72ae</guid> <content:encoded>&#128512;&lt;li>&#x26;#169;&lt;/li>&amp;euro;	&#38;unknown;&lt;p>&lt;/p></content:encoded> <enclosure length='52428800' type="AUDIO/MPEG"/> <title><![CDATA[&#33590; trailing ]]></title> <media:description>
+
+&#38;#0;
+&amp;;&#x3C;div>  spaced  &#x3C;/d<![CDATA[iv><p>&#8203;</p>
+a
+
+b]]></media:description></item></channel>
+</rss>

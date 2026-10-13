@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"><channel xmlns:media="http://search.yahoo.com/mrss/"><itunes:author>&amp;copy; 2020 Org</itunes:author>
+<title>AT&amp;T</title>
+<dc:creator>DC Creator</dc:creator>
+<description>&#128512;&#128512;&#128512;&#128512;aaaaaaaaa&lt;div>{json: 1}&#60;/div&gt;&lt;div&gt;&#x3C;/div>&lt;div&gt;&amp;;&lt;/div&gt;</description>
+<link></link>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<item><media:content url="http://example.org/café/32.mp3.zip" medium="image" fileSize="123456" type="audio" duration="59"/> <podcast:transcript type="" language="en"/> <enclosure url="https://user:pass@media.example.net/ep282.Mp4" length='' type="audio/mp4"/> <link>https://example.com/ep</link> <guid>  spaced guid  </guid> <enclosure url="https://example.com:8443/102.aac" length="20000 " type='audio/mp3'/> <description></description> <pubDate>1899-02-05T06:33:48.313</pubDate> <media:content medium="audio" type='video/x-matroska' duration="9223372036854775807" url="https://example.com:8443/dir.with.dots/ep394.OGG" fileSize='-16384'></media:content></item>
+<item><title>&amp;#65;&amp;#66;</title><pubDate>Sat, 20 Dec 1975 11:35:15 UT</pubDate><link> https://e.com/x </link><media:content url="https://user:pass@media.example.net/dir.with.dots/ep264.ogx" type="x-audio/mpeg" duration="3600" medium="video" fileSize='-9223372036854775808' isDefault="TRUE"/><guid isPermaLink='false'>dup</guid><itunes:subtitle><![CDATA[	&#xD800;]]>  100%	</itunes:subtitle><enclosure url=" https://cdn.example.com/a/b/c246.txt " type=""/><itunes:summary><![CDATA[<p>a
+  b</p><br/><br />]]></itunes:summary></item>
+<item><enclosure url="ftp://files.example.com/30" length="&#1634;&#1632;&#1632;&#1632;&#1632;" type="unknown"/> <itunes:summary>&lt;br /></itunes:summary> <itunes:subtitle>&amp;quot;q&#38;quot;
+&amp;#xA9;
+'single'</itunes:subtitle> <enclosure url="ftp://files.example.com/a/b/c18.mpga" length="-0" type=' audio/mpeg'/> <link> https://e.com/x </link> <title>a
+  b</title> <pubDate>Sat, 23 Sep 1989 04:36:31 +0945</pubDate> <enclosure url="HTTPS://EXAMPLE.COM/ep265.torrent" length="0x4E20" type="audio/opus"/> <guid isPermaLink="true"> </guid></item></channel></rss>

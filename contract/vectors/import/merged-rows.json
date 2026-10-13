@@ -1,0 +1,1064 @@
+{
+ "cases": [
+  {
+   "description": "duplicate-GUID rows in one release (played in different months), a reused GUID across two releases, a rotating enclosure (allocated release ID), a row re-dated 13 days later with the same enclosure that joins the later release 7 days away (PROTOCOL §9.7's resolver), enclosure-only rows that normalize equal, items without GUID or enclosure, a text-only item with a dangling legacy media link, GUIDs 'null' and blank, NEW / played / unplayed-with-position, favorites, a queue across feeds, history, a legacy row with last_played_time 0 and a future last-played date; an Atom feed with credentials",
+   "fixture": "contract/vectors/import/merged-rows.db",
+   "format": "nottennapod-import-android-v1",
+   "ignored": {
+    "dropped_favorite_rows": [
+     4
+    ],
+    "dropped_queue_rows": [
+     5
+    ],
+    "extra_media": [],
+    "orphan_items": [],
+    "orphan_media": []
+   },
+   "podcasts": [
+    {
+     "creating_feed_id": 1,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": {
+        "history": 1777708800000,
+        "last_played": 1777708800000,
+        "played_ms": 300000,
+        "source_item_id": 2,
+        "source_media_id": 2
+       },
+       "duration_ms": 1800000,
+       "favorite": true,
+       "history": 1777708800000,
+       "identity": {
+        "k": "rss-guid",
+        "v": "dup-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 420000,
+       "queued": true,
+       "source_item_ids": [
+        1,
+        2
+       ],
+       "state_item_id": 2,
+       "title": "Duplicate one",
+       "units": [
+        {
+         "duration_ms": 1800000,
+         "history": 1773173100000,
+         "last_played": 1773172800000,
+         "played": false,
+         "played_ms": 600000,
+         "position_ms": 0,
+         "source_item_id": 1,
+         "source_media_id": 1
+        }
+       ]
+      },
+      {
+       "baseline": {
+        "history": 1736254800000,
+        "last_played": 1736251200000,
+        "played_ms": 2400000,
+        "source_item_id": 3,
+        "source_media_id": 3
+       },
+       "duration_ms": 2400000,
+       "favorite": false,
+       "history": 1736254800000,
+       "identity": {
+        "k": "rss-guid",
+        "v": "reused"
+       },
+       "inbox": false,
+       "play_state": "played",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        3
+       ],
+       "state_item_id": 3,
+       "title": "Reused GUID (2025)",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 2460000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid+enclosure",
+        "v": "reused\u001fhttps://cdn.example.invalid/2025/reused-rerun.mp3"
+       },
+       "inbox": true,
+       "play_state": "new",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        4,
+        5
+       ],
+       "state_item_id": 5,
+       "title": "Reused GUID (rerun, new ad)",
+       "units": [
+        {
+         "duration_ms": 2400000,
+         "history": null,
+         "last_played": null,
+         "played": false,
+         "played_ms": 0,
+         "position_ms": 0,
+         "source_item_id": 4,
+         "source_media_id": 4
+        }
+       ]
+      },
+      {
+       "baseline": {
+        "history": 1768478400000,
+        "last_played": 1768478400000,
+        "played_ms": 900000,
+        "source_item_id": 6,
+        "source_media_id": 6
+       },
+       "duration_ms": 900000,
+       "favorite": false,
+       "history": 1768478400000,
+       "identity": {
+        "k": "enclosure",
+        "v": "https://cdn.example.invalid/no-guid.mp3"
+       },
+       "inbox": false,
+       "play_state": "played",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        6,
+        7
+       ],
+       "state_item_id": 6,
+       "title": "No GUID",
+       "units": [
+        {
+         "duration_ms": 900000,
+         "history": null,
+         "last_played": null,
+         "played": false,
+         "played_ms": 0,
+         "position_ms": 0,
+         "source_item_id": 7,
+         "source_media_id": 7
+        }
+       ]
+      },
+      {
+       "baseline": null,
+       "duration_ms": null,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "e0",
+        "reason": "no_guid_no_enclosure",
+        "source_item_id": 8
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        8
+       ],
+       "state_item_id": 8,
+       "title": "Announcement",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 300000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "e0",
+        "reason": "no_guid_no_enclosure",
+        "source_item_id": 9
+       },
+       "inbox": false,
+       "play_state": "played",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        9
+       ],
+       "state_item_id": 9,
+       "title": "Announcement",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": null,
+       "favorite": true,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "text-only"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        10
+       ],
+       "state_item_id": 10,
+       "title": "Text only",
+       "units": []
+      },
+      {
+       "baseline": {
+        "history": 1907755200000,
+        "last_played": 1907755200000,
+        "played_ms": 60000,
+        "source_item_id": 11,
+        "source_media_id": 9
+       },
+       "duration_ms": 3600000,
+       "favorite": false,
+       "history": 1907755200000,
+       "identity": {
+        "k": "rss-guid",
+        "v": "future"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 60000,
+       "queued": true,
+       "source_item_ids": [
+        11
+       ],
+       "state_item_id": 11,
+       "title": "From the future",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 1200000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "enclosure",
+        "v": "https://cdn.example.invalid/guid-null.mp3"
+       },
+       "inbox": true,
+       "play_state": "new",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        12
+       ],
+       "state_item_id": 12,
+       "title": "GUID null",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": null,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "e0",
+        "reason": "no_guid_no_enclosure",
+        "source_item_id": 13
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        13
+       ],
+       "state_item_id": 13,
+       "title": "Blank GUID",
+       "units": []
+      },
+      {
+       "baseline": {
+        "history": 1401624000000,
+        "last_played": null,
+        "played_ms": 1200000,
+        "source_item_id": 14,
+        "source_media_id": 11
+       },
+       "duration_ms": 1200000,
+       "favorite": false,
+       "history": 1401624000000,
+       "identity": {
+        "k": "rss-guid",
+        "v": "legacy"
+       },
+       "inbox": false,
+       "play_state": "played",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        14
+       ],
+       "state_item_id": 14,
+       "title": "Legacy listening",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "rotating"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        18
+       ],
+       "state_item_id": 18,
+       "title": "Rotating (January)",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid+enclosure",
+        "v": "rotating\u001fhttps://cdn.example.invalid/rotating-y.mp3"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        19
+       ],
+       "state_item_id": 19,
+       "title": "Rotating (February)",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "e0",
+        "reason": "release_id_taken",
+        "source_item_id": 20
+       },
+       "inbox": false,
+       "play_state": "played",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        20
+       ],
+       "state_item_id": 20,
+       "title": "Rotating (March)",
+       "units": []
+      },
+      {
+       "baseline": {
+        "history": 1704196800000,
+        "last_played": 1704196800000,
+        "played_ms": 1000000,
+        "source_item_id": 21,
+        "source_media_id": 18
+       },
+       "duration_ms": 1000000,
+       "favorite": false,
+       "history": 1704196800000,
+       "identity": {
+        "k": "rss-guid",
+        "v": "late"
+       },
+       "inbox": false,
+       "play_state": "played",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        21
+       ],
+       "state_item_id": 21,
+       "title": "Late dispute (first)",
+       "units": []
+      },
+      {
+       "baseline": {
+        "history": 1706788800000,
+        "last_played": 1706788800000,
+        "played_ms": 500000,
+        "source_item_id": 22,
+        "source_media_id": 19
+       },
+       "duration_ms": 1000000,
+       "favorite": false,
+       "history": 1706788800000,
+       "identity": {
+        "k": "rss-guid+enclosure",
+        "v": "late\u001fhttps://cdn.example.invalid/late-b.mp3"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 500000,
+       "queued": false,
+       "source_item_ids": [
+        22,
+        23
+       ],
+       "state_item_id": 22,
+       "title": "Late dispute (re-dated)",
+       "units": [
+        {
+         "duration_ms": 1100000,
+         "history": null,
+         "last_played": null,
+         "played": false,
+         "played_ms": 0,
+         "position_ms": 0,
+         "source_item_id": 23,
+         "source_media_id": 20
+        }
+       ]
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "global",
+     "normalized_url": "https://feeds.example.invalid/merged.xml",
+     "populated": true,
+     "properties_feed_id": 1,
+     "source_feed_ids": [
+      1
+     ],
+     "state": "subscribed",
+     "title": "Merged Rows Show",
+     "url": "https://feeds.example.invalid/merged.xml"
+    },
+    {
+     "creating_feed_id": 2,
+     "credentials": true,
+     "credentials_feed_id": 2,
+     "episodes": [
+      {
+       "baseline": {
+        "history": 1776686400000,
+        "last_played": 1776686400000,
+        "played_ms": 30000,
+        "source_item_id": 15,
+        "source_media_id": 12
+       },
+       "duration_ms": 1500000,
+       "favorite": true,
+       "history": 1776686400000,
+       "identity": {
+        "k": "atom-id",
+        "v": "atom-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 30000,
+       "queued": true,
+       "source_item_ids": [
+        15
+       ],
+       "state_item_id": 15,
+       "title": "Atom one",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 1500000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "atom-id",
+        "v": "atom-2"
+       },
+       "inbox": true,
+       "play_state": "new",
+       "position_ms": 0,
+       "queued": true,
+       "source_item_ids": [
+        16
+       ],
+       "state_item_id": 16,
+       "title": "Atom two",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "duration_ms": 1500000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "atom-id",
+        "v": "ATOM-2"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        17
+       ],
+       "state_item_id": 17,
+       "title": "Atom two (other case)",
+       "units": []
+      }
+     ],
+     "k": "atom-id",
+     "keep_updated": false,
+     "new_episodes_action": "queue",
+     "normalized_url": "https://private.example.invalid/feed.atom",
+     "populated": true,
+     "properties_feed_id": 2,
+     "source_feed_ids": [
+      2
+     ],
+     "state": "subscribed",
+     "title": "My Atom Show",
+     "url": "https://private.example.invalid/feed.atom"
+    }
+   ],
+   "queue": [
+    15,
+    11,
+    2,
+    16
+   ],
+   "result": {
+    "ambiguous": [
+     {
+      "podcast": "Merged Rows Show",
+      "reason": "no_guid_no_enclosure",
+      "source_item_id": 8,
+      "title": "Announcement"
+     },
+     {
+      "podcast": "Merged Rows Show",
+      "reason": "no_guid_no_enclosure",
+      "source_item_id": 9,
+      "title": "Announcement"
+     },
+     {
+      "podcast": "Merged Rows Show",
+      "reason": "no_guid_no_enclosure",
+      "source_item_id": 13,
+      "title": "Blank GUID"
+     }
+    ],
+    "imported": {
+     "episodes": 19,
+     "favorites": 3,
+     "history": 8,
+     "inbox": 3,
+     "podcasts": 2,
+     "queue": 4
+    },
+    "merged": [
+     {
+      "kind": "episode",
+      "podcast": "Merged Rows Show",
+      "source_item_ids": [
+       1,
+       2
+      ],
+      "title": "Duplicate one"
+     },
+     {
+      "kind": "episode",
+      "podcast": "Merged Rows Show",
+      "source_item_ids": [
+       4,
+       5
+      ],
+      "title": "Reused GUID (rerun, new ad)"
+     },
+     {
+      "kind": "episode",
+      "podcast": "Merged Rows Show",
+      "source_item_ids": [
+       6,
+       7
+      ],
+      "title": "No GUID"
+     },
+     {
+      "kind": "episode",
+      "podcast": "Merged Rows Show",
+      "source_item_ids": [
+       22,
+       23
+      ],
+      "title": "Late dispute (re-dated)"
+     }
+    ],
+    "skipped": []
+   },
+   "sha256": "1dd54db4e33f46f93b9a3bd4be83b33a4e0d34e768e72c7ca015444a0c3c4918",
+   "statistics": {
+    "android": {
+     "monthly": [
+      {
+       "month": 1,
+       "played_ms": 1000000,
+       "year": 2024
+      },
+      {
+       "month": 2,
+       "played_ms": 500000,
+       "year": 2024
+      },
+      {
+       "month": 1,
+       "played_ms": 2400000,
+       "year": 2025
+      },
+      {
+       "month": 1,
+       "played_ms": 900000,
+       "year": 2026
+      },
+      {
+       "month": 3,
+       "played_ms": 600000,
+       "year": 2026
+      },
+      {
+       "month": 4,
+       "played_ms": 30000,
+       "year": 2026
+      },
+      {
+       "month": 5,
+       "played_ms": 300000,
+       "year": 2026
+      },
+      {
+       "month": 6,
+       "played_ms": 60000,
+       "year": 2030
+      }
+     ],
+     "per_feed": [
+      {
+       "episodes": 20,
+       "episodes_started": 8,
+       "episodes_started_marked": 10,
+       "feed_id": 1,
+       "played_marked_ms": 7860000,
+       "played_ms": 6960000,
+       "total_ms": 23860000
+      },
+      {
+       "episodes": 3,
+       "episodes_started": 1,
+       "episodes_started_marked": 1,
+       "feed_id": 2,
+       "played_marked_ms": 30000,
+       "played_ms": 30000,
+       "total_ms": 4500000
+      }
+     ],
+     "per_podcast": [
+      {
+       "creating_feed_id": 1,
+       "episodes": 20,
+       "episodes_started": 8,
+       "episodes_started_marked": 10,
+       "played_marked_ms": 7860000,
+       "played_ms": 6960000,
+       "total_ms": 23860000
+      },
+      {
+       "creating_feed_id": 2,
+       "episodes": 3,
+       "episodes_started": 1,
+       "episodes_started_marked": 1,
+       "played_marked_ms": 30000,
+       "played_ms": 30000,
+       "total_ms": 4500000
+      }
+     ],
+     "windows": [
+      {
+       "from": 0,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 6960000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 30000
+        }
+       ],
+       "to": null
+      },
+      {
+       "from": 1704067200000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 5760000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 30000
+        }
+       ],
+       "to": null
+      },
+      {
+       "from": 1704067200000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 1000000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1706745600000
+      },
+      {
+       "from": 1706745600000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 500000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1709251200000
+      },
+      {
+       "from": 1735689600000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 2400000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1738368000000
+      },
+      {
+       "from": 1767225600000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 900000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1769904000000
+      },
+      {
+       "from": 1772323200000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 600000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1775001600000
+      },
+      {
+       "from": 1775001600000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 30000
+        }
+       ],
+       "to": 1777593600000
+      },
+      {
+       "from": 1777593600000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 300000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1780272000000
+      },
+      {
+       "from": 1906502400000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 60000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1909094400000
+      }
+     ]
+    },
+    "causes": [
+     {
+      "cause": "absent_last_played_client_rule",
+      "detail": "played time without a last-played date (Android's last_played_time 0, e.g. from before 1.4) counts in date filters starting at 0 only through the client rule that an absent last_played is 0 (ruling 7); never in 'All time' or per month",
+      "played_ms": 1200000,
+      "source_media_ids": [
+       11
+      ]
+     }
+    ],
+    "expected_differences": [],
+    "mismatches": [],
+    "projection": {
+     "monthly": [
+      {
+       "month": 1,
+       "played_ms": 1000000,
+       "year": 2024
+      },
+      {
+       "month": 2,
+       "played_ms": 500000,
+       "year": 2024
+      },
+      {
+       "month": 1,
+       "played_ms": 2400000,
+       "year": 2025
+      },
+      {
+       "month": 1,
+       "played_ms": 900000,
+       "year": 2026
+      },
+      {
+       "month": 3,
+       "played_ms": 600000,
+       "year": 2026
+      },
+      {
+       "month": 4,
+       "played_ms": 30000,
+       "year": 2026
+      },
+      {
+       "month": 5,
+       "played_ms": 300000,
+       "year": 2026
+      },
+      {
+       "month": 6,
+       "played_ms": 60000,
+       "year": 2030
+      }
+     ],
+     "per_podcast": [
+      {
+       "creating_feed_id": 1,
+       "episodes": 20,
+       "episodes_started": 8,
+       "episodes_started_marked": 10,
+       "played_marked_ms": 7860000,
+       "played_ms": 6960000,
+       "total_ms": 23860000
+      },
+      {
+       "creating_feed_id": 2,
+       "episodes": 3,
+       "episodes_started": 1,
+       "episodes_started_marked": 1,
+       "played_marked_ms": 30000,
+       "played_ms": 30000,
+       "total_ms": 4500000
+      }
+     ],
+     "windows": [
+      {
+       "from": 0,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 6960000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 30000
+        }
+       ],
+       "to": null
+      },
+      {
+       "from": 1704067200000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 5760000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 30000
+        }
+       ],
+       "to": null
+      },
+      {
+       "from": 1704067200000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 1000000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1706745600000
+      },
+      {
+       "from": 1706745600000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 500000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1709251200000
+      },
+      {
+       "from": 1735689600000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 2400000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1738368000000
+      },
+      {
+       "from": 1767225600000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 900000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1769904000000
+      },
+      {
+       "from": 1772323200000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 600000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1775001600000
+      },
+      {
+       "from": 1775001600000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 30000
+        }
+       ],
+       "to": 1777593600000
+      },
+      {
+       "from": 1777593600000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 300000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1780272000000
+      },
+      {
+       "from": 1906502400000,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 60000
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        }
+       ],
+       "to": 1909094400000
+      }
+     ]
+    }
+   },
+   "user_version": 3110000
+  }
+ ],
+ "suite": "import_android"
+}

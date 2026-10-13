@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><title> Tom &amp;amp; Jerry &amp;lt;3 </title>
+<description></description>
+<language> EN-US </language>
+<link> https://example.com/ </link>
+<atom:link title="MP3 feed" rel='Next' href=""/>
+<item><title><![CDATA[café  مرحبا  a > b]]></title>
+  <guid isPermaLink="false">urn:uuid:110c4af7</guid>
+  <link> https://e.com/x </link>
+  <pubDate>Fri, 28 Nov 2414 21:12 PDT</pubDate>
+  <description><![CDATA[<img>
+<div>"quoted"</div><BR><p/>]]></description>
+  <content:encoded><![CDATA[😀&#xFFFF;]]></content:encoded>
+  <enclosure length="9223372036854775808" type="audio"/>
+  <media:group><media:content fileSize="0" duration="01:00"/><media:content type="audio/flac" isDefault="TRUE" fileSize="123456" duration="abc" url="https://example.com/a.b/café/113.Mp4?file=x.mp3" medium='video'/></media:group>
+  <media:description type='html'>&#60;p>茶&lt;/p&gt;&lt;p/>&#xA0;&#x26;amp</media:description></item></channel>
+</rss>

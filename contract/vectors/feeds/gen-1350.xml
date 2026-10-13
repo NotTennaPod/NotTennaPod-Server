@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:media="http://search.yahoo.com/mrss/"><title>&#x26;#169;</title> <atom:link type='text/html' rel="first" href="https://example.com/feed?page=2" title="" length='abc'/> <itunes:image href=""/> <language>TR</language> <atom:link type='application/rss+xml' href="https://example.com/alt.xml" rel="archives" title="Alternate"></atom:link> <podcast:funding url="https://example.com/donate">Support us</podcast:funding> <atom:link rel="first" href="https://example.com/" type="application/atom+xml" title="" length="9223372036854775808"></atom:link> <atom:link href="" type="audio/mpeg" title="" length="abc" rel="self"/> <description> 1 &lt;2&#60;li&gt;&#38;quot;q<![CDATA[&quot;</li>]]></description> <link></link> <item><enclosure url="https://example.com/a.b/ep396.aac" length="9223372036854775807" type="audio/aac"/> <guid isPermaLink="true">urn:uuid:c7046e16</guid> <enclosure url="" length='-0' type="unknown"/> <itunes:duration>1621</itunes:duration> <enclosure url='ftp://files.example.com/241.mp3' length="12" type="audio/ogg"/> <pubDate>Thursday, 17 Aug 200000 17:50 -1200</pubDate> <itunes:subtitle><![CDATA[ a < b
+]]></itunes:subtitle> <title>&amp;lt;b&amp;gt;</title></item> <item><title>&amp;apos;a&#x26;apos;</title> <guid isPermaLink="true"></guid> <link></link> <itunes:image/> <itunes:duration>00:00:00</itunes:duration> <enclosure url="" length='２０００００' type=''/> <media:content url="https://example.com/a.b/café/317.mp3.zip" isDefault="1" type="audio/ogg" medium="document" fileSize='9007199254740992' duration=' 60'/></item> <item><title>back\slash&#38;#x1F600;</title>
+<guid></guid>
+<link> https://e.com/x </link>
+<description>x&lt;y&lt;p>sep&#60;/p&gt;&#x3C;br></description>
+<c:encoded>  padded  &#60;br&gt;&#60;li>茶&#60;/li&gt;Tom &#x26; Jerry &#x3C;3&#60;br>&lt;li&gt;100%&lt;/li&gt;&lt;p>&#x3C;/p&gt;&#60;p&gt;&amp;#x;&#x3C;/p&gt;
+plain words
+&#128512;</c:encoded>
+<itunes:summary>&lt;p/&gt;{json: 1}&lt;br>&#x3C;p/>&#60;li>&#x26;#xA9;&lt;/li>&#x3C;img&gt;&lt;li> &#60;/li&gt;&#60;div&gt;&amp;amp;&lt;/div>  &#38;#xA9;</itunes:summary>
+<itunes:image></itunes:image>
+<enclosure url="ftp://files.example.com/241.mp3" length='' type="audio"/>
+<media:content type='unknown' duration="" medium="image" fileSize=''/>
+<media:thumbnail/>
+<podcast:chapters type="application/json+chapters"/></item></channel> </rss>

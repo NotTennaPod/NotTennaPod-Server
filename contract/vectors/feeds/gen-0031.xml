@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link></link><description></description><title>&lt;font color="red"&gt;&#x26;quot;q&amp;quot;&#60;/font&gt; &amp;lt</title><atom:link type="text/html" length="9223372036854775808" href="https://example.com/feed?page=2" rel="next" title="Alternate"/><link xmlns="http://www.w3.org/2005/Atom" length="9223372036854775808" rel="related" href="https://example.com/pay"/><itunes:image href=" https://example.com/sp.jpg "/><item><podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"></podcast:chapters>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&lt;li>&#x26;mdash;<![CDATA[</li>]]></content:encoded>
+<itunes:image href="https://example.com/ep.jpg"/>
+<link> https://e.com/x </link>
+<media:group><media:content type="audio/x-m4a" medium="image" duration="2147483648" fileSize="-9223372036854775808" isDefault="TRUE"/></media:group>
+<enclosure url="" length='9223372036854775807' type="application/pdf"/>
+<title>&lt;span&gt;cr&#13;lf&lt;/span></title>
+<media:thumbnail url=""/>
+<itunes:duration>10536</itunes:duration>
+<pubDate>1986-04-28T14:10:15+0945 UTC</pubDate>
+<guid isPermaLink="true"></guid>
+<description>&lt;img src="x.png"> cover&#60;br&gt;&lt;br></description></item></channel>
+</rss>

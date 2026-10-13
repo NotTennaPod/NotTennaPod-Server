@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="x-unknown-charset"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel xmlns:media="http://search.yahoo.com/mrss/"><a10:link length="12" href='https://example.com/feed?page=2' rel='enclosure' title="MP3 feed"/>
+<title><![CDATA[#396 – Interview]]></title>
+<link> https://example.com/ </link>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[Café Radio]]></itunes:author>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href='https://example.com/it.jpg'/>
+<media:thumbnail/>
+<a10:link rel="next" length="12" type="audio/mpeg" title='MP3 feed' href="https://example.com/alt.xml"/>
+<a10:link href="https://example.com/feed?page=2" type="application/xml+xhtml" title="MP3 feed" rel='enclosure' length="9223372036854775808"/>
+<a10:link length="12" rel="first" href="https://example.com/alt.xml" type="application/rss+xml"/>
+<item><guid isPermaLink="true">  spaced guid  </guid>
+<link>https://example.com/ep</link>
+<pubDate>  06 may 1972 10:02:37 +0200  </pubDate>
+<description>&#x3C;p>&amp;apos;a&amp;apos;&#60;/p&gt;   spaced  &#60;img src="x" alt="y"/></description>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:summary>
+<itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Tom &#x26;amp; Jerry &amp;lt;3</itunes:subtitle>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""/>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">18028</itunes:duration>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Item author</itunes:author>
+<enclosure url="https://example.com:8443/e p263.wma?auth=yes" length="20000 " type="audio/x-m4a"/>
+<media:content duration="3600" isDefault="true" type="audio/mp4" fileSize="9007199254740991"/>
+<sc:chapters version="1.2"><sc:chapter image="https://example.com/ch.png" title="" href="https://example.com/ch" start="١:٠٢"/><sc:chapter href="https://example.com/ch" title="😀" start="69:19"/><sc:chapter start="13:35" title="Café &amp;amp; more"/></sc:chapters></item></channel></rss>

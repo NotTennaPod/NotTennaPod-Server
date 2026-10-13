@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><rss version="0.91" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel><podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url=''>Support us</podcast:funding>
+<title><![CDATA[ <sub>&AMP;</sub>  &#128512;  &#0;
+]]></title>
+<link xmlns="http://www.w3.org/2005/Atom" rel="alternate" title='' type="application/rss+xml" href=""/>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="MP3 feed" href="" type='application/atom+xml' length='9223372036854775808' rel=''></atom:link>
+<image><url>https://example.com/img.png</url><title>Image title</title></image>
+<link> https://example.com/ </link>
+<it:image/>
+<language>pt-BR</language>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="next" length="9223372036854775808" title="Café" href=""/>
+<it:author><![CDATA[Jane Doe]]></it:author>
+<item><pubDate>1900/05/26T07:06:33</pubDate><enclosure url="https://example.com/a.b/a/b/c252.m4v" length="0x4E20" type='audio/flac'/><title>&lt;h3>&#x26;#0;&#60;/h3>
+&#x26;#65;&#x26;#66;</title><link>https://example.com/ep</link><content:encoded>&lt;hr/&gt;éé&#233;</content:encoded><media:thumbnail url="https://example.com/th.jpg"/></item></channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><title>&amp;lt</title>
+<atom:link length="12" title="Alternate" type="application/rss+xml" href="https://example.com/alt.xml"/>
+<language>fr
+</language>
+<atom:link href="https://example.com/" rel="enclosure" title="Alternate"/>
+<link xmlns="http://www.w3.org/2005/Atom" type="application/xml+xhtml" href="https://example.com/alt.xml" rel="next" title="MP3 feed" length='9223372036854775808'/>
+<image><url>  https://example.com/ws.png
+</url></image>
+<atom:link href="https://example.com/" length="20000" title="Café" rel="Next"/>
+<item><title>S01E848</title>
+<guid>a&#x26;b</guid>
+<link></link>
+<pubDate>Wed Jul 18 05:58:30 1900 GMT</pubDate>
+<description><![CDATA[&amp;<br>]]></description>
+<itunes:duration>2504.101</itunes:duration>
+<enclosure url="" length="52428800" type=" audio/mpeg"/>
+<enclosure url="HTTPS://EXAMPLE.COM/e p148.oga" length=" 20000" type="audio/mpeg; charset=binary"/>
+<enclosure url="https://example.com/a.b/a/b/c287.avi" length="0" type='audio/flac'/>
+<x xmlns="urn:other"><title>Default namespace title</title></x></item></channel> </rss>

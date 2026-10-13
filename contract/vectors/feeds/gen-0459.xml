@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xml:lang="">
+<podcast:funding url='https://example.com/give'>Give</podcast:funding> <updated>27 May 79 11:48 +0100</updated> <id> raw </id> <title>&#x26;euro;  &#x3C;p style="text-align:center">a=b&amp;c=d&lt;/p&gt;  cr&#13;lf</title> <link title="Café" rel="enclosure" href="https://example.com/a.b/a/b/c103.caf" length="abc" type=""/> <link length="9223372036854775808" type="application/xhtml+xml" title="" href='https://example.com/alt.xml' rel="first"/> <link title="Café" type="application/xml+xhtml" href="https://example.com/" rel="Next"></link> <author><name>  Bob  </name></author> <link length="abc" href="https://example.com/pay" type="application/rss+xml" rel="" title="MP3 feed"></link> <entry><author><name>Entry author</name></author>
+<link href="https://example.com/feed?page=2" rel="" type="audio/mpeg"/>
+<id></id>
+<content type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">aaaaaaaaa  &amp;#x1F600;&#60;img src="x.png">&lt;hr>&#128512;</div></content>
+<title type="html">&#60;span>&#38;AMP;&lt;/span&gt; &#38;#;</title>
+<summary type="HTML"><![CDATA[	x<y<p>a > b</p><img><p>]]>&#1513;&#1500;&#1493;&#1501;&#x3C;/p&gt;&#60;br/></summary>
+<podcast:transcript type="" language="en"/></entry></feed>

@@ -1,0 +1,19 @@
+<rss version="1.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><image><url>https://example.com/img.png</url></image>
+  <itunesu:image href=" https://example.com/sp.jpg "/>
+  <atom:link rel="self" length="abc" type="text/html" href=""/>
+  <atom:link rel="alternate" title="Café" type="application/atom+xml"/>
+  <description> &#38;#xD800;&lt;div>茶&#x3C;/div></description>
+  <atom:link rel='alternate' length="abc" href='https://example.com/pay' type="application/rss+xml"></atom:link>
+  <title>  &lt;cite&gt;&#60;img src="x.png&quot;&gt; cover&lt;/cite&gt; </title>
+  <item><itunesu:image/>
+<title><![CDATA[&apos;a&apos; <section>tab	here</section>]]></title>
+<link> https://e.com/x </link>
+<itunesu:duration>2654</itunesu:duration>
+<mrss:thumbnail url="https://example.com/th.jpg"/>
+<guid isPermaLink='true'>
+</guid>
+<pubDate>Fri jan 29 14:35:12 1994</pubDate>
+<description></description>
+<enclosure length="1"/></item></channel>
+</rss>

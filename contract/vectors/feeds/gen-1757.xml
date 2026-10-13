@@ -1,0 +1,35 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xml:lang="">
+<link rel="self" href="" type="text/html"/>
+  <subtitle type="text"></subtitle>
+  <itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[&copy; 2020 Org]]></itunes:author>
+  <updated>1993-07-17T04:14:16.530-08</updated>
+  <itunes:new-feed-url xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">https://moved.example.com/atom</itunes:new-feed-url>
+  <link type="application/atom+xml" href="https://example.com/" rel="Next"/>
+  <title type='text'>sep</title>
+  <id>urn:x</id>
+  <podcastindex:funding url="https://example.com/give">Give</podcastindex:funding>
+  <author><name>Ann</name><email>a@example.com</email></author>
+  <entry><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">26:02</itunes:duration>
+<published>2383-06-27T01:23:37-0500</published>
+<content type="plain"><![CDATA[<br />Episode 7 &Lt;  &mdash;<img src="x" alt="y"/><div>cr
+lf</div><div>S01E7</div><img src="x" alt="y"/>]]></content>
+<title><![CDATA[&lt]]></title>
+<updated>Saturday, 23 Nov 2002 22:39:61</updated>
+<summary type="plain">  &amp;euro;&#13;
+שלו&#x5DD;	&#38;unknown;</summary></entry>
+  <entry><summary>&lt;hr></summary> <link href="" type="application/rss+xml" length="20000" rel="related" title="MP3 feed"/> <title type="HTML">&#x3C;article&gt;😀&#60;/article>  &#60;div dir=&quot;rtl"&gt;😀&#60;/div&gt;  &lt;sup&gt;'single&apos;&#x3C;/sup&gt;</title> <psc:chapters xmlns:psc="http://podlove.org/simple-chapters" version="1.2"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start="12:34:56" href="" title=""/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start="84:05" href="" image="https://example.com/ch.png"/></psc:chapters> <updated>Mon, 11 DEC 1989 22:02:48 +0000</updated> <id> raw </id></entry>
+  <entry><summary type="text">&#x3C;p&gt;&#x26;Lt;&lt;/p>
+&amp;quot;q&amp;quot;&#x1F600;&#128512;😀😀#hash&#x3C;br>Folge 7: Über alles 1 &#60;2
+multi
+line&lt;li&gt;cr&#13;lf&lt;/li&gt;</summary><id>urn:uuid:1</id><published>Thu,  1977-11-24</published><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">a &lt; b &#x3C;h3&gt;&amp;euro;&lt;/h3&gt; &amp;#x;</div></title><link type="" rel="next" title="Café" length="12" href="https://example.com/feed?page=2"/><author><name>Entry author</name></author></entry>
+  <entry><published>
+1950-08-09T00:36:12 -
+</published><title type="plain"><![CDATA[&#65;&#66;]]></title><link type="" length="12" title="Alternate" href="https://example.com/" rel="self"/><psc:chapters xmlns:psc="http://podlove.org/simple-chapters"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title="Intro" image='https://example.com/ch.png' start="02:13:49"/></psc:chapters><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">3:22:25</itunes:duration><id>
+id
+</id></entry>
+  <entry><published>2482-00-06</published>
+<content type="plain"><![CDATA[<div> leading</div>]]></content>
+<source url="https://example.com/s"><title>Source title</title></source>
+<link title="" type="" href="https://example.com/feed?page=2" length="12"/>
+<title type="HTML">&#38;hellip;multi
+lineé</title></entry></feed>

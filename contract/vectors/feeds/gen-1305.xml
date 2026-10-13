@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><atom:link length="abc" rel='related' title="MP3 feed" type="audio/mpeg"/>
+<link> https://example.com/ </link>
+<description>aaaaa&lt;p&gt;&amp;AMP;&#60;/p&gt;&lt;l<![CDATA[i>trailing </li>]]></description>
+<title><![CDATA["quoted"]]></title>
+<podcast:funding url="https://example.com/donate"/>
+<podcast:funding>&lt;b>x&lt;/b&gt;</podcast:funding>
+<title><![CDATA[é  a
+  b  &#128512;]]></title>
+<atom:link length="20000" rel="next" title="Café"/>
+<item><title><![CDATA[S01E661<a href="https://example.com/x?a=1&amp;b=2">&#0;</a>]]></title><guid isPermaLink="true">Café-guid</guid><link>https://example.com/ep</link><pubDate> Fri 1 Feb 2205 01:28:18 GMT+1400 (-05:00)	</pubDate><enclosure url="" length='18446744073709551616' type="audio/x-m4a"/></item>
+<item><description></description>
+  <guid>https://example.com/item/44667</guid>
+  <media:content isDefault='TRUE' type="x-audio/mpeg" url="https://example.com:8443/dir.with.dots/ep25.m3u8?a=1&amp;b=2" medium="document" fileSize="-9223372036854775808"/>
+  <media:content fileSize="9223372036854775807" type='unknown' duration='1' medium="audio"/>
+  <media:content type="audio/mpeg; charset=binary" fileSize="0x4E20" duration="2147483" url="https://xn--caf-dma.example/café/179.amr" medium="image"></media:content>
+  <title>	 leading  </title></item>
+<item><psc:chapters xmlns:psc="http://podlove.org/simple-chapters"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start="7:14" title="😀" href="https://example.com/ch" image="https://example.com/ch.png"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start="31:42"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title="😀" image='https://example.com/ch.png' start="1:2:"/></psc:chapters> <description><![CDATA[  ]]>​</description> <guid>urn:uuid:91ab0e18</guid> <title><![CDATA[&copy; a=b&c=d]]></title> <media:content fileSize="1" duration="" medium="video" url="https://xn--caf-dma.example/ep1.php" isDefault="TRUE" type="audio/mp4"/> <media:content type="video/x-matroska" isDefault="false" duration="59" medium='Audio' fileSize="4294967296"/></item>
+<item><enclosure length=" 20000" type="video"/>
+<guid isPermaLink="false">urn:uuid:8cde369b</guid>
+<title><![CDATA[&copy;
+&#;
+Tom &amp; Jerry &lt;3]]></title>
+<link> https://e.com/x </link>
+<description>&lt;img src="x" alt="y&quot;/&gt;</description>
+<pubDate>Day1, 0999-11-21T22:28:24Z</pubDate></item></channel>
+</rss>

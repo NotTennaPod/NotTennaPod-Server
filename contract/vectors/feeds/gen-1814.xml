@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><description><![CDATA[<div>sep</div><li>&#128512;</li>]]></description>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <textInput><title>Search</title><link>https://example.com/search</link></textInput>
+  <title>&lt;p&gt;Para&lt;/p&gt; sep</title>
+  <language>de-DE</language>
+  <itunes:author>&lt;b>Studio&lt;/b&gt;</itunes:author>
+  <link> https://example.com/ </link>
+  <media:thumbnail url=""/>
+  <item><title>'single'
+a&#13;
+b
+a &lt; b</title>
+<link>https://example.com/ep</link>
+<pubDate>Sun, 26 May 2554 99:48:32 +0100</pubDate>
+<description><![CDATA[<p></p><br></br>&#128512;&#128512;&#128512;<p></p>	&nbsp;]]></description>
+<itunes:image href=' https://e.com/i.png '/>
+<enclosure url="https://cdn.example.com/ep127.OGG" length='2147483648'/>
+<media:content duration="2147483" isDefault='TRUE' url=" HTTPS://EXAMPLE.COM/café/352.mid " medium="audio" type="x-audio/mpeg" fileSize="20000 "/></item>
+  <item><title></title>
+<guid isPermaLink="true">  spaced guid  </guid>
+<link></link>
+<pubDate>2400-12-12T18:04:35.750-0800</pubDate>
+<dc:date>TUESDAY, 28 Jul 1981 16:49 -1200</dc:date>
+<enclosure url="https://xn--caf-dma.example/café/261.m4a" length="4294967296" type="audio/ogg"></enclosure></item></channel>
+</rss>

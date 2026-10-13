@@ -1,0 +1,284 @@
+{
+ "cases": [
+  {
+   "nodes": [],
+   "output": []
+  },
+  {
+   "nodes": [
+    {
+     "dependencies": [],
+     "id": "a",
+     "normalized_time": 5
+    }
+   ],
+   "output": [
+    "a"
+   ]
+  },
+  {
+   "nodes": [
+    {
+     "dependencies": [],
+     "id": "a",
+     "normalized_time": 10
+    },
+    {
+     "dependencies": [],
+     "id": "b",
+     "normalized_time": 1
+    },
+    {
+     "dependencies": [
+      "a"
+     ],
+     "id": "c",
+     "normalized_time": 5
+    }
+   ],
+   "output": [
+    "b",
+    "a",
+    "c"
+   ]
+  },
+  {
+   "nodes": [
+    {
+     "dependencies": [
+      "z"
+     ],
+     "id": "x",
+     "normalized_time": 1
+    },
+    {
+     "dependencies": [],
+     "id": "y",
+     "normalized_time": 2
+    },
+    {
+     "dependencies": [],
+     "id": "z",
+     "normalized_time": 3
+    }
+   ],
+   "output": [
+    "y",
+    "z",
+    "x"
+   ]
+  },
+  {
+   "nodes": [
+    {
+     "dependencies": [],
+     "id": "b",
+     "normalized_time": 7
+    },
+    {
+     "dependencies": [],
+     "id": "a",
+     "normalized_time": 7
+    },
+    {
+     "dependencies": [],
+     "id": "B",
+     "normalized_time": 7
+    },
+    {
+     "dependencies": [],
+     "id": "é",
+     "normalized_time": 7
+    },
+    {
+     "dependencies": [],
+     "id": "z",
+     "normalized_time": 7
+    }
+   ],
+   "output": [
+    "B",
+    "a",
+    "b",
+    "z",
+    "é"
+   ]
+  },
+  {
+   "nodes": [
+    {
+     "dependencies": [],
+     "id": "11111111-0000-4000-8000-000000000001",
+     "normalized_time": 1700000010000
+    },
+    {
+     "dependencies": [
+      "11111111-0000-4000-8000-000000000001"
+     ],
+     "id": "dddddddd-0000-4000-8000-000000000002",
+     "normalized_time": 1700000010000
+    },
+    {
+     "dependencies": [
+      "dddddddd-0000-4000-8000-000000000002"
+     ],
+     "id": "00000000-0000-4000-8000-000000000003",
+     "normalized_time": 1700000010000
+    },
+    {
+     "dependencies": [],
+     "id": "00000000-0000-4000-8000-000000000004",
+     "normalized_time": 1700000009999
+    }
+   ],
+   "output": [
+    "00000000-0000-4000-8000-000000000004",
+    "11111111-0000-4000-8000-000000000001",
+    "dddddddd-0000-4000-8000-000000000002",
+    "00000000-0000-4000-8000-000000000003"
+   ]
+  },
+  {
+   "nodes": [
+    {
+     "dependencies": [],
+     "id": "p",
+     "normalized_time": 3
+    },
+    {
+     "dependencies": [
+      "r"
+     ],
+     "id": "q",
+     "normalized_time": 1
+    },
+    {
+     "dependencies": [],
+     "id": "r",
+     "normalized_time": 5
+    }
+   ],
+   "output": [
+    "p",
+    "r",
+    "q"
+   ]
+  },
+  {
+   "error": "dependency_missing",
+   "nodes": [
+    {
+     "dependencies": [
+      "missing"
+     ],
+     "id": "x",
+     "normalized_time": 0
+    }
+   ]
+  },
+  {
+   "error": "cycle",
+   "nodes": [
+    {
+     "dependencies": [
+      "y"
+     ],
+     "id": "x",
+     "normalized_time": 0
+    },
+    {
+     "dependencies": [
+      "x"
+     ],
+     "id": "y",
+     "normalized_time": 0
+    }
+   ]
+  },
+  {
+   "error": "cycle",
+   "nodes": [
+    {
+     "dependencies": [
+      "x"
+     ],
+     "id": "x",
+     "normalized_time": 0
+    }
+   ]
+  },
+  {
+   "error": "duplicate",
+   "nodes": [
+    {
+     "dependencies": [],
+     "id": "x",
+     "normalized_time": 0
+    },
+    {
+     "dependencies": [],
+     "id": "x",
+     "normalized_time": 0
+    }
+   ]
+  },
+  {
+   "error": "dependency_missing",
+   "nodes": [
+    {
+     "dependencies": [
+      "a"
+     ],
+     "id": "a",
+     "normalized_time": 0
+    },
+    {
+     "dependencies": [
+      "missing"
+     ],
+     "id": "b",
+     "normalized_time": 0
+    }
+   ]
+  },
+  {
+   "error": "duplicate",
+   "nodes": [
+    {
+     "dependencies": [
+      "zz"
+     ],
+     "id": "a",
+     "normalized_time": 0
+    },
+    {
+     "dependencies": [],
+     "id": "a",
+     "normalized_time": 0
+    }
+   ]
+  },
+  {
+   "nodes": [
+    {
+     "dependencies": [
+      "b",
+      "b"
+     ],
+     "id": "a",
+     "normalized_time": 1
+    },
+    {
+     "dependencies": [],
+     "id": "b",
+     "normalized_time": 2
+    }
+   ],
+   "output": [
+    "b",
+    "a"
+   ]
+  }
+ ],
+ "suite": "causal_order"
+}

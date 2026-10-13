@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="Cp1252"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:chapters="http://podlove.org/simple-chapters">
+  <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><title><![CDATA[R&D&#]]>169;&lt;3 &lt;3</title>
+<image><title>Image title</title><url>  https://example.com/ws.png
+</url></image>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<description> &amp;#169;</description>
+<itunes:author><![CDATA[Tom & Jerry]]> &#60;3</itunes:author>
+<language> EN-US </language>
+<itunes:new-feed-url>HTTP://upper.example</itunes:new-feed-url>
+<item><itunes:image href=""/>
+<enclosure url="" length="0x4E20" type="application/ogg"/>
+<itunes:duration>10846</itunes:duration>
+<media:thumbnail url="https://example.com/th.jpg"/>
+<guid>
+</guid>
+<title><![CDATA[ ]]></title>
+<pubDate>0999-06-30T17:49:46+0945 (Central European Standard Time)</pubDate></item>
+<item><title><![CDATA[S01E950
+#hash]]></title>
+  <guid>  spaced guid  </guid>
+  <link></link>
+  <pubDate>1983-12-25 </pubDate>
+  <description> &#38;nbsp;&#x3C;p>&amp;&lt;/p&gt;</description>
+  <dc:date> 	 2011-02-24T21:56:02+1400 	 </dc:date>
+  <itunes:summary></itunes:summary>
+  <itunes:duration>4:01:40</itunes:duration>
+  <enclosure url='https://user:pass@media.example.net/ep164.m4a' length="1" type="audio/"/>
+  <media:thumbnail url=''/></item>
+<item><media:description type="plain"><![CDATA[ &#33590;ééé]]></media:description>
+<pubDate>Wednesday, 22 Apr 71 01:07 -0800</pubDate>
+<description> &#38;AMP; &#1513;&#1500;&#1493;&#1501; &#x26;Lt;</description>
+<title>Folge 622: Über alles &#38;lt</title>
+<enclosure url='HTTPS://EXAMPLE.COM/290.html' length="9007199254740991" type="text/plain"></enclosure>
+<guid isPermaLink="false">urn:uuid:f3d1161e</guid>
+<media:content duration="-5" isDefault='TRUE' type="audio/wav" medium="document" fileSize="9007199254740991"/>
+<itunes:summary>&lt;br>&lt;/br&gt;&#13;
+Tom &#x26; Jerry &lt;3&lt;br&gt;aaaaaaa
+Episode 12</itunes:summary></item></channel>
+  </rss>

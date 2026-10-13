@@ -1,0 +1,6622 @@
+{
+ "weekdays": [
+  "",
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+ ],
+ "short_weekdays": [
+  "",
+  "Sun",
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri",
+  "Sat"
+ ],
+ "months": [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+ ],
+ "short_months": [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec"
+ ],
+ "am_pm": [
+  "AM",
+  "PM"
+ ],
+ "eras": [
+  "BC",
+  "AD"
+ ],
+ "zone_strings": [
+  [
+   "Africa/Abidjan",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Accra",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Addis_Ababa",
+   "East Africa Time",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Africa/Algiers",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Asmara",
+   "East Africa Time",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Africa/Asmera",
+   "East Africa Time",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Africa/Bamako",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Bangui",
+   "West Africa Standard Time",
+   "GMT+01:00",
+   "West Africa Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Banjul",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Bissau",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Blantyre",
+   "Central Africa Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Brazzaville",
+   "West Africa Standard Time",
+   "GMT+01:00",
+   "West Africa Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Bujumbura",
+   "Central Africa Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Cairo",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Africa/Casablanca",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+01:00",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Ceuta",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Conakry",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Dakar",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Dar_es_Salaam",
+   "East Africa Time",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Africa/Djibouti",
+   "East Africa Time",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Africa/Douala",
+   "West Africa Standard Time",
+   "GMT+01:00",
+   "West Africa Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/El_Aaiun",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+01:00",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Freetown",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Gaborone",
+   "Central Africa Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Harare",
+   "Central Africa Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Johannesburg",
+   "South Africa Standard Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Juba",
+   "Central Africa Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Kampala",
+   "East Africa Time",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Africa/Khartoum",
+   "Central Africa Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Kigali",
+   "Central Africa Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Kinshasa",
+   "West Africa Standard Time",
+   "GMT+01:00",
+   "West Africa Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Lagos",
+   "West Africa Standard Time",
+   "GMT+01:00",
+   "West Africa Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Libreville",
+   "West Africa Standard Time",
+   "GMT+01:00",
+   "West Africa Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Lome",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Luanda",
+   "West Africa Standard Time",
+   "GMT+01:00",
+   "West Africa Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Lubumbashi",
+   "Central Africa Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Lusaka",
+   "Central Africa Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Malabo",
+   "West Africa Standard Time",
+   "GMT+01:00",
+   "West Africa Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Maputo",
+   "Central Africa Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Maseru",
+   "South Africa Standard Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Mbabane",
+   "South Africa Standard Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Mogadishu",
+   "East Africa Time",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Africa/Monrovia",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Nairobi",
+   "East Africa Time",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Africa/Ndjamena",
+   "West Africa Standard Time",
+   "GMT+01:00",
+   "West Africa Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Niamey",
+   "West Africa Standard Time",
+   "GMT+01:00",
+   "West Africa Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Nouakchott",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Ouagadougou",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Porto-Novo",
+   "West Africa Standard Time",
+   "GMT+01:00",
+   "West Africa Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Sao_Tome",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Timbuktu",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Africa/Tripoli",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Africa/Tunis",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Africa/Windhoek",
+   "Central Africa Time",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "America/Adak",
+   "Hawaii-Aleutian Standard Time",
+   "HAST",
+   "Hawaii-Aleutian Daylight Time",
+   "HADT"
+  ],
+  [
+   "America/Anchorage",
+   "Alaska Standard Time",
+   "AKST",
+   "Alaska Daylight Time",
+   "AKDT"
+  ],
+  [
+   "America/Anguilla",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Antigua",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Araguaina",
+   "Brasilia Standard Time",
+   "GMT-03:00",
+   "Brasilia Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/Buenos_Aires",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/Catamarca",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/ComodRivadavia",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/Cordoba",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/Jujuy",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/La_Rioja",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/Mendoza",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/Rio_Gallegos",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/Salta",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/San_Juan",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/San_Luis",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/Tucuman",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Argentina/Ushuaia",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Aruba",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Asuncion",
+   "Paraguay Standard Time",
+   "GMT-03:00",
+   "Paraguay Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Atikokan",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Atka",
+   "Hawaii-Aleutian Standard Time",
+   "HAST",
+   "Hawaii-Aleutian Daylight Time",
+   "HADT"
+  ],
+  [
+   "America/Bahia",
+   "Brasilia Standard Time",
+   "GMT-03:00",
+   "Brasilia Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Bahia_Banderas",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Barbados",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Belem",
+   "Brasilia Standard Time",
+   "GMT-03:00",
+   "Brasilia Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Belize",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Blanc-Sablon",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Boa_Vista",
+   "Amazon Standard Time",
+   "GMT-04:00",
+   "Amazon Summer Time",
+   "GMT-04:00"
+  ],
+  [
+   "America/Bogota",
+   "Colombia Standard Time",
+   "GMT-05:00",
+   "Colombia Summer Time",
+   "GMT-05:00"
+  ],
+  [
+   "America/Boise",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "America/Buenos_Aires",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Cambridge_Bay",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "America/Campo_Grande",
+   "Amazon Standard Time",
+   "GMT-04:00",
+   "Amazon Summer Time",
+   "GMT-04:00"
+  ],
+  [
+   "America/Cancun",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Caracas",
+   "Venezuela Time",
+   "GMT-04:00",
+   "GMT-04:00",
+   "GMT-04:00"
+  ],
+  [
+   "America/Catamarca",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Cayenne",
+   "French Guiana Time",
+   "GMT-03:00",
+   "GMT-03:00",
+   "GMT-03:00"
+  ],
+  [
+   "America/Cayman",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Chicago",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Chihuahua",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Ciudad_Juarez",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "America/Coral_Harbour",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Cordoba",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Costa_Rica",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Creston",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "America/Cuiaba",
+   "Amazon Standard Time",
+   "GMT-04:00",
+   "Amazon Summer Time",
+   "GMT-04:00"
+  ],
+  [
+   "America/Curacao",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Danmarkshavn",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "America/Dawson",
+   "Yukon Time",
+   "GMT-07:00",
+   "GMT-07:00",
+   "GMT-07:00"
+  ],
+  [
+   "America/Dawson_Creek",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "America/Denver",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "America/Detroit",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Dominica",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Edmonton",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "America/Eirunepe",
+   "Acre Standard Time",
+   "GMT-05:00",
+   "Acre Summer Time",
+   "GMT-05:00"
+  ],
+  [
+   "America/El_Salvador",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Ensenada",
+   "Pacific Standard Time",
+   "PST",
+   "Pacific Daylight Time",
+   "PDT"
+  ],
+  [
+   "America/Fort_Nelson",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "America/Fort_Wayne",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Fortaleza",
+   "Brasilia Standard Time",
+   "GMT-03:00",
+   "Brasilia Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Glace_Bay",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Godthab",
+   "Greenland Standard Time",
+   "GMT-02:00",
+   "Greenland Summer Time",
+   "GMT-01:00"
+  ],
+  [
+   "America/Goose_Bay",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Grand_Turk",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Grenada",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Guadeloupe",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Guatemala",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Guayaquil",
+   "Ecuador Time",
+   "GMT-05:00",
+   "GMT-05:00",
+   "GMT-05:00"
+  ],
+  [
+   "America/Guyana",
+   "Guyana Time",
+   "GMT-04:00",
+   "GMT-04:00",
+   "GMT-04:00"
+  ],
+  [
+   "America/Halifax",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Havana",
+   "Cuba Standard Time",
+   "GMT-05:00",
+   "Cuba Daylight Time",
+   "GMT-04:00"
+  ],
+  [
+   "America/Hermosillo",
+   "Mexican Pacific Standard Time",
+   "GMT-07:00",
+   "Mexican Pacific Daylight Time",
+   "GMT-07:00"
+  ],
+  [
+   "America/Indiana/Indianapolis",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Indiana/Knox",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Indiana/Marengo",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Indiana/Petersburg",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Indiana/Tell_City",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Indiana/Vevay",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Indiana/Vincennes",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Indiana/Winamac",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Indianapolis",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Inuvik",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "America/Iqaluit",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Jamaica",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Jujuy",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Juneau",
+   "Alaska Standard Time",
+   "AKST",
+   "Alaska Daylight Time",
+   "AKDT"
+  ],
+  [
+   "America/Kentucky/Louisville",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Kentucky/Monticello",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Knox_IN",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Kralendijk",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/La_Paz",
+   "Bolivia Time",
+   "GMT-04:00",
+   "GMT-04:00",
+   "GMT-04:00"
+  ],
+  [
+   "America/Lima",
+   "Peru Standard Time",
+   "GMT-05:00",
+   "Peru Summer Time",
+   "GMT-05:00"
+  ],
+  [
+   "America/Los_Angeles",
+   "Pacific Standard Time",
+   "PST",
+   "Pacific Daylight Time",
+   "PDT"
+  ],
+  [
+   "America/Louisville",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Lower_Princes",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Maceio",
+   "Brasilia Standard Time",
+   "GMT-03:00",
+   "Brasilia Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Managua",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Manaus",
+   "Amazon Standard Time",
+   "GMT-04:00",
+   "Amazon Summer Time",
+   "GMT-04:00"
+  ],
+  [
+   "America/Marigot",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Martinique",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Matamoros",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Mazatlan",
+   "Mexican Pacific Standard Time",
+   "GMT-07:00",
+   "Mexican Pacific Daylight Time",
+   "GMT-07:00"
+  ],
+  [
+   "America/Mendoza",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Menominee",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Merida",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Metlakatla",
+   "Alaska Standard Time",
+   "AKST",
+   "Alaska Daylight Time",
+   "AKDT"
+  ],
+  [
+   "America/Mexico_City",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Miquelon",
+   "St. Pierre & Miquelon Standard Time",
+   "GMT-03:00",
+   "St. Pierre & Miquelon Daylight Time",
+   "GMT-02:00"
+  ],
+  [
+   "America/Moncton",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Monterrey",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Montevideo",
+   "Uruguay Standard Time",
+   "GMT-03:00",
+   "Uruguay Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Montreal",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Montserrat",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Nassau",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/New_York",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Nipigon",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Nome",
+   "Alaska Standard Time",
+   "AKST",
+   "Alaska Daylight Time",
+   "AKDT"
+  ],
+  [
+   "America/Noronha",
+   "Fernando de Noronha Standard Time",
+   "GMT-02:00",
+   "Fernando de Noronha Summer Time",
+   "GMT-02:00"
+  ],
+  [
+   "America/North_Dakota/Beulah",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/North_Dakota/Center",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/North_Dakota/New_Salem",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Nuuk",
+   "Greenland Standard Time",
+   "GMT-02:00",
+   "Greenland Summer Time",
+   "GMT-01:00"
+  ],
+  [
+   "America/Ojinaga",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Panama",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Pangnirtung",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Paramaribo",
+   "Suriname Time",
+   "GMT-03:00",
+   "GMT-03:00",
+   "GMT-03:00"
+  ],
+  [
+   "America/Phoenix",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "America/Port-au-Prince",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Port_of_Spain",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Porto_Acre",
+   "Acre Standard Time",
+   "GMT-05:00",
+   "Acre Summer Time",
+   "GMT-05:00"
+  ],
+  [
+   "America/Porto_Velho",
+   "Amazon Standard Time",
+   "GMT-04:00",
+   "Amazon Summer Time",
+   "GMT-04:00"
+  ],
+  [
+   "America/Puerto_Rico",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Punta_Arenas",
+   "GMT-03:00",
+   "GMT-03:00",
+   "GMT-03:00",
+   "GMT-03:00"
+  ],
+  [
+   "America/Rainy_River",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Rankin_Inlet",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Recife",
+   "Brasilia Standard Time",
+   "GMT-03:00",
+   "Brasilia Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Regina",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Resolute",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Rio_Branco",
+   "Acre Standard Time",
+   "GMT-05:00",
+   "Acre Summer Time",
+   "GMT-05:00"
+  ],
+  [
+   "America/Rosario",
+   "Argentina Standard Time",
+   "GMT-03:00",
+   "Argentina Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Santa_Isabel",
+   "Pacific Standard Time",
+   "PST",
+   "Pacific Daylight Time",
+   "PDT"
+  ],
+  [
+   "America/Santarem",
+   "Brasilia Standard Time",
+   "GMT-03:00",
+   "Brasilia Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Santiago",
+   "Chile Standard Time",
+   "GMT-04:00",
+   "Chile Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Santo_Domingo",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Sao_Paulo",
+   "Brasilia Standard Time",
+   "GMT-03:00",
+   "Brasilia Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "America/Scoresbysund",
+   "Greenland Standard Time",
+   "GMT-02:00",
+   "Greenland Summer Time",
+   "GMT-01:00"
+  ],
+  [
+   "America/Shiprock",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "America/Sitka",
+   "Alaska Standard Time",
+   "AKST",
+   "Alaska Daylight Time",
+   "AKDT"
+  ],
+  [
+   "America/St_Barthelemy",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/St_Johns",
+   "Newfoundland Standard Time",
+   "GMT-03:30",
+   "Newfoundland Daylight Time",
+   "GMT-02:30"
+  ],
+  [
+   "America/St_Kitts",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/St_Lucia",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/St_Thomas",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/St_Vincent",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Swift_Current",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Tegucigalpa",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Thule",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Thunder_Bay",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Tijuana",
+   "Pacific Standard Time",
+   "PST",
+   "Pacific Daylight Time",
+   "PDT"
+  ],
+  [
+   "America/Toronto",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "America/Tortola",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Vancouver",
+   "Pacific Standard Time",
+   "PST",
+   "Pacific Daylight Time",
+   "PDT"
+  ],
+  [
+   "America/Virgin",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "America/Whitehorse",
+   "Yukon Time",
+   "GMT-07:00",
+   "GMT-07:00",
+   "GMT-07:00"
+  ],
+  [
+   "America/Winnipeg",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "America/Yakutat",
+   "Alaska Standard Time",
+   "AKST",
+   "Alaska Daylight Time",
+   "AKDT"
+  ],
+  [
+   "America/Yellowknife",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "Antarctica/Casey",
+   "Australian Western Standard Time",
+   "GMT+08:00",
+   "Australian Western Daylight Time",
+   "GMT+08:00"
+  ],
+  [
+   "Antarctica/Davis",
+   "Davis Time",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00"
+  ],
+  [
+   "Antarctica/DumontDUrville",
+   "Dumont-d\u2019Urville Time",
+   "GMT+10:00",
+   "GMT+10:00",
+   "GMT+10:00"
+  ],
+  [
+   "Antarctica/Macquarie",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+11:00"
+  ],
+  [
+   "Antarctica/Mawson",
+   "Mawson Time",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Antarctica/McMurdo",
+   "New Zealand Standard Time",
+   "GMT+12:00",
+   "New Zealand Daylight Time",
+   "GMT+13:00"
+  ],
+  [
+   "Antarctica/Palmer",
+   "GMT-03:00",
+   "GMT-03:00",
+   "GMT-03:00",
+   "GMT-03:00"
+  ],
+  [
+   "Antarctica/Rothera",
+   "Rothera Time",
+   "GMT-03:00",
+   "GMT-03:00",
+   "GMT-03:00"
+  ],
+  [
+   "Antarctica/South_Pole",
+   "New Zealand Standard Time",
+   "GMT+12:00",
+   "New Zealand Daylight Time",
+   "GMT+13:00"
+  ],
+  [
+   "Antarctica/Syowa",
+   "Syowa Time",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Antarctica/Troll",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Antarctica/Vostok",
+   "Vostok Time",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Arctic/Longyearbyen",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Asia/Aden",
+   "Arabian Standard Time",
+   "GMT+03:00",
+   "Arabian Daylight Time",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Almaty",
+   "Kazakhstan Time",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Amman",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Anadyr",
+   "Anadyr Standard Time",
+   "GMT+12:00",
+   "Anadyr Summer Time",
+   "GMT+12:00"
+  ],
+  [
+   "Asia/Aqtau",
+   "Kazakhstan Time",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Aqtobe",
+   "Kazakhstan Time",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Ashgabat",
+   "Turkmenistan Standard Time",
+   "GMT+05:00",
+   "Turkmenistan Summer Time",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Ashkhabad",
+   "Turkmenistan Standard Time",
+   "GMT+05:00",
+   "Turkmenistan Summer Time",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Atyrau",
+   "Kazakhstan Time",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Baghdad",
+   "Arabian Standard Time",
+   "GMT+03:00",
+   "Arabian Daylight Time",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Bahrain",
+   "Arabian Standard Time",
+   "GMT+03:00",
+   "Arabian Daylight Time",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Baku",
+   "Azerbaijan Standard Time",
+   "GMT+04:00",
+   "Azerbaijan Summer Time",
+   "GMT+04:00"
+  ],
+  [
+   "Asia/Bangkok",
+   "Indochina Time",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Barnaul",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Beirut",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Bishkek",
+   "Kyrgyzstan Time",
+   "GMT+06:00",
+   "GMT+06:00",
+   "GMT+06:00"
+  ],
+  [
+   "Asia/Brunei",
+   "Brunei Darussalam Time",
+   "GMT+08:00",
+   "GMT+08:00",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Calcutta",
+   "India Standard Time",
+   "GMT+05:30",
+   "GMT+05:30",
+   "GMT+05:30"
+  ],
+  [
+   "Asia/Chita",
+   "Yakutsk Standard Time",
+   "GMT+09:00",
+   "Yakutsk Summer Time",
+   "GMT+09:00"
+  ],
+  [
+   "Asia/Choibalsan",
+   "Ulaanbaatar Standard Time",
+   "GMT+08:00",
+   "Ulaanbaatar Summer Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Chongqing",
+   "China Standard Time",
+   "GMT+08:00",
+   "China Daylight Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Chungking",
+   "China Standard Time",
+   "GMT+08:00",
+   "China Daylight Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Colombo",
+   "India Standard Time",
+   "GMT+05:30",
+   "GMT+05:30",
+   "GMT+05:30"
+  ],
+  [
+   "Asia/Dacca",
+   "Bangladesh Standard Time",
+   "GMT+06:00",
+   "Bangladesh Summer Time",
+   "GMT+06:00"
+  ],
+  [
+   "Asia/Damascus",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Dhaka",
+   "Bangladesh Standard Time",
+   "GMT+06:00",
+   "Bangladesh Summer Time",
+   "GMT+06:00"
+  ],
+  [
+   "Asia/Dili",
+   "East Timor Time",
+   "GMT+09:00",
+   "GMT+09:00",
+   "GMT+09:00"
+  ],
+  [
+   "Asia/Dubai",
+   "Gulf Standard Time",
+   "GMT+04:00",
+   "GMT+04:00",
+   "GMT+04:00"
+  ],
+  [
+   "Asia/Dushanbe",
+   "Tajikistan Time",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Famagusta",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Gaza",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Harbin",
+   "China Standard Time",
+   "GMT+08:00",
+   "China Daylight Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Hebron",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Ho_Chi_Minh",
+   "Indochina Time",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Hong_Kong",
+   "Hong Kong Standard Time",
+   "GMT+08:00",
+   "Hong Kong Summer Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Hovd",
+   "Hovd Standard Time",
+   "GMT+07:00",
+   "Hovd Summer Time",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Irkutsk",
+   "Irkutsk Standard Time",
+   "GMT+08:00",
+   "Irkutsk Summer Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Istanbul",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Jakarta",
+   "Western Indonesia Time",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Jayapura",
+   "Eastern Indonesia Time",
+   "GMT+09:00",
+   "GMT+09:00",
+   "GMT+09:00"
+  ],
+  [
+   "Asia/Jerusalem",
+   "Israel Standard Time",
+   "GMT+02:00",
+   "Israel Daylight Time",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Kabul",
+   "Afghanistan Time",
+   "GMT+04:30",
+   "GMT+04:30",
+   "GMT+04:30"
+  ],
+  [
+   "Asia/Kamchatka",
+   "Petropavlovsk-Kamchatski Standard Time",
+   "GMT+12:00",
+   "Petropavlovsk-Kamchatski Summer Time",
+   "GMT+12:00"
+  ],
+  [
+   "Asia/Karachi",
+   "Pakistan Standard Time",
+   "GMT+05:00",
+   "Pakistan Summer Time",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Kashgar",
+   "GMT+06:00",
+   "GMT+06:00",
+   "GMT+06:00",
+   "GMT+06:00"
+  ],
+  [
+   "Asia/Kathmandu",
+   "Nepal Time",
+   "GMT+05:45",
+   "GMT+05:45",
+   "GMT+05:45"
+  ],
+  [
+   "Asia/Katmandu",
+   "Nepal Time",
+   "GMT+05:45",
+   "GMT+05:45",
+   "GMT+05:45"
+  ],
+  [
+   "Asia/Khandyga",
+   "Yakutsk Standard Time",
+   "GMT+09:00",
+   "Yakutsk Summer Time",
+   "GMT+09:00"
+  ],
+  [
+   "Asia/Kolkata",
+   "India Standard Time",
+   "GMT+05:30",
+   "GMT+05:30",
+   "GMT+05:30"
+  ],
+  [
+   "Asia/Krasnoyarsk",
+   "Krasnoyarsk Standard Time",
+   "GMT+07:00",
+   "Krasnoyarsk Summer Time",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Kuala_Lumpur",
+   "Malaysia Time",
+   "GMT+08:00",
+   "GMT+08:00",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Kuching",
+   "Malaysia Time",
+   "GMT+08:00",
+   "GMT+08:00",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Kuwait",
+   "Arabian Standard Time",
+   "GMT+03:00",
+   "Arabian Daylight Time",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Macao",
+   "China Standard Time",
+   "GMT+08:00",
+   "China Daylight Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Macau",
+   "China Standard Time",
+   "GMT+08:00",
+   "China Daylight Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Magadan",
+   "Magadan Standard Time",
+   "GMT+11:00",
+   "Magadan Summer Time",
+   "GMT+11:00"
+  ],
+  [
+   "Asia/Makassar",
+   "Central Indonesia Time",
+   "GMT+08:00",
+   "GMT+08:00",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Manila",
+   "Philippine Standard Time",
+   "GMT+08:00",
+   "Philippine Summer Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Muscat",
+   "Gulf Standard Time",
+   "GMT+04:00",
+   "GMT+04:00",
+   "GMT+04:00"
+  ],
+  [
+   "Asia/Nicosia",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Novokuznetsk",
+   "Krasnoyarsk Standard Time",
+   "GMT+07:00",
+   "Krasnoyarsk Summer Time",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Novosibirsk",
+   "Novosibirsk Standard Time",
+   "GMT+07:00",
+   "Novosibirsk Summer Time",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Omsk",
+   "Omsk Standard Time",
+   "GMT+06:00",
+   "Omsk Summer Time",
+   "GMT+06:00"
+  ],
+  [
+   "Asia/Oral",
+   "Kazakhstan Time",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Phnom_Penh",
+   "Indochina Time",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Pontianak",
+   "Western Indonesia Time",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Pyongyang",
+   "Korean Standard Time",
+   "GMT+09:00",
+   "Korean Daylight Time",
+   "GMT+09:00"
+  ],
+  [
+   "Asia/Qatar",
+   "Arabian Standard Time",
+   "GMT+03:00",
+   "Arabian Daylight Time",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Qostanay",
+   "Kazakhstan Time",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Qyzylorda",
+   "Kazakhstan Time",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Rangoon",
+   "Myanmar Time",
+   "GMT+06:30",
+   "GMT+06:30",
+   "GMT+06:30"
+  ],
+  [
+   "Asia/Riyadh",
+   "Arabian Standard Time",
+   "GMT+03:00",
+   "Arabian Daylight Time",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Saigon",
+   "Indochina Time",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Sakhalin",
+   "Sakhalin Standard Time",
+   "GMT+11:00",
+   "Sakhalin Summer Time",
+   "GMT+11:00"
+  ],
+  [
+   "Asia/Samarkand",
+   "Uzbekistan Standard Time",
+   "GMT+05:00",
+   "Uzbekistan Summer Time",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Seoul",
+   "Korean Standard Time",
+   "GMT+09:00",
+   "Korean Daylight Time",
+   "GMT+09:00"
+  ],
+  [
+   "Asia/Shanghai",
+   "China Standard Time",
+   "GMT+08:00",
+   "China Daylight Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Singapore",
+   "Singapore Standard Time",
+   "GMT+08:00",
+   "GMT+08:00",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Srednekolymsk",
+   "GMT+11:00",
+   "GMT+11:00",
+   "GMT+11:00",
+   "GMT+11:00"
+  ],
+  [
+   "Asia/Taipei",
+   "Taipei Standard Time",
+   "GMT+08:00",
+   "Taipei Daylight Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Tashkent",
+   "Uzbekistan Standard Time",
+   "GMT+05:00",
+   "Uzbekistan Summer Time",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Tbilisi",
+   "Georgia Standard Time",
+   "GMT+04:00",
+   "Georgia Summer Time",
+   "GMT+04:00"
+  ],
+  [
+   "Asia/Tehran",
+   "Iran Standard Time",
+   "GMT+03:30",
+   "Iran Daylight Time",
+   "GMT+03:30"
+  ],
+  [
+   "Asia/Tel_Aviv",
+   "Israel Standard Time",
+   "GMT+02:00",
+   "Israel Daylight Time",
+   "GMT+03:00"
+  ],
+  [
+   "Asia/Thimbu",
+   "Bhutan Time",
+   "GMT+06:00",
+   "GMT+06:00",
+   "GMT+06:00"
+  ],
+  [
+   "Asia/Thimphu",
+   "Bhutan Time",
+   "GMT+06:00",
+   "GMT+06:00",
+   "GMT+06:00"
+  ],
+  [
+   "Asia/Tokyo",
+   "Japan Standard Time",
+   "GMT+09:00",
+   "Japan Daylight Time",
+   "GMT+09:00"
+  ],
+  [
+   "Asia/Tomsk",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Ujung_Pandang",
+   "Central Indonesia Time",
+   "GMT+08:00",
+   "GMT+08:00",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Ulaanbaatar",
+   "Ulaanbaatar Standard Time",
+   "GMT+08:00",
+   "Ulaanbaatar Summer Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Ulan_Bator",
+   "Ulaanbaatar Standard Time",
+   "GMT+08:00",
+   "Ulaanbaatar Summer Time",
+   "GMT+08:00"
+  ],
+  [
+   "Asia/Urumqi",
+   "GMT+06:00",
+   "GMT+06:00",
+   "GMT+06:00",
+   "GMT+06:00"
+  ],
+  [
+   "Asia/Ust-Nera",
+   "Vladivostok Standard Time",
+   "GMT+10:00",
+   "Vladivostok Summer Time",
+   "GMT+10:00"
+  ],
+  [
+   "Asia/Vientiane",
+   "Indochina Time",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00"
+  ],
+  [
+   "Asia/Vladivostok",
+   "Vladivostok Standard Time",
+   "GMT+10:00",
+   "Vladivostok Summer Time",
+   "GMT+10:00"
+  ],
+  [
+   "Asia/Yakutsk",
+   "Yakutsk Standard Time",
+   "GMT+09:00",
+   "Yakutsk Summer Time",
+   "GMT+09:00"
+  ],
+  [
+   "Asia/Yangon",
+   "Myanmar Time",
+   "GMT+06:30",
+   "GMT+06:30",
+   "GMT+06:30"
+  ],
+  [
+   "Asia/Yekaterinburg",
+   "Yekaterinburg Standard Time",
+   "GMT+05:00",
+   "Yekaterinburg Summer Time",
+   "GMT+05:00"
+  ],
+  [
+   "Asia/Yerevan",
+   "Armenia Standard Time",
+   "GMT+04:00",
+   "Armenia Summer Time",
+   "GMT+04:00"
+  ],
+  [
+   "Atlantic/Azores",
+   "Azores Standard Time",
+   "GMT-01:00",
+   "Azores Summer Time",
+   "GMT+00:00"
+  ],
+  [
+   "Atlantic/Bermuda",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "Atlantic/Canary",
+   "Western European Standard Time",
+   "GMT+00:00",
+   "Western European Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Atlantic/Cape_Verde",
+   "Cape Verde Standard Time",
+   "GMT-01:00",
+   "Cape Verde Summer Time",
+   "GMT-01:00"
+  ],
+  [
+   "Atlantic/Faeroe",
+   "Western European Standard Time",
+   "GMT+00:00",
+   "Western European Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Atlantic/Faroe",
+   "Western European Standard Time",
+   "GMT+00:00",
+   "Western European Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Atlantic/Jan_Mayen",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Atlantic/Madeira",
+   "Western European Standard Time",
+   "GMT+00:00",
+   "Western European Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Atlantic/Reykjavik",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Atlantic/South_Georgia",
+   "South Georgia Time",
+   "GMT-02:00",
+   "GMT-02:00",
+   "GMT-02:00"
+  ],
+  [
+   "Atlantic/St_Helena",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Atlantic/Stanley",
+   "Falkland Islands Standard Time",
+   "GMT-03:00",
+   "Falkland Islands Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "Australia/ACT",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+11:00"
+  ],
+  [
+   "Australia/Adelaide",
+   "Australian Central Standard Time",
+   "GMT+09:30",
+   "Australian Central Daylight Time",
+   "GMT+10:30"
+  ],
+  [
+   "Australia/Brisbane",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+10:00"
+  ],
+  [
+   "Australia/Broken_Hill",
+   "Australian Central Standard Time",
+   "GMT+09:30",
+   "Australian Central Daylight Time",
+   "GMT+10:30"
+  ],
+  [
+   "Australia/Canberra",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+11:00"
+  ],
+  [
+   "Australia/Currie",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+11:00"
+  ],
+  [
+   "Australia/Darwin",
+   "Australian Central Standard Time",
+   "GMT+09:30",
+   "Australian Central Daylight Time",
+   "GMT+09:30"
+  ],
+  [
+   "Australia/Eucla",
+   "Australian Central Western Standard Time",
+   "GMT+08:45",
+   "Australian Central Western Daylight Time",
+   "GMT+08:45"
+  ],
+  [
+   "Australia/Hobart",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+11:00"
+  ],
+  [
+   "Australia/LHI",
+   "Lord Howe Standard Time",
+   "GMT+10:30",
+   "Lord Howe Daylight Time",
+   "GMT+11:00"
+  ],
+  [
+   "Australia/Lindeman",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+10:00"
+  ],
+  [
+   "Australia/Lord_Howe",
+   "Lord Howe Standard Time",
+   "GMT+10:30",
+   "Lord Howe Daylight Time",
+   "GMT+11:00"
+  ],
+  [
+   "Australia/Melbourne",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+11:00"
+  ],
+  [
+   "Australia/NSW",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+11:00"
+  ],
+  [
+   "Australia/North",
+   "Australian Central Standard Time",
+   "GMT+09:30",
+   "Australian Central Daylight Time",
+   "GMT+09:30"
+  ],
+  [
+   "Australia/Perth",
+   "Australian Western Standard Time",
+   "GMT+08:00",
+   "Australian Western Daylight Time",
+   "GMT+08:00"
+  ],
+  [
+   "Australia/Queensland",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+10:00"
+  ],
+  [
+   "Australia/South",
+   "Australian Central Standard Time",
+   "GMT+09:30",
+   "Australian Central Daylight Time",
+   "GMT+10:30"
+  ],
+  [
+   "Australia/Sydney",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+11:00"
+  ],
+  [
+   "Australia/Tasmania",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+11:00"
+  ],
+  [
+   "Australia/Victoria",
+   "Australian Eastern Standard Time",
+   "GMT+10:00",
+   "Australian Eastern Daylight Time",
+   "GMT+11:00"
+  ],
+  [
+   "Australia/West",
+   "Australian Western Standard Time",
+   "GMT+08:00",
+   "Australian Western Daylight Time",
+   "GMT+08:00"
+  ],
+  [
+   "Australia/Yancowinna",
+   "Australian Central Standard Time",
+   "GMT+09:30",
+   "Australian Central Daylight Time",
+   "GMT+10:30"
+  ],
+  [
+   "Brazil/Acre",
+   "Acre Standard Time",
+   "GMT-05:00",
+   "Acre Summer Time",
+   "GMT-05:00"
+  ],
+  [
+   "Brazil/DeNoronha",
+   "Fernando de Noronha Standard Time",
+   "GMT-02:00",
+   "Fernando de Noronha Summer Time",
+   "GMT-02:00"
+  ],
+  [
+   "Brazil/East",
+   "Brasilia Standard Time",
+   "GMT-03:00",
+   "Brasilia Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "Brazil/West",
+   "Amazon Standard Time",
+   "GMT-04:00",
+   "Amazon Summer Time",
+   "GMT-04:00"
+  ],
+  [
+   "CET",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "CST6CDT",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "Canada/Atlantic",
+   "Atlantic Standard Time",
+   "AST",
+   "Atlantic Daylight Time",
+   "ADT"
+  ],
+  [
+   "Canada/Central",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "Canada/Eastern",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "Canada/Mountain",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "Canada/Newfoundland",
+   "Newfoundland Standard Time",
+   "GMT-03:30",
+   "Newfoundland Daylight Time",
+   "GMT-02:30"
+  ],
+  [
+   "Canada/Pacific",
+   "Pacific Standard Time",
+   "PST",
+   "Pacific Daylight Time",
+   "PDT"
+  ],
+  [
+   "Canada/Saskatchewan",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "Canada/Yukon",
+   "Yukon Time",
+   "GMT-07:00",
+   "GMT-07:00",
+   "GMT-07:00"
+  ],
+  [
+   "Chile/Continental",
+   "Chile Standard Time",
+   "GMT-04:00",
+   "Chile Summer Time",
+   "GMT-03:00"
+  ],
+  [
+   "Chile/EasterIsland",
+   "Easter Island Standard Time",
+   "GMT-06:00",
+   "Easter Island Summer Time",
+   "GMT-05:00"
+  ],
+  [
+   "Cuba",
+   "Cuba Standard Time",
+   "GMT-05:00",
+   "Cuba Daylight Time",
+   "GMT-04:00"
+  ],
+  [
+   "EET",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "EST",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "EST5EDT",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "Egypt",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Eire",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "Irish Standard Time",
+   "GMT+01:00"
+  ],
+  [
+   "Etc/GMT",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Etc/GMT+0",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Etc/GMT+1",
+   "GMT-01:00",
+   "GMT-01:00",
+   "GMT-01:00",
+   "GMT-01:00"
+  ],
+  [
+   "Etc/GMT+10",
+   "GMT-10:00",
+   "GMT-10:00",
+   "GMT-10:00",
+   "GMT-10:00"
+  ],
+  [
+   "Etc/GMT+11",
+   "GMT-11:00",
+   "GMT-11:00",
+   "GMT-11:00",
+   "GMT-11:00"
+  ],
+  [
+   "Etc/GMT+12",
+   "GMT-12:00",
+   "GMT-12:00",
+   "GMT-12:00",
+   "GMT-12:00"
+  ],
+  [
+   "Etc/GMT+2",
+   "GMT-02:00",
+   "GMT-02:00",
+   "GMT-02:00",
+   "GMT-02:00"
+  ],
+  [
+   "Etc/GMT+3",
+   "GMT-03:00",
+   "GMT-03:00",
+   "GMT-03:00",
+   "GMT-03:00"
+  ],
+  [
+   "Etc/GMT+4",
+   "GMT-04:00",
+   "GMT-04:00",
+   "GMT-04:00",
+   "GMT-04:00"
+  ],
+  [
+   "Etc/GMT+5",
+   "GMT-05:00",
+   "GMT-05:00",
+   "GMT-05:00",
+   "GMT-05:00"
+  ],
+  [
+   "Etc/GMT+6",
+   "GMT-06:00",
+   "GMT-06:00",
+   "GMT-06:00",
+   "GMT-06:00"
+  ],
+  [
+   "Etc/GMT+7",
+   "GMT-07:00",
+   "GMT-07:00",
+   "GMT-07:00",
+   "GMT-07:00"
+  ],
+  [
+   "Etc/GMT+8",
+   "GMT-08:00",
+   "GMT-08:00",
+   "GMT-08:00",
+   "GMT-08:00"
+  ],
+  [
+   "Etc/GMT+9",
+   "GMT-09:00",
+   "GMT-09:00",
+   "GMT-09:00",
+   "GMT-09:00"
+  ],
+  [
+   "Etc/GMT-0",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Etc/GMT-1",
+   "GMT+01:00",
+   "GMT+01:00",
+   "GMT+01:00",
+   "GMT+01:00"
+  ],
+  [
+   "Etc/GMT-10",
+   "GMT+10:00",
+   "GMT+10:00",
+   "GMT+10:00",
+   "GMT+10:00"
+  ],
+  [
+   "Etc/GMT-11",
+   "GMT+11:00",
+   "GMT+11:00",
+   "GMT+11:00",
+   "GMT+11:00"
+  ],
+  [
+   "Etc/GMT-12",
+   "GMT+12:00",
+   "GMT+12:00",
+   "GMT+12:00",
+   "GMT+12:00"
+  ],
+  [
+   "Etc/GMT-13",
+   "GMT+13:00",
+   "GMT+13:00",
+   "GMT+13:00",
+   "GMT+13:00"
+  ],
+  [
+   "Etc/GMT-14",
+   "GMT+14:00",
+   "GMT+14:00",
+   "GMT+14:00",
+   "GMT+14:00"
+  ],
+  [
+   "Etc/GMT-2",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00",
+   "GMT+02:00"
+  ],
+  [
+   "Etc/GMT-3",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Etc/GMT-4",
+   "GMT+04:00",
+   "GMT+04:00",
+   "GMT+04:00",
+   "GMT+04:00"
+  ],
+  [
+   "Etc/GMT-5",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Etc/GMT-6",
+   "GMT+06:00",
+   "GMT+06:00",
+   "GMT+06:00",
+   "GMT+06:00"
+  ],
+  [
+   "Etc/GMT-7",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00"
+  ],
+  [
+   "Etc/GMT-8",
+   "GMT+08:00",
+   "GMT+08:00",
+   "GMT+08:00",
+   "GMT+08:00"
+  ],
+  [
+   "Etc/GMT-9",
+   "GMT+09:00",
+   "GMT+09:00",
+   "GMT+09:00",
+   "GMT+09:00"
+  ],
+  [
+   "Etc/GMT0",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Etc/Greenwich",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Etc/UCT",
+   "Coordinated Universal Time",
+   "UTC",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Etc/UTC",
+   "Coordinated Universal Time",
+   "UTC",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Etc/Universal",
+   "Coordinated Universal Time",
+   "UTC",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Etc/Zulu",
+   "Coordinated Universal Time",
+   "UTC",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Europe/Amsterdam",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Andorra",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Astrakhan",
+   "GMT+04:00",
+   "GMT+04:00",
+   "GMT+04:00",
+   "GMT+04:00"
+  ],
+  [
+   "Europe/Athens",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Belfast",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "British Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Europe/Belgrade",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Berlin",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Bratislava",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Brussels",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Bucharest",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Budapest",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Busingen",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Chisinau",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Copenhagen",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Dublin",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "Irish Standard Time",
+   "GMT+01:00"
+  ],
+  [
+   "Europe/Gibraltar",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Guernsey",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+01:00",
+   "GMT+01:00"
+  ],
+  [
+   "Europe/Helsinki",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Isle_of_Man",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+01:00",
+   "GMT+01:00"
+  ],
+  [
+   "Europe/Istanbul",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Jersey",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+01:00",
+   "GMT+01:00"
+  ],
+  [
+   "Europe/Kaliningrad",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Kiev",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Kirov",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Kyiv",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Lisbon",
+   "Western European Standard Time",
+   "GMT+00:00",
+   "Western European Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Europe/Ljubljana",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/London",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "British Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Europe/Luxembourg",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Madrid",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Malta",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Mariehamn",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Minsk",
+   "Moscow Standard Time",
+   "GMT+03:00",
+   "Moscow Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Monaco",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Moscow",
+   "Moscow Standard Time",
+   "GMT+03:00",
+   "Moscow Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Nicosia",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Oslo",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Paris",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Podgorica",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Prague",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Riga",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Rome",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Samara",
+   "Samara Standard Time",
+   "GMT+04:00",
+   "Samara Summer Time",
+   "GMT+04:00"
+  ],
+  [
+   "Europe/San_Marino",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Sarajevo",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Saratov",
+   "GMT+04:00",
+   "GMT+04:00",
+   "GMT+04:00",
+   "GMT+04:00"
+  ],
+  [
+   "Europe/Simferopol",
+   "Moscow Standard Time",
+   "GMT+03:00",
+   "Moscow Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Skopje",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Sofia",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Stockholm",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Tallinn",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Tirane",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Tiraspol",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Ulyanovsk",
+   "GMT+04:00",
+   "GMT+04:00",
+   "GMT+04:00",
+   "GMT+04:00"
+  ],
+  [
+   "Europe/Uzhgorod",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Vaduz",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Vatican",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Vienna",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Vilnius",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Volgograd",
+   "Volgograd Standard Time",
+   "GMT+03:00",
+   "Volgograd Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Warsaw",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Zagreb",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Europe/Zaporozhye",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "Europe/Zurich",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "GB",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "British Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "GB-Eire",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "British Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "GMT",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "GMT+0",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "GMT-0",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "GMT0",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Greenwich",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "HST",
+   "Hawaii-Aleutian Standard Time",
+   "HST",
+   "Hawaii-Aleutian Daylight Time",
+   "HDT"
+  ],
+  [
+   "Hongkong",
+   "Hong Kong Standard Time",
+   "GMT+08:00",
+   "Hong Kong Summer Time",
+   "GMT+08:00"
+  ],
+  [
+   "Iceland",
+   "Greenwich Mean Time",
+   "GMT+00:00",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Indian/Antananarivo",
+   "East Africa Time",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Indian/Chagos",
+   "Indian Ocean Time",
+   "GMT+06:00",
+   "GMT+06:00",
+   "GMT+06:00"
+  ],
+  [
+   "Indian/Christmas",
+   "Christmas Island Time",
+   "GMT+07:00",
+   "GMT+07:00",
+   "GMT+07:00"
+  ],
+  [
+   "Indian/Cocos",
+   "Cocos Islands Time",
+   "GMT+06:30",
+   "GMT+06:30",
+   "GMT+06:30"
+  ],
+  [
+   "Indian/Comoro",
+   "East Africa Time",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Indian/Kerguelen",
+   "French Southern & Antarctic Time",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Indian/Mahe",
+   "Seychelles Time",
+   "GMT+04:00",
+   "GMT+04:00",
+   "GMT+04:00"
+  ],
+  [
+   "Indian/Maldives",
+   "Maldives Time",
+   "GMT+05:00",
+   "GMT+05:00",
+   "GMT+05:00"
+  ],
+  [
+   "Indian/Mauritius",
+   "Mauritius Standard Time",
+   "GMT+04:00",
+   "Mauritius Summer Time",
+   "GMT+04:00"
+  ],
+  [
+   "Indian/Mayotte",
+   "East Africa Time",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "Indian/Reunion",
+   "R\u00e9union Time",
+   "GMT+04:00",
+   "GMT+04:00",
+   "GMT+04:00"
+  ],
+  [
+   "Iran",
+   "Iran Standard Time",
+   "GMT+03:30",
+   "Iran Daylight Time",
+   "GMT+03:30"
+  ],
+  [
+   "Israel",
+   "Israel Standard Time",
+   "GMT+02:00",
+   "Israel Daylight Time",
+   "GMT+03:00"
+  ],
+  [
+   "Jamaica",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "Japan",
+   "Japan Standard Time",
+   "GMT+09:00",
+   "Japan Daylight Time",
+   "GMT+09:00"
+  ],
+  [
+   "Kwajalein",
+   "Marshall Islands Time",
+   "GMT+12:00",
+   "GMT+12:00",
+   "GMT+12:00"
+  ],
+  [
+   "Libya",
+   "Eastern European Standard Time",
+   "GMT+02:00",
+   "Eastern European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "MET",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "MST",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "MST7MDT",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "Mexico/BajaNorte",
+   "Pacific Standard Time",
+   "PST",
+   "Pacific Daylight Time",
+   "PDT"
+  ],
+  [
+   "Mexico/BajaSur",
+   "Mexican Pacific Standard Time",
+   "GMT-07:00",
+   "Mexican Pacific Daylight Time",
+   "GMT-07:00"
+  ],
+  [
+   "Mexico/General",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "NZ",
+   "New Zealand Standard Time",
+   "GMT+12:00",
+   "New Zealand Daylight Time",
+   "GMT+13:00"
+  ],
+  [
+   "NZ-CHAT",
+   "Chatham Standard Time",
+   "GMT+12:45",
+   "Chatham Daylight Time",
+   "GMT+13:45"
+  ],
+  [
+   "Navajo",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "PRC",
+   "China Standard Time",
+   "GMT+08:00",
+   "China Daylight Time",
+   "GMT+08:00"
+  ],
+  [
+   "PST8PDT",
+   "Pacific Standard Time",
+   "PST",
+   "Pacific Daylight Time",
+   "PDT"
+  ],
+  [
+   "Pacific/Apia",
+   "Samoa Standard Time",
+   "GMT+13:00",
+   "Samoa Daylight Time",
+   "GMT+13:00"
+  ],
+  [
+   "Pacific/Auckland",
+   "New Zealand Standard Time",
+   "GMT+12:00",
+   "New Zealand Daylight Time",
+   "GMT+13:00"
+  ],
+  [
+   "Pacific/Bougainville",
+   "GMT+11:00",
+   "GMT+11:00",
+   "GMT+11:00",
+   "GMT+11:00"
+  ],
+  [
+   "Pacific/Chatham",
+   "Chatham Standard Time",
+   "GMT+12:45",
+   "Chatham Daylight Time",
+   "GMT+13:45"
+  ],
+  [
+   "Pacific/Chuuk",
+   "Chuuk Time",
+   "GMT+10:00",
+   "GMT+10:00",
+   "GMT+10:00"
+  ],
+  [
+   "Pacific/Easter",
+   "Easter Island Standard Time",
+   "GMT-06:00",
+   "Easter Island Summer Time",
+   "GMT-05:00"
+  ],
+  [
+   "Pacific/Efate",
+   "Vanuatu Standard Time",
+   "GMT+11:00",
+   "Vanuatu Summer Time",
+   "GMT+11:00"
+  ],
+  [
+   "Pacific/Enderbury",
+   "Phoenix Islands Time",
+   "GMT+13:00",
+   "GMT+13:00",
+   "GMT+13:00"
+  ],
+  [
+   "Pacific/Fakaofo",
+   "Tokelau Time",
+   "GMT+13:00",
+   "GMT+13:00",
+   "GMT+13:00"
+  ],
+  [
+   "Pacific/Fiji",
+   "Fiji Standard Time",
+   "GMT+12:00",
+   "Fiji Summer Time",
+   "GMT+12:00"
+  ],
+  [
+   "Pacific/Funafuti",
+   "Tuvalu Time",
+   "GMT+12:00",
+   "GMT+12:00",
+   "GMT+12:00"
+  ],
+  [
+   "Pacific/Galapagos",
+   "Galapagos Time",
+   "GMT-06:00",
+   "GMT-06:00",
+   "GMT-06:00"
+  ],
+  [
+   "Pacific/Gambier",
+   "Gambier Time",
+   "GMT-09:00",
+   "GMT-09:00",
+   "GMT-09:00"
+  ],
+  [
+   "Pacific/Guadalcanal",
+   "Solomon Islands Time",
+   "GMT+11:00",
+   "GMT+11:00",
+   "GMT+11:00"
+  ],
+  [
+   "Pacific/Guam",
+   "Chamorro Standard Time",
+   "GMT+10:00",
+   "GMT+10:00",
+   "GMT+10:00"
+  ],
+  [
+   "Pacific/Honolulu",
+   "Hawaii-Aleutian Standard Time",
+   "HST",
+   "Hawaii-Aleutian Daylight Time",
+   "HDT"
+  ],
+  [
+   "Pacific/Johnston",
+   "Hawaii-Aleutian Standard Time",
+   "HST",
+   "Hawaii-Aleutian Daylight Time",
+   "HDT"
+  ],
+  [
+   "Pacific/Kanton",
+   "Phoenix Islands Time",
+   "GMT+13:00",
+   "GMT+13:00",
+   "GMT+13:00"
+  ],
+  [
+   "Pacific/Kiritimati",
+   "Line Islands Time",
+   "GMT+14:00",
+   "GMT+14:00",
+   "GMT+14:00"
+  ],
+  [
+   "Pacific/Kosrae",
+   "Kosrae Time",
+   "GMT+11:00",
+   "GMT+11:00",
+   "GMT+11:00"
+  ],
+  [
+   "Pacific/Kwajalein",
+   "Marshall Islands Time",
+   "GMT+12:00",
+   "GMT+12:00",
+   "GMT+12:00"
+  ],
+  [
+   "Pacific/Majuro",
+   "Marshall Islands Time",
+   "GMT+12:00",
+   "GMT+12:00",
+   "GMT+12:00"
+  ],
+  [
+   "Pacific/Marquesas",
+   "Marquesas Time",
+   "GMT-09:30",
+   "GMT-09:30",
+   "GMT-09:30"
+  ],
+  [
+   "Pacific/Midway",
+   "American Samoa Standard Time",
+   "GMT-11:00",
+   "American Samoa Daylight Time",
+   "GMT-11:00"
+  ],
+  [
+   "Pacific/Nauru",
+   "Nauru Time",
+   "GMT+12:00",
+   "GMT+12:00",
+   "GMT+12:00"
+  ],
+  [
+   "Pacific/Niue",
+   "Niue Time",
+   "GMT-11:00",
+   "GMT-11:00",
+   "GMT-11:00"
+  ],
+  [
+   "Pacific/Norfolk",
+   "Norfolk Island Standard Time",
+   "GMT+11:00",
+   "Norfolk Island Daylight Time",
+   "GMT+12:00"
+  ],
+  [
+   "Pacific/Noumea",
+   "New Caledonia Standard Time",
+   "GMT+11:00",
+   "New Caledonia Summer Time",
+   "GMT+11:00"
+  ],
+  [
+   "Pacific/Pago_Pago",
+   "American Samoa Standard Time",
+   "GMT-11:00",
+   "American Samoa Daylight Time",
+   "GMT-11:00"
+  ],
+  [
+   "Pacific/Palau",
+   "Palau Time",
+   "GMT+09:00",
+   "GMT+09:00",
+   "GMT+09:00"
+  ],
+  [
+   "Pacific/Pitcairn",
+   "Pitcairn Time",
+   "GMT-08:00",
+   "GMT-08:00",
+   "GMT-08:00"
+  ],
+  [
+   "Pacific/Pohnpei",
+   "Ponape Time",
+   "GMT+11:00",
+   "GMT+11:00",
+   "GMT+11:00"
+  ],
+  [
+   "Pacific/Ponape",
+   "Ponape Time",
+   "GMT+11:00",
+   "GMT+11:00",
+   "GMT+11:00"
+  ],
+  [
+   "Pacific/Port_Moresby",
+   "Papua New Guinea Time",
+   "GMT+10:00",
+   "GMT+10:00",
+   "GMT+10:00"
+  ],
+  [
+   "Pacific/Rarotonga",
+   "Cook Islands Standard Time",
+   "GMT-10:00",
+   "Cook Islands Summer Time",
+   "GMT-10:00"
+  ],
+  [
+   "Pacific/Saipan",
+   "Chamorro Standard Time",
+   "GMT+10:00",
+   "GMT+10:00",
+   "GMT+10:00"
+  ],
+  [
+   "Pacific/Samoa",
+   "American Samoa Standard Time",
+   "GMT-11:00",
+   "American Samoa Daylight Time",
+   "GMT-11:00"
+  ],
+  [
+   "Pacific/Tahiti",
+   "Tahiti Time",
+   "GMT-10:00",
+   "GMT-10:00",
+   "GMT-10:00"
+  ],
+  [
+   "Pacific/Tarawa",
+   "Gilbert Islands Time",
+   "GMT+12:00",
+   "GMT+12:00",
+   "GMT+12:00"
+  ],
+  [
+   "Pacific/Tongatapu",
+   "Tonga Standard Time",
+   "GMT+13:00",
+   "Tonga Summer Time",
+   "GMT+13:00"
+  ],
+  [
+   "Pacific/Truk",
+   "Chuuk Time",
+   "GMT+10:00",
+   "GMT+10:00",
+   "GMT+10:00"
+  ],
+  [
+   "Pacific/Wake",
+   "Wake Island Time",
+   "GMT+12:00",
+   "GMT+12:00",
+   "GMT+12:00"
+  ],
+  [
+   "Pacific/Wallis",
+   "Wallis & Futuna Time",
+   "GMT+12:00",
+   "GMT+12:00",
+   "GMT+12:00"
+  ],
+  [
+   "Pacific/Yap",
+   "Chuuk Time",
+   "GMT+10:00",
+   "GMT+10:00",
+   "GMT+10:00"
+  ],
+  [
+   "Poland",
+   "Central European Standard Time",
+   "GMT+01:00",
+   "Central European Summer Time",
+   "GMT+02:00"
+  ],
+  [
+   "Portugal",
+   "Western European Standard Time",
+   "GMT+00:00",
+   "Western European Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "ROC",
+   "Taipei Standard Time",
+   "GMT+08:00",
+   "Taipei Daylight Time",
+   "GMT+08:00"
+  ],
+  [
+   "ROK",
+   "Korean Standard Time",
+   "GMT+09:00",
+   "Korean Daylight Time",
+   "GMT+09:00"
+  ],
+  [
+   "Singapore",
+   "Singapore Standard Time",
+   "GMT+08:00",
+   "GMT+08:00",
+   "GMT+08:00"
+  ],
+  [
+   "Turkey",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00",
+   "GMT+03:00"
+  ],
+  [
+   "UCT",
+   "Coordinated Universal Time",
+   "UTC",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "US/Alaska",
+   "Alaska Standard Time",
+   "AKST",
+   "Alaska Daylight Time",
+   "AKDT"
+  ],
+  [
+   "US/Aleutian",
+   "Hawaii-Aleutian Standard Time",
+   "HAST",
+   "Hawaii-Aleutian Daylight Time",
+   "HADT"
+  ],
+  [
+   "US/Arizona",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "US/Central",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "US/East-Indiana",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "US/Eastern",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "US/Hawaii",
+   "Hawaii-Aleutian Standard Time",
+   "HST",
+   "Hawaii-Aleutian Daylight Time",
+   "HDT"
+  ],
+  [
+   "US/Indiana-Starke",
+   "Central Standard Time",
+   "CST",
+   "Central Daylight Time",
+   "CDT"
+  ],
+  [
+   "US/Michigan",
+   "Eastern Standard Time",
+   "EST",
+   "Eastern Daylight Time",
+   "EDT"
+  ],
+  [
+   "US/Mountain",
+   "Mountain Standard Time",
+   "MST",
+   "Mountain Daylight Time",
+   "MDT"
+  ],
+  [
+   "US/Pacific",
+   "Pacific Standard Time",
+   "PST",
+   "Pacific Daylight Time",
+   "PDT"
+  ],
+  [
+   "US/Samoa",
+   "American Samoa Standard Time",
+   "GMT-11:00",
+   "American Samoa Daylight Time",
+   "GMT-11:00"
+  ],
+  [
+   "UTC",
+   "Coordinated Universal Time",
+   "UTC",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "Universal",
+   "Coordinated Universal Time",
+   "UTC",
+   "GMT+00:00",
+   "GMT+00:00"
+  ],
+  [
+   "W-SU",
+   "Moscow Standard Time",
+   "GMT+03:00",
+   "Moscow Summer Time",
+   "GMT+03:00"
+  ],
+  [
+   "WET",
+   "Western European Standard Time",
+   "GMT+00:00",
+   "Western European Summer Time",
+   "GMT+01:00"
+  ],
+  [
+   "Zulu",
+   "Coordinated Universal Time",
+   "UTC",
+   "GMT+00:00",
+   "GMT+00:00"
+  ]
+ ],
+ "available_ids": [
+  [
+   "Africa/Abidjan",
+   0
+  ],
+  [
+   "Africa/Accra",
+   0
+  ],
+  [
+   "Africa/Addis_Ababa",
+   10800000
+  ],
+  [
+   "Africa/Algiers",
+   3600000
+  ],
+  [
+   "Africa/Asmara",
+   10800000
+  ],
+  [
+   "Africa/Asmera",
+   10800000
+  ],
+  [
+   "Africa/Bamako",
+   0
+  ],
+  [
+   "Africa/Bangui",
+   3600000
+  ],
+  [
+   "Africa/Banjul",
+   0
+  ],
+  [
+   "Africa/Bissau",
+   0
+  ],
+  [
+   "Africa/Blantyre",
+   7200000
+  ],
+  [
+   "Africa/Brazzaville",
+   3600000
+  ],
+  [
+   "Africa/Bujumbura",
+   7200000
+  ],
+  [
+   "Africa/Cairo",
+   7200000
+  ],
+  [
+   "Africa/Casablanca",
+   0
+  ],
+  [
+   "Africa/Ceuta",
+   3600000
+  ],
+  [
+   "Africa/Conakry",
+   0
+  ],
+  [
+   "Africa/Dakar",
+   0
+  ],
+  [
+   "Africa/Dar_es_Salaam",
+   10800000
+  ],
+  [
+   "Africa/Djibouti",
+   10800000
+  ],
+  [
+   "Africa/Douala",
+   3600000
+  ],
+  [
+   "Africa/El_Aaiun",
+   0
+  ],
+  [
+   "Africa/Freetown",
+   0
+  ],
+  [
+   "Africa/Gaborone",
+   7200000
+  ],
+  [
+   "Africa/Harare",
+   7200000
+  ],
+  [
+   "Africa/Johannesburg",
+   7200000
+  ],
+  [
+   "Africa/Juba",
+   7200000
+  ],
+  [
+   "Africa/Kampala",
+   10800000
+  ],
+  [
+   "Africa/Khartoum",
+   7200000
+  ],
+  [
+   "Africa/Kigali",
+   7200000
+  ],
+  [
+   "Africa/Kinshasa",
+   3600000
+  ],
+  [
+   "Africa/Lagos",
+   3600000
+  ],
+  [
+   "Africa/Libreville",
+   3600000
+  ],
+  [
+   "Africa/Lome",
+   0
+  ],
+  [
+   "Africa/Luanda",
+   3600000
+  ],
+  [
+   "Africa/Lubumbashi",
+   7200000
+  ],
+  [
+   "Africa/Lusaka",
+   7200000
+  ],
+  [
+   "Africa/Malabo",
+   3600000
+  ],
+  [
+   "Africa/Maputo",
+   7200000
+  ],
+  [
+   "Africa/Maseru",
+   7200000
+  ],
+  [
+   "Africa/Mbabane",
+   7200000
+  ],
+  [
+   "Africa/Mogadishu",
+   10800000
+  ],
+  [
+   "Africa/Monrovia",
+   0
+  ],
+  [
+   "Africa/Nairobi",
+   10800000
+  ],
+  [
+   "Africa/Ndjamena",
+   3600000
+  ],
+  [
+   "Africa/Niamey",
+   3600000
+  ],
+  [
+   "Africa/Nouakchott",
+   0
+  ],
+  [
+   "Africa/Ouagadougou",
+   0
+  ],
+  [
+   "Africa/Porto-Novo",
+   3600000
+  ],
+  [
+   "Africa/Sao_Tome",
+   0
+  ],
+  [
+   "Africa/Timbuktu",
+   0
+  ],
+  [
+   "Africa/Tripoli",
+   7200000
+  ],
+  [
+   "Africa/Tunis",
+   3600000
+  ],
+  [
+   "Africa/Windhoek",
+   7200000
+  ],
+  [
+   "America/Adak",
+   -36000000
+  ],
+  [
+   "America/Anchorage",
+   -32400000
+  ],
+  [
+   "America/Anguilla",
+   -14400000
+  ],
+  [
+   "America/Antigua",
+   -14400000
+  ],
+  [
+   "America/Araguaina",
+   -10800000
+  ],
+  [
+   "America/Argentina/Buenos_Aires",
+   -10800000
+  ],
+  [
+   "America/Argentina/Catamarca",
+   -10800000
+  ],
+  [
+   "America/Argentina/ComodRivadavia",
+   -10800000
+  ],
+  [
+   "America/Argentina/Cordoba",
+   -10800000
+  ],
+  [
+   "America/Argentina/Jujuy",
+   -10800000
+  ],
+  [
+   "America/Argentina/La_Rioja",
+   -10800000
+  ],
+  [
+   "America/Argentina/Mendoza",
+   -10800000
+  ],
+  [
+   "America/Argentina/Rio_Gallegos",
+   -10800000
+  ],
+  [
+   "America/Argentina/Salta",
+   -10800000
+  ],
+  [
+   "America/Argentina/San_Juan",
+   -10800000
+  ],
+  [
+   "America/Argentina/San_Luis",
+   -10800000
+  ],
+  [
+   "America/Argentina/Tucuman",
+   -10800000
+  ],
+  [
+   "America/Argentina/Ushuaia",
+   -10800000
+  ],
+  [
+   "America/Aruba",
+   -14400000
+  ],
+  [
+   "America/Asuncion",
+   -10800000
+  ],
+  [
+   "America/Atikokan",
+   -18000000
+  ],
+  [
+   "America/Atka",
+   -36000000
+  ],
+  [
+   "America/Bahia",
+   -10800000
+  ],
+  [
+   "America/Bahia_Banderas",
+   -21600000
+  ],
+  [
+   "America/Barbados",
+   -14400000
+  ],
+  [
+   "America/Belem",
+   -10800000
+  ],
+  [
+   "America/Belize",
+   -21600000
+  ],
+  [
+   "America/Blanc-Sablon",
+   -14400000
+  ],
+  [
+   "America/Boa_Vista",
+   -14400000
+  ],
+  [
+   "America/Bogota",
+   -18000000
+  ],
+  [
+   "America/Boise",
+   -25200000
+  ],
+  [
+   "America/Buenos_Aires",
+   -10800000
+  ],
+  [
+   "America/Cambridge_Bay",
+   -25200000
+  ],
+  [
+   "America/Campo_Grande",
+   -14400000
+  ],
+  [
+   "America/Cancun",
+   -18000000
+  ],
+  [
+   "America/Caracas",
+   -14400000
+  ],
+  [
+   "America/Catamarca",
+   -10800000
+  ],
+  [
+   "America/Cayenne",
+   -10800000
+  ],
+  [
+   "America/Cayman",
+   -18000000
+  ],
+  [
+   "America/Chicago",
+   -21600000
+  ],
+  [
+   "America/Chihuahua",
+   -21600000
+  ],
+  [
+   "America/Ciudad_Juarez",
+   -25200000
+  ],
+  [
+   "America/Coral_Harbour",
+   -18000000
+  ],
+  [
+   "America/Cordoba",
+   -10800000
+  ],
+  [
+   "America/Costa_Rica",
+   -21600000
+  ],
+  [
+   "America/Creston",
+   -25200000
+  ],
+  [
+   "America/Cuiaba",
+   -14400000
+  ],
+  [
+   "America/Curacao",
+   -14400000
+  ],
+  [
+   "America/Danmarkshavn",
+   0
+  ],
+  [
+   "America/Dawson",
+   -25200000
+  ],
+  [
+   "America/Dawson_Creek",
+   -25200000
+  ],
+  [
+   "America/Denver",
+   -25200000
+  ],
+  [
+   "America/Detroit",
+   -18000000
+  ],
+  [
+   "America/Dominica",
+   -14400000
+  ],
+  [
+   "America/Edmonton",
+   -25200000
+  ],
+  [
+   "America/Eirunepe",
+   -18000000
+  ],
+  [
+   "America/El_Salvador",
+   -21600000
+  ],
+  [
+   "America/Ensenada",
+   -28800000
+  ],
+  [
+   "America/Fort_Nelson",
+   -25200000
+  ],
+  [
+   "America/Fort_Wayne",
+   -18000000
+  ],
+  [
+   "America/Fortaleza",
+   -10800000
+  ],
+  [
+   "America/Glace_Bay",
+   -14400000
+  ],
+  [
+   "America/Godthab",
+   -7200000
+  ],
+  [
+   "America/Goose_Bay",
+   -14400000
+  ],
+  [
+   "America/Grand_Turk",
+   -18000000
+  ],
+  [
+   "America/Grenada",
+   -14400000
+  ],
+  [
+   "America/Guadeloupe",
+   -14400000
+  ],
+  [
+   "America/Guatemala",
+   -21600000
+  ],
+  [
+   "America/Guayaquil",
+   -18000000
+  ],
+  [
+   "America/Guyana",
+   -14400000
+  ],
+  [
+   "America/Halifax",
+   -14400000
+  ],
+  [
+   "America/Havana",
+   -18000000
+  ],
+  [
+   "America/Hermosillo",
+   -25200000
+  ],
+  [
+   "America/Indiana/Indianapolis",
+   -18000000
+  ],
+  [
+   "America/Indiana/Knox",
+   -21600000
+  ],
+  [
+   "America/Indiana/Marengo",
+   -18000000
+  ],
+  [
+   "America/Indiana/Petersburg",
+   -18000000
+  ],
+  [
+   "America/Indiana/Tell_City",
+   -21600000
+  ],
+  [
+   "America/Indiana/Vevay",
+   -18000000
+  ],
+  [
+   "America/Indiana/Vincennes",
+   -18000000
+  ],
+  [
+   "America/Indiana/Winamac",
+   -18000000
+  ],
+  [
+   "America/Indianapolis",
+   -18000000
+  ],
+  [
+   "America/Inuvik",
+   -25200000
+  ],
+  [
+   "America/Iqaluit",
+   -18000000
+  ],
+  [
+   "America/Jamaica",
+   -18000000
+  ],
+  [
+   "America/Jujuy",
+   -10800000
+  ],
+  [
+   "America/Juneau",
+   -32400000
+  ],
+  [
+   "America/Kentucky/Louisville",
+   -18000000
+  ],
+  [
+   "America/Kentucky/Monticello",
+   -18000000
+  ],
+  [
+   "America/Knox_IN",
+   -21600000
+  ],
+  [
+   "America/Kralendijk",
+   -14400000
+  ],
+  [
+   "America/La_Paz",
+   -14400000
+  ],
+  [
+   "America/Lima",
+   -18000000
+  ],
+  [
+   "America/Los_Angeles",
+   -28800000
+  ],
+  [
+   "America/Louisville",
+   -18000000
+  ],
+  [
+   "America/Lower_Princes",
+   -14400000
+  ],
+  [
+   "America/Maceio",
+   -10800000
+  ],
+  [
+   "America/Managua",
+   -21600000
+  ],
+  [
+   "America/Manaus",
+   -14400000
+  ],
+  [
+   "America/Marigot",
+   -14400000
+  ],
+  [
+   "America/Martinique",
+   -14400000
+  ],
+  [
+   "America/Matamoros",
+   -21600000
+  ],
+  [
+   "America/Mazatlan",
+   -25200000
+  ],
+  [
+   "America/Mendoza",
+   -10800000
+  ],
+  [
+   "America/Menominee",
+   -21600000
+  ],
+  [
+   "America/Merida",
+   -21600000
+  ],
+  [
+   "America/Metlakatla",
+   -32400000
+  ],
+  [
+   "America/Mexico_City",
+   -21600000
+  ],
+  [
+   "America/Miquelon",
+   -10800000
+  ],
+  [
+   "America/Moncton",
+   -14400000
+  ],
+  [
+   "America/Monterrey",
+   -21600000
+  ],
+  [
+   "America/Montevideo",
+   -10800000
+  ],
+  [
+   "America/Montreal",
+   -18000000
+  ],
+  [
+   "America/Montserrat",
+   -14400000
+  ],
+  [
+   "America/Nassau",
+   -18000000
+  ],
+  [
+   "America/New_York",
+   -18000000
+  ],
+  [
+   "America/Nipigon",
+   -18000000
+  ],
+  [
+   "America/Nome",
+   -32400000
+  ],
+  [
+   "America/Noronha",
+   -7200000
+  ],
+  [
+   "America/North_Dakota/Beulah",
+   -21600000
+  ],
+  [
+   "America/North_Dakota/Center",
+   -21600000
+  ],
+  [
+   "America/North_Dakota/New_Salem",
+   -21600000
+  ],
+  [
+   "America/Nuuk",
+   -7200000
+  ],
+  [
+   "America/Ojinaga",
+   -21600000
+  ],
+  [
+   "America/Panama",
+   -18000000
+  ],
+  [
+   "America/Pangnirtung",
+   -18000000
+  ],
+  [
+   "America/Paramaribo",
+   -10800000
+  ],
+  [
+   "America/Phoenix",
+   -25200000
+  ],
+  [
+   "America/Port-au-Prince",
+   -18000000
+  ],
+  [
+   "America/Port_of_Spain",
+   -14400000
+  ],
+  [
+   "America/Porto_Acre",
+   -18000000
+  ],
+  [
+   "America/Porto_Velho",
+   -14400000
+  ],
+  [
+   "America/Puerto_Rico",
+   -14400000
+  ],
+  [
+   "America/Punta_Arenas",
+   -10800000
+  ],
+  [
+   "America/Rainy_River",
+   -21600000
+  ],
+  [
+   "America/Rankin_Inlet",
+   -21600000
+  ],
+  [
+   "America/Recife",
+   -10800000
+  ],
+  [
+   "America/Regina",
+   -21600000
+  ],
+  [
+   "America/Resolute",
+   -21600000
+  ],
+  [
+   "America/Rio_Branco",
+   -18000000
+  ],
+  [
+   "America/Rosario",
+   -10800000
+  ],
+  [
+   "America/Santa_Isabel",
+   -28800000
+  ],
+  [
+   "America/Santarem",
+   -10800000
+  ],
+  [
+   "America/Santiago",
+   -14400000
+  ],
+  [
+   "America/Santo_Domingo",
+   -14400000
+  ],
+  [
+   "America/Sao_Paulo",
+   -10800000
+  ],
+  [
+   "America/Scoresbysund",
+   -7200000
+  ],
+  [
+   "America/Shiprock",
+   -25200000
+  ],
+  [
+   "America/Sitka",
+   -32400000
+  ],
+  [
+   "America/St_Barthelemy",
+   -14400000
+  ],
+  [
+   "America/St_Johns",
+   -12600000
+  ],
+  [
+   "America/St_Kitts",
+   -14400000
+  ],
+  [
+   "America/St_Lucia",
+   -14400000
+  ],
+  [
+   "America/St_Thomas",
+   -14400000
+  ],
+  [
+   "America/St_Vincent",
+   -14400000
+  ],
+  [
+   "America/Swift_Current",
+   -21600000
+  ],
+  [
+   "America/Tegucigalpa",
+   -21600000
+  ],
+  [
+   "America/Thule",
+   -14400000
+  ],
+  [
+   "America/Thunder_Bay",
+   -18000000
+  ],
+  [
+   "America/Tijuana",
+   -28800000
+  ],
+  [
+   "America/Toronto",
+   -18000000
+  ],
+  [
+   "America/Tortola",
+   -14400000
+  ],
+  [
+   "America/Vancouver",
+   -28800000
+  ],
+  [
+   "America/Virgin",
+   -14400000
+  ],
+  [
+   "America/Whitehorse",
+   -25200000
+  ],
+  [
+   "America/Winnipeg",
+   -21600000
+  ],
+  [
+   "America/Yakutat",
+   -32400000
+  ],
+  [
+   "America/Yellowknife",
+   -25200000
+  ],
+  [
+   "Antarctica/Casey",
+   28800000
+  ],
+  [
+   "Antarctica/Davis",
+   25200000
+  ],
+  [
+   "Antarctica/DumontDUrville",
+   36000000
+  ],
+  [
+   "Antarctica/Macquarie",
+   36000000
+  ],
+  [
+   "Antarctica/Mawson",
+   18000000
+  ],
+  [
+   "Antarctica/McMurdo",
+   43200000
+  ],
+  [
+   "Antarctica/Palmer",
+   -10800000
+  ],
+  [
+   "Antarctica/Rothera",
+   -10800000
+  ],
+  [
+   "Antarctica/South_Pole",
+   43200000
+  ],
+  [
+   "Antarctica/Syowa",
+   10800000
+  ],
+  [
+   "Antarctica/Troll",
+   0
+  ],
+  [
+   "Antarctica/Vostok",
+   18000000
+  ],
+  [
+   "Arctic/Longyearbyen",
+   3600000
+  ],
+  [
+   "Asia/Aden",
+   10800000
+  ],
+  [
+   "Asia/Almaty",
+   18000000
+  ],
+  [
+   "Asia/Amman",
+   10800000
+  ],
+  [
+   "Asia/Anadyr",
+   43200000
+  ],
+  [
+   "Asia/Aqtau",
+   18000000
+  ],
+  [
+   "Asia/Aqtobe",
+   18000000
+  ],
+  [
+   "Asia/Ashgabat",
+   18000000
+  ],
+  [
+   "Asia/Ashkhabad",
+   18000000
+  ],
+  [
+   "Asia/Atyrau",
+   18000000
+  ],
+  [
+   "Asia/Baghdad",
+   10800000
+  ],
+  [
+   "Asia/Bahrain",
+   10800000
+  ],
+  [
+   "Asia/Baku",
+   14400000
+  ],
+  [
+   "Asia/Bangkok",
+   25200000
+  ],
+  [
+   "Asia/Barnaul",
+   25200000
+  ],
+  [
+   "Asia/Beirut",
+   7200000
+  ],
+  [
+   "Asia/Bishkek",
+   21600000
+  ],
+  [
+   "Asia/Brunei",
+   28800000
+  ],
+  [
+   "Asia/Calcutta",
+   19800000
+  ],
+  [
+   "Asia/Chita",
+   32400000
+  ],
+  [
+   "Asia/Choibalsan",
+   28800000
+  ],
+  [
+   "Asia/Chongqing",
+   28800000
+  ],
+  [
+   "Asia/Chungking",
+   28800000
+  ],
+  [
+   "Asia/Colombo",
+   19800000
+  ],
+  [
+   "Asia/Dacca",
+   21600000
+  ],
+  [
+   "Asia/Damascus",
+   10800000
+  ],
+  [
+   "Asia/Dhaka",
+   21600000
+  ],
+  [
+   "Asia/Dili",
+   32400000
+  ],
+  [
+   "Asia/Dubai",
+   14400000
+  ],
+  [
+   "Asia/Dushanbe",
+   18000000
+  ],
+  [
+   "Asia/Famagusta",
+   7200000
+  ],
+  [
+   "Asia/Gaza",
+   7200000
+  ],
+  [
+   "Asia/Harbin",
+   28800000
+  ],
+  [
+   "Asia/Hebron",
+   7200000
+  ],
+  [
+   "Asia/Ho_Chi_Minh",
+   25200000
+  ],
+  [
+   "Asia/Hong_Kong",
+   28800000
+  ],
+  [
+   "Asia/Hovd",
+   25200000
+  ],
+  [
+   "Asia/Irkutsk",
+   28800000
+  ],
+  [
+   "Asia/Istanbul",
+   10800000
+  ],
+  [
+   "Asia/Jakarta",
+   25200000
+  ],
+  [
+   "Asia/Jayapura",
+   32400000
+  ],
+  [
+   "Asia/Jerusalem",
+   7200000
+  ],
+  [
+   "Asia/Kabul",
+   16200000
+  ],
+  [
+   "Asia/Kamchatka",
+   43200000
+  ],
+  [
+   "Asia/Karachi",
+   18000000
+  ],
+  [
+   "Asia/Kashgar",
+   21600000
+  ],
+  [
+   "Asia/Kathmandu",
+   20700000
+  ],
+  [
+   "Asia/Katmandu",
+   20700000
+  ],
+  [
+   "Asia/Khandyga",
+   32400000
+  ],
+  [
+   "Asia/Kolkata",
+   19800000
+  ],
+  [
+   "Asia/Krasnoyarsk",
+   25200000
+  ],
+  [
+   "Asia/Kuala_Lumpur",
+   28800000
+  ],
+  [
+   "Asia/Kuching",
+   28800000
+  ],
+  [
+   "Asia/Kuwait",
+   10800000
+  ],
+  [
+   "Asia/Macao",
+   28800000
+  ],
+  [
+   "Asia/Macau",
+   28800000
+  ],
+  [
+   "Asia/Magadan",
+   39600000
+  ],
+  [
+   "Asia/Makassar",
+   28800000
+  ],
+  [
+   "Asia/Manila",
+   28800000
+  ],
+  [
+   "Asia/Muscat",
+   14400000
+  ],
+  [
+   "Asia/Nicosia",
+   7200000
+  ],
+  [
+   "Asia/Novokuznetsk",
+   25200000
+  ],
+  [
+   "Asia/Novosibirsk",
+   25200000
+  ],
+  [
+   "Asia/Omsk",
+   21600000
+  ],
+  [
+   "Asia/Oral",
+   18000000
+  ],
+  [
+   "Asia/Phnom_Penh",
+   25200000
+  ],
+  [
+   "Asia/Pontianak",
+   25200000
+  ],
+  [
+   "Asia/Pyongyang",
+   32400000
+  ],
+  [
+   "Asia/Qatar",
+   10800000
+  ],
+  [
+   "Asia/Qostanay",
+   18000000
+  ],
+  [
+   "Asia/Qyzylorda",
+   18000000
+  ],
+  [
+   "Asia/Rangoon",
+   23400000
+  ],
+  [
+   "Asia/Riyadh",
+   10800000
+  ],
+  [
+   "Asia/Saigon",
+   25200000
+  ],
+  [
+   "Asia/Sakhalin",
+   39600000
+  ],
+  [
+   "Asia/Samarkand",
+   18000000
+  ],
+  [
+   "Asia/Seoul",
+   32400000
+  ],
+  [
+   "Asia/Shanghai",
+   28800000
+  ],
+  [
+   "Asia/Singapore",
+   28800000
+  ],
+  [
+   "Asia/Srednekolymsk",
+   39600000
+  ],
+  [
+   "Asia/Taipei",
+   28800000
+  ],
+  [
+   "Asia/Tashkent",
+   18000000
+  ],
+  [
+   "Asia/Tbilisi",
+   14400000
+  ],
+  [
+   "Asia/Tehran",
+   12600000
+  ],
+  [
+   "Asia/Tel_Aviv",
+   7200000
+  ],
+  [
+   "Asia/Thimbu",
+   21600000
+  ],
+  [
+   "Asia/Thimphu",
+   21600000
+  ],
+  [
+   "Asia/Tokyo",
+   32400000
+  ],
+  [
+   "Asia/Tomsk",
+   25200000
+  ],
+  [
+   "Asia/Ujung_Pandang",
+   28800000
+  ],
+  [
+   "Asia/Ulaanbaatar",
+   28800000
+  ],
+  [
+   "Asia/Ulan_Bator",
+   28800000
+  ],
+  [
+   "Asia/Urumqi",
+   21600000
+  ],
+  [
+   "Asia/Ust-Nera",
+   36000000
+  ],
+  [
+   "Asia/Vientiane",
+   25200000
+  ],
+  [
+   "Asia/Vladivostok",
+   36000000
+  ],
+  [
+   "Asia/Yakutsk",
+   32400000
+  ],
+  [
+   "Asia/Yangon",
+   23400000
+  ],
+  [
+   "Asia/Yekaterinburg",
+   18000000
+  ],
+  [
+   "Asia/Yerevan",
+   14400000
+  ],
+  [
+   "Atlantic/Azores",
+   -3600000
+  ],
+  [
+   "Atlantic/Bermuda",
+   -14400000
+  ],
+  [
+   "Atlantic/Canary",
+   0
+  ],
+  [
+   "Atlantic/Cape_Verde",
+   -3600000
+  ],
+  [
+   "Atlantic/Faeroe",
+   0
+  ],
+  [
+   "Atlantic/Faroe",
+   0
+  ],
+  [
+   "Atlantic/Jan_Mayen",
+   3600000
+  ],
+  [
+   "Atlantic/Madeira",
+   0
+  ],
+  [
+   "Atlantic/Reykjavik",
+   0
+  ],
+  [
+   "Atlantic/South_Georgia",
+   -7200000
+  ],
+  [
+   "Atlantic/St_Helena",
+   0
+  ],
+  [
+   "Atlantic/Stanley",
+   -10800000
+  ],
+  [
+   "Australia/ACT",
+   36000000
+  ],
+  [
+   "Australia/Adelaide",
+   34200000
+  ],
+  [
+   "Australia/Brisbane",
+   36000000
+  ],
+  [
+   "Australia/Broken_Hill",
+   34200000
+  ],
+  [
+   "Australia/Canberra",
+   36000000
+  ],
+  [
+   "Australia/Currie",
+   36000000
+  ],
+  [
+   "Australia/Darwin",
+   34200000
+  ],
+  [
+   "Australia/Eucla",
+   31500000
+  ],
+  [
+   "Australia/Hobart",
+   36000000
+  ],
+  [
+   "Australia/LHI",
+   37800000
+  ],
+  [
+   "Australia/Lindeman",
+   36000000
+  ],
+  [
+   "Australia/Lord_Howe",
+   37800000
+  ],
+  [
+   "Australia/Melbourne",
+   36000000
+  ],
+  [
+   "Australia/NSW",
+   36000000
+  ],
+  [
+   "Australia/North",
+   34200000
+  ],
+  [
+   "Australia/Perth",
+   28800000
+  ],
+  [
+   "Australia/Queensland",
+   36000000
+  ],
+  [
+   "Australia/South",
+   34200000
+  ],
+  [
+   "Australia/Sydney",
+   36000000
+  ],
+  [
+   "Australia/Tasmania",
+   36000000
+  ],
+  [
+   "Australia/Victoria",
+   36000000
+  ],
+  [
+   "Australia/West",
+   28800000
+  ],
+  [
+   "Australia/Yancowinna",
+   34200000
+  ],
+  [
+   "Brazil/Acre",
+   -18000000
+  ],
+  [
+   "Brazil/DeNoronha",
+   -7200000
+  ],
+  [
+   "Brazil/East",
+   -10800000
+  ],
+  [
+   "Brazil/West",
+   -14400000
+  ],
+  [
+   "CET",
+   3600000
+  ],
+  [
+   "CST6CDT",
+   -21600000
+  ],
+  [
+   "Canada/Atlantic",
+   -14400000
+  ],
+  [
+   "Canada/Central",
+   -21600000
+  ],
+  [
+   "Canada/Eastern",
+   -18000000
+  ],
+  [
+   "Canada/Mountain",
+   -25200000
+  ],
+  [
+   "Canada/Newfoundland",
+   -12600000
+  ],
+  [
+   "Canada/Pacific",
+   -28800000
+  ],
+  [
+   "Canada/Saskatchewan",
+   -21600000
+  ],
+  [
+   "Canada/Yukon",
+   -25200000
+  ],
+  [
+   "Chile/Continental",
+   -14400000
+  ],
+  [
+   "Chile/EasterIsland",
+   -21600000
+  ],
+  [
+   "Cuba",
+   -18000000
+  ],
+  [
+   "EET",
+   7200000
+  ],
+  [
+   "EST",
+   -18000000
+  ],
+  [
+   "EST5EDT",
+   -18000000
+  ],
+  [
+   "Egypt",
+   7200000
+  ],
+  [
+   "Eire",
+   0
+  ],
+  [
+   "Etc/GMT",
+   0
+  ],
+  [
+   "Etc/GMT+0",
+   0
+  ],
+  [
+   "Etc/GMT+1",
+   -3600000
+  ],
+  [
+   "Etc/GMT+10",
+   -36000000
+  ],
+  [
+   "Etc/GMT+11",
+   -39600000
+  ],
+  [
+   "Etc/GMT+12",
+   -43200000
+  ],
+  [
+   "Etc/GMT+2",
+   -7200000
+  ],
+  [
+   "Etc/GMT+3",
+   -10800000
+  ],
+  [
+   "Etc/GMT+4",
+   -14400000
+  ],
+  [
+   "Etc/GMT+5",
+   -18000000
+  ],
+  [
+   "Etc/GMT+6",
+   -21600000
+  ],
+  [
+   "Etc/GMT+7",
+   -25200000
+  ],
+  [
+   "Etc/GMT+8",
+   -28800000
+  ],
+  [
+   "Etc/GMT+9",
+   -32400000
+  ],
+  [
+   "Etc/GMT-0",
+   0
+  ],
+  [
+   "Etc/GMT-1",
+   3600000
+  ],
+  [
+   "Etc/GMT-10",
+   36000000
+  ],
+  [
+   "Etc/GMT-11",
+   39600000
+  ],
+  [
+   "Etc/GMT-12",
+   43200000
+  ],
+  [
+   "Etc/GMT-13",
+   46800000
+  ],
+  [
+   "Etc/GMT-14",
+   50400000
+  ],
+  [
+   "Etc/GMT-2",
+   7200000
+  ],
+  [
+   "Etc/GMT-3",
+   10800000
+  ],
+  [
+   "Etc/GMT-4",
+   14400000
+  ],
+  [
+   "Etc/GMT-5",
+   18000000
+  ],
+  [
+   "Etc/GMT-6",
+   21600000
+  ],
+  [
+   "Etc/GMT-7",
+   25200000
+  ],
+  [
+   "Etc/GMT-8",
+   28800000
+  ],
+  [
+   "Etc/GMT-9",
+   32400000
+  ],
+  [
+   "Etc/GMT0",
+   0
+  ],
+  [
+   "Etc/Greenwich",
+   0
+  ],
+  [
+   "Etc/UCT",
+   0
+  ],
+  [
+   "Etc/UTC",
+   0
+  ],
+  [
+   "Etc/Universal",
+   0
+  ],
+  [
+   "Etc/Zulu",
+   0
+  ],
+  [
+   "Europe/Amsterdam",
+   3600000
+  ],
+  [
+   "Europe/Andorra",
+   3600000
+  ],
+  [
+   "Europe/Astrakhan",
+   14400000
+  ],
+  [
+   "Europe/Athens",
+   7200000
+  ],
+  [
+   "Europe/Belfast",
+   0
+  ],
+  [
+   "Europe/Belgrade",
+   3600000
+  ],
+  [
+   "Europe/Berlin",
+   3600000
+  ],
+  [
+   "Europe/Bratislava",
+   3600000
+  ],
+  [
+   "Europe/Brussels",
+   3600000
+  ],
+  [
+   "Europe/Bucharest",
+   7200000
+  ],
+  [
+   "Europe/Budapest",
+   3600000
+  ],
+  [
+   "Europe/Busingen",
+   3600000
+  ],
+  [
+   "Europe/Chisinau",
+   7200000
+  ],
+  [
+   "Europe/Copenhagen",
+   3600000
+  ],
+  [
+   "Europe/Dublin",
+   0
+  ],
+  [
+   "Europe/Gibraltar",
+   3600000
+  ],
+  [
+   "Europe/Guernsey",
+   0
+  ],
+  [
+   "Europe/Helsinki",
+   7200000
+  ],
+  [
+   "Europe/Isle_of_Man",
+   0
+  ],
+  [
+   "Europe/Istanbul",
+   10800000
+  ],
+  [
+   "Europe/Jersey",
+   0
+  ],
+  [
+   "Europe/Kaliningrad",
+   7200000
+  ],
+  [
+   "Europe/Kiev",
+   7200000
+  ],
+  [
+   "Europe/Kirov",
+   10800000
+  ],
+  [
+   "Europe/Kyiv",
+   7200000
+  ],
+  [
+   "Europe/Lisbon",
+   0
+  ],
+  [
+   "Europe/Ljubljana",
+   3600000
+  ],
+  [
+   "Europe/London",
+   0
+  ],
+  [
+   "Europe/Luxembourg",
+   3600000
+  ],
+  [
+   "Europe/Madrid",
+   3600000
+  ],
+  [
+   "Europe/Malta",
+   3600000
+  ],
+  [
+   "Europe/Mariehamn",
+   7200000
+  ],
+  [
+   "Europe/Minsk",
+   10800000
+  ],
+  [
+   "Europe/Monaco",
+   3600000
+  ],
+  [
+   "Europe/Moscow",
+   10800000
+  ],
+  [
+   "Europe/Nicosia",
+   7200000
+  ],
+  [
+   "Europe/Oslo",
+   3600000
+  ],
+  [
+   "Europe/Paris",
+   3600000
+  ],
+  [
+   "Europe/Podgorica",
+   3600000
+  ],
+  [
+   "Europe/Prague",
+   3600000
+  ],
+  [
+   "Europe/Riga",
+   7200000
+  ],
+  [
+   "Europe/Rome",
+   3600000
+  ],
+  [
+   "Europe/Samara",
+   14400000
+  ],
+  [
+   "Europe/San_Marino",
+   3600000
+  ],
+  [
+   "Europe/Sarajevo",
+   3600000
+  ],
+  [
+   "Europe/Saratov",
+   14400000
+  ],
+  [
+   "Europe/Simferopol",
+   10800000
+  ],
+  [
+   "Europe/Skopje",
+   3600000
+  ],
+  [
+   "Europe/Sofia",
+   7200000
+  ],
+  [
+   "Europe/Stockholm",
+   3600000
+  ],
+  [
+   "Europe/Tallinn",
+   7200000
+  ],
+  [
+   "Europe/Tirane",
+   3600000
+  ],
+  [
+   "Europe/Tiraspol",
+   7200000
+  ],
+  [
+   "Europe/Ulyanovsk",
+   14400000
+  ],
+  [
+   "Europe/Uzhgorod",
+   7200000
+  ],
+  [
+   "Europe/Vaduz",
+   3600000
+  ],
+  [
+   "Europe/Vatican",
+   3600000
+  ],
+  [
+   "Europe/Vienna",
+   3600000
+  ],
+  [
+   "Europe/Vilnius",
+   7200000
+  ],
+  [
+   "Europe/Volgograd",
+   10800000
+  ],
+  [
+   "Europe/Warsaw",
+   3600000
+  ],
+  [
+   "Europe/Zagreb",
+   3600000
+  ],
+  [
+   "Europe/Zaporozhye",
+   7200000
+  ],
+  [
+   "Europe/Zurich",
+   3600000
+  ],
+  [
+   "GB",
+   0
+  ],
+  [
+   "GB-Eire",
+   0
+  ],
+  [
+   "GMT",
+   0
+  ],
+  [
+   "GMT+0",
+   0
+  ],
+  [
+   "GMT-0",
+   0
+  ],
+  [
+   "GMT0",
+   0
+  ],
+  [
+   "Greenwich",
+   0
+  ],
+  [
+   "HST",
+   -36000000
+  ],
+  [
+   "Hongkong",
+   28800000
+  ],
+  [
+   "Iceland",
+   0
+  ],
+  [
+   "Indian/Antananarivo",
+   10800000
+  ],
+  [
+   "Indian/Chagos",
+   21600000
+  ],
+  [
+   "Indian/Christmas",
+   25200000
+  ],
+  [
+   "Indian/Cocos",
+   23400000
+  ],
+  [
+   "Indian/Comoro",
+   10800000
+  ],
+  [
+   "Indian/Kerguelen",
+   18000000
+  ],
+  [
+   "Indian/Mahe",
+   14400000
+  ],
+  [
+   "Indian/Maldives",
+   18000000
+  ],
+  [
+   "Indian/Mauritius",
+   14400000
+  ],
+  [
+   "Indian/Mayotte",
+   10800000
+  ],
+  [
+   "Indian/Reunion",
+   14400000
+  ],
+  [
+   "Iran",
+   12600000
+  ],
+  [
+   "Israel",
+   7200000
+  ],
+  [
+   "Jamaica",
+   -18000000
+  ],
+  [
+   "Japan",
+   32400000
+  ],
+  [
+   "Kwajalein",
+   43200000
+  ],
+  [
+   "Libya",
+   7200000
+  ],
+  [
+   "MET",
+   3600000
+  ],
+  [
+   "MST",
+   -25200000
+  ],
+  [
+   "MST7MDT",
+   -25200000
+  ],
+  [
+   "Mexico/BajaNorte",
+   -28800000
+  ],
+  [
+   "Mexico/BajaSur",
+   -25200000
+  ],
+  [
+   "Mexico/General",
+   -21600000
+  ],
+  [
+   "NZ",
+   43200000
+  ],
+  [
+   "NZ-CHAT",
+   45900000
+  ],
+  [
+   "Navajo",
+   -25200000
+  ],
+  [
+   "PRC",
+   28800000
+  ],
+  [
+   "PST8PDT",
+   -28800000
+  ],
+  [
+   "Pacific/Apia",
+   46800000
+  ],
+  [
+   "Pacific/Auckland",
+   43200000
+  ],
+  [
+   "Pacific/Bougainville",
+   39600000
+  ],
+  [
+   "Pacific/Chatham",
+   45900000
+  ],
+  [
+   "Pacific/Chuuk",
+   36000000
+  ],
+  [
+   "Pacific/Easter",
+   -21600000
+  ],
+  [
+   "Pacific/Efate",
+   39600000
+  ],
+  [
+   "Pacific/Enderbury",
+   46800000
+  ],
+  [
+   "Pacific/Fakaofo",
+   46800000
+  ],
+  [
+   "Pacific/Fiji",
+   43200000
+  ],
+  [
+   "Pacific/Funafuti",
+   43200000
+  ],
+  [
+   "Pacific/Galapagos",
+   -21600000
+  ],
+  [
+   "Pacific/Gambier",
+   -32400000
+  ],
+  [
+   "Pacific/Guadalcanal",
+   39600000
+  ],
+  [
+   "Pacific/Guam",
+   36000000
+  ],
+  [
+   "Pacific/Honolulu",
+   -36000000
+  ],
+  [
+   "Pacific/Johnston",
+   -36000000
+  ],
+  [
+   "Pacific/Kanton",
+   46800000
+  ],
+  [
+   "Pacific/Kiritimati",
+   50400000
+  ],
+  [
+   "Pacific/Kosrae",
+   39600000
+  ],
+  [
+   "Pacific/Kwajalein",
+   43200000
+  ],
+  [
+   "Pacific/Majuro",
+   43200000
+  ],
+  [
+   "Pacific/Marquesas",
+   -34200000
+  ],
+  [
+   "Pacific/Midway",
+   -39600000
+  ],
+  [
+   "Pacific/Nauru",
+   43200000
+  ],
+  [
+   "Pacific/Niue",
+   -39600000
+  ],
+  [
+   "Pacific/Norfolk",
+   39600000
+  ],
+  [
+   "Pacific/Noumea",
+   39600000
+  ],
+  [
+   "Pacific/Pago_Pago",
+   -39600000
+  ],
+  [
+   "Pacific/Palau",
+   32400000
+  ],
+  [
+   "Pacific/Pitcairn",
+   -28800000
+  ],
+  [
+   "Pacific/Pohnpei",
+   39600000
+  ],
+  [
+   "Pacific/Ponape",
+   39600000
+  ],
+  [
+   "Pacific/Port_Moresby",
+   36000000
+  ],
+  [
+   "Pacific/Rarotonga",
+   -36000000
+  ],
+  [
+   "Pacific/Saipan",
+   36000000
+  ],
+  [
+   "Pacific/Samoa",
+   -39600000
+  ],
+  [
+   "Pacific/Tahiti",
+   -36000000
+  ],
+  [
+   "Pacific/Tarawa",
+   43200000
+  ],
+  [
+   "Pacific/Tongatapu",
+   46800000
+  ],
+  [
+   "Pacific/Truk",
+   36000000
+  ],
+  [
+   "Pacific/Wake",
+   43200000
+  ],
+  [
+   "Pacific/Wallis",
+   43200000
+  ],
+  [
+   "Pacific/Yap",
+   36000000
+  ],
+  [
+   "Poland",
+   3600000
+  ],
+  [
+   "Portugal",
+   0
+  ],
+  [
+   "ROC",
+   28800000
+  ],
+  [
+   "ROK",
+   32400000
+  ],
+  [
+   "Singapore",
+   28800000
+  ],
+  [
+   "Turkey",
+   10800000
+  ],
+  [
+   "UCT",
+   0
+  ],
+  [
+   "US/Alaska",
+   -32400000
+  ],
+  [
+   "US/Aleutian",
+   -36000000
+  ],
+  [
+   "US/Arizona",
+   -25200000
+  ],
+  [
+   "US/Central",
+   -21600000
+  ],
+  [
+   "US/East-Indiana",
+   -18000000
+  ],
+  [
+   "US/Eastern",
+   -18000000
+  ],
+  [
+   "US/Hawaii",
+   -36000000
+  ],
+  [
+   "US/Indiana-Starke",
+   -21600000
+  ],
+  [
+   "US/Michigan",
+   -18000000
+  ],
+  [
+   "US/Mountain",
+   -25200000
+  ],
+  [
+   "US/Pacific",
+   -28800000
+  ],
+  [
+   "US/Samoa",
+   -39600000
+  ],
+  [
+   "UTC",
+   0
+  ],
+  [
+   "Universal",
+   0
+  ],
+  [
+   "W-SU",
+   10800000
+  ],
+  [
+   "WET",
+   0
+  ],
+  [
+   "Zulu",
+   0
+  ]
+ ],
+ "gmt_id": "GMT",
+ "sdk": 36,
+ "release": "16",
+ "fingerprint": "google/sdk_gphone64_arm64/emu64a:16/BE2A.250530.026.F3/13894323:userdebug/dev-keys"
+}

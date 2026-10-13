@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>&amp;Lt;</title>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<atom:link length="abc" title="" href="" rel="enclosure"></atom:link>
+<it:summary>&#60;d<![CDATA[iv>&#8203;</div><p>"quoted"</p><hr/>]]></it:summary>
+<it:subtitle><![CDATA[&
+]]>a &#60; b</it:subtitle>
+<description></description>
+<atom:link rel="last" href="https://example.com/feed?page=2" type="application/xhtml+xml" title="Café" length="9223372036854775808"/>
+<link> https://example.com/ </link>
+<title><![CDATA[&#0;  <li></li>]]></title>
+<it:image href=''/>
+<item><guid></guid> <media:content type="audio/*" fileSize="2147483648" duration='9223372036854775807' medium="document" isDefault="1" url="https://cdn.example.com/e p260.m4v"/> <description><![CDATA[  &;<p/>]]></description> <it:duration>01:26</it:duration> <link> https://e.com/x </link> <media:content medium="video" isDefault="TRUE" type="audio/x-wav" duration="9223372036854775807" fileSize="16385"/> <enclosure url="//example.com/e p240.jpg?file=x.mp3" length="2147483648" type="application/json"/> <title><![CDATA[&nbsp; #445 &#8211; Interview]]></title> <pubDate>Sat 24 Nov 0001 01:41:42 GMT+1400 (GMT)</pubDate></item>
+<item><enclosure url="https://cdn.example.com/café/194.ogx" length="16384" type="application/octet-stream"/>
+  <it:duration>.5</it:duration>
+  <guid>Café-guid</guid>
+  <link>https://example.com/ep</link>
+  <foo><description>Nested description</description></foo>
+  <pubDate>Tue, 17 November 2015 16:20</pubDate>
+  <title>
+S01E848	</title></item>
+<item><title><![CDATA[a < b]]></title><enclosure url="https://xn--caf-dma.example/ep1.php" length="9007199254740991" type="audio/x-wav"/><it:summary></it:summary><guid isPermaLink="false">Caf&#233;-guid</guid><it:subtitle>
+tab	here S01E554&#13;
+</it:subtitle><it:duration>24:28</it:duration><media:group><media:content url="ftp://files.example.com/134.mp3.zip" type="video" medium="video" fileSize="1" duration="1"/></media:group><cont:encoded>&#38;#xFFFF;&#60;br&gt;</cont:encoded><pubDate>18 Feb 1980 01:46:13 GMT-0800</pubDate><description></description></item></channel> </rss>

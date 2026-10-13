@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters"><id>https://example.com/feed</id>
+<title type="plain">&amp;  a > b</title>
+<author><name>C&amp;D</name></author>
+<subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;img src="x" alt="y"/&gt;&#60;br>&#60;/br>&lt;div&gt;a
+
+b&lt;/div>&#233;éé&#60;p>&lt;/p&gt;&lt;br>&lt;/br&gt;aaaaaééé</div></subtitle>
+</feed>

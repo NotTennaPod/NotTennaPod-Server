@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><itunes:image href="https://example.com/it.jpg"/><description>&#x3C;img src="x.png&quot;&gt;	AT&#x26;T	&#38;copy;éééa</description><title><![CDATA[1 <2#895 – Interview]]></title><link> https://example.com/ </link><item><title>&amp;#169;  cr&#13;lf</title>
+<guid>a&amp;b</guid>
+<link>https://example.com/ep</link>
+<pubDate>Tues, 15 January 1977 02:21:57</pubDate>
+<description><![CDATA[   <hr/>&#x;<br><li>{json: 1}</li>aaaaaaaaa<br><br>'single'<br>]]></description>
+<itunes:subtitle>
+  spaced  	</itunes:subtitle>
+<itunes:image href=""/>
+<enclosure url="//example.com/e p126.mkv" length="-1" type=""/></item><item><enclosure url="https://user:pass@media.example.net/ep164.m4a" length="٢٠٠٠٠" type="audio/mpeg"></enclosure>
+<podcast:transcript url='' type="text/vtt"/><podcast:transcript url="" type="text/html" language="en"/>
+<pubDate>21 apr 94 22:16 -1200</pubDate>
+<media:group><media:content url="//example.com/e p240.jpg?file=x.mp3" type="audio/mpeg; charset=binary" medium="audio" duration="3600"/></media:group>
+<sc:chapters version="1.2"><sc:chapter title="&lt;b>x&lt;/b>" image="https://example.com/ch.png" start="02:23:36"/><sc:chapter title="" image="https://example.com/ch.png" href="https://example.com/ch"/><sc:chapter title="Café &amp;amp; more" start="01:50:27.417" href='https://example.com/ch'></sc:chapter><sc:chapter href="" title="&lt;b>x&lt;/b>" start="1:02.5x"></sc:chapter><sc:chapter href="https://example.com/ch" title="😀" start='23:49'></sc:chapter><sc:chapter start="02:51:32.496" title="" href='' image="https://example.com/ch.png"/></sc:chapters>
+<guid>  spaced guid  </guid>
+<description><![CDATA[<3 <3<br><div>  spaced  </div>plain words<br><br>茶ééé😀<li>&mdash;</li>]]></description>
+<i:image href=" "/>
+<atom:link length="9223372036854775808" type="audio/mpeg" href="" rel='alternate'/>
+<itunes:summary><![CDATA[<]]>img></itunes:summary>
+<title>&lt;b>&#38;amp;</title>
+<itunes:duration>7746.329</itunes:duration></item></channel>
+</rss>

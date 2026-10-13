@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><itunes:subtitle><![CDATA[&amp  [x]]]></itunes:subtitle><image><title>Image title</title><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image><link xmlns="http://www.w3.org/2005/Atom" length="20000" href="" rel='Next' title='Café'/><language> EN-US </language><p:funding xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">Support us</p:funding><item><guid></guid>
+  <content:encoded>&#x1F600;ééé😀😀😀&#x26;#128512;&#x3C;li>x&lt;y&#60;/li&gt;</content:encoded>
+  <link> https://e.com/x </link>
+  <pubDate>01 Jan 2547 23:06:46 CESTCET</pubDate>
+  <itunes:duration>7488.407</itunes:duration>
+  <title>
+&amp;amp
+&#x26;;	</title></item><item><title>http://example.com/?a=1&amp;b=2</title>
+<guid isPermaLink='true'>a&#x26;b</guid>
+<pubDate>Fri, 20 Sep 2340 18:00 +0200 2024</pubDate>
+<content:encoded>Episode 12ééé</content:encoded>
+<enclosure length="-1" type="application/x-bittorrent"/>
+<mrss:thumbnail url="https://example.com/th.jpg"/></item><itunes:image href=""/><p:funding xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url='https://example.com/donate'>Support us</p:funding><link> https://example.com/ </link><title><![CDATA[&lt;b&gt;escaped&lt;/b&gt;tab	herea < b]]></title><p:funding xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url="">&lt;b&gt;x&#60;/b></p:funding></channel>
+  </rss>

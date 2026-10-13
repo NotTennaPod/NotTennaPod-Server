@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link type="application/atom+xml" href="https://example.com/alt.xml" length="12" rel="self"></atom:link> <link> https://example.com/ </link> <itunes:subtitle><![CDATA[&mdash; <sub>&amp;</sub> ]]>茶</itunes:subtitle> <atom:link rel="related" title='Café' type="audio/mpeg" href="https://xn--caf-dma.example/café/335.ogx"/> <itunes:image href=" "/> <atom:link rel='Next' href='//example.com/122.aif' type="text/html" title="MP3 feed"/> <title>&amp;copy;
+R&#38;D</title> <itunes:summary>
+
+http://example.com/?a=1&amp;b=2&#x3C;br/&gt;[x]&lt;br></itunes:summary> <podcast:funding/> <item><title>&#60;center&gt;&amp;copy;&lt;/center&gt;
+שלום</title>
+<pubDate>Tue, 10 Nov 1992 13:08</pubDate>
+<description>éééa &#60; baaaaaa</description>
+<itunes:author>Item author</itunes:author>
+<enclosure url="https://xn--caf-dma.example/café/17.aac" length="52428800" type="video/mp4"/></item> <item><title>第527集</title>
+<guid isPermaLink="false">urn:uuid:fae6fe7b</guid>
+<pubDate>Tue, 02 Jul 2002 23:50:40</pubDate>
+<description><![CDATA[aaaaaaaaa]]></description>
+<itunes:subtitle>&#13;
+AT&#38;Ttab	here
+</itunes:subtitle>
+<itunes:image href=" https://e.com/i.png "></itunes:image>
+<itunes:duration>-0.5</itunes:duration>
+<enclosure url="//example.com/ep276.txt?file=x.mp3" length="9007199254740993" type="audio/x-wav"/>
+<podcast:chapters url="" type="application/json+chapters"/>
+<atom:link type="application/xhtml+xml" rel="first"/>
+<podcast:person role="host">Jane</podcast:person></item></channel>
+</rss>

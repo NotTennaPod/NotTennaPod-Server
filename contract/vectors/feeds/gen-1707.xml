@@ -1,0 +1,27 @@
+﻿<!DOCTYPE rss [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<channel xmlns:media="http://search.yahoo.com/mrss/"><image><url>https://example.com/img.png</url></image>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<x xmlns="urn:other"><title>Default namespace title</title></x>
+<link>https://example.com</link>
+<title><![CDATA[<div><p]]>>&#38;unknown;&lt;/p&gt;&lt;/div&gt;  &lt;b&gt;Bold&#x3C;/b> title</title>
+<media:thumbnail url=""/>
+<language>pt-BR</language>
+<item><title><![CDATA[ <3 <3   leading
+]]></title> <guid> </guid> <pubDate>Wed, 06 May 2426 22:16:11 +0530</pubDate> <enclosure url="" length="２０００００" type="audio/ogg"></enclosure> <media:thumbnail url=""/></item>
+<item><media:content type="x-audio/mpeg" fileSize='4294967296' medium="video"></media:content><title><![CDATA[<strong>sep</strong> multi
+line &#x1F600;]]></title><media:content duration="0" isDefault='true' fileSize='9223372036854775808' type="video/mp4" medium='Audio'/><media:content fileSize='18446744073709551616' duration="abc" type="audio/aac" isDefault="TRUE"/><link> https://e.com/x </link><guid></guid></item>
+<item><title>&#x26;;
+#hash</title>
+  <guid isPermaLink="true">  spaced guid  </guid>
+  <link></link>
+  <pubDate>1992-05-260</pubDate>
+  <enclosure url="https://example.com:8443/e p263.wma?auth=yes" length="123456" type="x-audio/mpeg"/>
+  <enclosure url="https://example.com/a.b/a/b/c252.m4v" length='9223372036854775808' type="video/mp4"/>
+  <enclosure url="" length='9007199254740992' type='audio/x-wav'/>
+  <media:content fileSize="9007199254740992" url=" //example.com/10.html " type="Audio/MPEG" duration="1.5" medium="image" isDefault="TRUE"/>
+  <media:content fileSize="0" duration="1" type="audio/mpeg; charset=binary" medium="image"/>
+  <media:content url="https://example.com:8443/a/b/c214.mov" type="audio/aac" isDefault="true" duration="0060" fileSize='-9223372036854775808'/></item>
+<item><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">😀&lt;li&gt;&#38;apos;a&amp;apos;&#60;/li>aaaa😀&#60;br /&gt;	&lt;3 &lt;3&lt;div>&#38;amp&#60;/div&gt;&#60;img></content:encoded><link> https://e.com/x </link><guid isPermaLink="true">https://example.com/item/75497</guid><enclosure url="ftp://files.example.com/dir.with.dots/ep392.aif" length="0x4E20" type="audio/opus"/><pubDate>
+03 Jul 1982 00:32:16 -0500
+</pubDate><title>&lt;u&gt;1 &#60;2&lt;/u&gt;</title></item></channel> </rss>

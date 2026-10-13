@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
+<channel xmlns:psc="http://podlove.org/simple-chapters"><atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="ftp://files.example.com/206.3gp" type="application/rss+xml" rel="Next" title="Café" length="12"/>
+<description>&#60;li>&lt;p&gt;Para&lt;/p&gt;&lt;/li> a=b&#38;c=d a&#13;
+b&lt;br&gt;  leading&#x3C;p/> &amp;#xA9; http://example.com/?a=1&amp;b=2</description>
+<it:summary><![CDATA[ שלוםééé<br/>]]></it:summary>
+<it:subtitle><![CDATA[{json: 1}]]></it:subtitle>
+<lastBuildDate>19 Dec 1975 14:24:20 +01</lastBuildDate>
+<it:owner><it:name>Owner</it:name><it:email>o@example.com</it:email></it:owner>
+<it:author>Jane Doe</it:author>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="enclosure" length="12" type="application/rss+xml" title="Alternate" href=''/>
+<it:image href=" https://example.com/sp.jpg "></it:image>
+<title>😀 &lt;div&gt;#1 &#x2013; Interview&lt;/div&gt; plain words</title>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="first" type="application/xml+xhtml" href="https://example.com:8443/a/b/c360.3gp?dl=1.0"/>
+<link> https://example.com/ </link>
+<item><pubDate>0999-08-06T06:54:24Z</pubDate>
+  <title>a &gt; b  &#60;label>&amp;copy;&#x3C;/label&gt;  م&#1585;ح&#x628;ا</title>
+  <it:duration>3140.972</it:duration>
+  <media:content fileSize='0' type="audio/*" duration="1" medium="image"/>
+  <psc:chapters></psc:chapters>
+  <it:image href=" "/>
+  <media:thumbnail url="https://example.com/th.jpg"/>
+  <guid isPermaLink="true">a&#x26;b</guid>
+  <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">Foo,  19 Sep 13 17:03 +0100</dc:date>
+  <media:content medium="audio" fileSize='16384' url="https://example.com:8443/a/b/c111.m4a" duration="0"/>
+  <media:content url="https://example.com:8443/café/267.MP3" duration="2147483648" medium="video" type="audio" isDefault="1" fileSize="-0"></media:content>
+  <enclosure length="52428800" type="audio/x-m4a"/>
+  <link></link></item>
+<item><guid isPermaLink="true"></guid> <it:summary>a</it:summary> <title>&amp;copy;   </title> <enclosure url="ftp://files.example.com/a/b/c269.aif" length="123456789012345678" type="unknown"/> <pubDate>2560-11-01T14:34:29-0500</pubDate> <media:content fileSize="4294967296" duration="0060" type="text/html" isDefault="TRUE" medium='video'/> <description><![CDATA[<div> leading</div>  &#;<hr/>	Tom & Jerry <3<br></br><p>#7 – Interview</p><img><img src="x.png">]]></description> <enclosure url=" https://cdn.example.com/a/b/c246.txt " length=" 20000" type="audio/ogg"/> <link></link></item>
+<item><title><![CDATA[Episode 561
+plain words
+AT&T]]></title> <guid isPermaLink="true">https://example.com/item/63017</guid> <link></link> <pubDate>Mon, 20 Jan 2020 15:15 -0000</pubDate> <description>&lt;p>&#x3C;/p&gt;</description> <enclosure url='http://example.org/café/32.mp3.zip' length="00020000" type="image/jpeg"/> <media:content url="HTTPS://EXAMPLE.COM/182.txt" type="audio/opus" isDefault="1" fileSize="2147483648" medium="Audio" duration="0060"/></item></channel>
+</rss>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters">
+<channel><link> https://example.com/ </link> <comments>https://example.com/c</comments> <language>de-DE</language> <description></description> <title><![CDATA[&#x1F600;]]></title> <title>&lt;label&gt;&#x26;copy;&#x3C;/label>  &quot;quoted"  &#38;</title> <item><itunes:duration>48:25</itunes:duration>
+<media:thumbnail></media:thumbnail>
+<link> https://e.com/x </link>
+<title><![CDATA[ Folge 17: Über alles
+]]></title>
+<content:encoded></content:encoded>
+<media:content fileSize="16385" type=" audio/mpeg" medium="video" isDefault="TRUE" duration="2147483"/>
+<pc:chapters><psc:chapter start="1:2:" href="" title="&lt;b>x&lt;/b>"/><pc:chapter image="https://example.com/ch.png" start="81:18" title="Café &amp;amp; more"></pc:chapter><psc:chapter title="" start="9162" href="https://example.com/ch"/><psc:chapter start="" href="" image="https://example.com/ch.png"/><pc:chapter href="https://example.com/ch" title="Café &amp;amp; more" start="00:35:53"/></pc:chapters>
+<podcastindex:chapters type="application/json+chapters"/>
+<pubDate>26 Septem 79 05:17 -0800</pubDate>
+<guid isPermaLink="true">https://example.com/item/1068</guid>
+<description><![CDATA[aaaaaaa]]></description>
+<media:content duration="01:00" type='video/mp4' fileSize="52428800"/></item> <item><title>é  &#x26;quot;q&#x26;quot;</title> <guid> </guid> <link> https://e.com/x </link> <pubDate>Wednesday, 30 Dec 2332 18:21:28 +1400</pubDate> <itunes:image/> <itunes:duration>3745</itunes:duration> <enclosure url="http://example.org/a/b/c167" length="-16384" type="audio/flac"/></item></channel>
+</rss>

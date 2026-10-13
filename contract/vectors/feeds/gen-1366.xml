@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<subtitle type="html">	"quoted"&#60;div&gt;&#x26;hellip;&#x3C;/div>&lt;div&gt;#hash&#x3C;/div&gt;</subtitle> <author><name>Ann</name><email>a@example.com</email></author> <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">multi
+line  #hash  &#38;#65;&amp;#66;</div></title> <media:thumbnail url='https://example.com/amt.jpg'/> <logo> https://e.com/l.png
+</logo> <link rel="Next" type="application/atom+xml" href="http://example.org/70.mkv"/> <author><name></name></author> <entry><published>Fri May 1 23:57:14 2015</published><title type='plain'>&amp;Lt;</title><link href="https://example.com/pay" rel="hub" type="audio/mpeg"/><author><name>Entry author</name></author><id>
+id
+</id></entry> <entry><title>{json: 1}</title>
+<itunes:duration>33:21</itunes:duration>
+<link type="audio/mpeg" title='' rel="archives" length="9223372036854775808" href='https://example.com/feed?page=2'/>
+<content type='text'>&lt;p/&gt;</content>
+<link type="application/xml+xhtml" title="Alternate" href=""/>
+<link type="" href="https://example.com/" title="Café" rel="payment" length="abc"/>
+<itunes:category text="Arts"><itunes:category text="Design"/></itunes:category>
+<itunes:image href="https://example.com/e.jpg"/></entry> <entry><link rel="next" title='Alternate' type="audio/mpeg" href="https://example.com/"/><updated>Mon, 12 Sep 2478 13:</updated><summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#60;li>a
+  b&#x3C;/li>aa</div></summary><wrapper><inner><deeper>text</deeper></inner></wrapper><id> raw </id><media:content fileSize="00020000" duration="9223372036854775807" medium="audio" type="audio/mpeg" url="https://user:pass@media.example.net/dir.with.dots/ep43.oga"></media:content><content type='plain'><![CDATA[<p/><img><div>&#65;&#66;</div>ééé😀😀😀😀]]></content><title type='plain'>&lt;h6&gt;&amp;amp&lt;/h6> שלום</title></entry> <entry><itunes:image href=''/><media:content medium="video" type="application/json" fileSize="18446744073709551616" duration="2147484"/><itunes:duration>١:٢٣</itunes:duration><title type='html'><![CDATA[
+sep  'single'  第4]]>83集
+</title><id>
+id
+</id><link href="https://xn--caf-dma.example/café/153.html" title="MP3 feed" type="application/xhtml+xml" rel="alternate" length="9223372036854775808"/><updated>Fri Sep 8 08:15:09 1978</updated><published>Freitag, 07 Oct 2005 07:38 +0000</published></entry>
+</feed>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link href="https://example.com/feed?page=2" title="Alternate" length='9223372036854775808' type="application/atom+xml" rel='related'/><podcast:funding></podcast:funding><language>fr
+</language><link> https://example.com/ </link><i:author>Tom &amp; Jerry &#x3C;3</i:author><description>&lt;img src="x&quot; alt="y&quot;/&gt;😀😀 &amp;lt;b&amp;gt;</description><title>R&D <![CDATA[<strong>trailing </strong>]]></title><item><i:duration>759</i:duration>
+<pubDate>Wed, 04 Apr 09 09:15:35 -0500</pubDate>
+<podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/>
+<enclosure url='https://example.com/a.b/161' length="+20000" type="audio/x-wav"/>
+<i:image href=' '></i:image>
+<content:encoded>&lt;hr></content:encoded>
+<i:summary>&#x3C;br>  multi
+line&#60;img src="x" alt=&quot;y&quot;/>&#x3C;br/&gt;&#x3C;p&gt;&#x26;AMP;&lt;/p&gt;&#60;img src="x&quot; alt="y&quot;/>&#60;li>100%&#x3C;/li&gt;&#13;
+&amp;apos;a&#x26;apos;</i:summary>
+<title>&amp;AMP; tr<![CDATA[ailing ]]></title>
+<link>https://example.com/ep</link>
+<enclosure url="ftp://files.example.com/26.aif" length="２０００００" type="image/*"/>
+<guid isPermaLink="true">  spaced guid  </guid></item></channel>
+</rss>

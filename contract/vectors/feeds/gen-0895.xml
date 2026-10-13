@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel><description>&#60;BR&gt;</description> <link>https://example.com</link> <a10:link length="12" type="application/rss+xml" rel="archives" href="https://example.com/"/> <it:owner><itunes:name>Owner</itunes:name><it:email>o@example.com</it:email></it:owner> <it:author><![CDATA[&#128512; Pod]]></it:author> <language>fr
+</language> <itunes:summary>&lt;br>&lt;/br&gt; &#x26;#xA9;aaaaaaaa&#13;
+Episode 12  &#x5E9;&#1500;&#1493;&#1501;</itunes:summary> <lastBuildDate>Sat 23 Jun 0001 05:04:21 GMT+0100 (+25:00)</lastBuildDate> <p:funding xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">Support us</p:funding> <itunes:image/> <item><itunes:summary>	a=b&amp;c=d&lt;p/>
+'single'</itunes:summary><enclosure url="https://xn--caf-dma.example/dir.with.dots/ep145.webm" length="-9223372036854775808" type="video/mp4"/><pubDate>1986-02-01T15:20:29.093 +1400</pubDate><guid>  spaced guid  </guid><title><![CDATA[a < b
+&copy;]]></title></item> <item><link></link>
+<p:socialInteract xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" uri="" protocol="activitypub"/>
+<enclosure url="//example.com/49.pdf" length="9007199254740993" type=""/>
+<title>&#38;#xD800;&#x3C;h3>AT&#38;T&lt;/h3></title>
+<it:summary>&#233;éé</it:summary>
+<pubDate>11 Jul 2447 20:22:15 IST</pubDate>
+<pc:chapters version="1.2"><pc:chapter title="&#128512;" href="https://example.com/ch" start=":"/><pc:chapter href="" title="Café &amp;amp; more" start='03:49:30.001'/><pc:chapter title="&lt;b>x&lt;/b>" image="https://example.com/ch.png" start="2256"/></pc:chapters>
+<guid isPermaLink="true"> </guid>
+<it:duration>38.852</it:duration>
+<media:group><media:content isDefault="false" medium="audio" url='HTTPS://EXAMPLE.COM/377.xyz' fileSize="9223372036854775807" type='video/mp4'/></media:group></item> <item><link> https://e.com/x </link>
+<media:content type="text/html" fileSize="20000 " medium="video" duration="-5" isDefault="1"/>
+<title> &amp;#xA9;  S01E240 <![CDATA[ ]]></title>
+<pubDate>Sun, 09 Apr 1752 23:12:16 +00:00</pubDate>
+<it:author>Item author</it:author>
+<itunes:duration>5.</itunes:duration>
+<enclosure url="https://xn--caf-dma.example/dir.with.dots/ep145.webm" length="16385" type='video'/>
+<description> &amp;#65;&amp;#66;aaaaa
+
+&amp;AMP;</description>
+<content:encoded>&lt;div>Tom &amp; Jerry &#60;3&#60;/div>a
+
+ leading
+
+&#38;euro;	multi
+line</content:encoded></item></channel> </rss>

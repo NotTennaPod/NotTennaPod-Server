@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+<channel><itunes:summary>😀</itunes:summary>
+<podcast:funding url="">Support us</podcast:funding>
+<itunes:subtitle><![CDATA[&#128512;&amp]]></itunes:subtitle>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="MP3 feed" href="" rel="enclosure" length="12"/>
+<description>&lt;p&gt;A<![CDATA[T&T</p>]]></description>
+<language>fr
+</language>
+<link> https://example.com/ </link>
+<title><![CDATA[第402集 第739集]]></title>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/pay" rel="alternate" type="application/xhtml+xml" title=""/>
+<itunes:image href=""/>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="next" title="" type='application/xml+xhtml' href="https://example.com/alt.xml" length="9223372036854775808"/></channel> </rss>

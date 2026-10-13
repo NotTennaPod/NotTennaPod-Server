@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link> https://example.com/ </link> <description></description> <itunes:image href=" "/> <atom:link title='MP3 feed' type="application/xml+xhtml" rel="hub"/> <title>&#x3C;section&gt;&#1605;&#1585;&#1581;&#1576;&#1575;&lt;/section&gt;</title> <itunes:summary>&lt;p&gt;[x]&lt;/p&gt;&#x26;#;&lt;br>&#x3C;br/>&#x3C;p/&gt; &#38;Lt;</itunes:summary> <item><title>&#33590; &#x26;copy; Tom &#x26; Jerry &lt;3</title> <guid isPermaLink="true"></guid> <link></link> <description><![CDATA[<li>#hash</li>]]></description> <itunes:duration>1 :30</itunes:duration> <enclosure url="https://example.com/a.b/dir.with.dots/ep129.avi" length="2e5" type="audio/x-m4a"></enclosure></item> <item><title><![CDATA[Episode 12  &#1513;&#1500;&#1493;&#1501;   ]]></title>
+<link> https://e.com/x </link>
+<guid isPermaLink="true">dup</guid>
+<itunes:subtitle><![CDATA[<ul><li>Folge 512: Über alles</li><li>two</li></ul>]]></itunes:subtitle>
+<pubDate>Wed Feb 11 17:23:41 2476</pubDate>
+<enclosure url="https://xn--caf-dma.example/65.wav" length="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;" type="application/json"/></item></channel> </rss>

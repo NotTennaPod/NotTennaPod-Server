@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <channel><description><![CDATA[<p/>]]></description>
+<language> EN-US </language>
+<itunes:author>Tom &#38; Jerry &#60;3</itunes:author>
+<link></link>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<podcast:funding/>
+<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url=""/>
+<title>&lt;b>Bold&#60;/b&gt; title
+😀
+AT&#x26;<![CDATA[T]]></title>
+<itunes:image href=""/>
+<image><title>Image title</title><link>https://example.com/img-link</link><url></url></image>
+<podcast:funding>  spaced  </podcast:funding>
+<item><pubDate>09 Oct 2220 14:11:13 -0800</pubDate> <link>https://example.com/ep</link> <media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="-16384" type="video/webm" duration="2147483648" medium="audio" url="https://example.com:8443/dir.with.dots/ep115.mp4"/> <title><![CDATA[  padded  ]]></title> <media:content xmlns:media="http://search.yahoo.com/mrss/" type="Audio/MPEG" fileSize="52428800" url="https://cdn.example.com/a/b/c33.pdf"/> <enclosure url="https://cdn.example.com/a/b/c279.3gp" length="-0" type='video/x-matroska'/> <content:encoded><![CDATA[  #hash<div>http://example.com/?a=1&b=2</div>]]></content:encoded> <guid isPermaLink="false">Café-guid</guid></itme>
+<item><guid>Café-guid</guid>
+  <itunes:duration>3:25:31</itunes:duration>
+  <enclosure url=" HTTPS://EXAMPLE.COM/café/352.mid " length='9007199254740992' type='audio/wav'/>
+  <title/>
+  <link></link>
+  <description>http://example.com/?a=1&amp;b=2&lt;br>
+&#38;AMP;  x&lt;y</description></item>
+<item><psc:chapters version="1.2"><psc:chapter image='https://example.com/ch.png' title="" start="bad:time"></psc:chapter><psc:chapter start="75:09" href="https://example.com/ch" title="&lt;b>x&lt;/b>"/><psc:chapter image="https://example.com/ch.png" title="Intro" start="6279" href=""/><psc:chapter start="77:04" href="https://example.com/ch" image="https://example.com/ch.png" title='😀'/><psc:chapter title="" start="00:00:00" href="https://example.com/ch"/></psc:chapters> <enclosure url="http://example.org/a/b/c5.oga" length="4294967296" type="audio/x-m4a"/> <content:encoded><![CDATA[<hr>ééé<p>'single'</p>]]></content:encoded> <title><![CDATA[back\slash  ​]]></title> <itunes:image/> <description>&#60;div&gt;trailing &lt;/div&gt;&#38;#128512;&lt;br>😀</description> <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/th.jpg"/> <pubDate>1899-08-05T14:56:26-05:00</pubDate> <link></link> <guid isPermaLink="false">urn:uuid:578e1112</guid></item>
+<item><enclosure length="0" type='audio/wav'></enclosure><guid isPermaLink="true">Café-guid</guid><title>multi
+line</title></item>
+<item><title><![CDATA[Tom & Jerry ]]>&#60;3 #179 – Interview</title>
+<guid>dup</guid>
+<link> https://e.com/x </link>
+<description>&#60;li>plain words&lt;/li&gt;   leadingaaaa&#60;p/>&lt;p&gt;&lt;/p></description>
+<itunes:subtitle> AT&#x26;T  &#x3C;li>tab	here&#60;/li&gt; </itunes:subtitle>
+<itunes:image href=" https://e.com/i.png "/>
+<enclosure url="" length="9007199254740993" type="audio/aac"/>
+<psc:chapters version="1.2"><psc:chapter href="" title='😀' start='1:00 '/><psc:chapter start='02:55:02' title="😀" href="https://example.com/ch"/><psc:chapter start="0x10:00" title="Café &amp;amp; more" href="https://example.com/ch"/></psc:chapters>
+<!-- comment --><?pi data?></item>
+<item><title>100%
+R&#38;D</title><guid isPermaLink="false">https://example.com/item/40064</guid><link>https://example.com/ep</link><description>aaaaa</description><content:encoded><![CDATA[<p>&;</p>aaaa	&#169;   leading<hr/>]]></content:encoded><itunes:subtitle>http://example.com/?a=1&#x26;b=2
+x&#x3C;y</itunes:subtitle><itunes:duration>3161</itunes:duration><enclosure url="https://cdn.example.com/café/117.wav" length="4294967296" type="image/*"/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://example.org/café/223.jpg" type="audio/x-m4a" medium='video' duration="abc" isDefault="false"/><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/th.jpg"/></item>
+<item><guid isPermaLink="false"></guid>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" type="video/webm" medium="audio" fileSize="12" isDefault="TRUE" duration="0060" url="https://example.com/a.b/dir.with.dots/ep84.mov"/>
+<media:description xmlns:media="http://search.yahoo.com/mrss/" type="html"><![CDATA[<img src="x" alt="y"/>]]></media:description>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" duration="1.5" isDefault="TRUE" fileSize="0x4E20"/>
+<enclosure url="HTTPS://EXAMPLE.COM/ep130.amr" length="20000.0"/>
+<title>
+&amp;apos;a&#x26;apos; &#x26;#65;&#x26;#66; tab	here	</title>
+<itunes:subtitle>Episode 138
+&#38;lt
+</itunes:subtitle>
+<link> https://e.com/x </link>
+<pubDate>Wed Sep 7 22:58:55 1994 +2400</pubDate></item>
+<item><podcast:person role='host'>Jane</podcast:person>
+<pubDate>	Wed, 13 Feb 0999 06:26 +1400 GMT GMT  </pubDate>
+<podcast:transcript url=""></podcast:transcript><podcast:transcript url="https://example.com/t.vtt" type="application/json" language="en"/><podcast:transcript url="https://example.com/t.vtt" type="text/vtt" language="en"/>
+<dc:date>1995-03-03T17:45:26BST</dc:date>
+<link></link>
+<title>&#x26;#0;café</title>
+<media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" duration="1.5" fileSize="20000.0" type="audio/opus" isDefault="false"></media:content><media:content xmlns:media="http://search.yahoo.com/mrss/" type="" url="https://cdn.example.com/dir.with.dots/ep47.OGG" duration="2147483648" isDefault='true'></media:content></media:group>
+<itunes:duration>8846</itunes:duration>
+<description><![CDATA[aaaaaa<li>'single'</li><div>😀</div>aaaaaaa&#169;<br>]]></description></item></channel>
+  </rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><title>&#60;tt&gt;&#x26;amp;amp;&#x3C;/tt>x&#60;y</title>
+<atom:link rel="alternate" href="ftp://files.example.com/dir.with.dots/ep312.aac"/>
+<link></link>
+<itunes:image/>
+<itunes:summary>a &gt; b</itunes:summary>
+<description>&lt;p/></description>
+<atom:link length='abc' rel='archives' type="" title="" href='https://example.com/a.b/dir.with.dots/ep143.MP3?a=1&amp;b=2'/>
+<link xmlns="http://www.w3.org/2005/Atom" title="" href="https://user:pass@media.example.net/ep35.wav" rel=""/>
+<atom:link rel="self" href="https://example.com/alt.xml" length="9223372036854775808" type="audio/mpeg" title="Café"/>
+<i:author><![CDATA[Jane &]]>amp; John</i:author>
+<item><title><![CDATA[&#]]>169;  x&lt;y</title>
+<guid isPermaLink="false">https://example.com/item/78676</guid>
+<link> https://e.com/x </link>
+<pubDate>05 Mar 2002 03:55:61 +1400</pubDate>
+<content:encoded><![CDATA[	R&D]]></content:encoded>
+<itunes:subtitle>&#13;
+1 &#x3C;2	</itunes:subtitle>
+<itunes:duration>16086</itunes:duration>
+<enclosure url="https://xn--caf-dma.example/café/335.ogx" length="00020000" type='audio/x-m4a'/></item></channel> </rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link></link><mrss:thumbnail url=""/><title>&lt;p>Para&#60;/p&gt;</title><item><guid>https://example.com/item/70530</guid>
+  <pubDate>Wednesday, 08 Sep 1982 09:14 -0800</pubDate>
+  <title><![CDATA[ leading  x<y  <p>Para</p>]]></title>
+  <itunes:duration>16026</itunes:duration>
+  <enclosure url="" length="00020000" type="audio/mpeg; charset=binary"/>
+  <link> https://e.com/x </link>
+  <description>&#38;lt;b&#x26;gt;escaped&amp;lt;/b&amp;gt;&#60;br&gt;&lt;hr&gt;&#60;hr>&#60;div>&#x3C;3 &#x3C;3&lt;/div&gt;&#60;p&gt;&#x3C;img src="x.png"&gt; cover&lt;/p&gt;</description></item><item><enclosure url="https://user:pass@media.example.net/dir.with.dots/ep264.ogx" length="12" type="image/jpeg"/>
+<content:encoded> &amp;amp;</content:encoded>
+<pubDate>Tue 10 Dec 2002 0</pubDate>
+<description>&amp;copy;</description>
+<googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+<mrss:content url="HTTPS://EXAMPLE.COM/dir.with.dots/ep299.avi" medium='audio' isDefault="TRUE" fileSize="0" type="video" duration=" 60"/>
+<link> https://e.com/x </link>
+<title>Episode 871</title></item><item><title><![CDATA[]]>&lt;b>&amp;#128512;&#x3C;/b></title><guid isPermaLink="false">urn:uuid:3161bd21</guid><link>https://example.com/ep</link><pubDate>Tue, 28 Sep 1971 00:24:26 -12:00</pubDate><itunes:subtitle> </itunes:subtitle><enclosure url="" length='1,000,000' type='audio/wav'></enclosure></item><item><itunes:image href="https://example.com/ep.jpg"/>
+<enclosure url="https://xn--caf-dma.example/a/b/c96.aac#t=10" length="0x4E20" type="audio"/>
+<enclosure length="0" type="audio/x-wav"/>
+<enclosure url='ftp://files.example.com/e p349.opus?a=1&amp;b=2' length="0x4E20" type="video/quicktime"/>
+<link></link>
+<link xmlns="http://www.w3.org/2005/Atom" rel="" href="https://example.com/pay" type="audio/mpeg"/>
+<guid isPermaLink="true">Café-guid</guid>
+<title>AT&amp;T</title>
+<pubDate>Fri, 08 Nov 2002 10:18:02 +14:00</pubDate></item><item><title>#hash&amp;#65;&#38;#66;</title>
+<guid isPermaLink="true"></guid>
+<link>https://example.com/ep</link>
+<pubDate>&#13;
+Mon, 20 Feb 59 10:30:10 +0530	</pubDate>
+<description>&lt;p&gt;&#x3C;/p&gt;&lt;p>a > b&lt;/<![CDATA[p><p>&#65;&#66;</p>]]></description>
+<itunes:image href=" https://e.com/i.png "/>
+<itunes:duration>2562047788015215:30:07</itunes:duration></item></channel>
+</rss>

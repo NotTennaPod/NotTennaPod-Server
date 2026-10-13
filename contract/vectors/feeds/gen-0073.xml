@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pc="http://podlove.org/simple-chapters">
+<channel><title>&amp;nbsp; a
+  b a
+  b</title><image><url></url></image><itunes:author>  Spaced  </itunes:author><media:thumbnail url=""/><description><![CDATA[<div>Episode 12</div><img src="x" alt="y"/><br />  Episode 12<br/>   spaced  😀  &]]></description><itunes:summary>&#13;
+😀&#60;br/>&lt;div&gt;1 &#60;2&#60;/div&gt;</itunes:summary><link>https://example.com</link><item><title> &amp;; </title>
+  <guid>urn:uuid:dd5af994</guid>
+  <link></link>
+  <pubDate>1993-01-03x</pubDate>
+  <description>&#x26;nbsp;</description>
+  <itunes:summary>&amp;euro;&#60;img>
+  spaced   &#x26;#;&lt;li> &lt;/li&gt;</itunes:summary>
+  <enclosure url=" http://example.org/café/137.avi " length="" type="audio/ogg"/>
+  <enclosure length="16384" type='AUDIO/MPEG'/>
+  <enclosure url="" length="-16384" type="x-audio/mpeg"/>
+  <media:content medium="image" fileSize="20000.0" isDefault="TRUE" duration='2147483' type='audio/mp3'/>
+  <media:content fileSize="1" type="audio/opus" isDefault="true" medium="video"/>
+  <media:content url="https://xn--caf-dma.example/a/b/c96.aac#t=10" fileSize="00020000" type='application/json' isDefault='false' duration="1"/>
+  <podcastindex:transcript type="application/json"/><podcastindex:transcript url="https://example.com/t.vtt" type='application/json'/><podcastindex:transcript url="https://example.com/t.json" type="application/srr" language="en"></podcastindex:transcript></item><item><title>&lt;b>Bold&#x3C;/b> title &lt;P&gt;&amp;AMP;&#60;/P></title>
+<guid isPermaLink="true"></guid>
+<description><![CDATA[😀😀😀<img src="x.png">&#; &#x;<li>[x]</li>]]></description>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep359.ts" length="-16384" type="image/png"/>
+<enclosure url='' length='+20000' type='unknown'/>
+<enclosure url="https://example.com:8443/ep355.html" length='9007199254740991' type="text/html"/></item></channel> </rss>

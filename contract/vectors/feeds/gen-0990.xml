@@ -1,0 +1,12 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+  <link title="Alternate" href="ftp://files.example.com/dir.with.dots/ep315.xyz" length="12" rel="next"/><atom:link title="Café" rel="first" length="abc" type="application/rss+xml"/><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""/><itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[<p> leading</p>]]></itunes:summary><atom:id></atom:id><link type="application/xml+xhtml" title="Café" rel="alternate" length="abc"/><link type="audio/mpeg" length='abc' rel='related'/><atom:subtitle type="html">
+&amp;apos;a&amp;apos;   spaced<![CDATA[   &Lt;]]></atom:subtitle><atom:title><![CDATA[sep  茶  {json]]>: 1}</atom:title><atom:entry><title type="plain"><![CDATA[Tom &amp; Jerry &lt;3]]></title>
+<id>tag:x,2020:1</id>
+<atom:updated>30 MAY 1977 13:04:39 -0800</atom:updated>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">109:18</itunes:duration>
+<atom:published>1997-07-30T23:07:35.907 +0000</atom:published>
+<atom:link length="abc" href="https://example.com/alt.xml" title="Alternate" rel="Next" type='audio/mpeg'/>
+<content type="text"></content>
+<summary type="html"> a &#x3C; b  茶&#60;li>tab	here&lt;/li&gt;
+
+&#38;AMP;&#60;li&gt;a &lt; b&lt;/li>{json: 1}&lt;br>  &#38;#xA9;ééé</summary></atom:entry> </feed>

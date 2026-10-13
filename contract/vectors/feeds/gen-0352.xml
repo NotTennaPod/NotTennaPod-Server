@@ -1,0 +1,11 @@
+<rss version="0.91" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><description> ​ééé</description>
+  <atom:link title="MP3 feed" type="" href="" length="20000" rel='related'/>
+  <textInput><title>Search</title><link>https://example.com/search</link></textInput>
+  <podcast:funding url="">&lt;b&gt;x&#x3C;/b></podcast:funding>
+  <atom:link title="Café" href="" rel="last" type="audio/mpeg" length="9223372036854775808"></atom:link>
+  <link></link>
+  <image><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link></image>
+  <title><![CDATA[茶​]]></title></channel>
+</rss>

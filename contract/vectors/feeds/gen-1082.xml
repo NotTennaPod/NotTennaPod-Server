@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><link>https://example.com</link>
+<description>sep</description>
+<atom:link title="MP3 feed" href="http://example.org/e p15" type=""></atom:link>
+<link xmlns="http://www.w3.org/2005/Atom" title="" type="application/xhtml+xml" rel="related" href="https://example.com/"/>
+<pi:funding url=""/>
+<item><title>  padded  &#60;span style="color:red">AT&amp;T&#60;/span></title>
+<description>  a &#60; b&#31532;7&#38598;&lt;br>&#x3C;/br&gt;</description>
+<guid></guid></item>
+<item><enclosure url="" length="123456" type='application/ogg'/>
+<guid>
+</guid>
+<description>	&#x26;nbsp;&#60;br/>&lt;div>&amp;#x1F600;&#60;/div>  spaced  &#x3C;br&gt;1 &#60;2&#233;é&#233;{json: 1}&lt;br&gt;&lt;br&gt;</description>
+<link></link>
+<pubDate>31 Jul 81 11:00 -0800</pubDate>
+<enclosure url="https://cdn.example.com/a/b/c250.php" length="00020000" type="image/*"/></item>
+<item><guid isPermaLink="true">Café-guid</guid>
+  <mrss:group><mrss:content duration="abc" type="Audio/MPEG" url="//example.com/ep281" medium="document" fileSize="123456789012345678" isDefault='1'/><mrss:content fileSize="12" type="audio/x-wav" duration=" 60" url="https://example.com:8443/e p263.wma?auth=yes" medium="document"/></mrss:group>
+  <enclosure url="https://user:pass@media.example.net/café/224.avi" length="1" type="application/pdf"></enclosure>
+  <pubDate> 2349-09-30T14:16:40&#13;
+</pubDate>
+  <title>#hash</title>
+  <description>&amp;apos;a&amp;apos;&lt;br>&#60;div&gt;&#x26;amp;amp;&#x3C;/div>	é&#xE9;éTom &amp; Jerry &lt;3</description>
+  <psc:chapters><psc:chapter title="&lt;b>x&lt;/b>" start="02:51:31" image="https://example.com/ch.png" href="https://example.com/ch"/><psc:chapter image="https://example.com/ch.png" start="-1:00" title='&#128512;'/><psc:chapter href="https://example.com/ch" title="Intro" start='61:23'/><psc:chapter title='' start="0"/></psc:chapters></item>
+<item><pubDate>Sunday, 22 Jul 1973 03:58:54 -0000</pubDate>
+  <mrss:content type="text/plain" duration="01:00" isDefault="1" fileSize='-0'/>
+  <title>#hash
+&#x3C;b&gt;&#38;#128512;&lt;/b></title>
+  <description></description>
+  <atom:link rel="self" title="MP3 feed" length="20000"/>
+  <enclosure length="12" type="x-audio/mpeg"/></item></channel></rss>

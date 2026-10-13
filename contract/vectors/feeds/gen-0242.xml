@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters">
+<title>&amp;;
+&lt;dl>&#x3C;dt&gt;cr&#13;lf&lt;/dt>&#x3C;dd&gt;b&lt;/dd&gt;&lt;/dl&gt;
+&#128512;</title>
+<link length="12" rel="Next" type="" href="" title='Café'/>
+<link rel="related" href="https://example.com/alt.xml" type='application/rss+xml' title="MP3 feed"/>
+<link type='audio/mpeg' length="9223372036854775808" title="MP3 feed" href="https://example.com/" rel="archives"/>
+<itunes:author>&#128512; Pod</itunes:author>
+<author><name>&#xC9;mile</name></author>
+<id>https://example.com/feed</id>
+<entry><link type="text/html" length="12" rel="first" title=""/>
+<published>  Monday, 02 Jan 75 12:54:47 -0000	</published>
+<summary type='html'><![CDATA[100%<li>{json: 1}</li>
+&#xFFFF;<br/> &]]></summary>
+<author><name>Entry author</name></author>
+<link href="https://example.com/alt.xml" type="text/html" length='abc' title="Alternate" rel='last'/>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x26;unknown;  &#x26;euro;</div></title></entry>
+<entry><updated>Thu Dec 17 24:31:44 2195</updated>
+  <title type="HTML"><![CDATA[&#8203;]]> &#x3C;3 &lt;3  </title>
+  <link length="12" rel="alternate" href="https://example.com/feed?page=2" type="audio/mpeg" title=""/>
+  <media:content duration="01:00" type='audio/' url="https://example.com/a.b/a/b/c160.m4v" isDefault="false" fileSize=" 20000" medium="Audio"/>
+  <updated>Thu,11 Jun 2015 11:55:29 -0000</updated></entry></feed>

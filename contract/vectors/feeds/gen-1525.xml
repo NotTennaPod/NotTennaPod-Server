@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+<channel xmlns:atom="http://www.w3.org/2005/Atom"><itunes:image/> <description>&#x3C;p&gt;&#x26;#xFFFF;&lt;/p&gt;</description> <link></link> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <title><![CDATA[ &amp; é]]></title> <itunes:summary><![CDATA[<p/><img><p></p>😀😀😀😀<div><]]>img src="x.png&quot;&gt; cover&lt;/div&gt;</itunes:summary> <itunes:new-feed-url></itunes:new-feed-url> <language>TR</language> <item><media:content duration="+60" type="video" url="//example.com/a/b/c356.torrent" fileSize="123456"/>
+<enclosure length="" type="image/*"/>
+<media:content url="ftp://files.example.com/dir.with.dots/ep202.xyz?dl=1.0" duration="3600" isDefault='TRUE' medium="video" type="audio/mpeg" fileSize="-9223372036854775808"/>
+<comments>https://example.com/c</comments>
+<guid isPermaLink='false'>a&#x26;b</guid>
+<content:encoded><![CDATA[	{json: 1}<div>S01E7</div><BR>😀<img src="x.png">]]></content:encoded>
+<itunes:duration>170:49</itunes:duration>
+<itunes:image href=" https://e.com/i.png "/>
+<title>[x]  <![CDATA[ ]]></title>
+<description></description>
+<link>https://example.com/ep</link>
+<enclosure url="" length="9007199254740993" type="image/jpeg"/></item> <item><link> https://e.com/x </link>
+  <enclosure url='HTTPS://EXAMPLE.COM/e p362.m4a?file=x.mp3' length="9007199254740991" type="audio"/>
+  <content:encoded>  éback\slash&#x3C;br&gt;</content:encoded>
+  <description>&#x26;amp;amp;&#60;br>​ #hash</description>
+  <p:chapters type="application/json+chapters"/>
+  <itunes:duration>1665.657</itunes:duration>
+  <title>{json: 1} a&#13;
+b</title>
+  <pubDate>1989-05-13CDT</pubDate>
+  <atom:link type='' length='20000' href="https://example.com/alt.xml" rel="archives" title="Café"/>
+  <guid isPermaLink="true">a&#x26;b</guid></item> <item><title>&#60;h1>cr&#13;lf&#x3C;/h1></title>
+<description>éééم&#x631;ح&#1576;ا&lt;b<![CDATA[r>ééé]]></description>
+<itunes:duration>179:35</itunes:duration>
+<content:encoded>&lt;img><![CDATA[]]></content:encoded>
+<enclosure url="HTTPS://EXAMPLE.COM/e p216.ogg" length="16383" type="audio/"></enclosure>
+<guid isPermaLink="true">Café-guid</guid></item></channel>
+</rss>

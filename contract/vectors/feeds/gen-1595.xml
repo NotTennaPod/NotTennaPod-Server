@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:media="http://search.yahoo.com/mrss/"><title><![CDATA[&lt;b&gt;escaped&lt;/b&gt;
+100%]]></title>
+<description><![CDATA[
+a > b]]></description>
+<atom:link rel="hub" length="20000" href="https://cdn.example.com/ep184.php" type='text/html'/>
+<link>https://example.com</link>
+<it:subtitle>é
+&lt;ol&gt;&#60;li&gt;trailing &lt;/li>&lt;/ol>
+&lt;p style="text-align:center"&gt;&#38;lt&#x3C;/p&gt;</it:subtitle>
+<it:image href=""/>
+<item><title><![CDATA[Folge 246: Über alles]]></title><it:duration>NaN</it:duration><pubDate>Mon, 15 Feb 1988 23:05 +00:0</pubDate><description>&amp;#<![CDATA[xFFFF;]]></description><it:subtitle><![CDATA[R&D
+<b>Bold</b> title
+&#128512;]]></it:subtitle><link>https://example.com/ep</link><enclosure length='9007199254740993' type="Audio/MPEG"/></item>
+<item><guid isPermaLink="false">dup</guid>
+<media:content url="https://user:pass@media.example.net/e p327.avi" fileSize="123456" duration="01:00" type="application/octet-stream"/>
+<pubDate>Hefyb:</pubDate>
+<title>第274集  &#38;hellip;  &#38;amp;amp;</title>
+<pi:transcript url=""/><pi:transcript url="https://example.com/t.json" type="Application/JSON"/><pi:transcript url="https://example.com/t.vtt" type="application/srt" language='en'/>
+<enclosure url=" https://cdn.example.com/a/b/c246.txt " length="20000.0" type="video"/>
+<it:duration>8564</it:duration>
+<it:subtitle><![CDATA[]]>&#x26;AMP;  </it:subtitle>
+<dc:date>2171-07-28T15:99:52+0100</dc:date>
+<media:thumbnail url=""/>
+<description>&#x3C;div>第7&#x96C6;&#60;/div&gt;</description></item>
+<item><title>&amp;apos;a&#x26;apos; a&#13;
+b &#38;#x1F600;</title>
+<guid isPermaLink='true'> </guid>
+<link>https://example.com/ep</link>
+<pubDate>1975-09-23T10:32:57.588+094</pubDate>
+<it:duration>15079</it:duration></item></channel>
+</rss>

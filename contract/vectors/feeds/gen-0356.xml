@@ -1,0 +1,53 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><link></link><description>&#60;li&gt;http://example.com/?a=1&amp;b=2&lt;/li&gt;&lt;li>Episode 12&lt;/li&gt; 茶&#60;li&gt;&amp;mdash;&lt;/li>&#38;mdash;</description><title><![CDATA[<3 <3 ]]>Folge 683: Über alles &#x26;;</title><item><description></description>
+  <podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/>
+  <pubDate>Thu,27 Nov 2003 14:26:25 +0945</pubDate>
+  <link>https://example.com/ep</link>
+  <enclosure url="" length="20000 " type="text/html"/>
+  <title><![CDATA[<h1>#446 – Interv]]>iew&lt;/h1&gt;
+plain words
+Tom &#38; Jerry &lt;3</title>
+  <guid>
+</guid></item><item><title><![CDATA[&;
+Folge 123: Über alles]]></title>
+<guid>Café-guid</guid>
+<pubDate>	Wed Nov 30 25:06:36 2018 </pubDate>
+<description>&#13;
+1 &lt;2</description>
+<enclosure url="HTTPS://EXAMPLE.COM/e p191.png" length=" 20000" type="audio/*"></enclosure>
+<media:content duration="9223372036854775807" fileSize="16385" type="image/*" url="https://cdn.example.com/e p320.m4a" medium="image"/></item><item><link> https://e.com/x </link><title>&lt;em>http://example.com/?a=1&amp;b=2&lt;/em&gt;  tab	here  &lt;img src="x.png&quot;&gt; cover</title><content:encoded><![CDATA[<hr>]]></content:encoded><pubDate>Tuesday, 09 Mar 1993 14:13:26 -1200</pubDate><media:content fileSize="2147483647" isDefault="TRUE" type="application/pdf" duration="3600"/><enclosure url="ftp://files.example.com/ep169.m3u8" length=" 20000" type="AUDIO/MPEG"/><guid isPermaLink='false'>  spaced guid  </guid><media:content url="//example.com/ep60.aac" duration='2147484' fileSize="4294967296" type="image/png" medium="image"/></item><item><media:thumbnail url="https://example.com/th.jpg"/>
+<enclosure url='https://xn--caf-dma.example/154.m3u8?auth=yes' length="16384" type="image/*"/>
+<description><![CDATA[
+
+&#0;
+&#x1F600;&amp;<br><p>&hellip;</p>aaaaaa<div>&amp</div><br/>aaaaa]]></description>
+<pubDate>Wed, 19 Sept. 1986 14:15:09 -0000</pubDate>
+<wrapper><inner><deeper>text</deeper></inner></wrapper>
+<podcast:transcript url="" type="text/vtt" language='en'/><podcast:transcript url="https://example.com/t.vtt" type="text/plain" language="en"/><podcast:transcript url="" type="" language='en'></podcast:transcript>
+<guid isPermaLink="false">
+</guid>
+<title>
+&lt;b&gt;Episode 556
+&#x3C;del&gt;R&#x26;D&#60;/del&gt;
+S01E70&#13;
+</title></item><item><podcast:socialInteract protocol="activitypub"></podcast:socialInteract>
+<media:content type="video/mp4" fileSize="18446744073709551616" isDefault="TRUE" url="https://xn--caf-dma.example/dir.with.dots/ep147.ogg" duration='abc'/>
+<title>&#13;
+&#38;AMP;&amp;copy;  </title>
+<guid isPermaLink='true'>Café-guid</guid>
+<podcast:transcript type="application/json" language="en"/><podcast:transcript type="text/html"/><podcast:transcript url="https://example.com/t.vtt" type="application/json" language='en'/>
+<media:content fileSize="123456" medium="document" isDefault="TRUE" duration="1" type="video"/>
+<media:content url='https://example.com/a.b/2.jpg' medium="Audio" fileSize="52428800" isDefault="TRUE" type='video/x-matroska'/>
+<content:encoded>&lt;div&gt;x&#x3C;y&#x3C;<![CDATA[/div>]]></content:encoded>
+<link></link>
+<pubDate>02 Dec 1973 20:01:39 +1400
+  </pubDate>
+<enclosure url="" length="20000.0" type='Audio/MPEG'/></item><item><guid isPermaLink='false'>urn:uuid:e894908a</guid>
+<enclosure url="HTTPS://EXAMPLE.COM/a/b/c101.php" length=" 20000" type=" audio/mpeg"/>
+<media:group><media:content duration='2147484' url='ftp://files.example.com/e p291.MP3' type="text/html" fileSize='16384' medium='document'/></media:group>
+<description>Episode 7&lt;br&gt;&#60;div&gt;&lt;b&gt;Bold&lt;/b&gt; title&lt;/div&gt;
+http://example.com/?a=1&#38;b=2</description>
+<title><![CDATA[<i>a < b</i><3 <3]]></title>
+<media:thumbnail url=''/>
+<content:encoded></content:encoded></item></channel><item><title>Outside</title><enclosure url="https://example.com/o.mp3" type="audio/mpeg"/></item>
+  </rss>

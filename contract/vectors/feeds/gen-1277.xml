@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel><pi:funding url="">  spaced  </pi:funding>
+  <pi:funding url=""></pi:funding>
+  <description></description>
+  <itunes:summary>&lt;BR&gt;&lt;p&gt;{json: 1}&#60;/p&gt;&lt;br /></itunes:summary>
+  <title>{json: 1}</title>
+  <language>TR</language>
+  <itunes:image href=" "/>
+  <link xmlns="http://www.w3.org/2005/Atom" title="Café" href="https://example.com/" rel="next"/>
+  <itunes:author>Jane &amp;amp; John</itunes:author>
+  <pi:funding url="">Support us</pi:funding>
+  <link>https://example.com</link>
+  <item><enclosure url="//example.com/62.xyz" length="٢٠٠٠٠" type="audio/mp4"/>
+<title>&#38;mdash;</title></item>
+  <item><itunes:summary></itunes:summary><enclosure url="//example.com/49.pdf" length="2147483648" type="audio/x-wav"></enclosure><link> https://e.com/x </link><link xmlns="http://www.w3.org/2005/Atom" rel='alternate' length="20000" href="https://example.com/alt.xml" title="MP3 feed"/><pubDate>Sat 18 Aug 1979 02:39:</pubDate><title>&#38;nbsp;
+&#x26;lt
+&#x26;#x1F600;</title><itunes:image href=" "/><description><![CDATA[<img>]]></description></item>
+  <item><itunes:subtitle></itunes:subtitle> <title>&#x26;euro;&amp;amp;amp;Episode 740</title> <pubDate>2126-08-28T22:56:17CET</pubDate> <sc:chapters><sc:chapter start="" href="https://example.com/ch" image="https://example.com/ch.png"/><sc:chapter start="1.5e3" title="&lt;b>x&lt;/b>" href="" image="https://example.com/ch.png"/><chapters:chapter start='1:0x1p3' href=""/></sc:chapters> <itunes:image/> <guid></guid> <enclosure url="" length="9007199254740992" type="application/octet-stream"></enclosure> <pi:chapters type='application/json+chapters'/> <itunes:explicit>false</itunes:explicit> <link>https://example.com/ep</link></item>
+  <item><title>&amp;#0;&amp;ltsep</title>
+<guid isPermaLink="false"></guid>
+<link> https://e.com/x </link>
+<pubDate>
+Saturday, 10 Jun 1972 02:08 +1400	</pubDate>
+<description>aaééé&#xE9;&#233;é
+R&amp;D&lt;BR&gt;&#x3C;div&gt;cr&#13;lf&lt;/div>aaa'single'</description>
+<itunes:summary>&#x3C;br /></itunes:summary>
+<itunes:duration>2365.887</itunes:duration>
+<enclosure url="" length="2147483648" type="audio/x-m4a"></enclosure></item></channel></rss>

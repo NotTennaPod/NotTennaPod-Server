@@ -1,0 +1,16 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<id> raw </id>
+<icon></icon>
+<link title='Café' rel="archives" href="https://example.com/feed?page=2" type="application/atom+xml"/>
+<link rel="archives" title="" length='9223372036854775808' href=""/>
+<link rel="self" title="" href="https://example.com/feed?page=2"/>
+<link href="https://example.com/" rel="archives" title="MP3 feed" length="20000"/>
+<title><![CDATA[&#65;&#66;  &mdash;  &euro;]]></title>
+<entry><title type="html">&#38;nbsp;cr&#13;lf</title><link rel="related" title="MP3 feed" type="application/rss+xml" length='9223372036854775808'/><link title="Alternate" type="application/rss+xml" rel="enclosure" href="https://example.com/pay"/><id></id></entry>
+<entry><link type="application/rss+xml" href="https://example.com/alt.xml" rel="archives" length="9223372036854775808" title="Café"/> <summary type='html'>&lt;hr/>	茶</summary> <updated>Sat., 14 Aug 2000 23:45 +0000</updated> <title type="text"><![CDATA[multi
+line
+​]]></title> <id>tag:x,2020:1</id> <published>07 Oct 1969 20:14:60 +0945</published></entry>
+<entry><link title="Alternate" type="" rel="Next"/> <media:content fileSize="2e5" medium="video" type="audio/x-m4a" duration="2147484" url="https://example.com/a.b/café/208.ts"></media:content> <id>
+id
+</id> <content type="html">	caf&#xE9;&#x3C;li>&#60;img src="x.png&quot;&gt; cover&#60;/li&gt;&#60;hr/></content> <updated>03 Sep 0999 22:13:23 AEST</updated> <title type="text"><![CDATA[ Tom &amp; Jerry &lt;3	]]></title></entry>
+</feed>

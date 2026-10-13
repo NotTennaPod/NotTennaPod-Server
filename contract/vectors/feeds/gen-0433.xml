@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><description>R&amp;D&#60;br&gt;
+R&#x26;D
+&quot;quoted"ééééé&#233;</description><itunes:image href=''/><lastBuildDate>Sat, 03 June 1989 15:10:51</lastBuildDate><textInput><title>Search</title><link>https://example.com/search</link></textInput><link> https://example.com/ </link><at:link href='https://example.com:8443/e p93.opus' rel="alternate" length="9223372036854775808"/><itunes:new-feed-url>
+https://nl.example
+</itunes:new-feed-url><item><title><![CDATA[{json: 1}  第24集  Tom &amp; Jerry &lt;3]]></title><guid isPermaLink="true"></guid><link>https://example.com/ep</link><pubDate>Fri, 03 Aug 1984 01:47 +0000</pubDate><description>	é sep&lt;img src="x" alt="y&quot;/&gt;
+[x] </description><dcterms:date>Thursday, 18 May 1978 15:12 +0200</dcterms:date><content:encoded><![CDATA[ ש]]>ל&#1493;ם</content:encoded><itunes:subtitle><![CDATA[plain words ]]>&amp;#x;</itunes:subtitle><itunes:image/><enclosure url="" length="9007199254740993" type="audio/"/></item><item><guid>a&amp;b</guid><link>https://example.com/ep</link><pubDate>Fri, 17 Mar 1950 10:31 AKST</pubDate><description><![CDATA[<img src="x" alt="y"/><div>&lt;b&gt;escaped&lt;/b&gt;</div>]]></description><content:encoded>&lt;img src=&quot;x" alt=&quot;y"/>&lt;img src="x" alt="y&quot;/>&#x3C;div&gt;&amp;Lt;&lt;/div&gt;</content:encoded><itunes:image href="https://example.com/ep.jpg"></itunes:image><itunes:duration>2147483.647</itunes:duration><enclosure url='HTTPS://EXAMPLE.COM/dir.with.dots/ep66.aif' length="+20000" type="text/html"/><enclosure url="http://example.org/a/b/c27.amr" length="20000 " type=""/><enclosure url="https://example.com/a.b/ep37.aac" length="9007199254740991" type="audio"/><podcast:socialInteract xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" protocol="activitypub"/></item><item><title><![CDATA[茶<h1>#hash</h1>]]></title>
+  <guid>dup</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>2409-11-09T01:43:42 UTC</pubDate>
+  <description>
+Episode 12</description>
+  <content:encoded></content:encoded>
+  <itunes:image href=" https://e.com/i.png "/>
+  <itunes:duration>14156</itunes:duration>
+  <enclosure url='HTTPS://EXAMPLE.COM/e p348.aspx' length="1" type="audio/x-m4a"/>
+  <mrss:group><mrss:content url="https://example.com:8443/a/b/c360.3gp?dl=1.0" isDefault="false" type="x-audio/mpeg" duration=" 60" fileSize="4294967296"/></mrss:group>
+  <podcast:chapters xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url="" type='application/json+chapters'/></item><item><content:encoded><![CDATA[ééé]]></content:encoded>
+  <description></description>
+  <link>https://example.com/ep</link>
+  <enclosure length="-16384" type='audio/mpeg; charset=binary'/>
+  <pubDate>1969-09-26T07:56:59Z</pubDate>
+  <guid isPermaLink='true'>urn:uuid:7da13d9d</guid>
+  <title><![CDATA[ &amp;amp;  [x] ]]></title>
+  <enclosure url="ftp://files.example.com/189.jpg?dl=1.0" length="20000 " type='video/webm'/>
+  <mrss:content url="//example.com/a/b/c100.html" type="application/octet-stream" duration='01:00' fileSize="20000 "></mrss:content></item></channel>
+</rss>

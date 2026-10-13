@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><atom:link length="20000" type="application/xhtml+xml" title="Café" rel="alternate"/> <itunes:new-feed-url>HTTP://upper.example</itunes:new-feed-url> <atom:link rel='next' href='https://example.com/'/> <itunes:author>Jane Doe</itunes:author> <title>&#33590;
+R&amp;D
+&amp;#169;</title> <description><![CDATA[<img s]]>rc="x.png"></description> <itunes:image href="https://example.com/it.jpg"/> <item><description>&#x3C;div&gt; leading&lt;/div>  {json: 1}	100%&#x3C;img&gt;&#13;
+&#38;#x;&#128512;&#128512;&#x1F600;&lt;p&gt;&#x3C;/p&gt;&#x3C;p>Tom &#x26;amp; Jerry &amp;lt;3&#x3C;/p></description><itunes:duration>187:23</itunes:duration><link></link><media:content duration="9223372036854775807" fileSize="123456789012345678" url="https://example.com/a.b/dir.with.dots/ep233.wma" isDefault="false" medium="image" type=""/><pubDate>x, 	14 Jan 1973 13:21:16 -0800</pubDate><enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep339.m4b?auth=yes" length="16384" type="video/webm"></enclosure><itunes:subtitle><![CDATA[Tom & Jerry <3]]></itunes:subtitle><enclosure url="https://cdn.example.com/ep245.mov" length="-1"/><chapters:chapters version="1.2"><chapters:chapter start='1:2:3:4' title="&#128512;" image="https://example.com/ch.png"/><chapters:chapter start="1:00:NaN" href="https://example.com/ch" title="&lt;b>x&lt;/b>"/><chapters:chapter image="https://example.com/ch.png" href="https://example.com/ch" title="Café &amp;amp; more" start="00:44:29.025"/></chapters:chapters><enclosure url=' HTTPS://EXAMPLE.COM/café/352.mid ' length="9007199254740993" type='application/ogg'/><title>a=b&amp;c=d</title><itunes:summary></itunes:summary><content:encoded><![CDATA[aaaaaaaa]]></content:encoded><guid isPermaLink="false">a&#x26;b</guid></item> <item><title><![CDATA[
+&#xA9;
+#hash]]></title>
+<guid isPermaLink="false">urn:uuid:10104857</guid>
+<link> https://e.com/x </link>
+<pubDate>Sat, 05 apr 1980 18:37:10 -0800</pubDate>
+<description>&lt;BR>&#x3C;hr></description>
+<itunes:subtitle><![CDATA[&lt<strong><img src="x.png"> cover</strong>]]></itunes:subtitle>
+<enclosure url="HTTPS://EXAMPLE.COM/e p216.ogg" type="x-audio/mpeg"/>
+<media:content isDefault="false" medium="Audio" type="application/json" fileSize="0" url="//example.com/dir.with.dots/ep388.xyz" duration="2147484"></media:content>
+<media:content medium="Audio" type="audio/x-wav" fileSize="12"/>
+<media:content type="audio/" isDefault='1' duration="0" medium="video" fileSize="9007199254740992"/>
+<media:thumbnail/>
+<media:description><![CDATA[
+&#x;<p>&#x;</p><hr>]]></media:description></item></channel>
+</rss>

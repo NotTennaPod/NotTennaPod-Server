@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="windows-1252"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang=""> <logo></logo><link title="MP3 feed" type='application/rss+xml' rel="" href="https://example.com/alt.xml" length="9223372036854775808"></link><link href="https://example.com/alt.xml" type='' title=""/><subtitle type='HTML'><![CDATA[<BR]]>&gt;</subtitle><link href="https://user:pass@media.example.net/144.webm?dl=1.0" rel="next" type='' length="20000"/><updated>Sat Jul 5 19:16:37 1986</updated><title type="HTML"><![CDATA[&euro;  &#31532;3&#38598;]]></title><link length="20000" type="application/xml+xhtml" rel="last" href=""></link><entry><author><name>Entry author</name></author>
+<summary type="plain">&#13;
+100%</summary>
+<link rel="first" href="https://example.com/feed?page=2" length="abc" title="Alternate"/>
+<title>&amp;nbsp;</title>
+<published>&#13;
+2386-07-17T21:01:23 	 </published></entry><entry><summary type="xhtml"></summary> <id>urn:uuid:1</id> <link rel="payment" href="https://example.com/feed?page=2" type="text/html" title="Café" length='12'/> <title><![CDATA[Tom &amp; Jerry &lt;3&copy;Episode 177]]></title> <published>Sat, 18 Sep 2184 22:18 Coordinated Universal Time</published></entry><entry><media:content type="audio" fileSize="" duration="1.5" isDefault="false"/> <summary type="html">&amp;#xFF<![CDATA[FF;<br>]]></summary> <title type='html'>&amp;#0;</title> <updated>Fri, 05 Jan 2024 20.19.57 +0200</updated> <published>2341-05-23</published></entry><entry><media:content url="//example.com/ep80.txt#t=10" fileSize="0" type="Audio/MPEG" medium="audio" duration="2147483648"/>
+<id></id>
+<summary type="HTML"> &amp;hellip;</summary>
+<published>Saturday, 15 Dec 2283 12:30:00</published>
+<updated>2400-06-19T11:32:26Z</updated>
+<podcast:transcript type="application/x-subrip" language="en"/><podcast:transcript type="application/json" language="en"/>
+<title type="html">#hash  Tom &#x26; Jerry &lt;3</title></entry><entry><updated>Thu, 24 May 2012 16:59:52 CESTCET</updated>
+<id>
+id
+</id>
+<title type="text"><![CDATA[&#xA9;
+&#0;
+http://example.com/?a=1&b=2]]></title>
+<summary>&#128512;&#128512;&#128512;&#128512;ééé
+café</summary></entry><entry><id>
+id
+</id> <summary><![CDATA[  &#1513;&#1500;&#1493;&#1501;]]></summary> <link type="audio/mpeg" length="abc" title="" rel="hub" href=""/> <content type="html">&#60;br /&gt;&lt;div>&#x26;#x1F600;&lt;/div&gt;&lt;p&gt; leading&#x3C;/p></content> <author><name>Entry author</name></author> <title>&#x26;#xD800;
+&#1605;&#1585;&#1581;&#1576;&#1575;</title> <published>1986-10-06T08:13:55</published></entry><entry><summary type="html"><![CDATA[<li>&#xFFFF;</li>&#128512;]]></summary><published>2008-10-04T25:57:36+0100</published><link type='application/xml+xhtml' rel="last" title="" href="https://example.com/feed?page=2"/><media:content isDefault="false" type="audio/wav" url="https://example.com:8443/102.aac" medium="audio"/><author><name>Entry author</name></author><link length="20000" type="application/atom+xml" rel=''/></entry><entry><content type="text"><![CDATA[Episode 7<br>]]>&#x3C;hr&gt;&#128512;&#128512; plain words&#60;div>Folge 7: Über alles&#60;/div&gt;</content>
+<summary type="html"></summary>
+<link rel="enclosure" title="Alternate" href="https://example.com/alt.xml" type="application/xhtml+xml" length='12'/>
+<link length="abc" rel=""/>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#38;#;</div></title></entry><entry><id></id>
+  <link href="https://example.com/feed?page=2" type='text/html'/>
+  <title type="html">&#38;#;  {json: 1}</title>
+  <media:content type="audio/aac" duration=" 60" fileSize="2147483648" medium="video" url="ftp://files.example.com/dir.with.dots/ep392.aif"/>
+  <summary type="html"><![CDATA[<img>]]></summary>
+  <link title="" type="text/html" length="abc"/></entry><entry><link length="abc" rel="related" title=""></link>
+  <title type="HTML"><![CDATA[&#31532;64&#38598;
+]]></title>
+  <updated>Thursday,  1975-05-27T22:31:41Z</updated>
+  <id>
+id
+</id>
+  <x:foo xmlns:x="urn:x"><title>Nested title</title></x:foo></entry><entry><id> raw </id><author><name>Entry author</name></author><published>Sunday, 21 Jan 11 06:01:07</published><title type='xhtml'>&#33590;</title><psc:chapters></psc:chapters><updated>&#13;
+Tuesday, 22 Nov 2294 15:32 +0945 </updated></entry><entry><title type="html">&amp;lt  padded  </title>
+  <id> raw </id></entry></feed>

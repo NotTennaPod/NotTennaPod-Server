@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
+  <channel><itunes:summary></itunes:summary>
+<lastBuildDate>1993-11-27T16:36:33America/New_York</lastBuildDate>
+<language>pt-BR</language>
+<title><![CDATA[[x]]]></title>
+<itunes:image href=''/>
+<itunes:new-feed-url></itunes:new-feed-url>
+<podcast:season>2</podcast:season>
+<link>https://example.com</link>
+<description><![CDATA[  "quoted"<div>&mdash;</div>
+back\slash]]></description>
+<item><title>Tom &#x26; Jerry &lt;3
+Episod<![CDATA[e 12
+<p>Para</p>]]></title> <guid isPermaLink='false'> </guid> <enclosure url="https://cdn.example.com/a/b/c44.png" length="9007199254740993" type='audio/flac'/> <podcast:transcript url="" type="application/srt" language="en"/><podcast:transcript url="" type="application/srr"/></item></channel> </rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="0.91" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel><title>#hash</title>
+<a10:link type='application/xhtml+xml' title='' rel="enclosure" length="12" href="https://example.com/pay"/>
+<a10:link length="abc" rel='' title='MP3 feed' href=""/>
+<a10:link href="https://example.com/alt.xml" rel="last" title="MP3 feed" length="20000"/>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:author>
+<itunes:new-feed-url xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"> https://new.example.com/sp </itunes:new-feed-url>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""></itunes:image>
+<link>https://example.com</link>
+<itunes:owner xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:name xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Owner</itunes:name><itunes:email xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">o@example.com</itunes:email></itunes:owner>
+<language>pt-BR</language>
+<link xmlns="http://www.w3.org/2005/Atom" length="9223372036854775808" type="" title='Alternate' href="https://example.com/a.b/dir.with.dots/ep88.pdf" rel="payment"/>
+<image><title>Image title</title><url>https://example.com/img.png</url></image>
+<category>Technology</category>
+<itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">第673集  &#60;li&gt;cr&#13;lf&#60;/li></itunes:subtitle>
+<item><title>&lt;b&gt;café&#x3C;/b&gt;
+茶
+&lt;p&gt;cr&#13;lf&lt;/p&gt;</title>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" https://e.com/i.png "/>
+<guid>
+</guid>
+<description>&#60;p> leading&#60;/p&gt;&#x3C;BR&gt;&lt;p>&#x26;;&#60;/p&gt;&lt;p&gt;&#x26;nbsp;&lt;/p&gt;&lt;p&gt;&lt;/p></description>
+<link>https://example.com/ep</link>
+<pubDate>Mon Sep 14 14:51:10 2020 Europe/Berlin</pubDate>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#60;p&gt;&#x26;#169;&lt;/p&gt;</itunes:summary>
+<enclosure url="https://user:pass@media.example.net/café/363.OGG" length='' type='audio'/>
+<googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description></item>
+<item><title><![CDATA[&hellip;
+&#;
+http]]>://example.com/?a=1&#x26;b=2</title>
+<guid isPermaLink="false">Café-guid</guid>
+<link> https://e.com/x </link>
+<description></description>
+<itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">a&#13;
+b</itunes:subtitle>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1:02:03.5</itunes:duration>
+<enclosure url='https://xn--caf-dma.example/a/b/c96.aac#t=10' length="20000.0" type="text/plain"></enclosure></item></channel>
+</rss>

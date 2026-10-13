@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:author>  Spaced  </itunes:author> <atom:link type="application/xml+xhtml" rel='hub' length="abc" href="https://example.com/pay" title='Café'/> <item><title>&amp;#169;  tab	here</title> <guid isPermaLink="true">dup</guid> <link>https://example.com/ep</link> <pubDate>Sun, 17 Nov 1996 00:48:06 -1200</pubDate> <description>trailing &#60;br&gt;&lt;li&gt;a > b&#x3C;/li&gt;&lt;div&gt;{json: 1}&#60;/div&gt;</description> <enclosure url="" length="16385" type="audio/"/> <media:content medium="Audio" duration='-5' type="audio/mpeg; charset=binary" isDefault='1' fileSize="16383" url="https://example.com:8443/ep249.m4v"/> <media:content duration="1.5" url="//example.com/a/b/c234.html" fileSize="-9223372036854775808" medium='document' type='image/*'></media:content> <media:content type="audio/*" isDefault="false" medium='Audio' url="https://example.com:8443/dir.with.dots/ep394.OGG" duration=" 60" fileSize="20000 "></media:content></item> <item><description>multi
+line</description>
+<enclosure length="16385" type="application/pdf"/>
+<media:content medium="video" duration="0060" type="video/mp4" isDefault="true" fileSize="abc"/>
+<title><![CDATA[#hash
+plain words]]></title>
+<atom:link length="12" href="" type="" rel="" title="Café"/>
+<pubDate>Fri., 13 Dec 1996 04:29:12 +0530</pubDate>
+<link></link>
+<itunes:image href=" "/>
+<guid isPermaLink="true">https://example.com/item/97214</guid></item> <title><![CDATA[&AMP;]]></title> <language>fr
+</language> <podcast:funding url="https://example.com/donate"/> <link xmlns="http://www.w3.org/2005/Atom" title="MP3 feed" rel="self" href="https://example.com/alt.xml" type='application/rss+xml'/> <link xmlns="http://www.w3.org/2005/Atom" type="text/html" title='Café' href="https://example.com/feed?page=2" rel="last"/> <podcast:funding>&lt;b&gt;x&lt;/b></podcast:funding> <itunes:summary><![CDATA[<br/>
+&#xD800;]]></itunes:summary> <link></link> <atom:link rel="related" length="9223372036854775808" title='Alternate' href="https://example.com/"/> <media:thumbnail url='https://example.com/mt.jpg'/></channel> </rss>

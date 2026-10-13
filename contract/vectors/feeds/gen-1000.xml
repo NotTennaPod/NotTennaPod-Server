@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters"><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">  padded  </div></title>
+  <link type="application/atom+xml" length="9223372036854775808" title="Alternate" href="https://example.com/pay" rel="next"/>
+  <id></id>
+  <author><name>C&#38;D</name><email>a@example.com</email></author>
+  <entry><link length="9223372036854775808" rel='payment' href="https://example.com/" type='application/atom+xml' title=""/> <id> raw </id> <published>2224-08-21T22:19:40.+01</published> <link href="https://example.com/" rel="" title="" type="audio/mpeg"/> <title type="HTML"><![CDATA[&AMP;]]></title> <updated>Saturday, 06 May 1899 18:13 -0000</updated></entry>
+  <entry><summary><![CDATA[ é]]></summary><media:content type='video/mp4' medium="image" isDefault="1" fileSize=" 20000"/><title>&#x3C;span style="color:red&quot;&gt;a &gt; b&#x3C;/span&gt;</title><googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description><id>
+id
+</id><link rel="alternate" href="https://example.com/pay" type="application/rss+xml" length="abc"/></entry>
+  <entry><published>0099-06-21T03:00:50.595Z</published><link rel="alternate" title="" length="12" href="ftp://files.example.com/dir.with.dots/ep202.xyz?dl=1.0"></link><updated> Sun, 09 Aug 13 22:08:49 -0500
+</updated><id></id><link title="Café" rel="first" length="20000" href=""/><summary>😀&lt;p&gt;café&lt;/p></summary><author><name>Entry author</name></author><title type="HTML">a > b</title></entry>
+  <entry><link title='MP3 feed' href="" rel='hub'/>
+<link title="" length="abc" type="" href="https://example.com/" rel="enclosure"/>
+<id></id>
+<author><name>Entry author</name></author>
+<updated>1899-07-210</updated>
+<title><![CDATA[<b> ]]></title>
+<published>Fri, 20 Sep 1974 01:30:11 +1400 UTC</published>
+<link rel="next" title="Alternate" type="" href="https://example.com/"/></entry>
+  <entry><id></id> <updated>2003-11-16T25:50:34Z</updated> <title>&#160;</title> <link href='' title="Café" length="20000" rel="self"></link> <published>Sunday, 09 May 2500 07:47:59 HST</published></entry>
+</feed>

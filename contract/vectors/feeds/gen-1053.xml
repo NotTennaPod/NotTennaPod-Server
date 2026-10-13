@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><a10:link rel='payment' title="Café" length="abc" type='application/xhtml+xml'/>
+<title>  spaced    &lt;b&gt;Bold&#x3C;/b&gt; title</title>
+<language>fr
+</language>
+<a10:link title="Café" href='https://example.com/alt.xml' rel="self" type="application/xml+xhtml"/>
+<a10:link rel="payment" length="abc" title="MP3 feed" href="https://example.com/" type="application/rss+xml"/>
+<description><![CDATA[<li>plain words<]]>/li>&#x26;#128512;</description>
+<item><enclosure url="https://cdn.example.com/café/194.ogx" length="-16384" type='video'/>
+<link> https://e.com/x </link>
+<pubDate>Wed, 22 Feb 2378 08:51 pst</pubDate>
+<title>&lt;h1>&#x26;#xA9;&lt;/h1></title>
+<itunes:summary><![CDATA[<p/><p></p><br />]]></itunes:summary>
+<guid> </guid>
+<description>	R&#38;D<![CDATA[]]></description>
+<itunes:subtitle><![CDATA[1]]> &lt;2&#x26;Lt;</itunes:subtitle></item></channel></rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:media="http://search.yahoo.com/mrss/"><link> https://example.com/ </link>
+  <title><![CDATA[é]]></title>
+  <atom:link title="MP3 feed" length="9223372036854775808" type="application/xml+xhtml" href=""></atom:link>
+  <title><![CDATA[a
+  b]]></title>
+  <atom:link rel="payment" length="9223372036854775808" title="Café" href="HTTPS://EXAMPLE.COM/ep308.ogg"/>
+  <atom:link rel="next" title="" href='https://example.com/' type="audio/mpeg"/>
+  <description>&#x3C;br&gt;&#60;/br&gt; &#x26;amp &#38;amp;amp;&lt;br/&gt;&#60;br&gt;&#60;/br&gt;&#60;img src=&quot;x" alt="y"/>ééé &#38;#65;&#x26;#66;</description>
+  <item><link>https://example.com/ep</link> <description>&lt;br&gt;&lt;/br&gt;</description> <enclosure url="https://example.com/a.b/ep288.avi" length='4294967296' type=" audio/mpeg"/> <podcast:transcript url="https://example.com/t.vtt"/> <guid isPermaLink='false'>  spaced guid  </guid> <title>#hash</title></item></channel></rss>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xml:lang="EN-us">
+  <author><name>Ann</name></author>
+<link type="application/atom+xml" length="20000" title="MP3 feed"/>
+<link title='Alternate' length="12" type='application/xml+xhtml' rel="next" href="https://example.com/alt.xml"/>
+<title><![CDATA[Episode 12
+Episode 12
+<cite>&mdash;</cite>]]></title>
+<itunes:author><![CDATA[A,]]> B</itunes:author>
+<id> raw </id>
+<author><name>Ann</name></author>
+<updated>Fri Apr 27 01:50:03 2001 MST</updated>
+<link title="MP3 feed" type="application/rss+xml" href="https://example.com/" length="20000" rel="self"></link>
+<link title="MP3 feed" length="20000" type="" href="https://example.com/pay"/>
+<entry><link rel="Next" href='https://example.com/alt.xml'/>
+<id></id>
+<updated>2016-06-08T14:16:12Z</updated>
+<title>Episode 12</title>
+<itunes:duration>4433.166</itunes:duration>
+<summary type="xhtml"><![CDATA[<div><p>Para</p></div>  &amp;amp;  &]]></summary>
+<published>2002-06-28gmt</published></entry>
+</feed>

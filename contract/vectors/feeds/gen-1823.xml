@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><p:funding url='https://example.com/donate'>&#x3C;b>x&lt;/b></p:funding>
+<link></link>
+<itunes:summary>😀😀😀</itunes:summary>
+<title>&#x26;amp;
+&lt;li>&amp;;&#x3C;/li></title>
+<language>pt-BR</language>
+<itunes:author><![CDATA[第]]>一</itunes:author>
+<item><media:group><media:content duration="01:00" url='HTTPS://EXAMPLE.COM/a/b/c101.php' type="Audio/MPEG" medium="audio" isDefault='TRUE'/><media:content type="application/pdf" isDefault="false" duration="2147483" fileSize="16384" medium="Audio"/></media:group>
+<guid isPermaLink="true">https://example.com/item/90421</guid>
+<enclosure url="" length="00020000" type='image/jpeg'/>
+<pubDate>Sun, 12 Sep 1971 01:14:23 +020</pubDate>
+<link>https://example.com/ep</link>
+<description>&lt;li&gt;&amp;lt;b&amp;gt;&lt;/li&gt;&amp;#xFFFF;</description>
+<title>&#x3C;p style="text-align:center">caf&#233;&#60;/p&gt;</title>
+<itunes:duration>115:48</itunes:duration></item>
+<item><enclosure length="-0" type="image/png"/>
+<p:socialInteract protocol="activitypub"/>
+<link> https://e.com/x </link>
+<itunes:summary>&lt;li>&#x26;#65;&#x26;#66;&#x3C;/li&gt;ééé</itunes:summary>
+<media:group><media:content url="https://user:pass@media.example.net/e p327.avi" type='application/pdf' fileSize="1" medium='video' duration="2147484"/><media:content duration="abc" medium="image" fileSize="-9223372036854775808" url='https://example.com:8443/110.aspx' type="text/plain"/></media:group>
+<pubDate>1976-11-10T07:10:</pubDate>
+<title>Line&lt;br>break</title>
+<guid></guid></item>
+<item><title>&amp;amp; &#x3C;b>&#x26;#65;&#x26;#66; &#38;#xD800;</title>
+  <guid isPermaLink="false">
+</guid>
+  <pubDate>Thu, 14 Jul 2011 07:15:49 -1200</pubDate>
+  <content:encoded>&#x3C;br>&#13;
+http://example.com/?a=1&#x26;b=2</content:encoded>
+  <itunes:summary><![CDATA[<hr/>]]></itunes:summary>
+  <psc:chapters xmlns:psc="http://podlove.org/simple-chapters"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title="😀" href="" image="https://example.com/ch.png" start="Infinity:00"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start="03:30:25.463" title=""/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" href="https://example.com/ch" start="9793" title="😀" image="https://example.com/ch.png"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title="Intro" start=""/></psc:chapters>
+  <p:socialInteract uri="https://social.example/@a/1" protocol="activitypub"></p:socialInteract></item>
+<item><title>http://example.com/?a=1&amp;b=2 &lt;3 &#x3C;3 &#60;div>&lt;p>[x]&lt;/p&gt;&lt;/div&gt;</title>
+<guid>  spaced guid  </guid>
+<link></link>
+<pubDate>	Thu 6 Dec 1990 15:54:20 GMT-0000 (Central European Summer Time)
+</pubDate>
+<description>&#60;li>&#60;3 &lt;3&lt;/li&gt;&#60;div&gt;&amp;#65;&#38;#66;&lt;/div>  spaced  &#x3C;br&gt;ééé&lt;hr&gt;</description>
+<itunes:image href=' https://e.com/i.png '/>
+<itunes:duration>7696.830</itunes:duration>
+<enclosure url='http://example.org/ep332.mkv' length="２０００００" type="video/mp4"/></item>
+<item><media:thumbnail url=""/> <guid isPermaLink="true">Café-guid</guid> <pubDate>Thu 1 Aug 0999 16:55:01 GMT-0500 </pubDate> <link> https://e.com/x </link> <title>R&amp;D
+x&#60;y</title> <enclosure url="HTTPS://EXAMPLE.COM/e p148.oga" length="2e5" type="audio/x-m4a"/> <itunes:summary>  &#x26;unknown;</itunes:summary> <description><![CDATA[
+&euro;&#x;<br>]]></description></item>
+<image><title>Image title</title><url></url><link>https://example.com/img-link</link></image>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<description>
+
+multi
+lineééé&lt;li>&#x26;mdash;&lt;/li&gt;
+&amp;apos;a&#38;apos;&lt;p&gt;{json: 1}&lt;/p&gt;</description></channel></rss>

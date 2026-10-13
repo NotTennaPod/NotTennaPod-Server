@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><podcast:season>2</podcast:season><item><title>&amp;apos;a&#38;apos;</title>
+<guid isPermaLink="false">urn:uuid:4f33faad</guid>
+<link>https://example.com/ep</link>
+<pubDate>2184-11-04T12:41:99.056-1200</pubDate>
+<description></description>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">{json: 1}&lt;br&gt;&lt;hr/&gt;</content:encoded>
+<itunes:duration>59:22</itunes:duration>
+<enclosure url="HTTPS://EXAMPLE.COM/222.caf" length="٢٠٠٠٠" type="audio/wav"></enclosure></item><item><pubDate>Lundi, 12 July 1993 11:16:07</pubDate><title>AT&#38;T
+1 &#60;2
+&#x26;apos;a&#x26;apos;</title><guid>a&amp;b</guid><description>&#60;br></description><itunes:image href=" https://e.com/i.png "/><dc:date>Fri 27 Jun 1975 02:56:36 GMT-0800 (GMT+)</dc:date><enclosure url="" length="9223372036854775808" type="application/x-bittorrent"/><link> https://e.com/x </link></item><language>fr
+</language><podcast:funding url="https://example.com/donate"></podcast:funding><itunes:author>Jane &#x26;amp; John</itunes:author><title><![CDATA[a > b
+مرحبا
+&lt]]></title><atom:link length="9223372036854775808" href="https://example.com/alt.xml" title="MP3 feed" rel="" type="application/xhtml+xml"/><link>https://example.com</link></channel>
+</rss>

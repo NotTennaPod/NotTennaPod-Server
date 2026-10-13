@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+  <language></language>
+  <itunes:image href="https://example.com/it.jpg"/>
+  <description>&#60;div>&#x26;#xA9;&#x3C;/div&gt;cr
+lf&lt;br&gt;</description>
+  <podcast:funding url="">&lt;b&gt;x&lt;/b></podcast:funding>
+  <title>第956集&amp;#xD<![CDATA[800;]]></title>
+  <link></link>
+  <itunes:explicit>false</itunes:explicit>
+  <podcast:funding url="">&#60;b&gt;x&lt;/b&gt;</podcast:funding>
+  <lastBuildDate>Sun, 17 June 1989 08:49:30</lastBuildDate>
+  <item><media:content duration="2147483" type="video" isDefault="true" fileSize="16384"/>
+<psc:chapters version="1.2"/>
+<pubDate>2006-03-18T09:03:21.779Z</pubDate>
+<podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/>
+<media:content isDefault="false" duration="abc" fileSize="-9223372036854775808" type="audio/" url="https://example.com:8443/ep170.webm"/>
+<description><![CDATA[<li>&;</li>]]></description>
+<enclosure url="https://xn--caf-dma.example/ep370.aif" length="2e5" type="unknown"/>
+<media:content type="unknown" medium="Audio" fileSize="1,000,000" url="https://example.com/a.b/café/273.OGG" duration="01:00" isDefault="1"></media:content>
+<title>&apos;single&apos;S01E165&amp;AMP;</title>
+<guid isPermaLink='false'>  spaced guid  </guid>
+<itunes:subtitle>
+a&#13;
+b&#13;
+</itunes:subtitle></item>
+  <item><itunes:image href="https://example.com/ep.jpg"/><itunes:duration>2636.308</itunes:duration><description></description><link>https://example.com/ep</link><enclosure url="ftp://files.example.com/dir.with.dots/ep315.xyz" length='' type=" audio/mpeg"/><title><![CDATA[#hash  שלום]]>  &lt;span&gt;  padded  &lt;/span&gt;</title><media:thumbnail url='https://example.com/th.jpg'></media:thumbnail><itunes:subtitle>&#38;#128512;</itunes:subtitle></item>
+  <item><title><![CDATA[<blockquote>&apos;a&apo]]>s;&#x3C;/blockquote></title> <guid isPermaLink="true">  spaced guid  </guid> <link>https://example.com/ep</link> <pubDate>2005-11-18T01:22:09EST</pubDate> <itunes:summary>sep&#60;br></itunes:summary> <enclosure url="https://example.com/a.b/161" length="٢٠٠٠٠" type="audio/aac"/> <media:thumbnail/></item>
+  <item><podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/><title><![CDATA[<strong>&amp;</strong>  http://example.com/?a=1&b=2  x<y]]></title><itunes:duration>01:30:00</itunes:duration><media:content isDefault='false' type="video/quicktime" fileSize='1' medium="image" duration="9223372036854775807" url="HTTPS://EXAMPLE.COM/dir.with.dots/ep124.oga"/><media:content isDefault="TRUE" fileSize="123456" medium="image" type='audio/aac' duration="9223372036854775807"/><enclosure url='http://example.org/a/b/c5.oga' length="20000 " type="audio/wav"/><itunes:episodeType>full</itunes:episodeType><pubDate>2007-10-24T00:44:99+0200</pubDate><enclosure length="16385" type="video/mp4"/><description>
+
+&amp;nbsp;</description></item>
+  <item><itunes:author>Item author</itunes:author>
+<podcast:chapters url="" type="application/json+chapters"></podcast:chapters>
+<enclosure url="ftp://files.example.com/café/120.ogx" length="9007199254740991" type="video/mp4"/>
+<itunes:duration>１:３０</itunes:duration>
+<title> leading</title>
+<description>aaaaaaaaaa > b&lt;br&gt;&#x3C;p&gt;x&#60;y&lt;/p&gt;  padded  &lt;br>&lt;BR&gt;&#x3C;img&gt;	a > b&#60;div>  spaced  &#60;/div></description>
+<pubDate>Tue, 06 Sep 1988 06:06 +0530</pubDate>
+<link>https://example.com/ep</link>
+<itunes:image href=""/>
+<guid>Café-guid</guid>
+<itunes:summary>&lt;li&gt;x&lt;y&lt;/li&gt;
+&amp;copy;</itunes:summary>
+<itunes:explicit>clean</itunes:explicit></item>
+  <item><enclosure url="ftp://files.example.com/ep89.wma" length="" type="audio"/><description></description><itunes:duration>99999999999</itunes:duration><itunes:image href="https://example.com/ep.jpg"/><title>cr&#13;lf&amp;mdash;&amp;#169;</title><pubDate>LZligjd)TOcéF</pubDate><podcast:transcript url="https://example.com/t.json" type="application/x-subrip" language="en"/><guid> </guid></item></channel>
+  </rss>

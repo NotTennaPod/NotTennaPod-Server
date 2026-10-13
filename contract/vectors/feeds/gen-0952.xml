@@ -1,0 +1,22 @@
+<rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"><channel><title>&#60;b>Bold&#x3C;/b&gt; title</title><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="" type="audio/mpeg" length="12" href="//example.com/ep281" title='MP3 feed'/><link></link><podcast:funding url="">  spaced  </podcast:funding><item><pubDate>1978-07-07T15:34:56+2400</pubDate>
+  <title><![CDATA[&lt;b&gt;escaped&lt;/b&gt;]]>  &#x26;euro;</title>
+  <sc:chapters version='1.2'><sc:chapter title="Intro" start="02:26:11"/><sc:chapter start="00:44:41"/><sc:chapter href="" image="https://example.com/ch.png" title="" start='83:57'/></sc:chapters>
+  <enclosure url='ftp://files.example.com/156.amr' length="٢٠٠٠٠" type="text/html"/>
+  <guid isPermaLink="true"> </guid>
+  <description><![CDATA[第7集<br><br><p>&#xD800;</p><hr/><li>😀</li>]]></description>
+  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" length="20000" type="text/html" rel="Next"></atom:link></item><item><podcast:chapters type="application/json+chapters"/><mrss:group><mrss:content fileSize="abc" duration="abc" medium="Audio" type="audio/mp4"></mrss:content></mrss:group><pubDate>Fri 3 Jul 1981 23:29:22 GMT-0500 (Eastern Standard Time)</pubDate><description><![CDATA[ leading<p>&unknown;</p><div>&lt;b&gt;</div>]]></description><enclosure url="" length="52428800" type="x-audio/mpeg"/></item><item><title>
+a
+  b&#13;
+</title>
+<guid isPermaLink="false">dup</guid>
+<pubDate>Thu, 11 january 2024 12:46:14 +0200</pubDate>
+<description>😀😀😀&lt;p&gt;&amp;#xD800;&lt;/p>&lt;br />&#x3C;div>&#x26;mdash;&lt;/div>&#13;
+[x]  &amp;#0;éé&#xE9;&#38;lt;b&#x26;gt;&#x3C;br></description>
+<itunesu:subtitle>&lt;ol&gt;&lt;li>&#1605;رحبا&lt;/li&gt;&#x3C;/ol&gt;
+back\slash
+<![CDATA[é]]></itunesu:subtitle>
+<itunesu:image href="https://example.com/ep.jpg"/>
+<itunesu:duration>1:30</itunesu:duration>
+<enclosure url="" length="abc" type='text/plain'/>
+<mrss:content duration="-5" type="application/pdf" medium="document" isDefault="1" url="https://example.com/a.b/ep288.avi" fileSize="12"/>
+<mrss:description type="plain"><![CDATA[שלום<br>]]></mrss:description></item></channel></rss>

@@ -1,0 +1,22 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><description>😀  100%&#x26;amp&#60;br&gt;&#x3C;li>&amp;AMP;&lt;/li&gt;&#60;br&gt;#7 – Interview&#60;br>&#38;AMP;
+tab	here</description><image><url>https://example.com/img.png</url></image><atom:link length="abc" title="MP3 feed" type="application/atom+xml" rel="last" href="https://example.com/pay"/><link> https://example.com/ </link><title>&amp;#65;&amp;#66;
+&amp;#xFFFF;</title><item><enclosure url="http://example.org/dir.with.dots/ep259.torrent?dl=1.0" length="52428800" type="video/x-matroska"></enclosure>
+  <podcast:chapters url="https://example.com/ch.json" type='application/json+chapters'/>
+  <enclosure length="-0" type='audio/mp3'/>
+  <guid>dup</guid>
+  <enclosure url="https://xn--caf-dma.example/ep56.mov" length="9007199254740991" type='video/quicktime'/>
+  <link>https://example.com/ep</link>
+  <itunes:summary>&#60;p&gt;&lt;/p>	&amp;amp&lt;p>&amp;#128512;&#x3C;/p>😀😀😀😀&#160;sep</itunes:summary>
+  <pubDate>1996-05-22T05:42:58+0</pubDate>
+  <itunes:subtitle><![CDATA[&mdash;]]></itunes:subtitle>
+  <title>[x]S01E225Episode 128</title>
+  <itunes:duration>81:26</itunes:duration>
+  <dcterms:date>Sat, 32 Jul 1900 06:29:58 +0200</dcterms:date></item><item><description>1 &#60;2</description>
+<itunes:duration>5139.232</itunes:duration>
+<title>&amp;#169;  spaced  第274&#38598;</title>
+<itunes:subtitle><![CDATA[&AMP;
+<article><p>Para</p></article>]]></itunes:subtitle>
+<link></link>
+<enclosure url='https://example.com:8443/ep355.html' length="-0" type="audio/mpeg; charset=binary"/>
+<enclosure url="https://example.com/a.b/379.mov" length="-1" type="application/ogg"/></item><item><title><![CDATA[
+tab	here <b>Bo]]>ld&lt;/b&gt; title back\slash </title> <link></link> <pubDate>Thu Jan 26 03:24 2412</pubDate> <itunes:summary><![CDATA[😀]]>😀</itunes:summary> <media:group><media:content fileSize="٢٠٠٠٠" type="text/html" medium="video" duration='1'/></media:group> <psc:chapters><psc:chapter href="" image="https://example.com/ch.png" start='00:30' title="&lt;b>x&lt;/b>"/><psc:chapter href='' title="😀"/></psc:chapters> <podcast:socialInteract uri="https://social.example/@a/1" protocol='activitypub'/> <x:foo xmlns:x="urn:x"><title>Nested title</title></x:foo></item></channel></rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="0.92" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:image href=""></itunes:image> <itunes:subtitle>	<![CDATA[&Lt;  ]]></itunes:subtitle> <title>a&#13;
+b</title> <itunes:author><![CDATA[😀 Pod]]></itunes:author> <link> https://example.com/ </link> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <item><itunes:summary>&lt;br /></itunes:summary> <guid>a&#x26;b</guid> <pubDate>Sat Apr 14 20:17:05 1900</pubDate> <link></link> <title>&#38;#128512;</title></item> <item><title>Episode 720"quoted&quot; </title> <enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep124.oga" length="２０００００" type="audio/flac"/> <link> https://e.com/x </link> <content:encoded>&#60;li&gt;&#38;AMP;&#x3C;/li>  back\slash&#xE9;&#xE9;é&lt;hr/>100%</content:encoded> <description><![CDATA[ &nbsp; &#xD800;]]></description> <media:content type="audio/mpeg" isDefault="TRUE" fileSize="２０００００" medium="Audio" url='https://example.com:8443/café/87.txt' duration="2147483"/> <pubDate>1993-08-09:00</pubDate> <podcast:transcript type=""></podcast:transcript><podcast:transcript type="text/vtt" language="en"/><podcast:transcript type="application/srr"/> <itunes:duration>1:30</itunes:duration> <guid isPermaLink="false">Café-guid</guid></item> <item><enclosure length="123456" type="application/pdf"/><description><![CDATA[<div>R&D</div><br></br>]]></description><dc:date>1981-10-02T07:28:38+0</dc:date><title>&amp;mdash; AT&amp;T</title><itunes:summary><![CDATA[ AT&T<li>第7集</li>
+back\slash]]></itunes:summary><itunes:duration>1:2:3:4</itunes:duration><guid isPermaLink="true">a&#x26;b</guid></item> <item><itunes:image href=""/>
+  <pubDate>Mon, 31 Dec 1970 09:06:10 +14:00</pubDate>
+  <enclosure url="" length="9007199254740991" type="audio/opus"/>
+  <media:content fileSize="123456789012345678" isDefault="1" medium="video" duration="-5" type="audio/flac"/>
+  <media:content duration=" 60" medium="Audio" type="application/x-bittorrent" fileSize="9007199254740991" isDefault="TRUE"/>
+  <description>&lt;p>Folge 7: Über alles&#60;/p&gt;😀&#x3C;br&gt;aaa&#x3C;div&gt;#hash&lt;/div>&#x3C;div>&#x26;#xD800;&lt;/div&gt;  &amp;lt;b&#x26;gt;
+ leading&#x3C;div&gt;​&#x3C;/div&gt;</description>
+  <title>&#x26;apos;a&#38;apos;
+&lt;B&gt;😀&lt;/b&gt;
+</title>
+  <media:content duration="2147483" url='https://xn--caf-dma.example/dir.with.dots/ep121.png?file=x.mp3' isDefault="false" medium="Audio" fileSize='2147483647' type="video"/>
+  <comments>https://example.com/c</comments></item> <item><title>&#38;#x; &lt;s&gt;&lt;b>Bold&#60;/b&gt; title&#60;/s&gt; AT&amp;T</title><guid>  spaced guid  </guid><link> https://e.com/x </link><pubDate>&#13;
+Sat, 12 Nov 1988 04:08:48 +0200 </pubDate><itunes:summary><![CDATA[<li>&#169;</li>aa<div>Tom ]]>&amp;amp; Jerry &#38;lt;3&#60;/div&gt;</itunes:summary><itunes:duration>4526</itunes:duration><enclosure url="https://xn--caf-dma.example/e p336.MP3" length="52428800" type="audio/mpeg"/><enclosure url="https://example.com:8443/172.m4v" length="4294967296" type="audio/aac"/><enclosure url="//example.com/a/b/c389.MP3" length="18446744073709551616" type="audio/wav"/><media:group><media:content isDefault="false" type="audio/mpeg" url='HTTPS://EXAMPLE.COM/e p19.mpga' fileSize="+20000" duration="-5"/><media:content fileSize="16384" type="audio/wav" medium="video" duration="+60" isDefault="1"/><media:content fileSize="2147483648" isDefault="1" type="video/mp4" duration="01:00" url="ftp://files.example.com/a/b/c269.aif"/></media:group></item> <item><media:content isDefault="TRUE" duration="abc" medium="Audio" url="ftp://files.example.com/e p350.wma?a=1&amp;b=2" fileSize="123456789012345678"/>
+<itunes:summary>&#x3C;BR></itunes:summary>
+<atom:link length="12" rel="payment" href="https://example.com/alt.xml" type="application/rss+xml" title=""/>
+<description>&#x1F600;😀😀</description>
+<enclosure url="" length="12"/>
+<link>https://example.com/ep</link>
+<itunes:duration>35:09</itunes:duration>
+<itunes:explicit>yes</itunes:explicit>
+<title>&quot;quoted"&amp;#xD800;&lt;article&gt;&#160;&#x3C;/article&gt;</title>
+<guid isPermaLink="false"></guid>
+<pubDate>16 Apr 92 04:11:19 -0500</pubDate>
+<itunes:subtitle>x&#x3C;y AT&amp;T</itunes:subtitle></item> <item><title>Folge 92: Über alles &amp;hellip; AT&amp;T</title>
+  <media:content type="application/octet-stream" duration="1.5" fileSize="123456789012345678"/>
+  <pubDate>Thursday, 09 Mar 2017 04:59:36</pubDate>
+  <itunes:subtitle>&amp;#x;</itunes:subtitle>
+  <link xmlns="http://www.w3.org/2005/Atom" href="ftp://files.example.com/134.mp3.zip" length='12' rel="Next" title="Alternate" type="application/rss+xml"/>
+  <enclosure url="" length="1,000,000" type="audio/mp3"/>
+  <guid isPermaLink="true"></guid>
+  <link>https://example.com/ep</link>
+  <media:description type="plain">
+Tom &#x26; Jerry &#x3C;3<![CDATA[]]></media:description>
+  <itunes:duration>9875.531</itunes:duration></item> <item><description>&#60;BR&gt;&#60;p>AT&#38;T&lt;/p></description>
+  <pubDate>Wednesday, 07 Oct 2465 04:09 -0500</pubDate>
+  <itunes:subtitle>Tom &#38;amp; Jerry &amp;lt;3 &#38;quot;q&#x26;quot; #887 – Interview</itunes:subtitle>
+  <itunes:duration>Infinity</itunes:duration>
+  <title>Tom &#38; Jerry &#60;3</title>
+  <guid>a&#38;b</guid></item></channel></rss>

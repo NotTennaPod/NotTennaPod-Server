@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <channel><itunes:author>&amp;copy; 2020 Org</itunes:author>
+  <itunes:subtitle><![CDATA[&apos;a&apos;]]></itunes:subtitle>
+  <itunes:owner><i:name>Owner</i:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <link></link>
+  <itunes:new-feed-url>https://new.example.com/feed</itunes:new-feed-url>
+  <item><title>trailing  100%</title> <guid isPermaLink="false"></guid> <link></link> <pubDate>Mon, 17 July 2243 22:32 -0000</pubDate> <description>Folge 7: Über allesTom &#38;amp; Jerry &#x26;lt;3&#x3C;br&gt;&#60;BR&gt;&lt;div&gt;a=b&#x26;c=d&lt;/div>&#x3C;br/>back\slash&lt;p&gt;a=b&#38;c=d&#x3C;/p&gt;cr
+lf</description></item>
+  <item><pi:chapters type="application/json+chapters"/> <guid>  spaced guid  </guid> <pi:season>2</pi:season> <itunes:duration>18096</itunes:duration> <pubDate>Sat,20 Oct 2587 18:04:29 -0500</pubDate> <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">  Fri., 13 Jul 1990 20:07:47 +1400	</dc:date> <title>&#x3C;B> leading&lt;/b> tab	here &#60;font color="red">a&#13;
+b&lt;/font></title> <enclosure url="https://xn--caf-dma.example/ep230.wav?dl=1.0" length="0" type="audio/x-wav"></enclosure></item>
+  <item><itunes:subtitle>&#60;3 &#60;3</itunes:subtitle> <description>
+a=b&#x26;c=d plain words&#x26;#169;&#x3C;img src="<![CDATA[x.png"><p>&#1513;&#1500;&#1493;&#1501;</p>]]></description> <title>S01E<![CDATA[692]]></title> <enclosure url="HTTPS://EXAMPLE.COM/ep63.txt" length="20000.0" type="audio"/> <guid isPermaLink="false">  spaced guid  </guid></item>
+  <item><title><![CDATA[&apos;a&apos;  Line<br>break  &Lt;]]></title> <guid isPermaLink="true">urn:uuid:441393b7</guid> <pi:transcript url="" type='text/plain'/><pi:transcript url="https://example.com/t.vtt" type="application/x-subrip"/><pi:transcript type="text/html"/> <pubDate>2287-11-02T14:05:46</pubDate> <i:image href=" https://e.com/i.png "/> <enclosure url="//example.com/dir.with.dots/ep231.mp3.zip" length="abc" type='audio/flac'/> <i:subtitle><![CDATA[ leading
+{json: 1}]]></i:subtitle> <link>https://example.com/ep</link> <enclosure url="https://xn--caf-dma.example/ep237.3gp?dl=1.0" length="00020000" type="audio/*"/> <itunes:duration> </itunes:duration></item>
+  <description><![CDATA[ &Lt;]]></description>
+  <language>TR</language>
+  <title>&lt;p>&#38;</title></channel></rss>

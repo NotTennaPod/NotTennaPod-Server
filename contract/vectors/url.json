@@ -1,0 +1,213 @@
+{
+ "cases": [
+  {
+   "input": "HTTPS://Example.COM/Feed.xml",
+   "output": "https://example.com/Feed.xml"
+  },
+  {
+   "input": "http://example.com:80/a",
+   "output": "http://example.com/a"
+  },
+  {
+   "input": "https://example.com:443/a",
+   "output": "https://example.com/a"
+  },
+  {
+   "input": "http://example.com:443/a",
+   "output": "http://example.com:443/a"
+  },
+  {
+   "input": "https://example.com:8443/a",
+   "output": "https://example.com:8443/a"
+  },
+  {
+   "input": "https://example.com:/a",
+   "output": "https://example.com/a"
+  },
+  {
+   "input": "https://example.com:0443/a",
+   "output": "https://example.com:0443/a"
+  },
+  {
+   "input": "https://User:Pa@ss@Host.Example/x",
+   "output": "https://User:Pa@ss@host.example/x"
+  },
+  {
+   "input": "http://[2001:DB8::1]:80/x",
+   "output": "http://[2001:db8::1]/x"
+  },
+  {
+   "input": "http://[2001:DB8::1]:8080/x",
+   "output": "http://[2001:db8::1]:8080/x"
+  },
+  {
+   "input": "https://example.com/a?b=1#frag?x",
+   "output": "https://example.com/a?b=1"
+  },
+  {
+   "input": "https://example.com#top",
+   "output": "https://example.com"
+  },
+  {
+   "input": "https://example.com/a/%7e/../b/?Q=%2F&q=1",
+   "output": "https://example.com/a/%7e/../b/?Q=%2F&q=1"
+  },
+  {
+   "input": "https://Exämple.COM/x",
+   "output": "https://exämple.com/x"
+  },
+  {
+   "input": "feed://Example.com/rss",
+   "output": "feed://example.com/rss"
+  },
+  {
+   "input": "itpc:Example.com/rss#x",
+   "output": "itpc:Example.com/rss"
+  },
+  {
+   "input": "example.com/feed.xml",
+   "output": "example.com/feed.xml"
+  },
+  {
+   "input": "",
+   "output": ""
+  },
+  {
+   "input": "https://example.com",
+   "output": "https://example.com"
+  },
+  {
+   "input": "https://example.com?x",
+   "output": "https://example.com?x"
+  },
+  {
+   "input": "https://%4A.EXAMPLE/audio",
+   "output": "https://%4A.example/audio"
+  },
+  {
+   "input": "https://%4a.EXAMPLE/%4A",
+   "output": "https://%4a.example/%4A"
+  },
+  {
+   "input": "https://A%4.EXAMPLE/x",
+   "output": "https://a%4.example/x"
+  },
+  {
+   "input": "https://A%.B/x",
+   "output": "https://a%.b/x"
+  },
+  {
+   "input": "https://[2001:DB8::1]:443/audio",
+   "output": "https://[2001:db8::1]/audio"
+  },
+  {
+   "input": "https://[2001:DB8::1]:/audio",
+   "output": "https://[2001:db8::1]/audio"
+  },
+  {
+   "input": "https://[2001:DB8::1]/audio",
+   "output": "https://[2001:db8::1]/audio"
+  },
+  {
+   "input": "https://[::1/x",
+   "output": "https://[::1/x"
+  },
+  {
+   "input": "https://[::A]x:80/x",
+   "output": "https://[::a]x:80/x"
+  },
+  {
+   "input": "mailto:Someone@Example.com#x",
+   "output": "mailto:Someone@Example.com"
+  },
+  {
+   "input": "HTTP://EXAMPLE.COM:80",
+   "output": "http://example.com"
+  },
+  {
+   "input": "http://example.com:80",
+   "output": "http://example.com"
+  },
+  {
+   "input": "http://example.com:80?q#f",
+   "output": "http://example.com?q"
+  },
+  {
+   "input": "https://EXAMPLE.com:443#f",
+   "output": "https://example.com"
+  },
+  {
+   "input": "https://a@b@C.com:443/",
+   "output": "https://a@b@c.com/"
+  },
+  {
+   "input": "https://[::1]:443",
+   "output": "https://[::1]"
+  },
+  {
+   "input": "HtTp://Ex.Com/Path/With/CAPS/",
+   "output": "http://ex.com/Path/With/CAPS/"
+  },
+  {
+   "input": "https:///path",
+   "output": "https:///path"
+  },
+  {
+   "input": "https://",
+   "output": "https://"
+  },
+  {
+   "input": "https:",
+   "output": "https:"
+  },
+  {
+   "input": "1http://Example.com",
+   "output": "1http://Example.com"
+  },
+  {
+   "input": "h-t.t+p://Example.COM:80/x",
+   "output": "h-t.t+p://example.com:80/x"
+  },
+  {
+   "input": "http:Example.COM",
+   "output": "http:Example.COM"
+  },
+  {
+   "input": "http://example.com/%E2%82%ac?x=%e2%82%ac#%20",
+   "output": "http://example.com/%E2%82%ac?x=%e2%82%ac"
+  },
+  {
+   "input": "  https://Example.com/ ",
+   "output": "  https://Example.com/ "
+  },
+  {
+   "input": "https://ex ample.COM/a b",
+   "output": "https://ex ample.com/a b"
+  },
+  {
+   "input": "http://h:80:80/",
+   "output": "http://h:80:80/"
+  },
+  {
+   "input": "http://H::/",
+   "output": "http://h::/"
+  },
+  {
+   "input": "http://h:/",
+   "output": "http://h/"
+  },
+  {
+   "input": "Example.COM:80/a#x",
+   "output": "example.com:80/a"
+  },
+  {
+   "input": "https://%%4A.COM/",
+   "output": "https://%%4A.com/"
+  },
+  {
+   "input": "https://u:p@[::1]:443/",
+   "output": "https://u:p@[::1]/"
+  }
+ ],
+ "suite": "url"
+}

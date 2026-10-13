@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+  <subtitle>&#60;p>a
+  b&#x3C;/p>&#60;br&gt;&amp;quot;q&#x26;quot;&#60;hr&gt;
+&#x26;quot;q&amp;quot;</subtitle>
+<link type="" rel="" title="Alternate" href="http://example.org/185.caf" length="20000"/>
+<title type="html"><![CDATA[&apos;a&apos; e&#769;]]></title>
+<author><name>C&#x26;D</name></author>
+<link type="application/xml+xhtml" href="https://example.com/pay" rel='payment' title='Café'/>
+<author><name></name><email>a@example.com</email></author>
+<it:image href=""></it:image>
+<entry><content type="xhtml">&#60;img src="x&quot; alt="y&quot;/&gt;</content><link href='' rel='last' title="" type="application/xml+xhtml"/><id> raw </id><title type="plain">&#x7B2C;204&#x96C6; &#x26;#; trailing </title><link length="12" title='' rel="" type="audio/mpeg" href="https://example.com/pay"/><published>24 JUL 2419 23:32:28 -0500</published><link rel="payment" title="MP3 feed" length="20000" href="https://example.com/feed?page=2" type='audio/mpeg'/></entry>
+<entry><updated>Thu, 01 SEPTEMBER 2338 21:50:27 +1400</updated>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;; Line&#x3C;br>break &#1513;&#1500;&#1493;&#1501;</div></title>
+<it:duration>13067</it:duration>
+<content>&#60;br&gt;&#x3C;/br&gt;  &#38;hellip;&#38;mdash;</content>
+<updated>2003-07-16T14:31:33;</updated>
+<published>Fri, 26 Sep 2302 2</published>
+<it:image href="https://example.com/e.jpg"/>
+<link length="12" rel='related'/></entry>
+<entry><media:content type='audio/ogg' url="https://example.com/a.b/a/b/c31.webm" medium="video" duration="" isDefault="TRUE" fileSize="16385"/>
+<author><name>Entry author</name></author>
+<link rel="hub" href="https://example.com/feed?page=2" type="application/atom+xml" title="MP3 feed" length="12"/>
+<id>
+id
+</id>
+<title type='plain'>&lt;s>trailing &lt;/s&gt;</title>
+<updated>Wednesday, 07 Mar 85 09:30 +1400</updated>
+<published>19 July 08 15:24 +0945</published>
+<link rel="related" title='MP3 feed' href='https://example.com/' type="application/atom+xml"/></entry>
+<entry><id>urn:uuid:1</id><title type="html"><![CDATA[Episode 883
+<font color="red">x<y</font>
+a > b]]></title><link title="Alternate" rel="next" href=""></link><summary type="plain"><![CDATA[<li>&amp;amp;</li>éééééé  &nbsp;&#128512;&#128512;&#128512;&#128512; e&#769;<hr><p>sep</p>]]></summary><it:duration>01:30:00</it:duration><updated>Thu 1 Jan 2024 10:00:00 GMT+0100</updated></entry></feed>

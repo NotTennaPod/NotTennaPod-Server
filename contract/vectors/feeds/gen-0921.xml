@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang=""><title><![CDATA[<h3>{json: 1}</h3>]]></title><subtitle type='html'>&#xA0;  spaced  </subtitle><author><name>  Bob  </name></author><icon>https://example.com/icon.png</icon><id></id><itunesu:image href=''/><link href="https://example.com/pay" type='text/html' rel="archives"/><pi:funding url="https://example.com/give">Give</pi:funding><entry><link href="" type="application/atom+xml" rel="first"/>
+<pi:transcript url='https://example.com/t.json' type='application/srt' language="en"/><pi:transcript type="application/json" language="en"/><pi:transcript url="https://example.com/t.vtt" type="application/x-subrip"/>
+<media:content url="//example.com/347.png" type="unknown" isDefault="false" fileSize="123456789012345678" duration="2147484" medium="video"/>
+<updated>0099-03-00</updated>
+<id> raw </id>
+<title type="html"><![CDATA[<unknown>Tom & Jerry <3</unknown>
+&copy;
+tab	here]]></title>
+<published>Thu, 25 Jan 1601 06:14 -0500</published>
+<content></content>
+<itunesu:duration>339.99</itunesu:duration></entry><entry><updated>Wed, 04 Apr 0001 08:54 GMT+</updated>
+  <id>
+id
+</id>
+  <itunesu:duration>1:02:03</itunesu:duration>
+  <media:content duration="2147483" isDefault="1" medium="document" type="audio/x-m4a" fileSize="16385" url="https://example.com/a.b/café/333.php"/>
+  <summary><![CDATA[]]>&#60;br /&gt;</summary>
+  <link title="Café" length="12" rel="self" type="application/atom+xml" href="https://example.com/feed?page=2"/>
+  <title> &amp;amp;&#38;#xD800;</title></entry><entry><title type="text">&amp;lt</title>
+  <updated>Sun, 13 Apr 2110 01:43:59</updated>
+  <link rel="related" length="abc" title="" type="application/xml+xhtml"/>
+  <published>2002-09-15T25:06:39</published>
+  <summary type="HTML">&lt;div&gt;&amp;;&#x3C;/div></summary>
+  <link length="12" type="" rel="related"/>
+  <id> raw </id>
+  <link type="text/html" rel="self" href="https://example.com:8443/ep192.mp4?dl=1.0" length='abc'/></entry><entry><content type='HTML'>&lt;p>Para&lt;/p>&lt;BR>aaaaaaaa&lt;img src=&quot;x&quot; alt=&quot;y"/&gt;&#13;
+&amp;apos;a&amp;apos;&#60;b&gt;Bold&#60;/b> title&#x26;nbsp;&lt;br&gt;&lt;img src="x" alt="y"/></content>
+<summary type="HTML"></summary>
+<link type="application/rss+xml" rel="related" title="Alternate" length="9223372036854775808" href='https://example.com/'/>
+<updated>THURSDAY Dec 4 08:31:56 2014</updated>
+<id></id>
+<link type="application/xml+xhtml" rel='hub' href="https://example.com/alt.xml"/>
+<title>&#38;#169;&lt;span style=&quot;color:r<![CDATA[ed">http://example.com/?a=1&b=2</span>]]></title>
+<itunesu:image href="https://example.com/e.jpg"></itunesu:image></entry><entry><updated>26 May 95 06:04 +0000</updated>
+<content><![CDATA[&unknown;]]></content>
+<media:content isDefault="true" fileSize="1" medium="video" url="https://cdn.example.com/a/b/c279.3gp" type="video/quicktime" duration=''/>
+<link type="application/rss+xml" length="abc"/>
+<id>
+id
+</id>
+<author><name>Entry author</name></author>
+<link href="" length='12' title='Café' rel="Next"></link>
+<itunesu:duration>3:33:26</itunesu:duration>
+<link type="application/xhtml+xml" title="" href='https://example.com/feed?page=2' rel=""/>
+<itunesu:image href="https://example.com/e.jpg"></itunesu:image>
+<title type='text'><![CDATA[#hash&am]]>p;&lt;sub&gt;&#x26;#x;&#x3C;/sub&gt;</title></entry>
+</feed>

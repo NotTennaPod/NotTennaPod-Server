@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="">
+<id>urn:x</id> <link title="" rel='archives' type="audio/mpeg" href="https://example.com/alt.xml"/> <podcast:funding url="https://example.com/give">Give</podcast:funding> <link rel="next" length="9223372036854775808" type="application/atom+xml" href="https://example.com/feed?page=2"/> <link rel="Next" href="https://xn--caf-dma.example/e p186.m4a" title=""/> <itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&lt;p&gt;&lt;/p>&#60;BR></itunes:summary> <title type="text"><![CDATA[1 <2 &copy; &#xD800;]]></title> <link rel="self" type="application/rss+xml" href='' title="Café"/> <subtitle type='plain'>café&lt;br&gt;&lt;hr/&gt; cr&#13;lf</subtitle> <entry><updated>2291-11-02T01:43:06.000MST</updated><id>
+id
+</id><link rel="payment" title="Alternate" length="9223372036854775808"/><title type="html">'single'
+&#38;#xA9;</title><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""></itunes:image></entry> <entry><mrss:content url="ftp://files.example.com/a/b/c18.mpga" fileSize="9007199254740992" type="application/pdf" medium="image" duration="2147483"/> <updated>Mon, 02 Oct 1752 14:15 +0</updated> <title type="plain">sep</title> <id> raw </id> <summary type="plain"><![CDATA[<p>trailing <]]>/p></summary> <published>1996-12-12T06:18:55.1Eastern Standard Time</published> <link title="Alternate" type="text/html" rel="first"/> <source url="https://example.com/s"><title>Source title</title></source> <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">13 jan 57 07:52 -0000</dc:date></entry> <entry><content>&#60;div> &#60;/div&gt;</content>
+<published>Sun Feb 3 06:00:47 1991</published>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">6085</itunes:duration>
+<title type="HTML">AT&amp;T  multi
+line  &#38;Lt;</title>
+<summary type="HTML">&#60;p<![CDATA[/>&AMP;]]></summary>
+<link href="https://example.com/feed?page=2" type="" rel='related' title="MP3 feed"/></entry></feed>

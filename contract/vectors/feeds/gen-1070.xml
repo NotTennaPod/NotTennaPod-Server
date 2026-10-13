@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<channel xmlns:atom="http://www.w3.org/2005/Atom"><description>ééé &amp;#128512;  cr&#13;lf</description>
+<language>de-DE</language>
+<title><![CDATA[  &amp<sub>Line<br>break</sub>  ]]></title>
+<link> https://example.com/ </link>
+<item><wrapper><inner><deeper>text</deeper></inner></wrapper> <enclosure length="２０００００" type="x-audio/mpeg"/> <description><![CDATA[<p></p><div>&copy;</div>#hash]]></description> <atom:link type="application/rss+xml" rel="last" length="9223372036854775808" href="https://example.com/alt.xml" title="Café"/> <enclosure length="abc"/> <pubDate>Sun, 11 Mar 1979 23:17:10 -0000</pubDate> <title>&#60;blockquote&gt;Episode 834&#x3C;/blockquote></title> <enclosure url="HTTPS://EXAMPLE.COM/a/b/c384.aif" length="00020000" type="text/plain"/></item>
+<item><enclosure length="1" type="audio/x-m4a"/> <enclosure url="" length="4294967296" type="text/html"/> <media:thumbnail url=""></media:thumbnail> <m:content fileSize='2e5' duration="2147483648" medium="audio" type='audio/flac'/> <title>&amp;AMP;&amp;amp;amp;&lt;b>😀</title> <m:content type="audio/aac" duration="abc" url="ftp://files.example.com/a/b/c181.ts" medium="video" fileSize="+20000"/> <pubDate>2019-10-29T16:07:55-1200 +0000</pubDate> <link></link></item>
+<atom:link href="https://example.com/alt.xml" rel="alternate" length="20000" title="Café" type="audio/mpeg"/>
+<m:thumbnail/>
+<pi:funding/>
+<podcast:funding url=""></podcast:funding>
+<pi:funding>  spaced  </pi:funding></channel>
+</rss>

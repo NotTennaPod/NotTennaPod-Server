@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><atom:link length='20000' rel="" href="https://example.com/alt.xml" type="application/atom+xml"/>
+<link></link>
+<podcast:funding url=""></podcast:funding>
+<language>TR</language>
+<image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+<podcast:funding>Support us</podcast:funding>
+<title>back\slash  &#38;#xD800;    padded  </title>
+<link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/feed?page=2" length="abc" rel='' title="MP3 feed"/>
+<podcast:funding url="https://example.com/donate">&#x3C;b>x&lt;/b></podcast:funding>
+<item><title>é ​ &#38;#169;</title>
+<guid>urn:uuid:3428d9e2</guid>
+<link>https://example.com/ep</link>
+<pubDate>Saturday, 14 Jan 76 21:49:57 +0530</pubDate>
+<description>
+a &gt; b &amp;#x;
+AT&#x26;T&#60;br&gt;&lt;/br>&#x26;nbsp;</description>
+<content:encoded>&#60;br&gt;&lt;/br&gt;&#x26;#128512;</content:encoded>
+<itunes:summary><![CDATA[]]>&#x3C;li&gt;&amp;#x1F600;&lt;/li>  'single'&#60;img src="x.png"&gt;&lt;br /&gt;😀&#x1F600;&#128512;&#x1F600; &#38;;&#x3C;hr>&lt;div&gt;  spaced  &#x3C;/div&gt;</itunes:summary>
+<enclosure url="" length="00020000" type='video/mp4'/>
+<enclosure length=" 20000" type="audio/aac"/>
+<podcast:transcript url="" type="text/html" language="en"/><podcast:transcript url="" type="" language="en"/></item>
+<item><enclosure url="" length="0x4E20" type="audio/ogg"/> <description>&#x26;;&lt;br&gt;&#60;hr&gt;&#13;
+</description> <pubDate>2001/02/27T21:12:36</pubDate> <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">Sun 19 Apr 2015 00:26:28 GMT+0100 (+2400)</dc:date> <title>&#x26;unknow<![CDATA[n;   spaced  ]]></title> <guid isPermaLink="false">Café-guid</guid> <enclosure length="20000.0" type="application/octet-stream"/></item></channel>
+</rss>

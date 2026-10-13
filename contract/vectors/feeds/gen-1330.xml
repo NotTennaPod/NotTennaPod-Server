@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="0.91" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>en</language> <atom:link href="https://example.com/pay" rel="related" title='MP3 feed'></atom:link> <title><![CDATA[&#;Episode 12]]></title> <i:image href=""/> <i:owner><i:name>Owner</i:name><i:email>o@example.com</i:email></i:owner> <lastBuildDate>Friday, 18 May 2001 01:03:58</lastBuildDate> <link> https://example.com/ </link> <item><title>#46 – Intervie<![CDATA[w]]></title>
+  <guid isPermaLink="false">urn:uuid:72228ebb</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>2238-09-23T05:56:46.979</pubDate>
+  <i:summary></i:summary>
+  <i:subtitle><![CDATA[{json: 1}&amp;amp;&euro;]]></i:subtitle>
+  <i:duration>4677.924</i:duration>
+  <enclosure url='' length="-9223372036854775808" type=''/></item> <item><title><![CDATA[Episode 12
+<p style="text-align:center">Line<br>b]]>reak&lt;/p></title>
+<pubDate>Friday, 15 Mar 2013 02:09:13 utc</pubDate>
+<link></link>
+<description><![CDATA[<div><img src="x.png"> cover</div><li>]]>a
+  b&lt;/li&gt;</description>
+<content:encoded>&amp; &amp;amp;&#x3C;li>&lt;b&gt;Bold&lt;/b> title&#60;/li<![CDATA[>]]></content:encoded>
+<enclosure url="https://user:pass@media.example.net/277.mp3" length="52428800"/></item> <item><enclosure url="" length="0x4E20" type='audio/*'/> <description> &#x26;#<![CDATA[169;<p></p><p>100%</p>]]></description> <media:thumbnail url="https://example.com/th.jpg"/> <link></link> <media:content duration='0060' fileSize="4294967296" medium='document' isDefault="true" url="https://cdn.example.com/a/b/c180.opus" type=" audio/mpeg"/> <i:duration>36:01</i:duration> <media:content medium="audio" duration="9223372036854775807" type="application/json" fileSize="2147483647"/> <pubDate>Sun, 32 Dec 2188 05:08 +0200</pubDate> <guid isPermaLink="false">urn:uuid:fafe4059</guid> <title>Folge 144: Über allesa &gt; b</title> <dc:date>Tue, 14 Jan 1986 12:42</dc:date> <content:encoded><![CDATA[	😀]]></content:encoded></item> <item><title><![CDATA[&#169;  Episode 599  <small>&amp;amp;</small>]]></title>
+<guid isPermaLink='true'>Café-guid</guid>
+<link> https://e.com/x </link>
+<pubDate> 06 Sep 2010 17:23:04 +0530
+  </pubDate>
+<content:encoded>&lt;hr&gt;&#x3C;p&gt;&#38;Lt;&lt;/p>&#13;
+😀😀&#13;
+&amp;mdash; x&lt;y&#233;éé	&amp;#;</content:encoded>
+<i:duration>1E3:00</i:duration>
+<enclosure length=" 20000" type="audio/ogg"/>
+<media:content isDefault="true" url="https://user:pass@media.example.net/dir.with.dots/ep187.m4a" duration='2147484' type="" medium="Audio" fileSize="2147483648"/>
+<media:content fileSize="0" isDefault='TRUE' medium="image" duration='' type="audio/mp3"/>
+<media:content type="application/x-bittorrent" duration="abc" medium="video" fileSize="9223372036854775808"/>
+<atom:link rel="Next" type="application/rss+xml" href="ftp://files.example.com/26.aif" title="MP3 feed"/></item></channel>
+</rss>

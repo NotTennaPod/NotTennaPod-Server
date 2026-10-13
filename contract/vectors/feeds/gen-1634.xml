@@ -1,0 +1,58 @@
+<rss xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><link></link>
+<it:owner><it:name>Owner</it:name><it:email>o@example.com</it:email></it:owner>
+<language>TR</language>
+<it:image/>
+<atom:link title='Café' rel="first" type="application/xhtml+xml" href='https://example.com/alt.xml'/>
+<podcast:locked>yes</podcast:locked>
+<title>&amp;lt  1 &lt;2  a&#13;
+b</title>
+<description>&lt;img src="x.png&quot;&gt; coveraaaaaשלום&#x3C;BR&gt;&#13;
+ leading</description>
+<item><it:image></it:image>
+<it:duration>1:-1</it:duration>
+<enclosure url="" length="00020000" type=' audio/mpeg'/>
+<title>a=b&amp;c=d  a
+  b    padded  </title>
+<guid isPermaLink="true">urn:uuid:e5cadd95</guid>
+<enclosure url="https://xn--caf-dma.example/371.m4v" length="abc" type="audio/x-wav"/>
+<pubDate>1978/02/12T00:15:25+0200</pubDate>
+<enclosure url="https://example.com:8443/e p72.m4v" length='+20000' type='application/x-bittorrent'/>
+<link></link></item>
+<item><it:subtitle> &#x26;#169;&#38;&amp;#<![CDATA[65;&#66; ]]></it:subtitle>
+<title>&amp;hellip;&lt;s&gt;trailing &lt;/s>café</title>
+<link>https://example.com/ep</link>
+<enclosure url='https://example.com:8443/café/267.MP3' length="9223372036854775808" type="image/jpeg"/>
+<pubDate>1988-11-25T02:28:14.1+2400</pubDate>
+<description><![CDATA[<]]>li&gt;&#x26;&#x3C;/li></description>
+<media:thumbnail/></item>
+<item><description></description> <guid>dup</guid> <pubDate>Fri., 28 Oct 2478 21:57:14 +1400</pubDate> <media:thumbnail/> <atom:link title="Alternate" type='text/html' href="https://example.com/" rel='next'/> <title>&amp;nbsp;</title> <it:duration>16797</it:duration></item>
+<item><title>a
+  b  مرحبا  x&#x3C;y</title>
+<guid isPermaLink="false">a&#x26;b</guid>
+<link>https://example.com/ep</link>
+<pubDate>THU Jul 6 15:51:14 2180</pubDate>
+<it:image href=" "/>
+<it:duration>14521</it:duration>
+<enclosure url="https://example.com:8443/110.aspx" length="00020000" type="audio/x-m4a"/>
+<media:content fileSize="123456" medium='audio' type="image/png" duration="9223372036854775807" isDefault="false" url="https://example.com:8443/133.ogg"/></item>
+<item><title><![CDATA[&
+&amp;]]></title>
+  <guid>a&#38;b</guid>
+  <pubDate>Saturday, 01 Jun 2002 22:02 +0000</pubDate>
+  <dcterms:date>1982-12-23T17:22:32.1BST</dcterms:date>
+  <it:subtitle>cr&#13;lf </it:subtitle>
+  <it:image href="https://example.com/ep.jpg"/>
+  <it:duration>35791:23:47</it:duration>
+  <enclosure url="https://example.com:8443/a/b/c111.m4a" length="+20000" type="audio/ogg"/></item>
+<item><link> https://e.com/x </link><enclosure url="" length="123456" type="audio/"/><pubDate>Lundi, 12 July 1993 11:16:07</pubDate><description>&amp;copy;	a=b&#x26;c=d&#13;
+trailing &lt;p/&gt;&lt;br&gt;</description><enclosure url=" https://user:pass@media.example.net/e p128.wma " length='9007199254740991' type="application/json"/><podcast:transcript type='application/x-subrip'/><title>Episod<![CDATA[e 12]]></title><enclosure url="http://example.org/a/b/c244.wav#t=10" length="2e5" type="audio/wav"/></item>
+<item><it:summary></it:summary>
+<title>&amp;;</title>
+<pubDate>Wednesday, 23 Jul 49 05:29 -0000</pubDate>
+<media:content type="audio/ogg" isDefault="false" duration='-5' fileSize="123456" url='https://example.com:8443/e p72.m4v'/>
+<enclosure url="HTTPS://EXAMPLE.COM/e p216.ogg" length="9007199254740993" type='text/plain'/>
+<description>	{json: 1}aaa ​&amp;#x1F600;&#60;BR&gt;</description>
+<it:duration>35791:23:48</it:duration>
+<link></link></item>
+<item><podcast:socialInteract uri="" protocol="activitypub"/><media:group><media:content medium="document" fileSize="9223372036854775808" url="HTTPS://EXAMPLE.COM/e p191.png" isDefault="true" duration="-5" type='video/quicktime'></media:content></media:group><guid isPermaLink="false"></guid><it:duration>4:47:09</it:duration><title><![CDATA[&#0;]]></title><link> https://e.com/x </link><description>aaaaaa  "quoted"  [x]&lt;hr&gt;  &amp;#;</description><enclosure url='http://example.org/dir.with.dots/ep239.OGG?auth=yes' length='123456789012345678' type="video/webm"></enclosure></item></channel>
+</rss>

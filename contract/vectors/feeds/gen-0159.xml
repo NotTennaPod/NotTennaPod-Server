@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><description><![CDATA[ sep]]></description>
+<language>pt-BR</language>
+<it:image href=" https://example.com/sp.jpg "/>
+<link xmlns="http://www.w3.org/2005/Atom" title="MP3 feed" rel="enclosure" type="application/xml+xhtml" length="abc"/>
+<it:author>Jane &amp;amp; John</it:author>
+<title>a
+  b</title>
+<atom:link rel="first" type="application/rss+xml" href=""/>
+<link></link>
+<item><title><![CDATA[1 <2
+&amp;amp;
+​]]></title>
+<guid>Caf&#233;-guid</guid>
+<pubDate>Thu,  14  May 1970 16:58:11 -0500</pubDate>
+<description><![CDATA[<hr/><img src="x" alt="y"/>aaaaaaa<br/>ééé<div>#7 – Interview</div><li>tab	here</li>ééé]]></description>
+<enclosure url="https://xn--caf-dma.example/ep1.php" length="9007199254740993" type="unknown"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="//example.com/dir.with.dots/ep231.mp3.zip" duration="3600" isDefault='false' type="video/mp4" medium="Audio" fileSize="16384"/></item>
+<item><media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://example.org/a/b/c244.wav#t=10" isDefault="true" type=' audio/mpeg' fileSize="-1" duration="3600"/><media:content xmlns:media="http://search.yahoo.com/mrss/" type="audio/opus" isDefault="true" medium='video' duration="1" fileSize="20000 " url="https://example.com:8443/e p72.m4v"/><media:content xmlns:media="http://search.yahoo.com/mrss/" type="video/webm" duration='0060' url='//example.com/a/b/c313.torrent' fileSize="1,000,000"/></media:group>
+<pubDate>Fri, 08 Okt 2184 15:27:18 +0200</pubDate>
+<it:subtitle>&amp;lt;b&#x26;gt;
+100%</it:subtitle>
+<title>café  &#x26;nbsp;  http://example.com/?a=1&amp;b=2</title>
+<guid isPermaLink="true">Café-guid</guid>
+<link>https://example.com/ep</link>
+<it:summary></it:summary>
+<description>&#x3C;p/></description></item>
+<item><title>http://example.com/?a=1&amp;b=2
+a&#13;
+b</title>
+<guid isPermaLink="false"> </guid>
+<pubDate>27 May 82 22:53:46 -1200</pubDate>
+<description>&lt;img src="x&quot; alt="y&quot;/&gt; &#38;copy;éé&#233;&lt;div>é&#x3C;/div&gt;
+&#38;copy;&lt;p&gt;&lt;/p&gt;&#x3C;li&gt;Line&lt;br>break&lt;/li&gt;&lt;br /&gt;</description>
+<content:encoded>&#60;p>é&#60;/p&gt;</content:encoded>
+<it:duration>13310</it:duration>
+<enclosure url="HTTPS://EXAMPLE.COM/e p367" length="4294967296" type="application/octet-stream"></enclosure>
+<psc:chapters version="1.2"><psc:chapter image="https://example.com/ch.png" title="&lt;b>x&lt;/b>" start='Infinity:00'/><psc:chapter start='00:40:47' image="https://example.com/ch.png" href="https://example.com/ch"/><psc:chapter image='https://example.com/ch.png' start="12:34:56" title='Café &amp;amp; more'/><psc:chapter href="https://example.com/ch" image="https://example.com/ch.png" start="3:22" title="Intro"/><psc:chapter start='02:50:55.857' title="Café &amp;amp; more"/><psc:chapter href="https://example.com/ch" title="😀" start="45:56" image="https://example.com/ch.png"/></psc:chapters></item>
+<item><title>&#33590;</title><link>https://example.com/ep</link><pubDate>Thu Mar 15 11:32:45 1979</pubDate><description>&#x3C;br&gt;#7 – Interview&lt;br&gt;&#x3C;hr/&gt;</description><content:encoded>aaaaa&#233;é&#233;​&lt;br&gt;</content:encoded><it:duration>6639.326</it:duration><enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep369.ts" length="0" type="video"></enclosure><media:content xmlns:media="http://search.yahoo.com/mrss/" medium="audio" duration="1" fileSize="0" type="audio/x-wav"/><media:content xmlns:media="http://search.yahoo.com/mrss/" type="application/x-bittorrent" medium="image" duration="59" url="//example.com/e p152.wma" fileSize="٢٠٠٠٠"/><podcast:transcript url="" type="text/html" language="en"/><x:title xmlns:x="urn:x">Other namespace title</x:title></item></channel> </rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><atom:link title="Café" href="https://example.com/feed?page=2" length="20000" type="audio/mpeg"/>
+<itunes:new-feed-url>HTTP://upper.example</itunes:new-feed-url>
+<dc:creator>DC Creator</dc:creator>
+<podcast:funding/>
+<itunes:image href=" "/>
+<a10:link rel="enclosure" href="https://example.com/pay" type="audio/mpeg" length="abc" title="MP3 feed"/>
+<link></link>
+<title>"quoted"</title>
+<link xmlns="http://www.w3.org/2005/Atom" rel="alternate" href="https://example.com/alt.xml" title="" type='text/html'/>
+<item><description>😀&lt;hr></description>
+  <link> https://e.com/x </link>
+  <enclosure url="//example.com/café/78.3gp" length="2147483648" type='audio/mpeg'/>
+  <media:group><media:content fileSize="2147483647" url="HTTPS://EXAMPLE.COM/café/64.3gp" duration="2147483648" medium="audio"/><media:content duration="0" medium="audio" fileSize="٢٠٠٠٠" type="image/*"/></media:group>
+  <content:encoded>&#x3C;p&gt;&amp;copy;&lt;/p&gt;caf&#233;&lt;br&gt;  http://example.com/?a=1&amp;b=2&lt;div>#hash&lt;/div&gt;&#x3C;li>&#x26;amp;&#60;/li></content:encoded>
+  <pubDate>Sunday, 11 Dec 14 00:06:09</pubDate>
+  <guid isPermaLink='true'>a&amp;b</guid>
+  <title></title></item>
+<item><pubDate>2437/11/23T17:00:13</pubDate>
+<enclosure url="" length="-16384" type='image/jpeg'/>
+<content:encoded></content:encoded>
+<title><![CDATA[&;
+<div><img src="x.png"> cover</div>
+&nbsp;]]></title>
+<guid isPermaLink="true">Café-guid</guid>
+<description><![CDATA[	café]]></description>
+<link></link>
+<itunes:duration>3987</itunes:duration></item>
+<description><![CDATA[<img>]]></description>
+<atom:link href="https://example.com/" rel="last" type="application/xml+xhtml"/>
+<image><title>Image title</title><url></url></image></channel>
+  </rss>

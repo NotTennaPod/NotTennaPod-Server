@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters">
+  <author><name>Émile</name><email>a@example.com</email></author> <subtitle type="plain"><![CDATA[<div>&lt</div>]]></subtitle> <author><name></name></author> <updated>1977-05-22T02:25:36.5</updated> <link href="https://example.com/alt.xml" type="application/atom+xml" title="Café" rel='payment'/> <id>https://example.com/feed</id> <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;#65;&#38;#66;</div></title> <entry><psc:chapters><psc:chapter href="https://example.com/ch" start='02:44:27.197'/><psc:chapter start="01:30:59.526" title="😀"/><psc:chapter start="9496" title="😀" image="https://example.com/ch.png" href="https://example.com/ch"/><psc:chapter title='😀' start="03:35:50"/></psc:chapters>
+  <published>Wed, 19 Jan 2011 10:50:03 -0500</published>
+  <link title="MP3 feed" href="https://example.com/alt.xml" type='' rel="self" length="12"/>
+  <title><![CDATA[&#65;&#66;  <table><tr><td>plain words</td><td>b</td></tr></table>  &#xA9;]]></title>
+  <id> raw </id>
+  <updated>Tue, 30 November 2119 10:27:26 -0000</updated></entry>
+</feed>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding>&#60;b>x&#x3C;/b&gt;</podcast:funding><itunes:image href=' https://example.com/sp.jpg '/><media:thumbnail url="https://example.com/mt.jpg"></media:thumbnail><title><![CDATA[ tab	here	]]></title><atom:link href="https://example.com/feed?page=2" rel='self'/><description>R&#38;D&#60;br&gt;&#60;div>&amp;#xD800;&lt;/div&gt;&lt;p&gt;&amp;#;&#x3C;/p&gt;
+&amp;#xFFFF;&#x3C;hr></description><podcast:funding url="https://example.com/donate">Support us</podcast:funding><itunes:author>&amp;copy; 2020 Org</itunes:author><language> EN-US </language><item><title>Tom &#x26;amp; Jerry &#38;lt;3 &amp;amp &#x3C;del>a&#13;
+b&#60;/del&gt;</title>
+  <description><![CDATA[<p></p>]]></description>
+  <enclosure length="2147483647" type='video/quicktime'/>
+  <itunes:duration>1448.27</itunes:duration>
+  <itunes:image href=" "/>
+  <guid isPermaLink="true">urn:uuid:76eb23ca</guid>
+  <link> https://e.com/x </link>
+  <pubDate>Thu., 13 Sep 1979 13:05:32 -0800</pubDate></item><item><itunes:duration>164:17</itunes:duration> <media:content isDefault="true" type="application/json" url="https://example.com:8443/e p263.wma?auth=yes" duration="0060" medium='audio' fileSize="0x4E20"></media:content> <media:content type="application/octet-stream" fileSize='' medium="audio" duration="+60"></media:content> <description><![CDATA[aaa]]></description> <guid>a&#x26;b</guid> <link>https://example.com/ep</link> <media:content type="audio/mp3" medium="video" duration="2147484" fileSize="20000 " isDefault="false"/> <pubDate>2012-05-25T03:17:54CST</pubDate> <content:encoded>&lt;br />&#x3C;li&gt;&quot;quoted"&lt;/li&gt;&#x3C;br /&gt;&#60;li>'single'&lt;/li&gt;&lt;BR>&lt;div>&amp;AMP;&lt;/div&gt;
+Tom &amp; Jerry &#60;3&#60;br /></content:encoded> <enclosure url="https://xn--caf-dma.example/382.html" length='9007199254740992' type="video"/></item><item><itunes:summary>"quoted&quot;  &amp;amp;	&#38; &amp;Lt;&#x3C;li&gt;<![CDATA[&euro;</li><img src="x" alt="y"/>
+
+&amp;<BR>]]></itunes:summary><guid>a&amp;b</guid><link> https://e.com/x </link><pubDate>1981-12-26T05:45:02Z</pubDate><media:content fileSize="-9223372036854775808" duration="0060" url='HTTPS://EXAMPLE.COM/222.caf' type="audio/" isDefault="false"/><title/><itunes:duration>6863.331</itunes:duration><media:description type="html"><![CDATA[a]]>aaaaaa</media:description><description>&lt;img src="x" alt="y"/>&lt;div>&#x26;nbsp;&#60;/div></description><enclosure length="20000.0" type="image/jpeg"/></item><item><googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description> <pubDate>&#13;
+2004-12-02 (Central European Standard Time) </pubDate> <itunes:duration>596:31:23.648</itunes:duration> <enclosure length="16385" type="video"/> <guid isPermaLink='true'>a&amp;b</guid> <link>https://example.com/ep</link> <itunes:subtitle>&#x26;lt;b&#x26;gt;
+a &lt; b</itunes:subtitle> <title>a &#60; b&#38;euro;</title> <media:thumbnail url=''/></item></channel>
+</rss>

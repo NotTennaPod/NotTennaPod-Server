@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel><podcast:funding url=""/>
+<podcast:chapters url="https://example.com/feed-chapters.json"/>
+<link>https://example.com</link>
+<title>&#38;#x;</title>
+<itunes:author>Tom &amp; Jerry &lt;3</itunes:author>
+<language>TR</language>
+<item><title>&#38;copy;</title>
+<guid>dup</guid>
+<enclosure url="https://example.com:8443/e p263.wma?auth=yes" length="9007199254740993"/>
+<psc:chapters><psc:chapter href="https://example.com/ch" start="03:03:28.586" title=""/><psc:chapter start="00:00:59.9999" href="" title="Café &amp;amp; more"/><psc:chapter image="https://example.com/ch.png" href="" title="Café &amp;amp; more" start="00:45:13.639"/></psc:chapters>
+<pubDate>2001-12-17T10:10:43.utc</pubDate>
+<description> 😀 #hashaaaaaa&amp;hellip;éééשלום&#60;br&gt;  שלום&#x3C;BR></description>
+<link> https://e.com/x </link></item>
+<item><enclosure url="https://example.com/a.b/café/273.OGG" length="٢٠٠٠٠" type="AUDIO/MPEG"/> <description><![CDATA[ &nbsp;<li> leading</li>&#65;&#66;<br><p>#hash</p>&amp;<hr/><p>&euro;</p><br>]]></description> <itunes:summary><![CDATA[<li>{json: 1}</li>]]></itunes:summary> <itunes:duration>01:02</itunes:duration> <itunes:image/> <title>&amp;#169;  a &lt; b</title></item></channel></rss>

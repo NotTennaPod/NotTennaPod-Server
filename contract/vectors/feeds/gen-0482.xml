@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><title><![CDATA[&#65;&#66;&Lt;]]></title><itunes:image href="https://example.com/it.jpg"/><language>en</language><description></description><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><item><guid></guid>
+<title><![CDATA[<img src="x.png"> cover]]></title>
+<link></link>
+<enclosure url="https://xn--caf-dma.example/dir.with.dots/ep219.mp4" length="0" type='unknown'/>
+<itunes:duration>1:30</itunes:duration>
+<itunes:image href=" "/>
+<pubDate>Thu, 09 May 1985 02:19 +0530</pubDate></item></channel>
+</rss>

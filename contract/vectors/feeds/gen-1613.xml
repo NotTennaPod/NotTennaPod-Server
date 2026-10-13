@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generated -->
+<rss version="0.92" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters"> <channel><title>&amp;#xFFFF;</title> <link>https://example.com</link> <p:funding url="">  spaced  </p:funding> <title><![CDATA[R&D]]></title> <description><![CDATA[<div>'single'</div>]]></description> <pi:funding url="https://example.com/donate"/> <language></language> <item><guid isPermaLink="false"></guid>
+  <link></link>
+  <description><![CDATA[<div>&#0;</div>&#xD800;<br>]]></description>
+  <title>Tom &#x26; J<![CDATA[erry <3]]></title>
+  <pubDate>Sat May 14 12:58:35 2022</pubDate>
+  <enclosure url="HTTPS://EXAMPLE.COM/ep63.txt" length="9007199254740991" type="Audio/MPEG"/>
+  <content:encoded>&lt;br></content:encoded></item> <item><title>AT&#x26;T
+&#xA0;</title>
+<guid isPermaLink='true'>urn:uuid:74147fe8</guid>
+<pubDate>2013-06-10</pubDate>
+<description><![CDATA[&mdash;<br><div>&#;</div> 1 <2<br/><BR>]]></description>
+<content:encoded>&lt;p>&#38;#xA9;&lt;/p>a &gt; b<![CDATA[<br>]]></content:encoded>
+<enclosure url="https://xn--caf-dma.example/café/261.m4a" length="123456" type='audio/flac'/>
+<media:content medium="document" url="ftp://files.example.com/ep174.png" duration="01:00" isDefault='1' type="audio/opus" fileSize="-0"/>
+<media:content duration="2147484" isDefault="TRUE" fileSize="-16384" type="application/ogg"/>
+<pi:transcript url='https://example.com/t.json' type="text/vtt"></pi:transcript><pi:transcript type='Application/JSON' language='en'/></item> <item><title></title><guid></guid><pubDate>18 Sep 09 08:40:41 +0100</pubDate><description>
+a=b&amp;c=dEpisode 7&#60;p&gt;&lt;/p&gt;&#60;div>&#x26;euro;&lt;/div&gt;&#160;&#x26;; Episode 12&amp;quot;q&#38;quot;&#x3C;br>aaaaaaa</description><dcterms:date>Fri, 31 December 1601 23:36:07 +0945</dcterms:date><enclosure length=" 20000" type='audio/mpeg; charset=binary'/><enclosure url="" length=" 20000" type=" audio/mpeg"/><p:chapters url='https://example.com/ch.json' type='application/json+chapters'/></item> <item><pi:transcript url='https://example.com/t.vtt' type="application/json"/><pi:transcript type="application/srt"></pi:transcript> <enclosure url="https://example.com/a.b/dir.with.dots/ep143.MP3?a=1&amp;b=2" length="16383" type="AUDIO/MPEG"/> <enclosure url="https://xn--caf-dma.example/a/b/c149.flac" length="" type="application/json"/> <enclosure url="" length='+20000' type="image/png"/> <link></link> <guid isPermaLink="false">  spaced guid  </guid> <title>&lt;h1>Episode 12&#60;/h1> שלום</title> <pubDate>Fri, 09 January 2004 19:00</pubDate></item> <item><title>&amp;#xD800;
+&amp;;
+Episode 733</title>
+<guid isPermaLink="false"> </guid>
+<link> https://e.com/x </link>
+<pubDate>  tue Dec 8 14:09:29 1992  </pubDate>
+<description><![CDATA[<li>trailing </li>]]></description>
+<enclosure length="18446744073709551616" type="application/pdf"/>
+<media:content medium="Audio" type="text/html" fileSize="123456789012345678"/>
+<p:chapters type="application/json+chapters"></p:chapters></item></channel>
+</rss>

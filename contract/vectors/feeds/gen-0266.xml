@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:a10="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link> https://example.com/ </link>
+  <a10:link title="" rel='first' href="https://example.com/feed?page=2" type="audio/mpeg"/>
+  <image><title>Image title</title><url>  https://example.com/ws.png
+</url></image>
+  <itunes:summary>&#60;p>Para&#x3C;/p&gt;  &#x26;</itunes:summary>
+  <language> EN-US </language>
+  <itunes:author>Jane &#38;amp; John</itunes:author>
+  <description>&amp;unknown;&lt;br&gt; a &lt; b</description>
+  <title>back\slash</title>
+  <a10:link href="//example.com/a/b/c188.wav" rel="payment" title="Alternate"/>
+  <itunes:image href=" "/>
+  <itunes:subtitle><![CDATA[<img src="x.png"> cover&#xD]]>800;</itunes:subtitle>
+  <item><link>https://example.com/ep</link>
+<pubDate>08 Apr 07 04:39:32 +0945</pubDate>
+<itunes:duration>01:20</itunes:duration>
+<title>plain words</title>
+<guid isPermaLink="true">https://example.com/item/53714</guid>
+<enclosure url="ftp://files.example.com/30" length="20000 " type="application/json"/></item>
+  <item><title>back\slash &lt;P>  spaced  &#x3C;/P&gt;</title>
+<pubDate>2017-10-27T18:53:44+0200 2024</pubDate>
+<description>&#x26;lt;b&#38;gt;escaped&amp;lt;/b&#38;gt;&lt;br></description>
+<content:encoded><![CDATA[<br/>
+  spaced  ]]>&#x3C;br&gt;</content:encoded>
+<itunes:summary>&lt;hr></itunes:summary>
+<itunes:subtitle>&#38;mdash; Tom &amp;amp; Jerry &#38;lt;3 a&#13;
+b</itunes:subtitle>
+<enclosure url="" length="00020000" type="Audio/MPEG"/>
+<mrss:group><mrss:content fileSize="" medium="image" isDefault="false" type="" duration="+60" url='https://user:pass@media.example.net/ep282.Mp4'/><mrss:content medium="document" fileSize="9223372036854775807" url="HTTPS://EXAMPLE.COM/e p148.oga" type="video/quicktime" isDefault="false"/></mrss:group>
+<podcast:chapters xmlns:podcast="https://podcastindex.org/namespace/1.0" type='application/json+chapters'/></item>
+  <item><mrss:content medium="image" duration="2147483648" type="Audio/MPEG" fileSize="1,000,000"/><title>&lt;sub&gt;mul<![CDATA[ti
+line</sub>]]></title><guid isPermaLink="false">  spaced guid  </guid><description><![CDATA[<li>第7集</li>]]></description><enclosure url='' length=" 20000" type='application/x-bittorrent'/><itunes:duration>2543</itunes:duration><enclosure url='' length="16384" type="audio/*"/><pubDate>Sunday, 09 May 2500 07:47:59 HST</pubDate><itunes:subtitle><![CDATA[<u>&hellip;</u><del>plain words</del>plain words]]></itunes:subtitle><mrss:content fileSize="-16384" medium='video' type="video/webm" isDefault='1' url="HTTPS://EXAMPLE.COM/226.OGG" duration="2147483648"/></item></channel>
+  </rss>

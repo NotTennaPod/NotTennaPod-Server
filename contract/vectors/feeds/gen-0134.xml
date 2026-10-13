@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><link></link>
+  <language>pt-BR</language>
+  <itunes:author><![CDATA[Jane Doe]]></itunes:author>
+  <title><![CDATA[a > b]]></title>
+  <title>&#60;ol&gt;&#x3C;li&gt;Tom &amp;amp; Jerry &#x26;lt;3&#60;/li>&#60;/ol></title>
+  <image><url>https://example.com/img.png</url><title>Image title</title></image>
+  <item><title>S01E790   &#x26;#128512;</title> <guid isPermaLink="true">Café-guid</guid> <link> https://e.com/x </link> <pubDate> 08 Jan 2413 21:05 -1200	</pubDate> <itunes:summary>&lt;div>Folge 7: Über alles&lt;/div>&#x26;amp  &amp;hellip;</itunes:summary> <itunes:image href=""/> <enclosure url="" length='1,000,000' type='application/pdf'/> <media:content fileSize='' duration="abc" type="application/pdf" medium="video" url="ftp://files.example.com/e p28.m4v?file=x.mp3" isDefault="1"/></item>
+  <item><guid>urn:uuid:62f4903c</guid>
+  <title><![CDATA[{json: 1}]]></title>
+  <media:group><media:content isDefault='true' fileSize="1" url="https://example.com:8443/dir.with.dots/ep6.m3u8?dl=1.0" medium="video" type="Audio/MPEG" duration="1.5"/></media:group>
+  <pubDate>1969-13-26T22:55:07.744-0000</pubDate>
+  <enclosure url="" length="52428800" type="unknown"/>
+  <itunes:duration>1e2</itunes:duration>
+  <description><![CDATA[	&#128512;<p>&#;</p><p>'single'</p>]]></description></item>
+  <item><title><![CDATA[&mdash;]]></title><guid>urn:uuid:3ce988fc</guid><pubDate>	Tue, 16 May 2004 03:52 +1400	</pubDate><description> x&lt;y&quot;quoted"
+
+&amp;euro;Episode 7&#x3C;br&gt; &amp;#xFFFF;</description><itunes:image href=""/><itunes:author>Item author</itunes:author><enclosure url='https://cdn.example.com/a/b/c99.jpg' length="18446744073709551616" type="image/*"/><psc:chapters xmlns:psc="http://podlove.org/simple-chapters" version="1.2"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" image="https://example.com/ch.png" title="" start="01:33:24.817" href="https://example.com/ch"></psc:chapter><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title='&#128512;' image="https://example.com/ch.png" href="" start='0'></psc:chapter><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" href="" start="12:34:56"/></psc:chapters><podcast:season xmlns:podcast="https://podcastindex.org/namespace/1.0">2</podcast:season></item>
+  <item><title><![CDATA[Tom &amp; Jerry &lt;3{json: 1}]]></title>
+<guid> </guid>
+<link> https://e.com/x </link>
+<pubDate>Fri, 11 Sep 60 08:28:19 +1400</pubDate>
+<content:encoded><![CDATA[ &#x;&#33590;  a
+
+b &#xA9;a=b&c=d&#128512;	&amp;amp;&#128512;&#128512;&#128512;&#128512;]]></content:encoded>
+<itunes:duration>5:58:14</itunes:duration>
+<enclosure url="ftp://files.example.com/30" type="video"/>
+<enclosure url="//example.com/ep177.opus" length="12" type="audio/ogg"/>
+<enclosure url="https://example.com/a.b/dir.with.dots/ep195.m4v" length="9223372036854775808" type="audio/wav"/>
+<media:content medium='audio' duration='0060' fileSize='52428800' type="audio/opus"/>
+<media:content url="HTTPS://EXAMPLE.COM/226.OGG" duration="0060" medium="video" type='video/mp4'/></item>
+  <item><content:encoded><![CDATA[<br />&#128512;&#128512;]]></content:encoded>
+  <description><![CDATA[ &#xA9;]]></description>
+  <link></link>
+  <enclosure length='1,000,000' type=" audio/mpeg"/>
+  <media:group><media:content duration="2147483648" url="//example.com/a/b/c203.m3u8" isDefault="true" fileSize=" 20000" type="audio/aac" medium="audio"/></media:group>
+  <pubDate>  Friday, 03 Mar 2023 22:21:37 --0500  </pubDate>
+  <guid isPermaLink='false'>  spaced guid  </guid>
+  <itunes:subtitle><![CDATA[&#1513;&#1500;&#1493;&#1501;]]></itunes:subtitle>
+  <media:description>
+
+&amp;#xD800;&lt;br>&#x3C;li&gt;&lt;/li>&#128512;&#128512;&#128512;&#x3C;p&gt;a
+
+b&#x3C;/p&gt;</media:description>
+  <title>&amp;#xD800;</title></item></channel>
+  </rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="">
+<subtitle type="text">&#x3C;img src=&quot;x&quot; alt="y&quot;/&gt;aaaaa&#60;li&gt;&lt;p>Para&lt;/p&gt;&lt;/li>😀😀😀😀
+
+茶</subtitle>
+<author><name>Émile</name><email>a@example.com</email></author>
+<link rel="enclosure" type="application/xml+xhtml" title="MP3 feed" href="https://example.com/pay"/>
+<link title="" rel="first" href="https://user:pass@media.example.net/a/b/c365.oga" length="20000" type="application/xml+xhtml"/>
+<logo>https://example.com/logo.png</logo>
+<title type="html">&#x26;amp;  &lt;s>&#x26;unknown;&lt;/s>  's<![CDATA[ingle']]></title>
+<link length="9223372036854775808" type="" rel="enclosure" href='https://example.com:8443/a/b/c111.m4a'/>
+<id>https://example.com/feed</id>
+<author><name>Émile</name></author>
+<podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/give">Give</podcast:funding>
+<author><name>Ann</name></author>
+<link rel="hub" length="9223372036854775808" type='application/xml+xhtml' href=''/>
+<entry><sc:chapters><sc:chapter href='' title="" start="118:18"/><sc:chapter start="86:19" title="😀" href=""/></sc:chapters>
+<updated>2126-08-28T22:56:17CET</updated>
+<link type="application/atom+xml" href="ftp://files.example.com/e p349.opus?a=1&amp;b=2" rel="first" length="20000"/>
+<d:date>Foo, 	09 Oct 86 03:02 -0800</d:date>
+<title type="plain">&lt;img src="x.png"&gt; cover</title>
+<id></id></entry>
+<entry><link rel="last" title="" type="text/html" href="https://example.com/alt.xml" length='20000'/>
+<updated>2006-09-04T01:32:32
+  </updated>
+<title><![CDATA[&lt;b&gt;escaped&lt;/b&gt;
+&#;
+1 <2]]></title>
+<published>Fri, 23 July 2010 17:09 -0000</published>
+<link length='abc' href="https://example.com/pay" rel="enclosure"/>
+<link title="Café" type="audio/mpeg" length="9223372036854775808" rel="next"/>
+<id> raw </id>
+<content type="plain">&lt;p>Para&lt;/p&gt;&#60;p&gt;&#x26;#;&#x3C;/p&gt;&#x3C;div&gt;שלום&#60;/div&gt;😀&#128512;😀😀😀😀</content></entry>
+<entry><title type="xhtml"><![CDATA['single'
+&#169;
+café]]></title><id></id><link rel="hub" href="" type="application/rss+xml" title="Alternate"/><link length="20000" rel='archives' type="application/rss+xml" href="https://example.com/a.b/dir.with.dots/ep84.mov"/><published>Sat., 25 Dec 2014 00:09:56 -0800</published><link type="text/html" rel="payment" title="MP3 feed" href="" length="12"/></entry>
+<entry><title type="text">&#38;unknown;</title> <id></id> <content type="html">ééé</content> <link type="application/rss+xml" href="" rel="hub" length="12" title="Alternate"/> <link rel="" type="audio/mpeg" title="MP3 feed"/> <link rel='alternate' title="Alternate" length="20000" href='//example.com/café/305.mp3' type='audio/mpeg'/> <it:duration>0:51:49</it:duration> <published>Tue, 04 Feb 2003 09:08:50 -0000</published></entry>
+<entry><author><name>Entry author</name></author>
+  <published>Fri, 33 Sep 1066 08:46:50 +0000</published>
+  <link type="application/rss+xml" href="" length="abc" rel="Next" title="Café"/>
+  <title type='html'>Line&lt;br&gt;break
+&lt;b>Bold&lt;/b> title</title>
+  <summary type="text"><![CDATA[café<br>  <3 <3é]]>éé</summary>
+  <content>[x]😀&#x1F600;&#x3C;div>&amp;lt&#60;/div&gt;</content>
+  <updated>Sat, 31 Jul 00 22:35:01 -0000</updated>
+  <link href="https://example.com:8443/110.aspx" rel="first"/>
+  <link title="" href="https://example.com/alt.xml" length="20000" rel="payment"/></entry>
+<entry><it:duration>9382</it:duration>
+  <id> raw </id>
+  <content type="html"><![CDATA[ &#xA9; &#169;]]></content>
+  <title type="text">&#x3C;strike&gt;&#38;#169;&lt;/strike>  Episode 857</title>
+  <updated>Mon, 16 February 2015 22:54 +0945</updated></entry>
+<entry><updated>18 Oct 2340 24:07:52 +0000</updated> <id></id> <it:image href="https://example.com/e.jpg"/> <title>&#60;unknown&gt;&#38;#;&#60;/unknown&gt; Tom &amp;amp; Je<![CDATA[rry &lt;3]]></title></entry>
+<entry><id>urn:uuid:1</id><title type="xhtml"><![CDATA[<img src="x.png"> cover<div ]]>dir="rtl"&gt;S01E678&#60;/div&gt;</title><updated>2473-07-19T20:11:51.689 +0200</updated><summary type="xhtml"><![CDATA[<div>[x]</div>
+&#x;<li>plain words</li><img src="x.png">	&;<p>back\slash</p>back\slash<li><p>Para</p></li>]]></summary><link length="abc" rel="last" href="https://example.com/feed?page=2" title="Café" type='application/xml+xhtml'/></entry>
+</feed>

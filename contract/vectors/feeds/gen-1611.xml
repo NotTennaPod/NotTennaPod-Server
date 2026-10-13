@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>​</title>
+<itunes:subtitle>&amp;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt;&amp;euro;&amp;#65;&amp;#66;</itunes:subtitle>
+<itunes:image href='https://example.com/it.jpg'/>
+<description></description>
+<itunes:summary> ​	é😀😀😀😀​&#x3C;br&gt;	&#x26;copy;&#38;nbsp;&lt;br&gt;&#x26;lt;b&#38;gt;&#x26;#x1F600;&#x3C;br></itunes:summary>
+<item><link></link>
+<itunes:summary>😀😀😀</itunes:summary>
+<guid>urn:uuid:e763abd1</guid>
+<itunes:duration>1.2f</itunes:duration>
+<pubDate>2014-07-14 (CET)</pubDate>
+<media:group><media:content fileSize="16384" duration="59" url="//example.com/café/293.wma" type="audio/mp4"/></media:group>
+<enclosure url="ftp://files.example.com/a/b/c251.caf" length="٢٠٠٠٠" type="video/x-matroska"/>
+<title>  padded    café</title></item></channel>
+  </rss>

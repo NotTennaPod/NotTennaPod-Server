@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+  <subtitle type='plain'>&#x3C;li&gt;cr&#13;lf&#60;/li&gt;</subtitle>
+  <logo></logo>
+  <title type="text">AT&amp;T #hash &#60;pre>&amp;euro;
+  pre&#x3C;/pre&gt;</title>
+  <it:image href=""/>
+  <link title="Alternate" type="" href="HTTPS://EXAMPLE.COM/ep308.ogg"/>
+  <id>urn:x</id>
+  <entry><foo><description>Nested description</description></foo>
+<author><name>Entry author</name></author>
+<content>
+&amp;Lt;&#60;div&gt;&#38;amp&#60;/div&gt;&lt;p/></content>
+<id> raw </id>
+<updated>fri 14 Mar 1969 19:04:05 GMT+0530 (CET)</updated>
+<it:duration>0:43:49</it:duration>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x26;copy;
+&lt;3 &lt;3</div></title>
+<link title="Alternate" type="" rel="related" length="abc"/>
+<published>
+1066-06-18NZST&#13;
+</published></entry>
+</feed>

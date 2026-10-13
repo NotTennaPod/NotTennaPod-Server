@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns="" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:author><![CDATA[&copy; 2020 Org]]></itunes:author>
+  <description><![CDATA[<br />]]></description>
+  <title>&amp;;   spaced<![CDATA[  ]]></title>
+  <atom:link title="Alternate" length="12" href='https://example.com/alt.xml'/>
+  <podcastindex:funding url=""></podcastindex:funding>
+  <title><![CDATA[第984集 R&D]]></title>
+  <atom:link href="//example.com/378.mid" title="Café" rel="alternate" type="audio/mpeg" length="9223372036854775808"></atom:link>
+  <link>https://example.com</link>
+  <podcastindex:funding url=''>&lt;b&gt;x&lt;/b&gt;</podcastindex:funding></channel>
+</rss>

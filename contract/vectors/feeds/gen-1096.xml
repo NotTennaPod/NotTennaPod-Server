@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><atom:link href="https://example.com/alt.xml" type="" rel="Next" title="Alternate"/>
+<link></link>
+<itunes:summary>&#x3C;br /&gt;</itunes:summary>
+<itunes:subtitle><![CDATA[&lt;b&gt;]]></itunes:subtitle>
+<atom:link rel='alternate' href="https://example.com/pay" type='application/xhtml+xml'/>
+<description></description>
+<media:thumbnail/>
+<title><![CDATA[a
+  b
+&unknown;]]></title>
+<itunes:image href=" "></itunes:image>
+<itunes:author><![CDATA[&copy; 2020 Org]]></itunes:author>
+<language> EN-US </language>
+<item><guid isPermaLink="false"></guid> <link> https://e.com/x </link> <itunes:duration>-0</itunes:duration> <title>Episode 534
+tab	here
+&#x26;amp;amp;</title> <itunes:subtitle><![CDATA[#596 – Interview
+café]]></itunes:subtitle> <pubDate>Fri, 03 December 2021 18:15:46</pubDate> <description><![CDATA[ééé]]></description> <media:group><media:content type="video/mp4" medium="video" fileSize='1,000,000' duration="2147483" isDefault="true"/></media:group> <itunes:image/> <enclosure url="https://example.com:8443/a/b/c111.m4a" length="00020000" type="audio/mp4"/></item>
+<item><guid isPermaLink="false"></guid>
+<media:content isDefault="false" type="audio/mpeg; charset=binary" url="https://cdn.example.com/98.mp4" duration='' fileSize="123456" medium="Audio"/>
+<link> https://e.com/x </link>
+<itunes:image href=" https://e.com/i.png "/>
+<media:content isDefault="true" duration="59" medium="audio" type="audio/mp4" fileSize="9007199254740993"/>
+<itunes:duration>3:28:17</itunes:duration>
+<chapters:chapters><chapters:chapter start="02:01:52.276" href=""/><chapters:chapter title="" image="https://example.com/ch.png" start="5075"/><chapters:chapter image="https://example.com/ch.png" title='' href="" start="03:20:36"/><chapters:chapter start="02:45:48" href="https://example.com/ch" image="https://example.com/ch.png"/></chapters:chapters>
+<enclosure length="2147483647" type="Audio/MPEG"/>
+<pubDate>Sunday, 26 Sep 2202 02:38 +0945</pubDate>
+<description>  trailing &lt;div&gt;&amp;nbsp;&lt;/div&gt;</description>
+<media:content fileSize="20000 " duration="59" isDefault="true" type="audio/"/></item>
+<item><itunes:summary> &amp;hellip;</itunes:summary>
+<itunes:duration>12:34:56.789</itunes:duration>
+<link> https://e.com/x </link>
+<title>&amp;amp&#x26;#xA9;&#38;#169;</title>
+<enclosure url="https://xn--caf-dma.example/café/17.aac" length="16385" type="application/ogg"/></item></channel>
+</rss>

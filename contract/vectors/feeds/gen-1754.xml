@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><atom:link rel="enclosure" href="" type="application/rss+xml" title='Alternate'/><atom:link type="" length="9223372036854775808" title="" href="https://example.com/" rel="Next"/><atom:link rel='enclosure' href="" type="text/html" title="Café"></atom:link><language>TR</language><description>&#x3C;img>&#x26;lt&#60;br&gt;&#x3C;br /&gt;</description><title>trailing 
+  spaced  
+&lt;p&gt;Para&lt;/p></title><atom:link title='Alternate' rel="alternate" href="https://example.com/feed?page=2" length="9223372036854775808" type="application/rss+xml"/><link></link><item><title>[x]<![CDATA[]]></title><guid isPermaLink="false"> </guid><pubDate>  Fri, 29 May 1976 04:18:13 +0530&#13;
+</pubDate><description><![CDATA[<BR>]]></description><enclosure length="123456" type="image/jpeg"/><media:content duration='2147483648' url="https://xn--caf-dma.example/ep258.ogg" type="audio/x-m4a" isDefault="true" fileSize="16384"/></item><item><title>  plain words Tom &amp;amp; Jerry &#38;lt;3 </title> <guid isPermaLink='false'> </guid> <pubDate>2024-00-31T22:24:36+1400</pubDate> <enclosure url="https://cdn.example.com/ep298.webm" length="-0" type="unknown"/> <psc:chapters version="1.2"/> <podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/></item><item><pubDate>Wed, 30 May 1980 01:58:28 +1400</pubDate> <title>&#x3C;code&gt;שלום&#x3C;/code&gt;</title> <link> https://e.com/x </link> <x:title xmlns:x="urn:x">Other namespace title</x:title> <enclosure length="-1" type='video'/> <guid>urn:uuid:268cc6fd</guid></item><item><title>&#x3C;section&gt;&#x26;amp;amp;&lt;/section&gt; &amp;mdash; Episode 12</title>
+<enclosure url="" length="0" type="video/webm"></enclosure>
+<enclosure url="https://xn--caf-dma.example/café/153.html" length="20000.0" type='unknown'/></item><item><enclosure length='２０００００' type="video"/>
+<pubDate>0099-07-09</pubDate>
+<description>ééé&lt;br/&gt;&lt;li>multi
+line&lt;/li&gt;</description>
+<psc:chapters><psc:chapter image="https://example.com/ch.png" title="Intro" start="106:58" href=""/><psc:chapter title="" href="https://example.com/ch" start="00:02:44.591"/><psc:chapter start='NaN' title="Intro"/></psc:chapters>
+<link>https://example.com/ep</link>
+<media:content isDefault="true" type='text/html' fileSize="16385" medium="document"></media:content>
+<title><![CDATA[100%]]></title></item><item><guid isPermaLink="true">  spaced guid  </guid> <title><![CDATA[1 <2
+Episode 14]]></title> <enclosure length='-1' type="audio/x-wav"/> <description>&#x3C;hr&gt;</description> <podcast:transcript url="https://example.com/t.vtt" type="application/json" language="en"/><podcast:transcript url="" type="application/json"></podcast:transcript><podcast:transcript type="application/srr"></podcast:transcript> <pubDate>fri 17 Nov 2000 02:06:03 GMT+0945 (Central European Standard Time)</pubDate> <link>https://example.com/ep</link></item></channel>
+  </rss>

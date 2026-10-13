@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><title>&#60;3 &#x3C;3  #996 – Interview<![CDATA[]]></title>
+<itunes:subtitle>&#x3C;p>Para&#60;/p&gt;</itunes:subtitle>
+<dc:creator>DC Creator</dc:creator>
+<item><pubDate>1066-05-16T07:21:02:00</pubDate>
+<description>
+
+&amp;lta=b&#38;c=d&lt;br&gt;  &amp;;</description>
+<guid isPermaLink='false'>  spaced guid  </guid>
+<media:thumbnail/>
+<itunes:duration>0:45:26</itunes:duration>
+<link>https://example.com/ep</link>
+<atom:link rel="archives" title="Alternate" length="9223372036854775808" type='application/xml+xhtml' href='https://example.com/alt.xml'/>
+<itunes:summary>"quoted&quot;&#60;br&gt;&lt;p&gt;a&#13;
+b&#60;/p&gt;&#60;br&gt;&lt;/br>&#60;div&gt;&#x3C;b>Bold&#60;/b> title&#60;/div&gt;&lt;img src="x" alt=&quot;y&quot;/&gt;😀😀&#13;
+&amp;amp&#x3C;br></itunes:summary>
+<title><![CDATA[<p><p>plain words</p></p>
+<b>é
+sep]]></title>
+<content:encoded><![CDATA[ x<y<hr/>
+
+&quot;q&quot;]]></content:encoded></item>
+<item><title>1 &lt;<![CDATA[2]]></title>
+  <guid isPermaLink="true">  spaced guid  </guid>
+  <link>https://example.com/ep</link>
+  <pubDate>Monday, 23 Jan 57 14:57 -0000</pubDate>
+  <description>&#x3C;p>&#x3C;/p><![CDATA[]]></description>
+  <itunes:image href=""/>
+  <enclosure url="//example.com/ep60.aac" length="-16384" type="audio/*"/>
+  <enclosure url="HTTPS://EXAMPLE.COM/café/303.m3u8?a=1&amp;b=2" length="9007199254740991" type="Audio/MPEG"/>
+  <enclosure length="1" type="application/json"/>
+  <media:content url="https://example.com/a.b/221.m4b" medium="Audio" fileSize='9223372036854775807' duration="0" isDefault="true" type='video/mp4'/>
+  <media:content medium='document' isDefault="true" type=' audio/mpeg' duration="59" fileSize="-9223372036854775808"/>
+  <media:content medium="Audio" type="audio/aac" fileSize="2147483648" duration='abc'/></item>
+<link></link>
+<image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+<comments>https://example.com/c</comments>
+<title>Tom &amp;amp; Jerry &#x26;lt;3</title>
+<description></description>
+<a10:link href="" rel="next"/>
+<language> EN-US </language>
+<itunes:image href="https://example.com/it.jpg"/></channel>
+</rss>

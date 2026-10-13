@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><link> https://example.com/ </link><atom:link href="https://example.com/pay" length="9223372036854775808" title="Alternate" rel="enclosure" type='audio/mpeg'/><podcast:funding url="https://example.com/donate"/><title>#hash
+AT&#x26;T
+&#x26;#xFFFF;</title><atom:link length="12" href="https://example.com/feed?page=2" type="audio/mpeg" rel='Next'/><language>TR</language><podcast:funding>Support us</podcast:funding><podcast:funding url=""/><itunes:author><![CDATA[😀 Pod]]></itunes:author><image><url></url></image><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><atom:link rel="archives" title="" type="text/html" href="https://example.com/feed?page=2"/><itunes:subtitle>&amp;#<![CDATA[x;multi
+line]]></itunes:subtitle><atom:link rel="payment" type="application/xhtml+xml" href=""/><item><itunes:summary>Line&#x3C;br>break&#x26;#65<![CDATA[;&#66;<img>  "quoted"<br></br>]]></itunes:summary><title>S01E20&#x26;#128512;</title><mrss:thumbnail/><itunes:duration>0.5</itunes:duration></item><item><media:content type=' audio/mpeg' isDefault="false" duration="" fileSize="2147483647"/>
+<enclosure url="ftp://files.example.com/a/b/c341.mid" length="" type="audio/x-m4a"/>
+<guid isPermaLink="false">dup</guid>
+<mrss:content fileSize="9223372036854775807" isDefault="1" type='application/octet-stream' medium="image" duration="-5"/>
+<pubDate>Sun, 04 Mar 1990 21:28:39 Coordinated Universal Time</pubDate>
+<content:encoded><![CDATA[
+שלום]]></content:encoded>
+<mrss:thumbnail url=""/>
+<description>&#60;img&gt;&lt;p>&amp;amp;amp;&#x3C;/p&gt;&lt;hr>
+café&#60;div&gt;&#38;amp;amp;&lt;/div&gt;&lt;p&gt;&#x26;#0;&#60;/p>aaaaaaaa	&amp;;</description>
+<itunes:duration>14:34</itunes:duration>
+<media:content medium="video" url="//example.com/a/b/c234.html" fileSize="123456" isDefault="true" duration="" type="audio/mpeg; charset=binary"></media:content>
+<title>&amp;amp;</title>
+<link></link></item><item><pubDate>Tue feb 7 07:46:55 1984</pubDate>
+<enclosure url="ftp://files.example.com/26.aif" length="123456" type="audio/x-wav"/>
+<link></link>
+<media:content isDefault="true" url="https://user:pass@media.example.net/e p318.pdf" fileSize="123456789012345678" type="" duration="+60"/>
+<title>&amp;apos;a&amp;apos;</title>
+<itunes:image href=" "/>
+<psc:chapters version="1.2"><psc:chapter start="02:50:46" image="https://example.com/ch.png" title="Café &amp;amp; more" href=""/><psc:chapter title="😀" start="1:1.5f"></psc:chapter></psc:chapters>
+<mrss:content isDefault="false" medium='image' url='https://xn--caf-dma.example/ep370.aif' type="audio/mp3" duration="3600" fileSize="16385"/>
+<media:content fileSize="9223372036854775807" duration="0" type="application/ogg" url='HTTPS://EXAMPLE.COM/café/337'/>
+<content:encoded> 1 &lt;2&#xA0;<![CDATA[&#65;&#66;]]></content:encoded></item><item><itunes:duration>3:23:35</itunes:duration>
+<pubDate>1969-03-32T07:26:48</pubDate>
+<description> &#x26;lt&lt;p/&gt;&#60;p>&#x3C;/p>&#x3C;br />	a > b</description>
+<mrss:group><mrss:content duration='1.5' isDefault="TRUE" type="x-audio/mpeg" url="https://user:pass@media.example.net/dir.with.dots/ep94" medium="image" fileSize="-16384"/><media:content type="" fileSize="20000.0" isDefault='TRUE'/></mrss:group>
+<podcast:season>2</podcast:season>
+<title>S01E<![CDATA[501plain words100%]]></title>
+<guid></guid></item><item><pubDate>1977-10-08T13:20:07-0800 </pubDate> <media:group><media:content fileSize="9007199254740992" url="HTTPS://EXAMPLE.COM/dir.with.dots/ep393.wma" type="audio/opus" duration="0060"/><media:content duration="3600" isDefault="TRUE" medium="audio" type="Audio/MPEG" fileSize="-9223372036854775808"/><media:content duration="0" medium="document" type="audio/x-wav" fileSize="-1"/></media:group> <itunes:subtitle><![CDATA[&#xFFFF; plain words]]></itunes:subtitle> <itunes:summary></itunes:summary> <enclosure url="https://cdn.example.com/314.MP3" length='2147483647' type=" audio/mpeg"/> <description></description> <title>e&#x301;Episode 42x&#x3C;y</title> <itunes:image href=" https://e.com/i.png "></itunes:image></item><item><googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+  <enclosure length="20000.0" type=" audio/mpeg"/>
+  <link xmlns="http://www.w3.org/2005/Atom" rel="payment" length='9223372036854775808' type="application/rss+xml" title="MP3 feed" href="https://example.com/pay"/>
+  <pubDate>
+1996-05-32T07:06:37.341-0800  </pubDate>
+  <link></link>
+  <title>Folge 653: Über alles 第413集</title>
+  <guid isPermaLink='false'>dup</guid>
+  <content:encoded>&#60;p/></content:encoded></item></channel>
+  </rss>

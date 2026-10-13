@@ -1,0 +1,17 @@
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:at="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><image><title>Image title</title><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link></image>
+  <podcast:funding>  spaced  </podcast:funding>
+  <description><![CDATA[<img src="x.png">]]></description>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <itunes:image href=" "/>
+  <podcast:funding url="">  spaced  </podcast:funding>
+  <title>&#x26;lt</title>
+  <at:link title="Alternate" href="https://example.com/pay" rel="alternate"/>
+  <link></link>
+  <itunes:new-feed-url> https://new.example.com/sp </itunes:new-feed-url>
+  <item><title>&amp;hellip;</title>
+  <link>https://example.com/ep</link>
+  <pubDate>2011-04-07T05:33:54.21120+00:00</pubDate>
+  <description>&lt;p>&lt;/p&gt;S01E7&lt;br>Episode 12&lt;br&gt;</description>
+  <itunes:duration>+7</itunes:duration>
+  <enclosure url="ftp://files.example.com/ep174.png" length="2147483648" type="video"/></item></channel></rss>

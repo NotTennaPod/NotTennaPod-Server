@@ -1,0 +1,50 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:image href=' '/> <description><![CDATA[R&D<br>]]></description> <language>pt-BR</language> <itunes:author>&#60;b&gt;Studio&#60;/b></itunes:author> <title>&amp;amp;amp;</title> <item><itunes:image href=""/>
+<guid isPermaLink="true">urn:uuid:59d5ae8a</guid>
+<enclosure url="https://example.com/a.b/a/b/c252.m4v" length="+20000" type="video/x-matroska"/>
+<link> https://e.com/x </link>
+<pubDate>2006-03-18T09:03:21.779Z</pubDate>
+<title>😀 &#x26;amp; &#x26;nbsp;</title></item> <item><guid isPermaLink="false">urn:uuid:b94b9ac7</guid>
+<title>x&lt;y  &#1605;رحبا  é</title>
+<itunes:duration>194:07</itunes:duration>
+<itunes:summary>&lt;br />
+
+&#x26;#65;&amp;#66;&#x3C;div>Folge 7: Über alles&lt;/div&gt;</itunes:summary>
+<link></link>
+<description><![CDATA[<li>café</li>	a < bééé<img src="x" alt="y"/><li>שלום</li><p>&#xA9;</p><li>a=b&c=d</li>
+Tom & Jerry <3]]></description>
+<pubDate>Thursday, 28 Mar 1969 21:26:00 +0100</pubDate></item> <item><title>&amp;lt;b&amp;gt;</title>
+  <guid isPermaLink="false">dup</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>1999-11-02.5</pubDate>
+  <content:encoded>&lt;p<![CDATA[>&#169;</p>]]></content:encoded>
+  <itunes:duration>-0.5</itunes:duration>
+  <enclosure url="" length="9223372036854775807" type="video/quicktime"/>
+  <enclosure length="+20000" type="audio/*"/>
+  <enclosure url=" HTTPS://EXAMPLE.COM/café/352.mid " length="18446744073709551616" type='audio/mpeg; charset=binary'/>
+  <podcast:chapters url="" type="application/json+chapters"></podcast:chapters></item> <item><title>a &gt; b</title>
+  <guid isPermaLink="false"> </guid>
+  <link> https://e.com/x </link>
+  <pubDate>1989-08-14T01:38:40.221 Z</pubDate>
+  <description> שלום	back\slash</description>
+  <itunes:image/>
+  <itunes:duration>596:31:23.647</itunes:duration>
+  <enclosure url="https://example.com/a.b/ep37.aac" length="+20000" type="application/ogg"></enclosure>
+  <enclosure url="https://example.com:8443/a/b/c178.aspx" length="9223372036854775807" type="audio/mp3"/>
+  <enclosure url="ftp://files.example.com/a/b/c181.ts" length="20000.0" type="application/ogg"/></item> <item><dc:date>1899-07-09T09:55:43.1234567Greenwich Mean Time</dc:date>
+<description>back\slash&lt;br&gt;</description>
+<enclosure length="-0" type="application/ogg"/>
+<media:group><media:content medium="image" isDefault="false" type="audio/flac" duration="2147483648"/></media:group>
+<itunes:duration>1:-1</itunes:duration>
+<title>&#60;h3&gt;Line&#60;br&gt;break&#x3C;/h3> &lt;p&gt;'single'&lt;/p&gt; &lt;b&gt;&#33590;</title></item> <item><guid isPermaLink="true"></guid>
+  <description><![CDATA[<hr>]]></description>
+  <pubDate>Tue, 20 May 1997 23:24:41 +0945</pubDate>
+  <title><![CDATA[   &#xD800]]>;  </title>
+  <enclosure url="https://example.com/a.b/2.jpg" length="-9223372036854775808" type="application/octet-stream"/></item> <item><title>&#38;am<![CDATA[p R&D #hash]]></title>
+<description>{json: 1}  leadingtab	hereaaa&lt;li>#hash&lt;/li></description>
+<itunes:summary><![CDATA[<]]>p&gt;&#x3C;3 &lt;3&lt;/p&gt;aaaaaaaaa&lt;p>x&#60;y&lt;/p></itunes:summary>
+<link>https://example.com/ep</link>
+<enclosure url="" length='123456' type='image/jpeg'/>
+<pubDate>Wed, 30 Nov 1973 13:31:17 -0000</pubDate>
+<guid isPermaLink="true"></guid></item> <item><title><![CDATA[Line<br>break]]></title> <guid isPermaLink='true'>dup</guid> <link>https://example.com/ep</link> <pubDate>2332/11/08T18:58:58/0500</pubDate> <itunes:summary><![CDATA[<p>&unk]]>nown;&lt;/p>&#x3C;hr&gt;</itunes:summary> <itunes:duration>9290.244</itunes:duration> <enclosure url="https://xn--caf-dma.example/dir.with.dots/ep219.mp4" length="52428800" type="audio/"/> <enclosure url="//example.com/a/b/c255.mid" length='16385' type="audio/"/> <media:content fileSize="00020000" medium="audio" url="https://cdn.example.com/dir.with.dots/ep118.mp3.zip#t=10" isDefault="true" type="text/html" duration=" 60"/> <media:content fileSize="2147483648" duration=" 60" url="HTTPS://EXAMPLE.COM/ep232.xyz?auth=yes" isDefault="1" type="video/x-matroska" medium="video"></media:content></item></channel>
+</rss>

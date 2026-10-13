@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:a10="http://www.w3.org/2005/Atom"><channel><i:owner><i:name>Owner</i:name><i:email>o@example.com</i:email></i:owner>
+<title>&amp;lt;b&#38;gt;escaped&#x26;lt;/b&amp;gt;</title>
+<podcastindex:funding>&lt;b&gt;x&lt;/b&gt;</podcastindex:funding>
+<image><url>https://example.com/img.png</url><title>Image title</title></image>
+<link>https://example.com</link>
+<podcastindex:funding url=""/>
+<podcastindex:funding url="">  spaced  </podcastindex:funding>
+<lastBuildDate>Sunday, 03 Sep 2023 13:55 +0000</lastBuildDate>
+<m:thumbnail/>
+<dc:creator>DC Creator</dc:creator>
+<language>de-DE</language></channel></rss>

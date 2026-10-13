@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>de-DE</language><title>sep  &lt;p&gt;&lt;p>a=b&#38;c=d&#60;/p&gt;&lt;/p&gt;</title><itunes:author></itunes:author><description><![CDATA[<br></br> AT&Tééé]]></description><link> https://example.com/ </link><image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image><itunes:image href=""></itunes:image><podcast:funding url=""></podcast:funding><itunes:subtitle>&#31532;568&#38598;#981 – Interview</itunes:subtitle><textInput><title>Search</title><link>https://example.com/search</link></textInput><item><media:thumbnail></media:thumbnail>
+<pubDate>Thu, 13 Dec 1990 02:04 +0945</pubDate>
+<title>&amp;#128512;</title>
+<podcast:chapters type='application/json+chapters'/>
+<link>https://example.com/ep</link>
+<enclosure url="HTTPS://EXAMPLE.COM/e p367" length='16385' type="text/plain"/>
+<itunes:summary>&#x3C;img src="x.png"&gt; cover#7 &#8211; Interview&lt;p&gt;&amp;AMP;&#60;/p&gt;   spaced  R&#x26;D&lt;br&gt;&#xA0;&#1513;&#1500;&#1493;&#x5DD;&#128512;&#128512;&#128512;aaaaaaaaa</itunes:summary></item><item><pubDate>1979-12-07T13:34:36Z</pubDate> <title>&amp;#x1F600;{json: 1}</title> <guid isPermaLink="true"> </guid> <enclosure length="18446744073709551616" type="audio/mpeg; charset=binary"></enclosure> <itunes:duration>2147483.648</itunes:duration> <itunes:summary>
+
+&amp;apos;a&#38;apos;&#1605;&#1585;&#1581;&#1576;&#1575;&lt;br&gt;</itunes:summary> <description>&#13;
+a&#13;
+b</description> <enclosure url='' length="9007199254740991" type=" audio/mpeg"/> <itunes:image href="https://example.com/ep.jpg"/></item></channel>
+  </rss>

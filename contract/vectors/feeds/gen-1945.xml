@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><language>fr
+</language> <title>a &#x3C; b&#1513;ל&#1493;ם</title> <itunes:image href="https://example.com/it.jpg"/> <link></link> <link xmlns="http://www.w3.org/2005/Atom" length="9223372036854775808" title="Café" href="https://example.com/alt.xml" rel="Next"/> <item><title>cr&#13;lf  a=b&#38;c=d</title>
+<pubDate>Thu, 27 Jul 2017 19:53 +0945</pubDate>
+<guid></guid>
+<content:encoded>&lt;hr&gt;aaa&#x3C;br />&#x3C;li&gt;cr
+lf&#60;/li>aaaaaaaaa&#x3C;br/&gt; &amp;quot;q&amp;quot;
+&#38;hellip;</content:encoded>
+<description>&#x3C;hr&gt;&#x3C;br />&lt;li&gt;  padded  &#60;/li> tab	here&#60;hr&gt;</description>
+<enclosure length="9007199254740992" type="Audio/MPEG"/>
+<link> https://e.com/x </link>
+<itunes:subtitle><![CDATA[Folge 762: Über alles
+Li]]>ne&#60;br&gt;break
+a
+  b</itunes:subtitle></item></channel>
+  </rss>

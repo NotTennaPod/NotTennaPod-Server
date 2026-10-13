@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><link></link>
+  <title><![CDATA[&#65;&#66;
+[x]
+#429 – Interview]]></title>
+  <atom:link href="https://example.com/" title="Alternate" length="20000" type="" rel=''/>
+  <itunes:summary>&lt;img></itunes:summary>
+  <source url="https://example.com/s"><title>Source title</title></source>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <itunes:image href=""/>
+  <podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+  <atom:link title="Café" type="application/rss+xml" rel="" href="https://example.com/feed?page=2"/>
+  <description>	&#38;amp;aaaaaaaa&#x26;#65;&amp;#66;</description>
+  <atom:link rel="next" href="https://example.com/alt.xml" title="Café" type="application/xml+xhtml" length="9223372036854775808"/>
+  <item><title>&#13;
+&amp;quot;q&amp;quot;&#13;
+</title><guid>  spaced guid  </guid><link>https://example.com/ep</link><pubDate>Wednesday, 12 Aug 2268 10:49:17 -0500</pubDate><description>&#60;div&gt;&#38;mdash;&#x3C;/div&gt;&#x3C;p>&#60;img src="x.png"> cover&#60;/p&gt;😀&#x3C;p>&amp;#;&#x3C;/p&gt;&lt;br&gt;&lt;/br&gt;</description><itunes:duration>1586</itunes:duration><enclosure url="ftp://files.example.com/ep89.wma" length="4294967296" type="video/x-matroska"/><enclosure length="1" type="audio/mpeg; charset=binary"/><enclosure url='https://example.com/a.b/221.m4b' length="4294967296" type="application/x-bittorrent"/><psc:chapters version="1.2"><psc:chapter title="😀" href='' start="02:34:54"/><psc:chapter href="" title='Intro' start="03:09:54.732"/><psc:chapter title="Intro" start="1:00 " image="https://example.com/ch.png"/><psc:chapter image="https://example.com/ch.png" href="https://example.com/ch" title="Café &amp;amp; more" start="596523:14:07.999"/><psc:chapter href="" start="00:34:04" title="Café &amp;amp; more" image="https://example.com/ch.png"/></psc:chapters></item>
+  <item><itunes:subtitle>&#38;#; &amp;lt a &gt; b</itunes:subtitle>
+<title>&lt;article>第955&#x96C6;&#60;/article>
+&#x26;#;
+&amp;euro;</title>
+<link> https://e.com/x </link>
+<podcast:socialInteract protocol="activitypub"/>
+<itunes:duration>51:05</itunes:duration>
+<pubDate>2014-07-14 (CET)</pubDate>
+<enclosure url="https://example.com/a.b/café/273.OGG" length="123456789012345678" type="video"/></item></channel>
+  </rss>

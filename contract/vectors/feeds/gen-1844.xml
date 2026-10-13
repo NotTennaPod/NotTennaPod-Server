@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link type='application/rss+xml' title="Café" length="12" rel=''/>
+<title>http://example.com/?a=1&amp;b=2  &lt;section>&#x26;#169;&#x3C;/section>  &#60;span>&#x26;euro;&#x3C;/span></title>
+<itunes:subtitle><![CDATA[  <img src="x.png"> cover
+café
+<strike>&#8203;</strike> ]]></itunes:subtitle>
+<itunes:author>  Spaced  </itunes:author>
+<podcast:funding url="https://example.com/donate"/>
+<link></link>
+<description>&lt;p/>&lt;BR>&#xE9;éé<![CDATA[]]></description>
+<podcast:funding url="https://example.com/donate">  spaced  </podcast:funding>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<atom:link rel="related" href="https://example.com/alt.xml"></atom:link>
+<link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/feed?page=2" rel="hub" title='' length="abc" type="audio/mpeg"/>
+<item><title>&amp;#xA9;&amp;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt;café</title> <description>&#128512;&#x1F600;&#128512;&#128512;&lt;div&gt;#hash&#60;/div&gt;aaaaaaa&#128512;	&#33590;</description> <link>https://example.com/ep</link> <enclosure url="ftp://files.example.com/a/b/c251.caf" length="52428800" type="Audio/MPEG"></enclosure> <guid isPermaLink="true">
+</guid> <pubDate>Mon Sep 3 15:20:16 2001 Pacific Daylight Time</pubDate> <itunes:image href=" "/></item>
+<item><media:content medium="image" duration="2147484" isDefault="false" type='audio/wav' fileSize="1,000,000"/>
+<guid isPermaLink="true"></guid>
+<enclosure url="https://cdn.example.com/a/b/c279.3gp" length=' 20000' type="Audio/MPEG"/>
+<itunes:subtitle>&amp;euro; &amp;Lt; &amp;#xFFFF;</itunes:subtitle>
+<title>&#x3C;p&gt;Para&lt;/p&gt;  &#x26;copy;</title>
+<enclosure url="https://user:pass@media.example.net/ep35.wav" length="2147483647" type="audio/mpeg; charset=binary"/>
+<description></description>
+<enclosure url="https://example.com/a.b/ep256.mp3" length="9223372036854775808" type="audio/flac"></enclosure>
+<itunes:image href="https://example.com/ep.jpg"/>
+<itunes:summary></itunes:summary>
+<pubDate>1980-08-07T10:39:0</pubDate>
+<link>https://example.com/ep</link></item></channel>
+</rss>

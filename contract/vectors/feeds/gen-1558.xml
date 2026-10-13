@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters"><atom:link length="abc" rel="alternate" href="https://example.com/feed?page=2" title="Café"/>
+<itunes:subtitle><![CDATA[   ]]></itunes:subtitle>
+<language>pt-BR</language>
+<title><![CDATA[<img src="x.png"> cover]]></title>
+<atom:link href="https://example.com/" rel="enclosure" title=""/>
+<itunes:summary>  &#38;lt&lt;p> leading&#60;/p&gt;aaaaaaaa&#x3C;img src="x" alt="y"/>&#128512;&#x1F600;&#128512;&lt;p>multi
+line&lt;/p>&#x3C;p&gt;Para&lt;/p&gt;&lt;br></itunes:summary>
+<atom:link length="abc" title="Café" href="https://example.com/" rel="next"/>
+<image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+<atom:link title="MP3 feed" length="abc" type="audio/mpeg" rel="first" href="https://example.com/alt.xml"/>
+<item><link>https://example.com/ep</link>
+<p2:transcript type="text/plain" language="en"/><p2:transcript url="" type="application/srr" language="en"/>
+<enclosure url="" length="20000 "/>
+<itunes:subtitle>x&lt;y&lt;div dir="rtl&quot;>Episode 533&#x3C;/div>&amp;qu<![CDATA[ot;q&quot;</p>]]></itunes:subtitle>
+<itunes:image href=" https://e.com/i.png "/>
+<pubDate>Tue Jul 21 16:11 2020</pubDate>
+<title>&#128512;</title>
+<guid>
+</guid></item>
+<item><guid>dup</guid>
+  <description>&lt;br>&#x3C;div>Episode 12&lt;/div>&lt;br /&gt;</description>
+  <itunes:subtitle><![CDATA[a=b&c=d]]></itunes:subtitle>
+  <itunes:summary>&#13;
+x&#60;y&#60;img src=&quot;x.png"&gt;ééé&amp;#169;&lt;br>&#38;#0;</itunes:summary>
+  <enclosure url="https://example.com/a.b/dir.with.dots/ep141.3gp" length='52428800' type="audio/mpeg; charset=binary"/>
+  <pubDate>1986-10-03T19:17:13.123456GMT+01:00</pubDate>
+  <p2:transcript url="https://example.com/t.json" type="application/x-subrip" language="en"></p2:transcript><p2:transcript url="https://example.com/t.json" type="application/srr" language="en"/><p2:transcript url="" type="text/html" language="en"/>
+  <title><![CDATA[1 <2]]></title></item>
+<item><itunes:summary></itunes:summary>
+<p2:transcript type="application/srr"/>
+<pubDate>
+Wed Feb 30 12:21:43 2024  </pubDate>
+<enclosure url='https://example.com/a.b/e p95.mkv?a=1&amp;b=2' length="16384" type="audio/x-wav"/>
+<m:thumbnail url=''></m:thumbnail>
+<description><![CDATA[
+&#33590;<br></br><img>aaaaa &AMP;]]></description>
+<link></link>
+<guid isPermaLink='true'>a&#38;b</guid>
+<c:encoded>&#60;hr>é&#xE9;é&lt;hr&gt;</c:encoded>
+<title><![CDATA[a
+  b]]></title></item>
+<item><pubDate>  Saturday, 15 Dec 2283 12:30:00&#13;
+</pubDate>
+<m:description>&lt;li>a &gt; b&#60;/li>&#60;p>&#33590;&lt;/p&gt;</m:description>
+<enclosure url='https://example.com/a.b/a/b/c287.avi' length='9007199254740993' type="video"/>
+<title><![CDATA[&;]]></title>
+<description>&#13;
+&amp;unknown;ééé
+&#38;AMP;&#233;éé&lt;p&gt;&amp;quot;q&#x26;quot;&#x3C;/p&gt;&#xE9;éé&#13;
+&#38;lt;b&amp;gt;	&#x26;#xA9;</description></item></channel></rss>

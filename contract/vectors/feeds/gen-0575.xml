@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><title>é &amp; AT&#x26;T</title>
+<atom:link rel='hub' href='https://example.com/feed?page=2' title="Café" length="9223372036854775808"/>
+<podcast:funding/>
+<lastBuildDate>Sun, 02 August 1987 22:19:27 +0100</lastBuildDate>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<image><url>https://example.com/img.png</url></image>
+<description>
+
+a=b&amp;c=d&lt;p&gt;&#38;#xA9;&lt;/p&gt;	茶cr
+lf&#60;img>http://example.com/?a=1&amp;b=2&lt;br&gt;&#60;hr&gt;&#x3C;div>&#38;amp&lt;/div></description>
+<item><enclosure url="https://user:pass@media.example.net/café/20" length="9007199254740991" type="application/ogg"/><description>&#x3C;br&gt;&lt;img>&lt;p>&#38;mdash;&lt;/p>&lt;li> &lt;/li>😀&lt;br&gt;&#x3C;/br&gt; &amp;#xD800;&lt;img src="x.png&quot;&gt;</description><pubDate>1975-03-19</pubDate><itunes:summary>&#60;p&gt;&amp;&#x3C;/p&gt;😀😀aaaaaaaa</itunes:summary><title><![CDATA[&AMP;  &Lt;]]></title><guid isPermaLink="false"> </guid><link></link><itunes:image href=""/><enclosure url='' length="2147483647" type="audio/wav"/></item>
+<item><title><![CDATA[茶&#xA9;&mdash;]]></title><guid isPermaLink='true'> </guid><link> https://e.com/x </link><pubDate>05 Nov 1976 25:28:56 -0000</pubDate><description></description><itunes:duration>2:21:44</itunes:duration><enclosure url="//example.com/a/b/c324.xyz" length="-9223372036854775808" type="image/jpeg"/><media:description type="plain">&#x3C;li&gt;مرحبا&#x3C;/li&gt;</media:description><podcast:transcript url='https://example.com/t.json' type="Application/JSON" language="en"/><podcast:transcript url="https://example.com/t.json" type='text/vtt' language="en"/></item></channel>
+</rss>

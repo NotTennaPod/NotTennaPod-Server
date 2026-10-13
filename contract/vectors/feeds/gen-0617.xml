@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><podcast:funding url='https://example.com/donate'>&lt;b&gt;x&lt;/b&gt;</podcast:funding> <itunes:author></itunes:author> <itunes:image href=""/> <title>&lt;b&gt;Bold&lt;/b> title
+a
+  b</title> <link>https://example.com</link> <atom:link href="https://example.com/feed?page=2" length="12" type="application/atom+xml" title="MP3 feed" rel="payment"/> <textInput><title>Search</title><link>https://example.com/search</link></textInput> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <description>  &#x26;#x1F600;aaaaaaaa&lt;p/>茶  😀</description> <image><url>  https://example.com/ws.png
+</url></image> <podcast:funding url=""></podcast:funding> <podcast:funding/> <item><title><![CDATA[a=b&c=d]]></title>
+  <link></link>
+  <pubDate>sun, 10 Jan 2573 14:14:02 -0800</pubDate>
+  <description><![CDATA[    spaced  Folge 7: Über alles<p>S01E7</p>😀שלום<div>&</div>ééé multi
+line]]></description>
+  <itunes:image/>
+  <itunes:duration>4500</itunes:duration>
+  <enclosure url="https://example.com/a.b/dir.with.dots/ep229.aac?auth=yes" type="text/plain"/>
+  <media:content fileSize=" 20000" isDefault="false" duration="01:00" type="image/png"/>
+  <media:content isDefault="false" url='https://user:pass@media.example.net/café/150.ts?dl=1.0' fileSize="52428800" medium="Audio" type="video/mp4" duration="1.5"></media:content>
+  <media:content medium='Audio' type=" audio/mpeg" fileSize="16385" duration="0060" url="//example.com/378.mid"/>
+  <atom:link rel="hub" type="application/rss+xml" title="" href="https://example.com/a.b/café/205.aspx"/></item> <item><media:thumbnail/>
+  <enclosure url="" length="-0" type="audio/ogg"/>
+  <title> مرحبا&lt;p&gt;Para&#x3C;/p>&#13;
+</title>
+  <media:content duration='9223372036854775807' fileSize="123456789012345678" type="image/png" isDefault="TRUE" medium="audio"/>
+  <itunes:duration>1E3:00</itunes:duration>
+  <description><![CDATA[<p>a > b</]]>p&gt;</description>
+  <media:description>&lt;p/>&#60;li>a
+  b&lt;/li&gt;</media:description>
+  <media:content medium="document" type="video" fileSize="00020000" duration="0060" url='http://example.org/ep322.wav'/>
+  <content:encoded><![CDATA[<li>&amp;</li><li>של]]>ום&#60;/li&gt;aaaaaa
+
+é&#x3C;p&gt;&amp;amp;amp;&lt;/p&gt;</content:encoded>
+  <podcast:transcript type=""/>
+  <media:content duration="01:00" type="audio/mp3" url=" ftp://files.example.com/a/b/c253.wma " fileSize=" 20000" medium="audio"/>
+  <guid>urn:uuid:e7d406d4</guid></item> <item><title>&#38;#xFFFF; &#38;#x;</title> <link> https://e.com/x </link> <description><![CDATA[a > b<br><li>trailing </li>😀😀	100%<br></br>]]></description> <itunes:duration>0:36:06</itunes:duration> <enclosure url='ftp://files.example.com/280.webm' length="00020000" type='audio/x-m4a'/> <psc:chapters xmlns:psc="http://podlove.org/simple-chapters" version="1.2"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title="😀" href='https://example.com/ch' image='https://example.com/ch.png' start="03:09:46.149"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title="Intro" image="https://example.com/ch.png" start='7295'/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start='bad:time' image="https://example.com/ch.png" title="&lt;b>x&lt;/b>"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" start="01:50:02" href="" title="😀" image="https://example.com/ch.png"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title="&lt;b>x&lt;/b>" start="10:00:00.000001"/></psc:chapters> <podcast:transcript type='application/srr' language='en'/><podcast:transcript type="application/x-subrip" language="en"/> <itunes:category text="Arts"><itunes:category text="Design"/></itunes:category></item> <item><title>"quoted"  &#x200B;</title>
+<pubDate> Tue, 24 July 2007 19:57	</pubDate>
+<content:encoded><![CDATA[שלום	x<y  x<y<br/><img src="x.png">]]></content:encoded>
+<description>&#60;br /&gt;&#60;hr>😀😀😀😀😀&#128512;&#60;br />&#233;ééé&#xE9;é&amp;#xD800;</description>
+<media:content fileSize="1" url="https://xn--caf-dma.example/café/179.amr" duration='2147483' type='audio/aac' medium="document" isDefault="false"/>
+<enclosure url="https://xn--caf-dma.example/ep56.mov" length="9007199254740991" type="application/ogg"/></item> <item><title><![CDATA[
+&apos;a&apos;
+&#xD800;]]></title> <guid isPermaLink="true"></guid> <link>https://example.com/ep</link> <pubDate>1997-05-03</pubDate> <content:encoded>aaaa&#233;é&#233;</content:encoded> <itunes:author>Item author</itunes:author> <enclosure length='+20000' type="Audio/MPEG"/> <media:content type="audio/*" fileSize="2147483647" medium="video" duration="1"/> <psc:chapters xmlns:psc="http://podlove.org/simple-chapters" version="1.2"><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" href="" image="https://example.com/ch.png" start="10:00:00.000001"/><psc:chapter xmlns:psc="http://podlove.org/simple-chapters" title="&lt;b>x&lt;/b>" start='' image='https://example.com/ch.png'/></psc:chapters> <podcast:chapters type="application/json+chapters"/></item> <item><link></link>
+  <title><![CDATA[Episode 12 &#x;  ]]></title>
+  <pubDate>1950-04-19T20:20:55CET</pubDate>
+  <itunes:subtitle>S01E28  trailing </itunes:subtitle>
+  <guid>urn:uuid:4b44eb25</guid>
+  <description><![CDATA[a < b  http://example.com/?a=1&b=2ééé😀<br/>]]></description>
+  <enclosure length="9007199254740991" type="video/mp4"/></item></channel> </rss>

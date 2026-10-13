@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:summary>aaaaa<![CDATA[aaa
+#hashaaaaaaaaa<li>a > b</li>ééé]]></itunes:summary><title>  &#x3C;sub>http://example.com/?a=1&#38;b=2&#x3C;/sub&gt;&#13;
+</title><image><link>https://example.com/img-link</link><title>Image title</title><url>  https://example.com/ws.png
+</url></image><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><link>https://example.com</link><podcast:funding url=""></podcast:funding><itunes:image href=' '/><podcast:funding>  spaced  </podcast:funding><description>&#60;div&gt;&#38;#xFFFF;&lt;/div&gt;&#60;br>&#60;/br&gt;S01E7&#x3C;br&gt;ééé
+&#x26;apos;a&amp;apos;</description><podcast:funding url=""></podcast:funding><itunes:author><![CDATA[Jane &amp; John]]></itunes:author><language>TR</language><atom:link rel="enclosure" href="https://example.com/feed?page=2" length="abc" type='application/atom+xml' title='Alternate'/><item><itunes:duration>12:34:56.789</itunes:duration>
+<guid isPermaLink="false"> </guid>
+<pubDate>thu, 28 Jun 1984 09:52 -0000</pubDate>
+<title>&#x26;amp;
+&#x3C;li&gt;Episode 14&lt;/li&gt;
+multi
+line</title>
+<link></link>
+<enclosure url="https://user:pass@media.example.net/dir.with.dots/ep43.oga" length="00020000" type="text/html"></enclosure>
+<psc:chapters version="1.2"><psc:chapter start="0x10:00" title="Café &amp;amp; more"/><psc:chapter start="97:43" title="" href="https://example.com/ch"/><psc:chapter start="03:39:39.810" title='Intro' image="https://example.com/ch.png"/><psc:chapter title="" start='02:37:32.527' href="https://example.com/ch"/><psc:chapter start="-2147483648:00:00" href="" image="https://example.com/ch.png"/></psc:chapters>
+<description></description></item><item><guid isPermaLink="true">  spaced guid  </guid>
+<enclosure url="https://cdn.example.com/98.mp4" length="0x4E20" type="audio/aac"/>
+<description><![CDATA[<div> leading</div><div>&Lt;</div>
+plain words	a=b&c=d<br /><br />[x]<br>a
+  b<br>]]></description>
+<pubDate>Sun 6 Jul 2138 01:57:01 GMT</pubDate>
+<content:encoded>مرحبا&#x3C;br&gt;</content:encoded>
+<itunes:duration>abc</itunes:duration>
+<enclosure length="٢٠٠٠٠" type="audio/x-wav"/>
+<itunes:subtitle>&#13;
+&#38;#0;&amp;copy;&#13;
+</itunes:subtitle>
+<dc:date>
+2015-08-13T17:28:21 	 </dc:date></item></channel> </rss>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><atom:link href="https://example.com/pay" title="" rel="next" type='text/html'/>
+<language>pt-BR</language>
+<pi:funding url="">&#x3C;b&gt;x&#60;/b&gt;</pi:funding>
+<link> https://example.com/ </link>
+<media:thumbnail/>
+<itunes:new-feed-url> https://new.example.com/sp </itunes:new-feed-url>
+<atom:link href="" title='Café'/>
+<title>
+&#60;blockquote&gt;back\slash&#60;/blockquote&gt;
+&#x26;euro;</title>
+<itunes:summary><![CDATA[Tom & Jerry <3  padded  	"quoted"]]></itunes:summary>
+<item><title>&amp;copy;
+[x]
+שלום</title>
+  <guid isPermaLink="true">  spaced guid  </guid>
+  <link> https://e.com/x </link>
+  <pubDate>Sat, 28 Dec 86 04:47:05 -0500</pubDate>
+  <itunes:summary>ééé  &#38;#x;&lt;hr>#hash&lt;br>&#x3C;BR></itunes:summary>
+  <itunes:subtitle>é</itunes:subtitle>
+  <enclosure url="//example.com/a/b/c389.MP3" length='1,000,000' type="application/x-bittorrent"/></item>
+<item><itunes:image href=" "/>
+  <title>&#60;p style=&quot;text-align:center&quot;>&amp;lt&lt;/p>&#38;&amp;#xA9;</title>
+  <enclosure length="-0" type="video"/>
+  <itunes:duration>10595</itunes:duration>
+  <pubDate>
+Sun, 22 Jun 2284 06:41:39 +0100 </pubDate>
+  <enclosure length="-16384" type="AUDIO/MPEG"/>
+  <description>&lt;img src="x&quot; alt=&quot;y"/>&#x3C;img src=&quot;x" alt="y"/> a &gt; b</description>
+  <link></link></item></channel>
+  </rss>

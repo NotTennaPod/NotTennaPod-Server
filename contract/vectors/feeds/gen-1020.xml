@@ -1,0 +1,10 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+  <updated>SATURDAY, 14 Jul 0001 18:47:30 -0500</updated><id></id><link length="20000" title="Café" href="https://example.com/" rel="related"/><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""/><title><![CDATA[ leading]]></title><link rel='last' href="" title="Alternate" length="12"/><author><name>Émile</name></author><entry><updated>Monday, 04 Apr 1983 10:08:02</updated>
+<author><name>Entry author</name></author>
+<id>
+id
+</id>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""/>
+<link rel="alternate" href="https://example.com/pay"/>
+<mrss:content type="audio/flac" duration="0060" isDefault="false" medium="video" fileSize="２０００００"/></entry>
+  </feed>

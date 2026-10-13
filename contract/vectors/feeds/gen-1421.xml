@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:subtitle>&amp;Lt;&lt;li&gt;&amp;amp&lt;/li>&#38;#x1F600;</itunes:subtitle>
+<title><![CDATA[<table><tr><td>a > b</td><td>b</td></tr></table>]]></title>
+<link> https://example.com/ </link>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<itunes:author><![CDATA[😀 Pod]]></itunes:author>
+<item><title>&#60;center&gt;Line&#x3C;br&gt;break&#60;/center&gt; [x]</title><guid>dup</guid><link>https://example.com/ep</link><pubDate>Tue,09 Nov 1982 17:47:34 +0000</pubDate><description>&lt;li>café&lt;/li&gt;</description><dc:date>1977-03-15T09:27:03+0945</dc:date><enclosure url="http://example.org/café/40.mpga?dl=1.0" length="18446744073709551616" type="unknown"/><media:group><media:content duration="1" medium="video" type="audio/" fileSize="2147483648" isDefault="TRUE"/><media:content type="audio/mp4" medium="Audio" url="https://cdn.example.com/ep184.php" fileSize="-1" isDefault="TRUE" duration="2147484"/></media:group><podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/></item></channel>
+</rss><rss/>

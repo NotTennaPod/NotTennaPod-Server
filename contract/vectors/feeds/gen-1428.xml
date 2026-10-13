@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><language>fr
+</language><link xmlns="http://www.w3.org/2005/Atom" length="20000" type="application/rss+xml" rel="last" href="ftp://files.example.com/189.jpg?dl=1.0"/><atom:link length="9223372036854775808" href="https://example.com/pay" title='Alternate' type="application/rss+xml" rel='hub'/><link></link><itunes:image href=" https://example.com/sp.jpg "/><title><![CDATA[ <b>Bold</b> titleEpisode 12&euro;  ]]></title><item><itunes:summary>	&#38;amp;amp;</itunes:summary><description><![CDATA[<div><b>Bold</b> title</div>]]></description><itunes:image href=""></itunes:image><link> https://e.com/x </link><enclosure url="//example.com/ep281" length="abc" type="application/pdf"/><content:encoded></content:encoded><guid></guid><pubDate>1979-02-23</pubDate></item><item><description>é&#233;&#xE9;&lt;div>{json: 1}&lt;/div&gt;</description>
+  <itunes:subtitle><![CDATA[x<y
+​
+http://example.com/?a=1&b=2]]></itunes:subtitle>
+  <title> multi
+line  </title>
+  <guid isPermaLink='true'>Caf&#233;-guid</guid>
+  <enclosure length='2147483647' type="audio/mp4"/>
+  <link> https://e.com/x </link>
+  <itunes:image href=" "></itunes:image>
+  <itunes:summary>aa</itunes:summary>
+  <dcterms:date>2009-09-23T20:46:50.862</dcterms:date></item><item><enclosure url='ftp://files.example.com/dir.with.dots/ep312.aac' length="123456" type="audio/mp4"/> <title>a
+  b&#x3C;p&gt;Para&#x3C;/p></title> <itunes:image href="https://example.com/ep.jpg"></itunes:image> <link> https://e.com/x </link> <itunes:duration>4:41:06</itunes:duration> <pubDate>Sat, 11 Mar 2575 13:35:20 -0800:00</pubDate> <itunes:subtitle>#105 – Interview</itunes:subtitle></item><item><itunes:duration>1:03:25</itunes:duration>
+<title><![CDATA[<u>&#xA9;</u>  <tt>&euro;</tt>  <font color="red">"quoted"</font>]]></title>
+<enclosure length="２０００００" type="image/jpeg"/>
+<link> https://e.com/x </link>
+<guid isPermaLink="false">urn:uuid:40ca4572</guid>
+<description>&#60;p>&#x26;#xFFFF;&lt;/p>ééé&#x3C;div&gt;back\slash&#x3C;/div&gt;</description></item><item><itunes:summary><![CDATA['single'<b]]>r>
+
+&#38;copy;&#x3C;p/>  a
+
+b&#x1F600;&lt;div>S01E7&#60;/div&gt;aaaaa AT&#x26;T</itunes:summary>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <link></link>
+  <enclosure url="http://example.org/e p42.mp4" length="2147483647" type="audio/aac"/>
+  <description>😀	&#38;#0;&lt;div>&#38;lt;b&#38;gt;escaped&amp;lt;/b&amp;gt;&lt;/div> &#x26;;&#x3C;li>  padded  &#x3C;/li></description>
+  <itunes:duration>5:55:40</itunes:duration>
+  <title>&amp;a<![CDATA[mp]]></title></item></channel>
+</rss>

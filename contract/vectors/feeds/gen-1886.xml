@@ -1,0 +1,56 @@
+﻿<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <id> raw </id>
+<title type='HTML'><![CDATA[שלום &copy;]]></title>
+<link length='20000' rel="self" title="MP3 feed" href="https://example.com/feed?page=2"/>
+<subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x3C;p>1 &lt;2&lt;/p&gt;	&amp;#xD800;&#60;div&gt;Tom &#38;amp; Jerry &amp;lt;3&lt;/div&gt;&lt;p&gt;&amp;copy;&#x3C;/p>
+&amp;amp;amp;</div></subtitle>
+<author><name>  Bob  </name></author>
+<itunes:image href=""/>
+<author><name></name><email>a@example.com</email></author>
+<entry><summary type="HTML">&lt;br/&gt;&lt;BR>&#13;
+back\slash &#1605;ر&#x62D;ب&#1575;&amp;lt&#x3C;br&gt; R&#38;D&amp;#169;&lt;br&gt;</summary>
+<link rel="first" href="https://example.com/feed?page=2" title="Café" type="application/xml+xhtml" length="12"/>
+<title type="html">&#13;
+&amp;#;
+&#x26;lt;b&amp;gt;escaped&#x26;lt;/b&#38;gt;
+ש&#x5DC;ו&#1501;  </title>
+<id>urn:uuid:1</id></entry>
+<entry><content></content><summary type="text"></summary><id>tag:x,2020:1</id><link title="" length='abc' type="text/html" rel="payment" href="https://xn--caf-dma.example/e p186.m4a"></link><author><name>Entry author</name></author><published>Sun, 30 Jul 2013 02:57 PST</published><link length="abc" rel="alternate"/><title type="text"><![CDATA[100%  &#128512;  ]]></title></entry>
+<entry><updated>Tuesday, 01 Feb 1986 08:52 -0800</updated>
+<id> raw </id>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#38;#;
+&#x3C;label>&amp;#0;&lt;/label&gt;
+&amp;unknown;</div></title>
+<itunes:duration>2:43:23</itunes:duration>
+<itunes:explicit>clean</itunes:explicit>
+<link type="application/atom+xml" rel='alternate' href='https://example.com/pay' title="Café" length="20000"/>
+<content>&#38;AM<![CDATA[P;]]></content></entry>
+<entry><link type="text/html" href="https://example.com/alt.xml" rel="first" title="Café"/> <author><name>Entry author</name></author> <published>1969-02-01T03:47:59.811-050</published> <link href="" title="Café" length="12" type='' rel=""/> <title type="HTML">back\slash  &amp;#xA9;</title> <link href="https://example.com/" type="application/atom+xml"/> <content type="html">😀 &amp;#128512;&lt;div&gt;{json: 1}&#60;/div&gt;&#13;
+&amp;nbsp;&#x26;#xFFFF;&#60;br&gt;</content> <updated>Monday Nov 30 17:24:44 2002</updated> <summary type="html"><![CDATA[<hr> &mdash;😀😀<p>multi
+line</p><br></br><hr><br/> &;]]></summary> <id></id></entry>
+<entry><link title="Alternate" type="application/xml+xhtml" rel="self" href="https://example.com/pay" length="12"/>
+<itunes:duration>18:25</itunes:duration>
+<updated> 2017-02-03T23:44:08
+</updated>
+<title><![CDATA[S01E806]]></title>
+<published>Sun, 08 Feb 2004 16:16 -0500 garbage</published>
+<link type="text/html" length="abc" rel='alternate' title=''></link>
+<p2:transcript type="" language="en"></p2:transcript><podcast:transcript url="https://example.com/t.json" type="" language="en"></podcast:transcript><p2:transcript/>
+<id>urn:uuid:1</id></entry>
+<entry><id> raw </id>
+  <title type="HTML">&#60;b&gt;Bold&#60;/b<![CDATA[> title]]></title>
+  <updated>2000-03-02T08:57:38.010</updated>
+  <summary type="html"></summary>
+  <link length="20000" rel="related" href="https://example.com/feed?page=2" title="MP3 feed"></link></entry>
+<entry><link length="12" href="https://example.com/pay" rel="last" title="Alternate" type="application/rss+xml"/>
+<id></id>
+<link rel="first" href="https://example.com/alt.xml" title="Café"/>
+<published>20 Apr 1950 23:36:48 +0000</published>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;div&gt;http://example.com/?a=1&amp;b=2&#x3C;/div&gt;  back\slash</div></summary>
+<title>	a=b&#38;c=d&#13;
+</title>
+<link rel="enclosure" type="audio/mpeg" title="" href="https://example.com/alt.xml"/>
+<content type="plain">&lt;hr/&gt;</content></entry>
+<entry><author><name>Entry author</name></author> <updated>2154-08-30T00:57:4</updated> <title><![CDATA[<img src="x.png"> cover
+&#x;]]></title></entry></feed>

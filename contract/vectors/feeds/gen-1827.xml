@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><foo><description>Nested description</description></foo>
+<title>trailing cr&#13;lf&#x26;#0;</title>
+<itunes:image></itunes:image>
+<atom:link length="20000" type="text/html" rel="next" href="https://example.com/alt.xml"></atom:link>
+<link xmlns="http://www.w3.org/2005/Atom" title="" href="" length="12" type="audio/mpeg" rel="first"/>
+<link> https://example.com/ </link>
+<atom:link title="" rel="enclosure" type="application/xml+xhtml" href="https://example.com/feed?page=2"/>
+<description>😀😀&#x1F600;😀&#60;hr/><![CDATA[]]></description>
+<item><guid> </guid><title>&amp;Lt;
+trailing 
+&#x3C;3 &lt;3</title><link></link><media:content type="text/plain" url='HTTPS://EXAMPLE.COM/a/b/c268.aif' duration="" fileSize="1"/><enclosure length="1" type="audio/mp3"/><pubDate>15 Nov 57 16:40 +1400</pubDate><enclosure url="https://example.com:8443/café/267.MP3" length='0' type="x-audio/mpeg"/></item>
+<item><title>&#38;<![CDATA[#;]]></title><description></description><i:image href=""/><enclosure url="https://example.com:8443/dir.with.dots/ep394.OGG" length="0" type="text/html"/><itunes:subtitle><![CDATA[&#128512;
+第567集
+multi
+line]]></itunes:subtitle><content:encoded>&#x3C;BR> &#38;nbsp;&#60;br>&#x3C;/br&gt;back\slash&#60;br&gt;&lt;br></content:encoded><link></link><pubDate>Tuesday, 21 Feb 2175 13:42:23 -0000</pubDate><guid isPermaLink="true">  spaced guid  </guid></item></channel>
+</rss>

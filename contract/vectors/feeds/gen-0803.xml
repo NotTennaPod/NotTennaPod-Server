@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><item><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+45:00
+</itunes:duration>
+<content:encoded><![CDATA[<div>{json: 1}</div>]]></content:encoded>
+<media:thumbnail url=""/>
+<guid isPermaLink="true">a&amp;b</guid>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" https://e.com/i.png "/>
+<enclosure url="ftp://files.example.com/206.3gp" length="123456" type="audio/aac"/>
+<media:group><media:content medium="Audio" duration="2147484" fileSize='00020000' type='audio' url='https://example.com:8443/e p93.opus'/></media:group>
+<pubDate>Mon Oct 23 05:55 2254</pubDate>
+<title>sep</title></item><itunes:owner xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:name xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Owner</itunes:name><itunes:email xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">o@example.com</itunes:email></itunes:owner><title>&#x26;#65;&#38;#66;  trailing   &#x26;apos;a&amp;apos;</title><atom:link length="abc" title="" type='application/xml+xhtml' rel="archives"/><link>https://example.com</link><itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">A, B</itunes:author><title> &#38;apos;a&#38;apos;&#13;
+</title><atom:link rel="enclosure" href="https://example.com/" length="9223372036854775808" type="application/xhtml+xml" title='MP3 feed'/><media:thumbnail url="https://example.com/mt.jpg"/><description> &#x26;;&lt;img src="x&quot; alt="y&quot;/>&lt;li&gt;&#38;#0;&lt;/li&gt;&#x3C;img src="x" alt="y&quot;/>&#60;p&gt;&#38;#xFFFF;&#x3C;/p>&lt;li&gt;&#x26;AMP;&lt;/li&gt;
+
+&#38;#0;&lt;div&gt;café&lt;/div></description><image><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link><title>Image title</title></image><atom:link type="" rel="archives" title="Café"/><atom:link rel="enclosure" length='9223372036854775808' title="Alternate" href="https://example.com/alt.xml" type='text/html'/></channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"> <channel><title>  padded  
+&#38;mdash;</title>
+<dc:creator>DC Creator</dc:creator>
+<link></link>
+<language>de-DE</language>
+<description>x&#x3C;y</description>
+<itunes:author>Café R<![CDATA[adio]]></itunes:author>
+<item><podcast:transcript type="text/html" language='en'/><podcast:transcript url="https://example.com/t.vtt" type="application/json" language="en"></podcast:transcript><podcast:transcript type='application/srt' language="en"/> <description>&#60;img src="x.png&quot;&gt;&#60;div&gt;Tom &amp; Jerry &lt;3&lt;/div>&#60;div&gt;茶&lt;/div&gt;&amp;AMP; &#38;#x1F600;
+
+Episode 12	x&#60;y&#x3C;img src="x.png&quot;&gt; cover</description> <link> https://e.com/x </link> <enclosure length="9007199254740991" type="text/plain"/> <title>100%</title> <itunes:summary><![CDATA[<div>&nbsp;</div>]]></itunes:summary> <enclosure length='4294967296' type="audio/"/> <guid>dup</guid> <pubDate>2004-09-29T14:24:40Z</pubDate></item>
+<item><itunes:duration>2:42:44</itunes:duration>
+<itunes:image href=' https://e.com/i.png '/>
+<foo><description>Nested description</description></foo>
+<itunes:subtitle>&#x3C;P&gt;&amp;#;<![CDATA[</P>]]></itunes:subtitle>
+<title><![CDATA[&]]>unknown;</title>
+<enclosure url="//example.com/dir.with.dots/ep388.xyz" length='12' type="audio/mpeg"/>
+<description><![CDATA[ مرحبا]]></description></item></channel>
+  </rss>

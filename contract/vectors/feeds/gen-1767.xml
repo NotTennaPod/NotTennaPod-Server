@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><link></link>
+  <language>fr
+</language>
+  <title>&amp;lt
+&lt;h6&gt;trailing &#x3C;/h6></title>
+  <description>Lin<![CDATA[e<br>break<br>]]></description>
+  <atom:link title="" href="" length="12" rel="last"/>
+  <item><title><![CDATA[#hash  S01E376]]></title> <guid isPermaLink="true"></guid> <enclosure url="https://user:pass@media.example.net/ep282.Mp4" length="-16384"/> <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&amp;<![CDATA[Lt;Line<br>break]]></itunes:subtitle> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">13181</itunes:duration> <link></link> <enclosure url="http://example.org/ep289.php" length="16385" type="audio/mp4"/></item>
+  <item><title><![CDATA[<s><p>Para</p></s> trailing  &#;]]></title><link>https://example.com/ep</link><pubDate>Thu, 24 Nov 1983 15:44:42 +1400</pubDate><description>[x]😀&lt;div>plain words&lt;/div&gt;aaa&#x26;#x1F600;&#60;br&gt;&#60;p>Episode 7&#x3C;/p>&lt;p&gt;&#x26;#128512;&#60;/p&gt;&lt;p&gt;Tom &amp;amp; Jerry &#38;lt;3&#x3C;/p&gt;</description><content:encoded><![CDATA[ שלום]]></content:encoded><itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[back\slash]]></itunes:subtitle><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">5605.784</itunes:duration><enclosure length="123456" type=' audio/mpeg'/><media:thumbnail url=""/><atom:link href="" type="application/xml+xhtml" title="" rel="enclosure" length="12"/></item>
+  <item><itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Item author</itunes:author> <enclosure url="ftp://files.example.com/dir.with.dots/ep392.aif" length="2147483647" type="application/pdf"/> <title><![CDATA[<code>&euro;</code>  <3 <3  &euro;]]></title> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">:30</itunes:duration> <guid isPermaLink="false">a&amp;b</guid> <media:content duration="01:00" type="application/pdf" fileSize='4294967296' medium="document" isDefault="TRUE" url="https://cdn.example.com/café/338.opus"/> <pubDate>1976-11-10T07:10:</pubDate> <description><![CDATA[😀😀😀😀 &Lt;<div>&euro;</div>
+
+a
+
+b]]></description> <link> https://e.com/x </link></item></channel>
+</rss>

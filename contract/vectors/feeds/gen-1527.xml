@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><itunes:episodeType>full</itunes:episodeType> <itunes:subtitle><![CDATA[<code>Episode 12</code>  <cite>&#xD800;</cite>  &#0;]]></itunes:subtitle> <atom:link rel="enclosure" length="9223372036854775808" title="" type="text/html" href='https://example.com/alt.xml'/> <image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url><title>Image title</title></image> <atom:link href="https://example.com/" title="" type="application/rss+xml" rel="first"/> <link> https://example.com/ </link> <title>&amp;copy;
+&lt;b>&#x26;amp;
+&amp;#;</title> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <description>&amp;amp;amp;&#x3C;br&gt;&#13;
+&#38;apos;a&#x26;apos;	Episode 12&#60;div&gt;&amp;amp;&#x3C;/div>aaa&lt;li&gt;&#x26;hellip;&#60;/li&gt;&lt;li&gt;&#x26;mdash;&#x3C;/li>&#160;مرحبا</description> <item><title><![CDATA[S01E808<]]>img src="x.png"&gt; cover</title>
+  <link></link>
+  <pubDate>  1988-04-27T00:02:36Z  </pubDate>
+  <description></description>
+  <guid>
+</guid>
+  <atom:link href="https://user:pass@media.example.net/ep343.webm" length='abc' rel='hub' title='MP3 feed'/>
+  <enclosure url="HTTPS://EXAMPLE.COM/café/159.amr" length="20000.0" type="image/jpeg"/>
+  <itunes:subtitle><![CDATA[café Line<br>break <3 <3]]></itunes:subtitle>
+  <enclosure type="text/plain"/>
+  <media:description><![CDATA[	"quoted"😀😀]]></media:description></item> <item><media:content url="ftp://files.example.com/a/b/c228.xyz" type="application/json" medium='Audio' duration="+60" fileSize="-1"></media:content><enclosure length="2147483648" type='x-audio/mpeg'/><media:content isDefault='true' type='text/plain' fileSize="0" duration="2147483" url="HTTPS://EXAMPLE.COM/café/159.amr"/><pubDate>2024-01-02+0945</pubDate><enclosure url="https://user:pass@media.example.net/dir.with.dots/ep187.m4a" length="+20000"/><link> https://e.com/x </link><description>back\slash &amp;amp;amp;</description><itunes:image href="https://example.com/ep.jpg"/><guid isPermaLink="false">
+</guid><media:content duration="" fileSize="16385" isDefault="1" medium="Audio" type="text/plain"></media:content><enclosure url="https://example.com:8443/dir.with.dots/ep235.mp3" length="12" type="text/html"/><itunes:duration>13020</itunes:duration><content:encoded><![CDATA[aaaaa]]></content:encoded><media:thumbnail url="https://example.com/th.jpg"/></item></channel>
+</rss>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<channel><image><url>  https://example.com/ws.png
+</url><title>Image title</title></image> <itunes:image href=" "/> <itunes:subtitle>&amp;euro;</itunes:subtitle> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <description>&#60;p&gt;&#x26;#x;&lt;/p>	Tom &amp; Jerry &lt;<![CDATA[3ééé😀😀😀 é]]></description> <podcast:funding url="https://example.com/donate">  spaced  </podcast:funding> <title><![CDATA[&#]]>xD800;</title> <language>de-DE</language> <media:thumbnail url=""/> <link> https://example.com/ </link> <item><title>Line&#x3C;br>break &amp;hellip; a
+  b</title><guid> </guid><pubDate>1985-05-27T08:47:52Z</pubDate><itunes:subtitle>&lt;code&gt;#609 &#x2013; Interview&lt;/code&gt;  a&#13;
+b    padded  </itunes:subtitle><enclosure url='http://example.org/e p0.OGG?file=x.mp3' length="-16384" type='Audio/MPEG'/><media:thumbnail/><!-- comment --><?pi data?></item> <item><description>&#60;p>​&lt;/p&gt;</description>
+  <enclosure length="00020000" type='Audio/MPEG'/>
+  <enclosure url="" length="0" type="application/x-bittorrent"/>
+  <psc:chapters></psc:chapters>
+  <title>&amp;nbsp;  &#x26;apos;a&#38;apos;  &#x5E9;לום</title>
+  <link> https://e.com/x </link>
+  <enclosure length="abc" type="Audio/MPEG"/>
+  <guid isPermaLink="false">Café-guid</guid>
+  <podcast:transcript url="https://example.com/t.vtt" type="application/srr" language="en"/>
+  <media:content medium="Audio" isDefault="false" url="https://example.com:8443/175.xyz" fileSize="２０００００" type="audio/x-m4a" duration="59"/></item> <item><itunes:image href=" "/> <title>&lt;img src=&quot;x.png"&gt; cover
+Tom &amp; Jerry &#x3C;3</title> <itunes:summary><![CDATA[AT&]]>T&lt;br&gt;&lt;br/>第7集&#x3C;br>a=b&amp;c=d&#60;p&gt;😀&lt;/p></itunes:summary> <pubDate>rOquZRKjisQHklvUATFmN</pubDate> <itunes:duration>596:31:23.648</itunes:duration> <enclosure url="//example.com/ep80.txt#t=10" length="-1" type=""/> <media:group><media:content isDefault="true" fileSize="1,000,000" type="image/jpeg" duration="0" url="https://example.com/a.b/a/b/c218.ogx"/></media:group></item> <item><dc:date>Saturday, 05 Feb 93 05:35 +0000</dc:date>
+<itunes:subtitle><![CDATA[&lt &#xD800;   spaced  ]]></itunes:subtitle>
+<itunes:duration>42:10</itunes:duration>
+<title>a &lt; b&lt;b&gt;&#60;i&gt;&#38;hellip;&lt;/b>&lt;/i></title>
+<link>https://example.com/ep</link>
+<guid isPermaLink="false"></guid>
+<itunes:image href=""/>
+<description><![CDATA[ééé]]></description>
+<enclosure length="123456" type="text/html"/></item></channel> </rss>

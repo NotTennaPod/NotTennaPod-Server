@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xml:lang="en">
+<id>https://example.com/feed</id><author><name>C&#x26;D</name></author><author><name>  Bob  </name><email>a@example.com</email></author><link rel="enclosure" title="Café" length="9223372036854775808" href="https://example.com/"/><logo></logo><title type="plain">#896 &#8211; Interview&amp;AMP;&#1605;&#1585;&#x62D;&#1576;&#1575;</title><itunes:image href='https://example.com/ai.jpg'></itunes:image><updated>Thu 17 Sep 1981 12:22:05 GMT+0530 (Central Euro</updated><media:thumbnail url="https://example.com/amt.jpg"/><author><name>Ann</name></author><entry><id>tag:x,2020:1</id>
+<chapters:chapters><chapters:chapter start='' href='' title="&lt;b>x&lt;/b>"/><chapters:chapter start='01:51:11' title="&#128512;"/></chapters:chapters>
+<title type="HTML">&amp;apos;a&#x26;apos;</title>
+<link type="" rel='alternate' title='Café'/>
+<published>13 Sep 60 22:53:08 +0100</published>
+<updated>x,  Sun Nov 17 03:33:06 2120</updated></entry><entry><updated>Mon, 10 Aug 2448 21:42:16 +1400</updated>
+<link href="" title="MP3 feed" rel='last' length="abc" type="application/xhtml+xml"/>
+<dc:date>06 nov 60 04:09 +0200</dc:date>
+<published>2024-01-15 10:00:00</published>
+<chapters:chapters version='1.2'></chapters:chapters>
+<itunes:duration>2:05:04</itunes:duration>
+<id></id>
+<title>Line&lt;br&gt;break{json: 1}</title></entry> </feed>

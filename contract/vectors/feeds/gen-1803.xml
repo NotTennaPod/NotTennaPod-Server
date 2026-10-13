@@ -1,0 +1,13 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en">
+<updated>Friday, 01 Mar 2002 07:46 +1400</updated> <subtitle>
+cr
+lf  &amp;apos;a&amp;apos;&lt;hr/>😀😀
+
+&amp;#xFFFF;&#x3C;img&gt;	x&lt;y&lt;img src="x" alt="y"/&gt;</subtitle> <id>urn:x</id> <link type="application/xml+xhtml" href="https://example.com/alt.xml" title="" rel="self"/> <title>&#x26;copy;</title> <itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">éé&#xE9;
+&#128512;</itunes:summary> <logo></logo> <entry><link length='20000' type='application/xml+xhtml' title="Café" href="https://user:pass@media.example.net/204.avi?auth=yes" rel="payment"/>
+<summary type="html"><![CDATA[<p>Line<br>break</p>]]></summary>
+<link rel='self' title="Alternate"/>
+<link rel="enclosure" type="text/html" length="12" href="" title="Café"/>
+<title type="html">&#x3C;div>&#60;p&gt;http://example.com/?a=1&amp;b=2&lt;/p&gt;&lt;/div>x&#x3C;y&#38;;</title>
+<id></id></entry>
+  </feed>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"><link type="" title="" length='9223372036854775808'/>
+<link rel="Next" type="audio/mpeg" href='https://example.com/pay' title="Café"/>
+<link length='20000' type="" rel=''/>
+<link href="https://example.com/feed?page=2" rel="payment" title="Café"/>
+<id> raw </id>
+<icon></icon>
+<logo>https://example.com/logo.png</logo>
+<author><name>  Bob  </name></author>
+<title type="html">&#38;amp;amp;</title> </feed>

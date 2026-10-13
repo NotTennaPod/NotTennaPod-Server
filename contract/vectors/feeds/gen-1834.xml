@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"><channel><link> https://example.com/ </link> <description><![CDATA[  ééé]]></description> <image><link>https://example.com/img-link</link><url></url></image> <textInput><title>Search</title><link>https://example.com/search</link></textInput> <title>	&#60;table&gt;&#x3C;tr&gt;&#60;td&gt;a&#13;
+b&lt;/td>&lt;td&gt;b&lt;/td>&#60;/tr>&#x3C;/table&gt;
+&#38;AMP;
+a&#13;
+b	</title> <language>TR</language> <item><title>&lt;h6&gt;a&#13;
+b&#60;/h6&gt;&#x3C;span>Episode 12&lt;/span&gt;[x]</title>
+  <link> https://e.com/x </link>
+  <pubDate>Foo, 	18 Nov 2561 20:59:55 -0000</pubDate>
+  <dc:date>Mon Aug 6 20:99:26 0001</dc:date>
+  <enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep299.avi" length="-0" type="video/mp4"/>
+  <enclosure url="//example.com/a/b/c313.torrent" length='２０００００' type='audio/ogg'/>
+  <enclosure url='http://example.org/dir.with.dots/ep380.php?a=1&amp;b=2' length="9223372036854775807" type="audio/"/>
+  <media:thumbnail url=""/></item> <item><title><![CDATA[<b>Bold</b> title]]></title>
+  <description><![CDATA[&#128512;😀😀😀😀a]]></description>
+  <guid> </guid>
+  <media:description type="plain">&#x3C;p>sep&lt;/p&gt;<![CDATA[	café😀😀😀&amp;<br>]]></media:description>
+  <enclosure length="20000 " type="image/*"/></item> <item><guid isPermaLink='false'>a&amp;b</guid>
+<podcast:transcript type="application/srr" language="en"/><podcast:transcript url="https://example.com/t.vtt" type='text/vtt'/><podcast:transcript url="" language='en'/>
+<title/>
+<pubDate>10 Sep 2559 14:11:09 +-0100</pubDate>
+<enclosure url="HTTPS://EXAMPLE.COM/ep130.amr" length="+20000" type="AUDIO/MPEG"/>
+<link> https://e.com/x </link></item> <item><media:content duration="1.5" isDefault="false" medium="audio" fileSize="1"/> <podcast:transcript type=""/> <enclosure url="ftp://files.example.com/e p349.opus?a=1&amp;b=2" length="20000 " type='image/jpeg'/> <enclosure url='//example.com/café/293.wma' length="9007199254740992" type="audio"/> <pubDate>+fxptSbxOZeQOZr</pubDate> <link> https://e.com/x </link> <cont:encoded>aaaaaaR&amp;D&#60;br>&lt;li>1 &#60;2&lt;/li>&#x3C;div&gt;x&lt;y&lt;/div&gt; http://example.com/?a=1&#38;b=2</cont:encoded> <title>Folge 46: Über alles</title> <guid isPermaLink="true">dup</guid> <podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/> <media:content medium="video" url="https://example.com/a.b/dir.with.dots/ep342" fileSize="" isDefault="1" duration="1"/></item> <item><media:content isDefault='1' medium='document' duration="abc" fileSize='1' type="audio/x-m4a"/> <enclosure url="http://example.org/e p381.ts?dl=1.0" length="20000.0" type="AUDIO/MPEG"/> <guid>Caf&#xE9;-guid</guid> <pubDate>2024-10-22T05:35:33.494Central European Standard Time</pubDate> <title/> <enclosure url='https://example.com:8443/ep170.webm' length='0' type='video/mp4'/></item></channel></rss>

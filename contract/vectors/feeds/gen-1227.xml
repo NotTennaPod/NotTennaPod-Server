@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en">
+  <itunes:image href=""/><title type="plain"><![CDATA[  "quoted"
+第408集 ]]></title><author><name>C&#38;D</name></author><id>urn:x</id><itunes:author>A, B</itunes:author><author><name>Ann</name><email>a@example.com</email></author><subtitle type="html">&lt;p&gt;第7集&lt;/p></subtitle><author><name>Ann</name></author><link type="application/atom+xml" length="abc" rel="archives"/><entry><published>
+2006-06-22T12:49:05-0500 </published>
+  <media:content isDefault="false" duration="9223372036854775807" type='video' fileSize="18446744073709551616" medium="document"/>
+  <link href="https://example.com/feed?page=2" rel="related" title="Café"></link>
+  <title type="plain">&#x26;a<![CDATA[mp;  sep]]></title>
+  <id></id>
+  <link title="Alternate" rel="first" type="application/rss+xml" href="https://example.com/" length="abc"/>
+  <content type="HTML"></content>
+  <link title="Café" type="text/html" length="abc"></link>
+  <updated>Sun Nov 24 19:38:27 1985</updated>
+  <itunes:duration>1912.234</itunes:duration></entry><entry><link rel="" title="Café" href="https://example.com/pay" type="text/html"/>
+  <media:content fileSize="0" duration="3600" isDefault="1" medium="image" url='https://user:pass@media.example.net/277.mp3' type='audio/aac'/>
+  <title>R&amp;D</title>
+  <updated>Tue,   23   May 2023 04:01:48 +1400</updated>
+  <published>Thu, 08 May 1986 00:40:03</published>
+  <content> a&#13;
+b茶&#60;br>&lt;hr&gt;</content>
+  <comments>https://example.com/c</comments></entry>
+</feed>

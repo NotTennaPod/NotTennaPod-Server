@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"> <link href="https://example.com/alt.xml" title="MP3 feed" type="application/atom+xml" length="abc" rel="Next"/>
+<link href="https://example.com/pay" rel="" type="application/xhtml+xml"/>
+<title type="html">  padded  </title>
+<subtitle><![CDATA[<img src="x.png">]]></subtitle>
+<itunes:image href=""/>
+<icon>https://example.com/icon.png</icon>
+<logo>https://example.com/logo.png</logo>
+<link href='https://example.com/feed?page=2' title='MP3 feed' rel="alternate" type="audio/mpeg"/>
+<link rel="archives" length="12" href="https://example.com/alt.xml" title="Alternate"/>
+<entry><link length="abc" href="https://example.com/"/><link length="abc" href='' type="application/rss+xml" rel="payment" title="Café"/><summary type="HTML"><![CDATA[<hr><br/><img src="x.png">	multi
+line<li></li>]]></summary><id></id><title type="html">&#38;#169; &amp;Lt;</title><link rel="" href="" length="abc" title=""/><updated>	Tue, 03 Jun 1969 17:20:53 -1200&#13;
+</updated><published>2014-02-01T01:05:29.1234567India Standard Time</published></entry>
+<entry><title>&#x26;#;</title>
+<link length='20000' type="application/rss+xml" rel='related' href='https://example.com/feed?page=2'></link>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;BR>&lt;li&gt;&amp;amp;amp;&lt;/li>
+
+a=b&amp;c=d&lt;hr/&gt;	&#38;AMP;</div></content>
+<updated>2019-05-14T08:48:07.744pst</updated>
+<media:content type="application/octet-stream" fileSize="9223372036854775807" duration="0060" medium='Audio' isDefault="1" url="https://cdn.example.com/dir.with.dots/ep114.MP3"/></entry>
+<entry><link rel='self' title="Alternate" href="HTTPS://EXAMPLE.COM/ep63.txt" length="9223372036854775808"></link>
+<itunes:duration>175:30</itunes:duration>
+<id>urn:uuid:1</id>
+<sc:chapters xmlns:sc="http://podlove.org/simple-chapters"><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" start="00:01:02,5"/><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" title="Intro" start="2147483648:00:00" image="https://example.com/ch.png"/><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" href="" title="" start="03:33:24.837"/><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" start='5326' image="https://example.com/ch.png"/><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" title='Café &amp;amp; more' start="02:53:34" image="https://example.com/ch.png" href=""/><sc:chapter xmlns:sc="http://podlove.org/simple-chapters" title="Café &amp;amp; more" href="https://example.com/ch" start="03:58:15"/></sc:chapters>
+<link type='application/xhtml+xml' href="https://example.com/alt.xml" rel="payment" length="20000"/>
+<title type="plain">a&#13;
+b</title>
+<summary type="html"><![CDATA[ééé]]></summary>
+<updated>08 Aug 1994 03:00 +1400</updated></entry>
+<entry><summary type='plain'>Tom &#38;amp; Jerry &amp;lt;3&#x3C;br&gt;&lt;li&gt;&lt;img src="x.png"&gt; cover&#60;/li>
+Tom &#38; Jerry &lt;3&#13;
+[x]  &#x26;#xA9;</summary><author><name>Entry author</name></author><published>Sat, 08 Sept. 2024 04:17:22 -1200</published><title><![CDATA[&#xA9;&#128512;&lt;b&gt;escaped&lt;/b&gt;]]></title><id>
+id
+</id><link type="application/xml+xhtml" rel="enclosure" length="20000"/><itunes:duration>53:47</itunes:duration></entry>
+</feed>

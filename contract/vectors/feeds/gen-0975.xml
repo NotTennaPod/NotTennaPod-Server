@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><atom:link type='application/atom+xml' rel='self' href="https://example.com/feed?page=2"/>
+<title>a &#x3C; b&#x26;a<![CDATA[mp;amp;a=b&c=d]]></title>
+<atom:link type="application/rss+xml" rel="Next" length="12" title="" href=""/>
+<atom:link rel="first" href="https://example.com/alt.xml" type="application/xml+xhtml" length="abc" title='Café'/>
+<itunes:author>Café Radio</itunes:author>
+<image><link>https://example.com/img-link</link><url>https://example.com/img.png</url></image>
+<description>éé&#233;&#x3C;li&gt;&amp;#65;&#x26;#66;&lt;/li>&lt;img src="x.png&quot;&gt;aaaééé</description>
+<itunes:summary><![CDATA[<img><p><img src="x.png"> cover</p>]]></itunes:summary>
+<atom:link title='Café' rel='enclosure' href="https://example.com/pay"/>
+<itunes:image href=" "/>
+<link>https://example.com</link>
+<item><guid isPermaLink="false"></guid>
+  <link>https://example.com/ep</link>
+  <description></description>
+  <media:thumbnail url="https://example.com/th.jpg"/>
+  <pubDate>Wed, 99 Jul 1993 18:41 +0000</pubDate>
+  <itunes:subtitle>a&#13;
+b&amp;unknown;</itunes:subtitle>
+  <itunes:image href=" https://e.com/i.png "/>
+  <title><![CDATA[&#128]]>512;tab	here</title>
+  <enclosure length="-0" type='audio'/></item></channel><item><title>Outside</title><enclosure url="https://example.com/o.mp3" type="audio/mpeg"/></item></rss>

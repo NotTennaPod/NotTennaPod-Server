@@ -1,0 +1,19 @@
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom"><channel><it:summary></it:summary>
+<p2:funding url="">  spaced  </p2:funding>
+<link> https://example.com/ </link>
+<image><url></url><link>https://example.com/img-link</link><title>Image title</title></image>
+<title>&#38;;  &amp;unknown;</title>
+<atom:link title="Café" type='audio/mpeg' rel="enclosure" href='' length="20000"/>
+<item><title>&lt;p>Para&#60;/p>  &#x26;euro;  x&#60;y</title>
+<pubDate>Tuesday, 01 May 2007 13:39:45 pst</pubDate>
+<description>	100%
+&#x26;Lt;&lt;p&gt;&amp;#65;&amp;#66;&#x3C;/p&gt;</description>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[a=b&c=d 😀<div>第7集</div>]]></content:encoded>
+<it:summary><![CDATA[<BR>]]></it:summary>
+<it:subtitle>&lt;strik<![CDATA[e>&;</strike>]]></it:subtitle>
+<it:image href="https://example.com/ep.jpg"/>
+<it:duration>１:３０</it:duration>
+<enclosure url="https://example.com:8443/136.caf?a=1&amp;b=2" length=' 20000' type="audio"/>
+<enclosure url='https://example.com/a.b/café/208.ts' length="9007199254740992" type="audio/x-m4a"/>
+<enclosure url="//example.com/dir.with.dots/ep52.Mp4" length=" 20000" type="application/ogg"/></item></channel>
+</rss>

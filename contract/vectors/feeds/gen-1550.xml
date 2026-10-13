@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link>https://example.com</link>
+<atom:link title='Alternate' rel='archives' type="text/html" href='https://example.com/pay'></atom:link>
+<itunes:summary><![CDATA[	مرحبا שלום<li>&nbs]]>p;&#x3C;/li&gt;</itunes:summary>
+<description><![CDATA[<img>
+AT&T]]></description>
+<atom:link rel="next" title="Alternate" type="" href="https://example.com/feed?page=2"/>
+<title>a=b&#38;c=d</title>
+<atom:link length="9223372036854775808" rel="Next" type="application/xhtml+xml" href="https://example.com/"/>
+<mrss:thumbnail/>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<language></language>
+<image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image>
+<item><title><![CDATA[<p>Para</p>]]></title>
+<guid isPermaLink="false">a&#38;b</guid>
+<link></link>
+<pubDate>Monday, 03 Aug 75 06:19 +0945</pubDate>
+<description><![CDATA[ a=b&c=d]]></description>
+<itunes:subtitle><![CDATA[<big>&#169;</big>]]></itunes:subtitle>
+<enclosure length="9223372036854775807" type="audio/aac"/>
+<podcast:locked>yes</podcast:locked></item>
+<item><title>&lt;b&gt;Folge 11: Über alles
+Folge 52: &#xDC;ber alles
+&amp;nbsp;</title> <guid isPermaLink="false">  spaced guid  </guid> <pubDate>Tue, 02 Jul 2002 23:50:40</pubDate> <description></description> <itunes:duration>9741</itunes:duration> <enclosure url="//example.com/a/b/c356.torrent" length="٢٠٠٠٠" type="audio/mp4"/> <media:content type="video/mp4" medium='audio' fileSize="12" duration=' 60'/> <media:content type='audio/mpeg; charset=binary' medium="video" fileSize='12' isDefault="1" duration="9223372036854775807"/> <mrss:description type="plain"><![CDATA[&amp<br>&euro;<br>]]></mrss:description> <podcast:transcript url='https://example.com/t.json' type="text/plain"></podcast:transcript><podcast:transcript type='application/srt' language="en"/><podcast:transcript url="" type="text/html" language="en"/></item>
+<item><description>&#13;
+של&#1493;ם&#x3C;br /&gt;	&amp;#128512;</description><guid isPermaLink="false">Café-guid</guid><mrss:content type="audio/mpeg" duration="59" fileSize="18446744073709551616" url='https://example.com/a.b/a/b/c227.aspx' isDefault="false" medium="video"/><itunes:duration>0:04:59</itunes:duration><pubDate>Sat, 27 Jun 2015 05:18:39 +14:00</pubDate><title/><link>https://example.com/ep</link><media:content duration="59" fileSize="20000 " isDefault="false" medium="image" type=' audio/mpeg'/><mrss:content isDefault="1" url="HTTPS://EXAMPLE.COM/ep308.ogg" type="Audio/MPEG" duration="1" fileSize='2e5'/><enclosure url="http://example.org/dir.with.dots/ep21.caf" length='00020000' type="audio/flac"/><dcterms:date>2001-02-00T09:47:59</dcterms:date><itunes:image href="https://example.com/ep.jpg"/></item></channel>
+</rss>

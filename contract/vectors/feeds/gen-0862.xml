@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><atom:link rel="alternate" title="" length="abc" type='audio/mpeg' href=""/>
+<language>en</language>
+<itunes:image></itunes:image>
+<itunes:author>Jane Doe</itunes:author>
+<title>第<![CDATA[699集]]></title>
+<link></link>
+<podcast:funding url=""/>
+<image><url>  https://example.com/ws.png
+</url><title>Image title</title></image>
+<atom:link length='12' type="application/xml+xhtml" rel="last" title=""/>
+<item><atom:link rel="related" title='MP3 feed' href="https://example.com/" type="application/xml+xhtml"></atom:link>
+<enclosure url="ftp://files.example.com/156.amr" length="16384" type='audio/aac'/>
+<pubDate>1999-10-04T00:40:45-0800</pubDate>
+<enclosure url="https://xn--caf-dma.example/café/59.html" length="-1" type='application/octet-stream'/>
+<c:encoded>	<![CDATA[<3 <3]]></c:encoded>
+<title>a=b&#38;c=d  &amp;  &#60;ol>&#60;li>1 &#x3C;2&#60;/li>&#x3C;/o<![CDATA[l>]]></title>
+<itunes:subtitle><![CDATA[שלום&lt;b&gt;]]></itunes:subtitle>
+<guid>dup</guid>
+<link> https://e.com/x </link>
+<description><![CDATA[<hr/><li>&mdash;</li>
+&Lt;]]></description></item>
+<item><guid>a&#38;b</guid>
+<pubDate>1981-09-11T03:19:47GMT+0100</pubDate>
+<itunes:summary><![CDATA[<li>שלום</li><br>
+&#169;Folge 7: Über]]> alles&#60;br> ​😀&#x1F600;&#x1F600;  1 &lt;2  a &gt; b</itunes:summary>
+<itunes:duration>596:31:23.648</itunes:duration>
+<title>http://example.com/?a=1&amp;b=2</title>
+<description><![CDATA[
+&copy;
+&amp<div>&euro;</div>]]></description>
+<podcast:socialInteract uri="https://social.example/@a/1" protocol="activitypub"/>
+<itunes:image href=""/>
+<enclosure url="HTTPS://EXAMPLE.COM/377.xyz" length="16384" type="video"/>
+<link>https://example.com/ep</link></item>
+<item><pubDate>SATURDAY, 14 Jul 0001 18:47:30 -0500</pubDate>
+  <itunes:summary><![CDATA[&euro;<BR><p>&cop]]>y;&#60;/p&gt;é&#233;&#xE9;😀😀😀😀</itunes:summary>
+  <guid isPermaLink="true">urn:uuid:7868dd21</guid>
+  <itunes:image href=""/>
+  <enclosure length="20000 " type="video/mp4"/>
+  <title><![CDATA[ 'single]]>'&#x26;apos;a&#x26;apos;
+</title>
+  <c:encoded>&amp;lt;b&amp;gt;escaped&#x26;lt;/b&amp;gt;&lt;br>&lt;li>&amp;#0;&#x3C;/li&gt;😀&#128512;😀 &amp;#65;&amp;#66;  &#38;nbsp;&#x3C;br/>sep&lt;br&gt; &amp;#169;</c:encoded>
+  <link></link></item>
+<item><link></link><enclosure url="https://xn--caf-dma.example/café/278.m4a" length="-0" type="audio/flac"/><content:encoded>&amp;lt&#x3C;br>plain words&lt;br&gt;&#x3C;p/></content:encoded><pubDate>Thu 1 Jun 1995 08:08:47 GMT+0945 (+00:00)</pubDate><title>&lt;small&gt;<![CDATA[&#x;</small>
+<h3>&amp;amp;</h3>]]></title><enclosure url="" length="00020000" type="Audio/MPEG"/><enclosure url="https://example.com/a.b/café/330.mp4" length="12" type=""/><description> back\slash&lt;li&gt;Tom &amp;amp; Jerry &#x26;lt;3&#60;/li&gt;</description><guid isPermaLink="false"> </guid><itunes:duration>0:54:25</itunes:duration></item>
+<item><podcast:chapters url='https://example.com/ch.json' type="application/json+chapters"/> <atom:link title="MP3 feed" rel='self' href="https://example.com/pay" type='text/html'/> <enclosure url="" length="52428800" type="AUDIO/MPEG"/> <guid>dup</guid> <pubDate>Thursday, 1984-03-02T00:54:00Z</pubDate> <itunes:duration>0</itunes:duration> <itunes:summary>שלום</itunes:summary> <description>&#60;p/&gt;&lt;li>مر&#x62D;ب&#x627;&#60;/li>&lt;li&gt;&amp;Lt;&lt;/li&gt;&#x3C;hr&gt;&#60;p&gt;a &#x3C; b&lt;/p></description> <title>a
+  b שלום שלום</title></item>
+<item><description></description>
+<itunes:duration>01:02</itunes:duration>
+<title><![CDATA[&copy;  😀]]></title>
+<c:encoded><![CDATA[<div>plain words</div><br></br>]]></c:encoded>
+<link> https://e.com/x </link>
+<itunes:subtitle><![CDATA[<div><p>&euro;</p></div>
+ 
+Episode 809]]></itunes:subtitle>
+<itunes:image></itunes:image>
+<guid>dup</guid></item></channel> </rss>

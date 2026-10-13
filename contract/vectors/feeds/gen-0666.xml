@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xml:lang="">
+<author><name>C&#38;D</name><email>a@example.com</email></author>
+<subtitle> 😀a &lt; b&#x3C;hr/&gt;</subtitle>
+<author><name>  Bob  </name></author>
+<logo></logo>
+<icon></icon>
+<id>urn:x</id>
+<title type="xhtml">
+&quot;quoted"
+</title>
+<link href="http://example.org/79.m3u8" title="MP3 feed" type="application/xhtml+xml" length="abc" rel="archives"/>
+<entry><updated>Fri Feb 29 01:43:49 1992</updated>
+  <author><name>Entry author</name></author>
+  <title><![CDATA[<b><i>مرحبا</b></i><s>'single'</s>&#xD800;]]></title>
+  <id></id>
+  <published>Wed, 17 Jan 2531 07:41:50</published>
+  <summary type="text"> &#38;hellip;&#x3C;div&gt;a&#13;
+b&lt;/div&gt; &#38;nbsp; 茶 &#x26;amp;amp;</summary>
+  <link length="20000" type="application/atom+xml" title="Alternate" rel="last"/></entry>
+<entry><id>tag:x,2020:1</id> <title type="HTML">  a &#60; b	</title> <summary type="HTML">&#x3C;br&gt;</summary></entry>
+  </feed>

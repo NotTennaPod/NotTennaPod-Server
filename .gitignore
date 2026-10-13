@@ -1,0 +1,38 @@
+# Build products, test data and other disposable files (see README).
+.work/
+
+# Binaries from `go build ./cmd/...` or `go test -c` in the repository root.
+/nottennapod-server
+/contract-vectors
+*.test
+*.prof
+*.out
+
+# The web client installed by NotTennaPod-Web's `npm run install-into-server`;
+# the empty .keep is tracked so a fresh checkout compiles.
+/internal/webui/dist/*
+!/internal/webui/dist/.keep
+
+# Local Go workspace files.
+go.work
+go.work.sum
+
+# Python.
+__pycache__/
+*.pyc
+.venv/
+
+# Local editor, OS and tool files.
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+.agents/
+
+# Secrets and local configuration.
+.env
+.env.*
+*.pem
+*.key
+*.p12

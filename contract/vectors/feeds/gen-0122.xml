@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><itunes:image/> <item><title>  tab	here  http://e<![CDATA[xample.com/?a=1&b=2	]]></title>
+<guid isPermaLink="true">  spaced guid  </guid>
+<link></link>
+<pubDate>Thu, 	28 Feb 23 01:47 +0000</pubDate>
+<content:encoded></content:encoded>
+<itunes:author>Item author</itunes:author>
+<enclosure url="https://xn--caf-dma.example/a/b/c149.flac" length="2e5" type="audio/aac"/>
+<enclosure length="123456789012345678" type='audio/'/>
+<media:content url='//example.com/a/b/c200.MP3#t=10' duration="9223372036854775807" fileSize="20000 " isDefault="1"/>
+<media:content duration="+60" fileSize="9223372036854775808" url="https://xn--caf-dma.example/ep1.php" type='unknown'/>
+<media:content isDefault="true" fileSize="20000 " duration="+60" type="image/*" url="ftp://files.example.com/189.jpg?dl=1.0"/></item> <item><title>a &gt; b trailing </title>
+  <link> https://e.com/x </link>
+  <pubDate>Saturday Mar 8 00:52:16 2149</pubDate>
+  <description><![CDATA[<p>&#169;</p><p>&unknown;</p>  e&#769;]]></description>
+  <content:encoded>&#60;p>&lt;/p&gt;&lt;p/></content:encoded>
+  <enclosure url='HTTPS://EXAMPLE.COM/a/b/c217.OGG' length="123456" type="video"></enclosure>
+  <podcast:chapters url="" type="application/json+chapters"/></item> <item><sc:chapters version='1.2'><sc:chapter title="" start="02:32:17.367" href=''/></sc:chapters>
+  <itunes:summary><![CDATA[<p>Folge 7: Über alles</p>ééé<li><]]>3 &lt;3&#x3C;/li></itunes:summary>
+  <description></description>
+  <link>https://example.com/ep</link>
+  <pubDate>mUZSYi</pubDate>
+  <media:content fileSize="4294967296" url="HTTPS://EXAMPLE.COM/e p216.ogg" isDefault='1' type="audio/mp3" duration="3600"/>
+  <itunes:episodeType>full</itunes:episodeType>
+  <guid isPermaLink="true">urn:uuid:c0f7cdc9</guid>
+  <title><![CDATA[<3 <3]]></title></item> <item><title>&amp;#;</title><itunes:duration>3033.427</itunes:duration><description>café&lt;br&gt;</description><itunes:image/><link> https://e.com/x </link><podcast:transcript url="" type="text/vtt" language="en"/><podcast:transcript url="https://example.com/t.vtt" type="application/json" language="en"/><guid isPermaLink="false">https://example.com/item/59174</guid><enclosure url="ftp://files.example.com/206.3gp" length="9223372036854775807" type="audio/x-wav"/><pubDate>Tuesday, 13 Jun 55 11:47 +0945</pubDate></item> <item><itunes:image href=" "/>
+  <title><![CDATA[1 <2]]></title>
+  <content:encoded><![CDATA[ &#1513;&#1500;&#1493;&#1501;]]></content:encoded>
+  <media:group><media:content url="//example.com/122.aif" type="x-audio/mpeg" duration="+60" isDefault="TRUE" fileSize="-0"/><media:content isDefault='true' fileSize="16384" url="https://cdn.example.com/café/50.torrent" duration='abc' type='x-audio/mpeg'/><media:content type="Audio/MPEG" url="http://example.org/a/b/c86.ts" duration=" 60" medium="video" fileSize="2e5"/></media:group>
+  <pubDate>1601-09-02T06:54:48.79-0500</pubDate>
+  <enclosure url='ftp://files.example.com/ep8.flac' length="12" type="audio/aac"/></item> <item><enclosure url="http://example.org/dir.with.dots/ep21.caf" length="-9223372036854775808" type=" audio/mpeg"/><description>&#60;li>&amp;amp&lt;/li&gt;&#60;p>100%&#60;/p&gt;
+
+#hash&#128512;&#128512;&#128512;&#128512;&lt;div&gt;Episode 7&#x3C;/div&gt;&lt;p>&#x3C;/p&gt;
+&#x26;copy;&lt;br&gt;</description><link></link><podcast:socialInteract uri="" protocol='activitypub'/><media:description><![CDATA[<br>]]></media:description><guid isPermaLink="true">https://example.com/item/53410</guid><pubDate>Fri Apr 27 01:50:03 2001 MST</pubDate><title><![CDATA[ &;  ]]></title><itunes:summary>&#60;div>&amp;;&#60;/div&gt;</itunes:summary><podcast:person role="host">Jane</podcast:person><itunes:image href=""/></item> <language></language> <description>&#60;BR></description> <itunes:author><![CDATA[  Spaced ]]> </itunes:author> <title>  &#33590;  #hash</title> <link>https://example.com</link></channel></rss>

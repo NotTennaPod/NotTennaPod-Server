@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:m="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters">
+<channel><it:summary><![CDATA[<hr/>100%<p/><li>&nbsp;</li>	&amp;amp;<br><div>&#xA9;</div> #hash]]></it:summary>
+  <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url=""/>
+  <link> https://example.com/ </link>
+  <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate"></podcast:funding>
+  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" type="application/xhtml+xml" title='Café' href="https://example.com/"/>
+  <link xmlns="http://www.w3.org/2005/Atom" type="application/rss+xml" href="ftp://files.example.com/206.3gp" rel="hub" title='MP3 feed'/>
+  <image><title>Image title</title><url>https://example.com/img.png</url></image>
+  <title><![CDATA[Episode 12
+&lt;b&gt;
+trailing ]]></title>
+  <description></description>
+  <podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0"></podcast:funding>
+  <item><title><![CDATA[&#x1]]>F600;</title>
+<guid isPermaLink="true">
+</guid>
+<link></link>
+<pubDate>1988-10-14T15:13:32EST</pubDate>
+<description><![CDATA[<p></p>&amp<br>]]></description>
+<it:summary><![CDATA[  spaced  <br></br>]]></it:summary>
+<enclosure url="https://user:pass@media.example.net/ep125.MP3" length="18446744073709551616" type="audio/wav"/>
+<m:group><m:content medium="image" type="image/png" fileSize="2147483648" duration="01:00"/></m:group></item></channel>
+</rss>

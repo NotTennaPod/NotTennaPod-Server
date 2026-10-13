@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns="http://backend.userland.com/rss2" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<channel><itunes:subtitle>Tom &amp; Jerry &lt;31 &lt;2</itunes:subtitle> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <language>fr
+</language> <link> https://example.com/ </link> <title><![CDATA[  spaced  ]]></title> <image><url></url><link>https://example.com/img-link</link></image> <description></description> <atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="" href="HTTPS://EXAMPLE.COM/ep104.m4v?a=1&amp;b=2" rel="payment" type="text/html"/> <item><enclosure url="https://example.com/a.b/dir.with.dots/ep233.wma" length="2147483648" type='application/x-bittorrent'/>
+  <title><![CDATA[Episode 12]]></title>
+  <enclosure url="https://example.com/a.b/dir.with.dots/ep88.pdf" length="20000 " type=" audio/mpeg"/>
+  <itunes:image href=' '/>
+  <description><![CDATA[ééé<br />😀😀😀😀  http://example.com/?a=1&b=2😀😀😀😀<img src="x" alt="y"/><li>[x]</li>  a < b]]></description>
+  <pubDate>24 Jan 69 18:45:09 +0000</pubDate>
+  <enclosure length="16383" type="audio/opus"/>
+  <itunes:subtitle><![CDATA[&#169; שלום "]]>quoted"</itunes:subtitle>
+  <link></link></item> <item><psc:chapters/><title>tab	here</title><pubDate>18 Oct 2340 24:07:52 +0000</pubDate><enclosure url="" length="+20000" type="image/*"/><itunes:subtitle><![CDATA[http://example.com/?a=1&b=2]]></itunes:subtitle><guid isPermaLink="true">  spaced guid  </guid></item></channel>
+  </rss>

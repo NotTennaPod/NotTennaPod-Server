@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:psc="http://podlove.org/simple-chapters"><itunes:author>Jan<![CDATA[e &amp; John]]></itunes:author> <language>pt-BR</language> <image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image> <description>Line&lt;br&gt;break&#x3C;br&gt;</description> <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <itunes:image href=""/> <podcast:funding>  spaced  </podcast:funding> <title><![CDATA[a < b sep a > b]]></title> <itunes:subtitle>&lt;P>'single'&#x3C;/P&gt;</itunes:subtitle> <link></link> <item><description><![CDATA[<img src="x.png">]]></description>
+<guid>dup</guid>
+<content:encoded><![CDATA[
+&#xFFFF;<p>#7 – Interview</p>]]></content:encoded>
+<itunes:image href="https://example.com/ep.jpg"/>
+<dc:date>1990</dc:date>
+<pubDate>Monday, 16 Sep 1996 19:28</pubDate>
+<media:group><media:content isDefault="1" url="HTTPS://EXAMPLE.COM/e p171.mkv?a=1&amp;b=2" type="application/x-bittorrent" fileSize="52428800" medium="Audio" duration='0'/><media:content medium="audio" isDefault='TRUE' duration="01:00" fileSize="12" url="https://user:pass@media.example.net/ep164.m4a" type="audio/mp4"/></media:group>
+<title>sep</title>
+<enclosure url="https://user:pass@media.example.net/ep211.mp3" length="123456789012345678" type="application/ogg"/></item> <item><title><![CDATA[Tom &amp; Jerry &lt;3  &apos;a&apos;]]></title>
+  <guid isPermaLink="true"> </guid>
+  <link> https://e.com/x </link>
+  <pubDate>  Sat, 29 Jan 1978 11:10 -1200 (CET) </pubDate>
+  <description>&lt;BR></description>
+  <itunes:summary><![CDATA[AT&T<br>
+
+茶 1 <2<p></p>😀😀😀]]></itunes:summary>
+  <itunes:duration>162:04</itunes:duration>
+  <media:description type='html'></media:description>
+  <foo><description>Nested description</description></foo></item></channel>
+</rss>

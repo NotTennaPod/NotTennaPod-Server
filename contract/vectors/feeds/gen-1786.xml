@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters">
+  <author><name>C&amp;D</name></author>
+  <title type="text"><![CDATA[café]]></title>
+  <link length="abc" href="https://user:pass@media.example.net/271.mp3" type="audio/mpeg" rel='self'/>
+  <link rel="" href="" type="application/rss+xml"/>
+  <updated>12 Oct 03 13:53 +0200</updated>
+  <subtitle type='text'>&#x3C;li&gt;cr&#13;lf&#x3C;/li&gt;</subtitle>
+  <logo></logo>
+  <link length="abc" title="" href="" type="application/xml+xhtml" rel='Next'/>
+  <link href="https://example.com/alt.xml" rel="enclosure" length="20000" type="application/xhtml+xml"/>
+  <id>urn:x</id>
+  <entry><published>Fri 29 Aug 1987 16:47:09 GMT-1200 (MST)</published> <link length="9223372036854775808" href="https://example.com/alt.xml" rel="enclosure" type="text/html"/> <title type="text"><![CDATA[<ul><li><b>Bold</b> title</li><li>two</li></ul>]]></title> <updated>
+2024-05-10T09:32:2&#13;
+</updated> <updated>Sat, 12 Aug 2130 01:06:43 +0200</updated> <i:image href=""/> <content type='text'><![CDATA[&apos;a&apos;<br>]]></content></entry>
+</feed>

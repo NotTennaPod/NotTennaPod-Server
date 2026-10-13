@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us"> <updated>Friday, 20 Jun 1997 06:33:37</updated>
+<author><name>C&amp;D</name><email>a@example.com</email></author>
+<itunes:image href="https://example.com/ai.jpg"/>
+<link type="application/xhtml+xml" title="Alternate" rel="related" length="abc" href=''/>
+<link length='20000' rel="next" title="MP3 feed" href="https://example.com/pay"/>
+<icon>https://example.com/icon.png</icon>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#38;lt;b&amp;gt;  &amp;#169;</div></title>
+<itunes:author>A, <![CDATA[B]]></itunes:author>
+<entry><title type="plain">[x]</title> <updated>Sun Apr 21 00:43:22 1974 Coordinated Universal Time</updated> <id> raw </id> <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x1F600;😀😀</div></summary> <link rel='archives' href="https://example.com:8443/café/140.mid" title=""/></entry>
+  </feed>

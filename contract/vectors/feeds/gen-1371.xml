@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters"><channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><link> https://example.com/ </link>
+<description><![CDATA[<p>&quot;q&quot;</p><img src="x.png">  a < btrailing <BR>]]></description>
+<itunes:summary>&lt;div>&#60;/div&gt;&#x3C;div&gt;[x]&lt;/div>&#x3C;p&gt;x&#60;y&lt;/p>
+&amp;#0;aaa&lt;br/>http://example.com/?a=1&#x26;b=2&lt;li&gt;&amp;unknown;&lt;/li></itunes:summary>
+<title>cr&#13;lf &#38;</title>
+<title>cr&#13;lf</title>
+<itunes:author>Café Radio</itunes:author>
+<itunes:image/>
+<podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate"></podcast:funding>
+<language>en</language></channel>
+  </rss>

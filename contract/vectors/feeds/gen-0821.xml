@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:pc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0"><atom:link title="" type="application/xhtml+xml" rel="first"/><title><![CDATA[<b>Bold</b> title<b>&quot;q&quot;</b>é]]></title><itunes:image href="https://example.com/it.jpg"/><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><link xmlns="http://www.w3.org/2005/Atom" rel="related" title="Café"/><category>Technology</category><itunes:subtitle><![CDATA[&#;]]></itunes:subtitle><description></description><atom:link length='abc' title="Café" rel="related" type="application/xml+xhtml"/><podcast:funding/><itunes:author><![CDATA[&copy; 2020 Org]]></itunes:author><item><title>#620 – Interview</title>
+<guid isPermaLink="false">https://example.com/item/42212</guid>
+<link> https://e.com/x </link>
+<pubDate>2596-07-26T17:58:01+0945Z</pubDate>
+<content:encoded><![CDATA[<li><b>Bold</b> title</li>]]></content:encoded>
+<itunes:duration>0:33:45</itunes:duration>
+<enclosure url="https://xn--caf-dma.example/a/b/c323.ogx?dl=1.0" length="16385" type=" audio/mpeg"/></item><item><guid isPermaLink="false">  spaced guid  </guid>
+<enclosure url="https://user:pass@media.example.net/e p247.m4a#t=10" length="-9223372036854775808" type="audio/opus"/>
+<pubDate>Fri Dec 22 00:16:44 2017</pubDate>
+<title>&amp;lt;b&#38;gt;escaped&#x26;lt;/b&amp;gt;
+&amp;lt;b&#38;gt;</title>
+<media:thumbnail url=""/>
+<itunes:image href="https://example.com/ep.jpg"/></item><item><title><![CDATA[100%<ol><li>&quot;q&quot;</]]>li&gt;&lt;/ol&gt;</title>
+<guid isPermaLink="true">
+</guid>
+<link> https://e.com/x </link>
+<pubDate>1971-10-02T02:40:38+0945</pubDate>
+<description><![CDATA[第7集]]></description>
+<content:encoded><![CDATA[<p>a
+  b</p]]>></content:encoded>
+<itunes:summary>&#60;br /&gt;trailing &#x3C;br>&#x3C;hr/></itunes:summary>
+<itunes:subtitle> &#x26;apos;a&amp;apos;</itunes:subtitle>
+<itunes:duration>7456</itunes:duration>
+<enclosure url="HTTPS://EXAMPLE.COM/173.ts" length=''/></item></channel><channel><title>Second channel</title><item><enclosure url="//example.com/a/b/c356.torrent" length="-1" type="audio/*"/><podcast:transcript type="" language="en"></podcast:transcript><enclosure url="" length="٢٠٠٠٠" type="image/jpeg"/><itunes:image href=" "/><pubDate>Wednesday, 13 Jan 2360 17:04:02 +0200</pubDate><enclosure url="https://user:pass@media.example.net/dir.with.dots/ep43.oga" length="00020000" type="AUDIO/MPEG"/><title><![CDATA[&lt;]]>b&#x26;gt;</title><itunes:duration>9266.510</itunes:duration><guid>dup</guid><media:description type="plain"><![CDATA[éééééé]]></media:description></item></channel></rss>

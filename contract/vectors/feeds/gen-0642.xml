@@ -1,0 +1,54 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en"><title type="html"></title>
+  <link type="text/html" title="MP3 feed" length="9223372036854775808" rel="self" href="https://example.com/pay"/>
+  <author><name>C&amp;D</name></author>
+  <podcast:funding url='https://example.com/give'>Give</podcast:funding>
+  <entry><updated>Wed, 29 March 2334 13:42:34</updated>
+<link length="9223372036854775808" rel="self" href="https://xn--caf-dma.example/ep1.php" title="" type='text/html'/>
+<id>tag:x,2020:1</id>
+<title><![CDATA[&#x1F600;
+&amp;amp;
+#hash]]></title>
+<link title="" type="application/xml+xhtml" href="https://example.com/pay" rel="alternate" length='20000'/>
+<itunes:duration>9178.132</itunes:duration>
+<published>1066/03/29</published>
+<link title="Café" rel='first' type="application/xml+xhtml" href="https://example.com/feed?page=2"/></entry>
+  <entry><updated>Tue, 19 Oct 1982 08:04:42 +0945</updated>
+<id>tag:x,2020:1</id>
+<title type="html"><![CDATA[#hash&#169;]]></title></entry>
+  <entry><link type="" href="https://example.com/alt.xml" title="Café" rel="self"/>
+<published>2546-1</published>
+<itunes:image href="https://example.com/e.jpg"/>
+<updated>Tue, 05 Jul 2005 10:16:55 +1400 </updated>
+<id></id>
+<title type="xhtml">&#x26;<![CDATA[;]]></title>
+<psc:chapters version="1.2"><psc:chapter start='' title="" href=""/><psc:chapter href="https://example.com/ch" start="41:29" title="Café &amp;amp; more" image="https://example.com/ch.png"/></psc:chapters></entry>
+  <entry><updated>07 Oct 88 20:37 +0000</updated> <updated>fri 1 Feb 1974 22:45:42 GMT+0945 (PST)</updated> <id>
+id
+</id> <itunes:duration>1E3:00</itunes:duration> <title type="HTML"><![CDATA[茶 a=b&c=d 😀]]></title> <content><![CDATA[<p></p><div>Tom & Jerry <3</div><li>'single'</li><li>x<y</li><br/><p>multi
+line</p>
+
+a=b&c=d<div>&lt</div>]]></content> <published>2024-W03-1</published></entry>
+  <entry><published>Tue, 14 Sep 2010 12:38 +0945.</published>
+<updated>28 Feb 2021 06:26:51 +25:00</updated>
+<id>
+id
+</id>
+<itunes:duration>0:14:48</itunes:duration>
+<link type="audio/mpeg" href="" length="12" rel="first" title=""/>
+<title type="xhtml">#hash</title></entry>
+  <entry><id></id>
+<updated>Mon, 09 December 1974 18:10 -0800</updated>
+<content>&lt;div&gt;  spaced  &lt;/div>	 
+x&#x3C;y&#x3C;br>&#x3C;p>&#x26;#169;&#60;/p&gt;&lt;li&gt;&#38;#0;&lt;/li&gt; &#x26;amp;amp;</content>
+<title type="html"><![CDATA[Folge 804: Über alles
+<div dir="rtl">plain words</div>
+&#x;]]></title>
+<link rel="enclosure" length="abc" type="audio/mpeg" href="https://example.com/feed?page=2"/></entry>
+  <entry><title type="HTML">é &#x26;amp; &#x26;AMP;</title>
+<published>	Sat, 11 Nov 16 20:47:45 +0000&#13;
+</published>
+<content></content>
+<updated>1950-09-30T03:56:41.12345AEST</updated>
+<id>tag:x,2020:1</id></entry>
+  <entry><link type='application/xml+xhtml' title="Alternate" rel="last"/><link length="9223372036854775808" rel="hub" href="https://example.com/feed?page=2" title="Alternate"/><itunes:duration>8878.622</itunes:duration><link length="abc" rel="" title="MP3 feed" type="application/rss+xml"/><itunes:image href=""/><podcast:transcript type="application/srr" language='en'/><podcast:transcript type="application/srt"/><podcast:transcript type="text/vtt" language="en"/><title type='html'>&#13;
+plain words&lt;ul>&lt;li>#hash&#60;/li&gt;&#60;li&gt;two&lt;/li&gt;&lt;/ul&gt;&amp;#xA9; </title><updated>10 Nov 2020 14:05:28 CETCET</updated><foo><description>Nested description</description></foo><id> raw </id></entry> </feed>

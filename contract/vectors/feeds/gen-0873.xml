@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link length='abc' type="application/atom+xml" href="https://example.com/alt.xml" title='Alternate' rel="related"></atom:link>
+<link> https://example.com/ </link>
+<language></language>
+<itunes:image/>
+<atom:link title='MP3 feed' href='https://example.com/alt.xml' type=""/>
+<image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url><title>Image title</title></image>
+<p2:funding url=""/>
+<itunes:author>&#x3C;b>Studio&lt;/b&gt;</itunes:author>
+<item><itunes:duration>13755</itunes:duration>
+  <media:content url="https://cdn.example.com/e p300.avi" medium='document' duration="0060" type="audio/*" isDefault="false" fileSize="2147483647"/>
+  <itunes:image href=" https://e.com/i.png "/>
+  <p2:chapters url="https://example.com/ch.json" type="application/json+chapters"/>
+  <d:date>Thu, 17 Apr 2555 12:07 MSK</d:date>
+  <description></description>
+  <title></title>
+  <pubDate>Tue, 06 Feb 2018 19:38</pubDate>
+  <p2:socialInteract uri="https://social.example/@a/1" protocol='activitypub'></p2:socialInteract>
+  <guid isPermaLink="true">https://example.com/item/20741</guid></item>
+<item><title>1 &#60;2</title> <link> https://e.com/x </link> <pubDate>Tuesday, 32 Nov 2006 10:32:25</pubDate> <description><![CDATA[ééé<li>😀</li>]]></description> <enclosure url="ftp://files.example.com/e p350.wma?a=1&amp;b=2" length='1,000,000' type=' audio/mpeg'/></item>
+<item><title>  &#60;article&gt;Line&lt;br&gt;break&lt;/article&gt;  </title>
+<guid isPermaLink='true'>a&#38;b</guid>
+<link></link>
+<pubDate>Wednesday, 26 Dec 0001 03:25</pubDate>
+<d:date>1988-01-10Central European Summer Time</d:date>
+<itunes:summary><![CDATA[<div>a
+  b</div>]]></itunes:summary>
+<enclosure url='ftp://files.example.com/134.mp3.zip' length="1" type="audio/wav"/>
+<media:content fileSize="123456" type="audio/ogg" duration="" url='https://xn--caf-dma.example/e p372.php'></media:content>
+<p2:transcript url='https://example.com/t.json' type="Application/JSON" language='en'></p2:transcript><p2:transcript url="https://example.com/t.json" type='text/plain' language="en"/>
+<atom:link type="audio/mpeg" href="https://example.com/a.b/café/333.php"/></item>
+<item><pubDate>26 Jan 19 12:12:21 -0000</pubDate>
+<title> 
+&#x26;</title>
+<p2:transcript type='Application/JSON'/>
+<psc:chapters version="1.2"><psc:chapter title='' start="407" href="https://example.com/ch"/><psc:chapter title="😀" image="https://example.com/ch.png" start="01:27:53.918" href="https://example.com/ch"/><psc:chapter title="&lt;b>x&lt;/b>" start="00:53:31.414"/><psc:chapter title='Intro' start="Infinity:00" href="https://example.com/ch"/><psc:chapter image="https://example.com/ch.png" start='2147483647:00:00'/></psc:chapters>
+<itunes:subtitle>&lt;em>&#x26;copy;&lt;/em&gt;&#38;apos;a&#x26;apos;&amp;#0;</itunes:subtitle>
+<link> https://e.com/x </link>
+<media:group><media:content url="https://xn--caf-dma.example/154.m3u8?auth=yes" type="x-audio/mpeg" fileSize="9007199254740992" medium="Audio" isDefault="TRUE"/><media:content url="//example.com/a/b/c138.m4b?a=1&amp;b=2" type="audio/aac" fileSize="-9223372036854775808" duration="3600" medium="Audio"/></media:group>
+<enclosure url="" length="9223372036854775807" type="audio/mp4"/>
+<guid isPermaLink="false">
+</guid>
+<itunes:summary>&amp;apos;a&#x26;apos;</itunes:summary>
+<itunes:duration>00:00:00</itunes:duration></item>
+<item><guid>Café-guid</guid>
+<link></link>
+<pubDate>20 APR 2241 15:07:15 +0945</pubDate>
+<itunes:duration>143:53</itunes:duration>
+<itunes:subtitle>a &gt; b  &#38;lt;b&amp;gt;</itunes:subtitle>
+<enclosure url="https://example.com:8443/dir.with.dots/ep6.m3u8?dl=1.0" length='٢٠٠٠٠' type="unknown"/>
+<title>&#38;lt;b&#x26;gt;escaped&amp;lt;/b&amp;gt;  a &gt; b</title></item>
+<title><![CDATA[]]> </title>
+<atom:link length='20000' href="https://example.com/alt.xml" rel=""/>
+<description>&#x3C;p>&lt;/p&gt; AT&amp;T</description></channel>
+</rss>

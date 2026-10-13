@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><itunes:author><![CDATA[&copy; 2020 Org]]></itunes:author>
+<atom:link rel="" length='20000' href='https://example.com/pay' title=""/>
+<title><![CDATA[&#xFFFF;<ol><li>&#169;]]>&#x3C;/li&gt;&lt;/ol&gt;AT&#x26;T</title>
+<description><![CDATA[	[x]]]></description>
+<atom:link href="https://example.com/" title='Alternate' length='abc' type='application/xhtml+xml' rel="related"/>
+<media:thumbnail url=""/>
+<language>de-DE</language>
+<image><url>https://example.com/img.png</url></image>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<atom:link title="" rel="self" type="application/xhtml+xml" length="9223372036854775808"/>
+<link> https://example.com/ </link>
+<atom:link rel="related" length='12' type="audio/mpeg" title="Alternate" href="https://example.com/pay"></atom:link>
+<item><title><![CDATA[a=b&c=d]]></title><guid isPermaLink="false"></guid><pubDate>Thursday, 26 Jan 85 01:11:40 -0500</pubDate><itunes:summary><![CDATA[{json: 1}<br>]]></itunes:summary><itunes:duration>19742</itunes:duration><enclosure url="https://example.com/a.b/221.m4b" length="16385" type="video/mp4"/><enclosure url="" length="1" type="audio/mp4"/><enclosure url="//example.com/ep276.txt?file=x.mp3" length="9007199254740993" type="audio/x-m4a"/><media:group><media:content fileSize="-16384" isDefault="1" type="Audio/MPEG" duration='0060' medium="audio" url="ftp://files.example.com/241.mp3"/></media:group><podcastindex:transcript url="" type="text/vtt"/><podcastindex:transcript url="" type="application/x-subrip"/><podcastindex:transcript url="" type="text/plain"/></item>
+<item><media:content medium="document" url="https://user:pass@media.example.net/café/224.avi" fileSize="16385" isDefault="true" duration="" type="x-audio/mpeg"/>
+<title><![CDATA[&#x]]>A9;
+R&#38;D</title>
+<enclosure url="" length="٢٠٠٠٠" type="audio/wav"/>
+<guid isPermaLink='true'>  spaced guid  </guid>
+<description>"quoted" &#38;#xA<![CDATA[9;&hellip;]]></description>
+<media:content medium="image" type="audio/" isDefault="TRUE" duration="1.5" url="//example.com/café/78.3gp" fileSize="２０００００"/>
+<podcastindex:transcript url="https://example.com/t.json" type="text/plain" language="en"/>
+<atom:link title="Café" type="application/atom+xml" rel="first"/>
+<link></link></item>
+<item><title><![CDATA[  <img src="x.png]]>"> cover &#x26;euro;</title>
+<guid>
+</guid>
+<pubDate>2479-04-18T17:24:18Z</pubDate>
+<description></description>
+<itunes:duration>4735</itunes:duration>
+<enclosure url="http://example.org/302.mov" length="1,000,000" type="audio/mp4"/></item></channel>
+</rss>

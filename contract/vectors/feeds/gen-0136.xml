@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:at="http://www.w3.org/2005/Atom">
+<channel><language>fr
+</language>
+<description>&#x3C;p>&amp;#xD800;&lt;/p>&#60;p>Line&#60;br&gt;break&lt;/p> #7 – Interview&#x3C;br&gt; a=b&amp;c=d&#x3C;div>&#x3C;3 &lt;3&lt;/div>	&#x26;AMP;&lt;div&gt;&#x26;hellip;&lt;/div&gt;</description>
+<pi:funding>&#x3C;b&gt;x&lt;/b></pi:funding>
+<pi:funding url="https://example.com/donate"></pi:funding>
+<item><description></description>
+  <enclosure url="//example.com/e p90.m3u8" length="12" type='application/pdf'/>
+  <title>Tom &amp;amp; Jerry &amp;lt;3&#x3C;p&gt;Para&#60;/p></title>
+  <guid>urn:uuid:8823cb2e</guid>
+  <dc:date>Wednesday, 26 May 1971 02:30</dc:date>
+  <link>https://example.com/ep</link>
+  <content:encoded> multi
+line😀😀😀</content:encoded></item>
+<item><mrss:group><mrss:content medium="document" url="https://xn--caf-dma.example/dir.with.dots/ep219.mp4" fileSize=" 20000" duration='3600' isDefault="TRUE"/></mrss:group>
+  <content:encoded><![CDATA[ #hash]]></content:encoded>
+  <enclosure url='https://xn--caf-dma.example/ep29.png?auth=yes' length="-9223372036854775808" type='video/quicktime'/>
+  <mrss:description><![CDATA[  a < bé<li>tab	here</li> back\slash<BR>]]></mrss:description>
+  <pubDate>2369-07-28T21:55:15.8</pubDate>
+  <link> https://e.com/x </link>
+  <title><![CDATA[<label>a < b</label> &lt;b&gt;e]]>scaped&amp;lt;/b&#38;gt; 茶</title>
+  <guid></guid>
+  <description>&#13;
+&#x26;#128512;aaaaaaaa&#x3C;p/&gt;</description></item>
+<image><title>Image title</title><url>  https://example.com/ws.png
+</url></image>
+<link></link>
+<title>&#38;#65;&#x26;#66;&#60;b&gt;&amp;lt leading</title></channel> </rss>

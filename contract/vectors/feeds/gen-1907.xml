@@ -1,0 +1,22 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xml:lang="">
+<link type="audio/mpeg" href="https://example.com/pay" length='12' rel="alternate" title="MP3 feed"/>
+<updated>Wed Nov 27 10:11 1985</updated>
+<link length="9223372036854775808" title='Alternate' rel="next" href="https://example.com/pay"/>
+<title>&amp;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;  &lt;label&gt;&amp;#0;&#x3C;/label&gt;  a
+  b</title>
+<id>urn:x</id>
+<subtitle type="HTML"><![CDATA[<li>R&D</li>第7集<br><p>Episode 7</p>a=b&c=d<p>&apos;a&apos;</p>]]></subtitle>
+<entry><link type='application/atom+xml' length="12" rel="enclosure" title="MP3 feed" href="https://example.com/pay"/>
+<title type="html">100%  &amp;#xA9;</title>
+<id>tag:x,2020:1</id>
+<summary type="plain"><![CDATA[😀😀😀😀<br>	  spaced  <img src="x" alt="y"/><br /><hr/><hr><li>&#169;</li>]]></summary></entry>
+<entry><id>
+id
+</id>
+<updated>Wed, 14 Jan 2252 04:31 +0945 2024</updated>
+<link href="HTTPS://EXAMPLE.COM/café/303.m3u8?a=1&amp;b=2" title='Alternate' rel="self"/>
+<content type="text"><![CDATA[
+&nbsp;]]></content>
+<title type="text">&amp;apos;a&amp;apos;&#x26;#xFFFF;&#38;hellip;</title></entry>
+<entry><title type="html">&#x3C;div dir="rtl"&gt;&#38;lt;b&#38;gt;&lt;/div>a
+  b&amp;quot;q&#38;quot;</title> <summary></summary> <link title="" href="https://example.com/pay" length="12" type="text/html" rel="first"/> <link href='https://example.com/alt.xml' rel="next" type="application/xhtml+xml" title="Café" length='abc'/> <id>tag:x,2020:1</id> <updated>Saturday, 19 Jul 1997 05:16 -1200</updated></entry> </feed>

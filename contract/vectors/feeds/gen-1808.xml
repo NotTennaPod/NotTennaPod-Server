@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters"> <channel xmlns:atom="http://www.w3.org/2005/Atom"><description>😀</description> <atom:link type="" rel="archives" href="https://example.com/pay" title="Alternate"/> <language>de-DE</language> <title><![CDATA['single'&#xD800;<span>[x]]>]&lt;/span></title> <item><guid>Café-guid</guid><itunes:author>Item author</itunes:author><content:encoded></content:encoded><title>&amp;nbsp; Tom &#38;amp; Jerry &amp;lt;3</title><enclosure url="http://example.org/e p395.3gp" length="-16384" type="application/octet-stream"/><media:description>&#x3C;div>Folge 7: &#220;ber alles&#x3C;/div>&#x3C;p&gt;&lt;p>Para&lt;/p&gt;&lt;/p> Tom &amp; Jerry &lt;3</media:description><link></link><itunes:image/></item> <item><itunes:duration>Infinity</itunes:duration>
+  <itunes:summary>
+
+&amp;#128512;&#60;p&gt;&#x3C;p&gt;Para&lt;/p&gt;&#60;/p&gt;&lt;div&gt;Tom &amp; Jerry &#x3C;3&lt;/div>&#x26;;&lt;li&gt;[x]&lt;/li>&lt;br>x&lt;y&#x3C;img src=&quot;x.png&quot;></itunes:summary>
+  <title>
+100%trailing 	</title>
+  <link>https://example.com/ep</link>
+  <enclosure url='http://example.org/a/b/c157.opus' length="9007199254740993" type="audio/x-m4a"/>
+  <guid>urn:uuid:423e8cbc</guid>
+  <itunes:image href="https://example.com/ep.jpg"/>
+  <content:encoded></content:encoded></item> <item><title><![CDATA[שלום
+Folge 886: Über alles]]></title><link> https://e.com/x </link><pubDate>2310-05-14T16:31:45.301-0000</pubDate><description>&#x3C;br&gt;</description><itunes:summary>
+
+&amp;#x1F600;aaaa a &lt; b
+
+&amp;#169;multi
+line😀😀&#128512;😀😀&#x1F600; &#38;nbsp;</itunes:summary><itunes:subtitle>&amp;#169;  &lt;s&gt;&lt;/s&gt;</itunes:subtitle><enclosure length="9007199254740993" type='image/png'></enclosure><media:content fileSize="0x4E20" type="video/x-matroska" duration="-5" isDefault='1'/><media:content url="ftp://files.example.com/dir.with.dots/ep202.xyz?dl=1.0" fileSize="18446744073709551616" isDefault="false" type="text/plain"/><media:content medium="document" fileSize=" 20000" duration="abc" type='audio/ogg'/></item> <itunes:author><![CDATA[<b>Studio</b>]]></itunes:author> <atom:link length="20000" href="" title="" type="application/atom+xml" rel=""/> <itunes:image href=" https://example.com/sp.jpg "/> <link>https://example.com</link> <atom:link rel="archives" title='Café' length="20000" href="https://example.com/alt.xml"/> <atom:link type="application/xml+xhtml" title="" length="12" rel="Next"/></channel>
+</rss>

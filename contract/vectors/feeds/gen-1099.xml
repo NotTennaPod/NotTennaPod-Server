@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link type='' href="https://example.com/" rel="next"/>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Jan<![CDATA[e &amp; John]]></itunes:author>
+<atom:link type='application/rss+xml' title="MP3 feed" rel="last" href="//example.com/dir.with.dots/ep162.amr"/>
+<atom:link title="" href="https://example.com/alt.xml" rel='' length="abc" type="audio/mpeg"/>
+<link>https://example.com</link>
+<atom:link title="Café" rel="enclosure"/>
+<podcast:funding url=""></podcast:funding>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href='https://example.com/it.jpg'></itunes:image>
+<itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"> &#38;AMP;  &#x3C;font color="red"&gt;&amp;#169;&#x3C;/font&gt;  &lt;p&gt;AT&#x26;T </itunes:subtitle>
+<title><![CDATA[&apos;a&apos;
+<h3><b>Bold</b> title</h3>
+<p>Para</p>]]></title>
+<item><pubDate>
+1997-09-23T00:04:13.19Z
+</pubDate><title><![CDATA[<div><p>100%</p></div>]]></title><atom:link length="abc" rel="self" href="ftp://files.example.com/26.aif" type='audio/mpeg'/><guid isPermaLink="false">a&amp;b</guid><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">0:06:30</itunes:duration><itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"/><link> https://e.com/x </link><enclosure url='//example.com/ep276.txt?file=x.mp3' length="00020000" type="video/mp4"></enclosure><description><![CDATA[😀😀😀😀<li><3 <3</li>  &ltééé<img src="x" alt="y"/><img><img><p>&#xD800;</p>]]></description><itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:summary></item></channel></rss>

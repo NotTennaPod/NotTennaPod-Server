@@ -1,0 +1,13 @@
+<rss version="2.0" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><at:link href="https://example.com/alt.xml" length="9223372036854775808" title='Alternate' rel="related"/><title>&#38;#xD800;&amp;#x;&amp;hellip;</title><link>https://example.com</link><description>&#x3C;li>&amp;Lt;&lt;/li&gt;ééé{json: 1} &amp;#;&#x5E9;לו&#x5DD;</description><image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image><media:thumbnail/><language>en</language><item><enclosure url="" length="-1" type="audio/*"/>
+<pubDate>1976-01-15T21:16:26.248 +0100</pubDate>
+<link></link>
+<guid isPermaLink="false">Café-guid</guid>
+<content:encoded>&lt;p>&lt;img src=&quot;x.png"&gt; cover&#60;/p> tab	here&#x3C;div>&#x26;#169;&lt;/div></content:encoded>
+<media:group><media:content isDefault="true" medium='audio' fileSize="0x4E20" duration="9223372036854775807" url="https://xn--caf-dma.example/e p82.mpga" type="application/ogg"/></media:group>
+<description><![CDATA[ééé مرحبا<p></p>ééé	a > b]]></description></item><item><description>&lt;p>&lt;/p&gt;&lt;p/>&lt;li&gt;茶&#60;/li&gt;&lt;li&gt;&lt;p&gt;Para&#60;/p&gt;&lt;/li>😀</description> <pubDate>Sun, 25 Apr 1993 05:22:32 -0000</pubDate> <title>  e&#x301;</title> <guid isPermaLink='true'></guid> <link></link> <content:encoded>&amp;unknown;&#60;img&gt;&#xE9;éé</content:encoded> <enclosure length="20000 " type="audio/mp4"/></item><item><pubDate>Monday, 20 Jul 86 19:40:25 -0500</pubDate>
+  <guid isPermaLink='true'>https://example.com/item/94168</guid>
+  <description>&lt;img src="x.png"&gt;</description>
+  <title><![CDATA[<p><p>café</p></p>]]></title></item></channel>
+</rss>

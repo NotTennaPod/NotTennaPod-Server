@@ -1,0 +1,26 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<link title='Alternate' length='abc' rel="" href="https://example.com/" type=""></link> <id></id> <link href="https://example.com/pay" rel="last" type="application/atom+xml"/> <author><name>Émile</name><email>a@example.com</email></author> <author><name>Ann</name></author> <link rel="archives" length="9223372036854775808" href="https://example.com/feed?page=2" title="MP3 feed" type=""/> <logo>https://example.com/logo.png</logo> <link title="MP3 feed" type="audio/mpeg" href="https://example.com/alt.xml" rel=""/> <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">[x]</div></title> <entry><source url="https://example.com/s"><title>Source title</title></source><updated>Mon, 99 Foo 99999 99:99:99 +9999</updated><title><![CDATA[<span style="color:red">x<y</span>]]></title></entry> <entry><title type="plain">&#13;
+&amp;Lt;
+</title>
+  <updated>Wednesday, 13 Dec 2002 08:34:00 -0000</updated>
+  <id>urn:uuid:1</id>
+  <updated>x,  2023-06-26T09:50:15Z</updated>
+  <content type="plain"> Episode 12&#233;éé</content>
+  <podcast:transcript url='' type='application/json'/><podcast:transcript url="" type="application/json" language="en"/><podcast:transcript url="https://example.com/t.json" type="Application/JSON"/>
+  <itunes:duration>56:27</itunes:duration>
+  <summary type="plain">
+&amp;#0;</summary></entry> <entry><id>urn:uuid:1</id>
+  <published>28 Feb 2021 06:26:51 +25:00</published>
+  <link length="12" type="application/atom+xml" title=""/>
+  <title type="plain">cr&#13;lf  Line&lt;br>break</title>
+  <summary type="html">Line&lt;br&gt;break&#60;br&gt;&#x3C;li&gt;"quoted&quot;&#x3C;/li>Tom &#38; Jerry &#60;3&lt;br> multi
+line&#xE9;é&#233;  &amp;lt;b&amp;gt;  &amp;copy;&lt;p>multi
+line&lt;/p></summary></entry> <entry><summary type="html">&#60;p>&lt;/p&gt;
+&amp;; &#38;#xA9;</summary>
+<media:content isDefault="1" url='HTTPS://EXAMPLE.COM/café/159.amr' type='audio/mpeg' fileSize='1' medium='video'/>
+<title><![CDATA[]]>&#38;copy;</title>
+<id></id>
+<content type="plain"> <![CDATA[ 1 <2<BR>aaaaaaa	&#xA9;<img src="x" alt="y"/>]]></content>
+<link rel="archives" href='https://example.com/alt.xml' title="MP3 feed"/>
+<author><name>Entry author</name></author>
+<published>1993-05-11T18:08:26.230 +1400</published></entry></feed>

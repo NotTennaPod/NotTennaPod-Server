@@ -1,0 +1,24 @@
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:psc="http://podlove.org/simple-chapters"><link></link>
+<atom:link type="" href="https://example.com/feed?page=2" rel="payment" title="MP3 feed"/>
+<p:funding url="">  spaced  </p:funding>
+<p:funding url="https://example.com/donate"></p:funding>
+<atom:link href='https://example.com/alt.xml' rel='hub' type='' title='Alternate' length="abc"/>
+<p:funding url="https://example.com/donate"></p:funding>
+<atom:link rel='archives' type="application/atom+xml" title="Alternate" href="https://example.com/"/>
+<description><![CDATA[<hr/><b>Bold</b> title<br><img src="x.png"><hr/>a
+  b<li>R&D</li>😀😀😀'single']]></description>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">aaaaaa1 &#x3C;2&lt;br>a
+
+b&#60;img&gt;&#60;div&gt;&#x26;#65;&amp;#66;&lt;/div&gt;</itunes:summary>
+<title>  spaced  
+&#60;p>&#x26;#xD800;&#x3C;/p&gt;
+&amp;;</title>
+<item><psc:chapters><psc:chapter start="2147483648:00:00" title="Café &amp;amp; more"/></psc:chapters>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1.5:00</itunes:duration>
+<pubDate>1979-11-06T10:26:53+0945</pubDate>
+<enclosure url="http://example.org/e p36.pdf" length="0x4E20" type="audio/mp4"/>
+<guid isPermaLink="false"> </guid>
+<link></link>
+<title>&#x26;lt;b&amp;gt;&#x26;quot;q&amp;quot;</title></item></channel>
+  </rss>

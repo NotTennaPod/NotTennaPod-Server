@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link rel="first" length="abc" href="https://example.com/"/> <title>&#x3C;sub>S01E349&lt;/sub&gt;
+&#x3C;b>Bold&#x3C;/b> title</title> <a10:link rel="Next"/> <link>https://example.com</link> <image><url>https://example.com/img.png</url><title>Image title</title></image> <itunes:image href="https://example.com/it.jpg"/> <itunes:author>  Spa<![CDATA[ced  ]]></itunes:author> <description>&#60;BR&gt;back\slash&lt;br></description> <atom:link href='https://example.com/feed?page=2' rel='last' title="Alternate" length='abc' type="application/rss+xml"/> <item><itunes:image href=""/><guid>a&amp;b</guid><media:content fileSize="00020000" duration=" 60" type="audio/mp4"/><description><![CDATA[<div>&#128512;</div>  &#65;&#66;
+
+ leading<div>&;</div><BR>]]></description><enclosure url='' length="0x4E20" type="audio/ogg"/><title><![CDATA[]]>  Tom &amp; Jerry &lt;3
+&amp;#169;  </title><media:description type="html">&#x3C;p/></media:description><itunes:duration>177:57</itunes:duration><media:content duration="" url='https://user:pass@media.example.net/ep198.jpg' isDefault='true' type="audio/*" fileSize="1,000,000" medium="Audio"/><pubDate>Thu, 03 Dec 2561 10:09:57 IST</pubDate></item></channel>
+  </rss>

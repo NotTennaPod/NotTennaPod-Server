@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generated -->
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters">
+<atom:updated>Wed 17 Mar 1976 08:35:47 GMT-0000 (JST)</atom:updated>
+<atom:title><![CDATA[	 	]]></atom:title>
+<itunes:summary>&lt;img&gt;</itunes:summary>
+<atom:link href='https://example.com/feed?page=2' title="Alternate" rel="enclosure" length='abc' type="application/xhtml+xml"/>
+<atom:link type="" rel="first" length="20000" href='https://example.com/' title="MP3 feed"/>
+<atom:logo></atom:logo>
+<atom:link rel='' title="Café" href="https://example.com/pay"/>
+<atom:subtitle type="plain"></atom:subtitle>
+<atom:id>urn:x</atom:id>
+</atom:feed>

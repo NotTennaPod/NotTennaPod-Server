@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language></language> <title>&#38;#xD800;  tab	here  a
+  b</title> <i:owner><i:name>Owner</i:name><i:email>o@example.com</i:email></i:owner> <title>[x]&lt;h6&gt;&quot;quoted"&lt;/h6&gt;e&#769;</title> <textInput><title>Search</title><link>https://example.com/search</link></textInput> <description>'single&apos;</description> <atom:link rel='Next' length="9223372036854775808" type="application/atom+xml" href="https://example.com/"/> <link></link> <i:image href=""/> <atom:link href="" title="Alternate" rel="self" type="application/atom+xml" length="20000"/> <item><pubDate>Sun 12 Nov 1989 14:24:23 GMT+0000 (UTC)</pubDate>
+  <i:summary><![CDATA[😀]]></i:summary>
+  <guid>
+</guid>
+  <description>
+R&amp;D</description>
+  <i:image href=" "/>
+  <i:duration>2305.610</i:duration>
+  <title><![CDATA[<ul><li>&#1]]>28512;&lt;/li&gt;&#x3C;li&gt;two&#60;/li>&lt;/ul></title>
+  <enclosure url="" length="00020000" type="image/png"></enclosure>
+  <link> https://e.com/x </link></item> <item><title>  spaced    trailing<![CDATA[ ]]></title> <guid isPermaLink="false">a&#x26;b</guid> <link></link> <pubDate>Fri, 25 Aug 2186 19:03</pubDate> <description></description> <i:image/> <i:duration>3:32:06</i:duration> <enclosure url='ftp://files.example.com/ep383.xyz#t=10' length="9007199254740992" type='text/html'/> <atom:link rel="alternate" length="abc" href="https://example.com/alt.xml" type="" title="MP3 feed"/></item> <item><psc:chapters version="1.2"><psc:chapter href="https://example.com/ch" start=" " title='&lt;b>x&lt;/b>'/><psc:chapter title="&lt;b>x&lt;/b>" href=""/><psc:chapter href="" title="Intro" image="https://example.com/ch.png" start="00:01:02.5"/><psc:chapter title="" href="" start="00:00:00"/><psc:chapter title="😀" start="32:23"/><psc:chapter image="https://example.com/ch.png" title="😀" start="01:25:00" href="https://example.com/ch"/></psc:chapters> <link> https://e.com/x </link> <i:summary></i:summary> <guid isPermaLink='false'></guid> <enclosure length='-1' type="application/octet-stream"/> <pubDate>Sat Oct 1 16:57:24 2495 UTC+01:00</pubDate> <title>&#13;
+multi
+line  [x] </title> <description>&#x3C;li&gt;&#38;AMP;&lt;/li&gt;aaaa</description></item></channel> </rss>

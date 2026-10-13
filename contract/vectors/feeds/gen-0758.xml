@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<channel xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom"><itunes:owner xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:name xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Owner</itunes:name><itunes:email xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">o@example.com</itunes:email></itunes:owner>
+  <atom:link title='Café' type="" rel="enclosure" href="https://example.com/alt.xml" length="12"></atom:link>
+  <atom:link href="HTTPS://EXAMPLE.COM/346.aac?a=1&amp;b=2" rel="" type="application/xml+xhtml" title="Alternate"></atom:link>
+  <itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&lt;div>http://example.com/?a=1&amp;b=2&lt;/div&gt;&lt;br/>&lt;div>#7 – Interview&lt;/div&gt;</itunes:summary>
+  <description><![CDATA[a<p>&#;</p><div>&#xA9;</div>]]></description>
+  <link></link>
+  <atom:link href="https://user:pass@media.example.net/271.mp3" type="text/html" rel="payment"/>
+  <title>😀  Episode 863</title>
+  <pi:funding url="https://example.com/donate">  spaced  </pi:funding>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""/>
+  <item><link>https://example.com/ep</link>
+<content:encoded>ééé&lt;br>&lt;/br> cr&#13;lf&#x3C;p>a &lt; b&lt;/p&gt;&lt;hr&gt;</content:encoded>
+<itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[	back\slash	]]></itunes:subtitle>
+<guid isPermaLink="true"> </guid>
+<media:content duration="+60" url="ftp://files.example.com/ep383.xyz#t=10" isDefault="false" type="audio/mpeg" medium='image' fileSize="２０００００"/>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">3723</itunes:duration>
+<media:content url="//example.com/62.xyz" duration="0060" isDefault="TRUE" fileSize="2e5" medium="image" type="audio/flac"/>
+<media:content type="image/png" fileSize='123456789012345678' isDefault="TRUE" duration=" 60"/>
+<title><![CDATA[茶 R&D &#x1F600;]]></title>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/ep.jpg"/></item>
+  <item><title><![CDATA[a
+  b
+#894 – In]]>terview</title>
+<media:description><![CDATA[ééé]]></media:description>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">01:02</itunes:duration>
+<media:content medium="document" isDefault="true" duration="+60" url="HTTPS://EXAMPLE.COM/ep295.aif?file=x.mp3" fileSize="-1" type="x-audio/mpeg"></media:content>
+<description>éééש&#x5DC;&#1493;ם&lt;br>&lt;p&gt;sep&lt;/p&gt;&#x3C;BR>&#60;p>&amp;copy;&lt;/p&gt;a  &amp;#128512;&#x3C;p>שלום&#60;/p&gt;</description>
+<pubDate>Fri, 09 November 1990 12:18:12 -0000</pubDate>
+<itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#x26;amp;</itunes:subtitle>
+<enclosure url="https://example.com:8443/a/b/c360.3gp?dl=1.0" length=' 20000' type='audio/ogg'/>
+<guid isPermaLink="true">
+</guid>
+<media:thumbnail url=""/></item>
+  <item><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">99999999999</itunes:duration>
+  <media:content url="https://example.com/a.b/ep366.oga" duration="abc" type="x-audio/mpeg" medium="video" fileSize="-16384"/>
+  <media:content fileSize="0" medium="Audio" type="audio/mpeg" isDefault="false" duration="2147483" url="https://cdn.example.com/e p300.avi"/>
+  <media:content fileSize='123456' medium="image" duration="-5" type="audio/"></media:content>
+  <title>#954 – Interview</title>
+  <description>  sep&lt;b>Bold&#60;/b> title&#x3C;br>&lt;br />aaa&#x3C;li>&#38;amp;&lt;/li></description>
+  <content:encoded></content:encoded>
+  <enclosure url="//example.com/a/b/c324.xyz" length="1,000,000" type="audio/*"/></item></channel>
+</rss>

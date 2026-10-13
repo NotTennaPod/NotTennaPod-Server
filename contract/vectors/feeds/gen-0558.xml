@@ -1,0 +1,15 @@
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<media:thumbnail url="https://example.com/amt.jpg"/>
+  <atom:author><atom:name>Ann</atom:name><atom:email>a@example.com</atom:email></atom:author>
+  <atom:id>urn:x</atom:id>
+  <atom:logo></atom:logo>
+  <atom:title type="text"><![CDATA[&AMP;
+a=b&c=d]]></atom:title>
+  <itunes:author>A, B</itunes:author>
+  <atom:subtitle type="HTML">&#60;img src="x.png"&gt;
+
+x&#60;y&#60;p/>ééé	&amp;#128512;
+&amp;#0; &#38;apos;a&amp;apos;aaaaa</atom:subtitle>
+  <atom:link length="abc" title="Café" href="https://example.com/" rel="hub" type="application/xhtml+xml"/>
+  <itunes:image href="https://example.com/ai.jpg"/>
+  <atom:link length="12" href="https://example.com/" rel="first" type="application/xml+xhtml"/> </atom:feed>

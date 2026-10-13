@@ -1,0 +1,30 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:psc="http://podlove.org/simple-chapters"><atom:link length="20000" rel="Next" title='Alternate' type=""></atom:link>
+<description>&amp;hellip;&#x3C;div&gt;&#60;p>Para&lt;/p>&lt;/div&gt;&amp;lt;b&amp;gt;escaped&amp;lt;/b&#38;gt;&lt;br>
+ &#x3C;img src="x" alt=&quot;y"/&gt;</description>
+<itunes:summary>&#13;
+AT&#38;T&#x3C;li&gt;&amp;hellip;&lt;/li&gt;&lt;div>&amp;copy;&#60;/div>&#x26;lt;b&amp;gt;escaped&amp;lt;/b&#x26;gt;aaaaaa&#60;img src="x" alt=&quot;y"/>&#60;p&gt;Episode 12&lt;/p&gt;&#13;
+</itunes:summary>
+<itunes:author><![CDATA[Jane &amp; ]]>John</itunes:author>
+<title><![CDATA[http://example.com/]]>?a=1&amp;b=2 &#x26;amp</title>
+<podcast:funding xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url=""/>
+<link>https://example.com</link>
+<title><![CDATA[#328 – Interview &amp;]]></title>
+<item><itunes:subtitle>​</itunes:subtitle><guid isPermaLink="true">  spaced guid  </guid><itunes:duration>１:３０</itunes:duration><link>https://example.com/ep</link><pubDate>Sun,  24  Nov 1985 03:56:26 -0500</pubDate><enclosure url='HTTPS://EXAMPLE.COM/a/b/c217.OGG' length="-0" type="image/png"/><description>AT&#x26;T</description><title><![CDATA[&quot;q&quot; Episode 369 <table><tr><td>&#65;&#66;</td><td>b</td></tr></table>]]></title></item>
+<item><itunes:subtitle>&amp;lt;b&amp;gt;escaped&#x26;lt;/b&amp;gt;Episode 12&#38;mdash;</itunes:subtitle>
+<pubDate>02 Dec 1973 20:01:39 +1400
+  </pubDate>
+<description>	{json: 1}&lt;li>a&#13;
+b&#60;/li></description>
+<itunes:image/>
+<title>&quot;quoted"</title>
+<enclosure length="2147483648" type="application/octet-stream"/>
+<guid isPermaLink="true">Café-guid</guid>
+<itunes:summary>&lt;br>&#x3C;/br&gt;&#x3C;p&gt;#7 – Interview&lt;/p>aaaaaaaa</itunes:summary>
+<enclosure length='16384' type="video/x-matroska"/></item>
+<item><itunes:subtitle><![CDATA[​  &amp;amp;  x<y]]></itunes:subtitle>
+  <podcast:chapters xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url="" type='application/json+chapters'/>
+  <itunes:summary><![CDATA[  &<li>#hash</li>Folge 7: Über alles<br>]]></itunes:summary>
+  <enclosure url="" length='16384' type='audio/x-m4a'/>
+  <itunes:image href=' https://e.com/i.png '/>
+  <title>&#x26;copy;</title>
+  <link></link></item></channel></rss>

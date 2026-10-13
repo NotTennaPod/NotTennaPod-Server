@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>pt-BR</language>
+<description>&lt;BR&gt;  R&amp;D&lt;li&gt;&#x26;#xFFFF;&lt;/li&gt;</description>
+<atom:link rel="enclosure" title="MP3 feed" length="abc"/>
+<title>&lt;b&gt;Bold&lt;/b> title Episode 12</title>
+<podcast:funding url="https://example.com/donate"></podcast:funding>
+<itunes:author><![CDATA[  Spaced  ]]></itunes:author>
+<link>https://example.com</link>
+<image><url></url></image>
+<item><dc:date>Thu, 19 August 2145 22:33:23 +0945</dc:date>
+<pubDate>Thu, 08 Apr 2010 18:09:39 +0000</pubDate>
+<itunes:duration>2147483.647</itunes:duration>
+<description>  spaced  &#x3C;br&gt;</description>
+<title>1 &#60;2</title>
+<enclosure url="https://cdn.example.com/ep245.mov" length="" type="image/*"/>
+<guid isPermaLink="true"></guid></item></channel></rss>

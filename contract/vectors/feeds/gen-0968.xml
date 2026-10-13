@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters" xml:lang="EN-us"><link length="9223372036854775808" href="https://example.com/" rel="Next" title='' type='audio/mpeg'/> <id>https://example.com/feed</id> <itunes:image href="https://example.com/ai.jpg"/> <link rel="enclosure" length="20000" type="application/atom+xml" title="Alternate" href="https://example.com/"/> <title type="html">&#x3C;strong&gt;&#x26;hellip;&#60;/strong&gt;</title> <link type='application/atom+xml' length='9223372036854775808' rel="next" title="MP3 feed"/> <subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></subtitle> <itunes:author>Jane &#x26;amp; John</itunes:author> <link length="12" type="text/html" title="MP3 feed" rel="enclosure" href=""/> <entry><title type="html"><![CDATA[&]]></title>
+  <published>Thu, 21 May 1987 22:10 XYZ</published>
+  <author><name>Entry author</name></author>
+  <content>
+&#38;#0;&amp;lt&lt;br>aaaa&#x3C;p>&lt;/p&gt;
+&#33590;&#x3C;img&gt; 'single&apos;a > b&#x3C;br&gt;</content>
+  <link type="application/xml+xhtml" title='Alternate' href="https://example.com/feed?page=2" length="12" rel="payment"/>
+  <summary type="text">ééé</summary>
+  <id></id>
+  <itunes:image href="https://example.com/e.jpg"/></entry> <entry><updated>03 Jul 1982 00:32:16 -0500</updated> <published>2472-09-10T22:20:16.282 +0530</published> <link length="12" rel="next" type="application/rss+xml" title='MP3 feed' href=""></link> <title type='plain'>&lt;p>&amp;Lt;&#60;/p&gt; &#38;#128512; &amp;#xA9;</title></entry> </feed>

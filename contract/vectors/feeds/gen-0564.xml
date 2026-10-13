@@ -1,0 +1,23 @@
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom">
+<channel><link> https://example.com/ </link>
+<title>a=b&#x26;c=d
+مرحبا
+&amp;amp;</title>
+<image><url></url><title>Image title</title></image>
+<podcast:funding url='https://example.com/donate'>  spaced  </podcast:funding>
+<title>&lt;span>x&lt;y&lt;/span&gt;</title>
+<itunes:author>&lt;b&gt;Studio&lt;/b&gt;</itunes:author>
+<podcast:funding>&#60;b&gt;x&#x3C;/b&gt;</podcast:funding>
+<podcast:funding url=''>&#x3C;b&gt;x&lt;/b></podcast:funding>
+<item><title></title>
+<guid isPermaLink="false">https://example.com/item/70458</guid>
+<link> https://e.com/x </link>
+<pubDate>Mittwoch Jun 16 15:33:07 2534</pubDate>
+<description>&#60;p&gt;&#38;hellip;&#60;/p>aaaa</description>
+<content:encoded>&lt;br&gt;&lt;/br&gt;&#x3C;img src=&quot;x.png&quot;&gt;&lt;img></content:encoded>
+<itunes:summary><![CDATA[😀😀😀😀]]></itunes:summary>
+<itunes:duration>128:20</itunes:duration>
+<enclosure url="HTTPS://EXAMPLE.COM/ep7.aac" length="9223372036854775808" type="video/x-matroska"/>
+<media:description type='plain'><![CDATA[<div>&lt;b&gt;escaped&lt;/b&gt;</div>aaaaaaaaa
+
+&#x1F600;<div>back\slash</div><p></p>]]></media:description></item></channel> </rss>

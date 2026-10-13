@@ -1,0 +1,20 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang=""> <id>https://example.com/feed</id>
+<author><name>Émile</name></author>
+<link rel="related" type="application/rss+xml" title="" href="https://example.com/pay" length="12"/>
+<title type="html"><![CDATA[<article>http://example.com/?a=1&b=2</article>&euro;<article>&#0;</article>]]></title>
+<author><name></name><email>a@example.com</email></author>
+<itunes:summary>&lt;hr/&gt;&lt;br&gt;	cr&#13;lf&lt;p&gt;&lt;/p>&lt;img&gt;&#38;#65;&amp;#66;
+a &#60; b😀</itunes:summary>
+<subtitle type="text">&#233;&#xE9;é&#128512;&lt;li&gt;&amp;Lt;&#x3C;/li&gt;</subtitle>
+<entry><published>Sun, 22 Jan 1994 02:00:36 +0100</published>
+  <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">😀😀&#x1F600;</div></content>
+  <link rel="self" type="application/atom+xml" length="12" href="https://example.com/"/>
+  <updated>Thu, 04 Sep 07 07:07:21 -0500</updated>
+  <title type="html"><![CDATA[a=b&c=d <b>Bold</b> title]]></title>
+  <updated>Wed, 10 May 2180 15:16:42 +0000 PM</updated></entry>
+<entry><id>urn:uuid:1</id>
+  <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"> &lt;font color="red">&amp;unknown;&lt;/font>&amp;lt;b&#x26;gt;escaped&amp;lt;/b&amp;gt;&#13;
+</div></title>
+  <itunes:image href=""/>
+  <link href="" length="abc" rel="hub" type="application/xhtml+xml"/></entry>
+</feed>

@@ -1,0 +1,41 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+  <author><name></name><email>a@example.com</email></author>
+  <itunesu:image href=''/>
+  <logo></logo>
+  <title type="html"> leading &#60;font color="red"&gt;&amp;AMP;&#60;/font&gt;</title>
+  <link href="HTTPS://EXAMPLE.COM/ep265.torrent" title="Café" rel="next" length="abc" type='application/xhtml+xml'/>
+  <link title="Alternate" href="https://example.com/pay"/>
+  <link rel="enclosure" type="application/xhtml+xml" href='https://example.com/' length="20000" title=""/>
+  <link type="" href="https://example.com/feed?page=2" title="Alternate" rel="enclosure" length="20000"/>
+  <subtitle>​&lt;br&gt;multi
+line</subtitle>
+  <itunes:author>Jane &#x26;amp; John</itunes:author>
+  <entry><id>urn:uuid:1</id>
+<media:content type="audio/x-m4a" medium='Audio' duration=' 60' url="https://xn--caf-dma.example/ep370.aif" fileSize="abc" isDefault="TRUE"/>
+<link title="Café" type="" rel="self" href="https://example.com/" length="9223372036854775808"/>
+<content type="plain">&#38;euro;  &amp;#128512;	茶&#60;p&gt;&amp;lt&#60;/p&gt;&lt;p/&gt;</content>
+<summary type="html"><![CDATA[<li>a > b</li><hr/>]]></summary>
+<link href="https://example.com/alt.xml" title="MP3 feed" type="audio/mpeg" rel="archives"/>
+<updated> Sat, 29 Jan 1978 11:10 -1200 (CET)
+</updated>
+<updated>Donnerstag, 2012-10-15T04:14:12Z</updated>
+<published>Sat, 06 Aug 1977 08:10:22 +0000</published>
+<link href="https://example.com/alt.xml" rel="self" title='MP3 feed' length="12"></link>
+<title type="HTML">&#x26;#xA9;</title></entry>
+  <entry><title>&lt;b>&lt;i&gt;&#x26;lt&lt;/b&gt;&#x3C;/i></title><link type="text/html" rel="payment" length="12" title="MP3 feed"/><link length="12" rel="last" href="https://example.com/feed?page=2" title="Café" type='application/atom+xml'></link><content type="text"><![CDATA[😀😀😀😀<br><li>&unknown;</li>aa<p>é</p><br/>😀😀
+&quot;q&quot;]]></content><summary type="html"><![CDATA[
+
+&hellip;]]></summary></entry>
+  <entry><published>Friday, 11 Nov 1988 09:44:19</published>
+<id>
+id
+</id>
+<updated>Thursday 13 Aug 2015 01:47:46 GMT-0500 (PDT)</updated>
+<title type="HTML">&#38;amp  &lt;strong&gt;&#38;hellip;&lt;/strong>  tab	here</title>
+<content>a
+
+b&lt;br&gt;</content></entry>
+  <entry><summary><![CDATA[café<br>	&apos;a&apos;
+  spaced  ééé<br></br]]>></summary><link type="application/xml+xhtml" title="" rel="last" href=""/><link type="application/atom+xml" rel="first" title="Alternate" href="https://example.com/"></link><id>urn:uuid:1</id><title type="html"><![CDATA[  100%
+]]></title></entry>
+  <entry><link rel='last' href="https://example.com/pay" title="Alternate" length="12" type="audio/mpeg"/> <title type="plain"><![CDATA[tra]]>iling </title> <summary type="xhtml">&#x3C;div&gt;😀&#60;/div&gt;&#x3C;li>&amp;#xFFFF;&lt;/li&gt;&#38;AMP;</summary> <link type="application/rss+xml" rel="next" href="https://example.com/feed?page=2" length="20000" title="Café"/> <author><name>Entry author</name></author> <id> raw </id></entry> </feed>

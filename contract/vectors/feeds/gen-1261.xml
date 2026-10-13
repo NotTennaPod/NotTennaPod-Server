@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:summary><![CDATA[<div>&#65;&#66;</div>]]></itunes:summary>
+<title><![CDATA[Tom & Jerry <3]]></title>
+<link xmlns="http://www.w3.org/2005/Atom" type="text/html" rel="first" length="12" title="MP3 feed" href='https://example.com/feed?page=2'/>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<description>&#60;li&gt;😀&#x3C;/li&gt;</description>
+<itunes:subtitle><![CDATA[& S01E969 a=b&c=d]]></itunes:subtitle>
+<image><url>  https://example.com/ws.png
+</url><title>Image title</title></image>
+<item><title>&lt;tt&gt;plain words<![CDATA[</tt>]]></title>
+  <guid isPermaLink="true">
+</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>08 Mar 2010 03:31 +0200</pubDate>
+  <description>&#60;br /></description>
+  <content:encoded><![CDATA[ "quoted"<p></p><p>Epi]]>sode 7&#x3C;/p></content:encoded>
+  <itunes:image/>
+  <enclosure url='https://example.com/a.b/a/b/c183.m4b' length="abc" type="video"/>
+  <enclosure url="//example.com/dir.with.dots/ep345.aif" length="abc" type="application/ogg"/></item></channel>
+</rss>

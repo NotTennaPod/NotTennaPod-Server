@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+  <channel><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<language> EN-US </language>
+<link>https://example.com</link>
+<x:title xmlns:x="urn:x">Other namespace title</x:title>
+<description></description>
+<itunes:summary>&lt;<![CDATA[p>&unknown;</p>&lt<br>]]></itunes:summary>
+<item><title><![CDATA[]]>&#x26;quot;q&#x26;quot;</title>
+  <pubDate>	Sun, 15 Mar 2331 16:16:46 CETCEST
+</pubDate>
+  <itunes:summary>&lt;p>&lt;/p>'single'trailing &#x3C;br> cr&#13;lf&#x3C;img&gt;&#x26;lta
+  b&#60;br>&#60;p&gt;&#x26;copy;&lt;/p></itunes:summary>
+  <itunes:image/>
+  <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" type='image/*' fileSize="52428800" duration="2147483"/>
+  <itunes:subtitle><![CDATA[Episode 12<3 <3<unknown>​</unknown>]]></itunes:subtitle>
+  <guid isPermaLink="false"></guid></item>
+<item><title><![CDATA[第879集 &lt]]></title>
+<guid isPermaLink="true">Café-guid</guid>
+<pubDate>oDyA</pubDate>
+<description>&#60;p>{json: 1}&lt;/p></description>
+<itunes:summary></itunes:summary>
+<itunes:image href="https://example.com/ep.jpg"/>
+<itunes:duration>9937</itunes:duration>
+<enclosure url="" length="18446744073709551616" type="video/mp4"/>
+<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/th.jpg"/></item>
+<item><dc:date>Thu, 01 Jan 2024 10:00:00 +0000 +0000</dc:date>
+<itunes:duration>5:06:45</itunes:duration>
+<itunes:subtitle>茶 &amp;#0;</itunes:subtitle>
+<link>https://example.com/ep</link>
+<guid>https://example.com/item/90795</guid>
+<description><![CDATA[<hr><img src="x.png">😀😀]]></description>
+<title><![CDATA[&#169; <article>AT&T</article>]]></title></item>
+<item><description>&#38;#;&lt;br&gt;ééé&lt;div&gt;tab	here&#x3C;/div&gt;  x&lt;y&lt;br&gt;</description> <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://example.org/café/223.jpg" duration=" 60" type="audio/mpeg; charset=binary" fileSize="0x4E20"/> <link> https://e.com/x </link> <guid> </guid> <title>&#38;euro; a &lt; b</title> <enclosure url='' length="+20000" type="audio/opus"/> <itunes:duration>90 min</itunes:duration> <enclosure url='' length="9007199254740991" type="audio/mp3"/> <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" type='unknown' duration="0" fileSize="" isDefault='true'/></item></channel>
+</rss>

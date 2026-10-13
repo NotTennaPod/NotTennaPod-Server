@@ -1,0 +1,23 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><itunes:summary><![CDATA[<br></br>aééé]]></itunes:summary>
+  <image><title>Image title</title><link>https://example.com/img-link</link><url>https://example.com/img.png</url></image>
+  <link>https://example.com</link>
+  <atom:link type="audio/mpeg" rel="payment" length="20000" title="Alternate"/>
+  <title>&amp;nbsp;  &amp;    spaced  </title>
+  <atom:link title="MP3 feed" rel=""></atom:link>
+  <itunes:author><![CDATA[  Spaced  ]]></itunes:author>
+  <description>  spac<![CDATA[ed  <br>]]></description>
+  <item><description>&lt;img src="x" alt="y"/&gt;&#x3C;p&gt;&lt;/p&gt;&#x3C;p&gt;a
+
+b&#60;/p&gt;</description>
+<title>&#38;;</title>
+<enclosure url="//example.com/a/b/c203.m3u8" length="0" type="x-audio/mpeg"/>
+<itunes:image/>
+<content:encoded> café
+
+#hash&lt;img src=&quot;x" alt="y&quot;/>&apos;single&apos;&lt;div&gt;x&#x3C;y&lt;/div&gt;</content:encoded>
+<itunes:duration>1:58:03</itunes:duration>
+<p2:transcript type="application/x-subrip"/><p2:transcript url="https://example.com/t.vtt" type="Application/JSON" language="en"/><p2:transcript type='application/json' language="en"></p2:transcript>
+<link></link>
+<pubDate>1987/02/14</pubDate></item></channel>
+</rss>

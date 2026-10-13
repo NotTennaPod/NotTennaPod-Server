@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<!-- generated -->
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xml:lang="">
+<itunes:author><![CDATA[Jane Doe]]></itunes:author>
+  <title type="html">&amp;#xA9;  &lt;u>a&#13;
+b&#x3C;/u&gt;  &#38;#128512;</title>
+  <subtitle type="HTML">&amp;amp&#x3C;br&gt; 1 &lt;2&#x3C;p/&gt;
+Tom &amp; Jerry &lt;3&lt;div>&amp;amp&#x3C;/div></subtitle>
+  <id> raw </id>
+  <itunes:image href=""/>
+  <entry><link href="https://example.com/alt.xml" rel="" length="12" title=""/>
+  <content type="html">&lt;hr&gt;</content>
+  <id>
+id
+</id>
+  <updated>Mon, 02 Aug 1971 15:58:59 +1400Z</updated>
+  <updated>2351-11-06T06:16:02Z</updated>
+  <title type="plain"><![CDATA[a < b
+tab	here
+&am]]>p;amp;</title>
+  <link type="" title="Café" href=""/>
+  <summary>&#160;&#x26;#0;</summary>
+  <link type="application/atom+xml" rel="Next" title="Alternate"/></entry>
+  <entry><link href="https://example.com/pay" type="application/xml+xhtml" rel="" length="abc" title="Alternate"/>
+  <itunes:image href="https://example.com/e.jpg"/>
+  <title type="text"><![CDATA[Folge 636: Über alles]]></title>
+  <published>Thu, 05 Apr 0001 02:58:22 +0945</published>
+  <id></id>
+  <author><name>Entry author</name></author>
+  <link type='audio/mpeg' title='' href='https://example.com/' length="12" rel=""/>
+  <link title="MP3 feed" length="abc" rel="" href="https://example.com/pay"/>
+  <itunes:duration> 1:30</itunes:duration></entry>
+  <entry><media:content duration=" 60" type="audio/mp3" fileSize=" 20000" isDefault="true"></media:content>
+<content type="plain"><![CDATA[&#128512;&#128512;<p></p>&#128512;]]></content>
+<published>03 Jul 62 18:53 +0200</published>
+<title>&#x26;#;
+&#60;i>&lt;img src=&quot;x.png"> cover&#60;/i>
+&lt;p&gt;Para<![CDATA[</p>]]></title>
+<updated>2024-01-15 10:00:00</updated></entry>
+  </feed>

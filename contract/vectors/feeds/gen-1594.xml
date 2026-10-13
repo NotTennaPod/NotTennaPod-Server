@@ -1,0 +1,8 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/"> <logo> https://e.com/l.png
+</logo>
+<itunes:summary></itunes:summary>
+<title type="plain">&amp;; &lt;img src="x.png"> cover</title>
+<itunes:image href=""/>
+<id>https://example.com/feed</id>
+<author><name></name></author>
+</feed>

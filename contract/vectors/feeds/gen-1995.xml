@@ -1,0 +1,45 @@
+<!-- generated -->
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:media="http://search.yahoo.com/mrss/"><image><title>Image title</title><url></url><link>https://example.com/img-link</link></image> <atom:link length="12" href="https://example.com/feed?page=2" type="" title="MP3 feed" rel="next"/> <link> https://example.com/ </link> <atom:link rel="enclosure" href='https://example.com/alt.xml' title="MP3 feed" type="application/atom+xml" length="abc"/> <title>   padded  </title> <link xmlns="http://www.w3.org/2005/Atom" length='12' type="" rel="payment" href=""/> <language>de-DE</language> <item><title>&#60;dl&gt;&#x3C;dt&gt;&#x26;Lt;&#x3C;/dt>&#x3C;dd&gt;b&lt;/dd&gt;&lt;/dl&gt;</title>
+<enclosure url="https://cdn.example.com/98.mp4" length='abc' type="audio"/>
+<enclosure url='https://xn--caf-dma.example/154.m3u8?auth=yes' length='20000 ' type=""/>
+<content:encoded>éé&#233;&#13;
+back\slasha=b&amp;c=d&lt;br&gt;&#60;/br>&#60;li&gt;a&#13;
+b&#x3C;/li>&#x3C;BR>&#60;img src="x" alt="y&quot;/>😀😀😀</content:encoded>
+<pubDate>Tue, 33 Apr 1981 02:31:32 -0500</pubDate>
+<link></link>
+<itunes:subtitle>&lt;strong>multi
+line&#x3C;/strong></itunes:subtitle>
+<guid isPermaLink="false">https://example.com/item/53230</guid>
+<enclosure url="" length='123456789012345678' type='audio/*'/>
+<itunes:author>Item author</itunes:author>
+<description><![CDATA[<br>]]></description></item> <item><guid isPermaLink='true'>https://example.com/item/63655</guid><dc:date>Wed, 14 May 2014 02:12 -0800</dc:date><pubDate>	2024-01-15T10:00:00+01:00:00 </pubDate><category><![CDATA[]]>Technology</category><enclosure url='' length=" 20000" type="video/webm"></enclosure><enclosure url='http://example.org/a/b/c157.opus' length='-0' type="audio/aac"/><link>https://example.com/ep</link><description></description><title><![CDATA[茶 &#x1F600;]]></title><enclosure url="HTTPS://EXAMPLE.COM/377.xyz" length="1" type="audio/opus"/><itunes:image href="https://example.com/ep.jpg"/><itunes:summary>&#60;div&gt;&#38;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;&#60;/div>aaaaa&#60;br>&#x3C;/br&gt;😀😀😀  مرح&#1576;اplain words&lt;br&gt;&lt;hr&gt;</itunes:summary></item> <item><itunes:subtitle><![CDATA[&lt;b&gt;escaped&lt;/b&gt; {json: 1}]]></itunes:subtitle>
+<media:thumbnail url=""/>
+<description><![CDATA[ &]]>hellip;</description>
+<content:encoded>a</content:encoded>
+<guid isPermaLink="true">dup</guid>
+<enclosure url="https://example.com:8443/a/b/c105.aif" length="-9223372036854775808" type='video/x-matroska'/>
+<itunes:duration>19662</itunes:duration>
+<title>&amp;copy;</title>
+<link>https://example.com/ep</link></item> <item><itunes:duration>2:56:41</itunes:duration>
+<enclosure url="ftp://files.example.com/e p92.m4b?dl=1.0" length="-9223372036854775808" type="video/mp4"/>
+<guid isPermaLink="false">
+</guid>
+<media:thumbnail url=''/>
+<description> &amp;apos;a<![CDATA[&apos;aaaaa<br>&#65;&#66;<br> sep<div>Tom &amp; Jerry &lt;3</div><hr/>]]></description>
+<pubDate>
+Mon, 27 Feb 2305 21:29:06 +0200  </pubDate>
+<itunes:image href=''/>
+<itunes:explicit>clean</itunes:explicit>
+<title><![CDATA["quoted" &amp;amp;]]></title>
+<psc:chapters></psc:chapters></item> <item><title>multi
+line
+茶
+&amp;#0;</title>
+  <guid isPermaLink="false">  spaced guid  </guid>
+  <description>&#60;br/></description>
+  <itunes:image href=" "/>
+  <enclosure url="http://example.org/a/b/c27.amr" length="-0" type="audio/*"/>
+  <media:group><media:content medium="Audio" fileSize="16385" duration="2147483" type="application/pdf"/><media:content duration='2147483648' url="//example.com/62.xyz" type="application/x-bittorrent" fileSize="1" medium='document'/><media:content duration="" isDefault="false" fileSize="9007199254740991" type="audio/ogg" medium="Audio" url="https://user:pass@media.example.net/ep35.wav"/></media:group>
+  <media:thumbnail url=""/></item></channel>
+  </rss>

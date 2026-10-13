@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-16"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"><channel xmlns:atom="http://www.w3.org/2005/Atom"><image><url>https://example.com/img.png</url><title>Image title</title></image>
+<podcast:funding></podcast:funding>
+<atom:link rel="archives" length='9223372036854775808' href="https://example.com/pay" title="MP3 feed"/>
+<description><![CDATA[<p>&#x;</p><li>שלום</li>  100%]]></description>
+<title>plain words</title>
+<podcast:funding>  spaced  </podcast:funding>
+<link></link>
+<atom:link title="Alternate" rel="first" href="" type='application/xml+xhtml'/>
+<atom:link rel="related" length="12" type="application/rss+xml"/>
+<item><description> &amp;#xA9;</description> <guid>  spaced guid  </guid> <pubDate>Tue, 01 Jul 2014 17:56 +0945</pubDate> <enclosure length="0" type="audio/flac"/> <title>&amp;#0;</title></item>
+<item><psc:chapters version="1.2"/>
+<description>
+
+a
+
+b&#x3C;li&gt;&#38;#xFFFF;&lt;/li&gt;&#233;&#xE9;é &#x26;#169; של&#x5D5;ם</description>
+<title><![CDATA[&unknown;]]></title>
+<pubDate>1998-10-07T17:44:32.1234EEST</pubDate>
+<link> https://e.com/x </link>
+<guid>  spaced guid  </guid>
+<content:encoded>a
+
+[x]aa&#60;img src="x.png"&gt;مرحب&#x627;<![CDATA[<br>]]></content:encoded>
+<enclosure url="http://example.org/e p381.ts?dl=1.0" length="9223372036854775808" type="audio/"/></item>
+<link xmlns="http://www.w3.org/2005/Atom" rel="first" href="https://example.com/feed?page=2" type="text/html" title="Alternate" length="12"/>
+<podcast:funding url="">&lt;b>x&lt;/b&gt;</podcast:funding></channel> </rss>

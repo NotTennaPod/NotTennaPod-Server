@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><description><![CDATA[&euro;<div>[x]</div><li>é</li>]]></description>
+<itunes:new-feed-url> https://new.example.com/sp </itunes:new-feed-url>
+<language>en</language>
+<title>100%</title>
+<itunes:image href=" https://example.com/sp.jpg "/>
+<link>https://example.com</link>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<item><psc:chapters><psc:chapter start="" title="Café &amp;amp; more" image="https://example.com/ch.png"/><psc:chapter image='https://example.com/ch.png' start="1:1e2" href="https://example.com/ch"/><psc:chapter start='00:13:54' href="https://example.com/ch" title=""/><psc:chapter start="8975" href="" image="https://example.com/ch.png"/></psc:chapters> <pubDate>	Sun, 29 Feb 2568 04:23:23 +0530
+</pubDate> <media:content fileSize="9007199254740992" isDefault='1' duration="01:00" type="text/plain"/> <guid>dup</guid> <media:content fileSize="1" type="audio/wav" url="https://cdn.example.com/a/b/c279.3gp" duration='1' medium='Audio'/> <link></link> <enclosure length="123456" type='video/mp4'></enclosure> <media:content medium="audio" fileSize="52428800" isDefault="true" duration="3600" type="audio/mpeg" url="//example.com/café/78.3gp"></media:content> <description>&lt;br>&lt;br />	&#x26;#x;&#x26;copy;&lt;br&gt; a=b&amp;c=d</description> <itunes:subtitle><![CDATA[&]]>mdash;&amp;#;</itunes:subtitle> <itunes:duration>596:31:23.648</itunes:duration> <title><![CDATA[<section>&amp;amp;</section>
+1 <2
+<unknown>café</unknown>]]></title></item>
+<item><media:content url="//example.com/ep310.ogg" fileSize="00020000" type="audio/flac" duration="abc" medium="document" isDefault="false"/><enclosure url="HTTPS://EXAMPLE.COM/ep63.txt" length="9223372036854775807" type="audio/ogg"/><title>&amp;quot;q&amp;quot;</title><media:content fileSize="-0" medium="audio" type="application/x-bittorrent" url="http://example.org/café/40.mpga?dl=1.0"/><guid isPermaLink="false">
+</guid><media:content type="audio/mpeg" fileSize="18446744073709551616" isDefault='TRUE' duration="0060"/><link> https://e.com/x </link><description>&#128512;😀😀😀&lt;p&gt;&#60;/p>ééé😀Line&#60;br>break&#13;
+a=b&#38;c=d&#x3C;li&gt;a > b&lt;/li>&#x3C;div>back\slash&lt;/div></description><pubDate>28 April 21 11:30 +0945</pubDate></item>
+<item><enclosure length="123456789012345678" type="audio/"/>
+<podcast:chapters url="" type='application/json+chapters'/>
+<itunes:image href=" https://e.com/i.png "/>
+<title><![CDATA[<p><p></p></p> مرحبا]]></title>
+<pubDate>24 May 1989 03:15:41 +0530</pubDate>
+<description></description>
+<guid>https://example.com/item/85727</guid></item>
+<item><title>1 &lt;2  &amp;nbsp;</title><guid isPermaLink="false"></guid><pubDate>20 Oct 91 06:52 +1400</pubDate><description>&lt;div&gt;{json: 1}&#x3C;/div></description><itunes:image/><itunes:duration>5160.458</itunes:duration><enclosure url='ftp://files.example.com/e p349.opus?a=1&amp;b=2' length="2e5" type="audio/aac"/><media:group><media:content url="ftp://files.example.com/e p291.MP3" duration="0060" isDefault="true" type="x-audio/mpeg" fileSize="-0"/></media:group><podcast:chapters url='' type="application/json+chapters"/><googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description></item>
+<item><guid isPermaLink="true">
+</guid>
+<content:encoded>&lt;p&gt;&#x3C;b>Bold&lt;/b> title&lt;/p&gt;aa&#x3C;br /> &amp;#x1F600;&#x3C;li&gt;&amp;quot;q&amp;quot;&lt;/li></content:encoded>
+<pubDate>Thu, 32 Jul 2005 10:45:51 +0945</pubDate>
+<itunes:summary>&#x3C;img src<![CDATA[="x.png"><div>Folge 7: Über alles</div>😀]]></itunes:summary>
+<atom:link type='application/atom+xml' title="MP3 feed" rel="archives" length="12" href="https://example.com/alt.xml"/>
+<media:content fileSize='9223372036854775808' type="application/octet-stream" isDefault="true" url="//example.com/a/b/c203.m3u8" duration="0"/>
+<title><![CDATA[[x]]]></title>
+<enclosure url="https://xn--caf-dma.example/ep212.oga?dl=1.0" length="52428800" type="application/ogg"/>
+<description><![CDATA[<div>  padded  </div>😀😀😀<div>café</div>]]></description></item></channel></rss>

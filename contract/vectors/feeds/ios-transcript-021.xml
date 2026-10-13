@@ -1,0 +1,7 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:media="http://search.yahoo.com/mrss/"
+xmlns:podcast="https://podcastindex.org/namespace/1.0"
+xmlns:psc="http://podlove.org/simple-chapters"
+xmlns:atom="http://www.w3.org/2005/Atom"
+xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><item><podcast:transcript url="url0" type="application/x-subrip"/><podcast:transcript url="url2" type="application/json"/><podcast:transcript url="url1" type="text/vtt"/><podcast:transcript url="later" type="application/json"/></item></channel></rss>

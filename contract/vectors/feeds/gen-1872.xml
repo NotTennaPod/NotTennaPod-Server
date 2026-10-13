@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="latin1"?><rss version="2.0" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>pt-BR</language>
+<title>&#x26;#128512;&amp;quot;q&amp;quot;</title>
+<link>https://example.com</link>
+<item><title>"quoted"
+ 
+&amp;copy;</title> <pubDate>2574-12-10T10:34:42.65z</pubDate> <enclosure url="" length='&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;' type="application/pdf"/> <content:encoded>&lt;div>AT&amp;T&lt;/div>
+
+R&#x26;D
+&amp;quot;q&#x26;quot;a=b&amp;c=d&#128512;&#128512;&#128512;</content:encoded> <link>https://example.com/ep</link> <guid isPermaLink='false'>
+</guid> <enclosure url="https://cdn.example.com/dir.with.dots/ep116" length="16384" type="x-audio/mpeg"/> <description>&amp;</description> <enclosure url='http://example.org/ep322.wav' length="00020000" type='video/mp4'/> <media:content duration="0" type="audio/" medium="image"></media:content></item>
+<item><guid isPermaLink='true'>Café-guid</guid><link>https://example.com/ep</link><media:group><media:content type="audio/wav" duration="2147484" medium="Audio" fileSize=""/></media:group><description></description><enclosure url="https://xn--caf-dma.example/dir.with.dots/ep139.oga" length="9007199254740991" type='video'/></item></channel></rss>

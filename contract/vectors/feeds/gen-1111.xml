@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE feed [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;nbsp; Line&lt;br&gt;break &amp;amp</div></title> <media:thumbnail url="https://example.com/amt.jpg"/> <id></id> <itunes:author>Jane Doe</itunes:author> <subtitle type='HTML'>
+ 	&#38;hellip;&lt;li>Line&#x3C;br>break&#60;/li&gt; multi
+line &#8203;&lt;li&gt;第7&#x96C6;&lt;/li&gt;😀😀
+
+&amp;nbsp;</subtitle> <link rel='payment' length="20000" title="Alternate" type="application/rss+xml"/> <itunes:summary>&#x3C;img src="x&quot; alt=&quot;y&quot;/>a &#x3C; baaaaa</itunes:summary> <link length="20000" rel="payment" href="https://example.com/alt.xml" type="application/atom+xml" title="Alternate"/>
+  </feed>

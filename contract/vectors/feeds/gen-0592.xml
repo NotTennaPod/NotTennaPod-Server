@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en">
+  <title type="text">Tom &#x26;amp; Jerry &#x26;lt;3   padded  </title>
+<link length="9223372036854775808" rel="enclosure" type='application/xhtml+xml' title="Café"/>
+<id></id>
+<link length="9223372036854775808" title="" href='https://example.com/' rel="archives" type=""/>
+<subtitle type="text"></subtitle>
+<updated>Thu 9 Feb 2017 17:21:29 GMT+0000 (GMT+01:00)</updated>
+<author><name></name></author>
+<author><name>  Bob  </name></author>
+<entry><content type="html"></content>
+<title type='text'>&#38;quot;q&#x26;quot;</title>
+<link length="12" title="" href="https://example.com/" rel='first' type=""/>
+<id> raw </id>
+<link type="application/atom+xml" title="" rel="hub"/>
+<author><name>Entry author</name></author>
+<link rel='payment' title="" href="https://example.com/alt.xml"/>
+<updated>	2001-08-25T04:14:07.12345Pacific Daylight Time
+</updated></entry>
+<entry><content type='text'><![CDATA[	&#169;]]></content> <link length="12" rel="enclosure" type=""/> <updated>2007-10-26T07:27:12.125XYZ</updated> <title type="plain">"quo<![CDATA[ted"]]></title> <itunes:duration>181:05</itunes:duration> <published>1985-01-10T16:45:02</published> <media:content medium="audio" fileSize="1,000,000" duration="9223372036854775807" type="video/x-matroska"/> <id>tag:x,2020:1</id></entry>
+<entry><content type="html"><![CDATA[<div>a
+  b</div> &#169;<img src="x" alt="y"/>Folge 7: Über alles<br> &apos;a&apos;aaaaaa
+&#1605;&#1585;&#1581;&#1576;&#1575;<br />]]></content> <updated> Wed, 30 Sep 50 10:22:35 +0100&#13;
+</updated> <author><name>Entry author</name></author> <link rel="self" type="text/html" length="12" href=""/> <title type="text"><![CDATA[&euro;  &mdash;  Folge 53: Über alles]]></title> <link rel="last" title="" type="application/xml+xhtml" length="20000" href="https://example.com/pay"/> <link href='https://cdn.example.com/café/199.aac' title="" rel="hub"></link> <id></id> <published>Sunday, 23 Apr 2271 18:39 -1200</published> <summary></summary></entry>
+<entry><updated>30 August 1986 08:36:45 -1200</updated>
+  <itunes:duration>6902</itunes:duration>
+  <title type="text">&#13;
+&#x26;; &#38;#;  </title>
+  <id></id>
+  <content type="html">&#128512;&lt;br&gt;&lt;li&gt;&amp;#xFFFF;&#60;/li&gt;</content>
+  <published>Sat 10 Dec 2016 08:40:57 GMT+1400 (gmt)</published></entry>
+<entry><title type="HTML"><![CDATA[a=b&c=dsep]]></title>
+<author><name>Entry author</name></author>
+<published>Thu, 20 May 1999 19:22:38</published>
+<updated>Sun 14 Oct 1900 10:04:57 GMT-0500 (Coordinated Universal Time)</updated>
+<id>tag:x,2020:1</id></entry>
+<entry><itunes:duration>1:30</itunes:duration> <id>
+id
+</id> <author><name>Entry author</name></author> <summary type="HTML">1 &#x3C;2&#60;br&gt;</summary> <podcast:transcript url="https://example.com/t.json" language="en"/><podcast:transcript url="https://example.com/t.json" type="Application/JSON"></podcast:transcript><podcast:transcript url="" type='text/plain' language="en"/> <link length="9223372036854775808" href="https://example.com/feed?page=2" type="audio/mpeg" rel='related'/> <link href="" type="application/atom+xml" rel='related' title='MP3 feed'/> <published>09 jan 1975 05:56:00 -0800</published> <updated>2006-06-22T12:49:05-0500</updated> <content type='html'></content></entry>
+<entry><podcast:transcript type="application/json" language='en'/> <title type="text">&#13;
+&#x26;copy;
+</title> <link type="application/rss+xml" title="" length="abc" href="ftp://files.example.com/café/120.ogx"/> <content type="html"></content> <link rel="Next" title="Alternate" type="application/xml+xhtml" href="https://example.com/pay"/> <id>tag:x,2020:1</id></entry>
+<entry><link length="20000" href="" title="Alternate" rel="self"></link>
+<itunes:duration>5:23:58</itunes:duration>
+<podcast:transcript url="" type="application/srt"/>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">café
+#156 &#8211; Interview
+&amp;Lt;</div></title>
+<updated>22 Oct 1980 22:99:11 -1200</updated>
+<published>05 Oct 05 11:33:54 +0200</published>
+<link title='MP3 feed' href="//example.com/e p240.jpg?file=x.mp3" rel="self"/>
+<id>tag:x,2020:1</id></entry></feed>

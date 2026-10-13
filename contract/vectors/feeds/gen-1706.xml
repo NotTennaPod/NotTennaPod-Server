@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<updated>Friday, 04 Aug 93 04:03</updated>
+  <logo></logo>
+  <itunes:summary><![CDATA[a < b#7 – Interview<br>ééé]]></itunes:summary>
+  <title><![CDATA['single']]></title>
+  <author><name>Ann</name></author>
+  <id></id>
+  <link title="MP3 feed" length="abc" href="https://xn--caf-dma.example/ep212.oga?dl=1.0" rel="related"/>
+  <entry><psc:chapters><psc:chapter start="03:18:05" title="Intro" href="" image='https://example.com/ch.png'></psc:chapter></psc:chapters> <mrss:content medium="Audio" isDefault="false" fileSize='2147483647' type="text/plain" duration="2147484"></mrss:content> <title type="text">&#13;
+sep  multi
+line	</title> <link type="application/rss+xml" rel="Next" href="" length="abc" title="Café"/> <updated>Sunday, 24 Sep 2000 08:18:00 AKST</updated> <published>Friday, 20 Sep 2013 18:15</published></entry>
+  <entry><id></id>
+<summary type="html"></summary>
+<link href="https://example.com/" rel='last' type="audio/mpeg" length="12" title='Café'/>
+<updated>22 Aug 17 03:04 -0500</updated>
+<link type="application/rss+xml" rel="enclosure" title="MP3 feed"/>
+<title><![CDATA[<strong>&amp</strong><b>Bold</b> titlehttp://example.com/?a=1&b=2]]></title>
+<published>1987-06-31</published></entry>
+  <entry><itunes:duration>00:00:01.999999</itunes:duration> <published>Sun, 14 April 2002 20:30:39 +0000</published> <title type="html">multi
+line R&#x26;D {json: 1}</title> <author><name>Entry author</name></author></entry>
+  <entry><updated>	Tue, 16 Jan 1979 01:59:22 +00:00	</updated>
+  <id> raw </id>
+  <updated>Sun NOV 23 13:33:23 1975</updated>
+  <title type="text">ש&#x5DC;ום a &gt; b &#x26;#0;</title>
+  <link type="application/xml+xhtml" rel="first" href="https://example.com/" title="MP3 feed"/>
+  <published>2126-02-27T08:56:36.724+0000</published>
+  <summary type="html"><![CDATA[
+
+Tom & Jerry <]]>3&#x26;#x;
+
+&amp;quot;q&#x26;quot;</summary></entry> </feed>

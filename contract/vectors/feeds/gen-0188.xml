@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:image href=" https://example.com/sp.jpg "/>
+<itunes:author>Jane Doe</itunes:author>
+<description><![CDATA[
+&apos;a&apos;]]></description>
+<image><url></url></image>
+<atom:link href="https://example.com/" rel="Next" length="20000" title='' type="application/xhtml+xml"/>
+<link></link>
+<title><![CDATA[&#0;]]></title>
+<atom:link type="" href=' //example.com/ep304.txt ' rel="first" title="MP3 feed" length="abc"/>
+<atom:link href='' length="12" type="text/html"/>
+<atom:link type='audio/mpeg' length="abc" href='https://example.com/pay' rel="hub"/>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<language>pt-BR</language>
+<item><guid isPermaLink="true">urn:uuid:8f9a5efb</guid>
+  <link> https://e.com/x </link>
+  <pubDate>09 May 89 10:26:59 +0100</pubDate>
+  <description>
+[x]Episode 12&#60;br>&#60;li>&#x3C;p&gt;Para&#60;/p&gt;&lt;/li&gt;Episode 12
+
+&#38;mdash; {json: 1}😀&lt;li>😀&lt;/li></description>
+  <itunes:subtitle><![CDATA[<p style="text-ali]]>gn:center"&gt;&amp;&lt;/p&gt;</itunes:subtitle>
+  <enclosure url='' length="" type="Audio/MPEG"></enclosure></item>
+<item><pubDate>29 Apr 1976 18:09 -1200</pubDate>
+<description>&#60;div&gt;  spaced  &#x3C;/div>&#x3C;hr&gt;&#128512;&#13;
+'single&apos;&#x3C;p&gt;&#60;/p&gt;&lt;li&gt;​&lt;/li&gt;aaaa	a=b&amp;c=d</description>
+<title>Folge 838: Über alles</title>
+<guid>  spaced guid  </guid>
+<enclosure url="https://example.com:8443/133.ogg" length="18446744073709551616" type="application/x-bittorrent"/>
+<itunes:duration>5:25:24</itunes:duration>
+<itunes:subtitle> &#x3C;b>Bold&lt;/b> title &lt;p&gt;Para&lt;/p>&#13;
+</itunes:subtitle></item></channel>
+</rss>

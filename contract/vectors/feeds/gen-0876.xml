@@ -1,0 +1,21 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en"> <link title="Café" rel="related" length="abc" href="https://example.com/"></link> <link title='MP3 feed' length="9223372036854775808" rel="" href="https://example.com/alt.xml"/> <id>https://example.com/feed</id> <i:author><![CDATA[  Spaced  ]]></i:author> <author><name>Émile</name></author> <i:image href=""/> <link type="application/xml+xhtml" href="https://example.com/feed?page=2" rel="first" title='MP3 feed'/> <updated>Sat, 08 sept 1998 18:26:16 +0200</updated> <title type='HTML'><![CDATA[  padded  "quoted"]]></title> <link title="" href="" rel="hub"/> <subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#60;br>&lt;p&gt;&lt;/p></div></subtitle> <entry><updated>Sunday, 09 Apr 1989 04:23:23 -1200</updated>
+  <id>tag:x,2020:1</id>
+  <content type="text"><![CDATA[<hr><li>&#;</li>]]></content>
+  <link type="application/rss+xml" length="12" rel="related"></link>
+  <googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+  <title>S01E958</title>
+  <link title="" rel='last' type="application/rss+xml" length='12' href="http://example.org/a/b/c244.wav#t=10"/></entry> <entry><id>tag:x,2020:1</id> <i:duration>14668</i:duration> <dc:date>Sun dec 27 04:51:29 1987</dc:date> <summary type="HTML">x&lt;y</summary> <published>1977-05-14AKST</published> <updated>03 May 88 15:20 -0500</updated> <link length="abc" type="application/xhtml+xml" rel="Next" title="MP3 feed" href="https://example.com/"/> <title><![CDATA[]]>茶</title></entry> <entry><link title='MP3 feed' href="//example.com/a/b/c313.torrent" length="20000" rel="next" type=''/>
+<content><![CDATA[<br /><p/> &#xFFFF;<img src="x.png">&euro;<li>&#65;]]>&#38;#66;&lt;/li&gt;&#60;p&gt;Line&#60;br&gt;break&lt;/p&gt;&lt;p&gt;&#x26;mdash;&lt;/p&gt;</content>
+<link rel='alternate' length="9223372036854775808" type="audio/mpeg" href="https://example.com/alt.xml"/>
+<updated>Tue Oct 10 06:05:50 2006</updated>
+<link length="12" href="https://example.com/feed?page=2" title='MP3 feed' rel='self'/>
+<id> raw </id>
+<summary><![CDATA[<hr/>]]></summary>
+<title><![CDATA[<cite>Line<br>break</cite> &#169;]]></title>
+<published>Sat, 20 September 2008 18:25:16 -0500</published></entry> <entry><content type="html"><![CDATA[😀😀😀  &;<div>#hash</div>]]></content>
+  <title type="text"><![CDATA[tab	he]]>re&lt;h3>café&lt;/h3&gt;</title>
+  <updated>  1999-11-14T04:41:18.695Z </updated>
+  <updated>Friday, 30 Mar 1980 14:38</updated>
+  <published>Thu, 06 Dec 1984 07:47:18 +0945 </published>
+  <id>urn:uuid:1</id></entry>
+</feed>

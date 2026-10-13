@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><atom:link title="Alternate" href="https://example.com/" length="9223372036854775808" rel="related" type="application/atom+xml"/>
+<lastBuildDate>&#8195;Thu, 23 Nov 1899 03:08:27 -0500&#13;
+</lastBuildDate>
+<itunes:author>A, B</itunes:author>
+<title>a
+  b</title>
+<atom:link length="abc" href='https://example.com/alt.xml' rel="last"/>
+<description><![CDATA[aaaa&#169;<br>ééé]]></description>
+<link>https://example.com</link>
+<atom:link length="12" rel="Next" href=""/>
+<atom:link length='20000' title="MP3 feed" type="application/xml+xhtml" rel="first"/>
+<item><guid isPermaLink="true">urn:uuid:9c390859</guid> <enclosure url='' length="0x4E20" type="audio/aac"/> <pubDate>Saturday, 22 Apr 66 02:18</pubDate> <enclosure url="https://cdn.example.com/a/b/c397.jpg" type="audio"/> <title>Tom &#x26; Jerry &#60;3 &#x3C;3 &#x3C;3 &#38;lt;b&#38;gt;</title> <content:encoded>&lt;img>&#x3C;hr/&gt;aaaaaaaa&lt;p&gt;&lt;/p&gt;
+&#x26;#;	AT&amp;T
+[x]&lt;div&gt;&#x26;mdash;&#x3C;/div></content:encoded> <itunes:duration>177:48</itunes:duration> <link></link></item></channel></rss>

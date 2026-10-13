@@ -1,0 +1,14 @@
+<!DOCTYPE rss [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:media="http://search.yahoo.com/mrss/"><language>en</language>
+<foo><description>Nested description</description></foo>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<itunes:subtitle><![CDATA[#809 – Interview]]></itunes:subtitle>
+<link> https://example.com/ </link>
+<itunes:author>Jane &#x26;amp; John</itunes:author>
+<atom:link href="https://example.com/feed?page=2" length='12' rel="first"></atom:link>
+<title>#979 &#x2013; Interview
+第908集
+trailing </title>
+<item><itunes:duration>0</itunes:duration> <dc:date>14 May 58 09:07:03 +0200</dc:date> <itunes:image href="https://example.com/ep.jpg"/> <pi:transcript url="" language="en"/> <title><![CDATA[Folge 642: Über alles]]></title> <guid>Caf&#233;-guid</guid> <description><![CDATA[<hr>]]></description> <enclosure url="" length="2e5" type="video/webm"/> <pubDate>2003-02-30T21:52:05</pubDate></item>
+<item><guid> </guid><link> https://e.com/x </link><pubDate>Friday, 23 Mar 1066 25:49:03</pubDate><description>éééback\slash&#60;br&gt;</description><enclosure url='https://example.com/a.b/café/113.Mp4?file=x.mp3' length="16385" type="audio"/></item></channel>
+</rss>

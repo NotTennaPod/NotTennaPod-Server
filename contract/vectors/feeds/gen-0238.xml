@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><language>TR</language>
+<title>café</title>
+<link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/pay" title="" rel="last"/>
+<podcast:funding url="">&#60;b&gt;x&#60;/b&gt;</podcast:funding>
+<description><![CDATA[<p></p><div>&lt;b&gt;</div><li>Tom & Jerry <3</li> 1 <2<div>a=b&c=d</div>]]></description>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=' '/>
+<link>https://example.com</link>
+<atom:link title="" rel='payment' length="20000" href="https://example.com/pay"/>
+<item><guid isPermaLink='false'> </guid> <cont:encoded>	&amp;#xD800;&amp;apos;a&amp;apos; &amp;euro;&#38;amp&#60;br&gt;&#x3C;p/&gt;</cont:encoded> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1:-1</itunes:duration> <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">1 &lt;2 &#x26;#xA9; 'single'</itunes:subtitle> <title>	&#x8336;&#13;
+</title> <enclosure url="https://example.com:8443/172.m4v" length="٢٠٠٠٠" type="AUDIO/MPEG"/> <link> https://e.com/x </link> <media:content fileSize="123456" medium='Audio' duration="abc" type='text/html'/> <description>&#x3C;p>&#x26;apos;a&amp;apos;&lt;/p&gt;  😀</description> <pubDate>Thu, 09 May 1996 21:21:10 -1200:00</pubDate></item></channel>
+</rss>

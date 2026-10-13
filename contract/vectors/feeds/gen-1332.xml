@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<feed xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <itunes:summary>
+&amp;#xFFFF;	&#60;3 &lt;3&#x3C;BR>
+
+http://example.com/?a=1&amp;b=2&lt;p>Folge 7: Über alles&lt;/p>  a
+
+<![CDATA[b<img src="x.png">&hellip;]]></itunes:summary><media:thumbnail url="https://example.com/amt.jpg"/><logo> https://e.com/l.png
+</logo><icon>https://example.com/icon.png</icon><id>https://example.com/feed</id><itunes:author><![CDATA[😀 Pod]]></itunes:author><author><name>Ann</name></author><author><name></name></author><title><undeclared:x/>plain words</title><entry><updated>Sat, 26 Mar 1988 06:05 -0800</updated> <content>
+
+&amp;#65;&#x26;#66;&#x3C;div>  spaced  &#60;/div>&#x3C;p>cr
+lf&lt;/p>&lt;br&gt;&#x3C;/br>&lt;p&gt;Tom &amp;amp; Jerry &#x26;lt;3&lt;/p>&#x1F600; 茶&#x26;lt;b&amp;gt;escaped&#x26;lt;/b&amp;gt;&#60;br></content> <summary type="plain"><![CDATA[<p>sep</p><img src="x.png"> cover<br>]]></summary> <link rel="payment" href="https://example.com/alt.xml" length="9223372036854775808"/> <link title="Alternate" length="9223372036854775808" rel="first" href="https://example.com/" type='application/rss+xml'/> <id>urn:uuid:1</id> <title type="html">&amp;lt;b&amp;gt;escaped&#38;lt;/b&#x26;gt;</title> <link type="audio/mpeg" title="MP3 feed" href="https://example.com/feed?page=2" rel="next"/></entry></feed>

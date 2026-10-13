@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE rss [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding url=''/><image><link>https://example.com/img-link</link><title>Image title</title><url>https://example.com/img.png</url></image><description>&lt;p&gt;&amp;#65;&#38;#66;&#x3C;/p>&#x3C;br /&gt;&#60;p&gt;&amp;mdash;&lt;/p&gt;&#x3C;li>&#60;3 &lt;3&#x3C;/li&gt;&lt;li> leading&#x3C;/li>aaa&#x3C;div&gt;&#x26;mdash;&#60;/div>&#x3C;img&gt;</description><atom:link length="9223372036854775808" rel="self" type="audio/mpeg" title="Alternate"/><itunes:image href='https://example.com/it.jpg'></itunes:image><podcast:funding>Support us</podcast:funding><link> https://example.com/ </link><item><title><![CDATA[http://example.com/?a=1&b=2 sep]]></title>
+  <content:encoded>aa&#60;br /&gt; {json: 1}</content:encoded>
+  <atom:link rel="enclosure" href="https://user:pass@media.example.net/dir.with.dots/ep264.ogx" length="20000"/>
+  <itunes:duration>2:25:56</itunes:duration>
+  <pubDate>03 Mar 1752 03:52:52 -1200</pubDate>
+  <link></link>
+  <media:thumbnail url="https://example.com/th.jpg"/>
+  <description>&#13;
+e&#x301;</description>
+  <guid>dup</guid></item></channel>
+  </rss>

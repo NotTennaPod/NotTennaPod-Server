@@ -1,0 +1,33 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"> <channel><description></description>
+<itunes:image href=" "/>
+<itunes:summary>trailing &lt;br&gt;  [x]&lt;BR></itunes:summary>
+<podcast:funding url=""></podcast:funding>
+<item><title>&lt;3 &lt;3 &amp;quot;q&amp;quot;</title>
+  <guid isPermaLink="true"></guid>
+  <link>https://example.com/ep</link>
+  <pubDate>Thu,  08  Nov  2012 14:35:28 +1400</pubDate>
+  <dc:date>0099-03-05T01:12:23-0500</dc:date>
+  <itunes:duration>35791:23:47</itunes:duration>
+  <enclosure length="-0" type="audio/wav"/>
+  <media:content duration="2147483648" fileSize="-0" url="https://example.com:8443/café/213.mkv" medium="audio" type="audio/ogg"/>
+  <media:thumbnail/></item>
+<item><itunes:summary><![CDATA[1 <2<br>&#xD800;<img ]]>src="x.png&quot;&gt;a=b&amp;c=d&lt;img src="x.png"></itunes:summary>
+<itunes:image href=""/>
+<guid isPermaLink="false">a&#x26;b</guid>
+<pubDate>Wed,09 Aug 1995 22:49:14 +0100</pubDate>
+<itunes:duration>:30</itunes:duration>
+<description>é&#xE9;é</description>
+<link> https://e.com/x </link>
+<title>&amp;lt
+cr&#13;lf
+&#60;li>&#x26;#xA9;&lt;/li></title>
+<podcast:transcript url="https://example.com/t.vtt" type="text/html" language='en'/><podcast:transcript url="https://example.com/t.json" type="text/plain"/></item>
+<item><enclosure url='' length='00020000' type="audio/wav"/> <itunes:duration>3:31:57</itunes:duration> <content:encoded><![CDATA[<br>]]></content:encoded> <itunes:summary><![CDATA[<img>  שלוםaaa]]></itunes:summary> <media:content isDefault="true" fileSize="20000.0" url="https://xn--caf-dma.example/café/59.html" duration="59" type='audio/mpeg' medium="document"/> <enclosure url="HTTPS://EXAMPLE.COM/346.aac?a=1&amp;b=2" length="1" type="audio"/> <media:description><![CDATA[ é&quot;q&quot;😀😀😀]]></media:description> <media:thumbnail url=''/> <pubDate>Sat Jan 11 00:44:36 1992 +1</pubDate> <title><![CDATA[Line<br>break]]></title></item>
+<link> https://example.com/ </link>
+<image><url>  https://example.com/ws.png
+</url></image>
+<language>de-DE</language>
+<title>&#128512;a
+  ba
+  b</title></channel>
+</rss>

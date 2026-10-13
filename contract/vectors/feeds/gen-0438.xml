@@ -1,0 +1,22 @@
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><it:author><![CDATA[<b>Studio</b>]]></it:author>
+<title>&#38;amp;  AT&amp;T  &amp;apos;a&amp;apos;</title>
+<it:new-feed-url></it:new-feed-url>
+<link></link>
+<link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/feed?page=2" rel="Next" length="abc" title="Alternate" type="text/html"/>
+<it:summary><![CDATA[<br/>]]></it:summary>
+<atom:link rel='' type="audio/mpeg" title="MP3 feed" href="https://example.com/"/>
+<item><it:summary>
+
+'single&apos;&lt;li>&amp;;&#x3C;/li&gt;&#x3C;p&gt;AT&#38;T&#x3C;/p&gt;&lt;p&gt;#7 – Interview&lt;/p&gt;a
+
+b&#x3C;br></it:summary>
+  <guid isPermaLink="true">https://example.com/item/96509</guid>
+  <pubDate>Wed, 16 Jun 1993 10:01:17 +0945</pubDate>
+  <link>https://example.com/ep</link>
+  <cont:encoded><![CDATA[​ <div>&#169;</div> &<li>&mdash;</li>]]></cont:encoded>
+  <enclosure length='' type="audio/mpeg"/>
+  <title>tab	here &#38; 1 &lt;2</title></item>
+<it:image href=" https://example.com/sp.jpg "/>
+<atom:link length="20000" href="ftp://files.example.com/ep383.xyz#t=10" type="application/xml+xhtml" title="MP3 feed" rel="archives"/>
+<atom:link type="text/html" rel="self" title="" length="20000" href="https://example.com/"/>
+<it:owner><it:name>Owner</it:name><it:email>o@example.com</it:email></it:owner></channel></rss>

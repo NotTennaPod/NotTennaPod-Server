@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom"><channel><item><guid>dup</guid>
+  <pubDate>1601-08-11T23:50:48.</pubDate>
+  <i:duration>1:30</i:duration>
+  <enclosure length="2147483647" type="audio/mp3"></enclosure>
+  <title>&amp;quot;q&amp;quot;
+&amp;#0;
+"quoted&quot;</title>
+  <description></description>
+  <googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+  <podcast:transcript type="" language="en"/><podcast:transcript url="https://example.com/t.json" type="text/plain" language="en"/>
+  <i:summary>  padded  </i:summary>
+  <content:encoded> leading&lt;BR> 茶 &#38;#65;&amp;#66;&lt;hr/>&#x3C;div&gt;a
+  b&#x3C;/div>ééé😀😀😀</content:encoded></item> <item><title><![CDATA[<em>1 <2</em> 茶 <tt>plain words</tt>]]></title> <guid isPermaLink="false">Café-guid</guid> <link></link> <description><![CDATA[<li>&lt;b&gt;</li>ééé]]></description> <i:duration>-5</i:duration> <media:content fileSize="9223372036854775807" duration="+60" medium="audio" type='video/mp4'/> <!-- comment --><?pi data?></item> <item><title>"quoted&quot;</title> <guid isPermaLink="false">Caf&#xE9;-guid</guid> <description>&#x3C;p&gt;&amp;AMP;&lt;/p>&#60;BR&gt;&#x3C;p&gt;a &lt; b&#x3C;/p></description> <content:encoded>é&#xE9;é&lt;br&gt;&#60;p>&amp;amp;amp;&lt;/p>&lt;p&gt;&lt;/p&gt; &#38;#xD800;</content:encoded> <i:summary>&#x3C;li&gt;cr&#13;lf&lt;/li>&amp;;&#60;br></i:summary> <enclosure url="//example.com/café/168.html" length="-9223372036854775808" type="application/ogg"/> <enclosure url='https://user:pass@media.example.net/ep132.html#t=10' length='' type="text/plain"/> <enclosure url='//example.com/a/b/c385.jpg?file=x.mp3' length='9223372036854775807' type="text/plain"/> <media:content type="image/png" medium="document" fileSize='12' duration="+60" isDefault="1"/></item> <image><url>  https://example.com/ws.png
+</url><title>Image title</title></image> <description>&lt;p&gt;&#x26;#0;&#x3C;/p&gt;​	&#x5E9;לום&#160;&amp;quot;q&amp;quot;&#x3C;br&gt;</description> <i:explicit>clean</i:explicit> <title>&lt;tt>&#x26;#x1F600;&lt;/tt></title> <a10:link title='Café' rel="next" length='abc' href="https://example.com/" type=""/> <i:summary>ééé</i:summary> <i:image></i:image> <link> https://example.com/ </link></channel>
+  </rss>

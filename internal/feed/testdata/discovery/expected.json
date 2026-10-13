@@ -1,0 +1,386 @@
+{
+ "_comment": "From NotTennaPod-iOS TestSupport/Data/add-podcast-discovery/expected/discovery.json (checked against Android 3.12.1's FeedDiscoverer, TypeGetter and UrlChecker with the pinned jsoup 1.15.1; java-crosscheck.json there): the page outcomes and the address preparations. The pages are copied beside this file.",
+ "base": "http://127.0.0.1:18820",
+ "pages": [
+  {
+   "page": "website-no-links.html",
+   "requested_url": "http://127.0.0.1:18820/pages/website-no-links.html",
+   "android": {
+    "outcome": "error_dialog",
+    "dialog": {
+     "title": "Error",
+     "message": "The address you entered is a website address, not a podcast RSS address. \n\nTechnical reason: \nWebsite title: \"Example\n Podcast   Site\" \n\nFile URL:\nhttp://127.0.0.1:18820/pages/website-no-links.html",
+     "secondary_text_from": 72,
+     "buttons_start_to_end": [
+      "Edit feed URL",
+      "OK"
+     ]
+    }
+   }
+  },
+  {
+   "page": "website-no-links.html",
+   "requested_url": "http://127.0.0.1:18820/pages/website-no-links.html",
+   "android": {
+    "outcome": "error_dialog",
+    "dialog": {
+     "title": "Error",
+     "message": "The podcast host's server sent a website, not a podcast. \n\nTechnical reason: \nWebsite title: \"Example\n Podcast   Site\" \n\nFile URL:\nhttp://127.0.0.1:18820/pages/website-no-links.html",
+     "secondary_text_from": 56,
+     "buttons_start_to_end": [
+      "OK"
+     ]
+    }
+   }
+  },
+  {
+   "page": "website-one-link.html",
+   "requested_url": "http://127.0.0.1:18820/pages/website-one-link.html",
+   "android": {
+    "outcome": "open_single",
+    "url": "http://127.0.0.1:18820/feeds/only.xml",
+    "manual_after": false
+   }
+  },
+  {
+   "page": "website-many-links.html",
+   "requested_url": "http://127.0.0.1:18820/pages/website-many-links.html",
+   "android": {
+    "outcome": "chooser",
+    "title": "Subscriptions",
+    "items": [
+     {
+      "url": "http://127.0.0.1:18820/feeds/mp3.xml",
+      "label": "MP3 Feed (renamed)"
+     },
+     {
+      "url": "http://127.0.0.1:18820/feeds/comments.xml",
+      "label": "Comments"
+     },
+     {
+      "url": "http://127.0.0.1:18820/feeds/aac.xml",
+      "label": "AAC Feed"
+     },
+     {
+      "url": "http://127.0.0.1:18820/feeds/atom.xml",
+      "label": "http://127.0.0.1:18820/feeds/atom.xml"
+     }
+    ],
+    "manual_after": false
+   }
+  },
+  {
+   "page": "website-relative-links.html",
+   "requested_url": "http://127.0.0.1:18820/shows/index.html?ref=home",
+   "android": {
+    "outcome": "chooser",
+    "title": "Subscriptions",
+    "items": [
+     {
+      "url": "http://127.0.0.1:18820/podcast%20feed.xml?ref=home",
+      "label": "Space"
+     },
+     {
+      "url": "http://127.0.0.1:18820/feed.php%3Fid%3D5?ref=home",
+      "label": "Query"
+     },
+     {
+      "url": "http://127.0.0.1:18820/feed.xml?ref=home",
+      "label": "Same folder"
+     },
+     {
+      "url": "http://127.0.0.1:18820/../audio.xml?ref=home",
+      "label": "Parent folder"
+     },
+     {
+      "url": "http://127.0.0.1:18820/root.xml?ref=home",
+      "label": "Root"
+     },
+     {
+      "url": "/feed.xml?t=10:30",
+      "label": "Colon in query"
+     },
+     {
+      "url": "http://127.0.0.1:18820//cdn.example.org/show.xml?ref=home",
+      "label": "Protocol relative"
+     }
+    ],
+    "manual_after": false
+   },
+   "recommended_rfc3986": {
+    "outcome": "chooser",
+    "title": "Subscriptions",
+    "items": [
+     {
+      "url": "http://127.0.0.1:18820/shows/feed.xml",
+      "label": "Same folder"
+     },
+     {
+      "url": "http://127.0.0.1:18820/audio.xml",
+      "label": "Parent folder"
+     },
+     {
+      "url": "http://127.0.0.1:18820/feed.xml?t=10:30",
+      "label": "Colon in query"
+     },
+     {
+      "url": "http://127.0.0.1:18820/root.xml",
+      "label": "Root"
+     },
+     {
+      "url": "http://127.0.0.1:18820/shows/feed.php?id=5",
+      "label": "Query"
+     },
+     {
+      "url": "http://127.0.0.1:18820/podcast%20feed.xml",
+      "label": "Space"
+     },
+     {
+      "url": "http://cdn.example.org/show.xml",
+      "label": "Protocol relative"
+     }
+    ],
+    "manual_after": false
+   }
+  },
+  {
+   "page": "website-self-link.html",
+   "requested_url": "http://127.0.0.1:18820/pages/website-self-link.html",
+   "android": {
+    "outcome": "open_single",
+    "url": "http://127.0.0.1:18820/pages/website-self-link.html",
+    "manual_after": false
+   },
+   "android_defect": "self-link: Android downloads the same page again forever"
+  },
+  {
+   "page": "website-after-head.html",
+   "requested_url": "http://127.0.0.1:18820/pages/website-after-head.html",
+   "android": {
+    "outcome": "open_single",
+    "url": "http://127.0.0.1:18820/feeds/between.xml",
+    "manual_after": false
+   }
+  },
+  {
+   "page": "website-implicit-body.html",
+   "requested_url": "http://127.0.0.1:18820/pages/website-implicit-body.html",
+   "android": {
+    "outcome": "open_single",
+    "url": "http://127.0.0.1:18820/feeds/before.xml",
+    "manual_after": false
+   }
+  },
+  {
+   "page": "plain.txt",
+   "requested_url": "http://127.0.0.1:18820/pages/plain.txt",
+   "android": {
+    "outcome": "error_dialog",
+    "dialog": {
+     "title": "Error",
+     "message": "The podcast host's server sent a broken podcast feed. We recommend checking with a podcast validator such as castfeedvalidator.com and contacting the podcast creator to let them know. \n\nTechnical reason: \nUnknown problem when trying to determine feed type \n\nFile URL:\nhttp://127.0.0.1:18820/pages/plain.txt",
+     "secondary_text_from": 183,
+     "buttons_start_to_end": [
+      "Edit feed URL",
+      "OK"
+     ]
+    }
+   }
+  },
+  {
+   "page": "data.json",
+   "requested_url": "http://127.0.0.1:18820/pages/data.json",
+   "android": {
+    "outcome": "error_dialog",
+    "dialog": {
+     "title": "Error",
+     "message": "The podcast host's server sent a broken podcast feed. We recommend checking with a podcast validator such as castfeedvalidator.com and contacting the podcast creator to let them know. \n\nTechnical reason: \nUnknown problem when trying to determine feed type \n\nFile URL:\nhttp://127.0.0.1:18820/pages/data.json",
+     "secondary_text_from": 183,
+     "buttons_start_to_end": [
+      "Edit feed URL",
+      "OK"
+     ]
+    }
+   }
+  },
+  {
+   "page": "subscriptions.opml",
+   "requested_url": "http://127.0.0.1:18820/pages/subscriptions.opml",
+   "android": {
+    "outcome": "error_dialog",
+    "dialog": {
+     "title": "Error",
+     "message": "The address you entered is a website address, not a podcast RSS address. \n\nTechnical reason: \nServer returned html \n\nFile URL:\nhttp://127.0.0.1:18820/pages/subscriptions.opml",
+     "secondary_text_from": 72,
+     "buttons_start_to_end": [
+      "Edit feed URL",
+      "OK"
+     ]
+    }
+   }
+  },
+  {
+   "page": "feed-rss20.xml",
+   "requested_url": "http://127.0.0.1:18820/pages/feed-rss20.xml",
+   "android": {
+    "outcome": "preview",
+    "url": "http://127.0.0.1:18820/pages/feed-rss20.xml",
+    "type": "rss20"
+   }
+  },
+  {
+   "page": "feed-atom.xml",
+   "requested_url": "http://127.0.0.1:18820/pages/feed-atom.xml",
+   "android": {
+    "outcome": "preview",
+    "url": "http://127.0.0.1:18820/pages/feed-atom.xml",
+    "type": "atom"
+   }
+  },
+  {
+   "page": "feed-rss10.xml",
+   "requested_url": "http://127.0.0.1:18820/pages/feed-rss10.xml",
+   "android": {
+    "outcome": "error_dialog",
+    "dialog": {
+     "title": "Error",
+     "message": "The podcast host's server sent a broken podcast feed. We recommend checking with a podcast validator such as castfeedvalidator.com and contacting the podcast creator to let them know. \n\nTechnical reason: \nUnsupported rss version \n\nFile URL:\nhttp://127.0.0.1:18820/pages/feed-rss10.xml",
+     "secondary_text_from": 183,
+     "buttons_start_to_end": [
+      "Edit feed URL",
+      "OK"
+     ]
+    }
+   }
+  },
+  {
+   "page": "feed-broken.xml",
+   "requested_url": "http://127.0.0.1:18820/pages/feed-broken.xml",
+   "android": {
+    "outcome": "error_dialog",
+    "dialog": {
+     "title": "Error",
+     "message": "The podcast host's server sent a broken podcast feed. We recommend checking with a podcast validator such as castfeedvalidator.com and contacting the podcast creator to let them know. \n\nTechnical reason: \n<SAX parser message> \n\nFile URL:\nhttp://127.0.0.1:18820/pages/feed-broken.xml",
+     "secondary_text_from": 183,
+     "buttons_start_to_end": [
+      "OK"
+     ]
+    }
+   }
+  }
+ ],
+ "url_inputs": [
+  {
+   "input": "https://example.com/feed.xml",
+   "prepared": "https://example.com/feed.xml"
+  },
+  {
+   "input": "example.com/feed.xml",
+   "prepared": "http://example.com/feed.xml"
+  },
+  {
+   "input": "http://127.0.0.1:18765/feed.xml",
+   "prepared": "http://127.0.0.1:18765/feed.xml"
+  },
+  {
+   "input": "http://localhost:18765/feed.xml",
+   "prepared": "http://localhost:18765/feed.xml"
+  },
+  {
+   "input": "localhost",
+   "prepared": "http://localhost"
+  },
+  {
+   "input": "feed://example.com/rss",
+   "prepared": "http://example.com/rss"
+  },
+  {
+   "input": "itpc://example.com/rss",
+   "prepared": "http://example.com/rss"
+  },
+  {
+   "input": "HTTPS://EXAMPLE.COM/FEED",
+   "prepared": "HTTPS://EXAMPLE.COM/FEED"
+  },
+  {
+   "input": " https://example.com/feed.xml",
+   "prepared": "https://example.com/feed.xml"
+  },
+  {
+   "input": "https://example.com/feed.xml ",
+   "prepared": "https://example.com/feed.xml"
+  },
+  {
+   "input": "https://user:pw@example.com/feed",
+   "prepared": "https://user:pw@example.com/feed"
+  },
+  {
+   "input": "https://example.com:99999/feed",
+   "prepared": "https://example.com:99999/feed"
+  },
+  {
+   "input": "https://exa mple.com/feed",
+   "prepared": "https://exa mple.com/feed"
+  },
+  {
+   "input": "https://例え.テスト/feed",
+   "prepared": "https://例え.テスト/feed"
+  },
+  {
+   "input": "https://example.com/path with space",
+   "prepared": "https://example.com/path with space"
+  },
+  {
+   "input": "https://example.com/a%20b",
+   "prepared": "https://example.com/a%20b"
+  },
+  {
+   "input": "https://example.com/feed?x=1&y=2#frag",
+   "prepared": "https://example.com/feed?x=1&y=2#frag"
+  },
+  {
+   "input": "",
+   "prepared": "http://"
+  },
+  {
+   "input": "ftp://example.com/feed.xml",
+   "prepared": "http://ftp://example.com/feed.xml"
+  },
+  {
+   "input": "https://example.c",
+   "prepared": "https://example.c"
+  },
+  {
+   "input": "https://256.1.1.1/feed",
+   "prepared": "https://256.1.1.1/feed"
+  },
+  {
+   "input": "https://example.com.",
+   "prepared": "https://example.com."
+  },
+  {
+   "input": "http://",
+   "prepared": "http://"
+  },
+  {
+   "input": "podcast",
+   "prepared": "http://podcast"
+  },
+  {
+   "input": "Https://example.com/Feed.xml",
+   "prepared": "Https://example.com/Feed.xml"
+  },
+  {
+   "input": "pcast://example.com/rss",
+   "prepared": "http://example.com/rss"
+  },
+  {
+   "input": "https://xn--r8jz45g.xn--zckzah/feed",
+   "prepared": "https://xn--r8jz45g.xn--zckzah/feed"
+  },
+  {
+   "input": "https://a_b.example.com/feed",
+   "prepared": "https://a_b.example.com/feed"
+  }
+ ]
+}

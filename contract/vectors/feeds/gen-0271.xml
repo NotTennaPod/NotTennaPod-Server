@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<subtitle type="html"><![CDATA[&lt;b&gt;escaped&lt;/b&gt;]]></subtitle> <link rel="Next" type="application/rss+xml" title="Alternate" href="https://example.com/alt.xml"></link> <itunes:image href="https://example.com/ai.jpg"/> <updated>2000-03-07T21:19:54CEST</updated> <link title="" href="https://example.com/alt.xml" rel="hub" length="20000" type="application/xhtml+xml"></link> <icon></icon> <podcast:funding url="https://example.com/give">Give</podcast:funding> <itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url> <link rel="related" href="https://example.com/feed?page=2" type="application/rss+xml"/> <author><name>Ann</name></author> <title>a&#13;
+b Line&#60;br>break &#1605;&#1585;&#1581;&#1576;&#1575;</title> <author><name>&#201;mile</name></author> <entry><title type="plain"><![CDATA[Tom &amp; Jerry &lt;3 plain words x<y]]></title>
+<id></id>
+<summary type="html">  Tom &#x26; Jerry &lt;3&#13;
+&#1605;&#1585;&#1581;&#1576;&#1575;&lt;BR>&lt;div>a=b&amp;c=d&lt;/div&gt;&#x3C;br&gt;&lt;/br&gt;&#13;
+  &#x26;&#128512;</summary>
+<itunes:image href="https://example.com/e.jpg"/>
+<link rel="archives" length="9223372036854775808" href="https://example.com/feed?page=2" title="Alternate"/>
+<media:content url="https://user:pass@media.example.net/caf&#233;/224.avi" type='image/*' medium='Audio' fileSize="0x4E20"/>
+<published>Sunday, 22 Jun 00 11:15:13</published>
+<psc:chapters version="1.2"><psc:chapter title="Intro" start="1:2d"/><psc:chapter start="01:02:03.123456"/><psc:chapter title="&#128512;" href="" start="00:16:51.495"/></psc:chapters></entry>
+</feed>

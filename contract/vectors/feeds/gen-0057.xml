@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel><title>a &gt; bEpisode 12multi
+line</title><itunes:author>Jane Doe</itunes:author><textInput><title>Search</title><link>https://example.com/search</link></textInput><a10:link title="Alternate" type="text/html" length="20000" href=''></a10:link><description></description><podcastindex:funding url='https://example.com/donate'>Support us</podcastindex:funding><link>https://example.com</link><a10:link length="20000" type="audio/mpeg" title="MP3 feed" rel="payment" href="https://example.com/pay"/><podcastindex:funding url=""/><language>en</language><a10:link rel="related" title="Café" type="application/atom+xml" length="20000"/><podcastindex:funding>Support us</podcastindex:funding><item><description><![CDATA[😀"quoted"<br>
+a < b<p>&hel]]>lip;&lt;/p&gt;&lt;hr/>&#233;éé &amp;nbsp;&amp;#xD800;</description>
+<media:content fileSize="" type="audio/" medium='Audio' url="http://example.org/e p395.3gp" duration="0" isDefault="1"/>
+<media:content isDefault='false' duration='01:00' medium="video" type="Audio/MPEG" url="https://xn--caf-dma.example/165.html" fileSize="123456"/>
+<itunes:duration>1 :30</itunes:duration>
+<title><![CDATA[Folge 894: Über alles]]></title>
+<pubDate>Sun, 16 MAY 1999 16:55:37 -1200</pubDate>
+<link></link>
+<media:content fileSize="00020000" medium="audio" url="https://example.com/a.b/dir.with.dots/ep84.mov" type="audio/x-wav" duration="59"/>
+<itunes:image href=" https://e.com/i.png "/>
+<content:encoded>&lt;hr&gt;</content:encoded></item><item><title>[x]&#60;big&gt;a&#13;
+b&#x3C;/big></title>
+<guid>dup</guid>
+<link>https://example.com/ep</link>
+<pubDate> Sun 7 Jun 1998 02:13:49 GM  </pubDate>
+<description>😀😀  To<![CDATA[m & Jerry <3  aaaaaaaaa back\slash]]></description>
+<content:encoded><![CDATA[😀😀😀😀Episode 7]]></content:encoded>
+<itunes:subtitle>a
+  b</itunes:subtitle>
+<itunes:image href=""/>
+<itunes:duration>0:21:21</itunes:duration>
+<itunes:author>Item author</itunes:author>
+<enclosure url="https://user:pass@media.example.net/dir.with.dots/ep264.ogx" length="２０００００" type="audio/mpeg"/>
+<enclosure url="" length="abc" type="audio/aac"/>
+<media:thumbnail/>
+<podcastindex:chapters url="" type="application/json+chapters"/></item></channel></rss>

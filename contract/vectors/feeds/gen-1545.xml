@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <channel><image><title>Image title</title><link>https://example.com/img-link</link><url>https://example.com/img.png</url></image>
+<itunes:image href="https://example.com/it.jpg"></itunes:image>
+<media:thumbnail url="https://example.com/mt.jpg"/>
+<link> https://example.com/ </link>
+<itunes:summary>  Line&lt;br>break</itunes:summary>
+<title>&amp;#65;&#x26;#66; <![CDATA[ &unknown;]]></title>
+<itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+<item><pubDate>Sun NOV 23 13:33:23 1975</pubDate><content:encoded>&lt;br&gt;&lt;p/&gt; &amp;#0;&#x3C;p>Episode 12&#60;/p&gt;&lt;br&gt;&#x3C;hr&gt;
+ leading&#x3C;hr></content:encoded><enclosure url="" length="20000.0" type="application/pdf"/><itunes:subtitle>&#x3C;sup&gt;Line&#60;br&gt;break&#x3C;/sup&gt;  &amp;apos;a&amp;apos;  茶</itunes:subtitle><media:thumbnail/><guid isPermaLink="true"></guid><link>https://example.com/ep</link><podcast:chapters url="" type="application/json+chapters"/><description><![CDATA[<img src="x" alt="y"/>]]></description><title>Folge 730: Über alles</title></item></channel></rss>

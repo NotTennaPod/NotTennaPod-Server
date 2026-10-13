@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom"> <channel><title>&amp;#xA9;&#x3C;3 &lt;3a &gt; b</title>
+  <p2:funding url="https://example.com/donate">&lt;b&gt;x&#x3C;/b></p2:funding>
+  <p2:funding>Support us</p2:funding>
+  <link>https://example.com</link>
+  <description>ééé&#60;p&gt;back\slash&#x3C;/p&gt;&lt;p&gt;​&lt;/p&gt;</description>
+  <a10:link type="application/xml+xhtml" title="" href='https://example.com/'/>
+  <a10:link href="https://example.com/feed?page=2" rel="payment"/>
+  <a10:link href='' rel="alternate" type="text/html" title="Café" length="abc"></a10:link>
+  <itunes:image href=""/>
+  <dc:creator>DC Creator</dc:creator>
+  <p2:funding></p2:funding>
+  <a10:link rel="" title="Alternate" type="audio/mpeg" length="12" href="https://example.com/alt.xml"/></channel>
+</rss>

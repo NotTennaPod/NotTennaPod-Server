@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:sc="http://podlove.org/simple-chapters">
+  <itunes:image href="https://example.com/ai.jpg"></itunes:image>
+  <link type="text/html" rel="" length="20000" href="https://example.com/feed?page=2" title="MP3 feed"/>
+  <updated>03 Oct 80 00:39:15 +0100</updated>
+  <title><![CDATA[1 <2]]></title>
+  <subtitle type="html"></subtitle>
+  <itunes:author>  Spaced  </itunes:author>
+  <id> raw </id>
+  <itunes:summary>&#128512;&#x3C;br&gt;&#13;
+plain words&#38;;&lt;img src="x&quot; alt=&quot;y"/&gt;éé&#xE9;</itunes:summary>
+  <entry><published>Thu, 04 Oct 2007 04:13:47</published>
+<link title="MP3 feed" rel="Next" href="https://example.com/pay" length="12" type="text/html"/>
+<podcast:transcript url="" type="application/json" language="en"/>
+<title type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">a &gt; b
+&#x26;amp</div></title>
+<content><![CDATA[ &#33590;<div>&#128512;</div><p></p>  &#128512;&#128512;&#128512;<div>&#33590;</div><div>&#x;</div><div>#7 &#8211; Interview</div>]]></content>
+<id> raw </id>
+<link href="https://example.com/alt.xml" rel="alternate"/>
+<updated>1993-03-19T23:25:00.269BST</updated></entry>
+  <entry><id>tag:x,2020:1</id>
+<summary type="text"><![CDATA[<div>&lt</div><p>Episode 7</p>  'single'	e&#769;<p>1 <2</p>]]></summary>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#38;#xFFFF;  a &#x3C; b  cr&#13;lf</div></title>
+<updated>x, 28 Feb 2145 17:23:11 -1200</updated>
+<podcast:transcript url='https://example.com/t.json' type="" language="en"></podcast:transcript><podcast:transcript url="https://example.com/t.json" type="application/srr" language="en"/><podcast:transcript url="https://example.com/t.json" type="text/vtt" language="en"/>
+<content type="HTML">&lt;hr&gt;&#128512;&#128512;	&#x26;#xD800;&lt;BR&gt; 100%&#x3C;li&gt;&#x26;#169;&lt;/li>&#60;div>{json: 1}&#60;/div>a&#13;
+b&lt;br></content></entry>
+  <entry><title type='html'>a &lt; b  R&amp;D  caf<![CDATA[é]]></title>
+  <updated>Thu Mar 9 05:44:60 1978</updated>
+  <author><name>Entry author</name></author>
+  <id>tag:x,2020:1</id></entry>
+  <entry><content type='html'><![CDATA[]]>&lt;div&gt;{json: 1}&lt;/div&gt;</content>
+<link rel="last" type="text/html" title="Alternate" href="https://example.com/alt.xml"/>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;li>a=b&#38;c=d&lt;/li>&#60;div&gt;&amp;apos;a&#x26;apos;&lt;/div&gt;&#x3C;p&gt; leading&lt;/p&gt;&#60;hr&gt;&lt;p&gt;&amp;#x;&lt;/p></div></summary>
+<itunes:duration>0:14:01</itunes:duration>
+<media:content fileSize="00020000" type="application/ogg" url="https://example.com:8443/ep192.mp4?dl=1.0" medium="Audio" duration="-5" isDefault="1"/>
+<updated>01 Jun 2416 14:58:36 GMT+0100</updated>
+<id>tag:x,2020:1</id>
+<title type='html'>&lt;b>Bold&lt;/b&gt; titlecafé</title></entry>
+  <entry><updated>2361-07-12T15:34:30.785 +0530</updated> <published>Tue, 23 Aug 1977 06:09:21 -0800 	 </published> <comments>https://example.com/c</comments> <link title='Café' length="abc" href="https://example.com/" rel="payment"/> <updated>2322-03-20-0800</updated> <itunes:duration>&#1633;:&#1634;&#1635;</itunes:duration> <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;lta&#13;
+b</div></title></entry>
+  <entry><itunes:duration>30:</itunes:duration>
+  <title type="HTML"><![CDATA[<h3>&lt</h3>  Tom &amp; Jerry &lt;3]]></title>
+  <id>tag:x,2020:1</id>
+  <published>SATURDAY, 17 Nov 2418 11:05:00 +1400</published>
+  <updated>&#13;
+Thu,  14  Jan 2021 10:17:54 -1200  </updated></entry>
+  <entry><title type="plain">sep</title>
+  <link title="Café" href="https://example.com/" type="text/html" rel="next"/>
+  <link rel="alternate" type="application/xhtml+xml" title="Café" href="https://example.com/feed?page=2" length='12'/>
+  <id> raw </id>
+  <content type="plain">&lt;div&gt;&amp;euro;&lt;/div>
+
+ leading&lt;div&gt;&#33590;&lt;/div&gt; &#38;amp
+
+&#38;#;</content>
+  <author><name>Entry author</name></author>
+  <link length="9223372036854775808" title="MP3 feed" rel="alternate" href="https://example.com/"/>
+  <summary><![CDATA[a]]></summary>
+  <published>2000-08-03+0000</published></entry>
+  <entry><link type="application/xhtml+xml" href='https://example.com/feed?page=2' rel="hub"/> <title type='text'>S01E78&#x3C;p&gt;&#60;p&gt;cr&#13;lf&lt;/p&gt;&lt;/p&gt;&#1513;&#1500;&#1493;&#1501;</title> <link title='Alternate' length="20000" rel="self"/> <updated>Tue, 18 Jun 2013 22:25:49 +0200 2024</updated></entry>
+  <entry><content><![CDATA[ &#33590;<p>  padded  </p>]]></content> <summary type="xhtml">Line&lt;br&gt;break</summary> <link length="9223372036854775808" rel="related" type="application/rss+xml" href="https://example.com:8443/e p353.ogx" title="Café"/> <link title="" length='9223372036854775808' rel="related" href="https://example.com/pay" type="text/html"/> <link title='MP3 feed' type="application/atom+xml" href="http://example.org/e p275.opus" rel="last" length="9223372036854775808"/> <title> &lt;p>Para&#x3C;/p&gt; </title></entry>
+  <entry><content>&#128512;&#128512;&#128512;  'single'&lt;BR>&lt;li>&#1605;&#1585;&#x62D;&#1576;&#1575;&lt;/li>&#x3C;hr&gt;  &amp;#xFFFF; &#38;;&#60;p/></content>
+<link href="https://example.com/alt.xml" length="9223372036854775808" title="" type="" rel="related"></link>
+<id> raw </id>
+<summary type="text">&#x3C;br>&lt;/br<![CDATA[>]]></summary>
+<published>2023-09-16T02:51:14.353</published>
+<title type='text'>a &#60; bsep</title>
+<pc:chapters version="1.2"><sc:chapter href="https://example.com/ch" start="35791:23:47.647" title="&#128512;" image="https://example.com/ch.png"/><sc:chapter image="https://example.com/ch.png" href="" start="33:19"/><pc:chapter start='1.5e3' href='https://example.com/ch' image="https://example.com/ch.png" title="&lt;b>x&lt;/b>"/><pc:chapter title="Café &amp;amp; more" href="" start="1:00:00.5" image='https://example.com/ch.png'/><pc:chapter image="https://example.com/ch.png" href="https://example.com/ch" start="7639" title="&#128512;"/></pc:chapters></entry>
+  <entry><published>21 Dec 2020 21:13:46 CST</published><id>tag:x,2020:1</id><link type="application/rss+xml" href="https://example.com/feed?page=2" title=""/><author><name>Entry author</name></author><title type="html">Tom &amp;amp; Jerry &#x26;lt;3</title><link title="Alternate" href="https://example.com/" length="20000" type="application/xml+xhtml" rel="archives"/><itunes:image href="https://example.com/e.jpg"/><link title="MP3 feed" type="text/html" rel="Next"/></entry>
+  <entry><author><name>Entry author</name></author>
+  <published> Su, 29 Jun 1950 20:14:25 +0100	</published>
+  <id>urn:uuid:1</id>
+  <title><![CDATA[http://example.com/?a=1&b=2]]></title>
+  <comments>https://example.com/c</comments>
+  <link title="" type="application/rss+xml" rel="last" length='9223372036854775808' href='https://example.com/alt.xml'/>
+  <updated>2198-02-31</updated>
+  <pc:chapters version='1.2'><pc:chapter image="https://example.com/ch.png" start="03:58:53.549"></pc:chapter><pc:chapter href="" title=''/></pc:chapters></entry> </feed>

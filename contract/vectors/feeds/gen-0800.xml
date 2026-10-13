@@ -1,0 +1,30 @@
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <atom:logo>https://example.com/logo.png</atom:logo>
+<atom:author><atom:name>  Bob  </atom:name><atom:email>a@example.com</atom:email></atom:author>
+<atom:subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#31532;7集&#60;br>&#xE9;éé&lt;p>&#38;Lt;&lt;/p&gt;</div></atom:subtitle>
+<pi:funding url="https://example.com/give">Give</pi:funding>
+<atom:id>urn:x</atom:id>
+<atom:title type="text"><![CDATA[&lt;b&gt;escaped&lt;/b&gt;&quot;q&quot;]]></atom:title>
+<atom:icon></atom:icon>
+<atom:link rel="hub" href="https://example.com/alt.xml" length="12" type="application/atom+xml"/>
+<atom:entry><atom:content type="HTML">	multi
+line😀😀😀😀😀</atom:content>
+<atom:published>2594-12-26T06:04:03Z</atom:published>
+<atom:title type="HTML"><![CDATA[&hellip;
+1 <2
+ ]]></atom:title>
+<atom:summary type="text">a&#13;
+b&lt;br&gt;😀😀😀😀a > b&#60;br></atom:summary>
+<atom:link rel="hub" length="12" title="Café" href="https://example.com/pay"/>
+<atom:updated>Sat, 04 Dec 2128 02:28:46 +0100</atom:updated>
+<atom:id>urn:uuid:1</atom:id></atom:entry>
+<atom:entry><atom:id> raw </atom:id>
+<atom:summary type="HTML"></atom:summary>
+<atom:updated>Wed, 25 May 2546 01:13 +0530 +0000</atom:updated>
+<atom:content type="HTML"><![CDATA[<p>&amp</p><li>&#xFFFF;</li>aaaaa<img src="x" alt="y"/><p>第7集</p><p>S01E7</p> http://example.com/?a=1&b=2😀😀😀]]></atom:content>
+<atom:title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">AT&amp;T
+&lt;img src=&quot;x.png&quot;&gt; cover&#x3C;/p>
+&#x3C;label&gt;😀&#60;/label></div></atom:title></atom:entry>
+<atom:entry><atom:link type="application/rss+xml" title="Café" rel="enclosure"/> <atom:link type="text/html" title="MP3 feed" href="https://example.com/alt.xml"/> <atom:title>&amp;nbsp;a&#13;
+b</atom:title> <atom:published>Fri, 16 Dec 2022 06:27:04 -05:30</atom:published> <atom:id></atom:id> <atom:link href="ftp://files.example.com/a/b/c269.aif" title='MP3 feed' rel="alternate" type="audio/mpeg"/> <atom:updated>Tue February 27 07:43:01 1066</atom:updated></atom:entry>
+</atom:feed>

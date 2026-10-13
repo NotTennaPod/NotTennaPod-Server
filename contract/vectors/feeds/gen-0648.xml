@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:dc="http://purl.org/dc/elements/1.1/"><item><pubDate>  29 Sep 1988 08:16:08 GMT
+</pubDate><description></description><itunes:image href=" "/><itunes:summary>&#x3C;img&gt; a &gt; b</itunes:summary><title>&#x26;#xA9;</title><itunes:duration>-9223372036854775808</itunes:duration><link></link></item>
+  <item><media:thumbnail url=''/>
+<pubDate>21 apr 94 22:16 -1200</pubDate>
+<title><![CDATA[&#xD800;
+&amp;
+Tom &amp; Jerry &lt;3]]></title>
+<itunes:duration>1h30m</itunes:duration>
+<description>&#60;p>#hash&lt;/p&gt;<![CDATA[<li>&</li><p></p>]]></description>
+<link> https://e.com/x </link>
+<itunes:image href="https://example.com/ep.jpg"/>
+<guid isPermaLink="false"></guid>
+<dc:date>11 Dec 58 13:22 -0800</dc:date></item>
+  <item><title>&#60;cite>x&lt;y&#x3C;/cite></title>
+<guid isPermaLink="true">
+</guid>
+<pubDate>2021-12-04T18:04:28+02:00</pubDate>
+<content:encoded>&#x3C;li&gt;&#x26;#0;&lt;/li&gt;</content:encoded>
+<itunes:subtitle>Tom &#38;amp; Jerry &#x26;lt;3
+x&lt;y</itunes:subtitle>
+<itunes:image href="https://example.com/ep.jpg"/>
+<itunes:duration>1:02:03</itunes:duration>
+<podcast:transcript type="application/srr" language="en"/><podcast:transcript url="https://example.com/t.vtt" type="text/vtt"/>
+<atom:link title='Café' rel="last" type="audio/mpeg" href="https://example.com/alt.xml"/></item>
+  <media:thumbnail url=""/>
+  <title><![CDATA[&#128512;  &#169;  &#x1F600;]]></title>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <itunes:subtitle>Tom &#x26; Jerry &#60;3</itunes:subtitle></channel></rss>

@@ -1,0 +1,14 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><description>&lt;hr/&gt;</description>
+  <item><enclosure url="" length="1,000,000" type="audio/*"/> <title/> <enclosure url='' length="2e5" type="audio/flac"/> <guid> </guid> <link></link> <pubDate>Tuesday, 06 Jun 1950 01:56</pubDate> <description>&#31532;7集&#60;p&gt;&#38;#;&#60;/p&gt;&#x3C;br>&#60;/br&gt;	http://example.com/?a=1&#x26;b=2😀😀😀&lt;img src=&quot;x.png&quot;&gt;	a&#13;
+b&lt;li&gt;مرحبا&lt;/li&gt;</description></item>
+  <item><link>https://example.com/ep</link> <enclosure url="" length="1,000,000" type="audio/mpeg; charset=binary"/> <title>tab	here</title> <enclosure url="https://xn--caf-dma.example/dir.with.dots/ep219.mp4" length="16383" type="video/x-matroska"/> <guid>a&amp;b</guid></item>
+  <item><title><![CDATA[<u><img src="x.png"> cover</u>]]></title><guid isPermaLink="false">Café-guid</guid><pubDate>2014-04-10T11:37:39.727+01</pubDate><description>tab	<![CDATA[here]]></description><enclosure url="https://xn--caf-dma.example/ep29.png?auth=yes" length='52428800' type="audio/opus"/></item>
+  <title><![CDATA[#159 – Interview<span>&quot;q&quot;</span>]]></title>
+  <textInput><title>Search</title><link>https://example.com/search</link></textInput>
+  <atom:link rel='first' title="Alternate" type="" length="20000" href="https://example.com/feed?page=2"/>
+  <image><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link></image>
+  <comments>https://example.com/c</comments>
+  <language></language></channel>
+  </rss>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"><author><name>Émile</name></author> <subtitle></subtitle> <title type="HTML"><![CDATA[ 
+&lt;b&gt;escaped&lt;/b&gt;
+a
+  b]]></title> <updated>Monday, 03 Apr 2102 25:34:48</updated> <p2:funding url="https://example.com/give">Give</p2:funding> <link rel="enclosure" type="application/rss+xml" href='https://example.com/pay' length="12" title=""/> <logo> https://e.com/l.png
+</logo> <link title="Café" rel='related' length="20000" href="https://example.com/pay"></link> <id>urn:x</id>
+</feed>

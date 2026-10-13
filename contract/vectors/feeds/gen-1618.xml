@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rss version="2.0" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:sc="http://podlove.org/simple-chapters"><podcast:funding></podcast:funding>
+<description><![CDATA[
+plain words]]></description>
+<link> https://example.com/ </link>
+<image><url>  https://example.com/ws.png
+</url><title>Image title</title></image>
+<title>&#1605;&#1585;&#1581;&#1576;&#x627;
+&#x26;quot;q&#38;quot;</title>
+<item><title><![CDATA[&unknown;  a
+  b]]></title>
+<guid isPermaLink='true'>https://example.com/item/34978</guid>
+<pubDate>1976-05-21T22:37:54.2382z</pubDate>
+<enclosure url="" length="-0" type="audio/opus"></enclosure>
+<atom:link title="" href="" type='text/html'/>
+<x:title xmlns:x="urn:x">Other namespace title</x:title></item></channel>
+</rss>

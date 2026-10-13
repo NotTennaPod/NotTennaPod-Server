@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="US-ASCII"?><rss version="2.0" xmlns="http://backend.userland.com/rss2" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p2="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><lastBuildDate>Montag, 04 Sep 2372 20:52 +0100</lastBuildDate>
+  <description>&#60;li&gt;plain words&lt;/li&gt;&#x3C;img&gt; 'single'</description>
+  <itunes:summary>&#233;&#233;&#233;Tom &amp; Jerry &lt;3&lt;br&gt;&#60;hr/>&lt;div>&#x26;euro;&lt;/div&gt;
+&#x26;lt</itunes:summary>
+  <title><![CDATA[Tom &amp; Jerry &lt;3
+&lt;b&gt;escaped&lt;/b&gt;]]></title>
+  <atom:link title='MP3 feed' type='application/atom+xml' rel="last"/>
+  <atom:link rel="last" type="application/xml+xhtml"/>
+  <itunes:image href=""/>
+  <atom:link rel="payment" length="12" title="Caf&#233;" href=""/>
+  <link> https://example.com/ </link>
+  <atom:link href="https://example.com/feed?page=2" title='MP3 feed' type="application/xhtml+xml" length="20000" rel="first"/>
+  <language></language></channel></rss>

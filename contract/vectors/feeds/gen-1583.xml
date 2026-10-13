@@ -1,0 +1,10 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><atom:link href="https://xn--caf-dma.example/dir.with.dots/ep219.mp4" length="20000" rel="payment" title="Café"/>
+<image><title>Image title</title><url></url></image>
+<googleplay:description xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">gp</googleplay:description>
+<atom:link href="https://example.com/" length="20000"/>
+<title> </title>
+<description>&#x3C;div&gt;&#38;#xD800;&#60;/div&gt; #hashéé&#233;</description>
+<link xmlns="http://www.w3.org/2005/Atom" title="Café" rel="Next"/>
+<link>https://example.com</link>
+<itunes:author>Jane Doe</itunes:author>
+<item><description>&lt;div&gt;'single'&lt;/div>&lt;p&gt;#7 – Interview&lt;/p&gt;  &amp;#xD800;</description> <guid isPermaLink="true">a&amp;b</guid> <enclosure url="HTTPS://EXAMPLE.COM/222.caf" length=" 20000" type="video/x-matroska"/> <itunes:duration>03:55</itunes:duration> <link></link> <media:content type="audio/mp4" medium='video' duration="59" url="ftp://files.example.com/a/b/c228.xyz" isDefault="false" fileSize=""></media:content> <itunes:summary>&#233;éé</itunes:summary> <pubDate>1979-09-26</pubDate> <media:content url="https://cdn.example.com/dir.with.dots/ep118.mp3.zip#t=10" medium="document" type="audio/" duration="-5" isDefault="1" fileSize="-9223372036854775808"/> <media:content type="audio/mp3" duration="0" isDefault="1" fileSize='2147483648' medium='Audio'/> <title>&amp;#169;&#60;cite&gt;sep&lt;/cite<![CDATA[>]]></title> <enclosure length="9007199254740991" type="text/html"/></item></channel></rss>

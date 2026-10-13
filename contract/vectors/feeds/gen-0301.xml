@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<rss version="1.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url='https://example.com/donate'>  spaced  </podcast:funding>
+<podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url=''>Support us</podcast:funding>
+<title><![CDATA[ &unknown;  ]]></title>
+<item><content:encoded>&#60;br&gt;&lt;li>&#x26;#;&lt;/li></content:encoded><enclosure url='https://cdn.example.com/e p320.m4a' length="0" type="application/ogg"/><guid>https://example.com/item/57724</guid><enclosure url="http://example.org/café/32.mp3.zip" length='-9223372036854775808' type='application/pdf'/><link> https://e.com/x </link><title>Line&#x3C;br&gt;break</title></item></channel>
+</rss>

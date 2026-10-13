@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xml:lang="EN-us">
+<subtitle><![CDATA[e&#769;<br>]]></subtitle>
+  <link type="application/rss+xml" title="" href="https://example.com/pay" length="20000" rel="archives"/>
+  <updated>Tuesday, 08 Sep 2009 11:23 -0800</updated>
+  <title type="xhtml">a&#13;
+b &amp;apos;a&#x26;apos; &lt;h6&gt;&#128512;&lt;/h6></title>
+  <link rel='self' href="https://example.com/alt.xml" length="12" title="MP3 feed" type="text/html"/>
+  <link href="https://example.com/" rel="related" length='12'/>
+  <logo> https://e.com/l.png
+</logo>
+  <itunes:author>A, B</itunes:author>
+  <link length="20000" href="//example.com/café/305.mp3" rel="first" title="MP3 feed"/>
+  <entry><id></id><summary type="html">  spaced  &lt;br>
+[x]</summary><link rel="last" href="https://example.com/pay" type="application/rss+xml"></link><updated>Thu 07 Feb 1980 00:51:29 +0530</updated><title type="html">&lt;s>&#38;#;&lt;/s&gt; &#128512;</title></entry>
+  <entry><title type='plain'>Tom &amp; Jerry &#x3C;<![CDATA[3]]></title>
+<link title="Alternate" href="https://example.com/feed?page=2" rel="next" length="20000"/>
+<updated>1601-99-03T02:34:08+1400</updated>
+<content type="xhtml">&lt;br>&#38;#x;&lt;br&gt;#hash</content>
+<id>tag:x,2020:1</id></entry>
+  <entry><title type="plain">&amp;#xD800;  &#x26;Lt;  &amp;#xA9;</title>
+<dc:date>2000-05-04T10:53:09-0500.</dc:date>
+<id>urn:uuid:1</id>
+<itunes:duration>2:27:59</itunes:duration>
+<link href="https://example.com/" title='MP3 feed' type="audio/mpeg" length="20000" rel="first"/>
+<updated>Thursday, 05 Sep 1991 07:58:54 z</updated>
+<content type='text'>tab	here&#60;br&gt;aaaaa&#x3C;div>&amp;copy;&#60;/div&gt; &amp;quot;q&#x26;quot;&lt;div>tab	here&lt;/div&gt;e&#x301;&#13;
+R&amp;D&lt;div&gt;a
+  b&#x3C;/div&gt;</content>
+<published>sat, 12 July 1969 02:40:07</published></entry>
+  <entry><content type="HTML">&#128512;&#128512;&#128512;  a &lt; b'single'</content><author><name>Entry author</name></author><link rel="alternate" type='application/atom+xml' title="MP3 feed"/><title>&amp;mdash; &lt;small&gt;&amp;AMP;&lt;/small> &amp;amp;amp;</title></entry> </feed>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<id>urn:x</id><link type="" href='ftp://files.example.com/dir.with.dots/ep315.xyz' rel="" length="9223372036854775808"/><subtitle type="html">😀😀&#38;copy;</subtitle><author><name>C&#38;D</name></author><link length="12" href="https://example.com/feed?page=2" type='application/xml+xhtml' title="" rel="last"/><link rel="Next" href="https://example.com/" length='abc' type="application/xml+xhtml" title="MP3 feed"></link><author><name>Ann</name></author><title>&amp;nbsp;R&amp;D&#x3C;big>café&lt;/big></title><entry><itunes:duration>100:00:00</itunes:duration>
+  <title><![CDATA[&]]>; &#38;#;</title>
+  <summary type="xhtml">&#x3C;li>&#x26;amp&#60;/li>&#x3C;p/&gt;😀😀&#128512;	tab	herea&#13;
+b&#60;div&gt;100%&#x3C;/div&gt;שלום&#60;br&gt;&#13;
+&amp;lt;b&#38;gt;</summary>
+  <author><name>Entry author</name></author>
+  <updated>27 May 06 07:53:38 -0800</updated>
+  <published>  1601-07-21T15:05:37-1200 </published>
+  <link href="" title="" rel="self" type="text/html" length="20000"/>
+  <content type="html"><![CDATA[<li></li><br>aaa
+
+&amp;<li>sep</li>  	&aaaaaa]]></content>
+  <link title="" href="https://example.com/" rel='first' length="12" type="application/atom+xml"/>
+  <link href="https://example.com/alt.xml" title='Alternate' rel="first" type="application/atom+xml"/></entry><entry><link type="application/xml+xhtml" rel="enclosure" href='https://user:pass@media.example.net/a/b/c365.oga' length='abc' title="Alternate"/><author><name>Entry author</name></author><summary type="plain"><![CDATA[AT&T<p>{json: 1}</p>]]></summary><content type="HTML"><![CDATA[&Lt;<br><br />😀]]></content><podcast:transcript type='text/vtt'/><itunes:duration>1:49:34</itunes:duration><id>
+id
+</id><updated>1977-05-25T18:48:32+0200</updated><title type="text">multi
+line</title></entry><entry><itunes:duration>1:2:3:4</itunes:duration>
+<title> leading
+&#x3C;big&gt;&amp;euro;&#x3C;/big></title>
+<media:content url='https://xn--caf-dma.example/a/b/c215.xyz' isDefault="true" fileSize="20000 " type='application/octet-stream'/>
+<id></id>
+<link href="https://example.com/feed?page=2" rel="archives" type='application/rss+xml' title="Café" length="20000"></link>
+<content type="xhtml"><![CDATA[ 100%<hr/>   spaced  ]]></content>
+<updated>TUE 1 Nov 2129 20:06:15 GMT+1400 (Coordinated Universal Time)</updated></entry><entry><summary><![CDATA[ &amp<div>&#x1F600;</div>[x]<br>aaaa<div>&lt</div>&lt<br>aaaa<div>plain words</div>]]></summary> <link type="text/html" length="9223372036854775808" rel="first" href='https://example.com/'/> <title type='plain'>&amp;#xA9;&amp;<![CDATA[lttrailing ]]></title> <id></id> <itunes:duration>13199</itunes:duration></entry> </feed>

@@ -1,0 +1,38 @@
+﻿<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/">
+<channel xmlns:sc="http://podlove.org/simple-chapters"><atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/feed?page=2" title="Alternate" rel="last" type="application/rss+xml"/>
+  <d:creator>DC Creator</d:creator>
+  <description><![CDATA[שלום]]></description>
+  <link>https://example.com</link>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" "/>
+  <title><![CDATA[<3 <3]]></title>
+  <item><enclosure url="https://cdn.example.com/dir.with.dots/ep254.mov?file=x.mp3" length='9007199254740991' type="audio/mp3"/>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">&#60;div&gt;Tom &amp; Jerry &lt;3&#x3C;/div&gt;</content:encoded>
+<guid isPermaLink="false">urn:uuid:f6762981</guid>
+<description>&lt;p&gt;&#x26;apos;a&amp;apos;&#x3C;/p&gt;&lt;div&gt;&#38;lt&lt;/div&gt;&lt;li&gt;"quoted"&lt;/li>&#38;#xFFFF;&#60;br&gt;	&#x26;Lt;aaaa&#x3C;p>&amp;apos;a&amp;apos;&#60;/p&gt;  茶</description>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">17326</itunes:duration>
+<title>&#x26;amp;
+&#x26;AMP;</title>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"/></item>
+  <item><link></link>
+  <d:date> 1978-06-04
+</d:date>
+  <media:thumbnail/>
+  <title><![CDATA[<b>Bold</b> title
+<big>http://example.com/?a=1&b=2</big>
+第447集]]></title>
+  <enclosure url='HTTPS://EXAMPLE.COM/ep104.m4v?a=1&amp;b=2' length="00020000"/>
+  <media:group><media:content isDefault="true" url="https://example.com/a.b/ep288.avi" type="audio/wav" duration="0060" fileSize="1" medium="audio"/><media:content fileSize="20000.0" type="application/x-bittorrent" url=" https://example.com:8443/dir.with.dots/ep68.m4b "/><media:content isDefault='TRUE' url="https://example.com/a.b/ep135.pdf?a=1&amp;b=2" duration=" 60" medium="Audio" fileSize="4294967296" type="application/x-bittorrent"/></media:group>
+  <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">4:42:37</itunes:duration>
+  <description>100%&lt;br&gt;AT&amp;T&lt;br>😀&#38;AMP;&amp;AMP;&#x3C;br&gt;&lt;br/>&#x3C;p&gt;&#128512;&lt;/p>ééé</description>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" https://e.com/i.png "/>
+  <guid isPermaLink="true"> </guid></item>
+  <item><media:content fileSize="" duration="1.5" url="https://example.com/a.b/dir.with.dots/ep342" type="audio/wav" medium="video"/>
+  <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">11208</itunes:duration>
+  <description><![CDATA[<br></br>  مرحبا	&euro;]]></description>
+  <pubDate>12 February 50 10:33 +1400</pubDate>
+  <link> https://e.com/x </link>
+  <media:content url="http://example.org/185.caf" fileSize="0x4E20" duration=" 60" medium='image' type="video"/>
+  <title>
+back\slash  &#x26;amp;amp; </title>
+  <enclosure length="18446744073709551616" type='Audio/MPEG'/></item></channel>
+</rss>

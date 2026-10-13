@@ -1,0 +1,13 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"><channel><title>Line&lt;br>break</title>
+<category>Technology</category>
+<image><url>  https://example.com/ws.png
+</url><title>Image title</title></image>
+<description></description>
+<itunes:summary></itunes:summary>
+<link> https://example.com/ </link>
+<podcast:funding></podcast:funding>
+<item><podcast:transcript url="https://example.com/t.vtt" type="text/plain" language="en"/> <content:encoded>&amp;amp</content:encoded> <itunes:summary>مر&#1581;با😀😀😀&#x1F600;😀&lt;div>&#x26;#128512;&lt;/div&gt;	&#38;#xA9;</itunes:summary> <itunes:duration>9885</itunes:duration> <title>&amp;quot;q&#x26;quot;
+&lt;img src="x.png"&gt; cover</title> <description>&lt;p>&lt;b>Bold&lt;/b&gt; title&lt;/p>&#60;div&gt;&amp;amp&lt;/div&gt;  multi
+line</description> <pubDate>Day1,  1971-12-17</pubDate> <guid isPermaLink='true'>a&#x26;b</guid> <enclosure url='' length="9007199254740991" type="text/plain"/> <dc:date>Sat, 23 SEP 2023 21:52:09 -0500</dc:date></item>
+<item><itunes:duration>178:43</itunes:duration> <guid isPermaLink="false">Café-guid</guid> <pubDate>Thu,  Sun Jun 9 15:23:36 1996</pubDate> <podcast:transcript url="https://example.com/t.vtt" type="application/json"/><podcast:transcript type="application/x-subrip"/> <media:content xmlns:media="http://search.yahoo.com/mrss/" type="audio/x-m4a" fileSize="2e5" duration="abc" url="https://cdn.example.com/e p320.m4a"/> <link> https://e.com/x </link> <enclosure url="" length="-9223372036854775808" type="image/*"/> <description>&lt;hr&gt;&lt;br&gt;	 leading</description> <itunes:image/> <title> </title></item></channel>
+</rss>

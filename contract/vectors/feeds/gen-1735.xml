@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters">
+<channel><image><url>https://example.com/img.png</url><title>Image title</title></image><itunes:author><![CDATA[Café Radio]]></itunes:author><itunes:summary></itunes:summary><title>第213集  &lt;pre&gt;[x]
+  pre&lt;/pre&gt;</title><link> https://example.com/ </link><description>&lt;br>&#60;/br>&lt;img src="x.png"&gt;sepééé	&amp;#xD800;&#x1F600;😀😀&#60;li&gt;multi
+line&#x3C;/li>
+
+&amp;#x1F600;</description><language> EN-US </language><item><title>&#38;lt;b&#38;gt;  &lt;b&gt;Bold&lt;/b> title  trailing </title><enclosure url="https://example.com/a.b/dir.with.dots/ep88.pdf" length='4294967296' type="video/x-matroska"/><itunes:subtitle>"quoted&quot;&lt;cite&gt;AT&amp;T&#60;/cite&gt;&amp;#xD800;</itunes:subtitle><itunes:summary></itunes:summary><media:thumbnail url=""/></item><item><link></link><content:encoded></content:encoded><enclosure url="http://example.org/e p395.3gp" length="1" type='AUDIO/MPEG'/><description>&lt;li>&amp;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;&lt;/li></description><enclosure url='ftp://files.example.com/e p291.MP3' length="4294967296" type="video/mp4"/><enclosure url="https://xn--caf-dma.example/café/153.html" length="-16384" type="video/quicktime"></enclosure><dc:date>01 Jun 2001 09:12:29 MSK</dc:date><pubDate>Sat 23 Jun 0001 05:04:21 GMT+0100 (+25:00)</pubDate><guid isPermaLink="false">dup</guid><itunes:summary> http://example.com/?a=1&#38;b=2&#60;div&gt;&#128512;&#60;/div>&lt;li>cr&#13;lf&lt;/li>&#x3C;div&gt;&#x26;#x1F600;&lt;/div>&lt;br/&gt;😀😀😀&#13;
+1 &#60;2&lt;hr/&gt;</itunes:summary><title>  padded  </title></item><item><guid isPermaLink="true"></guid> <content:encoded></content:encoded> <enclosure url="" length="0x4E20" type="application/json"/> <title><![CDATA[pla]]>in words</title> <itunes:summary><![CDATA[ &quot;q&quot;]]></itunes:summary> <pubDate>1988-04-27T00:02:36Z</pubDate> <link></link> <itunes:duration>-1:00:00</itunes:duration></item><item><title>茶
+Episode 12
+</title>
+<guid>a&#38;b</guid>
+<pubDate>Thu, 12 Nov 1998 14:17:42 +0000 (Central European Standard Time)</pubDate>
+<itunes:summary><![CDATA[a > b<br />  &Lt;<div>&#0;</div>  trailing <hr/>
+
+&;a]]></itunes:summary>
+<enclosure url="http://example.org/e p309.webm" length="0" type="text/html"/>
+<media:content medium="video" isDefault='false' fileSize=" 20000" duration="0" url="HTTPS://EXAMPLE.COM/café/159.amr" type="audio/mp4"></media:content>
+<media:thumbnail/></item><item><title>Tom &#x26;amp; Jerry &#38;lt;3 Episode 132 &lt;u&gt;茶&#60;/u&gt;</title>
+<pubDate>1993-10-13T19:55:17MST</pubDate>
+<link> https://e.com/x </link>
+<itunes:duration>9047</itunes:duration>
+<media:content fileSize="2e5" duration="1.5" url='https://user:pass@media.example.net/dir.with.dots/ep187.m4a' medium="document" type="audio/*"/>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep339.m4b?auth=yes" length=" 20000" type="audio/ogg"/>
+<guid isPermaLink="true"></guid>
+<description>&lt;li>cr&#13;lf&#60;/li&gt;	 ééé&lt;div>Tom &amp;amp; Jerry &amp;lt;3&#60;/div&gt;&#60;br /&gt;</description></item></channel>
+  </rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<channel><language>fr
+</language>
+<podcast:funding url="">Support us</podcast:funding>
+<title><![CDATA[&#x1F600; &Lt]]>;</title>
+<image><title>Image title</title><url></url></image>
+<item><itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">-1:00:00</itunes:duration>
+  <enclosure url="//example.com/e p4.aif" length="+20000" type="application/x-bittorrent"/>
+  <title>tab	here tab	here </title>
+  <content:encoded><![CDATA[<p>Tom &amp; Jerry &lt;3</p><div>[x]</div>茶<br><br />ééé]]></content:encoded>
+  <description>&#x26;unknown;Tom &amp; Jerry &lt;3&lt;br></description>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=" "/>
+  <link> https://e.com/x </link></item>
+<item><guid isPermaLink='false'>urn:uuid:23b3b869</guid> <link></link> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">518</itunes:duration> <description></description> <pubDate>19 Sep 1989 20:57:04 +1400	</pubDate> <title/> <itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[<article>&amp;amp;</article>]]></itunes:subtitle></item>
+<itunes:owner xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><itunes:name xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">Owner</itunes:name><itunes:email xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">o@example.com</itunes:email></itunes:owner>
+<link></link>
+<description>&#x3C;li&gt;multi
+line&#x3C;/li&gt;  #hash&#60;p&gt;&#x26;#xA9;&lt;/p&gt;</description>
+<podcast:funding>Support us</podcast:funding></channel> </rss>

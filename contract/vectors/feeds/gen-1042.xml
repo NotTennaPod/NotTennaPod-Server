@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- generated -->
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><language>de-DE</language>
+  <atom:link length="9223372036854775808" title="Alternate" type='application/xhtml+xml' href="" rel="Next"/>
+  <atom:link type="application/xml+xhtml" rel="first" title="MP3 feed" href="https://example.com/feed?page=2"></atom:link>
+  <title>&#38;amp;amp;
+&lt;font color="red"&gt;&amp;euro;&#x3C;/font&gt;</title>
+  <atom:link title="MP3 feed" rel="self" type="audio/mpeg" length="9223372036854775808" href="https://example.com/pay"/>
+  <description><![CDATA[😀😀]]>&#x3C;p&gt;&amp;nbsp;&lt;/p&gt;</description>
+  <atom:link rel="enclosure" title='Café' length='12' type="application/atom+xml"/>
+  <itunes:image href="https://example.com/it.jpg"/>
+  <link>https://example.com</link>
+  <itunes:subtitle><![CDATA[é]]></itunes:subtitle></channel>
+  </rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:podcast="https://podcastindex.org/namespace/1.0"><it:summary><![CDATA[<div>a > b</div>  100%<p>&#0;</p>	 leading<p><b>Bold</b> title</p>]]></it:summary>
+<title>&amp;mdash;
+&amp;AMP;</title>
+<atom:link rel="first" href="" type="text/html" title="Alternate" length="12"/>
+<atom:link href='https://example.com/alt.xml' type="" title="Alternate"/>
+<itunes:image/>
+<link> https://example.com/ </link>
+<description>Episode 7&#60;p>a<![CDATA[=b&c=d</p>]]></description>
+<atom:link rel='Next' title="Alternate" href="https://example.com/alt.xml"/>
+<item><title><![CDATA[  spaced  
+&#1513;&#1500;&#1493;&#1501;
+a < b]]></title>
+<guid isPermaLink="false">a&amp;b</guid>
+<pubDate>2466-06-21T09:06:26.841-05</pubDate>
+<description><![CDATA[aaaaééé]]></description>
+<it:summary><![CDATA[aaaaaééé &#0;<div>S01E7</div>  &#0;<p></p><img src="x" alt="y"/><hr/>]]></it:summary>
+<enclosure length="+20000" type='image/jpeg'/>
+<media:content medium="document" type="Audio/MPEG" url="https://xn--caf-dma.example/a/b/c96.aac#t=10" duration='59' fileSize="1,000,000"/>
+<media:thumbnail url=''/></item>
+<item><guid>a&amp;b</guid>
+<itunes:duration>1510.371</itunes:duration>
+<enclosure length="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;" type="application/json"/>
+<title>&#60;b>Bold&#60;/b&gt; title</title>
+<pubDate>x,  1998-07-24T16:56:06</pubDate>
+<link>https://example.com/ep</link>
+<enclosure url='//example.com/e p126.mkv' type="application/json"/>
+<description><![CDATA[<BR><p>&#0;</p> &#0;&#128512;&#128512;<br/>]]></description>
+<itunes:summary> a &lt; b&lt;img src=&quot;x&quot; alt=&quot;y"/></itunes:summary>
+<enclosure url="https://example.com/a.b/379.mov" length="2e5" type="application/pdf"/></item></channel>
+</rss>

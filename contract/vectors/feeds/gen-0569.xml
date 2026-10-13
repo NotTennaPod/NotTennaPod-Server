@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link title="" type='application/rss+xml' rel="related" href="https://example.com/alt.xml" length="12"/> <podcast:funding>Support us</podcast:funding> <atom:link title="" href="https://example.com/" type='' rel="enclosure"/> <podcast:funding url='https://example.com/donate'/> <itunes:author>A, B</itunes:author> <atom:link href="https://example.com/feed?page=2" length="12" rel="payment"/> <itunes:subtitle><![CDATA[http://example.com/?a=1&b=2]]></itunes:subtitle> <itunes:image/> <link>https://example.com</link> <title>&#x26;AMP;</title> <itunes:category text="Arts"><itunes:category text="Design"/></itunes:category> <item><guid isPermaLink="false">Café-guid</guid>
+<description>&lt;br/>
+
+ leading&lt;br/&gt;R&amp;D&lt;br&gt;&#60;p> leading&lt;/p&gt;</description>
+<pubDate>FRI, 21 August 0099 13:13:39</pubDate>
+<title>#398 &#8211; InterviewEpisode 409</title>
+<itunes:summary> &#38;mdash;</itunes:summary>
+<link></link>
+<content:encoded>&#60;BR&gt;cr
+lf&lt;br></content:encoded></item> <item><description>Tom &#x26; Jerry &lt;3  &amp;copy;&#x3C;div&gt;1 &#60;2&#x3C;/div&gt;</description>
+<podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/>
+<itunes:duration>3827.845</itunes:duration>
+<link> https://e.com/x </link>
+<title><![CDATA[a < b]]></title>
+<guid>urn:uuid:26d04a54</guid>
+<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url=''/>
+<pubDate>Sun Dec 23 14:42:07 1984 pst</pubDate>
+<media:description xmlns:media="http://search.yahoo.com/mrss/">&#60;li&gt;"quoted&quot;&lt;/li&gt;&#60;img>&#128512;&#x1F600;&#128512;&amp;nbsp;&lt;div>&amp;apos;a&#38;apos;&lt;/div&gt;&#60;div>&lt;/div&gt;&lt;br&gt;&lt;/br&gt;&#128512;</media:description>
+<media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" type="Audio/MPEG" url="HTTPS://EXAMPLE.COM/ep308.ogg" medium="document" duration="0060" isDefault="true" fileSize="123456789012345678"/></media:group>
+<enclosure url="" length="&#1634;&#1632;&#1632;&#1632;&#1632;" type="audio/mpeg"/></item></channel>
+</rss>

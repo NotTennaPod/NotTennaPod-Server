@@ -1,0 +1,50 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:subtitle><![CDATA[AT&T  Folge 189: Über alles   ]]></itunes:subtitle>
+  <itunes:summary>&lt;p/&gt;</itunes:summary>
+  <itunes:image></itunes:image>
+  <title><![CDATA[&#xD800;]]></title>
+  <image><url></url></image>
+  <link>https://example.com</link>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <language>TR</language>
+  <description><![CDATA[<br />a > b<br><li><b>B]]>old&lt;/b&gt; title&#60;/li></description>
+  <itunes:author><![CDATA[  Spaced  ]]></itunes:author>
+  <textInput><title>Search</title><link>https://example.com/search</link></textInput>
+  <item><title>&lt;b&gt;Bold&#60;/b&gt; title   padded  </title>
+<guid isPermaLink="false">https://example.com/item/33952</guid>
+<link>https://example.com/ep</link>
+<pubDate>2013-09-29T04:16:18.1234567Z</pubDate>
+<description>Tom &amp;amp; Jerry &#38;lt;3&#60;hr>&#x3C;div&gt;&#x3C;3 &#x3C;3&#60;/div>&#60;div&gt;&#x26;#xD800;&#x3C;/div&gt;&#60;p&gt;Folge 7: Über alles&#60;/p&gt;&lt;br />ééé Tom &amp; Jerry &#60;3</description>
+<content:encoded><![CDATA[]]>
+&#x5E9;לום</content:encoded>
+<enclosure url="https://xn--caf-dma.example/ep1.php" length="٢٠٠٠٠" type="video/quicktime"/>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep339.m4b?auth=yes" length="-16384" type="application/octet-stream"/>
+<enclosure length="9007199254740991" type="audio/opus"/></item>
+  <item><title>  &amp;amp&amp;quot;q&amp;quot;&#38;apos;a&#x26;apos;	</title> <guid isPermaLink='true'>  spaced guid  </guid> <pubDate>07 Nov 94 22:30 -0500</pubDate> <itunes:summary>&amp;apos;a&#38;apos;&lt;li>&amp;mdash;&#60;/li&gt;</itunes:summary> <enclosure url="" length='-1' type="audio/"/> <media:content fileSize="9223372036854775807" isDefault="1" type="video/quicktime" duration="0" medium="Audio"></media:content> <media:content medium="video" duration='0' fileSize="9223372036854775807" type="video/mp4"/> <media:thumbnail url="https://example.com/th.jpg"/></item>
+  <item><title>
+"quoted&quot; &amp;; a=b&#x26;c=d
+</title>
+<guid isPermaLink="true">dup</guid>
+<link> https://e.com/x </link>
+<pubDate>Fri Mar 1 09:53:48 1985 +25:00</pubDate>
+<description>ééé&lt;BR&gt;&#60;p&gt;&#x26;amp;&#x3C;/p> leading&#x3C;br&gt;&#x3C;br&gt;</description>
+<itunes:summary></itunes:summary>
+<enclosure url="" length="9223372036854775808" type="audio/opus"/>
+<enclosure length="4294967296" type="application/ogg"/>
+<media:content medium='video' duration="01:00" type="audio/" fileSize="２０００００" isDefault="TRUE"/></item>
+  <item><description>&#13;
+&#38;#;&#60;br&gt;  &amp;#0;  &quot;quoted"&lt;p>multi
+line&lt;/p> &amp;AMP;&lt;hr&gt;&lt;br>&lt;/br&gt;</description>
+<media:description><![CDATA[
+{json: 1}]]></media:description>
+<pubDate>Wed 02 Jan 1985 09:39:54 +0530</pubDate>
+<itunes:duration>149:43</itunes:duration>
+<guid isPermaLink="false">https://example.com/item/14166</guid>
+<title>[x]tab	here</title>
+<itunes:subtitle>
+Tom &amp;amp; Jerry &amp;lt;3 </itunes:subtitle>
+<content:encoded><![CDATA[<div>&#x;</div>]]></content:encoded>
+<itunes:image href=" https://e.com/i.png "/></item>
+  <item><p:chapters url="" type="application/json+chapters"/> <media:content duration=' 60' isDefault="1" fileSize="-0" medium="video" type="audio/"/> <guid isPermaLink="false">a&#x26;b</guid> <media:thumbnail url=""/> <title><![CDATA[Tom &amp; Jerry &lt;3
+café
+&#x1F600;]]></title> <media:content duration='abc' url="https://xn--caf-dma.example/ep56.mov" isDefault="false" fileSize="9007199254740991" medium="audio" type="text/plain"/> <media:content type="audio/*" fileSize="٢٠٠٠٠" duration="2147484" isDefault="TRUE" medium="video"/> <itunes:subtitle>&#x26;Lt;</itunes:subtitle> <itunes:duration>2605.95</itunes:duration> <link></link> <pubDate>Sat Sep 30 01:04:12 2024</pubDate> <enclosure url="https://example.com/a.b/e p95.mkv?a=1&amp;b=2" type=" audio/mpeg"/></item></channel></rss>

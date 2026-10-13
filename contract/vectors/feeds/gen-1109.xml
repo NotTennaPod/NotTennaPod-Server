@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel><itunesu:author><![CDATA[&copy; 2020 Org]]></itunesu:author>
+<a10:link rel="last" title="" href="https://example.com/" length="20000"/>
+<itunesu:subtitle>&#60;a href="https://example.com/x?a=1&amp;amp;b=2&quot;&gt;a=b&#38;c=d&lt;/a&gt;a&#13;
+b</itunesu:subtitle>
+<title>&#x26;amp;amp;</title>
+<description>ééé&#x3C;li>1 &lt;2&lt;/li&gt;trailing &#x3C;br>
+&amp;apos;a&#x26;apos;&#xA0;&#60;br>Tom &#38; Jerry &#x3C;3&lt;br&gt;&#160;&#38;#x;&lt;div&gt;Folge 7: Über alles&#60;/div></description>
+<link></link>
+<itunesu:owner><itunesu:name>Owner</itunesu:name><itunesu:email>o@example.com</itunesu:email></itunesu:owner>
+<itunesu:image href=''/>
+<a10:link title="" type="application/atom+xml" rel="alternate" href="https://example.com/alt.xml"/>
+<item><title>café a&#13;
+b  </title>
+  <link>https://example.com/ep</link>
+  <pubDate>Sun, 22 Feb 2004 00:17:12 -1200</pubDate>
+  <description>
+{json: 1}</description>
+  <content:encoded>&#13;
+back\slash
+&#x26;; &#38;#xA9;&#60;BR>&#60;li&gt;trailing &#60;/li&gt;&#38;lt;b&#38;gt;escaped&amp;lt;/b&#38;gt;&lt;br>&lt;br&gt;&lt;/br>   leading</content:encoded>
+  <itunesu:duration>0:56:49</itunesu:duration>
+  <enclosure url="https://example.com:8443/dir.with.dots/ep6.m3u8?dl=1.0" length="1,000,000" type="video/webm"/></item></channel>
+  </rss>

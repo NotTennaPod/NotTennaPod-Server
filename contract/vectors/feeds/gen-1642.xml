@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us"> <updated>fri 13 Nov 2015 12:01:18 GMT+0100 (CET)</updated><link rel="self" type="application/rss+xml" title="" href=""/><title type="html">&amp;Lt;</title><link rel="enclosure" href='https://example.com/pay' title="Café"/><link title="MP3 feed" rel="self" href="https://example.com/feed?page=2"></link><author><name>  Bob  </name><email>a@example.com</email></author><id>urn:x</id><x:title xmlns:x="urn:x">Other namespace title</x:title><author><name></name><email>a@example.com</email></author><itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#x3C;p>x&lt;y&#60;/p&gt;😀</itunes:summary><link href="https://cdn.example.com/café/197.mp3?a=1&amp;b=2" rel='last' title="Alternate"/><entry><updated>THU 29 Sep 2023 05:18:15 GMT+1400 (Central European Standard Time)</updated>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/e.jpg"/>
+  <content>&#60;div>http://example.com/?a=1&#38;b=2&#60;/div>ééé</content>
+  <title type="HTML"><![CDATA[&#xA9;]]></title>
+  <id>tag:x,2020:1</id>
+  <link type="" length="12" rel="payment" href="https://example.com/"/></entry><entry><link title="Alternate" type="application/xhtml+xml" length="12" href=""/>
+<updated>1973-06-02-0800</updated>
+<title type="HTML">	trailing 
+&#x26;#128512;
+&amp;#0; </title>
+<id>urn:uuid:1</id>
+<summary>😀&lt;br&gt;<![CDATA[<br></br>ééé]]></summary>
+<link rel="archives" type='audio/mpeg' length="abc" href="https://example.com/alt.xml"/></entry><entry><updated>Sun., 03 Dec 1995 13:27:47 +0100</updated>
+  <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href='https://example.com/e.jpg'/>
+  <published>25 Jan 1986 10:13:09 -1200	</published>
+  <title>	&#38;#128512;&#38;lt	</title>
+  <id>urn:uuid:1</id>
+  <link type="text/html" length="abc" rel="archives" title="Café" href='https://example.com/alt.xml'></link>
+  <media:content fileSize="9223372036854775808" type="video/x-matroska" isDefault='false' duration='1'/></entry><entry><updated>Sonntag, 10 Jul 1977 11:36 +0000</updated> <summary></summary> <author><name>Entry author</name></author> <dc:date>Friday, 27 Aug 2021 01:49:34 Coordinated Universal Time</dc:date> <id>urn:uuid:1</id> <content type="html"></content> <title type='text'><![CDATA[Tom & Jerry <3]]></title> <x xmlns="urn:other"><title>Default namespace title</title></x> <link href="https://example.com/pay" type="application/xhtml+xml" title="Café" rel="enclosure"/> <published>Thu 23 Aug 1990 22:54:17 GMT+0100 (+12345)</published> <media:content url="https://xn--caf-dma.example/café/261.m4a" type="audio/x-wav" duration="1" isDefault="1" fileSize="123456" medium="video"/></entry>
+  </feed>

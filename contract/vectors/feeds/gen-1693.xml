@@ -1,0 +1,30 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:at="http://www.w3.org/2005/Atom">
+<channel><description>&#x3C;div>&#60;3 &lt;3&lt;/div></description>
+<language>TR</language>
+<link>https://example.com</link>
+<title>multi
+line  café  </title>
+<item><pubDate>été, 	16 Jan 1752 00:53:40 +0100</pubDate>
+<dc:date>Sat, 08 sept 1998 18:26:16 +0200</dc:date>
+<media:description type="plain"><![CDATA[😀😀]]></media:description>
+<title>
+multi
+line&lt;unknown&gt;cr&#13;lf&lt;/unknown&gt;&#x3C;i&gt;&amp;quot;q&amp;quot;&#60;/i&gt;	</title>
+<guid isPermaLink="true">Café-guid</guid>
+<itunes:duration>-0</itunes:duration>
+<at:link rel="self" title=""/>
+<description>&lt;div&gt;&amp;amp&#x3C;/div&gt;😀</description>
+<link> https://e.com/x </link>
+<enclosure url="HTTPS://EXAMPLE.COM/290.html" length="123456" type="audio/flac"/>
+<itunesu:summary>&#60;div>Folge 7: Über alles&#x3C;/div>&#x3C;p>第7集&lt;/p&gt;</itunesu:summary>
+<podcast:transcript type="text/html" language='en'/></item>
+<item><title> &#x3C;big&gt;مرحب&#1575;&lt;/big&gt;  &#x26;nbsp;  &lt;b&gt;Bold&lt;/b&gt; title	</title><guid>urn:uuid:c59c7a63</guid><pubDate>Tue, 05 Sep 1978 22:31 +1400</pubDate><description>&lt;p>Para&lt;/p&gt;&lt;p>&#x3C;/p></description><itunesu:duration>1.2e2</itunesu:duration><enclosure url="" length="9007199254740992" type="image/*"></enclosure><podcast:transcript type="application/srt" language="en"/><podcast:transcript url="" type=""/><podcast:transcript url="https://example.com/t.json" type="text/html"/></item>
+<item><title><![CDATA[&#0;]]></title>
+  <guid isPermaLink="true">urn:uuid:7e802083</guid>
+  <link></link>
+  <description>&#38;#;&#x3C;br&gt;</description>
+  <media:group><media:content url="https://xn--caf-dma.example/dir.with.dots/ep147.ogg" duration="2147484" medium="document" isDefault="TRUE" type="audio/flac" fileSize='9223372036854775807'/></media:group>
+  <atom:link type="application/xhtml+xml" href="https://example.com/" title="Café" rel="last"/></item>
+<item><pubDate>Tue feb 7 07:46:55 1984</pubDate><description><![CDATA[
+
+é caféa > b<br>]]></description><dc:date>Monday, 22 May 1752 17:03</dc:date><link></link><guid>  spaced guid  </guid><enclosure url="" type='text/plain'/><itunesu:duration>3723.5</itunesu:duration><itunesu:image href=""/></item></channel></rss>

@@ -1,0 +1,15 @@
+<rss version="1.0" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:at="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link> https://example.com/ </link>
+<podcast:funding url="https://example.com/donate">&lt;b>x&lt;/b></podcast:funding>
+<itunesu:author>Jane &amp;amp; John</itunesu:author>
+<itunesu:summary>&lt;div>"quoted"&#x3C;/div&gt;&lt;hr>&amp;lt;b&#38;gt;escaped&#38;lt;/b&#38;gt;aaaaaaaaa&#60;img src="x" alt=&quot;y"/>&#x3C;div&gt;&amp;amp;amp;&lt;/div>
+&#38;AMP;&#x3C;hr/&gt;</itunesu:summary>
+<description><![CDATA[<BR><BR>
+Tom & Jerry <3multi
+line	back\slash<div>a > b</div> &unknown;
+
+&Lt;]]></description>
+<podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+<language>de-DE</language>
+<atom:link type="application/atom+xml" length="12" rel="first" href="ftp://files.example.com/ep294.html"/></channel>
+</rss>

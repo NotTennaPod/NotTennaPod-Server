@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><link>https://example.com</link>
+  <m:thumbnail url="https://example.com/mt.jpg"/>
+  <description>aaaa<![CDATA[aaa<p>&copy;</p> R&D<img src="x" alt="y"/>]]></description>
+  <podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+  <podcast:funding>  spaced  </podcast:funding>
+  <itunes:author>Jane &amp;amp; John</itunes:author>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <atom:link rel='next' title="" length="12" type='audio/mpeg'/>
+  <language>fr
+</language>
+  <title><![CDATA[<h3>1 <2</h3> &amp;amp; 😀]]></title>
+  <item><podcast:transcript url="" type="Application/JSON" language='en'/><podcast:transcript url="" type="" language="en"></podcast:transcript><podcast:transcript url="https://example.com/t.json"/>
+  <description></description>
+  <enclosure url="https://example.com/a.b/e p95.mkv?a=1&amp;b=2" length="9223372036854775807" type="audio/x-wav"></enclosure>
+  <link>https://example.com/ep</link>
+  <title><![CDATA[&euro;]]></title>
+  <pubDate>1974-07-27T18:14:56+0530</pubDate>
+  <guid isPermaLink="false"> </guid></item></channel></rss>

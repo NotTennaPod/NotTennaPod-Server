@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE feed [<!ENTITY show "Entity Show"><!ENTITY amp2 "&#38;#38;">]>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters">
+<logo></logo>
+  <itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url>
+  <title>multi
+line  cr&#13;lf</title>
+  <id>https://example.com/feed</id>
+  <author><name></name></author>
+  <link title="Café" length="9223372036854775808" href="" type="audio/mpeg"/>
+  <subtitle>aaaaaaa&#60;li&gt;😀&lt;/li&gt;&lt;br&gt;&lt;/br>&lt;img src="x.png"&gt;&amp;;
+
+plain words&#x3C;li&gt;​&lt;/li&gt;&lt;img src=&quot;x.png&quot;&gt;</subtitle>
+  <entry><pc:chapters version="1.2"><pc:chapter start="00:09:22" title="😀" image='https://example.com/ch.png'/><pc:chapter href="" start="0:0:0.0001" title="Intro"/></pc:chapters>
+<link rel="related" title="" href="https://example.com/pay"></link>
+<link title="" href="https://example.com/feed?page=2" type='application/rss+xml' rel="first" length="9223372036854775808"/>
+<summary type="html">&#x3C;br>&#60;/br&gt;&#x3C;div>a=b&#38;c=d&#x3C;/div&gt;&#38;lt;b&#38;gt;&#60;p&gt;a
+
+b&#x3C;/p>&#x3C;img>&lt;hr&gt;&#60;div>http://<![CDATA[example.com/?a=1&b=2</div>😀😀]]></summary>
+<id> raw </id>
+<link href="https://example.com/feed?page=2" type='application/atom+xml' rel="last" length='20000' title="Café"/>
+<title type="text"><![CDATA[&hellip;  &euro;  &;]]></title>
+<content type="html"></content></entry>
+  <entry><updated>23</updated>
+  <link rel='Next' href="https://example.com/alt.xml" type="audio/mpeg" title="MP3 feed"/>
+  <title type="text"><![CDATA[]]>a &#x3C; b &amp;euro;</title>
+  <pi:transcript url="https://example.com/t.json" type="application/json"/>
+  <itunes:category text="Arts"><itunes:category text="Design"/></itunes:category>
+  <content type="xhtml">Line&lt;br&gt;brea<![CDATA[k<br>]]></content>
+  <media:content url='//example.com/a/b/c73.m4v' medium='Audio' duration="2147483648" isDefault='1' type="application/octet-stream"/>
+  <id>urn:uuid:1</id>
+  <summary type="html">a	&#x26;;&#60;li>  padded  &#60;/li&gt;&lt;br /&gt;&#13;
+R&#38;D</summary>
+  <itunes:duration>Infinity</itunes:duration>
+  <published>Tuesday, 11 Mar 2177 13:33</published></entry>
+  <entry><updated>Thu, 03 Sept 1974 11:03:01 +0000</updated><id>
+id
+</id><link href="" type="application/xml+xhtml" length="abc" title="Alternate"/><title>&amp;apos;a&amp;apos;
+&#38;#0;</title><link type="" title='Alternate' rel="alternate" href='HTTPS://EXAMPLE.COM/café/53.wav'></link><link type="application/xhtml+xml" title='Alternate' href="https://example.com/pay" length="abc"/></entry>
+  <entry><itunes:image href=""/><id> raw </id><link rel="archives" length="20000" href=""></link><summary type="html"><![CDATA[&#169;<br>aaaaaaaa<p>&copy;</p>]]></summary><updated>_,  Mon Jun 3 02:41:57 0999</updated><published>sat 20 Jan 0001 06:00:30 GMT+0945 (GMT+01:00)</published><link href="" title="Café" rel='hub' type="application/atom+xml" length="20000"/><title>    spaced  
+Folge 815: &#220;ber alles&#13;
+</title><content type="text"><![CDATA[&amp<br>]]></content></entry>
+  <entry><itunes:duration>99999999999</itunes:duration>
+<title><![CDATA[Tom & Jerry <3 &#xFFFF;]]></title>
+<link type="audio/mpeg" length="20000" title='' rel=""/>
+<id>urn:uuid:1</id>
+<published>&#13;
+21 Oct 15 06:00 +0100 </published>
+<updated>Sun, 31 May 23 03:47:10 -0800</updated>
+<link title="Café" href="https://example.com/feed?page=2" length="20000" rel="self" type="application/atom+xml"/>
+<pi:transcript url="https://example.com/t.vtt" type="text/plain"/><pi:transcript type="application/x-subrip"/><pi:transcript type='text/html' language="en"/>
+<link type="application/xml+xhtml" rel="archives" href="ftp://files.example.com/dir.with.dots/ep391.mp3" length="12"/></entry>
+</feed>

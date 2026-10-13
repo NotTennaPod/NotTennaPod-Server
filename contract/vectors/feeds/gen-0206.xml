@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><atom:link title="" length="abc" rel="archives" href="https://example.com/pay" type="text/html"/><description>&#60;img&gt;&#60;p>&amp;AMP;&lt;/p>&lt;br />aaaaaaa&lt;img src="x&quot; alt="y"/>😀😀sep&#x3C;br>&#60;hr/&gt;</description><itunes:subtitle><![CDATA[plain words
+<section>&mdash;</section>]]></itunes:subtitle><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner><link xmlns="http://www.w3.org/2005/Atom" rel="archives" length="12" type="audio/mpeg" title='Café' href="//example.com/dir.with.dots/ep388.xyz"/><title>&amp;quot;q&amp;quot;</title><itunes:image href=" https://example.com/sp.jpg "/><atom:link href="https://example.com/feed?page=2" type="audio/mpeg"/><link></link><item><enclosure url=" http://example.org/café/137.avi " length="２０００００" type="audio/opus"/>
+<guid>Café-guid</guid>
+<pubDate>0001-06-29T13:24:24.465</pubDate>
+<link>https://example.com/ep</link>
+<psc:chapters version="1.2"><psc:chapter start="١:٠٢" title="&lt;b>x&lt;/b>" href="https://example.com/ch" image="https://example.com/ch.png"/><psc:chapter start="1:00 " href="" title="Intro"/></psc:chapters>
+<description>&lt;li&gt;&amp;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;&#60;/li>&lt;br/&gt;    spaced  </description>
+<title>Episode 12  Episode 12</title></item><item><link></link> <description><![CDATA[<3 <3<br>]]></description> <pubDate>Thu, 01 Jan 2024 1:00:00 +0000</pubDate> <itunes:episodeType>full</itunes:episodeType> <itunes:author>Item author</itunes:author> <enclosure url="//example.com/dir.with.dots/ep399.xyz" length='abc' type="application/x-bittorrent"></enclosure> <title>&amp;#xFFFF;</title> <media:content medium='audio' url="http://example.org/dir.with.dots/ep54.aif" fileSize="9007199254740992" type="video/x-matroska" isDefault="1" duration=""/></item><item><itunes:duration>9743</itunes:duration>
+  <media:description type='plain'></media:description>
+  <description></description>
+  <link>https://example.com/ep</link>
+  <pubDate>Saturday, 28 Nov 1970 02:49:55</pubDate>
+  <enclosure url="//example.com/ep281" length="9223372036854775808" type="audio/aac"/>
+  <title><![CDATA[第]]>931&#x96C6;&#x26;lt&#x5E9;לום</title>
+  <media:content type="audio/" duration="2147484" medium="document" isDefault="false" fileSize='123456789012345678'/></item></channel>
+</rss>

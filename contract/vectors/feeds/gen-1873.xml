@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="0.91" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:subtitle>trailing </itunes:subtitle>
+<podcast:funding>Support us</podcast:funding>
+<atom:link title="MP3 feed" length="abc" rel="self" href=''/>
+<description>é&#x3C;br&gt;</description>
+<title><![CDATA[  spaced    <blockquote>&amp;amp;</blockquote>  ​]]></title>
+<item><content:encoded>&#x3C;li&gt;&amp;quot;q&#x26;quot;&#x3C;/li&gt;&lt;li&gt;&amp;Lt;&#x3C;/li></content:encoded>
+<itunes:duration>13793</itunes:duration>
+<title>a > b &amp;#xA9;</title>
+<enclosure url='https://example.com:8443/102.aac' length="9223372036854775807" type="video/mp4"/>
+<guid isPermaLink="false">a&amp;b</guid>
+<pubDate>sun 30 Jun 2426 15:30:59 GMT-0500 (CEST)</pubDate>
+<enclosure url="https://example.com/a.b/a/b/c163" length="9007199254740992" type="AUDIO/MPEG"/>
+<link></link></item>
+<item><title><![CDATA[  <b>Bold</b> ]]>title	</title><guid isPermaLink='false'>a&#x26;b</guid><pubDate>2008-11-16 -</pubDate><description>&lt;div&gt;&#38;quot;q&#x26;quot;&#x3C;/div&gt;&#60;div&gt;&amp;amp&lt;/div&gt;</description><content:encoded><![CDATA[<p>​</p>]]></content:encoded><enclosure length="-9223372036854775808" type="text/html"/><enclosure url='https://example.com/a.b/ep396.aac' length="9007199254740993" type="application/octet-stream"/><enclosure url="https://cdn.example.com/café/77.opus" length='+20000' type=" audio/mpeg"/><m:description>&#x3C;li>Folge 7: Über alles&#x3C;/li&gt;
+a=b&#38;c=d&lt;br/>&lt;img src="x" alt="y"/&gt;	&amp;lt;b&amp;gt;</m:description><podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"></podcast:chapters></item>
+<item><title>caf&#xE9;
+AT&amp;T
+Episode 12</title>
+<podcast:transcript url="" type="application/srt"/>
+<itunes:summary>&#60;p>&apos;single'&lt;/p>http://example.com/?a=1&#x26;b=2</itunes:summary>
+<dc:date>Weds, 08 September 0001 14:31:28</dc:date>
+<link> https://e.com/x </link>
+<description>&#60;img src="x" alt="y"/&gt;</description>
+<enclosure url="HTTPS://EXAMPLE.COM/290.html" length='9007199254740991' type='audio/x-m4a'/>
+<pubDate>Tue 5 Feb 1991 03:24:20 GMT-0500 (MSK)</pubDate>
+<m:content fileSize="16384" isDefault="true" duration="1" type="unknown"/>
+<m:thumbnail url=""/>
+<guid>a&amp;b</guid></item>
+<item><title>&#38;AMP;</title>
+  <link></link>
+  <pubDate>17 Jun 01 13:01 -0000</pubDate>
+  <description>&#x3C;hr/&gt;http://example.com/?a=1&#x26;b=2aaaaaaaa&#x3C;div&gt;&#38;amp;&lt;/div>&#x3C;p/&gt;</description>
+  <itunes:subtitle>&lt;u<![CDATA[><img src="x.png"> cover</u>  &#0;]]></itunes:subtitle>
+  <itunes:duration>4:59:22</itunes:duration>
+  <enclosure url="http://example.org/71.wav" length='20000 ' type="video/x-matroska"/></item></channel>
+</rss>

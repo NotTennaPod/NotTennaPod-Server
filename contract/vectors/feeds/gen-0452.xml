@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en"><podcast:locked>yes</podcast:locked> <itunes:summary></itunes:summary> <author><name></name></author> <itunes:author>  Spaced  </itunes:author> <title type="plain">&#38;AMP; &#60;u&gt;&#x26;AMP;&#x3C;/u&gt; &#38;#65;&#38;#66;</title> <subtitle type="html"><![CDATA[😀]]></subtitle> <link type="application/atom+xml" href="https://example.com/pay" title="Café" rel="hub" length="12"/> <id>https://example.com/feed</id> <author><name>Émile</name><email>a@example.com</email></author> <link href="https://cdn.example.com/e p220.MP3" rel="alternate" length="20000" type="audio/mpeg"/> <link type="audio/mpeg" title="MP3 feed" rel="alternate" length="12" href="https://example.com/pay"/> <author><name>Ann</name></author> <entry><summary type="text"><![CDATA[<p>&#xA9;</p>]]></summary>
+<updated>2014-09-06T13:08:39.7</updated>
+<title>
+&#x26;lt;b&#x26;gt;</title>
+<id>tag:x,2020:1</id>
+<source url="https://example.com/s"><title>Source title</title></source>
+<link title="Café" type="application/xhtml+xml" length="20000" href="https://user:pass@media.example.net/dir.with.dots/ep43.oga"/></entry> <entry><itunes:image href="https://example.com/e.jpg"/>
+  <id>urn:uuid:1</id>
+  <title>x&lt;y</title>
+  <updated>Wed, 22 Feb 2378 08:51 pst</updated>
+  <summary type="plain">&lt;br&gt;aaaaaaaaa&lt;br />&#13;
+sep&lt;div>Tom &#x26; Jerry &#x3C;3&#60;/div&gt;</summary>
+  <link href="https://example.com/pay" title="Alternate" type="application/xhtml+xml" rel="alternate"/></entry> <entry><id> raw </id><summary>a=b&amp;c=d&#x3C;br&gt;&lt;BR&gt;</summary><updated>2024-04-21T18:08:45.851WET</updated><author><name>Entry author</name></author><title type="html">&amp;#xA9;&#38;lt;b&#38;gt;escaped&#38;lt;/b&amp;gt;</title><published>Friday, 14 Nov 2442 20:21:12</published></entry>
+</feed>

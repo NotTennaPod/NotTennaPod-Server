@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><link> https://example.com/ </link>
+  <atom:link length="20000" type="text/html" rel="self" href="https://example.com/pay"/>
+  <atom:link type="" title="Café" href="ftp://files.example.com/e p349.opus?a=1&amp;b=2" rel="alternate"/>
+  <i:summary></i:summary>
+  <image><url>https://example.com/img.png</url><title>Image title</title></image>
+  <i:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></i:owner>
+  <description>a&#13;
+b&lt;br&gt;</description>
+  <title><![CDATA[  spaced  ]]></title>
+  <link xmlns="http://www.w3.org/2005/Atom" rel="enclosure" href="https://example.com/pay" title="Café"/>
+  <atom:link length='12' type="application/atom+xml" rel="enclosure" title='Café'></atom:link>
+  <item><title><![CDATA[<section>&#xA9;</section>]]></title><guid isPermaLink="true"> </guid><pubDate>Sat Jan 4 25:41:26 2003</pubDate><itunes:subtitle>&#38;lt;b&#38;gt;</itunes:subtitle><i:image href=' '/><i:duration>4:45:36</i:duration><enclosure url="http://example.org/a/b/c257.php" length="abc" type="text/html"/></item></channel>
+</rss>

@@ -1,0 +1,42 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="EN-us"> <updated>2016-02-05T18:43:19.277</updated>
+<link title="Alternate" rel="enclosure" type="audio/mpeg" length="abc"/>
+<link type='application/xhtml+xml' href='https://example.com/' length="20000" title="Alternate" rel="archives"/>
+<author><name></name></author>
+<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url='https://example.com/amt.jpg'/>
+<itunes:summary>&#60;p>&#x3C;/p>&lt;br/&gt;&#60;p>&amp;amp;&lt;/p&gt;é&#233;é&lt;BR>&#60;p>x&#60;y&lt;/p&gt;
+ &#13;
+sep</itunes:summary>
+<itunes:author></itunes:author>
+<link title="Café" rel="" type="application/xhtml+xml" href="https://example.com/alt.xml" length="12"></link>
+<link rel="next" type="" title="Alternate" href=""/>
+<subtitle type="text">&#13;
+trailing &lt;li&gt;  padded  &lt;/li&gt;&#x3C;li>&#38;amp&#x3C;/li&gt;&#60;img src="x" alt="y"/&gt;&lt;BR>&#60;p>&lt;3 &#x3C;3&lt;/p&gt;&#60;BR&gt; café</subtitle>
+<author><name>Ann</name></author>
+<podcast:funding url='https://example.com/give'>Give</podcast:funding>
+<author><name>C&#x26;D</name></author>
+<title type='text'>😀
+Line&#60;br&gt;break
+Tom &amp;amp; Jerry &#38;lt;3</title>
+<entry><published>&#13;
+Mon., 16 Apr 2007 20:52:34 -1200 </published> <wrapper><inner><deeper>text</deeper></inner></wrapper> <title type="html"><![CDATA[Tom &]]>amp; Jerry &amp;lt;3   padded   sep</title> <link href="https://example.com/feed?page=2" title="MP3 feed" rel="alternate" type="application/rss+xml"/> <summary type="plain">
+a &lt; b
+
+&#x26;#169;&lt;div&gt;a &lt; b&lt;/div&gt;</summary> <updated>Saturday, 04 May 94 17:45:12 +0200</updated> <id>urn:uuid:1</id></entry>
+<entry><author><name>Entry author</name></author>
+<itunes:image href=""/>
+<updated>1899/10/26T19:58:06</updated>
+<podcast:transcript url="https://example.com/t.json" type=""/><podcast:transcript url="https://example.com/t.json" type="application/srr"/>
+<link rel="last" href="https://example.com/alt.xml" title="Café" type=""></link>
+<itunes:duration>-1:00:00</itunes:duration>
+<title type="html">&lt;sub&gt;&#60;3 &lt;3&lt;/sub&gt;</title>
+<id></id>
+<content type="plain"><![CDATA[<div><b>Bold</b> title</div><p>Para</p><br><li>trailing </li><p>&copy;</p><p/>]]></content></entry>
+<entry><podcast:transcript type="application/srt" language="en"/>
+  <title>Line&#x3C;br>break</title>
+  <published>bzc</published>
+  <updated>1979-09-26</updated>
+  <link length="9223372036854775808" href="https://example.com/alt.xml" rel="self"/>
+  <id>
+id
+</id></entry>
+<entry><updated>Thu, 29 February 1980 09:04</updated> <itunes:duration>5:11:28</itunes:duration> <title type="html">Line&lt;br&gt;breakFolge 505: Über allesback\sl<![CDATA[ash]]></title> <published>Wed, 21 Apr 2252 20:17:59 +0000 ()</published> <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">Fri, 06 May 2203 23:30:50 +12345</dc:date> <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="Audio" duration="+60" fileSize="12" type="audio/x-m4a"/> <id></id> <content type="html"><![CDATA[<div>​</div><p>#7 – Interview</p>aaaa]]></content></entry> </feed>

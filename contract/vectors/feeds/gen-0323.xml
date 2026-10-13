@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><image><title>Image title</title><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link></image>
+  <podcast:funding>Support us</podcast:funding>
+  <title>{json: 1}a&#13;
+b</title>
+  <podcast:funding url="https://example.com/donate">Support us</podcast:funding>
+  <description><![CDATA[]]>&#60;br /></description>
+  <textInput><title>Search</title><link>https://example.com/search</link></textInput>
+  <itunes:summary>&amp;#169;&lt;<![CDATA[li>&#169;</li>]]></itunes:summary>
+  <podcast:funding url="https://example.com/donate"></podcast:funding>
+  <itunes:subtitle>&#38;amp;amp; &amp;apos;a&#x26;apos; a=b<![CDATA[&c=d]]></itunes:subtitle>
+  <language>de-DE</language>
+  <link>https://example.com</link>
+  <item><title>&amp;lt  cr&#13;lf</title><dc:date>Tuesday, 06 Mar 0001 22:49:31 -0500</dc:date><link></link><itunes:summary>&lt;p&gt;&amp;mdash;&#x3C;/p&gt; a > b&#60;p&gt;&#38;#128512;&lt;/p></itunes:summary><media:content url="HTTPS://EXAMPLE.COM/a/b/c268.aif" duration="9223372036854775807" fileSize="-1" type="audio/opus" isDefault="TRUE"/><podcast:transcript url="https://example.com/t.vtt"/><podcast:transcript url='' type="application/srt"></podcast:transcript><podcast:transcript url="https://example.com/t.vtt" type="text/html" language="en"/><pubDate>Thu, 15 Dec 1994 14:60:20 -0500</pubDate><enclosure url="HTTPS://EXAMPLE.COM/ep130.amr" length="9007199254740991" type="video/webm"/></item></channel> </rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><link>https://example.com</link>
+<title>a&#13;
+b</title>
+<description>
+
+&#x26;unknow<![CDATA[n;]]></description>
+<image><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link><title>Image title</title></image>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=' '></itunes:image>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">&#60;BR></itunes:summary>
+<item><title><![CDATA[&lt;b&gt; &#x1F600;]]></title>
+<guid>  spaced guid  </guid>
+<link> https://e.com/x </link>
+<pubDate>Fri, 13 February 2376 15:35</pubDate>
+<description><![CDATA[&euro;]]></description>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""></itunes:image>
+<enclosure url="ftp://files.example.com/ep294.html" length="52428800" type="application/json"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" medium='audio' type="text/plain" isDefault='false' duration="3600" fileSize="2147483647" url="//example.com/a/b/c200.MP3#t=10"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="-0" type="video/quicktime" medium="image" duration="0060" url="https://example.com:8443/a/b/c214.mov" isDefault="TRUE"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" fileSize='16384' duration="1.5" type="audio/x-wav" isDefault="true" url="https://example.com/a.b/a/b/c123.m4v"/></item>
+<item><title><![CDATA[&
+<b>Bold</b> title
+&hellip;]]></title>
+<guid isPermaLink="true">urn:uuid:843c4f43</guid>
+<link>https://example.com/ep</link>
+<pubDate>2020-03-15T12:39:17+0530;</pubDate>
+<description><![CDATA[aaaaaaa<img>  &#169;<img src="x" alt="y"/>&AMP;]]></description>
+<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[<div><img src="x.png"> cover</div>]]></content:encoded>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">124:28</itunes:duration>
+<enclosure url="" length="9007199254740992" type="video/quicktime"/>
+<enclosure url='//example.com/café/209.webm?auth=yes' length='0x4E20' type="audio/opus"/>
+<enclosure length="0x4E20" type='audio/*'/></item></channel>
+</rss>

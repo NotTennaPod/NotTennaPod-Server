@@ -1,0 +1,18 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+  <logo></logo>
+<media:thumbnail url="https://example.com/amt.jpg"/>
+<title>&#60;b&gt;Bold&lt;/b&gt; title  &amp;unknown;</title>
+<itunes:summary></itunes:summary>
+<author><name>Émile</name></author>
+<id>urn:x</id>
+<subtitle>&#x3C;li&gt;&amp;lt;b&amp;gt;escaped&amp;lt;/b&#x26;gt;&lt;/li&gt;</subtitle>
+<entry><title type="plain">&amp;unknown;</title>
+<summary type="HTML"><![CDATA[ééé]]></summary>
+<published>2023-11-28T01:57:07Z</published>
+<id> raw </id>
+<link href="https://example.com/" rel="next" title="MP3 feed" type="application/xml+xhtml"/>
+<updated>Fri, 01 Feb 2002 01:15 MDT</updated>
+<itunes:duration>5.</itunes:duration>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;img src="x" alt=&quot;y"/&gt;&lt;p&gt;&#x26;amp;amp;&#x3C;/p&gt;</div></content>
+<media:content medium='Audio' isDefault="false" fileSize='16383' duration="2147483" type='audio/wav' url="https://example.com:8443/133.ogg"></media:content></entry>
+</feed>

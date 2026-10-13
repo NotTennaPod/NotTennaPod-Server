@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+  <channel xmlns:atom="http://www.w3.org/2005/Atom"><itunes:author><![CDATA[<b>Studio</b>]]></itunes:author>
+<title>&lt;P&gt;S01E765<![CDATA[</P>]]></title>
+<image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+<media:thumbnail url=""/>
+<description></description>
+<link>https://example.com</link>
+<item><title><![CDATA[Line<br>break  <img src="x.png"> cover  #hash]]></title>
+<guid isPermaLink="true">urn:uuid:30e808c8</guid>
+<link>https://example.com/ep</link>
+<pubDate>Sat Nov 7 03:56:58 1998 PST</pubDate>
+<description>&#x3C;p>&lt;/p&gt;&#233;éé&#x3C;li&gt;&#38;#65;&#x26;#66;&lt;/li&gt;&#x3C;div>&lt;3 &#60;3<![CDATA[</div><hr>]]></description>
+<content:encoded><![CDATA[<p>Tom & Jerry <3</p>]]></content:encoded>
+<itunes:subtitle><![CDATA[AT&T  &quot;q&quot;]]></itunes:subtitle>
+<itunes:image href=" "/>
+<itunes:duration>0.5</itunes:duration>
+<enclosure url="https://example.com/a.b/dir.with.dots/ep84.mov" length="+20000" type="application/ogg"/>
+<media:content duration="2147483648" medium="video" type="application/x-bittorrent" fileSize="２０００００" url="http://example.org/a/b/c86.ts"/>
+<media:content type="Audio/MPEG" duration="9223372036854775807" fileSize="0" url="https://cdn.example.com/café/199.aac" medium="video"/></item>
+<item><pubDate>1975-11-16T23:37:61</pubDate><enclosure url="" length="18446744073709551616" type="audio/flac"/><itunes:summary><![CDATA[<br></br><br />😀😀😀<br />plain words]]></itunes:summary><link></link><enclosure url="https://example.com/a.b/ep37.aac" length="2147483648" type='application/pdf'/><title>&#x26;#xA9;</title></item>
+<item><guid>  spaced guid  </guid>
+  <enclosure url='https://example.com:8443/119.mpga' length='-16384'/>
+  <link>https://example.com/ep</link>
+  <media:content type="image/png" isDefault="false" fileSize="18446744073709551616" duration=" 60"></media:content>
+  <enclosure url="HTTPS://EXAMPLE.COM/ep63.txt" length='52428800' type="text/plain"/>
+  <title>   &amp;#x1F600;  &amp;lt;b&#38;gt;</title>
+  <content:encoded>  Tom &amp; Jerry &lt;3&#160;&#38;AMP;</content:encoded>
+  <enclosure url="https://example.com/a.b/a/b/c160.m4v" length=" 20000"/>
+  <itunes:summary>&lt;hr/>第7集&lt;br&gt;ééé&lt;br&gt;aaaaaaa</itunes:summary></item>
+<item><dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1994-10-08T21:54:19-0800 +0000</dc:date> <itunes:image href=""/> <podcast:transcript type="Application/JSON" language="en"/> <itunes:duration>5880</itunes:duration> <title>#675 – Interview</title> <enclosure url=' https://example.com:8443/dir.with.dots/ep68.m4b ' length="18446744073709551616" type="audio/"/> <pubDate>Tue APR 6 17:25:47 2021</pubDate></item>
+<item><description>Episode 12Episode 12&lt;br&gt;&lt;/br> &#x26;amp;amp;&#x3C;div>&#x26;mdash;&lt;/div&gt;&#x3C;div>é&lt;/div&gt;&#60;li&gt;ש&#x5DC;ום&lt;/li>&lt;li&gt;&#38;#x1F600;&lt;/li></description> <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">Mittwoch Jun 16 15:33:07 2534</dc:date> <media:content type='audio/' duration="1.5" isDefault="false" fileSize="0"/> <title><![CDATA[
+&#169; <center>a < b</center>
+]]></title> <itunes:summary><![CDATA[<li>R&D</li>😀😀]]></itunes:summary> <pubDate>Mon, 31 Dec 1992 23:04:35 +1400 PM</pubDate> <guid>dup</guid> <enclosure type="image/jpeg"/></item>
+<item><description></description> <itunes:image/> <podcast:locked>yes</podcast:locked> <guid isPermaLink="true">https://example.com/item/24181</guid> <title>&#x3C;div&gt;&#60;p>  padded  &#60;/p>&#x3C;/div>
+a > b
+a &gt; b</title> <enclosure length="2147483648" type="audio/x-m4a"/> <psc:chapters version='1.2'><psc:chapter title="&lt;b>x&lt;/b>" href='' start=""/><psc:chapter start="00:15:51.303" title="&lt;b>x&lt;/b>" image="https://example.com/ch.png"/><psc:chapter start="596523:14:07.999" image='https://example.com/ch.png' href="" title="&lt;b>x&lt;/b>"/><psc:chapter start="0x10:00" title="Intro" image='https://example.com/ch.png'/><psc:chapter title="😀" start='0:0:0.0001' image="https://example.com/ch.png"/><psc:chapter title="" image="https://example.com/ch.png" start="3799"/></psc:chapters> <link>https://example.com/ep</link> <pubDate>Wed,21 Nov 1979 18:21:56 +0945</pubDate></item></channel> </rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel xmlns:psc="http://podlove.org/simple-chapters"><it:image href=" https://example.com/sp.jpg "/><it:subtitle>a&#13;
+b
+&#38;;</it:subtitle><description><![CDATA[Tom & Jerry <3]]></description><language> EN-US </language><atom:link rel="Next" type="audio/mpeg" href="" title="MP3 feed"/><title>{json: 1}  cr&#13;lf</title><item><enclosure url="" length=' 20000' type="application/json"/>
+<guid isPermaLink="false"> </guid>
+<pubDate>  Fri, 06 April 1984 20:06	</pubDate>
+<podcast:transcript type="text/html" language="en"/><podcast:transcript url="https://example.com/t.json" type="text/plain" language='en'/>
+<title>#hash</title>
+<content:encoded><![CDATA[]]> &#38;amp;</content:encoded>
+<itunes:duration>13739</itunes:duration>
+<link></link>
+<description><![CDATA[<p></p><div>第7集</div><p/><br /><p></p><p>&#xA9;</p>  multi
+line "quoted"]]></description></item><item><title>a=b&amp;c=d  &#x3C;p&gt;Para&lt;/p> <![CDATA[ 'single']]></title>
+  <pubDate>Monday, 26 Mar 2496 02:43 -0800</pubDate>
+  <enclosure url="https://example.com:8443/dir.with.dots/ep115.mp4" length="9007199254740992" type="audio/opus"/>
+  <psc:chapters><psc:chapter start="+1:00" image="https://example.com/ch.png" href="https://example.com/ch" title="😀"/></psc:chapters>
+  <description></description>
+  <guid>urn:uuid:ff0fc1dc</guid>
+  <media:content xmlns:media="http://search.yahoo.com/mrss/" type="video" fileSize="2147483647" url="https://cdn.example.com/e p297.m4a" isDefault="TRUE" medium='image'/>
+  <itunes:image href=""/>
+  <link></link>
+  <media:content xmlns:media="http://search.yahoo.com/mrss/" type="application/json" duration="2147484" isDefault="TRUE" fileSize=" 20000" url="https://cdn.example.com/a/b/c397.jpg" medium="Audio"/></item></channel></rss>

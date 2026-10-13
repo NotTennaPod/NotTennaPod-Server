@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom"> <channel xmlns:content="http://purl.org/rss/1.0/modules/content/"><a10:link length="20000" title="Alternate" type="application/xml+xhtml" rel="alternate" href="https://example.com/pay"/> <a10:link length='9223372036854775808' title="MP3 feed" href="https://example.com/alt.xml" rel="hub" type="application/rss+xml"/> <a10:link href="https://example.com/" type="" length="12" rel='related'/> <a10:link type="text/html" title="MP3 feed" rel="payment"/> <description>&#38;#;&#60;br&gt;</description> <itunes:image href=" "/> <language>pt-BR</language> <link>https://example.com</link> <itunes:summary>&#x3C;p&gt;&#x26;unk<![CDATA[nown;</p>a]]></itunes:summary> <title><![CDATA[&mdash;
+[x]
+]]>a=b&#x26;c=d</title> <item><title>&#x3C;h6>&amp;nbsp;&lt;/h6&gt;&#38;unknown;cr&#13;lf</title>
+<guid isPermaLink="false"></guid>
+<link> https://e.com/x </link>
+<content:encoded>&#60;hr/&gt;😀&lt;3 &lt;3  cr
+lfEpisode 12&lt;br&gt;plain words&amp;#x;&lt;BR></content:encoded>
+<enclosure length="-9223372036854775808" type="AUDIO/MPEG"/>
+<podcastindex:chapters xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" type="application/json+chapters"/>
+<source url="https://example.com/s"><title>Source title</title></source></item> <item><itunes:duration>0x1.8p2</itunes:duration>
+<title><![CDATA["quote]]>d"&#38;amp;amp;&#x26;#xA9;</title>
+<media:thumbnail/>
+<podcastindex:transcript xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" url="https://example.com/t.json" type="Application/JSON" language='en'/>
+<enclosure length="00020000" type='image/jpeg'/>
+<link> https://e.com/x </link>
+<description>sep&lt;br&gt;&#60;li&gt;مرحبا&#x3C;/li&gt;café</description>
+<media:content isDefault="true" fileSize="9007199254740993" type="application/pdf" url="https://cdn.example.com/dir.with.dots/ep118.mp3.zip#t=10"/>
+<media:content isDefault="1" type="audio/flac" duration="1.5" medium="document" fileSize="52428800"/>
+<guid isPermaLink="true">  spaced guid  </guid></item> <item><guid isPermaLink="false">a&amp;b</guid><itunes:summary>😀😀😀&#128512;&#x3C;img&gt;&#x3C;hr/&gt;</itunes:summary><media:content type="audio/x-wav" fileSize="00020000" isDefault="false" duration="1"></media:content><enclosure url="https://example.com/a.b/83.php" length="16383" type="video/x-matroska"/><pubDate>Wed, 06 May 2426 22:16:11 +0530</pubDate><media:thumbnail url=""/><a10:link rel="last" type='application/rss+xml' href="https://example.com/"/><content:encoded></content:encoded><title>&#60;div dir="rtl">&amp;copy;&lt;/div>
+trailing </title><psc:chapters version='1.2'><psc:chapter title="Intro" href="" start="3151"/></psc:chapters><link></link></item></channel>
+</rss>

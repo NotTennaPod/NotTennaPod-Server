@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- generated -->
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<channel xmlns:media="http://search.yahoo.com/mrss/"><podcast:funding url=""/>
+<it:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></it:owner>
+<link></link>
+<description></description>
+<title><![CDATA[café]]></title>
+<language></language>
+<item><enclosure url="https://xn--caf-dma.example/e p372.php" length='0x4E20' type='audio/mp3'/>
+  <pubDate>2007-10-08T20:51:10 CET</pubDate>
+  <title><![CDATA[R&D]]></title>
+  <link></link>
+  <it:duration>45</it:duration>
+  <guid isPermaLink="true">Café-guid</guid></item>
+<item><title>'single&apos;
+&#38;#xFFFF;
+&#60;b&gt;Bold&#60;/b> title</title>
+<guid>
+</guid>
+<content:encoded>  &amp;#0;&#x3C;li>café&#60;/li>&lt;br&gt;</content:encoded>
+<enclosure url='//example.com/e p12.Mp4' length="16384" type=""/>
+<psc:chapters version="1.2"><psc:chapter title="" image="https://example.com/ch.png" href="" start='02:54:37.387'/><psc:chapter href="" image="https://example.com/ch.png" start="28:33"/></psc:chapters>
+<description>&lt;img src="x" alt=&quot;y&quot;/&gt;😀😀&#13;
+{json: 1}&#60;li&gt;&amp;Lt;&#x3C;/li>aaaaaTom &amp; Jerry &#60;3 &#38;hellip;&lt;li>&amp;amp;amp;&lt;/li&gt;</description></item>
+<item><media:content fileSize="0x4E20" url='ftp://files.example.com/ep361.jpg' duration="-5" type="video/quicktime" medium="document"/>
+  <link></link>
+  <media:description type="plain"> a=b&#38;c=d&lt;li&gt;&amp;;&lt;/li>   spaced  茶&#x3C;br>&#x26;lt</media:description>
+  <guid isPermaLink="false">
+</guid>
+  <content:encoded>&lt;div&gt;&amp;#x1F600;&lt;/div&gt;é&#xE9;é</content:encoded>
+  <it:duration>1139.83</it:duration>
+  <title><![CDATA[&#xA9;]]></title>
+  <it:subtitle>&#13;
+Folge 456: &#xDC;ber alles  &amp;unknown; </it:subtitle>
+  <enclosure url="https://cdn.example.com/dir.with.dots/ep118.mp3.zip#t=10" length="00020000" type='audio'/>
+  <podcast:transcript url="https://example.com/t.json" type="application/srt"/></item>
+<item><title>Episode 332&#38;a&#13;
+b</title>
+<guid>Café-guid</guid>
+<link></link>
+<pubDate>2017-05-09T04:04:23+0000 2024</pubDate>
+<description><![CDATA[😀😀]]></description>
+<itunes:summary>&#60;div>1 &#60;2&#60;/div></itunes:summary>
+<it:duration>1e3</it:duration>
+<enclosure length="9223372036854775807" type="audio/wav"/>
+<media:content type="unknown" isDefault="false" duration="01:00" fileSize="20000.0" url="https://example.com:8443/136.caf?a=1&amp;b=2"/>
+<media:content type="audio/aac" medium="Audio" duration="2147483648" url='https://user:pass@media.example.net/café/75.OGG' isDefault="TRUE" fileSize="2147483647"/></item>
+<item><pubDate>Sat, 09 Nov 2013 08:35:2</pubDate><content:encoded>&#60;div&gt;&#38;Lt;&lt;/div>&#x3C;p>茶&lt;/p></content:encoded><description>&#x3C;p&gt;Line&#60;br&gt;break&lt;/p&gt;&lt;li> leading&#60;/li>&#60;p&gt;Episode 7&lt;/p&gt;
+  مر&#x62D;با</description><enclosure url='ftp://files.example.com/241.mp3' length="٢٠٠٠٠" type="audio/mpeg"></enclosure><it:image/><media:group><media:content fileSize='' medium="document" url="https://example.com/a.b/161" duration="01:00" type="video/mp4" isDefault="false"/><media:content duration="9223372036854775807" type="application/pdf" isDefault="1" fileSize='2147483648' url="https://example.com/a.b/café/205.aspx" medium='document'/></media:group><guid isPermaLink='true'>  spaced guid  </guid><title><![CDATA[multi
+line
+"quoted"
+&hellip;]]></title></item>
+<item><description>😀back\slash &lt;3 &#60;3 &amp;copy;&#x3C;br>&#x3C;/br&gt;</description> <pubDate>2011-12-27T17:27:38pst</pubDate> <dc:date>Mon, 05 Sept. 2017 03:37:28 +0530</dc:date> <guid isPermaLink="false">https://example.com/item/25009</guid> <it:duration>Infinity</it:duration> <link></link> <psc:chapters><psc:chapter image='https://example.com/ch.png' href="https://example.com/ch" start="01:24:34"></psc:chapter><psc:chapter title='Café &amp;amp; more' href="https://example.com/ch" image="https://example.com/ch.png" start="00:41:33"/></psc:chapters> <title>&amp;unknown;</title></item></channel>
+</rss>

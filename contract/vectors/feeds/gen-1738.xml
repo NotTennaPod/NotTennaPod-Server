@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+<atom:link rel="Next" title="MP3 feed" href="https://user:pass@media.example.net/dir.with.dots/ep94"/><atom:title><![CDATA[&#;
+&hellip;]]></atom:title><atom:id> raw </atom:id><atom:logo>https://example.com/logo.png</atom:logo><atom:entry><atom:updated>
+  2012-06-27T19:51:41+1400 	 </atom:updated>
+<atom:summary type="plain">aaaaa😀&#128512;😀😀é&#233;é&#x3C;p&gt;&amp;#0;&#60;/p&gt;	&#x26;#;</atom:summary>
+<media:content url="https://xn--caf-dma.example/e p82.mpga" medium="audio" fileSize='20000.0' isDefault="true" type="audio/opus" duration='1'/>
+<atom:id></atom:id>
+<atom:title type='text'><![CDATA[مرحبا  {json: 1}]]></atom:title>
+<atom:content type="HTML"><![CDATA[100%<li>&</li>aaaaaaaaaaaaééé<hr><li>مرحبا</li><li>a > b</li>]]></atom:content></atom:entry><atom:entry><atom:author><atom:name>Entry author</atom:name></atom:author><atom:summary type="plain">&#60;div>AT&#x26;T&lt;/div>&lt;div&gt;trailing &#x3C;/div&gt;&#13;
+&amp;&lt;img src="x" alt=&quot;y"/&gt;trailing 
+&amp;hellip;&lt;p>a
+  b&lt;/p&gt;&#60;div>&amp;Lt;&#x3C;/div&gt;</atom:summary><atom:title>&amp;#x;
+café</atom:title><atom:id>tag:x,2020:1</atom:id><atom:link href='//example.com/a/b/c324.xyz' type="text/html" rel="self" title="Café"/><atom:published>Fri 28 Sep 2474 11:21:51 GMT+0000 (+0000)</atom:published></atom:entry><atom:entry><atom:link rel="last" title="MP3 feed" href='https://example.com/feed?page=2' type="application/xhtml+xml"/>
+  <atom:title type="text">&lt;s>trailing &lt;/s&gt;​</atom:title>
+  <atom:updated>Sun, 24 JUL 2016 08:48:58 +0530</atom:updated>
+  <atom:author><atom:name>Entry author</atom:name></atom:author>
+  <atom:link rel="payment" type="application/xml+xhtml" length="abc" href="https://example.com/alt.xml"/>
+  <atom:link type="audio/mpeg" href="https://example.com/alt.xml" length="20000" title="Alternate" rel="Next"/>
+  <atom:id>tag:x,2020:1</atom:id></atom:entry><atom:entry><atom:id></atom:id>
+<atom:content type='html'>&#60;br /></atom:content>
+<atom:link rel="enclosure" href="https://example.com/alt.xml" length="9223372036854775808" title="MP3 feed"/>
+<atom:link rel="next" length="abc" href="https://example.com/pay" type="audio/mpeg"/>
+<atom:title type="text">Episode 935
+  padded  
+Tom &amp;amp; Jerry &amp;lt;3</atom:title>
+<atom:author><atom:name>Entry author</atom:name></atom:author>
+<media:content isDefault="true" fileSize="12" type="video/mp4" medium="document" url='https://cdn.example.com/café/50.torrent'/>
+<atom:updated>Fri, 30 Oct 1994 15:24:42 +0200</atom:updated>
+<atom:published>Tue, 06 January 1970 10:47:59 +0100</atom:published></atom:entry><atom:entry><atom:id> raw </atom:id> <atom:title type="html"><![CDATA[a < b]]> &#x26;#;</atom:title> <atom:updated>26 Sep 2006 09:22:07 +05:30</atom:updated> <atom:link type="application/xml+xhtml" rel="next" title="MP3 feed" href="https://example.com/alt.xml"/> <atom:link href="https://example.com/alt.xml" rel="last" length="12"/> <atom:published>WEDNESDAY, 18 Jan 2012 03:16:31 +0100</atom:published> <atom:summary type="HTML">  spaced  &#x3C;br&gt;&#x3C;img src="x" alt="y"/>aaa😀😀😀
+
+x&lt;y</atom:summary></atom:entry></atom:feed>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:image href="https://example.com/it.jpg"></itunes:image><description> x&#x3C;y
+
+&#x26;lt
+&#38;#;  &amp;lt [x]&#x3C;p>Episode 12&#60;/p>😀&#128512;&#128512;Tom &amp;amp; Jerry &amp;lt;3</description><atom:link rel='hub' href="https://example.com/feed?page=2" length='20000' title="Alternate"/><link></link><title>R&amp;D</title><item><title>&#x26;#169;&#60;big&gt;  padded  &#60;/big&gt;</title>
+  <guid isPermaLink="true">urn:uuid:14c42a4c</guid>
+  <link> https://e.com/x </link>
+  <pubDate>01 aug 95 20:51 +0000</pubDate>
+  <description>&#128512;&#x1F600;😀&#13;
+x&#60;y</description>
+  <itunes:summary></itunes:summary>
+  <itunes:subtitle><![CDATA[<label><3 <3</label> &amp;]]></itunes:subtitle>
+  <itunes:duration>1:60:60</itunes:duration>
+  <enclosure url="" length="1" type="Audio/MPEG"/>
+  <media:thumbnail/>
+  <podcastindex:chapters url="" type='application/json+chapters'/>
+  <podcastindex:transcript url="https://example.com/t.json" type='application/srr'/><podcastindex:transcript type="text/vtt" language='en'/></item><item><title><![CDATA[&#]]>xA9;</title><guid>  spaced guid  </guid><link> https://e.com/x </link><pubDate>Samstag, 14 Oct 2000 11:24:43 +0530</pubDate><description></description><itunes:summary><![CDATA[ééé]]></itunes:summary><itunes:image href=" "/></item><item><itunes:image href=" "/>
+<podcastindex:socialInteract protocol="activitypub"/>
+<title>&#38;nbsp;   spaced  </title>
+<content:encoded>&lt;p>tab	here&lt;/p>&lt;p&gt;cr&#13;lf&#60;/p&gt;</content:encoded>
+<guid isPermaLink="true">https://example.com/item/41097</guid>
+<link> https://e.com/x </link>
+<pubDate>Sunday, 14 Apr 65 03:25:55</pubDate>
+<description>ééé</description></item></channel></rss>

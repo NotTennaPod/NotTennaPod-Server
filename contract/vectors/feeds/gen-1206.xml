@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+<channel><i:image href="https://example.com/it.jpg"/>
+  <textInput><title>Search</title><link>https://example.com/search</link></textInput>
+  <i:owner><i:name>Owner</i:name><i:email>o@example.com</i:email></i:owner>
+  <i:author>Café Radio</i:author>
+  <language></language>
+  <image><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image></channel>
+</rss>

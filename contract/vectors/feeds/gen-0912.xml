@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="latin1"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><itunes:image href=" https://example.com/sp.jpg "/>
+  <title> &#x3C;strike&gt;&#8203;&#60;/strike&gt; "quoted"	</title>
+  <podcast:funding url="">Support us</podcast:funding>
+  <description>http://example.com/?a=1&#x26;b=2&#x3C;br&gt;&#160;a=b&amp;c=d  &#x26;copy;	  spaced  &#60;img src="x" alt="y&quot;/&gt;&lt;li>&amp;quot;q&amp;quot;&#60;/li&gt; &lt;3 &lt;3
+multi
+line</description>
+  <atom:link title="Alternate" href="https://example.com/" type="application/rss+xml" rel="self"></atom:link>
+  <itunes:subtitle>&amp;#128512; &#x26;#x;</itunes:subtitle>
+  <link xmlns="http://www.w3.org/2005/Atom" length='abc' title="Alternate" rel="related" type="application/atom+xml"/>
+  <atom:link length="20000" href="https://example.com/" rel="related" title="Alternate"></atom:link>
+  <itunes:author><![CDATA[Jane Doe]]></itunes:author>
+  <link> https://example.com/ </link>
+  <atom:link rel="" title="MP3 feed" length="20000" href="https://cdn.example.com/e p260.m4v" type='application/atom+xml'/>
+  <item><link>https://example.com/ep</link>
+<media:thumbnail/>
+<guid isPermaLink='false'>urn:uuid:f676c32a</guid>
+<media:description type="html">&amp;AMP;&lt;br></media:description>
+<description>ééé</description>
+<title>#hash  &#38;amp;  a &lt; b</title>
+<media:group><media:content medium="document" type="Audio/MPEG" isDefault='1' duration='1.5' fileSize='16385'/><media:content medium="image" duration=" 60" fileSize="4294967296" isDefault="true" type='audio/aac'/></media:group>
+<pubDate>1973-04-26T06:49:21.033Z</pubDate></item></channel>
+</rss>

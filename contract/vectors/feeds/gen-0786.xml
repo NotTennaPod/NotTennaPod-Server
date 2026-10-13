@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="en">
+<link href="" title="Café" length="20000" type="text/html" rel="self"></link><id></id><logo> https://e.com/l.png
+</logo><author><name>Ann</name></author><link rel="alternate" type="application/atom+xml" title="" href="https://example.com/feed?page=2" length="20000"/><link href="https://example.com/feed?page=2" rel="payment" type="audio/mpeg" length="20000" title="Alternate"/><title type="html">1<![CDATA[ <2 "quoted"]]></title><link type='application/xhtml+xml' title="Alternate" rel="" length='12' href="https://example.com/pay"/><author><name>C&#38;D</name><email>a@example.com</email></author><entry><summary type="plain"><![CDATA[
+
+&copy;]]></summary>
+<id> raw </id>
+<updated>Wed Mar 32 10:44:34 2007</updated>
+<content type="text">&lt;li&gt;&amp;amp;amp;&#60;/li&gt; x&lt;y</content>
+<link href="https://example.com/pay" rel="alternate" length="abc"/>
+<link length="9223372036854775808" type="text/html" rel="" title="Café"/>
+<updated>Sat, 08 sept 1998 18:26:16 +0200</updated></entry><entry><link rel="next" type="application/xml+xhtml" title="MP3 feed" length="9223372036854775808"/>
+  <itunes:image href=""/>
+  <id>tag:x,2020:1</id>
+  <title>&#38;#0; <![CDATA[ &#169;]]></title>
+  <summary type="text">éé&#xE9;</summary>
+  <published>MONDAY, 27 Apr 1998 01:02:15 +0945</published></entry><entry><link type="application/atom+xml" rel="Next" href='' length="9223372036854775808" title="Alternate"/>
+<title type="html">&lt;section&gt;cr&#13;lf&lt;/section&gt; trailing  sep</title>
+<id>urn:uuid:1</id>
+<updated>Sat Oct 17 06:19:34 2009 NZST</updated>
+<content> &#x26;quot;q&#x26;quot;&#x3C;br&gt;</content>
+<link type="application/xhtml+xml" href="https://example.com/pay" title="Alternate" rel="enclosure"/></entry>
+</feed>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><title>&#31532;46&#38598;
+café
+&#x3C;del>Episode 252&#60;/del></title>
+<lastBuildDate>Sun, 25 Feb 2003 12:11:28 +0945</lastBuildDate>
+<atom:link length="abc" href="ftp://files.example.com/ep311.mp3.zip" rel="" title="Alternate"/>
+<link>https://example.com</link>
+<item><enclosure url=' //example.com/10.html ' length='2147483648' type="image/*"/> <link></link> <description>  &amp;#0;</description> <pubDate>Monday, 28 Aug 1899 05:10:36 XYZ</pubDate> <guid isPermaLink="true"> </guid> <itunes:summary><![CDATA[<li>Line<br>break</li><div> leading</div>]]></itunes:summary> <podcast:transcript url="https://example.com/t.json" type="application/x-subrip" language="en"/> <title>Line&lt;br>break &#38;#128512;</title></item>
+<item><pubDate>Friday, 09 Jul 15 15:46 -0500</pubDate>
+<title><![CDATA[a
+  b]]></title>
+<itunes:duration>12:34:56.789</itunes:duration>
+<enclosure url="https://example.com/a.b/a/b/c227.aspx" length='1,000,000' type="video/webm"/>
+<link> https://e.com/x </link>
+<guid isPermaLink="false"></guid>
+<description></description>
+<itunes:image href=""/></item>
+<itunes:image href="https://example.com/it.jpg"/>
+<link xmlns="http://www.w3.org/2005/Atom" href="https://example.com/feed?page=2" length="12" title="" rel="self"/>
+<atom:link href=" //example.com/a/b/c131.mp3.zip " rel="last" length="20000" title="Alternate" type=""></atom:link>
+<image><url>https://example.com/img.png</url><title>Image title</title></image>
+<description>&#60;p&gt;x&#60;y&#x3C;/p>&lt;hr/&gt;aaaa</description></channel>
+  </rss>

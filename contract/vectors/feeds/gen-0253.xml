@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="0.92" xmlns="http://backend.userland.com/rss2" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
+<channel><description>&#13;
+&amp;euro;</description>
+<link></link>
+<link xmlns="http://www.w3.org/2005/Atom" rel="next" type="application/xhtml+xml" title="Alternate" href="https://example.com/" length="9223372036854775808"/>
+<title>&amp;unkn<![CDATA[own; a=b&c=d]]></title>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/pay" type='application/rss+xml' title="Café" rel="self"/>
+<lastBuildDate> Mon, 20 Apr 0099 03:14:51 +0000 	 </lastBuildDate>
+<language>TR</language>
+<dc:creator>DC Creator</dc:creator>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="related" type="application/atom+xml" title="MP3 feed" length='12'></atom:link>
+<item><title>&#13;
+Folge 520: Über alles
+Folge 109: Über alles
+</title><guid isPermaLink="false">a&amp;b</guid><pubDate>Mon., 16 Apr 2007 20:52:34 -1200</pubDate><description>
+&#x26;lt&#x3C;img&gt;
+
+&amp;euro;&#x26;#xD800;&#x3C;br&gt;
+&#38;nbsp;</description><content:encoded> cr&#13;lf&lt;p&gt;{json: 1}&lt;/p&gt;&#x3C;li&gt;  padded  &lt;/li&gt;aa	AT&amp;T</content:encoded><itunes:subtitle>Episode 121    padded  </itunes:subtitle><itunes:image href=" "/><itunes:duration>1E3:00</itunes:duration><enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep66.aif" length="16384" type="audio/mpeg"/><enclosure url="http://example.org/79.m3u8" length="4294967296" type="image/jpeg"/><enclosure url="" length="00020000" type="video/quicktime"></enclosure><media:group><media:content isDefault="1" medium="document" type="x-audio/mpeg" fileSize="2e5" duration=" 60"/></media:group></item></channel> </rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us"> <id>https://example.com/feed</id> <link rel="archives" href="" type="application/xml+xhtml" title="Café"/> <subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;hr&gt;</div></subtitle> <title type='html'>Folge 154: Über alles&#60;section&gt;&#60;3 &#x3C;3&#60;/section&gt;</title> <icon>https://example.com/icon.png</icon> <author><name></name></author> <entry><updated>  2528-11-27T23:17:58-1200x&#13;
+</updated> <dc:date>Thursday, 09 Oct 1969 02:20</dc:date> <id>tag:x,2020:1</id> <media:content isDefault="false" fileSize="00020000" type="audio/mpeg" duration="3600" medium="audio"/> <link rel="self" type="application/atom+xml" title="Alternate" href=""></link> <published>2002-02-08+1</published> <title type="plain">&amp;amp;amp; tab	here</title> <link type="application/xhtml+xml" rel="alternate" length='20000'/></entry> <entry><link href="https://example.com/pay" title="Alternate" rel="related" length="20000"></link>
+  <summary>&lt;li&gt;Folge 7: Über alles&#60;/li>aaa&#128512;&#128512;&#128512;&lt;BR>&lt;img src=&quot;x" alt="y"/&gt;[x]&#x3C;img&gt;http://example.com/?a=1&#38;b=2</summary>
+  <id> raw </id>
+  <published>17 Mar 2506 23:40:17 -1200</published>
+  <updated> Monday, 04 Nov 1985 07:37:41 Japan Standard Time	</updated>
+  <title>&#13;
+Tom &#x26; Jerry &#60;3&#13;
+</title>
+  <link type="application/xml+xhtml" href="https://example.com/pay" title="Alternate" rel="enclosure"/>
+  <content type="html">&#60;p&gt;&amp;;&lt;/p&gt;&lt;div>&#x26;#x1F600;&lt;/div&gt;&#60;3 &lt;3&lt;br&gt;&#x26;apos;a&#38;apos;&#60;br&gt;
+
+&#x26;;Tom &#x26;amp; Jerry &#x26;lt;3&lt;hr&gt;&#x3C;b<![CDATA[r />]]></content></entry> <entry><id> raw </id>
+<title type="plain">&#x3C;i> &lt;/i&gt;</title>
+<published>Sun, 20 Jan 1985 19:44:56 +1400</published>
+<updated>Sun, 24 December 2350 18:37:42 +0200</updated>
+<summary type="HTML">&lt;hr/&gt;
+
+'single&apos;ééé&#60;li>&amp;#xFFFF;&lt;/li&gt;&lt;li>&#38;quot;q&amp;quot;&#60;/li&gt;	&amp;apos;a&amp;apos;&#128512;&#38;apos;a&#38;apos;&lt;br&gt;</summary>
+<content type="text"><![CDATA[&hellip;<br>]]></content></entry> <entry><published>Wed, 08 Jan 2549 13:00:56 +0200</published>
+  <title type="html">#143 &#8211; Interview&amp;amp;&amp;lt</title>
+  <id>tag:x,2020:1</id>
+  <author><name>Entry author</name></author></entry> <entry><updated>1752-06-33T01:39:54-0800</updated>
+  <summary type="HTML"><![CDATA[aa]]></summary>
+  <link rel="" type="application/rss+xml" title="Alternate"/>
+  <author><name>Entry author</name></author>
+  <id>urn:uuid:1</id>
+  <title type="plain">	&#38;lt;b&#x26;gt;    cr&#13;lf
+</title>
+  <link length="20000" type="application/atom+xml" rel="last" title="Alternate" href="https://example.com/pay"></link>
+  <media:content type='audio/x-wav' duration=" 60" fileSize="2147483647" medium="document"/></entry>
+  </feed>

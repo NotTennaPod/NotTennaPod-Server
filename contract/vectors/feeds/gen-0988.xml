@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+<link href="https://example.com/alt.xml" title='' rel='alternate' type="application/atom+xml" length='9223372036854775808'/>
+<link title="" rel='first' type="application/atom+xml" length="12" href='https://example.com/feed?page=2'/>
+<link title="" href="https://example.com/pay" type="application/rss+xml" rel="payment"/>
+<id>https://example.com/feed</id>
+<link rel="archives" type="application/xml+xhtml" title='MP3 feed' href=""/>
+<updated>Tue, 13 Jun 2006 01:24:45 -1200</updated>
+<p:funding url="https://example.com/give">Give</p:funding>
+<entry><link length="9223372036854775808" href="https://example.com:8443/24.webm" rel="enclosure" type="application/xml+xhtml" title="MP3 feed"/>
+<summary type="xhtml"><![CDATA[&AMP;<br>]]></summary>
+<link href="//example.com/café/305.mp3" title="" type="application/atom+xml"/>
+<media:content fileSize='-0' type='x-audio/mpeg' medium="video" duration=" 60" isDefault="1"/>
+<content type='text'> &apos;single&apos;</content>
+<title type="text"><![CDATA[שלום
+AT&T]]></title>
+<itunes:duration>Infinity</itunes:duration>
+<id> raw </id>
+<x xmlns="urn:other"><title>Default namespace title</title></x></entry>
+<entry><updated>&#13;
+Monday, 09 Jul 55 23:56 +0945  </updated> <id>
+id
+</id> <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x3C;p&gt;&#x3C;/p&gt;&#x3C;p>&#x3C;/p&gt;</div></summary> <link rel="Next" title="Café" href="" type="application/rss+xml" length="20000"></link> <title>&#38;mdash;</title> <dc:date>Thu, 24 Jan</dc:date></entry>
+<entry><content type="xhtml">&lt;div&gt;&#x26;lt&lt;/div>&lt;p&gt;&lt;/p&gt;&lt;p> leading&#x3C;/p&gt;&#x3C;p&gt;100%&lt;/p&gt;&lt;br /&gt;</content>
+<id>
+id
+</id>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Tom &amp;amp; Jerry &#x26;lt;3  </div></title>
+<summary type="html">&lt;hr>&#60;p/&gt;&amp;lt;b&#38;gt;escaped&amp;lt;/b&#x26;gt;cr
+lf&lt;br&gt;&lt;br&gt;&#60;/br&gt;&#128512;😀&#128512;
+
+&amp;copy;  cr
+lf</summary>
+<published>2002-10-16T20:28:14.287</published></entry>
+<entry><summary>&#60;img> &#38;#x;&#x3C;div&gt;[x]&lt;/div>
+
+sep
+
+&lt;p>&#38;mdash;&lt;/p&gt;&#60;br&gt;&#60;im<![CDATA[g src="x" alt="y"/>]]></summary> <link href='https://example.com/feed?page=2' rel="archives" length="9223372036854775808"></link> <content type="plain">
+&amp;euro;&#60;br&gt;&lt;/br>&lt;br /&gt;&#60;img src=&quot;x" alt="y"/&gt;&lt;div>&amp;#xFFFF;&#60;/div></content> <title type="xhtml">&#x26;#x; &#60;dl>&#60;dt&gt;plain wo<![CDATA[rds</dt><dd>b</dd></dl> <b><i>Tom & Jerry <3</b></i>]]></title> <published>Thursday,  1995-01-16T15:08:50Z</published> <id> raw </id></entry></feed>

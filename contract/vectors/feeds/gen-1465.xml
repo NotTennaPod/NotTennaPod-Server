@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel><a10:link rel="first" href="https://example.com/pay" title="Alternate" type="audio/mpeg" length="abc"/><item><guid>dup</guid>
+<description>&#x26;unknown;&#60;br>&lt;li>&#38;amp;amp;&#60;/li>&lt;p&gt;&lt;/p&gt; plain words&#60;img src=&quot;x" alt="y"/>&#60;img src="x.png"&gt;&#x3C;br&gt;&lt;li>&#38;hellip;&lt;/li></description>
+<title>Folge 165: &#220;ber alles   padded  </title>
+<itunes:duration>109:00</itunes:duration>
+<mrss:description type="plain">&lt;div>&#38;Lt;&lt;/div&gt;😀  😀</mrss:description>
+<pubDate>1066-02-04T13:56:59Z</pubDate>
+<enclosure url="ftp://files.example.com/dir.with.dots/ep391.mp3" length="1,000,000" type='x-audio/mpeg'/></item><item><itunes:duration>4:17:51</itunes:duration>
+<title>&#13;
+&#38;amp;amp;&#13;
+</title>
+<pubDate> 20 Mar 72 10:42:07 -0000  </pubDate>
+<guid isPermaLink="true"> </guid>
+<enclosure length='-9223372036854775808' type="audio/x-wav"/>
+<link> https://e.com/x </link></item><item><title>
+&lt;ul&gt;&lt;li&gt;caf&#233;&#x3C;/li&gt;&lt;li&gt;two&#60;/li&gt;&#x3C;/ul&gt; &#38;amp;amp;	</title>
+  <guid isPermaLink="true">a&#x26;b</guid>
+  <pubDate>Tue, 23 Jul 1996 08:28:09 +0945 (CET)</pubDate>
+  <content:encoded><![CDATA[<br> &lt<BR>e]]>́a &gt; b&lt;br&gt;&#x26;lt&#60;br>aa&#x26;quot;q&amp;quot;&lt;br&gt;</content:encoded>
+  <itunesu:duration>3723</itunesu:duration>
+  <enclosure url='' length="２０００００" type="Audio/MPEG"/>
+  <podcastindex:chapters url="" type="application/json+chapters"/></item><item><enclosure url="https://xn--caf-dma.example/371.m4v" length="-0" type="unknown"/>
+<link>https://example.com/ep</link>
+<mrss:content fileSize="+20000" duration="-5" type="audio/opus" medium="Audio" isDefault="1"></mrss:content>
+<mrss:content duration="1" url="http://example.org/café/243.wma"/>
+<pubDate>13 Aug 61 04:46 -0800</pubDate>
+<itunesu:duration>9963.322</itunesu:duration>
+<title><![CDATA[שלום]]></title>
+<guid isPermaLink="true">dup</guid>
+<itunesu:image/>
+<itunesu:author>Item author</itunesu:author></item><item><title>&#38;;</title><podcastindex:socialInteract uri='' protocol="activitypub"></podcastindex:socialInteract><a10:link href="HTTPS://EXAMPLE.COM/e p362.m4a?file=x.mp3" length="12" rel="next"/><description>&#x3C;hr&gt;&#13;
+{json: 1}</description><mrss:thumbnail url="https://example.com/th.jpg"/><mrss:description type="plain">éé&#233;&#13;
+Tom &#x26; Jerry &#x3C;3ééé&lt;div&gt;{json: 1}&#x3C;/div>&lt;BR&gt;&lt;img src="x.png">&#60;p>&amp;hellip;&#60;/p&gt;&#13;
+</mrss:description><pubDate>1987-01-22T20:03:52x</pubDate><link> https://e.com/x </link><itunes:subtitle>&#x26;#xA9;  é  &#38;#;</itunes:subtitle><itunes:duration>7885.334</itunes:duration></item><itunesu:author>  Spaced  </itunesu:author><title>&#38;#65;&#x26;#66;
+  spaced  
+cr&#13;lf</title><link>https://example.com</link><description><![CDATA[
+
+&#xFFFF;&copy;'sing]]>le&apos;</description><podcastindex:funding/><mrss:thumbnail/><itunesu:image/><image><link>https://example.com/img-link</link><url></url><title>Image title</title></image><source url="https://example.com/s"><title>Source title</title></source></channel>
+</rss>

@@ -1,0 +1,17 @@
+﻿<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en"><atom:link title="" type="application/atom+xml" rel='alternate'/> <atom:link length='12' title="MP3 feed"></atom:link> <atom:link href='https://example.com/a.b/e p95.mkv?a=1&amp;b=2' rel="hub"/> <atom:updated>_, 03 Jan 1983 09:54:16 +0100</atom:updated> <atom:link type="text/html" rel="" href="https://example.com/pay"></atom:link> <atom:author><atom:name>C&amp;D</atom:name></atom:author> <atom:id> raw </atom:id> <atom:icon>https://example.com/icon.png</atom:icon> <atom:entry><atom:summary type="html">&#x3C;img src="x.png&quot;>&lt;br /&gt;&lt;div&gt;&#38;amp;&#60;/div&gt;</atom:summary>
+  <atom:id> raw </atom:id>
+  <atom:title type="html">&lt;del>Folge 261: Über alles&lt;/del&gt;  &#x3C;h6&gt;Folge 724: Über alles&#x3C;/h6&gt;  &amp;;</atom:title></atom:entry> <atom:entry><atom:title type="text">a &gt; b</atom:title>
+  <itunes:duration>0:47:28</itunes:duration>
+  <atom:link type="audio/mpeg" length="12" rel="alternate"/>
+  <atom:link type='application/xhtml+xml' rel="" title="MP3 feed" href="https://example.com/pay"/>
+  <media:content type='image/jpeg' fileSize=" 20000" medium="Audio" isDefault="false" duration="2147484"/>
+  <atom:published>  Saturday Sep 22 06:52:29 1999	</atom:published>
+  <atom:summary>&#60;li&gt;multi
+line&#x3C;/li>&lt;p&gt;&amp;#169;&lt;/p&gt;&lt;li&gt;&amp;amp;&lt;/li&gt;  &amp;;aa</atom:summary>
+  <atom:updated> Mon,  09  Jul 1973 21:45:41 +0000
+</atom:updated>
+  <atom:id>
+id
+</atom:id>
+  <podcastindex:transcript url="https://example.com/t.json" type="Application/JSON"></podcastindex:transcript><podcastindex:transcript url="" type="application/x-subrip" language="en"></podcastindex:transcript><podcastindex:transcript url="https://example.com/t.json" type="" language="en"/></atom:entry>
+</atom:feed>

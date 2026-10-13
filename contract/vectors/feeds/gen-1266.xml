@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters">
+  <channel><link>https://example.com</link>
+<description>back\slash&lt;im<![CDATA[g>a
+  b<br>]]></description>
+<lastBuildDate>Thu 11 Jun 1998 07:</lastBuildDate>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<item><media:thumbnail url=""/> <media:content url="https://example.com/a.b/café/208.ts" medium="document" fileSize="4294967296" isDefault="1" duration="59" type='audio/wav'/> <title>a=b&#38;c=d  &amp;quot;q&#38;quot;  multi
+line</title> <pubDate>0999-00-24T19:43:34</pubDate> <guid isPermaLink="false">dup</guid> <it:image href=" "/> <enclosure url="https://example.com:8443/110.aspx" length="2e5" type="audio/mpeg; charset=binary"/></item>
+<it:image href=""/>
+<title><![CDATA[&amp;]]></title>
+<it:author><![CDATA[<b>Studio</b>]]></it:author>
+<image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image></channel></rss>

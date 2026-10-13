@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en"><atom:author><atom:name>Émile</atom:name></atom:author>
+  <atom:updated>1950-11-30Japan Standard Time</atom:updated>
+  <atom:title type="HTML"><![CDATA[&amp &#128512;]]></atom:title>
+  <atom:subtitle type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+sep&lt;div&gt;http://example.com/?a=1&#38;b=2&lt;/div&gt;back\slash&lt;br></div></atom:subtitle>
+  <atom:logo> https://e.com/l.png
+</atom:logo>
+  <atom:link type="application/rss+xml" rel="self" length="9223372036854775808"/>
+  <atom:id>urn:x</atom:id>
+  <itunes:image href='https://example.com/ai.jpg'/>
+  <atom:author><atom:name>Émile</atom:name></atom:author>
+  <itunes:author>Tom &amp; Jerry &#x3C;3</itunes:author>
+  </atom:feed>

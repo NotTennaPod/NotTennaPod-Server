@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><it:new-feed-url></it:new-feed-url>
+  <a10:link href="" type="application/atom+xml" rel=''/>
+  <a10:link href="https://example.com/pay" rel="payment" type="application/xml+xhtml" title="Café"/>
+  <a10:link rel="next" title="" length="9223372036854775808" href='https://example.com/pay' type="text/html"/>
+  <dc:creator>DC Creator</dc:creator>
+  <link>https://example.com</link>
+  <description>&#x3C;hr/&gt;  x&lt;y
+&amp;hellip;&lt;BR&gt;&lt;li&gt;&lt;p>Para&lt;/p&gt;&lt;/li&gt;&lt;p&gt;&lt;/p>é&#233;é&#60;img&gt;</description>
+  <it:summary><![CDATA[ &#x; "quoted"&#128512;&#128512;&#128512;&#128512;]]></it:summary>
+  <it:owner><it:name>Owner</it:name><itunes:email>o@example.com</itunes:email></it:owner>
+  <link xmlns="http://www.w3.org/2005/Atom" type="audio/mpeg" href="" rel="related" length="9223372036854775808" title="Café"/>
+  <image><url></url><title>Image title</title><link>https://example.com/img-link</link></image>
+  <it:author>&#128512; Pod</it:author>
+  <item><link></link> <content:encoded><![CDATA[aaaa]]></content:encoded> <enclosure url="HTTPS://EXAMPLE.COM/café/274.mp3.zip" length="2e5" type="application/octet-stream"/> <media:content url="http://example.org/e p36.pdf" fileSize="-1" medium="image" type="audio" isDefault="TRUE" duration='2147483648'/> <pubDate>Thursday, 01 Aug 0999 16:09</pubDate> <media:content type="image/*" medium="video" isDefault="false" url="https://user:pass@media.example.net/271.mp3" duration="0060" fileSize="-9223372036854775808"/> <title>&#1513;&#1500;&#x5D5;&#1501;&#60;pre&gt;100%
+  pre&lt;/pre&gt;&amp;lt;b&amp;gt;escaped&#38;lt;/b&#38;gt;</title> <itunes:subtitle>&#31532;745&#38598;</itunes:subtitle> <it:image href=" https://e.com/i.png "/> <guid isPermaLink="true">https://example.com/item/54922</guid></item>
+  <item><title><![CDATA[&#8203;]]></title>
+  <guid isPermaLink="true">https://example.com/item/93533</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>Wed Jun 14 01:11:14 2023</pubDate>
+  <description></description>
+  <content:encoded></content:encoded>
+  <itunes:summary><![CDATA[<img src="x.png"> coveraaaaa]]></itunes:summary>
+  <it:subtitle><![CDATA[<a href="https://example.com/x?a=1&amp;b=2">a > b</a>
+&nbsp;
+<span style="color:red">&amp;amp;</span>]]></it:subtitle>
+  <it:duration>1:30</it:duration>
+  <enclosure url="https://example.com:8443/a/b/c105.aif" length="-9223372036854775808"/>
+  <media:description type="plain"></media:description></item></channel>
+  </rss>

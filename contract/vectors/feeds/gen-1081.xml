@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><atom:link length="12" type="text/html" title="Café" href="https://example.com/feed?page=2" rel="related"/>
+  <source url="https://example.com/s"><title>Source title</title></source>
+  <link> https://example.com/ </link>
+  <item><enclosure length="16385" type="Audio/MPEG"/>
+<itunes:summary><![CDATA[<hr/>  &AMP;&<br>  &nbsp;  multi
+line]]></itunes:summary>
+<title>&amp;Lt;</title>
+<pubDate>Mon, 08 Dez 1997 20:38:25 +0945</pubDate>
+<itunes:duration>7500.539</itunes:duration>
+<itunes:image href=" "/>
+<link></link></item>
+  <itunes:summary>S01E7&lt;p>&amp;#x1F600;&#x3C;/p>&#60;li&gt;&#x645;&#x631;ح&#1576;ا&lt;/li&gt;
+&amp;;😀😀😀</itunes:summary>
+  <title>&lt;pre&gt;a
+  b
+  pre&#x3C;/pre&gt;
+x&#60;y
+100%</title>
+  <language>TR</language>
+  <description></description>
+  <image><link>https://example.com/img-link</link><url></url></image></channel>
+</rss>

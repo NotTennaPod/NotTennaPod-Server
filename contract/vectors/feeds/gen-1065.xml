@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel><itunes:image href=" "></itunes:image> <image><url>  https://example.com/ws.png
+</url></image> <link></link> <podcast:funding>  spaced  </podcast:funding> <description><![CDATA[<p>1 <2</p>]]></description> <language> EN-US </language> <itunes:subtitle>a &lt; b&#33590;&lt;p>&#60;3 &#60;3&#60;/p&gt;</itunes:subtitle> <title><![CDATA[&
+<b><p>Para</p>
+ leading]]></title> <item><pubDate>1978-09-03T03:55:39Eastern Standard Time</pubDate> <guid>a&amp;b</guid> <enclosure url='https://user:pass@media.example.net/a/b/c398.caf?a=1&amp;b=2' length="9223372036854775808" type="text/plain"/> <itunes:summary>&lt;div&gt;&amp;amp;&#60;/div&gt;ééé&lt;p&gt;&lt;/p&gt;&#x3C;div>sep&#60;/div&gt;​&#x3C;br&gt;&#60;div&gt;&#38;euro;&lt;/div&gt;&lt;div> leading&#60;/div&gt;ééé</itunes:summary> <enclosure url='' type="text/html"/> <description><![CDATA[
+
+http://example.com/?a=1&b=2😀😀1 <2
+
+שלוםa < b<br>]]></description> <title>multi
+line</title> <podcast:transcript url='https://example.com/t.json' language="en"/></item></channel>
+</rss>

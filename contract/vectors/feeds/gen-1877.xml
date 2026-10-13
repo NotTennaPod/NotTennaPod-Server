@@ -1,0 +1,29 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang=""> <icon>https://example.com/icon.png</icon><itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url><link type="application/xml+xhtml" length="12" rel="next" title="" href="https://example.com/pay"/><title><![CDATA[AT&T]]></title><subtitle type="HTML"><![CDATA[ééé]]></subtitle><entry><id>tag:x,2020:1</id>
+<published>2019-05-18T17:01:30.840-0800</published>
+<link title="MP3 feed" type="audio/mpeg" rel='Next' href="https://example.com/alt.xml"/>
+<content type="text">&lt;li&gt;&#38;#0;&lt;/li&gt;&#13;
+&#60;3 &#60;3 &amp;#65;&#x26;#66;&lt;li>&amp;apos;a&#x26;apos;&lt;/li&gt;&#60;li&gt;  padded  &#x3C;/li> &#38;#128512;&#x3C;img src="x.png"&gt;&lt;hr></content>
+<updated>Day1,  0999-03-22</updated>
+<itunes:duration>75:08</itunes:duration>
+<updated>&#13;
+Sat, 22 Jul 1950 11:61:42 +0945&#13;
+</updated>
+<title><![CDATA[x<y]]></title>
+<link href="https://example.com/" type="application/atom+xml" title="MP3 feed" length='9223372036854775808'/>
+<link href="https://example.com/alt.xml" type="text/html" rel="last" title="" length="20000"/></entry><entry><updated>	Thu 23 Aug 1990 22:54:17 GMT+0100 (+12345)
+</updated>
+  <title type='text'><![CDATA[&nbsp;&#169;]]></title>
+  <published>2472-09-14T15:55:29-0800</published></entry><entry><summary type='text'><![CDATA[<div>&#]]>xA9;&lt;/div&gt;​ 100%</summary>
+<id>
+id
+</id>
+<author><name>Entry author</name></author>
+<title type="HTML">a &#x3C; b  http://example.com/?a=1&amp;<![CDATA[b=2  x<y]]></title>
+<content type="xhtml">&#x3C;img src="x.png&quot;></content>
+<updated>Sat, 13 Apr 1991 00:24:41 +0200</updated></entry><entry><summary type="html"><![CDATA[😀😀😀]]></summary>
+  <updated>1970-09-19T14:18:46+0945 +0000</updated>
+  <link type="application/atom+xml" href='https://example.com/pay' rel='self'/>
+  <published>Sat 10 Dec 2016 08:40:57 GMT+1400 (gmt)</published>
+  <dc:date>1996/09/25T00:09:25+0100</dc:date>
+  <title type="HTML"><![CDATA[&; #753 – Interview]]></title></entry><entry><link type="application/xml+xhtml" title="Alternate" href="https://example.com/feed?page=2" rel="enclosure" length="12"/> <title type="plain">a <![CDATA[< b]]></title> <link title="Alternate" href="" type="application/rss+xml" length="20000" rel="Next"/> <link href="https://example.com/feed?page=2" rel='hub'/> <id>urn:uuid:1</id> <foo><description>Nested description</description></foo></entry>
+</feed>

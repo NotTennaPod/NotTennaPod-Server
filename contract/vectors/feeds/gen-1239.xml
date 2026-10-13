@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="Cp1252"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel xmlns:atom="http://www.w3.org/2005/Atom"><itunes:summary>&#x3C;div&gt;e&#769;&lt;/div>&#233;éé&amp;amp;&#60;hr>&lt;div>Episode 12&lt;/div&gt;
+
+&#38;amp;amp;&lt;li&gt;#hash&#60;/li&gt; &amp;quot;q&amp;quot;</itunes:summary>
+  <atom:link rel="next" length="20000" href="https://example.com/alt.xml" type="application/atom+xml" title="MP3 feed"/>
+  <media:thumbnail/>
+  <itunes:author>&#60;b&gt;Studio&#60;/b&gt;</itunes:author>
+  <title>&#x26;apos;a&amp;apos;  leading trailing </title>
+  <link>https://example.com</link>
+  <image><link>https://example.com/img-link</link><url>https://example.com/img.png</url></image>
+  <atom:link href="" length="9223372036854775808" type="application/rss+xml" rel="enclosure"/>
+  <itunes:image href=" https://example.com/sp.jpg "/>
+  <description>&lt;hr&gt;&lt;hr/>&#x3C;img>&lt;hr>é&#xE9;é</description></channel></rss>

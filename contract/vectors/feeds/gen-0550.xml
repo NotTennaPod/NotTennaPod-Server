@@ -1,0 +1,53 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunesu="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <subtitle type="text">
+Episode 12&#xE9;éé	&#38;#;	&#x26;#xD800;	Tom &#38; Jer<![CDATA[ry <3]]></subtitle>
+<link length="12" href="https://example.com/pay" rel="" type="text/html"/>
+<id></id>
+<link rel="self" length='12'/>
+<author><name>Ann</name></author>
+<itunesu:image href=''/>
+<author><name>Ann</name></author>
+<itunesu:author>&lt;b&gt;Studio&#x3C;/b&gt;</itunesu:author>
+<title>&#13;
+cr&#13;lf	</title>
+<entry><link title="Café" length="20000" rel="last"/><title type="html">Episode 674
+cr&#13;lf
+&#60;p&gt;AT&#x26;T</title><link title="MP3 feed" length="20000" href="https://example.com/alt.xml" rel="payment"/><summary type="html"><![CDATA[<br>]]></summary><published>Tue, 02 September 1980 09:19:54</published><id> raw </id><link length='9223372036854775808' rel="archives" href='https://example.com/pay' type="application/xml+xhtml"/></entry>
+<entry><title type="html">&amp;#128512; x&#x3C;y </title><summary type="HTML"><![CDATA[<br/>aa]]>aaaa</summary><itunesu:duration>596:31:23.647</itunesu:duration><updated>Sun, 06 Jul 85 17:06:58 -0000</updated><id>urn:uuid:1</id><content><![CDATA[&nbsp;<br>]]></content></entry>
+<entry><id>tag:x,2020:1</id>
+<published>1999-10-04T00:40:45-0800</published>
+<link title="MP3 feed" href='https://example.com/alt.xml' type="application/atom+xml" rel="next"/>
+<link type="application/rss+xml" length="20000" href="" rel='related' title=""/>
+<itunesu:image href="https://example.com/e.jpg"/>
+<link title="Alternate" rel="hub" length="abc" type="application/rss+xml" href="https://example.com/pay"></link>
+<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&#x26;unknown;</div></title>
+<content type="text"><![CDATA[&<li>&</li>&lt;b&]]>gt;</content>
+<itunesu:duration>7462.694</itunesu:duration></entry>
+<entry><title>&amp;;
+Episode 12</title><content type="plain"><![CDATA[aaaaaaa😀😀aaaaaaa	100% &mdash;]]></content><podcast:transcript url='https://example.com/t.json' type="text/plain" language='en'/><id></id><link title="Café" href="" type="" rel="payment"/><link href="http://example.org/café/243.wma" rel='archives' type="application/xml+xhtml"/><link href="https://example.com/alt.xml" type="application/xhtml+xml" rel="self"/></entry>
+<entry><link title="MP3 feed" length="abc" type="application/xhtml+xml" rel='hub' href="https://example.com/feed?page=2"/>
+  <link type="text/html" title="" href="" rel="self" length="12"/>
+  <id> raw </id>
+  <link rel="next" title="Alternate" type=""/>
+  <title type="plain"><![CDATA[&AMP;]]></title>
+  <published>Wed 16 Dec 2009 17:00:45 +0100</published>
+  <updated>_, 	1984-10-17T04:09:13</updated>
+  <summary type="html">&#60;div&gt;שלום&lt;/div>&lt;br&gt;</summary></entry>
+<entry><link length="9223372036854775808" title='' type="audio/mpeg" href='' rel="alternate"/><title type="html"><![CDATA[{json: 1}  Line<br>break   leading]]></title><link type="application/xhtml+xml" title="" length="12" rel="last" href="https://example.com/feed?page=2"></link><updated>1997-03-03T03:29:07Z</updated><itunesu:image href="https://example.com/e.jpg"/><content type='html'><![CDATA[  &apos;a&apos;]]></content><summary>
+café&#x3C;div>sep&lt;/div&gt;&lt;li>back\slash&#60;/li&gt;</summary><link length="20000" rel="related" type="text/html" title="Café" href="https://example.com/alt.xml"/><id></id><media:content type='application/octet-stream' medium="audio" fileSize="２０００００" isDefault='1'/></entry>
+<entry><id>
+id
+</id>
+  <content>
+a &gt; b&#x3C;p/&gt;</content>
+  <title type="html"><![CDATA[Tom &amp; Jerry &lt;3]]></title>
+  <updated>Tue, 25 Apr 2276 22:15:34 -0000 PM</updated>
+  <itunesu:duration>187:58</itunesu:duration></entry>
+<entry><summary type="text">&#60;p>  padded  &#60;/p>&#x3C;img&gt; tab	here&lt;p>#7 – Interview&#60;/p&gt;&lt;BR&gt;
+&#38;apos;a&amp;apos;&#60;p&gt;&#x26;lt&#x3C;/p>&#xA0;a&#13;
+b</summary>
+  <id>tag:x,2020:1</id>
+  <author><name>Entry author</name></author>
+  <media:content type="audio/" medium="document" fileSize='2147483647' duration="2147483648" url="https://cdn.example.com/café/199.aac" isDefault='1'/>
+  <title type="HTML">&lt;small&gt;Episode 12&#60;/small&gt;</title>
+  <itunesu:duration>Infinity</itunesu:duration></entry> </feed>

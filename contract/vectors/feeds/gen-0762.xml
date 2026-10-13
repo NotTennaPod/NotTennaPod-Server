@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xml:lang="">
+<icon>https://example.com/icon.png</icon>
+<updated>Thu, 21 July 2129 00:21</updated>
+<title type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml">tab	here  &#38;#x;</div></title>
+<itunes:summary></itunes:summary>
+<link type="text/html" title="Alternate" href="https://xn--caf-dma.example/café/17.aac" rel="last" length='20000'/>
+<id></id>
+<subtitle type='text'></subtitle>
+<author><name>Émile</name></author>
+<entry><title type="html">a=b&#x26;c=d</title> <id></id> <content type="html">😀
+&amp;</content> <media:content fileSize="18446744073709551616" duration="+60" type="text/html" url="//example.com/a/b/c100.html"/> <summary type="html"></summary> <published>Friday, 26 Jan 2001 12:23:52</published></entry> </feed>

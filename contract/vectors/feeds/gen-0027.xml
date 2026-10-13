@@ -1,0 +1,29 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters">
+<subtitle>&lt;br&gt;</subtitle>
+  <itunes:image href="https://example.com/ai.jpg"/>
+  <author><name>  Bob  </name></author>
+  <title type="html">&#38;lt;b&#x26;gt;escaped&amp;lt;/b&#x26;gt; Tom &#38; Jerry &lt;3</title>
+  <id></id>
+  <logo>https://example.com/logo.png</logo>
+  <entry><content type='html'>&#x3C;br&gt;&lt;/br&gt;éééa
+  b&lt;br&gt;&lt;BR> &#x26;;aaa​&lt;br>"quoted&quot;&lt;br></content>
+<summary type='html'><![CDATA[&#;<div>&#x;</div><img src="x" alt="y"/> &unknown; 100%<p>&hellip;</p>
+&euro;[x]]]></summary>
+<id>
+id
+</id>
+<published>1990-07-31GMT-0800</published>
+<updated>
+Thu, 18 Jun 1987 17:09:50 +0000 ()  </updated>
+<mrss:content fileSize="9223372036854775808" type='audio/' medium="document"/>
+<title type="html"><![CDATA[R&D&quot;q&quot;]]></title>
+<link href="" type='text/html' title="MP3 feed" length="9223372036854775808" rel="Next"/>
+<itunes:image href=""/></entry>
+  <entry><content><![CDATA[
+#hash<p></p>&Lt;<br>]]></content> <updated>Saturday, 27 Feb 1971 05:13 -0500</updated> <published>2001-02-00T09:47:59</published> <link rel='first' href="https://example.com/pay" title="" length="9223372036854775808"/> <id>tag:x,2020:1</id></entry>
+  <entry><id></id>
+<content type="html">Episode 7&lt;br>&#60;/br&gt;</content>
+<itunes:duration>+7</itunes:duration>
+<title><![CDATA[Tom & Jerry <3 ]]>back\slash</title>
+<updated>1972-10-07T09:11:08 CET</updated>
+<author><name>Entry author</name></author></entry></feed>

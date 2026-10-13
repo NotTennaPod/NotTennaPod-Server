@@ -1,0 +1,24 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xml:lang="EN-us"><link length="9223372036854775808" rel="enclosure" href="//example.com/62.xyz" title='Café' type="application/xml+xhtml"/>
+<title type="html"><![CDATA[http://example.com/?a=1&b=2 &euro;]]></title>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href=""/>
+<link href="https://example.com/pay" type="application/xhtml+xml" title="" length="12" rel='next'/>
+<id>https://example.com/feed</id>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><![CDATA[A,]]> B</itunes:author>
+<author><name>&#201;mile</name></author>
+<entry><content type="html"><![CDATA[😀😀😀 &#xD800;<br/><div>&mdash;</div><li>&unknown;</li>]]></content><updated>  Sun, 26 May 2554 99:48:32 +0100
+</updated><summary type="html">&lt;div&gt;&#38;#x;&#x3C;/div&gt;a</summary><id></id><link href='https://example.com/pay' length="12" type="" rel="alternate" title=""/><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;amp;</div></title></entry>
+<entry><title>x&lt;y</title>
+<updated>Thu, 04 Oct 2007 04:13:47</updated>
+<summary type='html'>a&#13;
+b tab	here&#x3C;p&gt;&amp;#128512;&lt;/p></summary>
+<updated>1983-11-22T11:41:50+0200 </updated>
+<id></id></entry>
+<entry><title>&#xA0; café e&#769;</title>
+  <link type="" href="" rel="" title="MP3 feed" length="9223372036854775808"/>
+  <content type="html"> &#38;AMP;</content>
+  <link type="application/xhtml+xml" title="Café" rel="self" href=""/>
+  <author><name>Entry author</name></author>
+  <updated>2005-05-22T17:32:06 CET</updated>
+  <link rel="alternate" href="HTTPS://EXAMPLE.COM/e p286.png" type="application/xhtml+xml"/>
+  <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">.5</itunes:duration></entry>
+</feed>

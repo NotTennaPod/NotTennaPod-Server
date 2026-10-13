@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
+<icon></icon>
+<media:thumbnail url='https://example.com/amt.jpg'/>
+<subtitle type="html">&#x3C;img src="x" alt="y"/></subtitle>
+<title type="html">multi
+lineTom &#x26;amp; Jerry &#x26;lt;3</title>
+<link title="" length="12" type="audio/mpeg" rel="next"/>
+<entry><title>&#60;h1&gt;&#38;unknown;&#60;/h1&gt; <![CDATA[&lt;b&gt;]]></title><id></id><media:content isDefault="1" type="audio" fileSize="00020000" medium="Audio" url="https://cdn.example.com/café/338.opus" duration=''/><summary>&lt;li&gt;&#x26;#169;&#x3C;/<![CDATA[li><li><b>Bold</b> title</li>{json: 1}<br><br /><hr/> [x]ééé  ]]></summary><published>TUE May 25 12:00:00 2224</published><itunes:duration>-9223372036854775808</itunes:duration><updated>Thursday, 02 Jul 2015 06:10:24 India Standard Time</updated><category>Technology</category></entry>
+<entry><link rel="related" type='application/xml+xhtml' length="20000" title=""/>
+  <title type="text">&#38;unknown;  http://example.com/?a=1&#x26;b=2  trailing </title>
+  <author><name>Entry author</name></author>
+  <content type="plain">&#60;img src=&quot;x" alt="y"/&gt;</content>
+  <updated>11 Sep 1971 05:49:38 CEST</updated>
+  <published>1980-08-01T08:01:22.342 +0530</published>
+  <itunes:image href="https://example.com/e.jpg"/></entry>
+<entry><link href="https://example.com/alt.xml" length="12" title=""/>
+<link length="9223372036854775808" rel='last'/>
+<itunes:duration>1.5.5</itunes:duration>
+<published>Thursday, 17 Nov 91 20:07 +0200</published>
+<id>tag:x,2020:1</id>
+<title type="html"><![CDATA[&#1513;&#1500;&#1493;&#1501;<span> </span>Epi]]>sode 726</title>
+<link rel="alternate" type='text/html' title='MP3 feed' href="https://example.com/alt.xml"/></entry>
+<entry><summary> Episode 12&lt;hr/&gt;</summary> <link href="https://example.com/" type="text/html" length="12" title="MP3 feed" rel='Next'/> <title type='plain'>plain words&lt;table&gt;&#60;tr>&#x3C;td>&#128512;&lt;/td&gt;&lt;td&gt;b&#x3C;/td&gt;&#x3C;/tr&gt;&#x3C;/table&gt;multi
+line</title> <x:foo xmlns:x="urn:x"><title>Nested title</title></x:foo> <link type="text/html" rel="first" length="9223372036854775808" title="Café"/> <itunes:image href=""/> <link title="MP3 feed" rel="" type='audio/mpeg' length='12' href="https://user:pass@media.example.net/e p390.m4v"/> <published>Fri,  15  Oct  1976  05:08:22 +0200</published> <id></id></entry>
+<entry><content type="HTML">&#38;#0;&lt;br></content>
+<link type="application/atom+xml" href="" title="" rel="last"/>
+<itunes:duration>1.0e99</itunes:duration>
+<link title='Alternate' href='https://example.com/feed?page=2' rel="Next"/>
+<summary type="html">&lt;li&gt;&amp;amp;&lt;/li&gt;
+&amp;#;	R&amp;D</summary>
+<itunes:image href=""/>
+<title type="text"><![CDATA[<p>&#1513;&#1500;&#1493;&#1501;]]></title>
+<id>urn:uuid:1</id>
+<link title="Café" type='application/atom+xml' rel="" href="https://example.com/alt.xml"/></entry></feed>

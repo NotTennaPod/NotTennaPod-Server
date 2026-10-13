@@ -1,0 +1,18 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:chapters="http://podlove.org/simple-chapters"><author><name>Ann</name></author>
+<id>urn:x</id>
+<title type='HTML'>&#60;dfn&gt;Tom &amp;amp; Jerry &#x26;lt;3&#60;/dfn&gt;</title>
+<author><name>Ann</name></author>
+<link rel="last" href="https://example.com/alt.xml" title='Café' length="20000" type="text/html"/>
+<itunes:image href="https://example.com/ai.jpg"/>
+<logo>https://example.com/logo.png</logo>
+<author><name>  Bob  </name></author>
+<updated>02 Jun 2014 20:61:55 -0800</updated>
+<entry><updated>Tue Mar 28 04:36 1752</updated>
+<updated>Fri, 21 Dec 1990 00:49:06 -12:00</updated>
+<title>R&amp;D  leading</title>
+<published>Sunday, 23 Aug 80 22:32:52</published>
+<id>
+id
+</id>
+<itunes:image href="https://example.com/e.jpg"/></entry>
+</feed>

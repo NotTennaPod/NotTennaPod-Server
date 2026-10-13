@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><itunes:subtitle><![CDATA[<p> </p>]]></itunes:subtitle>
+  <description><![CDATA[<p>http://example.com/?a=1&b=2</p><li>a < b</li>😀😀😀aaaaaa &lt;b&gt;]]></description>
+  <link xmlns="http://www.w3.org/2005/Atom" type="text/html" title='' rel="" href='ftp://files.example.com/ep361.jpg'/>
+  <link> https://example.com/ </link>
+  <itunes:author><![CDATA[&copy; 2020 Org]]></itunes:author>
+  <language></language>
+  <title>&#38;#1285<![CDATA[12; &lt;b&gt;escaped&lt;/b&gt;]]></title>
+  <title>trailing  &#38;unknown;</title>
+  <item><title><![CDATA[  spaced  
+ leading
+&]]></title> <guid>https://example.com/item/71317</guid> <link></link> <pubDate>1977-05-14AKST</pubDate> <description>😀😀😀&lt;li&gt;Episode 12&#60;/li>&#x26;&lt;br>&#x3C;p/&gt;
+ &#60;p>&#38;mdash;&lt;/p>&#x3C;li&gt;&#x26;copy;&lt;/li&gt;&lt;div&gt;&#38;&lt;/div></description> <itunes:subtitle>&amp;amp;amp;  &#x26;amp;amp;</itunes:subtitle> <enclosure url="https://user:pass@media.example.net/ep211.mp3" length='1,000,000' type="x-audio/mpeg"></enclosure> <media:content xmlns:media="http://search.yahoo.com/mrss/" type="video/mp4" fileSize="" duration="0060" medium="document" url='https://example.com/a.b/ep396.aac'/> <media:content xmlns:media="http://search.yahoo.com/mrss/" isDefault='TRUE' type="audio/opus" duration="" fileSize="２０００００"/> <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url='https://example.com/th.jpg'/></item>
+  <item><title>&#60;p style="text-align:center"&gt;1 &#60;2&lt;/p&gt;&lt;strong&gt;Episode 167&lt;/strong&gt;&#60;del>&#x26;amp&lt;/del&gt;</title>
+<guid isPermaLink="false">dup</guid>
+<link> https://e.com/x </link>
+<pubDate>Sat, 22 Sep 2001 15:39:50 -0000</pubDate>
+<description><![CDATA[<li></li><li>​</li>	&Lt; &#x;<p/>éééEpisode 12<br/>]]></description>
+<content:encoded>&lt;br/&gt;&#x3C;br/&gt;aaaaa</content:encoded>
+<itunes:summary></itunes:summary>
+<itunes:duration>1027.109</itunes:duration>
+<enclosure url="https://cdn.example.com/dir.with.dots/ep116" type='image/*'/></item>
+  <item><itunes:summary><![CDATA[<div>tr]]>ailing &lt;/div&gt;</itunes:summary>
+  <pubDate>2449-05-17T18:53:53Z</pubDate>
+  <enclosure url="https://example.com/a.b/café/273.OGG" length="123456" type="unknown"/>
+  <guid isPermaLink="false">a&#38;b</guid>
+  <itunes:duration>-5</itunes:duration>
+  <description>
+&amp;#128512;  leadinghttp://example.com/?a=1&#x26;b=2&#60;li&gt;'single&apos;&lt;/l<![CDATA[i>ééé<div>"quoted"</div>R&D<br>&lt;b&gt;<br>]]></description>
+  <title>&#38;amp;amp;&#8203;&amp;hellip;</title></item></channel>
+  </rss>

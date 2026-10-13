@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <link type="" href="https://example.com/alt.xml" title='Alternate' length="20000"></link>
+<title>שלום</title>
+<icon></icon>
+<link length="abc" rel="next" title=""/>
+<logo>https://example.com/logo.png</logo>
+<media:thumbnail url="https://example.com/amt.jpg"/>
+<id>https://example.com/feed</id>
+<subtitle type="plain"><![CDATA[<div><img src="x.png"> cover</div>a=b&c=d<br>]]></subtitle>
+<itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href="https://example.com/ai.jpg"/>
+<entry><link type="application/atom+xml" length="20000" href="https://example.com/" rel='hub' title="Café"/> <title><![CDATA[tab	here back\slash &euro;]]></title> <id>tag:x,2020:1</id> <itunes:image xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" href='https://example.com/e.jpg'/> <link href="" rel="" title="" length="abc" type="application/atom+xml"/> <psc:chapters><psc:chapter start="5062" title="&lt;b>x&lt;/b>"/></psc:chapters> <link rel="last" href="https://example.com/alt.xml" type=""/> <content type="html"><![CDATA[<div><img src="x.png"> cover</div>]]></content> <summary>&amp;quot;q&#38;quot;&lt;br&gt;😀&lt;br>&#38;lt;b&amp;gt;</summary> <updated>Mon, 19 Mar 1066 10:27 +0100 UTC</updated> <itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">4:43:15</itunes:duration></entry>
+<entry><title type="xhtml">#hash
+😀</title><media:content fileSize="abc" type="audio" url="HTTPS://EXAMPLE.COM/e p348.aspx" duration='abc' medium="document"/><link rel='first' title='Alternate'/><link length="12" rel="payment" type="application/xml+xhtml" href=" https://user:pass@media.example.net/e p55.amr " title=''/><id>tag:x,2020:1</id><updated>Thu, 	1979-10-24T09:36:13Z</updated><published>1899-07-09T09:55:43.1234567Greenwich Mean Time</published><updated>Mon, 13 Mar 2000 21:38 +0100 </updated><summary type="html">😀&#60;br/>&lt;BR></summary></entry> </feed>

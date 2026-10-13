@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<!-- generated -->
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"><channel><itunes:author><![CDATA[Café Radio]]></itunes:author>
+  <media:thumbnail url="https://example.com/mt.jpg"/>
+  <podcast:funding/>
+  <description>&amp;<![CDATA[lt;b&gt;escaped&lt;/b&gt;<br><hr>]]></description>
+  <podcast:funding>  spaced  </podcast:funding>
+  <podcast:funding url="https://example.com/donate"/>
+  <image><title>Image title</title><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+  <atom:link href="https://xn--caf-dma.example/154.m3u8?auth=yes" length="20000" rel="related" type="text/html" title="Café"/>
+  <atom:link rel="" href="https://example.com/feed?page=2" title="" length="9223372036854775808"/>
+  <atom:link href="https://example.com/feed?page=2" title="" type='' length="20000" rel="payment"/>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <atom:link rel="hub" href="https://example.com/pay" length="12" type="application/xhtml+xml" title="Café"/>
+  <title><![CDATA[<sub>AT&T</sub>]]></title>
+  <link> https://example.com/ </link>
+  <itunes:image href=" https://example.com/sp.jpg "/>
+  <language>pt-BR</language>
+  <item><title><![CDATA[&#x;]]></title><link>https://example.com/ep</link><itunes:duration>NaN</itunes:duration><pubDate>Fri, 01 Feb 2002 01:15 MDT</pubDate><guid isPermaLink="false">a&#38;b</guid><description>&#x3C;div&gt;Episode 7&lt;/div></description><enclosure url="https://example.com/a.b/dir.with.dots/ep129.avi" length="&#1634;&#1632;&#1632;&#1632;&#1632;" type="audio/mp4"/></item></channel> </rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:it="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:a10="http://www.w3.org/2005/Atom"> <channel><podcast:funding url="https://example.com/donate">  spaced  </podcast:funding>
+<image><link>https://example.com/img-link</link><title>Image title</title><url>https://example.com/img.png</url></image>
+<it:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></it:owner>
+<atom:link href='https://example.com/' rel="archives" title='Alternate'/>
+<a10:link title="MP3 feed" rel='payment' href="https://example.com/feed?page=2" length="20000"/>
+<it:explicit>clean</it:explicit>
+<atom:link title="Alternate" type="" rel="Next" length="20000" href="https://example.com/pay"/>
+<a10:link type='application/atom+xml' title='' length="12" href='https://example.com/alt.xml' rel="last"/>
+<itunes:author><![CDATA[😀 Pod]]></itunes:author>
+<title>&amp;AMP;x&#60;y</title>
+<description>&#x3C;li>&#x26;#169;&lt;/li&gt;&#x3C;hr/&gt;
+x&lt;y</description>
+<podcast:funding>  spaced  </podcast:funding>
+<item><title>&amp;nbsp; &amp;#0;</title>
+<link> https://e.com/x </link>
+<description><![CDATA[😀<br />]]></description>
+<media:description type="html">&lt;p>&#x3C;/p>&#x3C;div>  padded  &lt;/div&gt;</media:description>
+<guid isPermaLink="false">a&#38;b</guid>
+<it:duration></it:duration>
+<pubDate> 30 Aug 98 02:13:40 -0800&#13;
+</pubDate>
+<enclosure url="https://cdn.example.com/ep292.webm#t=10" length="9007199254740993" type="application/x-bittorrent"/>
+<itunes:subtitle><![CDATA[é  &#xA9;  Tom ]]>&amp;amp; Jerry &#38;lt;3</itunes:subtitle></item>
+<item><title>1 &#60;2  #hash  مر&#1581;با</title>
+  <guid isPermaLink="true">urn:uuid:51d832cf</guid>
+  <link></link>
+  <pubDate>Sept 2024</pubDate>
+  <it:subtitle>Tom &#38;amp; Jerry &#38;lt;3a &#x3C; b</it:subtitle>
+  <itunes:duration>7908.789</itunes:duration>
+  <itunes:author>Item author</itunes:author>
+  <enclosure url="" length="abc" type="image/png"/>
+  <media:content fileSize="20000.0" url="//example.com/café/78.3gp" type="application/ogg" duration=" 60" isDefault="true"/>
+  <media:content type='application/octet-stream' medium="Audio" isDefault='1' url="https://xn--caf-dma.example/a/b/c96.aac#t=10" fileSize='20000.0'/>
+  <podcast:chapters type="application/json+chapters"/></item>
+<item><enclosure url="ftp://files.example.com/dir.with.dots/ep392.aif" length="52428800" type="audio/flac"/>
+<description>	back\slash
+back\slash
+
+a=b&amp;c=d</description>
+<pubDate>Sat, 99 Apr 2007 04:03 +1400</pubDate>
+<title><![CDATA[&mdash;  <h3>&#xA9;</h3>  שלום]]></title>
+<psc:chapters xmlns:psc="http://podlove.org/simple-chapters"/>
+<guid isPermaLink="true">dup</guid>
+<link> https://e.com/x </link>
+<itunes:summary><![CDATA[Line<br>breakEpisode 12<br/><br /><br>&#169;<img>  plain words]]></itunes:summary>
+<media:content type="video/webm" duration="01:00" isDefault="1" medium="image" fileSize="9007199254740992" url="https://example.com:8443/a/b/c360.3gp?dl=1.0"/></item></channel> </rss>

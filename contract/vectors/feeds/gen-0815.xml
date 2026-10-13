@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:c="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcastindex="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:pc="http://podlove.org/simple-chapters" xmlns:sc="http://podlove.org/simple-chapters"> <channel><atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="Café" length="12" type="application/xml+xhtml" href="https://example.com/alt.xml"></atom:link>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" type="application/rss+xml" title="Café" href="https://example.com/feed?page=2" rel="related"/>
+<link>https://example.com</link>
+<title><![CDATA[&#xD800;    spaced  ]]></title>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" length="12" type="application/xhtml+xml" title="" href="https://example.com/alt.xml" rel="archives"/>
+<itunes:summary><![CDATA[aaaaa<div>Episode 7</div><p></p> &#128512;a]]></itunes:summary>
+<itunes:author><![CDATA[Jane Doe]]></itunes:author>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="last" title="Alternate" length="abc" href="//example.com/378.mid"/>
+<podcastindex:funding>Support us</podcastindex:funding>
+<item><pubDate>Thu, 1 Jan 2024 10:00:00 +0000</pubDate><itunes:summary><![CDATA[  &#xD800;]]></itunes:summary><guid isPermaLink="true">
+</guid><media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" medium='image' duration="3600" url="HTTPS://EXAMPLE.COM/dir.with.dots/ep393.wma" isDefault="1" type="audio/aac" fileSize="2147483648"/></media:group><enclosure length='-16384' type="audio/mp3"/><content:encoded>&#x3C;br&gt;&#60;/br>&#60;b>Bold&#x3C;/b&gt; titlecr&#13;lf&#x3C;br&gt;</content:encoded><link> https://e.com/x </link><title><![CDATA[<b>[x]</b> http://example.com/?a=1&b=2]]></title><enclosure url='https://xn--caf-dma.example/ep230.wav?dl=1.0' length="1,000,000" type="application/json"></enclosure><description>&amp;lt;b&amp;gt;&lt;br>[x]&#13;
+a &#60; b&lt;p&gt;&lt;/p&gt;ééé&lt;li&gt;#7 &#8211; Interview&#60;/li&gt;Line&lt;br&gt;break&#13;
+{json: 1}</description><enclosure url="https://example.com/a.b/café/333.php" length="18446744073709551616" type="audio/ogg"/><itunes:duration>1:11:57</itunes:duration></item></channel> </rss>

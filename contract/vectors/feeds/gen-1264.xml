@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><podcast:locked>yes</podcast:locked> <podcast:funding url="https://example.com/donate">  spaced  </podcast:funding> <podcast:funding url=""/> <itunes:summary>&lt;p>trailing &lt;/p&gt;a&#60;hr&gt;&lt;li&gt;#7 – Interview&#60;/li>&lt;li&gt;&lt;b&gt;Bold&#60;/b> title&lt;/li&gt;</itunes:summary> <title>&amp;ampcr&#13;lf</title> <podcast:funding>  spaced  </podcast:funding> <description>
+&amp;copy;100%&#38;amp;&#x3C;br></description> <atom:link href="https://user:pass@media.example.net/45.aif?a=1&amp;b=2" type="application/xml+xhtml" rel="payment" title='MP3 feed'/> <image><url></url></image> <title><![CDATA[
+#hash
+#has]]>h</title> <atom:link rel="alternate" title="" href="https://example.com/" type="application/xhtml+xml"/> <language> EN-US </language> <item><title>#127 – Interview</title>
+<guid>Café-guid</guid>
+<pubDate> 1993-03-29T09:11:28.461  </pubDate>
+<itunes:summary></itunes:summary>
+<itunes:subtitle> leading  Tom &amp;amp; Jerry &amp;lt;3  &#38;nbsp;</itunes:subtitle>
+<itunes:image/>
+<enclosure url="" length="123456" type="text/html"/>
+<media:content duration='1.5' isDefault="TRUE" fileSize="20000 " url="HTTPS://EXAMPLE.COM/346.aac?a=1&amp;b=2" type='video/webm' medium="image"/>
+<media:thumbnail url="https://example.com/th.jpg"></media:thumbnail>
+<podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/></item></channel> </rss>

@@ -1,0 +1,13 @@
+﻿<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters">
+  <channel><media:thumbnail url="https://example.com/mt.jpg"/> <title>a &gt; b
+&amp;#x1F600;
+Episode 325</title> <i:subtitle><![CDATA[&apos;a&apos; "quoted"]]></i:subtitle> <link> https://example.com/ </link> <i:image href=""/> <item><title>第588&#x96C6;</title>
+<link>https://example.com/ep</link>
+<pubDate>08 Dec 97 20:25 -0000</pubDate>
+<description>&#x3C;br/>aaaaaaa</description>
+<i:image href=" https://e.com/i.png "/>
+<media:description type='html'>ééé&#x3C;div&gt;cr
+lf&lt;/div&gt;&lt;hr/&gt; http://example.com/?a=1&amp;b=2&lt;br/>&lt;b&gt;Bold&lt;/b&gt; title&#x3C;li&gt;multi
+line&lt;/li>&#x1F600;</media:description>
+<category>Technology</category></item> <item><media:content fileSize="1" url="https://user:pass@media.example.net/ep211.mp3" medium='video' duration="2147483" isDefault="true" type='video'/> <i:duration>8240.51</i:duration> <enclosure length='16385' type='image/jpeg'/> <link></link> <title><![CDATA[<p>Para</p> <p style="text-align:center">tab	here</p> "quoted]]>&quot;</title> <description>aaaaaa</description> <guid></guid></item></channel>
+</rss>

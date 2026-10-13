@@ -1,0 +1,11 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="EN-us">
+  <id>https://example.com/feed</id> <author><name>C&amp;D</name></author> <i:author>&amp;copy; 2020 Org</i:author> <title type="text">&amp;amp; AT&#38;T 茶</title> <author><name>Émile</name></author> <logo> https://e.com/l.png
+</logo> <link rel="next" type="" href="https://example.com/feed?page=2" title="Alternate" length="20000"/> <entry><published>Friday, 11 Nov 1988 09:44:19</published> <link rel="archives" href='https://example.com/a.b/ep37.aac'></link> <link length="20000" type="application/rss+xml" rel="related"/> <updated>Sat, 04 Oct 2014 17:26</updated> <content type="xhtml"><![CDATA[<p></p>café<br>aaaahttp://example.com/?a=1&b=2<br>Tom & Jerry <3😀😀ééé#hash]]></content></entry> <entry><link href='https://example.com/pay' title="" rel="alternate" type="text/html"/>
+  <psc:chapters><psc:chapter start="01:27:29.959" title='Café &amp;amp; more' href="https://example.com/ch"/><psc:chapter start="00:01:02.5" href="https://example.com/ch" title="😀"></psc:chapter><psc:chapter start='13:50' title="" href="https://example.com/ch"/><psc:chapter title="Café &amp;amp; more" start="9889" href=""></psc:chapter><psc:chapter image="https://example.com/ch.png" title="Café &amp;amp; more" start='14:56' href=''/></psc:chapters>
+  <published>Sun, 12 Jun 2011 02:49:37 +0530</published>
+  <itunes:duration>130:44</itunes:duration>
+  <title type='text'>	&#x26;apos;a&amp;apos; </title>
+  <id>tag:x,2020:1</id>
+  <summary type="html"><![CDATA[<p>&Lt;</p>]]></summary>
+  <updated>2376-05-22T03:03:51+02000</updated></entry>
+</feed>

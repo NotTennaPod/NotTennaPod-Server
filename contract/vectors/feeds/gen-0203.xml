@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en"> <author><name>Ann</name></author>
+<icon>https://example.com/icon.png</icon>
+<title type="html">	&#x3C;p style="text-align:center&quot;&gt;&#38;#128512;&lt;/p&gt;  a=b&#x26;c=d  &amp;amp
+</title>
+<subtitle type="html">é&#xE9;é</subtitle>
+<author><name>Ann</name></author>
+<author><name>C&#x26;D</name></author>
+<entry><link type='application/xml+xhtml' rel="payment" href='https://example.com/feed?page=2' length='20000'/><id> raw </id><itunes:image href="https://example.com/e.jpg"/><updated>Fri Sep 27 14:60:33 2537</updated><published>1969-09-26T07:56:59Z</published><summary type="html"><![CDATA[ééé]]></summary><title type="text">  Tom &amp;amp; Jerry &#38;lt;3	</title><psc:chapters><psc:chapter href="https://example.com/ch" start=' ' title="Intro"/></psc:chapters></entry>
+<entry><itunes:duration>1.2e2</itunes:duration>
+<title type="plain">茶</title>
+<link href="https://xn--caf-dma.example/ep56.mov" rel='Next'/>
+<published>08 Nov 1977 16:36:15 -0000</published>
+<updated>Wed 9 Mar 2011 19:14:40 GMT+0200 (GMT+0100)</updated>
+<summary type="HTML">	{json: 1}&#x3C;div&gt;&#x26;Lt;&#x3C;/div>&lt;li&gt;&#128512;&lt;/li&gt;</summary>
+<link title='' href="" type="application/xml+xhtml" rel="enclosure" length="abc"/>
+<id> raw </id>
+<link rel="hub" type='' href="" title=""/></entry>
+<entry><summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;div&gt;&#x26;#xA9;&#60;/div>&#x3C;li&gt;tab	here&lt;/li&gt;</div></summary>
+<published>Wed, 11 Jun 1969 13:44:19 +00:00</published>
+<id></id>
+<content><![CDATA[<p>{json: 1}</p>&#0;]]></content>
+<itunes:duration>70:55</itunes:duration>
+<link length="abc" href='https://example.com/feed?page=2' rel="next"></link>
+<title type="plain">&lt;h3&gt;&lt;img src="x.png&quot;> cover&#x3C;/h3> &amp;lt</title></entry>
+</feed>

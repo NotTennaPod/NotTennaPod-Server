@@ -1,0 +1,18 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"><author><name>C&#x26;D</name><email>a@example.com</email></author>
+  <link href="https://example.com/feed?page=2" rel="self" type="application/xml+xhtml" length="20000" title="Café"/>
+  <subtitle type="html"></subtitle>
+  <id> raw </id>
+  <title type="html"><![CDATA[Tom &amp; Jerry &lt;3&eur]]>o;&#x26;apos;a&amp;apos;</title>
+  <entry><title type="html"><![CDATA[Folge 445: Über alles]]></title>
+<link type="audio/mpeg" href="https://example.com/alt.xml" length="9223372036854775808" title="Alternate" rel=""/>
+<summary type="html"><![CDATA[<p>&lt;b&gt;es]]>caped&#38;lt;/b&amp;gt;&#x3C;/p></summary>
+<updated>1974-08-11T08:08:24+0530</updated></entry>
+  <entry><link type="application/atom+xml" title="Café" rel="enclosure" href="http://example.org/142.ts"/>
+<link href="https://example.com/pay" length="abc" rel="" type="application/atom+xml"/>
+<title>&#x3C;3 &#x3C;3</title>
+<updated>Fri, 15 Sep 2350 13:50:01 -05:30</updated>
+<link title='Alternate' href="https://example.com/pay" rel="self" type="" length="12"/>
+<summary type="html"><![CDATA[<hr/> &#x;&lt]]></summary>
+<content>aa&#x3C;br&gt;éé&#233;&lt;p&gt;Para&#x3C;/p> &amp;#xA9;</content>
+<updated>_, 2019-01-14T18:20:32</updated></entry>
+</feed>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters">
+<id> raw </id>
+<link length="9223372036854775808" rel="first" href="https://example.com/a.b/café/205.aspx" type="application/xhtml+xml"/>
+<link href=" https://user:pass@media.example.net/e p128.wma " type="text/html" rel="archives" length="9223372036854775808"/>
+<updated>Sun, 27 September 1970 05:21:16 -0800</updated>
+<x:foo xmlns:x="urn:x"><title>Nested title</title></x:foo>
+<title type="html"><![CDATA[&#xD800;]]></title>
+<link rel="self" title="Café" type="application/xml+xhtml" length="9223372036854775808" href="https://example.com/feed?page=2"/>
+<link href="https://example.com/feed?page=2" type="application/atom+xml" title="Alternate" rel=''/>
+<i:author>&#31532;&#19968;</i:author>
+<subtitle type="plain"><![CDATA[<p]]>&gt;&lt;/p&gt;trailing aaaaa&#128512;&#128512;&amp;#xFFFF;</subtitle>
+<author><name></name></author>
+<author><name></name></author>
+<i:image href=""/>
+<author><name>Ann</name></author>
+<entry><content>&lt;div>&#x26;lt&#60;/div&gt; &lt;p&gt;&#38;#xA9;&#60;/p&gt;
+ leadingééé&#233;éé&#60;p&gt;&#x26;quot;q&amp;quot;&#x3C;/p&gt;&#60;hr/&gt;</content><link rel="alternate" href="https://example.com/"/><published>2190-05-06T01:34:59CET</published><summary type="text"></summary><updated>Sun, 01 Nov 1970 09:35:14.83011 -0500</updated><title type='HTML'>a&#13;
+b</title></entry>
+<entry><updated>29 Feb 2008 22:24:59 -0500</updated> <id>tag:x,2020:1</id> <content>&#60;p&gt;&#60;/p></content> <updated>2009-12-17T11:52:06.2047590+00:00</updated> <author><name>Entry author</name></author> <link href="https://example.com/pay" rel="payment" title=""/> <title type="text">e&#x301; &#60;tt>multi
+line&lt;/tt> trailing </title> <published>Tuesday, 01 Jul 2014 05:00:21 +00:00</published></entry>
+<entry><link title="MP3 feed" length="abc" rel="next" type="audio/mpeg" href="https://example.com/alt.xml"/><updated>1601-12-05T14:04:38.264UT</updated><title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;amp; a
+  b &#x26;#xA9;</div></title><id></id><link rel="enclosure" title="Café" length="12" type="application/rss+xml" href="https://example.com/feed?page=2"/><link href="https://xn--caf-dma.example/ep212.oga?dl=1.0" title='' type="application/rss+xml"/><author><name>Entry author</name></author></entry>
+<entry><updated>Thu., 18 Sep 1977 15:51 -0000</updated> <content type="html">&lt;p&gt;&#x26;copy;&#x3C;/p&gt;&lt;li&gt;&quot;quoted"&lt;/li>&lt;div>&amp;#65;&amp;#66;&#60;/div></content> <summary type="html">&#60;li&gt;&amp;apos;a&amp;apos;&lt;/li>	&apos;single'</summary> <published>Tue Feb 22 05:24 2000</published> <id>urn:uuid:1</id> <i:duration>-0.5</i:duration> <author><name>Entry author</name></author> <link title="MP3 feed" rel="related" href="https://example.com/"/></entry> </feed>

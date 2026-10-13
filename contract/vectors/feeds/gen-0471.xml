@@ -1,0 +1,34 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:d="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:pc="http://podlove.org/simple-chapters">
+<itunes:author>Jane Doe<![CDATA[]]></itunes:author>
+<updated>Wed Jul 18 05:58:30 1900 GMT</updated>
+<podcast:funding url="https://example.com/give">Give</podcast:funding>
+<itunes:summary><![CDATA[#hash<br]]>&gt;
+&#38;aaaaaaa</itunes:summary>
+<itunes:image href="https://example.com/ai.jpg"/>
+<author><name>Émile</name><email>a@example.com</email></author>
+<link type="application/rss+xml" rel='hub' title="Café" href="https://example.com/alt.xml" length="20000"/>
+<title type="text">trailing </title>
+<link href="https://example.com/" type="application/atom+xml" length='20000' title='Café' rel="archives"/>
+<id> raw </id>
+<entry><link rel="hub" length="abc"/><content type='HTML'><![CDATA[<p>http://example.com/?a=1&b=2</p>  &#0;<li>a
+  b</li>]]></content><updated>Saturday, 31 Feb 2539 21:07:41</updated><id>tag:x,2020:1</id><title type="HTML">&lt;img src=&quot;x.png"&gt; cover &amp;euro; &#x26;#65;&amp;#66;</title></entry>
+<entry><published>&#13;
+Friday, 07 Dec 2001 05:03:13&#13;
+</published>
+<content type="html"><![CDATA[<p>&lt</p>]]></content>
+<itunes:duration>.5</itunes:duration>
+<summary><![CDATA[<p>&#xFFFF;</p>😀ééé]]></summary>
+<title><![CDATA[&;]]></title>
+<media:content fileSize="1,000,000" type="video/quicktime" isDefault="1" medium='audio' duration="1.5" url="//example.com/122.aif"/>
+<itunes:image href=""/>
+<updated>2011-06-19T14:13:46Z</updated>
+<id>tag:x,2020:1</id></entry>
+<entry><title type="text"><![CDATA[a]]>=b&amp;c=d&amp;#xA9;&lt;ul&gt;&#60;li&gt;  padded  &#x3C;/li>&lt;li&gt;two&#x3C;/li&gt;&#x3C;/ul&gt;</title>
+<id>
+id
+</id>
+<author><name>Entry author</name></author>
+<updated>Sun, 25 Feb 2003 12:11:28 +0945</updated>
+<link rel="alternate" title="Alternate" href="https://example.com/pay"/></entry>
+<entry><summary type="plain">😀😀😀</summary><title>R&#38;D</title><id></id><link rel="hub" href='https://example.com/alt.xml'/><published>Sun, 28 April 2019 19:32:37 -0500</published><itunes:duration>12587</itunes:duration><updated>1984-07-24T11:01:30.12GMT</updated></entry>
+</feed>

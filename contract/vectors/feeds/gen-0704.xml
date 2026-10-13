@@ -1,0 +1,51 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xml:lang="">
+<itunes:author></itunes:author>
+  <id></id>
+  <logo> https://e.com/l.png
+</logo>
+  <link href="ftp://files.example.com/ep169.m3u8" rel="Next" type="" title="Café"></link>
+  <title type='html'>&#x5E9;ל&#1493;ם
+Folge 367: Über alles</title>
+  <link title="Café" href="https://example.com/a.b/café/155.m4v" length="20000" rel="archives"/>
+  <link type="text/html" length="9223372036854775808" rel="payment" title="MP3 feed"/>
+  <entry><title type='plain'>a&#13;
+b &amp;hellip; &amp;unknown;</title> <updated>2177-04-1</updated> <id>
+id
+</id> <summary type="html">&lt;li> &#x3C;/li&gt;😀😀😀[x] &#x26;#128512;😀  multi
+line&#x3C;p&gt;http://example.com/?a=1&amp;b=2&#x3C;/p&gt;
+&amp;#x1F600;</summary> <link href="https://example.com/pay" title="Café" rel="archives"/> <author><name>Entry author</name></author></entry>
+  <entry><link href='' type="audio/mpeg" title="Alternate" rel="related"/> <title type="html">&amp;lt
+&amp;amp;amp;</title> <published>1996-08-05T17:23:05 2024</published> <itunes:duration>Infinity</itunes:duration> <link length="abc" rel='Next' title="Alternate" href="https://example.com/feed?page=2"/> <updated>Sun, 15 Jan 2023 14:15 +0100:00</updated> <content type="html"><![CDATA[<div>&amp;amp;</div>]]></content> <link rel="payment" title="Alternate" length="9223372036854775808"/> <id>tag:x,2020:1</id></entry>
+  <entry><id></id>
+  <itunes:image href="https://example.com/e.jpg"/>
+  <summary type="html"><![CDATA[
+
+&euro;😀<img src="x" alt="y"/>]]></summary>
+  <updated>Tue, 07 Apr 2476 12:04 +1400 </updated></entry>
+  <entry><title type="text">😀</title>
+  <updated>Sun FEB 15 23:54:43 0099</updated>
+  <id>urn:uuid:1</id>
+  <podcast:transcript url="https://example.com/t.json" language="en"></podcast:transcript>
+  <content type='text'><![CDATA[<br/><hr> &#;]]></content>
+  <updated>Wed 13 Oct 2021 13:04:51 GMT-1200 (CDT)</updated></entry>
+  <entry><link title="MP3 feed" rel='' type="application/xml+xhtml" href='https://xn--caf-dma.example/ep23.flac'/><link type="application/xhtml+xml" title="MP3 feed" length="20000"/><published>2217-10-29T00:17:23.6100998</published><link rel="alternate" href="https://user:pass@media.example.net/dir.with.dots/ep94" title="Café" length="abc" type="application/xml+xhtml"/><summary><![CDATA[aaaaaFolge 7: Über alles &<d]]>iv&gt;&#60;img src=&quot;x.png"> cover&#x3C;/div>&#x3C;div&gt;&amp;AMP;&lt;/div&gt;</summary><title>Line&lt;br>break</title><id>
+id
+</id></entry>
+  <entry><itunes:duration>1h30m</itunes:duration>
+  <content><![CDATA[<b>Bold</b> title<p>مرحبا</p> back\slash]]></content>
+  <link length="12" href="" type="application/rss+xml" rel="hub" title="MP3 feed"/>
+  <link title="Café" length="12" href="https://example.com/"/>
+  <id>tag:x,2020:1</id>
+  <published>Saturday, 14 Jan 76 21:49:57 +0530</published>
+  <title type='plain'>&lt;label>&amp;#;&lt;/label&gt;</title>
+  <link rel="first" type="" href="https://example.com/" title=''/></entry>
+  <entry><title type="HTML">&amp;Lt;</title>
+<id> raw </id>
+<published>Fri, 06 May 2005 23:58 -1200 AM</published>
+<itunes:duration>6889</itunes:duration></entry>
+  <entry><itunes:duration>2:25:27</itunes:duration>
+<link length='9223372036854775808' href="https://example.com/alt.xml" type='text/html' title='Alternate' rel="Next"/>
+<id> raw </id>
+<updated>Fri, 01 Feb 2002 01:15 MDT</updated>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;br&gt; AT&amp;T http://example.com/?a=1&#x26;b=2</div></summary>
+<title type="html">مرحبا   padded   #hash</title></entry></feed>

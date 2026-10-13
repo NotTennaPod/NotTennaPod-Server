@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:sc="http://podlove.org/simple-chapters" xmlns:chapters="http://podlove.org/simple-chapters" xml:lang="">
+  <link length="abc" rel="Next" type="audio/mpeg" title=""/>
+  <itunes:author>Jane Doe</itunes:author>
+  <updated>Thu, 02 Nov 1972 17:38 -1200</updated>
+  <title type="html"><![CDATA[  padded  &#65;&#66;<div dir="rtl">&#128512;</div>]]></title>
+  <id>https://example.com/feed</id>
+  <link rel='last' title="MP3 feed" href='' type="application/rss+xml" length="abc"/>
+  <link type="application/rss+xml" rel="alternate" length="9223372036854775808"/>
+  <entry><summary type="html"><![CDATA[<div>Episode 12</div>]]></summary>
+<id></id></entry>
+  <entry><title type="html">&lt;3 &lt;3  &#60;div>&#60;p>ש&#x5DC;ום&#x3C;/p&gt;&#60;/div>  &amp;#128512;&#x3C;/p&gt;</title> <id>urn:uuid:1</id> <updated>Fri 11 Feb 2014 15:01:14 GMT+0200 (UT)</updated> <author><name>Entry author</name></author> <content>&#x3C;p>  spaced  &#60;/p>{json: 1}ééé</content> <link href="https://example.com/pay" length="20000" rel="hub" type="application/atom+xml" title='Alternate'></link> <p:person role='host'>Jane</p:person></entry>
+  <entry><itunes:image href='https://example.com/e.jpg'/>
+<itunes:duration>7288.24</itunes:duration>
+<link title="" length="12" rel="archives" type="" href=""/>
+<summary type="text"><![CDATA[ééé<p>Line<br>break</p>]]></summary>
+<published>Tuesday, 01 Jul 1986 14:39</published>
+<title type="text">Line&lt;br&gt;break</title></entry>
+  <entry><summary>&#60;hr></summary><updated>1900-04-13T14:42:08+25:00</updated><link type="application/rss+xml" title="Café" href="https://example.com/alt.xml" rel="self"></link><link title="Alternate" type="application/atom+xml" length="20000" rel='related' href=""/><link href="https://example.com/feed?page=2" rel=""/><published>13 Feb 17 20:19:26 +0945</published><title type="xhtml"><![CDATA[   &copy;]]></title><content>&lt;br/&gt;</content><id>tag:x,2020:1</id></entry>
+  </feed>

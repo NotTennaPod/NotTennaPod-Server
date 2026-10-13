@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- generated -->
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters"> <id></id>
+<author><name>C&amp;D</name></author>
+<itunes:image href="https://example.com/ai.jpg"/>
+<subtitle>😀😀😀&#60;img src="x.png"&gt;&#60;div&gt;&#x3C;b>Bold&lt;/b&gt; title&#60;/div>&#60;div>plain words&#60;/div>&#x26;hellip;&#x3C;br&gt;&lt;div&gt;&#x645;&#1585;حبا&#x3C;/div>&#13;
+&amp;#x;http://example.com/?a=1&#38;b=2&lt;br&gt;</subtitle>
+<title><![CDATA[Episode 266]]></title>
+<itunes:new-feed-url>https://moved.example.com/atom</itunes:new-feed-url>
+<entry><author><name>Entry author</name></author><podcast:transcript url="" type="text/vtt" language="en"/><title type="HTML"><![CDATA[&lt;b&gt;]]></title><link rel="hub" title='Alternate'/><link type="application/xml+xhtml" href="" rel="next"/><updated>10 jun 53 04:25 +1400</updated><id>urn:uuid:1</id><link rel="related" title='Café' href="" type="audio/mpeg"></link><media:content fileSize='9007199254740992' url="https://example.com:8443/café/248.txt?file=x.mp3" duration=" 60"/><published>Wed 17 Apr 1974 03:37:49 -0000</published><itunes:image href="https://example.com/e.jpg"/></entry></feed>

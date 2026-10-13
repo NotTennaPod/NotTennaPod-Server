@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns="http://backend.userland.com/rss2" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><title><![CDATA[&apos;a&apos;  <B>&#xFFFF;</b>  &nbsp;]]></title>
+  <podcast:funding url="https://example.com/donate"/>
+  <itunes:summary>&#x3C;li&gt;&#38;amp;amp;&lt;/li>
+
+</itunes:summary>
+  <itunes:author><![CDATA[Tom & Jerry <3]]></itunes:author>
+  <description>&#60;li>a > b&#60;/li&gt;</description>
+  <itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner>
+  <podcast:funding>Support us</podcast:funding>
+  <textInput><title>Search</title><link>https://example.com/search</link></textInput>
+  <link></link>
+  <image><url>https://example.com/img.png</url></image>
+  <item><title><![CDATA[<em>a
+  b</em>&#65;&#66;  spaced  ]]></title>
+<media:content isDefault="TRUE" medium='document' fileSize="２０００００" duration='59' type="image/jpeg"/>
+<enclosure url='' length=" 20000" type="video/mp4"/>
+<guid>a&amp;b</guid>
+<media:content type="Audio/MPEG" fileSize='0x4E20' duration="01:00" isDefault="false"/>
+<enclosure url="https://user:pass@media.example.net/ep35.wav" length='4294967296' type=" audio/mpeg"/></item>
+  <item><title><![CDATA[<ul><li>a=b&c=d</li><li>two</li></ul>]]></title>
+<guid></guid>
+<link></link>
+<pubDate>Tue June 12 21:22:39 2362</pubDate>
+<description></description>
+<itunes:image href=' '/>
+<enclosure url="" length="" type="application/octet-stream"/>
+<media:content url="https://example.com/a.b/e p85.aac?a=1&amp;b=2" type="audio/mp3" duration="1.5" fileSize="4294967296" medium="Audio"/>
+<podcast:transcript url="https://example.com/t.vtt" type="application/srt" language="en"/></item>
+  <item><description>&#x3C;p>&amp;#0;&lt;/p>&#x3C;li&gt;&amp;#128512;&#x3C;/li> &#x26;</description>
+<media:description type="html">&lt;li&gt;&#x26;#xFFFF;&lt;/li&gt;
+
+&#x26;AMP;</media:description>
+<pubDate>2489-11-07T07:20:45-0800</pubDate>
+<itunes:duration>5:48:05</itunes:duration>
+<enclosure length="9007199254740991" type="video/mp4"/>
+<guid isPermaLink="true">https://example.com/item/99882</guid>
+<itunes:subtitle> leading1 &#x3C;2</itunes:subtitle>
+<media:content type='application/pdf' duration="59" fileSize="-0" url="http://example.org/café/32.mp3.zip"/>
+<media:content url="https://xn--caf-dma.example/154.m3u8?auth=yes" fileSize="2e5" duration="2147483" isDefault="false"/>
+<itunes:summary>&lt;br/&gt;ééé&#x3C;div>Folge 7: Über alles&#x3C;/div>&#13;
+של&#1493;םAT&amp;T&lt;br&gt;</itunes:summary>
+<title>&lt;p&gt;Para&#60;/p&gt;
+&amp;#128512;
+é</title>
+<link>https://example.com/ep</link></item></channel>
+  </rss>

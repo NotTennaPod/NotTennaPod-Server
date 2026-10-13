@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="en">
+  <subtitle type="HTML">&#60;div&gt;a
+  b&lt;/div&gt;&lt;p>茶&#60;/p&gt;&amp;quot;q&amp;quot;&lt;br&gt;	#hash&lt;p>#7 – Interview&#x3C;/p&gt;aa	a=b&amp;c=d😀😀&#x1F600;</subtitle>
+  <link title="Café" rel="archives" length='12' href="https://example.com/" type="application/rss+xml"/>
+  <title>&#38;#0;
+​</title>
+  <updated>Sun 10 Jul 1900 05:30:05 GMT-1200 (UTC)</updated>
+  <itunes:author>😀 Pod</itunes:author>
+  <itunes:summary>&lt;div>&#x26;Lt;&lt;/div&gt;&lt;img src="x" alt=&quot;y&quot;/&gt;  a
+
+b&lt;div>&#60;b>Bold&#x3C;/b&gt; title&lt;/div&gt; café&#60;br>&#60;li&gt;&amp;#x;&lt;/li&gt;aaaaaa</itunes:summary>
+  <entry><link title="Alternate" href="https://example.com/pay" length="20000" rel="payment"/> <link href="https://example.com/" length="20000" rel='related' title="MP3 feed"/> <media:content medium="Audio" type='audio/flac' duration="01:00" isDefault='false' fileSize="" url="https://example.com:8443/ep170.webm"/> <link title="Café" type="text/html" rel="next"/> <title>&amp;#xA9;
+cr&#13;lf
+&#38;#xFFFF;</title> <id>tag:x,2020:1</id> <itunes:duration>9223372036854775807</itunes:duration></entry>
+  <entry><updated> Thu, 20 May 1999 19:22:38
+</updated>
+  <id></id>
+  <link href="https://example.com:8443/dir.with.dots/ep115.mp4" type="application/xml+xhtml" rel="self" length="9223372036854775808"/>
+  <title type='xhtml'><![CDATA["quoted"<b><i>café</b></i>]]></title>
+  <published>2014-04-12T13:37:10 2024</published>
+  <link type="application/xhtml+xml" rel="enclosure" href="https://example.com/feed?page=2"></link>
+  <link type="audio/mpeg" href='https://example.com/alt.xml' length="20000" title="Café" rel="alternate"/></entry></feed>

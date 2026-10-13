@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><link xmlns="http://www.w3.org/2005/Atom" rel="hub" type='application/rss+xml' href="https://example.com/feed?page=2" title=""/>
+<atom:link rel="Next" length="20000" title="Café" href='' type="audio/mpeg"/>
+<atom:link href="" rel="archives" type="text/html" length="9223372036854775808"></atom:link>
+<link> https://example.com/ </link>
+<image><title>Image title</title><url>https://example.com/img.png</url><link>https://example.com/img-link</link></image>
+<atom:link href="https://example.com/" title="Café" rel="next" length="9223372036854775808" type="audio/mpeg"/>
+<itunes:image href="https://example.com/it.jpg"/>
+<language>pt-BR</language>
+<description>&lt;img src=&quot;x.png">&#x26;#x1F600;&#60;li&gt;Line&lt;br&gt;break&#x3C;/li&gt;</description>
+<textInput><title>Search</title><link>https://example.com/search</link></textInput>
+<title>&#38;amp;amp;&#60;h3>&#1605;رحبا&lt;/h3>&#60;label&gt;a &gt; b&lt;/label&gt;</title></channel>
+  </rss>

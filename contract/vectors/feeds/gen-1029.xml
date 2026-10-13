@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:mrss="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><atom:link title="" href="http://example.org/café/223.jpg" length="12"/>
+  <title>&#x26;lt;b&amp;gt;    padded  </title>
+  <lastBuildDate>Sat, 27 Jun 2015 05:18:39 +14:00</lastBuildDate>
+  <item><title><![CDATA[&mdash;]]></title>
+  <guid isPermaLink="true"></guid>
+  <pubDate>Sat, 15 january 2552 05:31:37 -1200</pubDate>
+  <content:encoded><![CDATA[<div>1 <2</div>]]></content:encoded>
+  <mrss:content url="HTTPS://EXAMPLE.COM/ep295.aif?file=x.mp3" isDefault="true" type='' fileSize="abc" duration=" 60"/>
+  <atom:link rel="Next" title="Café" length="abc" href="https://example.com/" type="audio/mpeg"/></item></channel> </rss>

@@ -1,0 +1,12 @@
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:psc="http://podlove.org/simple-chapters">
+<channel><image><title>Image title</title><url></url></image>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" length="12" rel="archives" type="application/xml+xhtml" href="https://example.com/"></atom:link>
+<title>&lt;img src=&quot;x.png&quot;&gt; cover</title>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" title="" type='application/xml+xhtml' length="12" href="https://example.com/pay"/>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" length="12" href="https://example.com/" rel='payment'/>
+<link></link>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://example.com/feed?page=2" title="MP3 feed" type="application/atom+xml" rel="" length="12"/>
+<language>fr
+</language>
+<description><![CDATA[  &#;]]></description></channel>
+</rss>

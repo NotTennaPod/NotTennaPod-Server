@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="2.0" xmlns:i="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:cont="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom"> <channel><description></description>
+<link> https://example.com/ </link>
+<itunes:author></itunes:author>
+<image><link>https://example.com/img-link</link><url>https://example.com/img.png</url><title>Image title</title></image>
+<language>de-DE</language>
+<itunes:subtitle><![CDATA[S01E465 &amp]]></itunes:subtitle>
+<i:image href=" https://example.com/sp.jpg "/>
+<title>&#128512;
+&#60;table>&lt;tr>&lt;td&gt;tab	here&#60;/td&gt;&#60;td&gt;b&lt;/td&gt;&#x3C;/tr&gt;&lt;/table&gt;
+&amp;</title>
+<item><link></link>
+<guid>a&amp;b</guid>
+<itunes:duration>5:10:40</itunes:duration>
+<!-- comment --><?pi data?>
+<title>&amp;#xA9;</title>
+<i:image href=" "/>
+<description> &#38;euro;</description>
+<a10:link rel="" length="20000" href="https://example.com/"/>
+<pubDate>2133/08/24</pubDate>
+<enclosure length='2e5' type="video/quicktime"/></item>
+<item><enclosure url='' length="abc" type="video/mp4"/> <link>https://example.com/ep</link> <guid isPermaLink="false">  spaced guid  </guid> <description>&#233;éé<![CDATA[]]></description> <podcast:chapters type="application/json+chapters"/> <title>&#x26;hellip;  &lt;blockquote&gt;&#x26;unknown;&lt;/blockquote&gt;</title> <i:image href=""/> <i:duration>102:36</i:duration> <pubDate>1977-03-15T09:27:03+0945</pubDate> <enclosure url="" length="2147483647" type='Audio/MPEG'/> <enclosure url="https://example.com:8443/a/b/c214.mov" length="12" type=""/></item>
+<item><title/><guid isPermaLink="true">a&#x26;b</guid><link> https://e.com/x </link><pubDate>Sun Jun 21 06:46:02 2285 utc</pubDate><description></description><itunes:duration>02:00</itunes:duration><media:group><media:content duration="" fileSize="9223372036854775807" medium="audio" type="audio" isDefault="1"/><media:content medium="image" type="AUDIO/MPEG" fileSize="&#65298;&#65296;&#65296;&#65296;&#65296;&#65296;"/></media:group></item>
+<item><link> https://e.com/x </link>
+<enclosure url="https://example.com:8443/café/267.MP3" length="9223372036854775807" type="audio/x-m4a"></enclosure>
+<media:group><media:content isDefault='true' fileSize="" duration="01:00" medium="video" url="https://example.com/a.b/café/325.ogg" type=""></media:content><media:content url="http://example.org/e p0.OGG?file=x.mp3" isDefault="1" type="text/plain" duration="9223372036854775807" fileSize="20000.0"/></media:group>
+<i:explicit>yes</i:explicit>
+<pubDate>2004-07-03T10:32:27Z</pubDate>
+<title>cafétrailing &#x26;lt;b&amp;gt;escaped&amp;lt;/b&amp;gt;</title>
+<enclosure url="ftp://files.example.com/ep361.jpg" length=' 20000' type="text/plain"/>
+<description>&#33590;&#x3C;div&gt;multi
+line&lt;/div&gt;</description></item>
+<item><enclosure url="" length="20000.0" type="video/quicktime"/>
+<media:thumbnail url="https://example.com/th.jpg"/>
+<podcast:chapters type="application/json+chapters"></podcast:chapters>
+<!-- comment --><?pi data?>
+<itunes:subtitle><![CDATA[&#33590;
+&AMP;
+"quoted"]]></itunes:subtitle>
+<description>&#x3C;img src="x" alt="y"/> &amp;mdash;&lt;div&gt;&amp;nbsp;&#60;/div>&#38;amp;amp;&lt;hr>&#60;p&gt;Episode 7&#60;/p&gt;&lt;div&gt;a > b&lt;/div&gt;aaaaaaa</description>
+<title>
+a &lt; bLine&lt;br&gt;break#hash	</title>
+<itunes:duration>8146.701</itunes:duration>
+<guid isPermaLink="false">a&amp;b</guid>
+<pubDate>Fri Jun 8 11:19:51 0001 PDT</pubDate></item>
+<item><title>&#38;quot;q&#38;q<![CDATA[uot;  S01E664]]></title>
+<guid></guid>
+<link> https://e.com/x </link>
+<pubDate>11 Dec 11 18:11 -0500</pubDate>
+<description>&lt;img src="x" alt="y"/> &amp;copy;</description>
+<itunes:duration>1.5:00</itunes:duration>
+<enclosure length="52428800" type="audio"/>
+<enclosure url='HTTPS://EXAMPLE.COM/ep7.aac' type='audio/*'/>
+<enclosure url="HTTPS://EXAMPLE.COM/dir.with.dots/ep359.ts" length="0" type="text/plain"/>
+<media:content url="//example.com/49.pdf" duration="+60" type="unknown" isDefault="true" fileSize="2147483648"/>
+<media:content url=" http://example.org/café/137.avi " isDefault="false" duration='01:00' medium="Audio" fileSize="20000.0" type="unknown"/>
+<media:content url="https://xn--caf-dma.example/dir.with.dots/ep147.ogg" fileSize="52428800" medium="image" type="video/quicktime" isDefault="false"/></item></channel>
+  </rss>

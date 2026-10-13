@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:m="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:pc="http://podlove.org/simple-chapters" xml:lang=""><author><name>&#xC9;mile</name></author> <subtitle><![CDATA[<p/>😀😀😀]]></subtitle> <updated>Monday, 11 Aug 2194 01:01:99</updated> <id> raw </id> <link length="9223372036854775808" rel="archives" type="application/xhtml+xml" title='Alternate' href="https://example.com/feed?page=2"></link> <link length="9223372036854775808" rel="enclosure" href="https://example.com/" type=""/> <itunes:summary><![CDATA[<BR>ééé  ​]]></itunes:summary> <title type='text'><![CDATA[<a href="https://example.com/x?a=1&amp;b=2">http://example.com/?a=1&b=2</a>]]></title> <link href="https://example.com/pay" type="application/rss+xml" rel="first" title="Alternate" length="12"/> <entry><itunes:duration>16496</itunes:duration>
+  <content><![CDATA[<img src="x.png">]]></content>
+  <id>tag:x,2020:1</id>
+  <link type="application/xml+xhtml" href="" length="20000" title=""/>
+  <link length="abc" title="MP3 feed" rel="hub"/>
+  <published>1993-12-08XYZ</published>
+  <link rel='Next' title="MP3 feed" href="HTTPS://EXAMPLE.COM/dir.with.dots/ep359.ts" type=""></link>
+  <title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">a&#13;
+b​</div></title>
+  <summary type="html">&#13;
+&#38;amp&lt;p&gt;Para&lt;/p&gt;&lt;br></summary></entry> <entry><link title="Alternate" type="application/rss+xml" length="abc" href="https://example.com/pay"/>
+<podcast:transcript url="https://example.com/t.json"></podcast:transcript><podcast:transcript url="" type="application/json" language="en"/><podcast:transcript type="application/x-subrip" language="en"></podcast:transcript>
+<itunes:image href=""/>
+<itunes:duration>8711.655</itunes:duration>
+<link type="audio/mpeg" rel="Next" title=""/>
+<published>Wednesday, 30 Feb 1900 16:02:17</published>
+<author><name>Entry author</name></author>
+<id>tag:x,2020:1</id>
+<updated>Freitag Oct 26 03:57:50 2012</updated>
+<title>&#60;p>&amp;amp;amp;&#x3C;/p>
+&amp;euro;</title>
+<summary type="HTML">
+trailing &#13;
+&amp;Lt;😀😀😀&lt;hr>&#60;div>Episode 12&#60;/div&gt;</summary>
+<link type="application/xml+xhtml" rel="related"/></entry> <entry><updated>Sun, 10 November 2312 09:23:46</updated> <link rel="first" type="application/atom+xml" length="9223372036854775808"/> <id>tag:x,2020:1</id> <link rel="related" href='https://example.com/' title="MP3 feed" length="12" type="application/atom+xml"/> <published>Sun, 28 Nov 91 16:21:17 +0200</published> <title type="text">100% &#38;#65;&#38;#66;</title></entry> <entry><id></id>
+<published>Wednesday, 01 Aug 2277 11:12</published>
+<link type="application/atom+xml" href="https://example.com/feed?page=2" length="9223372036854775808" rel="last"/>
+<title>&#x26;AMP;&amp;#128512;</title>
+<summary type="HTML">&#60;p>😀&lt;/p></summary>
+<link rel='next' title="Café"/>
+<pc:chapters><pc:chapter title="Intro" start="1:00:00.5"/><pc:chapter start="109:11" href="" image='https://example.com/ch.png'/><pc:chapter start="bad:time" title='Café &amp;amp; more' href="https://example.com/ch"></pc:chapter><pc:chapter image="https://example.com/ch.png" start='00:59:57.053' href="https://example.com/ch"/></pc:chapters>
+<link title="MP3 feed" type="application/rss+xml"></link></entry> <entry><summary>&lt;p&gt;&amp;copy;<![CDATA[</p><li>#7 – Interview</li>]]></summary>
+<title type="HTML">&#60;h3&gt;&#60;img src=&quot;x.png"> cover&#60;/h3&gt;</title>
+<content type='xhtml'><div xmlns="http://www.w3.org/1999/xhtml"></div></content>
+<published>  Mon, 28 Oct 0999 19:33 -0000 GMT GMT  </published>
+<pc:chapters><pc:chapter title='' href="" image="https://example.com/ch.png" start="00:23:35"/><pc:chapter title="" start="35791:23:47.647"/><pc:chapter title="Intro"/><pc:chapter start="0x10:00" title="Café &amp;amp; more" image="https://example.com/ch.png"></pc:chapter><pc:chapter image='https://example.com/ch.png' start="00:04:37" title=""/></pc:chapters>
+<id>tag:x,2020:1</id>
+<link rel="related" length="abc" href='https://example.com/feed?page=2' title="Café"/>
+<updated>2365-01-23T09:18:01.589</updated></entry>
+</feed>

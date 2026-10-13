@@ -1,0 +1,10 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><!-- comment --><?pi data?> <atom:link length="abc" type="" rel='related' href="https://example.com/alt.xml" title="Alternate"/> <title><![CDATA[&#xA9;{json: 1}]]></title> <image><link>https://example.com/img-link</link><url>  https://example.com/ws.png
+</url></image> <language>pt-BR</language> <podcast:funding url=''></podcast:funding> <title><![CDATA[שלוםa > b]]></title> <itunes:subtitle><![CDATA[&nbsp;  <table><t]]>r>&#x3C;td&gt;&amp;hellip;&#x3C;/td>&lt;td>b&#x3C;/td>&lt;/tr&gt;&lt;/table></itunes:subtitle> <description>&lt;li&gt;&amp;#xD800;<![CDATA[</li>&unknown;]]></description> <itunes:author>Jane &#x26;am<![CDATA[p; John]]></itunes:author> <atom:link rel="hub" type="application/xml+xhtml" href="https://example.com/" length="20000" title="MP3 feed"/> <itunes:summary>
+<![CDATA[x<y]]></itunes:summary> <link> https://example.com/ </link> <item><title>&#38;AMP;
+
+  spaced  </title><guid>
+</guid><description> &amp;#169;&#60;br&gt;&#60;/br>&#x3C;p>&amp;un<![CDATA[known;</p><br/>aa]]></description><itunes:summary><![CDATA[😀😀😀😀]]></itunes:summary><itunes:subtitle>a
+  b
+&amp;#x;
+مرحبا</itunes:subtitle><enclosure url='' length="18446744073709551616" type=""></enclosure></item></channel></rss>

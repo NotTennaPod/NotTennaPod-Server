@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="US-ASCII"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel><podcast:funding>  spaced  </podcast:funding>
+<atom:link length="20000" rel="alternate" href="https://example.com/feed?page=2" type="" title="MP3 feed"/>
+<link> https://example.com/ </link>
+<link xmlns="http://www.w3.org/2005/Atom" rel="enclosure" href="https://example.com/alt.xml" title="Alternate" type="application/atom+xml" length="9223372036854775808"/>
+<atom:link length="20000" title='Alternate' type="text/html" rel="archives" href="https://example.com/alt.xml"/>
+<description>
+R&#38;D&#60;img src=&quot;x.png"> cover</description>
+<atom:link href="https://example.com/pay" rel="Next" length="20000" title="" type='text/html'/>
+<item><podcast:socialInteract uri="" protocol='activitypub'></podcast:socialInteract> <pubDate>Sat, 01 Apr 1899 16:48:34 -05:30</pubDate> <psc:chapters version="1.2"><psc:chapter start="1:2:3:4" image="https://example.com/ch.png" href="https://example.com/ch"></psc:chapter><psc:chapter title="&#128512;" start="9667"/><psc:chapter start="7:41" href="https://example.com/ch" title="&lt;b>x&lt;/b>"/><psc:chapter image="https://example.com/ch.png" start="00:00:59.9999" title=''/><psc:chapter title='Caf&#233; &amp;amp; more' start='1:02'/><psc:chapter start="5548" title="&lt;b>x&lt;/b>"/></psc:chapters> <link></link> <title><![CDATA[&lt;b&gt;escaped&lt;/b&gt;x<y]]></title> <guid></guid> <foo><description>Nested description</description></foo></item>
+<item><guid isPermaLink='true'>dup</guid>
+<media:content duration="2147483648" fileSize="2147483647" url="https://example.com/a.b/caf&#233;/317.mp3.zip" medium="image"/>
+<enclosure url='http://example.org/302.mov' length='-9223372036854775808' type='AUDIO/MPEG'></enclosure>
+<title>&lt;sub&gt;&#x26;#x;&lt;/sub></title>
+<description>	&amp;unknown;&#60;p&gt;&#38;unknown;&lt;/p&gt;	a
+
+b	
+
+1 &#60;2&#60;div>#7 &#8211; Interview&#x3C;/div&gt;Episode 12&lt;br>  a &gt; b</description>
+<pubDate>Sat, 30 May 2011 11:</pubDate></item>
+<item><title>trailing &#60;p>&#60;p>sep&lt;/p>&lt;/p&gt;&#x26;#169;</title>
+  <enclosure length="9007199254740991" type="audio/wav"/>
+  <description></description>
+  <content:encoded>&#x3C;br />
+a &lt; b</content:encoded>
+  <guid isPermaLink="false">dup</guid>
+  <link></link>
+  <pubDate>1996-04-07T20:57:15+0945</pubDate>
+  <media:group><media:content medium="document" fileSize="2147483648" type="unknown" url="https://xn--caf-dma.example/ep344.ogg" isDefault="true" duration="0060"/><media:content duration="0060" type="application/ogg" isDefault="true" medium="audio" fileSize='2147483647' url="https://example.com:8443/a/b/c111.m4a"/></media:group></item>
+<title><![CDATA[<df]]>n>&amp;#65;&#x26;#66;&#x3C;/dfn&gt;</title>
+<podcast:funding url=""/>
+<podcast:funding/></channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel><itunes:owner><itunes:name>Owner</itunes:name><itunes:email>o@example.com</itunes:email></itunes:owner> <itunes:subtitle>&lt;article>sep&#x3C;/article> &#x26;nbsp; &#60;3 &#60;3</itunes:subtitle> <description>&lt;li>a
+
+b&#x3C;/li></description> <itunes:image href=' '/> <language>TR</language> <a10:link href="https://example.com/pay" rel="first" title="Alternate"/> <a10:link type="audio/mpeg" href="https://example.com/alt.xml" length='20000' title="MP3 feed" rel="last"/> <a10:link length="abc" rel="related" type="" title="Alternate"/> <itunes:summary><![CDATA[<b>Bold</b> title]]></itunes:summary> <link> https://example.com/ </link> <title><![CDATA[&nbsp;  <b><i>&Lt;</b></i>]]></title> <a10:link rel="" type='audio/mpeg'/> <item><title>http://example.com/?a=1&#38;b=2&#x26;#128512;</title><guid isPermaLink='false'>urn:uuid:dae65f0f</guid><link>https://example.com/ep</link><itunes:summary><![CDATA[&#xA9;<br>&unknown;<br> &#xA9;Tom & Jerry <3<br><p/><p>S01E7</p>Line<br>break<br>]]></itunes:summary><itunes:duration>6389.345</itunes:duration><enclosure url="" length="18446744073709551616" type="video/quicktime"/><media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="+20000" type="application/pdf" duration="-5"/><media:content xmlns:media="http://search.yahoo.com/mrss/" medium="video" type="audio" duration="1.5" fileSize="16384"/></item> <item><pubDate>Tue, 23 Dec 1986 14:45</pubDate>
+<itunes:subtitle>茶  Tom &amp;amp; Jerry &#x26;lt;3  &amp;#128512;</itunes:subtitle>
+<itunes:image href="https://example.com/ep.jpg"/>
+<guid isPermaLink="true">Café-guid</guid>
+<enclosure url="//example.com/378.mid" length="2147483647" type="audio/wav"/>
+<podcast:transcript url="https://example.com/t.vtt" type="text/vtt" language="en"></podcast:transcript><podcast:transcript/><podcast:transcript url=""/>
+<podcast:chapters url="https://example.com/ch.json" type="application/json+chapters"/>
+<title>{json: 1}
+Episode 742
+#hash</title>
+<description></description>
+<psc:chapters><psc:chapter title='😀' image="https://example.com/ch.png" start="62"/></psc:chapters></item> <item><itunes:subtitle>&#60;sub&gt;  padded  &#60;/sub>&amp;#;</itunes:subtitle> <link></link> <enclosure url="https://example.com:8443/café/283.xyz" length="٢٠٠٠٠" type="image/*"/> <enclosure length="-16384" type="AUDIO/MPEG"/> <guid isPermaLink='false'>
+</guid> <pubDate>2013-06-10</pubDate> <enclosure url="ftp://files.example.com/a/b/c181.ts" length="20000 " type="application/json"/> <title><![CDATA[&#x1F600; &#128512; a
+  b]]></title> <media:group xmlns:media="http://search.yahoo.com/mrss/"><media:content xmlns:media="http://search.yahoo.com/mrss/" fileSize="20000.0" duration='2147483' type="image/*"/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="HTTPS://EXAMPLE.COM/a/b/c384.aif" medium="Audio" type="application/ogg" fileSize="２０００００" duration="1"/><media:content xmlns:media="http://search.yahoo.com/mrss/" medium="document" fileSize="9007199254740992" duration="1.5" type="AUDIO/MPEG"/></media:group> <content:encoded>&#x3C;div> leading&#60;/div&gt;&lt;p>&amp;quot;q&amp;quot;&lt;/p&gt;</content:encoded></item></channel>
+</rss>

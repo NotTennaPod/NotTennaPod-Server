@@ -1,0 +1,18 @@
+<rss version="0.92" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:sc="http://podlove.org/simple-chapters"><channel xmlns:atom="http://www.w3.org/2005/Atom"><title><![CDATA[<b>Bold</b> title
+café]]></title>
+<itunes:image href=""/>
+<image><url>https://example.com/img.png</url></image>
+<itunes:summary></itunes:summary>
+<link> https://example.com/ </link>
+<title>http://example.com/?a=1&amp;b=2</title>
+<description>שלום&#x3C;br&gt;ééé</description>
+<link xmlns="http://www.w3.org/2005/Atom" title="" length='20000' href="" rel="archives"/>
+<item><title/><guid isPermaLink="false"></guid><link>https://example.com/ep</link><pubDate>Sat., 23 Jan 1993 03:14:30 -0800</pubDate><description>multi
+line&lt;br&gt;&lt;img src="x.png&quot;&gt;&#38;&#60;br>&#60;<![CDATA[p></p>茶<br>]]></description><itunes:summary><![CDATA[ ]]>"quoted"</itunes:summary><itunes:subtitle><![CDATA[&#x;  <strike>  spaced  </strike>  Tom & Jerry <3]]></itunes:subtitle><itunes:duration>4:40:48</itunes:duration></item>
+<item><title>​  leading trai<![CDATA[ling ]]></title> <guid></guid> <link>https://example.com/ep</link> <pubDate>2012-05-25T03:17:54CST</pubDate> <description><![CDATA[<div>&unknown;</div><p>"quoted"</p>&#xFFFF;<br>&;<br>
+
+&Lt;]]></description> <itunes:summary>
+
+plain words[x]  &#x26;#x1F600;
+
+&#x26;#65;&#38;#66;&lt;hr>&#60;img src="x.pn<![CDATA[g">مرحبا<br><p/>]]></itunes:summary> <itunes:duration>99999999999</itunes:duration> <enclosure url='//example.com/a/b/c73.m4v' length="0x4E20" type="text/plain"/> <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url=""/></item></channel> </rss>

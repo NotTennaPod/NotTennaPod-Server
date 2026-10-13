@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom"> <channel><description><![CDATA[<p>&amp;amp;</p>Episode 7<br>x<y<br>ééé<div>&#xFFFF;</div>]]></description>
+  <title>
+&amp;amp;amp;
+</title>
+  <itunes:author><![CDATA[Jane Doe]]></itunes:author>
+  <atom:link href="https://example.com/alt.xml" type="application/atom+xml" length="9223372036854775808" rel="archives"/>
+  <itunes:summary></itunes:summary>
+  <itunes:image href=" "/>
+  <link> https://example.com/ </link>
+  <item><pubDate>Sat., 03 May 2018 17:06:27</pubDate><title>&#38;lt;b&#x26;gt;escaped&amp;lt;/b&#x26;gt; &#38;lt;b&#x26;gt;</title><sc:chapters version="1.2"></sc:chapters><itunes:summary></itunes:summary><guid>
+</guid><enclosure url="HTTPS://EXAMPLE.COM/café/53.wav" length="9223372036854775808" type=''/><content:encoded>😀&lt;br&gt;multi
+lineaa</content:encoded><media:thumbnail url=""/></item>
+  <item><guid isPermaLink='false'>
+</guid>
+<title><![CDATA[1 <2]]></title>
+<enclosure url="https://xn--caf-dma.example/e p82.mpga" length="00020000" type="audio/aac"/>
+<foo><description>Nested description</description></foo>
+<media:thumbnail/>
+<link></link>
+<pubDate>2010-07-28T15:31:40British Summer Time</pubDate></item></channel>
+</rss>

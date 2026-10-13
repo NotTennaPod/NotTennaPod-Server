@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pi="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xml:lang="">
+<atom:author><atom:name></atom:name></atom:author> <atom:id>https://example.com/feed</atom:id> <atom:title type="xhtml">مر&#x62D;<![CDATA[با&lt;b&gt;]]></atom:title> <atom:author><atom:name>C&#x26;D</atom:name><atom:email>a@example.com</atom:email></atom:author> <atom:logo> https://e.com/l.png
+</atom:logo> <atom:link rel="hub" type="" title="Café"/> <atom:link rel="payment" title="Café" length='9223372036854775808' href=""/> <atom:author><atom:name>  Bob  </atom:name></atom:author> <itunes:image href=""/> <atom:link href="https://example.com/feed?page=2" title="MP3 feed" type="application/rss+xml" rel="related" length="20000"/> <atom:link rel="payment" href="" title="" length="abc"/> <atom:entry><atom:link href="ftp://files.example.com/ep294.html" type='application/xhtml+xml' title='Café' rel="first"/>
+  <atom:link rel="Next" title='MP3 feed' length="9223372036854775808" href="https://xn--caf-dma.example/ep23.flac"/>
+  <atom:link href="https://example.com/pay" title="Café"/>
+  <atom:updated>2006-11-20+0945</atom:updated>
+  <atom:content type="plain"><![CDATA[<br]]>&gt;&#60;/br&gt;</atom:content>
+  <atom:title type='HTML'>a &gt; b</atom:title></atom:entry> <atom:entry><atom:link title="" length="9223372036854775808" rel="" type="application/xhtml+xml" href="https://example.com/pay"/><itunes:duration>1E3:00</itunes:duration><atom:updated>2528-07-29T10:38:19pst</atom:updated><pi:transcript type='application/srt'/><pi:transcript url="" type="text/vtt" language="en"/><pi:transcript type="text/html"/><atom:published>Mon, 09 December 1974 18:10 -0800</atom:published><atom:id></atom:id><atom:title>plain words</atom:title><atom:summary type="HTML"><![CDATA[  a
+
+b
+Tom & Jerry <3
+Tom & Jerry <3<br></br><p>Folge 7: Über alles</p>😀😀😀<li>cr
+lf</li>aa]]></atom:summary><atom:link title="Café" href="https://example.com/alt.xml" type="application/xml+xhtml" length="12"></atom:link></atom:entry> <atom:entry><psc:chapters><psc:chapter start="00:00:00.000" title="&lt;b>x&lt;/b>"/><psc:chapter start="01:23:16.215" href="" title="😀"/><psc:chapter start="02:34:21.235" href="https://example.com/ch" title="&lt;b>x&lt;/b>"/><psc:chapter start="71:27" title="😀"/></psc:chapters>
+<atom:id>
+id
+</atom:id>
+<atom:author><atom:name>Entry author</atom:name></atom:author>
+<itunes:duration>41:46</itunes:duration>
+<atom:updated>Sun, 27 Nov 94 01:00:32 +0945</atom:updated>
+<atom:published>	2005-05-22T17:32:06 CET </atom:published>
+<atom:content type="html"><![CDATA[<p>&amp;amp;</p>]]></atom:content>
+<atom:title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&amp;#xA9;</div></atom:title></atom:entry> <atom:entry><atom:content></atom:content> <atom:link type="" rel='self' href="https://example.com/alt.xml"/> <atom:title type="plain"> &#x26;#;	</atom:title> <atom:updated>Foo, 	07 Apr 1993 13:50:22 +0945</atom:updated> <atom:id></atom:id> <atom:link rel="Next" href="https://example.com/alt.xml" title='MP3 feed' type="application/atom+xml"/></atom:entry> <atom:entry><atom:title type="text">Line&lt;br&gt;break &#x3C;cite>'single'&#60;/cite&gt;</atom:title>
+  <atom:updated>11 Sep 57 05:54:41 +0530</atom:updated>
+  <atom:published>Thu, 01 Mar 0001 23.22.02 +0530</atom:published>
+  <atom:link title="Café" rel="hub" href=" HTTPS://EXAMPLE.COM/ep340.3gp " type=""/>
+  <atom:link length="20000" title="MP3 feed" type="application/xml+xhtml"/>
+  <atom:summary type="plain">  &#x3C;3 &lt;3&#13;
+مر&#x62D;با</atom:summary></atom:entry> <atom:entry><atom:link type="application/atom+xml" href="" rel=""/>
+  <atom:id>
+id
+</atom:id>
+  <itunes:duration>51:58</itunes:duration>
+  <atom:published>2002-02-15T17:05:36GMT+1</atom:published>
+  <atom:title type="html"><![CDATA[&amp
+&euro;
+&Lt;]]></atom:title>
+  <atom:link rel="enclosure" title="" href="https://example.com/alt.xml" type="application/rss+xml"/>
+  <atom:updated>Mon, 11 Oct 2280 20:47 -0800</atom:updated></atom:entry> <atom:entry><atom:link length="abc" rel="enclosure" title="Alternate" href='https://example.com/' type=""></atom:link><atom:link href="" rel="enclosure" title="" type="audio/mpeg" length='20000'/><atom:author><atom:name>Entry author</atom:name></atom:author><atom:published>1601-06-06</atom:published><atom:link href="https://example.com/pay" type="audio/mpeg" title="MP3 feed" length="12"/><itunes:duration>17779</itunes:duration><atom:title>&#13;
+&amp;AMP;
+</atom:title></atom:entry> <atom:entry><atom:title type='text'>a &#x3C; b a&#13;
+b   padded  </atom:title>
+<atom:published>wed, 30 Aug 2176 14:49:00 -1200</atom:published>
+<atom:link length='20000' rel="alternate" title="MP3 feed" type='audio/mpeg'/>
+<atom:id>
+id
+</atom:id>
+<atom:updated>2020-01-11T11:55:31+0530  </atom:updated></atom:entry></atom:feed>

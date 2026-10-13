@@ -1,0 +1,49 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/"> <channel><podcast:funding xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/donate">Support us</podcast:funding>
+<description></description>
+<title>Episode 12&#x3C;strike&gt;a=b&amp;c=d&#x3C;/strike&gt;</title>
+<link></link>
+<language>de-DE</language>
+<item><title>&lt;s&gt;&#38;#128512;&#60;/s>Tom &#38;amp; Jerry &amp;lt;3  padded  </title>
+  <guid>https://example.com/item/46666</guid>
+  <pubDate>WED, 22 July 1998 20:37:49</pubDate>
+  <enclosure url="" length='9007199254740991' type="audio/mpeg"></enclosure>
+  <media:thumbnail url='https://example.com/th.jpg'/></item>
+<item><guid isPermaLink='false'>a&#x26;b</guid> <pubDate>Tue, 01 Sep 66 03:46:04 +0000</pubDate> <enclosure url="https://xn--caf-dma.example/café/59.html" length="12" type="text/html"/> <title>&#13;
+&amp;amp	</title> <description><![CDATA[<br><]]>hr/></description></item>
+<item><pubDate>Sat, 04 Jul 1981 04:34 -0000Z</pubDate>
+  <link>https://example.com/ep</link>
+  <guid isPermaLink="false">a&#x26;b</guid>
+  <enclosure length='18446744073709551616' type='text/html'/>
+  <title>&lt;P&gt;&#38;a<![CDATA[mp</P>]]></title></item>
+<item><title>
+S01E973</title>
+  <guid isPermaLink="false">dup</guid>
+  <pubDate>09 Nov 1999 08:53 +0100</pubDate>
+  <description>ééé</description>
+  <enclosure url="HTTPS://EXAMPLE.COM/ep308.ogg" length="20000 " type="application/json"/>
+  <media:group><media:content type="audio/x-wav" duration="0" isDefault="false" fileSize="2147483648" medium="audio"/></media:group>
+  <podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.vtt" type='application/srr'></podcast:transcript><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url='https://example.com/t.json' type="Application/JSON"/><podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.json" language="en"/></item>
+<item><title><![CDATA[&#xA9;  <div dir="rtl">100%</div>]]></title>
+  <guid isPermaLink="true">dup</guid>
+  <link>https://example.com/ep</link>
+  <pubDate>04 Nov 1971 10:11:02 +01:00</pubDate>
+  <description>&lt;img&gt;&#160;trailing 	&#x26;lt&#60;BR&gt;&lt;br&gt;&#x3C;/br>&#60;br>&lt;br/&gt;trailing </description>
+  <content:encoded>&#60;hr/>
+  spaced  ééé&lt;div&gt;multi
+line&#x3C;/div>&#x3C;hr/&gt;</content:encoded>
+  <enclosure url="http://example.org/ep112.torrent" length="2147483648" type="audio/x-wav"/>
+  <enclosure url="" length='9007199254740993' type="audio/mpeg; charset=binary"/>
+  <enclosure url="HTTPS://EXAMPLE.COM/ep176.wav" length="9223372036854775807" type="audio/"/>
+  <media:group><media:content duration="-5" fileSize="abc"/></media:group></item>
+<item><description><![CDATA[<p>tab	here</p>]]></description> <title>
+&#38;#x1F600;R&amp;D	</title> <enclosure url="//example.com/ep276.txt?file=x.mp3" length="16385" type="audio/mp3"/> <guid>a&amp;b</guid> <podcast:transcript xmlns:podcast="https://podcastindex.org/namespace/1.0" url="https://example.com/t.vtt" type="application/srr"/></item>
+<item><content:encoded>&#60;br/></content:encoded><media:content medium="image" duration="0060" isDefault="true" type="application/ogg" fileSize="9223372036854775808"/><guid isPermaLink="false">https://example.com/item/73208</guid><podcast:locked xmlns:podcast="https://podcastindex.org/namespace/1.0">yes</podcast:locked><media:content type="text/plain" medium="audio" isDefault="false" duration="0" fileSize="-0" url='HTTPS://EXAMPLE.COM/190.aspx'/><title><![CDATA[Tom &amp; Jerry &lt;3​]]></title><pubDate>Wed, 22 Jul 2212 23:14:34 India Standard Time</pubDate><enclosure url="https://xn--caf-dma.example/ep237.3gp?dl=1.0" length="52428800" type="application/x-bittorrent"></enclosure><link>https://example.com/ep</link></item>
+<item><guid> </guid>
+<enclosure url="https://cdn.example.com/a/b/c33.pdf" length="12" type="application/ogg"/>
+<content:encoded><![CDATA[ &#xA9;<hr/>aaaaa😀😀😀  &amp;amp;  Tom & Jerry <3<li>AT&T</li>😀😀]]></content:encoded>
+<title>&lt;strong&gt;&#x26;#xD800;&#x3C;/strong> [x] &#38;#xD800;</title>
+<description><![CDATA[<div><img src="x.png"> cover</div>aa
+
+Tom & Jerry <3]]></description>
+<pubDate>Mon 19 Dec 2529 19:57:17 +0530</pubDate>
+<link>https://example.com/ep</link></item></channel></rss>

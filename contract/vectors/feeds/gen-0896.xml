@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dcterms="http://purl.org/dc/elements/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:p="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:chapters="http://podlove.org/simple-chapters" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><title><![CDATA[<3 <3]]></title>
+<atom:link type="" rel="first" title="Alternate"/>
+<atom:link href="https://example.com/" rel="hub"/>
+<item><guid>
+</guid>
+  <enclosure url="https://example.com:8443/e p326.m4v" length="-9223372036854775808" type="video/mp4"/>
+  <enclosure url="https://example.com:8443/e p72.m4v" length="00020000" type="audio/mp4"/>
+  <pubDate>	20 SEP 2003 00:50:02 -0000&#13;
+</pubDate>
+  <enclosure length="20000 " type=''/>
+  <title><![CDATA[&#128512;</p>]]></title></item>
+<item><link> https://e.com/x </link>
+  <enclosure url="" length='16383' type="application/ogg"/>
+  <x xmlns="urn:other"><title>Default namespace title</title></x>
+  <title><![CDATA[&amp;]]></title>
+  <guid isPermaLink='true'>https://example.com/item/68635</guid></item>
+<item><title>a &lt; b&#x3C;center> leading&lt;/cent<![CDATA[er><img src="x.png"> cover]]></title>
+<guid isPermaLink="false">a&#x26;b</guid>
+<description>&#x3C;li>{json: 1}&#60;/li>	&amp;#xFFFF;	​  &lt;3 &#60;3 <![CDATA[ &euro;]]></description>
+<enclosure url="https://cdn.example.com/a/b/c180.opus" length="-9223372036854775808" type="image/*"/></item>
+<item><title>&#x26;unknown;</title> <guid>Café-guid</guid> <pubDate>&#13;
+1066-11-23T11:05:31+1400
+</pubDate> <p:transcript type="text/plain" language='en'/> <enclosure url="https://xn--caf-dma.example/e p82.mpga" length='' type=""/> <link></link> <description><![CDATA[​éééééé]]></description></item>
+<atom:link title='Café' rel='archives' href="https://example.com/" type="application/atom+xml" length="abc"/>
+<link>https://example.com</link>
+<description><![CDATA[  plain words	back\slash​<br><p>&amp;</p><li>&mdash;</li>]]></description>
+<p:chapters url="https://example.com/feed-chapters.json"/>
+<image><title>Image title</title><url>  https://example.com/ws.png
+</url><link>https://example.com/img-link</link></image>
+<atom:link length="12" rel="self" title="Café"/></channel>
+  </rss>
