@@ -36,6 +36,8 @@ NotTennaPod-Server is one Go binary (`cmd/nottennapod-server`) with one SQLite d
 | `internal/acceptancecheck` | the read-only witness check of a stopped server's data directory (`make acceptance-witness`) |
 | `internal/rebuildtest` | the rebuild invariant shared by tests |
 
+`Dockerfile`, `docker-compose.yml` and `docker/` hold the container image ([OPERATIONS](OPERATIONS.md#running-in-docker)).
+
 `contract/` holds the shared vectors (`contract/vectors/`, byte-checked copies of which live in the client repositories) and the independent Python reference (`contract/reference/`), written from the protocol and never from the Go code. `spec/conformance/model_checks.py` holds focused executable counterexamples that `make check` also runs.
 
 Schema migrations (`internal/storage/migrations/`) are checksummed into every database they were applied to, so they are never edited; `TestHistoricalMigrationBytes` pins their bytes. The protocol they implement is in [PROTOCOL.md](PROTOCOL.md).

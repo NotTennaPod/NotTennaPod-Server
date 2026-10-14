@@ -1,0 +1,17 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+# Succeeds when the server answers /healthz on its listen address (127.0.0.1
+# for a wildcard), over HTTPS when TLS_CERT is set. Loopback and the address a
+# connection arrives at always pass the server's Host check.
+listen="${LISTEN_ADDRESS:-127.0.0.1:8080}"
+port="${listen##*:}"
+host="${listen%:*}"
+host="${host#[}"
+host="${host%]}"
+case "${host}" in
+    '' | 0.0.0.0 | ::) host=127.0.0.1 ;;
+    *:*) host="[${host}]" ;;
+esac
+scheme=http
+[[ -n ${TLS_CERT:-} ]] && scheme=https
+exec curl -fsk --max-time 5 -o /dev/null "${scheme}://${host}:${port}/healthz"

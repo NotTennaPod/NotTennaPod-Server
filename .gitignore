@@ -36,3 +36,7 @@ __pycache__/
 *.pem
 *.key
 *.p12
+
+# The Docker example, when run from this checkout (docker-compose.yml).
+/config/
+/tailscale/

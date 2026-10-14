@@ -1,0 +1,21 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+# NotTennaPod Server, configured from the container's environment
+# (docs/OPERATIONS.md, "Running in Docker"). s6 sends SIGTERM straight to the
+# server, which shuts down cleanly; Docker's stop timeout bounds it.
+args=(--data-dir /config/data --listen "${LISTEN_ADDRESS:-127.0.0.1:8080}"
+    --backup-dir "${BACKUP_DIR:-/config/backups}" --backup-time "${BACKUP_TIME:-03:30}"
+    --refresh-interval "${REFRESH_INTERVAL:-1h}")
+[[ -n ${PUBLIC_URL} ]] && args+=(--public-url "${PUBLIC_URL}")
+IFS=',' read -ra hosts <<<"${ALLOW_HOSTS}"
+for h in "${hosts[@]}"; do
+    h="${h#"${h%%[![:space:]]*}"}"
+    h="${h%"${h##*[![:space:]]}"}"
+    [[ -n ${h} ]] && args+=(--allow-host "${h}")
+done
+[[ ${ALLOW_INSECURE_LISTEN,,} == true ]] && args+=(--allow-insecure-listen)
+[[ -n ${TLS_CERT} ]] && args+=(--tls-cert "${TLS_CERT}" --tls-key "${TLS_KEY}")
+cmd=(/app/nottennapod-server/nottennapod-server "${args[@]}")
+[[ -z ${LSIO_NON_ROOT_USER} ]] && cmd=(s6-setuidgid abc "${cmd[@]}")
+# Ready (s6) once /healthz answers: data/check runs nottennapod-healthcheck.
+exec s6-notifyoncheck -d -n 300 -w 1000 "${cmd[@]}"

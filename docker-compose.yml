@@ -1,0 +1,25 @@
+# NotTennaPod Server with the host's own Tailscale (docs/OPERATIONS.md,
+# "Running in Docker"): host networking keeps the server on the host's
+# loopback, and the host's `tailscale serve` gives it HTTPS. Linux hosts only.
+services:
+  nottennapod:
+    image: nottennapod-server:local       # `make docker`; a registry image later
+    container_name: nottennapod
+    network_mode: host                    # the server stays on the host's loopback
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - PUBLIC_URL=https://<machine>.<tailnet>.ts.net
+      # - LISTEN_ADDRESS=127.0.0.1:8080   # default; change if the port is taken
+    volumes:
+      - ./config:/config
+    stop_grace_period: 2m
+    healthcheck:
+      test: ["CMD", "nottennapod-healthcheck"]
+      interval: 1m
+      timeout: 10s
+      retries: 3
+      start_period: 2m
+    restart: unless-stopped
+# Once on the host:  sudo tailscale serve --bg http://127.0.0.1:8080

@@ -1,0 +1,119 @@
+#!/bin/bash
+# The server's commands inside the container (docs/OPERATIONS.md, "Running in
+# Docker"): `docker exec -it <container> nottennapod-server <command>`.
+#
+# backup, keys export, keys install and restore need the server stopped. With
+# the container's supervisor running, this wrapper holds one maintenance lock,
+# records whether the server is wanted up, stops it, runs the command as the
+# server's user, and then restores the recorded state, whatever the command's
+# outcome; it exits with the command's status. Without a supervisor (a one-off
+# `docker run --entrypoint nottennapod-server …`, such as a restore before the
+# first start) it runs the command directly as the current user.
+set -uo pipefail
+
+BIN=/app/nottennapod-server/nottennapod-server
+SVC=/run/service/svc-nottennapod
+LOCK=/run/nottennapod-maintenance.lock
+
+say() { printf 'nottennapod-server: %s\n' "$*" >&2; }
+
+offline=0 # how many words name an offline command
+case "${1-}" in
+    backup | restore) offline=1 ;;
+    keys)
+        case "${2-}" in
+            export | install) offline=2 ;;
+        esac
+        ;;
+    service)
+        say "not used in Docker: the container runs and restarts the server; update by replacing the image"
+        exit 2
+        ;;
+    --version | -version | version | help) exec "${BIN}" "$@" ;;
+    '' | serve | -*)
+        say "not used in Docker: the container starts the server itself, configured with environment variables"
+        exit 2
+        ;;
+esac
+if ((offline == 0)); then
+    exec "${BIN}" "$@"
+fi
+
+# The data directory is always /config/data.
+has_data_dir=false
+for a in "${@:offline+1}"; do
+    case "${a}" in
+        --data-dir | -data-dir | --data-dir=* | -data-dir=*) has_data_dir=true ;;
+    esac
+done
+cmd=("${@:1:offline}")
+if [[ ${has_data_dir} == false ]]; then
+    cmd+=(--data-dir /config/data)
+fi
+cmd+=("${@:offline+1}")
+
+if ! s6-svok "${SVC}" 2>/dev/null; then
+    # No supervisor: nothing to stop or restart.
+    exec "${BIN}" "${cmd[@]}"
+fi
+
+# Root (the normal container): only the root-owned supervisor can be stopped
+# and started, so the wrapper stays root and runs the command as the server's
+# user. Non-root mode: the current user owns the supervisor and runs both.
+run_as=()
+if [[ $(id -u) == 0 && -z ${LSIO_NON_ROOT_USER:-} ]]; then
+    run_as=(s6-setuidgid abc)
+fi
+
+# 1. One maintenance command at a time.
+exec 9>>"${LOCK}" || {
+    say "cannot open the maintenance lock ${LOCK}"
+    exit 1
+}
+if ! flock -n 9; then
+    say "another maintenance command is running; try again when it has finished"
+    exit 1
+fi
+
+# 2. The supervisor's desired state, not just whether a process exists.
+if ! wanted=$(s6-svstat -o wantedup "${SVC}") || [[ ${wanted} != true && ${wanted} != false ]]; then
+    say "cannot read the server's state"
+    exit 1
+fi
+
+# 3. Restore that state on every exit, before anything changes.
+restore_state() {
+    local rc=$?
+    trap '' INT TERM HUP
+    if [[ ${wanted} == true ]]; then
+        if s6-svc -wu -T 10000 -u "${SVC}"; then
+            say "the server is starting again; \`docker logs\` shows when it is listening"
+        else
+            say "could not start the server again; restart the container"
+        fi
+    else
+        say "the server was stopped before this command (s6-svc -d), so it stays stopped; start it with: s6-svc -u ${SVC}"
+    fi
+    exit "${rc}"
+}
+trap restore_state EXIT
+trap 'exit 130' INT
+trap 'exit 143' TERM
+trap 'exit 129' HUP
+
+# 4. Stop it, also between restart attempts, and confirm.
+if [[ ${wanted} == true ]]; then
+    say "stopping the server for this command"
+fi
+if ! s6-svc -wD -T 120000 -d "${SVC}"; then
+    say "the server did not stop within 2 minutes, so the command was not run"
+    exit 1
+fi
+if [[ $(s6-svstat -o up "${SVC}") != false ]]; then
+    say "the server is still running, so the command was not run"
+    exit 1
+fi
+
+# 5. The command, as the server's user; its status is the wrapper's.
+"${run_as[@]}" "${BIN}" "${cmd[@]}" 9>&-
+exit $?

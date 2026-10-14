@@ -1,0 +1,3 @@
+#!/bin/bash
+# s6-notifyoncheck's readiness check: the server answers /healthz.
+exec /usr/local/bin/nottennapod-healthcheck

@@ -1,0 +1,11 @@
+*
+!cmd/
+!internal/
+!go.mod
+!go.sum
+!LICENSE
+!LICENSES/
+!NOTICE
+!docker/
+internal/webui/dist/*
+!internal/webui/dist/.keep

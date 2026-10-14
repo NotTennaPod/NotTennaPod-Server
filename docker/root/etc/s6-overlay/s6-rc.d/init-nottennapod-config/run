@@ -1,0 +1,107 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+# Prepares /config for NotTennaPod Server (docs/OPERATIONS.md, "Running in
+# Docker"). The server refuses folders others can change, so ownership and
+# modes are fixed here and logged. Any preparation failure exits non-zero, and
+# S6_BEHAVIOUR_IF_STAGE2_FAILS=2 then stops the container instead of starting
+# the server on a half-prepared /config.
+set -euo pipefail
+
+DOCS="docs/OPERATIONS.md, \"Running in Docker\" (https://github.com/NotTennaPod/NotTennaPod-Server/blob/main/docs/OPERATIONS.md#running-in-docker)"
+BACKUP_DIR="${BACKUP_DIR:-/config/backups}"
+LISTEN_ADDRESS="${LISTEN_ADDRESS:-127.0.0.1:8080}"
+DIRS=(/config/data /config/export "${BACKUP_DIR}")
+
+say() { echo "[nottennapod-init] $*"; }
+fail() {
+    echo "[nottennapod-init] cannot start: $*" >&2
+    exit 1
+}
+
+# The base's PUID/PGID handling and lsiown are skipped in non-root and
+# read-only modes: ownership must already be right there.
+fix=true
+if [[ -n ${LSIO_NON_ROOT_USER:-} || -n ${LSIO_READ_ONLY_FS:-} ]]; then
+    fix=false
+fi
+
+if [[ ${fix} == true ]]; then
+    if ! out=$(mkdir -p "${DIRS[@]}" 2>&1); then
+        fail "cannot create the server's folders (${out//$'\n'/; }); /config must be a writable local folder"
+    fi
+    for d in /config "${DIRS[@]}"; do
+        [[ -w ${d} ]] || fail "${d} is read-only; /config must be a writable local folder"
+    done
+
+    # Owner: lsiown changes only what is wrong, so this is cheap, and it
+    # repairs the files after a PUID or PGID change. -h: never follow a link.
+    wrong=$(find "${DIRS[@]}" ! -xtype l \( ! -user abc -o ! -group abc \) -printf . | wc -c)
+    if ((wrong > 0)); then
+        say "giving ${wrong} files and folders in ${DIRS[*]} to the server's user (uid $(id -u abc), gid $(id -g abc))"
+        lsiown -R -h abc:abc "${DIRS[@]}"
+    fi
+
+    # /config itself: the server's user, and nobody else may change it.
+    before="$(stat -c '%u:%g %04a' /config)"
+    lsiown abc:abc /config
+    if [[ -n $(find /config -maxdepth 0 -perm /022) ]]; then
+        chmod go-w /config || fail "cannot take group and other write access away from /config"
+    fi
+    after="$(stat -c '%u:%g %04a' /config)"
+    if [[ ${before} != "${after}" ]]; then
+        say "fixed /config (owner and mode ${before} -> ${after}): the server refuses a folder other users can change"
+    fi
+
+    # The server's own folders are private.
+    for d in "${DIRS[@]}"; do
+        mode=$(stat -c '%04a' "${d}")
+        if [[ ${mode} != 0700 ]]; then
+            chmod 700 "${d}" || fail "cannot make ${d} private (chmod 700)"
+            say "made ${d} private (mode ${mode} -> 0700)"
+        fi
+    done
+
+    # lsiown only warns when it fails: check the result.
+    uid=$(id -u abc)
+    for d in /config "${DIRS[@]}"; do
+        owner=$(stat -c '%u' "${d}")
+        [[ ${owner} == "${uid}" ]] || fail "${d} belongs to uid ${owner}, not to the server's user (PUID ${uid}), and could not be changed; /config must be a local folder (not NFS or SMB)"
+        [[ -z $(find "${d}" -maxdepth 0 -perm /022) ]] || fail "${d} can be changed by other users (mode $(stat -c '%04a' "${d}")) and could not be fixed"
+    done
+else
+    # Non-root and read-only modes: create what is missing as the server's
+    # user; the server itself explains a /config it cannot use.
+    run_as=()
+    if [[ $(id -u) == 0 ]]; then
+        run_as=(s6-setuidgid abc)
+    fi
+    if ! out=$("${run_as[@]}" mkdir -p "${DIRS[@]}" 2>&1); then
+        say "cannot create the server's folders (${out//$'\n'/; }): in non-root and read-only modes /config must already belong to the container's user"
+    fi
+fi
+
+# Docker-specific mistakes, in plain words, before the server refuses.
+host=${LISTEN_ADDRESS%:*}
+host=${host#[}
+host=${host%]}
+loopback=false
+case ${host} in
+    localhost | 127.* | ::1) loopback=true ;;
+esac
+if [[ -n ${TLS_CERT:-} && -z ${TLS_KEY:-} ]] || [[ -z ${TLS_CERT:-} && -n ${TLS_KEY:-} ]]; then
+    say "TLS_CERT and TLS_KEY go together: set both (files under /config/tls) or neither; the server refuses one without the other"
+fi
+if [[ ${loopback} == true ]]; then
+    say "the server listens on ${LISTEN_ADDRESS} inside the container: with host networking (network_mode: host) that is the host's own loopback, for the host's \`tailscale serve\`; on Docker's bridge network nothing outside the container can reach it. See ${DOCS}"
+else
+    if [[ -z ${TLS_CERT:-} && ${ALLOW_INSECURE_LISTEN:-} != [Tt][Rr][Uu][Ee] ]]; then
+        say "LISTEN_ADDRESS=${LISTEN_ADDRESS} is not loopback: plain HTTP there needs ALLOW_INSECURE_LISTEN=true (anyone who can reach it can read passwords), or serve HTTPS with TLS_CERT and TLS_KEY. The server will refuse to listen. See ${DOCS}"
+    fi
+    if [[ -z ${PUBLIC_URL:-} ]]; then
+        say "PUBLIC_URL is not set: browsers that reach the server by a name, or through a proxy or tailscale serve, need PUBLIC_URL=https://<name>; other names go in ALLOW_HOSTS"
+    fi
+fi
+
+if [[ ! -e /config/data/nottennapod.db ]]; then
+    say "First start: open ${PUBLIC_URL:-the server} and enter the setup code the server prints below (also in /config/data/setup-code). Then export the keys: docker exec -it <container> nottennapod-server keys export --out /config/export/<file>"
+fi

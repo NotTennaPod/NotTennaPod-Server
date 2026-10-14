@@ -18,8 +18,9 @@ its data directory) that the first administrator enters to set it up.
 ## Stack
 
 Go, standard-library HTTP, and SQLite. Supported deployment targets are macOS and
-Linux on ARM64 and x86-64. The language and protocol are independent of the phone
-platforms. [ARCHITECTURE](docs/ARCHITECTURE.md) describes the code layout and
+Linux on ARM64 and x86-64, and a Docker image for `linux/arm64` and `linux/amd64`
+([Running in Docker](docs/OPERATIONS.md#running-in-docker)). The language and
+protocol are independent of the phone platforms. [ARCHITECTURE](docs/ARCHITECTURE.md) describes the code layout and
 [OPERATIONS](docs/OPERATIONS.md) how to run the server for a household.
 
 ## Development
@@ -70,6 +71,31 @@ Ubuntu). The server finds them on `PATH`, or through `--ffmpeg PATH` and
 Without them the relay still works and such episodes are reported as unsupported.
 `make media-acceptance` runs the conversion tests, which fail rather than skip
 when ffmpeg is missing.
+
+**Docker image.** `make docker` builds the container image with Docker's buildx
+for this machine's platform and loads it as `nottennapod-server:<version>`,
+`:<version>-<YYYYMMDD>` and `:local` (the tag the compose example uses);
+`DOCKER_PLATFORM=linux/amd64,linux/arm64` builds both, and `IMAGE=` changes the
+name. The web client comes from the NotTennaPod-Web commit pinned in the
+`Dockerfile` (`WEB_COMMIT`, bumped in a Server commit after the pairing is tested).
+While that repository is private, export a read-only token for it, which `make
+docker` passes to BuildKit as the `GIT_AUTH_TOKEN` build secret, scoped to
+github.com and never written to a file, an image or the build cache:
+
+```sh
+GIT_AUTH_TOKEN=$(gh auth token) make docker   # or a fine-grained, read-only token
+```
+
+Without it the build fails with "could not read Username". `make docker
+WEB_SRC=../NotTennaPod-Web` builds from a local checkout instead and marks the
+version `+web-local`; with `RELEASE=1` it refuses unless that checkout is exactly
+`WEB_COMMIT` with no local changes, and `RELEASE=1` also refuses a dirty Server
+checkout. The build fails unless the image's ffmpeg passes the server's media
+self-check (`TestVerifyMatrix`: every source format converts to every profile) on
+each platform it builds. It builds in its own BuildKit container, the `ntp-utc`
+builder with `TZ=UTC`, created on first use and kept for its cache, so the image's
+timestamps are UTC; Docker's default builder is not touched. How to run the image is in
+[OPERATIONS](docs/OPERATIONS.md#running-in-docker).
 
 `make acceptance-witness DATA=<dir>` is the server's acceptance witness: on a copy
 of a stopped server's data directory (which it never writes) it checks the
