@@ -2,7 +2,6 @@ package views
 
 import (
 	"errors"
-	"sort"
 	"strings"
 )
 
@@ -78,42 +77,46 @@ func (f Filter) AllStates() Filter {
 	return f
 }
 
-// Match reports whether the episode passes the filter.
-func (f Filter) Match(e *Episode) bool {
+// MatchClass reports whether an episode of the class passes the filter's
+// properties other than the podcast's state: Match is MatchClass of the
+// episode's class and StateOK of its podcast's state.
+func (f Filter) MatchClass(c Class) bool {
 	switch {
 	case f.Played:
-		if e.Read != 1 {
+		if c.Read() != 1 {
 			return false
 		}
 	case f.Unplayed:
-		if e.Read == 1 {
+		if c.Read() == 1 {
 			return false
 		}
 	case f.New:
-		if e.Read != -1 {
+		if c.Read() != -1 {
 			return false
 		}
 	}
-	paused := e.HasMedia && e.Position > 0
-	if (f.Paused && !paused) || (!f.Paused && f.NotPaused && paused) {
+	if (f.Paused && !c.Paused()) || (!f.Paused && f.NotPaused && c.Paused()) {
 		return false
 	}
-	if (f.Queued && !e.Queued) || (!f.Queued && f.NotQueued && e.Queued) {
+	if (f.Queued && !c.Queued()) || (!f.Queued && f.NotQueued && c.Queued()) {
 		return false
 	}
-	if (f.HasMedia && !e.HasMedia) || (!f.HasMedia && f.NoMedia && e.HasMedia) {
+	if (f.HasMedia && !c.Media()) || (!f.HasMedia && f.NoMedia && c.Media()) {
 		return false
 	}
-	if (f.Favorite && !e.Favorite) || (!f.Favorite && f.NotFavorite && e.Favorite) {
+	if (f.Favorite && !c.Fav()) || (!f.Favorite && f.NotFavorite && c.Fav()) {
 		return false
 	}
-	if f.InHistory && !(e.HasMedia && e.History > 0) {
-		return false
-	}
+	return !f.InHistory || c.History()
+}
+
+// StateOK reports whether the filter includes episodes of a podcast in the
+// state (subscribed, archived or not_subscribed).
+func (f Filter) StateOK(state string) bool {
 	if f.Subscribed && f.Archived && f.NotSubscribed {
 		return true
 	}
-	switch e.Podcast.State {
+	switch state {
 	case "subscribed":
 		return f.Subscribed || (!f.Archived && !f.NotSubscribed)
 	case "archived":
@@ -131,84 +134,4 @@ var Orders = map[string]bool{
 	"size_small_large": true, "size_large_small": true,
 	"episode_filename_a_z": true, "episode_filename_z_a": true,
 	"completion_date_new_old": true,
-}
-
-// key is one sort column: SQLite's order, where NULL is the smallest value.
-type key struct {
-	null bool
-	n    int64
-	s    string
-}
-
-func compareKeys(a, b key) int {
-	switch {
-	case a.null && b.null:
-		return 0
-	case a.null:
-		return -1
-	case b.null:
-		return 1
-	case a.s < b.s:
-		return -1
-	case a.s > b.s:
-		return 1
-	case a.n < b.n:
-		return -1
-	case a.n > b.n:
-		return 1
-	}
-	return 0
-}
-
-// Sort orders episodes as Android's ORDER BY does: by the order's column,
-// ascending or descending, with ties in item order (the input's Rank order).
-// Titles and links compare as SQLite's BINARY collation (UTF-8 bytes).
-func Sort(list []*Episode, order string) {
-	var col func(e *Episode) key
-	desc := false
-	media := func(e *Episode, v int64) key { return key{null: !e.HasMedia, n: v} }
-	text := func(s *string) key {
-		if s == nil {
-			return key{null: true}
-		}
-		return key{s: *s}
-	}
-	switch order {
-	case "date_old_new":
-		col = func(e *Episode) key { return key{n: e.PubDate} }
-	case "episode_title_a_z", "episode_title_z_a":
-		col, desc = func(e *Episode) key { return text(e.Title) }, order == "episode_title_z_a"
-	case "duration_short_long", "duration_long_short":
-		col, desc = func(e *Episode) key { return media(e, e.Duration) }, order == "duration_long_short"
-	case "size_small_large", "size_large_small":
-		col, desc = func(e *Episode) key { return media(e, e.Size) }, order == "size_large_small"
-	case "episode_filename_a_z", "episode_filename_z_a":
-		col, desc = func(e *Episode) key { return text(e.Link) }, order == "episode_filename_z_a"
-	case "completion_date_new_old":
-		col, desc = func(e *Episode) key { return media(e, e.History) }, true
-	default: // date_new_old
-		col, desc = func(e *Episode) key { return key{n: e.PubDate} }, true
-	}
-	sort.SliceStable(list, func(i, j int) bool {
-		c := compareKeys(col(list[i]), col(list[j]))
-		if desc {
-			return c > 0
-		}
-		return c < 0
-	})
-}
-
-// Episodes returns the library's episodes passing the filter, sorted.
-func (l *Library) EpisodesWhere(f Filter, order string, podcast string) []*Episode {
-	var out []*Episode
-	for _, e := range l.Episodes {
-		if podcast != "" && e.Podcast.ID != podcast {
-			continue
-		}
-		if f.Match(e) {
-			out = append(out, e)
-		}
-	}
-	Sort(out, order)
-	return out
 }

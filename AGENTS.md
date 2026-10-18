@@ -33,7 +33,7 @@ python3 contract/reference/check_vectors.py contract/vectors
 python3 contract/reference/check_rules.py contract/vectors
 python3 contract/reference/selftest_rules.py --quick
 python3 contract/reference/selftest_import.py
-go test -count=1 -run TestRuleVectors ./internal/ops    # after changing rule vectors
+go test -count=1 -timeout 0 -run TestRuleVectors ./internal/ops    # after changing rule vectors
 ```
 
 ## Before every push

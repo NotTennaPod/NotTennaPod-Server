@@ -22,7 +22,7 @@ func TestStagedPreservesNonLogState(t *testing.T) {
 		if err := a.PutFeedResponse(e.p, []byte("cached response")); err != nil {
 			return err
 		}
-		return a.PutRefreshSchedule(storage.RefreshRow{PodcastID: e.p, NextAt: e.clock + day, NotBefore: e.clock + day, Failures: 3})
+		return a.PutRefreshSchedule(storage.RefreshRow{PodcastID: e.p, NextAt: e.clock + day, NotBefore: e.clock + day, Failures: 3, QuietSince: e.clock - 40*day})
 	}); err != nil {
 		t.Fatal(err)
 	}
@@ -39,7 +39,7 @@ func TestStagedPreservesNonLogState(t *testing.T) {
 			t.Errorf("feed response lost: %q %v", body, err)
 		}
 		row, ok, err := a.RefreshSchedule(e.p)
-		if err != nil || !ok || row.NotBefore != e.clock+day {
+		if err != nil || !ok || row.NotBefore != e.clock+day || row.QuietSince != e.clock-40*day {
 			t.Errorf("schedule lost: %+v exists=%v err=%v", row, ok, err)
 		}
 		return nil
@@ -272,4 +272,55 @@ func TestConcentratedHistoryIsStaged(t *testing.T) {
 	if size >= protocol.DefaultStagingThreshold || !report.Staged {
 		t.Errorf("a concentrated history of %d entries was not staged", size)
 	}
+}
+
+// A staged recovery upload checkpoints the write-ahead log only once the
+// account is no longer busy (PROTOCOL §14): another device's push arriving
+// while the housekeeping runs is accepted, never answered server_busy.
+func TestStagedRecoveryCheckpointsOnceTheAccountIsFree(t *testing.T) {
+	e := newListenEnv(t)
+	a, b := e.device("A"), e.device("B")
+	backup := e.backup(t)
+	at := e.headSeq(t)
+	e.pushOK(t, a, e.lfact(a, "favorite.set", e.ref, map[string]any{"on": true}), "applied")
+	lost := entries(e.logCommits(t, at))
+	var calls, during []string
+	var b2 *device
+	e.storeOpts = []storage.OpenOption{storage.WithWALCheckpointHook(func(after string, _ storage.WALCheckpoint, err error) error {
+		calls = append(calls, after)
+		if b2 == nil {
+			return err
+		}
+		f, perr := protocol.ParseFact(e.lfact(b2, "favorite.set", e.ref, map[string]any{"on": true}))
+		if perr != nil {
+			t.Error(perr)
+			return err
+		}
+		b2.seq++
+		resp, perr := e.svc.Push(context.Background(), protocol.PushRequest{AccountID: e.account, Cursor: e.head(), InstallID: b2.inst.InstallID,
+			AckedInstallSeq: b2.seq - 1, Operations: []protocol.PushOp{{InstallSeq: b2.seq, Fact: f}}},
+			func(tx *storage.WriteTx) (*storage.Installation, error) {
+				i, err := tx.Account(e.account).Installation(b2.inst.InstallID)
+				return &i, err
+			})
+		if perr != nil {
+			during = append(during, perr.Error())
+		} else {
+			during = append(during, resp.Results[0].Status)
+		}
+		return err
+	})}
+	e.restore(t, backup)
+	a2 := e.successor(t, a)
+	b2 = e.successor(t, b)
+	r, _ := e.startRecovery(t, a2, nil)
+	e.svc.StagingThreshold = 1
+	resp := r.upload(t, lost)
+	if statuses(resp)["joined"] != len(lost) {
+		t.Fatalf("upload: %+v", resp.Results)
+	}
+	if !slices.Equal(calls, []string{"staged rebuild"}) || !slices.Equal(during, []string{"accepted"}) {
+		t.Fatalf("checkpoints %q, the pushes made while they ran %q", calls, during)
+	}
+	b2 = nil
 }

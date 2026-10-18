@@ -1,0 +1,715 @@
+{
+ "cases": [
+  {
+   "description": "stored chapters: out of start order, equal starts, NULL start and title, a millisecond start and a link with userinfo; the flag set without rows and rows behind a flag of 0 and of NULL (no chapters); merged episodes: different chapters on both rows (the first row in date order has the higher ID), chapters only on the second row, only on the first, and after a flag without rows. Device-only settings: a feed with every setting changed, a feed whose values are all Android's defaults spelled out, and a local folder and an unused preview with changed settings (skipped, not listed). Episodes stopped from downloading automatically: unplayed, played (not counted), NULL, in a merged episode and in a skipped preview",
+   "fixture": "contract/vectors/import/device-only.db",
+   "format": "nottennapod-import-android-v1",
+   "ignored": {
+    "dropped_favorite_rows": [],
+    "dropped_queue_rows": [],
+    "extra_media": [],
+    "orphan_items": [],
+    "orphan_media": []
+   },
+   "podcasts": [
+    {
+     "creating_feed_id": 1,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": null,
+       "chapters": [
+        {
+         "image_url": "https://chapters.example.invalid/2.jpg",
+         "link": "https://chapters.example.invalid/2",
+         "start": "60000",
+         "title": "Second"
+        },
+        {
+         "image_url": null,
+         "link": null,
+         "start": "0",
+         "title": "First"
+        },
+        {
+         "image_url": null,
+         "link": null,
+         "start": "60000",
+         "title": "Second, again"
+        }
+       ],
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "ch-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        1
+       ],
+       "state_item_id": 1,
+       "title": "Chapters out of order",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "chapters": null,
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "ch-2"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        2
+       ],
+       "state_item_id": 2,
+       "title": "Flag without rows",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "chapters": null,
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "ch-3"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        3
+       ],
+       "state_item_id": 3,
+       "title": "Stale rows, flag 0",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "chapters": null,
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "ch-4"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        4
+       ],
+       "state_item_id": 4,
+       "title": "Stale rows, flag NULL",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "chapters": [
+        {
+         "image_url": null,
+         "link": null,
+         "start": "0",
+         "title": null
+        },
+        {
+         "image_url": null,
+         "link": "https://chapters.example.invalid/c",
+         "start": "1234567",
+         "title": "Precise"
+        }
+       ],
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "ch-5"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        5
+       ],
+       "state_item_id": 5,
+       "title": "Odd chapters",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "chapters": [
+        {
+         "image_url": null,
+         "link": null,
+         "start": "0",
+         "title": "Row seven"
+        }
+       ],
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "same"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        6,
+        7
+       ],
+       "state_item_id": 7,
+       "title": "Two rows (first)",
+       "units": [
+        {
+         "duration_ms": 600000,
+         "history": null,
+         "last_played": null,
+         "played": false,
+         "played_ms": 0,
+         "position_ms": 0,
+         "source_item_id": 6,
+         "source_media_id": 6
+        }
+       ]
+      },
+      {
+       "baseline": null,
+       "chapters": null,
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "ad-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        8
+       ],
+       "state_item_id": 8,
+       "title": "Not downloaded automatically",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "chapters": null,
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "ad-2"
+       },
+       "inbox": false,
+       "play_state": "played",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        9
+       ],
+       "state_item_id": 9,
+       "title": "Played, not downloaded automatically",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "chapters": null,
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "ad-3"
+       },
+       "inbox": true,
+       "play_state": "new",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        10
+       ],
+       "state_item_id": 10,
+       "title": "NULL auto download",
+       "units": []
+      },
+      {
+       "baseline": null,
+       "chapters": [
+        {
+         "image_url": null,
+         "link": null,
+         "start": "0",
+         "title": "Second row's"
+        }
+       ],
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "nn-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        14,
+        15
+       ],
+       "state_item_id": 15,
+       "title": "Merged: chapters second",
+       "units": [
+        {
+         "duration_ms": 600000,
+         "history": null,
+         "last_played": null,
+         "played": false,
+         "played_ms": 0,
+         "position_ms": 0,
+         "source_item_id": 14,
+         "source_media_id": 14
+        }
+       ]
+      },
+      {
+       "baseline": null,
+       "chapters": [
+        {
+         "image_url": null,
+         "link": null,
+         "start": "0",
+         "title": "First row's"
+        }
+       ],
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "nn-2"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        16,
+        17
+       ],
+       "state_item_id": 17,
+       "title": "Merged: no chapters second",
+       "units": [
+        {
+         "duration_ms": 600000,
+         "history": null,
+         "last_played": null,
+         "played": false,
+         "played_ms": 0,
+         "position_ms": 0,
+         "source_item_id": 16,
+         "source_media_id": 16
+        }
+       ]
+      },
+      {
+       "baseline": null,
+       "chapters": [
+        {
+         "image_url": null,
+         "link": null,
+         "start": "5000",
+         "title": "After an empty flag"
+        }
+       ],
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "en-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        18,
+        19
+       ],
+       "state_item_id": 19,
+       "title": "Merged: chapters after an empty flag",
+       "units": [
+        {
+         "duration_ms": 600000,
+         "history": null,
+         "last_played": null,
+         "played": false,
+         "played_ms": 0,
+         "position_ms": 0,
+         "source_item_id": 18,
+         "source_media_id": 18
+        }
+       ]
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "global",
+     "normalized_url": "https://chapters.example.invalid/feed.xml",
+     "populated": true,
+     "properties_feed_id": 1,
+     "source_feed_ids": [
+      1
+     ],
+     "state": "subscribed",
+     "title": "Chapters Show",
+     "url": "https://chapters.example.invalid/feed.xml"
+    },
+    {
+     "creating_feed_id": 2,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": null,
+       "chapters": null,
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "s-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        11
+       ],
+       "state_item_id": 11,
+       "title": "Settings episode",
+       "units": []
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "global",
+     "normalized_url": "https://settings.example.invalid/feed.xml",
+     "populated": true,
+     "properties_feed_id": 2,
+     "source_feed_ids": [
+      2
+     ],
+     "state": "subscribed",
+     "title": "My Settings Show",
+     "url": "https://settings.example.invalid/feed.xml"
+    },
+    {
+     "creating_feed_id": 3,
+     "credentials": false,
+     "credentials_feed_id": null,
+     "episodes": [
+      {
+       "baseline": null,
+       "chapters": null,
+       "duration_ms": 600000,
+       "favorite": false,
+       "history": null,
+       "identity": {
+        "k": "rss-guid",
+        "v": "d-1"
+       },
+       "inbox": false,
+       "play_state": "unplayed",
+       "position_ms": 0,
+       "queued": false,
+       "source_item_ids": [
+        12
+       ],
+       "state_item_id": 12,
+       "title": "Defaults episode",
+       "units": []
+      }
+     ],
+     "k": "rss-guid",
+     "keep_updated": true,
+     "new_episodes_action": "global",
+     "normalized_url": "https://defaults.example.invalid/feed.xml",
+     "populated": true,
+     "properties_feed_id": 3,
+     "source_feed_ids": [
+      3
+     ],
+     "state": "subscribed",
+     "title": "Defaults Show",
+     "url": "https://defaults.example.invalid/feed.xml"
+    }
+   ],
+   "queue": [],
+   "result": {
+    "ambiguous": [],
+    "imported": {
+     "episodes": 14,
+     "favorites": 0,
+     "history": 0,
+     "inbox": 1,
+     "podcasts": 3,
+     "queue": 0
+    },
+    "merged": [
+     {
+      "kind": "episode",
+      "podcast": "Chapters Show",
+      "source_item_ids": [
+       6,
+       7
+      ],
+      "title": "Two rows (first)"
+     },
+     {
+      "kind": "episode",
+      "podcast": "Chapters Show",
+      "source_item_ids": [
+       14,
+       15
+      ],
+      "title": "Merged: chapters second"
+     },
+     {
+      "kind": "episode",
+      "podcast": "Chapters Show",
+      "source_item_ids": [
+       16,
+       17
+      ],
+      "title": "Merged: no chapters second"
+     },
+     {
+      "kind": "episode",
+      "podcast": "Chapters Show",
+      "source_item_ids": [
+       18,
+       19
+      ],
+      "title": "Merged: chapters after an empty flag"
+     }
+    ],
+    "not_carried": {
+     "episode_auto_download_off": 3,
+     "podcasts": [
+      {
+       "settings": [
+        "custom_title",
+        "tags",
+        "playback_speed",
+        "skip_silence",
+        "skip_intro",
+        "skip_ending",
+        "volume_adaptation",
+        "episode_notification",
+        "auto_delete",
+        "auto_download_filter",
+        "episode_list_filter",
+        "sort_order"
+       ],
+       "source_feed_id": 2,
+       "title": "My Settings Show",
+       "url": "https://settings.example.invalid/feed.xml"
+      }
+     ]
+    },
+    "skipped": [
+     {
+      "reason": "local_folder",
+      "source_feed_id": 4,
+      "title": "Local Folder"
+     },
+     {
+      "reason": "unused_preview",
+      "source_feed_id": 5,
+      "title": "Unused Preview"
+     }
+    ]
+   },
+   "sha256": "b9099038044bd6d4a31440a71f75daebe32c1faeb6ed492ae429d2732316f1e9",
+   "statistics": {
+    "android": {
+     "monthly": [],
+     "per_feed": [
+      {
+       "episodes": 16,
+       "episodes_started": 0,
+       "episodes_started_marked": 1,
+       "feed_id": 1,
+       "played_marked_ms": 600000,
+       "played_ms": 0,
+       "total_ms": 9600000
+      },
+      {
+       "episodes": 1,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "feed_id": 2,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 600000
+      },
+      {
+       "episodes": 1,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "feed_id": 3,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 600000
+      }
+     ],
+     "per_podcast": [
+      {
+       "creating_feed_id": 1,
+       "episodes": 16,
+       "episodes_started": 0,
+       "episodes_started_marked": 1,
+       "played_marked_ms": 600000,
+       "played_ms": 0,
+       "total_ms": 9600000
+      },
+      {
+       "creating_feed_id": 2,
+       "episodes": 1,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 600000
+      },
+      {
+       "creating_feed_id": 3,
+       "episodes": 1,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 600000
+      }
+     ],
+     "windows": [
+      {
+       "from": 0,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 3,
+         "played_ms": 0
+        }
+       ],
+       "to": null
+      }
+     ]
+    },
+    "causes": [
+     {
+      "cause": "skipped_unused_preview",
+      "detail": "a skipped feed's rows count in Android's statistics (per feed when its state is not 1, per month always) and nowhere after the import",
+      "source_feed_ids": [
+       5
+      ],
+      "source_item_ids": [
+       13
+      ]
+     }
+    ],
+    "expected_differences": [],
+    "mismatches": [],
+    "projection": {
+     "monthly": [],
+     "per_podcast": [
+      {
+       "creating_feed_id": 1,
+       "episodes": 16,
+       "episodes_started": 0,
+       "episodes_started_marked": 1,
+       "played_marked_ms": 600000,
+       "played_ms": 0,
+       "total_ms": 9600000
+      },
+      {
+       "creating_feed_id": 2,
+       "episodes": 1,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 600000
+      },
+      {
+       "creating_feed_id": 3,
+       "episodes": 1,
+       "episodes_started": 0,
+       "episodes_started_marked": 0,
+       "played_marked_ms": 0,
+       "played_ms": 0,
+       "total_ms": 600000
+      }
+     ],
+     "windows": [
+      {
+       "from": 0,
+       "per_podcast": [
+        {
+         "creating_feed_id": 1,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 2,
+         "played_ms": 0
+        },
+        {
+         "creating_feed_id": 3,
+         "played_ms": 0
+        }
+       ],
+       "to": null
+      }
+     ]
+    }
+   },
+   "user_version": 3110000
+  }
+ ],
+ "suite": "import_android"
+}

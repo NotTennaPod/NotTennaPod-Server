@@ -1,6 +1,6 @@
 //go:build darwin || linux
 
-package backupsched
+package storage
 
 import "syscall"
 

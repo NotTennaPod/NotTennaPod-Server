@@ -64,18 +64,59 @@ type Config struct {
 	Clock       Clock          // default the system clock
 	Random      func() float64 // [0, 1), safe for concurrent use (default math/rand/v2)
 	Logger      *slog.Logger
+	// AfterAttempt, when set, is called once for each fetch that ended,
+	// outside every lock: success is a fetch applied without an error; a
+	// failed fetch, one whose outcome could not be written and one a panic
+	// stopped are failures. A fetch a stop cut short, or of a podcast that no
+	// longer exists, is no attempt. The import's first-refresh progress
+	// counts with it (importer.Runner.AfterAttempt).
+	AfterAttempt func(account, podcast string, success bool)
 }
 
-// Schedule constants (PROTOCOL §9.4).
+// Schedule constants (PROTOCOL §9.4, §9.6).
 const (
 	jitterFraction = 0.1
 	backoffBase    = 15 * time.Minute
 	backoffMax     = 24 * time.Hour
 	retryAfterMax  = 30 * 24 * time.Hour // the only limit on Retry-After (PROTOCOL §14)
 	wakeSlack      = time.Minute         // a pass later than SyncEvery by more than this follows a sleep
+	// A podcast whose fetches have found its catalog unchanged this long is
+	// fetched at least this far apart (PROTOCOL §9.6).
+	quietDays     = 30 * 24 * time.Hour
+	quietInterval = 6 * time.Hour
+	stillDays     = 90 * 24 * time.Hour
+	stillInterval = 24 * time.Hour
+	// A host whose ETag is unreliable is fetched without validators once
+	// this long has passed since its last full response (PROTOCOL §9.3).
+	unreliableETagSafety = 24 * time.Hour
 )
 
 type key struct{ account, podcast string }
+
+// hold keeps a podcast whose last attempt ended without an outcome written
+// (storage failing) from running again before until (ms), so a failing write
+// is no tight loop; a request newer than seq is not held. The requests stay
+// pending, and the podcast runs again once the hold ends, whether or not its
+// schedule keeps it updated. n counts such attempts in a row: each hold is
+// twice the last, up to retryHoldMax, so a publisher is not fetched every
+// minute while storage fails.
+type hold struct{ until, seq, n int64 }
+
+// retryHold is how long a podcast whose outcome could not be written first
+// waits before it runs again; retryHoldMax is the longest wait.
+const (
+	retryHold    = time.Minute
+	retryHoldMax = 15 * time.Minute
+)
+
+// holdAfter is the hold after the n-th attempt in a row that wrote no outcome.
+func holdAfter(n int64) time.Duration {
+	d := retryHold
+	for i := int64(1); i < n && d < retryHoldMax; i++ {
+		d *= 2
+	}
+	return min(d, retryHoldMax)
+}
 
 type job struct{ host string }
 
@@ -88,7 +129,7 @@ type Refresher struct {
 	mu         sync.Mutex
 	running    map[key]*job
 	hosts      map[string]int
-	manual     map[key]bool   // requested through the API; true: forced (no validators)
+	held       map[key]hold   // podcasts whose last attempt ended without its outcome written: not retried at once
 	contexts   map[key]string // the fetch context (generation, URL, credentials) last seen
 	finished   map[key]int64  // finishSeq when the key's last fetch ended
 	finishSeq  int64
@@ -102,6 +143,10 @@ type Refresher struct {
 	lastPassMs int64
 	lastMono   time.Duration // the clock's monotonic time at the last pass, when it has one
 	lastWake   int64         // ms: the last pass after a wake or clock jump (the service page)
+
+	beforeRequestWrite func()                   // tests: in a refresh request, between reading its candidates and its write
+	fault              func(stage string) error // tests: an error (or a panic) at "capture", in the "outcome" commit or its fallback ("defer")
+	beforeFinish       func(k key)              // tests: after an attempt's outcome, before it leaves the running fetches
 }
 
 // New returns a refresher for the service's accounts. Start runs it.
@@ -140,7 +185,7 @@ func New(svc *protocol.Service, cfg Config) *Refresher {
 	if log == nil {
 		log = slog.Default()
 	}
-	return &Refresher{svc: svc, cfg: cfg, log: log, running: map[key]*job{}, hosts: map[string]int{}, manual: map[key]bool{},
+	return &Refresher{svc: svc, cfg: cfg, log: log, running: map[key]*job{}, hosts: map[string]int{}, held: map[key]hold{},
 		contexts: map[key]string{}, finished: map[key]int64{}, served: map[string]int64{}, wake: make(chan struct{}, 1)}
 }
 
@@ -229,7 +274,34 @@ func (r *Refresher) signal() {
 }
 
 func (r *Refresher) jitter(d time.Duration) time.Duration {
-	return time.Duration(float64(d) * (1 - jitterFraction + 2*jitterFraction*r.cfg.Random()))
+	return jittered(d, r.jitterFactor())
+}
+
+// jitterFactor draws a factor within ±10 % of 1.
+func (r *Refresher) jitterFactor() float64 {
+	return 1 - jitterFraction + 2*jitterFraction*r.cfg.Random()
+}
+
+func jittered(d time.Duration, factor float64) time.Duration {
+	return time.Duration(float64(d) * factor)
+}
+
+// interval is a podcast's scheduled interval at now (PROTOCOL §9.6): the
+// refresh interval, at least 6 hours once its fetches have found its catalog
+// unchanged for 30 days, and at least 24 hours after 90. An unknown quiet
+// time, and one a clock that went back left in the future, count as active.
+func (r *Refresher) interval(quietSince, now int64) time.Duration {
+	d := r.cfg.Interval
+	if quietSince == 0 || now < quietSince {
+		return d
+	}
+	switch quiet := time.Duration(now-quietSince) * time.Millisecond; {
+	case quiet >= stillDays:
+		return max(d, stillInterval)
+	case quiet >= quietDays:
+		return max(d, quietInterval)
+	}
+	return d
 }
 
 // backoff is the delay after the n-th consecutive failure: 15 minutes,
@@ -291,7 +363,7 @@ type dueItem struct {
 	k      key
 	host   string
 	manual bool
-	force  bool
+	seq    int64 // the podcast's request sequence when it was found due
 	at     int64
 }
 
@@ -323,6 +395,11 @@ func (r *Refresher) pass(ctx context.Context, spread, reconcile bool) (passResul
 		prev   *string // the fetch context it replaced, restored if the write is left out
 	}
 	var updates []update
+	type resolve struct {
+		k    key
+		upTo int64
+	}
+	var resolves []resolve
 	var due []dueItem
 	present := make(map[key]bool, len(cands))
 	accounts := map[string]bool{}
@@ -336,13 +413,28 @@ func (r *Refresher) pass(ctx context.Context, spread, reconcile bool) (passResul
 			res.skipped++ // its fetch writes the row; the next pass sees it
 			continue
 		}
+		// A request is pending in the schedule row until an attempt answers
+		// it (PROTOCOL §9.6), so a restart loses none. A podcast whose last
+		// attempt could not write its outcome is held for a while (no tight
+		// loop on failing storage), then runs again for its pending requests.
+		h, held := r.held[k]
+		held = held && now < h.until // an ended hold is kept for its count
+		var reqSeq int64
+		isManual, forced := false, false
+		if s := c.Schedule; s != nil && s.RequestPending() {
+			if c.State == "merged" {
+				// A merged podcast is fetched as its survivor (AuthorizedRequest
+				// sends new requests there): its own pending requests are answered.
+				resolves = append(resolves, resolve{k, s.RequestSeq})
+			} else if !held || s.RequestSeq > h.seq {
+				isManual, forced, reqSeq = true, s.RequestForced(), s.RequestSeq
+			}
+		}
 		if c.State == "merged" {
-			delete(r.manual, k) // a request is its survivor's (AuthorizedRequest)
 			continue
 		}
 		scheduled, needsPop := eligibility(c)
 		eligible := scheduled || needsPop
-		manual, isManual := r.manual[k]
 		var row storage.RefreshRow
 		if c.Schedule != nil {
 			row = *c.Schedule
@@ -363,7 +455,9 @@ func (r *Refresher) pass(ctx context.Context, spread, reconcile bool) (passResul
 			row.Context = fc
 			if seen && prev != fc {
 				changedFrom = &prev
-				row.Failures = 0
+				// Another feed, or another subscription of it: its quiet
+				// time is observed again from its next success.
+				row.Failures, row.QuietSince = 0, 0
 				if contextURL(prev) != c.RefreshURL {
 					row.NotBefore = 0
 				}
@@ -372,8 +466,17 @@ func (r *Refresher) pass(ctx context.Context, spread, reconcile bool) (passResul
 				}
 			}
 		}
-		if reconcile && c.Schedule != nil && row.NextAt > now+int64(float64(r.cfg.Interval.Milliseconds())*(1+jitterFraction)) {
-			row.NextAt = now + r.jitter(r.cfg.Interval).Milliseconds()
+		// A refresh of every podcast (not forced) waits for a Retry-After
+		// recorded since it was queued: it is left to the schedule, and the
+		// request is answered (PROTOCOL §9.6). A single podcast's request is
+		// the override.
+		if isManual && !forced && now < row.NotBefore {
+			resolves = append(resolves, resolve{k, reqSeq})
+			isManual = false
+		}
+		// Each podcast by its own interval, so a quiet one keeps its deadline.
+		if iv := r.interval(row.QuietSince, now); reconcile && c.Schedule != nil && row.NextAt > now+int64(float64(iv.Milliseconds())*(1+jitterFraction)) {
+			row.NextAt = now + r.jitter(iv).Milliseconds()
 		}
 		if spread && eligible && !isManual && c.Schedule != nil && row.NextAt <= now {
 			row.NextAt = max(row.NotBefore, now+int64(r.cfg.Random()*float64(r.cfg.Spread.Milliseconds())))
@@ -393,7 +496,9 @@ func (r *Refresher) pass(ctx context.Context, spread, reconcile bool) (passResul
 		}
 		switch {
 		case isManual:
-			due = append(due, dueItem{k: k, host: hostOf(c.RefreshURL), manual: true, force: manual, at: row.NextAt})
+			due = append(due, dueItem{k: k, host: hostOf(c.RefreshURL), manual: true, seq: reqSeq, at: row.NextAt})
+		case held:
+			res.wait = min(res.wait, time.Duration(h.until-now)*time.Millisecond)
 		case eligible && row.NextAt <= now && now >= row.NotBefore:
 			due = append(due, dueItem{k: k, host: hostOf(c.RefreshURL), at: row.NextAt})
 		case eligible:
@@ -401,9 +506,9 @@ func (r *Refresher) pass(ctx context.Context, spread, reconcile bool) (passResul
 		}
 	}
 	// Forget podcasts that are gone (a deleted account).
-	for k := range r.manual {
+	for k := range r.held {
 		if !present[k] {
-			delete(r.manual, k)
+			delete(r.held, k)
 		}
 	}
 	for k := range r.contexts {
@@ -422,6 +527,19 @@ func (r *Refresher) pass(ctx context.Context, spread, reconcile bool) (passResul
 		}
 	}
 	r.mu.Unlock()
+	if len(resolves) > 0 {
+		err := r.svc.Store.Write(ctx, func(tx *storage.WriteTx) error {
+			for _, rv := range resolves {
+				if err := tx.Account(rv.k.account).ResolveRefreshRequests(rv.k.podcast, rv.upTo); err != nil {
+					return err
+				}
+			}
+			return nil
+		})
+		if err != nil {
+			return res, err
+		}
+	}
 	if len(updates) > 0 {
 		var left []update
 		err := r.svc.Store.Write(ctx, func(tx *storage.WriteTx) error {
@@ -567,22 +685,44 @@ func (r *Refresher) startLocked(ctx context.Context, d dueItem) {
 	r.hosts[d.host]++
 	r.startSeq++
 	r.served[d.k.account] = r.startSeq
-	delete(r.manual, d.k)
 	r.jobs.Add(1)
 	go func() {
 		defer r.jobs.Done()
-		err := safely(func() error { return r.refresh(ctx, d.k, d.force) })
+		ended := noAttempt
+		var rec attemptRecord
+		err := safely(func() error {
+			var err error
+			ended, err = r.refreshAttempt(ctx, d.k, false, &rec)
+			return err
+		})
 		var p *panicked
 		switch {
 		case errors.As(err, &p):
 			// A panic the refresh did not turn into a failed refresh itself
 			// (reading its context, or applying its fetch).
 			r.logPanic(d.k, p)
-			r.failAfterPanic(ctx, d.k)
+			r.failAfterPanic(ctx, d.k, &rec)
+			ended = failedAttempt
 		case err != nil && ctx.Err() == nil:
 			r.log.Error("refresh: fetch failed to apply", "account", d.k.account, "podcast", d.k.podcast, "error", err)
+			ended = failedAttempt
+		}
+		if ctx.Err() != nil {
+			ended = noAttempt // a stop cut it short: it records nothing
+		}
+		if r.beforeFinish != nil {
+			r.beforeFinish(d.k)
 		}
 		r.mu.Lock()
+		// An attempt whose outcome could not be written (nor its fallback)
+		// is held, its requests left pending, and runs again when the hold
+		// ends (a stop records nothing and holds nothing).
+		if ctx.Err() == nil && ended != noAttempt && !rec.finished {
+			n := r.held[d.k].n + 1
+			r.held[d.k] = hold{until: r.nowMs() + holdAfter(n).Milliseconds(), seq: max(d.seq, rec.seq), n: n}
+		} else {
+			delete(r.held, d.k)
+		}
 		delete(r.running, d.k)
 		if r.hosts[j.host]--; r.hosts[j.host] <= 0 {
 			delete(r.hosts, j.host)
@@ -590,8 +730,65 @@ func (r *Refresher) startLocked(ctx context.Context, d dueItem) {
 		r.finishSeq++
 		r.finished[d.k] = r.finishSeq
 		r.mu.Unlock()
+		r.afterAttempt(d.k, ended)
 		r.signal()
 	}()
+}
+
+// attempt is how a fetch ended, for Config.AfterAttempt.
+type attempt int
+
+const (
+	noAttempt        attempt = iota // a stop cut it short, or its podcast is gone
+	succeededAttempt                // applied without an error
+	failedAttempt                   // a failed fetch, an outcome not written, or a panic
+)
+
+// afterAttempt tells Config.AfterAttempt how a fetch ended, outside every lock;
+// a panic there is logged, never the server's end.
+func (r *Refresher) afterAttempt(k key, ended attempt) {
+	if r.cfg.AfterAttempt == nil || ended == noAttempt {
+		return
+	}
+	if err := safely(func() error { r.cfg.AfterAttempt(k.account, k.podcast, ended == succeededAttempt); return nil }); err != nil {
+		var p *panicked
+		if errors.As(err, &p) {
+			r.log.Error("refresh: a panic in the attempt hook", "account", k.account, "podcast", k.podcast, "stack", p.stack)
+		}
+	}
+}
+
+// Cohort lists the account's podcasts its refresher will fetch now: those
+// scheduled (subscribed, keep-updated) or awaiting their live generation's
+// first population, as the schedule decides (eligibility), in one read.
+func (r *Refresher) Cohort(ctx context.Context, account string) ([]string, error) {
+	return Cohort(ctx, r.svc.Store, account)
+}
+
+// Cohort lists the podcasts the schedule fetches in an account of store, by the
+// schedule's own eligibility rule, in one read. An import lists those of its
+// staged library just before publishing it, as its first refresh's podcasts
+// (importer.Runner.Cohort).
+func Cohort(ctx context.Context, store *storage.Store, account string) ([]string, error) {
+	var cands []storage.RefreshCandidate
+	err := store.Read(ctx, func(tx *storage.ReadTx) error {
+		var err error
+		cands, err = tx.RefreshCandidates(account)
+		return err
+	})
+	if err != nil {
+		return nil, err
+	}
+	var out []string
+	for _, c := range cands {
+		if c.State == "merged" {
+			continue
+		}
+		if scheduled, needsPop := eligibility(c); scheduled || needsPop {
+			out = append(out, c.PodcastID)
+		}
+	}
+	return out, nil
 }
 
 // panicked is a recovered panic: its stack only. The panic's own text is

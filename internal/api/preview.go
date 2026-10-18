@@ -1,6 +1,7 @@
 package api
 
 import (
+	"encoding/json"
 	"errors"
 	"net/http"
 	"net/url"
@@ -131,17 +132,42 @@ func (req *request) preview() (int, any, error) {
 	u.User = nil
 	out := map[string]any{"url": u.String()}
 	// The account's podcast at this address, if it has one: Android offers
-	// to open it instead of subscribing again.
+	// to open it instead of subscribing again. A removed one is not shown;
+	// its subscription record is the observation an explicit re-subscribe
+	// sends to open a fresh generation (PROTOCOL §7.2).
 	var owner string
+	var observed map[string]any
 	if err := req.read(func(r *storage.ReadTx) error {
+		acct := r.Account(req.principal.accountID())
 		var err error
-		owner, err = r.Account(req.principal.accountID()).PodcastOwning(contract.NormalizeURL(u.String()))
-		return err
+		if owner, err = acct.PodcastOwning(contract.NormalizeURL(u.String())); err != nil || owner == "" {
+			return err
+		}
+		rec, err := acct.Record("podcast", owner, "subscription")
+		if errors.Is(err, storage.ErrNotFound) {
+			return nil
+		} else if err != nil {
+			return err
+		}
+		var sub struct {
+			State        string `json:"state"`
+			GenerationID string `json:"generation_id"`
+		}
+		if err := json.Unmarshal([]byte(rec.Value), &sub); err != nil {
+			return err
+		}
+		if sub.State == "removed" {
+			observed = map[string]any{"podcast_id": owner, "generation_id": sub.GenerationID, "state": sub.State}
+		}
+		return nil
 	}); err != nil {
 		return 0, nil, err
 	}
 	if owner != "" {
 		out["podcast_id"] = owner
+	}
+	if observed != nil {
+		out["observed"] = observed
 	}
 	res, err := fetcher.Discover(req.ctx, body.URL, creds, req.s.cfg.Now())
 	if errors.Is(err, feed.ErrAddress) {

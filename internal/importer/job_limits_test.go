@@ -513,7 +513,7 @@ func TestImportRemovesUserinfoByTheFetchRule(t *testing.T) {
 			t.Errorf("row %d's occurrence %v", r.SourceItem, r.Item.Occurrence)
 		}
 	}
-	pods, err := Apply(context.Background(), e.svc, e.account, plan, 0)
+	pods, err := Apply(context.Background(), e.svc, e.account, plan, 0, nil)
 	if err != nil {
 		t.Fatal(err)
 	}

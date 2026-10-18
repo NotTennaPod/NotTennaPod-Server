@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 	"sync"
 	"testing"
 	"time"
@@ -83,10 +84,20 @@ type fakeStore struct {
 
 func (f *fakeStore) Dir() string { return f.dir }
 
-func (f *fakeStore) BackupAs(ctx context.Context, dir string, name func(time.Time) (string, error)) (storage.BackupInfo, error) {
+// VerifyBackup refuses every file: none of the fake's is a backup.
+func (f *fakeStore) VerifyBackup(context.Context, string, func(int64) error) error {
+	return errors.New("not a backup")
+}
+
+func (f *fakeStore) BackupAs(ctx context.Context, dir string, name func(time.Time) (string, error), opts storage.BackupOptions) (storage.BackupInfo, error) {
 	f.mu.Lock()
 	fail, block := f.fail, f.block
 	f.mu.Unlock()
+	if opts.Start != nil {
+		if err := opts.Start(); err != nil {
+			return storage.BackupInfo{}, err
+		}
+	}
 	if fail != nil {
 		return storage.BackupInfo{}, fail
 	}
@@ -340,7 +351,10 @@ func TestARealDailyBackupIsVerified(t *testing.T) {
 		t.Fatalf("status %+v", st)
 	}
 	path := filepath.Join(store.Dir(), "backups", DailyDir, st.LastFile)
-	if err := storage.VerifyDatabaseFile(ctx, path, -1); err != nil {
+	if !strings.HasSuffix(path, ".db.gz") {
+		t.Errorf("the daily backup is %s, not compressed", st.LastFile)
+	}
+	if err := store.VerifyBackup(ctx, path, nil); err != nil {
 		t.Fatal(err)
 	}
 	if fi, _ := os.Stat(path); fi.Mode().Perm() != 0o600 {
@@ -465,7 +479,7 @@ func (e *env) takenDays() []string {
 	return days
 }
 
-// SB-4: a backup early in its window, followed by a later jitter draw,
+// A backup early in its window, followed by a later jitter draw,
 // makes no second backup that day: the next is the next day's.
 func TestJitterNeverMakesASecondBackupADay(t *testing.T) {
 	e := newEnv(t, Config{Random: draws(0, 0.999, 0, 0.999, 0.5)})
@@ -483,7 +497,7 @@ func TestJitterNeverMakesASecondBackupADay(t *testing.T) {
 	}
 }
 
-// SB-4: a backup recovered after a crash counts as its day's; a restart
+// A backup recovered after a crash counts as its day's; a restart
 // days later still makes one catch-up, then one a day.
 func TestARecoveredBackupIsItsDays(t *testing.T) {
 	e := newEnv(t, Config{Random: draws(0, 0.999, 0.5), Verify: func(context.Context, string) error { return nil }})
@@ -518,7 +532,7 @@ func TestARecoveredBackupIsItsDays(t *testing.T) {
 	}
 }
 
-// SB-5: the quiet hour is the local time on a daylight-saving change day
+// The quiet hour is the local time on a daylight-saving change day
 // too, in both directions, for a first schedule and the day after a backup.
 func TestTheQuietHourOnDaylightSavingDays(t *testing.T) {
 	for _, c := range []struct {
@@ -565,8 +579,8 @@ type slowStore struct {
 	takes time.Duration
 }
 
-func (s slowStore) BackupAs(ctx context.Context, dir string, name func(time.Time) (string, error)) (storage.BackupInfo, error) {
-	info, err := s.fakeStore.BackupAs(ctx, dir, name)
+func (s slowStore) BackupAs(ctx context.Context, dir string, name func(time.Time) (string, error), opts storage.BackupOptions) (storage.BackupInfo, error) {
+	info, err := s.fakeStore.BackupAs(ctx, dir, name, opts)
 	s.clock.Advance(s.takes)
 	return info, err
 }
@@ -628,5 +642,237 @@ func TestBackupsAtMidnight(t *testing.T) {
 	want := []string{"2026-10-06 23:45", "2026-10-08 00:15", "2026-10-09 00:00"}
 	if got := e.takenDays(); fmt.Sprint(got) != fmt.Sprint(want) {
 		t.Fatalf("backups taken at %v, want %v", got, want)
+	}
+}
+
+// ---- compressed backups, the guarded runner and the usage lines
+
+// Retention counts daily backups of both formats by their publication
+// counter: older .db ones go first, and the 30 newest stay whatever their
+// format.
+func TestRetentionCountsBothFormats(t *testing.T) {
+	e := newEnv(t, Config{})
+	dir := filepath.Join(e.store.dir, "backups", DailyDir)
+	os.MkdirAll(dir, 0o700)
+	for i := 1; i <= 35; i++ {
+		ext := ".db"
+		if i > 20 {
+			ext = ".db.gz"
+		}
+		os.WriteFile(filepath.Join(dir, fmt.Sprintf("nottennapod-daily-%06d-20260901-033000%s", i, ext)), []byte("old"), 0o600)
+	}
+	e.start()
+	list := e.daily()
+	if len(list) != Keep || list[0].counter != 6 || list[len(list)-1].counter != 35 {
+		t.Fatalf("kept %d, %d..%d", len(list), list[0].counter, list[len(list)-1].counter)
+	}
+	e.minutes(18 * 60) // the next quiet hour: one more, compressed
+	list = e.daily()
+	if len(list) != Keep || list[0].counter != 7 || list[len(list)-1].name != fmt.Sprintf("nottennapod-daily-%06d-%s.db.gz", 36,
+		strings.TrimSuffix(strings.TrimPrefix(list[len(list)-1].name, "nottennapod-daily-000036-"), ".db.gz")) {
+		t.Fatalf("after the next backup: %d kept, %d..%s", len(list), list[0].counter, list[len(list)-1].name)
+	}
+	if st := e.sched.Status(); st.Kept != Keep || st.Used != int64(3*29+6) {
+		t.Fatalf("status %d kept, %d bytes", st.Kept, st.Used)
+	}
+}
+
+// A compressed daily backup published just before a crash is verified with
+// the server's keys and recorded at start; a tampered one is not recorded,
+// and nothing of it is decoded.
+func TestRecoverPublishedCompressed(t *testing.T) {
+	ctx := context.Background()
+	store, err := storage.Open(ctx, t.TempDir())
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer store.Close()
+	clock := &testClock{now: time.Date(2026, 10, 5, 10, 0, 0, 0, time.Local)}
+	s := New(store, Config{Clock: clock, Random: func() float64 { return 0.5 }})
+	if err := s.load(); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := s.backup(ctx); err != nil { // published, then a crash before it was recorded
+		t.Fatal(err)
+	}
+	first := s.daily()
+	os.Remove(s.statePath())
+	s = New(store, Config{Clock: clock, Random: func() float64 { return 0.5 }})
+	if err := s.load(); err != nil {
+		t.Fatal(err)
+	}
+	if st := s.Status(); st.LastFile != first[0].name || st.LastSuccess == 0 {
+		t.Fatalf("a published compressed backup was not recorded: %+v", st.State)
+	}
+	// A newer one, changed after it was signed.
+	clock.Advance(24 * time.Hour)
+	if _, err := s.backup(ctx); err != nil {
+		t.Fatal(err)
+	}
+	list := s.daily()
+	newest := filepath.Join(s.dailyDir(), list[len(list)-1].name)
+	data, _ := os.ReadFile(newest)
+	data[len(data)/3] ^= 1
+	os.WriteFile(newest, data, 0o600)
+	os.Remove(s.statePath())
+	decoded := storage.BackupsDecoded()
+	s = New(store, Config{Clock: clock, Random: func() float64 { return 0.5 }})
+	if err := s.load(); err != nil {
+		t.Fatal(err)
+	}
+	if st := s.Status(); st.LastFile == list[len(list)-1].name || st.LastSuccess != 0 {
+		t.Fatalf("a tampered backup was recorded: %+v", st.State)
+	}
+	if storage.BackupsDecoded() != decoded {
+		t.Fatal("a tampered backup was decoded")
+	}
+	if left, _ := filepath.Glob(filepath.Join(s.dailyDir(), ".nottennapod-backup-*")); len(left) > 0 {
+		t.Fatalf("the check left %v", left)
+	}
+}
+
+func (s *Scheduler) daily() []published {
+	list, _ := s.list()
+	return list
+}
+
+// An on-demand backup (the admin page's and the command's) keeps the disks
+// safe as the daily ones do: refused at the start without room, stopped by
+// the watch when space runs out while it copies, by the guard when it runs
+// out while it compresses, and by the cap when it takes too long; never
+// published then. A copy left by a crash never stops the retry that removes
+// it.
+func TestManualBackupUsesHeadroomWatchAndCap(t *testing.T) {
+	ctx := context.Background()
+	store, err := storage.Open(ctx, t.TempDir())
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer store.Close()
+	plenty := func(string) (int64, error) { return 100 << 30, nil }
+	empty := func(t *testing.T, dir string) {
+		t.Helper()
+		entries, _ := os.ReadDir(dir)
+		for _, e := range entries {
+			if !strings.HasPrefix(e.Name(), ".nottennapod-backup-") || e.Name() == ".nottennapod-backup-abandoned.tmp" {
+				continue
+			}
+			t.Fatalf("left %s", e.Name())
+		}
+		for _, e := range entries {
+			if strings.HasSuffix(e.Name(), ".db.gz") {
+				t.Fatalf("published %s", e.Name())
+			}
+		}
+	}
+	t.Run("low at the start", func(t *testing.T) {
+		dir := t.TempDir()
+		_, err := Manual(ctx, store, dir, Guard{Free: func(string) (int64, error) { return 512 << 20, nil }})
+		if !errors.Is(err, storage.ErrNoSpace) || !strings.Contains(err.Error(), "not enough free space for a backup") {
+			t.Fatalf("got %v", err)
+		}
+		empty(t, dir)
+	})
+	t.Run("low while it compresses", func(t *testing.T) {
+		dir := t.TempDir()
+		// The raw copy and the compressed one both exist only while it compresses.
+		_, err := Manual(ctx, store, dir, Guard{Free: func(d string) (int64, error) {
+			if temps, _ := filepath.Glob(filepath.Join(dir, ".nottennapod-backup-*.tmp")); len(temps) >= 2 {
+				return 1 << 30, nil
+			}
+			return 100 << 30, nil
+		}})
+		if !errors.Is(err, storage.ErrNoSpace) || !strings.Contains(err.Error(), "to compress the backup") {
+			t.Fatalf("got %v", err)
+		}
+		if entries, _ := os.ReadDir(dir); len(entries) != 0 {
+			t.Fatalf("left %v", entries)
+		}
+	})
+	t.Run("low while it copies", func(t *testing.T) {
+		dir := t.TempDir()
+		var mu sync.Mutex
+		free := int64(100 << 30)
+		blocked := &fakeStore{dir: store.Dir(), clock: &testClock{now: time.Now()}, block: true}
+		go func() {
+			time.Sleep(200 * time.Millisecond)
+			mu.Lock()
+			free = 100 << 20
+			mu.Unlock()
+		}()
+		start := time.Now()
+		_, err := Manual(ctx, blocked, dir, Guard{Free: func(d string) (int64, error) {
+			mu.Lock()
+			defer mu.Unlock()
+			if d != dir {
+				return 100 << 30, nil
+			}
+			return free, nil
+		}})
+		if !errors.Is(err, storage.ErrNoSpace) || !strings.Contains(err.Error(), "free space fell") || time.Since(start) > 5*time.Second {
+			t.Fatalf("got %v after %v", err, time.Since(start))
+		}
+	})
+	t.Run("the cap", func(t *testing.T) {
+		blocked := &fakeStore{dir: store.Dir(), clock: &testClock{now: time.Now()}, block: true}
+		_, err := Manual(ctx, blocked, t.TempDir(), Guard{Free: plenty, MaxRun: 100 * time.Millisecond})
+		if !errors.Is(err, context.DeadlineExceeded) || !strings.Contains(err.Error(), "took longer than") {
+			t.Fatalf("got %v", err)
+		}
+	})
+	t.Run("a crash's copy never stops the retry", func(t *testing.T) {
+		dir := t.TempDir()
+		abandoned := filepath.Join(dir, ".nottennapod-backup-abandoned.tmp")
+		os.WriteFile(abandoned, []byte("a copy left by a crash"), 0o600)
+		info, err := Manual(ctx, store, dir, Guard{Free: func(string) (int64, error) {
+			if _, err := os.Stat(abandoned); err == nil {
+				return 512 << 20, nil // the abandoned copy fills the disk
+			}
+			return 100 << 30, nil
+		}})
+		if err != nil {
+			t.Fatalf("the retry after a crash: %v", err)
+		}
+		if _, err := os.Stat(abandoned); !errors.Is(err, os.ErrNotExist) {
+			t.Fatal("the abandoned copy remains")
+		}
+		if !strings.HasSuffix(info.Path, ".db.gz") || store.VerifyBackup(ctx, info.Path, nil) != nil {
+			t.Fatalf("the backup %+v", info)
+		}
+	})
+}
+
+// The usage lines list daily, on-demand and pre-restore copies and their
+// bytes, with nothing else counted, whether daily backups are on or off.
+func TestUsageListsDailyManualPreRestore(t *testing.T) {
+	backups, data := t.TempDir(), t.TempDir()
+	os.MkdirAll(filepath.Join(backups, DailyDir), 0o700)
+	write := func(path string, n int) {
+		if err := os.WriteFile(path, make([]byte, n), 0o600); err != nil {
+			t.Fatal(err)
+		}
+	}
+	write(filepath.Join(backups, DailyDir, "nottennapod-daily-000001-20260901-033000.db"), 10)
+	write(filepath.Join(backups, DailyDir, "nottennapod-daily-000002-20260902-033000.db.gz"), 20)
+	write(filepath.Join(backups, DailyDir, ".nottennapod-backup-1.tmp"), 1000)
+	write(filepath.Join(backups, "nottennapod-20261001-120000-1.db"), 100)
+	write(filepath.Join(backups, "nottennapod-20261002-120000-1.db.gz"), 200)
+	write(filepath.Join(backups, "nottennapod-20261002-120000-2.db.gz"), 300)
+	write(filepath.Join(backups, ".nottennapod-backup-2.tmp"), 1000)
+	write(filepath.Join(backups, "notes.txt"), 1000)
+	write(filepath.Join(data, "nottennapod.db"), 1000)
+	write(filepath.Join(data, "nottennapod.db-wal"), 1000)
+	write(filepath.Join(data, "nottennapod.db.pre-restore-20261003-080000"), 4000)
+	write(filepath.Join(data, "nottennapod.db.pre-restore-20261003-080000-wal"), 50)
+	write(filepath.Join(data, "nottennapod.db.pre-restore-20261003-080000-shm"), 5)
+	write(filepath.Join(data, "nottennapod.db.pre-restore-20261004-080000-2"), 3000)
+	write(filepath.Join(data, "nottennapod.db.restoring"), 1000)
+	got := GetUsage(backups, data)
+	want := Usage{Daily: Use{2, 30}, Manual: Use{3, 600}, PreRestore: Use{2, 7055}}
+	if got != want {
+		t.Fatalf("usage %+v, want %+v", got, want)
+	}
+	if got := GetUsage(filepath.Join(t.TempDir(), "none"), t.TempDir()); got != (Usage{}) {
+		t.Fatalf("empty folders: %+v", got)
 	}
 }

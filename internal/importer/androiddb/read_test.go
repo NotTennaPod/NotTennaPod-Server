@@ -67,6 +67,7 @@ func TestOlderVersionsMatchAndroidUpgrades(t *testing.T) {
 	if len(entries) == 0 {
 		t.Fatal("no upgraded twins")
 	}
+	withChapters := 0
 	for _, e := range entries {
 		t.Run(e.Name(), func(t *testing.T) {
 			ours := readFixture(t, filepath.Join("testdata/older-versions", e.Name()))
@@ -81,7 +82,19 @@ func TestOlderVersionsMatchAndroidUpgrades(t *testing.T) {
 			if !reflect.DeepEqual(ours, android) {
 				t.Fatalf("ported upgrade differs from Android's:\nours:    %+v\nandroid: %+v", summary(ours), summary(android))
 			}
+			for _, f := range ours.Feeds {
+				for _, ep := range f.Episodes {
+					if len(ep.Chapters) > 0 {
+						withChapters++
+					}
+				}
+			}
 		})
+	}
+	// The stored chapters, settings and auto-download flags are compared too
+	// (they are part of the Library); most older files hold chapters.
+	if withChapters == 0 {
+		t.Fatal("no older file's stored chapters were read")
 	}
 }
 
@@ -93,7 +106,8 @@ func summary(l *Library) []string {
 			if e.Media != nil {
 				m = strings.Join([]string{deref(e.Media.URL), itoa(int64(e.Media.Position)), itoa(e.Media.PlayedDuration), itoa(e.Media.LastPlayedTime), itoa(e.Media.CompletionDate)}, ",")
 			}
-			out = append(out, itoa(f.ID)+"/"+itoa(e.ID)+" read="+itoa(int64(e.Read))+" guid="+deref(e.GUID)+" media="+m)
+			out = append(out, itoa(f.ID)+"/"+itoa(e.ID)+" read="+itoa(int64(e.Read))+" guid="+deref(e.GUID)+" media="+m+
+				" chapters="+itoa(int64(len(e.Chapters))))
 		}
 	}
 	return out
@@ -245,5 +259,45 @@ func TestGeneratedColumnsAreNotRead(t *testing.T) {
 		"ALTER TABLE Feeds ADD COLUMN description BLOB GENERATED ALWAYS AS (zeroblob(16 * 1024 * 1024)) VIRTUAL")
 	if _, err := Read(context.Background(), path, t.TempDir()); !isInvalid(err, "Feeds.description is a generated column") {
 		t.Fatalf("a generated column the reader uses: %v", err)
+	}
+}
+
+// Stored chapters are read as Android loads them (FeedItemCursor,
+// PodDBAdapter.getSimpleChaptersOfFeedItemCursor, DBReader): only with
+// has_simple_chapters > 0, in id order whatever their starts, none for the
+// flag without rows; and the device-only settings and the episode's
+// auto-download flag as Android's cursors read them.
+func TestStoredChaptersAndDeviceSettingsAreRead(t *testing.T) {
+	path := crafted(t,
+		"UPDATE FeedItems SET has_simple_chapters = 1, auto_download = 0",
+		"INSERT INTO SimpleChapters (id, feeditem, start, title, link, image_url) SELECT 7, id, 90000, 'Late', NULL, 'https://img.example.invalid/c.jpg' FROM FeedItems WHERE id = (SELECT MIN(id) FROM FeedItems)",
+		"INSERT INTO SimpleChapters (id, feeditem, start, title, link, image_url) SELECT 9, id, 1500, NULL, 'https://link.example.invalid/', NULL FROM FeedItems WHERE id = (SELECT MIN(id) FROM FeedItems)",
+		"INSERT INTO SimpleChapters (id, feeditem, start, title) VALUES (8, 999999, 0, 'Orphan')",
+		"UPDATE Feeds SET feed_playback_speed = 1.25, feed_skip_intro = 20, tags = '#root'||char(30)||'Tech', sort_order = '3', hide = 'unplayed'")
+	lib := readFixture(t, path)
+	ep := lib.Feeds[0].Episodes[0]
+	if len(ep.Chapters) != 2 || ep.Chapters[0].Start != 90000 || deref(ep.Chapters[0].Title) != "Late" ||
+		deref(ep.Chapters[0].ImageURL) != "https://img.example.invalid/c.jpg" || ep.Chapters[1].Start != 1500 ||
+		ep.Chapters[1].Title != nil || deref(ep.Chapters[1].Link) != "https://link.example.invalid/" {
+		t.Fatalf("chapters %+v", ep.Chapters)
+	}
+	if ep.AutoDownload {
+		t.Error("auto_download 0 read as enabled")
+	}
+	s := lib.Feeds[0].Settings
+	if s.PlaybackSpeed != 1.25 || s.SkipIntro != 20 || deref(s.Tags) != "#root\x1eTech" || deref(s.SortOrder) != "3" ||
+		deref(s.Hide) != "unplayed" || s.AutoDownload != 1 || s.MinimalDuration != -1 {
+		t.Fatalf("settings %+v", s)
+	}
+	// The flag without rows is no chapters (DBReader sets them null); a flag
+	// of 0 hides the rows.
+	lib = readFixture(t, crafted(t, "UPDATE FeedItems SET has_simple_chapters = 1"))
+	if c := lib.Feeds[0].Episodes[0].Chapters; c != nil {
+		t.Fatalf("flag without rows: %#v", c)
+	}
+	lib = readFixture(t, crafted(t, "UPDATE FeedItems SET has_simple_chapters = 0, auto_download = 1",
+		"INSERT INTO SimpleChapters (feeditem, start, title) SELECT id, 0, 'Stale' FROM FeedItems"))
+	if c := lib.Feeds[0].Episodes[0].Chapters; c != nil || !lib.Feeds[0].Episodes[0].AutoDownload {
+		t.Fatalf("flag 0: %#v, auto download %v", c, lib.Feeds[0].Episodes[0].AutoDownload)
 	}
 }

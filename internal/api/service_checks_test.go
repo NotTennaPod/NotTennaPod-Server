@@ -1,10 +1,13 @@
 package api
 
 import (
+	"bytes"
+	"compress/gzip"
 	"context"
 	"database/sql"
 	"errors"
 	"fmt"
+	"io"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -41,7 +44,22 @@ func TestRevokedTokenStaysDeadAfterAModifiedBackupIsRestored(t *testing.T) {
 	e.resetPassword(root, id, "alice password 2").must(http.StatusOK)
 	e.list(bearer(tok)).expect(http.StatusUnauthorized, "unauthorized")
 	e.store.Close()
-	db, err := sql.Open("sqlite", info.Path)
+	// The backup's database changed, and put back with the backup's own trailer.
+	data, err := os.ReadFile(info.Path)
+	if err != nil {
+		t.Fatal(err)
+	}
+	zr, err := gzip.NewReader(bytes.NewReader(data))
+	if err != nil {
+		t.Fatal(err)
+	}
+	plain, err := io.ReadAll(zr)
+	if err != nil {
+		t.Fatal(err)
+	}
+	path := filepath.Join(t.TempDir(), "changed.db")
+	os.WriteFile(path, plain, 0o600)
+	db, err := sql.Open("sqlite", path)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -50,6 +68,16 @@ func TestRevokedTokenStaysDeadAfterAModifiedBackupIsRestored(t *testing.T) {
 		t.Fatal(err)
 	}
 	db.Close()
+	plain, _ = os.ReadFile(path)
+	var changed bytes.Buffer
+	zw := gzip.NewWriter(&changed)
+	zw.Write(plain)
+	zw.Close()
+	trailer := bytes.LastIndex(data, []byte{0x1f, 0x8b, 0x08, 0x10, 0, 0, 0, 0, 0, 0xff})
+	changed.Write(data[trailer:])
+	if err := os.WriteFile(info.Path, changed.Bytes(), 0o600); err != nil {
+		t.Fatal(err)
+	}
 	_, restoreErr := storage.Restore(ctx, storage.RestoreOptions{DataDir: e.dir, Backup: info.Path, Bundle: bundle, Passphrase: pass})
 	if restoreErr == nil || !strings.Contains(restoreErr.Error(), "restore refused") {
 		t.Errorf("the modified backup was restored: %v", restoreErr)

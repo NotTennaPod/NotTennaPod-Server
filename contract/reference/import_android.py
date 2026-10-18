@@ -145,6 +145,28 @@ Judgement calls (each one also noted where it is applied):
   merged episode's title is its state row's.
 - CHOICE: Result counts: 'history' counts episodes with a history time (ruling 4);
   'favorites', 'queue' and 'inbox' count episodes.
+- CHOICE: Stored chapters (PROTOCOL §11.5): an item whose has_simple_chapters > 0
+  (FeedItemCursor: getInt > 0, NULL false) carries its SimpleChapters rows (feeditem = its
+  ID) in id order (PodDBAdapter's query has no ORDER BY and reads rowid order through
+  SimpleChapters_feeditem). No rows is no chapters (DBReader.loadChaptersOfFeedItem sets
+  them null), and so is any other flag, whatever rows exist. Each chapter is {start:
+  getLong as a decimal string, title, link, image_url}, strings without URL userinfo
+  (PROTOCOL §9.4, as every metadata string). An episode's 'chapters' are those of its first
+  row with stored chapters in the import's row order: publication date (pubDate NULL or 0
+  is undated, as the import keeps no date for it; undated last), then item ID; null when
+  no row has any.
+- CHOICE: Not carried (PROTOCOL §1.4, §11.5): per imported feed (skipped feeds excluded),
+  by feed ID, with its title and its download_url without userinfo (telling same-titled
+  feeds apart), the device-only settings that differ from Android's defaults as FeedCursor
+  and FeedPreferencesCursor read them: custom_title non-empty; tags holding a tag other
+  than '#root' (U+001E-separated); feed_playback_speed != -1 (SPEED_USE_GLOBAL; getFloat,
+  NULL 0); skip silence 0 or 2 while the speed is not -1 (getFeedSkipSilence; other codes
+  GLOBAL); skip intro, skip ending > 0; volume adaption 1 to 5; episode_notification > 0;
+  auto_delete_action != 0 (fromCode: unknown is NEVER); auto_download 0 or 2 (fromInteger:
+  else GLOBAL); a non-empty include or exclude filter or minimal_duration_filter > -1
+  (NULL 0); a non-blank comma-separated part in hide; sort_order a SortOrder code other
+  than GLOBAL_DEFAULT (11). Episodes: those not played (state row) with a row whose
+  auto_download is not > 0 (FeedItemCursor: getLong > 0, NULL false).
 - CHOICE: Date-filter windows checked: [0, MAX); [start of the UTC month of DBReader's
   oldestDate, MAX) (Android's 'All time' button, which uses the device's time zone);
   every UTC calendar month holding a positive last_played_time. Any bounds test the same
@@ -158,6 +180,7 @@ import os
 import pathlib
 import re
 import sqlite3
+import struct
 import sys
 import time
 
@@ -308,6 +331,7 @@ def read_library(path):
             "media": _table(conn, "FeedMedia"),
             "queue": _table(conn, "Queue"),
             "favorites": _table(conn, "Favorites"),
+            "chapters": _table(conn, "SimpleChapters"),
         }
     except sqlite3.DatabaseError as e:
         raise UnsupportedFile("unreadable: %s" % e)
@@ -457,6 +481,9 @@ def plan_import(lib):
             media_by_item[fi] = m
 
     favorite_items = set(row.get("feeditem") for row in lib["favorites"])
+    chapters_by_item = {}
+    for c in sorted(lib.get("chapters", ()), key=lambda c: c["id"]):
+        chapters_by_item.setdefault(_int(c.get("feeditem")), []).append(c)
     queue_rows = sorted(lib["queue"], key=lambda q: q["id"])
     queue_rank = {}
     for q in queue_rows:
@@ -566,6 +593,7 @@ def plan_import(lib):
 
         for members, ident in groups_out:
             ep = _episode(members, ident, items, media_by_item, favorite_items, queue_rank)
+            ep["chapters"] = episode_chapters(members, items, chapters_by_item)
             podcast["episodes"].append(ep)
             for iid in members:
                 item_episode[iid] = ep
@@ -604,8 +632,89 @@ def plan_import(lib):
         "skipped": skipped,
         "ambiguous": ambiguous,
         "merged": merged,
+        "not_carried": {
+            "podcasts": [{"title": feed_title(feeds[fid]), "url": strip_userinfo(feeds[fid]["download_url"]),
+                          "source_feed_id": fid, "settings": changed_settings(feeds[fid])}
+                         for fid in sorted(fid for key in order for fid in groups[key])
+                         if changed_settings(feeds[fid])],
+            "episode_auto_download_off": sum(
+                1 for ep in episodes if ep["play_state"] != "played"
+                and any(_int(items[i].get("auto_download")) <= 0 for i in ep["source_item_ids"])),
+        },
     }
     return {"podcasts": podcasts, "queue": queue, "result": result, "ignored": ignored}
+
+
+def _text(v):
+    """Cursor.getString: NULL is None; a number reads as its text."""
+    if v is None or isinstance(v, str):
+        return v
+    if isinstance(v, (bytes, bytearray)):
+        return None
+    return str(v)
+
+
+def episode_chapters(members, items, chapters_by_item):
+    """An episode's chapters (see the CHOICE): its first row in the import's row order
+    (dated by pubDate, undated last, then item ID) with stored chapters; None if none has."""
+    def order(iid):
+        d = _int(items[iid].get("pubDate"))
+        return (d == 0, d, iid)
+
+    for iid in sorted(members, key=order):
+        rows = chapters_by_item.get(iid, ())
+        if _java_int(items[iid].get("has_simple_chapters")) > 0 and rows:
+            return stored_chapters(rows)
+    return None
+
+
+def stored_chapters(rows):
+    """An item's SimpleChapters rows (already in id order) as its metadata's chapters."""
+    out = []
+    for c in rows:
+        ch = {"start": str(_int(c.get("start")))}
+        for k in ("title", "link", "image_url"):
+            t = _text(c.get(k))
+            ch[k] = strip_userinfo(t) if t is not None else None
+        out.append(ch)
+    return out
+
+
+def changed_settings(feed):
+    """A feed's device-only settings that differ from Android's defaults (see the CHOICE),
+    in the order of Android's podcast settings screen, then the podcast screen's filter
+    and sort."""
+    def text(k):
+        return _text(feed.get(k)) or ""
+
+    v = feed.get("feed_playback_speed")
+    try:
+        speed = float(v.strip() if isinstance(v, str) else v) if v is not None else 0.0
+        speed = struct.unpack("f", struct.pack("f", speed))[0]  # getFloat: a Java float
+    except (TypeError, ValueError, OverflowError):
+        speed = 0.0
+    tags = [t for t in text("tags").split("\x1e") if t not in ("", "#root")]
+    hide = [p for p in text("hide").split(",") if p.strip()]
+    code = text("sort_order")  # Integer.parseInt
+    sort_code = int(code) if re.fullmatch(r"[+-]?[0-9]+", code) and abs(int(code)) < 2**31 else None
+    checks = [
+        ("custom_title", text("custom_title") != ""),
+        ("tags", bool(tags)),
+        ("playback_speed", speed != -1),
+        ("skip_silence", speed != -1 and _java_int(feed.get("feed_skip_silence")) in (0, 2)),
+        ("skip_intro", _java_int(feed.get("feed_skip_intro")) > 0),
+        ("skip_ending", _java_int(feed.get("feed_skip_ending")) > 0),
+        ("volume_adaptation", 1 <= _java_int(feed.get("feed_volume_adaption")) <= 5),
+        ("episode_notification", _java_int(feed.get("episode_notification")) > 0),
+        ("auto_delete", _java_int(feed.get("auto_delete_action")) != 0),
+        ("auto_download", _java_int(feed.get("auto_download")) in (0, 2)),
+        ("auto_download_filter", text("include_filter") != "" or text("exclude_filter") != ""
+         or _java_int(feed.get("minimal_duration_filter")) > -1),
+        ("episode_list_filter", bool(hide)),
+        ("sort_order", sort_code is not None and sort_code != 11
+         and (1 <= sort_code <= 10 or 101 <= sort_code <= 106)),
+    ]
+    return [name for name, changed in checks if changed]
 
 
 def _episode(members, ident, items, media_by_item, favorite_items, queue_rank):
@@ -1131,7 +1240,7 @@ SCHEMA_3_12_1 = [
 ]
 
 
-def write_library(path, feeds=(), items=(), media=(), queue=(), favorites=()):
+def write_library(path, feeds=(), items=(), media=(), queue=(), favorites=(), chapters=()):
     """Writes a small AntennaPod 3.12.1 database: the exact DDL, `user_version` 3110000 and
     the given rows (dicts of column -> value; omitted columns take their DDL default)."""
     for suffix in ("", "-journal", "-wal", "-shm"):
@@ -1144,7 +1253,7 @@ def write_library(path, feeds=(), items=(), media=(), queue=(), favorites=()):
             conn.execute(ddl)
         conn.execute("INSERT INTO android_metadata (locale) VALUES ('en_US')")
         for table, rows in (("Feeds", feeds), ("FeedItems", items), ("FeedMedia", media),
-                            ("Queue", queue), ("Favorites", favorites)):
+                            ("Queue", queue), ("Favorites", favorites), ("SimpleChapters", chapters)):
             for row in rows:
                 cols = sorted(row)
                 conn.execute("INSERT INTO %s (%s) VALUES (%s)" % (table, ",".join(cols), ",".join("?" * len(cols))),

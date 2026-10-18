@@ -103,5 +103,5 @@ else
 fi
 
 if [[ ! -e /config/data/nottennapod.db ]]; then
-    say "First start: open ${PUBLIC_URL:-the server} and enter the setup code the server prints below (also in /config/data/setup-code). Then export the keys: docker exec -it <container> nottennapod-server keys export --out /config/export/<file>"
+    say "First start: open ${PUBLIC_URL:-the server} and enter the setup code the server prints below (also in /config/data/setup-code). Then save the recovery key the web app offers (it is also in Settings): if this machine is lost, the backups can only be put back with it."
 fi

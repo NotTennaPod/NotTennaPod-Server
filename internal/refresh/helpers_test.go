@@ -376,9 +376,10 @@ type redirect struct {
 }
 
 type request struct {
-	path          string
-	ifNoneMatch   string
-	authorization string
+	path            string
+	ifNoneMatch     string
+	ifModifiedSince string
+	authorization   string
 }
 
 type feedServer struct {
@@ -396,6 +397,14 @@ type feedServer struct {
 	gate        chan struct{} // non-nil: requests wait for it to close
 	arrived     chan string   // non-nil: each request's path, on arrival
 	unprotected map[string]bool
+	// Validators. Its ETag is its body's, and it answers 304 to a matching
+	// If-None-Match, or without one to If-Modified-Since equal to its
+	// Last-Modified (RFC 9110 §13.2.2), unless:
+	lastModified string // non-empty: sent as Last-Modified
+	changingLM   bool   // Last-Modified changes with every response
+	varyETag     bool   // the ETag changes with every response, whatever its body
+	any304       bool   // any conditional request gets 304, its body changed or not
+	responses    int
 }
 
 func newFeedServer(t *testing.T) *feedServer {
@@ -425,8 +434,10 @@ func (fs *feedServer) body() []byte {
 	b.WriteString(fs.extra)
 	for _, it := range fs.items {
 		guid, _, _ := strings.Cut(it.title, " (")
-		fmt.Fprintf(&b, `<item><title>%s</title><guid>guid-%s</guid><pubDate>%s</pubDate>`, it.title, guid,
-			time.UnixMilli(it.pub).UTC().Format(time.RFC1123Z))
+		fmt.Fprintf(&b, `<item><title>%s</title><guid>guid-%s</guid>`, it.title, guid)
+		if it.pub != 0 {
+			fmt.Fprintf(&b, `<pubDate>%s</pubDate>`, time.UnixMilli(it.pub).UTC().Format(time.RFC1123Z))
+		}
 		if it.playable {
 			fmt.Fprintf(&b, `<enclosure url="https://cdn.example.com/%s.mp3" length="20000" type="audio/mpeg"/>`, strings.ReplaceAll(it.title, " ", "-"))
 		}
@@ -438,7 +449,8 @@ func (fs *feedServer) body() []byte {
 
 func (fs *feedServer) serve(w http.ResponseWriter, r *http.Request) {
 	fs.mu.Lock()
-	fs.requests = append(fs.requests, request{path: r.URL.Path, ifNoneMatch: r.Header.Get("If-None-Match"), authorization: r.Header.Get("Authorization")})
+	fs.requests = append(fs.requests, request{path: r.URL.Path, ifNoneMatch: r.Header.Get("If-None-Match"),
+		ifModifiedSince: r.Header.Get("If-Modified-Since"), authorization: r.Header.Get("Authorization")})
 	gate, arrived := fs.gate, fs.arrived
 	fs.mu.Unlock()
 	if arrived != nil {
@@ -470,8 +482,20 @@ func (fs *feedServer) serve(w http.ResponseWriter, r *http.Request) {
 	body := fs.body()
 	sum := sha256.Sum256(body)
 	etag := `"` + hex.EncodeToString(sum[:8]) + `"`
+	fs.responses++
+	if fs.varyETag {
+		etag = fmt.Sprintf(`"%s-%d"`, hex.EncodeToString(sum[:8]), fs.responses)
+	}
 	w.Header().Set("ETag", etag)
-	if r.Header.Get("If-None-Match") == etag {
+	lm := fs.lastModified
+	if fs.changingLM {
+		lm = time.Unix(1_600_000_000+int64(fs.responses), 0).UTC().Format(http.TimeFormat)
+	}
+	if lm != "" {
+		w.Header().Set("Last-Modified", lm)
+	}
+	inm, ims := r.Header.Get("If-None-Match"), r.Header.Get("If-Modified-Since")
+	if (fs.any304 && (inm != "" || ims != "")) || (inm != "" && inm == etag) || (inm == "" && ims != "" && ims == lm) {
 		w.WriteHeader(http.StatusNotModified)
 		return
 	}

@@ -5,6 +5,7 @@ import (
 	"database/sql"
 	"errors"
 	"fmt"
+	"time"
 )
 
 // WriteTx is the one write transaction in progress (BEGIN IMMEDIATE on the single
@@ -23,6 +24,8 @@ type WriteTx struct {
 	evidenceEpoch int64
 	changed       map[string]bool // accounts whose log advanced without AppendCommit (notify.go)
 	opened        bool            // a podcast generation was opened (notify.go)
+	capture       *captureState   // the read model's capture, when suspended (viewchanges.go)
+	audit         *viewAudit      // the test-only capture audit (viewaudit.go)
 }
 
 // ReadTx is a read transaction on one WAL snapshot.
@@ -45,6 +48,13 @@ func (s *Store) Write(ctx context.Context, fn func(*WriteTx) error) error {
 	if s.closed.Load() {
 		return ErrClosed
 	}
+	// A test's commit observer sees each commit before the next write begins
+	// (viewobserver.go).
+	observer := commitObserver.Load()
+	if observer != nil {
+		s.gate.Lock()
+		defer s.gate.Unlock()
+	}
 	tx, err := s.writer.BeginTx(ctx, nil)
 	if err != nil {
 		return fmt.Errorf("storage: begin: %w", err)
@@ -61,7 +71,27 @@ func (s *Store) Write(ctx context.Context, fn func(*WriteTx) error) error {
 			_ = tx.Rollback()
 		}
 	}()
+	if err := w.beginViewAudit(); err != nil {
+		return err
+	}
 	if err := fn(w); err != nil {
+		return err
+	}
+	// A suspended capture ends before the auth revision's first phase, so
+	// that phase stays the last step before the commit.
+	if err := w.finishViewCapture(); err != nil {
+		return err
+	}
+	if err := w.checkViewAudit(); err != nil {
+		return err
+	}
+	var observed map[string]CommittedAccount
+	if observer != nil && w.audit != nil {
+		if observed, err = w.observedAccounts(); err != nil {
+			return err
+		}
+	}
+	if err := w.endViewAudit(); err != nil {
 		return err
 	}
 	if err := w.raiseAuthRevision(); err != nil {
@@ -81,7 +111,11 @@ func (s *Store) Write(ctx context.Context, fn func(*WriteTx) error) error {
 	}
 	committed = true
 	w.finish()
+	s.identityChanged(w)
 	s.notify(w.committedAccounts(), w.transition != nil, w.opened || len(w.changed) > 0)
+	if observed != nil {
+		s.observe(*observer, observed)
+	}
 	return nil
 }
 
@@ -96,6 +130,22 @@ func (s *Store) Read(ctx context.Context, fn func(*ReadTx) error) error {
 	}
 	defer tx.Rollback()
 	return fn(&ReadTx{ctx: ctx, tx: tx})
+}
+
+// Snapshot runs fn on one read snapshot through the write transaction's
+// account API, for a derivation written against that API that must not hold
+// the single writer (the queue replay's warm-up). It runs on a reader
+// connection (query_only), so any write fails, and nothing commits.
+func (s *Store) Snapshot(ctx context.Context, fn func(*WriteTx) error) error {
+	if s.closed.Load() {
+		return ErrClosed
+	}
+	tx, err := s.reader.BeginTx(ctx, &sql.TxOptions{ReadOnly: true})
+	if err != nil {
+		return fmt.Errorf("storage: begin read: %w", err)
+	}
+	defer tx.Rollback()
+	return fn(&WriteTx{ctx: ctx, tx: tx, store: s, accounts: map[string]*AccountTx{}})
 }
 
 // ErrNoAccount reports an account ID that does not exist.
@@ -125,8 +175,13 @@ func (w *WriteTx) CreateAccount() (Account, error) {
 }
 
 // DeleteAccount removes the account and, by cascade, everything it owns (PROTOCOL §5).
-// It removes access, so it raises the auth revision (PROTOCOL §11).
+// It removes access, so it raises the auth revision (PROTOCOL §11). The
+// cascade runs with the read model's capture suspended, and the account's
+// capture clock and stamps go with it (SuspendViewCapture).
 func (w *WriteTx) DeleteAccount(id string) error {
+	if err := w.SuspendViewCapture(id); err != nil {
+		return err
+	}
 	res, err := w.tx.ExecContext(w.ctx, "DELETE FROM accounts WHERE account_id = ?", id)
 	if err != nil {
 		return err
@@ -158,6 +213,19 @@ func (r *ReadTx) Account(id string) *AccountReader {
 // administration).
 func (r *ReadTx) AccountIDs() ([]string, error) {
 	return queryStrings(r.ctx, r.tx, "SELECT account_id FROM accounts ORDER BY account_id")
+}
+
+// RecentlyActive is the window of RecentlyActiveAccounts.
+const RecentlyActive = 30 * 24 * time.Hour
+
+// RecentlyActiveAccounts lists the active accounts with an installation (a
+// phone or a browser) seen in the RecentlyActive window before now: the
+// accounts the server warms after a start (the queue replay, the read
+// model).
+func (r *ReadTx) RecentlyActiveAccounts(now time.Time) ([]string, error) {
+	return queryStrings(r.ctx, r.tx, `SELECT a.account_id FROM accounts a WHERE a.state = 'active' AND EXISTS (
+		SELECT 1 FROM installations i WHERE i.account_id = a.account_id AND i.last_seen_at >= ?) ORDER BY a.account_id`,
+		now.Add(-RecentlyActive).UnixMilli())
 }
 
 // GetAccount returns an account's identity.

@@ -182,7 +182,7 @@ func ApplyImportPodcast(ctx *protocol.ApplyContext, x ImportPodcast) (ImportedPo
 		return out, fmt.Errorf("ops: imported items need the podcast's record")
 	}
 	if err := ApplyServerFetch(ctx, ServerFetch{PodcastID: podcast, GenerationID: generation, RefreshBy: node,
-		RefreshID: refreshID, FetchTime: x.Time, FeedFields: feedFields, Items: items,
+		RefreshID: refreshID, FetchTime: x.Time, FeedFields: feedFields, Items: items, ImportChapters: true,
 		Namespace: ctx.Namespace}); err != nil {
 		return out, err
 	}

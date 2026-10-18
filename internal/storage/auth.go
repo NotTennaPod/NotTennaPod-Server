@@ -49,6 +49,35 @@ type Credential struct {
 	Installation *Installation // nil if unbound
 }
 
+// CredentialRefusal is why a stored credential no longer authorizes a
+// request (Credential.Refusal).
+type CredentialRefusal int
+
+const (
+	CredentialUsable     CredentialRefusal = iota
+	CredentialSignedOut                    // expired, or its installation is revoked
+	CredentialInactive                     // the account is not active
+	CredentialSuperseded                   // its installation was replaced by a successor
+)
+
+// Refusal applies the rules every authenticated request is checked by again,
+// in their order, to the credential as stored at nowMillis (the API's
+// re-validation, and a recovery job's authority at publication). A deleted
+// credential (signed out, reset) is not found at all.
+func (c Credential) Refusal(nowMillis int64) CredentialRefusal {
+	switch {
+	case c.ExpiresAt != nil && nowMillis >= *c.ExpiresAt:
+		return CredentialSignedOut
+	case c.AccountState != "active":
+		return CredentialInactive
+	case c.Installation != nil && c.Installation.RevokedAt != nil:
+		return CredentialSignedOut
+	case c.Installation != nil && c.Installation.SupersededBy != "":
+		return CredentialSuperseded
+	}
+	return CredentialUsable
+}
+
 // ErrNotFound reports a missing row.
 var ErrNotFound = errors.New("storage: not found")
 

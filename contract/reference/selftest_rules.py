@@ -6990,7 +6990,7 @@ def main(argv):
         # Last, so that the builders of the cases before keep their prefixes.
         ("identity: a merged-away podcast's reference naming the survivor's episode", test_merge_family_reference),
     ]
-    # The 2026-10-07 PROTOCOL §8.1 cases live in their own modules, which build on this one
+    # The PROTOCOL §8.1 claim cases and the queue replay's cases live in their own modules, which build on this one
     # (run as a script, this module is __main__: they must share its builders).
     sys.modules.setdefault("selftest_rules", sys.modules[__name__])
     import selftest_claims  # noqa: E402

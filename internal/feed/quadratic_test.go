@@ -1,8 +1,8 @@
 package feed
 
 // Hostile inputs that took quadratic time, some without stopping at the
-// parse's deadline (the date parse report from the iOS parity port, and the
-// sweep of internal/feed after it, 2026-10-09). Outputs are unchanged: the
+// parse's deadline (in the date parse and elsewhere in internal/feed).
+// Outputs are unchanged: the
 // vectors and the corpus decide that; these tests check the time and the
 // cancellation.
 

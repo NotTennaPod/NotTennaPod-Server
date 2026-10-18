@@ -1,6 +1,9 @@
 package storage
 
-import "sync"
+import (
+	"slices"
+	"sync"
+)
 
 // Commit notifications (PROTOCOL §12): after a write transaction commits,
 // every listener of an account it appended a commit to is woken, and a restore
@@ -8,9 +11,43 @@ import "sync"
 // woken is not woken twice, and a missed hint loses nothing, since the listener
 // re-reads.
 type notifier struct {
-	mu   sync.Mutex
-	subs map[string]map[chan struct{}]bool
-	gens map[chan struct{}]bool // generation listeners (SubscribeGenerations)
+	mu       sync.Mutex
+	subs     map[string]map[chan struct{}]bool
+	gens     map[chan struct{}]bool // generation listeners (SubscribeGenerations)
+	identity []func(accounts []string, all bool)
+}
+
+// OnIdentityChange registers f, called after each commit that changed
+// accounts' read-model identity: raised their generation (a bulk rewrite:
+// SuspendViewCapture), or, with all set, moved every account's lineage (a
+// restore transition). Unlike the listeners, f runs before Write returns, so
+// a rebuild, an import's publication or a transition is ordered after
+// everything f fenced (the read views' registry retires those accounts'
+// views: PROTOCOL §12). f must not write.
+func (s *Store) OnIdentityChange(f func(accounts []string, all bool)) {
+	n := &s.notes
+	n.mu.Lock()
+	defer n.mu.Unlock()
+	n.identity = append(n.identity, f)
+}
+
+// identityChanged calls the identity hooks for a committed transaction.
+func (s *Store) identityChanged(w *WriteTx) {
+	var accounts []string
+	if w.capture != nil {
+		accounts = slices.Clone(w.capture.accounts)
+	}
+	all := w.transition != nil
+	if len(accounts) == 0 && !all {
+		return
+	}
+	n := &s.notes
+	n.mu.Lock()
+	hooks := slices.Clone(n.identity)
+	n.mu.Unlock()
+	for _, f := range hooks {
+		f(accounts, all)
+	}
 }
 
 // Subscribe returns a channel that receives a value after each commit of the
@@ -91,7 +128,8 @@ func (s *Store) notify(accounts []string, all, gens bool) {
 }
 
 // committedAccounts lists the accounts this transaction appended a commit to
-// or whose log it otherwise advanced (an import's publication).
+// or whose log it otherwise advanced (an import's publication), and those
+// whose read-model generation it raised (SuspendViewCapture).
 func (w *WriteTx) committedAccounts() []string {
 	var out []string
 	for id, a := range w.accounts {
@@ -102,6 +140,13 @@ func (w *WriteTx) committedAccounts() []string {
 	for id := range w.changed {
 		if _, ok := w.accounts[id]; !ok {
 			out = append(out, id)
+		}
+	}
+	if w.capture != nil {
+		for _, id := range w.capture.accounts {
+			if !slices.Contains(out, id) {
+				out = append(out, id)
+			}
 		}
 	}
 	return out

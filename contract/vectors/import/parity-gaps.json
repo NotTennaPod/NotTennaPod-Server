@@ -25,6 +25,7 @@
         "source_item_id": 2,
         "source_media_id": 2
        },
+       "chapters": null,
        "duration_ms": 1200000,
        "favorite": false,
        "history": 1772452800000,
@@ -64,6 +65,7 @@
         "source_item_id": 4,
         "source_media_id": 4
        },
+       "chapters": null,
        "duration_ms": 900000,
        "favorite": false,
        "history": 1775217600000,
@@ -102,6 +104,7 @@
         "source_item_id": 6,
         "source_media_id": 6
        },
+       "chapters": null,
        "duration_ms": 600000,
        "favorite": false,
        "history": 1777982400000,
@@ -140,6 +143,7 @@
         "source_item_id": 8,
         "source_media_id": 8
        },
+       "chapters": null,
        "duration_ms": 1500000,
        "favorite": false,
        "history": 1780488000000,
@@ -178,6 +182,7 @@
         "source_item_id": 13,
         "source_media_id": 12
        },
+       "chapters": null,
        "duration_ms": 700000,
        "favorite": false,
        "history": null,
@@ -235,6 +240,7 @@
         "source_item_id": 9,
         "source_media_id": 9
        },
+       "chapters": null,
        "duration_ms": 1000000,
        "favorite": false,
        "history": 1782936000000,
@@ -261,6 +267,7 @@
         "source_item_id": 10,
         "source_media_id": 10
        },
+       "chapters": null,
        "duration_ms": 800000,
        "favorite": false,
        "history": 1782993600000,
@@ -362,6 +369,10 @@
       "title": "Joined Show"
      }
     ],
+    "not_carried": {
+     "episode_auto_download_off": 0,
+     "podcasts": []
+    },
     "skipped": []
    },
    "sha256": "e67a2867c8e7b24b92715da2d9f5356b783ba7b24d74fcc4d5876837211d53dd",

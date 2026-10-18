@@ -92,7 +92,7 @@ def base_queue(b, prefix, titles, dev="A", url=U1, op0=1):
 
 
 def test_q0_back_adds():
-    """Example 1 (PROTOCOL §7.6; "the order you added them"). The queue is [Z]. Monday the iPhone
+    """A worked example of PROTOCOL §7.6 ("the order you added them"). The queue is [Z]. Monday the iPhone
     (A) adds X at the back; Tuesday the Android phone (B), offline, adds Y at the back. A
     back add is resolved to `end` (PROTOCOL §7.6). By hand: [Z] -> X at the end [Z, X] -> Y at the
     end [Z, X, Y], whichever phone reconnects first."""
@@ -107,13 +107,13 @@ def test_q0_back_adds():
                                         op=fixed_op(prefix, 10))],
                 "B": [lambda rt: b.qadd("B", [(r["Y"], K(None, None, "q0/y"))], place=END, after=[x["s"]],
                                         t=t + 2 * DAY, rt=rt, op=fixed_op(prefix, 11))]}
-    in_orders("§0.1: Monday X at the back, Tuesday Y at the back", setup, batches, [("A", "B"), ("B", "A")],
+    in_orders("Monday X at the back, Tuesday Y at the back", setup, batches, [("A", "B"), ("B", "A")],
               ["Z", "X", "Y"], "[Z] -> [Z, X] -> [Z, X, Y]")
 
 
 def test_q0_front_adds():
-    """Example 2 (PROTOCOL §7.6): the same with "add to front" (resolved to `start`). By hand: [Z] ->
-    X at the start [X, Z] -> Y at the start [Y, X, Z]."""
+    """A worked example of PROTOCOL §7.6: the back adds above, made with "add to front"
+    instead (resolved to `start`). By hand: [Z] -> X at the start [X, Z] -> Y at the start [Y, X, Z]."""
     def setup(b, prefix):
         s, P, G, refs = base_queue(b, prefix, ["Z"])
         refs.update(X=ref(P, G, "x", "X"), Y=ref(P, G, "y", "Y"))
@@ -125,15 +125,17 @@ def test_q0_front_adds():
                                         op=fixed_op(prefix, 10))],
                 "B": [lambda rt: b.qadd("B", [(r["Y"], K(None, None, "q0f/y"))], place=START, after=[x["s"]],
                                         t=t + 2 * DAY, rt=rt, op=fixed_op(prefix, 11))]}
-    in_orders("§0.2: Monday X to the front, Tuesday Y to the front", setup, batches, [("A", "B"), ("B", "A")],
+    in_orders("Monday X to the front, Tuesday Y to the front", setup, batches, [("A", "B"), ("B", "A")],
               ["Y", "X", "Z"], "[Z] -> [X, Z] -> [Y, X, Z]")
 
 
 def test_q0_three_back_adds():
-    """Example 3 (PROTOCOL §7.6): the queue is [Z]; the iPhone
+    """A worked example of PROTOCOL §7.6: the queue is [Z]; the iPhone
     adds X (time 1); the Android phone adds Y (time 2), then W (time 3), all at the back.
-    By hand: [Z, X] -> [Z, X, Y] -> [Z, X, Y, W] in all three delivery orders (the first
-    proposal gave [Z, X, W, Y] when X arrived first)."""
+    By hand: [Z, X] -> [Z, X, Y] -> [Z, X, Y, W] in all three delivery orders. Delivered Y, X,
+    W, the late X is placed before Y; when the key X's commit writes does not fall before Y's,
+    that commit also publishes a layout that re-keys Y. The case name seeds the server's
+    choices, and it is chosen so that this corrective layout is needed (asserted below)."""
     def setup(b, prefix):
         s, P, G, refs = base_queue(b, prefix, ["Z"])
         refs.update(X=ref(P, G, "x", "X"), Y=ref(P, G, "y", "Y"), W=ref(P, G, "w", "W"))
@@ -147,13 +149,18 @@ def test_q0_three_back_adds():
                                          t=t + 2000, rt=rt, op=fixed_op(prefix, 11))],
                 "B2": [lambda rt: b.qadd("B", [(r["W"], K(None, None, "q03/w"))], place=END, t=t + 3000, rt=rt,
                                          op=fixed_op(prefix, 12))]}
-    in_orders("§0.3: X (time 1) on one phone, Y (2) then W (3) on the other, at the back", setup, batches,
+
+    def check_each(b, x):
+        if b.name.endswith("delivered: B1, A, B2"):
+            eq(sum(1 for d in b.engine.created if d["decision_type"] == rules.LAYOUT), 3,
+               "%s: the late X's commit re-keys Y with a layout" % b.name)
+    in_orders("X (time 1) on one phone, Y (2) then W (3) on the other, all at the back", setup, batches,
               [("A", "B1", "B2"), ("B1", "B2", "A"), ("B1", "A", "B2")], ["Z", "X", "Y", "W"],
-              "[Z] -> [Z, X] -> [Z, X, Y] -> [Z, X, Y, W]")
+              "[Z] -> [Z, X] -> [Z, X, Y] -> [Z, X, Y, W]", check_each)
 
 
 def test_q0_keep_sorted_on_then_add():
-    """Example 4 (PROTOCOL §7.6): the queue is [Z, A]; the iPhone turns on keep-sorted
+    """A worked example of PROTOCOL §7.6: the queue is [Z, A]; the iPhone turns on keep-sorted
     by title (the dialog: the policy and its sort); later the Android phone, which never saw
     it, adds B at the back. By hand: policy on; sort [A, Z]; B at the end [A, Z, B], and
     keep-sorted is on at B's place: sorted [A, B, Z], in both delivery orders."""
@@ -170,12 +177,12 @@ def test_q0_keep_sorted_on_then_add():
                                          op=fixed_op(prefix, 11))],
                 "Q": [lambda rt: b.qadd("B", [(r["B"], K(None, None, "q04/b"))], place=END, after=[x["s"]],
                                         t=t + 2000, rt=rt, op=fixed_op(prefix, 12))]}
-    in_orders("§0.4: keep-sorted turned on, then another phone's add", setup, batches, [("P", "Q"), ("Q", "P")],
+    in_orders("keep-sorted turned on, then another phone's add", setup, batches, [("P", "Q"), ("Q", "P")],
               ["A", "B", "Z"], "sort [A, Z]; B at the end [A, Z, B]; sorted at B's place [A, B, Z]")
 
 
 def test_q0_two_drags():
-    """Example 5 (PROTOCOL §7.6): the queue is [P, A, E, F]; one phone drags E to just after P (time 1),
+    """A worked example of PROTOCOL §7.6: the queue is [P, A, E, F]; one phone drags E to just after P (time 1),
     the other drags F to just after P (time 2). By hand: [P, E, A, F] -> [P, F, E, A]."""
     def setup(b, prefix):
         s, P, G, refs = base_queue(b, prefix, ["P", "A", "E", "F"])
@@ -187,12 +194,12 @@ def test_q0_two_drags():
                                          op=fixed_op(prefix, 10))],
                 "2": [lambda rt: b.qmove("B", r["F"], K(None, None, "q05/f"), place=AFTER(r["P"]), after=[x["s"]],
                                          t=t + 2000, rt=rt, op=fixed_op(prefix, 11))]}
-    in_orders("§0.5: two drags to just after P (E first, F later)", setup, batches, [("1", "2"), ("2", "1")],
+    in_orders("two drags to just after P (E first, F later)", setup, batches, [("1", "2"), ("2", "1")],
               ["P", "F", "E", "A"], "[P, A, E, F] -> E after P [P, E, A, F] -> F after P [P, F, E, A]")
 
 
 def test_q0_duplicate_add():
-    """Example 6 (PROTOCOL §7.6): the queue is [A]; the iPhone adds X (time 1); the Android
+    """A worked example of PROTOCOL §7.6: the queue is [A]; the iPhone adds X (time 1); the Android
     phone, not having seen X, adds Y (time 2), then X (time 3). Android ignores an add of an
     episode already queued (`addQueueItem` skips it). By hand: [A, X] -> [A, X, Y] -> X is
     in: nothing placed, nothing sorted: [A, X, Y], in all three delivery orders (replaying
@@ -214,7 +221,7 @@ def test_q0_duplicate_add():
     def check_each(b, x):
         eq(MEM(b, x["refs"]["X"])["in_queue"], True, "%s: X in" % b.name)
         eq(b.out(fixed_op(int(b.prefix), 12)), ("applied", None), "%s: the duplicate add is still a fact" % b.name)
-    in_orders("§0.6: a duplicate add is ignored", setup, batches, [("I", "A1", "A2"), ("A1", "A2", "I"), ("A1", "I", "A2")],
+    in_orders("a duplicate add is ignored", setup, batches, [("I", "A1", "A2"), ("A1", "A2", "I"), ("A1", "I", "A2")],
               ["A", "X", "Y"], "[A] -> [A, X] -> [A, X, Y] -> X already in: [A, X, Y]", check_each)
     # A partial bulk duplicate: only the absent member is placed, in its requested order.
 
@@ -275,7 +282,7 @@ def test_metadata_racing_a_sort():
                              (("sort", "add", "meta"), ["Y", "X"],
                               "the sort recorded only Y; X's placement recorded Z: [Y, X]"),
                              (("add", "meta", "sort"), ["X", "Y"], "the sort recorded X = A: [X, Y]")):
-        b = QB("B1: metadata racing a sort, admitted %s" % ", ".join(order))
+        b = QB("metadata racing a sort, admitted %s" % ", ".join(order))
         x, y = _metadata_race(b, int(b.prefix), order)
         names = {x["episode_id"]: "X", y["episode_id"]: "Y"}
         got = [names[m["episode_id"]] for m in b.engine._current_queue()]
@@ -292,7 +299,7 @@ def test_smart_shuffle_with_a_removed_episode():
     (sorting every episode ever placed, [A1, B1, B2] -> [B1, B2, A1], then filtering, would
     give [B2, A1])."""
     prefix = next_prefix()
-    b = QB("B2: Smart Shuffle sorts the in-members only", prefix)
+    b = QB("Smart Shuffle sorts the in-members only", prefix)
     s1 = b.subscribe("A", U1, op=fixed_op(prefix, 1))
     s2 = b.subscribe("A", U2, op=fixed_op(prefix, 2))
     (P1, G1), (P2, G2) = pg(s1), pg(s2)
@@ -333,7 +340,7 @@ def test_anchor_of_a_suppressed_filing():
 
     def check_each(b, ctx):
         eq(MEM(b, ctx["d"])["in_queue"], False, "%s: D out" % b.name)
-    in_orders("B3: an add after an automatic filing that a concurrent removal suppresses", setup, batches,
+    in_orders("an add after an automatic filing that a concurrent removal suppresses", setup, batches,
               [("B", "C"), ("C", "B")], ["A", "X"], "[A] -> [A, (D)] -> [A, (D), X] -> [A, X]", check_each)
 
 
@@ -355,18 +362,18 @@ def test_after_current_and_undo():
     queue [A, C]: after A. By hand: [A, B, C] -> B out -> [X, A, (B), C]... the restore
     places B after A: [X, A, B, C]."""
     prefix = next_prefix()
-    b = QB("B4: after current past a downloading episode", prefix)
+    b = QB("after current past a downloading episode", prefix)
     s, P, G, r = base_queue(b, prefix, ["P", "D", "Z"])
     x, w = ref(P, G, "x", "X"), ref(P, G, "w", "W")
     t = b.now
     b.qadd("B", [(w, K(None, None, "b4/w"))], place=END, after=[s], t=t + 1000, rt=t + 5000)
     b.qadd("A", [(x, K(None, None, "b4/x"))], place=AFTER(r["D"]), t=t + 2000, rt=t + 6000)
     note(b, ["P", "D", "X", "Z", "W"], "[P, D, Z] -> [P, D, Z, W] -> X after D: [P, D, X, Z, W]")
-    b = QB("B4: after current, the current episode not queued: the front scan past the downloading prefix")
+    b = QB("after current, the current episode not queued: the front scan past the downloading prefix")
     s, P, G, r = base_queue(b, int(b.prefix), ["D1", "A", "B"])
     b.qadd("A", [(ref(P, G, "x", "X"), K(None, None, "b4c/x"))], place=AFTER(r["D1"]))
     note(b, ["D1", "X", "A", "B"], "[D1, A, B] -> after D1: [D1, X, A, B]")
-    b = QB("B4: Undo after a front add on the same phone (the saved index at Undo time)")
+    b = QB("Undo after a front add on the same phone (the saved index at Undo time)")
     s, P, G, r = base_queue(b, int(b.prefix), ["A", "B", "C"])
     x = ref(P, G, "x", "X")
     b.qremove("A", [r["B"]])
@@ -386,7 +393,7 @@ def test_after_current_and_undo():
                                             rt=rt, op=fixed_op(prefix, 11))],
                 "B": [lambda rt: b.qadd("B", [(r["X"], K(None, None, "b4uc/x"))], place=START, after=[ctx["s"]],
                                         t=t + 2000, rt=rt, op=fixed_op(prefix, 12))]}
-    in_orders("B4: Undo after a concurrent front add (resolved against the undoing phone's queue)", setup, batches,
+    in_orders("Undo after a concurrent front add (resolved against the undoing phone's queue)", setup, batches,
               [("A", "B"), ("B", "A")], ["X", "A", "B", "C"],
               "[A, B, C] -> B out -> X at the start [X, A, (B), C] -> B restored after A: [X, A, B, C]")
 
@@ -409,7 +416,7 @@ def test_random_sort():
                                          permutation=[r["C"], r["A"], r["B"]], t=t + 2001, rt=rt, op=fixed_op(prefix, 11))],
                 "B": [lambda rt: b.qadd("B", [(r["D"], K(None, None, "b5/d"))], place=END, after=[ctx["s"]],
                                         t=t + 1000, rt=rt, op=fixed_op(prefix, 12))]}
-    in_orders("B5: a random sort replays its recorded permutation", setup, batches, [("A", "B"), ("B", "A")],
+    in_orders("a random sort replays its recorded permutation", setup, batches, [("A", "B"), ("B", "A")],
               ["C", "A", "B", "D"], "[A, B, C, D] -> observed A, B, C permuted in slots 0-2; D keeps slot 3")
 
 
@@ -449,7 +456,7 @@ def test_merges():
       kept), then a phone adds [E2, X] after E1 (both new to it); after the merge E2 is E1:
       the run [E, X] is anchored to E, which is in the run: it goes after the nearest
       structural predecessor of E not in the run, Mike: [Mike, E, X]."""
-    b = QB("N5: aliases with conflicting recorded values")
+    b = QB("aliases with conflicting recorded values")
     P, GP, Q, GQ, e1, e2, m, merge = _merged_pair(b, int(b.prefix), ("Zulu", "Alpha"))
     keys = keys_in_order(["n5/m", "n5/e1", "n5/e2"])
     add = b.qadd("A", [(m, keys[0]), (e1, keys[1]), (e2, keys[2])], place=END)
@@ -459,7 +466,7 @@ def test_merges():
     eq([x["episode_id"] for x in b.engine._current_queue()], [m["episode_id"], E], "survivor's own value")
     b.notes = {"name": b.name, "expected_order": ["Mike", "E (Zulu)"],
                "by_hand": "[Mike, E1, E2] -> E2 maps to E (a duplicate add): [Mike, E]; sorted with E's own Zulu"}
-    b = QB("N5: a random permutation naming both aliases")
+    b = QB("a random permutation naming both aliases")
     P, GP, Q, GQ, e1, e2, m, merge = _merged_pair(b, int(b.prefix), ("Zulu", "Alpha"))
     keys = keys_in_order(["n5r/m", "n5r/e1", "n5r/e2"])
     add = b.qadd("A", [(m, keys[0]), (e1, keys[1]), (e2, keys[2])], place=END)
@@ -470,7 +477,7 @@ def test_merges():
     eq([x["episode_id"] for x in b.engine._current_queue()], [E, m["episode_id"]], "first occurrence")
     b.notes = {"name": b.name, "expected_order": ["E", "Mike"],
                "by_hand": "permutation [E2, Mike, E1] -> [E, Mike, E] -> first occurrence [E, Mike]"}
-    b = QB("B7: a run anchored to its own merged member")
+    b = QB("a run anchored to its own merged member")
     P, GP, Q, GQ, e1, e2, m, merge = _merged_pair(b, int(b.prefix), ("Shared", "Shared"))
     x = oref(P, GP, "x-item")
     keys = keys_in_order(["b7/m", "b7/e1"])
@@ -490,7 +497,7 @@ def test_smart_shuffle_across_a_merge():
     queue is [A, E] (E2 a duplicate add) and the shuffle has two groups of one, R's and P's,
     placed in ascending podcast ID order (PROTOCOL §7.6). Merging two places after the fact would keep
     whatever the three-way shuffle gave."""
-    b = QB("B7: Smart Shuffle across a merge")
+    b = QB("Smart Shuffle across a merge")
     prefix = int(b.prefix)
     P, GP, Q, GQ, e1, e2, m, merge = _merged_pair(b, prefix, ("Shared", "Shared"))
     sr = b.subscribe("A", U3, op=fixed_op(prefix, 3))
@@ -612,7 +619,7 @@ def test_imports():
     records are its own, outside this suite)."""
     for first in ("A", "B"):
         prefix = next_prefix()
-        b = QB("N1/B8: an import interleaving two podcasts, %s's decisions recovered first; then placements" % first,
+        b = QB("an import interleaving two podcasts, %s's decisions recovered first; then placements" % first,
                prefix)
         b.field_groups = ["queue_membership", "queue_position"]
         imp = det_uuid("%d/import" % prefix)
@@ -665,25 +672,25 @@ def test_bulk_move_to_top():
         return {"W": [lambda rt: b.qrun("A", [r["B"], r["D"]], START, t=t + 2000, rt=rt, op=fixed_op(prefix, 10))],
                 "P": [lambda rt: b.qadd("B", [(r["E"], K(None, None, "b9/e"))], place=START, after=[ctx["s"]],
                                         t=t + 1000, rt=rt, op=fixed_op(prefix, 11))]}
-    in_orders("B9: a bulk Move to top", setup, batches, [("W", "P"), ("P", "W")], ["B", "D", "E", "A", "C"],
+    in_orders("a bulk Move to top", setup, batches, [("W", "P"), ("P", "W")], ["B", "D", "E", "A", "C"],
               "[A, B, C, D] -> E at the start [E, A, B, C, D] -> [B, D] at the start [B, D, E, A, C]")
 
 
 def test_recovery_of_layouts():
-    """B10, N3's recovery half: the queue [A, B]; B is moved to the front: [B, A] (the move's
+    """Recovery of layouts: the queue [A, B]; B is moved to the front: [B, A] (the move's
     commit publishes a layout L1). The server is restored to before the move. Request 1
     recovers the move; its end publishes a layout (the published keys [A, B] do not give
     [B, A]). Request 2 recovers L1: evidence only; the published keys give the order, so
     nothing more. Request 3 recovers nothing new. By hand: [B, A] after every request."""
     prefix = next_prefix()
-    live = QB("B10 (live, not a vector)", prefix)
+    live = QB("recovery of layouts (live, not a vector)", prefix)
     live.vector_ok = False
     s, P, G, r = base_queue(live, prefix, ["A", "B"])
     k = len(live.arrivals)
     live.qmove("C", r["B"], K(None, None, "b10/b"), place=START, after=[s])
     eq(live.queue(), ["B", "A"], "live")
     ups = st.uploads(live, k)
-    rs = st.restored(live, k, "B10: recovery uploads a move, then its layout, then nothing new")
+    rs = st.restored(live, k, "recovery uploads a move, then its layout, then nothing new")
     rs.group, rs.prefix = FILE, prefix
     upload_entries = [x for cm in ups for x in cm]
     facts = [x for x in upload_entries if "fact" in x]
@@ -702,14 +709,14 @@ def test_recovery_of_layouts():
 
 
 def test_late_suppression_of_an_anchor():
-    """B11 (and the invalidation table's second row): D is filed automatically at the back
+    """A late explicit decision suppresses an anchor's filing: D is filed automatically at the back
     of [A] (time 1); phone C adds X after D (2) and Y at the back (3). Weeks later an old
     explicit add of D at the back, made offline by phone B at time 4 without seeing the
     filing, arrives. An explicit decision bars the automatic add whatever the order: D's
     filing becomes a ghost from time 1, and B's add places D at the end at time 4.
     By hand: before: [A, D, X, Y]; after: [A, (D), X, Y] -> D at the end: [A, X, Y, D]."""
     qpol = {"new_episodes_action": "queue", "keep_updated": True}
-    b = QB("B11: a late explicit decision suppresses an anchor's filing")
+    b = QB("a late explicit decision suppresses an anchor's filing")
     prefix = int(b.prefix)
     s = b.subscribe("A", U1, policy=qpol, op=fixed_op(prefix, 1))
     P, G = pg(s)
@@ -745,7 +752,7 @@ def test_mixed_local_queues():
                                         op=fixed_op(prefix, 10))],
                 "O": [lambda rt: b.qadd("B", [(r["Y"], K(None, None, "b12/y"))], place=AFTER(r["A"]), after=[ctx["s"]],
                                         t=t + 1000, rt=rt, op=fixed_op(prefix, 11))]}
-    in_orders("B12/N6: an insertion after a local episode, projected onto its synced neighbour", setup, batches,
+    in_orders("an insertion after a local episode, projected onto its synced neighbour", setup, batches,
               [("M", "O"), ("O", "M")], ["A", "X", "Y", "B"], "[A, B] -> [A, Y, B] -> X after A: [A, X, Y, B]")
 
 
@@ -762,7 +769,7 @@ def test_claim_cancels_a_completion():
     queue bundle) arrives: D's completion at 30 is no longer under the current claim, so
     it does not fire: Z is in from the start. By hand: the sort at 40 sorts [Z, A] -> [A, Z].
     The published keys still say [Z, A]: the claim's commit must publish a layout [A, Z]."""
-    b = QB("N3: a resume claim cancels a completion; the unchanged keys must still publish [A, Z]")
+    b = QB("a resume claim cancels a completion; the unchanged keys must still publish [A, Z]")
     prefix = int(b.prefix)
     s, P, G, r = base_queue(b, prefix, ["Z", "A"])
     t = b.now
@@ -792,7 +799,7 @@ def test_cancelled_removal_reactivates_an_automatic_add():
     fire, no explicit decision remains, the automatic add at 10 applies again, and D takes
     part in the sort at 20. By hand: before: [Z]; after: [Z, D] sorted at 20: [D, Z]."""
     qpol = {"new_episodes_action": "queue", "keep_updated": True}
-    b = QB("N4: a cancelled explicit removal reactivates an earlier automatic add before a sort")
+    b = QB("a cancelled explicit removal reactivates an earlier automatic add before a sort")
     prefix = int(b.prefix)
     s = b.subscribe("A", U1, policy=qpol, op=fixed_op(prefix, 1))
     P, G = pg(s)
@@ -824,7 +831,7 @@ def test_ghost_anchor_after_a_sort():
     in-members among their slots: [A, (G), Z] (the ghost keeps its slot, not its
     neighbours). Phone C, which saw G, adds X after G. By hand: [A, (G), X, Z]: [A, X, Z]."""
     qpol = {"new_episodes_action": "queue", "keep_updated": True}
-    b = QB("N8: a ghost anchor after a sort")
+    b = QB("a ghost anchor after a sort")
     prefix = int(b.prefix)
     s = b.subscribe("A", U1, policy=qpol, op=fixed_op(prefix, 1))
     P, G = pg(s)
@@ -1099,7 +1106,7 @@ def test_import_request_boundaries():
     }
     for name, plan in plans.items():
         prefix = next_prefix()
-        b = QB("N1: an import recovered over request boundaries (%s)" % name, prefix)
+        b = QB("an import recovered over request boundaries (%s)" % name, prefix)
         b.field_groups = ["queue_membership", "queue_position"]
         imp = det_uuid("%d/import" % prefix)
         decs, _ = import_decisions(prefix, imp, [
@@ -1149,7 +1156,7 @@ def test_run_move_predictions():
                                         after=[ctx["s"]], t=t + 2000, rt=rt, op=fixed_op(prefix, 10))],
                 "P": [lambda rt: b.qadd("B", [(r["E"], K(None, None, "b9p/e"))], place=START, after=[ctx["s"]],
                                         t=t + 1000, rt=rt, op=fixed_op(prefix, 11))]}
-    in_orders("B9 with sparse key predictions on the run move", setup, batches, [("W", "P"), ("P", "W")],
+    in_orders("a bulk Move to top with sparse key predictions on the run move", setup, batches, [("W", "P"), ("P", "W")],
               ["B", "D", "E", "A", "C"],
               "[A, B, C, D] -> E at the start [E, A, B, C, D] -> the run [B, D] at the start (its predictions only "
               "feed keys): [B, D, E, A, C]")

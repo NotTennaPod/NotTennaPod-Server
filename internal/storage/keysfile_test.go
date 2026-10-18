@@ -6,9 +6,14 @@ import (
 	"database/sql"
 	"encoding/json"
 	"errors"
+	"fmt"
+	"maps"
 	"os"
 	"path/filepath"
 	"testing"
+
+	"github.com/NotTennaPod/NotTennaPod-Server/internal/keys"
+	"github.com/NotTennaPod/NotTennaPod-Server/internal/sealed"
 )
 
 // PROTOCOL §11: receipt keys live in receipt.keys, never in the database.
@@ -170,4 +175,104 @@ func TestLostKeysAreInstalledFromTheBundle(t *testing.T) {
 		t.Fatalf("after installing the keys: %v", err)
 	}
 	s.Close()
+}
+
+// dirListing is every file in dir with its size and modification time.
+func dirListing(t *testing.T, dir string) map[string]string {
+	t.Helper()
+	entries, err := os.ReadDir(dir)
+	if err != nil {
+		t.Fatal(err)
+	}
+	out := map[string]string{}
+	for _, e := range entries {
+		fi, err := e.Info()
+		if err != nil {
+			t.Fatal(err)
+		}
+		out[e.Name()] = fmt.Sprintf("%d %d", fi.Size(), fi.ModTime().UnixNano())
+	}
+	return out
+}
+
+// Sealing the key bundle is not saving it (PROTOCOL §11.1): SealKeyBundle
+// writes no file and records nothing, and its bundle opens to this server's
+// own keys.
+func TestSealKeyBundleWritesAndRecordsNothing(t *testing.T) {
+	ctx := context.Background()
+	dir := t.TempDir()
+	s := openTest(t, config{dataDir: dir})
+	if _, err := sealed.LoadOrCreate(dir); err != nil { // as the server does at start
+		t.Fatal(err)
+	}
+	before := dirListing(t, dir)
+	stateBefore, err := os.ReadFile(filepath.Join(dir, stateName))
+	if err != nil {
+		t.Fatal(err)
+	}
+	pass := []byte("  a passphrase, with spaces  ")
+	data, at, err := s.SealKeyBundle(ctx, pass)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if got := dirListing(t, dir); !maps.Equal(got, before) {
+		t.Errorf("sealing changed the data directory: %v, was %v", got, before)
+	}
+	if stateAfter, _ := os.ReadFile(filepath.Join(dir, stateName)); !bytes.Equal(stateAfter, stateBefore) || s.KeysExportedAt() != 0 {
+		t.Errorf("sealing recorded an export: %d %s", s.KeysExportedAt(), stateAfter)
+	}
+	b, err := keys.Open(data, pass)
+	if err != nil {
+		t.Fatal(err)
+	}
+	serverID, _ := s.ServerID(ctx)
+	ks, _ := s.ReceiptKeys(ctx)
+	secret, err := os.ReadFile(filepath.Join(dir, keysSecretName))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if b.CreatedAt != at || b.ServerID != serverID || !bytes.Equal(b.SecretsKey, secret) || len(b.ReceiptKeys) != len(ks) ||
+		b.ReceiptKeys[0].ID != ks[0].ID || !bytes.Equal(b.ReceiptKeys[0].Key, ks[0].Secret) {
+		t.Errorf("the bundle holds other keys: %+v", b)
+	}
+	if _, err := keys.Open(data, bytes.TrimSpace(pass)); err == nil {
+		t.Error("the bundle opened with the passphrase trimmed")
+	}
+}
+
+// The keys export command records the export only after its file is written
+// durably (PROTOCOL §11.1): a write that fails leaves the warning. A recorded
+// export never moves backwards.
+func TestExportKeysRecordsOnlyAfterDurableWrite(t *testing.T) {
+	ctx := context.Background()
+	dir := t.TempDir()
+	s := openTest(t, config{dataDir: dir})
+	pass := []byte("a passphrase")
+	if err := s.ExportKeys(ctx, filepath.Join(t.TempDir(), "missing", "keys.json"), pass); err == nil {
+		t.Fatal("an export into a missing folder succeeded")
+	}
+	if s.KeysExportedAt() != 0 || readState(t, dir).KeysExportedAt != 0 {
+		t.Fatalf("a failed write recorded an export at %d", s.KeysExportedAt())
+	}
+	path := filepath.Join(t.TempDir(), "keys.json")
+	if err := s.ExportKeys(ctx, path, pass); err != nil {
+		t.Fatal(err)
+	}
+	data, err := os.ReadFile(path)
+	if err != nil {
+		t.Fatal(err)
+	}
+	b, err := keys.Open(data, pass)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if s.KeysExportedAt() != b.CreatedAt || readState(t, dir).KeysExportedAt != b.CreatedAt {
+		t.Fatalf("export recorded at %d, the bundle was sealed at %d", s.KeysExportedAt(), b.CreatedAt)
+	}
+	if err := s.RecordKeysExported(b.CreatedAt - 1000); err != nil || s.KeysExportedAt() != b.CreatedAt {
+		t.Errorf("an older export moved the record back: %d %v", s.KeysExportedAt(), err)
+	}
+	if err := s.RecordKeysExported(b.CreatedAt + 1000); err != nil || readState(t, dir).KeysExportedAt != b.CreatedAt+1000 {
+		t.Errorf("a later export was not recorded: %d %v", s.KeysExportedAt(), err)
+	}
 }

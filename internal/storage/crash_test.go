@@ -14,13 +14,16 @@ import (
 	"time"
 )
 
-// Child processes: the test binary re-executed with NTP_STORAGE_CHILD set.
-func TestMain(m *testing.M) {
-	if mode := os.Getenv("NTP_STORAGE_CHILD"); mode != "" {
-		runChild(mode, os.Getenv("NTP_STORAGE_DIR"))
-		os.Exit(0)
+// RunTestChild runs the child process NTP_STORAGE_CHILD names (the test
+// binary re-executed by a crash test), if any, and reports whether it did;
+// the TestMain (main_test.go) calls it.
+func RunTestChild() bool {
+	mode := os.Getenv("NTP_STORAGE_CHILD")
+	if mode == "" {
+		return false
 	}
-	os.Exit(m.Run())
+	runChild(mode, os.Getenv("NTP_STORAGE_DIR"))
+	return true
 }
 
 // block reports what and never returns (sleeping, so the runtime's deadlock
@@ -36,6 +39,8 @@ func runChild(mode, dir string) {
 	ctx := context.Background()
 	cfg := config{dataDir: dir}
 	switch mode {
+	case "capture":
+		runCaptureChild(ctx, cfg)
 	case "lock":
 		s, err := open(ctx, cfg)
 		if err != nil {

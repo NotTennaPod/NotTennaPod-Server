@@ -132,12 +132,39 @@ func (c *ApplyContext) Defer(key string, fn func(*ApplyContext) error) {
 	b.deferredFns[key] = fn
 }
 
+// ProbeSnapshot runs fn as the server on one read snapshot of the account,
+// with a fresh commit, without holding the store's writer: fn derives state
+// and can write nothing (storage.Store.Snapshot).
+func (s *Service) ProbeSnapshot(ctx context.Context, accountID string, fn func(c *ApplyContext) error) error {
+	keys, err := s.Store.ReceiptKeys(ctx)
+	if err != nil || len(keys) == 0 {
+		return fmt.Errorf("protocol: no receipt key: %v", err)
+	}
+	receive := s.Now().UnixMilli()
+	return s.Store.Snapshot(ctx, func(tx *storage.WriteTx) error {
+		acct := tx.Account(accountID)
+		namespace, err := acct.Namespace()
+		if err != nil {
+			return err
+		}
+		rev, err := acct.NextRevision()
+		if err != nil {
+			return err
+		}
+		b := &commitBuilder{key: keys[0], ids: map[string]bool{}, random: s.random()}
+		c := ApplyContext{Account: acct, AccountID: accountID, Namespace: namespace, NormalizedTime: receive, ReceiveTime: receive, Revision: rev,
+			commit: b}
+		c.flush = func() error { return flushDirty(b, c) }
+		return fn(&c)
+	})
+}
+
 // errProbe rolls a Probe's transaction back.
 var errProbe = errors.New("protocol: probe rolled back")
 
 // Probe runs fn as the server in a write transaction of the account, with a
-// fresh commit, and rolls everything back (tests derive state with it
-// without changing the account).
+// fresh commit, and rolls everything back: it derives state without changing
+// the account (tests, and the queue replay's warm-up when it keeps its cache).
 func (s *Service) Probe(ctx context.Context, accountID string, fn func(c *ApplyContext) error) error {
 	keys, err := s.Store.ReceiptKeys(ctx)
 	if err != nil || len(keys) == 0 {

@@ -93,3 +93,43 @@ func TestContributionsQueryUsesScopeIndex(t *testing.T) {
 		t.Fatal(err)
 	}
 }
+
+// A node can follow more nodes than one statement takes variables (a server
+// decision after a power user's import follows the whole frontier): it is
+// placed after the last of them. Under the race detector it follows 5,000
+// (ten statements of ViewBatch); make check runs the full 40,000 without it.
+func TestNodeAfterManyDependencies(t *testing.T) {
+	ctx := context.Background()
+	s := openTest(t, config{dataDir: t.TempDir()})
+	account := createAccounts(t, s, 1)[0]
+	n := 40000
+	if raceEnabled {
+		n = 5000
+	}
+	var deps []string
+	if err := s.Write(ctx, func(tx *WriteTx) error {
+		a := tx.Account(account)
+		for i := range n {
+			id := fmt.Sprintf("n:%05d", i)
+			if err := a.InsertNode(id, "fact", int64(i), nil); err != nil {
+				return err
+			}
+			deps = append(deps, id)
+		}
+		return a.InsertNode("after", "decision", 0, deps)
+	}); err != nil {
+		t.Fatal(err)
+	}
+	var last, after int64
+	if err := s.Read(ctx, func(r *ReadTx) error {
+		if err := r.tx.QueryRowContext(ctx, `SELECT MAX(rank) FROM node_order WHERE account_id = ? AND node_id != 'after'`, account).Scan(&last); err != nil {
+			return err
+		}
+		return r.tx.QueryRowContext(ctx, `SELECT rank FROM node_order WHERE account_id = ? AND node_id = 'after'`, account).Scan(&after)
+	}); err != nil {
+		t.Fatal(err)
+	}
+	if after <= last {
+		t.Fatalf("the node is at %d, before its last dependency at %d", after, last)
+	}
+}

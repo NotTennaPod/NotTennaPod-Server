@@ -40,11 +40,16 @@ type snapshot struct {
 
 // replayCache is an account's snapshots, ascending; the last is the state
 // after every node. head is the account's head after the commit that left
-// it, so a cache is trusted only while the head has not moved since.
+// it, so a cache is trusted only while the head has not moved since. It is
+// immutable once kept: snapshots and keys are persistent.
 type replayCache struct {
 	head  storage.Head
 	snaps []snapshot
-	pub   map[queue.Entry]queue.Key // the published keys it left (nil: none trusted)
+	pub   queue.KeyMap // the published keys it left (meaningful when pubOK)
+	pubOK bool         // pub is trusted: it is what the records show
+	// layoutRank is the highest rank of the layout key writes pub reflects:
+	// the next publication reads only the layout writes ranked after it.
+	layoutRank queue.Rank
 }
 
 func (rc *replayCache) valid(h storage.Head) bool {
@@ -77,9 +82,16 @@ func installCache(memo *sync.Map, account string, next *replayCache) {
 }
 
 // commitReplay is a commit's replay state (ApplyContext.QueueMemo): the
-// snapshots as of the inputs it last replayed.
+// snapshots as of the inputs it last replayed. base is the account's cache
+// its replays resumed from (nil when it has none); since is the earliest
+// snapshot count they resumed from, so its state and base's last share every
+// key write made before it (math.MaxInt: none replayed); fresh means a replay
+// started from the empty queue instead (the cache's past is not shared).
 type commitReplay struct {
 	snaps []snapshot
+	base  *replayCache
+	since int
+	fresh bool
 }
 
 type memoKey struct{ account string }
@@ -87,6 +99,7 @@ type memoKey struct{ account string }
 var replayStats struct {
 	sync.Mutex
 	full, incremental int
+	nodes             int // nodes loaded and replayed
 }
 
 // replayCounts reports how many replays ran from the start and from a
@@ -117,16 +130,24 @@ func replay(c *protocol.ApplyContext, rebuilt bool) (*commitReplay, error) {
 	memo := c.QueueMemo()
 	touched, all := c.QueueChanges(true)
 	var base []snapshot
+	lineage := commitReplay{since: math.MaxInt}
 	if cr, ok := (*memo).(*commitReplay); ok && cr != nil {
 		base = cr.snaps
-	} else {
+		lineage = commitReplay{base: cr.base, since: cr.since, fresh: cr.fresh}
+	} else if !c.Rebuilding() {
+		// An archive rebuild's replay never resumes from the account's cache:
+		// it cleared the derived state the cache describes, and the head
+		// (which the cache is checked against) does not move until it
+		// commits, so the cache's later snapshots name nodes the rebuild has
+		// not derived again yet. It replays from the state derived so far,
+		// and resumes only from its own snapshots of that prefix.
 		head, err := c.Account.Head()
 		if err != nil {
 			return nil, err
 		}
 		if v, ok := c.Account.Memo().Load(memoKey{c.AccountID}); ok {
 			if rc := v.(*replayCache); rc.valid(head) {
-				base = rc.snaps
+				base, lineage.base = rc.snaps, rc
 			}
 		}
 	}
@@ -186,8 +207,13 @@ func replay(c *protocol.ApplyContext, rebuilt bool) (*commitReplay, error) {
 		from = snapshot{state: queue.NewState()}
 		kept = []snapshot{from}
 	}
+	if start < 0 {
+		lineage.fresh = true
+	} else {
+		lineage.since = min(lineage.since, from.state.Count)
+	}
 	if start == len(base)-1 && start >= 0 && len(touched) == 0 && !all {
-		cr := &commitReplay{snaps: base}
+		cr := &commitReplay{snaps: base, base: lineage.base, since: lineage.since, fresh: lineage.fresh}
 		*memo = cr
 		return cr, nil
 	}
@@ -202,6 +228,7 @@ func replay(c *protocol.ApplyContext, rebuilt bool) (*commitReplay, error) {
 	} else {
 		replayStats.incremental++
 	}
+	replayStats.nodes += len(nodes)
 	replayStats.Unlock()
 	st := from.state.Clone()
 	st.Fallback = func(e queue.Entry) queue.Values {
@@ -228,17 +255,28 @@ func replay(c *protocol.ApplyContext, rebuilt bool) (*commitReplay, error) {
 				"anchor", string(d.Anchor))
 		}
 		if marks[st.Count] && i < len(nodes)-1 {
-			kept = append(kept, snapshot{node: n.ID, state: st.Clone()})
+			kept = append(kept, snapshot{node: n.ID, state: detached(st)})
 		}
 	}
 	last := from.node
 	if len(nodes) > 0 {
 		last = nodes[len(nodes)-1].ID
 	}
-	kept = append(kept, snapshot{node: last, state: st})
-	cr := &commitReplay{snaps: thin(kept, total)}
+	kept = append(kept, snapshot{node: last, state: detached(st)})
+	cr := &commitReplay{snaps: thin(kept, total), base: lineage.base, since: lineage.since, fresh: lineage.fresh}
 	*memo = cr
 	return cr, nil
+}
+
+// detached is a copy of st to keep as a snapshot: without its fallback, whose
+// closure holds the transaction it was replayed in (and through it the
+// commit's replay state and the cache that replay resumed from), so a kept
+// snapshot never keeps an older cache or a finished transaction alive. The
+// fallback serves only while nodes are applied; a resumed replay sets its own.
+func detached(st *queue.State) *queue.State {
+	c := st.Clone()
+	c.Fallback = nil
+	return c
 }
 
 // snapshotMarks are the node counts at which a forward replay keeps a
@@ -1005,35 +1043,178 @@ func decodeObject(raw []byte) (map[string]any, error) {
 // in rank order (PROTOCOL §7.6). The replay derives the writes of its
 // steps (a placement's for the members it actually places, a move's, a
 // filing's, a resolved add's, an import's); a layout's writes stay on their
-// exact (episode, generation).
-func publishedKeys(c *protocol.ApplyContext, st *queue.State) (map[queue.Entry]queue.Key, error) {
-	writes := st.KeyWrites()
-	out := make(map[queue.Entry]queue.Key, len(writes))
-	for e, k := range writes {
-		out[e] = k
-	}
+// exact (episode, generation). This is the full computation, over every key
+// write of the history; it also returns the highest layout write rank.
+func publishedKeys(c *protocol.ApplyContext, st *queue.State) (map[queue.Entry]queue.Key, queue.Rank, error) {
+	out := st.KeyWrites()
 	rows, err := c.Account.KeyWrites()
 	if err != nil {
-		return nil, err
+		return nil, queue.Rank{}, err
 	}
+	var top queue.Rank
 	for _, w := range rows {
-		e := queue.Entry(w.Scope)
-		k := queue.Key{Key: w.Key, PositionID: w.PositionID, Rank: queue.Rank{Epoch: w.Epoch, Seq: w.Seq, Index: w.Index, ID: w.Node}}
+		e, k := layoutKey(w)
+		if top.Less(k.Rank) {
+			top = k.Rank
+		}
 		if cur, ok := out[e]; ok && !cur.Rank.Less(k.Rank) {
 			continue
 		}
 		out[e] = k
 	}
-	return out, nil
+	return out, top, nil
+}
+
+func layoutKey(w storage.KeyWrite) (queue.Entry, queue.Key) {
+	return queue.Entry(w.Scope), queue.Key{Key: w.Key, PositionID: w.PositionID, Rank: queue.Rank{Epoch: w.Epoch, Seq: w.Seq, Index: w.Index, ID: w.Node}}
+}
+
+// keysNow are the published keys for the commit's replay state cr (its last
+// snapshot's). When the replay resumed within the cache's past and the cache's
+// keys are trusted, they are the cache's keys updated for the entries whose
+// key may have changed since (incremental, with those entries listed): the
+// entries whose replay key write changed since the shared past, on either
+// side (the cache's last state's and this one's), and the scopes with layout
+// writes ranked after the cache's last layout rank (one indexed range read),
+// each recomputed from both its inputs. Otherwise (a full publication, a
+// replay from the start: a rebuild or a changed identity or generation
+// mapping, no trusted cache, or layout writes ranked before what the cache
+// saw, as a recovered layout's) they are computed in full, and why says why.
+func keysNow(c *protocol.ApplyContext, cr *commitReplay, full bool) (queue.KeyMap, *keyDelta, error) {
+	st := cr.snaps[len(cr.snaps)-1].state
+	why := ""
+	switch {
+	case full:
+		why = "full"
+	case cr.base == nil || !cr.base.pubOK:
+		why = "no trusted cache"
+	case cr.fresh:
+		why = "replayed from the start"
+	case c.QueueKeysChangedSince(false):
+		why = "layout writes the replay did not make"
+	}
+	if why != "" {
+		pubStats.note(why)
+		m, top, err := publishedKeys(c, st)
+		if err != nil {
+			return queue.KeyMap{}, nil, err
+		}
+		return queue.KeyMapOf(m), &keyDelta{full: why, layoutRank: top}, nil
+	}
+	pubStats.note("")
+	cache := cr.base
+	d := &keyDelta{layoutRank: cache.layoutRank, listed: map[queue.Entry]bool{}}
+	last := cache.snaps[len(cache.snaps)-1].state
+	for _, x := range [][]queue.Entry{last.WrittenSince(cr.since), st.WrittenSince(cr.since)} {
+		for _, e := range x {
+			d.add(e)
+		}
+	}
+	r := cache.layoutRank
+	rows, err := c.Account.KeyWritesSince(r.Epoch, r.Seq, r.Index, r.ID)
+	if err != nil {
+		return queue.KeyMap{}, nil, err
+	}
+	layouts := make(map[queue.Entry]queue.Key, len(rows))
+	for _, w := range rows {
+		e, k := layoutKey(w)
+		layouts[e] = k
+		d.add(e)
+		if d.layoutRank.Less(k.Rank) {
+			d.layoutRank = k.Rank
+		}
+	}
+	pubStats.Lock()
+	pubStats.entries += len(d.entries)
+	if cr.since < last.Count {
+		pubStats.rewound++
+	}
+	pubStats.Unlock()
+	pub := cache.pub
+	for _, e := range d.entries {
+		k, ok := st.KeyOf(e)
+		lk, hasLayout := layouts[e]
+		if !hasLayout {
+			w, found, err := c.Account.KeyWriteOf(string(e))
+			if err != nil {
+				return queue.KeyMap{}, nil, err
+			}
+			if found {
+				_, lk = layoutKey(w)
+				hasLayout = true
+			}
+		}
+		if hasLayout && (!ok || k.Rank.Less(lk.Rank)) {
+			k, ok = lk, true
+		}
+		if ok {
+			pub = pub.Set(e, k)
+		} else {
+			pub = pub.Delete(e)
+		}
+	}
+	return pub, d, nil
+}
+
+// keyDelta is how keysNow computed the keys: in full (full says why) or
+// incrementally for the entries listed; layoutRank is the highest layout
+// write rank the keys reflect.
+type keyDelta struct {
+	full       string
+	entries    []queue.Entry
+	listed     map[queue.Entry]bool
+	layoutRank queue.Rank
+}
+
+func (d *keyDelta) add(e queue.Entry) {
+	if !d.listed[e] {
+		d.listed[e] = true
+		d.entries = append(d.entries, e)
+	}
+}
+
+// pubStats counts the publications computed incrementally and in full, by
+// reason (tests).
+var pubStats = &publicationStats{full: map[string]int{}}
+
+type publicationStats struct {
+	sync.Mutex
+	incremental int
+	full        map[string]int
+	entries     int // entries an incremental publication recomputed
+	positions   int // queue_position records checked
+	rewound     int // incremental publications whose replay resumed before the cache's last node
+}
+
+func (p *publicationStats) note(why string) {
+	p.Lock()
+	defer p.Unlock()
+	if why == "" {
+		p.incremental++
+	} else {
+		p.full[why]++
+	}
+}
+
+// publicationCounts reports the incremental publications so far and the full
+// ones by reason (tests).
+func publicationCounts() (int, map[string]int) {
+	pubStats.Lock()
+	defer pubStats.Unlock()
+	full := map[string]int{}
+	for k, v := range pubStats.full {
+		full[k] = v
+	}
+	return pubStats.incremental, full
 }
 
 // keysFit reports whether every in-member has a published key and the keys
 // strictly increase in the replay's order (missing or equal keys are a
 // mismatch, never a display tie-break).
-func keysFit(order []queue.Entry, pub map[queue.Entry]queue.Key) bool {
+func keysFit(order []queue.Entry, pub queue.KeyMap) bool {
 	var prev *contract.QueueKey
 	for _, e := range order {
-		k, ok := pub[e]
+		k, ok := pub.Get(e)
 		if !ok {
 			return false
 		}
@@ -1045,6 +1226,11 @@ func keysFit(order []queue.Entry, pub map[queue.Entry]queue.Key) bool {
 	}
 	return true
 }
+
+// checkPublication, when set (tests), checks every incremental publication
+// against the full computation: the same keys, and every episode whose key
+// differs from the cache's among the episodes it republishes.
+var checkPublication func(c *protocol.ApplyContext, st *queue.State, cache *replayCache, pub queue.KeyMap, dirty map[string]bool)
 
 // publishQueue is the queue's publication at the end of a commit
 // (protocol.QueuePublisher): no commit publishes keys that differ from the
@@ -1058,7 +1244,7 @@ func keysFit(order []queue.Entry, pub map[queue.Entry]queue.Key) bool {
 // and checks every record (a rebuild, an upload that joined earlier entries).
 func publishQueue(c *protocol.ApplyContext, full, layout bool) error {
 	touched, all := c.QueueChanges(false)
-	keysChanged := c.QueueKeysChangedSince(true)
+	keysChanged := c.QueueKeysChangedSince(false)
 	changed := c.CommitRecordIDs("episode", "queue_membership")
 	cr0, haveMemo := (*c.QueueMemo()).(*commitReplay)
 	haveMemo = haveMemo && cr0 != nil
@@ -1070,14 +1256,16 @@ func publishQueue(c *protocol.ApplyContext, full, layout bool) error {
 	if v, ok := c.Account.Memo().Load(memoKey{c.AccountID}); ok && v.(*replayCache).valid(head) {
 		cache = v.(*replayCache)
 	}
-	if !full && !all && !keysChanged && len(touched) == 0 && len(changed) == 0 && !haveMemo && cache != nil && cache.pub != nil {
+	if !full && !all && !keysChanged && len(touched) == 0 && len(changed) == 0 && !haveMemo && cache != nil && cache.pubOK {
 		// Nothing the replay, the keys or the records read changed, and the
 		// last publication was consistent: the same immutable snapshots and
 		// keys stay valid for the head this commit leaves (an unrelated commit must not cost the
 		// next queue command a full replay). The shared cache is never mutated.
-		memo, account, snaps, pub := c.Account.Memo(), c.AccountID, cache.snaps, cache.pub
+		memo, account, kept := c.Account.Memo(), c.AccountID, *cache
 		c.AfterCommit(func(head storage.Head) {
-			installCache(memo, account, &replayCache{head: head, snaps: snaps, pub: pub})
+			next := kept
+			next.head = head
+			installCache(memo, account, &next)
 		})
 		return nil
 	}
@@ -1087,15 +1275,17 @@ func publishQueue(c *protocol.ApplyContext, full, layout bool) error {
 	}
 	st := cr.snaps[len(cr.snaps)-1].state
 	order := st.Visible()
-	pub, err := publishedKeys(c, st)
+	pub, delta, err := keysNow(c, cr, full)
+	c.QueueKeysChangedSince(true)
 	if err != nil {
 		return err
 	}
 	consistent := keysFit(order, pub)
+	var fresh []queue.Assigned
 	if !consistent && layout {
 		cands := make(map[queue.Entry]queue.Candidate, len(order))
 		for _, e := range order {
-			k, ok := pub[e]
+			k, ok := pub.Get(e)
 			if !ok {
 				continue
 			}
@@ -1110,7 +1300,6 @@ func publishQueue(c *protocol.ApplyContext, full, layout bool) error {
 		if err != nil {
 			return err
 		}
-		var fresh []queue.Assigned
 		for _, a := range assigned {
 			if !a.Kept {
 				fresh = append(fresh, a)
@@ -1126,9 +1315,14 @@ func publishQueue(c *protocol.ApplyContext, full, layout bool) error {
 			}
 			r := decisionRank(d)
 			for _, a := range fresh {
-				pub[a.Entry] = queue.Key{Key: a.Key.String(), PositionID: formatUUID(a.PositionID), Rank: r}
+				pub = pub.Set(a.Entry, queue.Key{Key: a.Key.String(), PositionID: formatUUID(a.PositionID), Rank: r})
+			}
+			if delta.layoutRank.Less(r) {
+				delta.layoutRank = r
 			}
 			consistent = true
+		} else {
+			fresh = nil
 		}
 	}
 	// The episodes whose queue_position record may change: membership
@@ -1139,7 +1333,22 @@ func publishQueue(c *protocol.ApplyContext, full, layout bool) error {
 	for _, ep := range changed {
 		dirty[ep] = true
 	}
-	if full || all || cache == nil || cache.pub == nil {
+	var prev queue.KeyMap // the keys the records show
+	switch {
+	case delta.full == "":
+		prev = cr.base.pub
+	case cache != nil:
+		prev = cache.pub
+	}
+	differs := func(e queue.Entry) {
+		k, ok := pub.Get(e)
+		if p, had := prev.Get(e); ok != had || p != k {
+			ep, _ := scopeEpisode(string(e))
+			dirty[ep] = true
+		}
+	}
+	switch {
+	case full || all || cache == nil || !cache.pubOK:
 		for _, group := range []string{"queue_membership", "queue_position"} {
 			ids, err := c.Account.LiveRecordIDs("episode", group)
 			if err != nil {
@@ -1149,21 +1358,28 @@ func publishQueue(c *protocol.ApplyContext, full, layout bool) error {
 				dirty[ep] = true
 			}
 		}
-		for e := range pub {
+		for e := range pub.All() {
 			ep, _ := scopeEpisode(string(e))
 			dirty[ep] = true
 		}
-	} else {
-		for e, k := range pub {
-			if p, ok := cache.pub[e]; !ok || p != k {
-				ep, _ := scopeEpisode(string(e))
-				dirty[ep] = true
-			}
+	case delta.full == "":
+		// Incremental: only the entries whose key may have changed.
+		for _, e := range delta.entries {
+			differs(e)
 		}
-		for e := range cache.pub {
-			if _, ok := pub[e]; !ok {
-				ep, _ := scopeEpisode(string(e))
-				dirty[ep] = true
+		for _, a := range fresh {
+			differs(a.Entry)
+		}
+		if checkPublication != nil {
+			checkPublication(c, st, cr.base, pub, dirty)
+		}
+	default:
+		for e := range pub.All() {
+			differs(e)
+		}
+		for e := range prev.All() {
+			if _, ok := pub.Get(e); !ok {
+				differs(e)
 			}
 		}
 	}
@@ -1172,13 +1388,16 @@ func publishQueue(c *protocol.ApplyContext, full, layout bool) error {
 		eps = append(eps, ep)
 	}
 	sort.Strings(eps)
+	pubStats.Lock()
+	pubStats.positions += len(eps)
+	pubStats.Unlock()
 	for _, ep := range eps {
 		if err := publishPosition(c, ep, pub); err != nil {
 			return err
 		}
 	}
 	if consistent {
-		installReplay(c, cr, pub)
+		installReplay(c, cr, pub, delta.layoutRank)
 	}
 	return nil
 }
@@ -1188,7 +1407,7 @@ func publishQueue(c *protocol.ApplyContext, full, layout bool) error {
 // write's node as provenance; absent without one. A record whose value does
 // not change keeps its provenance (in a rebuild, the one it had before), which
 // never decides the winning write (PROTOCOL §7.6).
-func publishPosition(c *protocol.ApplyContext, ep string, pub map[queue.Entry]queue.Key) error {
+func publishPosition(c *protocol.ApplyContext, ep string, pub queue.KeyMap) error {
 	m, err := recordValue(c.Account, "episode", ep, "queue_membership")
 	if err != nil {
 		return err
@@ -1197,7 +1416,7 @@ func publishPosition(c *protocol.ApplyContext, ep string, pub map[queue.Entry]qu
 	var writer string
 	if m != nil {
 		gen, _ := str(m, "generation_id")
-		if k, ok := pub[queue.Entry(protocol.EpisodeScope(gen, ep))]; ok {
+		if k, ok := pub.Get(queue.Entry(protocol.EpisodeScope(gen, ep))); ok {
 			want = map[string]any{"generation_id": gen, "key": k.Key, "position_id": k.PositionID}
 			writer = k.Rank.ID
 		}
@@ -1284,10 +1503,10 @@ func applyLayout(c *protocol.ApplyContext, d map[string]any) error {
 
 // installReplay keeps the commit's snapshots and published keys for the
 // account once the commit is durable, tagged with the head it leaves.
-func installReplay(c *protocol.ApplyContext, cr *commitReplay, pub map[queue.Entry]queue.Key) {
+func installReplay(c *protocol.ApplyContext, cr *commitReplay, pub queue.KeyMap, layoutRank queue.Rank) {
 	memo, account := c.Account.Memo(), c.AccountID
 	c.AfterCommit(func(head storage.Head) {
-		installCache(memo, account, &replayCache{head: head, snaps: cr.snaps, pub: pub})
+		installCache(memo, account, &replayCache{head: head, snaps: cr.snaps, pub: pub, pubOK: true, layoutRank: layoutRank})
 	})
 }
 

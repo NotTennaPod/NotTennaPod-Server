@@ -28,6 +28,11 @@ type StoredResponse struct {
 	// or an episode ID), so a re-parse names them as its bases; nil for a response stored before
 	// them.
 	Revisions map[string]string
+	// ETagUnreliable: its host answered an If-None-Match for an unchanged
+	// body, with an unchanged Last-Modified, with the whole body again, so
+	// its ETag is not sent (PROTOCOL §9.3). It holds for this source and
+	// representation key only.
+	ETagUnreliable bool
 }
 
 // maxStoredHeader bounds a stored response's header (validators, source and
@@ -44,6 +49,7 @@ type storedHeader struct {
 	Now          int64             `json:"now"`
 	Parser       string            `json:"parser"`
 	Revisions    map[string]string `json:"revisions,omitempty"`
+	Unreliable   bool              `json:"etag_unreliable,omitempty"`
 }
 
 // storedAD binds a sealed response to its account and podcast.
@@ -59,7 +65,7 @@ func (r StoredResponse) Seal(box *sealed.Box, accountID, podcastID string) ([]by
 		return nil, errors.New("feed: stored response over the body limit")
 	}
 	h, err := json.Marshal(storedHeader{Key: r.RepresentationKey, ETag: r.ETag, LastModified: r.LastModified,
-		Source: r.Source, Now: r.Now, Parser: r.ParserVersion, Revisions: r.Revisions})
+		Source: r.Source, Now: r.Now, Parser: r.ParserVersion, Revisions: r.Revisions, Unreliable: r.ETagUnreliable})
 	if err != nil {
 		return nil, err
 	}
@@ -104,5 +110,5 @@ func OpenStoredResponse(box *sealed.Box, accountID, podcastID string, sealedByte
 		return StoredResponse{}, err
 	}
 	return StoredResponse{RepresentationKey: h.Key, ETag: h.ETag, LastModified: h.LastModified, Source: h.Source,
-		Now: h.Now, ParserVersion: h.Parser, Body: body, Revisions: h.Revisions}, nil
+		Now: h.Now, ParserVersion: h.Parser, Body: body, Revisions: h.Revisions, ETagUnreliable: h.Unreliable}, nil
 }

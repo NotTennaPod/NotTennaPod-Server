@@ -24,6 +24,9 @@ func (s *Server) importRoutes() {
 	s.route("/v1/import/{id}/chunks/{n}", endpoint{method: http.MethodPut, auth: authWeb, maxBody: importer.MaxChunk*4/3 + 1024,
 		handle: (*request).importChunk})
 	s.route("/v1/import/{id}/finish", endpoint{method: http.MethodPost, auth: authWeb, handle: (*request).finishImport})
+	// Progress without the result, for polling; cancelling an upload.
+	s.route("/v1/import/{id}/progress", endpoint{method: http.MethodGet, auth: authWeb, handle: (*request).importProgress})
+	s.route("/v1/import/{id}/cancel", endpoint{method: http.MethodPost, auth: authWeb, handle: (*request).cancelImport})
 }
 
 // importer returns the runner, refusing an unbound web session (PROTOCOL §5: the
@@ -143,6 +146,60 @@ func (req *request) getImport() (int, any, error) {
 	if err := req.checkCaller(); err != nil {
 		return 0, nil, err
 	}
+	if err != nil {
+		return 0, nil, importError(err)
+	}
+	return http.StatusOK, importValue(im), nil
+}
+
+// importProgress answers an import's progress: its state without the result
+// (the report is read once, from GET /v1/import/{id}), the chunks an upload
+// holds, the processing step (null while not known) and a published import's
+// first refresh. Its size never grows with the library: an upload's chunk list
+// is bounded by importer.MaxChunks.
+func (req *request) importProgress() (int, any, error) {
+	r, err := req.importer()
+	if err != nil {
+		return 0, nil, err
+	}
+	st, err := r.Status(req.ctx, req.principal.accountID(), req.r.PathValue("id"))
+	if err := req.checkCaller(); err != nil {
+		return 0, nil, err
+	}
+	if err != nil {
+		return 0, nil, importError(err)
+	}
+	v := importValue(st.Import)
+	switch st.Import.Status {
+	case "uploading":
+		v["received"] = map[string]any{"chunks": st.Chunks, "bytes": st.Received}
+	case "processing":
+		v["processing"] = nil
+		if p := st.Processing; p != nil {
+			v["processing"] = map[string]any{"phase": p.Name, "done": p.Done, "total": p.Total}
+		}
+	}
+	if f := st.Refresh; f != nil {
+		x := map[string]any{"status": f.Status, "until": f.Until}
+		if f.Status != "starting" && f.Status != "unavailable" {
+			x["total"], x["attempted"], x["succeeded"], x["failed"] = f.Total, f.Attempted, f.Succeeded, f.Failed
+		}
+		v["refresh"] = x
+	}
+	return http.StatusOK, v, nil
+}
+
+// cancelImport cancels an uploading import (a failed one is answered as it
+// is; a processing or published one is 409 import_not_uploading).
+func (req *request) cancelImport() (int, any, error) {
+	r, err := req.importer()
+	if err != nil {
+		return 0, nil, err
+	}
+	if err := req.decodeEmpty(); err != nil {
+		return 0, nil, err
+	}
+	im, err := r.Cancel(req.ctx, req.authorize(), req.principal.accountID(), req.r.PathValue("id"))
 	if err != nil {
 		return 0, nil, importError(err)
 	}

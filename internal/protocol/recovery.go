@@ -125,6 +125,12 @@ func (s *Service) busy(accountID string) error {
 // everything in one commit. A request is retried safely: every result is
 // idempotent by ID.
 func (s *Service) RecoveryUpload(ctx context.Context, req RecoveryUploadRequest, authorize Authorize) (*RecoveryUploadResponse, error) {
+	return s.recoveryUpload(ctx, req, authorize, nil)
+}
+
+// recoveryUpload is RecoveryUpload, with a recovery job's hooks when it runs
+// one (nil: a request run synchronously).
+func (s *Service) recoveryUpload(ctx context.Context, req RecoveryUploadRequest, authorize Authorize, job *uploadHooks) (*RecoveryUploadResponse, error) {
 	keys, err := s.Store.ReceiptKeys(ctx)
 	if err != nil || len(keys) == 0 {
 		return nil, fmt.Errorf("protocol: no receipt key: %v", err)
@@ -134,15 +140,30 @@ func (s *Service) RecoveryUpload(ctx context.Context, req RecoveryUploadRequest,
 	}
 	var resp *RecoveryUploadResponse
 	stage := func(authorize Authorize) (bool, error) {
-		check := func(tx *storage.WriteTx) error { return authorized(tx, authorize, req.InstallID) }
+		check := func(tx *storage.WriteTx) error {
+			if err := authorized(tx, authorize, req.InstallID); err != nil {
+				return err
+			}
+			return job.publish(tx)
+		}
 		staged, _, err := s.staged(ctx, req.AccountID, check, func(ss *Service) error {
 			var err error
-			resp, err = ss.RecoveryUpload(ctx, req, authorize)
+			resp, err = ss.recoveryUpload(ctx, req, authorize, nil)
 			return err
 		})
 		return staged, err
 	}
+	// A job that ran its own transition before (a restart since) is
+	// authorized as right after it, by the fence it stored with it: only on
+	// the timeline that transition made.
+	transitioned := job != nil && job.fence != nil
+	if transitioned {
+		authorize = installationAuthorize(req.AccountID, req.InstallID, *job.fence)
+	}
 	staged, err := stage(authorize)
+	if errors.Is(err, errStagedEvidence) && transitioned {
+		return nil, errBusy // a second lost timeline since: try again
+	}
 	if errors.Is(err, errStagedEvidence) {
 		// The request proves a lost timeline (PROTOCOL §6.11): only the epoch
 		// transition runs live, which is short; the upload is then staged again
@@ -150,9 +171,15 @@ func (s *Service) RecoveryUpload(ctx context.Context, req RecoveryUploadRequest,
 		// then on the uploader is authorized by its installation (still the
 		// account's, not revoked, not superseded) and by the account's
 		// credentials as they stood right after the transition: a revocation,
-		// password change or reset meanwhile still wins.
-		var fence int64
-		if fence, err = s.recoveryTransition(ctx, req, authorize, keys); err != nil {
+		// password change or reset meanwhile still wins. The exception holds
+		// only on the timeline the transition made (its epoch): a later
+		// transition, which signs every device out again, voids it. A job
+		// stores that fence in the transition's transaction.
+		var fence timelineFence
+		if fence, err = s.recoveryTransition(ctx, req, authorize, keys, job); err != nil {
+			return nil, err
+		}
+		if err := job.afterTransition(fence); err != nil {
 			return nil, err
 		}
 		authorize = installationAuthorize(req.AccountID, req.InstallID, fence)
@@ -163,10 +190,57 @@ func (s *Service) RecoveryUpload(ctx context.Context, req RecoveryUploadRequest,
 	if staged || err != nil {
 		return resp, err
 	}
+	return s.recoveryUploadInPlace(ctx, req, authorize, keys, job, false)
+}
+
+// errWouldJoin rolls back a cheap evaluation (recoveryUploadCheap) of an
+// upload that joins something: it runs as a job.
+var errWouldJoin = errors.New("protocol: the upload joins entries")
+
+// recoveryUploadCheap answers, in place and at once, an upload that joins
+// nothing (PROTOCOL §6.11): the archive as it is now answers it (joined
+// entries known, stored parts part_stored, dependency_missing and frame
+// expiry evaluated afresh), in the transaction the synchronous upload would
+// make in place, with its end steps, counts, secrets and stored parts. An
+// upload that would join or replace an entry, prove a lost timeline, or
+// whose end steps decide anything that needs the account derived again is
+// rolled back with errWouldJoin, before it changes anything.
+func (s *Service) recoveryUploadCheap(ctx context.Context, req RecoveryUploadRequest, authorize Authorize) (*RecoveryUploadResponse, error) {
+	keys, err := s.Store.ReceiptKeys(ctx)
+	if err != nil || len(keys) == 0 {
+		return nil, fmt.Errorf("protocol: no receipt key: %v", err)
+	}
+	if err := s.busy(req.AccountID); err != nil {
+		return nil, err
+	}
+	return s.recoveryUploadInPlace(ctx, req, authorize, keys, nil, true)
+}
+
+// recoveryUploadInPlace joins an upload in one live write transaction: the
+// whole account is derived again there when anything joined. cheap stops
+// short of that (recoveryUploadCheap).
+func (s *Service) recoveryUploadInPlace(ctx context.Context, req RecoveryUploadRequest, authorize Authorize, keys []storage.ReceiptKey,
+	job *uploadHooks, cheap bool) (*RecoveryUploadResponse, error) {
+	var resp *RecoveryUploadResponse
 	now := s.Now().UnixMilli()
 	secrets, err := s.prepareSecrets(req.AccountID, req.Secrets)
 	if err != nil {
 		return nil, err
+	}
+	// The upload holds the account's rebuild claim across its live
+	// transaction (PROTOCOL §6.11): no staged rebuild (another device's job)
+	// copies the account while it writes, so no publication of such a copy
+	// replaces what it acknowledged (stored parts, frames, counts); while one
+	// runs, the upload is busy.
+	release, ok := s.claimRebuild(req.AccountID)
+	if !ok {
+		return nil, errRebuildClaimed
+	}
+	defer release()
+	if cheap {
+		if err := s.jobPoint("cheap"); err != nil {
+			return nil, err
+		}
 	}
 	var report RebuildReport
 	var finished *commitBuilder
@@ -182,15 +256,14 @@ func (s *Service) RecoveryUpload(ctx context.Context, req RecoveryUploadRequest,
 			return err
 		}
 		acct := tx.Account(req.AccountID)
-		done := s.beginRebuild(req.AccountID)
-		defer done()
 		if err := acct.DeferForeignKeys(); err != nil {
 			return err
 		}
 		if err := s.putSecrets(acct, req.AccountID, secrets); err != nil {
 			return err
 		}
-		j := &joiner{s: s, tx: tx, acct: acct, accountID: req.AccountID, installID: req.InstallID, recoveryID: req.RecoveryID, keys: keys, now: now}
+		j := &joiner{s: s, tx: tx, acct: acct, accountID: req.AccountID, installID: req.InstallID, recoveryID: req.RecoveryID, keys: keys, now: now,
+			cheap: cheap}
 		// Framed facts first: every part's receipt is verified, and a frame this request
 		// completes is assembled in memory, so its fact takes part in the evidence check like any
 		// other entry (PROTOCOL §6.11). Parts of frames still incomplete are stored after the
@@ -236,6 +309,9 @@ func (s *Service) RecoveryUpload(ctx context.Context, req RecoveryUploadRequest,
 			}
 			pending = again
 		}
+		if cheap && j.changed {
+			return errWouldJoin
+		}
 		for _, i := range pending {
 			j.count(results[i])
 		}
@@ -261,6 +337,9 @@ func (s *Service) RecoveryUpload(ctx context.Context, req RecoveryUploadRequest,
 		}
 		made := slices.Clone(b.decisions[before:]) // the end steps' decisions
 		add := j.counts
+		if cheap && resolved(made) {
+			return errWouldJoin
+		}
 		if resolved(made) {
 			// A provisional resolution made now lets the registration's
 			// dependents (its own archive's listening and favorites, replayed
@@ -309,6 +388,9 @@ func (s *Service) RecoveryUpload(ctx context.Context, req RecoveryUploadRequest,
 		}
 		cursor, err := contract.Cursor{LogID: head.LogID, Epoch: head.Epoch, Seq: head.Seq, Digest: head.Digest}.Encode()
 		if err != nil {
+			return err
+		}
+		if err := job.publish(tx); err != nil {
 			return err
 		}
 		resp = &RecoveryUploadResponse{Head: cursor, Results: results}
@@ -362,8 +444,8 @@ func (s *Service) uploadable(tx *storage.WriteTx, req RecoveryUploadRequest, aut
 // stored parts of the frames this request names are kept again, so the staged upload that
 // follows completes them.
 func (s *Service) recoveryTransition(ctx context.Context, req RecoveryUploadRequest, authorize Authorize,
-	keys []storage.ReceiptKey) (int64, error) {
-	var fence int64
+	keys []storage.ReceiptKey, job *uploadHooks) (timelineFence, error) {
+	var fence timelineFence
 	err := s.Store.Write(ctx, func(tx *storage.WriteTx) error {
 		if _, err := s.uploadable(tx, req, authorize); err != nil {
 			return err
@@ -401,12 +483,19 @@ func (s *Service) recoveryTransition(ctx context.Context, req RecoveryUploadRequ
 		if err := j.evidence(entries, final, req.SameTimeline); err != nil {
 			return err
 		}
-		if fence, err = acct.CredentialsVersion(); err != nil {
+		after, err := acct.Head()
+		if err != nil {
 			return err
 		}
-		after, err := acct.Head()
-		if err != nil || after.Epoch == before.Epoch {
+		if fence.version, err = acct.CredentialsVersion(); err != nil {
 			return err
+		}
+		fence.epoch = after.Epoch
+		if err := job.transitioned(acct, fence); err != nil {
+			return err
+		}
+		if after.Epoch == before.Epoch {
+			return nil
 		}
 		for id, f := range kept {
 			if err := acct.RestoreRecoveryFrame(req.InstallID, id, req.RecoveryID, f.slot, j.now, f.parts); err != nil {
@@ -418,14 +507,27 @@ func (s *Service) recoveryTransition(ctx context.Context, req RecoveryUploadRequ
 	return fence, err
 }
 
+// timelineFence is what an uploader's own epoch transition leaves as its
+// authority: the account's credentials version right after it, and the
+// timeline it made (the account's epoch then; epochs are never reused).
+type timelineFence struct {
+	version, epoch int64
+}
+
 // installationAuthorize authorizes an uploader after the epoch transition
-// its own request ran, which signed every device out: its installation is
-// still the account's, not revoked and not superseded, the account is
-// active, and its credentials version is still fence (no password change or
-// reset since the transition).
-func installationAuthorize(accountID, installID string, fence int64) Authorize {
+// its own request ran, which signed every device out: the account is still
+// on the timeline that transition made (no later transition, which signed
+// every device out again), its installation is still the account's, not
+// revoked and not superseded, the account is active, and its credentials
+// version is still the fence's (no password change or reset since).
+func installationAuthorize(accountID, installID string, fence timelineFence) Authorize {
 	return func(tx *storage.WriteTx) (*storage.Installation, error) {
 		acct := tx.Account(accountID)
+		if head, err := acct.Head(); err != nil {
+			return nil, err
+		} else if head.Epoch != fence.epoch {
+			return nil, protoErr(401, "unauthorized", "Sign in again.")
+		}
 		inst, err := acct.Installation(installID)
 		if errors.Is(err, storage.ErrNotFound) {
 			return nil, protoErr(401, "unauthorized", "Sign in again.")
@@ -445,7 +547,7 @@ func installationAuthorize(accountID, installID string, fence int64) Authorize {
 		}
 		if v, err := acct.CredentialsVersion(); err != nil {
 			return nil, err
-		} else if v != fence {
+		} else if v != fence.version {
 			return nil, protoErr(401, "unauthorized", "Sign in again.")
 		}
 		return &inst, nil
@@ -535,7 +637,10 @@ type joiner struct {
 	rev        storage.Revision
 	err        error
 
-	changed   bool             // an entry was joined or a receipt replaced
+	changed bool // an entry was joined or a receipt replaced
+	// cheap refuses lost-timeline evidence with errWouldJoin rather than
+	// running the transition (recoveryUploadCheap).
+	cheap     bool
 	accepted  []map[string]any // the commit's recovered facts with their original receipts
 	decisions []map[string]any // the commit's recovered decisions as recorded
 	counts    RecoveryCounts
@@ -743,6 +848,9 @@ func (j *joiner) evidence(entries []RecoveryEntry, final []bool, sameTimeline bo
 	}
 	if top == 0 {
 		return nil
+	}
+	if j.cheap {
+		return errWouldJoin
 	}
 	return j.tx.EvidenceTransition(top)
 }
@@ -1366,11 +1474,16 @@ func (s *Service) openRecovery(ctx context.Context, req SnapshotRequest) (*Snaps
 	if !contract.ValidUUID(req.RecoveryID) {
 		return nil, protoErr(400, "invalid_request", "recovery_id must be a UUID.")
 	}
-	if err := s.busy(req.AccountID); err != nil {
+	release, err := s.holdLive(req.AccountID)
+	if err != nil {
+		return nil, err
+	}
+	defer release()
+	if err := s.jobPoint("open"); err != nil {
 		return nil, err
 	}
 	var out *SnapshotResponse
-	err := s.Store.Write(ctx, func(tx *storage.WriteTx) error {
+	err = s.Store.Write(ctx, func(tx *storage.WriteTx) error {
 		out = nil
 		if err := authorized(tx, req.Authorize, req.InstallID); err != nil {
 			return err
@@ -1438,11 +1551,13 @@ type InventoryResult struct {
 // later provisional receipt) or conflict (same ID, different content; never uploaded).
 func (s *Service) RecoveryInventory(ctx context.Context, accountID, installID, recoveryID string, entries []InventoryEntry,
 	authorize Authorize) ([]InventoryResult, error) {
-	if err := s.busy(accountID); err != nil {
+	release, err := s.holdLive(accountID)
+	if err != nil {
 		return nil, err
 	}
+	defer release()
 	out := make([]InventoryResult, len(entries))
-	err := s.Store.Write(ctx, func(tx *storage.WriteTx) error {
+	err = s.Store.Write(ctx, func(tx *storage.WriteTx) error {
 		if err := authorized(tx, authorize, installID); err != nil {
 			return err
 		}
@@ -1608,11 +1723,12 @@ func Summary(r storage.Recovery) RecoverySummary {
 // it is harmless.
 func (s *Service) RecoveryFinish(ctx context.Context, accountID, installID, recoveryID string, complete bool,
 	authorize Authorize) (RecoverySummary, error) {
-	if err := s.busy(accountID); err != nil {
+	release, err := s.holdLive(accountID)
+	if err != nil {
 		return RecoverySummary{}, err
 	}
 	var out RecoverySummary
-	err := s.Store.Write(ctx, func(tx *storage.WriteTx) error {
+	err = s.Store.Write(ctx, func(tx *storage.WriteTx) error {
 		if err := authorized(tx, authorize, installID); err != nil {
 			return err
 		}
@@ -1642,6 +1758,7 @@ func (s *Service) RecoveryFinish(ctx context.Context, accountID, installID, reco
 		out = Summary(rec)
 		return nil
 	})
+	release()
 	if err != nil {
 		return out, err
 	}

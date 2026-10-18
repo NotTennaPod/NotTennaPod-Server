@@ -797,7 +797,7 @@ func resolvedPlacement(ctx *protocol.ApplyContext) (place, contract.QueueKey, [1
 			p = place{kind: "after", after: &EpisodeRef{EpisodeID: ep, GenerationID: gen}}
 		}
 	}
-	keys, err := currentKeys(ctx, st, order)
+	keys, err := currentKeys(ctx, order)
 	if err != nil {
 		return place{}, contract.QueueKey{}, [16]byte{}, "", err
 	}
@@ -816,15 +816,20 @@ func resolvedPlacement(ctx *protocol.ApplyContext) (place, contract.QueueKey, [1
 	return p, k, u, location, err
 }
 
-// currentKeys are the members' published keys in order (nil for none).
-func currentKeys(ctx *protocol.ApplyContext, st *queue.State, order []queue.Entry) ([]*contract.QueueKey, error) {
-	published, err := publishedKeys(ctx, st)
+// currentKeys are the members' published keys in order (nil for none), for
+// the commit's replay state (replayNow's).
+func currentKeys(ctx *protocol.ApplyContext, order []queue.Entry) ([]*contract.QueueKey, error) {
+	cr, ok := (*ctx.QueueMemo()).(*commitReplay)
+	if !ok || cr == nil {
+		return nil, errors.New("ops: no replay state for the commit")
+	}
+	published, _, err := keysNow(ctx, cr, false)
 	if err != nil {
 		return nil, err
 	}
 	out := make([]*contract.QueueKey, len(order))
 	for i, e := range order {
-		if k, ok := published[e]; ok {
+		if k, ok := published.Get(e); ok {
 			if q, err := contract.ParseQueueKey(k.Key); err == nil {
 				out[i] = &q
 			}

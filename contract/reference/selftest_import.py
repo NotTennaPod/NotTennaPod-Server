@@ -226,6 +226,83 @@ FIXTURES = {
         ],
     },
     # Merged rows Android counts through units, and the rulings' expected differences.
+    # Stored chapters and the device-only settings and suppressions the import reports.
+    "device-only": {
+        "description": "stored chapters: out of start order, equal starts, NULL start and title, a millisecond "
+                       "start and a link with userinfo; the flag set without rows and rows behind a flag of 0 and "
+                       "of NULL (no chapters); merged episodes: different chapters on both rows (the first row in "
+                       "date order has the higher ID), chapters only on the second row, only on the first, and "
+                       "after a flag without rows. "
+                       "Device-only settings: a feed with every setting changed, a feed whose values are all "
+                       "Android's defaults spelled out, and a local folder and an unused preview with changed "
+                       "settings (skipped, not listed). Episodes stopped from downloading automatically: unplayed, "
+                       "played (not counted), NULL, in a merged episode and in a skipped preview",
+        "feeds": [
+            _feed(1, "Chapters Show", "https://chapters.example.invalid/feed.xml"),
+            dict(_feed(2, "Settings Show", "https://settings.example.invalid/feed.xml", custom_title="My Settings Show"),
+                 feed_playback_speed=1.5, feed_skip_silence=0, feed_skip_intro=30, feed_skip_ending=15,
+                 feed_volume_adaption=3, tags="#root\x1eNews", episode_notification=1, auto_delete_action=2,
+                 include_filter="word", sort_order="2", hide="unplayed,paused"),
+            dict(_feed(3, "Defaults Show", "https://defaults.example.invalid/feed.xml"),
+                 tags="#root", sort_order="11", feed_skip_silence=2, hide="", include_filter="", exclude_filter="",
+                 minimal_duration_filter=-1),
+            dict(_feed(4, "Local Folder", "antennapod_local:content://folder"), feed_playback_speed=2.0),
+            dict(_feed(5, "Unused Preview", "https://preview.example.invalid/feed.xml", state=1),
+                 feed_playback_speed=2.0, auto_download=2),
+        ],
+        "items": [
+            dict(_item(1, 1, "Chapters out of order", "ch-1", ms(2026, 2, 1), media=1), has_simple_chapters=1),
+            dict(_item(2, 1, "Flag without rows", "ch-2", ms(2026, 2, 2), media=2), has_simple_chapters=1),
+            dict(_item(3, 1, "Stale rows, flag 0", "ch-3", ms(2026, 2, 3), media=3), has_simple_chapters=0),
+            dict(_item(4, 1, "Stale rows, flag NULL", "ch-4", ms(2026, 2, 4), media=4), has_simple_chapters=None),
+            dict(_item(5, 1, "Odd chapters", "ch-5", ms(2026, 2, 5), media=5), has_simple_chapters=1),
+            dict(_item(6, 1, "Two rows (second)", "same", ms(2026, 2, 6), media=6), has_simple_chapters=1),
+            dict(_item(7, 1, "Two rows (first)", "same", ms(2026, 2, 5), media=7), has_simple_chapters=1,
+                 auto_download=0),
+            dict(_item(8, 1, "Not downloaded automatically", "ad-1", ms(2026, 2, 8), media=8), auto_download=0),
+            dict(_item(9, 1, "Played, not downloaded automatically", "ad-2", ms(2026, 2, 9), read=1, media=9),
+                 auto_download=0),
+            dict(_item(10, 1, "NULL auto download", "ad-3", ms(2026, 2, 10), read=-1, media=10), auto_download=None),
+            _item(11, 2, "Settings episode", "s-1", ms(2026, 3, 1), media=11),
+            _item(12, 3, "Defaults episode", "d-1", ms(2026, 3, 1), media=12),
+            dict(_item(13, 5, "Preview episode", "p-1", ms(2026, 3, 1), media=13), auto_download=0),
+            dict(_item(14, 1, "Merged: no chapters first", "nn-1", ms(2026, 2, 11), media=14), has_simple_chapters=0),
+            dict(_item(15, 1, "Merged: chapters second", "nn-1", ms(2026, 2, 12), media=15), has_simple_chapters=1),
+            dict(_item(16, 1, "Merged: chapters first", "nn-2", ms(2026, 2, 13), media=16), has_simple_chapters=1),
+            dict(_item(17, 1, "Merged: no chapters second", "nn-2", ms(2026, 2, 14), media=17), has_simple_chapters=None),
+            dict(_item(18, 1, "Merged: flag without rows first", "en-1", ms(2026, 2, 15), media=18), has_simple_chapters=1),
+            dict(_item(19, 1, "Merged: chapters after an empty flag", "en-1", ms(2026, 2, 16), media=19),
+                 has_simple_chapters=1),
+        ],
+        "media": [
+            _media(i, i, "https://chapters.example.invalid/%d.mp3" % i, 600000) for i in range(1, 11)
+        ] + [
+            _media(11, 11, "https://settings.example.invalid/1.mp3", 600000),
+            _media(12, 12, "https://defaults.example.invalid/1.mp3", 600000),
+            _media(13, 13, "https://preview.example.invalid/1.mp3", 600000),
+        ] + [_media(i, i, "https://chapters.example.invalid/%d.mp3" % i, 600000) for i in range(14, 20)],
+        "chapters": [
+            {"id": 1, "feeditem": 1, "start": 60000, "title": "Second", "link": "https://chapters.example.invalid/2",
+             "image_url": "https://chapters.example.invalid/2.jpg"},
+            {"id": 2, "feeditem": 1, "start": 0, "title": "First", "link": None, "image_url": None},
+            {"id": 3, "feeditem": 3, "start": 0, "title": "Stale", "link": None, "image_url": None},
+            {"id": 4, "feeditem": 1, "start": 60000, "title": "Second, again", "link": None, "image_url": None},
+            {"id": 5, "feeditem": 4, "start": 0, "title": "Stale too", "link": None, "image_url": None},
+            {"id": 6, "feeditem": 5, "start": None, "title": None, "link": None, "image_url": None},
+            {"id": 7, "feeditem": 5, "start": 1234567, "title": "Precise",
+             "link": "https://reader:secret@chapters.example.invalid/c", "image_url": None},
+            {"id": 8, "feeditem": 6, "start": 0, "title": "Row six", "link": None, "image_url": None},
+            {"id": 9, "feeditem": 7, "start": 0, "title": "Row seven", "link": None, "image_url": None},
+            {"id": 10, "feeditem": 99, "start": 0, "title": "Orphan", "link": None, "image_url": None},
+            {"id": 11, "feeditem": 15, "start": 0, "title": "Second row's", "link": None, "image_url": None},
+            {"id": 12, "feeditem": 16, "start": 0, "title": "First row's", "link": None, "image_url": None},
+            {"id": 13, "feeditem": 19, "start": 5000, "title": "After an empty flag", "link": None, "image_url": None},
+            {"id": 14, "feeditem": 17, "start": 0, "title": "Stale, flag NULL", "link": None, "image_url": None},
+        ],
+        "queue": [],
+        "favorites": [],
+        "expected_differences": [],
+    },
     "parity-gaps": {
         "description": "merged rows Android counts only through units carrying their own PLAYED flag and position "
                        "(an all-zero row, a PLAYED row with duration 0, a row with only a position, a PLAYED row never "
@@ -289,7 +366,7 @@ FIXTURES = {
 
 def write_fixture(name, path):
     fx = FIXTURES[name]
-    ia.write_library(path, fx["feeds"], fx["items"], fx["media"], fx["queue"], fx["favorites"])
+    ia.write_library(path, fx["feeds"], fx["items"], fx["media"], fx["queue"], fx["favorites"], fx.get("chapters", ()))
 
 
 def diff_keys(entries):
@@ -697,6 +774,24 @@ def test_generated():
     eq([(s["reason"], s["source_feed_id"]) for s in out["result"]["skipped"]],
        [("local_folder", 2), ("unused_preview", 9), ("unused_preview", 10)],
        "feeds-lifecycle: local folder and unused previews skipped")
+
+    out = ia.analyze(os.path.join(SCRATCH, "device-only.db"))
+    eps = by_items(out)
+    titles = {k: None if e["chapters"] is None else [(c["start"], c["title"]) for c in e["chapters"]]
+              for k, e in eps.items() if k[0] <= 7 or k[0] >= 14}
+    eq(titles, {(1,): [("60000", "Second"), ("0", "First"), ("60000", "Second, again")], (2,): None, (3,): None,
+                (4,): None, (5,): [("0", None), ("1234567", "Precise")], (6, 7): [("0", "Row seven")],
+                (14, 15): [("0", "Second row's")], (16, 17): [("0", "First row's")],
+                (18, 19): [("5000", "After an empty flag")]},
+       "device-only: stored chapters in id order, the flag and rows deciding; a merged episode's from its first "
+       "row with any, in the import's row order")
+    eq(eps[(5,)]["chapters"][1]["link"], "https://chapters.example.invalid/c",
+       "device-only: chapter strings lose URL userinfo")
+    eq(out["result"]["not_carried"], {"podcasts": [{"title": "My Settings Show", "source_feed_id": 2,
+                                                    "url": "https://settings.example.invalid/feed.xml", "settings": [
+        "custom_title", "tags", "playback_speed", "skip_silence", "skip_intro", "skip_ending", "volume_adaptation",
+        "episode_notification", "auto_delete", "auto_download_filter", "episode_list_filter", "sort_order"]}],
+        "episode_auto_download_off": 3}, "device-only: what is not carried")
 
     # Without the unit's PLAYED flag, a merged PLAYED row's duration is missed (ruling 1's reason).
     out = ia.analyze(os.path.join(SCRATCH, "parity-gaps.db"))

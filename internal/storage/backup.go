@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io"
 	"net/url"
 	"os"
 	"path/filepath"
@@ -27,19 +28,35 @@ type BackupInfo struct {
 
 const backupTempPrefix = ".nottennapod-backup-"
 
-// Backup writes a consistent, verified copy of the database into dir (PROTOCOL
-// §11). It reads one snapshot on its own connection, outside write
-// serialization, so pushes continue; the copy is marked as a backup, reopened
-// and checked, then made durable and renamed into place. Only one backup runs
-// at a time.
-func (s *Store) Backup(ctx context.Context, dir string) (BackupInfo, error) {
-	return s.BackupAs(ctx, dir, func(taken time.Time) (string, error) { return backupName(dir, taken) })
+// BackupOptions guard a backup's writes (backupsched.Run gives every backup
+// its free-space checks).
+type BackupOptions struct {
+	// Start is called with the backup lock held, after the folder's
+	// temporaries left by an interrupted backup are removed and before
+	// anything is written; an error refuses the backup.
+	Start func() error
+	// Space is asked before each 32 MiB the backup writes itself (the
+	// compressed copy); an error stops the backup.
+	Space func(writing int64) error
 }
 
-// BackupAs is Backup with the published file's path chosen by name, given
-// the backup's time (scheduled backups carry their publication counter in
-// the name, PROTOCOL §14).
-func (s *Store) BackupAs(ctx context.Context, dir string, name func(taken time.Time) (string, error)) (BackupInfo, error) {
+// Backup writes a consistent, verified, compressed and signed copy of the
+// database into dir (PROTOCOL §11), named by BackupName, with no free-space
+// guard: the server's backups go through backupsched, which adds it.
+func (s *Store) Backup(ctx context.Context, dir string) (BackupInfo, error) {
+	return s.BackupAs(ctx, dir, func(taken time.Time) (string, error) { return BackupName(dir, taken) }, BackupOptions{})
+}
+
+// BackupAs writes a backup into dir (PROTOCOL §11.2), named by name given
+// the backup's time (scheduled backups carry their publication counter in the
+// name, PROTOCOL §14). It reads one snapshot on its own connection, outside
+// write serialization, so pushes continue; the copy is marked as a backup,
+// reopened and checked, then compressed and signed, the result read back
+// through the restore's own reader (MAC first, then the decoder) and compared
+// with the copy, made durable and renamed into place. Only one backup runs at
+// a time. A crash leaves only temporaries named .nottennapod-backup-*, which
+// the next backup into the folder removes first.
+func (s *Store) BackupAs(ctx context.Context, dir string, name func(taken time.Time) (string, error), opts BackupOptions) (BackupInfo, error) {
 	if !s.backupMu.TryLock() {
 		return BackupInfo{}, ErrBackupRunning
 	}
@@ -54,7 +71,14 @@ func (s *Store) BackupAs(ctx context.Context, dir string, name func(taken time.T
 	if err := private.Tree(dir); err != nil {
 		return BackupInfo{}, fmt.Errorf("storage: backup directory: %w", err)
 	}
+	// What an interrupted backup left goes before the space is checked: it
+	// must never stop the backup that removes it.
 	removeStaleBackupTemps(dir)
+	if opts.Start != nil {
+		if err := opts.Start(); err != nil {
+			return BackupInfo{}, err
+		}
+	}
 	want, err := s.SchemaVersion(ctx)
 	if err != nil {
 		return BackupInfo{}, err
@@ -70,70 +94,218 @@ func (s *Store) BackupAs(ctx context.Context, dir string, name func(taken time.T
 	if len(s.receiptKeys) == 0 {
 		return BackupInfo{}, errors.New("storage: a backup needs the server's receipt keys")
 	}
+	key := s.receiptKeys[0]
 	taken := s.now().UTC()
-	// VACUUM INTO needs an empty or missing target. The file is created
-	// exclusively under a random name (0600), and its descriptor stays open:
-	// the MAC is computed and written through it, and the file published is
-	// checked to be this one, never another reached by name.
-	f, err := os.CreateTemp(dir, backupTempPrefix+"*.tmp")
-	if err != nil {
-		return BackupInfo{}, fmt.Errorf("storage: creating backup file: %w", err)
+	// A simulated crash (tests) leaves the temporaries, as a real one does.
+	crashed := false
+	fault := func(point string) error {
+		if h := s.hooks.backupFault; h != nil {
+			if err := h(point); err != nil {
+				crashed = true
+				return err
+			}
+		}
+		return nil
 	}
-	temp := f.Name()
-	defer os.Remove(temp) // a no-op once renamed
-	defer f.Close()
-	if err := private.Protect(f); err != nil {
-		return BackupInfo{}, err
+	// Each file is created exclusively under a random name (0600) and its
+	// descriptor stays open: everything is read and written through it, and the
+	// file published is checked to be this one, never another reached by name.
+	// VACUUM INTO needs an empty or missing target.
+	newTemp := func() (*os.File, error) {
+		f, err := os.CreateTemp(dir, backupTempPrefix+"*.tmp")
+		if err != nil {
+			return nil, fmt.Errorf("storage: creating backup file: %w", err)
+		}
+		if err := private.Protect(f); err != nil {
+			f.Close()
+			os.Remove(f.Name())
+			return nil, err
+		}
+		return f, nil
 	}
-	same := func(path string) error {
+	sameAs := func(f *os.File, path string) error {
 		if err := sameFile(f, path); err != nil {
 			return fmt.Errorf("storage: the backup file was replaced while it was written: %w", err)
 		}
 		return nil
 	}
-	if err := s.copyInto(ctx, temp); err != nil {
+	raw, err := newTemp()
+	if err != nil {
 		return BackupInfo{}, err
 	}
-	if err := markBackup(ctx, temp, incarnation, taken.UnixMilli()); err != nil {
+	defer func() {
+		raw.Close()
+		if !crashed {
+			os.Remove(raw.Name()) // a no-op once removed
+		}
+	}()
+	if err := s.copyInto(ctx, raw.Name()); err != nil {
 		return BackupInfo{}, err
 	}
-	if err := same(temp); err != nil {
+	// Writes made during the copy waited in the log behind its read.
+	s.CheckpointWAL(ctx, "backup")
+	if err := markBackup(ctx, raw.Name(), incarnation, taken.UnixMilli()); err != nil {
 		return BackupInfo{}, err
 	}
-	if err := VerifyDatabaseFile(ctx, temp, want); err != nil {
+	if err := sameAs(raw, raw.Name()); err != nil {
 		return BackupInfo{}, err
 	}
-	if err := same(temp); err != nil {
+	if err := VerifyDatabaseFile(ctx, raw.Name(), want); err != nil {
 		return BackupInfo{}, err
 	}
-	if err := signBackup(f, serverID, s.receiptKeys[0]); err != nil {
+	if err := sameAs(raw, raw.Name()); err != nil {
 		return BackupInfo{}, err
 	}
-	if err := f.Sync(); err != nil {
+	if err := fault("raw"); err != nil {
+		return BackupInfo{}, err
+	}
+	rawInfo, err := raw.Stat()
+	if err != nil {
+		return BackupInfo{}, err
+	}
+	gz, err := newTemp()
+	if err != nil {
+		return BackupInfo{}, err
+	}
+	defer func() {
+		gz.Close()
+		if !crashed {
+			os.Remove(gz.Name()) // a no-op once renamed
+		}
+	}()
+	t, err := compressBackup(ctx, io.NewSectionReader(raw, 0, rawInfo.Size()), gz, opts.Space)
+	if err != nil {
+		return BackupInfo{}, fmt.Errorf("storage: compressing the backup: %w", err)
+	}
+	if err := fault("compressed"); err != nil {
+		return BackupInfo{}, err
+	}
+	if t, err = signBackupV2(ctx, gz, t, serverID, key); err != nil {
+		return BackupInfo{}, err
+	}
+	if err := gz.Sync(); err != nil {
 		return BackupInfo{}, fmt.Errorf("storage: making backup durable: %w", err)
+	}
+	if err := fault("signed"); err != nil {
+		return BackupInfo{}, err
+	}
+	// The published file is read back as a restore reads it: the trailer, the
+	// MAC with this server's key, then the decoder, which checks the size and
+	// SHA-256 of the copy that was verified.
+	if err := sameAs(gz, gz.Name()); err != nil {
+		return BackupInfo{}, err
+	}
+	gzInfo, err := gz.Stat()
+	if err != nil {
+		return BackupInfo{}, err
+	}
+	back, err := readTrailerV2(gz, gzInfo.Size())
+	if err == nil && (back.DatabaseSHA256 != t.DatabaseSHA256 || back.DatabaseSize != rawInfo.Size()) {
+		err = errors.New("the trailer does not describe the copy")
+	}
+	var a authentic
+	if err == nil {
+		a, err = authenticate(ctx, gz, back, map[string][]byte{key.ID: key.Secret}, serverID)
+	}
+	if err == nil {
+		err = decompress(ctx, a, io.Discard, nil)
+	}
+	if err != nil {
+		return BackupInfo{}, fmt.Errorf("storage: the compressed backup does not read back: %w", err)
+	}
+	if err := fault("self-checked"); err != nil {
+		return BackupInfo{}, err
+	}
+	raw.Close()
+	if err := os.Remove(raw.Name()); err != nil {
+		return BackupInfo{}, err
 	}
 	final, err := name(taken)
 	if err != nil {
 		return BackupInfo{}, err
 	}
-	if err := same(temp); err != nil {
+	if err := sameAs(gz, gz.Name()); err != nil {
 		return BackupInfo{}, err
 	}
-	if err := os.Rename(temp, final); err != nil {
+	if err := os.Rename(gz.Name(), final); err != nil {
 		return BackupInfo{}, fmt.Errorf("storage: publishing backup: %w", err)
 	}
-	if err := same(final); err != nil {
+	if err := sameAs(gz, final); err != nil {
 		os.Remove(final)
 		return BackupInfo{}, err
 	}
 	if err := syncDir(dir); err != nil {
 		return BackupInfo{}, fmt.Errorf("storage: making backup durable: %w", err)
 	}
-	st, err := f.Stat()
-	if err != nil {
+	if err := fault("renamed"); err != nil {
 		return BackupInfo{}, err
 	}
-	return BackupInfo{Path: final, Size: st.Size(), TakenAt: taken.UnixMilli()}, nil
+	return BackupInfo{Path: final, Size: gzInfo.Size(), TakenAt: taken.UnixMilli()}, nil
+}
+
+// VerifyBackup checks a backup of this server in place, with its keys: the
+// MAC first, then, for a version 2 backup, the decoder over an exclusive copy
+// made beside it (space is asked before each 32 MiB of it), whose size and
+// SHA-256 must be the ones signed, the database this server verified before
+// it signed it; for a version 1 backup, the database checks of
+// VerifyDatabaseFile. It is the daily backups' check at start (backupsched).
+func (s *Store) VerifyBackup(ctx context.Context, path string, space func(int64) error) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	fi, err := f.Stat()
+	if err != nil {
+		return err
+	}
+	if !fi.Mode().IsRegular() {
+		return fmt.Errorf("%s is not a regular file", filepath.Base(path))
+	}
+	serverID, err := s.ServerID(ctx)
+	if err != nil {
+		return err
+	}
+	keyByID := map[string][]byte{}
+	for _, k := range s.receiptKeys {
+		keyByID[k.ID] = k.Secret
+	}
+	switch backupFormat(f, fi.Size()) {
+	case 1:
+		t, err := readBackupTrailer(f, fi.Size())
+		if err != nil {
+			return err
+		}
+		if t.ServerID != serverID {
+			return fmt.Errorf("the backup belongs to server %s, not %s", t.ServerID, serverID)
+		}
+		if err := checkBackupMAC(ctx, f, t, keyByID); err != nil {
+			return err
+		}
+		return VerifyDatabaseFile(ctx, path, -1)
+	case 2:
+		c, _, err := copyExclusive(ctx, f, filepath.Dir(path), backupTempPrefix+"verify-*", space)
+		if err != nil {
+			return fmt.Errorf("storage: copying the backup to check it: %w", err)
+		}
+		defer os.Remove(c.Name())
+		defer c.Close()
+		ci, err := c.Stat()
+		if err != nil {
+			return err
+		}
+		t, err := readTrailerV2(c, ci.Size())
+		if err != nil {
+			return err
+		}
+		a, err := authenticate(ctx, c, t, keyByID, serverID)
+		if err != nil {
+			return err
+		}
+		return decompress(ctx, a, io.Discard, nil)
+	default:
+		return errUnsigned
+	}
 }
 
 // sameFile checks that path names the regular file f has open.
@@ -253,32 +425,30 @@ func checkIntegrity(ctx context.Context, db *sql.DB) error {
 	return nil
 }
 
-// backupName picks nottennapod-<UTC time>-<n>.db, the first n not yet used.
-func backupName(dir string, t time.Time) (string, error) {
-	stamp := t.Format("20060102-150405")
+// BackupName picks nottennapod-<UTC time>-<n>.db.gz in dir, the first n
+// used by neither a compressed backup nor an older .db one (PROTOCOL §11.2).
+func BackupName(dir string, t time.Time) (string, error) {
+	stamp := t.UTC().Format("20060102-150405")
 	for n := 1; n < 1000; n++ {
-		p := filepath.Join(dir, fmt.Sprintf("nottennapod-%s-%d.db", stamp, n))
-		if _, err := os.Lstat(p); errors.Is(err, os.ErrNotExist) {
-			return p, nil
-		} else if err != nil {
-			return "", err
+		base := filepath.Join(dir, fmt.Sprintf("nottennapod-%s-%d.db", stamp, n))
+		free := true
+		for _, p := range []string{base, base + ".gz"} {
+			if _, err := os.Lstat(p); err == nil {
+				free = false
+			} else if !errors.Is(err, os.ErrNotExist) {
+				return "", err
+			}
+		}
+		if free {
+			return base + ".gz", nil
 		}
 	}
 	return "", fmt.Errorf("storage: too many backups named %s", stamp)
 }
 
-// removeStaleBackupTemps deletes temporaries left by interrupted backups.
-func removeStaleBackupTemps(dir string) {
-	entries, err := os.ReadDir(dir)
-	if err != nil {
-		return
-	}
-	for _, e := range entries {
-		if strings.HasPrefix(e.Name(), backupTempPrefix) {
-			os.Remove(filepath.Join(dir, e.Name()))
-		}
-	}
-}
+// removeStaleBackupTemps deletes temporaries left by interrupted backups and
+// backup checks.
+func removeStaleBackupTemps(dir string) { removeTemps(dir, backupTempPrefix) }
 
 func syncFile(path string) error {
 	f, err := os.OpenFile(path, os.O_RDWR, 0)

@@ -113,6 +113,10 @@ func (s *Store) PublishStaged(ctx context.Context, staging, accountID string, ba
 			return ErrStagedEvidence
 		}
 		tx.markChanged(accountID)
+		// The replacement is a bulk rewrite of the account's view inputs.
+		if err := tx.SuspendViewCapture(accountID); err != nil {
+			return err
+		}
 		// Feed responses and refresh schedules change without a commit (the
 		// refresher writes them during staging too): the live rows stay,
 		// though deleting the account's podcasts cascades to them.

@@ -2,6 +2,7 @@ package storage
 
 import (
 	"bytes"
+	"context"
 	"crypto/hmac"
 	"crypto/sha256"
 	"encoding/base64"
@@ -18,13 +19,17 @@ import (
 
 // The backup MAC. A backup ends with a trailer that authenticates the
 // whole file under a key derived from the server's receipt key, which the key
-// bundle holds and no backup does:
+// bundle holds and no backup does. Version 1 (.db, written by earlier
+// versions, still restored):
 //
 //	<the SQLite database> <trailer JSON> <its length, 4 bytes big-endian> "NTPBMAC1"
 //
 // SQLite reads only the pages its header counts, so the file still opens as a
 // database. A restore checks the MAC with the bundle's keys before it uses the
 // file, and removes the trailer from its staged copy.
+//
+// Version 2 (.db.gz, PROTOCOL §11.2) is the database compressed as one gzip
+// member, then an empty gzip member whose comment is the trailer (backupgz.go).
 
 const (
 	backupMagic     = "NTPBMAC1"
@@ -46,41 +51,41 @@ type backupTrailer struct {
 
 // backupMAC is HMAC-SHA256, under a key derived from the receipt key, of the
 // trailer's fields and the size bytes of the database read from r.
-func backupMAC(receiptKey []byte, serverID, keyID string, size int64, r io.Reader) ([]byte, error) {
-	k := hmac.New(sha256.New, receiptKey)
-	k.Write([]byte("nottennapod backup MAC key"))
-	m := hmac.New(sha256.New, k.Sum(nil))
+func backupMAC(ctx context.Context, receiptKey []byte, serverID, keyID string, size int64, r io.Reader) ([]byte, error) {
+	m := hmac.New(sha256.New, backupMACKey(receiptKey))
 	m.Write([]byte(backupMACFormat + "\x001\x00" + serverID + "\x00" + keyID + "\x00" + strconv.FormatInt(size, 10) + "\x00"))
-	n, err := io.Copy(m, io.LimitReader(r, size))
-	if err != nil {
+	if err := readAll(ctx, m, r, size); err != nil {
 		return nil, err
-	}
-	if n != size {
-		return nil, io.ErrUnexpectedEOF
 	}
 	return m.Sum(nil), nil
 }
 
-// signBackup appends the trailer to the database in f, reading and writing
-// through f.
-func signBackup(f *os.File, serverID string, key ReceiptKey) error {
-	fi, err := f.Stat()
-	if err != nil {
-		return err
-	}
-	size := fi.Size()
-	mac, err := backupMAC(key.Secret, serverID, key.ID, size, io.NewSectionReader(f, 0, size))
-	if err != nil {
-		return fmt.Errorf("storage: signing the backup: %w", err)
-	}
-	j, err := json.Marshal(backupTrailer{Format: backupMACFormat, Version: 1, ServerID: serverID, KeyID: key.ID, Size: size,
-		MAC: base64.StdEncoding.EncodeToString(mac)})
-	if err != nil {
-		return err
-	}
-	j = binary.BigEndian.AppendUint32(j, uint32(len(j)))
-	if _, err := f.WriteAt(append(j, backupMagic...), size); err != nil {
-		return fmt.Errorf("storage: signing the backup: %w", err)
+// backupMACKey is the key both versions' MACs use, derived from a receipt key.
+func backupMACKey(receiptKey []byte) []byte {
+	k := hmac.New(sha256.New, receiptKey)
+	k.Write([]byte("nottennapod backup MAC key"))
+	return k.Sum(nil)
+}
+
+// readAll writes exactly n bytes of r to w, a mebibyte at a time, and stops
+// when ctx ends.
+func readAll(ctx context.Context, w io.Writer, r io.Reader, n int64) error {
+	buf := make([]byte, mib)
+	for n > 0 {
+		if err := ctx.Err(); err != nil {
+			return err
+		}
+		k, err := io.ReadFull(r, buf[:min(int64(len(buf)), n)])
+		if _, werr := w.Write(buf[:k]); werr != nil {
+			return werr
+		}
+		n -= int64(k)
+		if err != nil {
+			if errors.Is(err, io.EOF) {
+				err = io.ErrUnexpectedEOF
+			}
+			return err
+		}
 	}
 	return nil
 }
@@ -118,7 +123,7 @@ func readBackupTrailer(r io.ReaderAt, fileSize int64) (backupTrailer, error) {
 
 // checkBackupMAC verifies the trailer's MAC over the file in r with the key
 // it names.
-func checkBackupMAC(r io.ReaderAt, t backupTrailer, keyByID map[string][]byte) error {
+func checkBackupMAC(ctx context.Context, r io.ReaderAt, t backupTrailer, keyByID map[string][]byte) error {
 	key, ok := keyByID[t.KeyID]
 	if !ok {
 		return fmt.Errorf("the backup is signed with receipt key %s, which the key bundle does not hold", t.KeyID)
@@ -127,7 +132,7 @@ func checkBackupMAC(r io.ReaderAt, t backupTrailer, keyByID map[string][]byte) e
 	if err != nil {
 		return errors.New("the backup's MAC is damaged")
 	}
-	got, err := backupMAC(key, t.ServerID, t.KeyID, t.Size, io.NewSectionReader(r, 0, t.Size))
+	got, err := backupMAC(ctx, key, t.ServerID, t.KeyID, t.Size, io.NewSectionReader(r, 0, t.Size))
 	if err != nil {
 		return err
 	}
@@ -162,7 +167,7 @@ func openSignedBackup(path string) (*os.File, backupTrailer, error) {
 
 // unsignStagedCopy checks the staged copy's MAC with the given keys and cuts
 // the trailer off, leaving the bare database.
-func unsignStagedCopy(path, serverID string, keyByID map[string][]byte) error {
+func unsignStagedCopy(ctx context.Context, path, serverID string, keyByID map[string][]byte) error {
 	f, err := private.OpenFile(path, os.O_RDWR, 0o600)
 	if err != nil {
 		return err
@@ -179,7 +184,7 @@ func unsignStagedCopy(path, serverID string, keyByID map[string][]byte) error {
 	if t.ServerID != serverID {
 		return fmt.Errorf("the staged copy belongs to server %s, not %s", t.ServerID, serverID)
 	}
-	if err := checkBackupMAC(f, t, keyByID); err != nil {
+	if err := checkBackupMAC(ctx, f, t, keyByID); err != nil {
 		return err
 	}
 	if err := f.Truncate(t.Size); err != nil {

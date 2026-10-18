@@ -15,7 +15,10 @@ func (s *Server) recoveryRoutes() {
 	if s.cfg.Protocol == nil {
 		return
 	}
-	s.route("/v1/sync/recovery/inventory", endpoint{method: http.MethodPost, auth: authSync, handle: (*request).recoveryInventory})
+	// The inventory's advertised batch (bounds.recovery_inventory entries)
+	// takes far more than the default 64 KiB: it has the push's body bound.
+	s.route("/v1/sync/recovery/inventory", endpoint{method: http.MethodPost, auth: authSync, maxBody: protocol.MaxRequestBytes,
+		handle: (*request).recoveryInventory})
 	s.route("/v1/sync/recovery/upload", endpoint{method: http.MethodPost, auth: authSync, maxBody: protocol.MaxRequestBytes,
 		handle: (*request).recoveryUpload})
 	s.route("/v1/sync/recovery/finish", endpoint{method: http.MethodPost, auth: authSync, handle: (*request).recoveryFinish})
@@ -127,7 +130,8 @@ func (req *request) recoveryInventory() (int, any, error) {
 
 // recoveryUpload joins one upload request (PROTOCOL §6.11): entries {fact, receipt},
 // {part, receipt} (a framed fact, as push's parts) or {decision}; secrets
-// beside them as in push.
+// beside them as in push. A derivation that outlasts the request goes on and
+// the request answers server_busy with retry_after.
 func (req *request) recoveryUpload() (int, any, error) {
 	obj, err := req.readProtocolBody()
 	if err != nil {
@@ -193,7 +197,10 @@ func (req *request) recoveryUpload() (int, any, error) {
 		}
 		ureq.Entries = append(ureq.Entries, e)
 	}
-	resp, err := req.s.cfg.Protocol.RecoveryUpload(req.ctx, ureq, req.authorizeSync())
+	// The upload runs as a job that outlives the request (PROTOCOL §6.11),
+	// with this credential's authority, checked again at its publication.
+	cred := protocol.StoredCredential{Hash: req.principal.cred.Hash, Kind: req.principal.cred.Kind}
+	resp, err := req.s.cfg.Protocol.SubmitRecoveryUpload(req.ctx, ureq, req.authorizeSync(), cred)
 	if err != nil {
 		return 0, nil, protocolError(err)
 	}

@@ -24,10 +24,11 @@ import (
 type importVector struct {
 	Fixture string `json:"fixture"`
 	Result  struct {
-		Imported  Counts            `json:"imported"`
-		Skipped   []json.RawMessage `json:"skipped"`
-		Ambiguous []json.RawMessage `json:"ambiguous"`
-		Merged    []json.RawMessage `json:"merged"`
+		Imported   Counts            `json:"imported"`
+		Skipped    []json.RawMessage `json:"skipped"`
+		Ambiguous  []json.RawMessage `json:"ambiguous"`
+		Merged     []json.RawMessage `json:"merged"`
+		NotCarried json.RawMessage   `json:"not_carried"`
 	} `json:"result"`
 	Podcasts []struct {
 		CreatingFeedID    int64   `json:"creating_feed_id"`
@@ -66,6 +67,7 @@ type importVector struct {
 				Played        bool   `json:"played"`
 				PositionMS    *int64 `json:"position_ms"`
 			} `json:"units"`
+			Chapters json.RawMessage `json:"chapters"` // the metadata's expected chapters
 		} `json:"episodes"`
 	} `json:"podcasts"`
 	Queue []int64 `json:"queue"`
@@ -107,7 +109,7 @@ func checkImportVector(t *testing.T, v importVector) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	pods, err := Apply(ctx, e.svc, e.account, plan, 0)
+	pods, err := Apply(ctx, e.svc, e.account, plan, 0, nil)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -133,6 +135,9 @@ func checkImportVector(t *testing.T, v importVector) {
 	compareEntries(t, "skipped", res.Skipped, v.Result.Skipped)
 	compareEntries(t, "ambiguous", res.Ambiguous, v.Result.Ambiguous)
 	compareEntries(t, "merged", res.Merged, v.Result.Merged)
+	if b, _ := json.Marshal(res.NotCarried); canonical(t, b) != canonical(t, v.Result.NotCarried) {
+		t.Errorf("not carried %s, want %s", b, v.Result.NotCarried)
+	}
 	// Podcasts.
 	if len(plan.Podcasts) != len(v.Podcasts) {
 		t.Fatalf("%d podcasts, want %d", len(plan.Podcasts), len(v.Podcasts))
@@ -237,6 +242,11 @@ func checkImportVector(t *testing.T, v importVector) {
 			}
 			if n := num(r("history")["time"]); n != hist {
 				t.Errorf("%s: history %d, want %d", what, n, hist)
+			}
+			// Stored chapters: exactly the expected list (a merged episode's
+			// from its first row with any, PROTOCOL §11.5).
+			if gotChapters, _ := json.Marshal(r("metadata")["chapters"]); canonical(t, gotChapters) != canonical(t, we.Chapters) {
+				t.Errorf("%s: chapters %s, want %s", what, gotChapters, we.Chapters)
 			}
 			gotUnits := map[int64]map[string]any{}
 			if list, ok := r("statistics_units")["units"].([]any); ok {

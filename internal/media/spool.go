@@ -294,8 +294,7 @@ func (f *spoolFile) knownTotalLocked(declared int64, encoded bool) int64 {
 
 // waitTotal waits until the copy's length is known. The length, a failure
 // and the wake channel are read together: a completion between two reads
-// would replace the channel and never close the one waited on (server bug
-// hunt 2026-10, SB-2).
+// would replace the channel and never close the one waited on.
 func (f *spoolFile) waitTotal(ctx context.Context, declared int64, encoded bool) (int64, error) {
 	for {
 		f.mu.Lock()

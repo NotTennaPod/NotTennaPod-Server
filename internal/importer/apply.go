@@ -3,6 +3,7 @@ package importer
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"strings"
 
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/contract"
@@ -17,6 +18,17 @@ type Result struct {
 	Skipped   []Entry `json:"skipped"`
 	Ambiguous []Entry `json:"ambiguous"`
 	Merged    []Entry `json:"merged"`
+	// NotCarried is what an Android backup held that is not imported because
+	// it stays on each device (PROTOCOL §1.4, §11.5); absent for OPML.
+	NotCarried *NotCarried `json:"not_carried,omitempty"`
+}
+
+// NotCarried lists the imported feeds with changed device-only settings and
+// counts the unplayed imported episodes a person had stopped from
+// downloading automatically.
+type NotCarried struct {
+	Podcasts               []SettingsEntry `json:"podcasts"`
+	EpisodeAutoDownloadOff int             `json:"episode_auto_download_off"`
 }
 
 // Counts are the imported totals.
@@ -31,8 +43,9 @@ type Counts struct {
 
 // Apply applies a plan's podcasts to the account through svc, one server
 // commit each (with its credentials), starting at podcast from (a resumed
-// import's progress is the number of its import.podcast decisions).
-func Apply(ctx context.Context, svc *protocol.Service, accountID string, plan Plan, from int) ([]ops.ImportedPodcast, error) {
+// import's progress is the number of its import.podcast decisions). progress,
+// when set, is told the podcasts done after each commit.
+func Apply(ctx context.Context, svc *protocol.Service, accountID string, plan Plan, from int, progress func(done int)) ([]ops.ImportedPodcast, error) {
 	var out []ops.ImportedPodcast
 	for i := from; i < len(plan.Podcasts); i++ {
 		p := plan.Podcasts[i]
@@ -51,6 +64,9 @@ func Apply(ctx context.Context, svc *protocol.Service, accountID string, plan Pl
 			return out, err
 		}
 		out = append(out, got)
+		if progress != nil {
+			progress(i + 1)
+		}
 	}
 	return out, nil
 }
@@ -83,6 +99,9 @@ func Progress(ctx context.Context, store *storage.Store, accountID string) (int,
 // feeds, in the shapes of docs/CONTRACT.md "Import vectors", "result".
 func Summarize(ctx context.Context, store *storage.Store, accountID string, plan Plan) (Result, error) {
 	res := Result{Skipped: orEmpty(plan.Skipped), Merged: append([]Entry{}, plan.Merged...), Ambiguous: []Entry{}}
+	if plan.AutoDownloadOff != nil {
+		res.NotCarried = &NotCarried{Podcasts: append([]SettingsEntry{}, plan.NotCarried...)}
+	}
 	err := store.Read(ctx, func(r *storage.ReadTx) error {
 		a := r.Account(accountID)
 		podcasts, err := a.DecisionsOfType("import.podcast")
@@ -148,6 +167,16 @@ func Summarize(ctx context.Context, store *storage.Store, accountID string, plan
 			if len(items) > 1 {
 				res.Merged = append(res.Merged, Entry{Kind: "episode", Podcast: podcast, Title: title, SourceItemIDs: items})
 			}
+			// An episode any of whose rows was stopped from downloading
+			// automatically, unless played (never downloaded automatically).
+			if res.NotCarried != nil && im["play_state"] != "played" {
+				for _, it := range items {
+					if plan.AutoDownloadOff[it] {
+						res.NotCarried.EpisodeAutoDownloadOff++
+						break
+					}
+				}
+			}
 		}
 		return nil
 	})
@@ -164,7 +193,9 @@ func decodeDecision(raw []byte) (map[string]any, error) {
 }
 
 // WriteManifest records the import's manifest decision (PROTOCOL §11.5) unless
-// the store already holds it, and returns the result as canonical JSON.
+// the store already holds it, and returns the manifest's result as canonical
+// JSON: an existing manifest's own (written by an earlier try, perhaps by an
+// earlier version), so the published result is always the recorded one.
 func WriteManifest(ctx context.Context, svc *protocol.Service, accountID, importID, fingerprint string, plan Plan, res Result) (string, error) {
 	value, err := resultValue(res)
 	if err != nil {
@@ -178,6 +209,22 @@ func WriteManifest(ctx context.Context, svc *protocol.Service, accountID, import
 		if id, err := c.Account.DecisionBySubject("import.manifest", "import"); err != nil {
 			return err
 		} else if id != "" {
+			row, err := c.Account.ArchivedDecision(id)
+			if err != nil {
+				return err
+			}
+			d, err := decodeDecision(row.Decision)
+			if err != nil {
+				return err
+			}
+			manifest, _ := d["result"].(map[string]any)
+			recorded, ok := manifest["result"].(map[string]any)
+			if !ok {
+				return fmt.Errorf("importer: the import's manifest %s holds no result", id)
+			}
+			if b, err = contract.Canonical(recorded); err != nil {
+				return err
+			}
 			return nil
 		}
 		_, err := ops.ApplyImportManifest(c, importID, map[string]any{"import_id": importID, "kind": plan.Kind, "fingerprint": fingerprint,

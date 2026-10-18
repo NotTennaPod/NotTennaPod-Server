@@ -27,7 +27,7 @@ func TestBundleRoundTrip(t *testing.T) {
 		t.Fatal(err)
 	}
 	want := sample()
-	if got.ServerID != want.ServerID || !bytes.Equal(got.SecretsKey, want.SecretsKey) ||
+	if got.ServerID != want.ServerID || got.CreatedAt != 1_700_000_000_000 || !bytes.Equal(got.SecretsKey, want.SecretsKey) ||
 		len(got.ReceiptKeys) != 1 || got.ReceiptKeys[0].ID != "k1" || !bytes.Equal(got.ReceiptKeys[0].Key, want.ReceiptKeys[0].Key) {
 		t.Fatalf("round trip: %+v", got)
 	}

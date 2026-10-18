@@ -54,6 +54,9 @@ type Bundle struct {
 	ServerID    string
 	ReceiptKeys []ReceiptKey
 	SecretsKey  []byte
+	// CreatedAt is when the bundle was sealed (Unix milliseconds), from its
+	// authenticated header; Open sets it, Seal takes it as an argument.
+	CreatedAt int64
 }
 
 type kdf struct {
@@ -195,7 +198,7 @@ func Open(data, passphrase []byte) (Bundle, error) {
 	if err := json.Unmarshal(plain, &p); err != nil || p.ServerID != f.ServerID {
 		return Bundle{}, ErrFormat
 	}
-	b := Bundle{ServerID: p.ServerID}
+	b := Bundle{ServerID: p.ServerID, CreatedAt: f.CreatedAt}
 	if b.SecretsKey, err = base64.StdEncoding.DecodeString(p.SecretsKey); err != nil || len(b.SecretsKey) != 32 {
 		return Bundle{}, ErrFormat
 	}

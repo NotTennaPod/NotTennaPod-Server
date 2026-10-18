@@ -199,23 +199,24 @@ func (s *Store) ReceiptKeys(ctx context.Context) ([]ReceiptKey, error) {
 
 // ---- the key bundle (PROTOCOL §11.1)
 
-// ExportKeys writes the protected key bundle to path (mode 0600, durably) and
-// records the export time in the restore metadata. The secrets key is created
-// first if this server has never made one.
-func (s *Store) ExportKeys(ctx context.Context, path string, passphrase []byte) error {
+// SealKeyBundle seals the protected key bundle under passphrase and returns
+// its bytes and creation time (Unix milliseconds). It writes no file and
+// records nothing: sealing a bundle is not saving it. The secrets key is
+// created first if this server has never made one.
+func (s *Store) SealKeyBundle(ctx context.Context, passphrase []byte) ([]byte, int64, error) {
 	if s.meta == nil {
-		return errors.New("storage: keys can only be exported from the server's data directory")
+		return nil, 0, errors.New("storage: keys can only be exported from the server's data directory")
 	}
 	if _, err := sealed.LoadOrCreate(s.dir); err != nil {
-		return err
+		return nil, 0, err
 	}
 	secret, err := private.ReadFile(filepath.Join(s.dir, keysSecretName))
 	if err != nil {
-		return err
+		return nil, 0, err
 	}
 	serverID, err := s.ServerID(ctx)
 	if err != nil {
-		return err
+		return nil, 0, err
 	}
 	b := keys.Bundle{ServerID: serverID, SecretsKey: secret}
 	for _, k := range s.receiptKeys {
@@ -224,12 +225,40 @@ func (s *Store) ExportKeys(ctx context.Context, path string, passphrase []byte) 
 	now := time.Now().UnixMilli()
 	data, err := keys.Seal(b, passphrase, now)
 	if err != nil {
+		return nil, 0, err
+	}
+	return data, now, nil
+}
+
+// RecordKeysExported records in the restore metadata that the key bundle
+// sealed at at (Unix milliseconds) was saved: by the keys export command once
+// its file is written durably, or by an administrator who confirmed a
+// download (PROTOCOL §11.1). The recorded time never moves backwards.
+func (s *Store) RecordKeysExported(at int64) error {
+	if s.meta == nil {
+		return errors.New("storage: keys can only be exported from the server's data directory")
+	}
+	return s.meta.updateIf("keys-exported", func(st *restoreState) bool {
+		if at <= st.KeysExportedAt {
+			return false
+		}
+		st.KeysExportedAt = at
+		return true
+	})
+}
+
+// ExportKeys writes the protected key bundle to path (mode 0600, durably),
+// then records the export in the restore metadata: a write that fails
+// records nothing.
+func (s *Store) ExportKeys(ctx context.Context, path string, passphrase []byte) error {
+	data, at, err := s.SealKeyBundle(ctx, passphrase)
+	if err != nil {
 		return err
 	}
 	if err := keys.WriteFile(path, data); err != nil {
 		return fmt.Errorf("storage: writing the key bundle: %w", err)
 	}
-	return s.meta.update("keys-exported", func(st *restoreState) { st.KeysExportedAt = now })
+	return s.RecordKeysExported(at)
 }
 
 // KeysExportedAt returns when the key bundle was last exported (Unix

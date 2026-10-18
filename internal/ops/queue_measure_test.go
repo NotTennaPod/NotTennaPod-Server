@@ -12,6 +12,7 @@ import (
 	"fmt"
 	mrand "math/rand/v2"
 	"os"
+	"runtime/pprof"
 	"sort"
 	"strconv"
 	"strings"
@@ -22,6 +23,7 @@ import (
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/protocol"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/queue"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/storage"
+	"github.com/NotTennaPod/NotTennaPod-Server/internal/views/viewstest"
 )
 
 func TestQueueReplayMeasure(t *testing.T) {
@@ -38,6 +40,9 @@ func TestQueueReplayMeasure(t *testing.T) {
 		batchSize, _ = strconv.Atoi(s)
 	}
 	episodes := max(live*2, n/10)
+	if s := os.Getenv("NTP_QUEUE_EPISODES"); s != "" {
+		episodes, _ = strconv.Atoi(s)
+	}
 	titles := make([]string, episodes)
 	for i := range titles {
 		titles[i] = fmt.Sprintf("E%06d", i)
@@ -45,6 +50,9 @@ func TestQueueReplayMeasure(t *testing.T) {
 	q := newQueueEnv(t, titles...)
 	q.replayCheck = false
 	q.noRebuild = "a measurement: the rebuild of a large history is measured by TestRebuildLoad"
+	viewstest.Skip(q.svc.Store)      // a measurement of the queue: the read model's own checks would dominate it
+	skipPublicationCheck.Store(true) // the check of every publication against the full computation, too
+	defer skipPublicationCheck.Store(false)
 	r := mrand.New(mrand.NewPCG(7, 11))
 	devs := []*device{q.device("A"), q.device("B"), q.device("C")}
 	// Each phone predicts keys as a device does, between its view's
@@ -190,7 +198,7 @@ func TestQueueReplayMeasure(t *testing.T) {
 			}
 			replayDur = time.Since(t1)
 			t2 := time.Now()
-			*c.QueueMemo() = &commitReplay{snaps: []snapshot{{state: st}}}
+			*c.QueueMemo() = &commitReplay{snaps: []snapshot{{state: st}}, fresh: true}
 			c.QueueInvalidateAll()
 			if err := publishQueue(c, false, true); err != nil {
 				return err
@@ -252,6 +260,11 @@ func TestQueueReplayMeasure(t *testing.T) {
 			t.Logf("that add's commit: %d layouts (%d members), %d queue_position records", g.layouts, g.members, g.positions)
 		}
 	}
+	// Steady state, as a person uses the queue: single removes and adds,
+	// one per push, with a warm cache; then the first command after a
+	// restart (the in-memory cache gone). NTP_QUEUE_CPUPROFILE writes a CPU
+	// profile of the warm pushes.
+	q.measureSteadyState(t, devs[0], views[0], titles, r)
 	// A months-late upload: an offline device's move ordered near the start
 	// of the history (the earliest invalidation).
 	late := q.device("Late")
@@ -264,6 +277,60 @@ func TestQueueReplayMeasure(t *testing.T) {
 	q.push(late, f)
 	t.Logf("a months-late move ordered near the start: %s", time.Since(t0))
 	checkReplay(t, q.svc, q.account)
+}
+
+// measureSteadyState times single-command pushes with a warm cache and the
+// first one after a restart.
+func (q *queueEnv) measureSteadyState(t *testing.T, d *device, v *queueView, titles []string, r *mrand.Rand) {
+	one := func() (string, time.Duration) {
+		q.clock += second
+		v.sync(t, q)
+		var f map[string]any
+		kind := "remove"
+		if r.IntN(2) == 0 && len(v.order) > 1 {
+			x := v.order[r.IntN(len(v.order))]
+			v.remove(x)
+			f = q.remove(d, x)
+		} else {
+			kind = "add"
+			var x string
+			for x = titles[r.IntN(len(titles))]; v.has(x); x = titles[r.IntN(len(titles))] {
+			}
+			f = q.qfact(d, "queue.add", map[string]any{"members": []any{v.place(t, q, x, atEnd(), "")}, "place": atEnd()}, []string{x})
+		}
+		t0 := time.Now()
+		q.push(d, f)
+		return kind, time.Since(t0)
+	}
+	stop := func() {}
+	if path := os.Getenv("NTP_QUEUE_CPUPROFILE"); path != "" {
+		out, err := os.Create(path)
+		if err != nil {
+			t.Fatal(err)
+		}
+		pprof.StartCPUProfile(out)
+		stop = func() { pprof.StopCPUProfile(); out.Close() }
+	}
+	var times []time.Duration
+	for i := 0; i < 40; i++ {
+		_, dur := one()
+		times = append(times, dur)
+	}
+	stop()
+	sort.Slice(times, func(i, j int) bool { return times[i] < times[j] })
+	t.Logf("warm single-command pushes: median %s, p90 %s, max %s", times[len(times)/2], times[len(times)*9/10], times[len(times)-1])
+	for i := 0; i < 2; i++ {
+		q.svc.Store.Write(t.Context(), func(tx *storage.WriteTx) error {
+			tx.Account(q.account).Memo().Delete(memoKey{q.account})
+			return nil
+		})
+		full0, _ := replayCounts()
+		kind, dur := one()
+		full1, _ := replayCounts()
+		_, warm := one()
+		t.Logf("after a restart: first command (%s) %s (%d full replays), the next %s", kind, dur, full1-full0, warm)
+	}
+	q.measureWarmup(t, one)
 }
 
 type growth struct {

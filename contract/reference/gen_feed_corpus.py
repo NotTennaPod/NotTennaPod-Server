@@ -1639,8 +1639,8 @@ def assemble(args):
     vpath = Path(args.values_out)
     with open(vpath, "w", encoding="ascii") as f:
         header = {"suite": "feed_values", "generated_at": info["generated_at"], "seed": info["seed"],
-                  "device": {k: value_device[k] for k in ["fingerprint", "sdk", "release", "time_zone", "locale",
-                                                          "started_ms", "finished_ms"]}}
+                  "device": {k: value_device[k] for k in ["fingerprint", "sdk", "release", "started_ms",
+                                                          "finished_ms"]}}
         f.write(json.dumps(header, ensure_ascii=True)[:-1] + ",\n\"cases\": [\n")
         f.write(",\n".join(json.dumps(c, ensure_ascii=True, separators=(",", ":")) for c in cases))
         f.write("\n]}\n")
@@ -1711,7 +1711,7 @@ def write_provenance(args, info, feed_device, value_device, symbols, commit, nfe
         "",
         "- AVD `AntennaPod-3.12.1-api36`; API level %d (Android %s)." % (feed_device["sdk"], feed_device["release"]),
         "- Build fingerprint: `%s`." % feed_device["fingerprint"],
-        "- Default time zone `%s`, locale `%s` (as found; not changed)." % (feed_device["time_zone"], feed_device["locale"]),
+        "- Default time zone and locale as found on the emulator (not changed).",
         "- Feed run: %s to %s; value run: %s to %s (device clock)." % (
             ms(feed_device["started_ms"]), ms(feed_device["finished_ms"]), ms(value_device["started_ms"]),
             ms(value_device["finished_ms"])),

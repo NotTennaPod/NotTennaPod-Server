@@ -12,14 +12,21 @@ import (
 	"testing"
 )
 
+// plainCopy writes a backup's database to a file of its own.
+func plainCopy(t *testing.T, backup string) string {
+	t.Helper()
+	path := filepath.Join(t.TempDir(), "plain.db")
+	if err := os.WriteFile(path, rawDatabaseOf(t, backup), 0o600); err != nil {
+		t.Fatal(err)
+	}
+	return path
+}
+
 // openCopy opens a backup as the database of a fresh data directory, leaving the
 // backup file itself untouched.
 func openCopy(t *testing.T, backup string) *Store {
 	t.Helper()
-	data, err := os.ReadFile(backup)
-	if err != nil {
-		t.Fatal(err)
-	}
+	data := rawDatabaseOf(t, backup)
 	dir := t.TempDir()
 	if err := os.WriteFile(filepath.Join(dir, databaseName), data, 0o600); err != nil {
 		t.Fatal(err)
@@ -124,7 +131,8 @@ func TestBackupIsMarked(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	db, err := sql.Open("sqlite", "file:"+info.Path+"?mode=ro")
+	plain := plainCopy(t, info.Path)
+	db, err := sql.Open("sqlite", "file:"+plain+"?mode=ro")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -181,16 +189,14 @@ func TestVerifyDatabaseFile(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if err := VerifyDatabaseFile(ctx, info.Path, want); err != nil {
+	plain := plainCopy(t, info.Path)
+	if err := VerifyDatabaseFile(ctx, plain, want); err != nil {
 		t.Fatal(err)
 	}
-	if err := VerifyDatabaseFile(ctx, info.Path, want-1); !errors.Is(err, ErrIntegrity) {
+	if err := VerifyDatabaseFile(ctx, plain, want-1); !errors.Is(err, ErrIntegrity) {
 		t.Fatalf("wrong schema accepted: %v", err)
 	}
-	data, err := os.ReadFile(info.Path)
-	if err != nil {
-		t.Fatal(err)
-	}
+	data := rawDatabaseOf(t, info.Path)
 	// Overwrite the middle of the file: pages of the copy no longer verify.
 	for i := len(data) / 2; i < len(data)/2+4096 && i < len(data); i++ {
 		data[i] = 0xA5

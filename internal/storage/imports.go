@@ -124,6 +124,17 @@ func (a *AccountReader) Import(importID string) (Import, error) {
 	return scanImport(a.r.tx.QueryRowContext(a.r.ctx, `SELECT `+importColumns+` FROM imports WHERE account_id = ? AND import_id = ?`, a.id, importID))
 }
 
+// importStateColumns are importColumns without the result, which can be as
+// long as the library: its state is answered without it.
+const importStateColumns = `account_id, import_id, kind, fingerprint, size, file_name, status, COALESCE(reason, ''), epoch, incarnation, progress,
+	'', created_at, updated_at`
+
+// ImportState returns one of the account's imports without its result (a
+// progress poll's read, whose cost never grows with the library).
+func (a *AccountReader) ImportState(importID string) (Import, error) {
+	return scanImport(a.r.tx.QueryRowContext(a.r.ctx, `SELECT `+importStateColumns+` FROM imports WHERE account_id = ? AND import_id = ?`, a.id, importID))
+}
+
 // CurrentImport returns the account's live import, else its latest failed
 // one (ErrNotFound for none).
 func (a *AccountReader) CurrentImport() (Import, error) {
@@ -211,9 +222,10 @@ var importTables = []string{
 // importExcluded are the account tables publication never copies: the
 // account's identity, administrative and authentication state, transport
 // state and the imports themselves stay as the live database has them; only
-// the log head moves.
+// the log head moves. The read model's capture clock and stamps are the
+// live database's own: publication raises the clock's generation.
 var importExcluded = []string{"accounts", "account_logs", "account_logins", "installations", "auth_tokens", "transport_slots", "push_parts", "imports",
-	"recoveries", "recovery_frames"}
+	"recoveries", "recovery_frames", "recovery_jobs", "view_clock", "view_changes"}
 
 // ErrImportChanged reports that the target account changed since staging
 // began (its head moved, it gained a library, or the import is no longer
@@ -229,6 +241,17 @@ var publishMu sync.Mutex
 // importTables table and its commits after base, moves the head to the staged
 // head, and marks the import published with its result.
 func (s *Store) PublishImport(ctx context.Context, staging, accountID, importID string, base Head, result string) error {
+	if err := s.publishImport(ctx, staging, accountID, importID, base, result); err != nil {
+		return err
+	}
+	// The publication wrote about the whole library to the log. The
+	// checkpoint runs once the publication lock is free: a staged rebuild
+	// waiting for it holds its account's exclusion (PROTOCOL §14).
+	s.CheckpointWAL(ctx, "import")
+	return nil
+}
+
+func (s *Store) publishImport(ctx context.Context, staging, accountID, importID string, base Head, result string) error {
 	publishMu.Lock()
 	defer publishMu.Unlock()
 	if s.closed.Load() {
@@ -282,6 +305,10 @@ func (s *Store) PublishImport(ctx context.Context, staging, accountID, importID 
 		}
 		if staged.LogID != base.LogID || staged.Epoch != base.Epoch || staged.Seq < base.Seq {
 			return ErrImportChanged
+		}
+		// The copy is a bulk rewrite of the account's view inputs.
+		if err := tx.SuspendViewCapture(accountID); err != nil {
+			return err
 		}
 		for _, table := range importTables {
 			q := `INSERT INTO main.` + table + ` SELECT * FROM staging.` + table + ` WHERE account_id = ?`

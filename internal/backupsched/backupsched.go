@@ -1,7 +1,9 @@
 // Package backupsched takes the server's daily backups (PROTOCOL §11.2, §14): one
 // verified copy a day at a quiet hour, missed days coalesced into one catch-up after a wake or
 // start, the last 30 kept by a durable publication counter, failures backed
-// off and never counted, and the disk never filled.
+// off and never counted, and the disk never filled. Every backup, daily,
+// from the admin page or from the command line, runs through Run, which
+// keeps the disks' free space.
 package backupsched
 
 import (
@@ -39,9 +41,11 @@ const (
 	minHeadroom = 1 << 30 // 1 GiB
 )
 
-// Backuper makes one verified backup with a chosen name (storage.Store).
+// Backuper makes one verified backup with a chosen name, and checks one
+// (storage.Store).
 type Backuper interface {
-	BackupAs(ctx context.Context, dir string, name func(taken time.Time) (string, error)) (storage.BackupInfo, error)
+	BackupAs(ctx context.Context, dir string, name func(taken time.Time) (string, error), opts storage.BackupOptions) (storage.BackupInfo, error)
+	VerifyBackup(ctx context.Context, path string, space func(writing int64) error) error
 	Dir() string
 }
 
@@ -65,7 +69,9 @@ type Config struct {
 	Random    func() float64
 	// FreeBytes reports the free space of the file system holding dir (default statfs).
 	FreeBytes func(dir string) (int64, error)
-	// Verify checks a published backup found at start that the schedule had not recorded (default storage.VerifyDatabaseFile).
+	// Verify checks a published backup found at start that the schedule had
+	// not recorded (default the store's VerifyBackup, with this folder's
+	// free-space guard).
 	Verify func(ctx context.Context, path string) error
 	Logger *slog.Logger
 }
@@ -124,16 +130,19 @@ func New(store Backuper, cfg Config) *Scheduler {
 		cfg.Random = randv2.Float64
 	}
 	if cfg.FreeBytes == nil {
-		cfg.FreeBytes = freeBytes
-	}
-	if cfg.Verify == nil {
-		cfg.Verify = func(ctx context.Context, path string) error { return storage.VerifyDatabaseFile(ctx, path, -1) }
+		cfg.FreeBytes = storage.FreeBytes
 	}
 	log := cfg.Logger
 	if log == nil {
 		log = slog.Default()
 	}
-	return &Scheduler{store: store, cfg: cfg, log: log, wake: make(chan struct{}, 1)}
+	s := &Scheduler{store: store, cfg: cfg, log: log, wake: make(chan struct{}, 1)}
+	if s.cfg.Verify == nil {
+		s.cfg.Verify = func(ctx context.Context, path string) error {
+			return store.VerifyBackup(ctx, path, Guard{Free: s.cfg.FreeBytes}.space(store.Dir(), filepath.Dir(path)))
+		}
+	}
+	return s
 }
 
 func (s *Scheduler) dailyDir() string { return filepath.Join(s.cfg.BackupDir, DailyDir) }
@@ -273,8 +282,7 @@ func dayOf(t time.Time, n int) time.Time {
 }
 
 // at is day's quiet hour, before jitter: the local wall-clock time, also on
-// a daylight-saving change day, whose hours from midnight differ (server bug
-// hunt 2026-10, SB-5).
+// a daylight-saving change day, whose hours from midnight differ.
 func (s *Scheduler) at(day time.Time) time.Time {
 	y, m, d := day.Date()
 	a := s.cfg.At
@@ -413,7 +421,9 @@ func (s *Scheduler) check(ctx context.Context) {
 	}
 }
 
-var dailyName = regexp.MustCompile(`^nottennapod-daily-(\d{6,})-(\d{8}-\d{6})\.db$`)
+// dailyName is a daily backup's name: compressed (.db.gz), or .db from
+// earlier versions; retention counts both.
+var dailyName = regexp.MustCompile(`^nottennapod-daily-(\d{6,})-(\d{8}-\d{6})\.db(\.gz)?$`)
 
 type published struct {
 	name    string
@@ -471,39 +481,82 @@ func (s *Scheduler) backup(ctx context.Context) (storage.BackupInfo, error) {
 			}
 		}
 	}
-	need, err := s.headroom()
-	if err != nil {
-		return storage.BackupInfo{}, err
+	return Run(ctx, s.store, dir, func(taken time.Time) (string, error) {
+		return filepath.Join(dir, fmt.Sprintf("nottennapod-daily-%06d-%s.db.gz", next, taken.UTC().Format("20060102-150405"))), nil
+	}, Guard{Free: s.cfg.FreeBytes, MaxRun: maxRun})
+}
+
+// Guard is what keeps a backup's disks safe (PROTOCOL §11.2); zero fields take
+// the defaults.
+type Guard struct {
+	// Free reports the free space of the file system holding dir (default statfs).
+	Free func(dir string) (int64, error)
+	// MaxRun is how long a backup may take (default 30 minutes).
+	MaxRun time.Duration
+}
+
+func (g Guard) withDefaults() Guard {
+	if g.Free == nil {
+		g.Free = storage.FreeBytes
 	}
-	// Free space is checked on the backup's disk and on the live database's,
-	// whose WAL grows while the copy holds its snapshot (PROTOCOL §11.2). Unknown
-	// space refuses the backup rather than risk either disk.
-	space := func() error {
-		dest, err := s.cfg.FreeBytes(dir)
+	if g.MaxRun == 0 {
+		g.MaxRun = maxRun
+	}
+	return g
+}
+
+// space is the check on both disks before each write of a backup into dir
+// for the database in dataDir: the backup's disk must keep its headroom after
+// writing, the data folder's disk its headroom, whose WAL grows while the copy
+// holds its snapshot. Unknown space refuses rather than risk either disk.
+func (g Guard) space(dataDir, dir string) func(writing int64) error {
+	g = g.withDefaults()
+	headroom := Headroom(dataDir)
+	return func(writing int64) error {
+		dest, err := g.Free(dir)
 		if err != nil {
-			return fmt.Errorf("cannot tell the free space for backups: %w", err)
+			return storage.NoSpace("cannot tell the free space for backups: %v", err)
 		}
-		live, err := s.cfg.FreeBytes(s.store.Dir())
+		live, err := g.Free(dataDir)
 		if err != nil {
-			return fmt.Errorf("cannot tell the free space of the data folder: %w", err)
+			return storage.NoSpace("cannot tell the free space of the data folder: %v", err)
 		}
-		if live < need.headroom {
-			return fmt.Errorf("not enough free space beside the database: %d MB free, %d MB kept free", live>>20, need.headroom>>20)
+		if live < headroom {
+			return storage.NoSpace("not enough free space beside the database: %d MB free, %d MB kept free", live>>20, headroom>>20)
 		}
-		if dest < need.headroom {
-			return fmt.Errorf("the backup was stopped: free space fell to %d MB", dest>>20)
+		if dest-writing < headroom {
+			if writing > 0 {
+				return storage.NoSpace("not enough free space to compress the backup: %d MB free, %d MB kept free", dest>>20, headroom>>20)
+			}
+			return storage.NoSpace("the backup was stopped: free space fell to %d MB", dest>>20)
 		}
 		return nil
 	}
-	if free, err := s.cfg.FreeBytes(dir); err != nil {
-		return storage.BackupInfo{}, fmt.Errorf("cannot tell the free space for backups: %w", err)
-	} else if free < need.dbSize+need.headroom {
-		return storage.BackupInfo{}, fmt.Errorf("not enough free space for a backup: %d MB free, %d MB needed", free>>20, (need.dbSize+need.headroom)>>20)
+}
+
+// Run takes one backup of store into dir, named by name, keeping both disks
+// safe (PROTOCOL §11.2): after the folder's leftovers of an interrupted backup
+// are removed (under the store's backup lock, so they never stop the backup
+// that removes them), the backup's disk must have room for a copy of the
+// database and the headroom, and the data folder's disk its headroom; both
+// are watched every second while the backup runs, every 32 MiB the backup
+// writes itself is checked against the headroom, and it is stopped after
+// MaxRun. A backup stopped for any of these publishes nothing and leaves
+// older backups as they are. Daily, admin and command-line backups all run
+// through it.
+func Run(ctx context.Context, store Backuper, dir string, name func(taken time.Time) (string, error), g Guard) (storage.BackupInfo, error) {
+	g = g.withDefaults()
+	space := g.space(store.Dir(), dir)
+	dbSize, headroom := databaseSize(store.Dir()), Headroom(store.Dir())
+	start := func() error {
+		if free, err := g.Free(dir); err != nil {
+			return storage.NoSpace("cannot tell the free space for backups: %v", err)
+		} else if free < dbSize+headroom {
+			return storage.NoSpace("not enough free space for a backup: %d MB free, %d MB needed", free>>20, (dbSize+headroom)>>20)
+		}
+		return space(0)
 	}
-	if err := space(); err != nil {
-		return storage.BackupInfo{}, err
-	}
-	ctx, cancel := context.WithTimeout(ctx, maxRun)
+	ctx, cancel := context.WithTimeout(ctx, g.MaxRun)
 	defer cancel()
 	// Watch both disks while copying; a copy that would cross the headroom
 	// is cancelled before it does.
@@ -517,33 +570,39 @@ func (s *Scheduler) backup(ctx context.Context) (storage.BackupInfo, error) {
 				return
 			case <-time.After(time.Second):
 			}
-			if err := space(); err != nil {
+			if err := space(0); err != nil {
 				low = err
 				cancel()
 				return
 			}
 		}
 	}()
-	info, err := s.store.BackupAs(ctx, dir, func(taken time.Time) (string, error) {
-		return filepath.Join(dir, fmt.Sprintf("nottennapod-daily-%06d-%s.db", next, taken.UTC().Format("20060102-150405"))), nil
-	})
+	info, err := store.BackupAs(ctx, dir, name, storage.BackupOptions{Start: start, Space: space})
 	cancel()
 	<-watch
 	if low != nil {
 		return info, low
 	}
 	if err != nil && errors.Is(err, context.DeadlineExceeded) {
-		return info, fmt.Errorf("the backup took longer than %v and was stopped", maxRun)
+		return info, causedBy{fmt.Sprintf("the backup took longer than %v and was stopped", g.MaxRun), err}
 	}
 	return info, err
 }
 
-type need struct{ dbSize, headroom int64 }
+// causedBy is an error with its own words and an underlying cause (errors.Is).
+type causedBy struct {
+	msg   string
+	cause error
+}
 
-// headroom is the larger of 1 GiB and twice the live database with its WAL.
-func (s *Scheduler) headroom() (need, error) {
-	size := databaseSize(s.store.Dir())
-	return need{dbSize: size, headroom: Headroom(s.store.Dir())}, nil
+func (e causedBy) Error() string { return e.msg }
+func (e causedBy) Unwrap() error { return e.cause }
+
+// Manual takes an on-demand backup into dir (the admin page's and the
+// backup command's), named nottennapod-<UTC time>-<n>.db.gz and never pruned,
+// through Run with g (zero: statfs and 30 minutes).
+func Manual(ctx context.Context, store Backuper, dir string, g Guard) (storage.BackupInfo, error) {
+	return Run(ctx, store, dir, func(taken time.Time) (string, error) { return storage.BackupName(dir, taken) }, g)
 }
 
 // Headroom is the free space kept beside the database in dataDir (PROTOCOL §11.2):
@@ -552,7 +611,7 @@ func (s *Scheduler) headroom() (need, error) {
 func Headroom(dataDir string) int64 { return max(minHeadroom, 2*databaseSize(dataDir)) }
 
 // FreeBytes is the space available to this user on dir's file system.
-func FreeBytes(dir string) (int64, error) { return freeBytes(dir) }
+func FreeBytes(dir string) (int64, error) { return storage.FreeBytes(dir) }
 
 func databaseSize(dataDir string) int64 {
 	var size int64
@@ -590,4 +649,54 @@ func (s *Scheduler) Status() Status {
 		st.Used += p.size
 	}
 	return st
+}
+
+// Use is a kind of kept file: how many, and their bytes.
+type Use struct {
+	Count int   `json:"count"`
+	Bytes int64 `json:"bytes"`
+}
+
+// Usage is the disk the server's kept copies use (PROTOCOL §14): the daily
+// backups (pruned to Keep), the on-demand ones in the backup folder, and the
+// databases restores kept in the data folder (never deleted automatically).
+type Usage struct {
+	Daily      Use `json:"daily"`
+	Manual     Use `json:"manual"`
+	PreRestore Use `json:"pre_restore"`
+}
+
+var (
+	manualName     = regexp.MustCompile(`^nottennapod-\d{8}-\d{6}-\d+\.db(\.gz)?$`)
+	preRestoreName = regexp.MustCompile(`^nottennapod\.db\.pre-restore-\d{8}-\d{6}(-\d+)?$`)
+)
+
+// GetUsage lists backupDir and dataDir; it reads nothing else, and works
+// whether daily backups are on or off.
+func GetUsage(backupDir, dataDir string) Usage {
+	var u Usage
+	add := func(dir string, counts func(name string) bool, holds func(name string) bool, to *Use) {
+		entries, err := os.ReadDir(dir)
+		if err != nil {
+			return
+		}
+		for _, e := range entries {
+			if !e.Type().IsRegular() || !holds(e.Name()) {
+				continue
+			}
+			if fi, err := e.Info(); err == nil {
+				to.Bytes += fi.Size()
+			}
+			if counts(e.Name()) {
+				to.Count++
+			}
+		}
+	}
+	add(filepath.Join(backupDir, DailyDir), dailyName.MatchString, dailyName.MatchString, &u.Daily)
+	add(backupDir, manualName.MatchString, manualName.MatchString, &u.Manual)
+	// A kept database comes with the WAL and shared-memory files it had.
+	add(dataDir, preRestoreName.MatchString, func(name string) bool {
+		return preRestoreName.MatchString(strings.TrimSuffix(strings.TrimSuffix(name, "-wal"), "-shm"))
+	}, &u.PreRestore)
+	return u
 }

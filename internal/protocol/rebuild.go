@@ -185,6 +185,11 @@ func (s *Service) Rebuild(ctx context.Context, accountID string) (RebuildReport,
 	}
 	report.Duration = time.Since(started)
 	report.Locked = report.Duration
+	if err == nil {
+		// The rebuild rewrote the account's derived state in the log; a
+		// checkpoint failure never fails the rebuild (PROTOCOL §14).
+		s.Store.CheckpointWAL(ctx, "rebuild")
+	}
 	return report, err
 }
 
@@ -265,13 +270,43 @@ func (s *Service) beginRebuild(accountID string) func() {
 }
 
 // claimRebuild marks a staged rebuild of the account as running, unless one
-// already is.
+// already is or a live recovery transaction of the account is in flight
+// (holdLive).
 func (s *Service) claimRebuild(accountID string) (func(), bool) {
 	key := rebuildKey{s.Store, accountID}
+	liveMu.Lock()
+	defer liveMu.Unlock()
+	if liveHolds[key] > 0 {
+		return nil, false
+	}
 	if _, loaded := rebuilding.LoadOrStore(key, true); loaded {
 		return nil, false
 	}
 	return func() { rebuilding.Delete(key) }, true
+}
+
+// holdLive marks a live write of the account's recovery state that moves no
+// head (opening a recovery, an inventory, a finish) as in flight until the
+// returned function is called. It is busy while a rebuild claim is held, and
+// no claim is taken meanwhile: a staged copy, whose publication replaces the
+// account's recovery sessions wholesale and is fenced only by the head,
+// never misses what such a write commits (PROTOCOL §6.11). Live holds
+// exclude neither one another nor pushes.
+func (s *Service) holdLive(accountID string) (func(), error) {
+	key := rebuildKey{s.Store, accountID}
+	liveMu.Lock()
+	defer liveMu.Unlock()
+	if _, ok := rebuilding.Load(key); ok {
+		return nil, errBusy
+	}
+	liveHolds[key]++
+	return func() {
+		liveMu.Lock()
+		defer liveMu.Unlock()
+		if liveHolds[key]--; liveHolds[key] == 0 {
+			delete(liveHolds, key)
+		}
+	}, nil
 }
 
 // Rebuilding reports whether a rebuild of the account is running.
@@ -283,6 +318,13 @@ func (s *Service) Rebuilding(accountID string) bool {
 // rebuilding holds the accounts whose rebuild is running (PROTOCOL §6.11), by store,
 // so every Service of one store (they are copied) sees the same marks.
 var rebuilding sync.Map
+
+// liveMu orders rebuild claims against live holds; liveHolds counts each
+// account's live holds in flight (holdLive).
+var (
+	liveMu    sync.Mutex
+	liveHolds = map[rebuildKey]int{}
+)
 
 type rebuildKey struct {
 	store   *storage.Store

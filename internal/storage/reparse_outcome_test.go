@@ -181,7 +181,7 @@ func TestMigration0024UpgradesAPopulatedDatabase(t *testing.T) {
 	s.Close()
 
 	s = openTest(t, config{dataDir: dir})
-	same(s, 24)
+	same(s, len(embeddedMigrations))
 	for _, r := range responses {
 		var o ReparseOutcome
 		if err := s.Read(ctx, func(tx *ReadTx) error {

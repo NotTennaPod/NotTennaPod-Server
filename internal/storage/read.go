@@ -9,12 +9,16 @@ import (
 // Reads for the browser's views (PROTOCOL §12): one read snapshot gives a
 // view its head, its records and its causal frontier.
 
+// viewRecordValue is a record's value as list views read it: episode
+// metadata without its description and chapters, which only the episode
+// view shows (ViewRecords, ViewEntityRecords).
+const viewRecordValue = `CASE WHEN entity = 'episode' AND field_group = 'metadata' THEN json_remove(value, '$.description', '$.chapters') ELSE value END`
+
 // ViewRecords returns the account's live records for list views. Episode
 // metadata comes without its description and chapters, which only the episode
 // view shows.
 func (a *AccountReader) ViewRecords() ([]RecordRow, error) {
-	rows, err := a.r.tx.QueryContext(a.r.ctx, `SELECT entity, entity_id, field_group,
-		CASE WHEN entity = 'episode' AND field_group = 'metadata' THEN json_remove(value, '$.description', '$.chapters') ELSE value END,
+	rows, err := a.r.tx.QueryContext(a.r.ctx, `SELECT entity, entity_id, field_group, `+viewRecordValue+`,
 		provenance FROM records WHERE account_id = ? ORDER BY entity, entity_id, field_group`, a.id)
 	if err != nil {
 		return nil, err

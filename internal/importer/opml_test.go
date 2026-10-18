@@ -118,7 +118,7 @@ func TestOPMLImportKeepsOutlineTitles(t *testing.T) {
 	}
 	const importID = "1b4e28ba-2fa1-41d2-883f-0016d3cca427"
 	plan := FromOPML(entries, importID, e.clock)
-	pods, err := Apply(ctx, e.svc, e.account, plan, 0)
+	pods, err := Apply(ctx, e.svc, e.account, plan, 0, nil)
 	if err != nil {
 		t.Fatal(err)
 	}

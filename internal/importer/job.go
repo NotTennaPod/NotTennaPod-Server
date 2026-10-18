@@ -55,17 +55,28 @@ type Runner struct {
 	// or finished) that are still there are removed again (default
 	// SweepInterval).
 	SweepEvery time.Duration
+	// Cohort lists the podcasts the server's refresh fetches in an account of
+	// a store (refresh.Cohort); a published import counts the first refresh of
+	// those of its staged library. Nil: no refresh progress is reported.
+	Cohort func(ctx context.Context, store *storage.Store, accountID string) ([]string, error)
+	// Now is the clock of the first refresh's report (default the store's).
+	Now func() time.Time
 
 	mu        sync.Mutex
-	running   map[string]*work       // processing imports
-	discarded map[string]bool        // imports of deleted accounts (Discard)
-	pending   map[string][]string    // per import: its files the last removal could not remove
-	locks     map[string]*sync.Mutex // per import: chunks, assembly and status changes
-	turn      chan struct{}          // one import processes at a time on the server
-	ctx       context.Context
-	cancel    context.CancelFunc
-	wg        sync.WaitGroup // import work
-	sweeping  sync.WaitGroup // the periodic sweep
+	running   map[string]*work                // processing imports
+	discarded map[string]bool                 // imports of deleted accounts (Discard)
+	pending   map[string][]string             // per import: its files the last removal could not remove
+	locks     map[string]*sync.Mutex          // per import: chunks, assembly and status changes
+	phases    map[string]*Phase               // processing imports' steps (progress.go)
+	cohorts   map[string]*cohort              // by account: a published import's first refresh (progress.go)
+	onPhase   func(importID string, p *Phase) // tests: each step recorded (under mu)
+	// afterPublish (tests) runs right after a publication commits.
+	afterPublish func(accountID, importID string)
+	turn         chan struct{} // one import processes at a time on the server
+	ctx          context.Context
+	cancel       context.CancelFunc
+	wg           sync.WaitGroup // import work
+	sweeping     sync.WaitGroup // the periodic sweep
 }
 
 // StagingOpener opens staging databases that carry the live server's identity
@@ -145,6 +156,10 @@ func (r *Runner) Start(ctx context.Context) error {
 	}
 	r.mu.Lock()
 	r.running = map[string]*work{}
+	// Progress is counted in memory: a start knows none (a processing
+	// import's step returns with its work; a first refresh's counts are
+	// unavailable, never rebuilt).
+	r.phases, r.cohorts = map[string]*Phase{}, map[string]*cohort{}
 	r.turn = make(chan struct{}, 1)
 	r.ctx, r.cancel = context.WithCancel(context.Background())
 	r.mu.Unlock()
@@ -204,6 +219,7 @@ func (r *Runner) Start(ctx context.Context) error {
 			case <-ctx2.Done():
 				return
 			case <-t.C:
+				r.evictRefresh()
 				if err := r.sweep(ctx2); err != nil && ctx2.Err() == nil {
 					r.logger().Error("import: cannot sweep the import files", "error", logged(err))
 				}
@@ -330,7 +346,7 @@ func (r *Runner) Reserve(ctx context.Context, authorize Authorize, accountID, ki
 // chunk again replaces it. The chunks kept never add up to more than the
 // reserved size, and each leaves the backups' headroom free.
 func (r *Runner) Chunk(ctx context.Context, authorize Authorize, accountID, importID string, n int, data []byte) error {
-	if n < 0 || n > MaxFile/MaxChunk+1 || len(data) == 0 || len(data) > MaxChunk {
+	if n < 0 || n >= MaxChunks || len(data) == 0 || len(data) > MaxChunk {
 		return ErrBadRequest
 	}
 	defer r.lock(importID)()
@@ -457,6 +473,50 @@ func (r *Runner) Finish(ctx context.Context, authorize Authorize, accountID, imp
 	os.RemoveAll(r.uploadDir(importID))
 	r.launch(accountID, importID)
 	return r.get(ctx, accountID, importID)
+}
+
+// Cancel ends an uploading import for its owner (POST /v1/import/{id}/cancel):
+// under the import's lock, so serialized with its chunks and its finish, the
+// caller is authorized again and the import moved to failed (cancelled) in
+// one transaction; its files go afterwards (cleanupLocked: the lock is held).
+// A failed import is answered as it is (a repeated cancel); a processing or
+// published one is ErrNotUploading. A file that cannot be removed stays
+// pending for the sweep and every start; a crash after the commit leaves files
+// of an import no longer live, which the next start removes.
+func (r *Runner) Cancel(ctx context.Context, authorize Authorize, accountID, importID string) (storage.Import, error) {
+	unlock := r.lock(importID)
+	defer unlock()
+	var cur storage.Import
+	cancelled := false
+	err := r.Store.Write(ctx, func(tx *storage.WriteTx) error {
+		cancelled = false
+		if err := authorize(tx); err != nil {
+			return err
+		}
+		var err error
+		cur, err = tx.Account(accountID).Import(importID)
+		if errors.Is(err, storage.ErrNotFound) {
+			return ErrNotFound
+		}
+		if err != nil {
+			return err
+		}
+		switch cur.Status {
+		case "uploading":
+			cancelled = true
+			return tx.Account(accountID).SetImportStatus(importID, "failed", "cancelled")
+		case "failed":
+			return nil
+		}
+		return ErrNotUploading
+	})
+	if err != nil {
+		return storage.Import{}, err
+	}
+	if cancelled {
+		r.cleanupLocked(importID)
+	}
+	return r.state(context.WithoutCancel(ctx), accountID, importID)
 }
 
 // Get returns one of the account's imports.
@@ -619,6 +679,8 @@ func (r *Runner) Discard(importIDs []string) bool {
 			w.cancel()
 			<-w.done
 		}
+		r.setPhase(id, nil)
+		r.forgetRefresh(id)
 		if !r.cleanup(id) {
 			removed = false
 		}
@@ -717,6 +779,7 @@ func (r *Runner) try(ctx context.Context, accountID, importID string) bool {
 		return false
 	}
 	err = r.processSafely(ctx, accountID, importID)
+	r.setPhase(importID, nil) // a try's step ends with it
 	var ff *fileFailure
 	var p *panicked
 	switch {
@@ -816,6 +879,7 @@ func (r *Runner) processOnce(ctx context.Context, accountID, importID string) er
 	}
 	tryCtx, cancel := context.WithTimeout(ctx, limit)
 	defer cancel()
+	r.setPhase(importID, &Phase{Name: "reading"})
 	plan, err := r.plan(tryCtx, im)
 	if errors.Is(err, context.DeadlineExceeded) && ctx.Err() == nil {
 		return &fileFailure{"too_slow: the file could not be read in time"}
@@ -852,9 +916,12 @@ func (r *Runner) stageAndPublish(ctx context.Context, accountID, importID string
 	if err != nil {
 		return err
 	}
-	if _, err := Apply(ctx, svc, accountID, plan, from); err != nil {
+	total := len(plan.Podcasts)
+	r.importedPodcast(importID, from, total)
+	if _, err := Apply(ctx, svc, accountID, plan, from, func(done int) { r.importedPodcast(importID, done, total) }); err != nil {
 		return err
 	}
+	r.setPhase(importID, &Phase{Name: "finishing"})
 	res, err := Summarize(ctx, staging, accountID, plan)
 	if err != nil {
 		return err
@@ -863,13 +930,23 @@ func (r *Runner) stageAndPublish(ctx context.Context, accountID, importID string
 	if err != nil {
 		return err
 	}
+	// The first refresh's podcasts are listed from the staged library, which the
+	// publication copies whole, and watched before it commits: the set is the
+	// publication's, and no attempt ending after it is missed.
+	r.watchRefresh(ctx, staging, accountID, importID)
 	if err := staging.Close(); err != nil {
+		r.unwatchRefresh(accountID, importID)
 		return err
 	}
 	closed = true
 	if err := r.Store.PublishImport(ctx, filepath.Join(stagingDir, "nottennapod.db"), accountID, importID, base, result); err != nil {
+		r.unwatchRefresh(accountID, importID)
 		return err
 	}
+	if r.afterPublish != nil {
+		r.afterPublish(accountID, importID)
+	}
+	r.publishedRefresh(ctx, accountID, importID)
 	r.cleanup(importID)
 	return nil
 }

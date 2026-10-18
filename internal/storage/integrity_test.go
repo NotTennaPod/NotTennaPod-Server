@@ -123,24 +123,30 @@ const keepTokensTrigger = `CREATE TRIGGER keep_tokens AFTER DELETE ON auth_token
 // tokens back) is refused, unsigned by its MAC and, signed again, by the schema
 // check; the revoked token stays dead.
 func TestModifiedBackupCannotBringBackRevokedTokens(t *testing.T) {
-	fx := newRestoreFixture(t)
+	forEachFormat(t, testModifiedBackupCannotBringBackRevokedTokens)
+}
+
+func testModifiedBackupCannotBringBackRevokedTokens(t *testing.T, format int) {
+	fx := newRestoreFixtureIn(t, format)
+	// Changed without the key: a version 1 backup's MAC no longer verifies; a
+	// version 2 one's compressed database no longer has the signed size.
+	changed := map[int]string{1: "has been changed since it was made", 2: "its trailer is damaged"}[format]
 	for _, tc := range []struct {
 		name, want string
 		backup     func(c *restoreFixture) string
 	}{
-		{"changed", "has been changed since it was made", func(c *restoreFixture) string {
-			data, _ := os.ReadFile(c.backup)
+		{"changed", changed, func(c *restoreFixture) string {
 			path := filepath.Join(t.TempDir(), "changed.db")
-			os.WriteFile(path, data, 0o600)
+			os.WriteFile(path, rawDatabaseOf(t, c.backup), 0o600)
 			db, err := sql.Open("sqlite", path)
 			if err != nil {
 				t.Fatal(err)
 			}
-			defer db.Close()
 			if _, err := db.Exec(keepTokensTrigger); err != nil {
 				t.Fatal(err)
 			}
-			return path
+			db.Close()
+			return withOldTrailer(t, c.backup, path)
 		}},
 		{"signed again", "trigger keep_tokens of its own", func(c *restoreFixture) string { return c.tamper(t, keepTokensTrigger) }},
 	} {
@@ -163,8 +169,7 @@ func TestModifiedBackupCannotBringBackRevokedTokens(t *testing.T) {
 func TestDatabaseWithATriggerOfItsOwnDoesNotStart(t *testing.T) {
 	fx := newRestoreFixture(t)
 	c := fx.clone(t)
-	data, _ := os.ReadFile(c.tamper(t, keepTokensTrigger))
-	writeInPlace(t, c.dir, data)
+	writeInPlace(t, c.dir, rawDatabaseOf(t, c.tamper(t, keepTokensTrigger)))
 	s, err := open(context.Background(), config{dataDir: c.dir, syncDir: noSync})
 	if err == nil {
 		s.Close()
@@ -187,8 +192,7 @@ func TestATriggerWithAStatisticsNameDoesNotStart(t *testing.T) {
 		t.Run(tc.name, func(t *testing.T) {
 			c := fx.clone(t)
 			path := filepath.Join(t.TempDir(), "edited.db")
-			data, _ := os.ReadFile(c.backup)
-			os.WriteFile(path, data, 0o600)
+			os.WriteFile(path, rawDatabaseOf(t, c.backup), 0o600)
 			db, err := sql.Open("sqlite", path)
 			if err != nil {
 				t.Fatal(err)
@@ -200,7 +204,7 @@ func TestATriggerWithAStatisticsNameDoesNotStart(t *testing.T) {
 				}
 			}
 			db.Close()
-			data, _ = os.ReadFile(path)
+			data, _ := os.ReadFile(path)
 			writeInPlace(t, c.dir, data)
 			s, err := open(context.Background(), config{dataDir: c.dir, syncDir: noSync})
 			if err == nil {
@@ -215,8 +219,7 @@ func TestATriggerWithAStatisticsNameDoesNotStart(t *testing.T) {
 	t.Run("ANALYZE", func(t *testing.T) {
 		c := fx.clone(t)
 		path := filepath.Join(t.TempDir(), "analyzed.db")
-		data, _ := os.ReadFile(c.backup)
-		os.WriteFile(path, data, 0o600)
+		os.WriteFile(path, rawDatabaseOf(t, c.backup), 0o600)
 		db, err := sql.Open("sqlite", path)
 		if err != nil {
 			t.Fatal(err)
@@ -225,7 +228,7 @@ func TestATriggerWithAStatisticsNameDoesNotStart(t *testing.T) {
 			t.Fatal(err)
 		}
 		db.Close()
-		data, _ = os.ReadFile(path)
+		data, _ := os.ReadFile(path)
 		writeInPlace(t, c.dir, data)
 		s, err := open(context.Background(), config{dataDir: c.dir, syncDir: noSync})
 		if err != nil {
@@ -235,37 +238,69 @@ func TestATriggerWithAStatisticsNameDoesNotStart(t *testing.T) {
 	})
 }
 
-// A backup is signed, and its signature covers every byte.
+// A backup is signed, and its signature covers every byte: of a version 2
+// backup, the compressed database and every trailer field; of a version 1
+// backup, the database.
 func TestBackupsAreSigned(t *testing.T) {
+	ctx := context.Background()
 	d := t.TempDir()
 	s := openTest(t, config{dataDir: d})
 	createAccounts(t, s, 2)
-	info, err := s.Backup(context.Background(), t.TempDir())
+	info, err := s.Backup(ctx, t.TempDir())
 	if err != nil {
 		t.Fatal(err)
 	}
-	f, tr, err := openSignedBackup(info.Path)
+	id, _ := s.ServerID(ctx)
+	keyByID := map[string][]byte{s.receiptKeys[0].ID: s.receiptKeys[0].Secret}
+	data, _ := os.ReadFile(info.Path)
+	tr, err := readTrailerV2(bytes.NewReader(data), int64(len(data)))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if tr.ServerID != id || tr.KeyID != s.receiptKeys[0].ID || tr.Size >= info.Size {
+		t.Fatalf("trailer %+v", tr)
+	}
+	if _, err := authenticate(ctx, bytes.NewReader(data), tr, keyByID, id); err != nil {
+		t.Fatal(err)
+	}
+	for _, i := range []int{0, 100, int(tr.Size) - 1} {
+		changed := bytes.Clone(data)
+		changed[i] ^= 0x80
+		if _, err := authenticate(ctx, bytes.NewReader(changed), tr, keyByID, id); err == nil {
+			t.Fatalf("a change at byte %d verifies", i)
+		}
+	}
+	for name, change := range map[string]func(*trailerV2){
+		"database size": func(t *trailerV2) { t.DatabaseSize++ },
+		"database hash": func(t *trailerV2) { t.DatabaseSHA256 = strings.Repeat("0", 64) },
+		"key ID":        func(t *trailerV2) { t.KeyID = "k0" },
+	} {
+		c := tr
+		change(&c)
+		keys := map[string][]byte{c.KeyID: s.receiptKeys[0].Secret}
+		if _, err := authenticate(ctx, bytes.NewReader(data), c, keys, id); err == nil {
+			t.Fatalf("a trailer with another %s verifies", name)
+		}
+	}
+	v1 := asFormat(t, info.Path, d, 1)
+	f, t1, err := openSignedBackup(v1)
 	if err != nil {
 		t.Fatal(err)
 	}
 	defer f.Close()
-	keyByID := map[string][]byte{s.receiptKeys[0].ID: s.receiptKeys[0].Secret}
-	if err := checkBackupMAC(f, tr, keyByID); err != nil {
+	if err := checkBackupMAC(ctx, f, t1, keyByID); err != nil {
 		t.Fatal(err)
 	}
-	if id, _ := s.ServerID(context.Background()); tr.ServerID != id || tr.KeyID != s.receiptKeys[0].ID || tr.Size >= info.Size {
-		t.Fatalf("trailer %+v", tr)
-	}
-	data, _ := os.ReadFile(info.Path)
-	for _, i := range []int{0, 100, int(tr.Size) - 1} {
-		changed := bytes.Clone(data)
+	old, _ := os.ReadFile(v1)
+	for _, i := range []int{0, 100, int(t1.Size) - 1} {
+		changed := bytes.Clone(old)
 		changed[i] ^= 0x80
-		if err := checkBackupMAC(bytes.NewReader(changed), tr, keyByID); err == nil {
-			t.Fatalf("a change at byte %d verifies", i)
+		if err := checkBackupMAC(ctx, bytes.NewReader(changed), t1, keyByID); err == nil {
+			t.Fatalf("a change at byte %d of a version 1 backup verifies", i)
 		}
 	}
-	if err := VerifyDatabaseFile(context.Background(), info.Path, -1); err != nil {
-		t.Fatalf("the signed backup does not open as a database: %v", err)
+	if err := VerifyDatabaseFile(ctx, v1, -1); err != nil {
+		t.Fatalf("the version 1 backup does not open as a database: %v", err)
 	}
 }
 
@@ -313,7 +348,7 @@ func TestReplacedBackupFileIsNotPublished(t *testing.T) {
 			t.Fatal(err)
 		}
 		return published, nil
-	})
+	}, BackupOptions{})
 	if err == nil || !strings.Contains(err.Error(), "replaced") {
 		t.Fatalf("got %v", err)
 	}
@@ -340,7 +375,9 @@ func TestRestoreVerifiesTheSignedHistory(t *testing.T) {
 	alice := fx.ids["alice"]
 	superseded := func(mac bool, epoch, seq, index int64) string {
 		var hash string
-		db, _ := openReadOnly(fx.backup)
+		plain := filepath.Join(t.TempDir(), "plain.db")
+		os.WriteFile(plain, rawDatabaseOf(t, fx.backup), 0o600)
+		db, _ := openReadOnly(plain)
 		db.QueryRow(`SELECT content_hash FROM facts WHERE op_id = 'op-1'`).Scan(&hash)
 		db.Close()
 		receipt := signed(t, ks[0], alice, map[string]any{"op_id": "op-1", "content_hash": hash, "outcome": "applied",

@@ -11,13 +11,13 @@ import (
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/contract"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/protocol"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/storage"
-	"github.com/NotTennaPod/NotTennaPod-Server/internal/views"
+	"github.com/NotTennaPod/NotTennaPod-Server/internal/views/reference"
 )
 
 // Releases: enclosures, first fetches, imported state, disputes, merges and
 // rotation. The differential cases are rule vectors in testdata/releases.
 
-// #6: a newly observed signed enclosure URL of an existing release is added
+// A newly observed signed enclosure URL of an existing release is added
 // to that release (an enclosure addition decision), so an undated reference
 // by that URL routes to it and identity_rules lists it.
 func TestSignedEnclosureJoinsItsRelease(t *testing.T) {
@@ -40,7 +40,7 @@ func TestSignedEnclosureJoinsItsRelease(t *testing.T) {
 	}
 }
 
-// #4: a newest-first feed reusing a GUID keeps both releases on its first
+// A newest-first feed reusing a GUID keeps both releases on its first
 // fetch: every item's evidence and dispute is settled before any item is
 // derived.
 func TestNewestFirstFirstFetch(t *testing.T) {
@@ -55,7 +55,7 @@ func TestNewestFirstFirstFetch(t *testing.T) {
 	}
 }
 
-// #1: imported state follows its release when the GUID is disputed later.
+// Imported state follows its release when the GUID is disputed later.
 func TestImportedStateFollowsItsRelease(t *testing.T) {
 	e := newEnv(t)
 	d1, d2 := e.clock-40*day, e.clock-day
@@ -88,7 +88,7 @@ func TestImportedStateFollowsItsRelease(t *testing.T) {
 	}
 }
 
-// #3: when a GUID's dispute is first detected late, the earlier
+// When a GUID's dispute is first detected late, the earlier
 // observations are partitioned by release, so a later release seen before
 // the dispute keeps its own episode and state.
 func TestDelayedDisputePartitionsReleases(t *testing.T) {
@@ -110,7 +110,7 @@ func TestDelayedDisputePartitionsReleases(t *testing.T) {
 	}
 }
 
-// #2: a podcast merge carries an episode with neither GUID nor enclosure
+// A podcast merge carries an episode with neither GUID nor enclosure
 // (an occurrence ID) and its state to the survivor.
 func TestMergeCarriesAnonymousEpisodes(t *testing.T) {
 	c := newCatalogEnv(t)
@@ -126,7 +126,7 @@ func TestMergeCarriesAnonymousEpisodes(t *testing.T) {
 	visible := func() bool {
 		found := false
 		if err := c.svc.Store.Read(context.Background(), func(r *storage.ReadTx) error {
-			lib, err := views.Load(r.Account(c.account))
+			lib, err := reference.Load(r, c.account)
 			if err == nil {
 				found = lib.ByID[ep] != nil
 			}
@@ -152,7 +152,7 @@ func TestMergeCarriesAnonymousEpisodes(t *testing.T) {
 	}
 }
 
-// #9: a whole-feed GUID and enclosure change is placed and published once
+// A whole-feed GUID and enclosure change is placed and published once
 // per fetch. NTP_IDENTITY_PERF sets the episode count (default 300; the
 // target is a 3,000-episode rotation in seconds).
 func TestRotationPerformance(t *testing.T) {

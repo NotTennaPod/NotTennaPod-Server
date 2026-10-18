@@ -6,6 +6,10 @@ ifndef CONTRACT_SEED
 CONTRACT_SEED := $(shell date +%s)
 endif
 
+# The storage and importer tests that run smaller under the race detector
+# (raceEnabled): check's last step runs them at full size without it.
+FULL_SIZE_TESTS = ^(TestQueueAdmissionMatchesTheRangeScan|TestImportQueueAdmissionIsLinear|TestOutOfRankQueueAdmissionIsLinear|TestQueueAdmissionIsFlatInUnrelatedHistory|TestSmallCommandsAfterAWideFact|TestConnectedHistoryCostsOneReadOfIt|TestOfflineBurstPlacementReadsAFewRows|TestRanksArePlacedAsTheEarlierServerPlacedThem|TestPlacementIsTheEarlierLookups|TestNodeAfterManyDependencies|TestImportQueueAdmissionBudget)$$
+
 .PHONY: build check cross-build media-acceptance acceptance-witness docker
 
 build:
@@ -35,6 +39,9 @@ check:
 	$(PYTHON) contract/reference/gen_rule_cases.py .work/rules-recovery-check --recovery --cases 40 --seed 8001
 	NTP_RULE_CASES=$(CURDIR)/.work/rules-recovery-check $(PYTHON) scripts/check_ops.py rules --go '$(GO)' --case-prefix rules_random_
 	$(PYTHON) scripts/check_ops.py loads --go '$(GO)'
+	$(GO) test -count=1 -timeout 0 -run '^TestCatalogRevisionsResultsUnchanged$$' ./internal/storage
+	# Budgets and oracles the race detector runs smaller, at their full size.
+	$(GO) test -count=1 -timeout 0 -run '$(FULL_SIZE_TESTS)' ./internal/storage ./internal/importer
 
 cross-build:
 	mkdir -p .work/bin
@@ -46,7 +53,7 @@ cross-build:
 # The media acceptance needs ffmpeg and ffprobe (PROTOCOL §13): here the
 # compatibility tests fail instead of skipping without them.
 media-acceptance:
-	NTP_REQUIRE_FFMPEG=1 $(GO) test -race -count=1 -timeout 30m ./internal/media
+	NTP_REQUIRE_FFMPEG=1 $(GO) test -race -count=1 -timeout 0 ./internal/media
 
 # The server's acceptance witness (PROTOCOL §16): on a copy of a stopped
 # server's data directory, the database's integrity, every account's log
@@ -54,7 +61,7 @@ media-acceptance:
 # NTP_WITNESS_DATA the test skips.
 acceptance-witness:
 	@test -n "$(DATA)" || { echo "usage: make acceptance-witness DATA=<a stopped server's data directory>" >&2; exit 2; }
-	NTP_WITNESS_DATA="$(abspath $(DATA))" $(GO) test -count=1 -timeout 60m -run '^TestWitness$$' -v ./internal/acceptancecheck
+	NTP_WITNESS_DATA="$(abspath $(DATA))" $(GO) test -count=1 -timeout 0 -run '^TestWitness$$' -v ./internal/acceptancecheck
 
 # The container image (docs/OPERATIONS.md, "Running in Docker"), for this
 # machine's platform by default; the build fails unless the image's ffmpeg

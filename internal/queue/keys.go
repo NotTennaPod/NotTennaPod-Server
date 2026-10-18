@@ -1,6 +1,10 @@
 package queue
 
 import (
+	"encoding/binary"
+	"math/big"
+	"sort"
+
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/contract"
 )
 
@@ -51,36 +55,15 @@ func Rekey(sorted []Placed, newID func() [16]byte) ([]Placed, error) {
 	return out, nil
 }
 
-// lis marks the lexicographically first (by sorted position) longest strictly
-// increasing subsequence of keys: from the left, each kept member is the
-// earliest one that still allows a longest run (PROTOCOL §7.6, as in the
-// independent reference). Quadratic, which is fine for queue sizes.
+// lis marks the members along the lexicographically first longest strictly
+// increasing run of their keys (PROTOCOL §7.6, as in the independent
+// reference).
 func lis(ps []Placed) []bool {
-	n := len(ps)
-	keep := make([]bool, n)
-	if n == 0 {
-		return keep
+	keys := make([]*contract.QueueKey, len(ps))
+	for i := range ps {
+		keys[i] = &ps[i].Key
 	}
-	// from[i]: the length of the longest increasing run starting at i.
-	from := make([]int, n)
-	longest := 0
-	for i := n - 1; i >= 0; i-- {
-		from[i] = 1
-		for j := i + 1; j < n; j++ {
-			if contract.CompareQueueKeys(ps[i].Key, ps[j].Key) < 0 && from[j]+1 > from[i] {
-				from[i] = from[j] + 1
-			}
-		}
-		longest = max(longest, from[i])
-	}
-	need, last := longest, -1
-	for i := 0; i < n && need > 0; i++ {
-		if from[i] == need && (last < 0 || contract.CompareQueueKeys(ps[last].Key, ps[i].Key) < 0) {
-			keep[i] = true
-			last = i
-			need--
-		}
-	}
+	keep, _ := lisCounted(keys)
 	return keep
 }
 
@@ -151,29 +134,76 @@ func Materialize(order []Entry, cands map[Entry]Candidate, newID func() [16]byte
 // lisOf marks the lexicographically first longest strictly increasing run of
 // keys, skipping members without one (they are never kept).
 func lisOf(keys []*contract.QueueKey) []bool {
+	keep, _ := lisCounted(keys)
+	return keep
+}
+
+// lisCounted is lisOf, with the number of key comparisons it made. From the
+// right, each keyed member's longest increasing run starting there is one
+// more than the longest among those after it that start above its key: the
+// greatest key starting a run of each length after it decreases with the
+// length, so a binary search finds it (O(n log n), not every pair). Then
+// from the left, each kept member is the earliest that still allows a
+// longest run and is above the last kept one, as before. Keys compare as
+// their order strings, built once each, so a comparison allocates nothing.
+func lisCounted(keys []*contract.QueueKey) ([]bool, int) {
 	n := len(keys)
 	keep := make([]bool, n)
-	from := make([]int, n)
+	order := make([]string, n)
+	for i, k := range keys {
+		if k != nil {
+			order[i] = keyOrder(*k)
+		}
+	}
+	comparisons := 0
+	from := make([]int, n) // the longest increasing run starting at each keyed member
+	var best []string      // best[l]: the greatest key starting a run of length l+1 after i; decreasing
 	longest := 0
 	for i := n - 1; i >= 0; i-- {
 		if keys[i] == nil {
 			continue
 		}
-		from[i] = 1
-		for j := i + 1; j < n; j++ {
-			if keys[j] != nil && contract.CompareQueueKeys(*keys[i], *keys[j]) < 0 && from[j]+1 > from[i] {
-				from[i] = from[j] + 1
-			}
+		l := sort.Search(len(best), func(x int) bool {
+			comparisons++
+			return best[x] <= order[i]
+		})
+		from[i] = l + 1
+		if l == len(best) {
+			best = append(best, order[i])
+		} else {
+			best[l] = order[i]
 		}
 		longest = max(longest, from[i])
 	}
 	need, last := longest, -1
 	for i := 0; i < n && need > 0; i++ {
-		if keys[i] != nil && from[i] == need && (last < 0 || contract.CompareQueueKeys(*keys[last], *keys[i]) < 0) {
-			keep[i] = true
-			last = i
-			need--
+		if keys[i] == nil || from[i] != need {
+			continue
 		}
+		if last >= 0 {
+			comparisons++
+			if order[last] >= order[i] {
+				continue
+			}
+		}
+		keep[i] = true
+		last = i
+		need--
 	}
-	return keep
+	return keep, comparisons
+}
+
+// keyOrder is a string whose bytewise order is the keys' numeric order: the
+// key M / 2^N lies in [2^-(z+1), 2^-z) for z = N - bitlen(M) leading zero
+// bits, so the string is MaxQueueKeyExponent - z (four bytes, big-endian),
+// then M's bits from its highest, packed into bytes and padded with zeros
+// (an odd M ends in a one bit, so of two keys with the same z the one whose
+// bits run on is the greater, as bytewise order has it).
+func keyOrder(k contract.QueueKey) string {
+	bits := k.M.BitLen()
+	z := uint32(contract.MaxQueueKeyExponent - (int(k.N) - bits))
+	m := new(big.Int).Lsh(k.M, uint((8-bits%8)%8)).Bytes()
+	b := make([]byte, 4, 4+len(m))
+	binary.BigEndian.PutUint32(b, z)
+	return string(append(b, m...))
 }

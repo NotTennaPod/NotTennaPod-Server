@@ -16,6 +16,7 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
+	"strconv"
 	"strings"
 	"sync"
 	"sync/atomic"
@@ -63,7 +64,12 @@ type Store struct {
 	lock   *os.File
 	writer *sql.DB
 	reader *sql.DB
+	dbPath string
 	hooks  hooks
+
+	// verify is a test's own read connection (VerifyReadForTesting).
+	verifyMu sync.Mutex
+	verify   *sql.DB
 
 	// The server's restore metadata and receipt keys (PROTOCOL §11): meta is
 	// nil for a staging database, which has neither.
@@ -86,6 +92,14 @@ type Store struct {
 	// now is the server's wall clock (WithClock): the time of what the
 	// store records, and of a backup.
 	now func() time.Time
+
+	// capture: the schema has the read model's change capture (viewchanges.go).
+	capture bool
+	// gate is held through each write while a test's commit observer is
+	// installed; opening keeps the opening writes' accounts for it until
+	// the store is open (viewobserver.go).
+	gate    sync.Mutex
+	opening map[string]CommittedAccount
 }
 
 // hooks are test-only interruption points inside a write transaction, around
@@ -100,6 +114,9 @@ type hooks struct {
 	beforeStateWrite     func(phase string) error
 	afterStateWrite      func(phase string) error
 	restoreFault         func(point string) error
+	backupFault          func(point string) error
+	walCheckpoint        func(after string, res WALCheckpoint, err error) error
+	viewCapture          func(point string) error // a suspended capture's steps (viewchanges.go)
 }
 
 func call(h func() error) error {
@@ -140,6 +157,10 @@ type config struct {
 	hooks      hooks
 	now        func() time.Time // default time.Now
 	source     string           // modeCopy: the directory copied
+	// The restore's free space (default statfs) and how often it is watched
+	// while SQLite writes the staged copy (default 50 ms).
+	free       func(dir string) (int64, error)
+	spaceWatch time.Duration
 }
 
 // OpenOption configures Open and OpenStaging.
@@ -254,6 +275,11 @@ func open(ctx context.Context, cfg config) (_ *Store, err error) {
 			if err := resumeRestore(ctx, cfg, dir, s.meta); err != nil {
 				return nil, err
 			}
+		} else {
+			// A copy staged by a restore that stopped before recording itself,
+			// and what an interrupted restore's verification left.
+			_ = removeStagedCopy(dir)
+			removeTemps(dir, restoreTempPrefix)
 		}
 	}
 	dbPath := filepath.Join(dir, cfg.dbName)
@@ -291,6 +317,13 @@ func open(ctx context.Context, cfg config) (_ *Store, err error) {
 			return nil, err
 		}
 	}
+	// The read model's capture triggers, when absent and nothing else
+	// differs, are created again first (viewchanges.go); a copy never is.
+	if cfg.mode == modeServer || cfg.mode == modeStaging {
+		if err := s.repairViewCapture(ctx, cfg.migrations); err != nil {
+			return nil, err
+		}
+	}
 	// The schema is exactly what the migrations create, before they run
 	// (they could fire a trigger of the database's own) and after.
 	if err := checkSchema(ctx, s.writer, cfg.migrations); err != nil {
@@ -300,6 +333,14 @@ func open(ctx context.Context, cfg config) (_ *Store, err error) {
 		return nil, err
 	}
 	if err := checkSchema(ctx, s.writer, cfg.migrations); err != nil {
+		return nil, err
+	}
+	// Every server's chain has the capture (only a test's shorter chain
+	// lacks it, and then nothing is captured or suspended).
+	if s.capture, err = hasTable(ctx, s.writer, "view_clock"); err != nil {
+		return nil, err
+	}
+	if err := s.openViewAudit(ctx); err != nil {
 		return nil, err
 	}
 	switch cfg.mode {
@@ -328,6 +369,7 @@ func open(ctx context.Context, cfg config) (_ *Store, err error) {
 	if s.reader, err = openDB(dbPath, true); err != nil {
 		return nil, err
 	}
+	s.dbPath = dbPath
 	s.reader.SetMaxOpenConns(4)
 	if err := s.checkPragmas(ctx, s.reader, true); err != nil {
 		return nil, err
@@ -346,13 +388,14 @@ func open(ctx context.Context, cfg config) (_ *Store, err error) {
 	if err := s.checkHeads(ctx); err != nil {
 		return nil, err
 	}
+	s.observeOpening()
 	return s, nil
 }
 
 func openDB(path string, readOnly bool) (*sql.DB, error) {
 	q := url.Values{}
 	for _, p := range []string{"journal_mode(WAL)", "synchronous(FULL)", "fullfsync(1)", "checkpoint_fullfsync(1)",
-		"foreign_keys(1)", "busy_timeout(5000)", "trusted_schema(0)"} {
+		"foreign_keys(1)", "busy_timeout(5000)", "trusted_schema(0)", fmt.Sprintf("journal_size_limit(%d)", walSizeLimit)} {
 		q.Add("_pragma", p)
 	}
 	if readOnly {
@@ -378,7 +421,8 @@ func (s *Store) Pragmas(ctx context.Context, reader bool) (map[string]string, er
 		db = s.reader
 	}
 	out := map[string]string{}
-	for _, p := range []string{"journal_mode", "synchronous", "fullfsync", "checkpoint_fullfsync", "foreign_keys", "trusted_schema", "query_only"} {
+	for _, p := range []string{"journal_mode", "synchronous", "fullfsync", "checkpoint_fullfsync", "foreign_keys", "trusted_schema", "query_only",
+		"journal_size_limit"} {
 		var v string
 		if err := db.QueryRowContext(ctx, "PRAGMA "+p).Scan(&v); err != nil {
 			return nil, err
@@ -390,7 +434,7 @@ func (s *Store) Pragmas(ctx context.Context, reader bool) (map[string]string, er
 
 func (s *Store) checkPragmas(ctx context.Context, db *sql.DB, reader bool) error {
 	want := map[string]string{"journal_mode": "wal", "synchronous": "2", "fullfsync": "1", "checkpoint_fullfsync": "1",
-		"foreign_keys": "1", "trusted_schema": "0", "query_only": "0"}
+		"foreign_keys": "1", "trusted_schema": "0", "query_only": "0", "journal_size_limit": strconv.Itoa(walSizeLimit)}
 	if reader {
 		want["query_only"] = "1"
 	}
@@ -461,6 +505,11 @@ func (s *Store) Close() error {
 	if s.reader != nil {
 		errs = append(errs, s.reader.Close())
 	}
+	s.verifyMu.Lock()
+	if s.verify != nil {
+		errs = append(errs, s.verify.Close())
+	}
+	s.verifyMu.Unlock()
 	if s.writer != nil {
 		errs = append(errs, s.writer.Close())
 	}

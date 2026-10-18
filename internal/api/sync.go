@@ -20,7 +20,8 @@ func (s *Server) syncRoutes() {
 	s.route("/v1/pull", endpoint{method: http.MethodPost, auth: authSync, handle: (*request).pull})
 	s.route("/v1/snapshot", endpoint{method: http.MethodPost, auth: authSync, handle: (*request).snapshot})
 	s.route("/v1/secrets/{id}", endpoint{method: http.MethodGet, auth: authSync, handle: (*request).secret})
-	s.route("/v1/refresh", endpoint{method: http.MethodPost, auth: authSync, handle: (*request).refresh})
+	s.route("/v1/refresh", endpoint{method: http.MethodPost, auth: authSync, handle: (*request).refresh},
+		endpoint{method: http.MethodGet, auth: authSync, handle: (*request).refreshStatus})
 	s.recoveryRoutes()
 }
 

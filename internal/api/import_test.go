@@ -4,6 +4,7 @@ import (
 	"crypto/sha256"
 	"encoding/base64"
 	"encoding/hex"
+	"encoding/json"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -117,4 +118,88 @@ func TestImportUploadLimits(t *testing.T) {
 
 func itoa(n int) string {
 	return string(rune('0' + n))
+}
+
+// importOverHTTP uploads a backup the way the web does and follows it to its
+// end, returning the final status.
+func (e *env) importOverHTTP(session string, data []byte) *response {
+	e.t.Helper()
+	sum := sha256.Sum256(data)
+	reserve := map[string]any{"kind": "android_db", "fingerprint": hex.EncodeToString(sum[:]), "size": len(data),
+		"file_name": "AntennaPodBackup.db"}
+	id := e.do(http.MethodPost, "/v1/import", reserve, browser(session)).must(http.StatusCreated).str("import_id")
+	e.do(http.MethodPut, "/v1/import/"+id+"/chunks/0", map[string]any{"data": base64.StdEncoding.EncodeToString(data)},
+		browser(session)).must(http.StatusOK)
+	e.do(http.MethodPost, "/v1/import/"+id+"/finish", nil, browser(session)).must(http.StatusOK)
+	deadline := time.Now().Add(30 * time.Second)
+	for {
+		got := e.do(http.MethodGet, "/v1/import/"+id, nil, browser(session)).must(http.StatusOK)
+		if s := got.str("status"); s == "published" || s == "failed" {
+			return got
+		}
+		if time.Now().After(deadline) {
+			e.t.Fatalf("import still %s", got.str("status"))
+		}
+		time.Sleep(20 * time.Millisecond)
+	}
+}
+
+// An Android backup's stored chapters come back through the read API exactly
+// as the backup holds them (PROTOCOL §11.5: SimpleChapters in id order, the
+// flag and rows deciding; a merged episode keeps the first stored list among
+// its rows), and the import result names what stays on the device:
+// changed per-podcast settings and unplayed episodes stopped from downloading
+// automatically.
+func TestImportedChaptersAndWhatIsNotCarried(t *testing.T) {
+	e := newEnv(t, withReads(t), withImports(t))
+	session, account := e.setupAdmin("owner", "correct horse battery")
+	e.registerWeb(session, newID(), newID()).must(http.StatusOK)
+	r := &readEnv{env: e, session: session, account: account, web: browser(session)}
+	data, err := os.ReadFile("../../contract/vectors/import/device-only.db")
+	if err != nil {
+		t.Fatal(err)
+	}
+	got := r.env.importOverHTTP(r.session, data)
+	if got.str("status") != "published" {
+		t.Fatalf("import %s", got.raw)
+	}
+	nc, _ := json.Marshal(got.obj("result")["not_carried"])
+	want := `{"episode_auto_download_off":3,"podcasts":[{"settings":["custom_title","tags","playback_speed","skip_silence",` +
+		`"skip_intro","skip_ending","volume_adaptation","episode_notification","auto_delete","auto_download_filter",` +
+		`"episode_list_filter","sort_order"],"source_feed_id":2,"title":"My Settings Show",` +
+		`"url":"https://settings.example.invalid/feed.xml"}]}`
+	if string(nc) != want {
+		t.Errorf("not carried %s\nwant        %s", nc, want)
+	}
+	list := r.get("/v1/read/episodes?filter=include_subscribed,include_archived,include_not_subscribed").must(http.StatusOK)
+	byTitle := map[string]string{}
+	for _, it := range items(t, list) {
+		byTitle[it["title"].(string)] = it["episode_id"].(string)
+	}
+	for title, want := range map[string]string{
+		"Chapters out of order": `[{"image_url":"https://chapters.example.invalid/2.jpg","link":"https://chapters.example.invalid/2","start":"60000","title":"Second"},` +
+			`{"image_url":null,"link":null,"start":"0","title":"First"},{"image_url":null,"link":null,"start":"60000","title":"Second, again"}]`,
+		"Flag without rows":     `null`, // DBReader: no rows is no chapters
+		"Stale rows, flag 0":    `null`,
+		"Stale rows, flag NULL": `null`,
+		// Merged episodes (titled by their first row in date order) keep the
+		// first stored list among their rows.
+		"Two rows (first)":                `[{"image_url":null,"link":null,"start":"0","title":"Row seven"}]`,
+		"Merged: no chapters first":       `[{"image_url":null,"link":null,"start":"0","title":"Second row's"}]`,
+		"Merged: chapters first":          `[{"image_url":null,"link":null,"start":"0","title":"First row's"}]`,
+		"Merged: flag without rows first": `[{"image_url":null,"link":null,"start":"5000","title":"After an empty flag"}]`,
+		"Odd chapters": `[{"image_url":null,"link":null,"start":"0","title":null},` +
+			`{"image_url":null,"link":"https://chapters.example.invalid/c","start":"1234567","title":"Precise"}]`,
+	} {
+		id := byTitle[title]
+		if id == "" {
+			t.Fatalf("no episode %q in %v", title, byTitle)
+		}
+		ep := r.get("/v1/read/episodes/" + id).must(http.StatusOK).obj("episode")
+		meta, _ := ep["metadata"].(map[string]any)
+		chapters, _ := json.Marshal(meta["chapters"])
+		if string(chapters) != want {
+			t.Errorf("%s: chapters %s\nwant %s", title, chapters, want)
+		}
+	}
 }

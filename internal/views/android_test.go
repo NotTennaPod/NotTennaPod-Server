@@ -19,6 +19,7 @@ import (
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/sealed"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/storage"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/views"
+	"github.com/NotTennaPod/NotTennaPod-Server/internal/views/viewstest"
 )
 
 // The oracle is Android itself: an Android 3.12.1 database (made on the
@@ -162,6 +163,9 @@ func copyFile(t *testing.T, from, to string) {
 // positions, favorites, a queue (never of NEW episodes: queueing clears NEW),
 // history and statistics, feed states, and colliding titles, dates,
 // durations, sizes and links for ties.
+// mutateNow is the time the mutated libraries' dates count back from.
+var mutateNow = viewstest.FixedNow
+
 func mutate(t *testing.T, db *sql.DB, r *rand.Rand) {
 	exec := func(q string, args ...any) {
 		if _, err := db.Exec(q, args...); err != nil {
@@ -186,7 +190,7 @@ func mutate(t *testing.T, db *sql.DB, r *rand.Rand) {
 	}
 	titles := []string{"alpha", "Alpha", "beta", "Émile", "zeta", "Zeta", "éclair", "10 things", "2 things", "alpha"}
 	links := []any{nil, "https://example.com/a", "https://example.com/B", "https://example.com/b", nil}
-	base := time.Now().UnixMilli()
+	base := mutateNow // fixed, so that a seed replays exactly
 	days := func(n int) int64 { return base - int64(n)*24*3600*1000 }
 	for _, f := range ids("SELECT id FROM Feeds WHERE download_url NOT LIKE 'antennapod_local:%'") {
 		exec("UPDATE Feeds SET state = ? WHERE id = ?", []int{0, 0, 0, 1, 2}[r.IntN(5)], f)
@@ -262,7 +266,7 @@ func importLibrary(t *testing.T, path string) imported {
 	if err != nil {
 		t.Fatal(err)
 	}
-	pods, err := importer.Apply(ctx, svc, account, plan, 0)
+	pods, err := importer.Apply(ctx, svc, account, plan, 0, nil)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -280,14 +284,73 @@ func importLibrary(t *testing.T, path string) imported {
 			}
 		}
 	}
+	out.lib = throughApply(t, store, account)
+	return out
+}
+
+// throughApply returns the account's library as the apply makes it: every
+// podcast and episode the account has is changed (a record's provenance)
+// in one commit, and the version before it advanced by that commit; it
+// equals a full build.
+func throughApply(t *testing.T, store *storage.Store, account string) *views.Library {
+	t.Helper()
+	ctx := context.Background()
+	var base *views.Version
+	var rows []storage.RecordRow
 	if err := store.Read(ctx, func(r *storage.ReadTx) error {
 		var err error
-		out.lib, err = views.Load(r.Account(account))
+		if base, err = views.BuildVersion(r.Account(account), account); err != nil {
+			return err
+		}
+		rows, err = r.Account(account).ViewRecords()
 		return err
 	}); err != nil {
 		t.Fatal(err)
 	}
-	return out
+	if err := store.Write(ctx, func(tx *storage.WriteTx) error {
+		a := tx.Account(account)
+		touched := map[string]bool{}
+		for _, r := range rows {
+			if k := r.Entity + r.EntityID; !touched[k] && r.Entity != "account" {
+				touched[k] = true
+				full, err := a.Record(r.Entity, r.EntityID, r.FieldGroup)
+				if err != nil {
+					return err
+				}
+				full.Provenance = `["touched"]`
+				if err := a.PutRecord(full); err != nil {
+					return err
+				}
+			}
+		}
+		return nil
+	}); err != nil {
+		t.Fatal(err)
+	}
+	var lib *views.Library
+	if err := store.Read(ctx, func(r *storage.ReadTx) error {
+		acct := r.Account(account)
+		v, path, err := views.Advance(base, acct, account)
+		if err != nil {
+			return err
+		}
+		if path != views.PathApply {
+			return fmt.Errorf("the library was a %s", path)
+		}
+		full, err := views.BuildVersion(acct, account)
+		if err != nil {
+			return err
+		}
+		if err := views.EqualVersions(v, full); err != nil {
+			return err
+		}
+		head, err := acct.Head()
+		lib = &views.Library{Head: head, V: v}
+		return err
+	}); err != nil {
+		t.Fatal(err)
+	}
+	return lib
 }
 
 func TestEpisodeListsMatchAndroid(t *testing.T) {
@@ -332,7 +395,7 @@ func TestEpisodeListsMatchAndroid(t *testing.T) {
 						}
 						rows.Close()
 						var got []string
-						for _, e := range imp.lib.EpisodesWhere(filter, order, "") {
+						for _, e := range allRows(imp.lib.Episodes(views.ListQuery{Filter: filter, Order: order})) {
 							if !imp.merged[e.ID] {
 								got = append(got, e.ID)
 							}
@@ -410,7 +473,13 @@ func queryIDs(t *testing.T, db *sql.DB, q string, args ...any) []int64 {
 // The queue, the navigation and podcast counters, the statistics and Home's
 // continue-listening section, against Android's SQL.
 func TestScreensMatchAndroid(t *testing.T) {
+	recent := map[string]int64{} // the 100-day window's played time, by fixture
 	for _, base := range []string{"emulator-parity-library.db", "authentication-preview-library.db"} {
+		defer func() {
+			if !t.Failed() && recent[base] == 0 {
+				t.Errorf("%s: no seed played anything in the 100-day window: the window checks nothing", base)
+			}
+		}()
 		for seed := uint64(1); seed <= 6; seed++ {
 			t.Run(fmt.Sprintf("%s/%d", base, seed), func(t *testing.T) {
 				path := filepath.Join(t.TempDir(), "AntennaPodBackup.db")
@@ -434,7 +503,7 @@ func TestScreensMatchAndroid(t *testing.T) {
 				// The queue, in Android's order.
 				want := ep(queryIDs(t, db, "SELECT feeditem FROM Queue ORDER BY id"))
 				var got []string
-				for _, e := range lib.Queue {
+				for _, e := range allRows(lib.Queue()) {
 					got = append(got, e.ID)
 				}
 				if strings.Join(got, ",") != strings.Join(want, ",") {
@@ -452,7 +521,8 @@ func TestScreensMatchAndroid(t *testing.T) {
 					if err := db.QueryRow("SELECT feed FROM FeedItems WHERE id = ?", item).Scan(&feed); err != nil {
 						t.Fatal(err)
 					}
-					p := lib.ByID[e].Podcast.ID
+					shown, _ := lib.Episode(e)
+					p := shown.PodcastID
 					if feedsOf[p] == nil {
 						feedsOf[p] = map[int64]bool{}
 					}
@@ -490,8 +560,9 @@ func TestScreensMatchAndroid(t *testing.T) {
 						}
 					}
 				}
-				// Statistics per podcast.
-				now := time.Now().UnixMilli()
+				// Statistics per podcast, at the clock the library's dates
+				// count from (mutate).
+				now := mutateNow
 				windows := [][2]int64{{0, 1<<63 - 1}, {now - 100*24*3600*1000, now}, {now - 3*365*24*3600*1000, 1<<63 - 1}}
 				for _, marked := range []bool{false, true} {
 					for _, w := range windows {
@@ -499,6 +570,11 @@ func TestScreensMatchAndroid(t *testing.T) {
 							continue // Android shows marked-as-played statistics for all time only
 						}
 						android := androidStatistics(t, db, marked, w[0], w[1])
+						if w == windows[1] && !marked {
+							for _, a := range android {
+								recent[base] += a[2] // the 100-day window's played time
+							}
+						}
 						st := lib.Statistics(w[0], w[1], marked, now)
 						seen := 0
 						for _, row := range st.Podcasts {

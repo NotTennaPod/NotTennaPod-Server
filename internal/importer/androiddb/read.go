@@ -78,7 +78,28 @@ type Feed struct {
 	KeepUpdated       bool
 	State             int32 // 0 subscribed, 1 not subscribed (preview), 2 archived
 	NewEpisodesAction int32 // 0 global, 1 inbox, 2 nothing, 3 queue
+	Settings          Settings
 	Episodes          []Episode
+}
+
+// Settings are a feed's device-only settings (PROTOCOL §1.4: never synced
+// or imported), read as Android's FeedCursor and FeedPreferencesCursor read
+// them, so the import result can name the ones a person changed.
+type Settings struct {
+	AutoDownload        int32   // FeedPreferences.AutoDownloadSetting: 0 never, 1 global, 2 always
+	AutoDeleteAction    int32   // 0 global, 1 always, 2 never
+	PlaybackSpeed       float64 // -1: the global speed
+	SkipSilence         int32   // 0 off, 1 global, 2 aggressive
+	VolumeAdaption      int32   // 0 off, 1 to 5 a reduction or boost
+	IncludeFilter       *string // the automatic-download episode filter
+	ExcludeFilter       *string
+	MinimalDuration     int32 // seconds; -1: none
+	SkipIntro           int32 // seconds
+	SkipEnding          int32 // seconds
+	EpisodeNotification bool
+	Tags                *string // U+001E-separated; empty: the root tag only
+	SortOrder           *string // SortOrder code; NULL: the global order
+	Hide                *string // the episode list's FeedItemFilter
 }
 
 // Local reports a local-folder feed, which the import skips.
@@ -101,7 +122,22 @@ type Episode struct {
 	TranscriptType *string
 	SocialURL      *string
 	Favorite       bool
-	Media          *Media
+	// AutoDownload is FeedItems.auto_download > 0 (FeedItemCursor): false when
+	// a person stopped this episode from downloading automatically. Device-only.
+	AutoDownload bool
+	// Chapters are the stored chapters (SimpleChapters) when
+	// has_simple_chapters is set, in id order; nil when the flag is not set
+	// (whatever rows exist) or no rows are stored, as Android loads them.
+	Chapters []Chapter
+	Media    *Media
+}
+
+// Chapter is a SimpleChapters row.
+type Chapter struct {
+	Start    int64 // milliseconds
+	Title    *string
+	Link     *string
+	ImageURL *string
 }
 
 // Media is a FeedMedia row.
@@ -328,7 +364,9 @@ func mapLibrary(ctx context.Context, db *sql.DB) (*Library, error) {
 	// others, generated ones included, of any size.
 	feeds, err := named(ctx, db, `SELECT id, title, custom_title, type, link, description, author, image_url, language,
 		payment_link, feed_identifier, last_update, is_paged, next_page_link, username, password, keep_updated,
-		download_url, state, new_episodes_action FROM Feeds ORDER BY id`)
+		download_url, state, new_episodes_action, auto_download, auto_delete_action, feed_playback_speed, feed_skip_silence,
+		feed_volume_adaption, include_filter, exclude_filter, minimal_duration_filter, feed_skip_intro, feed_skip_ending,
+		episode_notification, tags, sort_order, hide FROM Feeds ORDER BY id`)
 	if err != nil {
 		return nil, err
 	}
@@ -339,6 +377,13 @@ func mapLibrary(ctx context.Context, db *sql.DB) (*Library, error) {
 			Language: r.str("language"), PaymentLink: r.str("payment_link"), FeedIdentifier: r.str("feed_identifier"),
 			LastUpdate: r.str("last_update"), IsPaged: r.int("is_paged") > 0, NextPageLink: r.str("next_page_link"),
 			Username: r.str("username"), Password: r.str("password"), KeepUpdated: r.int("keep_updated") > 0,
+			Settings: Settings{AutoDownload: r.int("auto_download"), AutoDeleteAction: r.int("auto_delete_action"),
+				PlaybackSpeed: r.float("feed_playback_speed"), SkipSilence: r.int("feed_skip_silence"),
+				VolumeAdaption: r.int("feed_volume_adaption"), IncludeFilter: r.str("include_filter"),
+				ExcludeFilter: r.str("exclude_filter"), MinimalDuration: r.int("minimal_duration_filter"),
+				SkipIntro: r.int("feed_skip_intro"), SkipEnding: r.int("feed_skip_ending"),
+				EpisodeNotification: r.int("episode_notification") > 0, Tags: r.str("tags"), SortOrder: r.str("sort_order"),
+				Hide: r.str("hide")},
 		}
 		if u := r.str("download_url"); u != nil {
 			f.URL = *u
@@ -389,10 +434,23 @@ func mapLibrary(ctx context.Context, db *sql.DB) (*Library, error) {
 	for _, r := range favRows {
 		favorites[r.long("feeditem")] = true
 	}
+	// Stored chapters in id order: Android's query (PodDBAdapter
+	// getSimpleChaptersOfFeedItemCursor) has no ORDER BY and reads them in
+	// rowid order through SimpleChapters_feeditem.
+	chapters := map[int64][]Chapter{}
+	chapterRows, err := named(ctx, db, "SELECT id, feeditem, start, title, link, image_url FROM SimpleChapters ORDER BY id")
+	if err != nil {
+		return nil, err
+	}
+	for _, r := range chapterRows {
+		item := r.long("feeditem")
+		chapters[item] = append(chapters[item], Chapter{Start: r.long("start"), Title: r.str("title"), Link: r.str("link"),
+			ImageURL: r.str("image_url")})
+	}
 	episodeFeed := map[int64]int64{}
 	items, err := named(ctx, db, `SELECT id, feed, item_identifier, title, pubDate, read, link, description, image_url,
 		payment_link, podcastindex_chapter_url, podcastindex_transcript_url, podcastindex_transcript_type,
-		social_interact_url FROM FeedItems ORDER BY id`)
+		social_interact_url, has_simple_chapters, auto_download FROM FeedItems ORDER BY id`)
 	if err != nil {
 		return nil, err
 	}
@@ -410,7 +468,13 @@ func mapLibrary(ctx context.Context, db *sql.DB) (*Library, error) {
 		e := Episode{ID: id, FeedID: feedID, GUID: r.str("item_identifier"), Title: r.str("title"), PubDate: r.long("pubDate"),
 			Link: r.str("link"), Description: r.str("description"), ImageURL: r.str("image_url"), PaymentLink: r.str("payment_link"),
 			ChapterURL: r.str("podcastindex_chapter_url"), TranscriptURL: r.str("podcastindex_transcript_url"),
-			TranscriptType: r.str("podcastindex_transcript_type"), SocialURL: r.str("social_interact_url"), Favorite: favorites[id]}
+			TranscriptType: r.str("podcastindex_transcript_type"), SocialURL: r.str("social_interact_url"), Favorite: favorites[id],
+			AutoDownload: r.long("auto_download") > 0}
+		// FeedItemCursor: getInt(...) > 0; DBReader.loadChaptersOfFeedItem:
+		// no rows is no chapters (null).
+		if r.int("has_simple_chapters") > 0 && len(chapters[id]) > 0 {
+			e.Chapters = append([]Chapter{}, chapters[id]...)
+		}
 		switch r.int("read") {
 		case -1:
 			e.Read = -1
@@ -495,6 +559,24 @@ func (r row) long(name string) int64 {
 }
 
 func (r row) int(name string) int32 { return int32(r.long(name)) }
+
+// float reads as Cursor.getFloat: NULL is 0, text holding a number is that
+// number.
+func (r row) float(name string) float64 {
+	switch v := r[name].(type) {
+	case int64:
+		return float64(float32(v))
+	case float64:
+		return float64(float32(v))
+	case string:
+		f, err := strconv.ParseFloat(strings.TrimSpace(v), 32)
+		if err != nil {
+			return 0
+		}
+		return float64(float32(f))
+	}
+	return 0
+}
 
 func (r row) str(name string) *string {
 	var s string

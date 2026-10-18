@@ -91,7 +91,7 @@ func (req *request) mediaFail(e *media.Error) (int, any, error) {
 	if e.RetryAfter > 0 {
 		req.w.Header().Set("Retry-After", strconv.FormatInt(e.RetrySeconds(), 10))
 	}
-	writeJSON(req.w, e.Status, e.Body())
+	writeJSON(req.w, nil, e.Status, e.Body()) // media responses are never compressed
 	return 0, streamed{}, nil
 }
 
@@ -138,12 +138,11 @@ func (req *request) mediaPost() (int, any, error) {
 			return 0, nil, invalid(`Capabilities are canPlayType answers: "", "maybe" or "probably".`)
 		}
 	}
-	lib, err := req.library()
-	if err != nil {
-		return 0, nil, err
-	}
-	ep, err := req.mediaEpisode(lib, req.r.PathValue("a"))
-	if err != nil {
+	var ep media.Episode
+	if err := req.resolve(func(lib *views.Library) (err error) {
+		ep, err = req.mediaEpisode(lib, req.r.PathValue("a"))
+		return err
+	}); err != nil {
 		return 0, nil, err
 	}
 	d, err := req.s.cfg.Media.Play(req.ctx, ep, body)
@@ -165,48 +164,35 @@ func (req *request) mediaPost() (int, any, error) {
 	return http.StatusOK, d, nil
 }
 
-// episodeSource is the enclosure the relay fetches (PROTOCOL §13): the
-// canonical metadata.media.url, else the occurrence's enclosure_url.
-func episodeSource(e *views.Episode) (source, declared string) {
-	if m, ok := e.Records["metadata"].Field("media").(map[string]any); ok {
-		source, _ = m["url"].(string)
-		declared, _ = m["mime_type"].(string)
-	}
-	if source == "" {
-		source, _ = e.Occurrence["enclosure_url"].(string)
-	}
-	return source, declared
-}
+// The media checks look up only their own episode or podcast in the
+// library's version (Library.Episode, Library.Podcast: O(log n)); an episode
+// the library does not show (not stored, or of a podcast it does not show)
+// is not found. An episode's source is the enclosure the relay fetches
+// (PROTOCOL §13): the canonical metadata.media.url, else the occurrence's
+// enclosure_url (EpisodeItem.SourceURL).
 
 // mediaEpisode resolves an episode the account holds for the descriptor.
 func (req *request) mediaEpisode(lib *views.Library, id string) (media.Episode, error) {
-	e := lib.ByID[id]
+	e, p := lib.Episode(id)
 	if e == nil {
 		return media.Episode{}, errNoEntity
 	}
-	source, declared := episodeSource(e)
-	if source == "" {
+	if e.SourceURL == "" {
 		return media.Episode{}, fail(http.StatusNotFound, "not_found", "This episode has no media file.")
 	}
-	creds, err := req.feedCredentials(e.Podcast)
+	creds, err := req.feedCredentials(p)
 	if err != nil {
 		return media.Episode{}, err
 	}
 	return media.Episode{Account: req.principal.accountID(), Credential: req.credentialID(), ID: e.ID,
-		SourceURL: source, DeclaredType: declared, DurationMS: e.Duration, SecretID: secretID(e.Podcast), Credentials: creds}, nil
-}
-
-// secretID is the podcast's current credential secret, "" without.
-func secretID(p *views.Podcast) string {
-	id, _ := p.Records["credentials"].Field("secret_id").(string)
-	return id
+		SourceURL: e.SourceURL, DeclaredType: e.DeclaredType, DurationMS: e.Duration, SecretID: p.SecretID, Credentials: creds}, nil
 }
 
 // feedCredentials are the podcast's credentials with the origins they may
 // go to (PROTOCOL §9.4): the secret's approved origins, else the origin of the URL
 // the user had set when the secret was set.
-func (req *request) feedCredentials(p *views.Podcast) (*feed.Credentials, error) {
-	id := secretID(p)
+func (req *request) feedCredentials(p *views.PodcastItem) (*feed.Credentials, error) {
+	id := p.SecretID
 	svc := req.s.cfg.Protocol
 	if id == "" || svc == nil || svc.Box == nil {
 		return nil, nil
@@ -255,6 +241,25 @@ func (req *request) mediaGet() (int, any, error) {
 	return 0, nil, errNotFound
 }
 
+// resolve runs find on the account's library before anything is fetched or
+// sent: again from a new snapshot if a purge made the library invalid
+// meanwhile (views.Cache.Valid).
+func (req *request) resolve(find func(lib *views.Library) error) error {
+	for range 3 {
+		lib, h, err := req.admitted(nil)
+		if err != nil {
+			return err
+		}
+		err = find(lib)
+		valid := req.s.libraries.Valid(req.principal.accountID(), lib)
+		h.Release()
+		if valid {
+			return err
+		}
+	}
+	return errBusy
+}
+
 // mediaToken finds the session's token and re-checks it: the episode must
 // still be the account's, with the same enclosure and credentials.
 func (req *request) mediaToken(id string) (media.Token, error) {
@@ -263,16 +268,18 @@ func (req *request) mediaToken(id string) (media.Token, error) {
 	if !ok {
 		return k, errNotFound
 	}
-	lib, err := req.library()
-	if err != nil {
+	var e *views.EpisodeItem
+	var p *views.PodcastItem
+	if err := req.resolve(func(lib *views.Library) error {
+		e, p = lib.Episode(k.Episode())
+		return nil
+	}); err != nil {
 		return k, err
 	}
-	e := lib.ByID[k.Episode()]
 	if e == nil {
 		return k, errNotFound
 	}
-	source, _ := episodeSource(e)
-	if normalized, _ := media.NormalizeSource(source); normalized != k.Source() || secretID(e.Podcast) != k.CredentialRevision() {
+	if normalized, _ := media.NormalizeSource(e.SourceURL); normalized != k.Source() || p.SecretID != k.CredentialRevision() {
 		return k, m.Changed(k)
 	}
 	return k, nil
@@ -317,29 +324,30 @@ func (req *request) episodeAsset(id, kind string) (int, any, error) {
 	if _, err := req.query(); err != nil {
 		return 0, nil, err
 	}
-	lib, err := req.library()
-	if err != nil {
+	var e *views.EpisodeItem
+	var p *views.PodcastItem
+	if err := req.resolve(func(lib *views.Library) error {
+		e, p = lib.Episode(id)
+		return nil
+	}); err != nil {
 		return 0, nil, err
 	}
-	e := lib.ByID[id]
 	if e == nil {
 		return 0, nil, errNoEntity
 	}
-	meta := e.Records["metadata"]
 	var source, declared string
 	switch kind {
 	case media.AssetImage:
-		source, _ = meta.Field("image_url").(string)
+		source = e.ImageURL
 		if source == "" {
-			source = e.Podcast.ImageURL
+			source = p.ImageURL
 		}
 	case media.AssetChapters:
-		source, _ = meta.Field("chapter_url").(string)
+		source = e.ChapterURL
 	case media.AssetTranscript:
-		source, _ = meta.Field("transcript_url").(string)
-		declared, _ = meta.Field("transcript_type").(string)
+		source, declared = e.TranscriptURL, e.TranscriptType
 	}
-	return req.asset(e.Podcast, kind, source, declared)
+	return req.asset(p, kind, source, declared)
 }
 
 // podcastImage serves a podcast's artwork.
@@ -347,18 +355,20 @@ func (req *request) podcastImage() (int, any, error) {
 	if _, err := req.query(); err != nil {
 		return 0, nil, err
 	}
-	lib, err := req.library()
-	if err != nil {
+	var p *views.PodcastItem
+	if err := req.resolve(func(lib *views.Library) error {
+		p = lib.Podcast(req.r.PathValue("id"))
+		return nil
+	}); err != nil {
 		return 0, nil, err
 	}
-	p := lib.Podcasts[req.r.PathValue("id")]
 	if p == nil {
 		return 0, nil, errNoEntity
 	}
 	return req.asset(p, media.AssetImage, p.ImageURL, "")
 }
 
-func (req *request) asset(p *views.Podcast, kind, source, declared string) (int, any, error) {
+func (req *request) asset(p *views.PodcastItem, kind, source, declared string) (int, any, error) {
 	if source == "" {
 		return 0, nil, fail(http.StatusNotFound, "not_found", "This episode has no "+kind+".")
 	}

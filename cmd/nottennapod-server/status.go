@@ -18,12 +18,14 @@ import (
 )
 
 // serviceInfo assembles the service page (PROTOCOL §14): version and
-// uptime, the data directory and database, backups and the keys, the
-// refresh schedule, the listen address, and warnings. It holds no
+// uptime, the data directory and database, backups (daily, on-demand and the
+// databases restores kept) and the keys, the refresh schedule, the listen
+// address, and warnings. It holds no
 // credentials; backup errors name only files and folders.
 type serviceInfo struct {
 	store     *storage.Store
 	backups   *backupsched.Scheduler // nil when daily backups are off
+	backupDir string                 // --backup-dir; default <data-dir>/backups
 	refresher *refresh.Refresher
 	imports   *importer.Runner
 	started   time.Time
@@ -85,6 +87,17 @@ func (si *serviceInfo) report(ctx context.Context) (any, error) {
 	} else {
 		out["backups"] = nil
 	}
+	// The copies never deleted automatically, also with daily backups off:
+	// on-demand backups and the databases restores kept (PROTOCOL §14).
+	backupDir := si.backupDir
+	if si.backups != nil {
+		backupDir = si.backups.Status().Dir
+	} else if backupDir == "" {
+		backupDir = filepath.Join(si.store.Dir(), "backups")
+	}
+	usage := backupsched.GetUsage(backupDir, si.store.Dir())
+	out["manual_backups"] = usage.Manual
+	out["pre_restore"] = usage.PreRestore
 	if si.refresher != nil {
 		if rs, err := si.refresher.ScheduleStatus(ctx); err == nil {
 			out["refresh"] = rs

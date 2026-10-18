@@ -43,11 +43,13 @@ var fastParams = auth.Params{Memory: 1024, Time: 1, Threads: 1}
 // fakeClock starts at the real time (the store stamps rows with the real clock)
 // and moves only when a test advances it.
 type fakeClock struct {
-	mu  sync.Mutex
-	now time.Time
+	mu   sync.Mutex
+	now  time.Time
+	next oneShot // a test's action at the clock's next reading
 }
 
 func (c *fakeClock) Now() time.Time {
+	c.next.run()
 	c.mu.Lock()
 	defer c.mu.Unlock()
 	return c.now
@@ -110,6 +112,11 @@ func newEnv(t *testing.T, opts ...func(*Config)) *env {
 	}
 	if e.srv, err = New(cfg); err != nil {
 		t.Fatal(err)
+	}
+	if cfg.Protocol != nil {
+		// A recovery upload's job may outlast its request: it ends before
+		// the store closes and the data directory goes.
+		t.Cleanup(cfg.Protocol.WaitRecoveryJobsForTest)
 	}
 	return e
 }
@@ -260,6 +267,8 @@ var errorStatus = map[string][]int{
 	"method_not_allowed":      {405},
 	"unsupported_media_type":  {415},
 	"password_incorrect":      {400},
+	"passphrase_invalid":      {400},
+	"passphrase_weak":         {400},
 	"unauthorized":            {401},
 	"forbidden":               {403},
 	"rate_limited":            {429},

@@ -166,19 +166,19 @@ func (req *request) recheck(cred storage.Credential, err error) (storage.Credent
 	if err != nil {
 		return storage.Credential{}, err
 	}
-	if cred.ExpiresAt != nil && req.s.cfg.Now().UnixMilli() >= *cred.ExpiresAt {
+	// The rules are storage's (Credential.Refusal), which a recovery job's
+	// publication applies to its stored credential too.
+	refusal := cred.Refusal(req.s.cfg.Now().UnixMilli())
+	switch refusal {
+	case storage.CredentialSignedOut:
 		return storage.Credential{}, errUnauthorized
-	}
-	if cred.AccountState != "active" {
+	case storage.CredentialInactive:
 		return storage.Credential{}, errForbidden
-	}
-	if cred.Installation != nil && cred.Installation.RevokedAt != nil {
-		return storage.Credential{}, errUnauthorized
 	}
 	if req.endpoint.auth == authAdmin && !cred.IsAdmin {
 		return storage.Credential{}, errForbidden
 	}
-	if cred.Installation != nil && cred.Installation.SupersededBy != "" && !req.endpoint.supersededOK {
+	if refusal == storage.CredentialSuperseded && !req.endpoint.supersededOK {
 		return storage.Credential{}, fail(http.StatusConflict, "installation_superseded", "This installation was replaced; use its successor.")
 	}
 	return cred, nil

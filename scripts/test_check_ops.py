@@ -9,7 +9,6 @@ import subprocess
 import sys
 import tempfile
 import unittest
-from unittest.mock import patch
 
 import check_ops
 
@@ -75,8 +74,6 @@ if "./internal/ops" not in args:
         body("TestRaceOnly")
         emit("pass")
     sys.exit(0)
-if failure == "deadline":
-    signal.pause()
 if failure == "invalid-json":
     print("not JSON")
     sys.exit(0)
@@ -121,7 +118,7 @@ class RunnerTests(unittest.TestCase):
             "tops": ["TestRuleVectors", "TestPlain", "TestQueueReplayMeasure",
                      "TestUnsubscribeManyEpisodeScopes", "TestHistoryClearAndResetLoad",
                      "TestLongOfflineSessionUpload", "TestRebuildLoad", "TestRotationPerformance",
-                     "TestSortedAddWithLongQueueHistory", "TestConcentratedHistoryIsStaged"],
+                     "TestSortedAddWithLongQueueHistory", "TestConcentratedHistoryIsStaged", "TestQueueEditWorkBudget"],
             "cases": [],
             "race_skips": {
                 "TestUnsubscribeManyEpisodeScopes": "load test (make check runs it without the race detector)",
@@ -131,6 +128,7 @@ class RunnerTests(unittest.TestCase):
                 "TestRotationPerformance": "load test",
                 "TestSortedAddWithLongQueueHistory": "load test (make check runs it without the race detector)",
                 "TestConcentratedHistoryIsStaged": "load test",
+                "TestQueueEditWorkBudget": "load test (make check runs it without the race detector)",
             },
         }
         self.add_input("contract/vectors/rules_shared.json", 1)
@@ -163,11 +161,11 @@ class RunnerTests(unittest.TestCase):
         self.assertEqual(set(manifest["unique_non_rule_top_receipts"]), set(self.config["tops"]) - {"TestRuleVectors"})
         self.assertGreater(manifest["rule_parent_setup_receipts"], 1)
         skips = [s for r in manifest["invocations"] for s in r.get("coverage", {}).get("skips", [])]
-        self.assertEqual(len(skips), 8)
+        self.assertEqual(len(skips), 9)
         for invocation in manifest["invocations"]:
             command = invocation["command"]
             self.assertIn("-count=1", command)
-            self.assertEqual(command[command.index("-timeout") + 1], "30m")
+            self.assertEqual(command[command.index("-timeout") + 1], "0")
             if invocation["label"].startswith(("top-", "rules-")):
                 self.assertIn("-race", command)
                 self.assertTrue((runner.output / invocation["stdout"]).is_file())
@@ -189,25 +187,28 @@ class RunnerTests(unittest.TestCase):
                     self.assertTrue((runner.output / invocation["stdout"]).is_file())
                     self.assertTrue((runner.output / invocation["stderr"]).is_file())
 
-    def test_invocation_deadline_fails_and_stops_process(self):
-        self.config["failure"] = "deadline"
-        runner = self.runner("rules")
-        # Only the synthetic blocked invocation uses this short deadline.
-        with patch.object(check_ops, "DEADLINE_SECONDS", 2):
-            with self.assertRaisesRegex(check_ops.CheckFailure, "deadline exceeded"), contextlib.redirect_stdout(io.StringIO()):
-                runner.run()
-        manifest = json.loads((runner.output / "coverage.json").read_text())
-        self.assertTrue(manifest["invocations"][-1]["timed_out"])
-        self.assertIsNotNone(manifest["invocations"][-1]["exit_code"])
+    def test_no_mode_limits_its_run_time(self):
+        # Every go test runs with -timeout 0, and no invocation has a deadline.
+        for mode in ("race", "rules", "loads", "other-race"):
+            with self.subTest(mode=mode):
+                manifest = self.run_quietly(self.runner(mode))
+                self.assertNotIn("deadline_seconds", manifest)
+                tests = [r["command"] for r in manifest["invocations"] if "test" in r["command"]]
+                self.assertTrue(tests)
+                for command in tests:
+                    self.assertEqual(command[command.index("-timeout") + 1], "0")
+                for invocation in manifest["invocations"]:
+                    self.assertNotIn("timed_out", invocation)
 
     def test_loads_are_all_default_nonrace_and_reject_overrides(self):
         manifest = self.run_quietly(self.runner("loads"))
         loads = [r for r in manifest["invocations"] if r["label"].startswith("load-")]
-        self.assertEqual(len(loads), 7)
+        self.assertEqual(len(loads), 8)
         self.assertEqual({r["expected_tops"][0] for r in loads}, set(self.config["race_skips"]))
         self.assertTrue(all("-race" not in r["command"] and "-short" not in r["command"] for r in loads))
-        self.assertTrue(all(r["command"][r["command"].index("-timeout") + 1] == "10m" for r in loads))
-        for variable in ("NTP_LISTEN_LOAD", "NTP_REBUILD_LOAD", "NTP_REBUILD_EPISODES", "NTP_REBUILD_STAGING", "NTP_IDENTITY_PERF"):
+        self.assertTrue(all(r["command"][r["command"].index("-timeout") + 1] == "0" for r in loads))
+        for variable in ("NTP_LISTEN_LOAD", "NTP_REBUILD_LOAD", "NTP_REBUILD_EPISODES", "NTP_REBUILD_STAGING", "NTP_IDENTITY_PERF",
+                         "NTP_QUEUE_BUDGET_MAX"):
             with self.subTest(variable=variable):
                 with self.assertRaisesRegex(check_ops.CheckFailure, "reject environment overrides"):
                     self.run_quietly(self.runner("loads", {variable: "1"}))

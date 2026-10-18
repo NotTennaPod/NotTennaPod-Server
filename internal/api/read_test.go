@@ -26,6 +26,7 @@ import (
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/sealed"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/storage"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/views"
+	"github.com/NotTennaPod/NotTennaPod-Server/internal/views/reference"
 )
 
 func init() {
@@ -67,7 +68,7 @@ func (e *env) importInto(account, fixture string) {
 	if err != nil {
 		e.t.Fatal(err)
 	}
-	if _, err := importer.Apply(ctx, e.srv.cfg.Protocol, account, plan, 0); err != nil {
+	if _, err := importer.Apply(ctx, e.srv.cfg.Protocol, account, plan, 0, nil); err != nil {
 		e.t.Fatal(err)
 	}
 	if _, err := importer.Complete(ctx, e.srv.cfg.Protocol, account, importID, "", plan); err != nil {
@@ -79,13 +80,24 @@ type readEnv struct {
 	*env
 	session, account string
 	web              opt
+	pubs             *atomic.Int64 // the read model's publications of the account's library
 }
 
-func newReadEnv(t *testing.T) *readEnv {
-	e := newEnv(t, withReads(t))
+func newReadEnv(t *testing.T, opts ...func(*Config)) *readEnv {
+	e := newEnv(t, append([]func(*Config){withReads(t)}, opts...)...)
 	session, account := e.setupAdmin("owner", "correct horse battery")
 	e.registerWeb(session, newID(), newID()).must(http.StatusOK)
-	return &readEnv{env: e, session: session, account: account, web: browser(session)}
+	r := &readEnv{env: e, session: session, account: account, web: browser(session), pubs: &atomic.Int64{}}
+	e.srv.libraries.HookForTesting(views.CacheHooks{Published: r.countPublication})
+	return r
+}
+
+// countPublication is the cache's Published hook that counts the account's
+// publications.
+func (r *readEnv) countPublication(account string, _ *views.Library) {
+	if account == r.account {
+		r.pubs.Add(1)
+	}
 }
 
 func (r *readEnv) get(path string) *response {
@@ -574,11 +586,47 @@ func TestFeedPreview(t *testing.T) {
 	if blank := post(map[string]any{"url": "  "}); blank.obj("error")["label"] == nil {
 		t.Fatalf("blank %s", blank.raw)
 	}
+	// A podcast the account removed: the preview gives the observation an
+	// explicit re-subscribe sends (PROTOCOL §7.2), which opens a fresh
+	// generation; a live podcast has none.
+	p := e.phoneOf("owner", "correct horse battery")
+	fact := func(seq int64, typ string, targets []any, payload map[string]any) map[string]any {
+		return map[string]any{"op_id": newID(), "author_id": p.author, "author_seq": seq, "dependencies": []any{}, "type": typ,
+			"type_version": 1, "client_time": time.Now().UnixMilli(), "targets": targets, "payload": payload}
+	}
+	sub := fact(1, "podcast.subscribe", []any{}, map[string]any{"feed_url": feeds.URL + "/feed.xml"})
+	var namespace string
+	_ = e.store.Read(context.Background(), func(r *storage.ReadTx) error {
+		a, err := r.GetAccount(account)
+		namespace = a.Namespace
+		return err
+	})
+	podcast := contract.PodcastID(namespace, sub["op_id"].(string))
+	generation := contract.GenerationID(namespace, podcast, sub["op_id"].(string))
+	unsub := fact(2, "podcast.unsubscribe", []any{map[string]any{"entity": "podcast", "id": podcast, "generation": generation}}, map[string]any{})
+	for _, x := range pushed(t, p.push(op{1, sub, nil}, op{2, unsub, nil})).Results {
+		if x.Status != "accepted" || !strings.Contains(string(x.Receipt), `"outcome":"applied"`) {
+			t.Fatalf("subscribe and unsubscribe: %+v", x)
+		}
+	}
+	removed := post(map[string]any{"url": feeds.URL + "/feed.xml"})
+	observed := removed.obj("observed")
+	if removed.body["podcast_id"] != podcast || observed["podcast_id"] != podcast || observed["generation_id"] != generation ||
+		observed["state"] != "removed" {
+		t.Fatalf("the removed podcast's preview %s", removed.raw)
+	}
+	again := fact(3, "podcast.subscribe", []any{}, map[string]any{"feed_url": feeds.URL + "/feed.xml", "observed": observed})
+	if x := pushed(t, p.push(op{3, again, nil})).Results[0]; x.Status != "accepted" || !strings.Contains(string(x.Receipt), `"outcome":"applied"`) {
+		t.Fatalf("re-subscribe with the observation: %+v", x)
+	}
+	if live := post(map[string]any{"url": feeds.URL + "/feed.xml"}); live.body["podcast_id"] != podcast || live.body["observed"] != nil {
+		t.Fatalf("the re-subscribed podcast's preview %s", live.raw)
+	}
 	// Once the account has the podcast, the preview says which.
 	e.importInto(account, "emulator-parity-library.db")
 	var owned string
 	_ = e.store.Read(context.Background(), func(r *storage.ReadTx) error {
-		lib, err := views.Load(r.Account(account))
+		lib, err := reference.Load(r, account)
 		for _, p := range lib.Podcasts {
 			if aliases, ok := p.Records["identity"].Field("aliases").([]any); ok && len(aliases) > 0 {
 				owned = aliases[0].(map[string]any)["url"].(string)

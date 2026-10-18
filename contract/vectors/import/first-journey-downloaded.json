@@ -24,6 +24,7 @@
         "source_item_id": 1,
         "source_media_id": 1
        },
+       "chapters": null,
        "duration_ms": 30040,
        "favorite": false,
        "history": 1789251404017,
@@ -44,6 +45,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": 30000,
        "favorite": false,
        "history": null,
@@ -91,6 +93,10 @@
      "queue": 1
     },
     "merged": [],
+    "not_carried": {
+     "episode_auto_download_off": 0,
+     "podcasts": []
+    },
     "skipped": []
    },
    "sha256": "6fde464f7bb949bf3440701c112bf60a801c3e199d105b96a4c10271602ed376",

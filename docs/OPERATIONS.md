@@ -12,7 +12,7 @@ make build
 .work/bin/nottennapod-server --data-dir <data-dir>
 ```
 
-On first start the server logs a setup code and writes it to `setup-code` in its data directory. Open the server in a browser, enter the code and create the first administrator. The server then deletes the file.
+On first start the server logs a setup code and writes it to `setup-code` in its data directory. Open the server in a browser, enter the code and create the first administrator. The server then deletes the file, and the web app offers to save the recovery key (see [Keys](#keys)).
 
 Without `--data-dir` the server uses `~/Library/Application Support/NotTennaPod-Server` on macOS and `$XDG_DATA_HOME/nottennapod-server` (or `~/.local/share/nottennapod-server`) on Linux. Only one server may use a data directory at a time.
 
@@ -31,6 +31,10 @@ nottennapod-server --public-url https://<machine>.<tailnet>.ts.net …
 
 The server answers only known host names: loopback, the listen address, this machine's Tailscale names, `--public-url`'s host, and names added with `--allow-host NAME` (repeatable), for example a LAN name.
 
+## Memory
+
+The server keeps each recently read account's library in memory, at most 8 accounts at once. Plan for about 180 MB per 50,000 episodes in steady state, and peaks of up to eight times that per account holding a library after broad changes, such as marking a whole library played: about 1.4 GB for one account of 50,000 episodes ([PROTOCOL §14](PROTOCOL.md), the read model).
+
 ## Running as a service
 
 ```sh
@@ -42,7 +46,11 @@ nottennapod-server service status
 
 ## Keys
 
-The server's receipt keys and sealing key live in the data directory, never in a backup. Export them once, and keep the file and its passphrase somewhere other than the backups:
+The server's receipt keys and sealing key live in the data directory, never in a backup. A backup cannot be put back without them, so save them once as a **recovery key**, a file protected by a passphrase, and keep the file and its passphrase somewhere other than the backups.
+
+The web app offers this right after setup, and an administrator can do it at any time: Settings, Server, **Save recovery key**. It asks for the account's password and a passphrase (at least 12 characters), and the browser downloads `nottennapod-recovery-key-<date>.json`. Move the file out of the downloads folder, then confirm with **I have saved the file**; the warning goes away only then.
+
+The same file can be written with the command line while the server is stopped:
 
 ```sh
 nottennapod-server service stop
@@ -50,14 +58,16 @@ nottennapod-server keys export --data-dir <data-dir> --out <keys-file>
 nottennapod-server service start
 ```
 
-Version 1 never rotates keys, so one export serves every backup. A backup cannot be restored without it. `keys install` puts lost keys back from the bundle. The service page warns until the keys have been exported.
+Version 1 never rotates keys, so one recovery key serves every backup. `keys install` puts lost keys back from it, and `restore --keys` takes it, whichever way it was saved. The service page and the start log warn until a recovery key has been saved (or a restore opened one).
 
 ## Backups
 
-- The server backs itself up daily (`--backup-time`, default 03:30 local time, or `off`) into `<backup-dir>/daily` and keeps the last 30 verified backups. A day missed while the machine slept is caught up once after waking.
+- The server backs itself up daily (`--backup-time`, default 03:30 local time, or `off`) into `<backup-dir>/daily` and keeps the last 30 verified backups (`nottennapod-daily-<n>-<time>.db.gz`; older `.db` ones count toward the 30 too and go first). A day missed while the machine slept is caught up once after waking.
+- Backups are compressed and signed: `nottennapod-<time>-<n>.db.gz`. `gunzip -c <backup> > copy.db` gives the database itself, for inspection; a restore takes the `.db.gz` file as it is. Uncompressed `.db` backups restore too. A release whose restore reads only `.db` backups cannot restore a `.db.gz` one, so roll back ([Updating and rolling back](#updating-and-rolling-back)) only to a release that reads them.
 - `--backup-dir` defaults to `<data-dir>/backups`. Point it at a folder another program copies off the machine (an external disk, a synced folder) to survive losing the machine; never sync the data directory itself, which holds the keys.
-- An administrator can take a backup at any time from the web client's service page; the command `nottennapod-server backup --data-dir D --out DIR` does the same while the server is stopped.
+- An administrator can take a backup at any time from the web client's service page ("Back up now"); the command `nottennapod-server backup --data-dir D --out DIR` does the same while the server is stopped. These on-demand backups are never deleted automatically, and the service page shows how many there are and their size; delete them yourself when you no longer need them.
 - Backups are not encrypted: they hold listening data and feed URLs, so keep them on a private or encrypted disk.
+- Disk space: beside the database, SQLite keeps a write-ahead log (`nottennapod.db-wal`). It grows temporarily during a large write (an import writes about the whole library) and while a backup is copied, and is cut back to at most 64 MiB afterwards, at the next change. Every backup, daily, on-demand or from the command, starts only with room for a copy of the database plus the larger of 1 GiB and twice the database with its log, keeps that much free while it compresses, and stops cleanly (keeping the older backups) when space runs short or it takes more than 30 minutes. While it runs it needs about the database once more plus the compressed backup.
 
 ## Restoring
 
@@ -68,6 +78,10 @@ nottennapod-server service start
 ```
 
 The restore verifies the backup's signature and every key first and changes nothing if anything fails. It keeps the previous database as `nottennapod.db.pre-restore-<time>`, carries current logins forward, and reports what it restored. Afterwards every device is asked to sign in again and then recovers what the backup lacked; nothing on the phones is lost. Accounts created after the backup are not in it.
+
+The kept databases (`nottennapod.db.pre-restore-*`, with any `-wal` and `-shm` beside them) stay in the data folder and are never deleted automatically; the service page shows how many there are and their size. Delete them yourself, with the server stopped, once the restored library is as you want it.
+
+Free space: a restore's own writes always leave 1 GiB free in the data folder. Before it changes anything it checks that the whole restore fits, from the backup's own sizes: a copy of the backup, its database, and, for a backup taken before an update, room for the database to be updated, up to two and a half times its size more. At its peak it uses the larger of the backup plus its database, and the database plus the update. Without that room it refuses and changes nothing. Nothing can stop another program from filling the disk meanwhile (that holds for the running server too); the restore notices within moments, stops, keeps the current database, removes what it wrote, and finishes when you run it again (or start the server) after freeing space. A restore that was interrupted before it started leaves a staged copy beside the database; the next restore or start removes it.
 
 ## Updating
 
@@ -119,7 +133,7 @@ On a new `/config` the server prints the setup code to the container's console, 
 docker exec nottennapod cat /config/data/setup-code
 ```
 
-Export the keys right after setup ([Commands](#commands)); the service page warns until you do.
+Save the recovery key right after setup: the web app offers it, and it stays in Settings ([Keys](#keys); the command is in [Commands](#commands)). The service page warns until you do.
 
 ### `/config`
 
@@ -150,7 +164,7 @@ Export the keys right after setup ([Commands](#commands)); the service page warn
 | `-e TLS_CERT=` `-e TLS_KEY=` | — | serve HTTPS directly (`--tls-cert`, `--tls-key`) |
 | `-e BACKUP_TIME=` | `03:30` | the daily backup's local time (±15 min), or `off` |
 | `-e BACKUP_DIR=` | `/config/backups` | backups on another volume |
-| `-e REFRESH_INTERVAL=` | `1h` | how often each podcast is refreshed |
+| `-e REFRESH_INTERVAL=` | `1h` | how often each podcast is refreshed; one whose episodes have not changed for 30 days every 6 hours, for 90 days every 24 hours, or at this interval if it is longer; every interval varies by ±10 % |
 | `-e DOCKER_MODS=` `-e FILE__<VAR>=` | — | LinuxServer.io [docker mods](https://docs.linuxserver.io/general/container-customization/) and variables read from files |
 | `--network host` | — | the default setup: the server on the host's loopback, behind the host's `tailscale serve` |
 | `-p 8080` | — | only with bridge networking and a non-loopback `LISTEN_ADDRESS` |
@@ -165,7 +179,8 @@ The data directory is always `/config/data`. The log folder, the development opt
 ```sh
 docker logs nottennapod                                    # the version, the setup code, warnings
 docker exec nottennapod cat /config/data/setup-code       # the code again, until setup completes
-# Key export: once, then copy the file off the machine and delete it here
+# Recovery key: once, from the web app's Settings (Save recovery key), or with the command,
+# then copy the file off the machine and delete it here
 docker exec -it nottennapod nottennapod-server keys export --out /config/export/<keys-file>
 # Backup: from the web client's service page (no downtime), or offline:
 docker exec nottennapod nottennapod-server backup --out /config/export
@@ -193,11 +208,15 @@ Put the backup and the key bundle in `<host-config-dir>/export` first, owned by 
 
 ### Moving a native install into Docker
 
-No restore is needed:
+The copy needs no backup or key bundle, but the server sees that its database is a different file and treats the move as a restore: every account moves to a new epoch, every phone and browser must sign in again, and each phone then runs its recovery once. Nothing is lost.
 
-1. Stop and uninstall the service (`nottennapod-server service uninstall` keeps the data).
-2. Copy the stopped data directory to `<host-config-dir>/data` (`cp -a`, no links).
-3. Start the container; it fixes the ownership.
+1. Let every phone and browser finish syncing, so nothing waits to be sent. A phone's recovery then only confirms what it has: the copy holds everything it saw.
+2. Stop and uninstall the service (`nottennapod-server service uninstall` keeps the data).
+3. Copy the stopped data directory to `<host-config-dir>/data` (`cp -a`, no links).
+4. Start the container; it fixes the ownership. Its log says the database was restored or rolled back.
+5. Sign in again on every phone and in every browser.
+
+Keep the old data directory until the phones have synced with the container.
 
 ### Updating and rolling back
 

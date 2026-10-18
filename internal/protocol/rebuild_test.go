@@ -424,3 +424,74 @@ func TestRebuildAdmitsServerDecisions(t *testing.T) {
 		t.Fatalf("rebuild: %v %v\n%s", err, admitted, describeReport(report))
 	}
 }
+
+// A rebuild checkpoints the write-ahead log after it commits, in place or
+// staged (PROTOCOL §14), and only once the account is no longer busy: a push
+// arriving while the housekeeping runs is accepted, never answered
+// server_busy. A failed checkpoint never fails the rebuild, which is
+// published once.
+func TestRebuildCheckpointsTheWAL(t *testing.T) {
+	h := newHarness(t)
+	h.reg.Register("test.register", 1, registerHandler{})
+	inst := h.addInstall()
+	seq := 1
+	fact := func(n int) PushOp {
+		f := fs{op: uid(3, n), author: h.author, seq: int64(n), typ: "test.register", payload: text(fmt.Sprintf("v%d", n))}
+		if n > 1 {
+			f.prev = uid(3, n-1)
+		}
+		return fop(int64(n), f.object())
+	}
+	h.push(inst, 0, fact(1))
+	var calls []string
+	var during []string // the push made while each checkpoint ran: its status or error
+	pushing := true
+	if err := h.store.Close(); err != nil {
+		t.Fatal(err)
+	}
+	store, err := storage.Open(h.ctx, h.dir, storage.WithWALCheckpointHook(func(after string, _ storage.WALCheckpoint, _ error) error {
+		calls = append(calls, after)
+		if pushing {
+			seq++
+			if resp, err := h.tryPush(inst, int64(seq-1), fact(seq)); err != nil {
+				during = append(during, err.Error())
+			} else {
+				during = append(during, resp.Results[0].Status)
+			}
+		}
+		return errors.New("simulated checkpoint failure")
+	}))
+	if err != nil {
+		t.Fatal(err)
+	}
+	h.store = store
+	h.startService()
+	if _, err := h.db().Exec(`UPDATE records SET value = '{"text":"tampered"}' WHERE account_id = ? AND entity_id = ?`, h.account, uid(3, 1)); err != nil {
+		t.Fatal(err)
+	}
+	before := headSeq(t, h.store, h.account)
+	report, err := h.svc.Rebuild(h.ctx, h.account)
+	if err != nil || !report.Committed || report.Staged {
+		t.Fatalf("rebuild in place: %v %s", err, describeReport(report))
+	}
+	if !slices.Equal(calls, []string{"rebuild"}) || !slices.Equal(during, []string{"accepted"}) || headSeq(t, h.store, h.account) != before+2 {
+		t.Fatalf("after a rebuild in place: checkpoints %q, pushes during them %q, head %d (was %d)", calls, during, headSeq(t, h.store, h.account), before)
+	}
+	calls, during = nil, nil
+	if _, err := h.db().Exec(`UPDATE records SET value = '{"text":"tampered again"}' WHERE account_id = ? AND entity_id = ?`, h.account, uid(3, 1)); err != nil {
+		t.Fatal(err)
+	}
+	h.svc.StagingThreshold = 1
+	before = headSeq(t, h.store, h.account)
+	report, err = h.svc.Rebuild(h.ctx, h.account)
+	if err != nil || !report.Committed || !report.Staged {
+		t.Fatalf("staged rebuild: %v %s", err, describeReport(report))
+	}
+	if !slices.Equal(calls, []string{"staged rebuild"}) || !slices.Equal(during, []string{"accepted"}) || headSeq(t, h.store, h.account) != before+2 {
+		t.Fatalf("after a staged rebuild: checkpoints %q, pushes during them %q, head %d (was %d)", calls, during, headSeq(t, h.store, h.account), before)
+	}
+	pushing = false
+	if err := h.store.VerifyChain(h.ctx, h.account); err != nil {
+		t.Fatal(err)
+	}
+}

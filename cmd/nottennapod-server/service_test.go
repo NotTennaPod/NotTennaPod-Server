@@ -118,6 +118,52 @@ func TestServiceReport(t *testing.T) {
 	}
 }
 
+// The service page lists the copies never deleted automatically, on-demand
+// backups and the databases restores kept, with their bytes, whether daily
+// backups are on or off (PROTOCOL §14).
+func TestServiceReportListsSpace(t *testing.T) {
+	ctx := context.Background()
+	store, err := storage.Open(ctx, t.TempDir())
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer store.Close()
+	backups := filepath.Join(store.Dir(), "backups")
+	os.MkdirAll(filepath.Join(backups, backupsched.DailyDir), 0o700)
+	os.WriteFile(filepath.Join(backups, "nottennapod-20261001-120000-1.db.gz"), make([]byte, 100), 0o600)
+	os.WriteFile(filepath.Join(backups, backupsched.DailyDir, "nottennapod-daily-000001-20261001-033000.db.gz"), make([]byte, 7), 0o600)
+	os.WriteFile(filepath.Join(store.Dir(), "nottennapod.db.pre-restore-20261002-080000"), make([]byte, 4000), 0o600)
+	os.WriteFile(filepath.Join(store.Dir(), "nottennapod.db.pre-restore-20261002-080000-wal"), make([]byte, 50), 0o600)
+	for _, daily := range []bool{true, false} {
+		info := &serviceInfo{store: store, started: time.Now(), listen: "127.0.0.1:8080"}
+		if daily {
+			info.backups = backupsched.New(store, backupsched.Config{})
+		}
+		v, err := info.report(ctx)
+		if err != nil {
+			t.Fatal(err)
+		}
+		b, _ := json.Marshal(v)
+		var got struct {
+			Backups *struct {
+				Kept int   `json:"kept"`
+				Used int64 `json:"used_bytes"`
+			} `json:"backups"`
+			Manual     backupsched.Use `json:"manual_backups"`
+			PreRestore backupsched.Use `json:"pre_restore"`
+		}
+		if err := json.Unmarshal(b, &got); err != nil {
+			t.Fatal(err)
+		}
+		if got.Manual != (backupsched.Use{Count: 1, Bytes: 100}) || got.PreRestore != (backupsched.Use{Count: 1, Bytes: 4050}) {
+			t.Errorf("daily backups on %v: %s", daily, b)
+		}
+		if daily && (got.Backups == nil || got.Backups.Kept != 1 || got.Backups.Used != 7) {
+			t.Errorf("the daily backups: %s", b)
+		}
+	}
+}
+
 // update's check asks the running server over HTTPS when it serves HTTPS, and a
 // wildcard address on loopback. The HTTPS check pins the configured
 // certificate.

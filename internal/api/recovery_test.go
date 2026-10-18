@@ -9,13 +9,16 @@ package api
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"os"
 	"path/filepath"
 	"slices"
+	"strings"
 	"testing"
 
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/contract"
+	"github.com/NotTennaPod/NotTennaPod-Server/internal/protocol"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/storage"
 )
 
@@ -163,5 +166,48 @@ func TestRecoveryOverHTTP(t *testing.T) {
 	recs := diag.body["recoveries"].([]any)
 	if len(recs) != 1 || recs[0].(map[string]any)["recovery_id"] != recoveryID {
 		t.Fatalf("diagnostics recoveries: %v", recs)
+	}
+}
+
+// PROTOCOL §6.11, §6.13: the inventory accepts the batch it advertises
+// (bounds.recovery_inventory entries), which takes far more than the 64 KiB
+// other bodies are limited to; one entry more, or a body above
+// max_request_bytes, is refused before anything is read into the recovery.
+func TestRecoveryInventoryAcceptsAdvertisedBatch(t *testing.T) {
+	t.Parallel()
+	r := newRecoveryEnv(t)
+	hash := func(i int) string { return fmt.Sprintf("%064x", i+1) }
+	entries := make([]any, 0, protocol.MaxRecoveryInventory+1)
+	for i := range protocol.MaxRecoveryInventory {
+		if i%4 == 3 {
+			entries = append(entries, map[string]any{"kind": "decision", "decision_id": newID(), "rank": []any{1, 100000 + i}})
+			continue
+		}
+		entries = append(entries, map[string]any{"kind": "fact", "op_id": newID(), "content_hash": hash(i), "position": []any{1, 100000 + i, i % 50}})
+	}
+	body := map[string]any{"recovery_id": r.rid, "install_id": r.p.install, "entries": entries}
+	if raw, _ := json.Marshal(body); len(raw) <= maxBody {
+		t.Fatalf("the advertised batch is %d bytes; the test needs more than the default limit", len(raw))
+	}
+	inv := r.e.do(http.MethodPost, "/v1/sync/recovery/inventory", body, r.p.cred).must(http.StatusOK)
+	results := inv.body["results"].([]any)
+	if len(results) != protocol.MaxRecoveryInventory {
+		t.Fatalf("%d results for %d entries", len(results), protocol.MaxRecoveryInventory)
+	}
+	for i, res := range results {
+		if got := res.(map[string]any)["status"]; got != "need" {
+			t.Fatalf("entry %d: %v, want need", i, got)
+		}
+	}
+	// One entry more than advertised.
+	body["entries"] = append(entries, map[string]any{"kind": "fact", "op_id": newID(), "content_hash": hash(-1), "position": []any{1, 1, 0}})
+	r.e.do(http.MethodPost, "/v1/sync/recovery/inventory", body, r.p.cred).expect(http.StatusRequestEntityTooLarge, "payload_too_large")
+	// A body above max_request_bytes.
+	small, _ := json.Marshal(map[string]any{"recovery_id": r.rid, "entries": entries[:1]})
+	huge := rawBody(strings.Repeat(" ", protocol.MaxRequestBytes) + string(small))
+	r.e.do(http.MethodPost, "/v1/sync/recovery/inventory", huge, r.p.cred).expect(http.StatusRequestEntityTooLarge, "payload_too_large")
+	// Nothing was recorded: the recovery has no conflicts or problems.
+	if fin := r.finish(); fin.body["complete"] != true || len(fin.body["problems"].([]any)) != 0 {
+		t.Fatalf("finish: %s", fin.raw)
 	}
 }

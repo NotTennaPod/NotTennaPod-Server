@@ -41,9 +41,12 @@ var rebuildSaved = []string{"records", "decisions", "feed_responses", "refresh_s
 
 // rebuildKept are the account tables a rebuild never touches: the account,
 // its log, logins, installations and tokens, transport state, the fact
-// archive and its superseded receipts, secrets, imports and recoveries.
+// archive and its superseded receipts, secrets, imports, recoveries and their upload jobs, and
+// the read model's capture clock and stamps (a rebuild raises the clock's
+// generation, which never goes back: SuspendViewCapture).
 var rebuildKept = []string{"accounts", "account_logs", "log_commits", "account_logins", "installations", "auth_tokens",
-	"transport_slots", "push_parts", "recovery_frames", "facts", "superseded_receipts", "secrets", "imports", "recoveries"}
+	"transport_slots", "push_parts", "recovery_frames", "recovery_jobs", "facts", "superseded_receipts", "secrets", "imports", "recoveries",
+	"view_clock", "view_changes"}
 
 // FactPosition is an archived fact's receipt position (PROTOCOL §6.10): (epoch, seq,
 // index, op_id) is admission order. Index is -1 for a receipt without one.
@@ -113,7 +116,13 @@ func (a *AccountTx) AcceptingInstallations() (map[string]string, error) {
 // responses and refresh schedules aside (temporary tables of this
 // transaction) and clears its derived state: every rebuildCleared table and
 // those copies' rows. The fact archive and everything in rebuildKept stay.
+// The clearing and the replay that follows rewrite the account's view
+// inputs in bulk: the rest of the transaction suspends their capture
+// (SuspendViewCapture).
 func (a *AccountTx) ClearDerived() error {
+	if err := a.w.SuspendViewCapture(a.id); err != nil {
+		return err
+	}
 	if err := a.dropRebuildCopies(); err != nil {
 		return err
 	}
@@ -122,6 +131,16 @@ func (a *AccountTx) ClearDerived() error {
 			return err
 		}
 		if _, err := a.w.tx.ExecContext(a.w.ctx, `INSERT INTO temp.rebuild_`+table+` SELECT * FROM main.`+table+` WHERE account_id = ?`, a.id); err != nil {
+			return err
+		}
+	}
+	// The copies are looked up by key (RecordChanges' join, the queue's
+	// earlier records, RestoreDecision): without these indexes each lookup
+	// scans the whole copy, and a library of thousands of episodes takes
+	// hours to rebuild.
+	for _, q := range []string{`CREATE INDEX temp.rebuild_records_key ON rebuild_records (entity, entity_id, field_group)`,
+		`CREATE INDEX temp.rebuild_decisions_key ON rebuild_decisions (decision_id)`} {
+		if _, err := a.w.tx.ExecContext(a.w.ctx, q); err != nil {
 			return err
 		}
 	}

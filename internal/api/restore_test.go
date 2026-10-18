@@ -12,6 +12,8 @@ import (
 	"os"
 	"path/filepath"
 	"slices"
+	"strings"
+	"sync"
 	"testing"
 	"time"
 
@@ -22,6 +24,7 @@ import (
 
 func init() {
 	errorStatus["backup_running"] = []int{409}
+	errorStatus["backup_failed"] = []int{503}
 }
 
 // withSyncBox is withSync with the data directory's secrets key, as the server
@@ -54,6 +57,9 @@ func (e *env) reopen(opts ...func(*Config)) {
 	if e.srv, err = New(cfg); err != nil {
 		e.t.Fatal(err)
 	}
+	if cfg.Protocol != nil {
+		e.t.Cleanup(cfg.Protocol.WaitRecoveryJobsForTest)
+	}
 }
 
 func TestAdministratorBackup(t *testing.T) {
@@ -83,7 +89,10 @@ func TestAdministratorBackup(t *testing.T) {
 	if di, _ := os.Stat(dir); di.Mode().Perm() != 0o700 {
 		t.Fatalf("backup directory mode %v", di.Mode().Perm())
 	}
-	if err := storage.VerifyDatabaseFile(context.Background(), filepath.Join(dir, file), -1); err != nil {
+	if !strings.HasSuffix(file, ".db.gz") {
+		t.Errorf("the backup is %s, not compressed", file)
+	}
+	if err := e.store.VerifyBackup(context.Background(), filepath.Join(dir, file), nil); err != nil {
 		t.Fatal(err)
 	}
 	// Only an administrator's web session.
@@ -183,5 +192,56 @@ func TestClientsAfterARestore(t *testing.T) {
 	fresh := e.phoneOf("alice", "alice-password-2")
 	if fresh.cursor == alice.cursor {
 		t.Fatal("the head did not change lineage")
+	}
+}
+
+// An administrator's backup keeps the disks safe like the daily ones: too
+// little free space is a 507 that says so and writes nothing, a copy left
+// by a crash never stops the retry that removes it, and with room the backup
+// is compressed and verifies.
+func TestAdminBackupGuardedAndCompressed(t *testing.T) {
+	t.Parallel()
+	var mu sync.Mutex
+	free := int64(512 << 20)
+	e := newEnv(t, func(c *Config) {
+		c.freeBytes = func(string) (int64, error) {
+			mu.Lock()
+			defer mu.Unlock()
+			return free, nil
+		}
+	})
+	admin, _ := e.setupAdmin("root", "root-password-1")
+	dir := filepath.Join(e.dir, "backups")
+	published := func() []string {
+		var out []string
+		entries, _ := os.ReadDir(dir)
+		for _, en := range entries {
+			out = append(out, en.Name())
+		}
+		return out
+	}
+	r := e.adminDo(admin, http.MethodPost, "/v1/admin/backup", nil).expect(http.StatusInsufficientStorage, "insufficient_space")
+	if msg := r.str("message"); !strings.Contains(msg, "not enough free space for a backup") || !strings.Contains(msg, "Older backups are kept") {
+		t.Errorf("the message: %q", msg)
+	}
+	if got := published(); len(got) != 0 {
+		t.Fatalf("a refused backup left %v", got)
+	}
+	// A copy left by a crash fills the disk; the backup removes it first.
+	abandoned := filepath.Join(dir, ".nottennapod-backup-abandoned.tmp")
+	os.WriteFile(abandoned, []byte("a copy left by a crash"), 0o600)
+	mu.Lock()
+	free = 100 << 30
+	mu.Unlock()
+	r = e.adminDo(admin, http.MethodPost, "/v1/admin/backup", nil).must(http.StatusOK)
+	file := r.str("file")
+	if !strings.HasSuffix(file, ".db.gz") {
+		t.Fatalf("the backup is %s", file)
+	}
+	if err := e.store.VerifyBackup(context.Background(), filepath.Join(dir, file), nil); err != nil {
+		t.Fatal(err)
+	}
+	if got := published(); !slices.Equal(got, []string{file}) {
+		t.Fatalf("the folder holds %v", got)
 	}
 }

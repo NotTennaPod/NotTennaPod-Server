@@ -25,7 +25,7 @@ Expected outputs of Android AntennaPod 3.12.1's own feed parser classes, run unc
 
 - AVD `AntennaPod-3.12.1-api36`; API level 36 (Android 16).
 - Build fingerprint: `google/sdk_gphone64_arm64/emu64a:16/BE2A.250530.026.F3/13894323:userdebug/dev-keys`.
-- Default time zone `America/Los_Angeles`, locale `en-US` (as found; not changed).
+- Default time zone and locale as found on the emulator (not changed).
 - Feed run: 2026-10-05T19:09:31.728Z to 2026-10-05T19:09:46.623Z; value run: 2026-10-05T19:09:46.647Z to 2026-10-05T19:09:54.395Z (device clock).
 
 ## Exporter
@@ -50,7 +50,7 @@ Expected outputs of Android AntennaPod 3.12.1's own feed parser classes, run unc
 | --- | --- |
 | `feeds/SHA256SUMS` (per-file SHA-256 of the corpus; `shasum -a 256 -c SHA256SUMS`) | `9849ccf38e8585c0200eb36c1e25d8bf3fb01989bfed805a1f8ab576f4270ada` |
 | `feeds/expected.jsonl` | `4ced4565896e798294501f3898e2510ecd9898154c2f7f689c56c0af896462f1` |
-| `feed_values.json` | `21133e34302a695da86780cdb1564d5caa7d76a2b67e5b57c436fbb261c379e7` |
+| `feed_values.json` | `64f30475820e95741368710ac999d4393a723d8c386d750e5dabbf36d4a04295` |
 | `feed_date_symbols.json` | `8cc474aaf1340ee020dea32c2996fd56c9311482dfca38f4951ec27fede74d36` |
 
 ## Results

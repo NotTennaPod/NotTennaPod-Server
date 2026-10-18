@@ -29,6 +29,7 @@
      "episodes": [
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": null,
        "favorite": false,
        "history": null,
@@ -50,6 +51,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": 0,
        "favorite": false,
        "history": null,
@@ -122,6 +124,22 @@
      "queue": 1
     },
     "merged": [],
+    "not_carried": {
+     "episode_auto_download_off": 2,
+     "podcasts": [
+      {
+       "settings": [
+        "playback_speed",
+        "auto_delete",
+        "episode_list_filter",
+        "sort_order"
+       ],
+       "source_feed_id": 1,
+       "title": "Edges",
+       "url": "https://e.test/f.xml"
+      }
+     ]
+    },
     "skipped": []
    },
    "sha256": "a49dece0b5b06db34ca29a0bb84f2e7ef4786aa04852fd6c704e422e07e5d2d2",

@@ -15,6 +15,7 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"encoding/json"
+	"encoding/pem"
 	"fmt"
 	"io"
 	"log/slog"
@@ -44,9 +45,30 @@ func TestMain(m *testing.M) {
 		panic(err)
 	}
 	fixtureDir = dir
+	trustTLSPublishers(dir)
 	code := m.Run()
 	os.RemoveAll(dir)
 	os.Exit(code)
+}
+
+// trustTLSPublishers makes the tests' HTTPS publishers (httptest's TLS
+// servers, which all present one certificate) trusted as a real publisher's
+// certificate is: the process's roots are that certificate, set before
+// anything verifies one (macOS needs the GODEBUG setting for the override).
+func trustTLSPublishers(dir string) {
+	srv := httptest.NewTLSServer(http.NotFoundHandler())
+	cert := pem.EncodeToMemory(&pem.Block{Type: "CERTIFICATE", Bytes: srv.Certificate().Raw})
+	srv.Close()
+	roots := filepath.Join(dir, "roots.pem")
+	if err := os.WriteFile(roots, cert, 0o600); err != nil {
+		panic(err)
+	}
+	os.Setenv("SSL_CERT_FILE", roots)
+	debug := "x509sslcertoverrideplatform=1"
+	if v := os.Getenv("GODEBUG"); v != "" {
+		debug = v + "," + debug
+	}
+	os.Setenv("GODEBUG", debug)
 }
 
 // ffmpegBinary finds ffmpeg for the tests that need it. Without it they
@@ -103,6 +125,15 @@ type publisher struct {
 func newPublisher(t testing.TB) *publisher {
 	p := &publisher{t: t, files: map[string]*file{}}
 	p.srv = httptest.NewServer(http.HandlerFunc(p.serve))
+	t.Cleanup(p.srv.Close)
+	return p
+}
+
+// newHTTPSPublisher is a publisher over HTTPS, whose certificate the
+// fetcher trusts (trustTLSPublishers).
+func newHTTPSPublisher(t testing.TB) *publisher {
+	p := &publisher{t: t, files: map[string]*file{}}
+	p.srv = httptest.NewTLSServer(http.HandlerFunc(p.serve))
 	t.Cleanup(p.srv.Close)
 	return p
 }
@@ -267,6 +298,7 @@ type serviceOpts struct {
 	noTools  bool
 	refuse   bool // the fetcher refuses loopback, as in production
 	withFFmp bool
+	now      func() time.Time
 }
 
 func newService(t testing.TB, o serviceOpts) *Service {
@@ -279,7 +311,7 @@ func newService(t testing.TB, o serviceOpts) *Service {
 	if o.limits != nil {
 		o.limits(&l)
 	}
-	cfg := Config{Fetcher: f, SpoolDir: filepath.Join(t.TempDir(), "spool"), Limits: l, NoTools: o.noTools || !o.withFFmp, Logger: quiet}
+	cfg := Config{Fetcher: f, SpoolDir: filepath.Join(t.TempDir(), "spool"), Limits: l, NoTools: o.noTools || !o.withFFmp, Logger: quiet, Now: o.now}
 	if o.withFFmp && !o.noTools {
 		cfg.FFmpeg = ffmpegBinary(t)
 	}

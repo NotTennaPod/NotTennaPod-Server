@@ -197,7 +197,8 @@ func TestPragmas(t *testing.T) {
 			t.Fatal(err)
 		}
 		want := map[string]string{"journal_mode": "wal", "synchronous": "2", "fullfsync": "1", "checkpoint_fullfsync": "1",
-			"foreign_keys": "1", "trusted_schema": "0", "query_only": map[bool]string{false: "0", true: "1"}[reader]}
+			"foreign_keys": "1", "trusted_schema": "0", "query_only": map[bool]string{false: "0", true: "1"}[reader],
+			"journal_size_limit": "67108864"}
 		for k, v := range want {
 			if p[k] != v {
 				t.Errorf("reader=%v PRAGMA %s = %q, want %q", reader, k, p[k], v)

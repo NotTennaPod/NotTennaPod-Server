@@ -17,7 +17,7 @@ import (
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/rebuildtest"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/sealed"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/storage"
-	"github.com/NotTennaPod/NotTennaPod-Server/internal/views"
+	"github.com/NotTennaPod/NotTennaPod-Server/internal/views/reference"
 )
 
 type env struct {
@@ -94,7 +94,7 @@ func (e *env) importFixture(path string) (*androiddb.Library, Plan, importOutcom
 	if err != nil {
 		e.t.Fatal(err)
 	}
-	pods, err := Apply(ctx, e.svc, e.account, plan, 0)
+	pods, err := Apply(ctx, e.svc, e.account, plan, 0, nil)
 	if err != nil {
 		e.t.Fatal(err)
 	}
@@ -225,13 +225,14 @@ func TestImportReproducesAndroidState(t *testing.T) {
 	}
 }
 
-// library is the account's read views, as /v1/read shows them.
-func (e *env) library() *views.Library {
+// library is the account's read views, as /v1/read showed them (the
+// frozen Load, which the read model's tests check the model against).
+func (e *env) library() *reference.Library {
 	e.t.Helper()
-	var lib *views.Library
+	var lib *reference.Library
 	if err := e.svc.Store.Read(context.Background(), func(r *storage.ReadTx) error {
 		var err error
-		lib, err = views.Load(r.Account(e.account))
+		lib, err = reference.Load(r, e.account)
 		return err
 	}); err != nil {
 		e.t.Fatal(err)
@@ -404,5 +405,132 @@ func TestImportedPodcastWithoutEpisodesKeepsItsName(t *testing.T) {
 		rssItem{"Old", e.clock - 31*day}, rssItem{"New", e.clock - day - 60_000}, rssItem{"Newer", e.clock - 60_000})
 	if got := e.decisions("discovery.admission"); len(got) != 1 {
 		t.Errorf("the next fetch filed %d, want the later release", len(got))
+	}
+}
+
+// Stored chapters are carried (PROTOCOL §11.5) and stay with an episode its
+// feed no longer lists. An episode still in the feed takes the feed's record
+// whole at the first server fetch, chapters included: without chapters in the
+// feed, the imported ones go (the whole-record rule; keeping them is a
+// protocol decision not taken).
+func TestImportedChaptersAndTheFirstFetch(t *testing.T) {
+	e := newEnv(t)
+	_, _, out := e.importFixture("../../contract/vectors/import/device-only.db")
+	pod := out.Podcasts[0]
+	chapters := func(item int64) string {
+		b, _ := json.Marshal(e.records()["episode/"+pod.EpisodeOf[item]+"/metadata"]["chapters"])
+		return string(b)
+	}
+	if got := chapters(5); got != `[{"image_url":null,"link":null,"start":"0","title":null},`+
+		`{"image_url":null,"link":"https://chapters.example.invalid/c","start":"1234567","title":"Precise"}]` {
+		t.Fatalf("imported chapters %s", got)
+	}
+	if chapters(1) == "null" || chapters(3) != "null" {
+		t.Fatalf("imported chapters: item 1 %s, item 3 %s", chapters(1), chapters(3))
+	}
+	// The feed now lists only item 1's episode, without chapters.
+	rss := `<rss version="2.0"><channel><title>Chapters Show</title><item><title>Chapters out of order</title>` +
+		`<guid>ch-1</guid><pubDate>` + time.UnixMilli(1769947200000).UTC().Format(time.RFC1123Z) + `</pubDate>` +
+		`<enclosure url="https://chapters.example.invalid/1.mp3" length="0" type="audio/mpeg"/></item></channel></rss>`
+	f, err := feed.Parse(context.Background(), []byte(rss), "https://chapters.example.invalid/feed.xml", time.UnixMilli(e.clock))
+	if err != nil {
+		t.Fatal(err)
+	}
+	e.clock += 60_000
+	if err := e.svc.ServerCommit(context.Background(), e.account, func(c *protocol.ApplyContext) error {
+		rc, err := ops.CaptureRefresh(c, pod.PodcastID)
+		if err != nil {
+			return err
+		}
+		return ops.ApplyServerFetch(c, ops.ServerFetch{PodcastID: pod.PodcastID, GenerationID: rc.GenerationID, RefreshBy: rc.RefreshBy,
+			RefreshID: "f0b1c2d3-0000-4000-8000-000000000001", FetchTime: e.clock, Feed: f, Bases: rc.Bases, Namespace: c.Namespace})
+	}); err != nil {
+		t.Fatal(err)
+	}
+	if got := chapters(5); !strings.Contains(got, `"Precise"`) {
+		t.Errorf("an episode the feed no longer lists lost its chapters: %s", got)
+	}
+	if got := chapters(1); got != "null" {
+		t.Errorf("an episode the feed lists without chapters kept %s", got)
+	}
+}
+
+// A setting counts as changed only where Android's cursors read a value
+// other than its default: unknown codes fall back as Android's fromCode
+// methods do, and skip silence follows the podcast's own speed.
+func TestChangedSettingsFollowAndroidsDefaults(t *testing.T) {
+	str := func(s string) *string { return &s }
+	defaults := androiddb.Settings{AutoDownload: 1, PlaybackSpeed: -1, SkipSilence: 1, MinimalDuration: -1, Tags: str("#root")}
+	for _, tc := range []struct {
+		change func(*androiddb.Settings)
+		want   string
+	}{
+		{func(*androiddb.Settings) {}, ""},
+		{func(s *androiddb.Settings) { s.AutoDownload = 9 }, ""},                                  // fromInteger: GLOBAL
+		{func(s *androiddb.Settings) { s.AutoDownload = 0 }, "auto_download"},                     // DISABLED
+		{func(s *androiddb.Settings) { s.AutoDeleteAction = 7 }, "auto_delete"},                   // fromCode: NEVER
+		{func(s *androiddb.Settings) { s.SkipSilence = 0 }, ""},                                   // GLOBAL while the speed is
+		{func(s *androiddb.Settings) { s.PlaybackSpeed, s.SkipSilence = 2, 5 }, "playback_speed"}, // fromCode: GLOBAL
+		{func(s *androiddb.Settings) { s.PlaybackSpeed, s.SkipSilence = 2, 2 }, "playback_speed skip_silence"},
+		{func(s *androiddb.Settings) { s.MinimalDuration = 0 }, "auto_download_filter"}, // hasMinimalDurationFilter
+		{func(s *androiddb.Settings) { s.ExcludeFilter = str("") }, ""},
+		{func(s *androiddb.Settings) { s.Tags = str("\x1e#root") }, ""},
+		{func(s *androiddb.Settings) { s.Tags = nil }, ""},            // empty: the root tag
+		{func(s *androiddb.Settings) { s.SortOrder = str("11") }, ""}, // GLOBAL_DEFAULT
+		{func(s *androiddb.Settings) { s.SortOrder = str("x") }, ""},
+		{func(s *androiddb.Settings) { s.SortOrder = str("4") }, "sort_order"},
+		{func(s *androiddb.Settings) { s.Hide = str(",") }, ""},
+		{func(s *androiddb.Settings) { s.VolumeAdaption = 6 }, ""},
+		{func(s *androiddb.Settings) { s.VolumeAdaption = 5 }, "volume_adaptation"},
+		{func(s *androiddb.Settings) { s.SkipEnding = -3 }, ""},
+	} {
+		s := defaults
+		tc.change(&s)
+		if got := strings.Join(changedSettings(androiddb.Feed{Settings: s}), " "); got != tc.want {
+			t.Errorf("%+v: %q, want %q", s, got, tc.want)
+		}
+	}
+	if got := changedSettings(androiddb.Feed{Settings: defaults, CustomTitle: str("Mine")}); len(got) != 1 || got[0] != "custom_title" {
+		t.Errorf("custom title: %v", got)
+	}
+}
+
+// A manifest an earlier try recorded (perhaps by an earlier version, without
+// what a newer one reports) is the result the import publishes: what is shown
+// is what is recorded (PROTOCOL §11.5).
+func TestWriteManifestReturnsTheRecordedResult(t *testing.T) {
+	e := newEnv(t)
+	ctx := context.Background()
+	lib, err := androiddb.Read(ctx, "../../contract/vectors/import/device-only.db", t.TempDir())
+	if err != nil {
+		t.Fatal(err)
+	}
+	const importID = "3c1d2e4f-5a6b-4c7d-8e9f-0a1b2c3d4e5f"
+	plan, err := FromAndroid(lib, importID, e.clock)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, err := Apply(ctx, e.svc, e.account, plan, 0, nil); err != nil {
+		t.Fatal(err)
+	}
+	res, err := Summarize(ctx, e.svc.Store, e.account, plan)
+	if err != nil {
+		t.Fatal(err)
+	}
+	older := res
+	older.NotCarried = nil
+	first, err := WriteManifest(ctx, e.svc, e.account, importID, "", plan, older)
+	if err != nil || strings.Contains(first, "not_carried") {
+		t.Fatalf("first manifest %s: %v", first, err)
+	}
+	again, err := WriteManifest(ctx, e.svc, e.account, importID, "", plan, res)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if again != first {
+		t.Errorf("the retry returned %s\nbut the manifest records %s", again, first)
+	}
+	if n := len(e.decisions("import.manifest")); n != 1 {
+		t.Errorf("%d manifests", n)
 	}
 }

@@ -55,7 +55,9 @@ func (a *AccountTx) PutCatalogItem(it CatalogItem) error {
 }
 
 // ServerNewest is the newest effective publication date among a podcast's
-// items the server's fetches have seen (ok is false when they saw none).
+// items the server's fetches have seen (ok is false when they saw none). It is
+// one seek in catalog_items_server_newest, which holds only those items,
+// however many items devices or an import added.
 func (a *AccountTx) ServerNewest(podcastID string) (int64, bool, error) {
 	var v sql.NullInt64
 	err := a.w.tx.QueryRowContext(a.w.ctx, `SELECT MAX(pub_date) FROM catalog_items
@@ -97,12 +99,17 @@ func (a *AccountTx) DecisionBySubject(decisionType, subject string) (string, err
 	return id, err
 }
 
+// catalogRevisionsQuery reads a podcast's catalog items' metadata revisions.
+// CROSS JOIN keeps the items the outer loop, through catalog_items_podcast, so
+// the work scales with the podcast's items, not the account's episode records.
+const catalogRevisionsQuery = `SELECT c.episode_id, json_extract(r.value, '$.revision') FROM catalog_items c
+		CROSS JOIN records r ON r.account_id = c.account_id AND r.entity = 'episode' AND r.entity_id = c.episode_id AND r.field_group = 'metadata'
+		WHERE c.account_id = ? AND c.podcast_id = ?`
+
 // CatalogRevisions returns the metadata record revisions of a podcast's
 // catalog items, by episode (the bases a server fetch captures, PROTOCOL §9.4).
 func (a *AccountTx) CatalogRevisions(podcastID string) (map[string]string, error) {
-	rows, err := a.w.tx.QueryContext(a.w.ctx, `SELECT c.episode_id, json_extract(r.value, '$.revision') FROM catalog_items c
-		JOIN records r ON r.account_id = c.account_id AND r.entity = 'episode' AND r.entity_id = c.episode_id AND r.field_group = 'metadata'
-		WHERE c.account_id = ? AND c.podcast_id = ?`, a.id, podcastID)
+	rows, err := a.w.tx.QueryContext(a.w.ctx, catalogRevisionsQuery, a.id, podcastID)
 	if err != nil {
 		return nil, err
 	}

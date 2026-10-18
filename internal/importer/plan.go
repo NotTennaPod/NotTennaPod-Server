@@ -5,6 +5,7 @@ package importer
 
 import (
 	"net/url"
+	"sort"
 	"strconv"
 	"strings"
 
@@ -24,6 +25,20 @@ type Plan struct {
 	Skipped  []Entry
 	Merged   []Entry // feeds or items imported as one (PROTOCOL §11.5)
 	Queue    int     // queue entries imported
+	// NotCarried lists the imported feeds whose device-only settings a person
+	// changed (PROTOCOL §1.4: they are not imported), by feed ID; nil for OPML.
+	NotCarried []SettingsEntry
+	// AutoDownloadOff holds the imported source items a person stopped from
+	// downloading automatically (FeedItems.auto_download), also not imported.
+	AutoDownloadOff map[int64]bool
+}
+
+// SettingsEntry names an imported feed's changed device-only settings.
+type SettingsEntry struct {
+	Title        string   `json:"title"`
+	URL          string   `json:"url"` // the feed's address (userinfo removed): it tells same-titled feeds apart
+	SourceFeedID int64    `json:"source_feed_id"`
+	Settings     []string `json:"settings"`
 }
 
 // Entry names a skipped, merged or ambiguous source row for the result
@@ -54,7 +69,8 @@ const (
 // credentials that feed's, else the first feed's that has any; a group of
 // previews without any user state is not imported.
 func FromAndroid(lib *androiddb.Library, importID string, now int64) (Plan, error) {
-	plan := Plan{Kind: "android_db", Secrets: map[string]protocol.Secret{}}
+	plan := Plan{Kind: "android_db", Secrets: map[string]protocol.Secret{}, NotCarried: []SettingsEntry{},
+		AutoDownloadOff: map[int64]bool{}}
 	queueIndex := map[int64]int{}
 	for i, id := range lib.Queue {
 		if _, seen := queueIndex[id]; !seen {
@@ -123,6 +139,13 @@ func FromAndroid(lib *androiddb.Library, importID string, now int64) (Plan, erro
 			ids[i] = f.ID
 			for _, e := range f.Episodes {
 				rows = append(rows, row(feedType, e, queueIndex, keys))
+				if !e.AutoDownload {
+					plan.AutoDownloadOff[e.ID] = true
+				}
+			}
+			if names := changedSettings(f); len(names) > 0 {
+				plan.NotCarried = append(plan.NotCarried, SettingsEntry{Title: feedTitle(f), URL: stripUserinfo(f.URL), SourceFeedID: f.ID,
+					Settings: names})
 			}
 		}
 		feedURL := stripUserinfo(creating.URL)
@@ -151,7 +174,64 @@ func FromAndroid(lib *androiddb.Library, importID string, now int64) (Plan, erro
 		plan.Podcasts = append(plan.Podcasts, p)
 	}
 	plan.Queue = len(lib.Queue)
+	sort.Slice(plan.NotCarried, func(i, j int) bool { return plan.NotCarried[i].SourceFeedID < plan.NotCarried[j].SourceFeedID })
 	return plan, nil
+}
+
+// changedSettings names a feed's device-only settings that differ from
+// Android's defaults, as its FeedCursor and FeedPreferencesCursor read them
+// (FeedPreferences: GLOBAL settings, SPEED_USE_GLOBAL, no filter, the root tag,
+// no sort order or episode-list filter), in the order of Android's podcast
+// settings screen, then the podcast screen's filter and sort. A custom title
+// is listed too: the podcast keeps its feed's title.
+func changedSettings(f androiddb.Feed) []string {
+	s := f.Settings
+	nonEmpty := func(v *string) bool { return v != nil && *v != "" }
+	var out []string
+	add := func(changed bool, name string) {
+		if changed {
+			out = append(out, name)
+		}
+	}
+	tagged := false
+	if s.Tags != nil {
+		for _, t := range strings.Split(*s.Tags, "\x1e") {
+			if t != "" && t != "#root" {
+				tagged = true
+			}
+		}
+	}
+	hidden := false
+	if s.Hide != nil {
+		for _, p := range strings.Split(*s.Hide, ",") {
+			if strings.TrimSpace(p) != "" {
+				hidden = true
+			}
+		}
+	}
+	sorted := false
+	if s.SortOrder != nil {
+		// SortOrder.fromCodeString; GLOBAL_DEFAULT (11) is the global order.
+		if n, err := strconv.Atoi(*s.SortOrder); err == nil && n != 11 && (n >= 1 && n <= 10 || n >= 101 && n <= 106) {
+			sorted = true
+		}
+	}
+	add(f.CustomTitle != nil && *f.CustomTitle != "", "custom_title")
+	add(tagged, "tags")
+	add(s.PlaybackSpeed != -1, "playback_speed")
+	// getFeedSkipSilence is GLOBAL while the speed is the global one;
+	// SkipSilence.fromCode: unknown is GLOBAL.
+	add(s.PlaybackSpeed != -1 && (s.SkipSilence == 0 || s.SkipSilence == 2), "skip_silence")
+	add(s.SkipIntro > 0, "skip_intro")
+	add(s.SkipEnding > 0, "skip_ending")
+	add(s.VolumeAdaption >= 1 && s.VolumeAdaption <= 5, "volume_adaptation")
+	add(s.EpisodeNotification, "episode_notification")
+	add(s.AutoDeleteAction != 0, "auto_delete")                      // AutoDeleteAction.fromCode: unknown is NEVER
+	add(s.AutoDownload == 0 || s.AutoDownload == 2, "auto_download") // AutoDownloadSetting.fromInteger: else GLOBAL
+	add(nonEmpty(s.IncludeFilter) || nonEmpty(s.ExcludeFilter) || s.MinimalDuration > -1, "auto_download_filter")
+	add(hidden, "episode_list_filter")
+	add(sorted, "sort_order")
+	return out
 }
 
 // credentials are a feed's username and password: its columns when either is
@@ -188,6 +268,13 @@ func row(feedType string, e androiddb.Episode, queueIndex map[int64]int, keys []
 	it := &feed.Item{GUID: e.GUID, Title: e.Title, Description: e.Description, Link: e.Link, ImageURL: e.ImageURL,
 		PaymentLink: e.PaymentLink, ChapterURL: e.ChapterURL, TranscriptURL: e.TranscriptURL, TranscriptType: e.TranscriptType,
 		SocialInteractURL: e.SocialURL}
+	if e.Chapters != nil {
+		// The stored chapters, as Android shows them (PROTOCOL §11.5).
+		it.Chapters = make([]feed.Chapter, len(e.Chapters))
+		for i, c := range e.Chapters {
+			it.Chapters[i] = feed.Chapter{Start: c.Start, Title: c.Title, Link: c.Link, ImageURL: c.ImageURL}
+		}
+	}
 	if e.PubDate != 0 {
 		pub := e.PubDate
 		it.PubDate = &pub

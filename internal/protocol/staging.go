@@ -63,9 +63,19 @@ func (s *Service) staged(ctx context.Context, accountID string, check func(*stor
 	}
 	done, ok := s.claimRebuild(accountID)
 	if !ok {
-		return true, 0, errBusy
+		return true, 0, errRebuildClaimed
 	}
-	defer done()
+	published := false
+	defer func() {
+		done()
+		if published {
+			// The publication rewrote the account's derived state in the log.
+			// The checkpoint runs only once the account is no longer busy, so
+			// a push meanwhile is never answered server_busy for it (PROTOCOL
+			// §14); it never fails the publication.
+			s.Store.CheckpointWAL(ctx, "staged rebuild")
+		}
+	}()
 	dir := s.Store.RebuildStagingDir(accountID)
 	for range stagingAttempts {
 		st, err := s.Store.StageCopy(ctx, dir)
@@ -89,6 +99,7 @@ func (s *Service) staged(ctx context.Context, accountID string, check func(*stor
 		began := time.Now()
 		err = s.Store.PublishStaged(ctx, filepath.Join(dir, "nottennapod.db"), accountID, base, check)
 		locked := time.Since(began)
+		published = err == nil
 		_ = os.RemoveAll(dir)
 		switch {
 		case errors.Is(err, storage.ErrImportChanged):
@@ -107,6 +118,11 @@ var errStagedEvidence = errors.New("protocol: a staged upload proved a lost time
 
 var errBusy = &Error{Status: 503, Code: "server_busy", Message: "This library is being rebuilt from its archive; try again shortly.",
 	RetryAfter: 10 * time.Second}
+
+// errRebuildClaimed is errBusy for a rebuild or recovery upload that found
+// the account's rebuild claim held (a staged rebuild, or another upload's
+// live transaction): the same answer to a client; a recovery job tries again.
+var errRebuildClaimed = &Error{Status: errBusy.Status, Code: errBusy.Code, Message: errBusy.Message, RetryAfter: errBusy.RetryAfter}
 
 // ClaimRebuildForTest marks a rebuild of the account as running, as a staged
 // rebuild does (tests of the busy answers).

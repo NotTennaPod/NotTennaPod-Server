@@ -1,6 +1,7 @@
 package refresh
 
 import (
+	"bytes"
 	"context"
 	"errors"
 	"net/url"
@@ -70,8 +71,11 @@ func parseFailure(err error) *failure {
 // captured is what a fetch reads before its network I/O.
 type captured struct {
 	rc        ops.RefreshContext
-	populated bool // the live generation's first population is done
-	row       storage.RefreshRow
+	populated bool               // the live generation's first population is done
+	row       storage.RefreshRow // its request sequences as the attempt starts
+	forced    bool               // fetched without validators for a request (PROTOCOL §9.6)
+	rec       *attemptRecord     // the attempt this capture serves (nil: none to report to)
+	recording bool               // the outcome is a failure recorded in place of one that could not be written
 	stored    *feed.StoredResponse
 	credURL   string // the user's URL when the secret was set (legacy credentials' origin)
 }
@@ -84,6 +88,11 @@ func (r *Refresher) capture(ctx context.Context, k key) (captured, error) {
 	var cp captured
 	var sealedBytes []byte
 	err := r.svc.ServerCommit(ctx, k.account, func(c *protocol.ApplyContext) error {
+		if r.fault != nil {
+			if err := r.fault("capture"); err != nil {
+				return err
+			}
+		}
 		if exists, err := c.Account.PodcastExists(k.podcast); err != nil || !exists {
 			if err == nil {
 				err = errGone
@@ -108,6 +117,7 @@ func (r *Refresher) capture(ctx context.Context, k key) (captured, error) {
 			return err
 		}
 		cp.row.PodcastID = k.podcast
+		cp.forced = cp.row.RequestForced()
 		sealedBytes, err = c.Account.FeedResponse(k.podcast)
 		if errors.Is(err, storage.ErrNotFound) {
 			err = nil
@@ -212,17 +222,43 @@ func (r *Refresher) verified(ctx context.Context, k key, target string, creds *f
 	return ok
 }
 
-// refresh runs one fetch of a podcast: capture, fetch and parse outside any
+// attemptRecord is what the worker learns of an attempt: the request
+// sequence and force it started with, once its context was read, and whether
+// an outcome (or its fallback) was written, which answers the requests it
+// covers. An attempt that wrote none is held and runs again (Refresher.held).
+type attemptRecord struct {
+	started  bool
+	seq      int64
+	forced   bool
+	finished bool
+}
+
+// refresh is refreshAttempt for a caller that needs no record.
+func (r *Refresher) refresh(ctx context.Context, k key, force bool) (attempt, error) {
+	return r.refreshAttempt(ctx, k, force, &attemptRecord{})
+}
+
+// refreshAttempt runs one fetch of a podcast: capture, fetch and parse outside any
 // transaction, then one server commit with its catalog effects, the stored
-// response, its schedule and, when due, its status.
-func (r *Refresher) refresh(ctx context.Context, k key, force bool) error {
+// response, its schedule and, when due, its status. It reports how the fetch
+// ended: a success, a failure (also when its outcome could not be written), or
+// no attempt (its podcast gone, or a stop). It is forced (no validators) when
+// force is set or a single-podcast request is pending as it starts; every
+// outcome answers the requests it covers (FinishRefreshAttempt).
+// A context that cannot be read answers nothing: its requests stay pending
+// and the worker holds the podcast before it runs again.
+func (r *Refresher) refreshAttempt(ctx context.Context, k key, force bool, rec *attemptRecord) (attempt, error) {
 	cp, err := r.capture(ctx, k)
 	if errors.Is(err, errGone) {
-		return nil
+		return noAttempt, nil
 	}
 	if err != nil {
-		return err
+		return failedAttempt, err
 	}
+	cp.forced = cp.forced || force
+	force = cp.forced
+	cp.rec = rec
+	rec.started, rec.seq, rec.forced = true, cp.row.RequestSeq, cp.forced
 	rc := cp.rc
 	creds := r.credentials(ctx, k.account, rc, cp.credURL)
 	credRev := ""
@@ -230,14 +266,24 @@ func (r *Refresher) refresh(ctx context.Context, k key, force bool) error {
 		credRev = creds.Revision
 	}
 	req := feed.FetchRequest{URL: rc.RefreshURL, Credentials: creds, Force: true}
+	start := r.nowMs()
 	// Validators: not for a manual refresh, the first fetch after a failure, a
 	// first population, or a changed URL or credentials (PROTOCOL §9.2, §9.4).
 	if s := cp.stored; !force && cp.row.Failures == 0 && (rc.GenerationID == "" || cp.populated) && s != nil &&
 		s.Source == rc.RefreshURL && credentialRevision(s.RepresentationKey) == credRev {
 		req.Force = false
 		req.Validators = &feed.Validators{Key: s.RepresentationKey, ETag: s.ETag, LastModified: s.LastModified}
+		// A host whose ETag is unreliable gets If-Modified-Since alone, and
+		// no validators at all once a day has passed since its last full
+		// response, so a change its validators hide shows within a day
+		// (PROTOCOL §9.3).
+		if s.ETagUnreliable {
+			req.Validators.ETag = ""
+			if start-s.Now >= unreliableETagSafety.Milliseconds() || start < s.Now {
+				req.Force, req.Validators = true, nil
+			}
+		}
 	}
-	start := r.nowMs()
 	var fail *failure
 	var parsed *feed.Feed
 	var res *feed.FetchResult
@@ -251,7 +297,7 @@ func (r *Refresher) refresh(ctx context.Context, k key, force bool) error {
 		return err
 	})
 	if ctx.Err() != nil {
-		return ctx.Err()
+		return noAttempt, ctx.Err()
 	}
 	var p *panicked
 	switch {
@@ -265,16 +311,41 @@ func (r *Refresher) refresh(ctx context.Context, k key, force bool) error {
 	case !res.NotModified:
 		parsed, err = feed.Parse(fetchCtx, res.Body, rc.RefreshURL, time.UnixMilli(start))
 		if ctx.Err() != nil {
-			return ctx.Err()
+			return noAttempt, ctx.Err()
 		}
 		if err != nil {
 			fail = parseFailure(err)
 		}
 	}
+	unreliable := parsed != nil && unreliableETag(cp.stored, req, res, rc.RefreshURL)
 	// Applying runs under the panic net, its preparation included; a panic
 	// there or in its commit (rolled back) is returned as *panicked, and the
 	// worker records the refresh as failed (failAfterPanic).
-	return safely(func() error { return r.apply(ctx, k, cp, creds, start, res, parsed, fail) })
+	if err := safely(func() error { return r.apply(ctx, k, cp, creds, start, res, parsed, fail, unreliable) }); err != nil {
+		return failedAttempt, err
+	}
+	if fail != nil {
+		return failedAttempt, nil
+	}
+	return succeededAttempt, nil
+}
+
+// unreliableETag reports whether a full response's host is known to send an
+// ETag that does not match its unchanged body (PROTOCOL §9.3): the stored
+// response says so for the same source and representation key, or this
+// request sent If-None-Match and got the stored body again, with the same
+// non-empty Last-Modified. A host whose Last-Modified changes is never
+// flagged by it, and a change of source, representation or credentials
+// forgets it.
+func unreliableETag(stored *feed.StoredResponse, req feed.FetchRequest, res *feed.FetchResult, source string) bool {
+	if stored == nil || res == nil || res.NotModified || stored.Source != source || stored.RepresentationKey != res.RepresentationKey {
+		return false
+	}
+	if stored.ETagUnreliable {
+		return true
+	}
+	sentETag := !req.Force && req.Validators != nil && req.Validators.ETag != "" && req.Validators.Key == res.RepresentationKey
+	return sentETag && res.LastModified != "" && res.LastModified == stored.LastModified && bytes.Equal(res.Body, stored.Body)
 }
 
 // failAfterPanic records a refresh a panic stopped (reading its context, or
@@ -283,18 +354,28 @@ func (r *Refresher) refresh(ctx context.Context, k key, force bool) error {
 // commit. When that cannot be written (storage unavailable, or another
 // panic), the podcast still backs off from its schedule as it stands
 // (deferAfterPanic), and the failure is logged without the panic's text.
-func (r *Refresher) failAfterPanic(ctx context.Context, k key) {
-	applied := false
+//
+// The failure answers the requests the attempt started with (rec), as any
+// outcome does; a panic before its context was read answers every pending
+// request with that failure. The fallback answers none: a request is answered
+// only with an outcome a person can see.
+func (r *Refresher) failAfterPanic(ctx context.Context, k key, rec *attemptRecord) {
 	err := safely(func() error {
 		cp, err := r.capture(ctx, k)
 		if errors.Is(err, errGone) {
+			rec.finished = true
 			return nil
 		}
 		if err != nil {
 			return err
 		}
-		applied = true
-		return r.apply(ctx, k, cp, nil, r.nowMs(), nil, nil, panicFailure())
+		if rec.started {
+			cp.row.RequestSeq, cp.forced = rec.seq, rec.forced
+		} else {
+			cp.forced = true
+		}
+		cp.rec, cp.recording = rec, true
+		return r.apply(ctx, k, cp, nil, r.nowMs(), nil, nil, panicFailure(), false)
 	})
 	if err == nil || ctx.Err() != nil {
 		return
@@ -304,9 +385,6 @@ func (r *Refresher) failAfterPanic(ctx context.Context, k key) {
 		r.log.Error("refresh: a panic stopped recording a failed refresh", "account", k.account, "podcast", k.podcast, "stack", p.stack)
 	} else {
 		r.log.Error("refresh: cannot record a failed refresh after a panic", "account", k.account, "podcast", k.podcast, "error", err)
-		if applied {
-			return // apply backed the podcast off (deferAfterError)
-		}
 	}
 	if err := safely(func() error { r.deferAfterPanic(ctx, k); return nil }); errors.As(err, &p) {
 		r.log.Error("refresh: a panic stopped backing a podcast off", "account", k.account, "podcast", k.podcast, "stack", p.stack)
@@ -325,9 +403,10 @@ func (r *Refresher) logPanic(k key, p *panicked) {
 
 // apply writes a fetch's outcome in one server commit: its catalog effects,
 // the stored response, its schedule and, when due, its status. A panic in
-// the commit is returned as *panicked, the commit rolled back.
+// the commit is returned as *panicked, the commit rolled back. unreliable:
+// the response's host sends an unreliable ETag (unreliableETag).
 func (r *Refresher) apply(ctx context.Context, k key, cp captured, creds *feed.Credentials, start int64, res *feed.FetchResult,
-	parsed *feed.Feed, fail *failure) error {
+	parsed *feed.Feed, fail *failure, unreliable bool) error {
 	rc := cp.rc
 	scheduled := rc.State == "subscribed" && rc.KeepUpdated
 	retries := rc.GenerationID != "" && !cp.populated && fail != nil // the first population is retried
@@ -358,17 +437,39 @@ func (r *Refresher) apply(ctx context.Context, k key, cp captured, creds *feed.C
 	var stored *feed.StoredResponse
 	if parsed != nil && r.svc.Box != nil {
 		stored = &feed.StoredResponse{RepresentationKey: res.RepresentationKey, ETag: res.ETag, LastModified: res.LastModified,
-			Source: rc.RefreshURL, Now: start, ParserVersion: feed.ParserVersion, Body: res.Body}
+			Source: rc.RefreshURL, Now: start, ParserVersion: feed.ParserVersion, Body: res.Body, ETagUnreliable: unreliable}
 	}
 	// The schedule after this attempt.
 	next := storage.RefreshRow{PodcastID: k.podcast, LastAttempt: start, LastSuccess: cp.row.LastSuccess,
-		StatusPublishedAt: cp.row.StatusPublishedAt, StatusKey: cp.row.StatusKey, Context: cp.row.Context}
+		StatusPublishedAt: cp.row.StatusPublishedAt, StatusKey: cp.row.StatusKey, Context: cp.row.Context, QuietSince: cp.row.QuietSince}
 	if rc.GenerationID != "" && rc.State != "removed" {
 		next.Context = rc.GenerationID + "\x00" + rc.RefreshURL + "\x00" + rc.SecretID
+		// The quiet time belongs to the context the row was written for. A
+		// fetch whose context the scheduler had not seen (an edit between
+		// its dispatch and its capture) starts the new context's observation,
+		// as the scheduler would have: from its first success, so a failure
+		// keeps the reset pending. An edit after the capture still differs
+		// from the context written here, and the next pass resets it.
+		if cp.row.Context != next.Context {
+			next.QuietSince = 0
+		}
+	}
+	// A success's next attempt is one interval away (PROTOCOL §9.6), longer
+	// for a podcast whose catalog the server's fetches have found unchanged
+	// for 30 days or more. Its quiet time starts at its first success, and
+	// again at each fetch that finds something new or changed: that is known
+	// only in the commit, after the status is decided, so the status plans
+	// the quiet attempt and the activity brings the real one forward. A clock
+	// that went back counts as activity.
+	jitter := 1.0
+	quiet := next.QuietSince
+	if quiet == 0 || start < quiet {
+		quiet = start
 	}
 	if fail == nil {
-		next.LastSuccess = start
-		next.NextAt = done + r.jitter(r.cfg.Interval).Milliseconds()
+		jitter = r.jitterFactor()
+		next.LastSuccess, next.QuietSince = start, quiet
+		next.NextAt = done + jittered(r.interval(quiet, done), jitter).Milliseconds()
 	} else {
 		next.Failures = cp.row.Failures + 1
 		next.NextAt = done + r.backoff(next.Failures).Milliseconds()
@@ -405,9 +506,17 @@ func (r *Refresher) apply(ctx context.Context, k key, cp captured, creds *feed.C
 	if stored != nil {
 		x.Revisions = func(revs map[string]string) { stored.Revisions = revs }
 	}
+	var activity ops.FetchActivity
+	x.Activity = func(a ops.FetchActivity) { activity = a }
 	moved := false
 	err := safely(func() error {
 		return r.svc.ServerCommit(ctx, k.account, func(c *protocol.ApplyContext) error {
+			activity = ops.FetchActivity{}
+			if r.fault != nil {
+				if err := r.fault("outcome"); err != nil {
+					return err
+				}
+			}
 			if exists, err := c.Account.PodcastExists(k.podcast); err != nil || !exists {
 				return err
 			}
@@ -450,10 +559,21 @@ func (r *Refresher) apply(ctx context.Context, k key, cp captured, creds *feed.C
 					return err
 				}
 			}
+			row := next
+			if fail == nil && activity.Active() {
+				row.QuietSince = start
+				row.NextAt = done + jittered(r.interval(start, done), jitter).Milliseconds()
+			}
 			// A request's next_at = now written during the fetch was joined by it.
-			return c.Account.PutRefreshSchedule(next)
+			if err := c.Account.PutRefreshSchedule(row); err != nil {
+				return err
+			}
+			return c.Account.FinishRefreshAttempt(k.podcast, cp.row.RequestSeq, cp.forced)
 		})
 	})
+	if err == nil && cp.rec != nil {
+		cp.rec.finished = true
+	}
 	if p := (*panicked)(nil); errors.As(err, &p) {
 		return err
 	}
@@ -461,7 +581,19 @@ func (r *Refresher) apply(ctx context.Context, k key, cp captured, creds *feed.C
 		if ctx.Err() != nil {
 			return ctx.Err()
 		}
-		r.deferAfterError(ctx, k, cp.row)
+		if cp.recording {
+			return err // the caller falls back
+		}
+		// The outcome could not be written: the attempt is recorded as an I/O
+		// failure instead (the catalog untouched), which answers its requests
+		// with an error a person can see. Failing that too, the podcast only
+		// backs off, its requests stay pending, and the worker holds it.
+		failed := cp
+		failed.recording = true
+		if ferr := safely(func() error { return r.apply(ctx, k, failed, nil, start, nil, nil, &failure{label: "io"}, false) }); ferr == nil || ctx.Err() != nil {
+			return err
+		}
+		r.deferAfterError(ctx, k, cp)
 		return err
 	}
 	if moved {
@@ -478,7 +610,9 @@ func (r *Refresher) apply(ctx context.Context, k key, cp captured, creds *feed.C
 }
 
 // deferAfterPanic backs a podcast off after a panic when no failed refresh
-// could be recorded (failAfterPanic), from its schedule as it stands.
+// could be recorded (failAfterPanic), from its schedule as it stands. It
+// answers no request: nothing a person can see changed, so they stay pending
+// and the worker holds the podcast.
 func (r *Refresher) deferAfterPanic(ctx context.Context, k key) {
 	err := r.svc.Store.Write(ctx, func(tx *storage.WriteTx) error {
 		acct := tx.Account(k.account)
@@ -499,9 +633,12 @@ func (r *Refresher) deferAfterPanic(ctx context.Context, k key) {
 	}
 }
 
-// deferAfterError backs a podcast off after a fetch that could not be applied
-// (a storage error), so it is not retried in a loop. Its status is unchanged.
-func (r *Refresher) deferAfterError(ctx context.Context, k key, row storage.RefreshRow) {
+// deferAfterError backs a podcast off after a fetch whose outcome, and the
+// failure recorded in its place, could not be written (a storage error), so it
+// is not retried in a loop. Its status is unchanged, so it answers no request:
+// they stay pending and the worker holds the podcast.
+func (r *Refresher) deferAfterError(ctx context.Context, k key, cp captured) {
+	row := cp.row
 	err := r.svc.Store.Write(ctx, func(tx *storage.WriteTx) error {
 		acct := tx.Account(k.account)
 		if exists, err := acct.PodcastExists(k.podcast); err != nil || !exists {
@@ -510,6 +647,11 @@ func (r *Refresher) deferAfterError(ctx context.Context, k key, row storage.Refr
 		row.PodcastID = k.podcast
 		row.Failures++
 		row.NextAt = r.nowMs() + r.backoff(row.Failures).Milliseconds()
+		if r.fault != nil {
+			if err := r.fault("defer"); err != nil {
+				return err
+			}
+		}
 		return acct.PutRefreshSchedule(row)
 	})
 	if err != nil && ctx.Err() == nil {

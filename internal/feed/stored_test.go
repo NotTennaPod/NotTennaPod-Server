@@ -2,8 +2,10 @@ package feed
 
 import (
 	"bytes"
+	"compress/gzip"
 	"context"
 	"encoding/json"
+	"io"
 	"net/http"
 	"net/http/httptest"
 	"os"
@@ -121,3 +123,39 @@ func TestStoredResponseSealedAndReparsed(t *testing.T) {
 }
 
 func readIfExists(path string) ([]byte, error) { return os.ReadFile(path) }
+
+// The unreliable-ETag mark (PROTOCOL §9.3) is kept with the response; a
+// response without it is stored as before and opens unmarked.
+func TestStoredResponseKeepsTheUnreliableETagMark(t *testing.T) {
+	box, err := sealed.LoadOrCreate(t.TempDir())
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, mark := range []bool{false, true} {
+		r := StoredResponse{RepresentationKey: "https://example.com/feed\x00", ETag: `"e"`, LastModified: "Mon, 02 Jan 2023 15:04:05 GMT",
+			Source: "https://example.com/feed", Now: 1, ParserVersion: ParserVersion, Body: []byte("<rss/>"), ETagUnreliable: mark}
+		b, err := r.Seal(box, "a", "p1:x")
+		if err != nil {
+			t.Fatal(err)
+		}
+		again, err := OpenStoredResponse(box, "a", "p1:x", b)
+		if err != nil || again.ETagUnreliable != mark || again.LastModified != r.LastModified {
+			t.Fatalf("mark %v: opened %+v %v", mark, again, err)
+		}
+		plain, err := box.Open(b, storedAD("a", "p1:x"))
+		if err != nil {
+			t.Fatal(err)
+		}
+		gz, err := gzip.NewReader(bytes.NewReader(plain))
+		if err != nil {
+			t.Fatal(err)
+		}
+		data, err := io.ReadAll(gz)
+		if err != nil {
+			t.Fatal(err)
+		}
+		if has := bytes.Contains(data, []byte(`"etag_unreliable"`)); has != mark {
+			t.Errorf("mark %v: the header names it: %v", mark, has)
+		}
+	}
+}

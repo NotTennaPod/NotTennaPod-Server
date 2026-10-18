@@ -106,63 +106,19 @@ func referenceSchema(ctx context.Context, migrations []migration, version int) (
 // its migrations create; it returns ErrIntegrity naming the differences. A
 // database without the migrations table must be empty (a new database).
 func checkSchema(ctx context.Context, q rowQuerier, migrations []migration) error {
-	have, err := readSchema(ctx, q)
-	if err != nil {
-		return fmt.Errorf("%w: reading the schema: %v", ErrIntegrity, err)
-	}
-	version := 0
-	if _, ok := have["table\x00schema_migrations"]; ok {
-		rows, err := q.QueryContext(ctx, `SELECT version, checksum FROM schema_migrations ORDER BY version`)
-		if err != nil {
-			return fmt.Errorf("%w: reading the migrations: %v", ErrIntegrity, err)
-		}
-		known := map[int]migration{}
-		for _, m := range migrations {
-			known[m.version] = m
-		}
-		for rows.Next() {
-			var v int
-			var sum string
-			if err := rows.Scan(&v, &sum); err != nil {
-				rows.Close()
-				return err
-			}
-			m, ok := known[v]
-			switch {
-			case !ok:
-				rows.Close()
-				return fmt.Errorf("%w: database has migration %d", ErrSchemaTooNew, v)
-			case sum != m.checksum:
-				rows.Close()
-				return fmt.Errorf("%w: %s", ErrMigrationEdited, m.name)
-			case v != version+1:
-				rows.Close()
-				return fmt.Errorf("%w: the database's recorded migrations skip from %d to %d", ErrIntegrity, version, v)
-			}
-			version = v
-		}
-		rows.Close()
-		if err := rows.Err(); err != nil {
-			return err
-		}
-	}
-	want, err := referenceSchema(ctx, migrations, version)
+	version, diffs, err := compareSchema(ctx, q, migrations)
 	if err != nil {
 		return err
 	}
 	var problems []string
-	for k, o := range have {
-		w, ok := want[k]
-		switch {
-		case !ok:
-			problems = append(problems, "has "+o.String()+" of its own")
-		case w != o:
-			problems = append(problems, "has a different "+o.String())
-		}
-	}
-	for k, o := range want {
-		if _, ok := have[k]; !ok {
-			problems = append(problems, "lacks "+o.String())
+	for _, d := range diffs {
+		switch d.kind {
+		case schemaOwn:
+			problems = append(problems, "has "+d.object.String()+" of its own")
+		case schemaDifferent:
+			problems = append(problems, "has a different "+d.object.String())
+		case schemaLacks:
+			problems = append(problems, "lacks "+d.object.String())
 		}
 	}
 	if len(problems) > 0 {
@@ -173,4 +129,83 @@ func checkSchema(ctx context.Context, q rowQuerier, migrations []migration) erro
 		return fmt.Errorf("%w: the schema is not the one migration %d creates: it %s", ErrIntegrity, version, strings.Join(problems, "; it "))
 	}
 	return nil
+}
+
+// A schemaDifference is an object a database has of its own, has with other
+// SQL, or lacks, against the schema its recorded migrations create.
+type schemaDifference struct {
+	kind   int // schemaOwn, schemaDifferent or schemaLacks
+	object schemaObject
+}
+
+const (
+	schemaOwn       = iota // the database's object, which the migrations do not create
+	schemaDifferent        // the database's object, whose SQL is not the migrations'
+	schemaLacks            // the migrations' object, which the database lacks
+)
+
+// compareSchema lists the differences between a database's schema and the
+// one its recorded migrations create (checkSchema), and that version. An
+// error is a database checkSchema refuses whatever the differences are.
+func compareSchema(ctx context.Context, q rowQuerier, migrations []migration) (int, []schemaDifference, error) {
+	have, err := readSchema(ctx, q)
+	if err != nil {
+		return 0, nil, fmt.Errorf("%w: reading the schema: %v", ErrIntegrity, err)
+	}
+	version := 0
+	if _, ok := have["table\x00schema_migrations"]; ok {
+		rows, err := q.QueryContext(ctx, `SELECT version, checksum FROM schema_migrations ORDER BY version`)
+		if err != nil {
+			return 0, nil, fmt.Errorf("%w: reading the migrations: %v", ErrIntegrity, err)
+		}
+		known := map[int]migration{}
+		for _, m := range migrations {
+			known[m.version] = m
+		}
+		for rows.Next() {
+			var v int
+			var sum string
+			if err := rows.Scan(&v, &sum); err != nil {
+				rows.Close()
+				return 0, nil, err
+			}
+			m, ok := known[v]
+			switch {
+			case !ok:
+				rows.Close()
+				return 0, nil, fmt.Errorf("%w: database has migration %d", ErrSchemaTooNew, v)
+			case sum != m.checksum:
+				rows.Close()
+				return 0, nil, fmt.Errorf("%w: %s", ErrMigrationEdited, m.name)
+			case v != version+1:
+				rows.Close()
+				return 0, nil, fmt.Errorf("%w: the database's recorded migrations skip from %d to %d", ErrIntegrity, version, v)
+			}
+			version = v
+		}
+		rows.Close()
+		if err := rows.Err(); err != nil {
+			return 0, nil, err
+		}
+	}
+	want, err := referenceSchema(ctx, migrations, version)
+	if err != nil {
+		return 0, nil, err
+	}
+	var diffs []schemaDifference
+	for k, o := range have {
+		w, ok := want[k]
+		switch {
+		case !ok:
+			diffs = append(diffs, schemaDifference{schemaOwn, o})
+		case w != o:
+			diffs = append(diffs, schemaDifference{schemaDifferent, o})
+		}
+	}
+	for k, o := range want {
+		if _, ok := have[k]; !ok {
+			diffs = append(diffs, schemaDifference{schemaLacks, o})
+		}
+	}
+	return version, diffs, nil
 }

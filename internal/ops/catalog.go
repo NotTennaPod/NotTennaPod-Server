@@ -942,16 +942,37 @@ type ServerFetch struct {
 	NewFeedURL         string            // the fetched new-feed-url among Aliases (Feed.RedirectURL when "")
 	Reparse            bool              // a re-parse of a stored response: no discovery, move or status
 	MetadataOnly       bool              // an imported podcast without items: its record only, the generation left unpopulated (PROTOCOL §11.5)
-	Status             map[string]any    // the refresh_status record to publish (nil when not due)
-	CurrentStatus      map[string]any    // the fetch's status when none is due: a part 0 written anyway carries it
-	Namespace          string
+	// ImportChapters: the items are an import's rows (PROTOCOL §11.5), so an
+	// episode several rows derive takes the first of them, with the chapters
+	// of the first row that has any.
+	ImportChapters bool
+	Status         map[string]any // the refresh_status record to publish (nil when not due)
+	CurrentStatus  map[string]any // the fetch's status when none is due: a part 0 written anyway carries it
+	Namespace      string
 	// Revisions, when set, receives the revision each record of the parse
 	// stands at for this fetch ("feed" or an episode ID): the part that wrote
 	// it, else the canonical revision its unchanged record matched. The
 	// refresher stores them with the response, so a re-parse names its own
 	// revisions as bases.
 	Revisions func(map[string]string)
+	// Activity, when set, receives what a successful fetch with its parse
+	// (not a re-parse) found new or changed in the catalog: how the
+	// refresher tells a quiet feed (PROTOCOL §9.6). It is called once per
+	// application with the values of that application.
+	Activity func(FetchActivity)
 }
+
+// FetchActivity is what a successful server fetch found new or changed in a
+// podcast's catalog (PROTOCOL §9.6). A change to the podcast's own metadata
+// record is not counted: channel-level churn says nothing about episodes.
+type FetchActivity struct {
+	ItemRecords int // item records the fetch wrote: new items (whatever their date) and changed ones
+	NewToServer int // other items new to the server's fetch history, or gaining an enclosure there (a phone saw them first)
+	Admitted    int // the server's own discoveries it admitted
+}
+
+// Active reports whether the fetch found anything new or changed.
+func (a FetchActivity) Active() bool { return a.ItemRecords > 0 || a.NewToServer > 0 || a.Admitted > 0 }
 
 // refreshPartSize: at most this many item records per catalog.refresh part.
 const refreshPartSize = 200
@@ -1194,6 +1215,10 @@ func ApplyServerFetch(ctx *protocol.ApplyContext, x ServerFetch) error {
 	// the fetch keeps (identifiable, once, of this podcast) and those whose
 	// record differs from the canonical one.
 	var kept, changed []keptItem
+	var chaptersOf map[string]any
+	if x.ImportChapters {
+		chaptersOf = importChapters(items, derived)
+	}
 	seen := map[string]bool{}
 	for i, it := range items {
 		e := derived[i]
@@ -1201,6 +1226,15 @@ func ApplyServerFetch(ctx *protocol.ApplyContext, x ServerFetch) error {
 			continue // unidentifiable, or one episode twice in a feed: the first stands
 		}
 		seen[e] = true
+		if c, ok := chaptersOf[e]; ok && !hasChapters(it.Fields["chapters"]) {
+			// An imported row without stored chapters takes a later row's.
+			fields := make(map[string]any, len(it.Fields))
+			for k, v := range it.Fields {
+				fields[k] = v
+			}
+			fields["chapters"] = c
+			it.Fields = fields
+		}
 		if bound, err := acct.EpisodePodcast(e); err != nil {
 			return err
 		} else if bound != "" && bound != x.PodcastID {
@@ -1277,6 +1311,9 @@ func ApplyServerFetch(ctx *protocol.ApplyContext, x ServerFetch) error {
 		sort.Strings(w.seen)
 	}
 	w.seenReady = true
+	if full && x.Activity != nil {
+		x.Activity(FetchActivity{ItemRecords: len(changed), NewToServer: len(w.seen), Admitted: len(candidates)})
+	}
 	write := w.part0 != "" || w.feed != nil || len(changed) > 0 || firstPopulation || len(candidates) > 0 || moveRefresh ||
 		len(aliases) > 0 || mergeWith != "" || (x.Status != nil && !x.Reparse) || len(w.seen) > 0
 	if !write && !parsed {
@@ -1647,6 +1684,27 @@ func decodeEffect(s string) (projection.Effect, error) {
 	var e projection.Effect
 	err := json.Unmarshal([]byte(s), &e)
 	return e, err
+}
+
+// importChapters is, for each episode several of an import's rows derive,
+// the first stored chapter list among its rows in item order (PROTOCOL §11.5):
+// a row's own list is never lost because an earlier row without one stands.
+func importChapters(items []ServerItem, derived []string) map[string]any {
+	out := map[string]any{}
+	for i, it := range items {
+		e := derived[i]
+		if _, done := out[e]; e == "" || done || !hasChapters(it.Fields["chapters"]) {
+			continue
+		}
+		out[e] = it.Fields["chapters"]
+	}
+	return out
+}
+
+// hasChapters: a chapter list with at least one chapter.
+func hasChapters(v any) bool {
+	list, ok := v.([]any)
+	return ok && len(list) > 0
 }
 
 // RefreshContext is what a server fetch captures before its network I/O

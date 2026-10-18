@@ -164,7 +164,7 @@ func (e *env) reopen(t *testing.T) {
 	t.Helper()
 	ctx := context.Background()
 	dir := e.svc.Store.Dir()
-	store, err := storage.Open(ctx, dir)
+	store, err := storage.Open(ctx, dir, e.storeOpts...)
 	if err != nil {
 		t.Fatal(err)
 	}

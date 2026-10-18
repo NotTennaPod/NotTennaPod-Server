@@ -1,9 +1,7 @@
 package views
 
 import (
-	"encoding/binary"
 	"errors"
-	"hash/fnv"
 	"sort"
 	"strings"
 	"unicode"
@@ -11,6 +9,9 @@ import (
 
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/stats"
 )
+
+// The screens other than lists, from the podcasts' aggregates and the
+// version's trees: O(P × classes + P log n), never a walk of the episodes.
 
 // ---- navigation counters
 
@@ -20,15 +21,32 @@ type Counters struct {
 	Inbox int `json:"inbox"` // NEW episodes of subscribed podcasts
 }
 
-// Counters returns the navigation counters.
+// Counters returns the navigation counters: the shown podcasts' queued
+// episodes, and the subscribed podcasts' new ones.
 func (l *Library) Counters() Counters {
-	c := Counters{Queue: len(l.Queue)}
-	for _, e := range l.Episodes {
-		if e.Read == -1 && e.Podcast.State == "subscribed" {
-			c.Inbox++
+	var c Counters
+	for id, p := range l.V.podcasts.All() {
+		agg, ok := l.V.agg.Get(id)
+		if !ok {
+			continue
+		}
+		c.Queue += queued(agg)
+		if p.State == "subscribed" {
+			c.Inbox += count(agg, func(k Class) bool { return k.Read() == -1 })
 		}
 	}
 	return c
+}
+
+// count is a podcast's episodes of the classes f passes.
+func count(a *PodAgg, f func(Class) bool) int {
+	n := 0
+	for c := range Class(NumClasses) {
+		if a.Hist[c] > 0 && f(c) {
+			n += int(a.Hist[c])
+		}
+	}
+	return n
 }
 
 // ---- subscriptions (DBReader.getNavDrawerData)
@@ -88,44 +106,54 @@ func or(s, def string) string {
 
 // Subscription is a row of the subscription list.
 type Subscription struct {
-	Podcast *Podcast
+	Podcast *PodcastItem
 	Counter int
 }
 
 // Subscriptions returns the podcasts of a state in Android's order, with
 // their counters. As on Android, counters count only subscribed podcasts.
+// A podcast's newest episode is the first of its class ranges in the
+// newest-first order: O(P × classes × log n).
 func (l *Library) Subscriptions(o SubscriptionOptions) []Subscription {
-	counters, played, recent := map[string]int{}, map[string]int{}, map[string]int64{}
-	for _, e := range l.Episodes {
-		id := e.Podcast.ID
-		if e.PubDate > recent[id] {
-			recent[id] = e.PubDate
-		}
-		if e.Podcast.State != "subscribed" {
-			continue
-		}
-		if e.Read == 1 {
-			played[id]++
-		}
-		switch {
-		case o.Counter == "new" && e.Read == -1, o.Counter == "unplayed" && e.Read != 1:
-			counters[id]++
-		}
-	}
-	// getFeedList: by title, case-insensitive for ASCII (COLLATE NOCASE).
+	v := l.V
+	dateNewOld, _ := OrderIndex("date_new_old")
 	var rows []Subscription
-	for _, p := range l.Podcasts {
+	played, recent := map[string]int{}, map[string]int64{}
+	for id, p := range v.podcasts.All() {
 		if p.State != o.State {
 			continue
 		}
 		if (o.UpdatesEnabled && !p.KeepUpdated) || (o.UpdatesDisabled && p.KeepUpdated) {
 			continue
 		}
-		if o.CounterAboveZero && counters[p.ID] <= 0 {
+		counter := 0
+		agg, _ := v.agg.Get(id)
+		if agg != nil && p.State == "subscribed" {
+			switch o.Counter {
+			case "new":
+				counter = count(agg, func(c Class) bool { return c.Read() == -1 })
+			case "unplayed":
+				counter = count(agg, func(c Class) bool { return c.Read() != 1 })
+			}
+			played[id] = count(agg, func(c Class) bool { return c.Read() == 1 })
+		}
+		if o.CounterAboveZero && counter <= 0 {
 			continue
 		}
-		rows = append(rows, Subscription{Podcast: p, Counter: counters[p.ID]})
+		if o.Order == "most_recent_episode" && agg != nil {
+			for c := range Class(NumClasses) {
+				if agg.Hist[c] == 0 {
+					continue
+				}
+				_, e, ok := v.orders[dateNewOld].Seek(orderKey{podcast: id, class: c, bound: -1}).Next()
+				if ok && e.PodcastID == id && e.PubDate > recent[id] {
+					recent[id] = e.PubDate
+				}
+			}
+		}
+		rows = append(rows, Subscription{Podcast: p, Counter: counter})
 	}
+	// getFeedList: by title, case-insensitive for ASCII (COLLATE NOCASE).
 	sort.Slice(rows, func(i, j int) bool {
 		a, b := rows[i].Podcast, rows[j].Podcast
 		if c := strings.Compare(asciiLower(title(a)), asciiLower(title(b))); c != 0 {
@@ -178,7 +206,7 @@ func (l *Library) Subscriptions(o SubscriptionOptions) []Subscription {
 	return rows
 }
 
-func title(p *Podcast) string {
+func title(p *PodcastItem) string {
 	if p.Title == nil {
 		return ""
 	}
@@ -218,7 +246,7 @@ func compareIgnoreCase(a, b string) int {
 
 // PodcastStatistics is a podcast's statistics row.
 type PodcastStatistics struct {
-	Podcast    *Podcast
+	Podcast    *PodcastItem
 	Stats      stats.Podcast
 	OldestDate int64 // the earliest positive last played; 0 when none
 }
@@ -237,53 +265,52 @@ type MonthStatistics struct {
 	PlayedMS int64 `json:"played_ms"`
 }
 
-func (l *Library) parts(e *Episode) []stats.Part {
-	recs := map[string]map[string]any{}
-	for g, r := range e.Records {
-		recs[g] = r.fields
+// podcastRow is a podcast's statistics row over [from, to): the values
+// without dates from its aggregates, the dated ones from its units' prefix
+// sums; windowMarked dates the marked-played value too. O(log n).
+func (l *Library) podcastRow(p *PodcastItem, from, to int64, windowMarked bool) PodcastStatistics {
+	v := l.V
+	agg := v.PodcastAgg(p.ID)
+	played, marked := v.PlayedBetween(p.ID, from, to)
+	row := PodcastStatistics{Podcast: p, Stats: stats.Podcast{PlayedMS: played, PlayedMarkedMS: agg.MarkedAll, EpisodesStarted: agg.Started,
+		EpisodesStartedMarked: agg.StartedMarked, Episodes: agg.Parts, TotalMS: agg.TotalMS}, OldestDate: v.OldestPlayed(p.ID)}
+	if windowMarked {
+		row.Stats.PlayedMarkedMS = marked
 	}
-	meta := e.Records["metadata"].fields
-	if meta == nil {
-		meta = map[string]any{}
+	return row
+}
+
+// PodcastStatistics is a podcast's statistics card (all time, as the
+// statistics screen shows its row), for a subscribed or archived podcast.
+func (l *Library) PodcastStatistics(p *PodcastItem) (PodcastStatistics, bool) {
+	if p.State == "not_subscribed" {
+		return PodcastStatistics{}, false
 	}
-	return stats.Parts(recs, meta)
+	return l.podcastRow(p, 0, stats.Forever, false), true
 }
 
 // Statistics computes the statistics screen: subscribed and archived
 // podcasts, ordered by the played time shown (with "include marked as played",
 // all time, as Android forces), ties in podcast order; months over every
-// podcast, as Android's media table holds them.
+// shown podcast, as Android's media table holds them.
 func (l *Library) Statistics(from, to int64, includeMarked bool, now int64) Statistics {
-	return l.statistics(from, to, includeMarked, false, now)
+	st := l.statistics(from, to, includeMarked, false, now)
+	for k, ms := range l.V.Months() {
+		y, m := MonthOf(k)
+		st.Months = append(st.Months, MonthStatistics{Year: y, Month: m, PlayedMS: ms})
+	}
+	return st
 }
 
-// statistics with windowMarked applies the date filter to the marked-played
-// values too, as Android's SQL does for Home (getStatistics with a range).
+// statistics is the podcasts' rows of the statistics (Home's classics read
+// them without the months).
 func (l *Library) statistics(from, to int64, includeMarked, windowMarked bool, now int64) Statistics {
-	byPodcast := map[string][]stats.Part{}
-	var all []stats.Part
-	for _, e := range l.Episodes {
-		ps := l.parts(e)
-		all = append(all, ps...)
-		if e.Podcast.State != "not_subscribed" {
-			byPodcast[e.Podcast.ID] = append(byPodcast[e.Podcast.ID], ps...)
-		}
-	}
 	out := Statistics{OldestDate: now}
-	for _, p := range l.Podcasts {
+	for _, p := range l.V.podcasts.All() {
 		if p.State == "not_subscribed" {
 			continue
 		}
-		parts := byPodcast[p.ID]
-		row := PodcastStatistics{Podcast: p, Stats: stats.PerPodcast(parts, from, to)}
-		if windowMarked {
-			row.Stats.PlayedMarkedMS = stats.PlayedMarkedBetween(parts, from, to)
-		}
-		for _, x := range parts {
-			if x.LastPlayed > 0 && (row.OldestDate == 0 || x.LastPlayed < row.OldestDate) {
-				row.OldestDate = x.LastPlayed
-			}
-		}
+		row := l.podcastRow(p, from, to, windowMarked)
 		if row.Stats.Episodes > 0 && row.OldestDate > 0 && row.OldestDate < out.OldestDate {
 			out.OldestDate = row.OldestDate
 		}
@@ -297,110 +324,13 @@ func (l *Library) statistics(from, to int64, includeMarked, windowMarked bool, n
 	}
 	sort.Slice(out.Podcasts, func(i, j int) bool { return podcastLess(out.Podcasts[i].Podcast, out.Podcasts[j].Podcast) })
 	sort.SliceStable(out.Podcasts, func(i, j int) bool { return shown(out.Podcasts[i]) > shown(out.Podcasts[j]) })
-	for m, v := range stats.Monthly(all) {
-		out.Months = append(out.Months, MonthStatistics{Year: m.Year, Month: m.Month, PlayedMS: v})
-	}
-	sort.Slice(out.Months, func(i, j int) bool {
-		a, b := out.Months[i], out.Months[j]
-		return a.Year < b.Year || (a.Year == b.Year && a.Month < b.Month)
-	})
 	return out
 }
 
 // podcastLess is podcast order: Android's feed IDs, the order of creation.
-func podcastLess(a, b *Podcast) bool {
+func podcastLess(a, b *PodcastItem) bool {
 	if a.Rank != b.Rank {
 		return a.Rank < b.Rank
 	}
 	return a.ID < b.ID
-}
-
-// ---- Home (HomeFragment's sections)
-
-// Home is Android Home's sections that sync: continue listening (the queue's
-// paused episodes), see what's new (the Inbox), get surprised and check your
-// classics. Downloads stay on devices; the Echo review is seasonal.
-type Home struct {
-	Continue []*Episode
-	New      []*Episode
-	NewCount int
-	Surprise []*Episode
-	Classics []*Podcast
-}
-
-const (
-	homeContinue = 8 // QueueSection.NUM_EPISODES
-	homeNew      = 2 // InboxSection.NUM_EPISODES
-	homeSurprise = 8 // EpisodesSurpriseSection.NUM_EPISODES
-	homeClassics = 8 // SubscriptionsSection.NUM_FEEDS
-	day          = int64(24 * 3600 * 1000)
-)
-
-// Home computes the Home sections at time now. seed picks the surprise
-// sample, as Android's per-process seed does; includeMarked is the statistics
-// screen's setting, which Android's classics section follows.
-func (l *Library) Home(now int64, seed int64, inboxOrder string, includeMarked bool) Home {
-	var h Home
-	// getPausedQueue: started or just played first, by last played, then queue order.
-	h.Continue = append([]*Episode(nil), l.Queue...)
-	recent := func(e *Episode) int64 {
-		if e.HasMedia && (e.Position >= 1000 || e.LastPlayed >= now-30_000) {
-			return e.LastPlayed
-		}
-		return 0
-	}
-	sort.SliceStable(h.Continue, func(i, j int) bool { return recent(h.Continue[i]) > recent(h.Continue[j]) })
-	if len(h.Continue) > homeContinue {
-		h.Continue = h.Continue[:homeContinue]
-	}
-	inbox := l.EpisodesWhere(Filter{New: true}, inboxOrder, "")
-	h.NewCount = len(inbox)
-	h.New = inbox[:min(len(inbox), homeNew)]
-	// getRandomEpisodesCursor: new or unplayed episodes of subscribed podcasts
-	// from the last two years (Android's 2 x 356 days), not played more than
-	// an hour ago; one per podcast, then a seeded order.
-	pick := map[string]*Episode{}
-	for _, e := range l.Episodes {
-		if (e.Read != -1 && e.Read != 0) || !e.HasMedia || e.Podcast.State != "subscribed" ||
-			e.PubDate <= now-2*356*day || !(e.LastPlayed == 0 || e.LastPlayed > now-3600_000) {
-			continue
-		}
-		if cur, ok := pick[e.Podcast.ID]; !ok || sample(seed, e.ID) > sample(seed, cur.ID) {
-			pick[e.Podcast.ID] = e
-		}
-	}
-	for _, e := range pick {
-		h.Surprise = append(h.Surprise, e)
-	}
-	sort.Slice(h.Surprise, func(i, j int) bool {
-		a, b := sample(seed*3, h.Surprise[i].ID), sample(seed*3, h.Surprise[j].ID)
-		if a != b {
-			return a > b
-		}
-		return h.Surprise[i].ID < h.Surprise[j].ID
-	})
-	if len(h.Surprise) > homeSurprise {
-		h.Surprise = h.Surprise[:homeSurprise]
-	}
-	// SubscriptionsSection: the last three years' statistics by played time.
-	st := l.statistics(now-3*365*day, 1<<63-1, includeMarked, true, now)
-	for _, r := range st.Podcasts {
-		if len(h.Classics) == homeClassics {
-			break
-		}
-		if r.Podcast.State == "subscribed" {
-			h.Classics = append(h.Classics, r.Podcast)
-		}
-	}
-	return h
-}
-
-// sample is a seeded pseudo-random number in Android's range [0, 46471).
-func sample(seed int64, id string) uint64 {
-	f := fnv.New64a()
-	var b [8]byte
-	binary.BigEndian.PutUint64(b[:], uint64(seed))
-	f.Write(b[:])
-	f.Write([]byte(id))
-	return f.Sum64() % 46471
 }

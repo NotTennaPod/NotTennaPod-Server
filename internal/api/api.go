@@ -4,11 +4,13 @@
 package api
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
 	"io"
+	"log/slog"
 	"mime"
 	"net"
 	"net/http"
@@ -23,6 +25,7 @@ import (
 
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/auth"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/feed"
+	"github.com/NotTennaPod/NotTennaPod-Server/internal/httpgzip"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/importer"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/media"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/protocol"
@@ -54,6 +57,9 @@ type Config struct {
 	afterPasswordVerify func()
 	beforeIssue         func()
 	duringBackup        func()
+	freeBytes           func(dir string) (int64, error) // the backup's free space (default statfs)
+	beforeKeyPassword   func()                          // a recovery key: between reading the login and checking its password
+	duringKeySeal       func()                          // a recovery key: sealed, not yet issued
 }
 
 // Server is the API handler.
@@ -65,8 +71,9 @@ type Server struct {
 
 	streamsDone chan struct{} // closed by Shutdown: event streams end
 	streamsOnce sync.Once
-	libraries   *views.Cache // the read API's libraries by account and head
+	libraries   *views.Cache // the read API's libraries: each account's, built once and shared
 	previews    *admission   // feed previews running
+	keyExports  *keyExports  // recovery keys: sealings and exports waiting for confirmation
 }
 
 const (
@@ -94,8 +101,8 @@ func New(cfg Config) (*Server, error) {
 	if cfg.BackupDir == "" && cfg.Store != nil {
 		cfg.BackupDir = filepath.Join(cfg.Store.Dir(), "backups")
 	}
-	s := &Server{cfg: cfg, mux: http.NewServeMux(), streamsDone: make(chan struct{}), libraries: views.NewCache(8),
-		previews: newAdmission(previewsServer, previewsPerAccount)}
+	s := &Server{cfg: cfg, mux: http.NewServeMux(), streamsDone: make(chan struct{}), libraries: views.NewCache(cfg.Store, cfg.Views, cfg.Now),
+		previews: newAdmission(previewsServer, previewsPerAccount), keyExports: newKeyExports()}
 	if cfg.PublicURL != "" {
 		u, err := url.Parse(cfg.PublicURL)
 		if err != nil || (u.Scheme != "http" && u.Scheme != "https") || u.Host == "" || (u.Path != "" && u.Path != "/") {
@@ -103,11 +110,67 @@ func New(cfg Config) (*Server, error) {
 		}
 		s.public = u
 	}
+	if v := cfg.Views; v != nil {
+		// A bulk rewrite or a restore transition retires the accounts'
+		// views before its write returns: the list pages' final check
+		// (request.final) is ordered against it.
+		cfg.Store.OnIdentityChange(func(accounts []string, all bool) {
+			if all {
+				v.RetireAll()
+			}
+			for _, a := range accounts {
+				v.Retire(a)
+			}
+		})
+	}
 	s.routes()
 	return s, nil
 }
 
 func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) { s.mux.ServeHTTP(w, r) }
+
+// SyncAvailable reports whether the sync endpoints are served (PROTOCOL §6).
+func (s *Server) SyncAvailable() bool { return s.cfg.Protocol != nil }
+
+// WarmLibraries starts the read model's warmers (each read account's
+// library follows its commits in the background) and builds, one account at
+// a time, the libraries of the accounts active in the last 30 days
+// (storage.RecentlyActive), until done or ctx ends: after a restart, their
+// first reads are exact hits. Run once serving; a read never waits for it.
+func (s *Server) WarmLibraries(ctx context.Context) {
+	if s.cfg.Store == nil || s.cfg.Views == nil {
+		return
+	}
+	s.libraries.StartWarmers()
+	var accounts []string
+	if err := s.cfg.Store.Read(ctx, func(r *storage.ReadTx) error {
+		var err error
+		accounts, err = r.RecentlyActiveAccounts(s.cfg.Now())
+		return err
+	}); err != nil {
+		if ctx.Err() == nil {
+			slog.Warn("read model warm-up: cannot list the accounts", "error", err)
+		}
+		return
+	}
+	for _, account := range accounts {
+		if ctx.Err() != nil {
+			return
+		}
+		started := time.Now()
+		if err := s.libraries.Warm(ctx, account); err != nil {
+			if ctx.Err() == nil {
+				slog.Warn("read model warm-up failed", "account", account, "error", err)
+			}
+			continue
+		}
+		slog.Info("read model warmed", "account", account, "duration", time.Since(started).Round(time.Millisecond))
+	}
+}
+
+// Close stops the read model's warmers and waits for them; call it before
+// the store closes.
+func (s *Server) Close() { s.libraries.Close() }
 
 // ---- errors
 
@@ -141,17 +204,23 @@ func invalid(message string) *apiError {
 // embedded canonical bytes must reach the client unchanged).
 type encodedBody []byte
 
-func writeJSON(w http.ResponseWriter, status int, v any) {
+// writeJSON writes a JSON response, gzip-compressed when r accepts it
+// (PROTOCOL §6; r nil: never). The decoded body is the same bytes either way.
+func writeJSON(w http.ResponseWriter, r *http.Request, status int, v any) {
 	if b, ok := v.(encodedBody); ok {
-		writeEncoded(w, status, b)
+		writeEncoded(w, r, status, b)
 		return
 	}
-	w.Header().Set("Content-Type", "application/json; charset=utf-8")
-	w.Header().Set("Cache-Control", "no-store")
-	w.WriteHeader(status)
-	enc := json.NewEncoder(w)
+	var buf bytes.Buffer
+	enc := json.NewEncoder(&buf)
 	enc.SetEscapeHTML(false) // embedded canonical bytes stay byte-identical
 	_ = enc.Encode(v)
+	h := w.Header()
+	h.Set("Content-Type", "application/json; charset=utf-8")
+	h.Set("Cache-Control", "no-store")
+	body := httpgzip.Negotiate(h, r, buf.Bytes())
+	w.WriteHeader(status)
+	_, _ = w.Write(body)
 }
 
 // pageChunk is how much of a sync page one write sends.
@@ -160,15 +229,14 @@ const pageChunk = 64 << 10
 // writeEncoded writes a sync page (pull and snapshot pages, up to megabytes)
 // in bounded chunks, renewing the write deadline before each, as the event
 // stream does: a healthy slow client is never cut by the ordinary response
-// deadline, and a stalled one is.
-func writeEncoded(w http.ResponseWriter, status int, b encodedBody) {
+// deadline, and a stalled one is. A compressed page is sent the same way.
+func writeEncoded(w http.ResponseWriter, r *http.Request, status int, b encodedBody) {
 	rc := http.NewResponseController(w)
 	_ = rc.SetWriteDeadline(time.Now().Add(streamWriteTimeout))
-	body := append([]byte(b), '\n')
 	h := w.Header()
 	h.Set("Content-Type", "application/json; charset=utf-8")
 	h.Set("Cache-Control", "no-store")
-	h.Set("Content-Length", strconv.Itoa(len(body)))
+	body := httpgzip.Negotiate(h, r, append([]byte(b), '\n'))
 	w.WriteHeader(status)
 	for len(body) > 0 {
 		n := min(len(body), pageChunk)
@@ -180,7 +248,7 @@ func writeEncoded(w http.ResponseWriter, status int, b encodedBody) {
 	}
 }
 
-func writeError(w http.ResponseWriter, err error) {
+func writeError(w http.ResponseWriter, r *http.Request, err error) {
 	var e *apiError
 	if !errors.As(err, &e) {
 		if errors.Is(err, auth.ErrBusy) {
@@ -196,7 +264,7 @@ func writeError(w http.ResponseWriter, err error) {
 		body["retry_after"] = secs
 		w.Header().Set("Retry-After", strconv.FormatInt(secs, 10))
 	}
-	writeJSON(w, e.status, body)
+	writeJSON(w, r, e.status, body)
 }
 
 // ---- request plumbing
@@ -250,7 +318,7 @@ func (s *Server) route(path string, endpoints ...endpoint) {
 	s.mux.HandleFunc(path, func(w http.ResponseWriter, r *http.Request) {
 		e, ok := byMethod[r.Method]
 		if !ok {
-			writeError(w, fail(http.StatusMethodNotAllowed, "method_not_allowed", "Method not allowed."))
+			writeError(w, r, fail(http.StatusMethodNotAllowed, "method_not_allowed", "Method not allowed."))
 			return
 		}
 		s.serve(w, r, e)
@@ -261,7 +329,7 @@ func (s *Server) serve(w http.ResponseWriter, r *http.Request, e endpoint) {
 	req := &request{s: s, w: w, r: r, ctx: r.Context(), origin: s.browserOrigin(r), endpoint: e}
 	status, body, err := req.run(e)
 	if err != nil {
-		writeError(w, err)
+		writeError(w, r, err)
 		return
 	}
 	if sessionEnding[r.Pattern] {
@@ -273,7 +341,7 @@ func (s *Server) serve(w http.ResponseWriter, r *http.Request, e endpoint) {
 	if body == nil {
 		body = map[string]any{}
 	}
-	writeJSON(w, status, body)
+	writeJSON(w, r, status, body)
 }
 
 func (req *request) run(e endpoint) (int, any, error) {

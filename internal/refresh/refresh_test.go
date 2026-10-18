@@ -448,10 +448,7 @@ func TestANewSubscriptionIsFetchedAtOnce(t *testing.T) {
 // waitIdle waits for a pass of the loop that finds nothing running or queued.
 func waitIdle(r *Refresher, passes chan struct{}) {
 	for {
-		r.mu.Lock()
-		idle := len(r.running) == 0 && len(r.manual) == 0
-		r.mu.Unlock()
-		if idle {
+		if idle(r) {
 			return
 		}
 		<-passes
@@ -528,10 +525,36 @@ func TestScheduleSurvivesRestart(t *testing.T) {
 	}
 }
 
+// idle: nothing runs, and no request waits for an attempt.
 func idle(r *Refresher) bool {
+	if requestsWaiting(r) {
+		return false
+	}
 	r.mu.Lock()
 	defer r.mu.Unlock()
-	return len(r.running) == 0 && len(r.manual) == 0
+	return len(r.running) == 0
+}
+
+// requestsWaiting reports a pending request (PROTOCOL §9.6) the loop would
+// start an attempt for.
+func requestsWaiting(r *Refresher) bool {
+	var cands []storage.RefreshCandidate
+	if err := r.svc.Store.Read(context.Background(), func(tx *storage.ReadTx) error {
+		var err error
+		cands, err = tx.RefreshCandidates("")
+		return err
+	}); err != nil {
+		panic(err)
+	}
+	r.mu.Lock()
+	defer r.mu.Unlock()
+	for _, c := range cands {
+		h, held := r.held[key{c.AccountID, c.PodcastID}]
+		if s := c.Schedule; s != nil && s.RequestPending() && c.State != "merged" && (!held || r.nowMs() >= h.until || s.RequestSeq > h.seq) {
+			return true
+		}
+	}
+	return false
 }
 
 // 7. A permanent redirect moves the refresh URL and adds the target as an
@@ -622,7 +645,7 @@ func TestMergedPodcastIsNotRefreshed(t *testing.T) {
 	r := e.refresher(testFetcher(), Config{})
 	runDue(t, r)
 	fs.with(func(fs *feedServer) { fs.redirects["/mirror"] = redirect{301, "/original"} })
-	if err := r.refresh(context.Background(), key{e.account, mirror}, true); err != nil {
+	if _, err := r.refresh(context.Background(), key{e.account, mirror}, true); err != nil {
 		t.Fatal(err)
 	}
 	if got := e.podcastRecord(mirror, "subscription"); !strings.Contains(got, `"state":"merged"`) {

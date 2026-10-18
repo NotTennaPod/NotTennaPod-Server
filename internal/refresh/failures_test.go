@@ -24,7 +24,7 @@ func TestTheCrashingFeedFailsItsRefresh(t *testing.T) {
 	defer srv.Close()
 	p, _ := e.subscribe(srv.URL, nil)
 	r := e.refresher(testFetcher(), Config{})
-	if err := r.refresh(context.Background(), key{e.account, p}, false); err != nil {
+	if _, err := r.refresh(context.Background(), key{e.account, p}, false); err != nil {
 		t.Fatal(err)
 	}
 	if status := e.podcastRecord(p, "refresh_status"); !strings.Contains(status, `"label":"parser_exception"`) {
@@ -74,7 +74,7 @@ func TestParsingRunsUnderTheFetchDeadline(t *testing.T) {
 	}
 	b.WriteString(`</channel></rss>`)
 	r := e.refresher(bodyFetcher(b.String()), Config{FetchLimit: time.Nanosecond})
-	if err := r.refresh(context.Background(), key{e.account, p}, false); err != nil {
+	if _, err := r.refresh(context.Background(), key{e.account, p}, false); err != nil {
 		t.Fatal(err)
 	}
 	if status := e.podcastRecord(p, "refresh_status"); !strings.Contains(status, `"label":"time_limit"`) {
@@ -93,7 +93,7 @@ func TestAHostileDateStopsAtTheFetchDeadline(t *testing.T) {
 	body := `<rss version="2.0"><channel><title>Show</title><item><title>Episode</title><pubDate>` +
 		strings.Repeat("a, ", 1<<19) + `Sat, 09 Oct 2021 10:00:00 +0000</pubDate></item></channel></rss>`
 	r := e.refresher(bodyFetcher(body), Config{FetchLimit: 100 * time.Millisecond})
-	if err := r.refresh(context.Background(), key{e.account, p}, false); err != nil {
+	if _, err := r.refresh(context.Background(), key{e.account, p}, false); err != nil {
 		t.Fatal(err)
 	}
 	if status := e.podcastRecord(p, "refresh_status"); !strings.Contains(status, `"label":"time_limit"`) {
@@ -115,7 +115,7 @@ func TestALongDateStopsAtTheFetchDeadline(t *testing.T) {
 	long := `<rss version="2.0"><channel><title>Show</title><item><title>Episode</title><pubDate>` +
 		strings.Repeat("1", 4<<20) + `</pubDate></item></channel></rss>`
 	r := e.refresher(bodyFetcher(long), Config{FetchLimit: 100 * time.Millisecond})
-	if err := r.refresh(context.Background(), key{e.account, p}, false); err != nil {
+	if _, err := r.refresh(context.Background(), key{e.account, p}, false); err != nil {
 		t.Fatal(err)
 	}
 	if status := e.podcastRecord(p, "refresh_status"); !strings.Contains(status, `"label":"time_limit"`) {
@@ -205,7 +205,7 @@ func TestReparseAfterATimeout(t *testing.T) {
 		t.Errorf("a response given up on was re-parsed again: %q %+v", s.ParserVersion, o)
 	}
 	// A new response has no outcome.
-	if err := e.refresher(testFetcher(), Config{}).refresh(context.Background(), key{e.account, p}, true); err != nil {
+	if _, err := e.refresher(testFetcher(), Config{}).refresh(context.Background(), key{e.account, p}, true); err != nil {
 		t.Fatal(err)
 	}
 	if s, o := stored(t, e, p), outcome(); s.ParserVersion != feed.ParserVersion || o != (storage.ReparseOutcome{}) {
@@ -239,7 +239,7 @@ func TestFailureDetailsKeepNoCredentials(t *testing.T) {
 	defer srv.Close()
 	p, _ := e.subscribe(srv.URL, nil)
 	r := e.refresher(testFetcher(), Config{})
-	if err := r.refresh(context.Background(), key{e.account, p}, false); err != nil {
+	if _, err := r.refresh(context.Background(), key{e.account, p}, false); err != nil {
 		t.Fatal(err)
 	}
 	status := e.podcastRecord(p, "refresh_status")
@@ -305,7 +305,7 @@ func TestAPanicVerifyingANewFeedURLIsNoMove(t *testing.T) {
 	r := e.refresher(newFeedPanicFetcher{}, Config{})
 	var log bytes.Buffer
 	r.log = slog.New(slog.NewTextHandler(&log, nil))
-	if err := r.refresh(context.Background(), key{e.account, p}, false); err != nil {
+	if _, err := r.refresh(context.Background(), key{e.account, p}, false); err != nil {
 		t.Fatal(err)
 	}
 	if status := e.podcastRecord(p, "refresh_status"); strings.Contains(status, `"label"`) {

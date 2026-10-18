@@ -13,6 +13,7 @@ import (
 	"fmt"
 	"io"
 	"log/slog"
+	"net"
 	"net/http"
 	"net/http/httptest"
 	"path/filepath"
@@ -43,10 +44,12 @@ type mediaPublisher struct {
 	srv   *httptest.Server
 	audio []byte
 
-	mu   sync.Mutex
-	seen []http.Header
-	path []string
-	ep1  string // ep1's enclosure path
+	mu        sync.Mutex
+	seen      []http.Header
+	path      []string
+	ep1       string // ep1's enclosure path
+	enclosure string // ep1's enclosure at another host, when set
+	epImage   string // art.xml's episode artwork path ("" for none)
 }
 
 var png1x1 = []byte("\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01\x08\x06\x00\x00\x00\x1f\x15\xc4\x89")
@@ -57,7 +60,7 @@ func newMediaPublisher(t *testing.T) *mediaPublisher {
 		p.mu.Lock()
 		p.seen = append(p.seen, r.Header.Clone())
 		p.path = append(p.path, r.URL.Path)
-		ep1 := p.ep1
+		ep1, elsewhere := p.ep1, p.enclosure
 		p.mu.Unlock()
 		private := strings.HasPrefix(r.URL.Path, "/private/")
 		if private {
@@ -74,6 +77,9 @@ func newMediaPublisher(t *testing.T) *mediaPublisher {
 				base += "/private"
 			}
 			enclosure := base + ep1
+			if elsewhere != "" {
+				enclosure = elsewhere
+			}
 			fmt.Fprintf(w, `<?xml version="1.0"?>
 <rss version="2.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
 <channel><title>Show</title><link>%[1]s/</link><image><url>%[1]s/cover.png</url></image>
@@ -81,6 +87,29 @@ func newMediaPublisher(t *testing.T) *mediaPublisher {
 <enclosure url="%[2]s" length="%[3]d" type="audio/mpeg"/>
 <podcast:chapters url="%[1]s/chapters.json" type="application/json+chapters"/></item>
 </channel></rss>`, base, enclosure, len(p.audio))
+		case "/art.xml":
+			// An episode with its own artwork (when set) and a transcript.
+			p.mu.Lock()
+			image := p.epImage
+			p.mu.Unlock()
+			art := ""
+			if image != "" {
+				art = fmt.Sprintf(`<itunes:image href="%s%s"/>`, p.srv.URL, image)
+			}
+			w.Header().Set("Content-Type", "application/rss+xml")
+			fmt.Fprintf(w, `<?xml version="1.0"?>
+<rss version="2.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel><title>Art</title><link>%[1]s/</link><image><url>%[1]s/cover.png</url></image>
+<item><title>Drawn</title><guid>drawn</guid><pubDate>Mon, 05 Oct 2026 10:00:00 GMT</pubDate>%[2]s
+<enclosure url="%[1]s/ep1.mp3" length="%[3]d" type="audio/mpeg"/>
+<podcast:transcript url="%[1]s/transcript.vtt" type="text/vtt"/></item>
+</channel></rss>`, p.srv.URL, art, len(p.audio))
+		case "/ep-cover.png", "/ep-cover-2.png":
+			w.Header().Set("Content-Type", "image/png")
+			w.Write(append(append([]byte(nil), png1x1...), r.URL.Path...))
+		case "/transcript.vtt":
+			w.Header().Set("Content-Type", "text/vtt")
+			w.Write([]byte("WEBVTT\n\n00:00.000 --> 00:01.000\nHello\n"))
 		case "/ep1.mp3", "/ep1-moved.mp3", "/private/ep1.mp3":
 			w.Header().Set("ETag", `"audio-v1"`)
 			http.ServeContent(w, r, "", time.Time{}, bytes.NewReader(p.audio))
@@ -419,5 +448,103 @@ func TestMediaAPIFragment(t *testing.T) {
 	rec := m.raw(http.MethodGet, d.str("url"), cookieOnly(m.session))
 	if rec.Code != 200 || !bytes.Equal(rec.Body.Bytes(), m.pub.audio) {
 		t.Fatalf("a fresh token for an unchanged enclosure: %d %s", rec.Code, rec.Body.String()[:min(rec.Body.Len(), 200)])
+	}
+}
+
+// An https enclosure the browser says it plays is direct at once: the server
+// asks the publisher nothing. After the browser reports that direct playback
+// failed, the account's later descriptors of it are never direct again
+// (here the relay cannot reach the host either, so they fail).
+func TestMediaAPIFastDirect(t *testing.T) {
+	m := newMediaEnv(t)
+	var mu sync.Mutex
+	conns := 0
+	host := httptest.NewUnstartedServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "audio/mpeg")
+		w.Write(m.pub.audio)
+	}))
+	host.Config.ConnState = func(_ net.Conn, st http.ConnState) {
+		if st == http.StateNew {
+			mu.Lock()
+			conns++
+			mu.Unlock()
+		}
+	}
+	host.StartTLS()
+	t.Cleanup(host.Close)
+	contacted := func() int {
+		mu.Lock()
+		defer mu.Unlock()
+		return conns
+	}
+	m.pub.enclosure = host.URL + "/ep1.mp3"
+	_, _, ep := m.subscribe(m.pub.srv.URL+"/feed.xml", nil)
+	d := m.play(ep, m.web, nil).must(http.StatusOK)
+	if d.str("mode") != "direct" || d.str("url") != host.URL+"/ep1.mp3" || d.str("type") != "audio/mpeg" || d.body["token"] != nil || d.body["seekable"] != true {
+		t.Fatalf("descriptor %s", d.raw)
+	}
+	if n := contacted(); n != 0 {
+		t.Fatalf("the server contacted the publisher %d times for a direct descriptor", n)
+	}
+	body := map[string]any{"capabilities": map[string]any{"audio/mpeg": "probably"}, "direct_failed": true}
+	if d := m.play(ep, m.web, body).must(http.StatusOK); d.str("mode") == "direct" {
+		t.Fatalf("after direct_failed %s", d.raw)
+	}
+	if contacted() == 0 {
+		t.Fatal("after direct_failed the server did not pin the representation")
+	}
+	if d := m.play(ep, m.web, nil).must(http.StatusOK); d.str("mode") == "direct" {
+		t.Fatalf("an ordinary request after the failure %s", d.raw)
+	}
+}
+
+// An episode's artwork is its own when its feed gives one, else its
+// podcast's, and follows the feed as it changes; a declared transcript is
+// served. Each request reaches the publisher at the artwork it names.
+func TestEpisodeArtworkAndTranscript(t *testing.T) {
+	m := newMediaEnv(t)
+	set := func(image string) {
+		m.pub.mu.Lock()
+		m.pub.epImage = image
+		m.pub.mu.Unlock()
+	}
+	set("/ep-cover.png")
+	podcast, _, ep := m.subscribe(m.pub.srv.URL+"/art.xml", nil)
+	image := func(path string) []byte {
+		t.Helper()
+		rec := m.raw(http.MethodGet, path, cookieOnly(m.session))
+		if rec.Code != 200 || rec.Header().Get("Content-Type") != "image/png" {
+			t.Fatalf("%s: %d %v", path, rec.Code, rec.Header())
+		}
+		return rec.Body.Bytes()
+	}
+	art := func(path string) []byte { return append(append([]byte(nil), png1x1...), path...) }
+	if got := image("/v1/media/" + ep + "/image"); !bytes.Equal(got, art("/ep-cover.png")) {
+		t.Fatalf("the episode's own artwork: %q", got)
+	}
+	if got := image("/v1/media/podcasts/" + podcast + "/image"); !bytes.Equal(got, png1x1) {
+		t.Fatalf("the podcast's artwork: %q", got)
+	}
+	rec := m.raw(http.MethodGet, "/v1/media/"+ep+"/transcript", cookieOnly(m.session))
+	if rec.Code != 200 || !strings.HasPrefix(rec.Body.String(), "WEBVTT") {
+		t.Fatalf("the transcript: %d %q", rec.Code, rec.Body.String())
+	}
+	// The feed changes the artwork, then drops it: after each refresh the
+	// episode's artwork follows, and without its own it is the podcast's.
+	for _, c := range []struct{ image, want string }{{"/ep-cover-2.png", "/ep-cover-2.png"}, {"", ""}} {
+		set(c.image)
+		m.refreshUntil(podcast, func() bool {
+			r := m.get("/v1/read/episodes/" + ep).must(http.StatusOK)
+			meta, _ := r.obj("episode")["records"].(map[string]any)["metadata"].(map[string]any)["value"].(map[string]any)
+			img, _ := meta["image_url"].(string)
+			return img == map[bool]string{true: m.pub.srv.URL + c.image, false: ""}[c.image != ""]
+		})
+		want := png1x1
+		if c.want != "" {
+			want = art(c.want)
+		}
+		if got := image("/v1/media/" + ep + "/image"); !bytes.Equal(got, want) {
+			t.Fatalf("after the feed's artwork became %q: %q", c.image, got)
+		}
 	}
 }

@@ -165,6 +165,26 @@ func tokenInstall(t *testing.T, s *Store, hash []byte) string {
 	return install
 }
 
+// newRestoreFixtureIn is the fixture with its backup in the given format.
+func newRestoreFixtureIn(t *testing.T, format int) *restoreFixture {
+	t.Helper()
+	fx := newRestoreFixture(t)
+	if format == 1 {
+		fx.backup = asFormat(t, fx.backup, fx.dir, 1)
+	}
+	return fx
+}
+
+// format is the fixture's backup's format.
+func (fx *restoreFixture) format(t *testing.T) int {
+	t.Helper()
+	data, err := os.ReadFile(fx.backup)
+	if err != nil {
+		t.Fatal(err)
+	}
+	return backupFormat(bytes.NewReader(data), int64(len(data)))
+}
+
 // clone copies the fixture's data directory (and backup) for one run.
 func (fx *restoreFixture) clone(t *testing.T) *restoreFixture {
 	t.Helper()
@@ -270,8 +290,10 @@ func loginOf(t *testing.T, path, account string) (username, hash, state string, 
 }
 
 // PROTOCOL §11.4 at the storage level.
-func TestRestoreProcedure(t *testing.T) {
-	fx := newRestoreFixture(t).clone(t)
+func TestRestoreProcedure(t *testing.T) { forEachFormat(t, testRestoreProcedure) }
+
+func testRestoreProcedure(t *testing.T, format int) {
+	fx := newRestoreFixtureIn(t, format).clone(t)
 	live := filepath.Join(fx.dir, databaseName)
 	before := readState(t, fx.dir)
 	_, aliceHash, _, aliceVersion := loginOf(t, live, fx.ids["alice"])
@@ -355,7 +377,11 @@ func TestRestoreProcedure(t *testing.T) {
 // reaches the same database, metadata and report; the high-water mark never
 // decreases and the new epoch is above every earlier one.
 func TestRestoreResumesAfterACrashAtEveryPoint(t *testing.T) {
-	fx := newRestoreFixture(t)
+	forEachFormat(t, testRestoreResumesAfterACrashAtEveryPoint)
+}
+
+func testRestoreResumesAfterACrashAtEveryPoint(t *testing.T, format int) {
+	fx := newRestoreFixtureIn(t, format)
 	ref := fx.clone(t)
 	refReport, err := ref.restore(config{})
 	if err != nil {
@@ -370,7 +396,12 @@ func TestRestoreResumesAfterACrashAtEveryPoint(t *testing.T) {
 	for _, step := range []string{stepStage, stepTransition, stepSwap, stepDone, "clear"} {
 		points = append(points, point{"before", "restore-" + step}, point{"after", "restore-" + step})
 	}
-	for _, f := range []string{"staged-copied", "staged-migrated", "staged-transitioned", "old-wal-moved", "old-moved", "staged-moved"} {
+	faults := []string{"staged-source-copied", "staged-copied", "staged-migrated", "staged-transitioned", "old-wal-moved", "old-moved", "staged-moved"}
+	if format == 2 {
+		faults = append(faults, "verify-copied", "verify-authenticated", "verify-decompressed", "staged-authenticated", "staged-decompressed",
+			"staged-source-removed")
+	}
+	for _, f := range faults {
 		points = append(points, point{"fault", f})
 	}
 	for i, p := range points {
@@ -447,8 +478,8 @@ func TestRestoreResumesAfterACrashAtEveryPoint(t *testing.T) {
 			if len(pre) != 1 {
 				t.Fatalf("pre-restore files %v", pre)
 			}
-			if _, err := os.Stat(filepath.Join(c.dir, stagedName)); !errors.Is(err, os.ErrNotExist) {
-				t.Fatal("the staged file is left")
+			if left := restoreLeftovers(t, c.dir); len(left) > 0 {
+				t.Fatalf("left in the data directory: %v", left)
 			}
 			s := openTest(t, config{dataDir: c.dir})
 			if s.restoredBecause != "" {
@@ -457,6 +488,20 @@ func TestRestoreResumesAfterACrashAtEveryPoint(t *testing.T) {
 			assertSettled(t, s)
 		})
 	}
+}
+
+// restoreLeftovers lists what a restore may leave only while it runs: the
+// staged database and its source, and the temporaries of its verification.
+func restoreLeftovers(t *testing.T, dir string) []string {
+	t.Helper()
+	var left []string
+	entries, _ := os.ReadDir(dir)
+	for _, e := range entries {
+		if strings.HasPrefix(e.Name(), stagedName) || strings.HasPrefix(e.Name(), restoreTempPrefix) {
+			left = append(left, e.Name())
+		}
+	}
+	return left
 }
 
 // snapshotDir hashes every file of a data directory.
@@ -475,32 +520,27 @@ func snapshotDir(t *testing.T, dir string) map[string]string {
 	return out
 }
 
-// resigned changes a copy of the fixture's backup and signs it again with the
-// server's key, as only a holder of the key bundle could: the checks behind
-// the backup MAC see it.
+// resigned changes a copy of the fixture's backup's database and signs it
+// again, in the backup's format, with the server's key, as only a holder of
+// the key bundle could: the checks behind the backup MAC see it.
 func (fx *restoreFixture) resigned(t *testing.T, change func(path string)) string {
 	t.Helper()
-	data, _ := os.ReadFile(fx.backup)
-	tr, err := readBackupTrailer(bytes.NewReader(data), int64(len(data)))
-	if err != nil {
-		t.Fatal(err)
-	}
 	path := filepath.Join(t.TempDir(), "tampered.db")
-	os.WriteFile(path, data[:tr.Size], 0o600)
+	if err := os.WriteFile(path, rawDatabaseOf(t, fx.backup), 0o600); err != nil {
+		t.Fatal(err)
+	}
 	change(path)
-	_, ks, _, err := readReceiptKeysFile(fx.dir)
+	db, err := os.ReadFile(path)
 	if err != nil {
 		t.Fatal(err)
 	}
-	f, err := os.OpenFile(path, os.O_RDWR, 0)
+	serverID, ks, _, err := readReceiptKeysFile(fx.dir)
 	if err != nil {
 		t.Fatal(err)
 	}
-	defer f.Close()
-	if err := signBackup(f, tr.ServerID, ks[0]); err != nil {
-		t.Fatal(err)
-	}
-	return path
+	out := filepath.Join(t.TempDir(), filepath.Base(fx.backup))
+	writeSigned(t, out, db, serverID, ks[0], fx.format(t))
+	return out
 }
 
 // tamper changes a copy of the backup with SQL and signs it again.
@@ -522,18 +562,23 @@ func (fx *restoreFixture) tamper(t *testing.T, query string, args ...any) string
 
 // PROTOCOL §11.4: every refusal leaves the data directory exactly as it was.
 func TestRestoreRefusalsChangeNothing(t *testing.T) {
-	fx := newRestoreFixture(t)
+	forEachFormat(t, testRestoreRefusalsChangeNothing)
+}
+
+func testRestoreRefusalsChangeNothing(t *testing.T, format int) {
+	fx := newRestoreFixtureIn(t, format)
 	other := t.TempDir()
 	o := openTest(t, config{dataDir: other})
 	otherKeys := filepath.Join(t.TempDir(), "other.json")
 	if err := o.ExportKeys(context.Background(), otherKeys, fx.pass); err != nil {
 		t.Fatal(err)
 	}
-	otherBackup, err := o.Backup(context.Background(), t.TempDir())
+	otherInfo, err := o.Backup(context.Background(), t.TempDir())
 	if err != nil {
 		t.Fatal(err)
 	}
 	o.Close()
+	otherBackup := asFormat(t, otherInfo.Path, other, format)
 	otherBundle, _ := os.ReadFile(otherKeys)
 	b, err := keys.Open(fx.bundle, fx.pass)
 	if err != nil {
@@ -548,7 +593,7 @@ func TestRestoreRefusalsChangeNothing(t *testing.T) {
 	}{
 		{"a wrong passphrase", func(t *testing.T, c *restoreFixture) { c.pass = []byte("wrong") }, "passphrase"},
 		{"another server's bundle", func(t *testing.T, c *restoreFixture) { c.bundle = otherBundle }, "key bundle belongs to server"},
-		{"another server's backup and bundle", func(t *testing.T, c *restoreFixture) { c.backup, c.bundle = otherBackup.Path, otherBundle }, "the backup belongs to server"},
+		{"another server's backup and bundle", func(t *testing.T, c *restoreFixture) { c.backup, c.bundle = otherBackup, otherBundle }, "the backup belongs to server"},
 		{"keys that differ from the data directory's", func(t *testing.T, c *restoreFixture) { c.bundle = sameServerOtherKeys }, "differ from this data directory"},
 		{"a backup secret that does not open", func(t *testing.T, c *restoreFixture) {
 			c.backup = c.tamper(t, `UPDATE secrets SET sealed = zeroblob(40)`)
@@ -586,19 +631,19 @@ func TestRestoreRefusalsChangeNothing(t *testing.T) {
 			os.WriteFile(c.backup, data, 0o600)
 		}, "has been changed since it was made"},
 		{"an unsigned backup", func(t *testing.T, c *restoreFixture) {
-			data, _ := os.ReadFile(c.backup)
-			tr, _ := readBackupTrailer(bytes.NewReader(data), int64(len(data)))
+			db := rawDatabaseOf(t, c.backup)
 			c.backup = filepath.Join(t.TempDir(), "unsigned.db")
-			os.WriteFile(c.backup, data[:tr.Size], 0o600)
+			os.WriteFile(c.backup, db, 0o600)
+		}, "is unsigned"},
+		{"a backup without its trailer", func(t *testing.T, c *restoreFixture) {
+			data, _ := os.ReadFile(c.backup)
+			c.backup = filepath.Join(t.TempDir(), "cut.db")
+			os.WriteFile(c.backup, data[:len(data)-40], 0o600)
 		}, "is unsigned"},
 		{"a backup signed with another server's key", func(t *testing.T, c *restoreFixture) {
-			c.backup = c.resigned(t, func(string) {})
-			data, _ := os.ReadFile(c.backup)
-			tr, _ := readBackupTrailer(bytes.NewReader(data), int64(len(data)))
-			f, _ := os.OpenFile(c.backup, os.O_RDWR, 0)
-			defer f.Close()
-			f.Truncate(tr.Size)
-			signBackup(f, tr.ServerID, ReceiptKey{ID: "k1", Secret: bytes.Repeat([]byte{3}, 32)})
+			serverID, ks, _, _ := readReceiptKeysFile(c.dir)
+			c.backup = filepath.Join(t.TempDir(), filepath.Base(c.backup))
+			writeSigned(t, c.backup, rawDatabaseOf(t, fx.backup), serverID, ReceiptKey{ID: ks[0].ID, Secret: bytes.Repeat([]byte{3}, 32)}, format)
 		}, "has been changed since it was made"},
 		{"a trigger of its own", func(t *testing.T, c *restoreFixture) {
 			c.backup = c.tamper(t, `CREATE TRIGGER keep_tokens AFTER DELETE ON auth_tokens BEGIN SELECT 1; END`)
@@ -617,7 +662,9 @@ func TestRestoreRefusalsChangeNothing(t *testing.T) {
 		}, "table extra of its own"},
 		{"a missing index", func(t *testing.T, c *restoreFixture) {
 			var index string
-			db, _ := openReadOnly(c.backup)
+			plain := filepath.Join(t.TempDir(), "plain.db")
+			os.WriteFile(plain, rawDatabaseOf(t, c.backup), 0o600)
+			db, _ := openReadOnly(plain)
 			db.QueryRow(`SELECT name FROM sqlite_schema WHERE type = 'index' AND sql IS NOT NULL ORDER BY name LIMIT 1`).Scan(&index)
 			db.Close()
 			c.backup = c.tamper(t, `DROP INDEX `+index)
@@ -642,7 +689,11 @@ func TestRestoreRefusalsChangeNothing(t *testing.T) {
 // A new machine: restoring into an empty data directory installs the bundle's
 // keys, keeps the backup's logins and serves the backup's sealed data.
 func TestRestoreIntoAnEmptyDataDirectory(t *testing.T) {
-	fx := newRestoreFixture(t)
+	forEachFormat(t, testRestoreIntoAnEmptyDataDirectory)
+}
+
+func testRestoreIntoAnEmptyDataDirectory(t *testing.T, format int) {
+	fx := newRestoreFixtureIn(t, format)
 	c := *fx
 	c.dir = filepath.Join(t.TempDir(), "new")
 	rep, err := c.restore(config{})
@@ -676,7 +727,11 @@ func TestRestoreIntoAnEmptyDataDirectory(t *testing.T) {
 // A restore of another backup that has already replaced the database is
 // finished first; one that has not is replaced.
 func TestRestoreOfAnotherBackupWhileOneIsUnfinished(t *testing.T) {
-	fx := newRestoreFixture(t).clone(t)
+	forEachFormat(t, testRestoreOfAnotherBackupWhileOneIsUnfinished)
+}
+
+func testRestoreOfAnotherBackupWhileOneIsUnfinished(t *testing.T, format int) {
+	fx := newRestoreFixtureIn(t, format).clone(t)
 	crash := errors.New("crash")
 	if _, err := fx.restore(config{hooks: hooks{restoreFault: func(p string) error {
 		if p == "staged-moved" {
@@ -689,7 +744,7 @@ func TestRestoreOfAnotherBackupWhileOneIsUnfinished(t *testing.T) {
 	second := fx.clone(t)
 	second.dir = fx.dir
 	data, _ := os.ReadFile(fx.backup)
-	second.backup = filepath.Join(t.TempDir(), "other-name.db")
+	second.backup = filepath.Join(t.TempDir(), "other-name"+filepath.Ext(fx.backup))
 	os.WriteFile(second.backup, data, 0o600)
 	if _, err := second.restore(config{}); !errors.Is(err, ErrRestoreInProgress) {
 		t.Fatalf("another backup during a swapped restore: %v", err)
@@ -703,7 +758,9 @@ func TestRestoreOfAnotherBackupWhileOneIsUnfinished(t *testing.T) {
 // the backup's only administrator was deleted after a new one, created after
 // the backup, took over. The returning administrator stays active (and the
 // report says so), or nobody could administer the server.
-func TestRestoreKeepsAnAdministrator(t *testing.T) {
+func TestRestoreKeepsAnAdministrator(t *testing.T) { forEachFormat(t, testRestoreKeepsAnAdministrator) }
+
+func testRestoreKeepsAnAdministrator(t *testing.T, format int) {
 	ctx := context.Background()
 	dir := t.TempDir()
 	s := openTest(t, config{dataDir: dir})
@@ -729,6 +786,7 @@ func TestRestoreKeepsAnAdministrator(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+	backup := asFormat(t, info.Path, dir, format)
 	if err := s.Write(ctx, func(w *WriteTx) error {
 		if _, err := login(w, "second", true); err != nil {
 			return err
@@ -743,7 +801,7 @@ func TestRestoreKeepsAnAdministrator(t *testing.T) {
 	}
 	bundle, _ := os.ReadFile(path)
 	s.Close()
-	rep, err := restore(ctx, config{dataDir: dir, syncDir: noSync}, RestoreOptions{DataDir: dir, Backup: info.Path, Bundle: bundle, Passphrase: []byte(fixturePass)})
+	rep, err := restore(ctx, config{dataDir: dir, syncDir: noSync}, RestoreOptions{DataDir: dir, Backup: backup, Bundle: bundle, Passphrase: []byte(fixturePass)})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -759,34 +817,77 @@ func TestRestoreKeepsAnAdministrator(t *testing.T) {
 	}
 }
 
-// A restore is bound to the backup bytes it
-// verified; a backup changed before a resumed staging is refused.
+// A restore is bound to the backup bytes it verified: a backup changed or
+// missing before a resumed staging is refused, at the stage step, at the
+// staging again after an interrupted transition, and when a start resumes
+// it; the database it would replace is kept, and the same backup put back
+// lets the restore finish.
 func TestResumedRestoreRefusesAChangedBackup(t *testing.T) {
-	fx := newRestoreFixture(t)
-	c := fx.clone(t)
-	crash := config{hooks: hooks{restoreFault: func(p string) error {
-		if p == "staged-copied" {
-			return errors.New("crash")
+	forEachFormat(t, testResumedRestoreRefusesAChangedBackup)
+}
+
+func testResumedRestoreRefusesAChangedBackup(t *testing.T, format int) {
+	fx := newRestoreFixtureIn(t, format)
+	original, _ := os.ReadFile(fx.backup)
+	for _, at := range []struct{ point, step string }{{"staged-copied", stepStage}, {"staged-transitioned", stepTransition}} {
+		for _, change := range []string{"changed", "missing"} {
+			for _, resume := range []string{"restore", "start"} {
+				t.Run(at.step+"/"+change+"/"+resume, func(t *testing.T) {
+					c := fx.clone(t)
+					if _, err := c.restore(config{hooks: hooks{restoreFault: func(p string) error {
+						if p == at.point {
+							return errors.New("crash")
+						}
+						return nil
+					}}}); err == nil {
+						t.Fatal("the injected crash did not stop the restore")
+					}
+					if st := readState(t, c.dir); st.Restore == nil || st.Restore.Step != at.step {
+						t.Fatalf("the record is %+v", st.Restore)
+					}
+					live := fileSHA(t, filepath.Join(c.dir, databaseName))
+					want := "not the file that was verified"
+					if change == "changed" {
+						data, _ := os.ReadFile(c.tamper(t, `UPDATE secrets SET sealed = zeroblob(40)`))
+						os.WriteFile(c.backup, data, 0o600)
+					} else {
+						os.Remove(c.backup)
+						want = "cannot read the backup"
+					}
+					var err error
+					if resume == "restore" {
+						_, err = c.restore(config{})
+					} else {
+						var s *Store
+						if s, err = open(context.Background(), config{dataDir: c.dir, syncDir: noSync}); err == nil {
+							s.Close()
+						}
+					}
+					if !errors.Is(err, ErrRestoreRefused) || !strings.Contains(err.Error(), want) {
+						t.Fatalf("got %v, want a refusal mentioning %q", err, want)
+					}
+					if got := fileSHA(t, filepath.Join(c.dir, databaseName)); got != live {
+						t.Fatal("the database the restore would replace changed")
+					}
+					os.WriteFile(c.backup, original, 0o600)
+					if _, err := c.restore(config{}); err != nil {
+						t.Fatalf("with the backup put back: %v", err)
+					}
+					assertSettled(t, openTest(t, config{dataDir: c.dir}))
+				})
+			}
 		}
-		return nil
-	}}}
-	if _, err := c.restore(crash); err == nil {
-		t.Fatal("the injected crash did not stop the restore")
-	}
-	tampered := c.tamper(t, `UPDATE secrets SET sealed = zeroblob(40)`)
-	data, _ := os.ReadFile(tampered)
-	if err := os.WriteFile(c.backup, data, 0o600); err != nil {
-		t.Fatal(err)
-	}
-	if _, err := c.restore(config{}); !errors.Is(err, ErrRestoreRefused) || !strings.Contains(err.Error(), "not the file that was verified") {
-		t.Fatalf("a changed backup was staged: %v", err)
 	}
 }
 
 // A backup with a journal file beside it is refused,
 // and a staged copy that does not verify cryptographically is never used.
 func TestRestoreRefusesSidecarsAndUnverifiedStagedCopies(t *testing.T) {
-	fx := newRestoreFixture(t)
+	forEachFormat(t, testRestoreRefusesSidecarsAndUnverifiedStagedCopies)
+}
+
+func testRestoreRefusesSidecarsAndUnverifiedStagedCopies(t *testing.T, format int) {
+	fx := newRestoreFixtureIn(t, format)
 	c := fx.clone(t)
 	if err := os.WriteFile(c.backup+"-wal", []byte("wal"), 0o600); err != nil {
 		t.Fatal(err)
@@ -811,5 +912,266 @@ func TestRestoreRefusesSidecarsAndUnverifiedStagedCopies(t *testing.T) {
 	}
 	if _, err := c.restore(config{}); !errors.Is(err, ErrRestoreRefused) || !strings.Contains(err.Error(), "staged copy does not verify") {
 		t.Fatalf("an unverified staged copy: %v", err)
+	}
+}
+
+// A refused restore into a new data directory (missing, or an empty folder)
+// creates nothing there: not the folder, its parents or its lock, and the
+// empty folder keeps its mode, so the folder is still new for the next try
+// (PROTOCOL §11.4). The same folder then takes the right backup and bundle.
+func TestRefusedRestoreIntoANewDataDirectoryCreatesNothing(t *testing.T) {
+	forEachFormat(t, testRefusedRestoreIntoANewDataDirectoryCreatesNothing)
+}
+
+func testRefusedRestoreIntoANewDataDirectoryCreatesNothing(t *testing.T, format int) {
+	fx := newRestoreFixtureIn(t, format)
+	o := openTest(t, config{dataDir: t.TempDir()})
+	otherKeys := filepath.Join(t.TempDir(), "other.json")
+	if err := o.ExportKeys(context.Background(), otherKeys, fx.pass); err != nil {
+		t.Fatal(err)
+	}
+	o.Close()
+	otherBundle, _ := os.ReadFile(otherKeys)
+	refusals := []struct {
+		name   string
+		mutate func(t *testing.T, c *restoreFixture)
+	}{
+		{"a wrong passphrase", func(t *testing.T, c *restoreFixture) { c.pass = []byte("wrong") }},
+		{"another server's bundle", func(t *testing.T, c *restoreFixture) { c.bundle = otherBundle }},
+		{"a changed backup", func(t *testing.T, c *restoreFixture) {
+			data, _ := os.ReadFile(c.backup)
+			data[len(data)/2] ^= 1
+			c.backup = filepath.Join(t.TempDir(), "changed.db")
+			os.WriteFile(c.backup, data, 0o600)
+		}},
+	}
+	for _, folder := range []string{"missing", "empty"} {
+		t.Run(folder, func(t *testing.T) {
+			root := t.TempDir()
+			dir := filepath.Join(root, "config", "data")
+			if folder == "empty" {
+				if err := os.MkdirAll(dir, 0o755); err != nil {
+					t.Fatal(err)
+				}
+				os.Chmod(dir, 0o755)
+			}
+			for _, r := range refusals {
+				c := *fx
+				c.dir = dir
+				r.mutate(t, &c)
+				if _, err := c.restore(config{}); !errors.Is(err, ErrRestoreRefused) {
+					t.Fatalf("%s: %v, want a refusal", r.name, err)
+				}
+				if folder == "missing" {
+					if _, err := os.Lstat(filepath.Join(root, "config")); !errors.Is(err, os.ErrNotExist) {
+						t.Fatalf("%s: the refusal created %s (%v)", r.name, filepath.Join(root, "config"), err)
+					}
+					continue
+				}
+				entries, _ := os.ReadDir(dir)
+				fi, _ := os.Stat(dir)
+				if len(entries) != 0 || fi.Mode().Perm() != 0o755 {
+					t.Fatalf("%s: the refusal left %v in the folder, mode %v", r.name, entries, fi.Mode().Perm())
+				}
+			}
+			c := *fx
+			c.dir = dir
+			if _, err := c.restore(config{}); err != nil {
+				t.Fatal(err)
+			}
+			s := openTest(t, config{dataDir: dir})
+			assertSettled(t, s)
+		})
+	}
+}
+
+// A server started in the new folder while its restore was being verified
+// (it holds the lock only while it runs) is seen once the restore holds the
+// lock: the restore is verified again against that server and refused.
+func TestRestoreIntoANewFolderVerifiesAgainWhenTheFolderChanged(t *testing.T) {
+	fx := newRestoreFixture(t)
+	dir := filepath.Join(t.TempDir(), "data")
+	c := *fx
+	c.dir = dir
+	_, err := c.restore(config{hooks: hooks{restoreFault: func(point string) error {
+		if point == "verified-before-lock" {
+			s, err := open(context.Background(), config{dataDir: dir, syncDir: noSync})
+			if err != nil {
+				return err
+			}
+			return s.Close()
+		}
+		return nil
+	}}})
+	if !errors.Is(err, ErrRestoreRefused) || !strings.Contains(err.Error(), "the backup belongs to server") {
+		t.Fatalf("got %v, want a refusal naming the other server", err)
+	}
+}
+
+// A restore opens the key bundle, so the keys count as exported from then on
+// (PROTOCOL §11.1): at the bundle's time on a new machine, and a later export
+// already recorded stays.
+func TestRestoreRecordsTheKeyExport(t *testing.T) {
+	fx := newRestoreFixture(t)
+	b, err := keys.Open(fx.bundle, fx.pass)
+	if err != nil || b.CreatedAt <= 0 {
+		t.Fatalf("bundle %v %v", b.CreatedAt, err)
+	}
+	fresh := *fx
+	fresh.dir = filepath.Join(t.TempDir(), "new")
+	if _, err := fresh.restore(config{}); err != nil {
+		t.Fatal(err)
+	}
+	if got := readState(t, fresh.dir).KeysExportedAt; got != b.CreatedAt {
+		t.Fatalf("keys exported at %d after a restore into a new folder, want the bundle's %d", got, b.CreatedAt)
+	}
+	s := openTest(t, config{dataDir: fresh.dir})
+	if s.KeysExportedAt() != b.CreatedAt {
+		t.Fatalf("the restored server reports keys exported at %d", s.KeysExportedAt())
+	}
+	s.Close()
+	later := b.CreatedAt + 60_000
+	inPlace := fx.clone(t)
+	m, err := loadMeta(inPlace.dir, &hooks{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if err := m.update("test", func(st *restoreState) { st.KeysExportedAt = later }); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := inPlace.restore(config{}); err != nil {
+		t.Fatal(err)
+	}
+	if got := readState(t, inPlace.dir).KeysExportedAt; got != later {
+		t.Fatalf("keys exported at %d after a restore in place, want the later export %d", got, later)
+	}
+}
+
+// A restore stages exactly the bytes it verified (PROTOCOL §11.4): a backup
+// changed or replaced after its verification is refused before anything is
+// written for the restore, leaving a new data directory as it was (missing,
+// or empty with its mode) and an existing one unchanged, and the same folder
+// then takes the backup as verified. A change after the copy was made no
+// longer matters: this run never reads the backup again.
+func TestRestoreStagesTheBytesItVerified(t *testing.T) {
+	forEachFormat(t, testRestoreStagesTheBytesItVerified)
+}
+
+func testRestoreStagesTheBytesItVerified(t *testing.T, format int) {
+	fx := newRestoreFixtureIn(t, format)
+	original, err := os.ReadFile(fx.backup)
+	if err != nil {
+		t.Fatal(err)
+	}
+	flip := func(path string) error {
+		data := slices.Clone(original)
+		data[len(data)/2] ^= 1
+		return os.WriteFile(path, data, 0o600) // the same file, changed in place
+	}
+	replace := func(path string) error { // the same bytes in another file
+		tmp := path + ".new"
+		if err := os.WriteFile(tmp, original, 0o600); err != nil {
+			return err
+		}
+		return os.Rename(tmp, path)
+	}
+	at := func(point string, change func(string) error, path string) config {
+		return config{hooks: hooks{restoreFault: func(p string) error {
+			if p == point {
+				return change(path)
+			}
+			return nil
+		}}}
+	}
+	for _, tc := range []struct {
+		name, point string
+		change      func(string) error
+	}{
+		{"changed before the lock", "verified-before-lock", flip},
+		{"replaced before the lock", "verified-before-lock", replace},
+		{"changed after the lock", "verified", flip},
+	} {
+		for _, folder := range []string{"missing", "empty"} {
+			t.Run(tc.name+"/"+folder, func(t *testing.T) {
+				c := fx.clone(t)
+				root := t.TempDir()
+				c.dir = filepath.Join(root, "config", "data")
+				if folder == "empty" {
+					os.MkdirAll(c.dir, 0o755)
+					os.Chmod(c.dir, 0o755)
+				}
+				if _, err := c.restore(at(tc.point, tc.change, c.backup)); !errors.Is(err, ErrRestoreRefused) ||
+					!strings.Contains(err.Error(), "not the file that was verified") {
+					t.Fatalf("got %v, want a refusal", err)
+				}
+				if folder == "missing" {
+					if _, err := os.Lstat(filepath.Join(root, "config")); !errors.Is(err, os.ErrNotExist) {
+						t.Fatalf("the refusal left %s (%v)", filepath.Join(root, "config"), err)
+					}
+				} else {
+					entries, _ := os.ReadDir(c.dir)
+					fi, _ := os.Stat(c.dir)
+					if len(entries) != 0 || fi.Mode().Perm() != 0o755 {
+						t.Fatalf("the refusal left %v in the folder, mode %v", entries, fi.Mode().Perm())
+					}
+				}
+				if err := os.WriteFile(c.backup, original, 0o600); err != nil {
+					t.Fatal(err)
+				}
+				if _, err := c.restore(config{}); err != nil {
+					t.Fatalf("the folder no longer takes the backup: %v", err)
+				}
+				assertSettled(t, openTest(t, config{dataDir: c.dir}))
+			})
+		}
+	}
+	t.Run("changed in place, existing data directory", func(t *testing.T) {
+		c := fx.clone(t)
+		before := snapshotDir(t, c.dir)
+		if _, err := c.restore(at("verified", flip, c.backup)); !errors.Is(err, ErrRestoreRefused) ||
+			!strings.Contains(err.Error(), "not the file that was verified") {
+			t.Fatalf("got %v, want a refusal", err)
+		}
+		if after := snapshotDir(t, c.dir); !reflect.DeepEqual(after, before) {
+			t.Fatalf("the refusal changed the data directory:\n%v\n%v", before, after)
+		}
+	})
+	t.Run("changed after the copy", func(t *testing.T) {
+		c := fx.clone(t)
+		c.dir = filepath.Join(t.TempDir(), "data")
+		if _, err := c.restore(at("staged-copied", flip, c.backup)); err != nil {
+			t.Fatalf("a change after the verified bytes were copied: %v", err)
+		}
+		assertSettled(t, openTest(t, config{dataDir: c.dir}))
+	})
+}
+
+// A copy staged by a restore that stopped before recording itself is
+// removed at the next start.
+func TestAStagedCopyWithoutARestoreIsRemovedAtStart(t *testing.T) {
+	forEachFormat(t, testAStagedCopyWithoutARestoreIsRemovedAtStart)
+}
+
+func testAStagedCopyWithoutARestoreIsRemovedAtStart(t *testing.T, format int) {
+	fx := newRestoreFixtureIn(t, format)
+	c := fx.clone(t)
+	crash := errors.New("crash")
+	if _, err := c.restore(config{hooks: hooks{beforeStateWrite: func(phase string) error {
+		if phase == "restore-"+stepStage {
+			return crash
+		}
+		return nil
+	}}}); !errors.Is(err, crash) {
+		t.Fatalf("the injected crash did not stop the restore: %v", err)
+	}
+	if _, err := os.Stat(filepath.Join(c.dir, stagedSourceName)); err != nil {
+		t.Fatalf("no staged copy before the start: %v", err)
+	}
+	if st := readState(t, c.dir); st.Restore != nil {
+		t.Fatalf("the restore was recorded: %+v", st.Restore)
+	}
+	openTest(t, config{dataDir: c.dir}).Close()
+	if left := restoreLeftovers(t, c.dir); len(left) > 0 {
+		t.Fatalf("the staged copy is left after the start: %v", left)
 	}
 }

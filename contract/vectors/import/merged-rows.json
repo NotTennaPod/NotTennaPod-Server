@@ -29,6 +29,7 @@
         "source_item_id": 2,
         "source_media_id": 2
        },
+       "chapters": null,
        "duration_ms": 1800000,
        "favorite": true,
        "history": 1777708800000,
@@ -67,6 +68,7 @@
         "source_item_id": 3,
         "source_media_id": 3
        },
+       "chapters": null,
        "duration_ms": 2400000,
        "favorite": false,
        "history": 1736254800000,
@@ -87,6 +89,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": 2460000,
        "favorite": false,
        "history": null,
@@ -125,6 +128,7 @@
         "source_item_id": 6,
         "source_media_id": 6
        },
+       "chapters": null,
        "duration_ms": 900000,
        "favorite": false,
        "history": 1768478400000,
@@ -157,6 +161,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": null,
        "favorite": false,
        "history": null,
@@ -178,6 +183,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": 300000,
        "favorite": false,
        "history": null,
@@ -199,6 +205,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": null,
        "favorite": true,
        "history": null,
@@ -225,6 +232,7 @@
         "source_item_id": 11,
         "source_media_id": 9
        },
+       "chapters": null,
        "duration_ms": 3600000,
        "favorite": false,
        "history": 1907755200000,
@@ -245,6 +253,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": 1200000,
        "favorite": false,
        "history": null,
@@ -265,6 +274,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": null,
        "favorite": false,
        "history": null,
@@ -292,6 +302,7 @@
         "source_item_id": 14,
         "source_media_id": 11
        },
+       "chapters": null,
        "duration_ms": 1200000,
        "favorite": false,
        "history": 1401624000000,
@@ -312,6 +323,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": 600000,
        "favorite": false,
        "history": null,
@@ -332,6 +344,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": 600000,
        "favorite": false,
        "history": null,
@@ -352,6 +365,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": 600000,
        "favorite": false,
        "history": null,
@@ -379,6 +393,7 @@
         "source_item_id": 21,
         "source_media_id": 18
        },
+       "chapters": null,
        "duration_ms": 1000000,
        "favorite": false,
        "history": 1704196800000,
@@ -405,6 +420,7 @@
         "source_item_id": 22,
         "source_media_id": 19
        },
+       "chapters": null,
        "duration_ms": 1000000,
        "favorite": false,
        "history": 1706788800000,
@@ -462,6 +478,7 @@
         "source_item_id": 15,
         "source_media_id": 12
        },
+       "chapters": null,
        "duration_ms": 1500000,
        "favorite": true,
        "history": 1776686400000,
@@ -482,6 +499,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": 1500000,
        "favorite": false,
        "history": null,
@@ -502,6 +520,7 @@
       },
       {
        "baseline": null,
+       "chapters": null,
        "duration_ms": 1500000,
        "favorite": false,
        "history": null,
@@ -608,6 +627,19 @@
       "title": "Late dispute (re-dated)"
      }
     ],
+    "not_carried": {
+     "episode_auto_download_off": 0,
+     "podcasts": [
+      {
+       "settings": [
+        "custom_title"
+       ],
+       "source_feed_id": 2,
+       "title": "My Atom Show",
+       "url": "https://private.example.invalid/feed.atom"
+      }
+     ]
+    },
     "skipped": []
    },
    "sha256": "1dd54db4e33f46f93b9a3bd4be83b33a4e0d34e768e72c7ca015444a0c3c4918",

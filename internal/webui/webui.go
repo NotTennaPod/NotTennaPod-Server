@@ -12,6 +12,8 @@ import (
 	"os"
 	"path"
 	"strings"
+
+	"github.com/NotTennaPod/NotTennaPod-Server/internal/httpgzip"
 )
 
 // dist holds the app installed from NotTennaPod-Web. Only its empty .keep is
@@ -70,16 +72,29 @@ func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	if ct == "" {
 		ct = "application/octet-stream"
 	}
-	w.Header().Set("Content-Type", ct)
+	hdr := w.Header()
+	hdr.Set("Content-Type", ct)
 	if strings.HasPrefix(name, "assets/") {
-		w.Header().Set("Cache-Control", "public, max-age=31536000, immutable")
+		hdr.Set("Cache-Control", "public, max-age=31536000, immutable")
 	} else {
-		w.Header().Set("Cache-Control", "no-cache")
+		hdr.Set("Cache-Control", "no-cache")
+	}
+	// Text (the page, scripts, styles, SVG, JSON) is sent gzip-compressed to
+	// a browser that accepts it; images and fonts are compressed already.
+	if compressible(ct) {
+		data = httpgzip.Negotiate(hdr, r, data)
 	}
 	w.WriteHeader(http.StatusOK)
 	if r.Method == http.MethodGet {
 		_, _ = w.Write(data)
 	}
+}
+
+func compressible(contentType string) bool {
+	mt, _, _ := strings.Cut(contentType, ";")
+	mt = strings.TrimSpace(mt)
+	return strings.HasPrefix(mt, "text/") || mt == "image/svg+xml" ||
+		strings.HasSuffix(mt, "javascript") || strings.HasSuffix(mt, "json") || strings.HasSuffix(mt, "xml")
 }
 
 // SecurityHeaders sets the headers every response carries (PROTOCOL §12): the content security

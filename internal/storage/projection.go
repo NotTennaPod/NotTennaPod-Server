@@ -3,49 +3,29 @@ package storage
 import (
 	"database/sql"
 	"errors"
-	"strings"
+	"sync/atomic"
 )
 
 // rankGap spaces new ranks; renumbering restores it when a gap is exhausted.
 const rankGap = 1 << 20
 
+// rankPlacementRows counts the nodes read finding new nodes' places (tests
+// bound it).
+var rankPlacementRows atomic.Int64
+
 // insertRank gives a new sink node its place in the account's causal order
 // (PROTOCOL §7.2): immediately before the first node after its last
-// dependency whose (normalized_time, node_id) is greater, else last.
+// dependency whose (normalized_time, node_id) is greater, else last. Its
+// rank is the midpoint of the gap there, and a gap used up renumbers the
+// account: the ranks the earlier servers gave, so a database one of them
+// wrote rebuilds to the same ranks (the rebuild invariant).
 func (a *AccountTx) insertRank(nodeID string, t int64, deps []string) error {
-	ctx, tx := a.w.ctx, a.w.tx
-	var last int64 // rank of the last dependency (0 if none)
-	if len(deps) > 0 {
-		args := []any{a.id}
-		for _, d := range deps {
-			args = append(args, d)
-		}
-		q := `SELECT COALESCE(MAX(rank), 0) FROM node_order WHERE account_id = ? AND node_id IN (?` + strings.Repeat(",?", len(deps)-1) + `)`
-		if err := tx.QueryRowContext(ctx, q, args...).Scan(&last); err != nil {
-			return err
-		}
+	last, err := a.lastRank(deps) // rank of the last dependency (0 if none)
+	if err != nil {
+		return err
 	}
 	for attempt := 0; attempt < 2; attempt++ {
-		// next is the rank of the first node after last whose priority
-		// (normalized time, ID bytewise) is greater, prev the rank right
-		// before it (or the last rank). Both are found by SQLite: a Go loop
-		// over every later node made each insertion linear in the archive.
-		var nextRank sql.NullInt64
-		if err := tx.QueryRowContext(ctx, `SELECT MIN(o.rank) FROM causal_nodes n INDEXED BY causal_nodes_priority
-			CROSS JOIN node_order o ON o.account_id = n.account_id AND o.node_id = n.node_id
-			WHERE n.account_id = ?1 AND n.normalized_time >= ?3 AND (n.normalized_time > ?3 OR n.node_id > ?4) AND o.rank > ?2`,
-			a.id, last, t, nodeID).Scan(&nextRank); err != nil {
-			return err
-		}
-		next, found := nextRank.Int64, nextRank.Valid
-		var prev int64
-		var err error
-		if found {
-			err = tx.QueryRowContext(ctx, `SELECT COALESCE(MAX(rank), ?2) FROM node_order WHERE account_id = ?1 AND rank > ?2 AND rank < ?3`,
-				a.id, last, next).Scan(&prev)
-		} else {
-			err = tx.QueryRowContext(ctx, `SELECT COALESCE(MAX(rank), ?2) FROM node_order WHERE account_id = ?1 AND rank > ?2`, a.id, last).Scan(&prev)
-		}
+		prev, next, found, err := a.placeAfter(last, t, nodeID)
 		if err != nil {
 			return err
 		}
@@ -59,22 +39,125 @@ func (a *AccountTx) insertRank(nodeID string, t int64, deps []string) error {
 			if err := a.renumber(); err != nil {
 				return err
 			}
-			if len(deps) > 0 {
-				args := []any{a.id}
-				for _, d := range deps {
-					args = append(args, d)
-				}
-				q := `SELECT COALESCE(MAX(rank), 0) FROM node_order WHERE account_id = ? AND node_id IN (?` + strings.Repeat(",?", len(deps)-1) + `)`
-				if err := tx.QueryRowContext(ctx, q, args...).Scan(&last); err != nil {
-					return err
-				}
+			if last, err = a.lastRank(deps); err != nil {
+				return err
 			}
 			continue
 		}
-		_, err = tx.ExecContext(ctx, `INSERT INTO node_order (account_id, node_id, rank) VALUES (?, ?, ?)`, a.id, nodeID, rank)
+		_, err = a.w.tx.ExecContext(a.w.ctx, `INSERT INTO node_order (account_id, node_id, rank) VALUES (?, ?, ?)`, a.id, nodeID, rank)
 		return err
 	}
 	return errors.New("storage: cannot place node in the causal order")
+}
+
+// placeAfter returns the rank of the first node ranked after last whose
+// priority (normalized time, ID bytewise) is greater than (t, id) and the
+// rank right before it (found), or the last rank (not found). Two scans take
+// turns, a page each: the nodes after last in rank order, which ends at that
+// node, and the nodes of greater priority, which ends when they are all
+// read. So it reads about twice the smaller of the nodes it is placed after
+// and the nodes of greater priority, never the archive.
+func (a *AccountTx) placeAfter(last, t int64, id string) (prev, next int64, found bool, err error) {
+	ctx, tx := a.w.ctx, a.w.tx
+	prev = last
+	afterRank := last                   // the rank scan's position
+	afterTime, afterID := t, id         // the priority scan's position
+	least, haveLeast := int64(0), false // the least rank after last of greater priority read so far
+	for page := 64; ; page = min(2*page, 4096) {
+		rows, err := tx.QueryContext(ctx, rankScanQuery, a.id, afterRank, page)
+		if err != nil {
+			return 0, 0, false, err
+		}
+		n := 0
+		for rows.Next() {
+			var r, nt int64
+			var nid string
+			if err := rows.Scan(&r, &nt, &nid); err != nil {
+				rows.Close()
+				return 0, 0, false, err
+			}
+			n++
+			if nt > t || (nt == t && nid > id) {
+				rows.Close()
+				rankPlacementRows.Add(int64(n))
+				return prev, r, true, nil
+			}
+			prev, afterRank = r, r
+		}
+		rows.Close()
+		rankPlacementRows.Add(int64(n))
+		if err := rows.Err(); err != nil {
+			return 0, 0, false, err
+		}
+		if n < page {
+			return prev, 0, false, nil // no later node has a greater priority
+		}
+		rows, err = tx.QueryContext(ctx, priorityScanQuery, a.id, afterTime, afterID, page)
+		if err != nil {
+			return 0, 0, false, err
+		}
+		n = 0
+		for rows.Next() {
+			var r int64
+			if err := rows.Scan(&afterTime, &afterID, &r); err != nil {
+				rows.Close()
+				return 0, 0, false, err
+			}
+			n++
+			if r > last && (!haveLeast || r < least) {
+				least, haveLeast = r, true
+			}
+		}
+		rows.Close()
+		rankPlacementRows.Add(int64(n))
+		if err := rows.Err(); err != nil {
+			return 0, 0, false, err
+		}
+		if n < page {
+			// Every node of greater priority is read.
+			if !haveLeast {
+				err = tx.QueryRowContext(ctx, `SELECT COALESCE(MAX(rank), ?2) FROM node_order WHERE account_id = ?1 AND rank > ?2`, a.id, last).Scan(&prev)
+				return prev, 0, false, err
+			}
+			err = tx.QueryRowContext(ctx, `SELECT COALESCE(MAX(rank), ?2) FROM node_order WHERE account_id = ?1 AND rank > ?2 AND rank < ?3`,
+				a.id, last, least).Scan(&prev)
+			return prev, least, true, err
+		}
+	}
+}
+
+// The priority scan seeks straight to its cursor (time, then ID) with a row
+// value: a separate time bound and an ID filter would step through every
+// node of the cursor's time.
+const (
+	rankScanQuery = `SELECT o.rank, n.normalized_time, n.node_id FROM node_order o INDEXED BY node_order_rank
+		CROSS JOIN causal_nodes n ON n.account_id = o.account_id AND n.node_id = o.node_id
+		WHERE o.account_id = ? AND o.rank > ? ORDER BY o.rank LIMIT ?`
+	priorityScanQuery = `SELECT n.normalized_time, n.node_id, o.rank FROM causal_nodes n INDEXED BY causal_nodes_priority
+		CROSS JOIN node_order o ON o.account_id = n.account_id AND o.node_id = n.node_id
+		WHERE n.account_id = ?1 AND (n.normalized_time, n.node_id) > (?2, ?3)
+		ORDER BY n.normalized_time, n.node_id LIMIT ?4`
+)
+
+// lastRank is the greatest rank of the nodes (0 for none), read in batches:
+// a node can follow more nodes than a statement takes variables (a server
+// decision after a power user's import follows tens of thousands).
+func (a *AccountTx) lastRank(nodes []string) (int64, error) {
+	var last int64
+	err := inBatches(nodes, func(batch []string, placeholders string) error {
+		args := []any{a.id}
+		for _, d := range batch {
+			args = append(args, d)
+		}
+		var r int64
+		if err := a.w.tx.QueryRowContext(a.w.ctx, `SELECT COALESCE(MAX(rank), 0) FROM node_order WHERE account_id = ? AND node_id IN (`+placeholders+`)`,
+			args...).Scan(&r); err != nil {
+			return err
+		}
+		last = max(last, r)
+		return nil
+	})
+	return last, err
 }
 
 // renumber respaces every rank of the account, keeping the order.

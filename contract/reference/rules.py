@@ -170,7 +170,7 @@ OPERATION_CAPABILITY = {
     # PROTOCOL §9.4 (core capability).
     "catalog.observe": "core",
     "discovery.propose": "core",
-    # PROTOCOL §8 (2026-10-05): a non-claiming switch-away fact.
+    # PROTOCOL §8: a non-claiming switch-away fact.
     "episode.leave": "core",
 }
 

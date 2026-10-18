@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"errors"
 	"sync"
+	"sync/atomic"
 )
 
 // KeyWrite is a layout's key write for one (episode, generation) scope, at
@@ -26,7 +27,31 @@ func (a *AccountTx) WriteKey(k KeyWrite) error {
 
 // KeyWrites returns every scope's latest layout key write.
 func (a *AccountTx) KeyWrites() ([]KeyWrite, error) {
-	rows, err := a.w.tx.QueryContext(a.w.ctx, `SELECT scope, queue_key, position_id, node_id, epoch, seq, idx FROM queue_keys WHERE account_id = ?`, a.id)
+	return a.keyWrites(`SELECT scope, queue_key, position_id, node_id, epoch, seq, idx FROM queue_keys WHERE account_id = ?`, a.id)
+}
+
+// KeyWritesSince returns the layouts' latest key writes ranked after the
+// rank (epoch, seq, idx, node), in rank order: one range seek
+// (queue_keys_by_rank).
+func (a *AccountTx) KeyWritesSince(epoch, seq, idx int64, node string) ([]KeyWrite, error) {
+	return a.keyWrites(keyWritesSinceQuery, a.id, epoch, seq, idx, node)
+}
+
+const keyWritesSinceQuery = `SELECT scope, queue_key, position_id, node_id, epoch, seq, idx FROM queue_keys INDEXED BY queue_keys_by_rank
+	WHERE account_id = ? AND (epoch, seq, idx, node_id) > (?, ?, ?, ?) ORDER BY epoch, seq, idx, node_id`
+
+// KeyWriteOf returns a scope's latest layout key write (false for none).
+func (a *AccountTx) KeyWriteOf(scope string) (KeyWrite, bool, error) {
+	out, err := a.keyWrites(`SELECT scope, queue_key, position_id, node_id, epoch, seq, idx FROM queue_keys WHERE account_id = ? AND scope = ?`,
+		a.id, scope)
+	if err != nil || len(out) == 0 {
+		return KeyWrite{}, false, err
+	}
+	return out[0], true, nil
+}
+
+func (a *AccountTx) keyWrites(query string, args ...any) ([]KeyWrite, error) {
+	rows, err := a.w.tx.QueryContext(a.w.ctx, query, args...)
 	if err != nil {
 		return nil, err
 	}
@@ -39,8 +64,16 @@ func (a *AccountTx) KeyWrites() ([]KeyWrite, error) {
 		}
 		out = append(out, k)
 	}
+	keyWriteRows.Add(int64(len(out)))
 	return out, rows.Err()
 }
+
+// keyWriteRows counts the layout key write rows read since the process
+// started (tests bound a queue command's reads).
+var keyWriteRows atomic.Int64
+
+// KeyWriteRowsRead is the number of layout key write rows read so far.
+func KeyWriteRowsRead() int64 { return keyWriteRows.Load() }
 
 // PriorRecord returns a record as it was published before this transaction's
 // rebuild cleared it (the rebuild's copy), else as it is now (ErrNotFound
@@ -80,59 +113,6 @@ func (a *AccountTx) LiveRecordIDs(entity, group string) ([]string, error) {
 // QueueFrontier returns the queue frontier (sorted).
 func (a *AccountTx) QueueFrontier() ([]string, error) {
 	return queryStrings(a.w.ctx, a.w.tx, `SELECT node_id FROM queue_frontier WHERE account_id = ? ORDER BY node_id`, a.id)
-}
-
-// AddQueueNode records a queue membership/position node: frontier nodes that
-// are its ancestors leave the frontier, and it joins. A node is admitted only
-// after its ancestors, so it never has a frontier node as a descendant.
-func (a *AccountTx) AddQueueNode(node string) error {
-	frontier, err := a.QueueFrontier()
-	if err != nil {
-		return err
-	}
-	rank, err := a.NodeRank(node)
-	if err != nil {
-		return err
-	}
-	minRank := int64(-1)
-	for _, f := range frontier {
-		if f == node {
-			return nil
-		}
-		r, err := a.NodeRank(f)
-		if err != nil {
-			return err
-		}
-		if minRank < 0 || r < minRank {
-			minRank = r
-		}
-		// A frontier node descending from this one (it was recorded first, as
-		// a decision resolving this node's effect is) keeps it off the frontier.
-		if r > rank {
-			past, err := a.Ancestors(f, rank)
-			if err != nil {
-				return err
-			}
-			if past[node] {
-				return nil
-			}
-		}
-	}
-	if minRank >= 0 {
-		past, err := a.Ancestors(node, minRank)
-		if err != nil {
-			return err
-		}
-		for _, f := range frontier {
-			if past[f] {
-				if _, err := a.w.tx.ExecContext(a.w.ctx, `DELETE FROM queue_frontier WHERE account_id = ? AND node_id = ?`, a.id, f); err != nil {
-					return err
-				}
-			}
-		}
-	}
-	_, err = a.w.tx.ExecContext(a.w.ctx, `INSERT INTO queue_frontier (account_id, node_id) VALUES (?, ?)`, a.id, node)
-	return err
 }
 
 // ---- the queue replay's inputs (PROTOCOL §7.6)

@@ -6,6 +6,7 @@ import (
 	"crypto/sha256"
 	"encoding/json"
 	"errors"
+	"fmt"
 	"os"
 	"path/filepath"
 	"testing"
@@ -191,8 +192,7 @@ func TestStartupDetectionMatrix(t *testing.T) {
 				t.Fatal(err)
 			}
 			s.Close()
-			data, _ := os.ReadFile(info.Path)
-			writeInPlace(t, dir, data) // same incarnation, same inode: only the marker tells
+			writeInPlace(t, dir, rawDatabaseOf(t, info.Path)) // same incarnation, same inode: only the marker tells
 			return true
 		}},
 		{"an older raw copy replacing the file: detected (file identity)", "the database file was replaced", func(t *testing.T, dir string, s *Store) bool {
@@ -643,5 +643,43 @@ func TestRestoreTransition(t *testing.T) {
 		if e != before.EpochHighWater {
 			t.Fatalf("epoch %d after a rolled-back transition, want %d", e, before.EpochHighWater)
 		}
+	}
+}
+
+// The identity hooks run after a commit that raised accounts' generation
+// (with those accounts) or moved every lineage (all), before Write
+// returns; an ordinary commit calls none.
+func TestIdentityChangeHooks(t *testing.T) {
+	ctx := context.Background()
+	s, ids, _, _ := serverWithData(t, t.TempDir())
+	type call struct {
+		accounts []string
+		all      bool
+	}
+	var calls []call
+	s.OnIdentityChange(func(accounts []string, all bool) { calls = append(calls, call{accounts, all}) })
+	write := func(what string, fn func(w *WriteTx) error, want []call) {
+		t.Helper()
+		calls = nil
+		if err := s.Write(ctx, fn); err != nil {
+			t.Fatal(err)
+		}
+		if fmt.Sprint(calls) != fmt.Sprint(want) {
+			t.Fatalf("%s: hooks %v, want %v", what, calls, want)
+		}
+	}
+	write("an ordinary commit", func(w *WriteTx) error {
+		return w.Account(ids[0]).PutRecord(RecordRow{"account", ids[0], "discovery_policy", `{"new_episodes_action":"inbox"}`, `["t"]`})
+	}, nil)
+	write("a bulk rewrite", func(w *WriteTx) error { return w.SuspendViewCapture(ids[1]) }, []call{{[]string{ids[1]}, false}})
+	write("a restore transition", func(w *WriteTx) error { return w.RestoreTransition("test") }, []call{{nil, true}})
+	calls = nil
+	if err := s.Write(ctx, func(w *WriteTx) error {
+		if err := w.SuspendViewCapture(ids[0]); err != nil {
+			return err
+		}
+		return errors.New("rolled back")
+	}); err == nil || calls != nil {
+		t.Fatalf("a rolled-back bulk rewrite: %v, hooks %v", err, calls)
 	}
 }

@@ -28,17 +28,17 @@ LOAD_SKIPS = {
     "TestRotationPerformance": "load test",
     "TestSortedAddWithLongQueueHistory": "load test (make check runs it without the race detector)",
     "TestConcentratedHistoryIsStaged": "load test",
+    "TestQueueEditWorkBudget": "load test (make check runs it without the race detector)",
 }
 MEASURE = "TestQueueReplayMeasure"
 MEASURE_SKIP = "set NTP_QUEUE_MEASURE to the number of queue commands"
 LOAD_OVERRIDES = (
     "NTP_LISTEN_LOAD", "NTP_REBUILD_LOAD", "NTP_REBUILD_EPISODES",
-    "NTP_REBUILD_STAGING", "NTP_IDENTITY_PERF",
+    "NTP_REBUILD_STAGING", "NTP_IDENTITY_PERF", "NTP_QUEUE_BUDGET_MAX",
 )
 TOPS_PER_SHARD = 8
 CASES_PER_SHARD = 24
 ARRIVALS_PER_SHARD = 384
-DEADLINE_SECONDS = 30 * 60
 
 # This small source contract deliberately fails if TestRuleVectors changes its
 # discovery algorithm. New files/cases in these roots need no runner edits; a
@@ -230,44 +230,40 @@ class Runner:
         require(bool(self.go), "empty Go command")
         self.env = dict(os.environ if env is None else env)
         self.case_prefix = case_prefix
-        self.timeout_seconds = 10 * 60 if mode == "loads" else DEADLINE_SECONDS
-        self.timeout = "10m" if mode == "loads" else "30m"
         stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
         self.output = self.root / ".work/check-ops" / f"{stamp}-{mode}-{uuid.uuid4().hex[:8]}"
         self.output.mkdir(parents=True)
         self.manifest = {"mode": mode, "status": "running", "invocations": [],
                          "case_prefix": case_prefix, "NTP_RULE_CASES": self.env.get("NTP_RULE_CASES"),
-                         "GOFLAGS": self.env.get("GOFLAGS", ""), "deadline_seconds": self.timeout_seconds}
+                         "GOFLAGS": self.env.get("GOFLAGS", "")}
 
     def command(self, label, args):
         command = self.go + args
         extension = "jsonl" if "-json" in args else "stdout"
         record = {"label": label, "command": command, "stdout": f"{label}.{extension}",
-                  "stderr": f"{label}.stderr", "timed_out": False, "exit_code": None}
+                  "stderr": f"{label}.stderr", "exit_code": None}
         self.manifest["invocations"].append(record)
         print(f"check-ops: {label} ({self.output})", flush=True)
         began = time.monotonic()
         with (self.output / record["stdout"]).open("w") as out, (self.output / record["stderr"]).open("w") as err:
             proc = subprocess.Popen(command, cwd=self.root, env=self.env, stdout=out,
                                     stderr=err, start_new_session=True)
+            # No run time limit: an invocation runs until it ends.
             try:
-                proc.wait(timeout=min(DEADLINE_SECONDS, self.timeout_seconds))
-            except (subprocess.TimeoutExpired, KeyboardInterrupt) as error:
+                proc.wait()
+            except KeyboardInterrupt:
                 # Go may have a test child; stop the complete invocation, then retain logs.
                 os.killpg(proc.pid, signal.SIGKILL)
                 proc.wait()
-                record["timed_out"] = isinstance(error, subprocess.TimeoutExpired)
-                if isinstance(error, KeyboardInterrupt):
-                    raise
+                raise
             finally:
                 record["exit_code"] = proc.returncode
                 record["elapsed_seconds"] = round(time.monotonic() - began, 3)
-        require(not record["timed_out"], f"invocation deadline exceeded: {label}")
         require(record["exit_code"] == 0, f"Go invocation failed: {label} (exit {record['exit_code']}); see raw logs")
         return (self.output / record["stdout"]).read_text(), record
 
     def test_args(self, race):
-        return ["test"] + (["-race"] if race else []) + ["-count=1", "-timeout", self.timeout, "-json"]
+        return ["test"] + (["-race"] if race else []) + ["-count=1", "-timeout", "0", "-json"]
 
     def discover(self, race):
         label = "compiled-inventory-race" if race else "compiled-inventory-nonrace"

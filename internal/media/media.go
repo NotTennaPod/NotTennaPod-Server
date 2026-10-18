@@ -94,6 +94,8 @@ type Service struct {
 	spools *spools
 	conv   *conversions
 
+	failures *directFailures // the direct-failure memo
+
 	curMu   sync.Mutex
 	current map[string]string // account → the token of its latest descriptor ("" when it has none)
 
@@ -140,6 +142,7 @@ func New(cfg Config) (*Service, error) {
 	s := &Service{cfg: cfg, ctx: ctx, cancel: cancel, reader: &loopback{},
 		probes:   &probeCache{entries: map[string]*probeEntry{}, sem: make(chan struct{}, cfg.Limits.ProbesServer)},
 		conv:     &conversions{max: cfg.Limits.ConversionsServer, byAccount: map[string]*slot{}},
+		failures: newDirectFailures(),
 		relay:    map[string]int{},
 		current:  map[string]string{},
 		assets:   map[string]chan struct{}{},
@@ -285,14 +288,17 @@ var ErrInvalid = errors.New("media: invalid request")
 
 // Play decides how the player plays an episode (PROTOCOL §13):
 //   - direct when the browser decodes the source type, the URL is https:,
-//     the podcast has no credentials, and the player has not seen direct
-//     playback fail;
+//     the podcast has no credentials, and direct playback of the source has
+//     not failed in the player (this request's direct_failed, or the memo of
+//     the account's earlier ones);
 //   - else relay when the browser decodes the type;
 //   - else compat, a conversion starting at start_ms;
 //   - else unsupported, with the reason.
 //
-// The relay and compat modes pin the representation and return a token
-// media URL.
+// A direct candidate whose declared type (else its extension's) the browser
+// plays is answered at once, without fetching anything; any other request
+// pins the representation (and probes it) first. The relay and compat modes
+// pin the representation and return a token media URL.
 func (s *Service) Play(ctx context.Context, ep Episode, req PlayRequest) (*Descriptor, error) {
 	if req.Force != "" && req.Force != "compat" || req.StartMS < 0 {
 		return nil, ErrInvalid
@@ -309,7 +315,25 @@ func (s *Service) Play(ctx context.Context, ep Episode, req PlayRequest) (*Descr
 	if declared == "" {
 		declared = typeFromURL(source)
 	}
-	direct := src.Scheme == "https" && ep.Credentials == nil && !req.DirectFailed && req.Force != "compat"
+	// A direct failure is remembered for the account's source: its later
+	// descriptors choose the relay (or compat) rather than direct playback
+	// that fails again.
+	now := s.now()
+	if req.DirectFailed {
+		s.failures.remember(ep.Account, source, now)
+	}
+	direct := src.Scheme == "https" && ep.Credentials == nil && !req.DirectFailed && req.Force != "compat" &&
+		!s.failures.failed(ep.Account, source, now)
+	if direct && plays(req.Capabilities, declared) {
+		// The browser says it plays the declared type: the publisher is not
+		// asked first. If it cannot play it after all, it asks again with
+		// direct_failed, and the relay or compat path takes over.
+		d := &Descriptor{Mode: "direct", URL: ptr(source), Type: ptr(declared), Seekable: true}
+		if ep.DurationMS > 0 {
+			d.DurationMS = ptr(ep.DurationMS)
+		}
+		return d, nil
+	}
 
 	pinCtx, cancelPin := context.WithTimeout(ctx, s.cfg.Limits.PinDeadline)
 	r, pinErr := pin(pinCtx, s.cfg.Fetcher, source, ep.Credentials)

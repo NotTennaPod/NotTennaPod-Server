@@ -106,36 +106,62 @@ anything that fails. `make check` never runs it.
 
 `GO=/absolute/path/to/go make check` selects a local toolchain. Cross-compilation
 checks build portability; release readiness also requires runtime tests on Linux.
-The only external Go dependency is the pure-Go SQLite driver `modernc.org/sqlite`
-(and its own dependencies).
+The external Go modules the server uses directly are the pure-Go SQLite driver
+`modernc.org/sqlite`, `golang.org/x/crypto` (Argon2) and `golang.org/x/text` (feed
+encodings).
 
 `make check` runs packages other than `internal/ops` with the race detector, then
-runs ops serially in bounded shards. Each invocation keeps `-count=1`; race and
-rule phases keep `-timeout 30m`, and default loads keep Go's original 10-minute
-deadline explicitly as `-timeout 10m`. Ops test names come from fresh compiled race and nonrace
-inventories, which must agree. All non-rule-parent tests run once under race;
+runs ops serially in bounded shards. Every invocation runs with `-count=1` and
+`-timeout 0`: no invocation has a time limit. Ops test names come from
+fresh compiled race and nonrace inventories, which must agree. All non-rule-parent tests run once under race;
 rule bodies are inventoried independently from shared vectors, Server testdata
 and any `NTP_RULE_CASES` directory. Exact, escaped selectors run each selected
 body once per recipe phase. Shards balance top-level test counts and rule arrival
 counts, with at most eight top-level tests or 24 rule bodies per shard (384
-arrivals, except a single larger case). No deadline or test assertion is changed.
+arrivals, except a single larger case). Sharding changes no test assertion.
 
 Every runner phase retains raw Go JSON, stderr, commands and a fresh
 `coverage.json` under a unique `.work/check-ops/` directory, including on failure.
 Missing, extra or duplicate receipts, unexpected ops skips, empty selections,
-changed inputs and invocation/deadline failures fail the command. Repeated rule
+changed inputs and failed invocations fail the command. Repeated rule
 parents are setup receipts, separate from unique case-body receipts. A change to
 the rule parent's input-discovery algorithm fails explicitly until the runner's
 small source contract and roots are updated; adding files or cases to existing
 roots needs no runner change.
 
-The seven default load tests intentionally skip under race and then each run
+The eight default load tests intentionally skip under race and then each run
 without race at their source defaults: unsubscribe scopes, clear/reset listening
-history, offline session upload, rebuild, identity rotation, long queue history
-and concentrated staged history. The runner rejects their size/staging environment
-overrides. `TestQueueReplayMeasure` is a separate opt-in measurement; leave
+history, offline session upload, rebuild, identity rotation, long queue history,
+concentrated staged history and a queue edit's work as the history grows. The
+runner rejects their size/staging environment overrides. `TestQueueReplayMeasure` is a separate opt-in measurement; leave
 `NTP_QUEUE_MEASURE` unset for `make check`, and invoke it directly when needed.
-Other packages retain their existing platform, media and witness skip policies.
+Other packages keep their platform, media and witness skips. Two groups skip or
+run smaller under race and then run without race at full size as the last steps:
+the 26,271-episode library of `TestCatalogRevisionsResultsUnchanged`
+(`internal/storage`), and the queue admission and rank placement budgets and
+oracles of `internal/storage` and `internal/importer` (`FULL_SIZE_TESTS` in the
+`Makefile`).
+
+The read model's tests (`internal/views`) run only under race in `make check`,
+and smaller there: the randomized commit sequences run a tenth of their steps
+(`internal/views/race_test.go`), and the single-goroutine tests at scale skip
+(`TestIncrementalEqualsFullBuildAtScale`, `TestApplyBudget`, `TestScreenBudget`,
+`TestBoundaryChangePagesAndBatches`, `TestTwoTabsAnchoredDeep`,
+`TestQueueSkipsHiddenPodcasts`, and the 49,908-episode part of
+`TestContinueWitnesses`). Run them in full without race after changing the read
+model:
+
+```sh
+go test -count=1 -timeout 0 ./internal/views
+```
+
+The power user's library is opt-in, also outside `make check`:
+
+```sh
+NTP_READMODEL_SCALE=1 go test -count=1 -timeout 0 -run '^(TestCacheElectionAtScale|TestCacheBroadChangesHeldState)$' ./internal/views
+NTP_READMODEL_SCALE=1 go test -count=1 -timeout 0 -run '^TestReadModelRandomCommits$' ./internal/api
+```
+
 Model/reference checks, randomized vectors, their reported `CONTRACT_SEED`, and
 fixed-seed recovery vectors remain downstream checks. The recovery phase retains
 its `rules_random_` subset and records the excluded input cases explicitly.

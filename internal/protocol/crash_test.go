@@ -27,15 +27,23 @@ import (
 
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/contract"
 	"github.com/NotTennaPod/NotTennaPod-Server/internal/storage"
+	"github.com/NotTennaPod/NotTennaPod-Server/internal/views/viewstest"
 )
 
+// Every write transaction of the package's tests is audited for the read
+// model's change capture (storage.AuditViewCaptureForTesting), and every
+// commit of the tests (not of their child processes) is checked by the read
+// model's commit observer (viewstest.Main).
 func TestMain(m *testing.M) {
+	storage.AuditViewCaptureForTesting()
 	if os.Getenv("NTP_PROTOCOL_CHILD") == "push-server" {
 		runPushServerChild()
 		os.Exit(0)
 	}
-	os.Exit(m.Run())
+	os.Exit(viewstest.Main(m))
 }
+
+func TestReadModelObserverActive(t *testing.T) { viewstest.RequireActive(t) }
 
 func childFail(err error) {
 	fmt.Println("error", strings.ReplaceAll(err.Error(), "\n", " "))

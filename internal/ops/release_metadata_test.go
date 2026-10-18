@@ -13,7 +13,7 @@ import (
 // Each release keeps its own metadata. The cases kept as rule vectors are in
 // testdata/release_metadata and contract/vectors/rules_release_metadata.json.
 
-// #2: when a later fetch first disputes a GUID and splits its earlier
+// When a later fetch first disputes a GUID and splits its earlier
 // evidence into releases, each earlier fetch's item metadata moves to its
 // own release at once, without another fetch.
 func TestDelayedDisputeMovesEachReleasesMetadata(t *testing.T) {
@@ -33,7 +33,7 @@ func TestDelayedDisputeMovesEachReleasesMetadata(t *testing.T) {
 	}
 }
 
-// #2: a podcast with two releases merged into a podcast without evidence of
+// A podcast with two releases merged into a podcast without evidence of
 // the GUID keeps each release's metadata.
 func TestPodcastMergeKeepsEachReleasesMetadata(t *testing.T) {
 	c := newCatalogEnv(t)
@@ -53,7 +53,7 @@ func TestPodcastMergeKeepsEachReleasesMetadata(t *testing.T) {
 	}
 }
 
-// #4: deleting an account deletes its enclosure additions, signed URLs
+// Deleting an account deletes its enclosure additions, signed URLs
 // included (with every other per-account identity row: migration 0021).
 func TestDeletedAccountKeepsNoEnclosureAdditions(t *testing.T) {
 	c := newCatalogEnv(t)
@@ -138,7 +138,7 @@ func disputeImported(t *testing.T, e *env, p ImportedPodcast) {
 	e.fetchImported(t, p, idItem{"g", "One", "https://cdn.example.com/latest.mp3?sig=old", e.clock - 40*day})
 }
 
-// #1: imported rows the import grouped follow the release each row's own
+// Imported rows the import grouped follow the release each row's own
 // occurrence resolves to when a later dispute splits them: the later row's
 // favorite, position, history, statistics and queue entry go to the later
 // release, and the earlier release keeps the earlier row's state.
@@ -165,7 +165,7 @@ func TestGroupedImportFollowsEachRowsRelease(t *testing.T) {
 	}
 }
 
-// #1: after the split, a history clear and a statistics reset cover the
+// After the split, a history clear and a statistics reset cover the
 // imported state in both releases.
 func TestCutsCoverASplitImport(t *testing.T) {
 	e := newEnv(t)
@@ -192,7 +192,7 @@ func TestCutsCoverASplitImport(t *testing.T) {
 	}
 }
 
-// #1: cuts made before the split follow the imported state to both releases,
+// Cuts made before the split follow the imported state to both releases,
 // for a grouped import and for one row alone.
 func TestCutsBeforeTheSplitFollowTheImport(t *testing.T) {
 	for _, grouped := range []bool{true, false} {
@@ -233,7 +233,7 @@ func TestCutsBeforeTheSplitFollowTheImport(t *testing.T) {
 	}
 }
 
-// #1: rows that stay together after the split are aggregated again: the
+// Rows that stay together after the split are aggregated again: the
 // earlier release takes the state of its most recently played row and keeps
 // its other row as a statistics unit; the later release has its own row
 // only.

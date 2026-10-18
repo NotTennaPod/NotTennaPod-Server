@@ -108,51 +108,7 @@ func TestPublishImport(t *testing.T) {
 	ids := createAccounts(t, live, 1)
 	account := ids[0]
 	const importID = "66666666-6666-4666-8666-666666666666"
-	if _, _, err := reserve(t, live, account, importID, "ff"); err != nil {
-		t.Fatal(err)
-	}
-	if err := live.Write(ctx, func(tx *WriteTx) error { return tx.Account(account).SetImportStatus(importID, "processing", "") }); err != nil {
-		t.Fatal(err)
-	}
-	var base Head
-	var namespace string
-	if err := live.Write(ctx, func(tx *WriteTx) error {
-		var err error
-		if base, err = tx.Account(account).Head(); err != nil {
-			return err
-		}
-		namespace, err = tx.Account(account).Namespace()
-		return err
-	}); err != nil {
-		t.Fatal(err)
-	}
-	stagingDir := t.TempDir()
-	staging := openTest(t, config{dataDir: stagingDir})
-	var stagedHead Head
-	if err := staging.Write(ctx, func(tx *WriteTx) error {
-		if err := tx.MirrorAccount(account, namespace, base); err != nil {
-			return err
-		}
-		a := tx.Account(account)
-		if err := a.InsertNode("77777777-7777-4777-8777-777777777777", "decision", 1, nil); err != nil {
-			return err
-		}
-		if err := a.CreatePodcast("p1:aa", "77777777-7777-4777-8777-777777777777"); err != nil {
-			return err
-		}
-		if _, _, err := a.AppendCommit(record(account, 1)); err != nil {
-			return err
-		}
-		var err error
-		stagedHead, err = a.Head()
-		return err
-	}); err != nil {
-		t.Fatal(err)
-	}
-	if err := staging.Close(); err != nil {
-		t.Fatal(err)
-	}
-	stagingPath := filepath.Join(stagingDir, databaseName)
+	stagingPath, base, stagedHead := stageImport(t, live, account, importID)
 	if err := live.PublishImport(ctx, stagingPath, account, importID, base, `{"imported":{}}`); err != nil {
 		t.Fatal(err)
 	}
@@ -183,4 +139,54 @@ func TestPublishImport(t *testing.T) {
 	if err := live.reader.QueryRow(`SELECT COUNT(*) FROM podcasts WHERE account_id = ?`, account).Scan(&podcasts); err != nil || podcasts != 1 {
 		t.Fatalf("%d podcasts after a refused second publication (%v)", podcasts, err)
 	}
+}
+
+// stageImport reserves an import into account and stages a one-podcast
+// library for it, as the import runner does.
+func stageImport(t *testing.T, live *Store, account, importID string) (stagingPath string, base, stagedHead Head) {
+	t.Helper()
+	ctx := context.Background()
+	if _, _, err := reserve(t, live, account, importID, "ff"); err != nil {
+		t.Fatal(err)
+	}
+	if err := live.Write(ctx, func(tx *WriteTx) error { return tx.Account(account).SetImportStatus(importID, "processing", "") }); err != nil {
+		t.Fatal(err)
+	}
+	var namespace string
+	if err := live.Write(ctx, func(tx *WriteTx) error {
+		var err error
+		if base, err = tx.Account(account).Head(); err != nil {
+			return err
+		}
+		namespace, err = tx.Account(account).Namespace()
+		return err
+	}); err != nil {
+		t.Fatal(err)
+	}
+	stagingDir := t.TempDir()
+	staging := openTest(t, config{dataDir: stagingDir})
+	if err := staging.Write(ctx, func(tx *WriteTx) error {
+		if err := tx.MirrorAccount(account, namespace, base); err != nil {
+			return err
+		}
+		a := tx.Account(account)
+		if err := a.InsertNode("77777777-7777-4777-8777-777777777777", "decision", 1, nil); err != nil {
+			return err
+		}
+		if err := a.CreatePodcast("p1:aa", "77777777-7777-4777-8777-777777777777"); err != nil {
+			return err
+		}
+		if _, _, err := a.AppendCommit(record(account, 1)); err != nil {
+			return err
+		}
+		var err error
+		stagedHead, err = a.Head()
+		return err
+	}); err != nil {
+		t.Fatal(err)
+	}
+	if err := staging.Close(); err != nil {
+		t.Fatal(err)
+	}
+	return filepath.Join(stagingDir, databaseName), base, stagedHead
 }

@@ -38,6 +38,8 @@ func (s *Server) routes() {
 	s.route("/v1/admin/accounts/{id}/password", endpoint{method: http.MethodPost, auth: authAdmin, handle: (*request).adminResetPassword})
 	s.route("/v1/admin/accounts/{id}/delete", endpoint{method: http.MethodPost, auth: authAdmin, handle: (*request).adminDelete})
 	s.route("/v1/admin/backup", endpoint{method: http.MethodPost, auth: authAdmin, handle: (*request).adminBackup})
+	s.route("/v1/admin/keys", endpoint{method: http.MethodPost, auth: authAdmin, handle: (*request).adminKeys})
+	s.route("/v1/admin/keys/{id}/saved", endpoint{method: http.MethodPost, auth: authAdmin, handle: (*request).adminKeysSaved})
 	s.syncRoutes()
 	s.importRoutes()
 	s.readRoutes()
@@ -47,7 +49,7 @@ func (s *Server) routes() {
 	s.sessionRoutes()
 	s.serviceRoutes()
 	s.mediaRoutes()
-	s.mux.HandleFunc("/v1/", func(w http.ResponseWriter, r *http.Request) { writeError(w, errNotFound) })
+	s.mux.HandleFunc("/v1/", func(w http.ResponseWriter, r *http.Request) { writeError(w, r, errNotFound) })
 }
 
 // ---- validation

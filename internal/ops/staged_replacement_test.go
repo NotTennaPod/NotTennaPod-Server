@@ -34,7 +34,7 @@ func TestStagedPreservesConcurrentFeedState(t *testing.T) {
 		if err := a.PutFeedResponse(e.p, []byte("concurrent cached response")); err != nil {
 			return err
 		}
-		return a.PutRefreshSchedule(storage.RefreshRow{PodcastID: e.p, NextAt: e.clock + day, NotBefore: e.clock + 2*day, Failures: 7})
+		return a.PutRefreshSchedule(storage.RefreshRow{PodcastID: e.p, NextAt: e.clock + day, NotBefore: e.clock + 2*day, Failures: 7, QuietSince: e.clock - 40*day})
 	})
 	if err != nil {
 		t.Fatal(err)
@@ -55,7 +55,7 @@ func TestStagedPreservesConcurrentFeedState(t *testing.T) {
 		if err != nil {
 			return err
 		}
-		if !ok || row.NotBefore != e.clock+2*day || row.Failures != 7 {
+		if !ok || row.NotBefore != e.clock+2*day || row.Failures != 7 || row.QuietSince != e.clock-40*day {
 			t.Errorf("schedule overwritten: %+v", row)
 		}
 		return nil

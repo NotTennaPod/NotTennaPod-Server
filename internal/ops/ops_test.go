@@ -25,6 +25,8 @@ type env struct {
 	// replayCheck compares the queue replay's incremental state with a full
 	// replay, and the published queue with its order, after every push.
 	replayCheck bool
+	// storeOpts are the options reopen opens the data directory with.
+	storeOpts []storage.OpenOption
 }
 
 // derivedWithoutArchive exempts a test from the rebuild invariant: it seeds

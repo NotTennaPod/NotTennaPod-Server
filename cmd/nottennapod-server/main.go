@@ -50,6 +50,13 @@ const usage = `Usage:
   nottennapod-server --version
 `
 
+// noRecoveryKeyWarning is the start log's warning until a recovery key (the
+// key bundle) is saved, in plain words: the web app saves one. OPERATIONS
+// describes the command for people who prefer it.
+const noRecoveryKeyWarning = "This server has no saved recovery key. If this computer is lost or replaced, " +
+	"its backups can only be put back with the recovery key. To save it, open the NotTennaPod web app as an administrator, " +
+	"go to Settings and choose Save recovery key, then keep the file and its passphrase somewhere safe, apart from the backups."
+
 func main() {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	code := run(ctx, os.Args[1:], os.Stdin, os.Stdout, os.Stderr)
@@ -185,7 +192,7 @@ func serve(ctx context.Context, args []string) int {
 		defer backups.Stop()
 	}
 	if store.KeysExportedAt() == 0 {
-		slog.Warn("the server's keys have never been exported: run `nottennapod-server keys export` and keep the file and its passphrase safe; a backup cannot be restored without them")
+		slog.Warn(noRecoveryKeyWarning)
 	}
 	setup, err := setupState(ctx, store)
 	if err != nil {
@@ -214,13 +221,16 @@ func serve(ctx context.Context, args []string) int {
 		slog.Warn("fetching feeds from this machine is allowed (--dev-allow-loopback-feeds): for development and tests only")
 		fetcher.AllowLoopback(func(string) bool { return true })
 	}
-	refresher := refresh.New(sync, refresh.Config{Interval: *refreshInterval, Fetcher: fetcher, Clock: wall})
 	// Library imports (PROTOCOL §11.5): staged in <data-dir>/imports, resumed
-	// at start, stopped before the store closes.
+	// at start, stopped before the store closes. A published import counts its
+	// podcasts' first refresh from the refresher's ended attempts.
 	imports := &importer.Runner{Store: store, Service: sync, Dir: filepath.Join(store.Dir(), "imports"),
 		OpenStaging: importer.StagingOpener(store)}
-	// The read API's list views (PROTOCOL §12): materialized in
-	// <data-dir>/read-views, dropped at start.
+	refresher := refresh.New(sync, refresh.Config{Interval: *refreshInterval, Fetcher: fetcher, Clock: wall,
+		AfterAttempt: imports.AfterAttempt})
+	imports.Cohort = refresh.Cohort
+	// The read API's list views (PROTOCOL §12), in memory; the folder where
+	// earlier versions kept them, <data-dir>/read-views, is removed.
 	readViews, err := apiviews.NewSpool(filepath.Join(store.Dir(), "read-views"), nil)
 	if err != nil {
 		slog.Error("cannot prepare read views", "error", err)
@@ -251,7 +261,7 @@ func serve(ctx context.Context, args []string) int {
 	defer mediaSvc.Wait()
 	defer mediaSvc.Close()
 	// The service page (PROTOCOL §14) reports what this run serves.
-	info := &serviceInfo{store: store, backups: backups, refresher: refresher, imports: imports, started: time.Now(), listen: *address,
+	info := &serviceInfo{store: store, backups: backups, backupDir: *backupDir, refresher: refresher, imports: imports, started: time.Now(), listen: *address,
 		https: *tlsCert != ""}
 	handler, err := api.New(api.Config{Store: store, PublicURL: *publicURL, Setup: setup, Protocol: sync, Refresher: refresher, Service: info.report, Now: wall.Now,
 		BackupDir: *backupDir, Imports: imports, Views: readViews, Fetcher: fetcher, Media: mediaSvc})
@@ -259,6 +269,7 @@ func serve(ctx context.Context, args []string) int {
 		slog.Error("invalid configuration", "error", err)
 		return 1
 	}
+	defer handler.Close() // the read model's warmers stop before the store closes
 	if err := imports.Start(ctx); err != nil {
 		slog.Error("cannot resume library imports", "error", err)
 		return 1
@@ -266,6 +277,19 @@ func serve(ctx context.Context, args []string) int {
 	defer imports.Stop()
 	refresher.Start(ctx)
 	defer refresher.Stop()
+	// Recovery upload jobs (PROTOCOL §6.11): resumed at start, run in the
+	// server's lifetime, stopped (their rows kept) before the store closes.
+	jobsCtx, stopRecoveryJobs := context.WithCancel(ctx)
+	waitRecoveryJobs, err := sync.StartRecoveryJobs(jobsCtx)
+	if err != nil {
+		stopRecoveryJobs()
+		slog.Error("cannot resume recovery uploads", "error", err)
+		return 1
+	}
+	defer func() {
+		stopRecoveryJobs()
+		waitRecoveryJobs()
+	}()
 	web := webui.Handler()
 	if *webDir != "" {
 		web = webui.DirHandler(*webDir)
@@ -300,7 +324,19 @@ func serve(ctx context.Context, args []string) int {
 		go watchCertificate(ctx, cert)
 		info.cert = cert
 	}
-	slog.Info("server listening", "address", listener.Addr(), "data_dir", store.Dir(), "sync_available", false)
+	slog.Info("server listening", "address", listener.Addr(), "data_dir", store.Dir(), "sync_available", handler.SyncAvailable())
+	// The warm-ups: once serving, the queue replay (PROTOCOL §7.6) and then
+	// the read model (§12) of each account active in the last 30 days are
+	// rebuilt in the background, one account at a time, so the first queue
+	// command and the first read after a restart find them ready. They end
+	// before the store closes.
+	warmed := make(chan struct{})
+	go func() {
+		defer close(warmed)
+		ops.WarmQueues(ctx, sync)
+		handler.WarmLibraries(ctx)
+	}()
+	defer func() { <-warmed }()
 	// Only known Host names are answered.
 	hosts := serverHosts(*address, *publicURL, allowHosts, *tailscale)
 	if err := httpserver.Serve(ctx, listener, httpserver.Config{API: handler, Web: web, Hosts: hosts}); err != nil {
@@ -330,7 +366,11 @@ func openStopped(ctx context.Context, dataDir string, stderr io.Writer) (*storag
 	return store, true
 }
 
-// backup writes a verified backup with the server stopped (PROTOCOL §11).
+// backupGuard keeps the backup command's disks safe (tests change it).
+var backupGuard backupsched.Guard
+
+// backup writes a verified, compressed backup with the server stopped
+// (PROTOCOL §11).
 func backup(ctx context.Context, args []string, stdout, stderr io.Writer) int {
 	fs := newFlags("backup", stderr)
 	dataDir := fs.String("data-dir", defaultDataDir(), "data directory")
@@ -347,7 +387,8 @@ func backup(ctx context.Context, args []string, stdout, stderr io.Writer) int {
 		return 1
 	}
 	defer store.Close()
-	info, err := store.Backup(ctx, *out)
+	// The same free-space guard as the server's own backups (PROTOCOL §11.2).
+	info, err := backupsched.Manual(ctx, store, *out, backupGuard)
 	if err != nil {
 		fmt.Fprintf(stderr, "nottennapod-server: backup failed: %v\n", err)
 		return 1

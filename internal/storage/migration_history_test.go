@@ -38,6 +38,10 @@ func TestHistoricalMigrationBytes(t *testing.T) {
 		{"0022_listening_facts_by_scope.sql", "9223211f0ae6ac0b0e9f74fb28efbcd878e76173a1bd484605ddcc7806b365a5"},
 		{"0023_queue_replay.sql", "047cd1200c41693d5779afc568a6bfaf8076457dd639dd7821b9409d2040fd1b"},
 		{"0024_feed_response_reparse.sql", "4d3995a04f19e2f44e0342577ef19f835084570d65ea4b7b309b599fe47f3a4d"},
+		{"0025_read_model_changes.sql", "0c3c4e35142f416f60b414eacd8642754a05d21ef0d08712174a69c966b3342b"},
+		{"0026_refresh_quiet.sql", "2f2cd4a66fcd0da2ee30bdfa9c960bd742e991d8203c02c014a0f4f717cd9b49"},
+		{"0027_refresh_requests.sql", "86b7d162ab6af552a046b8d14764b32885d1b4a53674ea1dbef981dc3b353871"},
+		{"0028_queue_keys_by_rank.sql", "fbe673cac89ab6f58a55becfbb75b4422706b994644bbfad434c5f6f220cc8c9"},
 	}
 	for _, h := range historical {
 		t.Run(h.name, func(t *testing.T) {
