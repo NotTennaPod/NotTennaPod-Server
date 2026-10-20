@@ -207,7 +207,7 @@ func TestGzipNeverEncodesEvents(t *testing.T) {
 	srv := httptest.NewServer(r.srv)
 	defer srv.Close()
 	req, _ := http.NewRequest(http.MethodGet, srv.URL+"/v1/events", nil)
-	req.AddCookie(&http.Cookie{Name: sessionCookie, Value: r.session})
+	req.AddCookie(sessionCookieOf(r.session))
 	req.Header.Set("Accept-Encoding", "gzip")
 	res, err := http.DefaultClient.Do(req)
 	if err != nil {

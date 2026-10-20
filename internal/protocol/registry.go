@@ -245,6 +245,13 @@ func (c *ApplyContext) Decide(in DecisionInput) (map[string]any, error) {
 		return nil, err
 	}
 	normalized := contract.NormalizeTime(c.ReceiveTime, c.ReceiveTime, times)
+	if in.Type == "podcast.resolution" && len(times) > 0 {
+		// PROTOCOL §6.1: a resolution takes its registration's normalized time
+		// (its only dependency), not the time the server resolved it, so what a
+		// device recorded while its registration waited keeps the time the person
+		// acted (§6.9, §15.2). Stored decisions keep the times they were made with.
+		normalized = slices.Max(times)
+	}
 	depList := make([]any, len(deps))
 	for i, d := range deps {
 		depList[i] = d

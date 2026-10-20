@@ -6,6 +6,7 @@ package api
 import (
 	"bytes"
 	"context"
+	"encoding/hex"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -56,6 +57,8 @@ type Config struct {
 	// Test-only interruption points.
 	afterPasswordVerify func()
 	beforeIssue         func()
+	afterSessionRead    func() // cookie authentication: between reading the presented sessions and its writes
+	beforeSignOut       func() // a web sign-out: authenticated, before its write
 	duringBackup        func()
 	freeBytes           func(dir string) (int64, error) // the backup's free space (default statfs)
 	beforeKeyPassword   func()                          // a recovery key: between reading the login and checking its password
@@ -77,11 +80,14 @@ type Server struct {
 }
 
 const (
-	maxBody         = 64 << 10
-	sessionCookie   = "ntp_session"
-	sessionLifetime = 30 * 24 * time.Hour
-	touchInterval   = time.Minute
-	sessionExtend   = time.Hour
+	maxBody = 64 << 10
+	// legacySessionCookie holds a web session issued by an earlier server;
+	// every session issued now has a cookie of its own (sessionCookieName).
+	legacySessionCookie = "ntp_session"
+	sessionCookiePrefix = "ntp_s_"
+	sessionLifetime     = 30 * 24 * time.Hour
+	touchInterval       = time.Minute
+	sessionExtend       = time.Hour
 )
 
 // New returns the API handler.
@@ -276,6 +282,7 @@ type endpoint struct {
 	supersededOK bool  // allowed for a superseded installation's credentials
 	maxBody      int64 // body limit; 0 means the default 64 KiB
 	successor    bool  // the successor handoff itself (does not finish supersession)
+	endsSession  bool  // a web sign-out: its session is not renewed
 	handle       func(*request) (int, any, error)
 }
 
@@ -305,6 +312,7 @@ type principal struct {
 	cred   storage.Credential
 	viaWeb bool
 	secret string // the presented credential, to refresh the session cookie
+	cookie string // the name of the cookie the session came in
 }
 
 func (p *principal) accountID() string { return p.cred.AccountID }
@@ -463,14 +471,41 @@ func peerIP(r *http.Request) string {
 
 func (req *request) secure() bool { return strings.HasPrefix(req.origin, "https://") }
 
-func (req *request) setSessionCookie(secret string) {
-	http.SetCookie(req.w, &http.Cookie{Name: sessionCookie, Value: secret, Path: "/", HttpOnly: true, Secure: req.secure(),
+// sessionCookieName is the name of a web session's own cookie: one name only
+// ever holds one session, so an answer that arrives late can bring back an
+// old session but never replace a newer one (PROTOCOL §5.4).
+func sessionCookieName(hash []byte) string { return sessionCookiePrefix + hex.EncodeToString(hash[:8]) }
+
+func isSessionCookie(name string) bool {
+	return name == legacySessionCookie || strings.HasPrefix(name, sessionCookiePrefix)
+}
+
+// setSessionCookie sets a session under the given cookie name.
+func (req *request) setSessionCookie(name, secret string) {
+	http.SetCookie(req.w, &http.Cookie{Name: name, Value: secret, Path: "/", HttpOnly: true, Secure: req.secure(),
 		SameSite: http.SameSiteStrictMode, MaxAge: int(sessionLifetime / time.Second)})
 }
 
-func (req *request) clearSessionCookie() {
-	http.SetCookie(req.w, &http.Cookie{Name: sessionCookie, Value: "", Path: "/", HttpOnly: true, Secure: req.secure(),
+// issueSessionCookie sets a newly issued session under its own name.
+func (req *request) issueSessionCookie(secret string) {
+	req.setSessionCookie(sessionCookieName(auth.HashCredential(secret)), secret)
+}
+
+func (req *request) clearCookie(name string) {
+	http.SetCookie(req.w, &http.Cookie{Name: name, Value: "", Path: "/", HttpOnly: true, Secure: req.secure(),
 		SameSite: http.SameSiteStrictMode, MaxAge: -1})
+}
+
+// clearPresentedSessionCookies clears every session cookie the request
+// carries (web sign-in, setup and sign-out).
+func (req *request) clearPresentedSessionCookies() {
+	seen := map[string]bool{}
+	for _, c := range req.r.Cookies() {
+		if isSessionCookie(c.Name) && !seen[c.Name] {
+			seen[c.Name] = true
+			req.clearCookie(c.Name)
+		}
+	}
 }
 
 // ---- setup code

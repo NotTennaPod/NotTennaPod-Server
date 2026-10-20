@@ -72,7 +72,7 @@ func TestSessionCookieFlags(t *testing.T) {
 			e.do(http.MethodPost, "/v1/auth/web/sign-out", nil, as(tc.foreign, cookieOnly(s.Value))...).expect(http.StatusForbidden, "forbidden")
 			out := e.do(http.MethodPost, "/v1/auth/web/sign-out", nil, as(tc.origin, cookieOnly(s.Value))...).must(http.StatusOK)
 			for _, c := range out.cookies {
-				if c.Name == sessionCookie && (c.MaxAge >= 0 || !c.HttpOnly || c.Secure != tc.secure) {
+				if isSessionCookie(c.Name) && (c.MaxAge >= 0 || !c.HttpOnly || c.Secure != tc.secure) {
 					t.Errorf("sign-out cookie %+v", c)
 				}
 			}

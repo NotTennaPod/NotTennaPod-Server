@@ -1991,6 +1991,9 @@ class Engine(object):
         self.rank = {}
         self.prio = {}
         self.node_time = {}
+        # Nodes off the account's causal frontier (a recorded podcast.resolution): they
+        # leave their dependencies on it (docs/CONTRACT.md "Recovery").
+        self.off_frontier = set()
         # Archive: op_id -> {"hash", "fact", "admitted", "frontier"}.
         self.facts = {}
         self.author_positions = {}
@@ -2100,9 +2103,10 @@ class Engine(object):
 
     # -- causal order --------------------------------------------------------
 
-    def _insert_node(self, nid, t, edges):
+    def _insert_node(self, nid, t, edges, frontier=True):
         """The insertion rule (PROTOCOL §6.9): immediately before the first node after the largest
-        edge rank whose priority (normalized_time, id bytewise) is greater; else last."""
+        edge rank whose priority (normalized_time, id bytewise) is greater; else last. A node
+        off the frontier (`frontier` false) leaves its edges on it."""
         prio = (t, _bkey(nid))
         p = max((self.rank[e] for e in edges), default=-1)
         i = p + 1
@@ -2115,7 +2119,10 @@ class Engine(object):
         self.prio[nid] = prio
         self.node_time[nid] = t
         self.node_edges[nid] = list(edges)
-        self.has_child.update(edges)
+        if frontier:
+            self.has_child.update(edges)
+        else:
+            self.off_frontier.add(nid)
 
     def _ancestors(self, nid):
         """The causal past of a node: its resolved edges and their ancestors (PROTOCOL §8 "A cut
@@ -4175,7 +4182,7 @@ class Engine(object):
 
     def _account_frontier(self):
         """Every admitted causal node no other node depends on."""
-        return sorted((n for n in self.order if n not in self.has_child), key=_bkey)
+        return sorted((n for n in self.order if n not in self.has_child and n not in self.off_frontier), key=_bkey)
 
     def _publish_queue(self):
         """The publication rule (PROTOCOL §7.6, a transaction invariant): at the end
@@ -4709,18 +4716,65 @@ class Engine(object):
         self.ar_dec[did] = {"obj": copy.deepcopy(obj), "type": obj["decision_type"], "subject": obj["subject"],
                             "result": copy.deepcopy(obj["result"]),
                             "pos": (obj["epoch"], obj["seq"], obj.get("index", self._BIG)), "id": did}
-        if obj["decision_type"] not in SUBSCRIPTION_DECISIONS:
+        if obj["decision_type"] != ALIAS:
+            # A podcast.resolution is a causal node off the frontier, which later facts may
+            # name (docs/CONTRACT.md "Recovery"); an alias is never named.
             self.ar_nodes[did] = obj["normalized_time"]
 
-    def _implicit(self, dtype, subject, result, pos, op):
+    def _implicit(self, dtype, subject, result, pos, op, did=None):
         """A podcast.alias or podcast.resolution decision the server made (live, or at the
         end of a recovery request) for the registration `op`. Vectors do not record its ID
         (Go draws it); it ranks at its commit, after any decision of the same commit
-        (CHOICE). `decision_object` gives it an ID for an upload."""
-        nt = max(self._ctx["receive_time"], self.node_time[op])
-        self.ar_dec[("implicit", dtype, subject, pos)] = {
-            "obj": None, "type": dtype, "subject": subject, "result": dict(result), "pos": pos, "id": None,
-            "op": op, "nt": nt}
+        (CHOICE). `decision_object` gives it an ID for an upload. A live resolution whose
+        arrival records its ID (`did`, _resolution_choice) is archived under it, a causal
+        node like a recovered one.
+
+        PROTOCOL §6.1: a resolution takes its registration's normalized time (its only
+        dependency); an alias max(server time, the registration's)."""
+        if dtype == RESOLUTION:
+            nt = self.node_time[op]
+        else:
+            nt = max(self._ctx["receive_time"], self.node_time[op])
+        e = {"obj": None, "type": dtype, "subject": subject, "result": dict(result), "pos": pos, "id": None,
+             "op": op, "nt": nt}
+        if did is None:
+            self.ar_dec[("implicit", dtype, subject, pos)] = e
+            return
+        e["obj"], e["id"] = self.decision_object(e, did), did
+        self.ar_dec[did] = e
+        self.ar_nodes[did] = nt
+
+    def _resolution_choice(self):
+        """The ID of a live registration's podcast.resolution when its arrival records it
+        (docs/CONTRACT.md "Recovery"): `{"decision_type": "podcast.resolution",
+        "decision_id", "epoch", "seq"}` as the next supplied choice (a chooser may answer
+        None). Else None: the resolution stays implicit."""
+        ctx = self._ctx
+        if ctx is None:
+            return None
+        if ctx["chooser"] is not None:
+            if not ctx["live"]:
+                return None
+            ch = ctx["chooser"](RESOLUTION, {"commit": self._commit_revision()})
+            if ch is None:
+                return None
+            ctx["arrival"].setdefault("decisions", []).append(ch)
+        else:
+            sup = ctx["supply"]
+            if not sup or not isinstance(sup[0], dict) or sup[0].get("decision_type") != RESOLUTION:
+                return None
+            ch = sup.pop(0)
+        if not isinstance(ch, dict) or set(ch) != {"decision_type", "decision_id", "epoch", "seq"}:
+            raise RuleInputError("a recorded resolution has exactly decision_type, decision_id, epoch and seq: %s" % (ch,))
+        did = ch["decision_id"]
+        if not c.is_uuid(did):
+            raise RuleInputError("decision_id is not a UUID")
+        if did in self.prio or did in self.facts or did in self.ar_dec or did in self.ar_facts:
+            raise RuleInputError("decision_id %s is already a node ID" % did)
+        if (ch["epoch"], ch["seq"]) != self._commit_revision():
+            raise RuleInputError("a recorded resolution is at revision %s, its commit at %s"
+                                 % ((ch["epoch"], ch["seq"]), self._commit_revision()))
+        return did
 
     def decision_object(self, e, decision_id):
         """An archived decision as a contract-v1 decision (without key_id and mac); an
@@ -5054,6 +5108,11 @@ class Engine(object):
         for op, e in self.ar_facts.items():
             items.append((e["pos"] + (_bkey(op),), "fact", op))
         for k, e in self.ar_dec.items():
+            if e["type"] == RESOLUTION and e["id"] is not None:
+                # A recorded or recovered resolution is a causal node again (its effect comes
+                # from fixed_resolutions, at its registration).
+                items.append((e["pos"] + (_bkey(e["id"]),), "resolution", k))
+                continue
             if e["type"] in SUBSCRIPTION_DECISIONS:
                 continue
             deps = e["obj"]["dependencies"]
@@ -5123,6 +5182,8 @@ class Engine(object):
         obj = e["obj"]
         if not all(d in inner.prio for d in obj["dependencies"]):
             return False
+        if kind == "resolution":
+            return True
         if obj["decision_type"] in CATALOG_DECISIONS:
             try:
                 inner._check_catalog_decision_refs(obj)
@@ -5136,8 +5197,12 @@ class Engine(object):
         return True
 
     def _rebuild_run(self, inner, item):
-        inner.narrivals += 1
         kind = item[1]
+        if kind == "resolution":
+            obj = self.ar_dec[item[2]]["obj"]
+            inner._insert_node(obj["decision_id"], obj["normalized_time"], obj["dependencies"], frontier=False)
+            return
+        inner.narrivals += 1
         if kind == "fact":
             e = self.ar_facts[item[2]]
             a = copy.deepcopy(e["arrival"])
@@ -6552,15 +6617,21 @@ class Engine(object):
             fx = self._ctx.get("fixed") if self._ctx is not None else None
             return dict(fx) if fx is not None else _outcome(APPLIED)
         self.resolutions[op] = dict(res)
+        did = self._resolution_choice()
+        if did is not None:
+            # PROTOCOL §6.1: a recorded resolution is a causal node at its registration's time,
+            # off the frontier; later facts may depend on it (the drafts of §15.2).
+            self._insert_node(did, self.node_time[op], [op], frontier=False)
         if self.archiving and self._ctx is not None and self._ctx["live"]:
-            # The decisions a live registration makes (recoverable; implicit in vectors).
+            # The decisions a live registration makes (recoverable; implicit in vectors
+            # unless the arrival records the resolution's ID).
             rk = self._ctx["rkey"]
             i = rk[2] + 1
             if res["mode"] == "created":
                 self._implicit(ALIAS, "alias:" + c.normalize_url(parsed["feed_url"]), {"podcast_id": res["podcast_id"]},
                                (rk[0], rk[1], i), op)
                 i += 1
-            self._implicit(RESOLUTION, op, res, (rk[0], rk[1], i), op)
+            self._implicit(RESOLUTION, op, res, (rk[0], rk[1], i), op, did)
         mode, P, G = res["mode"], res["podcast_id"], res.get("generation_id")
         if mode == "stale":
             return _outcome(NOT_APPLIED, R_STALE)

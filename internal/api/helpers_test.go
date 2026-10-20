@@ -83,6 +83,10 @@ type env struct {
 	setup       *SetupState
 	afterVerify oneShot
 	beforeIssue oneShot
+	// cookie authentication: the presented sessions read and classified,
+	// before any write
+	afterSessionRead oneShot
+	beforeSignOut    oneShot // a web sign-out: authenticated, before its write
 
 	mu      sync.Mutex
 	secrets []string
@@ -106,7 +110,8 @@ func newEnv(t *testing.T, opts ...func(*Config)) *env {
 	}
 	e.addSecret(e.setup.Code())
 	cfg := Config{Store: store, Hasher: auth.NewHasher(fastParams), Limiter: auth.NewLimiter(e.clock.Now), Setup: e.setup,
-		Now: e.clock.Now, afterPasswordVerify: e.afterVerify.run, beforeIssue: e.beforeIssue.run}
+		Now: e.clock.Now, afterPasswordVerify: e.afterVerify.run, beforeIssue: e.beforeIssue.run,
+		afterSessionRead: e.afterSessionRead.run, beforeSignOut: e.beforeSignOut.run}
 	for _, o := range opts {
 		o(&cfg)
 	}
@@ -149,17 +154,26 @@ func bearer(token string) opt {
 	return func(r *http.Request) { r.Header.Set("Authorization", "Bearer "+token) }
 }
 
+// sessionCookieOf is the cookie a browser holds a session in: its own name
+// (anything that is not a credential under the legacy name).
+func sessionCookieOf(session string) *http.Cookie {
+	if !auth.WellFormed(session) {
+		return &http.Cookie{Name: legacySessionCookie, Value: session}
+	}
+	return &http.Cookie{Name: sessionCookieName(auth.HashCredential(session)), Value: session}
+}
+
 // browser sends the session cookie with our Origin, as the web app does.
 func browser(session string) opt {
 	return func(r *http.Request) {
-		r.AddCookie(&http.Cookie{Name: sessionCookie, Value: session})
+		r.AddCookie(sessionCookieOf(session))
 		r.Header.Set("Origin", testOrigin)
 	}
 }
 
 // cookieOnly sends the session cookie without any Origin.
 func cookieOnly(session string) opt {
-	return func(r *http.Request) { r.AddCookie(&http.Cookie{Name: sessionCookie, Value: session}) }
+	return func(r *http.Request) { r.AddCookie(sessionCookieOf(session)) }
 }
 
 func withOrigin(o string) opt {
@@ -309,7 +323,7 @@ func (e *env) check(what string, res *http.Response) *response {
 		e.addSecret(tok)
 	}
 	for _, c := range r.cookies {
-		if c.Name == sessionCookie {
+		if isSessionCookie(c.Name) {
 			e.addSecret(c.Value)
 		}
 	}
@@ -396,7 +410,7 @@ func (r *response) retryAfter() int {
 // cookie returns the session cookie the response sets (not a deletion), or nil.
 func (r *response) cookie() *http.Cookie {
 	for _, c := range r.cookies {
-		if c.Name == sessionCookie && c.Value != "" && c.MaxAge >= 0 {
+		if isSessionCookie(c.Name) && c.Value != "" && c.MaxAge >= 0 {
 			return c
 		}
 	}

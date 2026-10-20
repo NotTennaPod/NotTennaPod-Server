@@ -23,7 +23,7 @@ func (s *Server) routes() {
 	s.route("/v1/auth/device", endpoint{method: http.MethodPost, handle: (*request).signInDevice})
 	s.route("/v1/auth/web", endpoint{method: http.MethodPost, originNeeded: true, handle: (*request).signInWeb})
 	s.route("/v1/auth/device/sign-out", endpoint{method: http.MethodPost, auth: authDevice, supersededOK: true, handle: (*request).signOut})
-	s.route("/v1/auth/web/sign-out", endpoint{method: http.MethodPost, auth: authWeb, supersededOK: true, handle: (*request).signOut})
+	s.route("/v1/auth/web/sign-out", endpoint{method: http.MethodPost, auth: authWeb, supersededOK: true, endsSession: true, handle: (*request).signOut})
 	s.route("/v1/installations",
 		endpoint{method: http.MethodGet, auth: authAny, handle: (*request).listInstallations},
 		endpoint{method: http.MethodPost, auth: authWeb, handle: (*request).registerWeb})
@@ -195,7 +195,8 @@ func (req *request) setup() (int, any, error) {
 	}
 	req.s.cfg.Limiter.Succeed(keys)
 	req.s.cfg.Setup.Complete()
-	req.setSessionCookie(secret)
+	req.clearPresentedSessionCookies()
+	req.issueSessionCookie(secret)
 	return http.StatusCreated, map[string]any{"account": accountJSON(account, body.Username, true)}, nil
 }
 
@@ -386,7 +387,9 @@ func (req *request) signInWeb() (int, any, error) {
 	if err != nil {
 		return 0, nil, err
 	}
-	req.setSessionCookie(secret)
+	// The browser's earlier sessions go; the new one has a cookie of its own.
+	req.clearPresentedSessionCookies()
+	req.issueSessionCookie(secret)
 	return http.StatusOK, map[string]any{"account": loginAccountJSON(v.login)}, nil
 }
 
@@ -395,15 +398,30 @@ func (req *request) signOut() (int, any, error) {
 		return 0, nil, err
 	}
 	p := req.principal
+	if p.viaWeb && req.s.cfg.beforeSignOut != nil {
+		req.s.cfg.beforeSignOut()
+	}
 	err := req.s.cfg.Store.Write(req.ctx, func(tx *storage.WriteTx) error {
-		// Signing out deletes only the caller's own credential; it needs no other right.
-		return tx.Account(p.accountID()).DeleteCredential(p.cred.Hash)
+		// Signing out deletes the caller's own credential (already gone if a
+		// successor's first use revoked it meanwhile); it needs no other right.
+		acct := tx.Account(p.accountID())
+		if err := acct.DeleteCredential(p.cred.Hash); err != nil {
+			return err
+		}
+		if !p.viaWeb || p.cred.InstallID == "" {
+			return nil
+		}
+		// A browser's sign-out also ends its handoffs, used or not, from the
+		// installation its session was bound to when it was authenticated, so a
+		// successor's answer that arrives later signs nothing back in
+		// (PROTOCOL §5.4). Never device tokens, never a copy.
+		return acct.DeleteWebSessionsOnSupersessionPath(p.cred.InstallID)
 	})
 	if err != nil {
 		return 0, nil, err
 	}
 	if p.viaWeb {
-		req.clearSessionCookie()
+		req.clearPresentedSessionCookies()
 	}
 	return http.StatusOK, nil, nil
 }
@@ -475,9 +493,17 @@ func (req *request) registerWeb() (int, any, error) {
 		if cred.InstallID != "" && cred.InstallID != body.InstallID {
 			return fail(http.StatusConflict, "installation_conflict", "This browser session already belongs to another installation.")
 		}
-		if err := attachInstallation(acct, storage.Installation{InstallID: body.InstallID, InstanceNonce: body.InstanceNonce,
-			Name: body.Name, Platform: "web", AppVersion: body.AppVersion, Capabilities: caps}); err != nil {
-			return err
+		recovered := false
+		if cred.InstallID == "" {
+			if recovered, err = bindSuperseded(acct, body.InstallID, body.InstanceNonce, req.s.cfg.Now().UnixMilli()); err != nil {
+				return err
+			}
+		}
+		if !recovered {
+			if err := attachInstallation(acct, storage.Installation{InstallID: body.InstallID, InstanceNonce: body.InstanceNonce,
+				Name: body.Name, Platform: "web", AppVersion: body.AppVersion, Capabilities: caps}); err != nil {
+				return err
+			}
 		}
 		if cred.InstallID == "" {
 			// Resuming replaces the installation's earlier sessions, as for devices.
@@ -492,6 +518,51 @@ func (req *request) registerWeb() (int, any, error) {
 		return 0, nil, err
 	}
 	return http.StatusOK, map[string]any{"install_id": body.InstallID}, nil
+}
+
+// bindSuperseded reports whether a new browser session may bind to a web
+// installation its successor superseded, as a superseded credential that
+// may only repeat the handoff or sign out (PROTOCOL §5.4). That is the way
+// back for a browser whose handoff a sign-out cancelled, or whose handoff
+// answer was lost before it signed out: the installation is superseded by a
+// same-nonce successor that is either never used, or has no web session left.
+// In the second case the successor's next use revokes the bound session
+// again, as a first use does: its predecessor is armed again here. A
+// successor session expired at now (the transaction's time) is no session
+// left: it is deleted here, as when it is presented, since a browser stops
+// sending an expired cookie.
+func bindSuperseded(acct *storage.AccountTx, installID, nonce string, now int64) (bool, error) {
+	old, err := acct.Installation(installID)
+	if errors.Is(err, storage.ErrNotFound) {
+		return false, nil
+	}
+	if err != nil {
+		return false, err
+	}
+	if old.SupersededBy == "" || old.InstanceNonce != nonce || old.Platform != "web" || old.RevokedAt != nil {
+		return false, nil // attachInstallation answers as for any registration
+	}
+	next, err := acct.Installation(old.SupersededBy)
+	if errors.Is(err, storage.ErrNotFound) {
+		return false, nil
+	}
+	if err != nil {
+		return false, err
+	}
+	if next.InstanceNonce != old.InstanceNonce || next.RevokedAt != nil {
+		return false, nil
+	}
+	if next.PendingPredecessor == old.InstallID {
+		return true, nil // never used: its first use revokes the bound session
+	}
+	if err := acct.DeleteExpiredWebSessions(next.InstallID, now); err != nil {
+		return false, err
+	}
+	live, err := acct.HasCredentialsOfKind(next.InstallID, "web")
+	if err != nil || live {
+		return false, err
+	}
+	return true, acct.RearmPendingPredecessor(next.InstallID, old.InstallID)
 }
 
 func (req *request) successor() (int, any, error) {
@@ -570,7 +641,7 @@ func (req *request) successor() (int, any, error) {
 	}
 	out := map[string]any{"install_id": body.InstallID}
 	if p.viaWeb {
-		req.setSessionCookie(secret)
+		req.issueSessionCookie(secret)
 	} else {
 		out["token"] = secret
 	}

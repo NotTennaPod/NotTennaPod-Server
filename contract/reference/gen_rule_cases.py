@@ -513,7 +513,10 @@ class Sim(object):
         dev.pending = []
 
     def choose(self, dtype, info):
-        """The server's random choices for a decision it makes now."""
+        """The server's random choices for a decision it makes now (a live registration's
+        resolution stays implicit)."""
+        if dtype == rules.RESOLUTION:
+            return None
         r = self.server_rng
         ep, sq = info["commit"]  # the commit's revision (a commit has one)
         ch = {"decision_type": dtype, "decision_id": rand_uuid(r), "epoch": ep, "seq": sq}
@@ -2136,6 +2139,8 @@ class RecoveryChooser(object):
         self.rng, self.engine, self.arrivals = rng, engine, arrivals
 
     def __call__(self, dtype, info):
+        if dtype == rules.RESOLUTION:
+            return None  # a live registration's resolution stays implicit
         r = self.rng
         ep, sq = info["commit"]  # the commit's revision (a commit has one)
         ch = {"decision_type": dtype, "decision_id": rand_uuid(r), "epoch": ep, "seq": sq}

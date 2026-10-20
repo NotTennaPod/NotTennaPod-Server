@@ -4,6 +4,8 @@ import (
 	"context"
 	"database/sql"
 	"errors"
+	"fmt"
+	"strings"
 )
 
 // Login is an account's sign-in record joined with its account state.
@@ -124,16 +126,16 @@ func scanInstallation(row interface{ Scan(...any) error }) (Installation, error)
 	return i, err
 }
 
-func credentialByHash(ctx context.Context, q rowQuerier, hash []byte) (Credential, error) {
+const credentialSelect = `SELECT t.token_hash, t.kind, t.account_id, t.install_id, t.created_at, t.last_used_at, t.expires_at,
+		a.state, l.is_admin
+	FROM auth_tokens t JOIN accounts a USING (account_id) LEFT JOIN account_logins l USING (account_id)`
+
+func scanCredential(row interface{ Scan(...any) error }) (Credential, error) {
 	var c Credential
 	var install sql.NullString
 	var expires sql.NullInt64
 	var admin sql.NullInt64
-	err := q.QueryRowContext(ctx, `SELECT t.token_hash, t.kind, t.account_id, t.install_id, t.created_at, t.last_used_at, t.expires_at,
-			a.state, l.is_admin
-		FROM auth_tokens t JOIN accounts a USING (account_id) LEFT JOIN account_logins l USING (account_id)
-		WHERE t.token_hash = ?`, hash).
-		Scan(&c.Hash, &c.Kind, &c.AccountID, &install, &c.CreatedAt, &c.LastUsedAt, &expires, &c.AccountState, &admin)
+	err := row.Scan(&c.Hash, &c.Kind, &c.AccountID, &install, &c.CreatedAt, &c.LastUsedAt, &expires, &c.AccountState, &admin)
 	if errors.Is(err, sql.ErrNoRows) {
 		return Credential{}, ErrNotFound
 	}
@@ -146,6 +148,16 @@ func credentialByHash(ctx context.Context, q rowQuerier, hash []byte) (Credentia
 	}
 	if install.Valid {
 		c.InstallID = install.String
+	}
+	return c, nil
+}
+
+func credentialByHash(ctx context.Context, q rowQuerier, hash []byte) (Credential, error) {
+	c, err := scanCredential(q.QueryRowContext(ctx, credentialSelect+` WHERE t.token_hash = ?`, hash))
+	if err != nil {
+		return Credential{}, err
+	}
+	if c.InstallID != "" {
 		inst, err := scanInstallation(q.QueryRowContext(ctx, `SELECT `+installationColumns+` FROM installations WHERE account_id = ? AND install_id = ?`,
 			c.AccountID, c.InstallID))
 		if err != nil {
@@ -154,6 +166,95 @@ func credentialByHash(ctx context.Context, q rowQuerier, hash []byte) (Credentia
 		c.Installation = &inst
 	}
 	return c, nil
+}
+
+// credentialsByHashes resolves several hashes in one batch: one query for the
+// credentials and one for their installations. Unknown hashes are absent
+// from the result; duplicates are looked up once.
+func credentialsByHashes(ctx context.Context, q rowQuerier, hashes [][]byte) (map[string]Credential, error) {
+	out := map[string]Credential{}
+	if len(hashes) == 0 {
+		return out, nil
+	}
+	args := make([]any, len(hashes))
+	for i, h := range hashes {
+		args[i] = h
+	}
+	rows, err := q.QueryContext(ctx, credentialSelect+` WHERE t.token_hash IN (?`+strings.Repeat(", ?", len(hashes)-1)+`)`, args...)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	type key struct{ account, install string }
+	bound := map[key][]string{}
+	for rows.Next() {
+		c, err := scanCredential(rows)
+		if err != nil {
+			return nil, err
+		}
+		out[string(c.Hash)] = c
+		if c.InstallID != "" {
+			k := key{c.AccountID, c.InstallID}
+			bound[k] = append(bound[k], string(c.Hash))
+		}
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	if len(bound) == 0 {
+		return out, nil
+	}
+	args = args[:0]
+	for k := range bound {
+		args = append(args, k.account, k.install)
+	}
+	irows, err := q.QueryContext(ctx, `SELECT `+installationColumns+` FROM installations WHERE (account_id, install_id) IN (VALUES (?, ?)`+
+		strings.Repeat(", (?, ?)", len(bound)-1)+`)`, args...)
+	if err != nil {
+		return nil, err
+	}
+	defer irows.Close()
+	for irows.Next() {
+		inst, err := scanInstallation(irows)
+		if err != nil {
+			return nil, err
+		}
+		for _, h := range bound[key{inst.AccountID, inst.InstallID}] {
+			c := out[h]
+			i := inst
+			c.Installation = &i
+			out[h] = c
+		}
+	}
+	if err := irows.Err(); err != nil {
+		return nil, err
+	}
+	for _, c := range out {
+		if c.InstallID != "" && c.Installation == nil {
+			return nil, fmt.Errorf("storage: credential bound to a missing installation")
+		}
+	}
+	return out, nil
+}
+
+// createdFromAncestors follows created_from from the installation (exclusive)
+// back to its first installation: every installation it descends from.
+func createdFromAncestors(ctx context.Context, q rowQuerier, accountID, installID string) ([]string, error) {
+	var out []string
+	seen := map[string]bool{installID: true}
+	for current := installID; ; {
+		var from sql.NullString
+		err := q.QueryRowContext(ctx, `SELECT created_from FROM installations WHERE account_id = ? AND install_id = ?`, accountID, current).Scan(&from)
+		if errors.Is(err, sql.ErrNoRows) || (err == nil && (!from.Valid || from.String == "" || seen[from.String])) {
+			return out, nil
+		}
+		if err != nil {
+			return nil, err
+		}
+		seen[from.String] = true
+		out = append(out, from.String)
+		current = from.String
+	}
 }
 
 func hasAdmin(ctx context.Context, q rowQuerier) (bool, error) {
@@ -177,6 +278,20 @@ func (r *ReadTx) LoginByAccount(accountID string) (Login, error) {
 // CredentialByHash resolves a token or session hash.
 func (r *ReadTx) CredentialByHash(hash []byte) (Credential, error) {
 	return credentialByHash(r.ctx, r.tx, hash)
+}
+
+// CredentialsByHashes resolves several token or session hashes, with their
+// installations, in one batch, keyed by string(hash). Unknown hashes are
+// absent from the result.
+func (r *ReadTx) CredentialsByHashes(hashes [][]byte) (map[string]Credential, error) {
+	return credentialsByHashes(r.ctx, r.tx, hashes)
+}
+
+// CreatedFromAncestors lists the installations the given one descends from,
+// following created_from (a successor's or a copy's authorizing
+// installation), nearest first.
+func (a *AccountReader) CreatedFromAncestors(installID string) ([]string, error) {
+	return createdFromAncestors(a.r.ctx, a.r.tx, a.id, installID)
 }
 
 // HasAdmin reports whether setup has completed.
@@ -431,11 +546,34 @@ func (a *AccountTx) BindCredential(hash []byte, installID string) error {
 	return a.execOne(`UPDATE auth_tokens SET install_id = ? WHERE token_hash = ? AND account_id = ? AND install_id IS NULL`, installID, hash, a.id)
 }
 
-// TouchCredential records use and, for sessions, extends expiry.
-func (a *AccountTx) TouchCredential(hash []byte, at int64, expiresAt *int64) error {
-	_, err := a.w.tx.ExecContext(a.w.ctx, `UPDATE auth_tokens SET last_used_at = ?, expires_at = COALESCE(?, expires_at) WHERE token_hash = ? AND account_id = ?`,
-		at, expiresAt, hash, a.id)
-	return err
+// TouchCredential records use at `at` and, given extendTo, extends the
+// session's expiry to at least extendTo, never shortening it (a clock that
+// stepped back). It changes nothing and reports false when the credential is
+// already expired at `at`, the transaction's own time: an expired session is
+// never extended.
+func (a *AccountTx) TouchCredential(hash []byte, at int64, extendTo *int64) (bool, error) {
+	res, err := a.w.tx.ExecContext(a.w.ctx, `UPDATE auth_tokens SET last_used_at = ?,
+			expires_at = CASE WHEN ? IS NULL OR expires_at IS NULL THEN expires_at ELSE max(expires_at, ?) END
+		WHERE token_hash = ? AND account_id = ? AND (expires_at IS NULL OR expires_at > ?)`,
+		at, extendTo, extendTo, hash, a.id, at)
+	if err != nil {
+		return false, err
+	}
+	n, err := res.RowsAffected()
+	return n == 1, err
+}
+
+// DeleteIfExpired deletes the session if it is expired at now, the
+// transaction's own time, and reports whether it did: deciding expiry in the
+// write transaction orders it against a renewal (TouchCredential). An expired
+// session no longer gives access, so this is not an access-removing change.
+func (w *WriteTx) DeleteIfExpired(hash []byte, now int64) (bool, error) {
+	res, err := w.tx.ExecContext(w.ctx, `DELETE FROM auth_tokens WHERE token_hash = ? AND expires_at IS NOT NULL AND expires_at <= ?`, hash, now)
+	if err != nil {
+		return false, err
+	}
+	n, err := res.RowsAffected()
+	return n > 0, err
 }
 
 // DeleteCredential deletes one credential of this account (signing out), which
@@ -461,6 +599,71 @@ func (a *AccountTx) DeleteInstallationCredentials(installID string) error {
 func (a *AccountTx) DeleteInstallationCredentialsOfKind(installID, kind string) error {
 	_, err := a.w.tx.ExecContext(a.w.ctx, `DELETE FROM auth_tokens WHERE account_id = ? AND install_id = ? AND kind = ?`, a.id, installID, kind)
 	return err
+}
+
+// DeleteExpiredWebSessions deletes the installation's web sessions that are
+// expired at now, the transaction's own time: an expired session never comes
+// back (DeleteIfExpired), even one whose cookie is no longer presented. Device
+// tokens never expire and are never touched.
+func (a *AccountTx) DeleteExpiredWebSessions(installID string, now int64) error {
+	_, err := a.w.tx.ExecContext(a.w.ctx, `DELETE FROM auth_tokens WHERE account_id = ? AND install_id = ? AND kind = 'web'
+		AND expires_at IS NOT NULL AND expires_at <= ?`, a.id, installID, now)
+	return err
+}
+
+// HasCredentialsOfKind reports whether the installation holds a credential of the kind.
+func (a *AccountTx) HasCredentialsOfKind(installID, kind string) (bool, error) {
+	var n int
+	err := a.w.tx.QueryRowContext(a.w.ctx, `SELECT COUNT(*) FROM auth_tokens WHERE account_id = ? AND install_id = ? AND kind = ?`,
+		a.id, installID, kind).Scan(&n)
+	return n > 0, err
+}
+
+// DeleteWebSessionsOnSupersessionPath ends a browser's handoffs at its sign-out
+// (PROTOCOL §5.4): from the installation, it follows superseded_by while the
+// next installation has the same instance nonce, and deletes the web sessions
+// of every installation after the first, used or not. pending_predecessor is
+// not consulted, device tokens are never deleted, and a copy (another nonce,
+// linked only by created_from) is never reached.
+func (a *AccountTx) DeleteWebSessionsOnSupersessionPath(installID string) error {
+	from, err := a.Installation(installID)
+	if errors.Is(err, ErrNotFound) {
+		return nil
+	}
+	if err != nil {
+		return err
+	}
+	seen := map[string]bool{from.InstallID: true}
+	for from.SupersededBy != "" && !seen[from.SupersededBy] {
+		next, err := a.Installation(from.SupersededBy)
+		if errors.Is(err, ErrNotFound) {
+			return nil
+		}
+		if err != nil {
+			return err
+		}
+		if next.InstanceNonce != from.InstanceNonce {
+			return nil
+		}
+		res, err := a.w.tx.ExecContext(a.w.ctx, `DELETE FROM auth_tokens WHERE account_id = ? AND install_id = ? AND kind = 'web'`, a.id, next.InstallID)
+		if err != nil {
+			return err
+		}
+		if n, _ := res.RowsAffected(); n > 0 {
+			a.w.markAuthChange()
+		}
+		seen[next.InstallID] = true
+		from = next
+	}
+	return nil
+}
+
+// RearmPendingPredecessor makes predecessor's credentials await revocation
+// again at successor's next use (FinishSupersession), as at a handoff: a
+// session bound to a superseded installation after its successor's first use
+// is then retired like any other (PROTOCOL §5.4). The links stay as they are.
+func (a *AccountTx) RearmPendingPredecessor(successor, predecessor string) error {
+	return a.execOne(`UPDATE installations SET pending_predecessor = ? WHERE account_id = ? AND install_id = ?`, predecessor, a.id, successor)
 }
 
 // DeleteExpiredSessions removes web sessions past their expiry, server-wide.

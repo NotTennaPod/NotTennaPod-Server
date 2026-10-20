@@ -904,34 +904,53 @@ func TestTokensDoNotExpireButIdleSessionsDo(t *testing.T) {
 	e.list(bearer(tok)).must(http.StatusOK)
 }
 
-// browserJar models how a browser keeps the session cookie: it expires Max-Age
-// seconds after the response that set it.
+// browserJar models how a browser keeps the session cookies: each name holds
+// one value, which expires Max-Age seconds after the response that set it.
 type browserJar struct {
+	cookies map[string]jarCookie
+}
+
+type jarCookie struct {
 	value   string
 	expires time.Time // zero: kept until the browser closes
 }
 
 func (b *browserJar) receive(cookies []*http.Cookie, now time.Time) {
+	if b.cookies == nil {
+		b.cookies = map[string]jarCookie{}
+	}
 	for _, c := range cookies {
-		if c.Name != sessionCookie {
+		if !isSessionCookie(c.Name) {
 			continue
 		}
 		switch {
 		case c.MaxAge < 0:
-			b.value = ""
+			delete(b.cookies, c.Name)
 		case c.MaxAge > 0:
-			b.value, b.expires = c.Value, now.Add(time.Duration(c.MaxAge)*time.Second)
+			b.cookies[c.Name] = jarCookie{c.Value, now.Add(time.Duration(c.MaxAge) * time.Second)}
 		case !c.Expires.IsZero():
-			b.value, b.expires = c.Value, c.Expires
+			b.cookies[c.Name] = jarCookie{c.Value, c.Expires}
 		default:
-			b.value, b.expires = c.Value, time.Time{}
+			b.cookies[c.Name] = jarCookie{c.Value, time.Time{}}
 		}
 	}
 }
 
-func (b *browserJar) has(now time.Time) bool {
-	return b.value != "" && (b.expires.IsZero() || now.Before(b.expires))
+// value is the one session the jar holds at now ("" if none or several).
+func (b *browserJar) value(now time.Time) string {
+	v := ""
+	for _, c := range b.cookies {
+		if c.expires.IsZero() || now.Before(c.expires) {
+			if v != "" {
+				return ""
+			}
+			v = c.value
+		}
+	}
+	return v
 }
+
+func (b *browserJar) has(now time.Time) bool { return b.value(now) != "" }
 
 // DESIGN MISMATCH. Design, "Web session": "Sessions expire after 30 days without
 // use; each use (at most once an hour) extends them." The server extends its own
@@ -950,7 +969,7 @@ func TestUsedSessionCookieOutlivesThirtyDays(t *testing.T) {
 		if !jar.has(e.clock.Now()) {
 			t.Fatalf("day %d: the browser no longer holds the session cookie although the session was used every day", day)
 		}
-		r := e.list(browser(jar.value)).must(http.StatusOK)
+		r := e.list(browser(jar.value(e.clock.Now()))).must(http.StatusOK)
 		jar.receive(r.cookies, e.clock.Now())
 	}
 }

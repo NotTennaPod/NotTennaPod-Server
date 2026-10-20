@@ -337,7 +337,7 @@ func TestEventStream(t *testing.T) {
 	defer srv.Close()
 	open := func() (*bufio.Reader, func()) {
 		req, _ := http.NewRequest(http.MethodGet, srv.URL+"/v1/events", nil)
-		req.AddCookie(&http.Cookie{Name: sessionCookie, Value: r.session})
+		req.AddCookie(sessionCookieOf(r.session))
 		res, err := http.DefaultClient.Do(req)
 		if err != nil {
 			t.Fatal(err)

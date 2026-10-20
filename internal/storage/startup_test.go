@@ -537,6 +537,36 @@ func TestAccessRemovingChangesRaiseTheAuthRevision(t *testing.T) {
 			}
 			return a.FinishSupersession(succ)
 		}},
+		{"deleting an expired session", false, func(w *WriteTx) error {
+			h, past := bytes.Repeat([]byte{2}, 32), int64(1)
+			if err := w.Account(ids[0]).InsertCredential(h, "web", "", &past); err != nil {
+				return err
+			}
+			if deleted, err := w.DeleteIfExpired(h, w.nowMillis()); err != nil || !deleted {
+				return fmt.Errorf("the expired session was not deleted (%v)", err)
+			}
+			return nil
+		}},
+		{"arming a superseded installation's retirement again", false, func(w *WriteTx) error {
+			return w.Account(ids[0]).RearmPendingPredecessor(succ, install)
+		}},
+		{"ending a browser's handoffs at its sign-out", true, func(w *WriteTx) error {
+			a := w.Account(ids[0])
+			from, to, nonce := newUUID(), newUUID(), newUUID()
+			for _, id := range []string{from, to} {
+				if err := a.InsertInstallation(Installation{InstallID: id, InstanceNonce: nonce, Name: "browser", Platform: "web", AppVersion: "1",
+					Capabilities: "[]"}); err != nil {
+					return err
+				}
+			}
+			if err := a.Supersede(from, to); err != nil {
+				return err
+			}
+			if err := a.InsertCredential(bytes.Repeat([]byte{3}, 32), "web", to, nil); err != nil {
+				return err
+			}
+			return a.DeleteWebSessionsOnSupersessionPath(from)
+		}},
 		{"revoking an installation", true, func(w *WriteTx) error { return w.Account(ids[0]).RevokeInstallation(succ) }},
 		{"a password change", true, func(w *WriteTx) error { return w.Account(ids[0]).SetPassword("new", nil) }},
 		{"disabling", true, func(w *WriteTx) error { return w.Account(ids[1]).SetState("disabled") }},

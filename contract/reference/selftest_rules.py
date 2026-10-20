@@ -87,6 +87,11 @@ to their release, the first dispute partitioning the evidence by release, a new 
 items share, repeated items in one fetch, and a podcast merge carrying an episode without
 GUID and enclosure.
 
+A subscription made during an outage (PROTOCOL §6.1, §15.2; scenario 4a): the drafts depend on
+the registration's resolution, at the registration's time; the outage scenario and its mirror, a
+resolution stored at the old rule, the resolution's and alias's times, and a pending discovery
+filing before and after another device's add.
+
 Resume claims and the queue replay's hand-computed cases are in selftest_claims.py
 (PROTOCOL §8.1; rules_offline_merges.json) and selftest_queue_replay.py (PROTOCOL §7.6;
 rules_queue_replay.json).
@@ -95,7 +100,7 @@ rules_queue_replay.json).
 and the canonical comparator cases to DIR/queue_sort.json (for cross-checking another
 implementation). Cases of their own vector file (rules_releases.json,
 rules_episode_leave.json, rules_offline_merges.json, rules_queue_replay.json,
-rules_identity_family.json) are not in rules_selftest.json: --groups DIR writes them, and
+rules_identity_family.json, rules_pending_registration.json) are not in rules_selftest.json: --groups DIR writes them, and
 without it the selftest checks that the committed files equal them.
 """
 
@@ -206,6 +211,7 @@ class B(object):
         # that the fact and the decisions of every later commit share one revision.
         self.epoch = 1
         self.server_label = name  # builders replaying one history in several orders share it
+        self.record_resolution = False  # the next live registration records its resolution's ID
         BUILDERS.append(self)
 
     def server_uuid(self, kind):
@@ -215,6 +221,12 @@ class B(object):
     def choose(self, dtype, info):
         # A decision is part of its acceptance's commit: the commit's revision (the engine
         # passes it; docs/CONTRACT.md "Server decisions").
+        if dtype == rules.RESOLUTION:
+            # A live registration's resolution stays implicit unless the push records it
+            # (record_resolution, docs/CONTRACT.md "Recovery").
+            if not self.record_resolution:
+                return None
+            self.record_resolution = False
         ep, sq = info["commit"]
         ch = {"decision_type": dtype, "decision_id": self.server_uuid("decision"), "epoch": ep, "seq": sq}
         if dtype == rules.LAYOUT:
@@ -6827,6 +6839,174 @@ def test_security_text_userinfo():
     eq((m["description"], m["link"]), (want, "https://site.example/ep"), "the stored text")
 
 
+# ---------------------------------------------------------------------------
+# A subscription made during an outage (PROTOCOL §6.1, §6.9, §15.2; §16 scenario 4a). Committed as
+# contract/vectors/rules_pending_registration.json.
+#
+# What a phone records while its registration waits (its drafts) depends on the
+# registration's podcast.resolution, which takes the registration's normalized time: the
+# drafts keep the time the person acted and merge with other devices' changes by time.
+# The arrival that registers records the resolution's ID (docs/CONTRACT.md "Recovery"),
+# so the drafts can name it.
+# ---------------------------------------------------------------------------
+
+PENDING_FILE = "rules_pending_registration.json"
+
+
+def recorded_resolution(b, op):
+    """The recorded podcast.resolution ID of registration `op`."""
+    ids = [e["id"] for e in b.engine.ar_dec.values() if e["type"] == rules.RESOLUTION and e["subject"] == op
+           and e["id"] is not None]
+    check(len(ids) == 1, "%s: one recorded resolution of %s, got %s" % (b.name, op, ids))
+    return ids[0]
+
+
+def subscription_time(b, dtype, subject):
+    """The normalized time of the live registration's implicit or recorded decision."""
+    ts = [e["nt"] for e in b.engine.ar_dec.values() if e["type"] == dtype and e["subject"] == subject]
+    check(len(ts) == 1, "%s: one %s of %s" % (b.name, dtype, subject))
+    return ts[0]
+
+
+def pending_subscribe(b, dev, url, **kw):
+    """A registration whose arrival records its resolution's ID: (op, resolution ID)."""
+    b.record_resolution = True
+    s = b.subscribe(dev, url, **kw)
+    check(not b.record_resolution, "%s: the registration recorded its resolution" % b.name)
+    r = recorded_resolution(b, s)
+    eq(b.nt(r), b.nt(s), "%s: the resolution takes its registration's time" % b.name)
+    return s, r
+
+
+def pending_other_device(b, base):
+    """B subscribes U1 at base+10 min, queues episode One, resets its position and removes it
+    from the queue (base+11..13 min). Returns (P, G, One, the reset)."""
+    s = b.subscribe("B", U1, rt=base + 10 * MIN)
+    P, G = pg(s)
+    e = ref(P, G, "one", "One")
+    b.qadd("B", [(e, K(None, None, "pending/b"))], place=END, rt=base + 11 * MIN)
+    reset = b.ep("B", "episode.reset_position", e, rt=base + 12 * MIN)
+    b.qremove("B", [e], rt=base + 13 * MIN)
+    return P, G, e, reset
+
+
+def pending_drafts(b, e, R, at, rt):
+    """A's drafts, made offline at `at` + 1, 2 and 3 min and sent at `rt`: it plays One to
+    minute 1 and queues it; each depends on the resolution R. Returns (start, checkpoint, add)."""
+    sa = b.uuid()
+    st = b.start("A", e, sa, 0, t=at + MIN, rt=rt, after=[R])
+    cp = b.cp("A", e, sa, 1, MIN, MIN, t=at + 2 * MIN, rt=rt, after=[R])
+    qa = b.qadd("A", [(e, K(None, None, "pending/a"))], place=END, t=at + 3 * MIN, rt=rt, after=[R])
+    return st, cp, qa
+
+
+def test_pending_registration_scenario():
+    """(a) The outage scenario: A subscribes offline at base, plays One to minute 1 and queues
+    it (base+1..3 min); B subscribes the same feed, resets One and removes it from the queue
+    (base+10..13 min); A reconnects at base+60 min. B's later reset and removal win.
+    (b) Its mirror: A's offline actions come after B's (base+20..22 min): they stand."""
+    for phone_later in (False, True):
+        b = B("4a: a pending subscription's drafts keep their time (%s)"
+              % ("the phone acted later" if phone_later else "the other device acted later"),
+              0x4a000001 + phone_later, PENDING_FILE)
+        base = b.now
+        P, G, e, reset = pending_other_device(b, base)
+        s, R = pending_subscribe(b, "A", U1, t=base, rt=base + 60 * MIN)
+        eq(b.res(s)["mode"], "joined", "A's registration joins B's podcast")
+        eq(b.nt(R), base, "the resolution is at the registration's time, not the server's")
+        at = base + (19 if phone_later else 0) * MIN
+        st, cp, qa = pending_drafts(b, e, R, at, base + 61 * MIN)
+        eq([b.nt(x) for x in (st, cp, qa)], [at + MIN, at + 2 * MIN, at + 3 * MIN], "each draft keeps its own time")
+        eq([b.out(x) for x in (st, cp, qa)], [("applied", None)] * 3, "the drafts are applied")
+        if phone_later:
+            eq(L(b, e, "position"), posv(G, MIN, st), "A's later listening stands")
+            eq(MEM(b, e), mem(G, True), "A's later queue add stands")
+        else:
+            eq(L(b, e, "position"), posv(G, 0, reset), "B's later reset wins")
+            eq(MEM(b, e), mem(G, False, "user"), "B's later removal wins")
+
+
+def test_pending_registration_old_rule_replays():
+    """(c) A resolution the old server stored at its own time (the old rule: the server's
+    time) keeps it: the drafts pushed after the upgrade are clamped to it, as before, and
+    the result is what it was. Modelled as the old server's commit recovered (PROTOCOL §6.11:
+    normalized times are stored and never recomputed)."""
+    live = B("4a: the old server (A's registration resolved at the server's time)", 0x4a000003)
+    live.vector_ok = False
+    base = live.now
+    P, G, e, reset = pending_other_device(live, base)
+    k = len(live.arrivals)
+    s = live.subscribe("A", U1, t=base, rt=base + 60 * MIN)
+    ups = [x for cm in uploads(live, k) for x in cm]
+    res = [x for x in ups if "decision" in x]
+    eq([x["decision"]["decision_type"] for x in res], [rules.RESOLUTION], "A's commit holds its resolution")
+    R = res[0]["decision"]["decision_id"]
+    res[0]["decision"]["normalized_time"] = base + 60 * MIN  # the old rule: max(server_now, its registration's)
+    rs = restored(live, k, "4a: a resolution stored by the old server, then its drafts")
+    rs.group = PENDING_FILE
+    rs.n = live.n  # its own IDs continue the original's
+    upload(rs, ups)
+    rend(rs)
+    eq(rs.nt(R), base + 60 * MIN, "the stored resolution keeps its time")
+    st, cp, qa = pending_drafts(rs, e, R, base, base + 61 * MIN)
+    eq([rs.nt(x) for x in (st, cp, qa)], [base + 60 * MIN] * 3, "the drafts are clamped to it, as before")
+    eq(L(rs, e, "position"), posv(G, MIN, st), "today's result: A's listening")
+    eq(MEM(rs, e), mem(G, True), "today's result: A's queue add")
+
+
+def test_pending_registration_decision_times():
+    """(d) An offline registration that creates its podcast: its resolution is at the
+    registration's time, its alias at the receive time (max(server_now, the registration's));
+    a draft depending on the resolution keeps its own time."""
+    b = B("4a: an offline registration's resolution and alias times", 0x4a000004, PENDING_FILE)
+    base = b.now
+    s, R = pending_subscribe(b, "A", U1, t=base, rt=base + 60 * MIN)
+    P, G = pg(s)
+    eq(b.res(s)["mode"], "created", "A's registration creates the podcast")
+    times = {"podcast.resolution": subscription_time(b, rules.RESOLUTION, s),
+             "podcast.alias": subscription_time(b, rules.ALIAS, "alias:" + c.normalize_url(U1))}
+    eq(times, {"podcast.resolution": base, "podcast.alias": base + 60 * MIN}, "both times")
+    e = ref(P, G, "one", "One")
+    f = b.fav("A", e, True, t=base + MIN, rt=base + 61 * MIN, after=[R])
+    eq(b.nt(f), base + MIN, "the draft keeps its own time")
+    # Informative (implementations read only arrivals and expected): the two times.
+    b.notes = {"note": "the registration's decision times, by type", "decision_times": times}
+
+
+def test_pending_registration_discovery_filing():
+    """(e) A discovers episode E while its registration waits and files it into the queue at
+    the end (its bundle's place); B adds Z at the end. The filing acts at the proposal's
+    place, at the time A discovered E: recorded before B's add, E comes before Z; recorded
+    after it, after Z."""
+    qpol = {"new_episodes_action": "queue", "keep_updated": True}
+    for i, when in enumerate(("before", "after")):
+        b = B("4a: a pending discovery's queue filing recorded %s another device's add" % when, 0x4a000005 + i,
+              PENDING_FILE)
+        P, G, sb, old = setup_catalog(b, policy=qpol, dev="B")
+        m, z, e = ref(P, G, "m", "M"), ref(P, G, "z", "Z"), ref(P, G, "e", "E")
+        km = K(None, None, "pending/m")
+        b.qadd("B", [(m, km)], place=END)
+        base = b.now
+        found = base + (1 if when == "before" else 3) * MIN
+        b.qadd("B", [(z, K(km[0], None, "pending/z"))], place=END, rt=base + 2 * MIN)
+        s, R = pending_subscribe(b, "A", U1, t=base, rt=base + 10 * MIN)
+        eq(b.res(s)["mode"], "joined", "A's registration joins")
+        p = b.discover("A", e, action="queue", bundle=(K(km[0], None, "pending/e"), END), pub=T0, newest=T0 - DAY,
+                       t=found, rt=base + 11 * MIN, after=[R])
+        eq(b.out(p), ("applied", None), "A's proposal is admitted")
+        eq(b.nt(p), found, "the proposal keeps the time A discovered E")
+        eq(MEM(b, e), mem(G, True), "the filing adds E")
+        eq(b.queue(), ["M", "E", "Z"] if when == "before" else ["M", "Z", "E"], "the filing settles by time")
+
+
+PENDING_TESTS = [
+    ("pending registration: the outage scenario and its mirror", test_pending_registration_scenario),
+    ("pending registration: a resolution stored at the old rule", test_pending_registration_old_rule_replays),
+    ("pending registration: resolution and alias times", test_pending_registration_decision_times),
+    ("pending registration: a discovery filing", test_pending_registration_discovery_filing),
+]
+
+
 def main(argv):
     write_dir = None
     groups_dir = None
@@ -6996,6 +7176,8 @@ def main(argv):
     import selftest_claims  # noqa: E402
     import selftest_queue_replay  # noqa: E402
     tests += selftest_claims.TESTS + selftest_queue_replay.TESTS
+    # Last, with prefixes of their own, so that every earlier case keeps its IDs.
+    tests += PENDING_TESTS
     failed = 0
     for name, fn in tests:
         try:

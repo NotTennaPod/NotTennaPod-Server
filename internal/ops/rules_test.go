@@ -753,6 +753,17 @@ func (v *vectorRandom) DecisionID(decisionType string) string {
 		v.t.Errorf("arrival %d: the server allocates an occurrence ID the vector does not record", v.arrival)
 		return randomUUID()
 	}
+	if decisionType == "podcast.resolution" {
+		// A live registration's resolution is implicit unless the arrival
+		// records its ID, as its next choice (docs/CONTRACT.md "Recovery"): the
+		// arrival's later facts may then name it.
+		if c := v.current(); c != nil && !v.free && c["decision_type"] == decisionType {
+			v.cur++
+			v.pos = 0
+			return c["decision_id"].(string)
+		}
+		return randomUUID()
+	}
 	if !vectorChoice(decisionType) || v.free {
 		return randomUUID()
 	}

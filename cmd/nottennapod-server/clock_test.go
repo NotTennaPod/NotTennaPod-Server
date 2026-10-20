@@ -317,7 +317,9 @@ func (s *server) phone(t *testing.T) *phone {
 	}
 	res.Body.Close()
 	for _, c := range res.Cookies() {
-		if c.Name == "ntp_session" {
+		// The session's own cookie (PROTOCOL §5.2); the tests send it back as
+		// a session from an earlier server, in ntp_session, which works alike.
+		if strings.HasPrefix(c.Name, "ntp_s_") {
 			p.session = c.Value
 		}
 	}

@@ -5,7 +5,7 @@
 ARG ALPINE_VERSION=3.24
 # The NotTennaPod-Web commit embedded in the image: bumped deliberately, in a
 # Server commit, after the pairing is tested.
-ARG WEB_COMMIT=b352bacaa091055214efbf3b304b78fcf0c4064b
+ARG WEB_COMMIT=086de7c0adc92e1cdddc6d35d05d1a3e19e74298
 
 # Web source: the pinned commit. While the repository is private, BuildKit
 # fetches it with the pre-defined GIT_AUTH_TOKEN build secret (`make docker`
